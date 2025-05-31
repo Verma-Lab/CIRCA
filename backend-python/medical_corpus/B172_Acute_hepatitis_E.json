@@ -1,0 +1,104 @@
+{
+    "disease": "Acute hepatitis E",
+    "icd_code": "B172",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Variable, can be absent in children",
+                "pattern": "Present in most symptomatic adults"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Clay-colored stools",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be slightly elevated",
+            "pulse": "May be slightly elevated",
+            "blood_pressure": "Usually normal"
+        },
+        "physical_findings": [
+            "Jaundice (icterus)",
+            "Hepatomegaly (enlarged liver)",
+            "Tenderness to palpation in the right upper quadrant"
+        ],
+        "lab_values": {
+            "liver_function_tests": {
+                "ALT": "Elevated",
+                "AST": "Elevated",
+                "ALP": "May be elevated",
+                "bilirubin": "Elevated"
+            },
+            "anti-HEV IgM": "Positive"
+        },
+        "risk_factors": [
+            "Consumption of contaminated water",
+            "Consumption of undercooked pork or other animal products",
+            "Travel to endemic areas",
+            "Pregnancy (especially second and third trimester)",
+            "Immunosuppression"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show hepatomegaly",
+            "CT scan": "May show hepatomegaly and/or other liver abnormalities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with acute viral hepatitis",
+            "Positive anti-HEV IgM antibody test"
+        ],
+        "supportive": [
+            "Epidemiological link to contaminated water or food",
+            "Elevated liver enzymes (ALT, AST, bilirubin)",
+            "Detection of HEV RNA by RT-PCR"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hepatitis A",
+        "Hepatitis B",
+        "Hepatitis C",
+        "Other viral hepatitis",
+        "Drug-induced hepatitis",
+        "Autoimmune hepatitis",
+        "Alcoholic hepatitis"
+    ]
+}

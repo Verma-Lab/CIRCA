@@ -1,0 +1,26 @@
+{
+    "disease": "Malignant neoplasm of pharynx, unspecified",
+    "icd_code": "C140",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Heavy drinking",
+            "HPV (for certain types of throat cancer)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical exam and history",
+            "Imaging tests",
+            "Biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

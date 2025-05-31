@@ -1,0 +1,91 @@
+{
+    "disease": "Tuberculosis of thyroid gland",
+    "icd_code": "A1881",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless solitary thyroid nodule",
+                "severity": "Variable",
+                "pattern": "Slowly progressing"
+            },
+            {
+                "name": "Hoarseness of voice",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Neck swelling",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Firm swelling (4.5 cm \u00d7 3 cm) in the neck, moving with deglutition",
+            "Non-tender swelling",
+            "No signs of inflammation"
+        ],
+        "lab_values": {
+            "Thyroid hormones": "Normal levels"
+        },
+        "risk_factors": [
+            "Living or working with a person with TB disease",
+            "Weakened immune system (e.g., HIV infection)"
+        ],
+        "imaging_findings": {
+            "Ultrasonography": "Nodular lesion involving most of the right lobe of thyroid, heterogeneous echogenicity with hypoechoic areas and microcalcification"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological evidence of necrotizing epithelioid cell granulomas with Langhans type giant cells",
+            "Demonstration of acid-fast bacilli (though often negative)"
+        ],
+        "supportive": [
+            "Clinical presentation (though non-specific)",
+            "Imaging findings (e.g., ultrasonography)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Toxic goiter",
+        "Acute thyroiditis",
+        "Multinodular goiter",
+        "Thyroid tumor",
+        "Granulomatous thyroiditis",
+        "Fungal infection",
+        "Sarcoidosis",
+        "Granulomatous vasculitis",
+        "Foreign body reaction"
+    ]
+}

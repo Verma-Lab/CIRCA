@@ -1,0 +1,39 @@
+{
+    "disease": "Gonococcal infection of other male genital organs",
+    "icd_code": "A5423",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Gram stain": {
+                "abnormal": "Polymorphonuclear leukocytes with intracellular gram-negative diplococci (high specificity >99% and sensitivity >95% in symptomatic men; less sensitive in asymptomatic men)"
+            },
+            "Culture": {
+                "abnormal": "Presence of N. gonorrhoeae"
+            },
+            "NAAT": {
+                "abnormal": "Presence of N. gonorrhoeae DNA"
+            }
+        },
+        "risk_factors": [
+            "Multiple sexual partners",
+            "Sex with a partner with concurrent partners",
+            "Sex work",
+            "Inconsistent condom use",
+            "Previous or coexisting STIs",
+            "Substance abuse"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture for N. gonorrhoeae",
+            "Positive NAAT for N. gonorrhoeae",
+            "Gram stain showing polymorphonuclear leukocytes with intracellular gram-negative diplococci (in symptomatic men)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,23 @@
+{
+    "disease": "Malignant neoplasm of maxillary sinus",
+    "icd_code": "C310",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in the maxillary sinus tissue"
+        ],
+        "supportive": [
+            "Imaging findings consistent with maxillary sinus malignancy",
+            "Clinical presentation suggestive of maxillary sinus cancer (e.g., facial pain, nasal obstruction, epistaxis)"
+        ]
+    },
+    "differential_diagnoses": []
+}

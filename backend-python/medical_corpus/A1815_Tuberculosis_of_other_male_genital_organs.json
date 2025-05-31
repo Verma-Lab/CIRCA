@@ -1,0 +1,114 @@
+{
+    "disease": "Tuberculosis of other male genital organs",
+    "icd_code": "A1815",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain in the lower abdomen",
+                "severity": "Variable",
+                "pattern": "Non-specific"
+            },
+            {
+                "name": "Abdominal tenderness",
+                "severity": "Variable",
+                "pattern": "Present on palpation"
+            },
+            {
+                "name": "Doughy feel to the abdomen",
+                "severity": "Variable",
+                "pattern": "Present on palpation"
+            },
+            {
+                "name": "Ascites",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cervical ulcer",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Uterine fixation and tenderness",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fullness or masses in the fornices",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Infertility",
+                "severity": "Significant",
+                "pattern": "May be the presenting complaint"
+            },
+            {
+                "name": "Culture sterile semen with pus cells",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Menstrual irregularities",
+                "severity": "Variable",
+                "pattern": "May be present in associated female genital TB"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "May be present, diagnosed incidentally"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Low-grade fever may be present"
+        },
+        "physical_findings": [
+            "Epididymal enlargement and tenderness",
+            "Prostatic enlargement and tenderness",
+            "Testicular involvement (rare)",
+            "Penile involvement (rare)",
+            "Scrotal swelling",
+            "Nodules",
+            "Tubo-ovarian masses (in associated female genital TB)",
+            "Cervical lesions (in associated female genital TB)"
+        ],
+        "lab_values": {
+            "Acid-fast bacilli smear": "Positive in active disease",
+            "Culture": "Positive for Mycobacterium tuberculosis",
+            "Semen analysis": "May show azoospermia or decreased sperm count"
+        },
+        "risk_factors": [
+            "Prior pulmonary tuberculosis",
+            "HIV infection",
+            "Immunosuppression",
+            "Family history of tuberculosis"
+        ],
+        "imaging_findings": {
+            "Ultrasonography": "May show epididymal or prostatic abnormalities",
+            "Contrast imaging": "May provide supportive evidence"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion based on symptoms and physical examination",
+            "Positive culture for Mycobacterium tuberculosis from genital secretions or tissue biopsy"
+        ],
+        "supportive": [
+            "Positive acid-fast bacilli smear",
+            "Abnormal imaging findings",
+            "Histopathological findings consistent with tuberculosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of epididymitis",
+        "Prostatitis",
+        "Malignant testicular lesions",
+        "Other granulomatous diseases"
+    ]
+}

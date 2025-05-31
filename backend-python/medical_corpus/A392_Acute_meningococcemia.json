@@ -1,0 +1,117 @@
+{
+    "disease": "Acute meningococcemia",
+    "icd_code": "A392",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Septic shock",
+                "severity": "Severe, life-threatening",
+                "pattern": "Can be predominant feature, especially in children"
+            },
+            {
+                "name": "Cardiovascular collapse",
+                "severity": "Severe, life-threatening",
+                "pattern": "Can lead to septic shock"
+            },
+            {
+                "name": "Non-blanching skin rash",
+                "severity": "Characteristic",
+                "pattern": "May appear with meningococcal sepsis"
+            },
+            {
+                "name": "Cold hands and feet",
+                "severity": "Variable",
+                "pattern": "Can occur due to bloodstream infection"
+            },
+            {
+                "name": "Fast breathing",
+                "severity": "Variable",
+                "pattern": "Can occur due to bloodstream infection"
+            },
+            {
+                "name": "Low blood pressure",
+                "severity": "Variable",
+                "pattern": "Can occur due to bloodstream infection"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common symptom of meningitis"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Variable",
+                "pattern": "Common symptom of meningitis"
+            },
+            {
+                "name": "Confusion or altered mental status",
+                "severity": "Variable",
+                "pattern": "Common symptom of meningitis"
+            },
+            {
+                "name": "Sensitivity to light",
+                "severity": "Variable",
+                "pattern": "Common symptom of meningitis"
+            },
+            {
+                "name": "Nausea and vomiting",
+                "severity": "Variable",
+                "pattern": "Common symptom of meningitis"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Less frequent symptom"
+            },
+            {
+                "name": "Coma",
+                "severity": "Variable",
+                "pattern": "Less frequent symptom"
+            },
+            {
+                "name": "Neurological deficits (e.g., limb weakness)",
+                "severity": "Variable",
+                "pattern": "Less frequent symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "blood_pressure": "Low (hypotension)",
+            "respiratory_rate": "Increased (tachypnea)",
+            "heart_rate": "Increased (tachycardia)"
+        },
+        "physical_findings": [
+            "Non-blanching petechial or purpuric rash",
+            "Meningismus (in cases with concurrent meningitis)"
+        ],
+        "lab_values": {
+            "blood_cultures": "Positive for Neisseria meningitidis",
+            "complete_blood_count": "May show leukocytosis",
+            "coagulation_studies": "May show disseminated intravascular coagulation (DIC)"
+        },
+        "risk_factors": [
+            "Age younger than 1 year",
+            "Living in crowded conditions",
+            "Complement deficiencies",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Neisseria meningitidis",
+            "Clinical presentation consistent with meningococcemia (e.g., fever, septic shock, rash)"
+        ],
+        "supportive": [
+            "Leukocytosis",
+            "Disseminated intravascular coagulation (DIC)"
+        ]
+    },
+    "differential_diagnoses": []
+}

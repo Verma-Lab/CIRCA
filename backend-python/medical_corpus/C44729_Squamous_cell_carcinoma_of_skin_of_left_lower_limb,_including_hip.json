@@ -1,0 +1,78 @@
+{
+    "disease": "Squamous cell carcinoma of skin of left lower limb, including hip",
+    "icd_code": "C44729",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Non-healing sore or scab",
+                "severity": "Unspecified",
+                "pattern": "Persistent for about two months or longer"
+            },
+            {
+                "name": "Flat patch of scaly skin",
+                "severity": "Unspecified",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Ulcerated mass",
+                "severity": "Unspecified",
+                "pattern": "Present for several months (case report)"
+            },
+            {
+                "name": "Hard, ulcerative mass",
+                "severity": "Unspecified",
+                "pattern": "Irregular border, yellowish slough in base, blood oozing (case report)"
+            },
+            {
+                "name": "Enlarged inguinal lymph nodes",
+                "severity": "Unspecified",
+                "pattern": "Multiple hard enlargements (case report)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hard ulcerative mass of 5x4 cm in the right inguinal region along the crease with an irregular border, yellowish slough in the base, and blood oozing (case report)",
+            "Multiple hard enlargements of inguinal lymph nodes (case report)",
+            "Intact sensation and distal pulsation (case report)"
+        ],
+        "lab_values": {
+            "CEA": "Negative (case report)",
+            "alpha-fetoprotein cancer antigen (CA) 19.9": "Normal (case report)",
+            "free PSA": "Normal (case report)",
+            "CK 5/6": "Positive (case report)",
+            "P63": "Positive (case report)",
+            "CK 7": "Negative (case report)",
+            "EMA": "Negative (case report)",
+            "HER-2": "Negative (case report)",
+            "PR": "Negative (case report)",
+            "ER": "Negative (case report)",
+            "AR": "Negative (case report)",
+            "GCDFP-15": "Negative (case report)",
+            "S100": "Negative (case report)",
+            "HMB-45": "Negative (case report)"
+        },
+        "risk_factors": [
+            "Excessive ultraviolet (UV) radiation exposure",
+            "Sunburn-prone skin",
+            "Low melanin levels",
+            "Blond or red hair, light-colored eyes, freckles, easy sunburn",
+            "Weakened immune system",
+            "Smoking (case report)"
+        ],
+        "imaging_findings": {
+            "PET/CT": "Diffuse metastasis, right inguinal mass (SUV max 9.6), diffuse bone metastasis in left proximal femur (SUV max 11.5), bilateral iliac, sacrum, vertebral bodies, right scapula, right upper ribs, and right anterior pulmonary nodule (SUV max 4.7) (case report)",
+            "US liver and biliary": "Normal (case report)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with SCC (e.g., non-healing sore, scaly patch)",
+            "Positive imaging findings suggestive of metastasis"
+        ]
+    },
+    "differential_diagnoses": []
+}

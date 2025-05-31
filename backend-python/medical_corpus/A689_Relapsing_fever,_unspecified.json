@@ -1,0 +1,80 @@
+{
+    "disease": "Relapsing fever, unspecified",
+    "icd_code": "A689",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Recurrent episodes, lasting approximately 3 days, recurring every 7-10 days if untreated"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate to Severe",
+                "pattern": "Common"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Shaking chills",
+                "severity": "Severe",
+                "pattern": "Occurs during fever crisis"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Abdominal complaints",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Low during fever crisis",
+            "temperature": "High during febrile episodes"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_smear": "Spirochetes may be identified by microscopy",
+            "serology": "Relapsing fever Borrelia antibodies may be detected",
+            "PCR": "Relapsing fever Borrelia DNA may be detected",
+            "culture": "Relapsing fever spirochetes may be cultured"
+        },
+        "risk_factors": [
+            "Exposure to infected Ornithodoros ticks (TBRF)",
+            "Exposure to infected human body lice (LBRF)",
+            "Living in or traveling to endemic areas",
+            "Contact with rodent-infested structures or habitats (caves, cabins)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Repeated episodes of fever",
+            "Possible exposure to lice or soft-bodied ticks",
+            "Travel history to high-risk area"
+        ],
+        "supportive": [
+            "Positive blood smear for spirochetes",
+            "Positive serology for Borrelia antibodies",
+            "Positive PCR for Borrelia DNA"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,158 @@
+{
+    "disease": "Meningitis due to Lyme disease",
+    "icd_code": "A6921",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Altered mentation",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Ambulatory dysfunction",
+                "severity": "Moderate to Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Urinary incontinence",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Subjective chills",
+                "severity": "Mild to Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Decreased appetite",
+                "severity": "Mild to Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Generalized malaise",
+                "severity": "Mild to Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Mild to Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty with ADLs and IADLs",
+                "severity": "Moderate to Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Loss of memory",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Nerve pain",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Paresis (muscle weakness)",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Facial drooping",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Vision changes",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Subjective fevers",
+                "severity": "Mild to Moderate",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Afebrile on arrival, but reported subjective fevers",
+            "white blood cell count": "14.33 K/uL (normal reference: 4.5-11 K/uL)"
+        },
+        "physical_findings": [
+            "Patient smelled of urine",
+            "No signs of trauma",
+            "Normocephalic with supple neck",
+            "No abnormalities on cardiovascular, pulmonary, abdominal, integumentary, and musculoskeletal examination",
+            "Confused with tangential speech",
+            "Oriented only to person"
+        ],
+        "lab_values": {
+            "glucose": "125 mg/dL (normal reference: 70-100 mg/dL fasting, <140 mg/dL random/non-fasting)",
+            "white blood cell count": "14.33 K/uL (normal reference: 4.5-11 K/uL)",
+            "thyroid stimulating hormone (TSH)": "0.42 uIU/mL (normal reference: 0.4-4.0 uIU/mL)",
+            "free T4": "1.01 ng/dL (normal reference: 0.9-1.7 ng/dL)",
+            "Vitamin B12": "158 pg/mL (normal reference: 200-900 pg/mL)",
+            "folate": "11.8 ng/mL (normal reference: 2.7-17.0 ng/mL)",
+            "rapid plasma reagin (RPR) serology": "non-reactive",
+            "CSF RBC": "86 RBC/mm3 (normal reference: 0-5 RBC/mm3)",
+            "CSF WBC": "2 WBC/mm3 (normal reference: 0-5 WBC/mm3)",
+            "CSF glucose": "78 mg/dL (normal reference: 50.4-75.6 mg/dL)",
+            "CSF protein": "56 mg/dL (normal reference: 15-45 mg/dL)",
+            "Lyme IgM": "Positive (23KD and 39KD antibodies)"
+        },
+        "risk_factors": [
+            "Living in an area endemic to Lyme disease",
+            "Summertime presentation"
+        ],
+        "imaging_findings": {
+            "brain CT": "Dilated ventricles, Evans\u2019 index 0.45"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (e.g., altered mentation, headache, stiff neck)",
+            "Positive Lyme serology (e.g., Western blot positive for Lyme IgM)"
+        ],
+        "supportive": [
+            "Elevated white blood cell count",
+            "Abnormal cerebrospinal fluid findings (e.g., elevated protein, lymphocytic pleocytosis)",
+            "Imaging findings suggestive of hydrocephalus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Normal pressure hydrocephalus (NPH)",
+        "Other causes of aseptic meningitis (viral, fungal, etc.)",
+        "Other causes of altered mental status (e.g., dementia, stroke)"
+    ]
+}

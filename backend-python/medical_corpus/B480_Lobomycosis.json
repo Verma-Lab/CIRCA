@@ -1,0 +1,114 @@
+{
+    "disease": "Lobomycosis",
+    "icd_code": "B480",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Keloid-like lesions",
+                "severity": "Variable",
+                "pattern": "Chronic, slow-growing"
+            },
+            {
+                "name": "Nodular lesions",
+                "severity": "Variable",
+                "pattern": "Chronic, slow-growing"
+            },
+            {
+                "name": "Papules",
+                "severity": "Mild to moderate",
+                "pattern": "Can be confluent"
+            },
+            {
+                "name": "Plaques",
+                "severity": "Variable",
+                "pattern": "Can be infiltrated"
+            },
+            {
+                "name": "Ulcerated lesions",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Pruritus",
+                "severity": "Mild to moderate",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Pain",
+                "severity": "Mild",
+                "pattern": "If there is trauma in the lesion"
+            },
+            {
+                "name": "Headache",
+                "severity": "Chronic, insidious",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Nasal congestion",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Nasal discharge",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Epistaxis",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Necrotic slough",
+                "severity": "Variable",
+                "pattern": "Can occur in nasal vestibule"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Keloid-like lesions on exposed areas (auricles, limbs)",
+            "Nodular lesions",
+            "Papules",
+            "Plaques",
+            "Ulcerated lesions",
+            "Hyperpigmented lesions",
+            "Telangiectasias",
+            "Squamous crusted and eroded areas",
+            "Necrotic slough in nasal vestibule"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Occupational exposure (loggers, rubber tappers, miners, fishermen, agricultural workers)",
+            "Trauma (insect bites, thorns, plants, snakebites, stingray accidents)",
+            "Living near coastal rivers or in humid forest areas",
+            "Male gender"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic yeast-like cells (lemon-shaped, refractile, thick-walled, single and in chains)",
+            "Positive staining with methenamine silver"
+        ],
+        "supportive": [
+            "Clinical presentation (keloid-like lesions, nodules, papules, plaques, ulcers)",
+            "Direct smear showing abundant yeast-like cells",
+            "Exfoliative cytologic analysis showing abundant yeast-like cells"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cutaneous leishmaniasis",
+        "Leprosy",
+        "Sporotrichosis",
+        "Chromoblastomycosis",
+        "Dermatofibrosarcoma protuberans",
+        "Dermatofibroma",
+        "Sarcomas",
+        "Cutaneous tuberculosis",
+        "Paracoccidioidomycosis",
+        "Candidiasis",
+        "Blastomycosis",
+        "Cryptococcosis"
+    ]
+}

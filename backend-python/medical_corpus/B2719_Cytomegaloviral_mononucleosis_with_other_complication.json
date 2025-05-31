@@ -1,0 +1,99 @@
+{
+    "disease": "Cytomegaloviral mononucleosis with other complication",
+    "icd_code": "B2719",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be persistent (reaching 38.5\u00b0C)",
+                "pattern": "Protracted, lasting for several weeks"
+            },
+            {
+                "name": "Chills",
+                "severity": "Present in some cases",
+                "pattern": "Associated with fever"
+            },
+            {
+                "name": "Generalized weakness",
+                "severity": "Present in some cases",
+                "pattern": "Associated with fever and chills"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Present in some cases",
+                "pattern": "Can lead to weight loss"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Present in some cases",
+                "pattern": "Associated with other symptoms"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Present in some cases",
+                "pattern": "Associated with fever and abdominal discomfort"
+            },
+            {
+                "name": "Abdominal discomfort",
+                "severity": "Present in some cases",
+                "pattern": "Associated with nausea and anorexia"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Present in some cases",
+                "pattern": "Associated with abdominal discomfort and anorexia"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Present in some cases",
+                "pattern": "Progression of symptoms"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild",
+                "pattern": "Self-limiting"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Persistent fevers reaching 38.5\u00b0C",
+            "heart_rate": "Tachycardia (120 beats/min)"
+        },
+        "physical_findings": [
+            "No lymphadenopathy",
+            "No hepatosplenomegaly (in some cases)",
+            "Jaundice (in some cases)",
+            "Splenomegaly (in some cases)"
+        ],
+        "lab_values": {
+            "WBC": "Leukocytosis with left shift",
+            "Liver enzymes": "High (AST, ALT)",
+            "Atypical lymphocytes": "Present in peripheral smear",
+            "CMV viremia": "Positive",
+            "EBV viremia": "Positive (in some cases)",
+            "EBV IgM antibodies": "Positive (in some cases)",
+            "CMV IgM antibodies": "Positive (in some cases)"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "Abdominal CT": "Splenomegaly with hypodensities (in some cases)",
+            "Abdominal imaging": "Hepatosplenomegaly (in some cases)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with CMV mononucleosis (fever, fatigue, etc.)",
+            "Positive CMV serology or PCR"
+        ],
+        "supportive": [
+            "Atypical lymphocytosis",
+            "Elevated liver enzymes",
+            "Imaging findings suggestive of splenomegaly or hepatosplenomegaly"
+        ]
+    },
+    "differential_diagnoses": [
+        "Epstein-Barr virus (EBV) mononucleosis",
+        "Other viral infections",
+        "Bacterial infections"
+    ]
+}

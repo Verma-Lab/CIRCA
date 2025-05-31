@@ -1,0 +1,44 @@
+{
+    "disease": "Unspecified viral infection of central nervous system",
+    "icd_code": "A89",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sensory disturbances",
+                "severity": "Unspecified",
+                "pattern": "May affect specific body areas"
+            },
+            {
+                "name": "Motor dysfunction",
+                "severity": "Unspecified",
+                "pattern": "May affect movement"
+            },
+            {
+                "name": "Behavioral changes",
+                "severity": "Unspecified",
+                "pattern": "May differ from normal behavior"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of viral infection"
+        ],
+        "supportive": [
+            "Central nervous system involvement",
+            "Symptoms consistent with CNS viral infection"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,34 @@
+{
+    "disease": "Merkel cell carcinoma of the lip",
+    "icd_code": "C4A0",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rapidly growing skin sore or growth",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Rapidly growing or spreading skin lesion on the lip"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age 50 or older",
+            "Significant sun exposure",
+            "Male sex"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination confirming the presence of Merkel cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation of a rapidly growing lesion on the lip"
+        ]
+    },
+    "differential_diagnoses": []
+}

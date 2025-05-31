@@ -1,0 +1,84 @@
+{
+    "disease": "Cutaneous erysipeloid",
+    "icd_code": "A260",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Localized, initially affecting fingers and hands, may spread to other areas but usually not past the wrist"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Localized, affecting fingers and hands, may spread"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases, especially systemic infection"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases, especially systemic infection"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases, especially systemic infection"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases, especially systemic infection"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases, especially systemic infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated (low-grade fever) in some cases",
+            "pulse": "May be elevated in some cases"
+        },
+        "physical_findings": [
+            "Localized skin lesions",
+            "Redness and swelling of affected area",
+            "Wound with yellow-white suppurative discharge (in some cases)"
+        ],
+        "lab_values": {
+            "white blood cell count": "May be elevated",
+            "neutrophil count": "May be elevated",
+            "C-reactive protein": "May be elevated"
+        },
+        "risk_factors": [
+            "Occupational exposure to animals (farmers, butchers, fishermen, veterinarians, cooks, etc.)",
+            "Contact with animal products (meat, fish, shellfish)",
+            "Presence of skin abrasions or cuts"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with erysipeloid (localized skin lesions, redness, swelling, pain)",
+            "Positive culture for Erysipelothrix rhusiopathiae"
+        ],
+        "supportive": [
+            "History of occupational exposure to animals or animal products",
+            "Elevated inflammatory markers (white blood cell count, C-reactive protein)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cellulitis",
+        "Streptococcal infections",
+        "Staphylococcal infections"
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "disease": "Gastrointestinal stromal tumor of esophagus",
+    "icd_code": "C49A1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Most frequent symptom (36-51%)"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "20%"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "8-15%"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "1-10%"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Approximately half of cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": "Similar appearance to leiomyoma",
+            "EUS": "Similar appearance to leiomyoma; can show size, shape, and intratumoral character",
+            "FDG-PET": "SUVmax may correlate with malignancy, but difficult to distinguish from benign tumors; useful for evaluating recurrence and response to chemotherapy",
+            "DWI with ADC": "Potentially useful in differential diagnosis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation",
+            "Immunohistochemical staining (positive for c-KIT (CD117) or CD34)"
+        ],
+        "supportive": [
+            "Endoscopic ultrasound (EUS)",
+            "Computed tomography (CT)",
+            "18F-fluorodeoxyglucose positron emission tomography (FDG-PET)",
+            "Fine-needle aspiration biopsy (FNAB) under EUS"
+        ]
+    },
+    "differential_diagnoses": [
+        "Leiomyoma",
+        "Hemangioma",
+        "Schwannoma",
+        "Leiomyosarcoma",
+        "Papillary epithelioma"
+    ]
+}

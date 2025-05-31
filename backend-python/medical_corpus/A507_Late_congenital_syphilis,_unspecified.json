@@ -1,0 +1,96 @@
+{
+    "disease": "Late congenital syphilis, unspecified",
+    "icd_code": "A507",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Gummatous ulcers",
+                "severity": "Variable",
+                "pattern": "Typically manifests after 2 years of life; tends to involve nose, septum, and hard palate"
+            },
+            {
+                "name": "Periosteal lesions",
+                "severity": "Variable",
+                "pattern": "Results in saber shins and bossing of frontal and parietal bones"
+            },
+            {
+                "name": "Neurosyphilis",
+                "severity": "Usually asymptomatic",
+                "pattern": "May develop into juvenile paresis and tabes"
+            },
+            {
+                "name": "Optic atrophy",
+                "severity": "Variable",
+                "pattern": "May lead to blindness"
+            },
+            {
+                "name": "Interstitial keratitis",
+                "severity": "Variable",
+                "pattern": "Most common eye lesion; frequently recurs, often resulting in corneal scarring"
+            },
+            {
+                "name": "Sensorineural deafness",
+                "severity": "Variable",
+                "pattern": "Often progressive; may appear at any age"
+            },
+            {
+                "name": "Hutchinson incisors",
+                "severity": "Variable",
+                "pattern": "Characteristic, if infrequent, sequelae"
+            },
+            {
+                "name": "Mulberry molars",
+                "severity": "Variable",
+                "pattern": "Characteristic, if infrequent, sequelae"
+            },
+            {
+                "name": "Perioral fissures (rhagades)",
+                "severity": "Variable",
+                "pattern": "Characteristic, if infrequent, sequelae"
+            },
+            {
+                "name": "Maldevelopment of maxilla",
+                "severity": "Variable",
+                "pattern": "Results in \u201cbulldog\u201d facies; characteristic, if infrequent, sequelae"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Gummatous ulcers",
+            "Periosteal lesions (saber shins, bossing of frontal and parietal bones)",
+            "Optic atrophy",
+            "Interstitial keratitis",
+            "Sensorineural deafness",
+            "Hutchinson incisors",
+            "Mulberry molars",
+            "Perioral fissures (rhagades)",
+            "Maldevelopment of maxilla (\u201cbulldog\u201d facies)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Untreated primary or secondary syphilis in the mother",
+            "Maternal syphilis during pregnancy"
+        ],
+        "imaging_findings": {
+            "x-rays (long bones)": [
+                "Periosteal reactions",
+                "Diffuse or localized osteitis",
+                "Metaphysitis",
+                "Wimberger sign (symmetric erosions of the upper tibia)",
+                "Excessive callus formation at the ends of long bones"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical evaluation",
+            "Serologic testing of mother and child"
+        ],
+        "supportive": [
+            "Microscopic visualization of spirochetes (in samples from lesions)",
+            "Long-bone x-rays showing characteristic abnormalities"
+        ]
+    },
+    "differential_diagnoses": []
+}

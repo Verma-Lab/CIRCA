@@ -1,0 +1,47 @@
+{
+    "disease": "Indeterminate Leprosy",
+    "icd_code": "A300",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hypochromic macula",
+                "severity": "Mild",
+                "pattern": "Single or multiple lesions"
+            },
+            {
+                "name": "Reduced thermal sensitivity",
+                "severity": "Mild to Moderate",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Elevated borders (in some cases)",
+                "severity": "Mild",
+                "pattern": "Develops over time"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hypochromic lesion(s) on the skin",
+            "No nerve thickening"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Close contact with an infected individual",
+            "HIV positive (in some cases)",
+            "Genetic predisposition (possible)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of hypochromic macules with or without reduced thermal sensitivity",
+            "Biopsy compatible with indeterminate leprosy"
+        ],
+        "supportive": [
+            "History of contact with a leprosy patient",
+            "Positive skin smear (though may be sparse)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,105 @@
+{
+    "disease": "Toxoplasma meningoencephalitis",
+    "icd_code": "B582",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable, can be severe",
+                "pattern": "Subacute onset"
+            },
+            {
+                "name": "Focal neurological deficits",
+                "severity": "Variable",
+                "pattern": "Subacute onset, e.g., hemiparesis"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Sometimes present"
+            },
+            {
+                "name": "Generalized seizures",
+                "severity": "Variable",
+                "pattern": "Can occur in non-focal encephalitis"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Incoordination",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Stupor",
+                "severity": "Severe",
+                "pattern": "Disease progression"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Disease progression"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Fever can be present"
+        },
+        "physical_findings": [
+            "Focal neurological abnormalities"
+        ],
+        "lab_values": {
+            "IgG antibodies": "Usually present in immunocompromised individuals with TE",
+            "IgM antibodies": "Usually absent, unless primary infection is suspected",
+            "CSF PCR for T. gondii": "High specificity (96-100%), low sensitivity (50%)"
+        },
+        "risk_factors": [
+            "Immunocompromised individuals (especially HIV with CD4 count < 50 cells/mm3)",
+            "Consumption of undercooked meat",
+            "Unwashed fruits or vegetables",
+            "Contaminated water",
+            "Unpasteurized milk",
+            "Ingestion of oocysts from cat feces",
+            "Congenital transmission",
+            "Organ transplant",
+            "Blood transfusion"
+        ],
+        "imaging_findings": {
+            "CT scan/MRI": "Multiple contrast-enhancing lesions, predilection for basal ganglia, edema, mass effect.  Can present as single lesion or diffuse encephalitis."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Compatible clinical syndrome",
+            "Identification of one or more mass lesions by CT or MRI",
+            "Detection of the organism in a clinical sample (brain biopsy or positive CSF PCR)"
+        ],
+        "supportive": [
+            "Consistent clinical and radiographic presentation",
+            "Presence of anti-Toxoplasma IgG antibodies",
+            "Response to anti-Toxoplasma therapy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Primary CNS lymphoma",
+        "Tuberculosis",
+        "Endemic fungal infection (e.g., cryptococcosis)",
+        "Progressive multifocal leukoencephalopathy (PML)",
+        "Chagas disease",
+        "Metastatic tumors",
+        "Pyogenic brain abscess"
+    ]
+}

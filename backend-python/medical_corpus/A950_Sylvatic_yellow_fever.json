@@ -1,0 +1,128 @@
+{
+    "disease": "Sylvatic Yellow Fever",
+    "icd_code": "A950",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Present in both initial and toxic phases"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Moderate to Severe",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Moderate",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate to Severe",
+                "pattern": "Present in initial and toxic phases"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Severe",
+                "pattern": "Present in toxic phase"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Severe",
+                "pattern": "Present in toxic phase"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Severe",
+                "pattern": "Present in toxic phase"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Severe",
+                "pattern": "May occur from mouth, nose, eyes, or stomach in toxic phase"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Moderate to Severe",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Moderate",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Edema",
+                "severity": "Moderate",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Rash",
+                "severity": "Moderate",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Mild to Moderate",
+                "pattern": "Present in initial phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (high fever in toxic phase)",
+            "heart_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Jaundice (yellowing of skin and eyes)",
+            "Bleeding from various orifices"
+        ],
+        "lab_values": {
+            "viremia": "Elevated in deceased patients",
+            "neutrophils": "Elevated",
+            "indirect_bilirubin": "Elevated",
+            "aspartate_transaminase": "Elevated",
+            "international_normalized_ratio": "Elevated",
+            "creatinine": "Elevated"
+        },
+        "risk_factors": [
+            "Exposure to infected mosquitoes (Aedes, Haemagogus)",
+            "Travel to endemic areas",
+            "Lack of vaccination",
+            "Age (older individuals at higher risk)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with yellow fever",
+            "Positive RT-PCR for YFV RNA (early stages)",
+            "Positive antibody tests (ELISA, PRNT) (later stages)"
+        ],
+        "supportive": [
+            "Travel history to endemic area",
+            "Exposure to infected mosquitoes",
+            "Epidemiological context"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malaria",
+        "Leptospirosis",
+        "Viral hepatitis",
+        "Other hemorrhagic fevers",
+        "Dengue fever",
+        "Other flavivirus infections",
+        "Poisoning"
+    ]
+}

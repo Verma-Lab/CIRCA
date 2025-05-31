@@ -1,0 +1,126 @@
+{
+    "disease": "Kaposi's sarcoma of left lung",
+    "icd_code": "C4652",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pleuritic chest pain",
+                "severity": "Moderate",
+                "pattern": "3-week duration"
+            },
+            {
+                "name": "Exertional shortness of breath",
+                "severity": "Moderate",
+                "pattern": "3-week duration"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Moderate",
+                "pattern": "3-week duration"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Moderate",
+                "pattern": "10 pounds in 6 months"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in some cases, may be productive or non-productive"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hypoxemia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "oxygen_saturation": "Decreased (85% on room air in one case)"
+        },
+        "physical_findings": [
+            "Bilateral axillary and supraclavicular lymphadenopathy",
+            "Signs of right lower lung zone consolidation",
+            "Absence of skin or mucosa lesions (in some cases)",
+            "Bilateral lung crackles (in one case)",
+            "Diminished breath sounds on the right lung (in one case)",
+            "Grade +2 peripheral pitting edema (in one case)",
+            "Scattered purplish lesions in the abdomen and flanks (in one case)",
+            "Erythematous lesions on the proximal and distal part of the trachea and right middle lobe (bronchoscopy finding)"
+        ],
+        "lab_values": {
+            "CD4_count": "Low (102 cells/\u03bcL (17%) in one case, 93 cells/mm3 in another, 27 cells/microliter in another, 3 cells/mm3 in another)",
+            "Hemoglobin": "Decreased (normocytic anemia in one case)",
+            "HIV_RNA": "Elevated (134,000 copies/mL in one case, 2,990,000 copies/mL in another)"
+        },
+        "risk_factors": [
+            "AIDS",
+            "HIV infection",
+            "Low CD4 count",
+            "African origin (increased likelihood in some studies)",
+            "Extensive cutaneous disease (may progress to visceral involvement)",
+            "Poor compliance with HAART",
+            "Intravenous drug use",
+            "Anoreceptive sexual intercourse with male partners (inconsistent barrier contraception)"
+        ],
+        "imaging_findings": {
+            "CT_scan_of_chest": [
+                "Diffuse fine noncalcified nodular densities in both lungs",
+                "Small to moderate bilateral axillary, mediastinal, and hilar adenopathy",
+                "Significant worsening of fibronodular infiltrates with consolidation in the right middle and lower lobes and left upper and lower lobes",
+                "Bilateral axillary, supraclavicular, mediastinal, and hilar lymphadenopathy",
+                "Large right-sided pleural effusion",
+                "Bilateral lung infiltrates",
+                "Para-aortic lymph nodes in the upper abdomen",
+                "Multiple bilateral, right greater than left-sided, ill-defined peribronchovascular ground-glass nodules",
+                "Significant progression of ill-defined peribronchovascular infiltrates, interlobular septal thickening, and mediastinal and hilar lymphadenopathy"
+            ],
+            "Chest_X-ray": [
+                "Moderate right lung pleural effusion with scattered bilateral diffuse infiltrates",
+                "Unremarkable in one case"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathologic confirmation of atypical spindle cell proliferation with slit-like vascular spaces, lymphoplasmacytic infiltrate, and extravasated red blood cells",
+            "Positive nuclear HHV-8 immunostain in atypical cells"
+        ],
+        "supportive": [
+            "Clinical presentation with pulmonary symptoms (cough, shortness of breath, hemoptysis, etc.)",
+            "Imaging findings (nodular densities, consolidations, pleural effusion)",
+            "Low CD4 count",
+            "History of HIV/AIDS",
+            "Positive sequential thallium and negative gallium scintigraphy (in some cases)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pneumonia",
+        "Other opportunistic lung diseases",
+        "Pulmonary lymphoma",
+        "Lung cancer",
+        "Tuberculosis",
+        "Coccidioidomycosis",
+        "Pneumocystis jirovecii pneumonia",
+        "Syphilis",
+        "Acute-onset heart failure",
+        "Pulmonary embolism",
+        "Non-tuberculous mycobacterial infections",
+        "Non-cystic fibrosis bronchiectasis"
+    ]
+}

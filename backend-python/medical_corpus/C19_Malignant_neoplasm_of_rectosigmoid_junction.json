@@ -1,0 +1,90 @@
+{
+    "disease": "Malignant neoplasm of rectosigmoid junction",
+    "icd_code": "C19",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Changes in bowel habits",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Rectal bleeding",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in advanced stages",
+            "blood_pressure": "May be elevated in advanced stages",
+            "respiratory_rate": "May be elevated in advanced stages",
+            "temperature": "May be elevated in presence of infection"
+        },
+        "physical_findings": [
+            "Abdominal mass",
+            "Tenderness on palpation",
+            "Rectal bleeding",
+            "Anemia"
+        ],
+        "lab_values": {
+            "CBC": "Anemia (low hemoglobin and hematocrit)",
+            "CEA": "Elevated levels may indicate cancer",
+            "Liver function tests": "May be abnormal in advanced stages"
+        },
+        "risk_factors": [
+            "Age (over 45)",
+            "Family history of colorectal cancer",
+            "Inflammatory bowel disease (IBD)",
+            "Polyps in the colon",
+            "Diet low in fiber and high in red meat",
+            "Physical inactivity",
+            "Obesity",
+            "Smoking",
+            "Alcohol consumption"
+        ],
+        "imaging_findings": {
+            "Colonoscopy": "Visualization of tumor",
+            "CT scan": "Assessment of tumor size, location, and metastasis",
+            "MRI": "Detailed imaging of the tumor and surrounding structures",
+            "PET scan": "Detection of metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy confirming malignant cells"
+        ],
+        "supportive": [
+            "Abnormal imaging findings",
+            "Positive stool tests for blood",
+            "Clinical symptoms"
+        ]
+    },
+    "differential_diagnoses": [
+        "Inflammatory bowel disease",
+        "Diverticulitis",
+        "Hemorrhoids",
+        "Polyps",
+        "Other benign colorectal conditions"
+    ]
+}

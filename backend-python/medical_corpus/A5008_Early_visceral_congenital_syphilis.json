@@ -1,0 +1,115 @@
+{
+    "disease": "Early visceral congenital syphilis",
+    "icd_code": "A5008",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vesiculobullous eruptions",
+                "severity": "Variable",
+                "pattern": "Characteristic"
+            },
+            {
+                "name": "Macular, copper-colored rash",
+                "severity": "Variable",
+                "pattern": "On palms and soles"
+            },
+            {
+                "name": "Papular lesions",
+                "severity": "Variable",
+                "pattern": "Around nose and mouth, diaper area"
+            },
+            {
+                "name": "Petechial lesions",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Generalized lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Often occurs"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "Often occurs"
+            },
+            {
+                "name": "Failure to thrive",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Mucopurulent or blood-stained nasal discharge (snuffles)",
+                "severity": "Variable",
+                "pattern": "Characteristic"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "A few infants"
+            },
+            {
+                "name": "Choroiditis",
+                "severity": "Variable",
+                "pattern": "A few infants"
+            },
+            {
+                "name": "Hydrocephalus",
+                "severity": "Variable",
+                "pattern": "A few infants"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "A few infants"
+            },
+            {
+                "name": "Intellectual disability",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Osteochondritis (chondroepiphysitis)",
+                "severity": "Variable",
+                "pattern": "Within first 8 months, especially long bones and ribs, may cause pseudoparalysis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Characteristic skin lesions",
+            "Lymphadenopathy",
+            "Hepatosplenomegaly",
+            "Pseudoparalysis (Parrot atrophy of newborn)"
+        ],
+        "lab_values": {
+            "quantitative nontreponemal serum test (RPR, VDRL)": "Abnormal",
+            "CSF analysis": "Abnormal cell count, VDRL, protein",
+            "CBC with platelet count": "May be abnormal",
+            "Liver tests": "May be abnormal",
+            "Long-bone x-rays": "May show periosteal reactions, diffuse or localized osteitis, metaphysitis, Wimberger sign, excessive callus formation"
+        },
+        "risk_factors": [
+            "Untreated primary or secondary syphilis in mother",
+            "Maternal syphilis during pregnancy"
+        ],
+        "imaging_findings": {
+            "Long-bone x-rays": "Periosteal reactions, diffuse or localized osteitis, metaphysitis, Wimberger sign, excessive callus formation",
+            "Neuroimaging": "May be indicated"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Maternal serologic testing positive for syphilis",
+            "Clinical findings consistent with early congenital syphilis"
+        ],
+        "supportive": [
+            "Darkfield microscopy or immunofluorescent staining of skin or mucosal lesions",
+            "Quantitative nontreponemal serum test (RPR, VDRL) on neonate",
+            "Darkfield microscopy or fluorescent antibody staining of placenta or umbilical cord",
+            "CSF analysis (cell count, VDRL, protein)",
+            "Long-bone x-rays"
+        ]
+    },
+    "differential_diagnoses": []
+}

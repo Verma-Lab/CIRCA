@@ -1,0 +1,96 @@
+{
+    "disease": "Oculoglandular listeriosis",
+    "icd_code": "A3281",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eye pain",
+                "severity": "Variable",
+                "pattern": "Present in almost all published cases"
+            },
+            {
+                "name": "Redness of the eye",
+                "severity": "Variable",
+                "pattern": "Present in almost all published cases"
+            },
+            {
+                "name": "Decreased vision",
+                "severity": "Variable",
+                "pattern": "Present in almost all published cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Upset stomach",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Regional lymph node enlargement (Parinaud syndrome)",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "May be normal or elevated",
+            "pulse": "May be normal",
+            "temperature": "May be elevated or normal"
+        },
+        "physical_findings": [
+            "Injected conjunctiva",
+            "Microcystic corneal edema",
+            "Fibrinous inflammatory reaction in the pupillary level",
+            "White hypopyon",
+            "Hyperemia of the iris",
+            "Elevated intraocular pressure"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised patients",
+            "Pregnant women",
+            "Older adults"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show no evidence of vitreous debris, retinal detachment, or intraocular foreign body"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with oculoglandular listeriosis (eye pain, redness, decreased vision, potentially other systemic symptoms)",
+            "Isolation of Listeria monocytogenes from ocular or systemic samples"
+        ],
+        "supportive": [
+            "Positive serology for Listeria monocytogenes",
+            "Response to antibiotic therapy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Anterior uveitis",
+        "Endogenous endophthalmitis",
+        "Neoplastic process"
+    ]
+}

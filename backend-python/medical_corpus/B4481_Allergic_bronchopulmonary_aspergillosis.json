@@ -1,0 +1,89 @@
+{
+    "disease": "Allergic Bronchopulmonary Aspergillosis (ABPA)",
+    "icd_code": "B4481",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Wheezing",
+                "severity": "Variable",
+                "pattern": "Progressive worsening in asthma patients"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Progressive worsening in asthma patients"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Productive cough with brownish or bloody mucus"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Occasional, common in severe disease"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Occasional, common in severe disease"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Occasional, common in severe disease"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "General weakness or malaise",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Airway obstruction",
+            "Wheezing",
+            "Prolonged expiration"
+        ],
+        "lab_values": {
+            "IgE levels": ">1000 ng/mL (>417 IU/mL) - suggestive, may be lower if other criteria are met",
+            "Aspergillus-specific IgE": "Elevated - essential criterion",
+            "Aspergillus precipitins": "Positive - supportive criterion",
+            "Aspergillus IgG": "Elevated - supportive criterion",
+            "Blood eosinophil count": ">500 cells/mcL (>0.5 \u00d7 109/L) - supportive criterion, may be present previously while corticosteroid-naive",
+            "Sputum culture for Aspergillus": "Positive - supportive criterion, low sensitivity and specificity"
+        },
+        "risk_factors": [
+            "Asthma",
+            "Cystic fibrosis"
+        ],
+        "imaging_findings": {
+            "Chest x-ray": "Migratory or nonresolving infiltrates (often due to atelectasis from mucoid plugging and bronchial obstruction)",
+            "High-resolution CT": "Evidence of bronchiectasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Asthma or cystic fibrosis",
+            "Elevated Aspergillus-specific IgE or Aspergillus skin test positivity",
+            "Elevated serum IgE (>1000 ng/mL or >417 IU/mL)"
+        ],
+        "supportive": [
+            "Precipitating serum antibodies to A. fumigatus or elevated serum Aspergillus IgG by immunoassay",
+            "Radiographic pulmonary opacities consistent with ABPA",
+            "Blood eosinophilia (>500 cells/mcL [>0.5 \u00d7 109/L) currently or previously while corticosteroid-naive"
+        ]
+    },
+    "differential_diagnoses": [
+        "Invasive aspergillosis",
+        "Aspergillomas",
+        "Aspergillus pneumonia",
+        "Allergic bronchopulmonary mycosis"
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "disease": "Cytomegaloviral hepatitis",
+    "icd_code": "B251",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Low-grade fever",
+                "severity": "mild to moderate",
+                "pattern": "irregular, without diurnal variation"
+            },
+            {
+                "name": "Chills",
+                "severity": "mild",
+                "pattern": "intermittent"
+            },
+            {
+                "name": "Rigors",
+                "severity": "mild",
+                "pattern": "intermittent"
+            },
+            {
+                "name": "Diaphoresis",
+                "severity": "profuse",
+                "pattern": "during fever episodes"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "mild",
+                "pattern": "generalized"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "mild, dull",
+                "pattern": "right upper quadrant, self-resolved"
+            },
+            {
+                "name": "Cough",
+                "severity": "mild",
+                "pattern": "nighttime"
+            },
+            {
+                "name": "Malaise",
+                "severity": "variable",
+                "pattern": "can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38.3\u00b0C (100.9\u00b0F) to 39.4\u00b0C (103\u00b0F) (during illness), 37.2\u00b0C (99\u00b0F) (at presentation)",
+            "heart_rate": "88 bpm",
+            "blood_pressure": "120/80 mmHg",
+            "respiratory_rate": "12 breaths per minute"
+        },
+        "physical_findings": [
+            "No rash",
+            "No jaundice",
+            "No palpable cervical lymphadenopathy",
+            "No hepatosplenomegaly",
+            "No abdominal tenderness",
+            "Mild splenomegaly (on ultrasound)"
+        ],
+        "lab_values": {
+            "ALT": "335 unit/L (range, 5\u201340 unit/L), increased to 495 unit/L",
+            "AST": "160 unit/L (range, 9\u201348 unit/L), increased to 233 unit/L",
+            "ALKP": "254 unit/L (range, 53\u2013128 unit/L), increased to 299 unit/L",
+            "GGT": "430 unit/L (range, 8\u201354 unit/L)",
+            "Bilirubin": "normal",
+            "Serum protein": "normal",
+            "Leukocytes": "11.5 k/uL (mild leukocytosis)",
+            "CMV IgM": ">240.00 U/mL (range, <30.00 U/mL)",
+            "CMV IgG": "2.0 U/mL (range, <0.60)",
+            "CMV DNA PCR": "18353 IU/mL (range, <200 IU/mL)"
+        },
+        "risk_factors": [
+            "Immunocompetence (although rare)",
+            "Recent infection in close contact (son with Roseola)"
+        ],
+        "imaging_findings": {
+            "Abdominal ultrasound": "Mild splenomegaly, unremarkable liver",
+            "Abdominal CT": "Negative for any abdominal pathology or hepatosplenomegaly"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Elevated liver enzymes (ALT, AST, ALKP, GGT)",
+            "Positive CMV serology (IgM, IgG, PCR)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with hepatitis",
+            "Exclusion of other causes of hepatitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Drug-induced liver injury (azithromycin)",
+        "Infectious hepatitis (Hepatitis A, B, C)",
+        "Leptospirosis",
+        "Anaplasmosis",
+        "Epstein-Barr virus infection"
+    ]
+}

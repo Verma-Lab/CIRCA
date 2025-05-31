@@ -1,0 +1,65 @@
+{
+    "disease": "Cryptococcosis, unspecified",
+    "icd_code": "B459",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Variable",
+                "pattern": "Common in US Pacific Northwest outbreak, less common in other regions"
+            },
+            {
+                "name": "Central nervous system (CNS) infections",
+                "severity": "Severe",
+                "pattern": "Common, especially in non-HIV patients outside the Pacific Northwest outbreak"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Common initial presentation"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Severe",
+                "pattern": "Common, often life-threatening"
+            },
+            {
+                "name": "Disseminated infection",
+                "severity": "Severe",
+                "pattern": "Can occur, affecting multiple organ systems"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "CSF culture": {
+                "abnormal_range": "Positive for Cryptococcus"
+            },
+            "Blood culture": {
+                "abnormal_range": "Positive for Cryptococcus"
+            }
+        },
+        "risk_factors": [
+            "HIV infection",
+            "Solid organ transplantation",
+            "Malignancies",
+            "Autoimmune diseases",
+            "Hepatic cirrhosis",
+            "Immunosuppressive medications",
+            "COVID-19",
+            "Diabetes mellitus (not consistently found to be a risk factor)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture of Cryptococcus from CSF or blood"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with cryptococcosis",
+            "Imaging findings suggestive of cryptococcal infection"
+        ]
+    },
+    "differential_diagnoses": []
+}

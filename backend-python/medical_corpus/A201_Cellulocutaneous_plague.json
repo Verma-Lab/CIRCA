@@ -1,0 +1,43 @@
+{
+    "disease": "Cellulocutaneous plague",
+    "icd_code": "A20.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Swellings",
+                "severity": "Severe",
+                "pattern": "In groin, armpits, or neck"
+            },
+            {
+                "name": "Black pustules",
+                "severity": "Severe",
+                "pattern": "Covering the body"
+            },
+            {
+                "name": "Buboes",
+                "severity": "Severe",
+                "pattern": "Enlarged lymph nodes"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Buboes (enlarged lymph nodes)",
+            "Black pustules"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of buboes",
+            "Yersinia pestis identification"
+        ],
+        "supportive": [
+            "Black pustules",
+            "Epidemiological context (exposure to infected rodents or fleas)"
+        ]
+    },
+    "differential_diagnoses": []
+}

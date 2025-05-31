@@ -1,0 +1,140 @@
+{
+    "disease": "Botulism food poisoning",
+    "icd_code": "A051",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Marked fatigue",
+                "severity": "Severe",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Severe",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Vertigo",
+                "severity": "Moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Dry mouth",
+                "severity": "Moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Difficulty swallowing",
+                "severity": "Severe",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Difficulty speaking",
+                "severity": "Severe",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Abdominal swelling",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Descending flaccid paralysis",
+                "severity": "Severe",
+                "pattern": "Characteristic symptom"
+            },
+            {
+                "name": "Respiratory failure",
+                "severity": "Life-threatening",
+                "pattern": "Can occur in advanced stages"
+            },
+            {
+                "name": "Neck and arm weakness",
+                "severity": "Severe",
+                "pattern": "Progressive symptom"
+            },
+            {
+                "name": "Lower body muscle weakness",
+                "severity": "Severe",
+                "pattern": "Progressive symptom"
+            },
+            {
+                "name": "Drooping eyelids",
+                "severity": "Moderate to Severe",
+                "pattern": "Affects facial muscles"
+            },
+            {
+                "name": "Facial muscle weakness",
+                "severity": "Moderate to Severe",
+                "pattern": "Affects facial muscles"
+            },
+            {
+                "name": "Throat muscle weakness",
+                "severity": "Moderate to Severe",
+                "pattern": "Affects muscles of the throat"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Normal (no fever)",
+            "blood pressure": "Normal",
+            "heart rate": "Normal",
+            "respiratory rate": "May be decreased due to paralysis"
+        },
+        "physical_findings": [
+            "Descending flaccid paralysis",
+            "Weakness in neck and arms",
+            "Weakness in respiratory muscles",
+            "Weakness in lower body muscles",
+            "Drooping eyelids",
+            "Difficulty swallowing and speaking"
+        ],
+        "lab_values": {
+            "botulinum toxin": "Elevated levels in serum, stool, or food"
+        },
+        "risk_factors": [
+            "Consumption of improperly processed food",
+            "Home-canned or home-bottled foods",
+            "Low-acid preserved vegetables",
+            "Canned tuna",
+            "Fermented, salted, and smoked fish",
+            "Ham and sausage"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with botulism (descending flaccid paralysis)",
+            "Detection of botulinum toxin in serum, stool, or food"
+        ],
+        "supportive": [
+            "History of consumption of suspect food",
+            "Culture of C. botulinum from stool, wound, or food"
+        ]
+    },
+    "differential_diagnoses": [
+        "Stroke",
+        "Guillain-Barr\u00e9 syndrome",
+        "Myasthenia gravis"
+    ]
+}

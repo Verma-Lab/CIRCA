@@ -1,0 +1,58 @@
+{
+    "disease": "Merkel Cell Carcinoma of Scalp and Neck",
+    "icd_code": "C4A4",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless, rapidly growing cutaneous nodule",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Reddish or purple nodule",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Violaceous nodule",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless, rapidly growing cutaneous nodule",
+            "Reddish or purple nodule",
+            "Violaceous nodule"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to ultraviolet (UV) radiation",
+            "Immunosuppression (HIV, organ transplants)",
+            "Advanced age (>50 years)",
+            "Fair skin",
+            "Previous tumor disease",
+            "Male gender",
+            "Vitamin D deficiency"
+        ],
+        "imaging_findings": {
+            "Positron emission tomography/computed tomography (PET/CT)": "Important for staging, especially in head and neck area due to complex lymph drainage.  Useful in early stages to reduce resection margin and preserve organ. Also important in aftercare and advanced metastatic stages."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing features of Merkel cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (painless, rapidly growing nodule)",
+            "Immunohistochemical staining",
+            "Merkel cell polyomavirus (MCPyV) DNA detection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Amelanotic melanoma",
+        "Other cutaneous malignancies"
+    ]
+}

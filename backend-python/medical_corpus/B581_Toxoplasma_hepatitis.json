@@ -1,0 +1,90 @@
+{
+    "disease": "Toxoplasma hepatitis",
+    "icd_code": "B581",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Right upper quadrant pain",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Progressive jaundice",
+                "severity": "Moderate to Severe",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Normal upon admission"
+        },
+        "physical_findings": [
+            "Generalized jaundice",
+            "Abdominal pain in the upper quadrant"
+        ],
+        "lab_values": {
+            "Hemoglobin": "15.4 g/dL (Normal)",
+            "Leucocytes": "7850/mm3 (Normal)",
+            "Platelets": "239000/mm3 (Normal)",
+            "Glucose": "81 mg/dL (Normal)",
+            "Total Cholesterol": "109 mg/dL (Normal)",
+            "Triglycerides": "179 mg/dL (Slightly elevated)",
+            "Total Bilirubin": "12.07 mg/dL (Elevated)",
+            "Direct Bilirubin": "10.37 mg/dL (Elevated)",
+            "Indirect Bilirubin": "1.70 mg/dL (Slightly elevated)",
+            "AST": "2050 IU/L (Severely elevated)",
+            "ALT": "2777 IU/L (Severely elevated)",
+            "Alkaline Phosphatase": "198 IU/L (Slightly elevated)",
+            "GGT": "105 IU/L (Slightly elevated)",
+            "LDH": "960 IU/L (Elevated)"
+        },
+        "risk_factors": [
+            "Exposure to cattle",
+            "Swimming in a river",
+            "Consumption of raw beef meat",
+            "Cohabitation with cats",
+            "Daily consumption of energy drinks"
+        ],
+        "imaging_findings": {
+            "Abdominal Ultrasound": "No hepatomegaly, steatosis, or dilatation of biliary tract",
+            "Magnetic Cholangioresonance": "No alterations"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with hepatitis (jaundice, abdominal pain, elevated liver enzymes)",
+            "Positive liver biopsy showing Toxoplasma gondii tachyzoites"
+        ],
+        "supportive": [
+            "Elevated liver enzymes (AST, ALT, ALP, GGT)",
+            "Negative serology for other causes of hepatitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hepatitis A",
+        "Hepatitis B",
+        "Hepatitis C",
+        "Hepatitis E",
+        "Herpes virus 1 and 2",
+        "Epstein-Barr virus",
+        "Cytomegalovirus",
+        "HIV",
+        "Fasciola hepatica",
+        "Toxocara",
+        "Rickettsia rickettsii",
+        "Rickettsia typhi",
+        "Leptospira",
+        "Coxiella burnetii",
+        "Autoimmune hepatitis"
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "disease": "Adenoviral encephalitis",
+    "icd_code": "A851",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "New-onset, generalized tonic-clonic in some cases, afebrile in others"
+            },
+            {
+                "name": "Altered behavior",
+                "severity": "Variable",
+                "pattern": "Agitation, increased spontaneous speech, disorientation"
+            },
+            {
+                "name": "Choreoathetoid movements",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Influenza-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Cough, fever in some cases"
+            },
+            {
+                "name": "Upper respiratory illness",
+                "severity": "Mild to moderate",
+                "pattern": "More common in children"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "More common in children"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild to moderate",
+                "pattern": "More common in children"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Mild to moderate",
+                "pattern": "Persistent in some cases"
+            },
+            {
+                "name": "Upper limb weakness",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "pulse": "Increased (160-170 bpm in one case)",
+            "respiratory_rate": "Increased (28 breaths/min in one case)",
+            "temperature": "Elevated (39.5\u00b0C in one case)"
+        },
+        "physical_findings": [
+            "Black eye (in one case)",
+            "Normal systemic examination (in one case)"
+        ],
+        "lab_values": {
+            "CSF": {
+                "pleocytosis": "Lymphocytic",
+                "protein": "Elevated",
+                "glucose": "Normal",
+                "RBCs": "Present"
+            },
+            "blood": {
+                "renal_function": "Abnormal in one case (azotemia, elevated serum potassium)"
+            },
+            "urine": {
+                "RBCs": "Numerous in one case",
+                "protein": "Subnephrotic range in one case"
+            }
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT_head": "Normal in one case",
+            "MRI_brain": {
+                "normal": "In one case",
+                "abnormal": "High intensity in subcortical white matter and caudate nuclei bilaterally (in one case), 3.1 mm nodule in right middle frontal gyrus (in one case)"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Altered mental status without alternative cause",
+            "Positive adenovirus PCR in CSF"
+        ],
+        "supportive": [
+            "Fever",
+            "New-onset focal neurological deficit",
+            "New-onset seizures",
+            "CSF white cell count >5/\u03bcL",
+            "New lesions on neuroimaging",
+            "Abnormal electroencephalography"
+        ]
+    },
+    "differential_diagnoses": [
+        "Herpes simplex encephalitis"
+    ]
+}

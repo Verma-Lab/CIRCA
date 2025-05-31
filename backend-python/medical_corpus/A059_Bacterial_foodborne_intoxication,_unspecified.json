@@ -1,0 +1,47 @@
+{
+    "disease": "Bacterial foodborne intoxication, unspecified",
+    "icd_code": "A059",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of improperly stored or prepared food",
+            "Consumption of food contaminated with toxin-producing bacteria"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of bacterial foodborne intoxication (e.g., nausea, vomiting, abdominal pain, diarrhea)"
+        ],
+        "supportive": [
+            "History of consumption of potentially contaminated food",
+            "Epidemiological link to other cases of foodborne illness"
+        ]
+    },
+    "differential_diagnoses": []
+}

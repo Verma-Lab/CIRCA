@@ -1,0 +1,94 @@
+{
+    "disease": "Cytomegaloviral pneumonitis",
+    "icd_code": "B25.0",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High-grade (38\u00b0C)",
+                "pattern": "Prolonged"
+            },
+            {
+                "name": "Headache",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dry, non-productive cough",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Thoracic pleuritic pain",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Present",
+                "pattern": "On exertion, worsening"
+            },
+            {
+                "name": "Hypoxemia",
+                "severity": "Worsening",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38\u00b0C (Febrile)",
+            "heart_rate": "Tachycardia",
+            "respiratory_rate": "Not specified",
+            "blood_pressure": "Not specified",
+            "oxygen_saturation": "Decreased, requiring oxygen supplementation"
+        },
+        "physical_findings": [
+            "Basal left crackles in pulmonary auscultation"
+        ],
+        "lab_values": {
+            "white_blood_cells": "Elevated (6620-12,224 WBC/\u03bcL)",
+            "lymphocytes": "Elevated (48%-50.5%, with 9% atypical lymphocytes)",
+            "monocytes": "Elevated (10.4%)",
+            "C-reactive protein": "Elevated (2.9-49 mg/dL)",
+            "alanine_aminotransferase": "Elevated (74-384 U/L)",
+            "aspartate_aminotransferase": "Elevated (52-205 U/L)",
+            "lactate_dehydrogenase": "Elevated (554 U/L)",
+            "albumin": "Decreased (3.24 g/dL)",
+            "CMV IgG": "Positive",
+            "CMV IgM": "Positive",
+            "CMV IgG avidity": "Low",
+            "CMV PCR (blood)": "Positive (23,595 cp/mL)",
+            "CMV PCR (BAL)": "Positive"
+        },
+        "risk_factors": [
+            "Immunocompetence (rare occurrence)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Small left-sided pleural effusion; later showed parenchymal condensations in both lung lobes with internal air bronchogram, bilateral pleural effusion (more on the left), and small pericardial effusion",
+            "CT_scan": "Bilateral infiltrate with internal air bronchogram; parenchymal condensations in the postero-inferior region in both lung lobes, with the condensation on the left being more extensive and presenting some internal air bronchogram; bilateral pleural effusion, more on the left; small pericardial effusion"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pneumonia (fever, cough, dyspnea)",
+            "Positive CMV serology (IgM and IgG)",
+            "Positive CMV PCR in blood and/or respiratory samples (BAL)"
+        ],
+        "supportive": [
+            "Atypical lymphocytosis",
+            "Mildly elevated serum transaminases",
+            "Imaging findings consistent with pneumonia (infiltrates, ground-glass opacities)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Influenza",
+        "Adenovirus",
+        "Other viral pneumonias",
+        "SARS-CoV-2 pneumonia"
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "disease": "Isosporiasis (Cystoisosporiasis)",
+    "icd_code": "A073",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chronic diarrhea",
+                "severity": "Severe",
+                "pattern": "Recurrent, worsening and improving cycles, aggravated after meals, relieved with fasting"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Severe (35 kg in 2 years)",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Moderate",
+                "pattern": "Exacerbated 15 days prior to admission"
+            },
+            {
+                "name": "Watery and foul-smelling stools",
+                "severity": "Moderate",
+                "pattern": "3-4 times per day"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild",
+                "pattern": "Not present in one case, present in others"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to Moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Moderate",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to Moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Steatorrhea",
+                "severity": "Mild",
+                "pattern": "Present in protracted cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to Moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Cachexia",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Low (82/64 mm Hg)",
+            "temperature": "Low (35.8\u2103)",
+            "pulse_rate": "Normal (70 beats per min)",
+            "respiratory_rate": "Normal (18 breaths per min)"
+        },
+        "physical_findings": [
+            "Decreased skin turgor",
+            "Soft abdomen",
+            "Increased bowel sounds",
+            "Gaseous dilatation of the colon with signs of ileus (radiograph)",
+            "Villous atrophy with loss of villi (biopsy)",
+            "Nodular appearance of the mucosal surface with loss of villi (endoscopy)"
+        ],
+        "lab_values": {
+            "WBC count": "Increased (10,280 per mm3)",
+            "Eosinophils": "High (36.8-39.9%)",
+            "Protein levels": "Lowered",
+            "Albumin levels": "Lowered (1.1 g/dl)",
+            "Aminotransferases": "Elevated (113 IU/L AST, 119 IU/L ALT)",
+            "Serum sodium": "Decreased (127 mM/L)",
+            "Serum potassium": "Decreased (3.1 mM/L)",
+            "Prothrombin time": "Prolonged (INR 2.0)",
+            "Fibrinogen": "Decreased (93 mg/dl)",
+            "Hemoglobin": "Decreased (9.6-10.1 g/dl)",
+            "Hematocrit": "Decreased (35.7%)",
+            "Iron": "Deficient",
+            "Folate": "Deficient",
+            "Stool fatty acid contents": "Slightly increased"
+        },
+        "risk_factors": [
+            "Alcoholism (heavy drinking for >30 years)",
+            "Immunocompromised state (HIV, other immunosuppressive conditions)",
+            "Ingestion of contaminated food or water"
+        ],
+        "imaging_findings": {
+            "Abdominal radiograph": "Gaseous dilatation of the colon with signs of ileus",
+            "Capsule endoscopy": "Loss of villi in the whole small bowel with hyperemic lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of various life cycle stages of C. belli (trophozoites, schizonts, merozoites, macrogamonts, microgamonts) in intestinal biopsy"
+        ],
+        "supportive": [
+            "Chronic diarrhea",
+            "Weight loss",
+            "High peripheral blood eosinophilia",
+            "Detection of C. belli oocysts in stool (though this can be negative)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Inflammatory bowel disease",
+        "Irritable bowel syndrome",
+        "Other intestinal infections (bacterial, viral, parasitic)"
+    ]
+}

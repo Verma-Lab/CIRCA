@@ -1,0 +1,38 @@
+{
+    "disease": "Malignant neoplasm of mediastinum, part unspecified",
+    "icd_code": "C383",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "General unwellness",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to severe illness depending on cancer progression and size"
+            },
+            {
+                "name": "No symptoms",
+                "severity": "None",
+                "pattern": "Possible in early stages or slow-growing cancers"
+            },
+            {
+                "name": "Pressure on organs",
+                "severity": "Variable",
+                "pattern": "If the cancer is large, it can press on organs like the esophagus, trachea, or heart, leading to related symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Uncontrolled cell multiplication in the mediastinal tissue"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Mesothelioma"
+    ]
+}

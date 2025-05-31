@@ -1,0 +1,96 @@
+{
+    "disease": "Marburg virus disease (MVD)",
+    "icd_code": "A983",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "severe",
+                "pattern": "abrupt onset"
+            },
+            {
+                "name": "Severe headache",
+                "severity": "severe",
+                "pattern": "abrupt onset"
+            },
+            {
+                "name": "Severe malaise",
+                "severity": "severe",
+                "pattern": "abrupt onset"
+            },
+            {
+                "name": "Muscle aches and pains",
+                "severity": "common",
+                "pattern": "early onset"
+            },
+            {
+                "name": "Severe watery diarrhoea",
+                "severity": "severe",
+                "pattern": "begins on day 3"
+            },
+            {
+                "name": "Abdominal pain and cramping",
+                "severity": "severe",
+                "pattern": "begins on day 3"
+            },
+            {
+                "name": "Nausea and vomiting",
+                "severity": "severe",
+                "pattern": "begins on day 3"
+            },
+            {
+                "name": "Non-itchy rash",
+                "severity": "reported",
+                "pattern": "2-7 days after symptom onset"
+            },
+            {
+                "name": "Haemorrhagic manifestations (fresh blood in vomitus and faeces, bleeding from nose, gums, vagina, venepuncture sites)",
+                "severity": "severe",
+                "pattern": "from day 5"
+            },
+            {
+                "name": "Confusion, irritability, aggression",
+                "severity": "can occur",
+                "pattern": "central nervous system involvement"
+            },
+            {
+                "name": "Orchitis (inflammation of one or both testicles)",
+                "severity": "occasional",
+                "pattern": "late phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "high fever"
+        },
+        "physical_findings": [
+            "rash (non-itchy)",
+            "haemorrhagic manifestations",
+            "signs of central nervous system involvement"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "prolonged exposure to mines or caves inhabited by Rousettus fruit bat colonies",
+            "direct contact with blood, secretions, organs, or other bodily fluids of infected people",
+            "contact with surfaces and materials contaminated with infected fluids",
+            "contact with infected injection equipment",
+            "needle-stick injuries",
+            "participation in burial ceremonies involving direct contact with the deceased"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "clinical presentation consistent with MVD",
+            "laboratory confirmation of Marburg virus infection"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "malaria",
+        "typhoid fever",
+        "shigellosis",
+        "meningitis",
+        "other viral haemorrhagic fevers"
+    ]
+}

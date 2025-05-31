@@ -1,0 +1,118 @@
+{
+    "disease": "Chlamydial conjunctivitis",
+    "icd_code": "A740",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Watery discharge",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Foreign body sensation",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Red eye",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Swollen eyelids",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Mucopurulent discharge",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hyperemia of tarsal conjunctiva",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Swollen lymph nodes around the eyes",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Corneal subepithelial infiltrates",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Follicular conjunctivitis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Pseudomembrane",
+                "severity": "Variable",
+                "pattern": "May be present in infants"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Conjunctival hyperemia",
+            "Follicular reaction",
+            "Mucopurulent discharge",
+            "Corneal infiltrates (subepithelial)",
+            "Swollen eyelids",
+            "Swollen lymph nodes (periorbital)"
+        ],
+        "lab_values": {
+            "PCR of conjunctival lavage": {
+                "abnormal": "Positive for Chlamydia trachomatis"
+            },
+            "Giemsa stain of conjunctival lavage": {
+                "abnormal": "Presence of basophilic intracytoplasmic inclusions"
+            },
+            "Urine PCR": {
+                "abnormal": "Positive for Chlamydia trachomatis (may be used to detect genital infection)"
+            }
+        },
+        "risk_factors": [
+            "Sexual activity",
+            "New sexual partner within 2 months",
+            "Contact with genital secretions of someone with chlamydia",
+            "Sharing contaminated items (towels, bedding)",
+            "Swimming in contaminated pools (rare)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion based on symptoms and history",
+            "Positive PCR for Chlamydia trachomatis in conjunctival lavage"
+        ],
+        "supportive": [
+            "Positive Giemsa stain showing intracytoplasmic inclusions",
+            "History of genital chlamydia infection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Allergic conjunctivitis",
+        "Other infectious conjunctivitis",
+        "Viral conjunctivitis",
+        "Bacterial conjunctivitis (non-chlamydial)"
+    ]
+}

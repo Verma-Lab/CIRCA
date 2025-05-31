@@ -1,0 +1,89 @@
+{
+    "disease": "Squamous cell carcinoma of skin of left upper eyelid, including canthus",
+    "icd_code": "C441291",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless nodular or plaque-like lesion",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Irregular rolled edges",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Chronic scaling with roughened patches",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fissuring of the skin",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pearly borders",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Telangiectasia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Central ulceration",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Suspicious skin lesion in sun-exposed skin with actinic keratosis, especially in high-risk patients",
+            "Previous skin lesions",
+            "Complete ophthalmic examination, including ocular motility and assessment of proptosis",
+            "Assessment of entire face and sun-exposed areas, facial sensation",
+            "Palpation of regional lymph nodes: preauricular, sublingual, submandibular, and cervical",
+            "Assessment for perineural invasion",
+            "Assessment for orbital invasion"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Aging",
+            "Longstanding ultraviolet radiation exposure",
+            "Oil derivates and arsenic exposure",
+            "Cigarette smoke exposure",
+            "Human Papilloma Virus infection (HPV)",
+            "Human Immunodeficiency Virus infection (HIV)",
+            "Xeroderma pigmentosum",
+            "Actinic keratosis (AK)",
+            "Squamous intraepithelial neoplasia (Bowen's disease)",
+            "Albinism",
+            "Old burns",
+            "Chronic ulcers",
+            "Immunosuppression",
+            "Solid organ transplantation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Full thickness biopsy demonstrating full thickness atypia with increased mitotic activity of the squamous cells"
+        ],
+        "supportive": [
+            "Suspicious clinical presentation",
+            "Presence of precursor lesions (actinic keratosis, Bowen's disease)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Actinic keratosis",
+        "Squamous cell carcinoma in situ (Bowen's disease)",
+        "Keratoacanthoma",
+        "Cutaneous horn",
+        "Basal cell carcinoma",
+        "Other benign or malignant conditions of the eyelid skin"
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "disease": "Acute hepatitis C with hepatic coma",
+    "icd_code": "B1711",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty thinking",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Loss of consciousness",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Vital signs may be abnormal depending on the severity of hepatic encephalopathy and coma.  Specific ranges not provided in text."
+        },
+        "physical_findings": [
+            "Signs of liver damage (specific findings not detailed in text)"
+        ],
+        "lab_values": {
+            "alanine transaminase (ALT)": {
+                "abnormal_range": "10 to 20 times the upper limit of normal"
+            },
+            "HCV RNA": {
+                "abnormal_range": "Positive, indicating active infection"
+            },
+            "HCV antibody": {
+                "abnormal_range": "Positive, indicating past or present infection"
+            }
+        },
+        "risk_factors": [
+            "Injection drug use",
+            "Blood transfusions before 1992",
+            "Exposure to infected blood",
+            "Men who have sex with men (particularly with HIV or unprotected anal intercourse)",
+            "Perinatal transmission"
+        ],
+        "imaging_findings": {
+            "abdominal ultrasonography": {
+                "findings": "May show signs of liver damage, cirrhosis, or hepatocellular carcinoma (in chronic cases)"
+            },
+            "upper endoscopy": {
+                "findings": "May reveal esophageal varices (in chronic cases)"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive HCV RNA test confirming active infection",
+            "Symptoms and signs consistent with hepatic encephalopathy and coma"
+        ],
+        "supportive": [
+            "Elevated ALT levels",
+            "Positive HCV antibody test",
+            "History of risk factors for HCV infection"
+        ]
+    },
+    "differential_diagnoses": []
+}

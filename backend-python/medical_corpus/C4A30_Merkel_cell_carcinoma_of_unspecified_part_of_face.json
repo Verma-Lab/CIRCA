@@ -1,0 +1,75 @@
+{
+    "disease": "Merkel cell carcinoma of unspecified part of face",
+    "icd_code": "C4A30",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin growth",
+                "severity": "Variable",
+                "pattern": "Most often the first symptom; can be a mole, freckle, or bump that changes size, shape, or color; may grow fast or bleed easily after minor injury"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Mild to moderate",
+                "pattern": "May be present, as in the case report"
+            },
+            {
+                "name": "Pain",
+                "severity": "Usually absent",
+                "pattern": "Often asymptomatic"
+            },
+            {
+                "name": "Erythematous plaque",
+                "severity": "Variable",
+                "pattern": "May be present, as in the case report"
+            },
+            {
+                "name": "Induration and nodules",
+                "severity": "Variable",
+                "pattern": "May be present, as in the case report"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Rapidly growing, asymptomatic, firm, red-violaceous nodule on sun-exposed skin",
+            "May present as a subcutaneous nodule without overlying skin changes",
+            "5 \u00d7 3\u2013cm nodular lesion on the right side of the cheek with swelling of the right upper lip (case report)",
+            "Erythematous plaque on the right upper lip extending to the nasolabial fold (case report)",
+            "Induration and nodules felt under the plaque (case report)"
+        ],
+        "lab_values": {
+            "Complete blood count": "May show high white blood cell count, platelet count, and creatinine (case report)"
+        },
+        "risk_factors": [
+            "Long-term sun exposure",
+            "Weakened immune system",
+            "Advancing age (most often in people older than 50)",
+            "Skin that sunburns easily",
+            "Less melanin in the skin",
+            "Merkel cell polyomavirus (MCPyV) infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Skin biopsy showing dermal proliferation of small, blue cells in sheets or a trabecular array; cells contain scant cytoplasm and round nuclei containing finely granular chromatin and inconspicuous nucleoli; numerous mitotic figures are typically visible; tumor may demonstrate vascular invasion, perineural invasion, or cellular necrosis",
+            "Immunohistochemistry: positive for cytokeratin-20, neuron-specific enolase, epithelial membrane antigen, CAM 5.2, and neuroendocrine markers such as synaptophysin and chromogranin; negative for TTF-1, S-100, and leukocyte-common antigen"
+        ],
+        "supportive": [
+            "Clinical presentation: rapidly growing, asymptomatic, firm, red-violaceous nodule on sun-exposed skin"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Amelanotic melanoma",
+        "Squamous cell carcinoma",
+        "Epidermal inclusion cyst",
+        "Pyogenic granuloma",
+        "Lymphoma",
+        "Ewing sarcoma",
+        "Neuroblastoma",
+        "Melanoma",
+        "Small cell lung cancer"
+    ]
+}

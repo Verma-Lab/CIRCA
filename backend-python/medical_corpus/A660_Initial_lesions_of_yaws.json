@@ -1,0 +1,57 @@
+{
+    "disease": "Initial lesions of yaws",
+    "icd_code": "A660",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Papilloma",
+                "severity": "Variable",
+                "pattern": "Single initial lesion, can ulcerate"
+            },
+            {
+                "name": "Ulcer",
+                "severity": "Variable",
+                "pattern": "Develops from papilloma, can be weeping"
+            },
+            {
+                "name": "Multiple lesions",
+                "severity": "Variable",
+                "pattern": "Can occur after initial lesion, widespread"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Wart-like tumor (papilloma)",
+            "Ulcerated lesion",
+            "Weeping lesion",
+            "Lesions primarily on limbs"
+        ],
+        "lab_values": {
+            "TPPA": "Positive in yaws and syphilis",
+            "RPR": "Positive in yaws and syphilis",
+            "PCR": "Detects T. pallidum pertenue DNA"
+        },
+        "risk_factors": [
+            "Contact with infected person",
+            "Poor hygiene",
+            "Poverty",
+            "Tropical climate",
+            "Living in rural areas with limited access to healthcare"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of papilloma or ulcerative lesion"
+        ],
+        "supportive": [
+            "Positive serological tests (TPPA, RPR)",
+            "Positive PCR for T. pallidum pertenue DNA"
+        ]
+    },
+    "differential_diagnoses": [
+        "Syphilis",
+        "Other ulcerative skin lesions (e.g., caused by H. ducreyi)"
+    ]
+}

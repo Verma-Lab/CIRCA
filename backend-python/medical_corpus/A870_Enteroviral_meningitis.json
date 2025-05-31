@@ -1,0 +1,122 @@
+{
+    "disease": "Enteroviral Meningitis",
+    "icd_code": "A870",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Moderate to Severe",
+                "pattern": "Persistent, dull, diffuse, lasting for two weeks, occasionally associated with vomiting"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate",
+                "pattern": "Intermittent, with vomiting 1-2 times per day"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Moderate",
+                "pattern": "Spinning sensation, episodes lasting 3-5 minutes, multiple episodes throughout the day"
+            },
+            {
+                "name": "Tinnitus",
+                "severity": "Mild",
+                "pattern": "Bilateral, intermittent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Absent",
+                "pattern": "Not reported"
+            },
+            {
+                "name": "Neck Stiffness",
+                "severity": "Absent",
+                "pattern": "Not reported"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Not specified",
+                "pattern": "Not specified"
+            },
+            {
+                "name": "Altered Consciousness",
+                "severity": "Absent",
+                "pattern": "Not reported"
+            },
+            {
+                "name": "Papilledema",
+                "severity": "Early, bilateral",
+                "pattern": "Blurring of nasal disc margin"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "pulse": "86 bpm",
+            "blood_pressure": "120/70 mmHg",
+            "temperature": "98.8F",
+            "oxygen_saturation": "97% on room air",
+            "blood_glucose": "145 mg/dl"
+        },
+        "physical_findings": [
+            "Conscious and oriented",
+            "Regular pulse",
+            "Normal blood pressure",
+            "Normal temperature",
+            "Normal oxygen saturation",
+            "Early bilateral papilledema",
+            "No signs of cerebellar involvement or orthostatic hypotension",
+            "Normal examination of other systems"
+        ],
+        "lab_values": {
+            "CSF": {
+                "opening_pressure": "Elevated",
+                "leukocytosis": "Lymphocyte-predominant",
+                "pleocytosis": "Present"
+            },
+            "blood": {
+                "antinuclear_antibodies": "Negative",
+                "Mantoux": "Negative"
+            },
+            "CSF_culture": "No growth",
+            "PCR": {
+                "enterovirus": "Positive",
+                "cytomegalovirus": "Negative",
+                "herpes_simplex_virus_1_2": "Negative",
+                "human_herpes_virus": "Negative",
+                "human_parechovirus": "Negative",
+                "varicella_zoster_virus": "Negative",
+                "Mycobacterium_tuberculosis": "Negative",
+                "non-tuberculous_mycobacteria": "Negative"
+            }
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "MRI_brain_with_angiography_and_venography_with_whole_spine_screening": "Features suggesting IIH such as empty sella with perioptic nerve sheath CSF space prominence and mild tortuous orbital segments of bilateral optic nerves",
+            "chest_x-ray": "Normal"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (headache, nausea, dizziness etc.)",
+            "CSF pleocytosis",
+            "Positive PCR for enterovirus"
+        ],
+        "supportive": [
+            "Elevated CSF opening pressure",
+            "Imaging findings suggestive of IIH"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign paroxysmal positional vertigo (BPPV)",
+        "Posterior circulatory stroke",
+        "Idiopathic intracranial hypertension (IIH)",
+        "Herpes simplex virus (HSV) meningitis",
+        "Human herpesvirus meningitis",
+        "HIV meningitis",
+        "Fungal meningitis (histoplasmosis)",
+        "Cryptococcal meningitis",
+        "Tuberculous meningitis",
+        "Autoimmune meningitis",
+        "Arteriovenous malformations"
+    ]
+}

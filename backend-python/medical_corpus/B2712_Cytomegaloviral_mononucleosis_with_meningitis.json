@@ -1,0 +1,86 @@
+{
+    "disease": "Cytomegaloviral mononucleosis with meningitis",
+    "icd_code": "B2712",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mononucleosis-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Meningitis symptoms",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Enlarged liver or spleen",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "other": "May vary depending on severity of infection and involvement of other organs"
+        },
+        "physical_findings": [
+            "Enlarged or tender liver or spleen",
+            "Skin rash"
+        ],
+        "lab_values": {
+            "CMV DNA serum PCR test": "Positive for CMV DNA",
+            "CMV antibody test": "Positive for CMV antibodies"
+        },
+        "risk_factors": [
+            "Weakened immune system (e.g., HIV/AIDS)",
+            "Pregnancy",
+            "Contact with infected bodily fluids (saliva, urine, blood, tears, semen, breast milk)",
+            "Organ transplantation",
+            "Blood transfusion"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with CMV mononucleosis and meningitis",
+            "Positive CMV DNA serum PCR test or positive CMV antibody test"
+        ],
+        "supportive": [
+            "Enlarged liver or spleen",
+            "Skin rash",
+            "Abnormal vital signs"
+        ]
+    },
+    "differential_diagnoses": []
+}

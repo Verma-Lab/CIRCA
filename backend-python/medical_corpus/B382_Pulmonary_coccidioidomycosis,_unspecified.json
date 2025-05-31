@@ -1,0 +1,77 @@
+{
+    "disease": "Pulmonary coccidioidomycosis, unspecified",
+    "icd_code": "B382",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in approximately 40% of symptomatic cases, typically 1-3 weeks post-exposure"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in approximately 40% of symptomatic cases, typically 1-3 weeks post-exposure"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Present in approximately 40% of symptomatic cases, typically 1-3 weeks post-exposure"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in approximately 40% of symptomatic cases, typically 1-3 weeks post-exposure"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Present in approximately 40% of symptomatic cases, typically 1-3 weeks post-exposure"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Present in approximately 40% of symptomatic cases, typically 1-3 weeks post-exposure"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Present in approximately 40% of symptomatic cases, typically 1-3 weeks post-exposure"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Not specified in provided text, but severe cases may present with abnormal vital signs indicative of respiratory distress or sepsis"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "serologic_tests": {
+                "IgM": "Positive early in infection",
+                "IgG": "Allows for assessment of disease severity"
+            },
+            "culture": "Can be performed on tissue and respiratory specimens, but sputum culture can be difficult",
+            "microscopy": "Can detect spherules in tissue or respiratory secretions; low sensitivity",
+            "urinary_antigen": "Not widely used, may be useful in immunocompromised patients with severe disease",
+            "PCR": "FDA-approved PCR available for detection from lower respiratory specimens"
+        },
+        "risk_factors": [
+            "Occupations and activities increasing dust exposure (construction, excavation, dust storms)",
+            "Immunocompromised states (HIV, diabetes, hematologic malignancies, organ transplant, corticosteroid use)",
+            "Age over 40 years",
+            "African, Filipino, or Hispanic ancestry",
+            "Incarceration",
+            "Pregnancy (increased risk in women)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serologic tests (IgM and/or IgG antibodies)",
+            "Positive culture",
+            "Microscopic detection of spherules (low sensitivity)",
+            "Positive PCR"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

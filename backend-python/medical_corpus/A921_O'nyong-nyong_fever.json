@@ -1,0 +1,86 @@
+{
+    "disease": "O'nyong-nyong fever",
+    "icd_code": "A921",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Initial"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Severe",
+                "pattern": "Crippling, primarily in large joints, without joint effusion"
+            },
+            {
+                "name": "Maculopapular rash",
+                "severity": "Generalized",
+                "pattern": "Often itchy"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Present",
+                "pattern": "Posterior cervical"
+            },
+            {
+                "name": "Headache",
+                "severity": "Present",
+                "pattern": "Initial"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Present",
+                "pattern": "Red eyes, no discharge"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Present",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Present",
+                "pattern": "General"
+            },
+            {
+                "name": "Buccal and palatal enanthema",
+                "severity": "Occasional",
+                "pattern": "Rash"
+            },
+            {
+                "name": "Bleeding gums or nosebleeds",
+                "severity": "Rare",
+                "pattern": "Occasional"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lymphadenopathy (especially posterior cervical)",
+            "Joint pain (without effusion)",
+            "Maculopapular rash"
+        ],
+        "lab_values": {
+            "IgM antibody": "Elevated levels specific to O'nyong-nyong virus"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (fever, arthralgia, rash, lymphadenopathy)"
+        ],
+        "supportive": [
+            "Positive IgM antibody test for O'nyong-nyong virus",
+            "Virus isolation from serum samples"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chikungunya fever",
+        "Dengue fever",
+        "Measles",
+        "Malaria",
+        "Rubella"
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "disease": "Chlamydial lymphogranuloma (venereum)",
+    "icd_code": "A55",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Genital/rectal/oral ulcer or papule",
+                "severity": "Mild to severe",
+                "pattern": "Early stage, may be painless and heal quickly"
+            },
+            {
+                "name": "Proctitis",
+                "severity": "Mild to severe",
+                "pattern": "Rectal pain, bloody or mucopurulent discharge, tenesmus, constipation.  Can be chronic and lead to strictures and fistulas."
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Mild to severe",
+                "pattern": "Inguinal, femoral, or anorectal; may be unilateral, tender, fluctuant, suppurative, leading to bubo formation.  Can involve pelvic lymph nodes in women."
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Secondary stage"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Mild to moderate",
+                "pattern": "Secondary stage"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Secondary stage"
+            },
+            {
+                "name": "Genital lymphedema (elephantiasis)",
+                "severity": "Severe",
+                "pattern": "Late stage, untreated infection"
+            },
+            {
+                "name": "Rectal fibrosis and/or strictures",
+                "severity": "Severe",
+                "pattern": "Late stage, untreated infection"
+            },
+            {
+                "name": "Anal fistulas",
+                "severity": "Severe",
+                "pattern": "Late stage, untreated infection"
+            },
+            {
+                "name": "Sinus tracts",
+                "severity": "Variable",
+                "pattern": "May drain pus or blood"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "May be present in secondary stage"
+        },
+        "physical_findings": [
+            "Genital, oral, or rectal ulcerations or papules",
+            "Inguinal, femoral, or anorectal lymphadenopathy",
+            "Bubo formation",
+            "Fluctuant or suppurative lymphadenopathy",
+            "Genital lymphedema",
+            "Rectal fibrosis and/or strictures",
+            "Anal fistulas",
+            "Sinus tracts"
+        ],
+        "lab_values": {
+            "Chlamydia trachomatis NAAT": {
+                "abnormal": "Positive for L1-L3 serovars"
+            },
+            "Rectal Gram stain": {
+                "abnormal": ">10 white blood cells (WBCs)"
+            },
+            "Chlamydia serology (complement fixation or microimmunofluorescence)": {
+                "abnormal": "Elevated antibody levels (not routinely used for diagnosis)"
+            }
+        },
+        "risk_factors": [
+            "Male sex",
+            "Men who have sex with men (MSM)",
+            "Presence of other STIs (excluding gonorrhea and syphilis)",
+            "HIV infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of proctitis (rectal bleeding, mucoid/hemopurulent discharge, abdominal/anal pain, pain with defecation, constipation, tenesmus)",
+            "Presence of inguinal, femoral, or anorectal lymphadenopathy or generalized genital lymphedema",
+            "Genital, oral, or rectal ulcerations or papules"
+        ],
+        "supportive": [
+            "Positive Chlamydia trachomatis NAAT for L1-L3 serovars",
+            "Elevated Chlamydia serology (complement fixation or microimmunofluorescence) titers",
+            "Rectal Gram stain with >10 WBCs"
+        ]
+    },
+    "differential_diagnoses": [
+        "Inflammatory bowel disease",
+        "Other bacterial infections causing abscesses"
+    ]
+}

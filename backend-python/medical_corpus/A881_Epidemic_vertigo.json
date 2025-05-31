@@ -1,0 +1,43 @@
+{
+    "disease": "Epidemic vertigo",
+    "icd_code": "A88.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vertigo",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Giddiness",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Vertigo"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Benign paroxysmal positional vertigo (BPPV)",
+        "Meniere's disease",
+        "Acute onset vertigo",
+        "Labyrinthitis",
+        "Vestibular neuritis",
+        "Cholesteatoma"
+    ]
+}

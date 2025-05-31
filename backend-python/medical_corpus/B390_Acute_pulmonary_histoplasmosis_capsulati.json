@@ -1,0 +1,36 @@
+{
+    "disease": "Acute pulmonary histoplasmosis capsulati",
+    "icd_code": "B390",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Mild to severe",
+                "pattern": "Can resemble community-acquired pneumonia, tuberculosis, sarcoidosis, or malignancy"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised status",
+            "Exposure to areas with high endemicity (Mississippi and Ohio River Valleys, Central and South America, etc.)",
+            "Exposure to bird or bat droppings",
+            "Environmental disruptions",
+            "Climate change",
+            "Increased travel"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Community-acquired pneumonia",
+        "Tuberculosis",
+        "Sarcoidosis",
+        "Malignancy"
+    ]
+}

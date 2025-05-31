@@ -1,0 +1,17 @@
+{
+    "disease": "Other acute paralytic poliomyelitis",
+    "icd_code": "A8039",
+    "parameters": {
+        "symptoms": [],
+        "reversion": null,
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {},
+    "differential_diagnoses": [
+        "acute flaccid myelitis (G04.82)"
+    ]
+}

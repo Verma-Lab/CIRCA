@@ -1,0 +1,57 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves of abdomen",
+    "icd_code": "C474",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Growing lump or mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Muscle movement difficulty",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Numbness or tingling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Growing lump or mass",
+            "Swelling"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in the peripheral nerves of the abdomen"
+        ],
+        "supportive": [
+            "Clinical symptoms (pain, weakness, lump)",
+            "Imaging findings (if available)"
+        ]
+    },
+    "differential_diagnoses": []
+}

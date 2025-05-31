@@ -1,0 +1,102 @@
+{
+    "disease": "Pulmonary Anthrax",
+    "icd_code": "A221",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shortness of breath",
+                "severity": "Severe",
+                "pattern": "Developed 3 days prior to admission, rapidly worsening"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "Developed 3 days prior to admission"
+            },
+            {
+                "name": "Cough",
+                "severity": "Moderate",
+                "pattern": "Developed 3 days prior to admission, productive of pink-tinged sputum"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Moderate",
+                "pattern": "Present for 3 days prior to admission"
+            },
+            {
+                "name": "Chest heaviness",
+                "severity": "Moderate",
+                "pattern": "Present for 3 days prior to admission"
+            },
+            {
+                "name": "Chills",
+                "severity": "Moderate",
+                "pattern": "Present for 3 days prior to admission"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild",
+                "pattern": "Present for 1 week prior to admission (in one case)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "38/min (increased)",
+            "blood_pressure": "128/60 mm Hg (within normal range initially)",
+            "pulse": "86/min (slightly elevated)",
+            "temperature": "97\u00b0F (36\u00b0C) (slightly low)"
+        },
+        "physical_findings": [
+            "Respiratory distress",
+            "Inspiratory rales",
+            "Decreased breath sounds bilaterally",
+            "Normal heart sounds initially",
+            "Soft, nontender abdomen",
+            "No neurological deficits",
+            "No skin lesions"
+        ],
+        "lab_values": {
+            "blood_cultures": "Positive for Bacillus anthracis",
+            "bronchial_washings": "Positive for Bacillus anthracis DNA",
+            "pleural_fluid": "Positive for Bacillus anthracis DNA"
+        },
+        "risk_factors": [
+            "Exposure to Bacillus anthracis spores (inhalation)",
+            "Occupation involving handling of animal products (e.g., tannery worker)"
+        ],
+        "imaging_findings": {
+            "chest_x-ray": [
+                "Marked widening of the superior mediastinum",
+                "Moderate bilateral pleural effusions",
+                "Fluid in the minor fissure",
+                "Bilateral perihilar infiltrates",
+                "Progressive widening of the mediastinum"
+            ],
+            "CT_chest": [
+                "Large bilateral pleural effusions",
+                "Hemorrhagic mediastinitis",
+                "Edema and hemorrhage in soft tissues surrounding trachea, bronchi, and hilar regions",
+                "Complete infiltration of mediastinal fat planes",
+                "Bronchial mucosal thickening",
+                "Encasement and compression of hilar vessels",
+                "Intact 4.2-cm aneurysm of the ascending aorta (incidental finding)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive Bacillus anthracis culture or PCR from blood, bronchial washings, or pleural fluid",
+            "Characteristic clinical presentation (e.g., respiratory distress, mediastinal widening)"
+        ],
+        "supportive": [
+            "Exposure history",
+            "Imaging findings consistent with pulmonary anthrax"
+        ]
+    },
+    "differential_diagnoses": [
+        "Dissecting ascending aortic aneurysm with leakage",
+        "Severe community-acquired pneumonia",
+        "Vasculitis (Wegener granulomatosis)",
+        "Bronchopneumonia"
+    ]
+}

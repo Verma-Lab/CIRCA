@@ -1,0 +1,148 @@
+{
+    "disease": "Community-Acquired Pneumonia",
+    "icd_code": "J18.9",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Frequently absent in older patients"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Productive in older children and adults, dry in infants, young children, and older adults"
+            },
+            {
+                "name": "Sputum production",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Pleuritic chest pain",
+                "severity": "Variable",
+                "pattern": "Adjacent to the infected area"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Usually mild and exertional, rarely present at rest"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Variable",
+                "pattern": "Common finding"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Variable",
+                "pattern": "Common finding"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Common symptom"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Common symptom"
+            },
+            {
+                "name": "Rigor",
+                "severity": "Variable",
+                "pattern": "Common symptom"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common gastrointestinal symptom"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common gastrointestinal symptom"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Common gastrointestinal symptom"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Variable",
+                "pattern": "May manifest as this in infants"
+            },
+            {
+                "name": "Restlessness",
+                "severity": "Variable",
+                "pattern": "May manifest as this in infants"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "May manifest as this in older adults"
+            },
+            {
+                "name": "Obtundation",
+                "severity": "Variable",
+                "pattern": "May manifest as this in older adults"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever, often absent in older patients)",
+            "respiratory_rate": "Increased (tachypnea)",
+            "heart_rate": "Increased (tachycardia)",
+            "oxygen_saturation": "May be decreased"
+        },
+        "physical_findings": [
+            "Crackles",
+            "Bronchial breath sounds",
+            "Egophony",
+            "Dullness to percussion",
+            "Signs of pleural effusion",
+            "Nasal flaring (infants)",
+            "Use of accessory muscles (infants)",
+            "Cyanosis (infants)"
+        ],
+        "lab_values": {
+            "complete_blood_count": "May show leukocytosis",
+            "basic_metabolic_profile": "May show abnormalities depending on severity"
+        },
+        "risk_factors": [
+            "Older age",
+            "Underlying comorbidities",
+            "Immunosuppression",
+            "Recent influenza",
+            "Known MRSA colonization",
+            "Prior MRSA infection",
+            "Hospitalization or antibiotic use in the previous 3 months",
+            "Severe chronic obstructive pulmonary disease (COPD)",
+            "Other structural lung disease",
+            "Exposure to infected animals or animal products"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Infiltrate",
+            "computed_tomography (CT)": "May be used if chest x-ray is negative"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pneumonia",
+            "Infiltrate on chest x-ray"
+        ],
+        "supportive": [
+            "Abnormal lab values",
+            "Positive pathogen identification"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute bronchitis",
+        "Exacerbation of chronic obstructive pulmonary disease (COPD)",
+        "Heart failure",
+        "Organizing pneumonia",
+        "Hypersensitivity pneumonitis",
+        "Pulmonary embolism"
+    ]
+}

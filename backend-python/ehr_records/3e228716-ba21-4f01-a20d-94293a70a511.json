@@ -1,0 +1,187 @@
+{
+  "id": "3e228716-ba21-4f01-a20d-94293a70a511",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Risk Assessment",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: headache\n\nS (Subjective):\n\nPatient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: Chest Pain\n\nPatient describes no history of illness. Reports chest pain starting this morning, calling it a sharp, stabbing feeling on the left side, coming and going every 5-10 minutes. Says it\u2019s annoying as hell but denies shortness of breath, puking, or sweating. No recent bangs or bruises. No allergies or meds he\u2019s on.\n\nO (Objective):\n\n\nVitals (made up): BP 118/76 mmHg, HR 70 bpm, RR 14 breaths/min, Temp 98.7\u00b0F (37.1\u00b0C), SpO2 99% on room air.\n\nLooks fine\u2014awake, knows where he is, not freaking out.\n\nA (Assessment):\n\n\nGuess: Chest pain, no clue why yet\u2014maybe his ribs are pissed off, or could be his heart acting up, though he\u2019s young for that shit. Could be stress, could be nothing, could be something. Need more info.\n\nP (Plan):\n\nGet an ECG and chest X-ray to check his ticker and lungs. Tell him to chill out, no heavy lifting or running around. Throw him some ibuprofen, 400 mg if it\u2019s just sore muscles. Check back in a day or two, or sooner if it gets worse. Tell him if it feels like an elephant\u2019s sitting on his chest or he can\u2019t breathe, haul ass to the ER.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let\u2019s analyze this ECG. Here's a detailed breakdown of what I see, considering it's an ECG scan for a patient:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm with some concerning features, primarily related to left ventricular hypertrophy (LVH) and possible signs of ischemia. Let\u2019s break down each section:\n\n**1. Rate & Rhythm:**\n\n* **Rate:** The heart rate appears to be approximately 75-80 beats per minute. This is within the normal range.\n* **Rhythm:** The rhythm is regular. The P waves are present and appear to be consistently related to the QRS complexes, indicating a normal sinus rhythm. \n\n**2. P Waves:**\n\n* **Morphology:** The P waves are upright in leads I, II, and aVL, which is consistent with a normal atrial depolarization pattern. \n* **Interval:** The PR interval appears to be within the normal range (approximately 0.12-0.20 seconds).\n\n**3. QRS Complexes:**\n\n* **Morphology:** This is where we see some notable changes.\n    * **Lead V1 & V6:** The QRS complexes in V1 and V6 are notably wide (greater than 0.12 seconds). This is a key indicator of LVH. The amplitude is also increased in these leads, further supporting this finding.\n    * **Other Leads (V2-V5):** The QRS complexes in V2-V5 are narrower and have a more typical morphology.\n* **Amplitude:** The QRS amplitude is elevated in V1 and V6, which is a hallmark of LVH.\n\n**4. ST Segments & T Waves:**\n\n* **ST Segments:** The ST segments are generally isoelectric (flat) in most leads. However, there are some subtle, small ST-segment depressions in V4-V6. This could represent early ischemic changes or simply be due to the LVH.\n* **T Waves:** The T waves are predominantly upright in most leads, but there\u2019s a subtle inversion in V4-V6, which could be related to the ST segment changes and/or the LVH.\n\n\n**5. Q Waves:**\n\n*  There are no prominent Q waves present.\n\n**6. Intervals:**\n\n* **QT Interval:** The QT interval appears to be within the normal range (approximately 360-45\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nLAB_VALUE: 2006, sharp, stabbing, and going every 5-, minutes, 118/76 mmHg, 70 bpm, 14 breaths/min, 98.7\u00b0F, 99%, sinus rhythm, 75-80 beats per minute, regular, normal, upright, within, 0.12-0.20 seconds, wide, greater than 0.12 seconds, increased, narrower, elevated, isoelectric, flat, normal range, 360-45\nDETAILED_DESCRIPTION: -02-16, 02-, room air, elephant, sitting, ,\nSIGN_SYMPTOM: headache, Pain, pain, shortness of breath, puking, sweating, bangs, bruises, awake, freaking out, sore, s, chest, can, t breathe, -segment depressions, inversion, waves\nHISTORY: 16, history of illness, allergies or meds, s on, knows where, is, heavy lifting, running\nBIOLOGICAL_STRUCTURE: Chest, chest, left side, ribs, lungs, muscles, V6, V1 and, V2-V5, V1, V4-V6\nDURATION: morning, day\nDISTANCE: 10\nDIAGNOSTIC_PROCEDURE: Vitals, BP, HR, RR, Temp, SpO2, ECG, X-ray, ticker, Rate, Rhythm, heart rate, rhythm, P waves, S complexes, P Waves, leads I, II, and aVL, atrial depolarization pattern, val, PR interval, QRS Complexes, Lead V1, QRS complexes, amplitude, QRS amplitude, ST Segments, T Waves, ST segments, ST, T waves, Q Waves, Q, Intervals, QT Interval, QT interval\nDISEASE_DISORDER: off, heart, up, stress, left ventricular hypertrophy, LVH, ischemia, ischemic changes, ST segment changes\nTHERAPEUTIC_PROCEDURE: out\nMEDICATION: ibuprofen\nDOSAGE: 400 mg\nDATE: or two, 3/25/2025, 2025-03-25, 09\nNONBIOLOGICAL_LOCATION: ER\nSEVERITY: subtle, small",
+  "recommendation": "High Risk: category, category, category, category",
+  "reasoning": "Risk Factors:\n- Left Ventricular Hypertrophy (LVH) as evidenced by ECG\n- Possible signs of ischemia on ECG (ST-segment depressions and T-wave inversions)\n- Young age (increased risk of undiagnosed underlying conditions)\n- Chest pain (although currently described as intermittent and not severe, warrants further investigation)\n- Potential for undiagnosed hypertension or dyslipidemia (contributing to metabolic syndrome)\n- Potential for chronic stress (exacerbating cardiovascular risk)\n\nMitigation Strategies:\n- Comprehensive cardiovascular workup including further ECG monitoring, echocardiogram, and cardiac enzyme tests to rule out acute coronary syndrome and assess LVH severity.\n- Lifestyle modifications:  healthy diet, regular exercise, stress reduction techniques (yoga, meditation).\n- Medication review:  Assess the need for antihypertensive medication, lipid-lowering agents, and/or aspirin therapy based on further investigations.\n- Close monitoring of blood pressure, cholesterol levels, and blood glucose levels.\n- Patient education on the importance of adhering to lifestyle changes and medication regimens.\n- Referral to a cardiologist for specialized assessment and management.\n\nFollow-up Recommendations:\n- Immediate follow-up appointment within 24-48 hours to review initial test results and discuss further investigations.\n- Repeat ECG within 1 week to monitor for changes.\n- Echocardiogram within 2 weeks to assess cardiac structure and function.\n- Cardiac enzyme tests (troponin) to rule out myocardial injury.\n- Regular follow-up appointments with a cardiologist (frequency determined by the severity of findings) for ongoing monitoring and management of cardiovascular risk factors.",
+  "confidence": "85%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "perplexity",
+      "contents": "--- WEB CONTEXT FROM PERPLEXITY AI ---\n\n## Clinical Risk Assessment\n\nGiven the conditions and symptoms described, the patient is at significant risk for several cardiovascular and metabolic complications. Here's a detailed risk assessment with corresponding preventive measures:\n\n### Cardiovascular Risks\n\n1. **Heart Attack and Stroke**: The presence of ischemia, ischemic changes, and left ventricular hypertrophy (LVH) significantly increases the risk of heart attack and stroke. LVH is a strong predictor of cardiovascular events, including heart failure and arrhythmias[3][4]. **Risk Level: High**\n\n2. **Cardiac Ischemia**: Symptoms like shortness of breath and abnormal ECG findings suggest ongoing cardiac ischemia, which can lead to myocardial infarction if not promptly addressed[4]. **Risk Level: High**\n\n3. **Heart Failure**: LVH and ischemic changes can lead to heart failure over time, especially if not managed properly[1][3]. **Risk Level: Moderate to High**\n\n### Metabolic Risks\n\n1. **Metabolic Syndrome**: Although not explicitly mentioned, the presence of stress and potential for metabolic disorders (e.g., hypertension, dyslipidemia) suggests a risk for metabolic syndrome, which increases the risk of cardiovascular diseases[5]. **Risk Level: Moderate**\n\n### Overall Health Risks\n\n1. **Medication-Related Risks**: Ibuprofen use can increase the risk of heart attack and stroke, particularly in individuals with pre-existing heart disease[2]. **Risk Level: Moderate**\n\n2. **Stress**: Chronic stress can exacerbate cardiovascular conditions by increasing blood pressure and heart rate[5]. **Risk Level: Moderate**\n\n### Symptoms and Clinical Findings\n\n- **Headache, Shortness of Breath, Puking, Sweating**: These symptoms could indicate acute cardiac ischemia or other serious conditions requiring immediate medical attention[4].\n- **Abnormal Laboratory Values and ECG Findings**: Suggestive of cardiac issues, these findings necessitate thorough evaluation and management[4].\n\n### Preventive Measures\n\n1. **Lifestyle Changes**:\n   - **Exercise**: Regular physical activity can help manage stress and improve cardiovascular health[5].\n   - **Diet**: Focus on a balanced diet rich in fruits, vegetables, lean proteins, and whole grains to reduce metabolic risks[5].\n   - **Weight Management**: Maintaining a healthy weight can reduce the risk of metabolic syndrome and cardiovascular diseases[5].\n\n2. **Medication Management**:\n   - **Ibuprofen Use**: Limit ibuprofen intake to the smallest effective dose for the shortest duration necessary, and consider alternative pain relievers like acetaminophen[2].\n   - **Aspirin Therapy**: If indicated for heart attack prevention, consult a healthcare provider before using NSAIDs concurrently[2].\n\n3. **Stress Reduction**:\n   - Engage in stress-reducing activities such as meditation or yoga to manage chronic stress[5].\n\n4. **Regular Health Check-Ups**:\n   - Regular monitoring of blood pressure, cholesterol levels, and glucose can help identify and manage metabolic and cardiovascular risks early[5].\n\n5. **Cardiovascular Risk Reduction**:\n   - Implement strategies to reduce cardiovascular risk factors, such as managing hypertension and dyslipidemia through lifestyle changes and medication if necessary[1][3].\n\nBy addressing these risks and implementing preventive measures, the patient can significantly reduce the likelihood of adverse cardiovascular and metabolic outcomes.\n\nSOURCES:\n- https://pmc.ncbi.nlm.nih.gov/articles/PMC10617200/\n- https://www.mayoclinic.org/diseases-conditions/heart-attack/expert-answers/nsaids-heart-attack-stroke/faq-20147557\n- https://pmc.ncbi.nlm.nih.gov/articles/PMC5393930/\n- https://www.escardio.org/static_file/Escardio/Subspecialty/ACCA/TOOLKIT_V2.pdf\n- https://www.mayoclinic.org/diseases-conditions/metabolic-syndrome/symptoms-causes/syc-20351916\n\n"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let\u2019s analyze this ECG. Here's a detailed breakdown of what I see, considering it's an ECG scan for a patient:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm with some concerning features, primarily related to left ventricular hypertrophy (LVH) and possible signs of ischemia. Let\u2019s break down each section:\n\n**1. Rate & Rhythm:**\n\n* **Rate:** The heart rate appears to be approximately 75-80 beats per minute. This is within the normal range.\n* **Rhythm:** The rhythm is regular. The P waves are present and appear to be consistently related to the QRS complexes, indicating a normal sinus rhythm. \n\n**2. P Waves:**\n\n* **Morphology:** The P waves are upright in leads I, II, and aVL, which is consistent with a normal atrial depolarization pattern. \n* **Interval:** The PR interval appears to be within the normal range (approximately 0.12-0.20 seconds).\n\n**3. QRS Complexes:**\n\n* **Morphology:** This is where we see some notable changes.\n    * **Lead V1 & V6:** The QRS complexes in V1 and V6 are notably wide (greater than 0.12 seconds). This is a key indicator of LVH. The amplitude is also increased in these leads, further supporting this finding.\n    * **Other Leads (V2-V5):** The QRS complexes in V2-V5 are narrower and have a more typical morphology.\n* **Amplitude:** The QRS amplitude is elevated in V1 and V6, which is a hallmark of LVH.\n\n**4. ST Segments & T Waves:**\n\n* **ST Segments:** The ST segments are generally isoelectric (flat) in most leads. However, there are some subtle, small ST-segment depressions in V4-V6. This could represent early ischemic changes or simply be due to the LVH.\n* **T Waves:** The T waves are predominantly upright in most leads, but there\u2019s a subtle inversion in V4-V6, which could be related to the ST segment changes and/or the LVH.\n\n\n**5. Q Waves:**\n\n*  There are no prominent Q waves present.\n\n**6. Intervals:**\n\n* **QT Interval:** The QT interval appears to be within the normal range (approximately 360-45"
+    }
+  ],
+  "medical_entities": {
+    "LAB_VALUE": [
+      "2006",
+      "sharp",
+      "stabbing",
+      "and going every 5-",
+      "minutes",
+      "118/76 mmHg",
+      "70 bpm",
+      "14 breaths/min",
+      "98.7\u00b0F",
+      "99%",
+      "sinus rhythm",
+      "75-80 beats per minute",
+      "regular",
+      "normal",
+      "upright",
+      "within",
+      "0.12-0.20 seconds",
+      "wide",
+      "greater than 0.12 seconds",
+      "increased",
+      "narrower",
+      "elevated",
+      "isoelectric",
+      "flat",
+      "normal range",
+      "360-45"
+    ],
+    "DETAILED_DESCRIPTION": [
+      "-02-16",
+      "02-",
+      "room air",
+      "elephant",
+      "sitting",
+      ","
+    ],
+    "SIGN_SYMPTOM": [
+      "headache",
+      "Pain",
+      "pain",
+      "shortness of breath",
+      "puking",
+      "sweating",
+      "bangs",
+      "bruises",
+      "awake",
+      "freaking out",
+      "sore",
+      "s",
+      "chest",
+      "can",
+      "t breathe",
+      "-segment depressions",
+      "inversion",
+      "waves"
+    ],
+    "HISTORY": [
+      "16",
+      "history of illness",
+      "allergies or meds",
+      "s on",
+      "knows where",
+      "is",
+      "heavy lifting",
+      "running"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "Chest",
+      "chest",
+      "left side",
+      "ribs",
+      "lungs",
+      "muscles",
+      "V6",
+      "V1 and",
+      "V2-V5",
+      "V1",
+      "V4-V6"
+    ],
+    "DURATION": [
+      "morning",
+      "day"
+    ],
+    "DISTANCE": [
+      "10"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "Vitals",
+      "BP",
+      "HR",
+      "RR",
+      "Temp",
+      "SpO2",
+      "ECG",
+      "X-ray",
+      "ticker",
+      "Rate",
+      "Rhythm",
+      "heart rate",
+      "rhythm",
+      "P waves",
+      "S complexes",
+      "P Waves",
+      "leads I, II",
+      "and aVL",
+      "atrial depolarization pattern",
+      "val",
+      "PR interval",
+      "QRS Complexes",
+      "Lead V1",
+      "QRS complexes",
+      "amplitude",
+      "QRS amplitude",
+      "ST Segments",
+      "T Waves",
+      "ST segments",
+      "ST",
+      "T waves",
+      "Q Waves",
+      "Q",
+      "Intervals",
+      "QT Interval",
+      "QT interval"
+    ],
+    "DISEASE_DISORDER": [
+      "off",
+      "heart",
+      "up",
+      "stress",
+      "left ventricular hypertrophy",
+      "LVH",
+      "ischemia",
+      "ischemic changes",
+      "ST segment changes"
+    ],
+    "THERAPEUTIC_PROCEDURE": [
+      "out"
+    ],
+    "MEDICATION": [
+      "ibuprofen"
+    ],
+    "DOSAGE": [
+      "400 mg"
+    ],
+    "DATE": [
+      "or two",
+      "3/25/2025",
+      "2025-03-25",
+      "09"
+    ],
+    "NONBIOLOGICAL_LOCATION": [
+      "ER"
+    ],
+    "SEVERITY": [
+      "subtle",
+      "small"
+    ]
+  },
+  "analysis_date": "2025-03-25T13:08:18.273402",
+  "created_at": "2025-03-25T13:08:18.273408"
+}

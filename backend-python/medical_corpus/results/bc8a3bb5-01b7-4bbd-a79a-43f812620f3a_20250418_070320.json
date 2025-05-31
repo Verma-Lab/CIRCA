@@ -1,0 +1,32 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Migraine",
+      "icd_code": "G43.1",
+      "probability": 70,
+      "reasoning": "The patient's chief complaint is a headache, and there is no other information provided.  Given the lack of other symptoms,  migraine is a high possibility.  The literature extensively discusses the difficulty in differentiating between migraine and sinus headaches, especially those potentially related to allergies.  The absence of other symptoms makes other listed diseases unlikely."
+    },
+    {
+      "disease": "Tension-type headache",
+      "icd_code": "G44.2",
+      "probability": 60,
+      "reasoning": "Tension-type headaches are common and often present with only headache as a symptom.  Without further information, this remains a possibility."
+    },
+    {
+      "disease": "Sinus Headache (secondary to allergic rhinitis)",
+      "icd_code": "G44.0",
+      "probability": 30,
+      "reasoning": "While the literature mentions sinus headaches can be associated with allergies, the patient lacks other symptoms suggestive of allergic rhinitis (runny nose, sneezing, nasal congestion, itchy eyes).  The probability is low due to the lack of supporting evidence."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Detailed history taking focusing on headache characteristics (location, duration, intensity, associated symptoms like nausea, photophobia, phonophobia, aura).",
+    "Physical examination to assess for any neurological signs.",
+    "Consider allergy testing if history suggests allergic rhinitis (seasonal patterns, other allergy symptoms).",
+    "If headache persists or worsens, consider imaging (CT or MRI) to rule out structural causes."
+  ],
+  "clinical_summary": "The patient presents with a chief complaint of headache.  The lack of detailed information limits the ability to make a definitive diagnosis.  Migraine and tension-type headache are the most likely possibilities given the limited data.  Further history taking, physical examination, and potentially additional testing are necessary to arrive at a precise diagnosis and appropriate management plan.  The possibility of a sinus headache secondary to allergic rhinitis is less likely due to the absence of other allergy symptoms.",
+  "timestamp": "2025-04-18T07:03:20.611594",
+  "identified_icd_codes": []
+}

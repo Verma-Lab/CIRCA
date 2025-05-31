@@ -1,0 +1,111 @@
+{
+    "disease": "Cutaneous Listeriosis",
+    "icd_code": "A320",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "Variable, can be mild to florid and disseminated",
+                "pattern": "Papulopustular, vesiculopustular, or purpuric eruptions; localized or disseminated; can be painless and non-pruritic; may resolve with desquamation"
+            },
+            {
+                "name": "Generalized achiness",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Increased sleepiness",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, common in some studies, absent in others",
+                "pattern": "Present in a majority of cases in some studies, absent in others"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Septic shock",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Respiratory failure",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Can be low in severe cases (e.g., 80/50 mmHg)",
+            "respiratory_rate": "Can be elevated in severe cases (e.g., 38/min)",
+            "oxygen_saturation": "Can be low in severe cases (e.g., 85% on room air)"
+        },
+        "physical_findings": [
+            "Vesiculopustular lesions with surrounding erythema",
+            "Resolving rash with desquamation",
+            "Linear, healing scratch near lesions",
+            "Disseminated pustular rash",
+            "Papulopustular lesions",
+            "Well-demarcated erythematous lesions of varying sizes, many with pustules"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated (e.g., 10.2 \u00d7 10\u2079/liter)",
+            "neutrophils": "Elevated (e.g., 55.5%)",
+            "blood_culture": "Positive for Listeria monocytogenes in some cases",
+            "skin_culture": "Positive for Listeria monocytogenes in some cases"
+        },
+        "risk_factors": [
+            "Occupational exposure (veterinarians, farmers)",
+            "Contact with animal products of conception",
+            "Contact with soil and vegetation",
+            "Immunocompromise (e.g., HIV, leukemia, bone marrow transplant, sarcoidosis, glucocorticoid use)",
+            "Pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Listeria monocytogenes from a normally sterile site (blood, CSF, etc.) or skin biopsy"
+        ],
+        "supportive": [
+            "Characteristic clinical presentation (rash, systemic symptoms)",
+            "Positive skin culture"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other infectious diseases causing fever and skin lesions",
+        "Granuloma inguinale",
+        "Rhinoscleroma",
+        "Leishmaniasis"
+    ]
+}

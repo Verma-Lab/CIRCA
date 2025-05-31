@@ -1,0 +1,98 @@
+{
+    "disease": "Tuberculous chorioretinitis",
+    "icd_code": "A18.53",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe, depending on the extent of inflammation"
+            },
+            {
+                "name": "Redness and pain in the eye",
+                "severity": "Variable",
+                "pattern": "May be present, especially in acute cases"
+            },
+            {
+                "name": "Decreased visual acuity",
+                "severity": "Variable",
+                "pattern": "Can progress to light perception in severe cases"
+            },
+            {
+                "name": "Vitritis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the vitreous humor, may be present"
+            },
+            {
+                "name": "Optic disc edema",
+                "severity": "Variable",
+                "pattern": "May be present, particularly in cases with papilledema"
+            },
+            {
+                "name": "Exudates around the macula",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "Intermittent, may be present"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to moderate",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Mild to moderate",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "High anterior vitreous cell counts",
+            "Foci of chorioretinitis confined to the ocular fundus",
+            "Bilateral pseudophakia (in one case)",
+            "Posterior capsule opacification (in one case)",
+            "Decentralized intraocular lens (in one case)",
+            "Cushingoid appearance (in one case due to steroid treatment)",
+            "Hyperemic disc with blurred margins and obliterated cup-to-disk ratio due to disc edema (in one case)",
+            "Papilledema with exudates around the macula (in one case)"
+        ],
+        "lab_values": {
+            "Complete blood count": "May show abnormalities like elevated ESR and CRP",
+            "Tuberculin skin test (TST)": "Positive with induration > 10mm (often >15mm in low-risk populations, >5mm may indicate active infection)",
+            "QuantiFERON\u00ae-TB Gold (QFT-G)": "Positive",
+            "Polymerase chain reaction (PCR) of intraocular fluid": "Positive for Mycobacterium tuberculosis",
+            "Chest X-ray/CT scan": "May be normal even in cases of ocular TB"
+        },
+        "risk_factors": [
+            "Systemic tuberculosis",
+            "Immunosuppression",
+            "Steroid use",
+            "Residence in a region endemic to TB",
+            "Smoking (potential risk factor)"
+        ],
+        "imaging_findings": {
+            "Fundoscopy": "May show chorioretinal lesions, choroidal tubercles, papilledema, exudates",
+            "Optical coherence tomography (OCT)": "May show choroidal tubercles and granulomatous lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings consistent with chorioretinitis",
+            "Positive results from tests for tuberculosis (e.g., TST, QFT-G, PCR of intraocular fluid)"
+        ],
+        "supportive": [
+            "Abnormal lab values (e.g., elevated ESR, CRP)",
+            "Imaging findings consistent with tuberculous chorioretinitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Beh\u00e7et's disease",
+        "Other forms of uveitis",
+        "Other infectious causes of chorioretinitis"
+    ]
+}

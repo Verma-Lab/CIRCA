@@ -1,0 +1,24 @@
+{
+    "disease": "Merkel cell carcinoma of right ear and external auricular canal",
+    "icd_code": "C4A21",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Ear mass or lesion"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of Merkel cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation of a mass or lesion in the right ear and external auricular canal"
+        ]
+    },
+    "differential_diagnoses": []
+}

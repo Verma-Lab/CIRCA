@@ -1,0 +1,129 @@
+{
+    "disease": "Coccidioidomycosis meningitis",
+    "icd_code": "B384",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Changes in mentation",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Cough",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pleuritic chest pain",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Diffuse joint pain",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Intermittent fevers",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Forearm lesions",
+                "severity": "Mild to Moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Encephalopathy",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Septic shock",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Metabolic acidosis",
+                "severity": "Severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Renal failure",
+                "severity": "Severe",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia (133 bpm)",
+            "respiratory_rate": "Tachypnea (47 breaths/min)",
+            "oxygen_saturation": "Hypoxemia (85% on room air)",
+            "blood_pressure": "Normotensive"
+        },
+        "physical_findings": [
+            "Coarse bilateral breath sounds",
+            "Labored breathing",
+            "1- to 2-cm palpable subcutaneous nodules in the forearms bilaterally",
+            "No notable rashes, joint effusions, or neurologic deficits (initially)"
+        ],
+        "lab_values": {
+            "blood_cultures": "Negative",
+            "coccidiomycosis_antibody_igg": "Positive",
+            "coccidiomycosis_titer_blood": "1:64",
+            "coccidiomycosis_titer_csf": "1:1",
+            "csf_pleocytosis": "Elevated",
+            "csf_protein": "Elevated",
+            "csf_glucose": "Reduced"
+        },
+        "risk_factors": [
+            "Immunocompromised status (HIV positive)",
+            "Occupational exposure (farmer)",
+            "Residence in endemic area"
+        ],
+        "imaging_findings": {
+            "chest_ct": "Diffuse multifocal nodular consolidations and ground glass opacities, right upper lobe dense consolidations, prominent mediastinal and hilar lymph nodes",
+            "head_ct": "Corpus callosum mass extending into the left lateral ventricle with features consistent with primary central nervous system (CNS) lymphoma; focal hemorrhage versus enhancing mass involving the genu of the corpus callosum",
+            "brain_mri": "4.7 cm hemorrhagic mass located at the corpus callosum, with surrounding edema with high-grade glioma features"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive cerebrospinal fluid (CSF) polymerase chain reaction (PCR), cultures, or detection of complement-fixing antibodies to Coccidioides antigen in the CSF"
+        ],
+        "supportive": [
+            "Typical CSF abnormalities (pleocytosis, elevated protein, reduced glucose)",
+            "Compatible clinical illness (fever, chills, headache, changes in mentation, ataxia)",
+            "Coccidioides recovered from another site"
+        ]
+    },
+    "differential_diagnoses": [
+        "Primary central nervous system (CNS) lymphoma",
+        "High-grade glioma"
+    ]
+}

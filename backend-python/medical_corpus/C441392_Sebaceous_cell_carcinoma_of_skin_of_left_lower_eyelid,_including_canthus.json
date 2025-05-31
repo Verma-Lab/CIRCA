@@ -1,0 +1,92 @@
+{
+    "disease": "Sebaceous cell carcinoma of skin of left lower eyelid, including canthus",
+    "icd_code": "C441392",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Yellow thickening of the eyelid",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Atypical or recurrent chalazia",
+                "severity": "Variable",
+                "pattern": "Recurrent"
+            },
+            {
+                "name": "Keratoconjunctivitis or blepharoconjunctivitis unresponsive to treatment",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Persistent blepharitis",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Painless mass",
+                "severity": "Mild",
+                "pattern": "Constant"
+            },
+            {
+                "name": "Madarosis (destruction of eyelid edge, generalized thickening, facial shrinkage)",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Telangiectatic appearance",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Fleshy, degradable lesion",
+                "severity": "Variable",
+                "pattern": "Localized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Yellowish nodule (due to lipid)",
+            "Hard, immobile nodule",
+            "Diffuse thickening of lid margin",
+            "Loss of eyelashes",
+            "Mass covering a significant portion of the eyelid",
+            "Pagetoid spread (superficial spread of malignant cells)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Older age",
+            "Periocular radiotherapy",
+            "Immunosuppression (solid organ transplantation, lymphoma)",
+            "Muir-Torre syndrome",
+            "Female gender (periocular)",
+            "Male gender (extraocular)"
+        ],
+        "imaging_findings": {
+            "MRI": "May show extent of tumor involvement",
+            "Ultrasonography": "May detect lymph node involvement",
+            "PET": "May detect metastatic lymphadenopathy"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic features (e.g., lobular arrangement, vacuolated cytoplasm, hyperchromatic nuclei, positive lipid stains)"
+        ],
+        "supportive": [
+            "Clinical presentation (e.g., yellow nodule, recurrent chalazion, pagetoid spread)",
+            "Imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chalazion",
+        "Chronic blepharitis",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Superior limbic keratoconjunctivitis",
+        "Ocular cicatricial pemphigoid",
+        "Blepharoconjunctivitis",
+        "Meibomian cyst",
+        "Lymphoma"
+    ]
+}

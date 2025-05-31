@@ -1,0 +1,72 @@
+{
+    "disease": "Campylobacter enteritis",
+    "icd_code": "A045",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Usually starts 2-4 days after exposure, lasts about a week"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Bloody stools",
+                "severity": "Variable",
+                "pattern": "Can be present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases",
+            "heart_rate": "May be elevated in severe cases"
+        },
+        "physical_findings": [
+            "Tenderness to palpation in the abdomen"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "May be elevated",
+            "stool_culture": "Positive for Campylobacter"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water (raw poultry, fresh produce, unpasteurized milk)",
+            "Close contact with infected people or animals",
+            "Use of proton pump inhibitors (PPI)",
+            "Immunodeficiency (especially hypogammaglobulinemia)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with Campylobacter enteritis (diarrhea, abdominal pain, fever, etc.)",
+            "Positive stool culture for Campylobacter"
+        ],
+        "supportive": [
+            "Exposure to known risk factors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial enteritis",
+        "Viral gastroenteritis",
+        "Inflammatory bowel disease",
+        "Irritable bowel syndrome"
+    ]
+}

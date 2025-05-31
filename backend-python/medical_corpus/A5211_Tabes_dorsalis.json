@@ -1,0 +1,121 @@
+{
+    "disease": "Tabes dorsalis",
+    "icd_code": "A5211",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sensory ataxia",
+                "severity": "Variable, progressive",
+                "pattern": "Slowly progressive"
+            },
+            {
+                "name": "Lancinating pains",
+                "severity": "Sudden and intense",
+                "pattern": "Stabbing sensations in limbs, back, or face; may persist for minutes to days"
+            },
+            {
+                "name": "Paresthesia",
+                "severity": "Variable",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Gastric crises",
+                "severity": "Severe",
+                "pattern": "Recurrent bouts of severe epigastric pain, nausea, and vomiting"
+            },
+            {
+                "name": "Bladder dysfunction",
+                "severity": "Variable",
+                "pattern": "Urinary retention and overflow incontinence"
+            },
+            {
+                "name": "Diplopia",
+                "severity": "Variable",
+                "pattern": "Can be an early symptom"
+            },
+            {
+                "name": "Limb numbness",
+                "severity": "Variable",
+                "pattern": "Can be an initial symptom"
+            },
+            {
+                "name": "Loss of proprioception",
+                "severity": "Progressive",
+                "pattern": "Leads to severe gait ataxia"
+            },
+            {
+                "name": "Absent lower extremity reflexes",
+                "severity": "Significant",
+                "pattern": "Common finding"
+            },
+            {
+                "name": "Impaired vibratory and positional sensation",
+                "severity": "Significant",
+                "pattern": "Common finding"
+            },
+            {
+                "name": "Deficits in touch, pain, and optic function",
+                "severity": "Variable",
+                "pattern": "Common finding"
+            },
+            {
+                "name": "Chronic destructive changes in large joints",
+                "severity": "Severe",
+                "pattern": "Occurs in advanced cases (Charcot joints)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Argyll Robertson pupil",
+            "Absent lower extremity reflexes",
+            "Impaired vibratory and positional sensation",
+            "Positive Romberg's sign",
+            "Unsteady gait",
+            "Charcot joints (in advanced cases)",
+            "Decreased deep tendon reflexes",
+            "Left VIth cranial nerve palsy"
+        ],
+        "lab_values": {
+            "RPR": "Positive",
+            "VDRL": "Positive",
+            "Treponema pallidum hemagglutination assay": "Positive",
+            "CSF TPPA": "Positive",
+            "CSF WBC": "Increased (pleocytosis, e.g., 93 cells/\u00b5L)",
+            "CSF protein": "Increased (e.g., >450 mg/L)"
+        },
+        "risk_factors": [
+            "Untreated syphilis",
+            "History of syphilis infection (even if treated insufficiently)",
+            "Sexually transmitted syphilis"
+        ],
+        "imaging_findings": {
+            "MRI": [
+                "Intramedullary hyperintensity on T2-weighted imaging (in some cases)",
+                "Cervical spinal cord stenosis (in some cases)",
+                "Regression of herniated disc (in some cases)",
+                "Absence of myelopathy (in some cases)",
+                "Significant atrophy of the optic nerve (in some cases)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical manifestations of neurological symptoms (ataxic gait, positive Romberg's sign, impaired deep and proprioceptive sensation, lightning pains in legs, Argyll Robertson pupils, Charcot joints)",
+            "Positive serum RPR and TPPA tests",
+            "Positive CSF RPR, or positive CSF TPPA and FTA-ABS with increased WBC (\u22655\u00d7106/L), or positive CSF TPPA and FTA-ABS with protein content >450 mg/L"
+        ],
+        "supportive": [
+            "History of untreated or insufficiently treated syphilis",
+            "Neuroimaging findings consistent with tabes dorsalis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of nonsyphilitic myelopathy (vascular, nutritional, metabolic, immune-mediated, and toxic myelopathies)",
+        "Hereditary optic atrophy",
+        "Tumors",
+        "Inflammatory alterations of the optic nerve",
+        "Lyme disease",
+        "Vasculitis"
+    ]
+}

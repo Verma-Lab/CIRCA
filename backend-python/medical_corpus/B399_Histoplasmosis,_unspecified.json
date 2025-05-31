@@ -1,0 +1,119 @@
+{
+    "disease": "Histoplasmosis, unspecified",
+    "icd_code": "B399",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be mild to high",
+                "pattern": "Present in acute pulmonary histoplasmosis; may be absent in other forms"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in acute and chronic pulmonary histoplasmosis"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Present in acute and disseminated histoplasmosis"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Present in acute pulmonary histoplasmosis"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Present in acute pulmonary histoplasmosis"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Mild to moderate",
+                "pattern": "Present in acute pulmonary histoplasmosis"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Present in acute pulmonary histoplasmosis"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Mild to moderate",
+                "pattern": "Present in acute pulmonary histoplasmosis"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Present in chronic cavitary pulmonary histoplasmosis"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Present in chronic cavitary and disseminated histoplasmosis"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in disseminated histoplasmosis"
+            },
+            {
+                "name": "Skin ulcers",
+                "severity": "Variable",
+                "pattern": "Present in disseminated histoplasmosis"
+            },
+            {
+                "name": "Flu-like illness",
+                "severity": "Mild",
+                "pattern": "Common in most cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in acute infection",
+            "respiratory_rate": "Increased in severe cases",
+            "blood_pressure": "Generally normal unless complications arise"
+        },
+        "physical_findings": [
+            "Crackles or rales on lung auscultation (in pulmonary involvement)",
+            "Enlarged lymph nodes (in some cases)",
+            "Skin lesions (in disseminated histoplasmosis)"
+        ],
+        "lab_values": {
+            "Histoplasma antigen": "Elevated in urine or serum",
+            "Histoplasma antibodies": "May be present, but less sensitive than antigen detection",
+            "Complete blood count": "May show leukocytosis or anemia",
+            "Liver function tests": "May be abnormal in severe cases"
+        },
+        "risk_factors": [
+            "Exposure to bird or bat droppings",
+            "Weakened immune system (HIV, cancer, organ transplant)",
+            "Chronic lung disease (emphysema, COPD)",
+            "Occupation or hobbies involving disturbance of soil",
+            "Age (very young or very old)"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show pulmonary nodules, infiltrates, or cavities",
+            "CT scan": "Provides more detailed images of lung lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive Histoplasma antigen test (urine or serum)",
+            "Positive Histoplasma culture from clinical specimens",
+            "Histopathological evidence of Histoplasma infection in tissue biopsy"
+        ],
+        "supportive": [
+            "Characteristic clinical presentation",
+            "Exposure history",
+            "Abnormal chest imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Pneumonia",
+        "Lung cancer",
+        "Sarcoidosis"
+    ]
+}

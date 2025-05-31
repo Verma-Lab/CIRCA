@@ -1,0 +1,109 @@
+{
+    "disease": "Aseptic meningitis in leptospirosis",
+    "icd_code": "A2781",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "low grade to high grade",
+                "pattern": "intermittent or persistent"
+            },
+            {
+                "name": "Headache",
+                "severity": "severe, persistent, diffuse",
+                "pattern": "constant"
+            },
+            {
+                "name": "Nausea",
+                "severity": "variable",
+                "pattern": "intermittent or persistent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "variable",
+                "pattern": "intermittent or persistent, unrelenting"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "variable",
+                "pattern": "persistent"
+            },
+            {
+                "name": "Meningismus",
+                "severity": "variable",
+                "pattern": "present"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "variable",
+                "pattern": "present in some cases"
+            },
+            {
+                "name": "Cough",
+                "severity": "variable",
+                "pattern": "present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "can be normal (129/77 mmHg reported in one case)",
+            "temperature": "can range from normal to elevated (37\u00b0C to 39\u00b0C reported)",
+            "pulse_rate": "can be elevated (93 beats/min reported in one case)",
+            "respiratory_rate": "can be elevated (20 breaths/min reported in one case)"
+        },
+        "physical_findings": [
+            "Alert but distressed facial appearance",
+            "Anicteric sclerae",
+            "Supple neck (in some cases)",
+            "Absence of lymphadenopathy (in some cases)",
+            "Absence of neurologic deficits (in some cases)",
+            "Absence of skin abnormalities (in some cases)",
+            "Mild respiratory distress (in some cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "elevated (18,670 cells/\u03bcl and 14,840 cells/\u03bcl reported in one case)",
+            "neutrophils": "increased percentage (81.2% and 83% reported in one case)",
+            "lymphocytes": "decreased percentage (14.1% and 12% reported in one case)",
+            "c_reactive_protein": "elevated (20 mg/dl reported in one case)",
+            "creatinine": "normal (1.03 mg/dl reported in one case)",
+            "aspartate_aminotransferase": "normal (34 IU/l reported in one case)",
+            "glucose": "normal or slightly elevated (117 mg/dl and 141 mg/dl reported)",
+            "cerebrospinal_fluid_white_blood_cell_count": "elevated (254 cells/\u03bcl and 266 cells/\u03bcl reported in one case, predominantly mononuclear cells)",
+            "cerebrospinal_fluid_red_blood_cell_count": "elevated (36 cells/\u03bcl and 141 cells/\u03bcl reported in one case)",
+            "cerebrospinal_fluid_protein": "elevated (91 mg/dl and 33 mg/dl reported in one case)",
+            "cerebrospinal_fluid_glucose": "slightly decreased (64 mg/dl and 78 mg/dl reported in one case)",
+            "platelets": "normal or slightly elevated (338,000 cells/\u03bcl reported in one case)"
+        },
+        "risk_factors": [
+            "Contact with floodwater",
+            "Contact with sewer water",
+            "Contact with mud",
+            "Contact with rats (at home or work)",
+            "Residence or employment in a high-risk environment (slum community or animal farm)",
+            "Occupational exposure (e.g., cook working near waste recycling station and pond)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "bilateral infiltrates (in some cases)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical meningitis (fever with severe headache or meningismus)",
+            "Nonturbid, nonpurulent cerebrospinal fluid (CSF)",
+            "CSF with 10\u20132,000 cells/m3",
+            "CSF protein <150 mg/dL",
+            "CSF glucose >40 mg/dL",
+            "Negative results for bacterial meningitis on Gram stain, culture isolation, and latex agglutination tests",
+            "Positive Leptospira blood culture or MAT with >4-fold acute-convalescent titer rise; seroconversion (undetectable acute-phase titer and convalescent-phase titer >1:200); or sample titer >1:800"
+        ],
+        "supportive": [
+            "Epidemiologic risk factors for leptospirosis",
+            "Positive PCR for Leptospira spp. in CSF"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral meningitis",
+        "Other causes of aseptic meningitis",
+        "Bacterial meningitis"
+    ]
+}

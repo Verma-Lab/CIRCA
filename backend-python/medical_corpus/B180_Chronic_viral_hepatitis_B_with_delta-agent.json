@@ -1,0 +1,23 @@
+{
+    "disease": "Chronic viral hepatitis B with delta-agent",
+    "icd_code": "B180",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Intravenous drug abuse",
+            "Hemophilia"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Presence of anti-delta antibody"
+        ]
+    },
+    "differential_diagnoses": []
+}

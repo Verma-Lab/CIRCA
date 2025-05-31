@@ -1,0 +1,87 @@
+{
+    "disease": "Mixed lesions of pinta",
+    "icd_code": "A673",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Reddish skin lump",
+                "severity": "Variable",
+                "pattern": "Initially small, enlarging over time"
+            },
+            {
+                "name": "Scaly skin",
+                "severity": "Variable",
+                "pattern": "Develops as lesion progresses"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Variable",
+                "pattern": "Occurs later in disease course"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Associated with systemic involvement"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Associated with systemic involvement"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Additional skin lumps",
+                "severity": "Variable",
+                "pattern": "Develop later, may be whitish or black-gray"
+            },
+            {
+                "name": "Hardened skin",
+                "severity": "Variable",
+                "pattern": "At sites of lesions"
+            },
+            {
+                "name": "Hair loss",
+                "severity": "Variable",
+                "pattern": "In affected areas, with chronic disease"
+            },
+            {
+                "name": "Skin scarring",
+                "severity": "Variable",
+                "pattern": "May occur with chronic disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible"
+        },
+        "physical_findings": [
+            "Reddish skin lump",
+            "Scaly skin",
+            "Swollen lymph nodes",
+            "Additional skin lumps (whitish or black-gray)",
+            "Hardened skin",
+            "Hair loss",
+            "Skin scarring"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of mixed lesions (reddish, scaly, whitish, or black-gray)"
+        ],
+        "supportive": [
+            "Swollen lymph nodes",
+            "Fever",
+            "Weakness",
+            "Malaise",
+            "History of exposure in endemic areas (Central and South America)"
+        ]
+    },
+    "differential_diagnoses": []
+}

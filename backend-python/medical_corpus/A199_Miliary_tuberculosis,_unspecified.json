@@ -1,0 +1,56 @@
+{
+    "disease": "Miliary tuberculosis, unspecified",
+    "icd_code": "A199",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Systemic symptoms",
+                "severity": "High",
+                "pattern": "Present in 88.54% of cases"
+            },
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Moderate",
+                "pattern": "Present in 69.79% of cases"
+            },
+            {
+                "name": "Neurologic symptoms",
+                "severity": "Moderate",
+                "pattern": "Present in 40.97% of cases"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Moderate",
+                "pattern": "Present in 35.07% of cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Leukocytosis": "Elevated",
+            "Alanine aminotransferase (ALT)": "Elevated",
+            "Lymphopenia": "Present in combination with bone marrow tuberculosis or tuberculous lymphadenitis"
+        },
+        "risk_factors": [
+            "Pharmacological immunosuppression",
+            "Pneumoconiosis",
+            "Diabetes",
+            "Pregnancy or postpartum",
+            "Current smoking"
+        ],
+        "imaging_findings": {
+            "Chest HRCT": "Miliary infiltrates (multiple 1\u20132 mm well-defined nodules throughout the lungs or predominant nodules >2 mm)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical and radiological signs",
+            "Aetiological diagnosis",
+            "Pathological diagnosis",
+            "Therapeutic response"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

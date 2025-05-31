@@ -1,0 +1,21 @@
+{
+    "disease": "Anthrax, unspecified",
+    "icd_code": "A229",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Eating meat from sick animals",
+            "Direct contact with sick animals or their fur"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

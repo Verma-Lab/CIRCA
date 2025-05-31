@@ -1,0 +1,100 @@
+{
+    "disease": "Salmonella arthritis",
+    "icd_code": "A0223",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Moderate to high (38\u00b0C in one case)",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Erythematous maculopapular rash reported in one case"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Moderate to severe",
+                "pattern": "Monoarthritis, predominantly affecting the hip joint; dull, aching quality; may radiate; inability to bear weight; absence of morning stiffness in one case"
+            },
+            {
+                "name": "Oral ulcers",
+                "severity": "Mild to moderate",
+                "pattern": "Painful, shallow, circular aphthous ulcers reported in one case"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Moderate",
+                "pattern": "Radiating to the left leg reported in one case"
+            },
+            {
+                "name": "Urethritis",
+                "severity": "Variable",
+                "pattern": "Occurred in 27% of patients in one study"
+            },
+            {
+                "name": "Eye inflammation",
+                "severity": "Variable",
+                "pattern": "Occurred in 13% of patients in one study"
+            },
+            {
+                "name": "Low back pain",
+                "severity": "Variable",
+                "pattern": "Occurred in 44% of patients in one study"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (38\u00b0C reported in one case)",
+            "blood_pressure": "Normal (120/80 mmHg reported in one case)",
+            "respiratory_rate": "Normal (18 breaths per minute reported in one case)"
+        },
+        "physical_findings": [
+            "Restricted and painful flexion, internal and external rotation of the affected hip joint",
+            "Erythematous maculopapular rash",
+            "Painful shallow circular aphthous oral ulcers",
+            "Joint effusion (seen on MRI)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Leukocytosis",
+            "c_reactive_protein": "Elevated",
+            "erythrocyte_sedimentation_rate": "Elevated",
+            "liver_function_tests": "Mildly elevated in one case",
+            "blood_culture": "Often negative (10-15% positive)",
+            "synovial_fluid_analysis": "Turbid fluid with elevated WBC count (3875/mL with 49% neutrophils in one case); gram-negative bacilli (Salmonella B) grown in culture"
+        },
+        "risk_factors": [
+            "Sickle cell disease",
+            "Immunocompromised state",
+            "Advanced age",
+            "Prosthetic joints",
+            "Systemic lupus erythematosus (SLE)"
+        ],
+        "imaging_findings": {
+            "x_ray": "No bony pathology or fracture in one case",
+            "mri": "Joint effusion and inflammatory changes (bony edema in one case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with septic arthritis (fever, joint pain, swelling, limited range of motion)",
+            "Positive culture of synovial fluid for Salmonella"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (CRP, ESR)",
+            "Imaging findings suggestive of septic arthritis (joint effusion, bony edema)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Reactive arthritis",
+        "Rheumatic fever",
+        "Rheumatoid arthritis",
+        "Gonococcal infection"
+    ]
+}

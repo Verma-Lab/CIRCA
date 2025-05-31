@@ -1,0 +1,65 @@
+{
+    "disease": "Mumps Hepatitis",
+    "icd_code": "B2681",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Parotitis",
+                "severity": "Painful",
+                "pattern": "Swelling of the parotid glands"
+            },
+            {
+                "name": "Orchitis",
+                "severity": "Painful",
+                "pattern": "Inflammation of the testes"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "Acute",
+                "pattern": "Inflammation of the liver"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the brain"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the meninges"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the heart muscle"
+            },
+            {
+                "name": "Pancreatitis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the pancreas"
+            },
+            {
+                "name": "Nephritis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the kidneys"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painful swelling of the parotid glands",
+            "Swelling of other tissues and organs (testes, pancreas, etc.)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with mumps (e.g., parotitis)",
+            "Evidence of hepatitis (e.g., elevated liver enzymes)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

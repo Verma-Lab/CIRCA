@@ -1,0 +1,62 @@
+{
+    "disease": "Zika virus disease",
+    "icd_code": "A925",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "mild",
+                "pattern": "typical"
+            },
+            {
+                "name": "Fever",
+                "severity": "mild",
+                "pattern": "typical"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "mild",
+                "pattern": "typical"
+            },
+            {
+                "name": "Muscle and joint pain",
+                "severity": "mild",
+                "pattern": "typical"
+            },
+            {
+                "name": "Malaise",
+                "severity": "mild",
+                "pattern": "typical"
+            },
+            {
+                "name": "Headache",
+                "severity": "mild",
+                "pattern": "typical"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Pregnancy",
+            "Travel to areas with Zika virus transmission",
+            "Sexual contact with an infected person",
+            "Blood transfusion",
+            "Organ transplantation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with Zika virus infection in a person living in or visiting an area with Zika virus transmission and/or Aedes mosquito vectors",
+            "Laboratory confirmation of Zika virus infection through blood or other body fluid tests"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Dengue virus",
+        "Chikungunya virus",
+        "Other arboviral and non-arboviral diseases"
+    ]
+}

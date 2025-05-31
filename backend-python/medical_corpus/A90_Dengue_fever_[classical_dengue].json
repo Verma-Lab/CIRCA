@@ -1,0 +1,75 @@
+{
+    "disease": "Dengue fever [classical dengue]",
+    "icd_code": "A90",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Usually lasts 2-7 days"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Shock",
+                "severity": "Severe",
+                "pattern": "Occurs in severe dengue, usually 24-48 hours after fever subsides"
+            },
+            {
+                "name": "Internal bleeding",
+                "severity": "Severe",
+                "pattern": "Occurs in severe dengue, usually 24-48 hours after fever subsides"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to moderate",
+                "pattern": "Can last several weeks after recovery"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "High fever"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_test": "Can show dengue infection"
+        },
+        "risk_factors": [
+            "Previous dengue infection",
+            "Pregnancy",
+            "Infancy",
+            "Living in areas with high dengue transmission",
+            "Exposure to infected mosquitoes"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with dengue fever (fever, headache, muscle and joint pain, rash, etc.)",
+            "Positive dengue virus serology test"
+        ],
+        "supportive": [
+            "Recent travel to or residence in an area with dengue transmission",
+            "Epidemiological evidence of dengue outbreak in the area"
+        ]
+    },
+    "differential_diagnoses": []
+}

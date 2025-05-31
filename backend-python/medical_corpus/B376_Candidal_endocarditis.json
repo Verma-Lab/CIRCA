@@ -1,0 +1,88 @@
+{
+    "disease": "Candidal Endocarditis",
+    "icd_code": "B376",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "On exertion or at rest"
+            },
+            {
+                "name": "Cutaneous nodules",
+                "severity": "Variable",
+                "pattern": "Localized or disseminated"
+            },
+            {
+                "name": "Loss of visual acuity",
+                "severity": "Variable",
+                "pattern": "Sudden or gradual"
+            },
+            {
+                "name": "Cerebral embolization",
+                "severity": "Severe",
+                "pattern": "Sudden onset of neurological symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "blood_pressure": "Variable",
+            "heart_rate": "Variable",
+            "respiratory_rate": "Variable"
+        },
+        "physical_findings": [
+            "Harsh holosystolic murmur",
+            "Presence of vegetations on valves (echocardiography)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated",
+            "neutrophils": "Elevated",
+            "c_reactive_protein": "Elevated",
+            "erythrocyte_sedimentation_rate": "Elevated",
+            "blood_cultures": "Positive for Candida species"
+        },
+        "risk_factors": [
+            "Intravenous drug abuse",
+            "Prolonged antibiotic therapy",
+            "Indwelling central venous catheter",
+            "Prosthetic heart valve",
+            "History of endocarditis",
+            "Parenteral nutrition",
+            "Neutropenia",
+            "Diabetes mellitus",
+            "Immunocompromised status",
+            "Malignancies",
+            "Recent surgery"
+        ],
+        "imaging_findings": {
+            "echocardiography": "Vegetations on prosthetic or native valves",
+            "chest_x_ray": "May show cardiomegaly or interstitial edema",
+            "abdominal_ct": "May show splenic infarct",
+            "mri": "May show subcutaneous edema or abscess"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Candida species",
+            "Echocardiographic evidence of valvular vegetations"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with endocarditis",
+            "Risk factors for Candida endocarditis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial endocarditis"
+    ]
+}

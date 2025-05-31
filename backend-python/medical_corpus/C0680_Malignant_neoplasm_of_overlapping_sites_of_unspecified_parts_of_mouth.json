@@ -1,0 +1,27 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of unspecified parts of mouth",
+    "icd_code": "C0680",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue in multiple areas of the mouth"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse and dependence",
+            "History of tobacco dependence",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant neoplasm involving multiple, unspecified sites in the mouth"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

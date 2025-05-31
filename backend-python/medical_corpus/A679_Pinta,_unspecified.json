@@ -1,0 +1,67 @@
+{
+    "disease": "Pinta, unspecified",
+    "icd_code": "A679",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Reddish skin lump",
+                "severity": "Unspecified",
+                "pattern": "Initially small, enlarging over time, becoming scaly"
+            },
+            {
+                "name": "Lymph node swelling",
+                "severity": "Unspecified",
+                "pattern": "Can occur later in the disease course"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Unspecified",
+                "pattern": "Can occur later in the disease course"
+            },
+            {
+                "name": "Feeling sick",
+                "severity": "Unspecified",
+                "pattern": "Can occur later in the disease course"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Additional skin lumps and changes",
+                "severity": "Unspecified",
+                "pattern": "Can be whitish or black-gray, harder, scaly"
+            },
+            {
+                "name": "Hair loss",
+                "severity": "Unspecified",
+                "pattern": "Can occur in certain areas with prolonged disease"
+            },
+            {
+                "name": "Skin scarring",
+                "severity": "Unspecified",
+                "pattern": "Can occur with prolonged disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Reddish skin lump",
+            "Enlarged, scaly skin lesions",
+            "Swollen lymph nodes",
+            "Whitish or black-gray skin changes",
+            "Hardened, scaly skin",
+            "Hair loss",
+            "Skin scarring"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

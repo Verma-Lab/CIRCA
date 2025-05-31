@@ -1,0 +1,87 @@
+{
+    "disease": "Gonococcal osteomyelitis",
+    "icd_code": "A5443",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain",
+                "severity": "Worsening",
+                "pattern": "Initially in one joint (e.g., hip, knee), then progressing to another (e.g., shoulder)"
+            },
+            {
+                "name": "Fever",
+                "severity": "Present in some cases",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Decreased range of motion",
+                "severity": "Moderate to severe",
+                "pattern": "Affected by pain"
+            },
+            {
+                "name": "Swelling",
+                "severity": "May be present",
+                "pattern": "Localized to the affected joint"
+            },
+            {
+                "name": "Erythema",
+                "severity": "May be present",
+                "pattern": "Localized to the affected joint"
+            },
+            {
+                "name": "Urogenital symptoms",
+                "severity": "Often absent",
+                "pattern": "May be absent even in cases of disseminated gonococcal infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated (fever)",
+            "heart_rate": "May be elevated",
+            "blood_pressure": "Usually normal"
+        },
+        "physical_findings": [
+            "Tenderness to palpation at the affected joint",
+            "Decreased range of motion",
+            "Intact skin over the affected joint (in some cases)",
+            "Possible erythema or swelling",
+            "May be afebrile"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated (leukocytosis)",
+            "c_reactive_protein": "Elevated",
+            "erythrocyte_sedimentation_rate": "Elevated",
+            "urine_analysis": "May show leukocyte esterase and white blood cells",
+            "synovial_fluid_analysis": "Cloudy yellow fluid with elevated white blood cell count, predominantly neutrophils",
+            "blood_culture": "May be positive for Neisseria gonorrhoeae",
+            "synovial_fluid_culture": "May be positive for Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Sexually transmitted infection (gonorrhea)",
+            "Disseminated gonococcal infection (DGI)",
+            "Asymptomatic mucosal infection",
+            "Unprotected sexual intercourse"
+        ],
+        "imaging_findings": {
+            "x_ray": "May be initially normal, later showing osteolytic lesions",
+            "mri": "Shows evidence of osteomyelitis (focal lesion), septic arthritis, joint effusion, and synovial thickening"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gonococcal osteomyelitis (joint pain, fever, decreased range of motion)",
+            "Positive culture for Neisseria gonorrhoeae from blood or synovial fluid",
+            "Imaging findings consistent with osteomyelitis (MRI)"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (CRP, ESR)",
+            "History of gonorrhea or recent sexual contact"
+        ]
+    },
+    "differential_diagnoses": [
+        "Septic arthritis (other pathogens)",
+        "Reactive arthritis",
+        "Osteomyelitis (other pathogens)",
+        "Erysipelas"
+    ]
+}

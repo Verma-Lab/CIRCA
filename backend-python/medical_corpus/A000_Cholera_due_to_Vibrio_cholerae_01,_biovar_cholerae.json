@@ -1,0 +1,60 @@
+{
+    "disease": "Cholera due to Vibrio cholerae O1, biovar cholerae",
+    "icd_code": "A000",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": [
+                    "mild",
+                    "moderate",
+                    "severe"
+                ],
+                "pattern": "acute, watery"
+            },
+            {
+                "name": "Dehydration",
+                "severity": [
+                    "life-threatening"
+                ],
+                "pattern": "rapid onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "increased",
+            "blood_pressure": "decreased (in severe cases)"
+        },
+        "physical_findings": [
+            "Dehydration signs (dry mucous membranes, sunken eyes, decreased skin turgor)",
+            "Hypotension",
+            "Tachycardia",
+            "Oliguria or anuria"
+        ],
+        "lab_values": {
+            "stool_culture": "Vibrio cholerae O1",
+            "electrolytes": "Hyponatremia, hypochloremia, hypokalemia"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Limited access to safe water",
+            "Poor sanitation",
+            "Poor hygiene practices",
+            "Conflict",
+            "Population displacement",
+            "Climate events (cyclones, floods, drought)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of acute watery diarrhea",
+            "Isolation of Vibrio cholerae O1 from stool sample"
+        ],
+        "supportive": [
+            "Epidemiological link to a cholera outbreak",
+            "Positive rapid diagnostic test (RDT)"
+        ]
+    },
+    "differential_diagnoses": []
+}

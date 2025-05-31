@@ -1,0 +1,86 @@
+{
+    "disease": "Tinea barbae and tinea capitis",
+    "icd_code": "B350",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Red, ring-shaped rashes",
+                "severity": "Mild to moderate",
+                "pattern": "Ring-shaped, may be itchy but not painful"
+            },
+            {
+                "name": "Hair follicle infection (tinea sycosis)",
+                "severity": "Moderate to severe",
+                "pattern": "Swollen, pus-filled patches (kerions), scarring, hair loss, fever, fatigue, swollen lymph nodes"
+            },
+            {
+                "name": "Hair loss",
+                "severity": "Variable",
+                "pattern": "Patchy, can be permanent in severe cases"
+            },
+            {
+                "name": "Dry, scaly areas",
+                "severity": "Mild to moderate",
+                "pattern": "Patchy"
+            },
+            {
+                "name": "Redness",
+                "severity": "Mild to moderate",
+                "pattern": "Patchy"
+            },
+            {
+                "name": "Itch",
+                "severity": "Mild to moderate",
+                "pattern": "Patchy"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible in severe cases"
+        },
+        "physical_findings": [
+            "Red, ring-shaped rashes on the epidermis",
+            "Swollen, pus-filled patches (kerions)",
+            "Scarring",
+            "Hair loss",
+            "Swollen lymph nodes"
+        ],
+        "lab_values": {
+            "KOH preparation": "Presence of hyphae and spores",
+            "Fungal culture": "Identification of causative agent"
+        },
+        "risk_factors": [
+            "Direct contact with infected animals (livestock, pets)",
+            "Contact with contaminated soil",
+            "Contact with infected humans (rare)",
+            "Working with farm animals (especially for tinea barbae)",
+            "Immunocompromised state (for tinea capitis)",
+            "Household crowding (for tinea capitis)",
+            "Lower socioeconomic status (for tinea capitis)",
+            "Warm, humid environments (for tinea capitis)",
+            "Contact sport (for tinea capitis)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (ring-shaped rash, hair loss, etc.)",
+            "Microscopic examination of skin scrapings or hair (KOH preparation)",
+            "Fungal culture"
+        ],
+        "supportive": [
+            "Wood's lamp examination (fluorescence of infected hairs)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial infection",
+        "Herpes simplex virus",
+        "Acne",
+        "Rosacea",
+        "Alopecia areata",
+        "Eczema",
+        "Psoriasis",
+        "Seborrheic dermatitis",
+        "Erythrasma"
+    ]
+}

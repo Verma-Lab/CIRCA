@@ -1,0 +1,85 @@
+{
+    "disease": "Malignant neoplasm of tonsillar pillar (anterior) (posterior)",
+    "icd_code": "C091",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Unilateral otalgia",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Sensation of a mass in the throat",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Trismus",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Incidental finding"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Persistent hoarseness",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Asymmetrical tonsils",
+            "Enlarged cervical nodes (jugulodigastric region)",
+            "Grey-white ulcero-proliferative growth"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Smoking",
+            "Alcohol misuse",
+            "Human papillomavirus (HPV) infection",
+            "Spouse with HPV-related cancer"
+        ],
+        "imaging_findings": {
+            "MRI": "Best quality soft tissue delineation of primary disease and local spread",
+            "CT": "Assessment of primary disease; staging of head and neck cancers (skull base to diaphragm)",
+            "PET-CT": "Diagnosis and staging; post-treatment surveillance (limited by false positives)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical examination (ENT examination, flexible nasal endoscopy)",
+            "Biopsy",
+            "Imaging (MRI, CT, PET-CT)"
+        ],
+        "supportive": [
+            "p16 overexpression (surrogate marker for HPV)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Non-Hodgkin's lymphoma"
+    ]
+}

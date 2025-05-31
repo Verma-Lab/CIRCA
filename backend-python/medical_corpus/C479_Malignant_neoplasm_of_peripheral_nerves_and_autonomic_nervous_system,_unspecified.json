@@ -1,0 +1,58 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves and autonomic nervous system, unspecified",
+    "icd_code": "C479",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Growing lump or mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Muscle movement difficulty",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Numbness or tingling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or lump",
+            "Muscle weakness or atrophy",
+            "Sensory deficits (numbness, tingling)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant neoplasm of peripheral nerves and autonomic nervous system"
+        ],
+        "supportive": [
+            "Clinical presentation (pain, weakness, mass)",
+            "Imaging findings suggestive of a peripheral nerve tumor"
+        ]
+    },
+    "differential_diagnoses": []
+}

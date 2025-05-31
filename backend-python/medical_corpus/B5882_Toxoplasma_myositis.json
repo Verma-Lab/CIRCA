@@ -1,0 +1,134 @@
+{
+    "disease": "Toxoplasma myositis",
+    "icd_code": "B58.82",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Progressive muscular weakness",
+                "severity": "Severe",
+                "pattern": "Symmetrical, proximal"
+            },
+            {
+                "name": "Psychomotor impairment",
+                "severity": "Mild",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Present (37.8\u00b0C)"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Initial",
+                "pattern": "Present"
+            },
+            {
+                "name": "Inability to stand or sit independently",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Proximal muscle weakness",
+                "severity": "Mild to severe",
+                "pattern": "Symmetrical"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Palms and soles rash",
+                "severity": "Present",
+                "pattern": "Maculopapular"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Present",
+                "pattern": "Daily up to 38.9\u00b0C"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Present",
+                "pattern": "3 kilograms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "37.8\u00b0C to 38.9\u00b0C",
+            "pulse_rate": "100/minute to 120 beats/min",
+            "blood_pressure": "110/70 mmHg to 110 mmHg systolic"
+        },
+        "physical_findings": [
+            "Severe symmetrical proximal weakness",
+            "Inability to stand or sit independently",
+            "Initial dysphagia",
+            "Tender and palpable liver 3 cm subcostally",
+            "Mild proximal muscle weakness",
+            "Fine tremor of hands",
+            "Maculopapular rash on palms and soles"
+        ],
+        "lab_values": {
+            "CPK": "2300 UI/L (n.v. <190) to 607 IU/L",
+            "C-reactive protein": "10 mg/L (normal values <5) to 0.5 mg/dl",
+            "GOT": "117 UI/L",
+            "GPT": "45 UI/L",
+            "Troponin": "85 ng/L",
+            "NT-proBNP": "516 ng/L",
+            "Alanine aminotransferase": "407 IU/L",
+            "Aspartate aminotransferase": "639 IU/L",
+            "Gamma-glutamyltranspeptidase": "120 IU/L",
+            "Lactate dehydrogenase": "478 IU/L to 935 IU/L",
+            "Aldolase": "16.9 IU/L to 43 IU/L",
+            "CD4+": "8 cells/mm3 (normal values 493\u20131666, <5%)",
+            "CD4+/CD8+ ratio": "0.1 (normal values 1.4\u20132.4)",
+            "HIV-1 RNA": "721 copies/mL"
+        },
+        "risk_factors": [
+            "HIV infection",
+            "Immunocompromised state",
+            "Previous Guillain-Barr\u00e9 syndrome"
+        ],
+        "imaging_findings": {
+            "Brain MRI": "Bilateral T2 and FLAIR hyperintensities in the nucleo-capsular region and irregular contrast-enhancement of the globi pallidi and the right putamen",
+            "Brain CT scan": "New hypodensity in the right nucleo-capsular region with mild contrast enhancement in the central part",
+            "Abdominal ultrasonography": "Round, not cystic liver lesion of a diameter of 2 cm",
+            "Abdominal computed tomography": "Confirmed liver lesion"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological analysis showing inflammatory infiltrates with muscular fiber atrophy and degeneration and intracytoplasmic inclusions",
+            "Positive PCR for Toxoplasma gondii",
+            "Positive Toxoplasma gondii specific monoclonal antibody immunohistochemical staining"
+        ],
+        "supportive": [
+            "Clinical presentation of progressive muscular weakness and psychomotor impairment",
+            "Elevated muscle enzymes (CPK, LDH, Aldolase)",
+            "Imaging findings consistent with Toxoplasma gondii lesions"
+        ]
+    },
+    "differential_diagnoses": [
+        "Para-infectious myositis",
+        "Seronegative necrotizing autoimmune myopathy",
+        "Antiretroviral toxic myopathy",
+        "Polymyositis",
+        "Myocarditis"
+    ]
+}

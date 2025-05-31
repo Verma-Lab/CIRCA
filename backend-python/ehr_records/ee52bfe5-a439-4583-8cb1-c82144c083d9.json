@@ -1,0 +1,131 @@
+{
+  "id": "ee52bfe5-a439-4583-8cb1-c82144c083d9",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: headache\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let's analyze this ECG tracing. Here\u2019s a detailed breakdown of what I observe, keeping in mind this is a visual assessment and a full clinical picture is needed for a definitive diagnosis:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm, but there are several concerning features that warrant careful evaluation. The primary observation is the presence of significant left ventricular hypertrophy (LVH). \n\n**Detailed Findings:**\n\n1. **Rate:** The heart rate appears to be approximately 75-85 beats per minute (BPM). This falls within the normal range.\n\n2. **Rhythm:** The rhythm is regular, indicating a consistent sinus rhythm.\n\n3. **P Waves:** The P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6. However, in lead II, they appear diminished and slightly slurred. This suggests some degree of left atrial enlargement.\n\n4. **PR Interval:** The PR intervals are mostly within the normal range (0.12-0.20 seconds) but are slightly prolonged in some leads, particularly V6 (around 0.21 seconds). This prolongation can be a sign of left ventricular overload.\n\n5. **QRS Complex:** This is where the most significant abnormalities are noted.\n   * **Morphology:** The QRS complexes are widened, particularly in the precordial leads (V1-V6). This widening (greater than 0.12 seconds) is a hallmark of LVH.\n   * **Amplitude:** The QRS amplitude is increased in the precordial leads, further supporting the presence of LVH.\n   * **R Wave Progression:** The R waves are tall and peaked, especially in V1, V2, V3, V4, and V5. This is a classic finding of LVH.\n\n6. **ST Segment:**\n   * **ST Elevation:** There is subtle ST elevation in leads V1, V2, V3, V4, and V5.  The elevation is small, but it is significant given the other findings.\n   * **ST Depression:** There is minimal ST depression in leads V6.\n\n7. **T Waves:** The T waves are generally upright, but they appear slightly rounded in some leads, which can be associated with LVH.\n\n8. **QT Interval:** The QT intervals appear to be within normal limits.\n\n9. **Axis:** The Q\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 2006-02-16, history of illness\nSIGN_SYMPTOM: headache, Elevation, ST elevation, elevation, Depression, ST depression\nDIAGNOSTIC_PROCEDURE: physical exam, ECG, rhythm, heart rate, Rhythm, P Waves, P waves, leads I, lead II, PR Interval, PR intervals, QRS Complex, QRS complexes, precordial leads, QRS amplitude, R Wave Progression, R waves, ST Segment, ST, leads, T Waves, T waves, QT Interval, QT intervals, Q\nDURATION: 2025\nDATE: -03-25, 09\nDETAILED_DESCRIPTION: T, :09:28.833517, , aVL,, 1, V2, V5, and V6, leads, V1-V6, 1, V2, V3, V4, and V5, , V, , and V\nLAB_VALUE: sinus, 75-85 beats per minute, BPM, regular, present, upright, diminished, slightly slurred, within the normal range, 0.12-0.20 seconds, slightly prolonged, 0.21 seconds, prolongation, widened, widening, greater than 0.12 seconds, increased, tall, peaked, slightly rounded, within normal limits\nSEVERITY: significant, subtle\nDISEASE_DISORDER: left ventricular hypertrophy, LVH, left atrial enlargement, left ventricular overload, LV\nBIOLOGICAL_STRUCTURE: V, V6, V1, 2, 3, 4, 5",
+  "recommendation": "Left Ventricular Hypertrophy (LVH)",
+  "reasoning": "The ECG shows clear evidence of significant left ventricular hypertrophy (LVH).  The key findings supporting this diagnosis include: widened QRS complexes, increased QRS amplitude in precordial leads, tall and peaked R waves in precordial leads, and subtle ST elevation in some leads.  The slightly prolonged PR intervals and evidence of left atrial enlargement suggest that the LVH may be due to volume overload.  While the patient's chief complaint is a headache, the absence of other symptoms and the significant ECG findings strongly suggest that the headache may be unrelated or secondary to the underlying cardiac condition.  Further investigation is crucial to determine the underlying cause of the LVH and to assess the patient's overall cardiovascular health.  The absence of a physical exam and other relevant clinical information limits the certainty of this diagnosis.\n\nDifferential Diagnoses:\n- {'diagnosis': 'Hypertensive Heart Disease', 'explanation': 'LVH is a common finding in hypertensive heart disease.  Further investigation into blood pressure is needed to rule this out.'}\n- {'diagnosis': 'Valvular Heart Disease', 'explanation': 'Certain valvular conditions can lead to LVH as the heart works harder to compensate.  Echocardiogram is needed to assess valve function.'}\n- {'diagnosis': 'Cardiomyopathy', 'explanation': 'Various cardiomyopathies can cause LVH.  Further investigations, including echocardiography and cardiac MRI, are necessary to differentiate.'}\n- {'diagnosis': 'Genetic Conditions', 'explanation': 'Some genetic conditions predispose individuals to LVH.  Family history and genetic testing might be considered.'}",
+  "confidence": "85",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "comprehensive_literature",
+      "contents": "Error retrieving medical literature: 'MedicalLiteratureManager' object has no attribute 'retrieve_combined_medical_literature'"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let's analyze this ECG tracing. Here\u2019s a detailed breakdown of what I observe, keeping in mind this is a visual assessment and a full clinical picture is needed for a definitive diagnosis:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm, but there are several concerning features that warrant careful evaluation. The primary observation is the presence of significant left ventricular hypertrophy (LVH). \n\n**Detailed Findings:**\n\n1. **Rate:** The heart rate appears to be approximately 75-85 beats per minute (BPM). This falls within the normal range.\n\n2. **Rhythm:** The rhythm is regular, indicating a consistent sinus rhythm.\n\n3. **P Waves:** The P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6. However, in lead II, they appear diminished and slightly slurred. This suggests some degree of left atrial enlargement.\n\n4. **PR Interval:** The PR intervals are mostly within the normal range (0.12-0.20 seconds) but are slightly prolonged in some leads, particularly V6 (around 0.21 seconds). This prolongation can be a sign of left ventricular overload.\n\n5. **QRS Complex:** This is where the most significant abnormalities are noted.\n   * **Morphology:** The QRS complexes are widened, particularly in the precordial leads (V1-V6). This widening (greater than 0.12 seconds) is a hallmark of LVH.\n   * **Amplitude:** The QRS amplitude is increased in the precordial leads, further supporting the presence of LVH.\n   * **R Wave Progression:** The R waves are tall and peaked, especially in V1, V2, V3, V4, and V5. This is a classic finding of LVH.\n\n6. **ST Segment:**\n   * **ST Elevation:** There is subtle ST elevation in leads V1, V2, V3, V4, and V5.  The elevation is small, but it is significant given the other findings.\n   * **ST Depression:** There is minimal ST depression in leads V6.\n\n7. **T Waves:** The T waves are generally upright, but they appear slightly rounded in some leads, which can be associated with LVH.\n\n8. **QT Interval:** The QT intervals appear to be within normal limits.\n\n9. **Axis:** The Q"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "2006-02-16",
+      "history of illness"
+    ],
+    "SIGN_SYMPTOM": [
+      "headache",
+      "Elevation",
+      "ST elevation",
+      "elevation",
+      "Depression",
+      "ST depression"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical exam",
+      "ECG",
+      "rhythm",
+      "heart rate",
+      "Rhythm",
+      "P Waves",
+      "P waves",
+      "leads I",
+      "lead II",
+      "PR Interval",
+      "PR intervals",
+      "QRS Complex",
+      "QRS complexes",
+      "precordial leads",
+      "QRS amplitude",
+      "R Wave Progression",
+      "R waves",
+      "ST Segment",
+      "ST",
+      "leads",
+      "T Waves",
+      "T waves",
+      "QT Interval",
+      "QT intervals",
+      "Q"
+    ],
+    "DURATION": [
+      "2025"
+    ],
+    "DATE": [
+      "-03-25",
+      "09"
+    ],
+    "DETAILED_DESCRIPTION": [
+      "T",
+      ":09:28.833517",
+      ", aVL,",
+      "1, V2, V5, and V6",
+      "leads",
+      "V1-V6",
+      "1, V2, V3, V4, and V5",
+      ", V",
+      ", and V"
+    ],
+    "LAB_VALUE": [
+      "sinus",
+      "75-85 beats per minute",
+      "BPM",
+      "regular",
+      "present",
+      "upright",
+      "diminished",
+      "slightly slurred",
+      "within the normal range",
+      "0.12-0.20 seconds",
+      "slightly prolonged",
+      "0.21 seconds",
+      "prolongation",
+      "widened",
+      "widening",
+      "greater than 0.12 seconds",
+      "increased",
+      "tall",
+      "peaked",
+      "slightly rounded",
+      "within normal limits"
+    ],
+    "SEVERITY": [
+      "significant",
+      "subtle"
+    ],
+    "DISEASE_DISORDER": [
+      "left ventricular hypertrophy",
+      "LVH",
+      "left atrial enlargement",
+      "left ventricular overload",
+      "LV"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "V",
+      "V6",
+      "V1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "citations": [],
+  "analysis_date": "2025-03-25T23:48:11.945819",
+  "created_at": "2025-03-25T23:48:11.945823"
+}

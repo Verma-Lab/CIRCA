@@ -1,0 +1,101 @@
+{
+    "disease": "Acute paralytic poliomyelitis, vaccine-associated",
+    "icd_code": "A800",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute flaccid paralysis",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Drowsiness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hypotonia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Generalized or localized"
+            },
+            {
+                "name": "Paraparesis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chronic diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malabsorption",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Failure to thrive",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Recurrent pneumonia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Variable"
+        },
+        "physical_findings": [
+            "Acute flaccid paralysis",
+            "Hypotonia",
+            "Weakness",
+            "Paraparesis"
+        ],
+        "lab_values": {
+            "stool culture": "Vaccine-related poliovirus",
+            "immunoglobulin levels": "Decreased in some cases",
+            "lymphocyte counts": "Decreased in some cases",
+            "CD4+ T-cell counts": "Decreased in some cases",
+            "CD8+ T-cell counts": "Decreased in some cases",
+            "CD19+ B lymphocytes": "Decreased in some cases"
+        },
+        "risk_factors": [
+            "Immunodeficiency disorders",
+            "First dose of OPV",
+            "Intramuscular injections before OPV",
+            "Contact with recently vaccinated individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Acute flaccid paralysis with residual paralysis lasting at least 60 days",
+            "Onset within 4-40 days after OPV dose (recipient) or 7-75 days after OPV dose (contact)",
+            "Isolation of vaccine-related poliovirus from stool samples",
+            "Absence of wild poliovirus"
+        ],
+        "supportive": [
+            "Clinical and epidemiological characteristics consistent with VAPP",
+            "Expert panel review"
+        ]
+    },
+    "differential_diagnoses": []
+}

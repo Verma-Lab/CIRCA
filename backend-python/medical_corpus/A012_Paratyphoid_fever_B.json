@@ -1,0 +1,120 @@
+{
+    "disease": "Paratyphoid fever B",
+    "icd_code": "A012",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Gradual onset over several days; sustained"
+            },
+            {
+                "name": "Headache",
+                "severity": "Common",
+                "pattern": "Present before fever onset in some cases"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Common",
+                "pattern": "Present before fever onset in some cases"
+            },
+            {
+                "name": "Loss of appetite (Anorexia)",
+                "severity": "Common",
+                "pattern": "Present before fever onset in some cases"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Common (20-40% initially)",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Diarrhea or Constipation",
+                "severity": "Variable",
+                "pattern": "Constipation more common in adults"
+            },
+            {
+                "name": "Skin rash (rose-colored spots)",
+                "severity": "Some individuals",
+                "pattern": "About 30% of light-skinned individuals"
+            },
+            {
+                "name": "Chills",
+                "severity": "Frequent",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Sweating",
+                "severity": "Frequent",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Cough",
+                "severity": "Frequent",
+                "pattern": "Non-productive, early stage"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Frequent",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Frequent",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Muscle pains",
+                "severity": "Frequent",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Herpes labialis",
+                "severity": "Frequent",
+                "pattern": "Rare in typhoid fever"
+            },
+            {
+                "name": "Subdural empyema",
+                "severity": "Rare",
+                "pattern": "Rare complication"
+            },
+            {
+                "name": "Psychosis, confusion, seizures",
+                "severity": "Very rare",
+                "pattern": "Rare complications"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Relative bradycardia (slow heart rate)"
+        },
+        "physical_findings": [
+            "Hepatosplenomegaly (enlarged liver and spleen)"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Salmonella Paratyphi B",
+            "stool_culture": "Positive for Salmonella Paratyphi B",
+            "Widal test": "Positive for anti-BH antibodies"
+        },
+        "risk_factors": [
+            "Poor sanitation",
+            "Crowded populations",
+            "Consumption of contaminated food or water",
+            "Food handlers with infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Salmonella Paratyphi B in blood or stool culture"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with paratyphoid fever",
+            "Positive Widal test for anti-BH antibodies"
+        ]
+    },
+    "differential_diagnoses": [
+        "Typhoid fever",
+        "Other infectious diseases with similar symptoms"
+    ]
+}

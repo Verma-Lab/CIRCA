@@ -1,0 +1,42 @@
+{
+    "disease": "Gonococcal infection of anus and rectum",
+    "icd_code": "A546",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rectal symptoms",
+                "severity": "Variable",
+                "pattern": "May be asymptomatic in up to 80% of cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Gram stain": {
+                "abnormal": "Visualization of gram-negative diplococci (sensitivity 90-95% in men with urethral discharge, lower sensitivity in women and for pharyngeal specimens)"
+            },
+            "Culture": {
+                "abnormal": "Growth of Neisseria gonorrhoeae"
+            },
+            "Nucleic acid amplification tests (NAATs)": {
+                "abnormal": "Positive for Neisseria gonorrhoeae"
+            }
+        },
+        "risk_factors": [
+            "Sexual activity with an infected person without using condoms or oral dams"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture for Neisseria gonorrhoeae from rectal specimen",
+            "Positive NAAT for Neisseria gonorrhoeae from rectal specimen"
+        ],
+        "supportive": [
+            "Rectal symptoms",
+            "Gram stain showing gram-negative diplococci (lower sensitivity)"
+        ]
+    },
+    "differential_diagnoses": []
+}

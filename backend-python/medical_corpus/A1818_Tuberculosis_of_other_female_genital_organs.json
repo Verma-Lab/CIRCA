@@ -1,0 +1,137 @@
+{
+    "disease": "Tuberculosis of other female genital organs",
+    "icd_code": "A1818",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Infertility",
+                "severity": "High",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pelvic/abdominal pain",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Menstrual irregularities",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Oligomenorrhea",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hypomenorrhea",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Amenorrhea",
+                "severity": "Moderate to Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Menorrhagia",
+                "severity": "Moderate to Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dysmenorrhea",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Metrorrhagia",
+                "severity": "Moderate to Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Abnormal vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Postmenopausal bleeding",
+                "severity": "Moderate to Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Persistent leucorrhoea",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pyometra",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible, variable"
+        },
+        "physical_findings": [
+            "Enlarged and slightly edematous fallopian tubes",
+            "Irregular external surface of fallopian tubes due to adhesions",
+            "Everted fimbriae",
+            "Adnexal mass (in advanced stages)",
+            "Intrauterine adhesions (in advanced stages)"
+        ],
+        "lab_values": {
+            "Acid-fast bacilli (AFB)": "May be present in tissue sections",
+            "Mycobacterium tuberculosis PCR": "Positive in some cases",
+            "Mycobacterium tuberculosis culture": "Positive in some cases",
+            "PPD test": "Positive in some cases"
+        },
+        "risk_factors": [
+            "Contact with smear-positive pulmonary TB patient",
+            "Past history of TB infection",
+            "Residence in or recent travel to endemic areas",
+            "Low socio-economic background",
+            "HIV co-infection",
+            "Drug abuse"
+        ],
+        "imaging_findings": {
+            "Hysterosalpingography (HSG)": "May show tubal abnormalities",
+            "Ultrasonography (USG)": "May show adnexal masses or other abnormalities",
+            "Laparoscopy": "May reveal adhesions or other abnormalities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of epithelioid granulomas in histopathologic examination"
+        ],
+        "supportive": [
+            "Positive Mycobacterium tuberculosis PCR",
+            "Positive Mycobacterium tuberculosis culture",
+            "Positive PPD test",
+            "Characteristic findings on HSG, USG, or laparoscopy",
+            "Clinical symptoms consistent with genital TB"
+        ]
+    },
+    "differential_diagnoses": [
+        "Genital carcinomas",
+        "Acute appendicitis",
+        "Ovarian cysts",
+        "Pelvic inflammatory disease (PID)",
+        "Ectopic pregnancy"
+    ]
+}

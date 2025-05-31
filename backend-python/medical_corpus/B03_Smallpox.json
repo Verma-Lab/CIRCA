@@ -1,0 +1,52 @@
+{
+    "disease": "Smallpox",
+    "icd_code": "B03",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Early"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Early"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Variable",
+                "pattern": "Early"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Early"
+            },
+            {
+                "name": "Skin bumps",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Pus-filled blisters",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin bumps progressing to pus-filled blisters",
+            "Scars (after healing)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

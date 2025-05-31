@@ -1,0 +1,72 @@
+{
+    "disease": "Zoster scleritis",
+    "icd_code": "B0234",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painful ocular inflammation",
+                "severity": "Moderate to severe",
+                "pattern": "Unilateral, progressive"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Progressive",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Reddish scleral nodule",
+                "severity": "Variable",
+                "pattern": "Localized, may be tender on palpation"
+            },
+            {
+                "name": "Hyperemia",
+                "severity": "Variable",
+                "pattern": "Localized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "intraocular pressure": "Elevated (e.g., 32 mmHg in affected eye)"
+        },
+        "physical_findings": [
+            "Conjunctivo-scleral hyperemia",
+            "Scleral nodule (anterior, nodular)",
+            "Ciliary injection",
+            "Corneal edema (mild)",
+            "Keratic precipitates (diffuse)",
+            "Anterior chamber reaction",
+            "Vesicular eruption in perioral region (preceding ocular symptoms)"
+        ],
+        "lab_values": {
+            "HLA-B27": "Positive",
+            "Infectious workup (syphilis, tuberculosis, herpes simplex, Borrelia)": "Negative",
+            "Blood cell count": "Normal",
+            "Erythrocyte sedimentation rate": "Normal",
+            "Angiotensin converting enzyme levels": "Normal",
+            "Rheumatoid factor": "Negative",
+            "Antineutrophil cytoplasmic antibodies (ANCA)": "Negative",
+            "Antinuclear antibodies (ANA)": "Negative",
+            "VZV PCR (aqueous humor)": "Positive"
+        },
+        "risk_factors": [
+            "Herpetic viral disease (VZV)",
+            "Positive HLA-B27"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with scleritis (e.g., painful scleral nodule, hyperemia)",
+            "Positive PCR for VZV in aqueous humor"
+        ],
+        "supportive": [
+            "Preceding hypertensive anterior uveitis responsive to antiviral treatment",
+            "Positive HLA-B27",
+            "Response to antiviral and immunosuppressive therapy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Immune-mediated scleritis",
+        "Other infectious scleritis (e.g., herpes simplex)"
+    ]
+}

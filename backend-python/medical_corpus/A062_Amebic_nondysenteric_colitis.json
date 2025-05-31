@@ -1,0 +1,76 @@
+{
+    "disease": "Amebic nondysenteric colitis",
+    "icd_code": "A062",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Watery or bloody, intermittent or persistent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Cramping, intermittent or persistent"
+            },
+            {
+                "name": "Dysentery",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hematochezia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present in fulminant cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "leukocytosis": "May be present in fulminant cases"
+        },
+        "physical_findings": [
+            "Abdominal tenderness"
+        ],
+        "lab_values": {
+            "stool examination": "Presence of cysts or trophozoites of E. histolytica/E. dispar",
+            "serology": "Presence of anti-amoebic antibodies (useful in extraintestinal disease)",
+            "antigen detection": "Detection of E. histolytica-specific antigen/DNA"
+        },
+        "risk_factors": [
+            "Immigration from endemic areas",
+            "International travel to endemic areas",
+            "Men who have sex with men",
+            "Immunosuppression (HIV, inflammatory bowel disease, corticosteroid use)",
+            "Poor socioeconomic conditions",
+            "Poor sanitation"
+        ],
+        "imaging_findings": {
+            "colonoscopy": "Multiple irregular ulcers, diffuse mucosal thickening, flask-shaped lesions, necrosis",
+            "CT scan": "Localized intestinal wall thickening"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of colitis",
+            "Evidence of E. histolytica/E. dispar in stool samples or colon biopsies"
+        ],
+        "supportive": [
+            "Compatible epidemiological risk factors",
+            "Clinical symptoms (diarrhea, abdominal pain, dysentery)",
+            "Abnormal lab values"
+        ]
+    },
+    "differential_diagnoses": [
+        "Inflammatory bowel disease (IBD)"
+    ]
+}

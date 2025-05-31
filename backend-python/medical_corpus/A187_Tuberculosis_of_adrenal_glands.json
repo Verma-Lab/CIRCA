@@ -1,0 +1,89 @@
+{
+    "disease": "Tuberculosis of adrenal glands",
+    "icd_code": "A187",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Weakness",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Lack of motivation",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Moderate",
+                "pattern": "Frequent"
+            },
+            {
+                "name": "Difficulty standing",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hyperpigmentation",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "May show signs of shock in adrenal crisis (hypotension, tachycardia, hypoglycemia)"
+        },
+        "physical_findings": [
+            "Hyperpigmentation of skin"
+        ],
+        "lab_values": {
+            "cortisol": "Low",
+            "ACTH": "High (in primary adrenal insufficiency)"
+        },
+        "risk_factors": [
+            "Tuberculosis infection",
+            "Immunocompromised state",
+            "Low- and middle-income country residence (higher prevalence)"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show adrenal masses resembling tumors (in about 75% of cases in the first year after PAI diagnosis)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with adrenal insufficiency (e.g., weakness, fatigue, hyperpigmentation)",
+            "Low cortisol levels",
+            "Imaging findings suggestive of adrenal tuberculosis (e.g., CT scan showing adrenal masses)"
+        ],
+        "supportive": [
+            "Positive tuberculin skin test",
+            "Detection of Mycobacterium tuberculosis in tissue samples",
+            "Response to antituberculosis treatment"
+        ]
+    },
+    "differential_diagnoses": [
+        "Primary adrenal insufficiency (other causes)",
+        "Nonfunctional adrenal tumors",
+        "Autoimmune adrenalitis"
+    ]
+}

@@ -1,0 +1,310 @@
+{
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "patient_name": "John Doe",
+  "primary_diagnosis": "Type 2 Diabetes Mellitus",
+  "confidence": 90,
+  "generated_at": "2025-04-08T23:22:35.065613",
+  "timeline_range": "1-week",
+  "timeline_data": [
+    {
+      "date": "2025-04-08",
+      "timepoint_label": "Initial Assessment",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Headache",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Review current medications, especially Crocin dosage and indication.",
+        "Order comprehensive metabolic panel including HbA1c, fasting glucose, lipid profile, and creatinine.",
+        "Assess for diabetic complications (retinopathy, neuropathy, nephropathy)."
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7-8%",
+          "interpretation": "Indicates current glycemic control"
+        },
+        {
+          "test": "Fasting Glucose",
+          "expected_value": "120-180 mg/dL",
+          "interpretation": "Reflects blood glucose levels"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "10-15 mg/dL",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Diabetic nephropathy",
+        "Diabetic retinopathy",
+        "Diabetic neuropathy"
+      ],
+      "notes": "Inconsistent lab results need clarification.  Units for creatinine and hemoglobin are unclear."
+    },
+    {
+      "date": "2025-04-09",
+      "timepoint_label": "Day 1",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Headache",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Lifestyle modifications: diet and exercise.",
+        "Consider metformin if HbA1c remains elevated."
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Creatinine",
+          "expected_value": "10-15 mg/dL",
+          "interpretation": "Monitor for worsening kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Diabetic nephropathy",
+        "Hyperosmolar hyperglycemic state"
+      ],
+      "notes": "Monitor hydration status due to increased thirst."
+    },
+    {
+      "date": "2025-04-10",
+      "timepoint_label": "Day 2",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Headache",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue lifestyle modifications.",
+        "Monitor blood glucose regularly."
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Blood glucose",
+          "expected_value": "100-180 mg/dL",
+          "interpretation": "Monitor blood glucose levels"
+        }
+      ],
+      "potential_complications": [
+        "Diabetic ketoacidosis",
+        "Hyperosmolar hyperglycemic state"
+      ],
+      "notes": "Frequent urination is a common symptom of diabetes."
+    },
+    {
+      "date": "2025-04-11",
+      "timepoint_label": "Day 3",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild to moderate"
+        },
+        {
+          "name": "Headache",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "worsening",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Initiate metformin therapy if HbA1c remains elevated.",
+        "Consider referral to nephrologist for evaluation of renal function."
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Creatinine",
+          "expected_value": "10-15 mg/dL",
+          "interpretation": "Monitor for worsening kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": "To be determined",
+          "interpretation": "Estimate of glomerular filtration rate"
+        }
+      ],
+      "potential_complications": [
+        "Diabetic nephropathy",
+        "Cardiovascular disease"
+      ],
+      "notes": "Fatigue is worsening, indicating potential need for more aggressive management."
+    },
+    {
+      "date": "2025-04-12",
+      "timepoint_label": "Day 4",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Headache",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "worsening",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue metformin and monitor response.",
+        "Dietary counseling and exercise program."
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Blood glucose",
+          "expected_value": "100-180 mg/dL",
+          "interpretation": "Monitor blood glucose levels"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "10-15 mg/dL",
+          "interpretation": "Monitor for worsening kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Diabetic nephropathy",
+        "Cardiovascular disease"
+      ],
+      "notes": "Continue close monitoring of blood glucose and kidney function."
+    },
+    {
+      "date": "2025-04-13",
+      "timepoint_label": "Day 5",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Headache",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "worsening",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Assess for medication adherence.",
+        "Consider adding other diabetes medications if needed (e.g., SGLT2 inhibitor or GLP-1 receptor agonist)."
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7-8%",
+          "interpretation": "Monitor glycemic control"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "10-15 mg/dL",
+          "interpretation": "Monitor for worsening kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Diabetic nephropathy",
+        "Cardiovascular disease"
+      ],
+      "notes": "Consider referral to endocrinologist for comprehensive diabetes management."
+    },
+    {
+      "date": "2025-04-14",
+      "timepoint_label": "Day 6",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Headache",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "worsening",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue current treatment plan and monitor closely.",
+        "Patient education on diabetes self-management."
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Blood glucose",
+          "expected_value": "100-180 mg/dL",
+          "interpretation": "Monitor blood glucose levels"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "10-15 mg/dL",
+          "interpretation": "Monitor for worsening kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Diabetic nephropathy",
+        "Cardiovascular disease"
+      ],
+      "notes": "Close monitoring and adherence to treatment plan are crucial."
+    }
+  ]
+}

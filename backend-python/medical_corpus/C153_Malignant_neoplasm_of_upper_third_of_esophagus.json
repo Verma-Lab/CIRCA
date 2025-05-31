@@ -1,0 +1,20 @@
+{
+    "disease": "Malignant neoplasm of upper third of esophagus",
+    "icd_code": "C153",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "alcohol abuse and dependence"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,47 @@
+{
+    "disease": "Malignant neoplasm of short bones of left upper limb",
+    "icd_code": "C4012",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can range from mild to severe"
+            },
+            {
+                "name": "Bone fracture",
+                "severity": "Variable",
+                "pattern": "Can occur due to weakened bone structure"
+            },
+            {
+                "name": "General malaise",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to significant illness, depending on cancer progression"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or swelling in the affected bone",
+            "Local tenderness",
+            "Limited range of motion"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "X-ray": "Lytic lesions, bone destruction, periosteal reaction",
+            "CT scan": "Detailed visualization of bone involvement, assessment of extent of disease",
+            "MRI": "Evaluation of soft tissue involvement, assessment of tumor margins"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a malignant neoplasm in the short bones of the left upper limb (e.g., lytic lesions, bone destruction)"
+        ],
+        "supportive": [
+            "Histopathological confirmation of malignancy",
+            "Clinical symptoms and physical findings consistent with bone cancer"
+        ]
+    },
+    "differential_diagnoses": []
+}

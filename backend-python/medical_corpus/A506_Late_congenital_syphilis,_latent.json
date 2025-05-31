@@ -1,0 +1,26 @@
+{
+    "disease": "Late congenital syphilis, latent",
+    "icd_code": "A506",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "serology": "positive"
+        },
+        "risk_factors": [
+            "Congenital transmission from mother during pregnancy or childbirth"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology",
+            "Absence of manifestations",
+            "Onset two years or more after birth"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

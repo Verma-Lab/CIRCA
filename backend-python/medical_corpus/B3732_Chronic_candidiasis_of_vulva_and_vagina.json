@@ -1,0 +1,80 @@
+{
+    "disease": "Chronic candidiasis of vulva and vagina",
+    "icd_code": "B3732",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Irritation",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Burning",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erythema of vulva",
+            "Edema of vulva",
+            "Ulceration of vulva",
+            "Chronic vulvar skin changes",
+            "Tenderness on palpation of vulva",
+            "Abnormal vaginal pH (>4.5)",
+            "Positive amine (whiff) test",
+            "Presence of hyphae or blastospores on KOH smear",
+            "Presence of clue cells on saline smear",
+            "Presence of parabasal cells (in case of estrogen deficiency or infection)"
+        ],
+        "lab_values": {
+            "Vaginal pH": ">4.5 (suggestive of infection)",
+            "KOH smear": "Presence of hyphae or blastospores (indicates candidiasis)",
+            "Saline smear": "Presence of clue cells or trichomonads (indicates other infections)"
+        },
+        "risk_factors": [
+            "Estrogenized vagina (postmenarchal and premenopausal)",
+            "Postmenopausal hormone replacement therapy",
+            "Diabetes mellitus",
+            "Atopy",
+            "Antibiotic/corticosteroid use",
+            "Pregnancy",
+            "HIV infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Chronic vulvovaginal symptoms lasting more than six months",
+            "Positive fungal culture for Candida species",
+            "Clinical findings consistent with candidiasis (e.g., vaginal discharge, itching, burning)"
+        ],
+        "supportive": [
+            "Abnormal vaginal pH",
+            "Positive KOH smear for hyphae or blastospores",
+            "History of recurrent vulvovaginal candidiasis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Vulvar vestibulitis syndrome",
+        "Irritant dermatitis",
+        "Bacterial vaginosis",
+        "Trichomoniasis"
+    ]
+}

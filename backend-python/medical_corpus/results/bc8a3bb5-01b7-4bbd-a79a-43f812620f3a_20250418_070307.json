@@ -1,0 +1,32 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Migraine",
+      "icd_code": "G43.1",
+      "probability": 70,
+      "reasoning": "The patient's chief complaint is a headache, and there is no other information provided.  Given the lack of other symptoms,  migraine is a high possibility.  The literature emphasizes the frequent misdiagnosis of sinus headaches as migraines, and the high prevalence of migraine headaches.  The absence of other symptoms makes other listed diseases less likely."
+    },
+    {
+      "disease": "Tension-type headache",
+      "icd_code": "G44.2",
+      "probability": 60,
+      "reasoning": "Tension-type headaches are very common and often present with only headache as a symptom.  Without further information, this is a plausible differential diagnosis."
+    },
+    {
+      "disease": "Sinus Headache (secondary to allergic rhinitis)",
+      "icd_code": "G44.0",
+      "probability": 30,
+      "reasoning": "While the patient only reports a headache, the literature highlights the frequent association between allergic rhinitis and headaches. However, the probability is low due to the lack of other allergy symptoms or evidence of sinusitis."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Detailed history taking focusing on headache characteristics (location, duration, intensity, associated symptoms like nausea, photophobia, phonophobia, aura), frequency, and any potential triggers.",
+    "Physical examination to assess for any neurological signs or findings related to the headache.",
+    "Consider allergy testing if history suggests potential allergic rhinitis (seasonal patterns, other allergy symptoms).",
+    "If headache is persistent or severe, consider imaging (CT or MRI) to rule out structural causes."
+  ],
+  "clinical_summary": "A 19-year-old male presents with a chief complaint of headache.  The history is non-contributory.  Given the limited information, the most likely diagnoses are migraine or tension-type headache.  Further history taking, physical examination, and potentially allergy testing are necessary to determine the exact cause of the headache and rule out other potential causes.  Imaging may be considered if the headache is severe or persistent.",
+  "timestamp": "2025-04-18T07:03:07.341732",
+  "identified_icd_codes": []
+}

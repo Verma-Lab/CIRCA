@@ -1,0 +1,47 @@
+{
+    "disease": "Late syphilis, latent",
+    "icd_code": "A528",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Asymptomatic",
+                "severity": "Variable",
+                "pattern": "May remain asymptomatic for years"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "VDRL": {
+                "abnormal_range": "Positive"
+            },
+            "RPR": {
+                "abnormal_range": "Positive"
+            },
+            "FTA-ABS": {
+                "abnormal_range": "Positive"
+            },
+            "TPPA": {
+                "abnormal_range": "Positive"
+            }
+        },
+        "risk_factors": [
+            "Untreated early syphilis",
+            "Sexual contact with infected individual",
+            "Mother-to-child transmission during pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological tests for syphilis (e.g., VDRL, RPR, FTA-ABS, TPPA)",
+            "Absence of clinical manifestations of early syphilis"
+        ],
+        "supportive": [
+            "History of previous syphilis infection",
+            "Contact with known syphilis case"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,101 @@
+{
+    "disease": "Listerial meningitis",
+    "icd_code": "A3211",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases, absent in others"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases, can be severe (10/10)"
+            },
+            {
+                "name": "Upset stomach",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diplopia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Left eye medial deviation",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Left palpebral ptosis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Generalized tremor",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diaphoresis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Normal in some cases",
+            "heart_rate": "Normal in some cases",
+            "oxygen_saturation": "Normal in some cases",
+            "temperature": "Normal or elevated"
+        },
+        "physical_findings": [
+            "Divergent strabismus",
+            "Left palpebral ptosis",
+            "Absence of meningeal irritation (in some cases)",
+            "Normal cardiorespiratory and abdominal examinations (in some cases)"
+        ],
+        "lab_values": {
+            "white_cell_count": "Elevated (15.48 \u00d7109/L in one case)",
+            "sodium": "Hyponatremia (Na = 128 mmol/L in one case)",
+            "cerebrospinal_fluid": "Presence of Listeria monocytogenes"
+        },
+        "risk_factors": [
+            "Pregnancy",
+            "Older age",
+            "Weakened immune system",
+            "Consumption of contaminated food"
+        ],
+        "imaging_findings": {
+            "CT_brain": "No acute findings in one case",
+            "MRA_brain": "No aneurysm, few small demyelinating lesions in periventricular white matter and cerebellar peduncles in one case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture of Listeria monocytogenes from cerebrospinal fluid"
+        ],
+        "supportive": [
+            "Clinical symptoms suggestive of meningitis",
+            "Abnormal cerebrospinal fluid findings",
+            "Positive serology"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cerebral aneurysm",
+        "Viral meningitis",
+        "Other bacterial meningitides (e.g., pneumococcal, meningococcal)"
+    ]
+}

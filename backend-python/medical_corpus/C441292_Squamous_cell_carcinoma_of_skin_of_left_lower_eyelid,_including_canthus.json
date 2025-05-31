@@ -1,0 +1,88 @@
+{
+    "disease": "Squamous cell carcinoma of skin of left lower eyelid, including canthus",
+    "icd_code": "C441292",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless nodular or plaque-like lesions",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Irregular rolled edges",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Chronic scaling with roughened patches",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fissuring of the skin",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pearly borders",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Telangiectasia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Central ulceration",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lesion on the left lower eyelid, including canthus",
+            "Lesion size ranging from 3 mm to 30 mm",
+            "Perineural invasion (in some cases)",
+            "Orbital invasion (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Ultraviolet light/actinic damage",
+            "Exposure to arsenic",
+            "Exposure to hydrocarbons",
+            "Exposure to radiation",
+            "Immunosuppressive drugs",
+            "Albinism",
+            "Pre-existing chronic skin lesions",
+            "Genetic skin disorders (xeroderma pigmentosum, epidermodysplasia verruciformis)",
+            "Chronic sun exposure",
+            "Age (elderly)",
+            "Fair skin",
+            "Previous skin lesions (SCC, BCC, intraepidermal carcinoma, melanoma)",
+            "Actinic keratosis",
+            "Bowen's disease",
+            "Radiation dermatoses"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (nodular or plaque-like lesion with irregular edges, scaling, ulceration)",
+            "Location (lower eyelid, canthus)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Sebaceous gland carcinoma",
+        "Malignant melanoma",
+        "Actinic keratosis",
+        "Bowen's disease",
+        "Keratoacanthoma",
+        "Cutaneous horn"
+    ]
+}

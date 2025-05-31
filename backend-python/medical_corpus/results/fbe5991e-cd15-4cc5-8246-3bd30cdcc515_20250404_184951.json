@@ -1,0 +1,51 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 95,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes, with home glucose readings (120-180 mg/dL) indicating suboptimal control.  A previous A1c of 7.8% further supports this diagnosis.  The plan includes adjusting metformin dosage and ordering a new HbA1c."
+    },
+    {
+      "disease": "Essential Hypertension",
+      "icd_code": "I10",
+      "probability": 90,
+      "reasoning": "The patient's blood pressure is consistently elevated (144/88 mmHg today, above the goal of <140/90 mmHg).  This is a known issue, and the plan includes continuing lisinopril and emphasizing lifestyle modifications."
+    },
+    {
+      "disease": "Tension-type Headache",
+      "icd_code": "G44.9",
+      "probability": 80,
+      "reasoning": "The patient reports occasional mild headaches consistent with tension-type headaches (dull, pressure-like, across the forehead, 3/10 severity).  The absence of neurological symptoms or alarming features supports this diagnosis. However, further investigation might be warranted if headaches worsen or change in character."
+    },
+    {
+      "disease": "Hyperlipidemia",
+      "icd_code": "E78.5",
+      "probability": 70,
+      "reasoning": "The patient is on atorvastatin, suggesting a pre-existing diagnosis of hyperlipidemia.  A lipid panel is ordered in the plan to monitor lipid levels."
+    },
+    {
+      "disease": "Chronic Kidney Disease (CKD) - Possible",
+      "icd_code": "N18.9",
+      "probability": 40,
+      "reasoning": "Creatinine level is high (15 mgh, although units are unclear and likely incorrect;  a creatinine level of 15 mg/dL would be extremely high and indicative of severe renal failure).  Further investigation is needed to confirm this.  The plan includes a comprehensive metabolic panel to assess renal function."
+    }
+  ],
+  "differential_diagnoses": [
+    {
+      "disease": "Secondary Hypertension",
+      "icd_code": "I15",
+      "probability": 10,
+      "reasoning": "While essential hypertension is the most likely cause, secondary hypertension should be considered given the elevated creatinine.  Further investigation is needed to rule this out."
+    }
+  ],
+  "additional_testing_recommended": [
+    "HbA1c",
+    "Lipid Panel",
+    "Comprehensive Metabolic Panel (including creatinine and eGFR)",
+    "Complete Blood Count (CBC)",
+    "Review of Creatinine lab values and units - clarification needed"
+  ],
+  "clinical_summary": "The patient presents with well-controlled type 2 diabetes mellitus and essential hypertension.  He also reports tension-type headaches and increased fatigue.  The elevated creatinine warrants further investigation to rule out chronic kidney disease or other causes of secondary hypertension.  Additional testing is recommended to monitor diabetes control, lipid levels, renal function, and evaluate the cause of fatigue.  The patient's age and history of hypertension and diabetes increase his risk for cardiovascular disease.",
+  "timestamp": "2025-04-04T18:49:51.855174"
+}

@@ -1,0 +1,91 @@
+{
+    "disease": "Other chlamydial genitourinary infection",
+    "icd_code": "A5619",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Urethral discharge",
+                "severity": "Mild to moderate",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Mild to moderate",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Epididymitis",
+                "severity": "Variable",
+                "pattern": "May be present in males"
+            },
+            {
+                "name": "Orchitis",
+                "severity": "Variable",
+                "pattern": "May be present in males"
+            },
+            {
+                "name": "Pelvic inflammatory disease (PID)",
+                "severity": "Variable",
+                "pattern": "May be present in females, potentially severe"
+            },
+            {
+                "name": "Infertility",
+                "severity": "Severe",
+                "pattern": "Long-term complication"
+            },
+            {
+                "name": "Ectopic pregnancy",
+                "severity": "Severe",
+                "pattern": "Long-term complication in females"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "May be present in newborns"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "May be present in newborns"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Urethral discharge",
+            "Tenderness in the epididymis or testes (males)",
+            "Cervical discharge (females)",
+            "Abdominal or pelvic pain (females)"
+        ],
+        "lab_values": {
+            "Nucleic acid amplification test (NAAT)": {
+                "abnormal_range": "Positive for Chlamydia trachomatis"
+            }
+        },
+        "risk_factors": [
+            "Unprotected sexual intercourse",
+            "Multiple sexual partners",
+            "History of sexually transmitted infections"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive nucleic acid amplification test (NAAT) for Chlamydia trachomatis"
+        ],
+        "supportive": [
+            "Symptoms consistent with chlamydial infection",
+            "Physical examination findings suggestive of chlamydial infection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Gonorrhea",
+        "Other sexually transmitted infections",
+        "Non-infectious causes of urethritis or cervicitis"
+    ]
+}

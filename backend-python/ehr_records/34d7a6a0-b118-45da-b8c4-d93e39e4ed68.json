@@ -1,0 +1,123 @@
+{
+  "id": "34d7a6a0-b118-45da-b8c4-d93e39e4ed68",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: Chest Pain Reported\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let's analyze this ECG. Here's a detailed breakdown of what I see, incorporating relevant observations and potential concerns:\n\n**Overall Impression:**\n\nThe ECG demonstrates a sinus rhythm, but with several significant findings that warrant careful consideration. The rate appears to be around 75-80 bpm, which is within the normal range. However, there are notable changes that suggest underlying cardiac pathology.\n\n**Detailed Analysis by Leads:**\n\n* **Lead I & II:** The QRS complexes appear widened, particularly in Lead I. This suggests a possible left ventricular hypertrophy (LVH) or bundle branch block. The morphology is slightly peaked, which could indicate strain.\n* **Lead aVR:**  The QRS complexes are predominantly negative in aVR, which is consistent with a right ventricular origin.\n* **Lead V1-V6:** The ST segments are elevated in leads V4 and V5, and there is T wave inversion in these leads. This pattern is highly suggestive of an acute myocardial infarction (MI), specifically an anterior wall MI. The ST elevation is the most concerning element here.\n* **Lead aVL:**  Similar to aVR, the QRS complex is negative, and there\u2019s a slight ST depression.\n* **Lead III:**  The QRS complex is negative, and the ST segment is slightly depressed.\n* **R-R Intervals:** The R-R intervals appear relatively regular, but the variability is somewhat reduced, suggesting a potential conduction abnormality.\n\n**Specific Findings & Observations:**\n\n1. **Sinus Rhythm:** The rhythm originates from the sinus node, which is the normal pacemaker of the heart.\n2. **QRS Duration:** The QRS duration is prolonged, which is a key finding.  A normal QRS duration is typically less than 0.12 seconds. The prolonged QRS in Leads I & V6 suggests a delay in ventricular depolarization, potentially indicating a conduction problem.\n3. **ST-Segment Elevation:** The most significant finding is the ST-segment elevation in Leads V4-V5.  This is a classic sign of an acute anterior wall myocardial infarction. The magnitude of the elevation is moderate.\n4. **T-Wave Inversion:** The T-wave inversion in Leads V4-V5 further supports the diagnosis of myocardial infarction.\n5. **Rate:** The heart rate is approximately 75-80 bpm.\n6. **Axis:** The QRS axis appears to be\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 2006-02-16, history of illness\nSIGN_SYMPTOM: Chest Pain, sinus, strain, T wave inversion, ST elevation, ST depression, depolarization, ST, Elevation, ST-segment elevation, T-Wave Inversion, T-wave inversion\nDIAGNOSTIC_PROCEDURE: physical exam, assessment, ECG, rhythm, rate, Leads, Lead I &, QRS complexes, morphology, Lead, aVR, Lead V1-V6, ST segments, leads V4, Lead aVL, QRS complex, Lead III, ST segment, R-R Intervals, R-R intervals, variability, Sinus Rhythm, QRS Duration, QRS duration, S duration, QRS, ventricular, -Segment, heart rate, bpm\nDATE: 2025, 03-25, 09:09:28\nLAB_VALUE: 75-80 bpm, widened, peaked, negative, elevated, slightly depressed, regular, prolonged, 0.12 seconds, delay, 75-80\nDISEASE_DISORDER: cardiac pathology, left ventricular hypertrophy, LVH, bundle branch block, right ventricular, myocardial infarction, MI, wall, conduction abnormality, conduction problem, anterior wall\nDETAILED_DESCRIPTION: II, acute\nBIOLOGICAL_STRUCTURE: Lead I, V5, leads, Leads I, V6, Leads V4-V5",
+  "recommendation": "Acute Anterior Myocardial Infarction (AMI)",
+  "reasoning": "The ECG shows significant ST-segment elevation in leads V4 and V5, along with T-wave inversion in these leads. This is a classic presentation of an acute anterior wall myocardial infarction (AMI). The magnitude of the ST elevation is moderate.  While other conditions can cause ST-segment changes, the combination of ST elevation, T-wave inversion, and the location of these changes strongly points towards AMI. The patient's chief complaint of chest pain further supports this diagnosis.  The widened QRS complexes and potential for LVH or bundle branch block are secondary findings likely related to the underlying AMI.\n\nDifferential Diagnoses:\n- {'diagnosis': 'Left Ventricular Hypertrophy (LVH)', 'explanation': 'The ECG shows widened QRS complexes, particularly in Lead I, which can be a sign of LVH.  However, the ST-segment elevation overshadows this finding and makes AMI the more likely diagnosis.'}\n- {'diagnosis': 'Bundle Branch Block', 'explanation': 'Prolonged QRS duration suggests a possible bundle branch block.  However, the presence of ST-segment elevation points more strongly towards AMI.'}\n- {'diagnosis': 'Pericarditis', 'explanation': 'While ST-segment elevation can be seen in pericarditis, the location (primarily in leads V4-V5) and the presence of T-wave inversion are more characteristic of AMI.'}",
+  "confidence": "90",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "Error retrieving medical literature: 'ChromaVectorStore' object has no attribute 'chroma_collection'"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let's analyze this ECG. Here's a detailed breakdown of what I see, incorporating relevant observations and potential concerns:\n\n**Overall Impression:**\n\nThe ECG demonstrates a sinus rhythm, but with several significant findings that warrant careful consideration. The rate appears to be around 75-80 bpm, which is within the normal range. However, there are notable changes that suggest underlying cardiac pathology.\n\n**Detailed Analysis by Leads:**\n\n* **Lead I & II:** The QRS complexes appear widened, particularly in Lead I. This suggests a possible left ventricular hypertrophy (LVH) or bundle branch block. The morphology is slightly peaked, which could indicate strain.\n* **Lead aVR:**  The QRS complexes are predominantly negative in aVR, which is consistent with a right ventricular origin.\n* **Lead V1-V6:** The ST segments are elevated in leads V4 and V5, and there is T wave inversion in these leads. This pattern is highly suggestive of an acute myocardial infarction (MI), specifically an anterior wall MI. The ST elevation is the most concerning element here.\n* **Lead aVL:**  Similar to aVR, the QRS complex is negative, and there\u2019s a slight ST depression.\n* **Lead III:**  The QRS complex is negative, and the ST segment is slightly depressed.\n* **R-R Intervals:** The R-R intervals appear relatively regular, but the variability is somewhat reduced, suggesting a potential conduction abnormality.\n\n**Specific Findings & Observations:**\n\n1. **Sinus Rhythm:** The rhythm originates from the sinus node, which is the normal pacemaker of the heart.\n2. **QRS Duration:** The QRS duration is prolonged, which is a key finding.  A normal QRS duration is typically less than 0.12 seconds. The prolonged QRS in Leads I & V6 suggests a delay in ventricular depolarization, potentially indicating a conduction problem.\n3. **ST-Segment Elevation:** The most significant finding is the ST-segment elevation in Leads V4-V5.  This is a classic sign of an acute anterior wall myocardial infarction. The magnitude of the elevation is moderate.\n4. **T-Wave Inversion:** The T-wave inversion in Leads V4-V5 further supports the diagnosis of myocardial infarction.\n5. **Rate:** The heart rate is approximately 75-80 bpm.\n6. **Axis:** The QRS axis appears to be"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "2006-02-16",
+      "history of illness"
+    ],
+    "SIGN_SYMPTOM": [
+      "Chest Pain",
+      "sinus",
+      "strain",
+      "T wave inversion",
+      "ST elevation",
+      "ST depression",
+      "depolarization",
+      "ST",
+      "Elevation",
+      "ST-segment elevation",
+      "T-Wave Inversion",
+      "T-wave inversion"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical exam",
+      "assessment",
+      "ECG",
+      "rhythm",
+      "rate",
+      "Leads",
+      "Lead I &",
+      "QRS complexes",
+      "morphology",
+      "Lead",
+      "aVR",
+      "Lead V1-V6",
+      "ST segments",
+      "leads V4",
+      "Lead aVL",
+      "QRS complex",
+      "Lead III",
+      "ST segment",
+      "R-R Intervals",
+      "R-R intervals",
+      "variability",
+      "Sinus Rhythm",
+      "QRS Duration",
+      "QRS duration",
+      "S duration",
+      "QRS",
+      "ventricular",
+      "-Segment",
+      "heart rate",
+      "bpm"
+    ],
+    "DATE": [
+      "2025",
+      "03-25",
+      "09:09:28"
+    ],
+    "LAB_VALUE": [
+      "75-80 bpm",
+      "widened",
+      "peaked",
+      "negative",
+      "elevated",
+      "slightly depressed",
+      "regular",
+      "prolonged",
+      "0.12 seconds",
+      "delay",
+      "75-80"
+    ],
+    "DISEASE_DISORDER": [
+      "cardiac pathology",
+      "left ventricular hypertrophy",
+      "LVH",
+      "bundle branch block",
+      "right ventricular",
+      "myocardial infarction",
+      "MI",
+      "wall",
+      "conduction abnormality",
+      "conduction problem",
+      "anterior wall"
+    ],
+    "DETAILED_DESCRIPTION": [
+      "II",
+      "acute"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "Lead I",
+      "V5",
+      "leads",
+      "Leads I",
+      "V6",
+      "Leads V4-V5"
+    ]
+  },
+  "analysis_date": "2025-03-26T09:39:04.171937",
+  "created_at": "2025-03-26T09:39:04.171943"
+}

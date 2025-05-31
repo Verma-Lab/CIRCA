@@ -1,0 +1,85 @@
+{
+    "disease": "Squamous cell carcinoma of skin of scalp and neck",
+    "icd_code": "C4442",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Growing bump",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Rough, scaly surface",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Flat reddish patches",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Scaly, crusted, large reddish patch (>1 inch)",
+                "severity": "Variable",
+                "pattern": "Early stage (squamous cell carcinoma in situ)"
+            },
+            {
+                "name": "Sore that does not heal",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Change in existing wart, mole, or skin lesion",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Growing bump",
+            "Rough, scaly surface",
+            "Flat reddish patches",
+            "Scaly, crusted, large reddish patch (>1 inch)",
+            "Sore that does not heal",
+            "Change in existing wart, mole, or skin lesion"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Regular exposure to sunlight or other ultraviolet radiation",
+            "Damaged or inflamed skin",
+            "Actinic keratosis",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Skin biopsy showing squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (growing bump, scaly surface, etc.)"
+        ]
+    },
+    "differential_diagnoses": []
+}

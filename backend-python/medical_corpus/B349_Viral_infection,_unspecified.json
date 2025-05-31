@@ -1,0 +1,73 @@
+{
+    "disease": "Viral infection, unspecified",
+    "icd_code": "B349",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Variable",
+                "pattern": "Cough, shortness of breath, etc."
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Nausea, vomiting, diarrhea"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Variable",
+            "respiratory_rate": "Variable",
+            "blood_pressure": "Variable"
+        },
+        "physical_findings": [
+            "Variable depending on the affected organ system"
+        ],
+        "lab_values": {
+            "complete_blood_count": "Variable",
+            "liver_function_tests": "Variable",
+            "viral_load": "Variable"
+        },
+        "risk_factors": [
+            "Exposure to infected individuals",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of viral symptoms (fever, fatigue, muscle aches, respiratory or gastrointestinal issues)",
+            "Exclusion of bacterial, fungal, or other non-infectious causes"
+        ],
+        "supportive": [
+            "Abnormal lab values suggestive of viral infection",
+            "Clinical presentation consistent with a viral illness"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial infection",
+        "Fungal infection",
+        "Other non-infectious conditions"
+    ]
+}

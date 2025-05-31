@@ -1,0 +1,17 @@
+{
+    "disease": "Gonococcal meningitis",
+    "icd_code": "A5481",
+    "parameters": {
+        "symptoms": [],
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

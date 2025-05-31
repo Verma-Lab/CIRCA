@@ -1,0 +1,75 @@
+{
+    "disease": "Herpesviral iridocyclitis",
+    "icd_code": "B00.51",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Present in most cases, can be severe with high IOP"
+            },
+            {
+                "name": "Decreased vision",
+                "severity": "Variable",
+                "pattern": "Can be present due to corneal edema"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can be present with high IOP"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "intraocular pressure": "Elevated, can be very high (50-60 mmHg) during acute episodes"
+        },
+        "physical_findings": [
+            "Unilateral hypertensive anterior uveitis",
+            "Corneal epithelial and/or stromal edema",
+            "Stromal keratitis",
+            "Keratic precipitates (KP) - granulomatous, nongranulomatous, or stellate, can be regional or diffuse",
+            "Endotheliitis",
+            "Anterior chamber cells and flare",
+            "Patchy iris transillumination defects",
+            "Hyphema (spontaneous or layered with hypopyon)",
+            "Patchy iris atrophy (following an episode)",
+            "Posterior synechiae",
+            "Iridoplegia",
+            "Prominent iris and angle vessels (in FHI)",
+            "Iris heterochromia (in FHI)"
+        ],
+        "lab_values": {
+            "HSV antibody titer": "Negative titer rules out HSV as the cause",
+            "Polymerase chain reaction (PCR) for HSV DNA from anterior chamber tap": "High sensitivity (91.3%) and specificity (98.8%)"
+        },
+        "risk_factors": [
+            "History of cold sores or fever blisters",
+            "Immunosuppression",
+            "Stress",
+            "Fever",
+            "Immunocompromised conditions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Unilateral anterior uveitis",
+            "High intraocular pressure"
+        ],
+        "supportive": [
+            "Patchy iris transillumination defects",
+            "Prior history of HSV ocular disease",
+            "Corneal hypoesthesia",
+            "Appearance of keratic precipitates"
+        ]
+    },
+    "differential_diagnoses": [
+        "Fuchs heterochromic iridocyclitis (FHI)",
+        "Posner-Schlossman syndrome"
+    ]
+}

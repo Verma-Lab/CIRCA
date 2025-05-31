@@ -1,0 +1,103 @@
+{
+    "disease": "Tuberculosis of bladder",
+    "icd_code": "A1812",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Intermittent or constant"
+            },
+            {
+                "name": "Frequency",
+                "severity": "Variable",
+                "pattern": "Increased urinary frequency"
+            },
+            {
+                "name": "Urgency",
+                "severity": "Variable",
+                "pattern": "Strong urge to urinate"
+            },
+            {
+                "name": "Hematuria",
+                "severity": "Variable",
+                "pattern": "Microscopic or macroscopic"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Suprapubic or lower abdominal pain"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Urine analysis": {
+                "abnormal_ranges": [
+                    "Presence of pyuria",
+                    "Presence of hematuria"
+                ]
+            },
+            "Acid-fast bacilli smear": {
+                "abnormal_ranges": [
+                    "Positive for acid-fast bacilli"
+                ]
+            },
+            "Urine culture": {
+                "abnormal_ranges": [
+                    "Positive for Mycobacterium tuberculosis"
+                ]
+            }
+        },
+        "risk_factors": [
+            "Pulmonary tuberculosis",
+            "Hematogenous spread from other sites of tuberculosis",
+            "Immunosuppression",
+            "HIV co-infection",
+            "Diabetes",
+            "Old age",
+            "Low body mass index",
+            "Oncological comorbidities",
+            "Renal failure",
+            "Living in areas with high tuberculosis prevalence"
+        ],
+        "imaging_findings": {
+            "X-ray": {
+                "findings": [
+                    "May show calcifications or other abnormalities in the bladder"
+                ]
+            },
+            "CT scan": {
+                "findings": [
+                    "May show thickening of the bladder wall",
+                    "May show bladder masses or lesions"
+                ]
+            },
+            "Ultrasound": {
+                "findings": [
+                    "May show bladder wall thickening",
+                    "May show bladder masses or lesions"
+                ]
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion based on symptoms and risk factors",
+            "Positive urine culture for Mycobacterium tuberculosis",
+            "Positive acid-fast bacilli smear from urine"
+        ],
+        "supportive": [
+            "Abnormal imaging findings consistent with tuberculosis",
+            "Positive tuberculin skin test",
+            "Positive interferon-gamma release assay"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cystitis",
+        "Bladder cancer",
+        "Schistosomiasis",
+        "Other urinary tract infections"
+    ]
+}

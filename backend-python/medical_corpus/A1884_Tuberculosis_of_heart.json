@@ -1,0 +1,31 @@
+{
+    "disease": "Tuberculosis of heart",
+    "icd_code": "A1884",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunosuppressive diseases (e.g., diabetes mellitus, HIV)",
+            "Excessive alcohol intake",
+            "Tobacco smoke",
+            "Indoor air pollution",
+            "Illiteracy",
+            "Low household income",
+            "Lack of BCG scar"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Chronic adhesive pericarditis (I31.0)",
+        "Cardiomyopathy (I42.9)",
+        "Myocarditis (I51.4)",
+        "Disease of pericardium, unspecified (I31.9)"
+    ]
+}

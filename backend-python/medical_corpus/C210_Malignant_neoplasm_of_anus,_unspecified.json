@@ -1,0 +1,33 @@
+{
+    "disease": "Malignant neoplasm of anus, unspecified",
+    "icd_code": "C210",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "lumps",
+            "burning"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "HPV infection",
+            "Smoking",
+            "HIV"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Malignant carcinoid tumors of the colon",
+        "Malignant melanoma of anal margin",
+        "Malignant melanoma of anal skin",
+        "Malignant melanoma of perianal skin",
+        "Other and unspecified malignant neoplasm of anal margin",
+        "Other and unspecified malignant neoplasm of anal skin",
+        "Other and unspecified malignant neoplasm of perianal skin"
+    ]
+}

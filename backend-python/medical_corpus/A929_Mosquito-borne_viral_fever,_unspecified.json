@@ -1,0 +1,36 @@
+{
+    "disease": "Mosquito-borne viral fever, unspecified",
+    "icd_code": "A929",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Limb soreness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Ross River disease"
+    ]
+}

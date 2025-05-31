@@ -1,0 +1,75 @@
+{
+    "disease": "Other pulmonary aspergillosis",
+    "icd_code": "B441",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Chills",
+                "severity": "Unspecified",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Unspecified",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Unspecified",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Severe cough",
+                "severity": "Severe",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Unspecified",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Unspecified",
+                "pattern": "Ongoing"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "serum immunoglobulin G antibodies to A. fumigates": "Positive"
+        },
+        "risk_factors": [
+            "Sarcoidosis",
+            "Immune deficiencies (e.g., AIDS, leukemia, transplant recipients)"
+        ],
+        "imaging_findings": {
+            "CT scan": [
+                "Consolidation",
+                "Pleural thickening",
+                "Cavitary lesions in the lung lobes",
+                "Aspergilloma (ball-shaped lesion)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serum immunoglobulin G antibodies to A. fumigates",
+            "Imaging findings consistent with aspergillosis (e.g., consolidation, cavitary lesions, aspergilloma)"
+        ],
+        "supportive": [
+            "Clinical symptoms (e.g., fever, cough, hemoptysis)",
+            "Histopathological findings (e.g., Aspergillus fungus in lung tissue)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chronic necrotizing aspergillosis",
+        "Sarcoidosis"
+    ]
+}

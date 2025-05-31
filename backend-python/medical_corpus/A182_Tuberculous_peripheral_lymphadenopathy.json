@@ -1,0 +1,28 @@
+{
+    "disease": "Tuberculous peripheral lymphadenopathy",
+    "icd_code": "A182",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Enlarged peripheral lymph nodes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to individuals with active TB",
+            "Weakened immune system (e.g., HIV infection)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Enlarged peripheral lymph nodes"
+        ],
+        "supportive": [
+            "Positive tuberculin skin test or interferon-gamma release assay",
+            "Evidence of Mycobacterium tuberculosis infection (e.g., positive culture from lymph node biopsy)"
+        ]
+    },
+    "differential_diagnoses": []
+}

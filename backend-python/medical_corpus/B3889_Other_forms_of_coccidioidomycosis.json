@@ -1,0 +1,90 @@
+{
+    "disease": "Other forms of coccidioidomycosis",
+    "icd_code": "B3889",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent, present in about half of patients"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Flu-like illness",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood tests": "May show evidence of infection",
+            "other body fluids/tissue tests": "May show evidence of infection"
+        },
+        "risk_factors": [
+            "Age \u226565 years",
+            "Diabetes",
+            "Smoking",
+            "High inoculum exposure",
+            "Depressed cellular immune function (e.g., HIV, organ transplant recipients)",
+            "Pregnancy",
+            "African American, Filipino, and Pacific Island descent (increased risk of severe illness)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Coccidioides from fungal culture of respiratory specimens or tissue"
+        ],
+        "supportive": [
+            "Microscopy of sputum or tissue identifying Coccidioides spherules (low sensitivity)",
+            "Molecular techniques (DNA probe, PCR)",
+            "Serology (EIA, immunodiffusion, complement fixation, lateral flow assays)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial pneumonia"
+    ]
+}

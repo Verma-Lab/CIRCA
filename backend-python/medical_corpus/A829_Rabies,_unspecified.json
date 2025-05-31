@@ -1,0 +1,85 @@
+{
+    "disease": "Rabies, unspecified",
+    "icd_code": "A829",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Severe",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Hallucinations",
+                "severity": "Severe",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Severe",
+                "pattern": "Later symptom, ascending"
+            },
+            {
+                "name": "Redness and soreness at bite site",
+                "severity": "Variable",
+                "pattern": "Local symptom"
+            },
+            {
+                "name": "Tingling or numbness at bite site",
+                "severity": "Variable",
+                "pattern": "Local symptom"
+            },
+            {
+                "name": "Agitation",
+                "severity": "Severe",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Drooling",
+                "severity": "Variable",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Hydrophobia (fear of water)",
+                "severity": "Severe",
+                "pattern": "Later symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Redness and soreness at bite site",
+            "Tingling or numbness at bite site",
+            "Ascending paralysis"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected animals (e.g., bats, foxes, dogs, raccoons, skunks)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with rabies (fever, headache, fatigue, progressing to neurological symptoms such as confusion, hallucinations, paralysis, hydrophobia)"
+        ],
+        "supportive": [
+            "History of exposure to potentially rabid animal",
+            "Laboratory confirmation of rabies virus in saliva or brain tissue"
+        ]
+    },
+    "differential_diagnoses": []
+}

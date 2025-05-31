@@ -1,0 +1,75 @@
+{
+    "disease": "Squamous cell carcinoma of anal skin",
+    "icd_code": "C44520",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Anal itch",
+                "severity": "Chronic",
+                "pattern": "Long-standing"
+            },
+            {
+                "name": "Scratching",
+                "severity": "Chronic",
+                "pattern": "Associated with itch"
+            },
+            {
+                "name": "Ulcerated perianal lesion",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Rectal bleeding",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Anal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Sensation of a rectal mass",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Ulcer with raised borders of the perianal skin",
+            "Palpable inguinal lymph nodes (may be present)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Human papillomavirus (HPV) infection (especially serotypes 16 and 18)",
+            "Sexually transmitted infections (STIs)",
+            "History of vulvar or cervical carcinoma",
+            "Immunosuppression (HIV infection, organ transplantation, hematological or immunological disorders)",
+            "Smoking",
+            "Chronic anal itch and scratching",
+            "Men who have sex with men (MSM)"
+        ],
+        "imaging_findings": {
+            "MRI": "May show no pathology in early stages; used for staging",
+            "CT": "Used for staging, evaluating pelvic lymph nodes"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histologic diagnosis of squamous cell carcinoma",
+            "Clinical examination"
+        ],
+        "supportive": [
+            "High-resolution anoscopy",
+            "Fine-needle aspiration biopsy or core biopsy",
+            "Pelvic MRI",
+            "CT scan"
+        ]
+    },
+    "differential_diagnoses": [
+        "Anal fissure",
+        "Eczema",
+        "Hemorrhoids"
+    ]
+}

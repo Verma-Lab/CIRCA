@@ -1,0 +1,59 @@
+{
+    "disease": "Vulvovaginal Candidiasis (VVC)",
+    "icd_code": "B373",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal itching",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Burning",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Variable consistency and amount; may contain sloughed epithelium, immune cells, yeast, and vaginal fluid"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Redness of the vulva and vagina",
+            "Vaginal discharge"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Antibiotic use",
+            "Sexual activity",
+            "High-estrogen containing oral contraceptives",
+            "Pregnancy",
+            "Use of sodium glucose cotransporter 2 (SGLT2) inhibitors",
+            "Uncontrolled diabetes mellitus"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of vulvovaginal candidiasis (e.g., itching, burning, pain, redness, discharge)"
+        ],
+        "supportive": [
+            "Physical examination findings consistent with VVC",
+            "Microscopic examination of vaginal discharge revealing yeast and pseudohyphae"
+        ]
+    },
+    "differential_diagnoses": []
+}

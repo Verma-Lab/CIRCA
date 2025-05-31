@@ -1,0 +1,116 @@
+{
+    "disease": "Malignant neoplasm of lower lobe, left bronchus or lung",
+    "icd_code": "C3432",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Intermittent or severe"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Sharp, stabbing, or dull ache"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Wheezing",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Hoarseness",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Pleural effusion",
+                "severity": "Variable",
+                "pattern": "Can cause shortness of breath"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Can occur if cancer spreads"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Can occur if cancer spreads to the brain"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can occur if cancer spreads"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased",
+            "heart_rate": "Increased",
+            "blood_pressure": "Variable"
+        },
+        "physical_findings": [
+            "Diminished breath sounds",
+            "Rales or wheezes",
+            "Clubbing of fingers",
+            "Lymph node enlargement",
+            "Evidence of metastasis"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Smoking",
+            "Exposure to secondhand smoke",
+            "Exposure to asbestos",
+            "Exposure to radon",
+            "Family history of lung cancer",
+            "Previous radiation therapy to the chest"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Mass or nodule in the lower lobe of the left lung",
+            "CT_scan": "Detailed visualization of the mass, lymph nodes, and potential metastasis",
+            "PET_scan": "Assessment of metabolic activity of the tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings consistent with a lung mass in the lower lobe of the left lung",
+            "Biopsy confirming malignancy"
+        ],
+        "supportive": [
+            "Clinical symptoms suggestive of lung cancer",
+            "Abnormal lab values"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign lung nodule",
+        "Lung infection",
+        "Pulmonary embolism",
+        "Other lung diseases"
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "disease": "Malignant neoplasm of bone and articular cartilage, unspecified",
+    "icd_code": "C419",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bone pain",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe; may be localized or widespread"
+            },
+            {
+                "name": "Pathological fracture",
+                "severity": "Severe",
+                "pattern": "Fracture due to weakened bone from the tumor"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "General feeling of weakness or fatigue"
+            },
+            {
+                "name": "Unspecified symptoms",
+                "severity": "Variable",
+                "pattern": "May be asymptomatic in early stages"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or swelling",
+            "Localized tenderness",
+            "Limited range of motion",
+            "Bone deformity"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "X-ray": "May show lytic lesions, sclerotic lesions, or pathological fractures",
+            "CT scan": "Provides detailed images of bone structure and can help to assess the extent of the tumor",
+            "MRI": "Can help to differentiate between tumor and surrounding tissues",
+            "Bone scan": "Can detect areas of increased bone turnover associated with the tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings consistent with malignant bone or articular cartilage neoplasm"
+        ],
+        "supportive": [
+            "Histopathological confirmation of malignancy",
+            "Clinical symptoms and physical examination findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Osteomyelitis",
+        "Paget's disease of bone",
+        "Benign bone tumors",
+        "Metastatic bone disease"
+    ]
+}

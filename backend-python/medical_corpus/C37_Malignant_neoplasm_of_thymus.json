@@ -1,0 +1,32 @@
+{
+    "disease": "Malignant neoplasm of thymus",
+    "icd_code": "C37",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unspecified",
+                "severity": "Variable",
+                "pattern": "Sometimes asymptomatic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Myasthenia gravis",
+            "Lupus",
+            "Rheumatoid arthritis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical exam",
+            "Imaging tests",
+            "Biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

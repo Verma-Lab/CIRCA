@@ -1,0 +1,84 @@
+{
+    "disease": "White Piedra",
+    "icd_code": "B362",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "White or beige nodules on hair shafts",
+                "severity": "Mild",
+                "pattern": "Irregularly distributed along hair shaft"
+            },
+            {
+                "name": "Increased hair fragility",
+                "severity": "Mild to Moderate",
+                "pattern": "May be present, but not always a common feature"
+            },
+            {
+                "name": "Scalp pruritus",
+                "severity": "Mild",
+                "pattern": "Diffuse"
+            },
+            {
+                "name": "Nodular thickening of scalp hair",
+                "severity": "Mild",
+                "pattern": "More apparent after hair wetting"
+            },
+            {
+                "name": "Increased hair breakage",
+                "severity": "Mild to Moderate",
+                "pattern": "Present for several months"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "White to beige nodules, distributed at irregular intervals along the hair shaft",
+            "Barely visible but well-palpable nodules",
+            "Nodules not easily movable along the hair shaft",
+            "Normal-looking scalp with abundant hair, without sparseness",
+            "Negative hair pull test",
+            "No fluorescence on Wood's lamp examination",
+            "Firm white concretions, about 1 millimeter in diameter, adherent to the hair shaft",
+            "Trichoscopic evaluation confirming tubular concretions of proteinaceous material tightly adherent to the hair shaft"
+        ],
+        "lab_values": {
+            "KOH mount": "Clusters of arthrospores cemented in an extracellular matrix, firmly adherent to the hair shaft, with focal presence of brown pigment",
+            "Fungal culture (SDA without cycloheximide)": "White cerebriform colonies with characteristic \u201cbutter cream frosting\u201d",
+            "Lactophenol Cotton Blue (LCB) mount": "Multiple branching hyphae with blastoconidia",
+            "Periodic acid-Schiff\u2013diastase staining": "Aggregates of septated hyphae and budding spores (arthroconidia and blastoconidia)"
+        },
+        "risk_factors": [
+            "Poor personal hygiene",
+            "Washing hair in stagnant water",
+            "Warm and moist conditions on the scalp",
+            "Excessive use of hair oils",
+            "Irregular combing habits",
+            "Habit of tying wet hair after washing",
+            "Long hair",
+            "Excessive moisture"
+        ],
+        "imaging_findings": {
+            "Trichoscopy": "White amorphous material locally encasing the hair"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of white or beige nodules on hair shafts",
+            "Positive fungal culture for Trichosporon species"
+        ],
+        "supportive": [
+            "Microscopic examination showing arthrospores and hyphae",
+            "Trichoscopic findings consistent with white piedra"
+        ]
+    },
+    "differential_diagnoses": [
+        "Black piedra",
+        "Trichobacteriosis",
+        "Nits (pediculosis capitis)",
+        "Hair casts",
+        "Trichomycosis axillaris",
+        "Peripilar keratin cast",
+        "Monilethrix",
+        "Trichorrhexis nodosa"
+    ]
+}

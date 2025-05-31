@@ -1,0 +1,70 @@
+{
+    "disease": "Cytomegaloviral disease, unspecified",
+    "icd_code": "B259",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mononucleosis-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Can resemble common cold or flu"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can be prolonged"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or sustained"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Common complication"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Enlarged liver or spleen",
+                "severity": "Variable",
+                "pattern": "Detected on palpation"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Severe pain may indicate ruptured spleen"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Variable"
+        },
+        "physical_findings": [
+            "Enlarged or tender liver or spleen on palpation",
+            "Skin rash"
+        ],
+        "lab_values": {
+            "CMV DNA serum PCR test": "Presence of CMV substances in blood",
+            "CMV antibody test": "Immune response to CMV infection"
+        },
+        "risk_factors": [
+            "Weakened immune system (e.g., HIV/AIDS)",
+            "Pregnancy (for congenital CMV infection)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive CMV DNA serum PCR test or CMV antibody test"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with CMV infection",
+            "Physical examination findings (e.g., enlarged liver or spleen)"
+        ]
+    },
+    "differential_diagnoses": []
+}

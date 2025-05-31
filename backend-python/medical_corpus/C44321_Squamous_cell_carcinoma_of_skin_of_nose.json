@@ -1,0 +1,115 @@
+{
+    "disease": "Squamous cell carcinoma of skin of nose",
+    "icd_code": "C44321",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ulcerated lesion",
+                "severity": "Variable",
+                "pattern": "Gradual increase in volume"
+            },
+            {
+                "name": "Central ulceration",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Meliceric crust",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "White area",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present if nerves are affected"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May occur from telangiectasis"
+            },
+            {
+                "name": "Nasal blockage",
+                "severity": "Variable",
+                "pattern": "May occur with intranasal SCC"
+            },
+            {
+                "name": "Facial numbness",
+                "severity": "Variable",
+                "pattern": "May occur with intranasal SCC"
+            },
+            {
+                "name": "Erythematous scaly patch or slightly elevated plaque",
+                "severity": "Mild",
+                "pattern": "Common in SCC in situ"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erythematous scaly patch or slightly elevated plaque",
+            "Ulcerated lesion",
+            "Patchy, papulonodular, papillomatous, or exophytic lesion",
+            "Keratotic tumor",
+            "Actinic keratosis",
+            "Satellite nodular lesions",
+            "Telangiectasis (spider veins)",
+            "3 cm diameter lesion (in one case report)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Cumulative sun exposure (especially in childhood and youth)",
+            "Immunosuppression (e.g., organ transplantation)",
+            "Chronic inflammation",
+            "Exposure to industrial chemicals",
+            "HPV infection",
+            "Xeroderma pigmentosum (XP) or its variants",
+            "Fair skin",
+            "Male gender",
+            "Older age",
+            "Previous history of SCC"
+        ],
+        "imaging_findings": {
+            "Dermoscopy": [
+                "Yellowish white opaque scales",
+                "Clusters of dotted vessels",
+                "Glomerular or coiled vessels",
+                "Small brown globules",
+                "Gray to brown homogeneous pigmentation",
+                "White circles",
+                "Hairpin vessels",
+                "Linear-irregular vessels",
+                "Red starburst-like image",
+                "Keratotic center",
+                "Ulceration",
+                "Polymorphic vessels"
+            ],
+            "Reflectance confocal microscopy (RCM)": "Cellular-level resolution imaging of the skin",
+            "CT scan": "Can show the extent of the tumor and presence of metastases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with SCC (appearance, location, patient history)",
+            "Histopathological examination confirming the diagnosis"
+        ],
+        "supportive": [
+            "Dermoscopic findings",
+            "Reflectance confocal microscopy findings",
+            "Imaging findings (CT scan)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Actinic keratosis",
+        "Bowen disease",
+        "Basal cell carcinoma",
+        "Other skin lesions (eczematous lesions)",
+        "Atypical fibroxanthoma",
+        "Desmoplastic melanoma"
+    ]
+}

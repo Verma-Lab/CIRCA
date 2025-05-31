@@ -1,0 +1,87 @@
+{
+    "disease": "Other Creutzfeldt-Jakob disease",
+    "icd_code": "A8109",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Changes in mental abilities",
+                "severity": "Severe",
+                "pattern": "Progressive, rapid worsening within weeks to months"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Severe",
+                "pattern": "Progressive, often develops later in vCJD"
+            },
+            {
+                "name": "Loss of ability to think, reason, and remember",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Trouble swallowing",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Falls",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Problems with speech and thinking",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Involuntary muscle movements",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Difficulty walking",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Mood changes",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Pain when touching things (dysthesia)",
+                "severity": "Variable",
+                "pattern": "More common in vCJD"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Inheritance (familial CJD)",
+            "Contamination (iatrogenic CJD)",
+            "Exposure to contaminated tissue (human growth hormone, dura mater transplant)",
+            "Consumption of contaminated beef (vCJD)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Rapid symptom progression",
+            "Specific EEG findings",
+            "Brain biopsy showing characteristic spongiform changes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Alzheimer's disease",
+        "Dementia with Lewy bodies",
+        "Frontotemporal dementia"
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "disease": "Merkel cell carcinoma of left eyelid, including canthus",
+    "icd_code": "C4A12",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Growth on eyelid",
+                "severity": "Moderate to severe (obstructing vision)",
+                "pattern": "Rapid growth over two weeks, present for one month"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Mild",
+                "pattern": "On manipulation"
+            },
+            {
+                "name": "Pain",
+                "severity": "Absent",
+                "pattern": "None reported"
+            },
+            {
+                "name": "Flaking",
+                "severity": "Absent",
+                "pattern": "None reported"
+            },
+            {
+                "name": "Itching",
+                "severity": "Absent",
+                "pattern": "None reported"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Large lesion arising from the left medial canthus",
+            "Flesh-colored with a violaceous hue",
+            "Nearly all inferior to the medial canthal tendon",
+            "Painless solitary nodule with a violaceous (purple-red) hue (in other cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age (94 years old)",
+            "Multiple previous skin cancers removed from face and hands",
+            "Immunosuppression (mentioned as a risk factor in general for MCC)"
+        ],
+        "imaging_findings": {
+            "PET scan": "Enhancing lesion near the inferior border of the ipsilateral parotid gland (suggestive of metastasis)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy showing Merkel cell carcinoma"
+        ],
+        "supportive": [
+            "Rapidly expanding lesion",
+            "Violaceous hue",
+            "Location on sun-exposed skin",
+            "Age >50",
+            "Immunosuppression (if present)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cystic/acneiform lesions",
+        "Lipoma",
+        "Non-melanoma skin carcinoma",
+        "Lymphoma",
+        "Chalazion",
+        "Dermatofibroma",
+        "Cysts",
+        "Vascular lesions",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Sebaceous carcinoma",
+        "Cutaneous metastases from other cancers (especially metastatic small-cell lung cancer)"
+    ]
+}

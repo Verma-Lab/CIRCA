@@ -1,0 +1,94 @@
+{
+    "disease": "Rocio virus disease",
+    "icd_code": "A836",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be uncomplicated or severe",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Present in some cases",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Present in some cases",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Meningoencephalitis",
+                "severity": "Can be fatal",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Neurological symptom"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Variable",
+                "pattern": "Neurological symptom"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Variable",
+                "pattern": "Neurological symptom"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Can occur in about one-third of cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Present in some cases",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Present in some cases",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Present in some cases",
+                "pattern": "Early symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to Psorophora ferox mosquitoes"
+        ],
+        "imaging_findings": {
+            "MRI": "Thalamic inflammatory necrosis, damage to dentate nuclei, substantia inominata, brain stem, spinal cord and basal nuclei"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningoencephalitis",
+            "Epidemiological link to areas with Rocio virus activity",
+            "Positive serology for Rocio virus"
+        ],
+        "supportive": [
+            "Detection of Rocio virus RNA in CNS tissue"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other flavivirus encephalitides (e.g., West Nile virus, St. Louis encephalitis virus, Ilheus virus)",
+        "Other CNS infections"
+    ]
+}

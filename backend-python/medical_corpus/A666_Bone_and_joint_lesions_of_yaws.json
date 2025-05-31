@@ -1,0 +1,44 @@
+{
+    "disease": "Bone and joint lesions of yaws",
+    "icd_code": "A666",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain and swelling of long bones and fingers",
+                "severity": "Variable",
+                "pattern": "Occurs in secondary yaws, weeks to months after primary infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Papilloma (wart-like tumor) in primary yaws",
+            "Ulceration of papilloma if untreated",
+            "Multiple raised yellow lesions in secondary yaws",
+            "Dactylitis (pain and swelling of fingers)"
+        ],
+        "lab_values": {
+            "Treponema pallidum particle agglutination (TPPA)": "Positive in treponemal infections, cannot distinguish yaws from syphilis",
+            "Rapid plasma reagin (RPR)": "Positive in treponemal infections, cannot distinguish yaws from syphilis",
+            "Polymerase chain reaction (PCR)": "Detects T. pallidum subspecies pertenue DNA in skin lesions, confirms diagnosis and monitors azithromycin resistance"
+        },
+        "risk_factors": [
+            "Poverty",
+            "Low socioeconomic conditions",
+            "Poor personal hygiene",
+            "Living in warm, humid, tropical forest areas",
+            "Person-to-person contact with minor injuries"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (papilloma or ulcer in primary yaws, multiple lesions in secondary yaws)",
+            "Positive serological test (TPPA or RPR), confirmed by PCR"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Other skin ulcers (e.g., caused by Haemophilus ducreyi)"
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "disease": "Rheumatoid Arthritis",
+    "icd_code": "M05",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Symmetrical, often affecting small joints of hands and feet"
+            },
+            {
+                "name": "Joint swelling",
+                "severity": "Variable",
+                "pattern": "Symmetrical, often affecting small joints of hands and feet"
+            },
+            {
+                "name": "Joint stiffness",
+                "severity": "Variable",
+                "pattern": "Morning stiffness lasting >1 hour, improves with movement"
+            },
+            {
+                "name": "Decreased joint flexibility",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Generalized feeling of sickness",
+                "severity": "Variable",
+                "pattern": "Present during flares"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Symmetrical joint involvement",
+            "Joint swelling",
+            "Joint tenderness",
+            "Warm joints"
+        ],
+        "lab_values": {
+            "Rheumatoid factor": "Elevated",
+            "Anti-citrullinated peptide antibodies (ACPA)": "Elevated"
+        },
+        "risk_factors": [
+            "Female sex",
+            "Smoking",
+            "Genetics"
+        ],
+        "imaging_findings": {
+            "X-ray": "Joint erosions, narrowing of joint space",
+            "MRI": "Synovitis, bone marrow edema",
+            "Ultrasound": "Synovitis, tenosynovitis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Joint involvement (at least one joint)",
+            "Symmetrical joint involvement",
+            "Morning stiffness lasting >1 hour"
+        ],
+        "supportive": [
+            "Elevated rheumatoid factor",
+            "Elevated anti-citrullinated peptide antibodies (ACPA)",
+            "Imaging findings consistent with RA"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,46 @@
+{
+    "disease": "Herpesviral ocular disease, unspecified",
+    "icd_code": "B0050",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eye pain",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Decreased vision",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Eyelid ulcers",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Light sensitivity",
+                "severity": "Variable",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Definitive confirmation of herpes viral disease affecting the eye by an eye care specialist"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

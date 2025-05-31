@@ -1,0 +1,80 @@
+{
+    "disease": "Cutaneous anthrax",
+    "icd_code": "A22.0",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Papule",
+                "severity": "Variable",
+                "pattern": "Initially develops at the site of inoculation"
+            },
+            {
+                "name": "Vesicle",
+                "severity": "Variable",
+                "pattern": "Develops from the papule"
+            },
+            {
+                "name": "Bullae",
+                "severity": "Variable",
+                "pattern": "Develops from the vesicle"
+            },
+            {
+                "name": "Ulcer",
+                "severity": "Variable",
+                "pattern": "Develops from the bullae, often with a black eschar in the center"
+            },
+            {
+                "name": "Edema",
+                "severity": "Variable",
+                "pattern": "Surrounding the ulcer"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Regional lymphadenopathy may be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever may be present)",
+            "heart_rate": "May be elevated",
+            "blood_pressure": "May be affected depending on severity"
+        },
+        "physical_findings": [
+            "Papule",
+            "Vesicle",
+            "Bullae",
+            "Ulcer with black eschar",
+            "Edema",
+            "Regional lymphadenopathy"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected animals",
+            "Exposure to contaminated soil",
+            "Occupational exposure (e.g., farmers, veterinarians, butchers)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic lesion (papule, vesicle, bullae, ulcer with black eschar)",
+            "Epidemiological history (exposure to animals or contaminated soil)"
+        ],
+        "supportive": [
+            "Positive culture for Bacillus anthracis",
+            "Positive serological tests"
+        ]
+    },
+    "differential_diagnoses": []
+}

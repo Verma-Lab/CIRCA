@@ -1,0 +1,58 @@
+{
+    "disease": "Malignant melanoma of right ear and external auricular canal",
+    "icd_code": "C4321",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blood-stained discharge from ear",
+                "severity": "Present",
+                "pattern": "2-year history"
+            },
+            {
+                "name": "Pain",
+                "severity": "Mild",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Mild",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Bluish-black mass in the external auditory canal (EAC)",
+            "No other significant findings in the right ear or head and neck",
+            "No lymphadenopathy",
+            "No parotid gland enlargement",
+            "Left sided parotid and preauricular lymph node swellings (after 5 months)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Increased sun exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing ulceroproliferative growth of medium to large pigmented cells with prominent nucleoli",
+            "Tumor cell infiltration into deeper subcutaneous tissue, parotid gland, and intraparotid lymph nodes",
+            "Tumor thickness of 15mm (Clark level V)",
+            "Evidence of vascular and perineural invasion",
+            "Immunohistochemistry positive for HMB-45"
+        ],
+        "supportive": [
+            "Clinical presentation of a pigmented lesion"
+        ]
+    },
+    "differential_diagnoses": [
+        "Haemangioma",
+        "Compound nevus",
+        "Adenoid cystic carcinoma",
+        "Squamous cell carcinoma",
+        "Adenocarcinoma",
+        "Basal cell carcinoma",
+        "Mucoepidermoid carcinoma"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "disease": "Enteroinvasive Escherichia coli infection",
+    "icd_code": "A042",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal cramps",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can range from watery to bloody",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Bloody diarrhea/Dysentery",
+                "severity": "Variable, can be severe",
+                "pattern": "Less common than watery diarrhea"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases",
+            "pulse": "May be elevated in severe cases"
+        },
+        "physical_findings": [
+            "Abdominal tenderness"
+        ],
+        "lab_values": {
+            "stool_culture": "Positive for EIEC",
+            "complete_blood_count": "May show leukocytosis in severe cases"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Travel to areas with poor sanitation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive stool culture for EIEC"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with EIEC infection (e.g., bloody diarrhea, fever, abdominal cramps)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Shigellosis",
+        "Other bacterial causes of diarrhea (e.g., Salmonella, Campylobacter)",
+        "Viral gastroenteritis"
+    ]
+}

@@ -1,0 +1,428 @@
+{
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "patient_name": "John Doe",
+  "primary_diagnosis": "Type 2 Diabetes Mellitus",
+  "confidence": 90,
+  "generated_at": "2025-04-18T01:36:02.483625",
+  "timeline_range": "1-year",
+  "timeline_data": [
+    {
+      "date": "2025-04-18",
+      "timepoint_label": "Initial",
+      "symptoms": [
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased urination",
+          "severity": "mild"
+        },
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Review current medications, discontinue Crocin unless needed for pain relief",
+        "Initiate lifestyle modifications: diet and exercise plan",
+        "Monitor blood glucose regularly"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.5-8%",
+          "interpretation": "Indicates current level of blood glucose control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "120-180 mg/dL",
+          "interpretation": "Reflects blood glucose levels after fasting"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Dehydration"
+      ],
+      "notes": "Patient needs education on diabetes management."
+    },
+    {
+      "date": "2025-05-18",
+      "timepoint_label": "Month 1",
+      "symptoms": [
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased urination",
+          "severity": "mild"
+        },
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue lifestyle modifications",
+        "Consider Metformin initiation if not already on it"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7-7.5%",
+          "interpretation": "Monitor improvement with lifestyle changes"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "100-160 mg/dL",
+          "interpretation": "Monitor response to lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Dehydration"
+      ],
+      "notes": "Assess adherence to lifestyle changes."
+    },
+    {
+      "date": "2025-06-18",
+      "timepoint_label": "Month 2",
+      "symptoms": [
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased urination",
+          "severity": "mild"
+        },
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue lifestyle modifications and Metformin",
+        "Monitor blood glucose regularly"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.5-7%",
+          "interpretation": "Monitor response to Metformin"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "90-140 mg/dL",
+          "interpretation": "Monitor response to Metformin"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (if on Metformin)"
+      ],
+      "notes": "Educate on hypoglycemia symptoms."
+    },
+    {
+      "date": "2025-07-18",
+      "timepoint_label": "Month 3",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2025-08-18",
+      "timepoint_label": "Month 4",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2025-09-18",
+      "timepoint_label": "Month 5",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2025-10-18",
+      "timepoint_label": "Month 6",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2025-11-18",
+      "timepoint_label": "Month 7",
+      "symptoms": [],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2025-12-18",
+      "timepoint_label": "Month 8",
+      "symptoms": [],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2026-01-18",
+      "timepoint_label": "Month 9",
+      "symptoms": [],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2026-02-18",
+      "timepoint_label": "Month 10",
+      "symptoms": [],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    },
+    {
+      "date": "2026-03-18",
+      "timepoint_label": "Month 11",
+      "symptoms": [],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue current treatment plan"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "<6.5%",
+          "interpretation": "Goal HbA1c level"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "<100 mg/dL",
+          "interpretation": "Goal fasting blood glucose level"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "within normal range",
+          "interpretation": "Assess kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce lifestyle changes."
+    }
+  ]
+}

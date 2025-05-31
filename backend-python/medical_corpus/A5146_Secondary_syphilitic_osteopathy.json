@@ -1,0 +1,112 @@
+{
+    "disease": "Secondary syphilitic osteopathy",
+    "icd_code": "A5146",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bony pain",
+                "severity": "Variable, can be severe enough to prevent working",
+                "pattern": "Multiple regions, initially nocturnal then continuous"
+            },
+            {
+                "name": "Joint pains",
+                "severity": "Present in hands and feet",
+                "pattern": "6 weeks duration in one case"
+            },
+            {
+                "name": "Skin eruption",
+                "severity": "Disseminated, can be ulcerated",
+                "pattern": "Annular, scalene papules and plaques; can be reminiscent of \"malignant\" syphilis"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Present",
+                "pattern": "Constitutional symptom"
+            },
+            {
+                "name": "Decreased appetite",
+                "severity": "Present",
+                "pattern": "Constitutional symptom"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Present",
+                "pattern": "Constitutional symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Progressive, localized to frontotemporal region",
+                "pattern": "Present in one case, worsening despite analgesics"
+            },
+            {
+                "name": "Morning stiffness",
+                "severity": "Fleeting",
+                "pattern": "Longstanding history in one case"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Mildly tachycardic in one case"
+        },
+        "physical_findings": [
+            "Pink, but dry mucous membranes",
+            "White, adherent plaques in the mouth",
+            "Diffuse skin eruption",
+            "Joint swelling and tenderness at wrist and ankles",
+            "Tenderness at anterior tibiae, clavicles, sternum, and forehead",
+            "Healing painless penile chancre",
+            "Bilateral cervical adenopathy"
+        ],
+        "lab_values": {
+            "leukocyte_count": "3.4 \u00d7 103/mm3 (mild pancytopenia)",
+            "hemoglobin": "10.2\u2009g/dL (mild pancytopenia)",
+            "platelet_count": "123 \u00d7 103/mm3 (mild pancytopenia)",
+            "cd4_count": "57 cells/\u03bcL",
+            "hiv_rna": "365,000 copies/mL",
+            "antinuclear_antibody": "Negative",
+            "rheumatoid_factor": "Negative",
+            "rapid_plasma_reagin_(rpr)": "Elevated (1:64 titer initially, 1:32 after 2 weeks of treatment, 1:8 after 2 months, negative after 9 months in one case; 1:32 in another case)",
+            "treponema_pallidum_antibody_(tppa)": "Positive",
+            "sedimentation_rate": "132 mm/hr"
+        },
+        "risk_factors": [
+            "Untreated HIV infection",
+            "High-risk sexual activity",
+            "Penicillin allergy",
+            "Lack of regular protection during sexual intercourse",
+            "Recent new sexual contact"
+        ],
+        "imaging_findings": {
+            "radiography": {
+                "limbs": "Polyostotic cortical irregularities",
+                "skull": "Negative for bony lesions in one case; ill-defined osteolysis in the vertex in another case",
+                "radius, ulna, tibia, fibula": "Normal in one case"
+            },
+            "bone_scintigraphy": "Extensive bilateral polyostotic uptake within the hands, feet, forearms, and tibiae/fibulae",
+            "ct_scan": {
+                "head": "Lytic osseous lesion in the left parietal bone; additional frontal bone lesions after treatment",
+                "chest, abdomen, pelvis": "Localized bony osteolytic changes at the sternum and clavicles"
+            },
+            "mri": {
+                "head": "Corresponding marrow edema and enhancement in the left parietal bone with surrounding enhancing dural and scalp thickening; resolution of soft tissue scalp changes and improved dural thickening with residual marrow edema and enhancement after treatment"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology (RPR, TPPA)",
+            "Characteristic imaging findings (osteolytic lesions on radiography, CT, bone scan)"
+        ],
+        "supportive": [
+            "Clinical symptoms (bony pain, skin lesions, joint pain)",
+            "Histopathological findings (psoriasiform lichenoid dermatitis, spirochetes on modified Steiner stain)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Metabolic bone diseases",
+        "Fractures",
+        "Bacterial infections",
+        "Neoplastic disease (metastases, primary bone tumors, hematological malignancies)",
+        "Marrow disorder"
+    ]
+}

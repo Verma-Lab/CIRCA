@@ -1,0 +1,116 @@
+{
+    "disease": "Legionnaires' disease",
+    "icd_code": "A481",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high",
+                "pattern": "Usually present"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild to severe",
+                "pattern": "Usually present, may produce blood-streaked sputum in some cases"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild to moderate",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Mild to moderate",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable, can be severe",
+                "pattern": "Can be present, especially in severe cases"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Present in about one-third of patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Elevated in severe cases",
+            "blood_pressure": "Can be low in severe cases (hypotension)"
+        },
+        "physical_findings": [
+            "Crackles or rales on lung auscultation",
+            "Decreased breath sounds",
+            "Signs of respiratory distress"
+        ],
+        "lab_values": {
+            "urine_legionella_antigen": "Positive",
+            "blood_cultures": "May be positive",
+            "sputum_culture": "May be positive",
+            "complete_blood_count": "Leukocytosis (increased white blood cell count)"
+        },
+        "risk_factors": [
+            "Advanced age",
+            "Male sex",
+            "Immunosuppression",
+            "Chronic lung disease",
+            "Alcohol abuse",
+            "Malignancies",
+            "Iron overload",
+            "Anti-tumor necrosis factor (TNF)-alpha treatment",
+            "Smoking (current or past)",
+            "Recent surgery",
+            "Intubation",
+            "Mechanical ventilation",
+            "Aspiration",
+            "Presence of nasogastric tubes",
+            "Use of respiratory therapy equipment"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Infiltrates consistent with pneumonia",
+            "CT_scan": "May show more detailed lung involvement"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive Legionella urinary antigen test",
+            "Positive Legionella culture from respiratory secretions"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with pneumonia",
+            "Exposure to potential sources of Legionella (e.g., contaminated water systems)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other types of pneumonia",
+        "Influenza",
+        "Tuberculosis"
+    ]
+}

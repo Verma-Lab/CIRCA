@@ -1,0 +1,48 @@
+{
+    "disease": "Sporotrichosis arthritis",
+    "icd_code": "B4282",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Joint swelling",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Limited range of motion",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Joint swelling",
+            "Joint tenderness",
+            "Limited range of motion",
+            "Skin lesions (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to soil, decaying wood, hay, and sphagnum moss",
+            "Traumatic inoculation",
+            "Immunosuppression (HIV, chronic steroid use, alcohol abuse)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with sporotrichosis arthritis",
+            "Positive fungal culture or histopathology"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of osteomyelitis"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,96 @@
+{
+    "disease": "Meningococcal arthritis",
+    "icd_code": "A3983",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain",
+                "severity": "Variable, can range from mild to severe (10/10)",
+                "pattern": "Oligoarticular (most frequent), monoarticular;  knee most frequent site, also ankles, fingers, wrist, hip"
+            },
+            {
+                "name": "Joint swelling",
+                "severity": "Variable",
+                "pattern": "Present in affected joints"
+            },
+            {
+                "name": "Joint redness",
+                "severity": "Variable",
+                "pattern": "Present in affected joints"
+            },
+            {
+                "name": "Joint warmth",
+                "severity": "Variable",
+                "pattern": "Present in affected joints"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, can be low-grade or absent",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable, may be absent even in cases of purpura fulminans",
+                "pattern": "May or may not be present; purpura fulminans can occur as a severe complication"
+            },
+            {
+                "name": "Edema",
+                "severity": "Variable",
+                "pattern": "May be present in affected extremity, especially in severe cases"
+            },
+            {
+                "name": "Purpura",
+                "severity": "Severe",
+                "pattern": "Can occur as a complication, particularly purpura fulminans"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Variable, can be normal, low-grade fever (37.5\u00b0C), or absent",
+            "heart_rate": "Variable, tachycardia (120-138 bpm) may be present"
+        },
+        "physical_findings": [
+            "Joint effusion",
+            "Limited active movement of affected joints",
+            "Warmth and tenderness to palpation in affected joints",
+            "Trace edema",
+            "Purpura (in severe cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Variable, can be normal or elevated;  joint fluid WBC can range from 8.7 x 10^3 cells/\u00b5L to >1500 cells/mm3",
+            "uric_acid": "Variable, can be elevated (6.9 mg/dL)",
+            "c-reactive_protein": "May be elevated",
+            "erythrocyte_sedimentation_rate": "May be elevated"
+        },
+        "risk_factors": [
+            "Previous joint disease",
+            "Low socioeconomic class (for septic arthritis in general, not specifically meningococcal)"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show synovitis and joint effusion",
+            "ct_scan": "May show edema (in severe cases)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Joint symptoms (pain, swelling, redness, warmth)",
+            "Proven meningococcal disease (N. meningitidis identified in blood, CSF, or synovial fluid)"
+        ],
+        "supportive": [
+            "Elevated WBC count (peripheral or joint fluid)",
+            "Elevated ESR and CRP",
+            "Positive synovial fluid culture for N. meningitidis (for septic arthritis)",
+            "Imaging findings consistent with arthritis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Septic arthritis (other pathogens)",
+        "Gout",
+        "Other inflammatory arthritides"
+    ]
+}

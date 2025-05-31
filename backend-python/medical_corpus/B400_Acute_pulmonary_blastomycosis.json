@@ -1,0 +1,82 @@
+{
+    "disease": "Acute pulmonary blastomycosis",
+    "icd_code": "B400",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pneumonia",
+                "severity": "Variable, ranging from mild to severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Acute respiratory distress syndrome (ARDS)",
+                "severity": "Severe",
+                "pattern": "Can occur in severe cases"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in many cases",
+            "respiratory_rate": "Elevated in severe cases",
+            "blood_pressure": "May be affected in severe cases",
+            "heart_rate": "May be elevated in severe cases"
+        },
+        "physical_findings": [
+            "Crackles or rales on lung auscultation",
+            "Decreased breath sounds",
+            "Signs of respiratory distress"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "May be elevated",
+            "C-reactive_protein": "May be elevated",
+            "erythrocyte_sedimentation_rate": "May be elevated"
+        },
+        "risk_factors": [
+            "Inhalation of spores from soil",
+            "Immunocompromised state",
+            "Exposure to endemic areas (midwestern, south-central, and southeastern regions of the United States and four Canadian provinces from Saskatchewan to Quebec)",
+            "Occupational or recreational activities that disrupt soil"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show pulmonary infiltrates, nodules, or cavities",
+            "CT_scan": "May provide more detailed images of pulmonary lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pulmonary blastomycosis",
+            "Positive fungal culture or non-culture-based diagnostic test (e.g., PCR, antigen detection)"
+        ],
+        "supportive": [
+            "Exposure to endemic areas",
+            "Characteristic imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial pneumonia",
+        "Tuberculosis",
+        "Lung cancer",
+        "Coccidioidomycosis",
+        "Histoplasmosis"
+    ]
+}

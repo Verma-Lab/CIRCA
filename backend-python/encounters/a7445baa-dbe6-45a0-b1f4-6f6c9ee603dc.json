@@ -1,0 +1,19 @@
+{
+  "id": "a7445baa-dbe6-45a0-b1f4-6f6c9ee603dc",
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "provider_id": "36c35b23-b466-4479-9c37-a2792ee85478",
+  "encounter_date": "2025-03-23T20:45:59.624128",
+  "encounter_type": "Office Visit",
+  "chief_complaint": "headache",
+  "vital_signs": {},
+  "hpi": "no previous history of headache",
+  "ros": "",
+  "physical_exam": "",
+  "assessment": "",
+  "plan": "",
+  "diagnosis_codes": "",
+  "followup_instructions": "",
+  "clinical_note": "Patient: John Doe, DOB: 1980-05-15, Gender: Male\n\nChief Complaint: headache\nVital Signs:\n\nS: no previous history of headache\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "created_at": "2025-03-23T20:45:59.624132",
+  "updated_at": "2025-03-23T20:45:59.624133"
+}

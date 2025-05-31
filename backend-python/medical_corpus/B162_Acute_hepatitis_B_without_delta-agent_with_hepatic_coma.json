@@ -1,0 +1,88 @@
+{
+    "disease": "Acute hepatitis B without delta-agent with hepatic coma",
+    "icd_code": "B162",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Severe",
+                "pattern": "Yellowing of eyes and skin"
+            },
+            {
+                "name": "Pale stools",
+                "severity": "Severe",
+                "pattern": "Colorless"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Severe",
+                "pattern": "Very dark"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate to Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hepatic encephalopathy (hepatic coma)",
+                "severity": "Severe",
+                "pattern": "Unconsciousness, lack of response to stimuli, potential severe bleeding"
+            },
+            {
+                "name": "Joint inflammation",
+                "severity": "Possible",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Kidney inflammation",
+                "severity": "Possible",
+                "pattern": "Occasional"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Abnormal vital signs may be present due to the severity of the condition and hepatic coma, but specific ranges are not provided in the text."
+        },
+        "physical_findings": [
+            "Jaundice (yellowing of skin and eyes)",
+            "Hepatic encephalopathy (hepatic coma)"
+        ],
+        "lab_values": {
+            "description": "The provided text does not specify abnormal lab values, but liver function tests would be expected to show significant abnormalities."
+        },
+        "risk_factors": [
+            "Exposure to Hepatitis B virus"
+        ],
+        "imaging_findings": {
+            "description": "The provided text does not mention specific imaging findings, but liver ultrasound or CT scan might be used to assess liver damage."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of acute hepatitis B",
+            "Presence of Hepatitis B virus",
+            "Evidence of severe liver damage",
+            "Hepatic coma (encephalopathy)"
+        ],
+        "supportive": [
+            "Abnormal liver function tests",
+            "Imaging findings consistent with severe hepatitis"
+        ]
+    },
+    "differential_diagnoses": []
+}

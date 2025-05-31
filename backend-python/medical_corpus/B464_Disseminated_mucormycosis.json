@@ -1,0 +1,106 @@
+{
+    "disease": "Disseminated mucormycosis",
+    "icd_code": "B464",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute pneumonia",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Generalized jaundice",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Moderate to Severe",
+                "pattern": "Gradual onset"
+            },
+            {
+                "name": "Dysarthria",
+                "severity": "Moderate",
+                "pattern": "Gradual onset"
+            },
+            {
+                "name": "Left side hemiparesis",
+                "severity": "Moderate",
+                "pattern": "Gradual onset"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Productive cough",
+                "severity": "Moderate",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate to Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Moderate to Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Crackles in the base of the left lung",
+                "severity": "Moderate",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Extensive bedsores",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Elevated"
+        },
+        "physical_findings": [
+            "Confusion",
+            "Dysarthria",
+            "Left side hemiparesis",
+            "Extensive bedsores in the sacral area",
+            "Fever",
+            "Tachypnea",
+            "Generalized jaundice",
+            "Course crackles in the base of the left lung"
+        ],
+        "lab_values": {
+            "leukocyte_count": "Elevated (15,000/mcl initially, 9700/mcl later)",
+            "hemoglobin": "Low (10 mg/dl)",
+            "total_bilirubin": "Elevated (6 mg/dl)",
+            "direct_bilirubin": "Slightly elevated (1 mg/dl)",
+            "aspartate_aminotransferase": "Elevated (154 U/L)",
+            "alanine_aminotransferase": "Elevated (122 U/L)",
+            "alkaline_phosphatase": "Severely elevated (1150 U/L)"
+        },
+        "risk_factors": [
+            "Immunocompromised state (although the case report describes an immunocompetent patient, this is unusual)",
+            "Underlying conditions (poorly controlled diabetes mellitus, neutropenia, hematologic malignancy, iron chelation therapy, severe malnutrition, primary breakdown in the integrity of the cutaneous barrier)",
+            "Extensive bedsores (potential route of infection)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Focal pneumonic infiltration in the left lower lobe",
+            "abdominal_ultrasonography": "No abnormality"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological evidence of zygomycetes hyphae in two or more noncontiguous organ systems"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with disseminated infection",
+            "Risk factors for mucormycosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,74 @@
+{
+    "disease": "Sebaceous cell carcinoma of skin of left upper eyelid, including canthus",
+    "icd_code": "C441391",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Yellow thickening of the eyelid",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Atypical or recurrent chalazia in the upper lid",
+                "severity": "Variable",
+                "pattern": "Recurrent"
+            },
+            {
+                "name": "Keratoconjunctivitis or blepharoconjunctivitis unresponsive to treatment",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Persistent blepharitis",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Painless mass",
+                "severity": "Mild",
+                "pattern": "Constant"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Yellowish appearance of the lesion (due to lipid within neoplastic cells)",
+            "Lesion arises at the sebaceous glands, usually at the lid margin",
+            "Possible extension to the palpebral conjunctiva",
+            "Lid margin thickening",
+            "Loss of eyelashes (in spreading variety)",
+            "Diffuse thickening of lid margin (in spreading variety)",
+            "Hard, immobile nodule (in nodular form)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Older age (median age at presentation between 57 and 72 years)",
+            "Periocular radiotherapy",
+            "Immunosuppression (solid organ transplantation, lymphoma)",
+            "Female sex (periocular)",
+            "Male sex (extraocular)",
+            "Muir-Torre syndrome",
+            "Asian descent (suggested)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic features: lobular arrangement, vacuolated cytoplasm, hyperchromatic nuclei, positive staining for lipid (oil red O)",
+            "Pagetoid spread of malignant cells"
+        ],
+        "supportive": [
+            "Clinical presentation: atypical chalazia, yellow eyelid thickening, unresponsive blepharitis/conjunctivitis",
+            "Imaging findings (if any)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chalazia",
+        "Chronic blepharitis",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Superior limbic keratoconjunctivitis",
+        "Ocular cicatricial pemphigoid",
+        "Blepharoconjunctivitis"
+    ]
+}

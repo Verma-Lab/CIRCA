@@ -1,0 +1,63 @@
+{
+    "disease": "Whooping Cough",
+    "icd_code": "A3790",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cold-like symptoms",
+                "severity": "Mild",
+                "pattern": "Lasts 1-2 weeks"
+            },
+            {
+                "name": "Coughing fits",
+                "severity": "Variable, can be violent and rapid",
+                "pattern": "Worsens over time, especially at night; may last up to 10 weeks or more; can recur with other respiratory infections"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Can occur due to forceful coughing",
+                "pattern": "Associated with coughing fits"
+            },
+            {
+                "name": "Whooping sound",
+                "severity": "Variable",
+                "pattern": "During inhalation after coughing fits"
+            },
+            {
+                "name": "Apnea (in babies)",
+                "severity": "Severe",
+                "pattern": "Pause in breathing; may lead to cyanosis"
+            },
+            {
+                "name": "Cyanosis (in babies)",
+                "severity": "Severe",
+                "pattern": "Bluish discoloration of skin due to lack of oxygen"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased during coughing fits; apnea in infants"
+        },
+        "physical_findings": [
+            "Coughing fits",
+            "Whooping sound (during inhalation after coughing fits)",
+            "Cyanosis (in infants)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Unvaccinated infants",
+            "Exposure to infected individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic coughing fits"
+        ],
+        "supportive": [
+            "Whooping sound",
+            "Positive bacterial culture or PCR for Bordetella pertussis"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,105 @@
+{
+    "disease": "Brucellosis due to Brucella abortus",
+    "icd_code": "A231",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Undulant fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Sweats",
+                "severity": "Variable",
+                "pattern": "Night sweats common"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Persistent or intermittent"
+            },
+            {
+                "name": "Joint pain (arthralgia)",
+                "severity": "Variable",
+                "pattern": "Migratory"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Abortion (in animals)",
+                "severity": "Severe",
+                "pattern": "Can occur in pregnant animals"
+            },
+            {
+                "name": "Orchitis (in males)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Epididymitis (in males)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Seminal vesiculitis (in males)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Testicular atrophy (in males)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Intermittent fever, often high"
+        },
+        "physical_findings": [
+            "Splenomegaly",
+            "Hepatomegaly",
+            "Lymphadenopathy",
+            "Joint swelling and tenderness"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Brucella abortus",
+            "serology": "Positive agglutination test (e.g., Rose Bengal test, Coombs test)",
+            "CBC": "May show leukocytosis or anemia"
+        },
+        "risk_factors": [
+            "Consumption of unpasteurized dairy products",
+            "Occupational exposure (veterinarians, animal care providers, laboratory workers)",
+            "Contact with infected animals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Brucella abortus",
+            "Positive serological test (e.g., Rose Bengal test, Coombs test)"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with brucellosis",
+            "Epidemiological risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

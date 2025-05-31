@@ -1,0 +1,38 @@
+{
+    "disease": "Other syphilitic heart involvement",
+    "icd_code": "A52.06",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Syphilis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of syphilis infection",
+            "Cardiac involvement not specified elsewhere"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Aneurysm of unspecified site (I72.9)",
+        "Coronary artery aneurysm (I25.41)",
+        "Arteritis, unspecified (I77.6)",
+        "Other forms of chronic ischemic heart disease (I25.89)",
+        "Other cardiovascular syphilis (A52.09)",
+        "Myocardial degeneration (I51.5)",
+        "Heart disease, unspecified (I51.9)",
+        "Other symptomatic late syphilis (A52.79)",
+        "Acute myocardial infarction, unspecified (I21.9)",
+        "Heart failure, unspecified (I50.9)",
+        "Myocarditis, unspecified (I51.4)",
+        "Stricture of artery (I77.1)",
+        "Disease of pericardium, unspecified (I31.9)",
+        "Syphilis, unspecified (A53.9)"
+    ]
+}

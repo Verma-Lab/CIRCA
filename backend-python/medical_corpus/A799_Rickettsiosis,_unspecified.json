@@ -1,0 +1,108 @@
+{
+    "disease": "Rickettsiosis, unspecified",
+    "icd_code": "A799",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Petechial or maculopapular rash",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Eschar at inoculation site",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Arthralgias",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cardiovascular instability",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "blood_pressure": "May be unstable"
+        },
+        "physical_findings": [
+            "Petechial or maculopapular rash",
+            "Lymphadenopathy",
+            "Eschar at inoculation site"
+        ],
+        "lab_values": {
+            "IgG and IgM to R. rickettsiae": "Elevated in serologic testing",
+            "Thrombocytopenia": "May be present",
+            "Hyponatremia": "May be present",
+            "Cerebrospinal fluid pleocytosis": "May be present",
+            "White blood cell count": "May be elevated, normal, or low"
+        },
+        "risk_factors": [
+            "Exposure to ticks",
+            "Exposure to body lice",
+            "Exposure to mites",
+            "Exposure to fleas",
+            "Outdoor activities",
+            "Crowded conditions",
+            "Poor hygiene"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "High clinical suspicion based on symptoms and epidemiological factors",
+            "Positive serologic testing (IgG and IgM to R. rickettsiae)"
+        ],
+        "supportive": [
+            "Thrombocytopenia",
+            "Hyponatremia",
+            "Cerebrospinal fluid pleocytosis",
+            "Positive PCR test"
+        ]
+    },
+    "differential_diagnoses": []
+}

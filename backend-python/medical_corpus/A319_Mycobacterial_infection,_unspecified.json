@@ -1,0 +1,17 @@
+{
+    "disease": "Mycobacterial infection, unspecified",
+    "icd_code": "A319",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {},
+    "differential_diagnoses": []
+}

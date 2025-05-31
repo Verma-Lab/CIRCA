@@ -1,0 +1,17 @@
+{
+    "disease": "Merkel cell carcinoma of overlapping sites",
+    "icd_code": "C4A8",
+    "parameters": {
+        "symptoms": [],
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

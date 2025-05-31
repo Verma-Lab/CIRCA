@@ -1,0 +1,144 @@
+{
+    "disease": "Erysipelothrix sepsis",
+    "icd_code": "A267",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chest pain",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Fever",
+                "severity": "high (39.6\u00b0C)",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Cough with purulent sputum",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Chills",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Erythematous papules on chest",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Enlarged axillary, submandibular, pectoral, and supraclavicular lymph nodes",
+                "severity": "moderate",
+                "pattern": "present, regressed with penicillin treatment"
+            },
+            {
+                "name": "Left thumb weakness",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Thoracic back pain",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Increased sputum production",
+                "severity": "moderate",
+                "pattern": "present for three days"
+            },
+            {
+                "name": "Labial herpes",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Ulcerative-necrotic glossitis",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Bilateral crackles on chest examination",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "moderate",
+                "pattern": "present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "39.6\u00b0C",
+            "heart_rate": "118 beats/min",
+            "blood_pressure": "84/50 mmHg",
+            "oxygen_saturation": "94%"
+        },
+        "physical_findings": [
+            "Erythematous papules on chest",
+            "Enlarged axillary, submandibular, pectoral, and supraclavicular lymph nodes",
+            "Labial herpes",
+            "Ulcerative-necrotic glossitis",
+            "Bilateral crackles on chest examination",
+            "Hepatosplenomegaly",
+            "Bilateral 1+ pitting edema to the lower extremities"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "18.7 \u00d7 103/\u03bcl",
+            "hematocrit": "35.9%",
+            "hemoglobin": "12.7 g/dL",
+            "erythrocyte_sedimentation_rate": "82 mm/h",
+            "c_reactive_protein": "192 mg/L",
+            "fibrinogen": "5.44 g/L (15.99 \u03bcmol/L)",
+            "urine": "significant pyuria"
+        },
+        "risk_factors": [
+            "Exposure to animal products (farmers, butchers, veterinarians)",
+            "Immunocompromised host (chronic lymphocytic leukemia, treatment with methylprednisolone and cladribine)",
+            "Recent chemotherapy",
+            "Underlying chronic lymphocytic leukemia",
+            "Homelessness",
+            "Chronic leukocytosis",
+            "Chronic obstructive pulmonary disorder (COPD)",
+            "Type 2 diabetes mellitus",
+            "Hypertension",
+            "Duodenal ulcer",
+            "Positive for Helicobacter pylori"
+        ],
+        "imaging_findings": {
+            "pulmonary_radiography": "Left perihilar and right infrahilar congestion, left pleural effusion",
+            "electrocardiogram": "Normal sinus rhythm without conduction abnormalities",
+            "transesophageal_echocardiogram": "Normal",
+            "MRI_brain": "Subacute infarct in the right frontal lobe, area of increased signal diffusion within the left frontal lobe",
+            "MRI_thoracic_spine": "T6-T7 acute discitis with osteomyelitis, 6 mm fluid collection along the left anterior epidural space (epidural abscess)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Erysipelothrix rhusiopathiae"
+        ],
+        "supportive": [
+            "Symptoms and signs consistent with sepsis",
+            "Risk factors for Erysipelothrix rhusiopathiae infection",
+            "Imaging findings suggestive of organ involvement"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial sepsis",
+        "Viral infections",
+        "Fungal infections",
+        "Infective endocarditis (in some cases)"
+    ]
+}

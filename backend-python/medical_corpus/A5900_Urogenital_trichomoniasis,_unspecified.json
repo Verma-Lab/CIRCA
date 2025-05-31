@@ -1,0 +1,100 @@
+{
+    "disease": "Urogenital trichomoniasis, unspecified",
+    "icd_code": "A5900",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable, can be copious, yellow-green, frothy, with fishy odor",
+                "pattern": "May be present or absent; can develop over time"
+            },
+            {
+                "name": "Genital itching",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Painful urination (dysuria)",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Pain during intercourse (dyspareunia)",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Vulvar and perineal soreness",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Urethral discharge",
+                "severity": "Variable, can be transient, frothy, or purulent",
+                "pattern": "More common in men, often asymptomatic"
+            },
+            {
+                "name": "Penile irritation",
+                "severity": "Mild",
+                "pattern": "Occasional moisture at the urethral meatus"
+            },
+            {
+                "name": "Epididymitis",
+                "severity": "Rare",
+                "pattern": "Rare complication"
+            },
+            {
+                "name": "Prostatitis",
+                "severity": "Rare",
+                "pattern": "Rare complication"
+            },
+            {
+                "name": "Cystitis",
+                "severity": "Occasional",
+                "pattern": "Occasional complication"
+            },
+            {
+                "name": "Red and sore vagina",
+                "severity": "Variable",
+                "pattern": "May be present in women"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Vaginal discharge (purulent in some cases)",
+            "Red and inflamed vagina",
+            "Punctate, red \u201cstrawberry\u201d spots on vaginal walls and cervix (in women)",
+            "Urethral discharge (in men)",
+            "Vulvar and perineal inflammation and edema (in women)"
+        ],
+        "lab_values": {
+            "Vaginal pH": "Elevated",
+            "Wet mount microscopy": "Presence of motile Trichomonas vaginalis",
+            "NAATs": "Positive for T. vaginalis",
+            "Rapid-antigen dipstick tests": "Positive for T. vaginalis",
+            "Urethral culture": "Positive for T. vaginalis (in men)",
+            "Urine culture": "Positive for T. vaginalis (in men)"
+        },
+        "risk_factors": [
+            "Sexual activity without condoms",
+            "Multiple sexual partners"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive NAATs, wet mount microscopy, or culture for T. vaginalis"
+        ],
+        "supportive": [
+            "Characteristic symptoms (vaginal discharge, dysuria, dyspareunia, etc.)",
+            "Physical examination findings (vaginal inflammation, discharge, etc.)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial vaginosis",
+        "Candidiasis",
+        "Gonorrhea",
+        "Chlamydia"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "disease": "Recrudescent typhus [Brill's disease]",
+    "icd_code": "A751",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chills",
+                "severity": "Mild",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Remittent, lasting 7-10 days"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild to absent",
+                "pattern": "Maculopapular, may be evanescent or absent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, may reach 40\u00b0C"
+        },
+        "physical_findings": [
+            "Splenomegaly (sometimes)",
+            "Hypotension (in severely ill patients)"
+        ],
+        "lab_values": {
+            "IgG antibodies": "Elevated",
+            "IgM antibodies": "Generally not elevated"
+        },
+        "risk_factors": [
+            "Previous untreated epidemic typhus infection",
+            "Compromised immune system",
+            "Extreme stress"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings consistent with Brill-Zinsser disease",
+            "Epidemiological factors suggesting prior exposure to epidemic typhus"
+        ],
+        "supportive": [
+            "Elevated IgG antibodies to R. prowazekii",
+            "Absence of IgM antibodies to R. prowazekii"
+        ]
+    },
+    "differential_diagnoses": []
+}

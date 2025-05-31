@@ -1,0 +1,83 @@
+{
+    "disease": "Herpesviral cervicitis",
+    "icd_code": "A60.03",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pelvic pain",
+                "severity": "Progressive, increasing intensity",
+                "pattern": "Present for 2 days in one case"
+            },
+            {
+                "name": "Abnormal vaginal discharge",
+                "severity": "Purulent, dark-brown, foul-smelling in some cases, scanty, whitish mucopurulent in others",
+                "pattern": "Present in multiple cases"
+            },
+            {
+                "name": "Spotting",
+                "severity": "Episodes in one case",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Recurrent whitish vaginal discharge",
+                "severity": "Not specified",
+                "pattern": "Present in one case, prior to current episode"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "No symptoms reported",
+                "pattern": "Present in one case"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Normal in one case",
+            "heart_rate": "Normal in one case",
+            "blood_pressure": "Normal in one case",
+            "respiratory_rate": "Normal in one case",
+            "oxygen_saturation": "Normal in one case"
+        },
+        "physical_findings": [
+            "Reddened, edematous, mildly tender cervix (no bleeding)",
+            "Scanty, whitish mucopurulent discharge with no peculiar odor",
+            "Solid, exudative, ulcerated, necrotic, and friable cervical tumor",
+            "Cervix dark gray to black, edematous, and friable",
+            "Normal external genitalia in one case",
+            "IUCD string protruding from the endocervix in one case"
+        ],
+        "lab_values": {
+            "ELISA for HSV 2 IgM": "Positive in one case",
+            "ELISA for HSV 1 and 2 IgM": "Positive in one case",
+            "C-reactive protein (CRP)": "43.9 mg/dL in one case",
+            "White blood cell count": "6.55 \u00d7 109/L in one case",
+            "Erythrocyte sedimentation rate (ESR)": "18 mm/h in one case",
+            "Hemoglobin": "13.0 g/dL in one case",
+            "Platelet count": "197 \u00d7 109/L in one case",
+            "Chlamydia": "Negative in one case",
+            "Syphilis": "Negative in one case",
+            "Endocervical swab": "Normal flora in one case",
+            "Antibodies for HSV 1 and 2": "Positive for acute and active infection in one case"
+        },
+        "risk_factors": [
+            "Multiple sexual partners",
+            "HIV infection",
+            "Use of intrauterine devices"
+        ],
+        "imaging_findings": {
+            "Transvaginal ultrasound": "Normal in one case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive HSV serology (IgM)",
+            "Histological evidence of multinucleated giant cells with intranuclear inclusions"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with cervicitis (mucopurulent discharge, bleeding, edema)",
+            "Abnormal Pap smear cytology"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cervical cancer"
+    ]
+}

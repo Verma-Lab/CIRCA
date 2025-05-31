@@ -1,0 +1,151 @@
+{
+    "disease": "Mesothelioma, unspecified",
+    "icd_code": "C459",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "May be present in pleural mesothelioma"
+            },
+            {
+                "name": "Difficulty breathing (dyspnea)",
+                "severity": "Variable",
+                "pattern": "May be present in pleural mesothelioma"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present in pleural mesothelioma and pericardial mesothelioma"
+            },
+            {
+                "name": "Chronic cough",
+                "severity": "Variable",
+                "pattern": "May be present in pleural mesothelioma"
+            },
+            {
+                "name": "Difficulty swallowing (dysphagia)",
+                "severity": "Variable",
+                "pattern": "Usually a late complication in pleural mesothelioma"
+            },
+            {
+                "name": "Mass in chest wall",
+                "severity": "Variable",
+                "pattern": "May develop in some cases of pleural mesothelioma"
+            },
+            {
+                "name": "Unexplained weight loss",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Ascites",
+                "severity": "Variable",
+                "pattern": "May be present in peritoneal mesothelioma"
+            },
+            {
+                "name": "Small bowel obstruction",
+                "severity": "Variable",
+                "pattern": "Usually a late complication in peritoneal mesothelioma"
+            },
+            {
+                "name": "Heart rhythm abnormalities",
+                "severity": "Variable",
+                "pattern": "May be present in pericardial mesothelioma"
+            },
+            {
+                "name": "Low blood pressure",
+                "severity": "Variable",
+                "pattern": "May be present in pericardial mesothelioma"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Swelling or mass on testicle",
+                "severity": "Variable",
+                "pattern": "May be the first sign of mesothelioma of the tunica vaginalis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "May be low in pericardial mesothelioma"
+        },
+        "physical_findings": [
+            "Pleural effusion",
+            "Mass in chest wall",
+            "Ascites",
+            "Swelling or mass on testicle"
+        ],
+        "lab_values": {
+            "hemoglobin": "May be low in peritoneal mesothelioma (anemia)"
+        },
+        "risk_factors": [
+            "Asbestos exposure",
+            "Erionite exposure",
+            "Genetic predisposition (possible)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show pleural effusion",
+            "other_imaging": "Further imaging may be needed to determine the location and extent of the tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant mesothelial cells"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with mesothelioma",
+            "Imaging findings suggestive of mesothelioma",
+            "History of asbestos exposure"
+        ]
+    },
+    "differential_diagnoses": []
+}

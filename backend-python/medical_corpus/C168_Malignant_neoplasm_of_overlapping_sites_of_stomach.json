@@ -1,0 +1,40 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of stomach",
+    "icd_code": "C168",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Persistent stomach pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Unexplained weight loss",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Blood in vomit or stool",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Genetic mutations",
+            "Chronic infections (like H. pylori)",
+            "Environmental influences"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of cancerous cells in multiple areas of the stomach"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,110 @@
+{
+    "disease": "Pulmonary Sporotrichosis",
+    "icd_code": "B420",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Unspecified",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Unspecified",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Coughing",
+                "severity": "Unspecified",
+                "pattern": "Most frequently reported symptom (61.3% in one study)"
+            },
+            {
+                "name": "Constitutional symptoms",
+                "severity": "Unspecified",
+                "pattern": "Generally present"
+            },
+            {
+                "name": "Lung and breathing problems",
+                "severity": "Unspecified",
+                "pattern": "Can occur in systemic sporotrichosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "name": "Cavitary lesions",
+                "severity": "Variable",
+                "pattern": "Observed on CT scan, can be extensive and destructive"
+            },
+            {
+                "name": "Small ulcers",
+                "severity": "Variable",
+                "pattern": "Appear as lines on the skin as infection moves"
+            },
+            {
+                "name": "Necrosis",
+                "severity": "Variable",
+                "pattern": "Caseating necrosis observed in granulomas"
+            },
+            {
+                "name": "Granulomas",
+                "severity": "Variable",
+                "pattern": "Present in resected specimens"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Small, painless, red lump that develops into an ulcer"
+            }
+        ],
+        "lab_values": {
+            "BAL": {
+                "neutrophils": "88% in one case"
+            },
+            "Sputum culture": {
+                "Sporothrix schenckii": "Positive in multiple cases"
+            },
+            "Itraconazole levels": {
+                "normal": ">=0.6 mcg/mL",
+                "abnormal": "<0.1 mcg/mL (subtherapeutic), 1.0 mcg/mL (adequate)"
+            }
+        },
+        "risk_factors": [
+            "Male gender",
+            "Middle age",
+            "Underlying pulmonary disease",
+            "Immunosuppression",
+            "Alcoholism",
+            "Smoking",
+            "Occupational exposure to dust and soil",
+            "Contact with plants (roses, birdseed)",
+            "HIV infection",
+            "Chronic obstructive pulmonary disease (COPD)"
+        ],
+        "imaging_findings": {
+            "CT scan": {
+                "findings": "Cavitary lesions (unilobular upper lobe involvement in primary pulmonary sporotrichosis, multilobular reticulonodular infiltrates in multifocal sporotrichosis), bilateral pulmonary nodules"
+            },
+            "PET scan": {
+                "findings": "Low FDG uptake in one case, increased FDG metabolic activity in another"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture of Sporothrix spp. from pulmonary specimens (sputum and/or bronchoalveolar lavage)"
+        ],
+        "supportive": [
+            "Characteristic radiological findings (cavitary or non-cavitary lesions)",
+            "Clinical presentation (cough, dysphagia, hemoptysis)",
+            "Risk factors (immunosuppression, occupational exposure)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Paracoccidioidomycosis",
+        "Histoplasmosis",
+        "Other endemic systemic mycoses"
+    ]
+}

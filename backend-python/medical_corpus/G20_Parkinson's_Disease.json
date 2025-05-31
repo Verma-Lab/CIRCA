@@ -1,0 +1,145 @@
+{
+    "disease": "Parkinson's Disease",
+    "icd_code": "G20",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Tremor",
+                "severity": "Variable",
+                "pattern": "Typically begins on one side of the body, eventually affecting both"
+            },
+            {
+                "name": "Stiffness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Impaired balance",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty walking",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty talking",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Bradykinesia",
+                "severity": "Variable",
+                "pattern": "Slowness of movement"
+            },
+            {
+                "name": "Festination",
+                "severity": "Variable",
+                "pattern": "Tendency to lean forward, taking small, quick steps"
+            },
+            {
+                "name": "Start hesitation",
+                "severity": "Variable",
+                "pattern": "Difficulty initiating movement"
+            },
+            {
+                "name": "Freezing",
+                "severity": "Variable",
+                "pattern": "Sudden stopping while walking"
+            },
+            {
+                "name": "Depression",
+                "severity": "Mild to disabling",
+                "pattern": "Experienced by half of patients"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Not directly related to movement"
+            },
+            {
+                "name": "Blood pressure changes",
+                "severity": "Variable",
+                "pattern": "Not directly related to movement"
+            },
+            {
+                "name": "Cognitive impairment",
+                "severity": "Variable",
+                "pattern": "Can occur in later stages"
+            },
+            {
+                "name": "Sleep disturbances",
+                "severity": "Variable",
+                "pattern": "Can occur in later stages"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "Can occur in later stages"
+            },
+            {
+                "name": "Urinary problems",
+                "severity": "Variable",
+                "pattern": "Can occur in later stages"
+            },
+            {
+                "name": "Dyskinesia",
+                "severity": "Variable",
+                "pattern": "Involuntary movements, often a side effect of medication"
+            },
+            {
+                "name": "Hallucinations",
+                "severity": "Variable",
+                "pattern": "Can be a side effect of medication"
+            },
+            {
+                "name": "Psychosis",
+                "severity": "Variable",
+                "pattern": "Can be a side effect of medication"
+            },
+            {
+                "name": "Orthostatic hypotension",
+                "severity": "Variable",
+                "pattern": "Lightheadedness upon standing"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Orthostatic hypotension (low blood pressure upon standing)"
+        },
+        "physical_findings": [
+            "Tremor",
+            "Rigidity",
+            "Bradykinesia",
+            "Postural instability",
+            "Parkinsonian gait"
+        ],
+        "lab_values": {
+            "alpha-synuclein": "Abnormal levels detected in spinal fluid (and potentially blood in future tests)"
+        },
+        "risk_factors": [
+            "Genetics (family history)",
+            "Age (most common after 60)",
+            "Environmental factors (unknown)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of at least two of the cardinal motor features: tremor, rigidity, bradykinesia, postural instability",
+            "Asymmetrical onset of symptoms"
+        ],
+        "supportive": [
+            "Response to levodopa therapy",
+            "Exclusion of other causes of parkinsonism"
+        ]
+    },
+    "differential_diagnoses": [
+        "Multiple system atrophy",
+        "Lewy body dementia",
+        "Progressive supranuclear palsy",
+        "Corticobasal degeneration",
+        "Other parkinsonian syndromes"
+    ]
+}

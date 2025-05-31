@@ -1,0 +1,102 @@
+{
+    "disease": "Diphtheritic tubulo-interstitial nephropathy",
+    "icd_code": "A36.84",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Excessive urination",
+                "severity": "Variable",
+                "pattern": "Can be present in acute or chronic forms"
+            },
+            {
+                "name": "Nocturia",
+                "severity": "Variable",
+                "pattern": "More common in acute onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Associated with pyelonephritis or allergic reaction"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Associated with allergic reaction"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "Associated with pyelonephritis"
+            },
+            {
+                "name": "Flank pain",
+                "severity": "Variable",
+                "pattern": "Associated with pyelonephritis"
+            },
+            {
+                "name": "Itchiness",
+                "severity": "Variable",
+                "pattern": "More common in chronic, gradual onset"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "More common in chronic, gradual onset"
+            },
+            {
+                "name": "Decreased appetite",
+                "severity": "Variable",
+                "pattern": "More common in chronic, gradual onset"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "More common in chronic, gradual onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "More common in chronic, gradual onset"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Variable",
+                "pattern": "More common in chronic, gradual onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Normal or slightly above normal in early stages of chronic disease"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "waste_products_in_blood": "Increased in kidney failure",
+            "potassium": "Low levels",
+            "uric_acid": "Low levels",
+            "phosphate": "Low levels",
+            "urine_protein": "Trace or few white blood cells in acute onset, large numbers of white blood cells including eosinophils in allergic reaction",
+            "blood_eosinophils": "Increased in allergic reaction"
+        },
+        "risk_factors": [
+            "Diphtheria infection"
+        ],
+        "imaging_findings": {
+            "ultrasonography": "May show enlarged kidneys in allergic reaction",
+            "radionuclide_scanning": "May show enlarged kidneys in allergic reaction"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of diphtheria infection",
+            "Signs and symptoms of tubulointerstitial nephritis"
+        ],
+        "supportive": [
+            "Abnormal kidney function tests",
+            "Abnormal urine findings",
+            "Imaging findings consistent with tubulointerstitial nephritis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of tubulointerstitial nephritis (e.g., medication-induced, infection-induced, autoimmune diseases)"
+    ]
+}

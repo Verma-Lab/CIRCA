@@ -1,0 +1,104 @@
+{
+    "disease": "Basal cell carcinoma of skin of left upper eyelid, including canthus",
+    "icd_code": "C441191",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pearly edge",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pink color",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Visible or palpable mass",
+                "severity": "Variable",
+                "pattern": "Present in most cases with orbital invasion"
+            },
+            {
+                "name": "Mass fixation to orbital bone",
+                "severity": "Variable",
+                "pattern": "Present in some cases with orbital invasion"
+            },
+            {
+                "name": "Limitation of ocular motility",
+                "severity": "Variable",
+                "pattern": "Present in some cases with orbital invasion"
+            },
+            {
+                "name": "Globe displacement",
+                "severity": "Variable",
+                "pattern": "Present in some cases with orbital invasion"
+            },
+            {
+                "name": "Immobile lids",
+                "severity": "Variable",
+                "pattern": "Present in some cases with orbital invasion"
+            },
+            {
+                "name": "Epiphora",
+                "severity": "Variable",
+                "pattern": "Present in some cases with orbital invasion"
+            },
+            {
+                "name": "Ptosis",
+                "severity": "Variable",
+                "pattern": "Present in some cases with orbital invasion"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Pearly outer margins",
+            "Central ulcerated crater with pearly rolled margins (nodular type)",
+            "White-pink to yellow plaque with indistinct clinical margins (morpheaform type)",
+            "Hyperpigmentation",
+            "Loss of eyelashes (madarosis)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Intense exposure to ultraviolet radiation",
+            "Sun bed use",
+            "Family history of skin cancers",
+            "Immunosuppression",
+            "Previous radiotherapy",
+            "Chronic exposure to toxic substances",
+            "Low socioeconomic status"
+        ],
+        "imaging_findings": {
+            "CT": "Visualizing bony destruction",
+            "MRI": "Visualizing soft tissue changes and perineural invasion",
+            "IVCM": "High sensitivity and specificity for eyelid margin tumors"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination"
+        ],
+        "supportive": [
+            "Clinical presentation (pearly edge, pink color, ulceration, bleeding)",
+            "Imaging findings (CT, MRI, IVCM)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Sebaceous gland carcinoma",
+        "Malignant melanoma",
+        "Chalazion",
+        "Intradermal nevus",
+        "Blepharitis"
+    ]
+}

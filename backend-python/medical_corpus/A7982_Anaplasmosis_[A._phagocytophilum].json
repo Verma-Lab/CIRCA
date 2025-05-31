@@ -1,0 +1,113 @@
+{
+    "disease": "Anaplasmosis [A. phagocytophilum]",
+    "icd_code": "A7982",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Often over 102\u00b0F",
+                "pattern": "Common"
+            },
+            {
+                "name": "Chills",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to Moderate",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to Moderate",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Acute weight loss",
+                "severity": "Mild to Moderate",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to Moderate",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild to Moderate",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild to Moderate",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Change in mental status",
+                "severity": "Variable",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Septic shock-like syndromes",
+                "severity": "Severe",
+                "pattern": "Less frequent, severe cases"
+            },
+            {
+                "name": "Acute respiratory distress syndrome",
+                "severity": "Severe",
+                "pattern": "Less frequent, severe cases"
+            },
+            {
+                "name": "Opportunistic infections",
+                "severity": "Severe",
+                "pattern": "Less frequent, severe cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Often over 102\u00b0F"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "WBC": "< 4,500/mm\u00b3 (leukopenia)",
+            "Platelets": "<150,000/mm\u00b3 (thrombocytopenia)",
+            "Aminotransferases": "Increased levels"
+        },
+        "risk_factors": [
+            "Exposure to infected Ixodes scapularis ticks",
+            "Blood transfusion"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Two of the following three tests for evidence of infection with A. phagocytophilum"
+        ],
+        "supportive": [
+            "Febrile illness with thrombocytopenia following blood transfusion",
+            "Unexplained fever after tick exposure, particularly if leukopenia and/or thrombocytopenia are present"
+        ]
+    },
+    "differential_diagnoses": []
+}

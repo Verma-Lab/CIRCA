@@ -1,0 +1,46 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 90,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  Home glucose readings (120-180 mg/dL) and a previous HbA1c of 7.8% indicate suboptimal glycemic control.  The patient's chief complaint includes follow-up for diabetes management, further supporting this diagnosis.  The elevated creatinine (15 mgh, abnormal flag 'High') warrants further investigation into potential diabetic nephropathy."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 95,
+      "reasoning": "The patient's blood pressure is significantly elevated at 144/88 mmHg, exceeding the goal of <140/90 mmHg.  This is consistent with the diagnosis of essential hypertension, which is further supported by the patient's history of hypertension and current medication (lisinopril)."
+    }
+  ],
+  "differential_diagnoses": [
+    {
+      "disease": "Chronic Kidney Disease (CKD)",
+      "icd_code": "N18",
+      "probability": 70,
+      "reasoning": "The significantly elevated creatinine level (15 mgh) suggests potential renal impairment.  This warrants further investigation to rule out CKD, especially given the patient's diabetes and hypertension, both of which are risk factors for CKD.  The patient's fatigue could also be a symptom of CKD."
+    },
+    {
+      "disease": "Tension Headache",
+      "icd_code": "G44.9",
+      "probability": 80,
+      "reasoning": "The patient reports occasional mild headaches described as dull, pressure-like pain, lasting 2-3 hours, and relieved by acetaminophen. This is consistent with tension-type headaches. However, further investigation is needed to rule out other causes of headache."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Repeat HbA1c",
+    "Comprehensive metabolic panel (CMP) including electrolytes, BUN, and creatinine to assess renal function",
+    "Complete blood count (CBC) to evaluate for anemia or other causes of fatigue",
+    "Urinalysis to assess for proteinuria or other signs of kidney damage",
+    "ECG to evaluate cardiac function",
+    "Lipid panel to assess lipid profile"
+  ],
+  "clinical_summary": "The patient presents with a history of type 2 diabetes mellitus and hypertension, both of which are poorly controlled.  His elevated blood pressure and significantly elevated creatinine level are concerning and require further investigation.  The possibility of chronic kidney disease secondary to diabetes and hypertension needs to be thoroughly evaluated.  His headaches are likely tension headaches, but other causes should be considered.  Additional testing is recommended to assess renal function, complete blood count, and cardiac function.  The patient's medications should be reviewed and adjusted based on the results of these tests.",
+  "timestamp": "2025-04-08T10:37:52.672440",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

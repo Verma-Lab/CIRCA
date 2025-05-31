@@ -1,0 +1,149 @@
+{
+    "disease": "Pulmonary Tularemia",
+    "icd_code": "A212",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High-grade",
+                "pattern": "Initially low-grade, progressing to high-grade"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Left-sided, radiating to face, behind ear, and temporal area; unrelieved by acetaminophen or ibuprofen"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate",
+                "pattern": "Present for one week before high-grade fever"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Severe",
+                "pattern": "Drenching, 6-7 episodes over two weeks"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate",
+                "pattern": "15 episodes"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Moderate",
+                "pattern": "Associated with headache"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild",
+                "pattern": "Developed on second day of admission"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent, productive with thin watery sputum; developed on second day of admission"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Moderate",
+                "pattern": "Associated with hypoxia"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Unspecified",
+                "pattern": "Mentioned in one source"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Unspecified",
+                "pattern": "Mentioned in one source"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Unspecified",
+                "pattern": "Mentioned in one source"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Unspecified",
+                "pattern": "Mentioned in one source"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Unspecified",
+                "pattern": "Mentioned in one source"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "oxygen_saturation": "80s (SpO2)"
+        },
+        "physical_findings": [
+            "Dehydration",
+            "Tenderness with sinus palpation"
+        ],
+        "lab_values": {
+            "hemoconcentration": "Present",
+            "liver_function_tests": "Abnormal",
+            "urine_analysis": {
+                "proteinuria": "Mild",
+                "ketonuria": "Present",
+                "hematuria": "Present"
+            },
+            "csf_analysis": "Normal",
+            "ldh": {
+                "serum": "386 U/L",
+                "pleural_fluid": ">1900 U/L"
+            },
+            "protein": {
+                "serum": "6.1 g/dL",
+                "pleural_fluid": "3 g/dL"
+            },
+            "crp": "23 mg/L",
+            "esr": "55 mm/hr",
+            "francisella_tularensis_antibodies": {
+                "igm": "Positive",
+                "igg": "Positive"
+            },
+            "francisella_tularensis_culture": "Positive from thoracentesis fluid"
+        },
+        "risk_factors": [
+            "Occupation (sewage system employer)",
+            "Exposure to infected animals (potential, not confirmed in case report)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Bilateral interstitial infiltrates and right-sided pleural effusion",
+            "chest_ct": "Right lower lobe pneumonia with associated moderate-sized pleural effusion",
+            "head_ct": "Mucous retention in the left sphenoid sinus with mild mucosal thickening in the ethmoid cells",
+            "brain_mri": "Unremarkable"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive Francisella tularensis culture",
+            "Positive Francisella tularensis serology (IgM and IgG)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with pulmonary tularemia (fever, respiratory symptoms, etc.)",
+            "Radiological findings consistent with pulmonary tularemia (infiltrates, pleural effusion, lymphadenopathy)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Temporal arteritis",
+        "Meningitis",
+        "Sinusitis",
+        "Migraine",
+        "Medication overuse",
+        "Caffeine withdrawal",
+        "Lung cancer",
+        "Pneumonia (other causes)",
+        "HIV",
+        "Histoplasmosis",
+        "Blastomycosis",
+        "Aspergillosis",
+        "Toxoplasmosis",
+        "Tuberculosis",
+        "Legionella",
+        "Group A streptococcus"
+    ]
+}

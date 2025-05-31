@@ -1,0 +1,108 @@
+{
+    "disease": "Zoster iridocyclitis",
+    "icd_code": "B0232",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Foreign body sensation",
+                "severity": "Mild to moderate",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Mild to severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Eye pain",
+                "severity": "Mild to severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Intense",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Acute painless vision loss",
+                "severity": "Severe",
+                "pattern": "Unilateral, in posterior uveitis"
+            },
+            {
+                "name": "Floaters",
+                "severity": "Variable",
+                "pattern": "Unilateral, in posterior uveitis"
+            },
+            {
+                "name": "Mild fever",
+                "severity": "Mild",
+                "pattern": "Prodromal phase"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild",
+                "pattern": "Prodromal phase"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild",
+                "pattern": "Prodromal phase"
+            },
+            {
+                "name": "Skin hyperesthesia",
+                "severity": "Variable",
+                "pattern": "Prodromal phase"
+            },
+            {
+                "name": "Tingling",
+                "severity": "Variable",
+                "pattern": "Prodromal phase"
+            },
+            {
+                "name": "Progressive pain",
+                "severity": "Variable",
+                "pattern": "Prodromal phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "intraocular pressure": "Elevated (ocular hypertension)"
+        },
+        "physical_findings": [
+            "Unilateral hypertensive uveitis",
+            "Corneal involvement",
+            "Patchy or sectoral iris atrophy (transillumination defects)",
+            "Granulomatous keratic precipitates",
+            "Posterior synechiae",
+            "Hypopyon",
+            "Dermatomal rash along ophthalmic division of trigeminal nerve (Herpes Zoster Ophthalmicus)",
+            "Hutchinson\u2019s sign (lesions on tip of nose)"
+        ],
+        "lab_values": {
+            "aqueous and vitreous humor PCR": "Presence of VZV genome",
+            "aqueous and vitreous humor antibody test": "Presence of antiviral antibodies"
+        },
+        "risk_factors": [
+            "Increasing age (especially after 60 years)",
+            "Exposure to affected individuals",
+            "Immunosuppression (including HIV and immunosuppressive drugs)",
+            "Psychological stress",
+            "Direct trauma"
+        ],
+        "imaging_findings": {
+            "brain MRI": "Indicated if meningitis is suspected",
+            "lumbar puncture": "Indicated if meningitis is suspected"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "History of HZO or unilateral hypertensive uveitis, especially with corneal involvement and patchy or sectoral iris atrophy"
+        ],
+        "supportive": [
+            "Presence of characteristic iris atrophy (transillumination defects)",
+            "Ocular hypertension",
+            "Positive PCR or antibody test for VZV in aqueous or vitreous humor"
+        ]
+    },
+    "differential_diagnoses": []
+}

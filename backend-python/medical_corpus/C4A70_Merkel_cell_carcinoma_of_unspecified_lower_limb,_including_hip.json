@@ -1,0 +1,24 @@
+{
+    "disease": "Merkel cell carcinoma of unspecified lower limb, including hip",
+    "icd_code": "C4A70",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Tumor size ranging between 2 and 5 cm in 33.7% of cases"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Older age",
+            "Immunosuppression",
+            "Merkel cell polyomavirus (MCPyV) activity"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,103 @@
+{
+    "disease": "Chlamydial cystitis and urethritis",
+    "icd_code": "A5601",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Urethral pruritis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Mucoid, mucopurulent, or purulent urethral discharge",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pain in scrotum or testicle (if epididymitis develops)",
+                "severity": "Variable",
+                "pattern": "If infection spreads to epididymis"
+            },
+            {
+                "name": "Swelling and pain in joints (reactive arthritis)",
+                "severity": "Variable",
+                "pattern": "If infection spreads to joints"
+            },
+            {
+                "name": "Meatitis",
+                "severity": "Variable",
+                "pattern": "In some cases of HSV urethritis"
+            },
+            {
+                "name": "Genital ulceration",
+                "severity": "Variable",
+                "pattern": "In some cases of HSV urethritis"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "In some cases of adenovirus urethritis"
+            },
+            {
+                "name": "Meatal inflammation",
+                "severity": "Variable",
+                "pattern": "In some cases of adenovirus urethritis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Urethral discharge",
+            "Urethral inflammation",
+            "Meatitis (in some cases of HSV urethritis)"
+        ],
+        "lab_values": {
+            "NAAT (Nucleic acid amplification test)": {
+                "abnormal": "Presence of C. trachomatis DNA or RNA"
+            },
+            "Gram stain": {
+                "abnormal": "Presence of gram-negative intracellular diplococci (GNID) indicating gonorrhea (often co-occurs with chlamydia)"
+            },
+            "Urethral swab culture": {
+                "abnormal": "Growth of C. trachomatis (less common and less accurate than NAAT)"
+            },
+            "Urine leukocyte esterase test": {
+                "abnormal": "Positive result indicating inflammation"
+            },
+            "Microscopic examination of urine sediment": {
+                "abnormal": "\u226510 WBCs/HPF indicating inflammation"
+            }
+        },
+        "risk_factors": [
+            "Unprotected anal, oral, or vaginal intercourse",
+            "Multiple sexual partners",
+            "History of chlamydial infection or other STIs",
+            "Sexually active individuals under 25 years of age"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive NAAT for C. trachomatis"
+        ],
+        "supportive": [
+            "Urethral discharge",
+            "Positive leukocyte esterase test on first-void urine",
+            "Microscopic examination of first-void urine sediment with \u226510 WBCs/HPF"
+        ]
+    },
+    "differential_diagnoses": [
+        "Gonorrhea",
+        "Mycoplasma genitalium infection",
+        "Trichomonas vaginalis infection",
+        "Neisseria meningitidis infection",
+        "HSV urethritis",
+        "Adenovirus urethritis",
+        "Other bacterial infections (e.g., Haemophilus influenzae, Corynebacterium species)"
+    ]
+}

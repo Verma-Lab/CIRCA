@@ -1,0 +1,43 @@
+{
+    "disease": "Merkel cell carcinoma of right lower limb, including hip",
+    "icd_code": "C4A71",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shiny or pearly lump",
+                "severity": "Variable",
+                "pattern": "Appears on sun-exposed areas of skin, commonly face, neck, arms, eyelids; legs in darker-skinned individuals; torso in younger individuals. May break open into a wound or sore."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Shiny or pearly lump",
+            "Swollen lymph nodes (indicating potential cancer spread)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to ultraviolet (UV) light",
+            "Merkel cell polyomavirus (MCP)",
+            "Weakened immune system",
+            "Fair skin",
+            "Age over 50 (especially in men)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Skin biopsy showing cancer cells"
+        ],
+        "supportive": [
+            "Full-body skin exam",
+            "Palpation for swollen lymph nodes",
+            "Imaging tests (e.g., CT scan, MRI, PET scan) to determine stage"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign cysts",
+        "Infected hair follicles (folliculitis)",
+        "Styes"
+    ]
+}

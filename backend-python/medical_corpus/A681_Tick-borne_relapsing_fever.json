@@ -1,0 +1,100 @@
+{
+    "disease": "Tick-borne relapsing fever",
+    "icd_code": "A681",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Recurrent episodes"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Shaking chills",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Abdominal complaints",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "More common in children"
+            },
+            {
+                "name": "Neurologic signs",
+                "severity": "Variable",
+                "pattern": "More common in children"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, recurrent"
+        },
+        "physical_findings": [
+            "Tick bite mark",
+            "Organomegaly"
+        ],
+        "lab_values": {
+            "platelet_count": "May be decreased (thrombocytopenia)",
+            "c_reactive_protein": "May be elevated, lower in children",
+            "erythrocyte_sedimentation_rate": "May be elevated",
+            "total_leukocyte_count": "May be elevated",
+            "neutrophil_count": "May be elevated, lower in children",
+            "lymphocyte_count": "May be elevated, higher in children",
+            "liver_enzymes": "May be elevated"
+        },
+        "risk_factors": [
+            "Exposure to infected Ornithodoros ticks",
+            "Living in or visiting endemic regions (western US, parts of Africa, Mexico, Central and South America, Mediterranean, Central Asia)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Recurrent fever",
+            "Positive blood smear for Borrelia spirochetes",
+            "Positive PCR for Borrelia species"
+        ],
+        "supportive": [
+            "History of tick bite",
+            "Exposure to endemic area",
+            "Characteristic symptoms"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lyme disease"
+    ]
+}

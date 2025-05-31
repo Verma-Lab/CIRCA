@@ -1,0 +1,49 @@
+{
+    "disease": "Meningococcal retrobulbar neuritis",
+    "icd_code": "A39.82",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Retrobulbar neuritis symptoms (likely to overlap with meningococcal meningitis symptoms)",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Meningococcal meningitis symptoms",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Acute onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Elevated",
+            "heart_rate": "Potentially elevated"
+        },
+        "physical_findings": [
+            "Stiff neck",
+            "Photophobia",
+            "Headache",
+            "Optic neuritis findings (visual loss, pain with eye movement)"
+        ],
+        "lab_values": {
+            "CSF analysis": "Elevated white blood cell count, elevated protein, decreased glucose, presence of bacteria"
+        },
+        "risk_factors": [
+            "Infancy",
+            "Age over 50",
+            "Underlying conditions compromising immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningococcal meningitis and retrobulbar neuritis",
+            "Positive CSF analysis showing evidence of meningococcal infection"
+        ],
+        "supportive": [
+            "Positive blood culture for meningococcus",
+            "Imaging findings suggestive of optic neuritis"
+        ]
+    },
+    "differential_diagnoses": []
+}

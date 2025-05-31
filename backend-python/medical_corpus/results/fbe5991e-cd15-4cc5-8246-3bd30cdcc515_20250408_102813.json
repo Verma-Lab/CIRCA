@@ -1,0 +1,39 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 90,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  His home glucose readings (120-180 mg/dL) indicate suboptimal control, consistent with the diagnosis.  A previous A1c of 7.8% further supports this.  The increased fatigue reported could be a symptom of poorly controlled diabetes.  The plan already includes increasing metformin and ordering a new HbA1c."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 95,
+      "reasoning": "The patient's blood pressure is significantly elevated at 144/88 mmHg, exceeding the goal of <140/90 mmHg.  This is a clear indication of hypertension.  The patient's history includes hypertension, and the plan includes continuing lisinopril and emphasizing lifestyle modifications."
+    }
+  ],
+  "differential_diagnoses": [
+    {
+      "disease": "Tension Headache",
+      "icd_code": "G44.9",
+      "probability": 70,
+      "reasoning": "The patient reports occasional mild headaches, described as dull and pressure-like, lasting 2-3 hours, and relieved by acetaminophen. This is consistent with tension-type headaches. However, the absence of other neurological symptoms makes other headache types less likely."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Thyroid Stimulating Hormone (TSH) and free T4 levels:  While the physical exam shows no thyromegaly,  the increased fatigue and occasional dry cough warrant investigation of thyroid function.  This is particularly important given the potential for medication interactions and the prevalence of thyroid disorders.",
+    "Comprehensive Metabolic Panel (CMP): Already ordered, this will help assess renal function, particularly important given the elevated creatinine level (although the unit is incorrectly listed as 'mgh' and needs clarification).",
+    "Complete Blood Count (CBC): Already ordered, this will help evaluate for causes of fatigue, including anemia or infection.",
+    "ECG:  While not currently available, an ECG is recommended to assess for cardiac involvement related to hypertension.  This is especially important given the elevated blood pressure.",
+    "Clarification on Creatinine Units: The lab report lists creatinine units as 'mgh', which is incorrect.  The units should be mg/dL or \u00b5mol/L.  Clarification is needed to interpret this value accurately."
+  ],
+  "clinical_summary": "The patient presents with well-controlled type 2 diabetes mellitus and uncontrolled hypertension.  His occasional headaches are consistent with tension-type headaches.  The elevated creatinine level and fatigue warrant further investigation, including thyroid function tests and a thorough review of the creatinine lab result.  An ECG is recommended to assess for cardiac involvement.  Overall, the patient requires closer monitoring of his diabetes and hypertension, and further investigation into the cause of his fatigue.",
+  "timestamp": "2025-04-08T10:28:13.636337",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

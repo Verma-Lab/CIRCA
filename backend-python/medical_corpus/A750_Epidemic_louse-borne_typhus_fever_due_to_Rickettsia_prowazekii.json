@@ -1,0 +1,95 @@
+{
+    "disease": "Epidemic louse-borne typhus fever",
+    "icd_code": "A750",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Variable, can be severe",
+                "pattern": "Abrupt onset, 8-16 days post-exposure"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Abrupt onset, 8-16 days post-exposure"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Abrupt onset, 8-16 days post-exposure"
+            },
+            {
+                "name": "Tiredness (Malaise)",
+                "severity": "Variable",
+                "pattern": "Abrupt onset, 8-16 days post-exposure"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Variable",
+                "pattern": "Abrupt onset, 8-16 days post-exposure"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable, may be absent",
+                "pattern": "Maculopapular eruption on trunk spreading to extremities, sparing palms and soles; petechiae in severe cases; onset 2-3 days after symptom onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Photosensitivity",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable, more common with severe disease or delayed treatment",
+                "pattern": "Can occur, indicative of neurological involvement"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable, more common with severe disease or delayed treatment",
+                "pattern": "Can occur, indicative of neurological involvement"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe, more common with severe disease or delayed treatment",
+                "pattern": "Can occur, indicative of neurological involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, high fever"
+        },
+        "physical_findings": [
+            "Rash (maculopapular, petechial)",
+            "Signs of dehydration (in severe cases)"
+        ],
+        "lab_values": {
+            "bilirubin": "Elevated",
+            "hepatic transaminases": "Elevated",
+            "platelets": "Decreased (thrombocytopenia)"
+        },
+        "risk_factors": [
+            "Overcrowded and unhygienic living conditions",
+            "Exposure to body lice (Pediculus humanus corporis)",
+            "Exposure to flying squirrels or their nests",
+            "War, famine, refugee camps, prisons, homelessness"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Persistent fever",
+            "History of body louse exposure or contact with flying squirrels/nests"
+        ],
+        "supportive": [
+            "Characteristic rash (but not reliable for diagnosis)",
+            "Positive serological tests (four-fold rise in antibody titer)",
+            "Positive PCR or IFA tests"
+        ]
+    },
+    "differential_diagnoses": []
+}

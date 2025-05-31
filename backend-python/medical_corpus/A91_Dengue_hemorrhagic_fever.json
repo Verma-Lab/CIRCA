@@ -1,0 +1,89 @@
+{
+    "disease": "Dengue hemorrhagic fever",
+    "icd_code": "A91",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Muscle and joint pain",
+                "severity": "Moderate to Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Moderate to Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hemorrhagic episodes",
+                "severity": "Severe",
+                "pattern": "Can be present in severe cases"
+            },
+            {
+                "name": "Circulatory shock",
+                "severity": "Life-threatening",
+                "pattern": "Can be present in severe cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to Moderate",
+                "pattern": "Post-recovery"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "High fever (>38\u00b0C)",
+            "blood_pressure": "Can be low in severe cases (shock)"
+        },
+        "physical_findings": [
+            "Skin rash",
+            "Hemorrhagic manifestations (petechiae, purpura, ecchymoses)",
+            "Signs of dehydration",
+            "Hypotension"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Previous dengue infection",
+            "Aedes mosquito bites",
+            "Climate change",
+            "Urbanization",
+            "Poor sanitation",
+            "Lack of access to healthcare"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with dengue hemorrhagic fever (high fever, hemorrhagic manifestations, circulatory failure)"
+        ],
+        "supportive": [
+            "Positive serological test for dengue virus",
+            "Positive PCR test for dengue virus"
+        ]
+    },
+    "differential_diagnoses": []
+}

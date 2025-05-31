@@ -1,0 +1,71 @@
+{
+    "disease": "Kaposi's sarcoma of other sites",
+    "icd_code": "C467",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Violaceous pink to purple plaques",
+                "severity": "Variable",
+                "pattern": "Multifocal"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Associated with lesions"
+            },
+            {
+                "name": "Lymphedema",
+                "severity": "Variable",
+                "pattern": "Associated with lesions"
+            },
+            {
+                "name": "Secondary infection",
+                "severity": "Variable",
+                "pattern": "Associated with lesions"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "May occur in lesions"
+            },
+            {
+                "name": "Invasion into nearby tissues",
+                "severity": "Variable",
+                "pattern": "May occur in lesions"
+            },
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Variable",
+                "pattern": "May occur with lung involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Violaceous pink to purple plaques or nodules on skin or mucocutaneous surfaces",
+            "Lymphedema",
+            "Ulcerated lesions",
+            "Lesions may involve lymph nodes, lungs, gastrointestinal system, or other visceral organs"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunosuppression (AIDS, organ transplant)",
+            "Human herpesvirus 8 (HHV-8) infection",
+            "Age over 50 (classic KS)",
+            "Eastern European or Mediterranean descent (classic KS)",
+            "HIV infection (AIDS-related KS)",
+            "Male sex (increased risk in several forms)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Kaposi's sarcoma",
+            "Histopathological examination showing characteristic features of Kaposi's sarcoma"
+        ],
+        "supportive": [
+            "Immunohistochemistry positive for HHV-8 LANA1"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,56 @@
+{
+    "disease": "Other melioidosis",
+    "icd_code": "A243",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High temperature",
+                "severity": "Variable",
+                "pattern": "Present during the first 3 weeks of illness"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present during the first 3 weeks of illness"
+            },
+            {
+                "name": "Sore limbs",
+                "severity": "Variable",
+                "pattern": "Present during the first 3 weeks of illness"
+            },
+            {
+                "name": "Inflamed lungs",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Variable",
+                "pattern": "May be present with inflamed lungs"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present with inflamed lungs"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Inflamed lungs",
+            "Sore limbs"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to contaminated water and soil (Asia, Australia, Africa)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

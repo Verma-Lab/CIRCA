@@ -1,0 +1,48 @@
+{
+    "disease": "Other Gram-negative sepsis",
+    "icd_code": "A41.59",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Elevated",
+            "blood_pressure": "Potentially low (hypotension)",
+            "respiratory_rate": "Elevated",
+            "temperature": "Potentially elevated or low"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated",
+            "lactate": "Elevated",
+            "creatinine": "Potentially elevated (if associated with AKI)",
+            "blood_cultures": "Positive for gram-negative bacteria"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of gram-negative bacteria in blood cultures",
+            "Signs and symptoms of sepsis (e.g., fever, tachycardia, tachypnea, hypotension)"
+        ],
+        "supportive": [
+            "Elevated white blood cell count",
+            "Elevated lactate levels",
+            "Organ dysfunction"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacteremia NOS (R78.81)",
+        "Neonatal sepsis (P36.-)",
+        "Puerperal sepsis (O85)",
+        "Streptococcal sepsis (A40.-)",
+        "Sepsis due to specific pathogens (e.g., actinomycotic, anthrax, candidal, etc.)",
+        "Toxic shock syndrome (A48.3)",
+        "Postprocedural sepsis (T81.44-)",
+        "Sepsis due to central venous catheter (T80.211-)",
+        "Sepsis during labor (O75.3)",
+        "Sepsis following abortion, ectopic or molar pregnancy (O03.37,O03.87,O04.87,O07.37,O08.82)",
+        "Sepsis following immunization (T88.0-)",
+        "Sepsis following infusion, transfusion or therapeutic injection (T80.22-,T80.29-)"
+    ]
+}

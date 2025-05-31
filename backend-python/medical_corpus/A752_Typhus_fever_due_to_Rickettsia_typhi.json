@@ -1,0 +1,120 @@
+{
+    "disease": "Typhus fever due to Rickettsia typhi",
+    "icd_code": "A752",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Frequent"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Maculopapular, radiating from trunk, may be absent (50-80%)"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Altered mental state",
+                "severity": "Variable",
+                "pattern": "Rare, severe cases"
+            },
+            {
+                "name": "Pulmonary symptoms",
+                "severity": "Severe",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Renal symptoms",
+                "severity": "Severe",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Neurologic symptoms",
+                "severity": "Severe",
+                "pattern": "Rare"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Rash (may be absent)",
+            "Other findings may be nonspecific"
+        ],
+        "lab_values": {
+            "IFA (Immunofluorescence Assay)": "Elevated IgG antibody titers (fourfold or greater increase between acute and convalescent samples)",
+            "PCR (Polymerase Chain Reaction)": "Detection of R. typhi DNA in blood or tissue samples (most sensitive within the first week of illness)",
+            "IHC (Immunohistochemistry)": "Detection of R. typhi antigens in tissue samples (limited availability)"
+        },
+        "risk_factors": [
+            "Exposure to rat fleas",
+            "Contact with infected animals (rats, opossums, cats, dogs)",
+            "Travel to or residence in tropical or subtropical regions",
+            "Poor sanitation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with murine typhus (fever, headache, rash)",
+            "Epidemiological risk factors (exposure to fleas, travel to endemic areas)"
+        ],
+        "supportive": [
+            "Positive serology (fourfold rise in IgG antibody titer)",
+            "Positive PCR for R. typhi",
+            "Positive IHC for R. typhi"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other rickettsial diseases",
+        "Malaria",
+        "Dengue",
+        "Typhoid fever"
+    ]
+}

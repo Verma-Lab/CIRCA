@@ -1,0 +1,80 @@
+{
+    "disease": "Merkel Cell Carcinoma of Unspecified Eyelid, including Canthus",
+    "icd_code": "C4A10",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless solitary nodule",
+                "severity": "Variable",
+                "pattern": "Single lesion"
+            },
+            {
+                "name": "Violaceous (purple-red) hue",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Satellite lesions",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Madarosis (loss of eyelashes)",
+                "severity": "Variable",
+                "pattern": "Partial or complete"
+            },
+            {
+                "name": "Telangiectatic vessels",
+                "severity": "Variable",
+                "pattern": "Overlying the lesion"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Present in up to 37% of patients at diagnosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless solitary nodule with violaceous hue",
+            "Possible ulceration and satellite lesions",
+            "Madarosis (loss of eyelashes)",
+            "Telangiectatic vessels",
+            "Lymphadenopathy (preauricular and cervical lymph nodes)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 50 years",
+            "Immunosuppression",
+            "UV exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological and immunohistochemical analysis showing characteristic features of Merkel cell carcinoma (e.g., large subepidermal nests of cells with scant cytoplasm, large round or oval-shaped nuclei, numerous mitotic figures, positive staining for cytokeratin 8, 18, 19, neuron specific enolase, negative staining for S-100 protein)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with MCC (painless nodule, violaceous hue)",
+            "Positive polyomavirus detection",
+            "Electron microscopy demonstrating dense-core cytoplasmic granules"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chalazion",
+        "Lipoma",
+        "Dermatofibroma",
+        "Cysts",
+        "Vascular lesions",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Sebaceous carcinoma",
+        "Cutaneous metastases from other cancers (especially metastatic small-cell lung cancer)"
+    ]
+}

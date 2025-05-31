@@ -1,0 +1,23 @@
+{
+    "disease": "Syphilis of kidney and ureter",
+    "icd_code": "A5275",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Unspecified nephritic syndrome with unspecified morphologic changes (N05.9)",
+        "Nephrotic syndrome with unspecified morphologic changes (N04.9)",
+        "Late syphilis, unspecified (A52.9)",
+        "Syphilis, unspecified (A53.9)"
+    ]
+}

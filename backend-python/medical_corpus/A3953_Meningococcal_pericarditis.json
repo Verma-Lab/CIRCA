@@ -1,0 +1,123 @@
+{
+    "disease": "Meningococcal Pericarditis",
+    "icd_code": "A3953",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pleuritic chest pain",
+                "severity": "Mild to severe",
+                "pattern": "Constant, aggravated by respiration"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Mild to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Mild",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Moderate",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Chest tightness",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild",
+                "pattern": "Present"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": ">38\u00b0C (in some cases)",
+            "heart_rate": "84-155 bpm (variable)",
+            "blood_pressure": "Hypotension possible (70/40 mmHg to 133/70 mmHg)",
+            "respiratory_rate": "24 (in some cases)"
+        },
+        "physical_findings": [
+            "Slight discomfort",
+            "No respiratory distress (initially)",
+            "Afebrile (initially)",
+            "Regular heart sounds (initially)",
+            "No murmur or pericardial rub (initially)",
+            "No jugular venous distension (initially)",
+            "No rash or meningeal findings",
+            "Mild distress (later)",
+            "Jugular venous distension (later)",
+            "Bibasilar crackles (later)",
+            "Distant heart sounds (later)",
+            "Tachycardia (later)",
+            "Pulsus paradoxus (in some cases)"
+        ],
+        "lab_values": {
+            "WBC": "14,300-23,000/\u03bcl (elevated, with left shift and bandemia)",
+            "Neutrophils": "80% (initially)",
+            "Bands": "17-30% (elevated)",
+            "Hematocrit": "46% (within normal range)",
+            "Platelets": "246,000/\u03bcl (within normal range)",
+            "Creatinine": "1.0-4.3 mg/dl (increased)",
+            "BUN": "11 mg/dl (within normal range)",
+            "Sodium": "138 meq/l (within normal range)",
+            "Potassium": "3.9 meq/l (within normal range)",
+            "Chloride": "102 meq/l (within normal range)",
+            "Calcium": "10.2 meq/l (within normal range)",
+            "Glucose": "124 mg/dl (slightly elevated)",
+            "ALT": "4,992 U/l (severely elevated)",
+            "AST": "4,982 U/l (severely elevated)",
+            "Total bilirubin": "2.9 mg/dl (elevated)",
+            "CRP": "39-321 mg/L (elevated)",
+            "Troponin T": "13.68-117 ng/L (elevated in some cases)",
+            "Lactate": "4.7 mmol/L (elevated)",
+            "pH": "7.27 (acidotic)"
+        },
+        "risk_factors": [
+            "Terminal complement factor deficiency"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "No infiltrates, cardiomegaly (in some cases)",
+            "CT scan of chest": "Mild to large pericardial effusion, bilateral pleural effusions (in some cases)",
+            "Echocardiogram": "Mild to large pericardial effusion, cardiac tamponade (in some cases), right ventricular diastolic collapse (in some cases), paradoxical septal motion (in some cases)",
+            "ECG": "Saddle-shaped ST elevation (in some cases)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Purulent pericarditis",
+            "Presence of N. meningitidis in pericardial fluid"
+        ],
+        "supportive": [
+            "Absence of meningococcemia, meningitis, or other foci of meningococcal infection",
+            "Clinical presentation consistent with pericarditis",
+            "Elevated WBC count with left shift",
+            "Positive blood cultures (in some cases)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral pericarditis",
+        "Pulmonary embolism",
+        "Acute cholecystitis",
+        "COVID-19"
+    ]
+}

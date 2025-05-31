@@ -1,0 +1,55 @@
+{
+    "disease": "Mumps without complication",
+    "icd_code": "B269",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Swollen salivary glands",
+                "severity": "Variable",
+                "pattern": "Swelling under ears or jaw, may be unilateral or bilateral"
+            },
+            {
+                "name": "Painful salivary glands",
+                "severity": "Variable",
+                "pattern": "Tenderness in swollen glands"
+            },
+            {
+                "name": "Puffy cheeks",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with salivary gland swelling"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Early symptoms",
+                "severity": "Mild",
+                "pattern": "Few days before swelling"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Mild to moderate elevation"
+        },
+        "physical_findings": [
+            "Swollen and tender salivary glands (parotid glands)",
+            "Puffy cheeks",
+            "Unilateral or bilateral facial swelling"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected individual",
+            "Lack of MMR vaccination"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with mumps (swelling and tenderness of salivary glands)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

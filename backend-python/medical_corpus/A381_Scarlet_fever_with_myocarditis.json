@@ -1,0 +1,59 @@
+{
+    "disease": "Scarlet fever with myocarditis",
+    "icd_code": "A38.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Scarlet fever symptoms",
+                "severity": "Variable",
+                "pattern": "May include rash, fever, sore throat, headache, and body aches."
+            },
+            {
+                "name": "Myocarditis symptoms",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "May include chest pain, shortness of breath, palpitations, fatigue, and edema.  Severity depends on the extent of myocardial involvement."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia (increased heart rate)",
+            "blood_pressure": "May be elevated or decreased depending on severity",
+            "temperature": "Fever (often high)"
+        },
+        "physical_findings": [
+            "Characteristic scarlet fever rash (sandpaper-like texture)",
+            "Strawberry tongue",
+            "Enlarged lymph nodes",
+            "Tachycardia",
+            "Heart murmur (potential sign of myocarditis)",
+            "Edema (potential sign of heart failure)"
+        ],
+        "lab_values": {
+            "CRP": "Elevated",
+            "ESR": "Elevated",
+            "Leukocytes": "Elevated",
+            "Cardiac enzymes (CK-MB, Troponin)": "Potentially elevated, indicating myocardial damage"
+        },
+        "risk_factors": [
+            "Group A streptococcal infection (GAS)"
+        ],
+        "imaging_findings": {
+            "Echocardiogram": "May show reduced ejection fraction, wall motion abnormalities, or pericardial effusion",
+            "Chest X-ray": "May show cardiomegaly (enlarged heart) in severe cases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with scarlet fever (rash, fever, sore throat)",
+            "Evidence of myocarditis (symptoms, physical findings, ECG changes, elevated cardiac enzymes)"
+        ],
+        "supportive": [
+            "Positive throat culture for Group A Streptococcus",
+            "Abnormal echocardiogram findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of myocarditis (viral infections, autoimmune diseases)",
+        "Other causes of fever and rash (viral exanthems, drug reactions)"
+    ]
+}

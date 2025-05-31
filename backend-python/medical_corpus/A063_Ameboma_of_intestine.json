@@ -1,0 +1,111 @@
+{
+    "disease": "Ameboma of intestine",
+    "icd_code": "A063",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intermittent bloody stool",
+                "severity": "Moderate",
+                "pattern": "Intermittent, increased in frequency and volume"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Moderate",
+                "pattern": "Periumbilical, right-sided, lasting for about a month"
+            },
+            {
+                "name": "Intermittent fever",
+                "severity": "Mild",
+                "pattern": "Present during one week"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Long-term",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Rectal bleeding",
+                "severity": "Unspecified",
+                "pattern": "Weeks"
+            },
+            {
+                "name": "Bowel obstruction",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Right lower quadrant pain",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Distension",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Intermittent fever"
+        },
+        "physical_findings": [
+            "Multiple small polyps over the terminal ileum",
+            "Multiple indurated ulcerations over the rectum and cecum",
+            "Mass-like lesion in the rectum",
+            "Colonic wall thickening"
+        ],
+        "lab_values": {
+            "C-reactive protein": "Mild elevation",
+            "Erythrocyte sedimentation rate": "Mild elevation",
+            "Hemoglobin": "Normocytic anemia (suspected to be related to bloody stool)",
+            "Fecal occult blood test": "Positive"
+        },
+        "risk_factors": [
+            "Living in endemic regions (India, Africa, Mexico, Central and South America)",
+            "Immigration from or travel to endemic regions",
+            "Male homosexuals",
+            "Institutionalized persons",
+            "Malnutrition",
+            "Infancy",
+            "Elderly age",
+            "Pregnancy",
+            "Glucocorticoid use",
+            "Consumption of raw food and uncooked eggs",
+            "Use of groundwater to clean dishes",
+            "Use of communal toilets"
+        ],
+        "imaging_findings": {
+            "Colonoscopy": [
+                "Multiple small polyps over the terminal ileum",
+                "Multiple indurated ulcerations over the rectum and cecum",
+                "Ulcerative mass with ulceration and mucosal change over the rectum, ascending colon, and cecum"
+            ],
+            "Abdominal echography": "No obvious liver abscess",
+            "Abdominal CT": [
+                "Massive wall thickening in the distal rectum",
+                "Mesenteric hyperemia in the perirectal area",
+                "Thick mesorectal fascia"
+            ],
+            "MRI": "Findings similar to CT"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing chronic inflammatory infiltrate with amoeba trophozoites"
+        ],
+        "supportive": [
+            "Clinical presentation of bloody stool, abdominal pain",
+            "Colonoscopic findings of ulcerative mass",
+            "Imaging findings of colonic wall thickening"
+        ]
+    },
+    "differential_diagnoses": [
+        "Colon carcinoma",
+        "Crohn's disease",
+        "Non-Hodgkin's lymphoma",
+        "Tuberculosis",
+        "Fungal infection",
+        "AIDS-associated lymphoma",
+        "Kaposi's sarcoma"
+    ]
+}

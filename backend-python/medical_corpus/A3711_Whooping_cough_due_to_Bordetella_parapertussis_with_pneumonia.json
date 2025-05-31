@@ -1,0 +1,69 @@
+{
+    "disease": "Whooping cough due to Bordetella parapertussis with pneumonia",
+    "icd_code": "A3711",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mild fever",
+                "severity": "mild",
+                "pattern": "early symptom"
+            },
+            {
+                "name": "Runny nose",
+                "severity": "mild",
+                "pattern": "early symptom"
+            },
+            {
+                "name": "Cough",
+                "severity": "variable",
+                "pattern": "progresses from mild to severe hacking cough, potentially with whooping sound; may be worse at night; can last weeks or months"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "variable",
+                "pattern": "relatively common complication"
+            },
+            {
+                "name": "Seizures",
+                "severity": "severe",
+                "pattern": "rare complication"
+            },
+            {
+                "name": "Brain disease",
+                "severity": "severe",
+                "pattern": "rare complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "increased due to coughing and potential pneumonia"
+        },
+        "physical_findings": [
+            "Thick mucus buildup in airways",
+            "Rapid, uncontrollable coughing"
+        ],
+        "lab_values": {
+            "IgG and IgA antibodies to PT and FHA": "increased levels indicate infection, but may not distinguish between B. pertussis and B. parapertussis"
+        },
+        "risk_factors": [
+            "Infancy (especially < 6 months old and unvaccinated)",
+            "Lack of vaccination or incomplete vaccination series",
+            "Teenage and adult years (vaccine immunity wanes)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with whooping cough (coughing spells, potentially with whooping sound)",
+            "Laboratory confirmation of Bordetella parapertussis infection (culture, PCR)"
+        ],
+        "supportive": [
+            "Exposure to infected individual",
+            "Elevated antibody titers to pertussis toxins"
+        ]
+    },
+    "differential_diagnoses": [
+        "Whooping cough due to Bordetella pertussis",
+        "Other respiratory infections (e.g., common cold, influenza)"
+    ]
+}

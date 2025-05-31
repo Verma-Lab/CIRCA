@@ -1,0 +1,83 @@
+{
+    "disease": "Sepsis due to Escherichia coli [E. coli]",
+    "icd_code": "A4151",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Severe fever",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Chills",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Multiple-organ dysfunction syndrome",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Severe",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hemorrhage",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Rashes",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Elevated",
+            "blood_pressure": "Decreased"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "globulin": "Low",
+            "prealbumin": "Low",
+            "creatine_kinase": "Low",
+            "bilirubin": "High",
+            "IL-2": "High",
+            "CRP": "Elevated",
+            "PCT": "Elevated"
+        },
+        "risk_factors": [
+            "Weakened immune system",
+            "Preterm birth (in newborns)",
+            "Underlying infections (lungs, stomach, kidneys, bladder)",
+            "Recent surgery",
+            "Small infected cuts"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for E. coli",
+            "Meeting sepsis 3.0 diagnostic criteria"
+        ],
+        "supportive": [
+            "Clinical symptoms of sepsis (fever, chills, tachycardia, hypotension)",
+            "Abnormal lab values (e.g., elevated CRP, PCT, IL-2; low globulin, prealbumin, creatine kinase; high bilirubin)"
+        ]
+    },
+    "differential_diagnoses": []
+}

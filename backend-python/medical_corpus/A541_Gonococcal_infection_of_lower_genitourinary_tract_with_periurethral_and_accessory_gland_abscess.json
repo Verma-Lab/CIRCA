@@ -1,0 +1,143 @@
+{
+    "disease": "Gonococcal infection of lower genitourinary tract with periurethral and accessory gland abscess",
+    "icd_code": "A541",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Purulent or mucopurulent urethral discharge",
+                "severity": "Variable",
+                "pattern": "Present in most symptomatic men; can be clear or cloudy in some"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Often accompanies urethral discharge"
+            },
+            {
+                "name": "Periurethral abscess",
+                "severity": "Variable",
+                "pattern": "A cavity filled with pus in the tissue around the urethra"
+            },
+            {
+                "name": "Accessory gland abscess",
+                "severity": "Variable",
+                "pattern": "Abscess in accessory glands (e.g., Tyson's glands)"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "Can occur with inflammation of the urinary tract or genitals"
+            },
+            {
+                "name": "Pus-filled discharge",
+                "severity": "Variable",
+                "pattern": "Can occur with inflammation of the urinary tract or genitals"
+            },
+            {
+                "name": "Nonspecific vaginal discharge",
+                "severity": "Mild to moderate",
+                "pattern": "Common in women, often asymptomatic"
+            },
+            {
+                "name": "Intermenstrual bleeding",
+                "severity": "Mild to moderate",
+                "pattern": "Can occur in women"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Mild to severe",
+                "pattern": "Can occur in women"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "Mild to severe",
+                "pattern": "Painful sexual intercourse, can occur in women"
+            },
+            {
+                "name": "Mucopurulent or purulent cervical discharge",
+                "severity": "Variable",
+                "pattern": "Can be observed on cervical examination in women"
+            },
+            {
+                "name": "Bleeding of the cervix with minimal contact",
+                "severity": "Mild",
+                "pattern": "Can be observed on cervical examination in women"
+            },
+            {
+                "name": "Unilateral testicular pain and swelling",
+                "severity": "Moderate to severe",
+                "pattern": "Occurs in men with epididymitis, a less common complication"
+            },
+            {
+                "name": "Epididymal tenderness",
+                "severity": "Moderate to severe",
+                "pattern": "Occurs in men with epididymitis"
+            },
+            {
+                "name": "Inguinal lymphadenitis",
+                "severity": "Variable",
+                "pattern": "Less common complication in men"
+            },
+            {
+                "name": "Penile edema",
+                "severity": "Variable",
+                "pattern": "Less common complication in men"
+            },
+            {
+                "name": "Urethral stricture",
+                "severity": "Variable",
+                "pattern": "Less common complication in men"
+            },
+            {
+                "name": "Prostatitis",
+                "severity": "Variable",
+                "pattern": "Less common complication in men"
+            },
+            {
+                "name": "Perirectal abscess",
+                "severity": "Severe",
+                "pattern": "Rare complication in men"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Mucopurulent or purulent urethral discharge (men)",
+            "Periurethral and accessory gland abscesses (palpable)",
+            "Mucopurulent or purulent cervical discharge (women)",
+            "Cervical bleeding with minimal contact (women)",
+            "Unilateral testicular pain and swelling (men with epididymitis)",
+            "Epididymal tenderness (men with epididymitis)"
+        ],
+        "lab_values": {
+            "Gram stain": {
+                "abnormal": "Polymorphonuclear leukocytes with intracellular gram-negative diplococci (symptomatic men)"
+            },
+            "NAAT": {
+                "abnormal": "Positive for N. gonorrhoeae"
+            },
+            "Culture": {
+                "abnormal": "Growth of N. gonorrhoeae"
+            }
+        },
+        "risk_factors": [
+            "Multiple or new sex partners",
+            "Lack of consistent condom use",
+            "Sex work",
+            "Previous or coexisting STIs",
+            "Age < 25 years (women)",
+            "MSM"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gonococcal infection of the lower genitourinary tract",
+            "Positive NAAT or culture for N. gonorrhoeae"
+        ],
+        "supportive": [
+            "Gram stain showing polymorphonuclear leukocytes with intracellular gram-negative diplococci (symptomatic men)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,72 @@
+{
+    "disease": "Basal cell carcinoma of skin of right ear and external auricular canal",
+    "icd_code": "C44212",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intermittent otorrhea",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic (10 years in one case, 1 year in another)"
+            },
+            {
+                "name": "Pruritus",
+                "severity": "Mild",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Ear mass",
+                "severity": "Variable",
+                "pattern": "Present in all cases"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Not specified",
+                "pattern": "Mentioned as a clinical feature"
+            },
+            {
+                "name": "Facial nerve palsy",
+                "severity": "Not specified",
+                "pattern": "Mentioned as a clinical feature, present as a postoperative complication in one case"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small nodular mass arising from the posterior inferior aspect of the right cartilaginous portion of the EAC (1.5x1.2 cm in one case, 5mm in another)",
+            "Intact right tympanic membrane (in one case)",
+            "Polypoidal lesion and purulent discharge (in one case)",
+            "Thickening of soft tissues in the external left auricle and external auditory canal (in one case)",
+            "Infiltrating process in the inferior portion of the external auditory canal (16 mm in diameter and extending for 25 mm, irregular contours, in contact with the tympanic bone, without any adjacent bone reaction, infiltrated the external surface of the superficial lobe of the parotid gland, tragus, antitragus, antihelix, and retroauricular groove in one case)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": [
+                "Narrowing of the external auditory canal and a small nodule at the posterior wall of the right external auditory canal (in one case)",
+                "Infiltrating process in the inferior portion of the external auditory canal (in one case)",
+                "No involvement of any other temporal bone or head and neck structures (in one case)"
+            ],
+            "MRI": [
+                "1.3 cm sized contrast enhancing mass lesion at the lateral aspect of right external auditory canal, no definite abnormality in both middle and inner structures (in one case)",
+                "Useful for evaluating soft tissue involvement, assessing dural invasion, and distinguishing between tumor and fluid when there is opacification of the middle ear and mastoid air cells"
+            ],
+            "Ultrasound": "No metastatic disease in parotid and neck (in one case)",
+            "Bone scan, hepatobilliary sonography, duodenoscopy, chest X-ray, and CT of the chest, PET-CT": "All negative for signs of nodal involvement or metastases to other organs (in one case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histologic examination showing basal cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation with ear mass and otorrhea",
+            "Imaging findings consistent with basal cell carcinoma"
+        ]
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Adenoid cystic carcinoma",
+        "Melanoma",
+        "External auditory canal cholesteatoma"
+    ]
+}

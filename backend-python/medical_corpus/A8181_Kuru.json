@@ -1,0 +1,84 @@
+{
+    "disease": "Kuru",
+    "icd_code": "A8181",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Difficulty swallowing",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Inability to feed oneself",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Malnutrition",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Starvation",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Changes in coordination",
+                "severity": "Moderate to Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Changes in walking ability",
+                "severity": "Moderate to Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Cerebellar ataxia",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Choreiform movements",
+                "severity": "Moderate to Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Athetoid movements",
+                "severity": "Moderate to Severe",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Changes in coordination and walking ability"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Eating human brain tissue"
+        ],
+        "imaging_findings": {
+            "Neuropathological findings": [
+                "Widespread degeneration of neurons",
+                "Astroglial and microglial proliferation",
+                "Presence of amyloid plaques",
+                "Intracellular vacuoles",
+                "Spongiform alterations"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Progressive neurological symptoms (ataxia, difficulty swallowing, etc.)",
+            "Exposure to contaminated human brain tissue (historically through cannibalism)"
+        ],
+        "supportive": [
+            "Characteristic neuropathological findings (spongiform changes, amyloid plaques)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Creutzfeldt-Jakob disease",
+        "Gerstmann-Str\u00e4ussler-Scheinker disease"
+    ]
+}

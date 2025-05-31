@@ -1,0 +1,59 @@
+{
+    "disease": "Basal cell carcinoma of skin of scalp and neck",
+    "icd_code": "C4441",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nodular lesion",
+                "severity": "Variable",
+                "pattern": "Most common presentation"
+            },
+            {
+                "name": "Plaque or erythematous squamous plaque",
+                "severity": "Variable",
+                "pattern": "Superficial BCC, often on trunk and extremities"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Common in nodular BCC"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Nodular lesion",
+            "Plaque or erythematous squamous plaque",
+            "Ulceration",
+            "Telangiectasia",
+            "Blue-gray globules",
+            "Leaflike areas",
+            "Large blue-gray ovoid nests",
+            "Spoke wheel areas"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Cumulative exposure to ultraviolet radiation",
+            "Chronic sun exposure",
+            "Smoking (more than ten years)",
+            "Family history of skin cancer",
+            "Fair skin (Fitzpatrick skin types 1 and 2)",
+            "Age (more than 60 years)",
+            "Male gender"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathologically confirmed BCC"
+        ],
+        "supportive": [
+            "Clinical presentation (nodule, plaque, ulcer)",
+            "Dermoscopic findings (telangiectasia, blue-gray globules, etc.)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignant melanoma",
+        "Seborrheic keratosis"
+    ]
+}

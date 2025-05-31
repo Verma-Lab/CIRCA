@@ -1,0 +1,54 @@
+{
+    "disease": "Viral myocarditis",
+    "icd_code": "B3322",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute coronary syndrome-like presentation",
+                "severity": "Variable",
+                "pattern": "New onset or worsening"
+            },
+            {
+                "name": "Heart failure",
+                "severity": "Variable",
+                "pattern": "New onset or worsening, chronic, or life-threatening"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present, especially in adults"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated",
+            "blood_pressure": "May be elevated or decreased"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "myocardiocytolysis markers": "Elevated levels may be present"
+        },
+        "risk_factors": [
+            "Viral infection (e.g., Coxsackievirus)"
+        ],
+        "imaging_findings": {
+            "electrocardiography": "May show abnormalities",
+            "echocardiography": "May show abnormalities",
+            "coronary angiography": "May show abnormalities",
+            "cardiac magnetic resonance imaging (CMR)": "May show abnormalities; considered a reliable diagnostic indicator in conjunction with Lake Louise criteria"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "At least one clinical presentation (e.g., new onset heart failure, acute coronary syndrome-like presentation) AND at least one diagnostic criterion (e.g., abnormal ECG, elevated myocardiocytolysis markers, abnormal cardiac imaging)"
+        ],
+        "supportive": [
+            "Two diagnostic criteria for asymptomatic myocarditis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other inflammation diseases",
+        "Pre-existing heart failure",
+        "Acute myocardial infarction"
+    ]
+}

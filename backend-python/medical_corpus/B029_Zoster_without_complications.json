@@ -1,0 +1,44 @@
+{
+    "disease": "Zoster without complications",
+    "icd_code": "B029",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "mild to severe",
+                "pattern": "burning, shooting, tingling, itching, usually on one side of the body or face"
+            },
+            {
+                "name": "Rash",
+                "severity": "variable",
+                "pattern": "blisters that typically scab over in 7 to 10 days, usually a single stripe around one side of the body or face, may be more widespread in immunocompromised individuals"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painful rash with blisters",
+            "Rash typically unilateral"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Prior chickenpox infection",
+            "Age over 50",
+            "Weakened immune system",
+            "Infection",
+            "Stress"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic rash"
+        ],
+        "supportive": [
+            "History of chickenpox",
+            "Unilateral distribution of rash",
+            "Positive viral culture or PCR"
+        ]
+    },
+    "differential_diagnoses": []
+}

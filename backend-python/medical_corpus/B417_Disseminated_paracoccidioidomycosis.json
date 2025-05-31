@@ -1,0 +1,165 @@
+{
+    "disease": "Disseminated Paracoccidioidomycosis",
+    "icd_code": "B417",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bloody sputum",
+                "severity": "present",
+                "pattern": "2-month history"
+            },
+            {
+                "name": "Headaches",
+                "severity": "present",
+                "pattern": "2-month history"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "present",
+                "pattern": "2-month history"
+            },
+            {
+                "name": "Memory loss",
+                "severity": "present",
+                "pattern": "2-month history"
+            },
+            {
+                "name": "Nausea",
+                "severity": "present",
+                "pattern": "2-month history"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "present",
+                "pattern": "2-month history"
+            },
+            {
+                "name": "Loss of senses",
+                "severity": "present",
+                "pattern": "after 1 month"
+            },
+            {
+                "name": "Sweating",
+                "severity": "present",
+                "pattern": "after 1 month"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "present",
+                "pattern": "after 1 month"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "present",
+                "pattern": "after 1 month"
+            },
+            {
+                "name": "Respiratory failure",
+                "severity": "present",
+                "pattern": "after 1 month"
+            },
+            {
+                "name": "Fever",
+                "severity": "present",
+                "pattern": "3-month history in child case"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "present",
+                "pattern": "3-month history in child case"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "present",
+                "pattern": "1-month history in child case"
+            },
+            {
+                "name": "Difficulty walking",
+                "severity": "present",
+                "pattern": "1-month history in child case"
+            },
+            {
+                "name": "Generalized joint pain",
+                "severity": "present",
+                "pattern": "present in child case"
+            },
+            {
+                "name": "Cough with whitish sputum",
+                "severity": "present",
+                "pattern": "present in child case"
+            },
+            {
+                "name": "Dyspnea at rest",
+                "severity": "present",
+                "pattern": "present in child case"
+            },
+            {
+                "name": "Malaise",
+                "severity": "present",
+                "pattern": "3-month history in child case"
+            },
+            {
+                "name": "Painful lymphadenopathy",
+                "severity": "present",
+                "pattern": "present in child case"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "119 bpm (tachycardia)",
+            "respiratory_rate": "28 breaths per minute (tachypnea)",
+            "oxygen_saturation": "88% (hypoxemia)"
+        },
+        "physical_findings": [
+            "Multiple small round lesions with surrounding edema in the cerebellum and the left temporal, parietal, and occipital regions",
+            "Circumscribed mass in the lingular segment of the left upper lobe",
+            "Consolidation in both lungs",
+            "Normal tracheobronchial tree (initially)",
+            "Bloody secretions",
+            "Markedly enlarged liver and spleen",
+            "Multiple mesenteric nodes",
+            "180 mL free fluid in the peritoneal cavity",
+            "Lung consolidation at the bases",
+            "Bilateral pleural effusion of 130 mL",
+            "Multiple lymphadenopathy in the cervical, axillary, thoracic, and inguinal region",
+            "Reduced air entry over the lower area on both sides",
+            "Decrease in subcutaneous cellular tissue"
+        ],
+        "lab_values": {
+            "hematocrit": "34%",
+            "white_blood_cell_count": "12,400 (88% neutrophils, 2% eosinophils, 8% lymphocytes, 2% monocytes)",
+            "white_blood_cell_count_child": "8.67 \u00d7 103/uL",
+            "eosinophils_child": "1.75 \u00d7 103/uL (17.1%)",
+            "hemoglobin_child": "10.2 g/dL"
+        },
+        "risk_factors": [
+            "Hypertension",
+            "Heavy smoker",
+            "Immunosuppressive drug use (corticosteroids)",
+            "Residence in rural area (endemic region)",
+            "Travel to tropical region"
+        ],
+        "imaging_findings": {
+            "CT_scan_head": "Multiple small round lesions with surrounding edema in the cerebellum and the left temporal, parietal, and occipital regions",
+            "CT_scan_thorax": "Circumscribed mass in the lingular segment of the left upper lobe",
+            "Chest X-ray": "Consolidation in both lungs",
+            "Chest tomography_child": "Lung consolidation at the bases and bilateral pleural effusion of 130 mL",
+            "Ultrasound_child": "Markedly enlarged liver and spleen with presence of multiple mesenteric nodes and 180 mL free fluid in the peritoneal cavity"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological evidence of *Paracoccidioides brasiliensis*",
+            "Culture of *P. brasiliensis*"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with disseminated PCM",
+            "Imaging findings suggestive of PCM",
+            "Positive serological tests (if available)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Metastatic lung cancer",
+        "Tuberculosis"
+    ]
+}

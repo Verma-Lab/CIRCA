@@ -1,0 +1,36 @@
+{
+    "disease": "Malignant neoplasm of pylorus",
+    "icd_code": "C164",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unexpected weight loss",
+                "severity": "Variable",
+                "pattern": "Over 6-12 months, 10% or more loss from baseline"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in the pylorus"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Gastric adenocarcinoma",
+        "Gastric squamous cell carcinoma",
+        "Gastric adenosquamous carcinoma",
+        "Advanced heart failure",
+        "Chronic obstructive pulmonary disease",
+        "Renal disease",
+        "Pancreatic insufficiency",
+        "Malabsorption",
+        "Endocrine disease"
+    ]
+}

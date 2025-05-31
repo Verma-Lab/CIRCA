@@ -1,0 +1,90 @@
+{
+    "disease": "Other brucellosis",
+    "icd_code": "A238",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high and spiking",
+                "pattern": "Undulant (rising and falling in waves)"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can be persistent"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Can be persistent"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Can be persistent"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Initial presentation"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable",
+                "pattern": "Chronic complication"
+            },
+            {
+                "name": "Endocarditis",
+                "severity": "Severe",
+                "pattern": "Chronic complication"
+            },
+            {
+                "name": "Chronic fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic complication"
+            },
+            {
+                "name": "Depression",
+                "severity": "Variable",
+                "pattern": "Chronic complication"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Variable",
+                "pattern": "Chronic complication"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Variable",
+                "pattern": "Chronic complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "High fever spikes, often in the afternoon"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_cultures": "Positive for Brucella species",
+            "serology": "Positive for Brucella antibodies"
+        },
+        "risk_factors": [
+            "Contact with infected animals",
+            "Consumption of unpasteurized dairy products",
+            "Occupation involving animal contact (farmers, butchers, veterinarians, laboratory personnel)",
+            "Inhalation of airborne agents"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Brucella species",
+            "Positive serology for Brucella antibodies"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with brucellosis",
+            "Exposure to risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

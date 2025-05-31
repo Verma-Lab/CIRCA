@@ -1,0 +1,111 @@
+{
+    "disease": "Other forms of bartonellosis",
+    "icd_code": "A448",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Erythematous pustule or papule",
+                "severity": "Mild to moderate",
+                "pattern": "Localized at inoculation site, appearing 3-5 days post-exposure"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Mild to severe",
+                "pattern": "Regional, typically within 1-2 weeks of inoculation"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to moderate",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to moderate",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Oculoglandular syndrome",
+                "severity": "Variable",
+                "pattern": "Preauricular lymphadenopathy and conjunctival granulomas, typically restricted to palpebral conjunctiva"
+            },
+            {
+                "name": "Focal chorioretinitis",
+                "severity": "Variable",
+                "pattern": "Posterior segment manifestation"
+            },
+            {
+                "name": "Neuroretinitis",
+                "severity": "Variable",
+                "pattern": "Optic nerve head edema and stellate exudates around fovea"
+            },
+            {
+                "name": "Serous retinal detachments",
+                "severity": "Variable",
+                "pattern": "Ocular manifestation"
+            },
+            {
+                "name": "Vitritis",
+                "severity": "Variable",
+                "pattern": "Ocular manifestation"
+            },
+            {
+                "name": "Vaso-occlusive episodes",
+                "severity": "Variable",
+                "pattern": "Ocular manifestation"
+            },
+            {
+                "name": "Granulomatous hepatitis",
+                "severity": "Variable",
+                "pattern": "Rare systemic manifestation"
+            },
+            {
+                "name": "Splenic abscesses",
+                "severity": "Variable",
+                "pattern": "Rare systemic manifestation"
+            },
+            {
+                "name": "Encephalopathy",
+                "severity": "Variable",
+                "pattern": "Rare systemic manifestation"
+            },
+            {
+                "name": "Osteomyelitis",
+                "severity": "Variable",
+                "pattern": "Rare systemic manifestation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erythematous pustule or papule at inoculation site",
+            "Regional lymphadenopathy",
+            "Conjunctival granulomas",
+            "Preauricular lymphadenopathy"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected animals (e.g., cats)",
+            "Animal bites or scratches"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Clinical presentation consistent with bartonellosis",
+            "Positive serological testing",
+            "Positive molecular diagnostic tests (e.g., PCR)"
+        ]
+    },
+    "differential_diagnoses": []
+}

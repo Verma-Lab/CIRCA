@@ -1,0 +1,24 @@
+{
+    "disease": "Multiple papillomata and wet crab yaws",
+    "icd_code": "A661",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Multiple papillomata",
+            "Wet crab yaws"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of multiple papillomata",
+            "Presence of wet crab yaws"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,75 @@
+{
+    "disease": "Diphtheritic radiculomyelitis",
+    "icd_code": "A3682",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Onset 2-5 days after exposure"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Onset 2-5 days after exposure"
+            },
+            {
+                "name": "Swollen neck glands",
+                "severity": "Variable",
+                "pattern": "Onset 2-5 days after exposure"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Onset 2-5 days after exposure"
+            },
+            {
+                "name": "Gray to black pseudomembrane in throat",
+                "severity": "Variable",
+                "pattern": "Develops within 2-3 days of infection"
+            },
+            {
+                "name": "Difficulty breathing and swallowing",
+                "severity": "Variable",
+                "pattern": "Due to pseudomembrane"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Variable",
+                "pattern": "Can be temporary, affecting nervous system"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Gray to black covering (pseudomembrane) in throat",
+            "Enlarged lymph glands",
+            "Swelling of the neck or vocal cords",
+            "Skin lesions (in cutaneous diphtheria)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Crowded environments",
+            "Poor hygiene",
+            "Lack of immunization",
+            "Under-vaccination",
+            "Damaged health infrastructure",
+            "Overcrowding in residential camps",
+            "Contact with infected person"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with diphtheria (sore throat, fever, swollen glands, pseudomembrane)",
+            "Isolation of Corynebacterium diphtheriae from a clinical specimen"
+        ],
+        "supportive": [
+            "Exposure to an infected individual",
+            "Positive toxin test"
+        ]
+    },
+    "differential_diagnoses": []
+}

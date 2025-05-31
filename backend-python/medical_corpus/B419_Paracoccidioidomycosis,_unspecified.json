@@ -1,0 +1,112 @@
+{
+    "disease": "Paracoccidioidomycosis, unspecified",
+    "icd_code": "B419",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary paracoccidioidomycosis"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary paracoccidioidomycosis"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary paracoccidioidomycosis"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary paracoccidioidomycosis"
+            },
+            {
+                "name": "Skin ulcers",
+                "severity": "Variable",
+                "pattern": "Common in mucocutaneous form, especially around nose and mouth"
+            },
+            {
+                "name": "Adenitis",
+                "severity": "Variable",
+                "pattern": "Common, may be painful and suppurative"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present in visceral involvement"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Variable",
+                "pattern": "More common in children, may be cervical, supraclavicular, or axillary"
+            },
+            {
+                "name": "Lesions in mouth and throat",
+                "severity": "Variable",
+                "pattern": "Common in adults with pulmonary involvement"
+            },
+            {
+                "name": "Pulmonary fibrosis",
+                "severity": "Variable",
+                "pattern": "Can occur in chronic adult form"
+            },
+            {
+                "name": "Emphysema",
+                "severity": "Variable",
+                "pattern": "Can occur in chronic adult form"
+            },
+            {
+                "name": "Bullae",
+                "severity": "Variable",
+                "pattern": "Can occur in chronic adult form"
+            },
+            {
+                "name": "Cor pulmonale",
+                "severity": "Severe",
+                "pattern": "Can be a complication of pulmonary involvement"
+            },
+            {
+                "name": "Adrenal insufficiency",
+                "severity": "Variable",
+                "pattern": "Can occur with chronic adrenal involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Mucocutaneous ulcers",
+            "Enlarged lymph nodes",
+            "Granulomatous lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Residence in or travel to endemic areas (South and Central America)",
+            "Male sex (especially for chronic adult form)",
+            "Occupation in outdoor agricultural work",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show patchy areas of infiltration"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings suggestive of paracoccidioidomycosis",
+            "Positive culture of *Paracoccidioides brasiliensis*",
+            "Microscopic observation of characteristic yeasts"
+        ],
+        "supportive": [
+            "Positive serological tests",
+            "Histopathological findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Blastomycosis",
+        "Tuberculosis",
+        "Nocardiosis",
+        "Toxoplasmosis"
+    ]
+}

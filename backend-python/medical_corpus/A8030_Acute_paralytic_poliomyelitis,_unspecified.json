@@ -1,0 +1,154 @@
+{
+    "disease": "Acute paralytic poliomyelitis, unspecified",
+    "icd_code": "A8030",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "slight",
+                "pattern": "present in minor infections, lasting 1-3 days"
+            },
+            {
+                "name": "Malaise",
+                "severity": "mild",
+                "pattern": "present in minor infections"
+            },
+            {
+                "name": "Headache",
+                "severity": "mild to moderate",
+                "pattern": "present in minor infections and aseptic meningitis"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "mild",
+                "pattern": "present in minor infections"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "mild",
+                "pattern": "present in minor infections"
+            },
+            {
+                "name": "Stiff neck and/or back",
+                "severity": "moderate",
+                "pattern": "present in aseptic meningitis"
+            },
+            {
+                "name": "Deep muscle pain",
+                "severity": "moderate to severe",
+                "pattern": "present in paralytic poliomyelitis"
+            },
+            {
+                "name": "Hyperesthesias",
+                "severity": "moderate",
+                "pattern": "present in paralytic poliomyelitis"
+            },
+            {
+                "name": "Paresthesias",
+                "severity": "moderate",
+                "pattern": "present in paralytic poliomyelitis"
+            },
+            {
+                "name": "Urinary retention",
+                "severity": "moderate",
+                "pattern": "present in paralytic poliomyelitis during active myelitis"
+            },
+            {
+                "name": "Muscle spasms",
+                "severity": "moderate",
+                "pattern": "present in paralytic poliomyelitis during active myelitis"
+            },
+            {
+                "name": "Asymmetric flaccid paralysis",
+                "severity": "severe",
+                "pattern": "progresses over 2-3 days, may involve limbs and bulbar muscles"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "variable",
+                "pattern": "early sign of bulbar involvement"
+            },
+            {
+                "name": "Dysphonia",
+                "severity": "variable",
+                "pattern": "early sign of bulbar involvement"
+            },
+            {
+                "name": "Pharyngeal paralysis",
+                "severity": "severe",
+                "pattern": "can lead to inability to control oral secretions"
+            },
+            {
+                "name": "Respiratory compromise",
+                "severity": "life-threatening",
+                "pattern": "can occur due to bulbar involvement affecting respiratory centers"
+            },
+            {
+                "name": "Muscle fatigue and decreased endurance",
+                "severity": "moderate to severe",
+                "pattern": "present in post-polio syndrome"
+            },
+            {
+                "name": "Weakness",
+                "severity": "moderate to severe",
+                "pattern": "present in post-polio syndrome"
+            },
+            {
+                "name": "Fasciculations",
+                "severity": "moderate",
+                "pattern": "present in post-polio syndrome"
+            },
+            {
+                "name": "Atrophy",
+                "severity": "moderate to severe",
+                "pattern": "present in post-polio syndrome"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in minor infections and paralytic poliomyelitis"
+        },
+        "physical_findings": [
+            "Asymmetric flaccid paralysis",
+            "Decreased or absent tendon reflexes in affected limbs",
+            "Muscle atrophy (in post-polio syndrome)"
+        ],
+        "lab_values": {
+            "Cerebrospinal fluid (CSF)": {
+                "glucose": "Normal",
+                "protein": "Mildly elevated in aseptic meningitis",
+                "cell count": "10-500/mcL (predominantly lymphocytes) in aseptic meningitis"
+            }
+        },
+        "risk_factors": [
+            "Increasing age",
+            "Recent tonsillectomy or intramuscular injection",
+            "Pregnancy",
+            "Humoral immunodeficiency",
+            "Physical exertion concurrent with onset of CNS phase",
+            "Lack of vaccination"
+        ],
+        "imaging_findings": {
+            "MRI of spinal cord and brain": "May show myelitis of spinal cord gray matter and/or brainstem lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Acute onset of flaccid paralysis of one or more limbs",
+            "Decreased or absent tendon reflexes in affected limbs",
+            "Absence of other apparent cause",
+            "Absence of sensory or cognitive loss"
+        ],
+        "supportive": [
+            "Asymmetric paralysis progressing distally",
+            "Epidemiologic clues (immunization history, recent travel, age, season)",
+            "Detection of poliovirus in CSF, stool, or throat swab",
+            "MRI findings consistent with myelitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Guillain-Barr\u00e9 syndrome",
+        "Other nonpolio enterovirus infections",
+        "West Nile virus infection"
+    ]
+}

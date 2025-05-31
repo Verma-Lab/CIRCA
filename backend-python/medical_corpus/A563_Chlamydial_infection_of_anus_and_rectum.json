@@ -1,0 +1,52 @@
+{
+    "disease": "Chlamydial infection of anus and rectum",
+    "icd_code": "A563",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Proctitis",
+                "severity": "Variable, can be asymptomatic",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Proctocolitis (in LGV)",
+                "severity": "Variable",
+                "pattern": "Associated with Lymphogranuloma venereum (LGV) caused by biovars L1, L2, or L3"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Majority of cases (>85%)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Tender inguinal or femoral lymphadenopathy (in LGV)"
+        ],
+        "lab_values": {
+            "Nucleic acid amplification tests (NAATs)": {
+                "abnormal_range": "Positive result indicates infection, but does not distinguish between live and dead bacteria"
+            },
+            "Culture": {
+                "abnormal_range": "Positive result confirms active infection"
+            }
+        },
+        "risk_factors": [
+            "Receptive anal intercourse",
+            "Men who have sex with men (MSM)",
+            "Other behaviors (unclear, requires further research)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive NAAT or culture for Chlamydia trachomatis in rectal sample"
+        ],
+        "supportive": [
+            "Symptoms of proctitis",
+            "Epidemiological risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

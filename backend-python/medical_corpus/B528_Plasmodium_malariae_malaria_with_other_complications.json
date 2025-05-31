@@ -1,0 +1,137 @@
+{
+    "disease": "Plasmodium malariae malaria with other complications",
+    "icd_code": "B528",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Sustained, high (38.5-39\u00b0C)",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Severe",
+                "pattern": "Continuous for 5 days"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Moderate (10.8 g/dL)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Significant (65*109/L initially, decreased to 35*109/L)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Somnolence",
+                "severity": "Present (Glasgow Coma Scale = 14)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Pulmonary complications",
+                "severity": "Present (crepitations in right lung, centrilobular emphysema)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hypoxemia",
+                "severity": "Present (89%)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Present (90/50 mmHg)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Difficulty swallowing",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Lymphocytopenia",
+                "severity": "Present (0.3*109/L)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Elevated AST",
+                "severity": "Present (92 U/L)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Elevated C-reactive protein",
+                "severity": "Significant (84 mg/L initially, increased to 165 mg/L)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Electrolyte imbalance",
+                "severity": "Present (Na, Cl, K)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Elevated plasma lactate",
+                "severity": "Present (3.3 mmol/L)",
+                "pattern": "Present"
+            },
+            {
+                "name": "Abnormal urine analysis",
+                "severity": "Present (Na, K, Urea, Creatinine)",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38.5-39\u00b0C",
+            "blood_pressure": "90/50 mmHg",
+            "oxygen_saturation": "89%"
+        },
+        "physical_findings": [
+            "Crepitations in right lung",
+            "Cold peripheries"
+        ],
+        "lab_values": {
+            "Hemoglobin": "10.8 g/dL (low)",
+            "Platelets": "65*109/L initially, 35*109/L later (low)",
+            "Lymphocytes": "0.3*109/L (low)",
+            "Leukocytes": "5.5*109/L (normal)",
+            "Creatinine": "83 \u00b5mol/L initially, 8.8 mmol/L later (high)",
+            "Glucose": "6.5 mmol/L (normal)",
+            "pH": "7.45 (normal)",
+            "Sodium": "126 mmol/L (low)",
+            "Chloride": "93 mmol/L (low)",
+            "Potassium": "4 mmol/L initially, 50 mmol/L later (high)",
+            "Lactate": "3.3 mmol/L (high)",
+            "ALT": "38 U/L (normal)",
+            "AST": "92 U/L (high)",
+            "C-reactive protein": "84 mg/L initially, 165 mg/L later (high)",
+            "Parasitemia": "0.93%"
+        },
+        "risk_factors": [
+            "Travel to malaria-endemic region (Dominican Republic in 2002)"
+        ],
+        "imaging_findings": {
+            "CT scan": "Centrilobular emphysema (likely related to COPD)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with malaria (fever, weakness, etc.)",
+            "Positive malaria test (LAMP-PCR, lateral flow test, microscopy)"
+        ],
+        "supportive": [
+            "Travel history to malaria-endemic area",
+            "Presence of Plasmodium malariae trophozoites, schizonts, and gametocytes on blood smear"
+        ]
+    },
+    "differential_diagnoses": []
+}

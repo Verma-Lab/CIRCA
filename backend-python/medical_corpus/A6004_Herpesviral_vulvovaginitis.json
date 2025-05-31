@@ -1,0 +1,87 @@
+{
+    "disease": "Herpesviral vulvovaginitis",
+    "icd_code": "A6004",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painful genital ulcers",
+                "severity": "Variable, can be severe",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Systemic symptoms (fever, headache)",
+                "severity": "Variable",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Local pain and pruritus",
+                "severity": "Variable",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Tender lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Smaller vesicular or ulcerative lesions",
+                "severity": "Less severe",
+                "pattern": "Recurrent infection"
+            },
+            {
+                "name": "Unilateral lesions",
+                "severity": "Mild",
+                "pattern": "Recurrent infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible in primary infection"
+        },
+        "physical_findings": [
+            {
+                "name": "Grouped 2- to 4-mm vesicles",
+                "location": "Genital area",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Erosions or ulcers",
+                "location": "Genital area",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Angulated or linear lesions",
+                "location": "Genital area",
+                "pattern": "Primary infection"
+            },
+            {
+                "name": "Smaller vesicular or ulcerative lesions",
+                "location": "Genital area",
+                "pattern": "Recurrent infection"
+            }
+        ],
+        "lab_values": {
+            "viral culture": "Positive for HSV-1 or HSV-2 in active lesions",
+            "polymerase chain reaction (PCR)": "Positive for HSV-1 or HSV-2 in active lesions",
+            "serology": "Type-specific antibodies"
+        },
+        "risk_factors": [
+            "Sexual contact",
+            "Oral sex (increasingly associated with HSV-1 genital herpes)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with herpesviral vulvovaginitis",
+            "Positive viral culture or PCR for HSV-1 or HSV-2"
+        ],
+        "supportive": "Type-specific serology"
+    },
+    "differential_diagnoses": []
+}

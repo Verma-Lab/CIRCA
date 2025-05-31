@@ -1,0 +1,77 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of thorax",
+    "icd_code": "C493",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be localized or radiating"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "Palpable or visible lump"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be localized or generalized"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Generalized tiredness"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained weight loss"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Shortness of breath, especially if the tumor is large"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May be present if the tumor is compressing airways"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in some cases",
+            "respiratory_rate": "May be elevated if the tumor is compressing airways",
+            "blood_pressure": "May be elevated or decreased depending on the tumor's location and size"
+        },
+        "physical_findings": [
+            "Palpable mass",
+            "Lymph node enlargement",
+            "Respiratory distress",
+            "Limited range of motion"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "May show a mass in the thorax",
+            "MRI": "May show the extent of the tumor and involvement of surrounding structures",
+            "PET scan": "May show metabolic activity of the tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass in the thorax",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Clinical symptoms suggestive of a thoracic mass",
+            "Elevated tumor markers (if applicable)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign tumors of the thorax",
+        "Inflammatory conditions",
+        "Other thoracic malignancies"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "disease": "Malignant neoplasm of ileum",
+    "icd_code": "C17.2",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Cytokeratin 7": null,
+            "Cytokeratin 20": null
+        },
+        "risk_factors": [
+            "Crohn's disease"
+        ],
+        "imaging_findings": {
+            "capsule endoscopy": [
+                "Irregular and ulcerated jejunal lesion",
+                "Jejunal submucosal tumor with overlying normal mucosa"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Ileal tumor with ulceration",
+            "Invasive jejunal adenocarcinoma",
+            "Well differentiated adenocarcinoma",
+            "Moderately and poorly differentiated adenocarcinoma",
+            "Mucinous adenocarcinoma",
+            "Lymph node metastasis",
+            "Higher stage carcinomas",
+            "Ileal adenocarcinoma arising in Crohn's disease",
+            "Signet ring adenocarcinoma",
+            "Adenocarcinoma arising in a tubulovillous adenoma",
+            "Lymphovascular invasion",
+            "Perineural invasion",
+            "Suspicious growth with jejunal stricture",
+            "Near obstructing mass distal to duodenal bulb",
+            "Jejunal tumor invading adherent transverse colon"
+        ]
+    },
+    "differential_diagnoses": []
+}

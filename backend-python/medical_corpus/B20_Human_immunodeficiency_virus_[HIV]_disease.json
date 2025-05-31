@@ -1,0 +1,56 @@
+{
+    "disease": "Human immunodeficiency virus (HIV) disease",
+    "icd_code": "B20",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Influenza-like illness",
+                "severity": "Mild to moderate",
+                "pattern": "Early stages; may be absent in some individuals"
+            },
+            {
+                "name": "Progressive immune system weakening",
+                "severity": "Variable, depending on stage",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Opportunistic infections (e.g., tuberculosis, hepatitis B and C, mpox)",
+                "severity": "Variable, can be severe or life-threatening",
+                "pattern": "Develops as immune system weakens"
+            },
+            {
+                "name": "Severe illnesses",
+                "severity": "Severe, life-threatening",
+                "pattern": "Develops in untreated individuals"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible in early stages"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "CD4 cell count": "<200 cells/mm3 (Advanced HIV Disease)",
+            "HIV viral load": "Detectable in early stages and untreated individuals; undetectable with effective ART"
+        },
+        "risk_factors": [
+            "Sexual intercourse",
+            "Sharing needles",
+            "Mother-to-child transmission (pregnancy, childbirth, breastfeeding)",
+            "Exposure to infected bodily fluids (blood, semen, vaginal fluids, breast milk)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive HIV antibody test (confirmatory testing required)",
+            "Detection of HIV RNA (viral load)"
+        ],
+        "supportive": [
+            "Symptoms consistent with HIV infection",
+            "Risk factors for HIV transmission",
+            "Low CD4 cell count"
+        ]
+    },
+    "differential_diagnoses": []
+}

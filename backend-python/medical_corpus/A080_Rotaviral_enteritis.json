@@ -1,0 +1,70 @@
+{
+    "disease": "Rotaviral enteritis",
+    "icd_code": "A080",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Profuse, frequent",
+                "pattern": "Acute onset, lasting 3-8 days"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable, can be severe",
+                "pattern": "Usually lasts 1-2 days"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate (39\u00b0C or higher) in 30-40% of cases",
+                "pattern": "Acute onset, may precede diarrhea"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Can range from mild to severe, potentially fatal",
+                "pattern": "Develops due to fluid loss from diarrhea and vomiting"
+            },
+            {
+                "name": "Electrolyte imbalance",
+                "severity": "Can be severe in severe cases",
+                "pattern": "Result of dehydration"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Occurs in a small percentage of hospitalized children",
+                "pattern": "May be afebrile or febrile"
+            },
+            {
+                "name": "Neurologic symptoms",
+                "severity": "Variable, can include encephalitis, encephalopathy, and cerebellitis",
+                "pattern": "Less common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": ">39\u00b0C (in some cases)",
+            "other": "Signs of dehydration (e.g., lethargy, fussiness)"
+        },
+        "physical_findings": [
+            "Signs of dehydration"
+        ],
+        "lab_values": {
+            "serum transaminases": "Transient rise often seen"
+        },
+        "risk_factors": [
+            "Lack of breastfeeding",
+            "Prematurity",
+            "Low birth weight",
+            "Immunodeficiency (severe T cell and combined T and B cell deficiencies)",
+            "Immunosuppression (e.g., bone marrow transplantation)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": "Detection of rotavirus in fecal specimens using commercially available assays",
+        "supportive": "Clinical presentation consistent with rotaviral gastroenteritis (e.g., acute onset of watery diarrhea, vomiting, fever)"
+    },
+    "differential_diagnoses": [
+        "Other enteric pathogens",
+        "Noninfectious gastroenteritis"
+    ]
+}

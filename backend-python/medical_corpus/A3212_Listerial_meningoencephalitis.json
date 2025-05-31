@@ -1,0 +1,131 @@
+{
+    "disease": "Listerial Meningoencephalitis",
+    "icd_code": "A3212",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (often exceeding 39\u00b0C)",
+                "pattern": "Acute onset in 90% of cases; intermittent fever for a month in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Acute onset in 90% of cases; intermittent for a month in some cases"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Present",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Forceful",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Altered consciousness",
+                "severity": "Variable",
+                "pattern": "Including numbness, delirium, and seizures; coma in severe cases within 24-48 hours"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Double vision",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Difficulty in pronunciation or swallowing",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Facial nerve paralysis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hemiplegia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Upset stomach",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (38.9\u00b0C - 39.3\u00b0C)",
+            "heart_rate": "Tachycardia (137 bpm)",
+            "respiratory_rate": "Tachypnea (26 breaths/min)",
+            "blood_pressure": "Elevated (155/81 mmHg)"
+        },
+        "physical_findings": [
+            "Deep coma",
+            "Neck stiffness",
+            "Slightly thick breathing sounds in both lungs",
+            "Heart rate 137 bpm, regular, no pathological murmur",
+            "Left upper limb ankylosed",
+            "No edema in both lower limbs",
+            "No pathological reflex elicited",
+            "Positive meningeal irritation sign"
+        ],
+        "lab_values": {
+            "CRP": "Elevated (31.65 mg/L)",
+            "WBC": "Slightly elevated (5.5 \u00d7 10^9/L)",
+            "Neutrophils": "Elevated (90.9%)",
+            "CSF pressure": "Elevated (250 mmH2O)",
+            "CSF WBC": "Increased",
+            "CSF protein": "Significantly increased",
+            "CSF glucose": "Decreased",
+            "CSF chloride": "Decreased",
+            "Complement C3 and C4": "Initially decreased, normalized after treatment"
+        },
+        "risk_factors": [
+            "Pregnant women",
+            "Older adults",
+            "People with weak immune systems",
+            "Consumption of contaminated food (dairy products, seafood, meat, eggs, poultry, fruits, vegetables)",
+            "History of systemic lupus erythematosus (SLE)"
+        ],
+        "imaging_findings": {
+            "Head MRI": "Multiple small ischemic lesions in bilateral frontal, parietal, temporal, and occipital lobes, as well as the lateral ventricles",
+            "Head CT": "Scattered small ischemic foci in bilateral frontal and parietal lobes, basal ganglia, and lateral ventricles; intracranial hemorrhage in one case",
+            "Chest CT": "Local callus formation after fractures of the right fourth to ninth ribs"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningoencephalitis (fever, headache, altered consciousness, etc.)",
+            "Positive CSF culture for Listeria monocytogenes",
+            "Positive blood culture for Listeria monocytogenes (in some cases)"
+        ],
+        "supportive": [
+            "Elevated CSF pressure",
+            "Increased CSF WBC count",
+            "Increased CSF protein",
+            "Decreased CSF glucose",
+            "Decreased CSF chloride",
+            "Positive mNGS for Listeria monocytogenes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial meningitis",
+        "Viral meningitis",
+        "Fungal meningitis",
+        "Tuberculous meningitis",
+        "Lupus encephalopathy",
+        "Acute ischemic stroke"
+    ]
+}

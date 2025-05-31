@@ -1,0 +1,69 @@
+{
+    "disease": "Meckel's diverticulum, malignant",
+    "icd_code": "C173",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intermittent abdominal pain",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Intestinal obstruction",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Intussusception",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Skin flushing",
+                "severity": "Variable",
+                "pattern": "Acute episodes (in Carcinoid syndrome)"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Variable (in Carcinoid syndrome)"
+            },
+            {
+                "name": "Asthma attacks",
+                "severity": "Variable",
+                "pattern": "Variable (in Carcinoid syndrome)"
+            },
+            {
+                "name": "Cardiac lesions",
+                "severity": "Variable",
+                "pattern": "Variable (in Carcinoid syndrome)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant neoplasm within Meckel's diverticulum confirmed by histopathology"
+        ],
+        "supportive": [
+            "Clinical symptoms suggestive of Meckel's diverticulitis or complications",
+            "Imaging findings suggestive of Meckel's diverticulum"
+        ]
+    },
+    "differential_diagnoses": []
+}

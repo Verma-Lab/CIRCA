@@ -1,0 +1,27 @@
+{
+    "disease": "Malignant neoplasm of lower gum",
+    "icd_code": "C031",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Uncontrollable multiplication of cells in the lower gum tissue"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Uncontrollable multiplication of cells in the lower gum tissue",
+            "Malignant neoplasm confirmed by biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

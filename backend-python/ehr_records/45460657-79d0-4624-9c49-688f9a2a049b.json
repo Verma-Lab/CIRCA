@@ -1,0 +1,532 @@
+{
+  "id": "45460657-79d0-4624-9c49-688f9a2a049b",
+  "patient_id": "908b9209-245c-45cb-8558-ca4f2800962b",
+  "encounter_id": "c7a22607-5c2b-4e6d-b39d-f8ac89fd05f8",
+  "analysis_type": "Genetic Testing Recommendation",
+  "input_text": "Patient: Jorge Thomas, DOB: 1979-12-30, Gender: Male\n\nChief Complaint: headache\n\nS (Subjective)\nPatient presents with sudden onset chest pain that began 3 hours ago while at rest. Describes pain as \"squeezing\" and \"pressure-like\" in the center of chest, radiating to left arm and jaw. Pain is 7/10 in severity. Associated symptoms include shortness of breath, mild nausea, and diaphoresis. Denies fever, cough, or recent trauma. No prior similar episodes.\nMedical History: Hypertension diagnosed 5 years ago, Type 2 Diabetes (diagnosed 2 years ago), Hyperlipidemia\nSurgical History: Appendectomy (2001)\nMedications: Lisinopril 10mg daily, Metformin 500mg BID, Atorvastatin 20mg daily\nAllergies: Penicillin (rash)\nFamily History: Father died of MI at age 62, Mother with history of hypertension\nSocial History: Former smoker (quit 3 years ago, 20 pack-year history), social alcohol use (2-3 drinks/week), works as a construction manager\nO (Objective)\nVitals:\n\nBP: 162/94 mmHg\nHR: 92 bpm\nRR: 20/min\nTemp: 98.6\u00b0F\nSpO2: 95% on room air\n\nPhysical Examination:\n\nGeneral: Alert, anxious-appearing, mild distress\nHEENT: Normocephalic, atraumatic. Pupils equal and reactive. Mucous membranes moist.\nCardiovascular: Regular rate and rhythm. No murmurs, rubs, or gallops. No JVD.\nRespiratory: Clear to auscultation bilaterally. No wheezes, rales, or rhonchi.\nAbdominal: Soft, non-tender, non-distended. No hepatosplenomegaly.\nExtremities: No edema. Peripheral pulses intact. No cyanosis.\nSkin: Mild diaphoresis noted. No rash.\nNeurological: Alert and oriented x3. No focal deficits.\n\nDiagnostic Results:\n\nECG: Sinus rhythm with 1mm ST-segment depression in leads V3-V5\nChest X-ray: No acute cardiopulmonary process, no cardiomegaly\nLabs:\n\nTroponin I: 0.08 ng/mL (slightly elevated)\nCK-MB: 6.2 ng/mL (within normal range)\nBNP: 110 pg/mL (slightly elevated)\nCBC: WBC 9.2, Hgb 14.2, Plt 245\nBMP: Na 138, K 4.2, Cl 101, CO2 24, BUN 18, Cr 1.0, Glucose 156\nLipid Panel: Total cholesterol 220, LDL 142, HDL 38, TG 210\n\n\n\nA (Assessment)\n\nAcute coronary syndrome (NSTEMI) - most likely diagnosis given clinical presentation, risk factors, ECG changes, and mildly elevated troponin\nUncontrolled hypertension\nType 2 Diabetes Mellitus\nHyperlipidemia\nDifferential diagnoses include:\n\nUnstable angina\nAortic dissection\nPulmonary embolism\nGastroesophageal reflux disease\nMusculoskeletal chest pain\n\n\n\nP (Plan)\nAdmit to Cardiac Care Unit for monitoring and further management\nMedications:\n\nAspirin 325mg loading dose, then 81mg daily\nClopidogrel 300mg loading dose, then 75mg daily\nAtorvastatin increase to 40mg daily\nMetoprolol 25mg BID\nNitroglycerin 0.4mg SL PRN chest pain\nContinue home medications (Lisinopril, Metformin)\n\n\nDiagnostics:\n\nSerial cardiac enzymes q6h x 3\nRepeat ECG in 6 hours and PRN chest pain\nSchedule cardiac catheterization for tomorrow morning\nEchocardiogram to assess LV function\n\n\nConsultations:\n\nCardiology consult\nEndocrinology consult for diabetes management\n\n\nEducation:\n\nHeart-healthy diet\nMedication counseling\nSmoking cessation reinforcement\n\n\nFollow-up:\n\nCardiology follow-up within 1 week of discharge\nPCP follow-up within 2 weeks of discharge\n\n\n--- IMAGING & SCANS ---\n- Chest Scan (3/24/2025): Chest scan\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: Chest Scan (2025-03-24T23:06:13.575979)]\nFile: images.jpeg\nDescription: Chest scan\nAnalysis: Okay, let\u2019s analyze this chest CT scan. Here\u2019s a detailed breakdown of what I observe, keeping in mind this is a visual interpretation and a definitive diagnosis requires clinical correlation and potentially further investigation:\n\n**Overall Impression:**\n\nThe scan demonstrates significant bilateral interstitial lung disease. There\u2019s a widespread pattern of ground-glass opacities and some associated consolidation, predominantly affecting the lower lobes.  The vasculature appears largely normal. \n\n**Detailed Findings:**\n\n1. **Ground-Glass Opacities:** This is the most prominent feature. I see patchy, hazy areas of increased opacity throughout both lungs, particularly in the lower lobes (right and left). These areas aren\u2019t completely opaque, allowing some degree of X-ray penetration \u2013 hence \"ground-glass.\" These are often indicative of early inflammation or fluid accumulation.\n\n2. **Consolidation:**  I observe areas of more dense, solid-looking opacification. These are more pronounced in the lower lobes, particularly along the left lower lobe. This suggests there is fluid, pus, or other material filling the air spaces. \n\n3. **Interstitial Pattern:** The distribution of the opacities suggests an interstitial pattern \u2013 meaning they are located within the interstitium (the tissue surrounding the air spaces) of the lungs rather than within the air spaces themselves. This pattern is characteristic of interstitial lung diseases.\n\n4. **Vascularity:** The pulmonary arteries and veins appear generally normal in caliber and distribution. There are no obvious signs of pulmonary hypertension.\n\n5. **Mediastinum and Heart:** The mediastinum (the space between the lungs) appears unremarkable. The heart size appears within normal limits based on this single view. \n\n6. **Pleura:** The pleural surfaces (the lining of the lungs) appear clear, without significant pleural effusions (fluid buildup).\n\n7. **No Masses or Lacerations:**  I don\u2019t see any obvious masses, nodules, or lacerations within the lung parenchyma. \n\n\n**Possible Diagnoses (Differential Diagnosis):**\n\nBased on this imaging, several possibilities need to be considered:\n\n*   **Early Pneumonia:** While the ground-glass opacities can be seen in pneumonia, the bilateral distribution and interstitial pattern make this less likely as a primary diagnosis.\n*   **Interstitial Lung Disease (ILD):** This is a broad category, and the pattern is suggestive of several types, including:\n    *   **Non-Specific Interstitial Pneumonia (NSIP):\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nDETAILED_DESCRIPTION: Thomas, 1979-12-30, sudden, squeezing, pressure-like, Type, Penicillin, -3 drinks, week, manager, room air, bilaterally, -dist, focal, leads V3-V5, acute, Uncontrolled, Unstable, Musculoskeletal, PRN, home, Serial, bilateral, widespread, patchy, hazy, left, dense, solid-looking, Early, Non-Specific\nSIGN_SYMPTOM: headache, pain, Pain, shortness of breath, nausea, diaphoresis, fever, cough, anxious, distress, Normocephalic, murmurs, rubs, gallops, JVD, wheezes, rales, rhonchi, Soft, hepatosplenomegaly, edema, cyanosis, rash, oriented, deficits, Sinus rhythm, ST-segment depression, cardiomegaly, ground-glass, opacities, consolidation, Ground-Glass, Opacities, opacity, opaque, ground, glass, opacification, fluid, leura, clear, pleural effusions, fluid buildup, Masses, Lacerations, masses, nodules, lacerations, opa\nBIOLOGICAL_STRUCTURE: chest, center of chest, left arm, jaw, Abdominal, Extremities, Peripheral, Skin, Chest, lower lobes, vasculature, both lungs, right and, left lower lobe, air spaces, interstitium, spaces, pulmonary arteries, veins, Mediastinum, Heart, mediastinum, space between the lungs, heart, pleural surfaces, lining, lungs, lung parenchyma\nDURATION: 3 hours, 6 hours\nLAB_VALUE: 7/10, 2, 162/94 mmHg, 92 bpm, 20/min, 98.6\u00b0F, 95%, Alert, -appearing, atraumatic, equal, reactive, moist, Regular, Clear, non-tender, non, ended, intact, 3, 1mm, 0.08 ng/mL, 6.2 ng/mL, 110 pg/mL, 9.2, 14.2, 245, 138, 4.2, 101, 24, 18, 1.0, 156, 220, 142, 38, 210, elevated, normal, unremarkable, within normal limits\nSEVERITY: mild, Mild, significant\nDISEASE_DISORDER: Hypertension, 2 Diabetes, Hyperlipidemia, Allergies, construction, cardiopulmonary process, Acute coronary syndrome, NSTEMI, hypertension, Type 2 Diabetes Mellitus, angina, Aortic dissection, Pulmonary embolism, Gastroesophageal reflux disease, pain, interstitial lung disease, inflammation, fluid accumulation, pus, interstitial lung diseases, pulmonary hypertension, Pneumonia, pneumonia, Interstitial Lung Disease, ILD, Interstitial Pneumonia, SIP\nDATE: 5 years ago, 2 years ago, 3 years, 1 week, 2 weeks\nTHERAPEUTIC_PROCEDURE: Appendectomy, cardiac catheterization\nMEDICATION: Lisinopril, Metformin, Atorvastatin, Aspirin, Clopidogrel, Metoprolol, Nitroglycerin, medications\nDOSAGE: 10mg daily, 500mg BID, 20mg daily, /, 325mg loading dose, 81mg daily, 300mg loading dose, 75mg daily, 40mg daily, 25mg BID, 0.4mg SL, q6h x 3\nFAMILY_HISTORY: died of MI at age 62, Mother, history of hypertension\nHISTORY: smoker, social alcohol use\nDIAGNOSTIC_PROCEDURE: Vitals, BP, HR, RR, Temp, SpO2, Physical Examination, HEENT, Pupils, Mucous membranes, Cardiovascular, rate, rhythm, Respiratory, auscultation, pulses, Neurological, ECG, X-ray, Labs, Troponin I, CK-MB, BNP, CBC, WBC, Hgb, Plt, BMP, Na, K, Cl, CO2, BUN, Cr, Glucose, Lipid Panel, Total cholesterol, LDL, HDL, TG, troponin, monitoring, cardiac enzymes, CT, Vascularity, caliber, size, P\nCLINICAL_EVENT: Admit\nNONBIOLOGICAL_LOCATION: Cardiac Care Unit",
+  "recommendation": "recommended",
+  "reasoning": "The patient, Jorge Thomas, presents with acute chest pain, shortness of breath, and diaphoresis, along with risk factors for coronary artery disease (hypertension, type 2 diabetes, hyperlipidemia, smoking history, family history of MI).  His ECG shows ST-segment depression, and slightly elevated troponin I and BNP levels support the diagnosis of NSTEMI (non-ST-elevation myocardial infarction). However, the chest CT scan reveals significant bilateral interstitial lung disease with ground-glass opacities and consolidation, predominantly in the lower lobes. This finding is not directly related to the acute coronary syndrome but suggests a separate, potentially serious underlying condition.  The interstitial pattern raises concern for interstitial lung disease (ILD), a heterogeneous group of disorders with various potential causes, including genetic factors.  Given the severity of the lung findings and the potential for genetic involvement in ILD, genetic testing is warranted to explore possible underlying rare genetic diseases that could contribute to both the ILD and potentially predispose to cardiovascular events.  Further investigation is needed to determine the specific type of ILD and its etiology.  The literature review highlights several genetic conditions associated with cardiomyopathy and/or lung disease, making genetic testing a crucial step in comprehensive patient care.  While the most likely immediate diagnosis is NSTEMI, the unexpected and significant lung findings necessitate a broader investigation into potential genetic causes of ILD, which could have long-term implications for the patient's health.",
+  "confidence": "70%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "brugada_txt_11",
+      "contents": "Note: Data on genetic modifers (e.g., susceptibility loci / polymorphisms identifed through genome-wide association studies) in Brugada syndrome-related genes that may contribute in small ways to risk of a given phenotype are not included in Table 2. \nDifferential Diagnosis \nBrugada syndrome should always be considered in the diferential diagnosis of the following: \n\u2022 Sudden cardiac death and syncope in persons with a structurally normal heart   \n\u2022 SIDS. Brugada syndrome does not usually cause problems at such a young age; however, SCN5A pathogenic variants have been described in a few infants with SIDS. SIDS is believed to be etiologically and genetically heterogeneous [Weese-Mayer et al 2007] with an unknown proportion attributed to Brugada syndrome.   \n\u2022 Sick sinus syndrome. Brugada syndrome could be observed in persons with sick sinus syndrome given the defects observed in cardiac conduction [Nakazato et al 2004]. \nOther conditions that can be associated with ST segment elevation in right precordial leads include the following (adapted from de Oliveira Neto et al [2019] and Wilde et al [2002] with permission). \nAbnormalities that can lead to ST segment elevation in the right precordial leads \n\u2022 Right or lef bundle branch block, lef ventricular hypertrophy   \nAcute myocardial ischemia or infarction   \nAcute myocarditis Hypothermia, causing Osborn wave in EKGs and sometimes resembling Brugada syndrome Right ventricular ischemia or infarction Dissecting aortic aneurysm Acute pulmonary thromboemboli Various central and autonomic nervous system abnormalities Heterocyclic antidepressant overdose Duchenne muscular dystrophy Friedreich ataxia Tiamine defciency   \n\u2022 Hypercalcemia   \nHyperkalemia   \n\u2022 Cocaine intoxication \nMediastinal tumor compressing the right ventricular outfow tract Arrhythmogenic right ventricular cardiomyopathy \nOther conditions that can lead to ST segment elevation in the right precordial leads \nEarly repolarization syndrome Other normal variants (particularly in males) \nMost of the above conditions can give rise to a type 1 EKG, whereas ARVC and Brugada syndrome can both give rise to type 2 and type 3 EKGs.",
+      "token_count": 490,
+      "sentence_count": 21
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_123",
+      "contents": " Use of electrocardiographic-synchronized CT techniques should be considered when there is a need to accurately depict mediastinal structures (eg, proximal aorta, coronary ostia). When IMH is present, the extent and thickness of the hematoma can be documented and, when PAUs are present, the presence of and size of pseudoaneurysms can be easily defined. \n\n2. In general, the choice of the initial imaging modality should be based on the patient\u2019s history and clinical presentation, the specific clinical questions to be answered, and the institutional availability, experience, and expertise with each of the diagnostic imaging techniques.6 In certain clinical circumstances, for example, patients with a history of an iodinated contrast reaction or patients who are too unstable to travel to the radiology suite, CT may not be preferred. Echocardiography (TEE/ TTE) is an alternative. TTE is noninvasive, can be performed at the bedside, and may be helpful in eliciting the diagnosis of AAS and quickly identifying complications of AAS, such as AR or pericardial effusion and tamponade. TEE is preferred to TTE, however, because of its higher sensitivity and better anatomic resolution; TEE can be performed at the bedside in the emergency department or, alternatively, once the patient is in the operating room. MRI is most commonly the third-choice modality, given that it is not readily available, requires skilled interpretation, and has longer acquisition times, as well as the fact it is challenging to provide clinical care to potentially unstable patients while in an MRI scanner. Consequently, MRI is most often used as a follow-up imaging modality in patients in which there is diagnostic uncertainty. Nevertheless, MRI may be the study of choice in the acute setting for a stable patient with a contraindication to iodinated contrast. \n\n7.3. Medical Management of AAS \nSynopsis \nPatients presenting with AAS need to be treated promptly to prevent acute and chronic complications. In all patients with AAS, immediate medical therapy is indicated while considering urgent surgical (in patients with type A aortic dissection), endovascular intervention (in patients with type B aortic dissection), or both; medical therapy includes aggressive heart rate and BP management as well as pain control.",
+      "token_count": 480,
+      "sentence_count": 13
+    },
+    {
+      "id": "brugada_txt_12",
+      "contents": " Terefore, it is important to distinguish between these two disorders. \nManagement \nEvaluations Following Initial Diagnosis \nTo establish the extent of disease and needs in an individual diagnosed with Brugada syndrome, the following evaluations (if not performed as part of the evaluation that led to the diagnosis) are recommended: \n\u2022 Electrocardiogram (EKG)   \n\u2022 Induction with sodium blockers (ajmaline, procainamide, pilsicainide, fecainide) in persons with a type 2 EKG or type 3 EKG and suspicion of the disease   \n\u2022 Electrophysiologic study to assess risk of sudden cardiac death. Although the data are controversial, no other risk stratifcation parameter is presently available for asymptomatic individuals [Nunn et al 2010].   \n\u2022 Consultation with a medical geneticist, certifed genetic counselor, or certifed advanced genetic nurse to inform afected individuals and their families about the nature, mode of inheritance, and implications of Brugada syndrome to facilitate medical and personal decision making \nTreatment of Manifestations \nBrugada syndrome is characterized by the presence of ST segment elevation in leads $\\mathrm{V}_{1^{-}}\\mathrm{V}_{3}$ . Implantable cardioverter defbrillators (ICDs) are the only therapy currently known to be efective in persons with Brugada syndrome with syncope or cardiac arrest [Brugada et al 1999b, Wilde et al 2002]. See Figure 3 for risk stratifcation and recommendations of ICD in individuals with Brugada syndrome. \nElectrical storms respond well to infusion of isoproterenol $\\left(1{-}3\\;\\upmu\\mathrm{g/min}\\right)$ , the frst line of therapy before other antiarrhythmics [Maury et al 2004]. \nIt is important to: \n\u2022 Eliminate/treat agents/circumstances such as fever, cocaine use, electrolyte disturbances, and use of class I antiarrhythmic medications and other noncardiac medications that can induce acute arrhythmias; AND   \n\u2022 Hospitalize the patient at least until the EKG pattern has normalized. \nControversy exists regarding the treatment of asymptomatic individuals.",
+      "token_count": 477,
+      "sentence_count": 17
+    },
+    {
+      "id": "A_Guide_To_Marfan_Syndrome_and_Related_Disorders_txt_29",
+      "contents": " the back, neck or arms)   \nIs this kind of pain like anything you have ever felt   \nbefore? \niv. Express a Sense of Urgency \nEmphasize to the nurse or doctor that the patient: \nHas Marfan syndrome   \nIs at high risk for aortic dissection   \nIs concerned about the pain being from a dissection \nv. Carry an Emergency Alert Card \nWe have created an Emergency Alert Card for people to carry which identifies them as a person with Marfan syndrome or a related disorder and being at increased risk for aortic dissection. The card also identifies the proper tests the hospital should do to rule out aortic dissection. The card can be printed out from the patient toolkit on our website. \nvi. Wear a Medical Alert Bracelet \nMedical alert bracelets are helpful, especially if a person is unable to provide their medical history. The bracelet can relate a few key words or phrases that may be helpful to emergency department personnel. People with Marfan syndrome might want to include on their bracelet: Marfan syndrome, aortic aneurysm, risk for aortic dissection, heart valve and Coumadin $\\textsuperscript{\\textregistered}$ . Talk to your doctor to decide what is most important to include on your bracelet. \n\nvii. Contact Your Primary Care Doctor \nProvide emergency department staff with the patient\u2019s primary care physician\u2019s name and phone number. Ask them to call at once for any additional information that may be needed for appropriate treatment. \nviii. Be Familiar with Tests that Confirm or Rule Out a Diagnosis of Aortic Dissection \nThe diagnostic test used to confirm aortic dissection should be that test which the specific institution can perform in the most timely and accurate manner. This is usually a CT scan of the chest with IV contrast or a transesophageal echocardiogram. An MRI is occasionally used as a first test. If the patient has an allergy to IV dye, shellfish or Iodine, this should be mentioned to the emergency department personnel. It is important to remember that a chest x-ray may not show an aortic dissection and, if dissection is suspected, a normal chest x-ray should not deter further evaluation. \n",
+      "token_count": 458,
+      "sentence_count": 25
+    },
+    {
+      "id": "pfcp_txt_9",
+      "contents": "\u2022 When symptoms of the hyperviscosity syndrome are evident; OR \u2022 At routine intervals to maintain the hematocrit at an almost normal level. \nWhile low-dose aspirin can be considered for the prevention of thromboembolic events, no evidence of efcac y exists. Of note, at least one individual (a male age 40 yrs) died from myocardial infarction despite regularly performed phlebotomies [Prchal & Sokol 1996]. \nHyperviscosity symptoms (See Evaluations Following Initial Diagnosis.) \n\u2022 Grade 1. Consider aspirin treatment.   \nGrade 2. Consider aspirin treatment. In the presence of persistent symptoms perform phlebotomy. In the event of recurrent episodes consider regular phlebotomy to maintain the hematocrit in the age-respective normal range.   \nGrade 3. Consider regular phlebotomy to maintain hematocrit in the age-respective normal range. Consider additional aspirin treatment. \nTromboembolic events \n\u2022 Provide acute treatment according to established practice for the event.   \n\u2022 Evaluate for other thrombophilic risk factors.   \n\u2022 Start regular phlebotomy to maintain hematocrit in the age-respective normal range. Consider additional aspirin treatment in all patients.   \n\u2022 Consider life-long anticoagulation (e.g., heparins, warfarin) when other severe additional risk factors are present or thromboembolic events have recurred. \nPrevention of Primary Manifestations \nAlways maintain good hydration. \nAvoid activities that potentially increase blood viscosity (e.g., mountain climbing, scuba diving, smoking). \nFor those at increased risk for thromboembolic events: take precautions in higher-risk situations such as longdistance airline fights. \nSurveillance \nTe following are appropriate: \n\u2022 Regular cardiology assessment including cardiac function (echocardiography) and blood pressure measurement. In case of occasionally increased blood pressure, perform 24-hour measurement.   \n\u2022 Regular life-long follow up with investigation of any suspicious clinical events such as thromboembolic complications and symptoms that could be related to hyperviscosity   \nRegular life-long follow up to record manifestations of hyperviscosity syndrome and their severity (See Evaluations Following Initial Diagnosis.) \nAgents/Circumstances to Avoid \nAvoid: \nDehydration;   \n",
+      "token_count": 483,
+      "sentence_count": 30
+    },
+    {
+      "id": "salih-myo_txt_1",
+      "contents": "Agents/circumstances to avoid: Ibuprofen in those with congestive heart failure. \nGenetic counseling \nSalih myopathy is inherited in an autosomal recessive manner. Te parents of an afected child are obligate heterozygotes (i.e., carriers of one pathogenic variant) and are asymptomatic. At conception, each sib of an afected individual has a $25\\%$ chance of being afected, a $50\\%$ chance of being an asymptomatic carrier, and a $25\\%$ chance of being unafected and not a carrier. Carrier testing for at-risk relatives and prenatal testing for a pregnancy at increased risk are possible if the pathogenic variants in the family have been identifed. \nDiagnosis \nSuggestive Findings \nSalih myopathy should be suspected in individuals with the following clinical, laboratory, electrophysiologic, imaging, and histopathology fndings. \nClinical \n\u2022 Muscle weakness manifesting during the neonatal period or in early infancy   \n\u2022 Delayed motor milestones but normal cognitive development   \n\u2022 Muscle weakness of limb-girdle distribution, myopathic face, variable degree of ptosis, and relative calf muscle hypertrophy   \n\u2022 Development of dilated cardiomyopathy between ages fve and 16 years   \n\u2022 Major heart rhythm disturbances leading to sudden death before age 20 years \nm creatine kinase (CK) is marginally to moderately increase \nElectrophysiologic \n\u2022 Electrocardiography. Lef axis deviation (lef anterior fascicular block) can be seen as early as age four years (Figure 1). With the onset of dilated cardiomyopathy, rhythm disturbances can include polymorphic premature ventricular complexes, bigeminism and trigeminism, couplets, triplets, atrioventricular heart block, atrioventricular nodal reentrant tachycardia, premature atrial complexes, premature ventricular complexes, and ventricular tachycardia.   \n\u2022 Electromyography shows myopathic features (low-amplitude polyphasic potentials of short duration).   \n\u2022 Nerve conduction studies are normal. \n",
+      "token_count": 452,
+      "sentence_count": 21
+    },
+    {
+      "id": "jln_txt_13",
+      "contents": " Cardiac events in JLNS frequently occur despite beta blockade [Schwartz et al 2006]. Goldenberg et al [2006] demonstrated markedly increased mortality in individuals with JLNS treated exclusively with beta-blockers in comparison to individuals with Romano-Ward syndrome. A mortality rate of $35\\%$ over fve years was observed for individuals receiving beta-blockers exclusively; $86\\%$ of individuals treated exclusively with beta-blockers experienced a cardiac event. Te interactions of beta-blockers with other medical conditions (e.g., asthma, diabetes mellitus, depression) should also be considered. Propranolol and nadolol have been shown to be more efective than metoprolol in suppressing cardiac events [Chockalingam et al 2012, Winbo et al 2014]. A recent consensus statement advocates use of nadolol as the preferred beta-blocker for drug therapy of individuals with long QT syndrome [Ackerman et al 2017].   \n\u2022 Implantable cardioverter defbrillators (ICDs) should be considered in individuals with a history of cardiac arrest or failure to respond to other treatments [Goel et al 2004]. More recent recommendations have strongly urged ICD placement for high-risk individuals, defned by the following criteria [Schwartz et al 2006]: \u26ac QTc interval ${>}550$ msec \u26ac Syncope before age fve years \u26ac Male sex, age ${>}20$ years with KCNQ1 pathogenic variant   \n\u2022 Te risk for sudden cardiac death appears to be low in individuals younger than age fve years, but medical therapy should be administered early in these high-risk individuals and ICD placement considered  afer age fve years [Richter & Brugada 2006].   \n\u2022 In certain cases, the availability of automated external defbrillators in the home, workplace, or school may be applicable, as is appropriate CPR training of family members and those who have regular contact with individuals with JLNS.   \n\u2022 Lef cardiac sympathetic denervation has been efective for some individuals. \nnemia. Te treatment of iron defciency anemia should follo \nPrevention of Primary Manifestations \nSee Treatment of Manifestations regarding prevention of syncope, cardiac arrest, and sudden death. \nPrevention of Secondary Complications \n",
+      "token_count": 474,
+      "sentence_count": 16
+    },
+    {
+      "id": "thompson_thompson_genetics_8th_edition_medicoscompanion_com_txt_753",
+      "contents": " The cardiologist explained to the patient the possibility of hypertrophic cardiomyopathy running in his family. Cardiac examination showed double apical impulse and laterally displaced, split second heart sound, fourth heart sound present, jugular venous pulse, and double carotid arterial pulse. Echocardiogram showed asymmetrical septal hypertrophy with no structural anomalies, diagnostic of hypertrophic cardiomyopathy. Consistent with his clinical history, physical features, and family history, DNA testing identified an Arg403Gln mutation in MYH7. \nBACKGROUND \nDisease Etiology and Incidence \nHypertrophic cardiomyopathy (HCM, MIM 192600), the most common monogenic cardiovascular disease, is an autosomal dominant disorder caused by mutations in approximately 20 genes encoding proteins of the cardiac sarcomere. Of those patients with positive genetic tests, approximately $70\\%$ are found to have mutations in the two most common genes, MYH7 and MYBPC3, whereas other genes, including those encoding troponin T, troponin I, Tropomyosin 1, and alpha-actin each account for a small proportion of patients ( $1\\%$ to $5\\,\\%$ ). \nPathogenesis \nOver 1500 mutations have been reported in genes encoding thick and thin myofilament proteins of the sarcomere or contiguous $Z$ disk. Mutations in several additional sarcomere (or calcium-handling) genes have been proposed, but with less evidence supporting pathogenicity. \nApproximately $60\\%$ of adult and pediatric patients with a family history of HCM will have a sarcomere mutation identified. In contrast, only approximately $30\\%$ of patients without a family history will have positive results, often due to sporadic or de novo mutations ( $65\\%$ of the probands) that may, however be passed on to the next generation. Approximately \n$3\\,\\%$ to $4\\%$ of males with HCM will have unrecognized Fabry disease, a lysosomal storage disorder caused by mutations in the $\\upalpha$ galactosidase A gene. \nPhenotype and Natural History \nHCM is characterized by left ventricular hypertrophy (LVH) (Fig.",
+      "token_count": 481,
+      "sentence_count": 16
+    },
+    {
+      "id": "A_Guide_To_Marfan_Syndrome_and_Related_Disorders_txt_10",
+      "contents": " The potential for lung problems should offer a powerful incentive for people with Marfan syndrome to avoid or quit all forms of smoking. \ni. Pectus Deformities \nDepression of the breast bone (pectus excavatum) can reduce the space available for the lungs somewhat. This is usually not a problem unless the person also has severe scoliosis and lordosis of the upper spine. A pectus excavatum also interferes with the mechanics of expanding the lungs. The primary symptom is shortness of breath during exercise. A protrusion of the breast bone (pectus carinatum) has little effect on lung volumes or function. \nii. Pneumothorax \nOne possible effect of a mutation in fibrillin-1 is pneumothorax, in which air escapes the lung into the space between the lung and the inner lining of the chest. The symptoms of this are shortness of breath, a dry cough, and often sudden onset of pleuritic chest pain (pain that gets worse when you take a deep breath). The pain may be confused with an aortic dissection or heart attack, and should always prompt evaluation in an emergency room. A pneumothorax is most common in people who have a \u2018bleb\u2019 or bubble of lung tissue, typically at the top of the lungs. \n\niii. Emphysema \nEmphysema is a condition in which the walls of the tiny air sacs in the lungs are damaged so they cannot push all the used air out of the lungs. Approximately $10{-}15\\%$ of people with Marfan syndrome have emphysema, but it may be underdiagnosed. Symptoms include shortness of breath during activity, frequent bronchitis (often as a result of common colds or viruses settling in the chest) and low blood oxygen. The diagnosis can be confirmed by a chest x-ray, CT scan, pulmonary function test or arterial blood test. \niv. Asthma \nAsthma, which is very common in the general population, is also present in the Marfan community. People with Marfan syndrome who have asthma should see a respiratory specialist who can coordinate care with other specialists because the conventional treatments for asthma\u2014beta-agonists\u2014have the opposite effect of beta-blockers (which are prescribed to many people with Marfan syndrome). \nv. Sleep Apnea \n",
+      "token_count": 492,
+      "sentence_count": 18
+    },
+    {
+      "id": "dcm-lmna_txt_0",
+      "contents": "LMNA-Related Dilated Cardiomyopathy \nRay E Hershberger, ${\\mathsf{M D}}^{1}$ and Elizabeth Jordan, MMSc, CGC2 Created: June 12, 2008; Updated: March 17, 2022. \nSummary \nClinical characteristics \nLMNA-related dilated cardiomyopathy (DCM) is characterized by lef ventricular enlargement and/or reduced systolic function preceded (sometimes by many years) by or accompanied by conduction system disease and/or arrhythmias. LMNA-related DCM usually presents in early to mid-adulthood with symptomatic conduction system disease or arrhythmias, or with symptomatic DCM including heart failure or embolus from a  lef ventricular mural thrombus. Sudden cardiac death can occur, and in some instances is the presenting manifestation; sudden cardiac death may occur with minimal or no systolic dysfunction. \nDiagnosis/testing \nTe diagnosis of LMNA-related DCM is established in a proband with suggestive fndings and a heterozygous pathogenic variant in LMNA identifed by molecular genetic testing. \nManagement \nTreatment of manifestations: Chronic atrial fbrillation is treated initially with attempts to restore normal sinus rhythm, anticoagulation, and rate control. Symptomatic supraventricular arrhythmias are usually treated with pharmacologic therapy or ablation; symptomatic bradyarrhythmias or signifcant heart block is treated with an electronic pacemaker. Symptomatic ventricular arrhythmias, ventricular tachycardia, ventricular fbrillation, and resuscitated sudden cardiac death are treated with an implantable cardioverter defbrillator (ICD) and drug therapy as needed. Because risk for sudden cardiac death in LMNA-related DCM accompanies heart block and bradyarrhythmias, ICD use (rather than just pacemaker use) has been recommended for all indications. Treatment of symptomatic DCM, including heart failure, is pharmacologic with ACE inhibitors, beta blockers, and other conventional approaches. Progressive deterioration in lef ventricular function is treated with an ICD.",
+      "token_count": 491,
+      "sentence_count": 14
+    },
+    {
+      "id": "sickle_txt_32",
+      "contents": "Mental health. Identify and provide assistance in accessing medical and community resources. Tis includes involvement with community groups as well licensed professionals. \nSurveillance \nAfected individuals should be seen routinely for evaluation of SCD-related comorbidities. Surveillance should be tailored to an individual's specifc genotype and clinical history. Routine age-dependent screening allows for early detection and treatment of end-organ damage. While the National Heart, Lung, and Blood Institute in the US released guidelines for surveillance, the recommendations are not complete, and some have been modife d since publication. Te American Society of Hematology has been developing multiple sets of guidelines, but gaps remain, especially for genotypes other than Hb S/S and Hb $\\mathrm{S}/\\upbeta^{0}$ -thalassemia. Te following are general guidelines compiled from several sources (see also Published Guidelines / Consensus Statements). \nTable 5. Recommended Surveillance for Individuals with Sickle Cell Disease \n6MWT $=$ six-minute walk test; $\\mathrm{{ACS}=}$ acute chest syndrome; ALT $=$ alanine aminotransferase; alk phos $=$ alkaline phosphatase; $\\mathrm{{BUN}=}$ blood urea nitrogen; $\\mathrm{CBC=}$ complete blood count; $\\mathrm{LDH=}$ lactate dehydrogenase; NT-proBNP $=\\mathrm{N}$ -terminal pro-brain natriuretic peptide; PFTs $=$ pulmonary function tests; QTc $=$ corrected QT interval; $\\mathrm{RBC=}$ red blood cell; ${\\mathrm{SCD}}=$ sickle cell disease; TIBC $=$ total iron-binding capacity \n1. Lab values should be provided to parents/caregivers and afected adults to allow long-term monitoring and comparison during times of illness. \n2. Vitamin D level is indicated because of the high prevalence of vitamin D defciency in individuals with SCD and the potential role in fetal hemoglobin expression. \n4. See Liem et al [2019] and Published Guidelines / Consensus Statements for additional information.   \n5. See Published Guidelines / Consensus Statements. \nAgents/Circumstances to Avoid \n",
+      "token_count": 489,
+      "sentence_count": 17
+    },
+    {
+      "id": "propionic-a_txt_10",
+      "contents": "Te age of PA diagnosis, frequency of metabolic decompensation, and residual enzymatic activity do not correlate with presence/absence of cardiomyopathy in individuals with PA [Romano et al 2010].   \n\u2022 Rarely, cardiomyopathy can occur as an apparently isolated clinical phenomenon in previously healthy individuals without documented episodes of metabolic decompensation or neurocognitive defcits [Lee et al 2009, Laemmle et al 2014].   \n\u2022 Cardiomyopathy can progress to cardiac failure and may be associated with sudden death [Dionisi-Vici et al 2006]. \nCardiac rhythm abnormalities. A prolonged QT interval is ofen detected in individuals with PA [K\u00f6lker et al 2015b]. Tis can be associated with syncope, arrhythmia, and cardiac arrest [Baumgartner et al 2007, Jameson & Walter 2008, Pena & Burton 2012]. \nGastrointestinal manifestations \n\u2022 Pancreatitis (reported in $3\\%{-}18\\%$ of individuals) may be recurrent and may present with anorexia, recurrent nausea, and abdominal pain [Dionisi-Vici et al 2006, Gr\u00fcnert et al 2012, Pena & Burton 2012]. In some individuals recurrent pancreatitis can lead to insulin-dependent diabetes.   \n\u2022 Poor feeding and lack of appetite are common, afecting up to $76\\%$ of afected individuals [Touati et al 2006].   \n\u2022 Emesis and diarrhea are commonly reported in individuals with PA, becoming a recurrent problem in approximately $6\\%$ [K\u00f6lker et al 2015b].   \n\u2022 Liver issues include hepatomegaly, hypoalbuminemia, and abnormal liver function tests (ALT, AST, GGT, INR, and bilirubin) [Karimzadeh et al 2014, K\u00f6lker et al 2015b]. Te etiology of hepatic dysfunction has not been determined with certainty but may include the inherent metabolic derangement as well as cardiac dysfunction in individuals with cardiomyopathy. \nRenal abnormalities have been infrequently documented and are likely underreported.",
+      "token_count": 459,
+      "sentence_count": 14
+    },
+    {
+      "id": "syngap1-id_txt_12",
+      "contents": "\u2022 21 February 2019 (bp) Review posted live \u2022 23 October 2017 (jm) Original submission \nReferences \nLiterature Cited \n",
+      "token_count": 23,
+      "sentence_count": 2
+    },
+    {
+      "id": "cah_txt_41",
+      "contents": "Brian Betensky, Weill Medical College of Cornell University (2004-2006)   \nPrasanna K Gangishetti, MBBS (2016-present)   \nMaria I New, MD (2001-present)   \nSaroj Nimkarn, MD (2006-present)   \nAndrea Putnam, MS; New York Weill Cornell Center (2001-2004)   \nMabel Yau, MD (2016-present) \nRevision History \n",
+      "token_count": 83,
+      "sentence_count": 7
+    },
+    {
+      "id": "friedreich_txt_9",
+      "contents": " A longitudinal study identifed two groups; a \"low risk\" group (approximately $80\\%$ ) with normal ejection fraction that declined slowly and remained in the normal range and a \"high risk\" group (approximately $20\\%$ ) in whom ejection fraction declined into the abnormal range and was associated with high mortality [Pousset et al 2015]. Tose in the \"high risk\" group had longer GAA expansions on the shorter allele. Te degree of neurologic impairment did not predict whether an afected individual would have stable or rapid progression of cardiomyopathy. \nElectrocardiography (EKG) is abnormal in the vast majority, with T wave inversion, lef axis deviation, and repolarization abnormalities being most commonly seen [Dutka et al 1999]. \nSymptoms related to cardiomyopathy usually occur in the later stages of the disease [Dutka et al 1999] but in rare instances may precede ataxia [Alika\u015fifoglu et al 1999, Leonard & Forsyth 2001]. Quercia et al [2010] established the diagnosis of FRDA in a young child evaluated for sudden death. Subjective symptoms of exertional dyspnea $(40\\%)$ , palpitations $(11\\%)$ , and anginal pain may be present in moderately advanced disease. Arrhythmias (especially atrial fbrillation) and congestive heart failure frequently occur in the later stages of the disease and are the most common cause of mortality [Tsou et al 2011]. Coronary artery disease may occur and should be considered if there is angina and/or sudden deterioration in cardiac function [Giugliano & Sethi 2007]. \nUrinary issues. Bladder symptoms including urinary frequency and urgency were reported by $41\\%$ of individuals in one study [Delatycki et al 1999a]. A study of 158 individuals with FRDA revealed lower urinary tract symptoms in $82\\%$ with impact on quality of life in $22\\%$ of those [Musegante et al 2013]. Of 28 who underwent urodynamic studies, all had normal serum creatinine and four had upper urinary tract dilatation. \nSleep-disordered breathing.",
+      "token_count": 479,
+      "sentence_count": 14
+    },
+    {
+      "id": "myotonia-c_txt_19",
+      "contents": "Author History \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "thompson_thompson_genetics_8th_edition_medicoscompanion_com_txt_754",
+      "contents": " C-25) in the absence of predisposing cardiac conditions (e.g., aortic stenosis) or cardiovascular conditions (e.g., longstanding hypertension). The clinical manifestations of HCM range from asymptomatic to progressive heart failure to sudden cardiac death and vary from individual to individual even within the same family. Common symptoms include shortness of breath (particularly with exertion), chest pain, palpitations, orthostasis, presyncope, and syncope. Most often the LVH of HCM becomes apparent during adolescence or young adulthood, although it may also develop late in life, in infancy, or in childhood. \n\nManagement \nBefore identification of the genes responsible for HCM, diagnosis of HCM could only be made through integration of examination, electrocardiogram, echocardiogram, and invasive angiographic/hemodynamic studies, disproportionately identifying patients with left ventricular outflow obstruction. Genetic testing for HCM is now available and can provide important insights into family management by definitively identifying at-risk relatives (i.e., those who have inherited the family\u2019s pathogenic mutation). Mutations found are considered pathogenic based on the following criteria: (1) cosegregation with the HCM phenotype in family members; (2) previously reported or identified as a cause of HCM; (3) absent from unrelated and ethnic-matched normal controls; (4) important alteration in protein structure and function; and (5) amino acid sequence change in a region of the protein otherwise highly conserved through evolution. However, even with the use of these criteria, a considerable number of variants are classified as VUSs (see Chapter 16), making the test results ambiguous. \nBecause diagnosis and sudden cardiac death risk are both linked to the presence of LVH and because the penetrance of LVH is age-dependent, clinical evaluation must continue longitudinally. Screening is annual during adolescence and early adulthood when LVH most commonly emerges. Early childhood screening is appropriate if there is a family history of early-onset disease or other concerns. During adulthood, screening is recommended approximately every $5$ years or in response to clinical changes because LVH can develop late in life.",
+      "token_count": 473,
+      "sentence_count": 15
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_124",
+      "contents": " Studies have shown that, beyond surgical and endovascular treatment, medical therapy has an important role in decreasing long-term aorta-related adverse events.1,4,9-11 Beta blockers and intravenous vasodilators are the medications most commonly studied for the initial treatment of patients with AAS, with the goal of decreasing aortic wall stress.2,8 A recent large study showed that angiotensin-converting enzyme inhibitors (ACEIs) and ARBs are beneficial in the long-term management of hypertension in patients with aortic dissection.5 Statins are used routinely in patients after aortic dissection, although the evidence is not very robust.12 \nRecommendation-Specific Supportive Text \n1. There are no randomized studies that have evaluated different medical treatments in the treatment of AAS, although extensive clinical experience has established the current standard of anti-impulse therapy. This is usually accomplished with a combination of intravenous beta blockers (eg, esmolol, metoprolol, and labetalol) and vasodilators (eg, nicardipine, clevidipine, and sodium nitroprusside) with the goal of reducing both heart rate and BP to decrease aortic wall stress.2-5,7,8,11   \n2. Small, single-center studies have highlighted the importance of reducing heart rate to 60 to 80 bpm and SBP to <120 mm Hg. Experts believe that the lowest BP that does not compromise end-organ function should be targeted.3,11   \n3. Intravenous beta blockers have been the mainstay of acute medical treatment, and studies reporting benefits over the long term and emphasizing the importance of continuing this therapy at the time of hospital discharge to improve clinical outcomes.1-3,5,7,9 Caution should be used in patients with contraindications to beta blockers (eg, acute AR, heart block, or bradycardia). In patients who are intolerant to beta blockers, intravenous non-dihydropyridine calcium channel blockers (ie, verapamil or diltiazem) are typically used for initial treatment.2   \n4.",
+      "token_count": 467,
+      "sentence_count": 12
+    },
+    {
+      "id": "diagnostics-14-00112_txt_12",
+      "contents": " Current guidelines recommend a lifestyle modification, regular multidisciplinary follow-ups with multi-imaging surveillance, and surgical intervention only when indicated. It seems reasonable to adopt a similar approach used for Marfan patients, with the use of ARBs, ACEi and BBs in adult and young patients, to lessen hemodynamic stress on the aorta [38,41]. \nIf surgical treatment is indicated, the pre-operative medical management of patients with HTAD should be evaluated case by case. Although cases of deep hypotension during general anesthesia are described when ARBs or BBs are administered before surgery, medical therapy should be continued, and especially BBs should not be discontinued before surgery. \n5.1. $\\beta\\mathrm{.}$ -Blockers \nBBs represent the first category of drugs adopted by adult patients with an MS diagnosis and is a medical standard of care for MS. Clinicians often prescribe BBs as the first-line treatment to slow the rate of aortic dilatation, which is usually observed in patients with MS [42,43]. \nClinical data regarding the use of BBs in pediatric patients with syndromic or nonsyndromic aortopathy are more limited regarding the use of BBs in adults. Some authors suggest a target heart rate of 60\u201370 bpm in adults and young patients, with a reduction of $20\u201330\\%$ of the maximum frequency during exercise and maximum heart rate values of \n100 bpm during submaximal exercise in adults/young adults and $110\\,\\mathrm{bpm}$ in children [44]. The most widely used BBs in children are atenolol and propranolol. For individuals with MS, the early use of medical therapy independently according to the aortic diameter is reasonable, and it should be initiated early, before puberty. In fact, aortic root dilatation in patients with MS reaches its peak between 6 and 14 years of age. \nIn vEDS, BBs are often prescribed, with some physicians choosing alternative BBs with vasodilatory properties. In vEDS, treatment with a selective B1 blocker, celiprolol, was associated, in a study, with a reduced event rate.",
+      "token_count": 472,
+      "sentence_count": 16
+    },
+    {
+      "id": "thompson_thompson_genetics_8th_edition_medicoscompanion_com_txt_769",
+      "contents": " Medications such as the antidepressant amitriptyline, over-the-counter cold medications such as phenylephrine and diphenhydramine, or antifungal drugs, including fluconazole and ketoconazole, should be avoided because of their effect on prolonging the QT interval or causing increased sympathetic tone. Activities and sports likely to be associated with intense physical activity, emotion, or stress should also be avoided. \nINHERITANCE RISK \nIndividuals with the Romano-Ward syndrome have a $50\\%$ chance of having a child with the inherited gene mutations. Most individuals have an affected (although perhaps asymptomatic) parent, because the rate of de novo mutations is low. A detailed family history and careful cardiac evaluation of family members are extremely important and could be lifesaving. The recurrence risk in siblings of patients with Jervell and Lange-Nielsen syndrome is $25\\%$ , as expected with an autosomal recessive condition. The penetrance of LQT alone, without deafness, is $2.5\\%$ in heterozygous carriers in Jervell and LangeNielsen syndrome families. \nQUESTIONS FOR SMALL GROUP DISCUSSION \n1. Some genetic syndromes rely on clinical evaluation, even with the availability of molecular testing, for diagnosis. In the case of LQT, how would you proceed with a patient thought to have LQT on family history? Why?   \n2. Discuss the ethics of testing minors in this condition.   \n3. You have just diagnosed a child with Jervell and LangeNielsen syndrome. What do you counsel the family in regard to recurrence risk and management for other family members? \nManagement \nTreatment of the LQT syndrome is aimed at prevention of syncopal episodes and cardiac arrest. Optimal treatment is influenced by identification of the gene responsible in a given case. For instance, $\\upbeta$ -blocker therapy before the onset of symptoms is most effective in LQT1 and, to a somewhat lesser extent, in LQT2, but its efficacy in LQT3 is reduced. $\\upbeta$ -Blockade therapy must be monitored closely for age-related \nREFERENCES \nAlders M, Mannens MMAM: Romano-Ward syndrome. Available from: http:// www.ncbi.nlm.nih.",
+      "token_count": 491,
+      "sentence_count": 21
+    },
+    {
+      "id": "marfan_txt_15",
+      "contents": " Medical geneticist, certifed genetic counselor, certifed advanced genetic nurse \nTreatment of Manifestations \nManagement is most efectively accomplished through the coordinated input of a multidisciplinary team of specialists including a clinical geneticist, cardiologist, ophthalmologist, orthopedist, and cardiothoracic surgeon. \nTreatment of Manifestations in Individuals with FBN1-Related Marfan S \n$\\mathrm{MFS}=F B N I$ -related Marfan syndrome; $\\mathrm{PT}=$ physical therapy \n1. Complications can include the psychosocial burden of accelerated puberty, an accelerated rate of growth prior to fnal closure of the growth plate, and perhaps the undesirable consequences of the increased blood pressure associated with puberty on progression of aortic dilatation. \n2. Cardiovascular manifestations should be managed by a cardiologist familiar with FBN1-related Marfan syndrome. 3. Guidelines are based on far less clinical experience than for adults and older children, and need to be tailored to the clinical situation at hand. \n4. When congestive heart failure is present, aferload-reducing agents (in combination with a beta-blocker) can improve cardiovascular function, but surgical intervention may be indicated in refractory cases. Most ofen the mitral valve can be repaired rather than replaced. \n5. In this circumstance, caution is warranted when considering concomitant aortic root surgery, as the increased length and complexity of the procedure can put extra strain on the myocardium and delay or compromise postoperative recovery. \nPrevention of Primary Manifestations \nMedications that reduce hemodynamic stress on the aortic wall, such as beta-blockers or angiotensin receptor blockers (ARBs), are routinely prescribed. Tis therapy should be managed by a cardiologist or clinical geneticist familiar with its use. Terapy is generally initiated at the time of diagnosis of Marfan syndrome at any age or upon appreciation of progressive aortic root dilatation even in the absence of a defnitive diagnosis. \nTe confuence of data from clinical trials of beta-blockers or ARBs suggests that both classes of medication can be efective at reducing aortic root growth rate and are safe and well tolerated.",
+      "token_count": 479,
+      "sentence_count": 16
+    },
+    {
+      "id": "rws_txt_11",
+      "contents": " In these individuals the necessity of beta-blockers can be discussed [Locati et al 1998]. \nImplantable cardioverter-defbrillator (ICD). In general, an ICD is not indicated for asymptomatic individuals with LQTS who have not tried beta-blocker therapy. Prophylactic placement of an ICD can be considered for asymptomatic individuals suspected to be at very high risk, such as asymptomatic individuals with two or more pathogenic variants (in genes associated with autosomal dominant LQTS) on molecular genetic testing [Priori et al 2013]. LQTS-related sudden death in a close relative is not an indication for an ICD in an asymptomatic individual [Kaufman et al 2008]. \nSymptomatic Individuals \nAll symptomatic persons should be treated [Priori et al 2013]. Complete cessation of symptoms is the goal.   \nManagement is focused on the prevention of syncope, cardiac arrest, and sudden death. \nBeta-blockers are the mainstay of therapy for LQTS, including asymptomatic individuals with prolonged QT intervals and individuals who have a pathogenic variant on molecular genetic testing with a normal QTc interval [Priori et al 2004, Schwartz et al 2009]. Some individuals have symptoms despite the use of beta-blockers [Moss et al 2000]. However, a majority of cardiac events that occur in individuals with KCNQ1-related LQTS reported to be treated with beta-blockers are not caused by failure of the medication but failure to take the medication (non-compliance) and/or the administration of QT-prolonging drugs [Vincent et al 2009]. It is therefore important to: \n\u2022 Avoid inadequate beta-blocker dosing by regular adjustments in growing children, with evaluation of the efcacy of dose by assessment of the exercise EKG or ambulatory EKG;   \n\u2022 Administer beta-blockers daily, and have strategies in place in case of missed doses;   \n\u2022 Use long-acting agents (e.g., nadolol) to increase compliance and avoid use of short-acting metoprolol [Chockalingam et al 2012];   \n",
+      "token_count": 468,
+      "sentence_count": 17
+    },
+    {
+      "id": "myotonic-d_txt_15",
+      "contents": "Te following are appropriate: \n\u2022 Annual EKG to detect asymptomatic cardiac conduction defects. Some centers perform annual 24-hour Holter monitoring of individuals with DM1 who do not have cardiac symptoms [S\u00e1 et al 2007, Sovari et al 2007, Cudia et al 2009]. Tissue Doppler monitoring has also been proposed [Parisi et al 2007, Wahbi et al 2012].   \n\u2022 Annual measurement of fasting serum glucose concentration and glycosylated hemoglobin concentration, with treatment for diabetes mellitus if indicated [Matsumura et al 2009]   \n\u2022 Ophthalmologic examination every two years to evaluate for cataract formation   \n\u2022 Attention to nutritional status including mastication and trouble eating [Motlagh et al 2005, Engvall et al 2009, Umemoto et al 2009]   \n\u2022 Polysomnographic follow up of sleep complaints [Kumar et al 2007] \nAgents/Circumstances to Avoid \nStatins used to lower cholesterol may sometimes cause muscle pain and weakness. \nMathieu et al [1997] noted that \"[n]umerous cases of perioperative complications in patients with DM have been reported. Hazards have been associated with the use of thiopentone, suxamethonium, neostigmine, and halothane. Most complications were pulmonary. Te likelihood of perioperative pulmonary complications (PPC) was not related to any specifc anesthetic drug. Because of the increased risk of PPC, careful monitoring during the early postoperative period, protection of the upper airways, chest physiotherapy, and incentive spirometry are mandatory in all symptomatic patients with DM, particularly those with a severe muscular disability or those who have undergone an upper abdominal surgery.\" \nVeyckemans & Scholtes [2013] and Gorelik & Flores [2018] have reviewed appropriate anesthetic care for individuals with DM1 and DM2. \nMalignant hyperthermia during anesthesia including the use of vecuronium [Nishi et al 2004] has been reported in DM1 but is very uncommon [Kirzinger et al 2010]. (See Malignant Hyperthermia Susceptibility.) \n",
+      "token_count": 465,
+      "sentence_count": 18
+    },
+    {
+      "id": "acpp_txt_12",
+      "contents": " Inheritance is autosomal dominant [Tristani-Firouzi & Etheridge 2010]. \nManagement \nEvaluations Following Initial Diagnosis \nTo establish the extent of disease and needs in an individual diagnosed with Andersen-Tawil syndrome (ATS), the evaluations summarized in Table 2 (if not performed as part of the evaluation that led to the diagnosis) are recommended. \nTreatment of Manifestations \nManagement of individuals with ATS requires the coordinated input of a neurologist familiar with the treatment of periodic paralysis and a cardiologist familiar with the treatment of cardiac arrhythmias. To date, no randomized clinical therapeutic trials have been conducted on ATS. \nManagement of attacks of episodic weakness depends on the associated serum potassium concentration: \n\u2022 If the serum potassium concentration is low $(<3.0\\;\\mathrm{mmol/L})$ , administer oral potassium $(20{-}30\\;\\mathrm{mEq}/\\mathrm{L})$ every 15-30 minutes (not to exceed $200\\;\\mathrm{mEq}$ in a 12-hour period) until the serum concentration normalizes ofen shortens the attack. As dysphagia is almost never a problem during attacks of paralysis, oral potassium replacement is the safest route. If intravenous potassium replacement is needed, a $5\\%$ mannitol solution instead of a saline or glucose solution (both of which may exacerbate weakness) is recommended. Close monitoring of serum potassium concentrations and EKG is necessary during potassium replacement therapy in an emergency setting to avoid secondary hyperkalemia. Whether a relative drop in serum potassium within the normal range causes episodic paralysis is not clear. If such cases are suspected, afected individuals can work with their physician to devise an individual potassium replacement regimen, with a goal of maintaining serum potassium levels in the high range of normal. \n\u2022 Attacks of weakness when serum potassium concentration is high usually resolve within 60 minutes. Episodes may be shortened by ingesting carbohydrates or continuing mild exercise. Intravenous calcium gluconate is rarely necessary for management in an individual seen in an emergency setting. \nVasovagal syncope in individuals with ATS mandates a careful cardiology assessment [Airey et al 2009]. \nPrevention of Primary Manifestations \n",
+      "token_count": 481,
+      "sentence_count": 19
+    },
+    {
+      "id": "acpp_txt_15",
+      "contents": " \u2022 If the pathogenic variant in the family is not known, detailed neurologic and cardiologic evaluation, 12- lead EKG, and 24-hour Holter monitoring can be used to clarify the disease status of at-risk relatives. \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nPregnancy Management \nTe rarity of ATS and the paucity of reports pertaining to pregnancy in women with ATS make an evidencebased approach to pregnancy management difcult to formulate. One case study reported an uneventful pregnancy, with increased episodes of weakness but reduced ventricular ectopy compared to the pre-pregnancy period [Subbiah et al 2008]. However, as data are limited, a multidisciplinary approach to individual care and anticipation of increased risk (as can be seen in those with long QT syndrome) seems reasonable. \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for information on clinical studies for a wide range of diseases and conditions. Note: Tere may not be clinical trials for this disorder. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.  Te following section deals with genetic risk assessment and the use of family history and genetic testing to clarify genetic status for family members; it is not meant to address all personal, cultural, or ethical issues that may arise or to substitute for consultation with a genetics professional. \u2014ED. \nMode of Inheritance \nAndersen-Tawil syndrome (ATS) is inherited in an autosomal dominant manner. \nRisk to Family Members \nParents of a proband \n\u2022 At least $50\\%$ of individuals diagnosed with ATS have an afected parent. \u2022 A proband with ATS may have the disorder as the result of a de novo KCNJ2 pathogenic variant.  Te proportion of cases caused by a de novo pathogenic variant in KCNJ2 may be as high as $50\\%$ .",
+      "token_count": 433,
+      "sentence_count": 20
+    },
+    {
+      "id": "A_Guide_To_Marfan_Syndrome_and_Related_Disorders_txt_33",
+      "contents": " Either method takes time to obtain the test results. Therefore it is important to undergo the testing prior to becoming pregnant. Since this is a complex and rapidly changing area of medicine, prospective parents should discuss the latest status of available options with their doctors and genetic counselors. Often this type of analysis is covered by health insurance. \nPregnancy poses additional risks to women with Marfan syndrome because of the increased stress on the cardiovascular system. While there is no clear distinction between women who can and cannot tolerate pregnancy, several points seem established. Women who have significant heart valve problems should not attempt pregnancy. As the aortic diameter exceeds the normal by more than about $10\\%$ (40 millimeters), the risk of tearing the wall of the aorta increases. Women are well advised to complete childbearing early in life. All women should have a cardiac evaluation before becoming pregnant. Women who have had composite graft surgery of the aorta need special guidance because of the potential for harmful effects of Coumadin $\\textsuperscript{\\textregistered}$ on the developing fetus. Any pregnancy in a woman affected by Marfan syndrome should be considered \u201chigh-risk\u201d (a term obstetricians use) and her aorta should be evaluated by echocardiography every six weeks or so. Delivery should be by the least stressful method possible; usually this means a normal vaginal delivery. Cesarean section is not necessary solely because of Marfan syndrome, but may be chosen for any of the reasons usually applied in labor. \n\nOur resource Pregnancy & Family Planning offers more detailed information on pregnancy and having children. \n2. PSYCHOLOGICAL AND SOCIAL ASPECTS \nA. Common Reactions of Affected Adults \nAn adult who learns that he or she has Marfan syndrome is usually aware of some sort of health problems already, but no label had ever been placed on those assorted problems. Other aspects of the syndrome, such as aortic enlargement, might not be discovered until the label \u201cMarfan\u201d is attached and specific tests, such as an echocardiogram, performed. The individual and family may feel frustrated and frightened by the situation and the sudden \u201closs of health.\u201d Adjusting to the diagnosis is usually associated with difficulties\u2014social, emotional, economic and psychological. These adjustments may, and often should, take place over a period of time. \n",
+      "token_count": 475,
+      "sentence_count": 22
+    },
+    {
+      "id": "ibm_txt_8",
+      "contents": "Congenital thrombocytopenia has been described in individuals with biallelic GNE variants [Futterer et al 2018]. \nDifferential Diagnosis \nTe diferential diagnosis includes adult-onset distal myopathies and myopathies with rimmed vacuoles (see Table 2). \nManagement \nIndividuals with GNE myopathy are ofen evaluated and managed by a multidisciplinary team that includes clinical geneticists, neuromuscular specialists, physiatrists, physical and occupational therapists, and if needed, pulmonologists. \nEvaluations Following Initial Diagnosis \nTo establish the extent of disease and needs in an individual diagnosed with GNE myopathy, the evaluations summarized in Table 3 (if not performed as part of the evaluation that led to the diagnosis) are recommended. \nTreatment of Manifestations \nTere is no approved therapy for GNE myopathy. Treatment is symptomatic only (see Table 4). \nTable 4. Treatment of Manifestations in Individuals with GNE Myopath \nSurveillance \nRoutine follow up with the multidisciplinary team is recommended annually, or more frequently as determined by managing physician (see Table 5). \nTable 5. Recommended Multidisciplinary Team Surveillance for Individuals with GNE Myopathy \n$\\mathrm{{AFOs=}}$ ankle-foot orthoses; AMAT $=$ Adult Myopathy Assessment Tool; $\\mathrm{MEP=}$ maximal expiratory pressure; $M\\!\\!\\!\\prod\\!\\!\\!{\\bf P}=$ maximal   \ninspiratory pressure; MMT $\\\"=$ manual muscle testing; PFTs $=$ pulmonary function tests; $\\mathrm{QMA=}$ Quantitative Muscle Assessment   \n1. Visser et al [2003]   \n2. Harris-Love et al [2015]   \n3. Jebsen et al [1969] \nAgents/Circumstances to Avoid \nIt may be prudent to use medications/drugs with potential myotoxicity (e.g., colchicine, statins) with caution. \nIt is strongly recommended that afected individuals have a healthy diet and exercise to avoid developing hypercholesterolemia, in an efort to reduce the risk associated with taking statins. \n",
+      "token_count": 477,
+      "sentence_count": 23
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_177",
+      "contents": " The size and location of aortic plaques have been associated with embolic complications.4,7,8,12-16 The presence of aortic atheromas has been significantly associated with all-cause death.9 The management of aortic atherosclerosis includes, in general, control of risk factors, lifestyle modification, and appropriate pharmacological therapies. Although lifestyle changes may be the most important treatment strategy, compliance may be challenging.17,18 \nRecommendation-Specific Supporting Text \n1. Patients with aortic atherosclerosis often have concomitant cardiovascular diseases such as coronary artery disease, atrial fibrillation, and PAD. These concomitant conditions frequently determine the selection of guideline-based antiplatelet agents, anticoagulant agents, or both.1-3   \n2. The indications for statin therapy in patients with a history of coronary artery disease, myocardial infarction, and stroke are well established.5,6 The data for statin therapy specific to aortic atherosclerosis alone are very limited. Therefore, this recommendation has been made for those patients at risk for or with confirmed coronary artery disease because the available data best support statin therapy in this cohort.   \n3. Atherosclerotic disease of the aortic arch is a potential source of emboli to the brain.1,2,9 A prospective study $(\\mathsf{N}{=}500)$ ) showed that the OR for stroke among patients with aortic atheromatous \nplaques (atheromas) of ${\\ge}4$ mm versus controls was 9.1 $95\\%$ CI, 3.3\u201325.2; $\\mathsf{P{<}0.001}$ ).7 Moreover, in a clinical trial of 519 patients with severe thoracic aortic plaques, multivariate analysis showed that statin therapy was protective against strokes $^{'}P{=}0.0001$ ).",
+      "token_count": 434,
+      "sentence_count": 16
+    },
+    {
+      "id": "weill-ms_txt_8",
+      "contents": " Te clinical overlap between the four disorders is striking. Overlapping and distinguishing clinical features are summarized in Table 5. \nManagement \nEvaluations Following Initial Diagnosis \nTo establish the extent of disease in an individual diagnosed with Weill-Marchesani syndrome (WMS), the evaluations summarized in Table 6 (if not performed as part of the evaluation that led to the diagnosis) are recommended. \nTreatment of Manifestations \nOcular complications. It is not possible to generalize the management of the ocular complications of WMS. \n\u2022 Te medical treatment of glaucoma is difcult because of paradoxic response to miotics and mydriatics.   \n\u2022 A peripheral iridectomy should be performed to prevent or relieve pupillary block [Chang et al 2002, Ritch et al 2003].   \n\u2022 Lens extraction and/or trabeculectomy may be necessary in some persons with advanced chronic angle closure glaucoma [Harasymowycz & Wilson 2004].   \n\u2022 Individuals with WMS were recently reported to have increased central corneal thickness, which needs to be considered in the diagnosis and follow up of glaucoma because increased central corneal thickness may lead to overestimation of intraocular pressure by applanation tonometers [Razeghinejad & Safavian 2006]. \nSurveillance \nTable 8. Recommended Surveillance for Individuals with Weill-Marchesani Syndrome \nAgents/Circumstances to Avoid \nUse of ophthalmic miotics and mydriatics should be avoided as they can induce pupillary block. \nPotential increased risk of WMS-related ocular complications associated with contact sports should be discussed with the ophthalmologist. \nEvaluation of Relatives at Risk \nIt is appropriate to clarify the genetic status of apparently asymptomatic older and younger at-risk relatives of an afected individual by molecular genetic testing for the pathogenic variant(s) in the family in order to identify as early as possible those who would beneft from ophthalmology and cardiology evaluations. Evaluations can include: \n\u2022 Molecular genetic testing if the pathogenic variant(s) in the family are known; Ophthalmologic examination for detection of possible microspherophakia and detailed examination by a clinical geneticist if the pathogenic variant in the family is not known. \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nTherapies Under Investigation \n",
+      "token_count": 490,
+      "sentence_count": 22
+    },
+    {
+      "id": "PIIS1443950616317371_txt_7",
+      "contents": " There is data regarding medical prophylaxis of aortic dilatation, largely limited to individuals with MFS. b. A number of trials have shown a positive effect on reducing aortic growth with the use of beta blockers, angiotensin receptor blockers (ARB) or angiotensin converting enzyme inhibitors (ACEI) [31,32]. We are not aware of currently available data regarding the effect of medical therapy on mortality. c. Superiority of a medication class has not been established, and treatment should be individualised as tolerated. Future recommendations may suggest concomitant use of more than one class of medication. d. It is unknown whether clinicians should aim for the dose used in trials or measure effect on a physiological variable (e.g. heart rate at submaximal exercise) or both.   \n2. Surveillance for aortic dilatation a. Usual practice is clinical review with yearly echocardiogram in MFS. b. Six-monthly echocardiogram if the aortic root is either close to surgical threshold or has increased significantly in size between prior imaging interval $(\\geq0.3\\;\\mathrm{cm/year})$ . c. If there is significant valvular disease (eg aortic or mitral regurgitation), then imaging frequency may be further individualised. d. Computed tomography angiography or MRI of the entire aorta should be undertaken in MFS. The interval for repeat screening of a normally sized aorta is not stipulated in most publications [4,5,23]. The ESC Grown Up Congenital Heart Disease Guidelines suggest this be done on a five-yearly basis [33]. More recent ESC and AHA multimodality imaging guidelines suggest a three-yearly interval, but this statement is unreferenced in the document [34]. If relatively frequent serial imaging is to be undertaken, MRA may be preferable to CTA in order to minimise the risks associated with recurrent radiation exposure. e. Computed tomography angiography or MRA of the entire vasculature (cerebral to pelvic) should be undertaken in the syndromic aortopathies where more widespread vascular involvement has been documented e.g. LDS, ATS.",
+      "token_count": 477,
+      "sentence_count": 18
+    },
+    {
+      "id": "eds3_txt_22",
+      "contents": " Standard treatments for neurally mediated hypotension and postural orthostatic tachycardia are advised, including avoidance of sudden postural change, consideration of lower extremity and/or abdominal compression garments, exercise to increase muscle strength and improve tone, supplementation of sodium and water to expand the blood volume, and sometimes pharmacologic treatment with beta-blockers, midodrine, fudrocortisone, ivabradine, and/or other medications initiated by a clinician experienced in autonomic medicine. Commercially available electrolyte tablets can facilitate oral expansion of blood volume. \nOther vascular concerns, including signifcant aortic root dilatation and abdominal and pelvic vascular compression syndromes, require referral to a cardiovascular specialist. Rapid aortic root growth, an indication for intervention, is defned as ${\\ge}0.5\\;\\mathrm{cm}$ in one year. \nOral/dental/ENT. Standard treatment of periodontal disease is advised, noting that many individuals may have more fragile periodontal tissues and ofen have a poor response to local anesthetic that requires additional doses throughout dental procedures or other analgesia. Treatment may also be hampered in those with temporomandibular joint (TMJ) laxity and dysfunction, craniocervical instability, and intolerance of specifc or prolonged head and neck positions. \nFor TMJ dysfunction, intraoral devices/retainers may be helpful. Oral rest, local myofascial release, and muscle relaxant medications may be benefcial for acute fares. Surgical intervention may be required. \nIssues with swallow and phonation should be assessed by an otolaryngologist. \nA pulmonology, otolaryngology, or sleep specialist assessment is recommended for apnea. \nOcular. Standard treatment of ocular concerns is advised. \nNeurologic/neuromuscular. No specifc pharmacologic treatments have been reported for neurologic and neuromuscular diseases in those with hEDS. Standard pharmacologic treatment for neuropathies is advised. Physical therapies are adjusted to account for joint instability, low muscle tone, and fatigue.",
+      "token_count": 468,
+      "sentence_count": 18
+    },
+    {
+      "id": "rws_txt_24",
+      "contents": "Chockalingam P, Crotti L, Girardengo G, Johnson JN, Harris KM, van der Heijden JF, Hauer RN, Beckmann BM, Spazzolini C, Rordorf R, Rydberg A, Clur SA, Fischer M, van den Heuvel F, K\u00e4\u00e4b S, Blom NA, Ackerman MJ, Schwartz PJ, Wilde AA. Not all beta-blockers are equal in the management of long QT syndrome types 1 and 2: higher recurrence of events under metoprolol. J Am Coll Cardiol. 2012;60:2092\u20139. PubMed PMID: 23083782.   \nChuret M, Luttoo K, Hocini M, Haissaguerre M, Sacher F, Duchateau J. Diagnostic reproducibility of epinephrine drug challenge interpretation in suspected long QT syndrome. J Cardiovasc Electrophysiol. 2019;30:896-901. PubMed PMID: 30907461.   \nGiudicessi JR, Ackerman MJ. Genotype- and phenotype-guided management of congenital long QT syndrome. Curr Probl Cardiol. 2013;38:417-55. PubMed PMID: 24093767.   \nGiudicessi JR, Roden DM, Wilde AAM, Ackerman MJ. Classifcation and reporting of potentially proarrhythmic common genetic variation in long QT syndrome genetic testing. Circulation. 2018;137:619-30. PubMed PMID: 29431662.   \nGoldenberg I, Horr S, Moss AJ, Lopes CM, Barsheshet A, McNitt S, Zareba W, Andrews ML, Robinson JL, Locati EH, Ackerman MJ, Benhorin J, Kaufman ES, Napolitano C, Platonov PG, Priori SG, Qi M, Schwartz PJ, Shimizu W, Towbin JA, Vincent GM, Wilde AA, Zhang L. Risk for life-threatening cardiac events in patients with genotype-confrmed long-QT syndrome and normal-range corrected QT intervals. J Am Coll Cardiol. 2011;57:51\u20139.",
+      "token_count": 484,
+      "sentence_count": 24
+    },
+    {
+      "id": "gsd2_txt_14",
+      "contents": " Echocardiographic assessment for dilatation of the ascending thoracic aorta has been recommended [El-Gharbawy et al 2011]. \nPulmonary \n\u2022 IOPD. Most infants have varying degrees of respiratory insufciency. Respiratory status should be established with regard to cough, presence of wheezing or labored breathing, and/or feeding difcult ies. Diaphragmatic weakness caused by excessive glycogen deposits results in mild to moderate reduction of vital capacity; however, objective assessment of pulmonary functions in infants is difcult at best. Most infants display respiratory difculty with feeds or sleep disturbance [Kravitz et al 2005]. \u2022 LOPD. Afected individuals should be evaluated for cough, wheezing, dyspnea, energy level, exercise tolerance, and fatigability. Formal pulmonary function tests show pulmonary insufciency. An attempt to assess ventilatory capacity in the supine position can detect early ventilatory insufciency. Pulse oximetry, respiratory rate, and venous bicarbonate and/or $\\mathrm{PCO}_{2}$ should be obtained to assess for alveolar hypoventilation [van der Beek et al 2011, Cupler et al 2012]. \nNutrition/feeding \n\u2022 IOPD. Afected individuals should be evaluated for possible feeding difculties (e.g., facial hypotonia, macroglossia, tongue weakness, and/or poor oromotor skills) [Jones et al 2010, van Gelder et al 2012]. Assessment of growth (i.e., height, weight, head circumference), energy intake, and feeding (including video swallow study) is appropriate. All infants should be evaluated for gastroesophageal refux disease.   \n\u2022 LOPD. Assessment of nutritional status as baseline is recommended. Assessment of swallowing difcult y by video swallow study may identify barriers to adequate nutrition and risk for aspiration. Gastrointestinal symptoms similar to those reported in individuals with irritable bowel syndrome may be underreported in this population and may undermine quality of life. \nAudiologic \u2013 IOPD \n\u2022 Baseline hearing evaluation including tympanometry is appropriate. See Genetic Hearing Loss Overview for a discussion of age-related methods of hearing evaluation.   \n",
+      "token_count": 486,
+      "sentence_count": 21
+    },
+    {
+      "id": "thompson_thompson_genetics_8th_edition_medicoscompanion_com_txt_755",
+      "contents": " The first-line screening consists of clinical testing with cardiac imaging and electrocardiography to identify phenotypepositive relatives. Genetic testing can also be used to identify family members at risk for developing disease who do not have LVH. \nNo treatments to prevent disease development or to reverse established manifestations currently exist. The treatment of manifestations includes medical management of diastolic dysfunction, medical or surgical management of ventricular outflow obstruction, restoration and maintenance of sinus rhythm in those with atrial fibrillation, implantable cardioverter-defibrillator in survivors of cardiac arrest and those at high risk for cardiac arrest, medical treatment for heart failure, and consideration for cardiac transplantation when necessary. The prevention of secondary complications includes consideration of anticoagulation in those with persistent or paroxysmal atrial fibrillation to reduce the risk for thromboembolism; consideration of antibiotic prophylaxis when necessary; and during the pregnancy of a woman with HCM, care by an experienced cardiologist and obstetrician trained in high-risk obstetrics. Patients should avoid competitive endurance training, burst activities (e.g., sprinting), intense isometric exercise (e.g., heavy weight lifting), dehydration, hypovolemia (i.e., use diuretics with caution), and medications that decrease afterload (e.g., angiotensin-converting enzyme [ACE] inhibitors, angiotensin receptor blockers, and other direct vasodilators). But the consensus recommendations from the 36th Bethesda Conference do not exclude individuals carrying pathogenic mutations but without manifestations of the disease from sports. \n\nINHERITANCE RISK \nHCM follows autosomal dominant inheritance with variable expressivity and incomplete, age-related penetrance; each first-degree relative of an affected patient has a $50\\%$ chance of carrying the mutation and potentially developing HCM. Alternatively, sporadic cases may be due to de novo mutations in the proband but absent from the parents. \nDisease prevention based on genetic testing is currently available in the form of assisted reproduction using preimplantation genetic diagnosis (PGD) or prenatal diagnosis with pregnancy termination in the event of an affected fetus (see Chapter 17). \nQUESTIONS FOR SMALL GROUP DISCUSSION \n1. Name other disorders that show age-related penetrance.",
+      "token_count": 496,
+      "sentence_count": 17
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_72",
+      "contents": "16\\ m m/y,$ , on multivariate analysis.4 In the \u201c2017 Hypertension Clinical Practice Guideline,\u201d beta-blocker therapy is the recommended first-line antihypertensive drug therapy for patients with hypertension and TAD.1 \n3. A meta-analysis of 1 510 randomized patients evaluating the effect of ARBs on TAA associated with Marfan syndrome showed slower growth of the aortic root with the use of ARBs compared with placebo; in a direct comparison with beta-blocker therapy, there was no difference in aortic growth; and the combination of beta blocker plus ARB led to slower aortic growth than beta blockers alone.6 In the Jikei Heart Study,12 which supported the use of ARBs in the 2010 ACC/AHA thoracic aortic disease guidelines, Japanese patients on an antihypertensive drug regimen that included valsartan had a lower rate of adverse cardiovascular events, including mortality and, in particular, a reduction was showed in the incidence of aortic dissection. However, this study was subsequently retracted13 and, consequently, the LOE for use of ARBs has been downgraded to C from B. \nSynopsis \nClinical atherosclerotic cardiovascular disease (ASCVD) encompasses aortic aneurysms of atherosclerotic origin. For the purpose of this guideline, we also define aortic aneurysm with concomitant PAU or visualized atheroma as atheromatous aortic disease, even in the presence of a genetic syndrome, given some causes have shared risk factors with ASCVD. Based on the AHA/ACC \u201c2018 Guideline on the Management of Blood Cholesterol,\u201d1 a high-intensity statin for ${>}50\\%$ reduction in low-density lipoprotein (LDL) for patients <75 years of age with clinical atherosclerotic cardiovascular disease was recommended to prevent adverse events (eg, myocardial infarction and stroke). If a highintensity statin cannot be used, a moderate-intensity statin can be initiated.1 According to evidence from animal studies in nonatherosclerotic-related TAA, statin therapy may prevent growth and adverse remodeling.",
+      "token_count": 491,
+      "sentence_count": 10
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "Chest Scan",
+      "scan_date": "2025-03-24T23:06:13.575979",
+      "file_name": "images.jpeg",
+      "description": "Chest scan",
+      "analysis": "Okay, let\u2019s analyze this chest CT scan. Here\u2019s a detailed breakdown of what I observe, keeping in mind this is a visual interpretation and a definitive diagnosis requires clinical correlation and potentially further investigation:\n\n**Overall Impression:**\n\nThe scan demonstrates significant bilateral interstitial lung disease. There\u2019s a widespread pattern of ground-glass opacities and some associated consolidation, predominantly affecting the lower lobes.  The vasculature appears largely normal. \n\n**Detailed Findings:**\n\n1. **Ground-Glass Opacities:** This is the most prominent feature. I see patchy, hazy areas of increased opacity throughout both lungs, particularly in the lower lobes (right and left). These areas aren\u2019t completely opaque, allowing some degree of X-ray penetration \u2013 hence \"ground-glass.\" These are often indicative of early inflammation or fluid accumulation.\n\n2. **Consolidation:**  I observe areas of more dense, solid-looking opacification. These are more pronounced in the lower lobes, particularly along the left lower lobe. This suggests there is fluid, pus, or other material filling the air spaces. \n\n3. **Interstitial Pattern:** The distribution of the opacities suggests an interstitial pattern \u2013 meaning they are located within the interstitium (the tissue surrounding the air spaces) of the lungs rather than within the air spaces themselves. This pattern is characteristic of interstitial lung diseases.\n\n4. **Vascularity:** The pulmonary arteries and veins appear generally normal in caliber and distribution. There are no obvious signs of pulmonary hypertension.\n\n5. **Mediastinum and Heart:** The mediastinum (the space between the lungs) appears unremarkable. The heart size appears within normal limits based on this single view. \n\n6. **Pleura:** The pleural surfaces (the lining of the lungs) appear clear, without significant pleural effusions (fluid buildup).\n\n7. **No Masses or Lacerations:**  I don\u2019t see any obvious masses, nodules, or lacerations within the lung parenchyma. \n\n\n**Possible Diagnoses (Differential Diagnosis):**\n\nBased on this imaging, several possibilities need to be considered:\n\n*   **Early Pneumonia:** While the ground-glass opacities can be seen in pneumonia, the bilateral distribution and interstitial pattern make this less likely as a primary diagnosis.\n*   **Interstitial Lung Disease (ILD):** This is a broad category, and the pattern is suggestive of several types, including:\n    *   **Non-Specific Interstitial Pneumonia (NSIP):"
+    }
+  ],
+  "medical_entities": {
+    "DETAILED_DESCRIPTION": [
+      "Thomas",
+      "1979-12-30",
+      "sudden",
+      "squeezing",
+      "pressure-like",
+      "Type",
+      "Penicillin",
+      "-3 drinks",
+      "week",
+      "manager",
+      "room air",
+      "bilaterally",
+      "-dist",
+      "focal",
+      "leads V3-V5",
+      "acute",
+      "Uncontrolled",
+      "Unstable",
+      "Musculoskeletal",
+      "PRN",
+      "home",
+      "Serial",
+      "bilateral",
+      "widespread",
+      "patchy",
+      "hazy",
+      "left",
+      "dense",
+      "solid-looking",
+      "Early",
+      "Non-Specific"
+    ],
+    "SIGN_SYMPTOM": [
+      "headache",
+      "pain",
+      "Pain",
+      "shortness of breath",
+      "nausea",
+      "diaphoresis",
+      "fever",
+      "cough",
+      "anxious",
+      "distress",
+      "Normocephalic",
+      "murmurs",
+      "rubs",
+      "gallops",
+      "JVD",
+      "wheezes",
+      "rales",
+      "rhonchi",
+      "Soft",
+      "hepatosplenomegaly",
+      "edema",
+      "cyanosis",
+      "rash",
+      "oriented",
+      "deficits",
+      "Sinus rhythm",
+      "ST-segment depression",
+      "cardiomegaly",
+      "ground-glass",
+      "opacities",
+      "consolidation",
+      "Ground-Glass",
+      "Opacities",
+      "opacity",
+      "opaque",
+      "ground",
+      "glass",
+      "opacification",
+      "fluid",
+      "leura",
+      "clear",
+      "pleural effusions",
+      "fluid buildup",
+      "Masses",
+      "Lacerations",
+      "masses",
+      "nodules",
+      "lacerations",
+      "opa"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "chest",
+      "center of chest",
+      "left arm",
+      "jaw",
+      "Abdominal",
+      "Extremities",
+      "Peripheral",
+      "Skin",
+      "Chest",
+      "lower lobes",
+      "vasculature",
+      "both lungs",
+      "right and",
+      "left lower lobe",
+      "air spaces",
+      "interstitium",
+      "spaces",
+      "pulmonary arteries",
+      "veins",
+      "Mediastinum",
+      "Heart",
+      "mediastinum",
+      "space between the lungs",
+      "heart",
+      "pleural surfaces",
+      "lining",
+      "lungs",
+      "lung parenchyma"
+    ],
+    "DURATION": [
+      "3 hours",
+      "6 hours"
+    ],
+    "LAB_VALUE": [
+      "7/10",
+      "2",
+      "162/94 mmHg",
+      "92 bpm",
+      "20/min",
+      "98.6\u00b0F",
+      "95%",
+      "Alert",
+      "-appearing",
+      "atraumatic",
+      "equal",
+      "reactive",
+      "moist",
+      "Regular",
+      "Clear",
+      "non-tender",
+      "non",
+      "ended",
+      "intact",
+      "3",
+      "1mm",
+      "0.08 ng/mL",
+      "6.2 ng/mL",
+      "110 pg/mL",
+      "9.2",
+      "14.2",
+      "245",
+      "138",
+      "4.2",
+      "101",
+      "24",
+      "18",
+      "1.0",
+      "156",
+      "220",
+      "142",
+      "38",
+      "210",
+      "elevated",
+      "normal",
+      "unremarkable",
+      "within normal limits"
+    ],
+    "SEVERITY": [
+      "mild",
+      "Mild",
+      "significant"
+    ],
+    "DISEASE_DISORDER": [
+      "Hypertension",
+      "2 Diabetes",
+      "Hyperlipidemia",
+      "Allergies",
+      "construction",
+      "cardiopulmonary process",
+      "Acute coronary syndrome",
+      "NSTEMI",
+      "hypertension",
+      "Type 2 Diabetes Mellitus",
+      "angina",
+      "Aortic dissection",
+      "Pulmonary embolism",
+      "Gastroesophageal reflux disease",
+      "pain",
+      "interstitial lung disease",
+      "inflammation",
+      "fluid accumulation",
+      "pus",
+      "interstitial lung diseases",
+      "pulmonary hypertension",
+      "Pneumonia",
+      "pneumonia",
+      "Interstitial Lung Disease",
+      "ILD",
+      "Interstitial Pneumonia",
+      "SIP"
+    ],
+    "DATE": [
+      "5 years ago",
+      "2 years ago",
+      "3 years",
+      "1 week",
+      "2 weeks"
+    ],
+    "THERAPEUTIC_PROCEDURE": [
+      "Appendectomy",
+      "cardiac catheterization"
+    ],
+    "MEDICATION": [
+      "Lisinopril",
+      "Metformin",
+      "Atorvastatin",
+      "Aspirin",
+      "Clopidogrel",
+      "Metoprolol",
+      "Nitroglycerin",
+      "medications"
+    ],
+    "DOSAGE": [
+      "10mg daily",
+      "500mg BID",
+      "20mg daily",
+      "/",
+      "325mg loading dose",
+      "81mg daily",
+      "300mg loading dose",
+      "75mg daily",
+      "40mg daily",
+      "25mg BID",
+      "0.4mg SL",
+      "q6h x 3"
+    ],
+    "FAMILY_HISTORY": [
+      "died of MI at age 62",
+      "Mother",
+      "history of hypertension"
+    ],
+    "HISTORY": [
+      "smoker",
+      "social alcohol use"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "Vitals",
+      "BP",
+      "HR",
+      "RR",
+      "Temp",
+      "SpO2",
+      "Physical Examination",
+      "HEENT",
+      "Pupils",
+      "Mucous membranes",
+      "Cardiovascular",
+      "rate",
+      "rhythm",
+      "Respiratory",
+      "auscultation",
+      "pulses",
+      "Neurological",
+      "ECG",
+      "X-ray",
+      "Labs",
+      "Troponin I",
+      "CK-MB",
+      "BNP",
+      "CBC",
+      "WBC",
+      "Hgb",
+      "Plt",
+      "BMP",
+      "Na",
+      "K",
+      "Cl",
+      "CO2",
+      "BUN",
+      "Cr",
+      "Glucose",
+      "Lipid Panel",
+      "Total cholesterol",
+      "LDL",
+      "HDL",
+      "TG",
+      "troponin",
+      "monitoring",
+      "cardiac enzymes",
+      "CT",
+      "Vascularity",
+      "caliber",
+      "size",
+      "P"
+    ],
+    "CLINICAL_EVENT": [
+      "Admit"
+    ],
+    "NONBIOLOGICAL_LOCATION": [
+      "Cardiac Care Unit"
+    ]
+  },
+  "analysis_date": "2025-03-25T10:00:53.523500",
+  "created_at": "2025-03-25T10:00:53.523505"
+}

@@ -1,0 +1,64 @@
+{
+    "disease": "Toxoplasma chorioretinitis",
+    "icd_code": "B5801",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Yellowish-white retinal lesions",
+                "severity": "Variable",
+                "pattern": "Focal"
+            },
+            {
+                "name": "Decreased visual acuity",
+                "severity": "Variable",
+                "pattern": "Can range from mild blurring to complete vision loss"
+            },
+            {
+                "name": "Uveitis",
+                "severity": "Variable",
+                "pattern": "Can affect iris, ciliary body, and choroid"
+            },
+            {
+                "name": "Retinochoroiditis",
+                "severity": "Variable",
+                "pattern": "Posterior pole most prevalent"
+            },
+            {
+                "name": "Optic neuritis",
+                "severity": "Variable",
+                "pattern": "Less common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Yellowish-white retinal lesions"
+        ],
+        "lab_values": {
+            "serology": "Positive for Toxoplasma gondii antibodies",
+            "molecular methods": "Detection of T. gondii DNA"
+        },
+        "risk_factors": [
+            "Congenital infection",
+            "Acquired infection (ingestion of oocyst-contaminated food or water, consumption of undercooked meat containing tissue cysts)",
+            "Immunosuppression"
+        ],
+        "imaging_findings": {
+            "FFA": "Findings consistent with chorioretinitis",
+            "ICGA": "Findings consistent with chorioretinitis",
+            "OCT": "Findings consistent with chorioretinitis",
+            "OCTA": "Findings consistent with chorioretinitis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings consistent with chorioretinitis (e.g., yellowish-white retinal lesions, decreased visual acuity)",
+            "Positive serology for Toxoplasma gondii antibodies"
+        ],
+        "supportive": [
+            "Positive molecular test for T. gondii DNA",
+            "Imaging findings consistent with chorioretinitis (FFA, ICGA, OCT, OCTA)"
+        ]
+    },
+    "differential_diagnoses": []
+}

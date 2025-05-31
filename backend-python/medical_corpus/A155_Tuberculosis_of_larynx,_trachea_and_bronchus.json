@@ -1,0 +1,29 @@
+{
+    "disease": "Tuberculosis of larynx, trachea and bronchus",
+    "icd_code": "A155",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Compromised immune system (HIV, undernutrition, diabetes)",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with laryngeal, tracheal, or bronchial tuberculosis"
+        ],
+        "supportive": [
+            "Positive tuberculin skin test (TST)",
+            "Interferon gamma release assay (IGRA)",
+            "Positive culture for Mycobacterium tuberculosis from respiratory specimens",
+            "Chest X-ray findings suggestive of tuberculosis",
+            "Histopathological examination showing granulomatous inflammation consistent with tuberculosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

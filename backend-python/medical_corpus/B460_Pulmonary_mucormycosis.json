@@ -1,0 +1,90 @@
+{
+    "disease": "Pulmonary Mucormycosis",
+    "icd_code": "B460",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shortness of breath",
+                "severity": "Progressive",
+                "pattern": "8-week history"
+            },
+            {
+                "name": "Left sided pleuritic chest pain",
+                "severity": "Present",
+                "pattern": "8-week history"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Present",
+                "pattern": "8-week history"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "3-5 tablespoons daily",
+                "pattern": "8-week history"
+            },
+            {
+                "name": "Fever",
+                "severity": "Absent",
+                "pattern": "Denied"
+            },
+            {
+                "name": "Chills",
+                "severity": "Absent",
+                "pattern": "Denied"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Absent",
+                "pattern": "Denied"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "afebrile",
+            "blood_pressure": "normal",
+            "heart_rate": "normal",
+            "respiratory_rate": "normal",
+            "oxygen_saturation": "99% on room air"
+        },
+        "physical_findings": [
+            "Egophony in middle and lower left lung fields",
+            "Decreased breath sounds in middle and lower left lung fields"
+        ],
+        "lab_values": {
+            "glucose": "587 mg/dL",
+            "carbon_dioxide_total_serum": "34 mmol/L",
+            "serum_ketones": "negative",
+            "hemoglobin_A1C": "10.2%",
+            "arterial_serum_pH": "7.46"
+        },
+        "risk_factors": [
+            "Uncontrolled type I diabetes mellitus",
+            "Immunocompromised state",
+            "Hematologic malignancy",
+            "Neutropenia"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Extensive opacification involving the left upper lobe, multiple air/fluid levels, 4 cm round mass-like lesion",
+            "computed_tomography_chest": "Large, multi-loculated, air and fluid filled cavity within the left upper lobe, left lower lobe consolidation, 10 \u00d7 12 \u00d7 7 cm multiloculated air and fluid filled cavity with heterogeneously enhancing wall"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological findings of tissue invasion by hyphae",
+            "Cultures isolating pathogens of the order Mucorales (Rhizopus, Mucor, Rhizomucor species)"
+        ],
+        "supportive": [
+            "Radiographic findings (focal consolidation, pulmonary nodules, cavitary lesions with air crescent sign)",
+            "Reversed halo sign (in neutropenic patients)",
+            "Serum PCR test"
+        ]
+    },
+    "differential_diagnoses": [
+        "Coccidiomycosis",
+        "Aspergillosis",
+        "Histoplasmosis",
+        "Cryptococcosis",
+        "Tuberculosis"
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "disease": "Chagas' disease",
+    "icd_code": "B5749",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Motor deficits",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Hypertonia",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Meningismus",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Focal neurological deficits",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Behavioral and cognitive impairments",
+                "severity": "Variable",
+                "pattern": "Chronic phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised status (especially HIV-positive)",
+            "Acute phase infection",
+            "Reactivation during chronic phase"
+        ],
+        "imaging_findings": {
+            "Neuroimaging": [
+                {
+                    "modality": "CT/MRI",
+                    "finding": "Supratentorial lesions (89%)",
+                    "location": "Anterior/middle cranial fossa (86%)"
+                },
+                {
+                    "modality": "CT/MRI",
+                    "finding": "Abscess-like lesions",
+                    "pattern": "Common"
+                },
+                {
+                    "modality": "CT/MRI",
+                    "finding": "Tumor-like lesions",
+                    "pattern": "Atypical"
+                },
+                {
+                    "modality": "CT/MRI",
+                    "finding": "Involvement in rare anatomical locations (e.g., suprasellar region)",
+                    "pattern": "Atypical"
+                }
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "History of documented Chagas disease",
+            "Clinical or imaging findings compatible with CNS infection"
+        ],
+        "supportive": [
+            "Direct observation of parasitic forms in CSF, brain biopsy, or blood smear",
+            "Positive PCR for T. cruzi in CSF/brain biopsy"
+        ]
+    },
+    "differential_diagnoses": []
+}

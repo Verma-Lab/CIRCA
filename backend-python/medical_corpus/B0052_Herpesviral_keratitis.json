@@ -1,0 +1,100 @@
+{
+    "disease": "Herpesviral keratitis",
+    "icd_code": "B0052",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Present in acute cases"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Present in acute cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable, often severe in epithelial keratitis",
+                "pattern": "Present in acute cases"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Present in acute cases"
+            },
+            {
+                "name": "Tearing",
+                "severity": "Variable",
+                "pattern": "Present in acute cases"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vesicular lesions",
+                "severity": "Variable",
+                "pattern": "May be present on eyelids or adnexa"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Dendritic lesions with terminal bulbs (hallmark)",
+            "Geographic ulceration (in severe cases)",
+            "Preauricular lymph node",
+            "Bulbar follicles",
+            "Decreased corneal sensation (neurotrophic cornea)",
+            "Mild conjunctival injection",
+            "Ciliary flush",
+            "Mild stromal edema",
+            "Subepithelial white blood cell infiltration",
+            "Ghost dendrite (following resolution)",
+            "Diffuse punctate keratopathy",
+            "Corneal microcysts",
+            "Raised clear vesicles (early sign)"
+        ],
+        "lab_values": {
+            "Corneal scrapings (Giemsa stain)": "Intranuclear viral inclusion bodies and multinucleated giant cells",
+            "Serologic testing": "Usually not helpful in recurrent disease",
+            "Conjunctival scrapings/impression cytology/vesicular lesion scrapings": "Cytology, culture, or PCR for HSV"
+        },
+        "risk_factors": [
+            "Direct contact with infected secretions or lesions (primary infection)",
+            "Stress",
+            "Illness",
+            "Immunosuppression",
+            "Trauma (reactivation)",
+            "Atopic conditions (bilateral involvement)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of multiple small branching epithelial dendrites with terminal bulbs on corneal surface"
+        ],
+        "supportive": [
+            "History of recurrent \"red eye\", particularly unilateral",
+            "Underlying systemic diseases",
+            "Immunosuppression",
+            "History of eyelid lesions",
+            "History of oral and genital ulcers",
+            "Recent infections and vaccinations",
+            "Positive lab tests (cytology, culture, PCR)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Herpes zoster ophthalmicus",
+        "Other types of viral keratitis (adenovirus, cytomegalovirus, Epstein-Barr virus)",
+        "Neurotrophic keratopathy",
+        "Epithelial regeneration line",
+        "Iatrogenic (topical drops)",
+        "Acanthamoeba keratitis",
+        "Soft contact lens overwear",
+        "Microbial keratitis",
+        "Staphylococcal marginal keratitis",
+        "Thygeson\u2019s superficial punctuate keratitis"
+    ]
+}

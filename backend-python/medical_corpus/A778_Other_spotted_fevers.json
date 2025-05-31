@@ -1,0 +1,42 @@
+{
+    "disease": "Other spotted fevers",
+    "icd_code": "A778",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Rigor",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Tick bite"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with spotted fever"
+        ],
+        "supportive": [
+            "Positive serology for Rickettsia species"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,41 @@
+{
+    "disease": "Late syphilitic neuropathy",
+    "icd_code": "A5215",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Slow worsening"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "VDRL/RPR": {
+                "abnormal_range": "Positive"
+            },
+            "FTA-ABS": {
+                "abnormal_range": "Positive"
+            },
+            "CSF analysis": {
+                "abnormal_range": "Positive for syphilis"
+            }
+        },
+        "risk_factors": [
+            "Untreated syphilis for many years"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological tests for syphilis (e.g., VDRL/RPR, FTA-ABS)",
+            "Positive CSF analysis for syphilis"
+        ],
+        "supportive": [
+            "Presence of neurological symptoms consistent with neurosyphilis"
+        ]
+    },
+    "differential_diagnoses": []
+}

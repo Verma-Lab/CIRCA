@@ -1,0 +1,79 @@
+{
+    "disease": "Candidal esophagitis",
+    "icd_code": "B3781",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Odynophagia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pain on swallowing",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Pain behind the sternum",
+                "severity": "Variable",
+                "pattern": "Common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "name": "White mucosal plaque-like lesions",
+                "location": "Esophagus"
+            },
+            {
+                "name": "Exudates adherent to the mucosa",
+                "location": "Esophagus"
+            },
+            {
+                "name": "Oral thrush",
+                "location": "Mouth",
+                "pattern": "Often occurs together with esophageal candidiasis"
+            }
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised state (HIV/AIDS, leukemia, diabetes)",
+            "Use of corticosteroids, radiation, and chemotherapy",
+            "Frequent antibiotic use",
+            "Esophageal motility disorder (cardiac achalasia, scleroderma)",
+            "Proton-pump inhibitors (PPIs) and other acid suppression drugs",
+            "Smoking"
+        ],
+        "imaging_findings": {
+            "barium_esophagram": [
+                "Early: Nodular filling defects imprinting the edge of the barium column",
+                "Late: Shaggy appearance of the esophageal lining reflecting deep ulcerations"
+            ],
+            "upper_endoscopy": "White plaques visible, adherent and not washable with water irrigation"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Endoscopic examination showing white mucosal plaque-like lesions and exudates adherent to the mucosa (not washable with water)",
+            "Histological confirmation by biopsy or brushings showing yeast and pseudohyphae invading mucosal cells"
+        ],
+        "supportive": [
+            "Symptoms of odynophagia and dysphagia",
+            "Presence of oral thrush"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cytomegalovirus esophagitis",
+        "Herpes simplex virus esophagitis",
+        "Gastroesophageal reflux disease (GERD)",
+        "Medication-induced esophagitis",
+        "Radiation-induced esophageal injury",
+        "Eosinophilic esophagitis"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "disease": "Other viral infections of unspecified site",
+    "icd_code": "B348",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Anogenital human papillomavirus infection (A63.0)",
+        "Cytomegaloviral disease NOS (B25.9)",
+        "Herpesvirus [herpes simplex] infection NOS (B00.9)",
+        "Retrovirus infection NOS (B33.3)",
+        "Viral agents as the cause of diseases classified elsewhere (B97.-)",
+        "Viral warts due to human papillomavirus infection (B07)"
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "disease": "Early congenital syphilitic oculopathy",
+    "icd_code": "A5001",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Interstitial keratitis (unilateral or bilateral corneal stromal inflammation, immune-mediated, non-ulcerative, non-suppurative, leading to neovascularization and scarring)",
+            "Cataracts (most likely due to uveal inflammation)",
+            "Conjunctivitis (mild in secondary syphilis, sarcoidosis-like with granulomas possible)",
+            "Episcleritis (isolated, more common in secondary syphilis)",
+            "Scleritis (isolated, more common in tertiary syphilis, nodular or diffuse)",
+            "Uveitis (panuveitis most common in HIV-positive patients, posterior uveitis predominant in HIV-negative patients)",
+            "Retinitis (necrotizing or non-necrotizing, in macula, midperiphery, and peripheral retina; may be confluent, associated with vasculitis and vascular occlusion; slowly progressive, responds to penicillin; placoid confluent lesions possible)",
+            "Exudative retinal detachment (uncommon, associated with retinal infiltrates)",
+            "Retinal detachment (tractional and rhegmatogenous, rarely complicating syphilitic uveitis; often complicated by early proliferative vitreoretinopathy; retinal breaks associated with prior retinitis; poor visual outcomes)"
+        ],
+        "lab_values": {
+            "VDRL/RPR": "Positive (requires confirmation with treponemal tests)",
+            "FTA-ABS/MHA-TP": "Positive (confirms positive nontreponemal tests)"
+        },
+        "risk_factors": [
+            "Congenital transmission of syphilis in utero (transplacentally or during delivery)",
+            "Maternal syphilis during pregnancy",
+            "Untreated maternal syphilis during pregnancy",
+            "HIV co-infection (increases risk and severity of ocular syphilis)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings consistent with early congenital syphilitic oculopathy (e.g., interstitial keratitis, cataracts, uveitis, retinitis)",
+            "Positive serological tests for syphilis (nontreponemal and treponemal)"
+        ],
+        "supportive": [
+            "History of maternal syphilis",
+            "Imaging findings consistent with syphilitic ocular involvement"
+        ]
+    },
+    "differential_diagnoses": [
+        "Herpes simplex keratitis",
+        "Other causes of uveitis",
+        "Other causes of retinitis (e.g., acute retinal necrosis, progressive outer retinal necrosis)"
+    ]
+}

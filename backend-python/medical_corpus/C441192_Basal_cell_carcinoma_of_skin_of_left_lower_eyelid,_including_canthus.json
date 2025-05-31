@@ -1,0 +1,59 @@
+{
+    "disease": "Basal cell carcinoma of skin of left lower eyelid, including canthus",
+    "icd_code": "C441192",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless lump or ulcer",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Excessive tearing",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Slowly enlarging ulceration with raised, pearly borders",
+            "Central ulceration of the epidermis",
+            "Multiple islands of basophilic neoplastic cells in the superficial dermis",
+            "Neoplastic cells appear to arise from surface epidermis",
+            "4 X 12mm defect deep to the tarsus after Mohs surgery"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Long-term exposure to ultraviolet (UV) radiation",
+            "Sun exposure",
+            "Tanning beds",
+            "Older age",
+            "Smoking",
+            "History of other skin cancers"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy showing cohesive nests of cells with bland appearing nuclei with nuclear palisading of the peripheral cell layer"
+        ],
+        "supportive": [
+            "Clinical presentation of a slowly enlarging painless lump or ulcer"
+        ]
+    },
+    "differential_diagnoses": [
+        "Stye",
+        "Benign growth"
+    ]
+}

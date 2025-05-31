@@ -1,0 +1,86 @@
+{
+    "disease": "Cutaneous Blastomycosis",
+    "icd_code": "B403",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Back pain",
+                "severity": "Mild to moderate",
+                "pattern": "Constant"
+            },
+            {
+                "name": "Annular plaques with central ulceration",
+                "severity": "Mild to moderate",
+                "pattern": "Localized to face"
+            },
+            {
+                "name": "Verrucous plaques with raised borders and eroded centers",
+                "severity": "Mild to moderate",
+                "pattern": "Localized to face"
+            },
+            {
+                "name": "Mild pruritus",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Painless lesions",
+                "severity": "None",
+                "pattern": "Constant"
+            },
+            {
+                "name": "Respiratory symptoms (in disseminated cases)",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Annular plaques with central ulceration on face",
+            "Verrucous plaques with raised borders and eroded centers on face",
+            "Pathologic T12 fracture (in some cases)",
+            "Diffuse nodular opacities in all lung lobes (in disseminated cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to soil and dust",
+            "Residence in or travel to endemic areas (Mississippi and Ohio river basins)",
+            "Activities disrupting soil (e.g., canoeing, fishing)"
+        ],
+        "imaging_findings": {
+            "CT scan of abdomen": "Pathologic T12 fracture",
+            "Chest imaging": "Diffuse nodular opacities in all lung lobes (in disseminated cases)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Visualization of characteristic yeast forms (broad-based budding yeast) on microscopy",
+            "Growth of Blastomyces dermatitidis in culture"
+        ],
+        "supportive": [
+            "Clinical presentation (verrucous or ulcerative lesions)",
+            "Exposure history",
+            "Imaging findings (e.g., bone lesions)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Dimorphic fungi",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Giant keratoacanthoma",
+        "Scrofuloderma",
+        "Lupus vulgaris",
+        "Atypical mycobacterium",
+        "Nocardiosis",
+        "Syphilis",
+        "Bromoderma",
+        "Iododerma",
+        "Leishmaniasis",
+        "Granuloma inguinale",
+        "Lymphoma",
+        "Pyoderma gangrenosum",
+        "Coccidioidomycosis",
+        "Mycobacterial infection"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "disease": "Malignant neoplasm of posterior mediastinum",
+    "icd_code": "C382",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "General unwellness",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to severe illness depending on cancer growth rate and size"
+            },
+            {
+                "name": "No symptoms",
+                "severity": "None",
+                "pattern": "Possible in early stages or slow-growing cancers"
+            },
+            {
+                "name": "Compression symptoms",
+                "severity": "Variable",
+                "pattern": "Depending on the organ compressed; can include dysphagia (difficulty swallowing) if esophagus is compressed, dyspnea (shortness of breath) if trachea or lungs are compressed, or chest pain if heart or other structures are compressed"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass in the posterior mediastinum"
+        ],
+        "supportive": [
+            "Histopathological confirmation of malignancy"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,66 @@
+{
+    "disease": "Sandfly fever",
+    "icd_code": "A931",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Loss of consciousness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abnormal movements",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abnormal behavior",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Sandfly bite"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

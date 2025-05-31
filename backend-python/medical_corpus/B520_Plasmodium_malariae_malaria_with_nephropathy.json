@@ -1,0 +1,66 @@
+{
+    "disease": "Plasmodium malariae malaria with nephropathy",
+    "icd_code": "B520",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Nephropathy symptoms (e.g., proteinuria, hematuria, edema)",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "blood_pressure": "Potentially elevated due to nephropathy"
+        },
+        "physical_findings": [
+            "Possible edema (due to nephropathy)",
+            "Jaundice (in severe cases)"
+        ],
+        "lab_values": {
+            "blood_smear": "Presence of Plasmodium malariae parasites",
+            "creatinine": "Elevated",
+            "blood_urea_nitrogen (BUN)": "Elevated",
+            "proteinuria": "Present",
+            "hematuria": "Potentially present"
+        },
+        "risk_factors": [
+            "Travel to malaria-endemic regions",
+            "Lack of preventative measures (e.g., mosquito nets, antimalarial medication)",
+            "Pre-existing kidney disease"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Plasmodium malariae parasites in blood smear",
+            "Evidence of nephropathy (e.g., proteinuria, hematuria, elevated creatinine)"
+        ],
+        "supportive": [
+            "History of travel to malaria-endemic region",
+            "Clinical symptoms consistent with malaria and nephropathy"
+        ]
+    },
+    "differential_diagnoses": []
+}

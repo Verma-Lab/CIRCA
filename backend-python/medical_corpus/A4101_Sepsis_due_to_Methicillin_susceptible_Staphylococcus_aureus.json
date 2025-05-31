@@ -1,0 +1,83 @@
+{
+    "disease": "Sepsis due to Methicillin susceptible Staphylococcus aureus",
+    "icd_code": "A4101",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Malaise",
+                "severity": "Unspecified",
+                "pattern": "Present"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Unspecified",
+                "pattern": "Present"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Unspecified",
+                "pattern": "Present"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Unspecified",
+                "pattern": "Present"
+            },
+            {
+                "name": "Signs consistent with sepsis",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Spreading soft tissue infection",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Possible"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "leukocytes": ">49.9 \u00d7 109/L",
+            "neutrophils": ">48.4 \u00d7 109/L",
+            "platelets": "113 \u00d7 109/L",
+            "C-reactive protein": ">437 mg/dL",
+            "creatine kinase": ">1277 IU/L",
+            "lactate": ">4.5 mmol/L",
+            "albumin": "19 g/L"
+        },
+        "physical_findings": [
+            "Pyomyositis of the left subscapularis, inferior scalene, and intercostal muscles",
+            "Large retropharyngeal and right psoas collection of pus",
+            "Bibasal lung consolidation",
+            "Epidural collection of pus extending from the lower thoracic to the lumbar spine and into the paraspinal soft tissues"
+        ],
+        "lab_values": {
+            "blood cultures": "Positive for MSSA",
+            "oxacillin MIC": "0.38 mg/L"
+        },
+        "risk_factors": [
+            "Age (60 years old)",
+            "Underlying medical conditions (possible, not specified)",
+            "Recent travel (from Colombia to the UK)"
+        ],
+        "imaging_findings": {
+            "CT": "Pyomyositis, pus collections, lung consolidation",
+            "MRI": "Pyomyositis, pus collections, discitis, osteomyelitis, spinal cord compression"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for MSSA",
+            "Clinical signs and symptoms of sepsis"
+        ],
+        "supportive": [
+            "Abnormal vital signs",
+            "Imaging findings consistent with disseminated infection"
+        ]
+    },
+    "differential_diagnoses": []
+}

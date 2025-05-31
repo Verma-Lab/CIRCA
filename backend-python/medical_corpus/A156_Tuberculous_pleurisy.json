@@ -1,0 +1,93 @@
+{
+    "disease": "Tuberculous pleurisy",
+    "icd_code": "A156",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pleural effusion",
+                "severity": "Variable",
+                "pattern": "Unilateral or bilateral"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Pleuritic"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Depending on effusion size"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "respiratory_rate": "Increased (tachypnea)"
+        },
+        "physical_findings": [
+            "Decreased breath sounds",
+            "Dullness to percussion",
+            "Pleural rub"
+        ],
+        "lab_values": {
+            "pleural_fluid_lymphocytes": "Elevated (lymphocytosis, typically >50%, but can be lower)",
+            "pleural_fluid_culture": "Positive for Mycobacterium tuberculosis (variable yield)",
+            "sputum_culture": "Positive for Mycobacterium tuberculosis (variable yield)",
+            "tuberculin_skin_test": "Positive",
+            "interferon_gamma_release_assay": "Positive",
+            "antibody_test": "Positive"
+        },
+        "risk_factors": [
+            "Previous tuberculosis infection",
+            "Exposure to individuals with tuberculosis",
+            "Immunocompromised state (e.g., HIV infection)",
+            "Malnutrition",
+            "Diabetes"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Pleural effusion, may show parenchymal abnormalities",
+            "CT_scan": "More detailed visualization of pleural effusion and parenchymal involvement"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive pleural fluid culture for Mycobacterium tuberculosis",
+            "Granulomatous inflammation on pleural biopsy"
+        ],
+        "supportive": [
+            "Positive sputum culture for Mycobacterium tuberculosis",
+            "Pleural effusion resolving with anti-tuberculosis treatment",
+            "Positive tuberculin skin test",
+            "Positive interferon-gamma release assay",
+            "Positive antibody test",
+            "Characteristic pleural fluid findings (lymphocytic predominance)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignant pleural effusion",
+        "Parapneumonic effusion",
+        "Rheumatoid pleuritis",
+        "Pulmonary embolism",
+        "Other infectious pleuritis"
+    ]
+}

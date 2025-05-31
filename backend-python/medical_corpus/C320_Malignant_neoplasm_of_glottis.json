@@ -1,0 +1,23 @@
+{
+    "disease": "Malignant neoplasm of glottis",
+    "icd_code": "C320",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "alcohol abuse and dependence",
+            "exposure to environmental tobacco smoke",
+            "exposure to tobacco smoke in the perinatal period",
+            "history of tobacco dependence",
+            "occupational exposure to environmental tobacco smoke",
+            "tobacco dependence",
+            "tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {},
+    "differential_diagnoses": []
+}

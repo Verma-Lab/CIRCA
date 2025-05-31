@@ -1,0 +1,85 @@
+{
+    "disease": "Chikungunya virus disease",
+    "icd_code": "A920",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Abrupt onset",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Severe, often debilitating",
+                "pattern": "Usually lasts for a few days to weeks, months, or even years in some cases"
+            },
+            {
+                "name": "Joint swelling",
+                "severity": "Common",
+                "pattern": "Often accompanies joint pain"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Common",
+                "pattern": "Often accompanies joint pain"
+            },
+            {
+                "name": "Headache",
+                "severity": "Common",
+                "pattern": "Often accompanies other symptoms"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Common",
+                "pattern": "Often accompanies other symptoms"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Common",
+                "pattern": "Often accompanies other symptoms"
+            },
+            {
+                "name": "Rash",
+                "severity": "Common",
+                "pattern": "Often accompanies other symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Joint swelling",
+            "Maculopapular rash"
+        ],
+        "lab_values": {
+            "RT-PCR": {
+                "abnormal_range": "Positive for CHIKV in the first week of illness"
+            },
+            "Antibody tests": {
+                "abnormal_range": "Detectable from the first week after illness onset, persisting for about 2 months"
+            }
+        },
+        "risk_factors": [
+            "Age extremes (newborns and older adults)",
+            "Underlying medical conditions",
+            "Exposure to Aedes aegypti or Aedes albopictus mosquitoes"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with chikungunya (fever, severe joint pain)"
+        ],
+        "supportive": [
+            "Positive RT-PCR for CHIKV (during the first week of illness)",
+            "Positive antibody test (after the first week of illness)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Dengue",
+        "Zika",
+        "Other arboviral infections",
+        "Rheumatoid arthritis"
+    ]
+}

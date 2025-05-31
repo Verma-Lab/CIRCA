@@ -1,0 +1,98 @@
+{
+    "disease": "Granuloma Inguinale (Donovanosis)",
+    "icd_code": "A58",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless ulcer",
+                "severity": "Variable",
+                "pattern": "Slowly progressive"
+            },
+            {
+                "name": "Beefy red granulation tissue",
+                "severity": "Moderate to severe",
+                "pattern": "Present in ulcer"
+            },
+            {
+                "name": "Bleeding on touch",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Purulent discharge",
+                "severity": "Mild to moderate",
+                "pattern": "From ulcer floor"
+            },
+            {
+                "name": "Subcutaneous granulomas (pseudobuboes)",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Swelling and ulceration in inguinal region",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Lymphoedema",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Significant scarring",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Deep foul-smelling ulcer",
+                "severity": "Severe",
+                "pattern": "In necrotic type"
+            },
+            {
+                "name": "Extensive plaques of scar tissue",
+                "severity": "Severe",
+                "pattern": "In cicatricial type"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Solitary well-defined nontender ulcer",
+            "Red granulation tissue",
+            "Elevated margins",
+            "Purulent discharge",
+            "Absence of inguinal lymphadenopathy",
+            "Ulcerative lesions on genitals or perineum",
+            "Highly vascular lesions (beefy red appearance)",
+            "Papules or subcutaneous nodules",
+            "Vegetating masses",
+            "Pseudobuboes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Unprotected intercourse",
+            "Sexual activity",
+            "Contact with infected individual",
+            "Travel to endemic areas",
+            "HIV infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Visualization of Donovan bodies on tissue crush preparation or biopsy",
+            "Positive Giemsa stain showing characteristic rod-shaped coccobacilli in monocytes"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with granuloma inguinale",
+            "Positive PCR test (if available)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chancroid",
+        "Lymphogranuloma venereum",
+        "Penile or vulvar cancer",
+        "Genital herpes",
+        "Syphilis"
+    ]
+}

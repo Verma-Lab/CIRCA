@@ -1,0 +1,106 @@
+{
+    "disease": "Powassan virus disease",
+    "icd_code": "A8481",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to high",
+                "pattern": "Common, can be initial symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to severe",
+                "pattern": "Common, can be initial symptom, more severe in severe infections"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Mild to severe",
+                "pattern": "Common"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Mild to severe",
+                "pattern": "More common in severe infections"
+            },
+            {
+                "name": "Loss of coordination",
+                "severity": "Moderate to severe",
+                "pattern": "Common in severe infections"
+            },
+            {
+                "name": "Speech difficulties",
+                "severity": "Moderate to severe",
+                "pattern": "Common in severe infections"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Common in severe infections"
+            },
+            {
+                "name": "Tremors",
+                "severity": "Severe",
+                "pattern": "Common in severe infections"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Severe",
+                "pattern": "Common in severe infections"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Common in severe infections"
+            },
+            {
+                "name": "Recurrent headaches",
+                "severity": "Chronic",
+                "pattern": "In half of survivors"
+            },
+            {
+                "name": "Muscle wasting",
+                "severity": "Chronic",
+                "pattern": "In half of survivors"
+            },
+            {
+                "name": "Memory problems",
+                "severity": "Chronic",
+                "pattern": "In half of survivors"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in severe cases",
+            "other": "Not specified"
+        },
+        "physical_findings": [
+            "Loss of coordination",
+            "Tremors",
+            "Paralysis"
+        ],
+        "lab_values": {
+            "blood tests": "Detection of antibodies against the virus",
+            "spinal fluid tests": "Detection of antibodies against the virus"
+        },
+        "risk_factors": [
+            "Spending time outdoors in tick-infested areas",
+            "Working outdoors",
+            "Engaging in outdoor activities such as camping/hiking, gardening, time on athletic fields, or playing in grassy and wooded environments"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms (fever, headache, vomiting, weakness, confusion, loss of coordination, speech difficulties, seizures)",
+            "Positive serological tests (detection of antibodies in blood or spinal fluid)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

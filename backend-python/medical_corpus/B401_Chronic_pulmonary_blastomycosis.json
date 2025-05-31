@@ -1,0 +1,91 @@
+{
+    "disease": "Chronic pulmonary blastomycosis",
+    "icd_code": "B401",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chronic pneumonia",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Sputum production",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "respiratory_rate": "Increased (tachypnea)"
+        },
+        "physical_findings": [
+            "Crackles or rales on lung auscultation",
+            "Decreased breath sounds",
+            "Dullness to percussion"
+        ],
+        "lab_values": {
+            "CBC": "May show leukocytosis",
+            "ESR": "Elevated",
+            "CRP": "Elevated",
+            "Fungal cultures": "Positive for Blastomyces dermatitidis or B. gilchristii",
+            "Serology": "May be positive but not always reliable"
+        },
+        "risk_factors": [
+            "Exposure to endemic areas (midwestern, south-central, and southeastern regions of the United States and four Canadian provinces)",
+            "Occupational or recreational activities that disrupt soil",
+            "Immunocompromised state (e.g., solid organ transplantation, TNF-\u03b1 inhibitors, malignancy, HIV/AIDS)"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show nodules, cavities, infiltrates, or consolidation",
+            "CT scan": "Provides more detailed images of lung lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with chronic pulmonary blastomycosis",
+            "Positive fungal culture or other diagnostic test (e.g., PCR, antigen detection)"
+        ],
+        "supportive": [
+            "Abnormal chest imaging findings",
+            "Elevated inflammatory markers (ESR, CRP)",
+            "Positive serology (though not always reliable)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Lung cancer",
+        "Other fungal infections (e.g., histoplasmosis, coccidioidomycosis)",
+        "Bacterial pneumonia"
+    ]
+}

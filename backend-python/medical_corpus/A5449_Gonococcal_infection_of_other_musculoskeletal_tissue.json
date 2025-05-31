@@ -1,0 +1,51 @@
+{
+    "disease": "Gonococcal infection of other musculoskeletal tissue",
+    "icd_code": "A5449",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Impaired movement",
+                "severity": "Variable",
+                "pattern": "Dependent on location and severity of infection"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Variable",
+                "pattern": "Localized to affected musculoskeletal tissue"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Localized tenderness",
+            "Swelling",
+            "Erythema",
+            "Limited range of motion"
+        ],
+        "lab_values": {
+            "Gram stain": "Presence of gram-negative diplococci",
+            "Culture": "Positive for Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Unprotected sexual intercourse",
+            "Multiple sexual partners",
+            "History of sexually transmitted infections"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gonococcal infection of musculoskeletal tissue",
+            "Positive laboratory test for Neisseria gonorrhoeae (culture or PCR)"
+        ],
+        "supportive": [
+            "Response to appropriate antibiotic therapy"
+        ]
+    },
+    "differential_diagnoses": []
+}

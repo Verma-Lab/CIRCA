@@ -1,0 +1,132 @@
+{
+    "disease": "Disseminated Cryptococcosis",
+    "icd_code": "B457",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Gradually worsening, continuous",
+                "pattern": "Holocranial, over three months"
+            },
+            {
+                "name": "Fever",
+                "severity": "Present",
+                "pattern": "Occurred with headache and general condition deterioration"
+            },
+            {
+                "name": "Asthenia",
+                "severity": "Present",
+                "pattern": "Occurred with headache and general condition deterioration"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Present",
+                "pattern": "Occurred with headache and general condition deterioration"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Present",
+                "pattern": "Occurred with headache and general condition deterioration"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Sudden and persistent",
+                "pattern": "Developed two weeks after initial symptoms"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Present",
+                "pattern": "Developed two weeks after initial symptoms"
+            },
+            {
+                "name": "Cough",
+                "severity": "Present",
+                "pattern": "Developed two weeks after initial symptoms"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Present",
+                "pattern": "Developed two weeks after initial symptoms"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Present",
+                "pattern": "Occurred with fever and weight loss"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Present",
+                "pattern": "Warty plaques over face and trunk"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Generalized",
+                "pattern": "Non-tender, cervical, axillary, and inguinal"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Febrile (39\u00b0C)",
+            "oxygen_saturation": "Hypoxic, requiring oxygen therapy"
+        },
+        "physical_findings": [
+            "Febrile and conscious patient, hemodynamically stable",
+            "Nuchal rigidity",
+            "Brudzinski\u2019s sign",
+            "Hypoxia",
+            "Crackling lung sounds",
+            "Hepatosplenomegaly",
+            "Thin build (BMI 16.4 kg/m\u00b2)"
+        ],
+        "lab_values": {
+            "lymphocyte_count": "Low (430 cells/mm\u00b3)",
+            "CRP": "High (155 mg/L)",
+            "hemoglobin": "Low (6.4 g/L)",
+            "leukocytosis": "Present (11.4 \u00d7 10\u2079/L, 94% neutrophils)",
+            "platelets": "Normal",
+            "total_bilirubin": "Elevated (10 mg/dL)",
+            "conjugated_bilirubin": "Elevated (7.8 mg/dL)",
+            "ALP": "Elevated (1954 IU/L)",
+            "GGT": "Elevated (358 U/L)",
+            "CD4_count": "Normal (564 cells/mm\u00b3)"
+        },
+        "risk_factors": [
+            "HIV infection (in some cases)",
+            "Immunocompromised state (e.g., due to HIV, immunosuppressive medications, organ transplant)",
+            "Underlying primary immunodeficiency (e.g., MSMD)"
+        ],
+        "imaging_findings": {
+            "chest_ct": [
+                "Right apical excavated lesion",
+                "Pulmonary nodules",
+                "Mediastinal lymphadenopathy"
+            ],
+            "head_ct": "No abnormality",
+            "abdominal_ct": [
+                "Generalized lymphadenopathy (mediastinal, abdominal, inguinal)",
+                "Intrahepatic biliary duct dilatation",
+                "Hepatosplenomegaly",
+                "Multiple hypoechoic lesions"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture from two distinct sites (e.g., blood, CSF, sputum)",
+            "Positive blood culture"
+        ],
+        "supportive": [
+            "Positive cryptococcal antigen test in serum and/or CSF",
+            "Encapsulated yeasts on India ink staining of CSF and/or sputum",
+            "Characteristic imaging findings (e.g., pulmonary nodules, cavitation, lymphadenopathy)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lung cancer",
+        "Metastasis",
+        "Other fungal infections (e.g., candidiasis, histoplasmosis, coccidioidomycosis, Paracoccidioidomycosis)",
+        "Tuberculosis",
+        "Sclerosing cholangitis",
+        "Autoimmune hepatitis"
+    ]
+}

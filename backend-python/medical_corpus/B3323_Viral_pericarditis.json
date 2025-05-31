@@ -1,0 +1,95 @@
+{
+    "disease": "Viral pericarditis",
+    "icd_code": "B3323",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Sharp, retrosternal or precordial; worse with inspiration, coughing, lying down; relieved by leaning forward"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "May occur with pericardial effusion"
+            },
+            {
+                "name": "Orthopnea",
+                "severity": "Variable",
+                "pattern": "May occur with pericardial effusion"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May occur with pericardial effusion"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May occur with pericardial effusion"
+            },
+            {
+                "name": "Syncope",
+                "severity": "Variable",
+                "pattern": "May occur with pericardial effusion"
+            },
+            {
+                "name": "Swelling in feet, legs, and ankles",
+                "severity": "Variable",
+                "pattern": "May occur with constrictive pericarditis"
+            },
+            {
+                "name": "Shortness of breath on exertion",
+                "severity": "Variable",
+                "pattern": "May occur with constrictive pericarditis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia (may occur with tamponade)",
+            "blood_pressure": "Hypotension (may occur with tamponade)",
+            "pulse_paradoxus": "Increased (may occur with tamponade)"
+        },
+        "physical_findings": [
+            "Pericardial friction rub (scratchy or scraping sound)",
+            "Crackles in lungs (with pericardial effusion)"
+        ],
+        "lab_values": {
+            "inflammatory_markers": "Elevated erythrocyte sedimentation rate and C-reactive protein",
+            "troponin": "Slight elevation possible with myopericarditis"
+        },
+        "risk_factors": [
+            "Recent viral infection",
+            "Post-surgical procedures (e.g., cardiac surgery)",
+            "Autoimmune diseases",
+            "Malignancy",
+            "Renal failure",
+            "Hypothyroidism"
+        ],
+        "imaging_findings": {
+            "echocardiography": "Pericardial effusion",
+            "chest_x_ray": "Often normal unless significant pericardial effusion",
+            "cardiovascular_magnetic_resonance": "Pericardial inflammation, myocarditis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Typical pericardial chest pain",
+            "Pericardial friction rub",
+            "Widespread ST-elevation and/or PR-depression on ECG",
+            "New or increasing pericardial effusion"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers",
+            "Imaging findings consistent with pericarditis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute myocardial infarction",
+        "Pulmonary embolism",
+        "Aortic dissection",
+        "Esophageal rupture",
+        "Myocarditis",
+        "Perimyocarditis"
+    ]
+}

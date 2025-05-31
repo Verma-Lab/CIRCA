@@ -1,0 +1,36 @@
+{
+    "disease": "Malignant neoplasm of scapula and long bones of unspecified upper limb",
+    "icd_code": "C4000",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Can be present or absent; may be severe depending on the cancer's progression and bone involvement."
+            },
+            {
+                "name": "Bone fracture",
+                "severity": "Variable",
+                "pattern": "Can occur due to weakening of the bone by the tumor."
+            },
+            {
+                "name": "General malaise",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to severe illness, depending on the cancer's progression."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant neoplasm in the scapula or long bones of the upper limb confirmed by biopsy or imaging."
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

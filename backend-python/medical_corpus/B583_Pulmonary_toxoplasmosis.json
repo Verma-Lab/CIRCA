@@ -1,0 +1,87 @@
+{
+    "disease": "Pulmonary Toxoplasmosis",
+    "icd_code": "B583",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Acute or persistent, productive or dry"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Acute or absent"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Arthralgias",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "oxygen_saturation": "Normal (97% on room air in one case)",
+            "temperature": "Normal or mildly elevated"
+        },
+        "physical_findings": [
+            "Clear lungs to auscultation (in one case)",
+            "No wheezing, crackles, or areas of consolidation (in one case)",
+            "Unremarkable musculoskeletal examination (in one case)"
+        ],
+        "lab_values": {
+            "WBC": "Normal or slightly elevated",
+            "ESR": "Elevated",
+            "CRP": "Elevated",
+            "HIV": "Negative (in one case)",
+            "IgE": "Within normal limits (in one case)"
+        },
+        "risk_factors": [
+            "Immunocompromised state (HIV, immunosuppressive drugs)",
+            "Exposure to cat feces",
+            "Ingestion of undercooked meat",
+            "Transplacental transmission",
+            "Blood transfusions",
+            "Organ transplantation"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Patchy airspace disease (consistent with pneumonia in one case)",
+            "CT Chest": "Extensive bilateral ground-glass opacities, subcentimeter bilateral hilar lymphadenopathy (more prominent on the right side in one case). Resolution of ground-glass opacities and lymphadenopathy after treatment in one case."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Demonstration of Toxoplasma cysts on lung biopsy",
+            "Positive serology for Toxoplasma gondii"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with pulmonary toxoplasmosis in an immunocompromised individual",
+            "Characteristic imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Atypical pneumonia",
+        "Pneumocystis pneumonia",
+        "Interstitial lung disease"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "disease": "Cerebral Cryptococcosis",
+    "icd_code": "B451",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common, occurring over a median of 30 days"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common, occurring over a median of 30 days"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Few significant findings on physical examination reported in a study of 47 patients"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "HIV infection (decreasing incidence with ART)",
+            "Solid organ transplant",
+            "Hematopoietic cell transplant",
+            "Malignancies",
+            "Autoimmune diseases",
+            "Diabetes mellitus",
+            "Cirrhosis",
+            "Immunosuppressive medications"
+        ],
+        "imaging_findings": {
+            "CT/MRI": [
+                "Single cerebral cryptococcoma lesion (in >50% of patients)",
+                "Perilesional edema (in 73% of cases)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of cerebral cryptococcoma on imaging (CT/MRI)",
+            "Clinical presentation consistent with cerebral cryptococcosis (headache, altered mental status, confusion, vomiting)"
+        ],
+        "supportive": [
+            "Isolation of Cryptococcus neoformans or Cryptococcus gattii",
+            "Positive CSF cryptococcal antigen test"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,61 @@
+{
+    "disease": "Respiratory tuberculosis unspecified",
+    "icd_code": "A159",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Cough",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Inflammation of respiratory tract",
+            "Inflammation of connective tissue around lungs"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Weakened immune system",
+            "HIV infection",
+            "Undernutrition",
+            "Diabetes",
+            "Tobacco use",
+            "Alcohol use disorders"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Bacteriological confirmation",
+            "Molecular confirmation",
+            "Histological confirmation"
+        ],
+        "supportive": [
+            "Symptoms (fever, cough, weakness, weight loss, fatigue)",
+            "Physical findings (inflammation of respiratory tract, inflammation of connective tissue around lungs)"
+        ]
+    },
+    "differential_diagnoses": []
+}

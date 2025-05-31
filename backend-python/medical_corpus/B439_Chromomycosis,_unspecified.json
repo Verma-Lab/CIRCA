@@ -1,0 +1,51 @@
+{
+    "disease": "Chromomycosis, unspecified",
+    "icd_code": "B439",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Soreness",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Itching",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Red papules",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Wart-type growths",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Red papules",
+            "Wart-type growths"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to contaminated soil",
+            "Exposure to fungi in rotten plant material",
+            "Skin wound"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with chromomycosis (e.g., papules, nodules, verrucous lesions)"
+        ],
+        "supportive": [
+            "Histopathological examination showing sclerotic bodies (Medlar bodies)",
+            "Culture of the causative fungus"
+        ]
+    },
+    "differential_diagnoses": []
+}

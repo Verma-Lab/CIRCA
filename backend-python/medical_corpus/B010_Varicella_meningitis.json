@@ -1,0 +1,117 @@
+{
+    "disease": "Varicella Meningitis",
+    "icd_code": "B010",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Gradual onset, initially occipital, then involving all head regions"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Present, improved with paracetamol"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Present",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Present",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Poor appetite",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Pain in hips, neck, and back",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Painless occipital rash",
+                "severity": "Present in some cases",
+                "pattern": "May mimic atopic dermatitis"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Present in some cases",
+                "pattern": "Consistent with lumbar herniation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38\u00b0C (improved with paracetamol)",
+            "blood_pressure": "Normal range in some cases, abnormal in others",
+            "heart_rate": "Normal range in some cases, abnormal in others"
+        },
+        "physical_findings": [
+            "Alert and oriented",
+            "Fluent speech",
+            "Blurred lateral disc margins (fundoscopic examination)",
+            "Visual acuity 20/20",
+            "Full extraocular movement",
+            "No nystagmus",
+            "Normal facial sensation and expressions",
+            "Normal motor and sensory examination in all extremities",
+            "Power 5/5 in all extremities",
+            "No neck stiffness (but pain on neck bending)",
+            "Symmetrical intact deep tendon reflexes",
+            "Normal plantar flexion",
+            "Intact cerebellar examination",
+            "Normal gait",
+            "No skin rash or lesions (in some cases)",
+            "Grade 1-2 disc swelling in both eyes (neuro-ophthalmology evaluation)",
+            "Changes on inferior and superior arcuate (neuro-ophthalmology evaluation)",
+            "Clover-leaf peripheral visual field defect (neuro-ophthalmology evaluation)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "10.80 \u00d7 103/\u00b5L (4.0-11.0 \u00d7 109/\u00b5L)",
+            "neutrophil": "74.6% (49.0-81.0%)",
+            "lymphocyte": "18.2% (14.0-41.0%)",
+            "hematocrit": "0.516 L/L (0.420-0.540 L/L)",
+            "cerebrospinal_fluid_opening_pressure": "35 mmHg",
+            "cerebrospinal_fluid_glucose": "3.2 mmol/L (2.2-3.9 mmol/L)",
+            "cerebrospinal_fluid_protein": "1.56 g/L (0.15-0.45 g/L)",
+            "cerebrospinal_fluid_red_blood_cell_count": "100 \u00d7 106/L",
+            "cerebrospinal_fluid_white_blood_cell_count": "238 \u00d7 106/L (79% lymphocytes, 11% monocytes)",
+            "VZV PCR CSF": "Positive"
+        },
+        "risk_factors": [
+            "Immunocompromised state (although cases in immunocompetent individuals exist)",
+            "Advanced age"
+        ],
+        "imaging_findings": {
+            "computed_tomography_of_head": "Normal",
+            "chest_radiograph": "Normal",
+            "MRI": "Normal in some cases, abnormal in others (e.g., ill-defined T2 hyperintensity)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (headache, fever, etc.)",
+            "Positive VZV PCR in CSF"
+        ],
+        "supportive": [
+            "Elevated CSF protein",
+            "Lymphocytic pleocytosis in CSF",
+            "Possible presence of rash (although absent in some cases)",
+            "History of varicella or herpes zoster"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial meningitis",
+        "Other viral meningitides (e.g., herpes simplex virus)",
+        "Idiopathic intracranial hypertension"
+    ]
+}

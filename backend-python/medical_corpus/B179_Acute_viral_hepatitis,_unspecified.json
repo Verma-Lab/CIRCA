@@ -1,0 +1,83 @@
+{
+    "disease": "Acute viral hepatitis, unspecified",
+    "icd_code": "B179",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Clay-colored stools",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible"
+        },
+        "physical_findings": [
+            "Jaundice (yellowing of skin and eyes)",
+            "Hepatomegaly (enlarged liver)",
+            "Splenomegaly (enlarged spleen)"
+        ],
+        "lab_values": {
+            "liver_enzymes": "Elevated ALT, AST, ALP",
+            "bilirubin": "Elevated"
+        },
+        "risk_factors": [
+            "Contact with contaminated food or water",
+            "Contact with infected blood or body fluids",
+            "Unprotected sex",
+            "Injection drug use"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show hepatomegaly"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of acute hepatitis",
+            "Elevated liver enzymes"
+        ],
+        "supportive": [
+            "Jaundice",
+            "Abnormal liver imaging"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hepatitis A",
+        "Hepatitis B",
+        "Hepatitis C",
+        "Hepatitis D",
+        "Hepatitis E",
+        "Other causes of liver inflammation"
+    ]
+}

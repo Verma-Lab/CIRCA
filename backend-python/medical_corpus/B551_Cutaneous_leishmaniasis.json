@@ -1,0 +1,69 @@
+{
+    "disease": "Cutaneous leishmaniasis",
+    "icd_code": "B551",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin sores",
+                "severity": "Variable, can range from single, limited lesion to multiple, large, locally destructive lesions",
+                "pattern": "Initially painless, brownish, erythematous papule that gradually enlarges into a nodule or plaque, then ulcerates from the center, forming a brownish crust.  May develop into a 'volcanic ulcer' with sloping, firm margins and a prominent central crater."
+            },
+            {
+                "name": "Papule",
+                "severity": "Mild to moderate",
+                "pattern": "Initial lesion, brownish, erythematous"
+            },
+            {
+                "name": "Nodule",
+                "severity": "Moderate",
+                "pattern": "Develops from papule, indurated"
+            },
+            {
+                "name": "Plaque",
+                "severity": "Moderate",
+                "pattern": "Develops from papule"
+            },
+            {
+                "name": "Ulcer",
+                "severity": "Variable, can be locally destructive",
+                "pattern": "Develops from nodule, central ulceration with brownish crust"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless, brownish, erythematous papule",
+            "Indurated nodule",
+            "Ulcer with brownish crust",
+            "Volcanic ulcer (sloping, firm margins with prominent central crater)",
+            "Lesions often on exposed body parts (face, forearms, lower legs)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Living in or traveling to endemic areas",
+            "Sand fly bites",
+            "Immunosuppression (e.g., HIV infection)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with cutaneous leishmaniasis (papule, nodule, ulcer)",
+            "History of living in or traveling to an endemic area 1-6 months prior to lesion appearance"
+        ],
+        "supportive": [
+            "Positive microscopic examination or culture of Leishmania parasites",
+            "Positive serological test for Leishmania"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignant tumors (basal or squamous cell carcinomas)",
+        "Erysipelas",
+        "Eczema",
+        "Sporotrichosis",
+        "Lupus vulgaris",
+        "Psoriasis",
+        "Atypical mycobacterial infections",
+        "Deep fungal infections"
+    ]
+}

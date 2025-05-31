@@ -1,0 +1,122 @@
+{
+    "disease": "Pulmonary Blastomycosis, unspecified",
+    "icd_code": "B402",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Pleuritic"
+            },
+            {
+                "name": "Skin lesions (papules, pustules, nodules)",
+                "severity": "Variable",
+                "pattern": "On exposed body areas"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Significant in some cases"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Acute hypoxic respiratory failure",
+                "severity": "Severe",
+                "pattern": "Can lead to death"
+            },
+            {
+                "name": "Acute respiratory distress syndrome (ARDS)",
+                "severity": "Severe",
+                "pattern": "Can lead to death"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Elevated",
+            "oxygen_saturation": "Decreased",
+            "heart_rate": "Variable",
+            "blood_pressure": "Variable"
+        },
+        "physical_findings": [
+            "Skin lesions (papules, pustules, nodules)",
+            "Lung findings (rales, decreased breath sounds)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated (leukocytosis)",
+            "liver_enzymes (AST/ALT)": "Elevated",
+            "procalcitonin": "Elevated",
+            "serum blastomyces antibody": "Positive",
+            "urine blastomyces antigen": "Positive",
+            "sputum culture": "Positive for B. dermatitidis",
+            "tissue biopsy": "Positive for dimorphic fungus"
+        },
+        "risk_factors": [
+            "Contact with infected soil (especially moist soil with decaying wood and leaves)",
+            "Weakened immune system (HIV/AIDS, organ transplant)",
+            "Male sex"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": [
+                "Diffuse bilateral infiltrates",
+                "Patchy infiltrates",
+                "Consolidation with air bronchograms",
+                "Mass-like lesions",
+                "Cavitary pneumonia",
+                "Reticulonodular alveolar and interstitial opacities",
+                "Mixed interstitial, ground-glass and alveolar infiltrates",
+                "Mediastinal lymphadenopathy",
+                "Tree in bud pattern opacification"
+            ],
+            "ct_scan": [
+                "Bilateral interstitial and nodular opacities",
+                "Endobronchial lesion",
+                "Right lower lobe opacification",
+                "Diffuse mixed interstitial, ground-glass and alveolar infiltrates",
+                "Confluent consolidative process"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture for Blastomyces dermatitidis",
+            "Histopathological identification of Blastomyces yeast in tissues",
+            "Positive serum or urine Blastomyces antigen test"
+        ],
+        "supportive": [
+            "Characteristic clinical presentation",
+            "Imaging findings consistent with blastomycosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial pneumonia",
+        "Tuberculosis",
+        "Histoplasmosis",
+        "Coccidioidomycosis",
+        "Other fungal infections"
+    ]
+}

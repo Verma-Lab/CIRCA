@@ -1,0 +1,65 @@
+{
+    "disease": "Acute hepatitis B with delta-agent without hepatic coma",
+    "icd_code": "B161",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Loss of appetite",
+                "severity": "Mild to moderate",
+                "pattern": "Can occur 60-150 days after infection"
+            },
+            {
+                "name": "Joint and muscle pain",
+                "severity": "Mild to moderate",
+                "pattern": "Can occur 60-150 days after infection"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "Can occur 60-150 days after infection"
+            },
+            {
+                "name": "Stomach pain",
+                "severity": "Mild to moderate",
+                "pattern": "Can occur 60-150 days after infection"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate to severe",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate to severe",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Jaundice (yellowing of the eyes and skin)",
+                "severity": "Moderate to severe",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Bloated stomach",
+                "severity": "Moderate",
+                "pattern": "Less common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Hepatitis B virus",
+            "Presence of delta agent"
+        ],
+        "supportive": [
+            "Symptoms consistent with acute hepatitis B",
+            "Absence of hepatic coma"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,62 @@
+{
+    "disease": "Shigellosis, unspecified",
+    "icd_code": "A039",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Severe",
+                "pattern": "Runny, often bloody or mucous"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Variable",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "stool culture": "Presence of Shigella bacteria",
+            "nucleic acid test (NAT)": "Detection of Shigella spp./Enteroinvasive E. coli (EIEC) nucleic acid"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Direct contact with infected individuals",
+            "Weakened immune system (increased risk of severe illness)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory confirmation of Shigella bacteria in stool (culture or NAT)"
+        ],
+        "supportive": [
+            "Clinical symptoms: diarrhea (often bloody), fever, abdominal pain, nausea, vomiting, tenesmus"
+        ]
+    },
+    "differential_diagnoses": []
+}

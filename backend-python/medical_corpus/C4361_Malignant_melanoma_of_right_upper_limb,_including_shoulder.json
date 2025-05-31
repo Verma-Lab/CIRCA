@@ -1,0 +1,33 @@
+{
+    "disease": "Malignant melanoma of right upper limb, including shoulder",
+    "icd_code": "C4361",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dark patch on the skin",
+                "severity": "Variable",
+                "pattern": "Localized initially, may spread"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal skin lesion (dark patch)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Excessive sun exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant melanoma"
+        ],
+        "supportive": [
+            "Clinical presentation (dark patch)",
+            "Imaging findings (if applicable)"
+        ]
+    },
+    "differential_diagnoses": []
+}

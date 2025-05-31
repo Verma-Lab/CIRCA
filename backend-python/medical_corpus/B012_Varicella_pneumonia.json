@@ -1,0 +1,79 @@
+{
+    "disease": "Varicella Pneumonia",
+    "icd_code": "B012",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High-grade fever",
+                "severity": "Variable",
+                "pattern": "Present in all patients in one study; subsided in 3 days in another"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in most patients; sometimes with blood-mixed sputum"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Present in some patients, especially on exertion"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Present in some patients"
+            },
+            {
+                "name": "Widespread skin eruptions/rash",
+                "severity": "Variable",
+                "pattern": "Characteristic of chickenpox, present in all patients"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Mentioned as a possible symptom"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Mentioned as a possible symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "<60 mmHg (in some severe cases)",
+            "heart_rate": "Tachycardia (106 bpm in one case)",
+            "respiratory_rate": "Tachypnea (24 breaths/min in one case)",
+            "oxygen_saturation": "88% in room air (in one case)"
+        },
+        "physical_findings": [
+            "Crackles in both lung bases (in one case)",
+            "Polymorphic rash with vesicles, pustules, and crusty lesions (in one case)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunosuppression",
+            "Contact with infected person",
+            "Smoking",
+            "Chronic lung diseases",
+            "Pregnancy (third trimester)",
+            "Severity of skin rash"
+        ],
+        "imaging_findings": {
+            "HRCT": "Multiple areas of ground-glass opacities with a crazy-paving pattern, and centrilobular nodules in a branching pattern (tree-in-bud appearance in one case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "New onset respiratory symptoms",
+            "Radiological findings consistent with pneumonia",
+            "Onset within 10 days of clinically evident varicella infection",
+            "Typical chickenpox rash and fever"
+        ],
+        "supportive": [
+            "Contact history with chickenpox patient",
+            "Immunosuppression"
+        ]
+    },
+    "differential_diagnoses": []
+}

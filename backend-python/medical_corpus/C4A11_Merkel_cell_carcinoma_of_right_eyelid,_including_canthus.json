@@ -1,0 +1,82 @@
+{
+    "disease": "Merkel cell carcinoma of right eyelid, including canthus",
+    "icd_code": "C4A11",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless solitary nodule",
+                "severity": "Variable",
+                "pattern": "Usually solitary, may ulcerate or develop satellite lesions"
+            },
+            {
+                "name": "Violaceous (purple-red) hue",
+                "severity": "Variable",
+                "pattern": "Distinctive color"
+            },
+            {
+                "name": "Madarosis (loss of eyelashes)",
+                "severity": "Partial or complete",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Telangiectatic vessels",
+                "severity": "Variable",
+                "pattern": "Overlying vessels"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "On manipulation"
+            },
+            {
+                "name": "Vision obstruction",
+                "severity": "Variable",
+                "pattern": "Depending on lesion size and location"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless solitary nodule with violaceous hue",
+            "Possible ulceration",
+            "Satellite lesions",
+            "Madarosis (eyelash loss)",
+            "Telangiectatic vessels",
+            "Lymphadenopathy (enlarged lymph nodes)",
+            "Lesion near eyelid margin, more common on upper eyelid"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 50",
+            "UV exposure",
+            "Immunosuppression",
+            "Polyomavirus infection",
+            "History of other skin cancers"
+        ],
+        "imaging_findings": {
+            "PET/CT": "May show enhancing lesion indicating metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic features",
+            "Immunohistochemical staining positive for cytokeratin 8, 18, 19, neuron-specific enolase, and negative for S-100 protein"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with MCC (AEIOU mnemonic)",
+            "Electron microscopy demonstrating dense-core cytoplasmic granules",
+            "Positive polyomavirus detection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chalazion",
+        "Lipoma",
+        "Dermatofibroma",
+        "Cysts",
+        "Vascular lesions",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Sebaceous carcinoma",
+        "Cutaneous metastases from other cancers (especially metastatic small-cell lung cancer)"
+    ]
+}

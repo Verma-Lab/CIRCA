@@ -1,0 +1,62 @@
+{
+    "disease": "Basal cell carcinoma of skin of left lower limb, including hip",
+    "icd_code": "C44719",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Small, sometimes shiny bump or scaly flat patch",
+                "severity": "Variable",
+                "pattern": "Slowly growing over time"
+            },
+            {
+                "name": "Change in skin appearance",
+                "severity": "Variable",
+                "pattern": "New growth, change in previous growth, recurring sore"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages, causing bleeding and infection"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            },
+            {
+                "name": "Infection",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin-colored or pink bump (on white skin)",
+            "Brown or glossy black bump with rolled border (on brown and Black skin)",
+            "Growth or sore that won't heal"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Long-term exposure to ultraviolet (UV) radiation from sunlight or tanning beds",
+            "Fair skin and light eyes",
+            "Previous BCC",
+            "Age over 50",
+            "Basal cell nevus syndrome (Gorlin syndrome)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical examination findings consistent with BCC",
+            "Biopsy confirming the diagnosis"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,70 @@
+{
+    "disease": "Typhoid fever, unspecified",
+    "icd_code": "A0100",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Prolonged high fever",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Constipation or diarrhea",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (high fever)"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood culture": "Presence of Salmonella Typhi"
+        },
+        "risk_factors": [
+            "Lack of access to safe water",
+            "Inadequate sanitation",
+            "Consumption of contaminated food or water",
+            "Travel to endemic areas",
+            "Contact with infected individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with typhoid fever (e.g., prolonged high fever, fatigue, headache, abdominal pain)",
+            "Positive blood culture for Salmonella Typhi"
+        ],
+        "supportive": [
+            "Exposure to risk factors (e.g., travel to endemic areas, consumption of contaminated food or water)",
+            "Presence of characteristic rash"
+        ]
+    },
+    "differential_diagnoses": []
+}

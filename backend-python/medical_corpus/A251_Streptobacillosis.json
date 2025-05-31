@@ -1,0 +1,103 @@
+{
+    "disease": "Streptobacillosis (Rat-bite fever)",
+    "icd_code": "A251",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Relapsing"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Migratory, may resemble Janeway lesions"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Variable",
+                "pattern": "Migratory, polyarthralgias"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present, short duration"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Abdominal discomfort",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Purpura",
+                "severity": "Variable",
+                "pattern": "May be present, diffuse"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (e.g., 37.9\u00b0C)",
+            "heart_rate": "Elevated (e.g., 112 bpm)",
+            "respiratory_rate": "Elevated (e.g., 24 breaths/min)"
+        },
+        "physical_findings": [
+            "Papules (resembling Janeway lesions)",
+            "Joint swelling (may be absent)",
+            "Purpura (may be present)"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for gram-negative bacilli (Streptobacillus moniliformis or S. notomytis)",
+            "leukocytosis": "Elevated (e.g., 9.0 \u00d7 10^8 cells/L)",
+            "C-reactive protein": "Elevated (e.g., 16.9 mg/dL)",
+            "IgM and IgG antibodies": "High titers detectable by serologic analysis (not commercially available)"
+        },
+        "risk_factors": [
+            "Rat bite or scratch",
+            "Indirect contact with rats (e.g., contaminated food, water, feces)",
+            "Exposure to rat feces"
+        ],
+        "imaging_findings": {
+            "echocardiography": "May show vegetation on heart valves (endocarditis)",
+            "chest_x_ray": "May be normal",
+            "CT scan": "May be normal"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Streptobacillus moniliformis or S. notomytis"
+        ],
+        "supportive": [
+            "History of rat contact",
+            "Characteristic rash",
+            "Migratory arthralgia or arthritis",
+            "Fever",
+            "Elevated inflammatory markers (leukocytosis, CRP)",
+            "Positive serology (IgM and IgG antibodies)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Reactive arthritis",
+        "Other bacterial infections",
+        "Pyelonephritis"
+    ]
+}

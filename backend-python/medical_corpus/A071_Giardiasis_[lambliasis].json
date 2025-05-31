@@ -1,0 +1,77 @@
+{
+    "disease": "Giardiasis [lambliasis]",
+    "icd_code": "A071",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pressure",
+                "severity": "Mild to Moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Intestinal inflammation",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Can be present, may be fatty"
+            },
+            {
+                "name": "Bloating",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Gas",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Malabsorption",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Stool examination": "Presence of Giardia"
+        },
+        "risk_factors": [
+            "Consumption of contaminated water or food"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory confirmation of infection with Giardia from an appropriate clinical specimen (e.g., stool, intestinal fluid, small bowel biopsy), with demonstration of Giardia lamblia"
+        ],
+        "supportive": [
+            "Clinical illness in a person who is epidemiologically linked to a confirmed case"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,91 @@
+{
+    "disease": "Other cerebrospinal syphilis",
+    "icd_code": "A5212",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can be mild to severe"
+            },
+            {
+                "name": "Meningitis symptoms",
+                "severity": "Variable",
+                "pattern": "Fever, neck stiffness, photophobia"
+            },
+            {
+                "name": "Cranial nerve palsies",
+                "severity": "Variable",
+                "pattern": "Weakness or paralysis of cranial nerves"
+            },
+            {
+                "name": "Cognitive impairment",
+                "severity": "Variable",
+                "pattern": "Memory loss, difficulty concentrating, personality changes"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Can be focal or generalized"
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Variable",
+                "pattern": "Loss of coordination"
+            },
+            {
+                "name": "Sensory disturbances",
+                "severity": "Variable",
+                "pattern": "Numbness, tingling, pain"
+            },
+            {
+                "name": "Psychiatric symptoms",
+                "severity": "Variable",
+                "pattern": "Depression, mania, psychosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases (meningitis)"
+        },
+        "physical_findings": [
+            "Cranial nerve palsies",
+            "Ataxia",
+            "Sensory deficits",
+            "Signs of meningitis (e.g., nuchal rigidity)"
+        ],
+        "lab_values": {
+            "VDRL/RPR": "Positive",
+            "FTA-ABS": "Positive",
+            "CSF VDRL/RPR": "Positive",
+            "CSF cell count": "Elevated",
+            "CSF protein": "Elevated"
+        },
+        "risk_factors": [
+            "Untreated syphilis",
+            "Prolonged syphilis infection",
+            "HIV infection"
+        ],
+        "imaging_findings": {
+            "MRI/CT scan": "May show abnormalities in the brain or spinal cord"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms suggestive of neurosyphilis",
+            "Positive serological test for syphilis (e.g., VDRL, RPR, FTA-ABS)",
+            "Abnormal CSF findings (e.g., positive CSF VDRL/RPR, pleocytosis, elevated protein)"
+        ],
+        "supportive": [
+            "Neuroimaging findings consistent with neurosyphilis",
+            "Response to treatment with antibiotics"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other infections of the CNS",
+        "Multiple sclerosis",
+        "Brain tumors",
+        "Stroke",
+        "Other neurological disorders"
+    ]
+}

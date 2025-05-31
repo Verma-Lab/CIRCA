@@ -1,0 +1,91 @@
+{
+    "disease": "Merkel cell carcinoma of the right upper eyelid, including canthus",
+    "icd_code": "C4A111",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless solitary nodule",
+                "severity": "Variable",
+                "pattern": "Present at onset"
+            },
+            {
+                "name": "Violaceous (purple-red) hue",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Satellite lesions",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Madarosis (loss of eyelashes)",
+                "severity": "Partial or complete",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Telangiectatic vessels",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Vision obstruction",
+                "severity": "Variable",
+                "pattern": "Possible, depending on lesion size and location"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "On manipulation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless solitary nodule with violaceous hue",
+            "Possible ulceration and satellite lesions",
+            "Madarosis (loss of eyelashes)",
+            "Telangiectatic vessels",
+            "Lymphadenopathy (in up to 37% of patients at diagnosis)",
+            "Suspicious cutaneous lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 50 years",
+            "Immunosuppression",
+            "UV exposure",
+            "Fair skin"
+        ],
+        "imaging_findings": {
+            "PET/CT": "May reveal enhancing lesions consistent with metastases",
+            "Other imaging": "Required if lymphadenopathy or diffuse eyelid involvement is present to evaluate for systemic spread"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological and immunohistochemical analysis showing characteristic features of Merkel cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with MCC (AEIOU mnemonic: Asymptomatic, Expanding rapidly, Immunosuppression, Older than 50, UV-exposed site)",
+            "Positive immunohistochemical staining for cytokeratin polypeptides 8, 18, and 19, pancytokeratin with cytokeratin 20, neuron specific enolase; negative for S-100 protein",
+            "Electron microscopy demonstrating dense-core cytoplasmic granules",
+            "Detection of polyomavirus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chalazion",
+        "Lipoma",
+        "Dermatofibroma",
+        "Cysts",
+        "Vascular lesions",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Sebaceous carcinoma",
+        "Cutaneous metastases from other cancers (especially metastatic small-cell lung cancer)"
+    ]
+}

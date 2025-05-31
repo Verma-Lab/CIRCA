@@ -1,0 +1,94 @@
+{
+    "disease": "Other symptomatic neurosyphilis",
+    "icd_code": "A5219",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Aphasia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Argyll Robertson pupil",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Chorioretinitis",
+                "severity": "Unspecified",
+                "pattern": "Disseminated"
+            },
+            {
+                "name": "Cord bladder",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Epilepsy",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Granuloma",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Gumma",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Parkinsonism",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Bulbar palsy",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Hemianesthesia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Neuroretinitis",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Paresthesia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Visceral crisis",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Perforating ulcer",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

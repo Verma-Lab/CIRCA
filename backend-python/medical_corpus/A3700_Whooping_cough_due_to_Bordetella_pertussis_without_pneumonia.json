@@ -1,0 +1,115 @@
+{
+    "disease": "Whooping cough (Pertussis)",
+    "icd_code": "A3700",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Runny nose",
+                "severity": "Mild",
+                "pattern": "Initial symptom, similar to common cold"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Initial symptom, similar to common cold"
+            },
+            {
+                "name": "Mild cough",
+                "severity": "Mild",
+                "pattern": "Initial symptom, progresses to severe coughing fits"
+            },
+            {
+                "name": "Severe coughing fits",
+                "severity": "Severe",
+                "pattern": "Develops after 1-2 weeks, lasting 2-3 months or longer"
+            },
+            {
+                "name": "Whooping sound (inspiratory whoop)",
+                "severity": "Variable",
+                "pattern": "High-pitched sound during inhalation after coughing fits, not present in all cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can occur after coughing fits"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can result from severe coughing"
+            },
+            {
+                "name": "Apnea (in infants)",
+                "severity": "Severe",
+                "pattern": "Periods of not breathing, can be life-threatening"
+            },
+            {
+                "name": "Subconjunctival hemorrhages",
+                "severity": "Variable",
+                "pattern": "Can occur due to violent coughing"
+            },
+            {
+                "name": "Rib fractures",
+                "severity": "Variable",
+                "pattern": "Can occur due to violent coughing"
+            },
+            {
+                "name": "Urinary incontinence",
+                "severity": "Variable",
+                "pattern": "Can occur due to violent coughing"
+            },
+            {
+                "name": "Hernias",
+                "severity": "Variable",
+                "pattern": "Can occur due to violent coughing"
+            },
+            {
+                "name": "Vertebral artery dissection",
+                "severity": "Severe",
+                "pattern": "Can occur due to violent coughing"
+            },
+            {
+                "name": "Pneumothorax",
+                "severity": "Severe",
+                "pattern": "Can occur due to pleural rupture from violent coughing"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased in severe cases, apnea in infants"
+        },
+        "physical_findings": [
+            "Thick mucus in airways",
+            "Possible cyanosis (in severe cases)"
+        ],
+        "lab_values": {
+            "CBC": "Lymphocytosis may be present",
+            "Nasopharyngeal culture": "Positive for Bordetella pertussis",
+            "PCR": "Positive for Bordetella pertussis DNA"
+        },
+        "risk_factors": [
+            "Age less than 1 year",
+            "Lack of vaccination",
+            "Weakened immune system",
+            "Exposure to infected individual"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic paroxysmal cough",
+            "Positive Bordetella pertussis culture or PCR"
+        ],
+        "supportive": [
+            "Inspiratory whoop",
+            "Vomiting after coughing fits"
+        ]
+    },
+    "differential_diagnoses": [
+        "Common cold",
+        "Influenza",
+        "Bronchitis",
+        "Pneumonia",
+        "Croup"
+    ]
+}

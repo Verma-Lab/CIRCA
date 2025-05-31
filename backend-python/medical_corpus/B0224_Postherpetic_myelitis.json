@@ -1,0 +1,86 @@
+{
+    "disease": "Postherpetic myelitis",
+    "icd_code": "B02.24",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Weakness",
+                "severity": "Severe (0/5 power in lower limbs in one case)",
+                "pattern": "Bilateral lower limb weakness, progressing to tetraparesis in some cases.  May be accompanied by tremors."
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable, from mild stinging to severe neuropathic pain",
+                "pattern": "Initially unilateral, ipsilateral to rash, later becoming bilateral.  May be localized to dermatome or more diffuse. Postherpetic neuralgia is a common complication."
+            },
+            {
+                "name": "Sensory loss",
+                "severity": "Variable, from patchy paraesthesia to complete loss of sensation",
+                "pattern": "Loss of pain and temperature sensation in lower limbs and lower abdomen up to involved dermatome.  May affect upper limbs and trunk.  Paresthesia can be patchy."
+            },
+            {
+                "name": "Bladder dysfunction",
+                "severity": "Variable, from incontinence to retention",
+                "pattern": "Sudden onset of bladder incontinence reported in one case. Urinary retention requiring catheterization reported in another."
+            },
+            {
+                "name": "Constipation",
+                "severity": "Severe",
+                "pattern": "Reported in one case, requiring aperients."
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Grouped crusted lesions on an erythematous background at the level of the involved dermatome.  May be absent in some cases."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Grouped crusted lesions on erythematous background",
+            "0/5 power in both lower limbs (in one case)",
+            "Complete loss of sensation (pain and temperature) over bilateral lower limbs and lower abdomen (in one case)",
+            "Asymmetric tetraparesis (in one case)",
+            "Muscle strength ranging from 0/5 to 4/5 in different limbs (in one case)"
+        ],
+        "lab_values": {
+            "Hemogram": "Normal (in one case)",
+            "Blood sugar": "Normal (in one case)",
+            "Liver function tests": "Normal (in one case)",
+            "Renal function tests": "Normal (in one case)",
+            "HIV antibodies": "Positive (in one case)",
+            "Hepatitis B surface antigen": "Negative (in one case)",
+            "CSF WBC count": "Elevated (27 in one case)",
+            "CSF RBC count": "Elevated (12 in one case)",
+            "CSF protein": "Normal (in one case)",
+            "CSF glucose": "Normal (in one case)",
+            "CD4 cell count": "300 cells/cumm (in one case)",
+            "VZV IgM": "Positive (in one case)",
+            "VZV IgG": "Positive (in one case)",
+            "IgG": "12.0 g/L (borderline in one case)",
+            "IgA": "0.40 g/L (low in one case)",
+            "IgM": "0.31 g/L (low in one case)"
+        },
+        "risk_factors": [
+            "Immunocompromise",
+            "Older age"
+        ],
+        "imaging_findings": {
+            "MRI of dorsal spine": "Hyperintensity on T2-weighted images, hypointense on T1-weighted images involving spinal cord from D1-D5 levels to D10-D12 levels (in one case).  High signal intensity within the left spinal cord at T2-8 (in another case). Ovoid hyperintense lesion in upper cervical spinal cord (in another case)."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Neurological symptoms (weakness, sensory loss, bladder dysfunction) developing in temporal proximity to herpes zoster rash",
+            "MRI findings consistent with transverse myelitis"
+        ],
+        "supportive": [
+            "Elevated CSF WBC count",
+            "Positive VZV PCR or anti-VZV IgG in CSF"
+        ]
+    },
+    "differential_diagnoses": [
+        "Transverse myelitis (other causes)",
+        "Other neurological complications of herpes zoster"
+    ]
+}

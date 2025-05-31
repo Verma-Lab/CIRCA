@@ -1,0 +1,27 @@
+{
+    "disease": "Malignant neoplasm of gum, unspecified",
+    "icd_code": "C039",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue in the gums"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Uncontrolled multiplication of cells in the gums",
+            "Presence of malignant neoplasm in the gum tissue"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

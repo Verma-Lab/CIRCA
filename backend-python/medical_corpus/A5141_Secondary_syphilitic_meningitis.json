@@ -1,0 +1,53 @@
+{
+    "disease": "Secondary syphilitic meningitis",
+    "icd_code": "A5141",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cranial nerve dysfunction",
+                "severity": "Variable",
+                "pattern": "Early manifestation, within first few months or years"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "Early manifestation, within first few months or years"
+            },
+            {
+                "name": "Acute altered mental status",
+                "severity": "Variable",
+                "pattern": "Early manifestation, within first few months or years"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "VDRL": {
+                "abnormal_range": "Reactive"
+            },
+            "RPR": {
+                "abnormal_range": "Reactive"
+            },
+            "TP-PA": {
+                "abnormal_range": "Reactive"
+            },
+            "other treponemal tests": {
+                "abnormal_range": "Reactive"
+            }
+        },
+        "risk_factors": [
+            "Untreated syphilis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms (e.g., cranial nerve dysfunction, meningitis, altered mental status)",
+            "Reactive nontreponemal test (VDRL or RPR)",
+            "Reactive treponemal test (TP-PA or other)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

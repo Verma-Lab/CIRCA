@@ -1,0 +1,46 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 90,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  Home glucose readings (120-180 mg/dL) and a previous A1c of 7.8% indicate suboptimal glycemic control.  The patient's fatigue could be a symptom of poorly controlled diabetes.  The elevated creatinine (15 mgh, abnormal flag 'High') warrants further investigation as it could be related to diabetic nephropathy, a common complication of long-standing diabetes.  The provided lab values are inconsistent with the units provided (mg/dL expected, not mgh).  Assuming a typo and that the creatinine is elevated, this is a significant finding."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 95,
+      "reasoning": "The patient's blood pressure is significantly elevated at 144/88 mmHg, exceeding the goal of <140/90 mmHg.  This is consistent with the diagnosis of essential hypertension, which is further supported by the patient's history of hypertension and current medication (lisinopril)."
+    }
+  ],
+  "differential_diagnoses": [
+    {
+      "disease": "Chronic Kidney Disease",
+      "icd_code": "N18",
+      "probability": 70,
+      "reasoning": "The elevated creatinine level is a major concern and suggests potential renal impairment.  Further investigation is needed to determine the cause and severity of the renal dysfunction.  This could be related to the diabetes or an independent condition."
+    },
+    {
+      "disease": "Tension Headache",
+      "icd_code": "G44.9",
+      "probability": 80,
+      "reasoning": "The patient reports occasional mild headaches consistent with tension-type headaches.  The description of the headaches (dull, pressure-like, across the forehead, 3/10 severity) aligns with this diagnosis. However, further investigation is needed to rule out other causes of headache."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Repeat comprehensive metabolic panel (CMP) to confirm creatinine elevation and assess other renal function parameters.",
+    "Urinalysis to evaluate for proteinuria or other signs of kidney damage.",
+    "HbA1c to assess long-term glycemic control.",
+    "Lipid panel to assess lipid profile.",
+    "ECG to evaluate cardiac function, especially given the hypertension.",
+    "Review of chest x-ray for any abnormalities."
+  ],
+  "clinical_summary": "The patient presents with poorly controlled type 2 diabetes mellitus and essential hypertension.  The significantly elevated creatinine level raises significant concern for chronic kidney disease, requiring immediate further investigation.  The patient's headaches are likely tension headaches, but other causes should be considered.  Additional testing is recommended to fully assess renal function, glycemic control, and cardiac health.  The reported lab values have inconsistencies in units which need clarification.",
+  "timestamp": "2025-04-09T04:52:20.031987",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

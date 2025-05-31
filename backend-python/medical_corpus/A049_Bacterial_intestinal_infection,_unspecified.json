@@ -1,0 +1,46 @@
+{
+    "disease": "Bacterial intestinal infection, unspecified",
+    "icd_code": "A049",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Watery, mucous, sometimes bloody"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of contaminated food"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

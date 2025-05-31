@@ -1,0 +1,67 @@
+{
+    "disease": "Malignant neoplasm of extrahepatic bile duct",
+    "icd_code": "C240",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Variable, dependent on extent of biliary involvement",
+                "pattern": "Painless"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Symptoms of cholecystitis",
+                "severity": "Variable",
+                "pattern": "Occurs in distal bile duct tumors due to Mirizzi's-like presentation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "CA 19-9": "Elevated",
+            "Liver function tests": "Abnormal"
+        },
+        "risk_factors": [
+            "Congenital cystic changes (Caroli's disease, polycystic liver disease)",
+            "Primary sclerosing cholangitis",
+            "Ulcerative colitis",
+            "Exposure to chemicals (thorotrast)",
+            "Medications (oral contraceptives, methyldopa)"
+        ],
+        "imaging_findings": {
+            "CT": "Essential for staging, localizes tumor, identifies nodal and distant metastasis, assesses local invasion, and identifies anatomical variations",
+            "MR": "Essential for staging, localizes tumor, identifies nodal and distant metastasis, assesses local invasion, and identifies anatomical variations",
+            "Cholangiography": "Used in preoperative assessment of resectability",
+            "Choledochoscopy": "Sometimes used in preoperative assessment of resectability",
+            "Angiography": "Sometimes used in preoperative assessment of resectability"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings consistent with extrahepatic bile duct cancer",
+            "Elevated CA 19-9 and abnormal liver function tests"
+        ],
+        "supportive": [
+            "Symptoms such as jaundice, diarrhea, weight loss, and fever",
+            "Risk factors such as primary sclerosing cholangitis or ulcerative colitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pancreatic head cancer"
+    ]
+}

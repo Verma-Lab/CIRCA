@@ -1,0 +1,39 @@
+{
+    "disease": "Meningococcemia",
+    "icd_code": "A394",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Systemic infection symptoms",
+                "severity": "Variable, can be fulminant",
+                "pattern": "Rapid onset, potentially within hours"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Elevated",
+            "blood_pressure": "Potentially decreased (hypotension)"
+        },
+        "physical_findings": [
+            "Skin lesions"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Neisseria meningitidis",
+            "CSF_culture": "Positive for Neisseria meningitidis (if meningitis present)"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Neisseria meningitidis"
+        ],
+        "supportive": [
+            "Presence of skin lesions",
+            "Positive CSF culture for Neisseria meningitidis (if meningitis is also present)",
+            "Antigen detection in CSF (although culture is gold standard)"
+        ]
+    },
+    "differential_diagnoses": []
+}

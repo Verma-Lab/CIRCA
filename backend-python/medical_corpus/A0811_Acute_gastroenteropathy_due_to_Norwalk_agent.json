@@ -1,0 +1,65 @@
+{
+    "disease": "Acute gastroenteropathy due to Norwalk agent",
+    "icd_code": "A0811",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (low-grade fever)",
+            "hydration": "Dehydration (can range from mild to severe)"
+        },
+        "physical_findings": [
+            "Dehydration",
+            "Lethargy"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of gastroenteritis (vomiting, diarrhea)"
+        ],
+        "supportive": [
+            "Positive stool test for Norwalk virus",
+            "Epidemiological link (exposure to others with similar symptoms)"
+        ]
+    },
+    "differential_diagnoses": []
+}

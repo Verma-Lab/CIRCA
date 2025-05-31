@@ -1,0 +1,73 @@
+{
+    "disease": "Chlamydial vulvovaginitis",
+    "icd_code": "A5602",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abnormal vaginal discharge",
+                "severity": "Variable",
+                "pattern": "May be present or absent; up to 80% of cases are asymptomatic"
+            },
+            {
+                "name": "Vaginal irritation",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Vaginal itching",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Vaginal burning",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Vulvar inflammation",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vulvar redness",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal vaginal discharge",
+            "Vulvar or vaginal inflammation or redness"
+        ],
+        "lab_values": {
+            "Nucleic acid amplification test (NAAT)": {
+                "abnormal_range": "Positive for Chlamydia trachomatis"
+            }
+        },
+        "risk_factors": [
+            "Bacterial vaginosis (BV)",
+            "Sexually active women under age 25",
+            "Black women (5-fold higher rates than white women)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive nucleic acid amplification test (NAAT) for Chlamydia trachomatis"
+        ],
+        "supportive": [
+            "Symptoms of vulvovaginitis (abnormal vaginal discharge, irritation, itching, burning)",
+            "Physical examination findings (abnormal vaginal discharge, vulvar or vaginal inflammation or redness)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial vaginosis",
+        "Vulvovaginal candidiasis",
+        "Trichomoniasis",
+        "Atrophic vaginitis",
+        "Irritant vaginitis",
+        "Allergic vaginitis",
+        "Inflammatory vaginitis"
+    ]
+}

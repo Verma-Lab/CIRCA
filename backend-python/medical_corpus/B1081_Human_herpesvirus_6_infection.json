@@ -1,0 +1,75 @@
+{
+    "disease": "Human herpesvirus 6 infection",
+    "icd_code": "B1081",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Exanthema subitum (roseola infantum, sixth disease)",
+                "severity": "benign",
+                "pattern": "common childhood illness"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "severe",
+                "pattern": "can occur in reactivation, particularly in transplant recipients"
+            },
+            {
+                "name": "Bone marrow suppression",
+                "severity": "severe",
+                "pattern": "can occur in reactivation, particularly in transplant recipients"
+            },
+            {
+                "name": "Pneumonitis",
+                "severity": "severe",
+                "pattern": "can occur in reactivation, particularly in transplant recipients"
+            },
+            {
+                "name": "Infertility",
+                "severity": "variable",
+                "pattern": "associated with HHV-6A infection in endometrial cells"
+            },
+            {
+                "name": "Recurrent implantation failure",
+                "severity": "severe",
+                "pattern": "associated with HHV-6A infection in endometrial biopsies"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "mild",
+                "pattern": "many active infections are asymptomatic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "viral DNA quantification": {
+                "method": "real-time PCR",
+                "abnormal_range": "Elevated levels in blood, other body fluids, and organs indicate active infection"
+            },
+            "Serologic tests": {
+                "method": "various serologic methods",
+                "abnormal_range": "Positive results indicate past or present infection"
+            }
+        },
+        "risk_factors": [
+            "Immunocompromised individuals (e.g., AIDS patients, transplant recipients)",
+            "Infancy (for primary HHV-6B infection)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Detection of HHV-6 DNA by real-time PCR in blood, other body fluids, or organs"
+        ],
+        "supportive": [
+            "Positive serologic tests",
+            "Clinical presentation consistent with HHV-6 infection (e.g., exanthema subitum, encephalitis)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cytomegalovirus infection",
+        "Epstein-Barr virus infection",
+        "Other herpesvirus infections"
+    ]
+}

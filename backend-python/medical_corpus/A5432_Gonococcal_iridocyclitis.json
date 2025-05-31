@@ -1,0 +1,22 @@
+{
+    "disease": "Gonococcal iridocyclitis",
+    "icd_code": "A54.32",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexually transmitted infection (STI)",
+            "High-risk sexual behavior",
+            "Age younger than 25 years"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

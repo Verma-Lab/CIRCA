@@ -1,0 +1,33 @@
+{
+    "disease": "Other respiratory tuberculosis",
+    "icd_code": "A158",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Compromised immune systems (HIV, undernutrition, diabetes)",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Bacteriological confirmation of TB"
+        ],
+        "supportive": [
+            "Signs and symptoms of TB",
+            "Rapid molecular tests or culture methods for drug resistance testing"
+        ]
+    },
+    "differential_diagnoses": [
+        "Mediastinitis",
+        "Pansinusitis",
+        "Pharyngitis",
+        "Rhinitis",
+        "Sinusitis",
+        "Tonsillitis"
+    ]
+}

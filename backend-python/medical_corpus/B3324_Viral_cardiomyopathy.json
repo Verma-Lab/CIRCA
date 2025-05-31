@@ -1,0 +1,61 @@
+{
+    "disease": "Viral Cardiomyopathy",
+    "icd_code": "B3324",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dyspnea on exertion",
+                "severity": "Increasing",
+                "pattern": "Over 2-3 days"
+            },
+            {
+                "name": "Syncope",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Acute heart failure",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "125 beats/min (tachycardia)",
+            "blood_pressure": "94/60 mm Hg (hypotension)"
+        },
+        "physical_findings": [
+            "S3 gallop",
+            "Elevated jugular venous pressure (8 cm H2O)",
+            "Scattered crackles on lung examination"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "27.2 \u00d7 10^9/L (3.5-10.5 \u00d7 10^9/L)",
+            "creatine_kinase_mb_isoenzyme": "22 ng/mL (<6.2 ng/mL)",
+            "troponin_t": "0.9 ng/mL (<0.01 ng/mL)"
+        },
+        "risk_factors": [
+            "Recent upper respiratory tract infection"
+        ],
+        "imaging_findings": {
+            "chest_radiography": "Mild cardiac enlargement",
+            "echocardiography": "Left ventricular ejection fraction (LVEF) 15-20%, generalized hypokinesis, small pericardial effusion",
+            "electrocardiography": "Diffuse ST-segment elevation, 1.0-mm PR-segment depression",
+            "coronary_angiography": "Normal coronary arteries",
+            "cardiac_magnetic_resonance_imaging": "May show myocardial inflammation (mentioned in context, not specific to this case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of myocardial inflammation (e.g., endomyocardial biopsy showing lymphocytic myocarditis)",
+            "Evidence of viral infection (e.g., PCR positive for Epstein-Barr virus)"
+        ],
+        "supportive": [
+            "Symptoms and signs of heart failure",
+            "Abnormal electrocardiogram",
+            "Reduced left ventricular ejection fraction",
+            "Elevated cardiac biomarkers"
+        ]
+    },
+    "differential_diagnoses": []
+}

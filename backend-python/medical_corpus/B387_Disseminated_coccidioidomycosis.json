@@ -1,0 +1,124 @@
+{
+    "disease": "Disseminated coccidioidomycosis",
+    "icd_code": "B387",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Respiratory failure",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Cough",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pleuritic chest pain",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Diffuse joint pain",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Intermittent fevers",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Forearm lesions",
+                "severity": "Mild to Moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Acute encephalopathy",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Declining mentation",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Worsening respiratory status",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Severe metabolic acidosis",
+                "severity": "Severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Renal failure",
+                "severity": "Severe",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia (133 bpm)",
+            "respiratory_rate": "Tachypnea (47 breaths/min)",
+            "oxygen_saturation": "Hypoxemia (85% on room air)",
+            "blood_pressure": "Normotensive"
+        },
+        "physical_findings": [
+            "Coarse bilateral breath sounds",
+            "Labored breathing",
+            "1- to 2-cm palpable subcutaneous nodules in the forearms bilaterally",
+            "No notable rashes, joint effusions, or neurologic deficits initially"
+        ],
+        "lab_values": {
+            "Coccidioides antibody IgG": "Positive",
+            "Blood cultures": "Negative",
+            "Coccidiomycosis titer (blood)": "1:64",
+            "Coccidiomycosis titer (cerebrospinal fluid)": "1:1"
+        },
+        "risk_factors": [
+            "Immunocompromised status (HIV positive)",
+            "Occupation as a farmer in an endemic area"
+        ],
+        "imaging_findings": {
+            "Chest CT": "Diffuse multifocal nodular consolidations and ground glass opacities, right upper lobe dense consolidations, prominent mediastinal and hilar lymph nodes",
+            "Head CT": "Corpus callosum mass extending into the left lateral ventricle",
+            "Brain MRI": "4.7 cm hemorrhagic mass located at the corpus callosum, with surrounding edema"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive Coccidioides culture or histologic finding from a nonpulmonary site",
+            "Clinical presentation consistent with disseminated coccidioidomycosis"
+        ],
+        "supportive": [
+            "Positive serology (Coccidioides antibody IgG)",
+            "Characteristic imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Primary central nervous system (CNS) lymphoma",
+        "High-grade glioma",
+        "Tuberculosis (TB)",
+        "Pneumocystis",
+        "Cryptococcus",
+        "Toxoplasmosis"
+    ]
+}

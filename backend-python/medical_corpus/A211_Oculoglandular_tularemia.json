@@ -1,0 +1,141 @@
+{
+    "disease": "Oculoglandular tularemia",
+    "icd_code": "A211",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Unilateral conjunctivitis",
+                "severity": "Severe",
+                "pattern": "Characteristic"
+            },
+            {
+                "name": "Ipsilateral preauricular lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Purulent discharge",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Painful or tender lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Ocular redness",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Swollen and erythematous eyelids",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Conjunctival injection",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Chemosis",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Corneal erosion",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Granulomatous tissue",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cellulitis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Submandibular lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cervical lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Ecchymosis around the eye",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "WBC": "Elevated (e.g., 12.8 G/l)",
+            "CRP": "Elevated (e.g., 106.9 mg/l)"
+        },
+        "physical_findings": [
+            "Hyperemic and painful conjunctiva",
+            "Enlarged and tender preauricular and submandibular lymph nodes",
+            "Granulomatous conjunctivitis",
+            "Swollen and erythematous eyelids",
+            "Conjunctival injection",
+            "Chemosis",
+            "Corneal erosion",
+            "Granuloma with central necrosis",
+            "Cervical lymphadenopathy",
+            "Suppuration of lymph nodes"
+        ],
+        "lab_values": {
+            "Culture": "May be positive for *Francisella tularensis*",
+            "IFA": "Positive in lymph node aspirates, but not sensitive enough for conjunctival swabs or blood samples",
+            "Serology": "May show significant and/or rising agglutination titres",
+            "PCR": "Positive in conjunctival swabs, lymph node aspirates, and blood samples"
+        },
+        "risk_factors": [
+            "Contact with infected materials",
+            "Contact with infected animals (e.g., hares, rodents)",
+            "Exposure to aerosolized contaminated particles",
+            "Handling of infected animals or ticks",
+            "Living in a rural area endemic for tularemia",
+            "Contact with dogs and ring doves",
+            "Harvesting mushrooms in a nearby forest"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show spherical-shaped lymph nodes with contrast-enhancing margins, with or without suppuration"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with oculoglandular tularemia (Parinaud oculoglandular syndrome)"
+        ],
+        "supportive": [
+            "Positive culture for *Francisella tularensis*",
+            "Positive PCR for *Francisella tularensis*",
+            "Positive serology for *Francisella tularensis*",
+            "Histopathological findings consistent with granulomatous conjunctivitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cat scratch disease",
+        "Tuberculosis",
+        "Syphilis",
+        "Mumps",
+        "Herpes simplex virus infection",
+        "Epstein-Barr virus infection",
+        "Adenovirus infection",
+        "Rickettsial infection",
+        "Sporotrichosis",
+        "Chlamydial infection"
+    ]
+}

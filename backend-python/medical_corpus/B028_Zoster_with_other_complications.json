@@ -1,0 +1,78 @@
+{
+    "disease": "Zoster with other complications",
+    "icd_code": "B028",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Small red blisters and pustules",
+                "severity": "Variable",
+                "pattern": "Belt-like, usually on one half of the body"
+            },
+            {
+                "name": "Soreness",
+                "severity": "Variable",
+                "pattern": "Localized to affected skin area"
+            },
+            {
+                "name": "High temperature",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Feeling unwell",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Ear inflammation",
+                "severity": "Variable",
+                "pattern": "Localized to ear"
+            },
+            {
+                "name": "Ear pain",
+                "severity": "Variable",
+                "pattern": "Localized to ear"
+            },
+            {
+                "name": "Ear itching",
+                "severity": "Variable",
+                "pattern": "Localized to ear"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Hearing impairment",
+                "severity": "Variable",
+                "pattern": "Localized to ear"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Small red blisters and pustules in a belt-like pattern on one half of the body",
+            "Ear inflammation"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of characteristic zoster rash"
+        ],
+        "supportive": [
+            "Other complications such as ear inflammation"
+        ]
+    },
+    "differential_diagnoses": []
+}

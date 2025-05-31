@@ -1,0 +1,89 @@
+{
+    "disease": "Gastrointestinal stromal tumor, unspecified site",
+    "icd_code": "C49A0",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Abdominal swelling",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Tiredness",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Black and tarry stools",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Vomiting blood",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "red blood cell count": {
+                "abnormal_range": "Low (anemia)"
+            }
+        },
+        "risk_factors": [
+            "Family history of GIST",
+            "Succinate dehydrogenase (SDH) deficiency"
+        ],
+        "imaging_findings": {
+            "Endoscopy": [
+                "Intraoperative mass"
+            ],
+            "Gastroscopy": [
+                "Stomach GIST"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a gastrointestinal stromal tumor"
+        ],
+        "supportive": [
+            "Imaging findings consistent with GIST",
+            "Histopathological examination showing characteristics of GIST",
+            "Immunohistochemical staining positive for CD34 and/or c-kit/CD117"
+        ]
+    },
+    "differential_diagnoses": []
+}

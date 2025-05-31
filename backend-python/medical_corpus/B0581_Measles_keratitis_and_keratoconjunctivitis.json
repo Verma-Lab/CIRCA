@@ -1,0 +1,128 @@
+{
+    "disease": "Measles keratitis and keratoconjunctivitis",
+    "icd_code": "B0581",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blurred vision",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Redness",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases, usually disappears when rash fades"
+            },
+            {
+                "name": "Watery eyes",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Irritation",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Itching",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "name": "Corneal infiltrate",
+                "description": "Greyish/white stromal infiltrates, distinct borders, minimal surrounding stromal haze (in bacterial keratitis); diffuse corneal oedema and infiltrates (in severe cases)"
+            },
+            {
+                "name": "Epithelial defect",
+                "description": "Present in some cases of bacterial keratitis"
+            },
+            {
+                "name": "Conjunctival hyperemia",
+                "description": "Present in some cases"
+            },
+            {
+                "name": "Dendritic or geographic ulcer",
+                "description": "In epithelial herpes simplex keratitis (HSK)"
+            },
+            {
+                "name": "Stromal haze/opacity",
+                "description": "In stromal HSK"
+            },
+            {
+                "name": "Lipid keratopathy",
+                "description": "In stromal HSK"
+            },
+            {
+                "name": "Corneal oedema",
+                "description": "In stromal and endothelial HSK"
+            },
+            {
+                "name": "Scarring",
+                "description": "In stromal HSK"
+            },
+            {
+                "name": "Sectoral or diffuse neovascularisation",
+                "description": "In stromal HSK"
+            },
+            {
+                "name": "Corneal thinning",
+                "description": "In stromal HSK"
+            },
+            {
+                "name": "Immune ring",
+                "description": "In stromal HSK and some bacterial keratitis"
+            },
+            {
+                "name": "Keratic precipitates",
+                "description": "In keratouveitis"
+            },
+            {
+                "name": "Anterior chamber cells",
+                "description": "In keratouveitis"
+            },
+            {
+                "name": "Hypopyon",
+                "description": "In bacterial keratitis"
+            }
+        ],
+        "lab_values": {
+            "Gram staining": {
+                "abnormal_range": "Sensitivity: 60%\u201375%"
+            },
+            "Culture": {
+                "abnormal_range": "Sensitivity: 38%\u201366%"
+            },
+            "PCR": {
+                "abnormal_range": "Sensitivity: 25%\u201388% (bacterial keratitis); 70%\u2013100% (herpes simplex keratitis)"
+            }
+        },
+        "risk_factors": [
+            "Measles infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Signs and symptoms of measles (e.g., conjunctivitis, photophobia, rash)",
+            "Presence of keratoconjunctivitis findings on slit-lamp biomicroscopy"
+        ],
+        "supportive": [
+            "Persistence of keratoconjunctivitis for up to 3 months"
+        ]
+    },
+    "differential_diagnoses": []
+}

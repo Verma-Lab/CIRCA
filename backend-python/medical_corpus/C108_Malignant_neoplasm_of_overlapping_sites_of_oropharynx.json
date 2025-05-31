@@ -1,0 +1,79 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of oropharynx",
+    "icd_code": "C108",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Throat pain",
+                "severity": "Variable",
+                "pattern": "Persistent or intermittent"
+            },
+            {
+                "name": "Difficulty swallowing (dysphagia)",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Neck mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Ear pain",
+                "severity": "Variable",
+                "pattern": "Persistent or intermittent"
+            },
+            {
+                "name": "Hoarseness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Unexplained weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in the presence of infection",
+            "heart_rate": "May be elevated in the presence of pain or infection",
+            "blood_pressure": "May be elevated in the presence of pain or infection",
+            "respiratory_rate": "May be elevated in the presence of pain or infection"
+        },
+        "physical_findings": [
+            "Mass in the oropharynx",
+            "Ulceration or lesion in the oropharynx",
+            "Lymphadenopathy (swollen lymph nodes) in the neck",
+            "Pain on palpation of the neck"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Heavy alcohol consumption",
+            "Human papillomavirus (HPV) infection"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show mass in the oropharynx, lymph node involvement",
+            "MRI": "May show mass in the oropharynx, lymph node involvement, extent of tumor invasion",
+            "PET scan": "May show metabolic activity of the tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings suggestive of oropharyngeal cancer",
+            "Imaging findings consistent with oropharyngeal cancer",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Elevated tumor markers (if applicable)",
+            "Positive HPV test (if applicable)"
+        ]
+    },
+    "differential_diagnoses": []
+}

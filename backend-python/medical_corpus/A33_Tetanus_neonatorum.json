@@ -1,0 +1,80 @@
+{
+    "disease": "Tetanus neonatorum",
+    "icd_code": "A33",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Muscle spasms",
+                "severity": "Severe",
+                "pattern": "Generalized, stimulus-sensitive (light and sound)"
+            },
+            {
+                "name": "Feeding difficulties",
+                "severity": "Severe",
+                "pattern": "Progressive inability to suck or breastfeed"
+            },
+            {
+                "name": "Excessive crying",
+                "severity": "Moderate to Severe",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Body stiffness",
+                "severity": "Moderate to Severe",
+                "pattern": "Generalized hypertonicity with extended limbs"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Developed two days before admission"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38.5\u00b0C",
+            "respiratory_rate": "56 breaths per minute",
+            "heart_rate": "159 beats per minute",
+            "oxygen_saturation": "98% on 1 L oxygen per minute"
+        },
+        "physical_findings": [
+            "Generalized hypertonicity with extended limbs",
+            "Generalized spasms",
+            "Colored umbilicus",
+            "Ulcerative lesions on the right scrotum"
+        ],
+        "lab_values": {
+            "blood_count": "Normal for age, granulocyte count 12,790 cells/\u03bcL, hemoglobin 15.7 g/dL",
+            "renal_function": "Normal",
+            "serum_electrolytes": "Normal",
+            "blood_cultures": "No bacterial growth",
+            "cerebrospinal_fluid": "Clear fluid with appropriate glucose and protein levels, normal Gram staining"
+        },
+        "risk_factors": [
+            "Unsterile instruments used to cut the umbilical cord",
+            "Home birth in unsterile conditions",
+            "Application of manure or traditional plants on the umbilical stump",
+            "Mother not receiving tetanus toxoid-containing vaccine",
+            "Unclean traditional practices",
+            "Low birth weight (potential risk factor)"
+        ],
+        "imaging_findings": {
+            "cranial_ultrasound": "No abnormalities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Illness occurring in an infant with normal ability to suck and cry in the first 2 days of life",
+            "Loss of ability to suck and cry between days 3 and 28 of life",
+            "Rigidity or spasms"
+        ],
+        "supportive": [
+            "History of unsterile delivery practices",
+            "Maternal lack of tetanus vaccination",
+            "Clinical presentation of muscle spasms, feeding difficulties, excessive crying, and fever"
+        ]
+    },
+    "differential_diagnoses": [
+        "Drug intoxication",
+        "Neonatal meningitis"
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "disease": "Spirochetal infection, unspecified",
+    "icd_code": "A699",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous, may be high (up to 41.5\u00b0C)"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Renal failure",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Arrhythmias",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Heart failure",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Meningitis/meningoencephalitis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Pulmonary hemorrhage",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Respiratory failure",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Macular, raised, red or purple; may be hemorrhagic; may be present"
+            },
+            {
+                "name": "Arthralgia/arthritis",
+                "severity": "Variable",
+                "pattern": "Migratory, polyarticular, often large joints"
+            },
+            {
+                "name": "Open wounds/sores",
+                "severity": "Variable",
+                "pattern": "May be present at site of animal bite"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Conjunctival suffusion",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (up to 41.5\u00b0C)",
+            "heart_rate": "Tachycardia",
+            "respiratory_rate": "Tachypnea",
+            "blood_pressure": "Hypotension (during flush phase of crisis)"
+        },
+        "physical_findings": [
+            "Skin lesions (variable depending on specific spirochete)",
+            "Joint swelling and tenderness",
+            "Jaundice",
+            "Neurological signs (meningitis, encephalopathy)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Normal or increased",
+            "bilirubin": "Elevated",
+            "prothrombin_time": "Elevated",
+            "activated_partial_thromboplastin_time": "Elevated",
+            "platelets": "Thrombocytopenia"
+        },
+        "risk_factors": [
+            "Exposure to infected animals (e.g., rodents, ticks)",
+            "Exposure to contaminated water"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with spirochetal infection",
+            "Epidemiological risk factors"
+        ],
+        "supportive": [
+            "Positive serology",
+            "Positive PCR",
+            "Culture isolation (difficult)"
+        ]
+    },
+    "differential_diagnoses": []
+}

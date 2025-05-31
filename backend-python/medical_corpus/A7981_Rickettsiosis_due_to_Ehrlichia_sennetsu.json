@@ -1,0 +1,77 @@
+{
+    "disease": "Rickettsiosis due to Ehrlichia sennetsu",
+    "icd_code": "A7981",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Mononucleosis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hepatosplenomegaly",
+            "Lymphadenopathy"
+        ],
+        "lab_values": {
+            "Indirect Fluorescent Antibody Test (IFAT)": {
+                "abnormal_range": "Positive for anti-E. sennetsu antibodies"
+            }
+        },
+        "risk_factors": [
+            "Consumption of raw fish (Anabas testudineus) contaminated with infected trematodes"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology for anti-E. sennetsu antibodies (e.g., IFAT)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with sennetsu rickettsiosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

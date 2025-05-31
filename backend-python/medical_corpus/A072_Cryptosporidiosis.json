@@ -1,0 +1,40 @@
+{
+    "disease": "Cryptosporidiosis",
+    "icd_code": "A072",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be severe and life-threatening in immunocompromised individuals",
+                "pattern": "Acute onset, prolonged in immunocompromised individuals"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Vital signs may be abnormal depending on the severity of the diarrhea and dehydration.  No specific ranges provided in text."
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised status (e.g., AIDS, immunosuppressive therapy)",
+            "Ingestion of contaminated food or water",
+            "Malnutrition (especially in children)",
+            "Exposure to infected animals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Detection of Cryptosporidium oocysts in stool samples"
+        ],
+        "supportive": [
+            "Clinical symptoms (diarrhea, abdominal pain)"
+        ]
+    },
+    "differential_diagnoses": []
+}

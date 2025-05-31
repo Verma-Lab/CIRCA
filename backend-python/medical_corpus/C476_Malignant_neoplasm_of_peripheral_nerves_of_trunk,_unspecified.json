@@ -1,0 +1,46 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves of trunk, unspecified",
+    "icd_code": "C476",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Growing lump or mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or lump"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Neurofibromatosis type 1 (NF1)",
+            "Family history of MPNST"
+        ],
+        "imaging_findings": {
+            "MRI": "Tumor location and size, metastasis",
+            "CT": "Tumor location and size, metastasis",
+            "PET": "Tumor location and size, metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings suggestive of MPNST",
+            "Biopsy confirming malignant peripheral nerve sheath tumor"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,81 @@
+{
+    "disease": "Herpesviral vesicular dermatitis",
+    "icd_code": "B001",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "Variable, can be diffuse and spreading",
+                "pattern": "Begins in one area (e.g., cheek) and spreads to trunk and extremities; can spare genitals, palms, and soles"
+            },
+            {
+                "name": "Vesicles",
+                "severity": "Variable, can be eroded and coalescing",
+                "pattern": "Diffuse, often on face, neck, and upper trunk; may rupture to form crusted ulcers"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, can be low-grade or high (up to 104.3\u00b0F)",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Itching",
+                "severity": "Intensely pruritic in some cases (Eczema Herpeticum)",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, ranging from low-grade fever to 104.3\u00b0F (40.3\u00b0C)"
+        },
+        "physical_findings": [
+            "Diffuse, eroded, and coalescing vesicles",
+            "Punched-out ulcerations",
+            "Erythematous base",
+            "Ill-appearing but nontoxic",
+            "Lesions may be localized to areas of atopic dermatitis"
+        ],
+        "lab_values": {
+            "viral culture": "Positive for herpes simplex virus",
+            "polymerase chain reaction (PCR)": "Positive for herpes simplex virus",
+            "Tzanck smear": "May show multinucleated giant cells"
+        },
+        "risk_factors": [
+            "Atopic dermatitis",
+            "Weakened immune system",
+            "Contact with individuals with active herpes infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with herpesviral vesicular dermatitis (vesicles, fever, rash)"
+        ],
+        "supportive": [
+            "Positive viral culture",
+            "Positive PCR",
+            "Positive Tzanck smear"
+        ]
+    },
+    "differential_diagnoses": [
+        "Eczema coxsackium",
+        "Eczema vaccinatum",
+        "Impetigo",
+        "Primary varicella"
+    ]
+}

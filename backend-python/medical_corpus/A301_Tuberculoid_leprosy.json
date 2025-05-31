@@ -1,0 +1,50 @@
+{
+    "disease": "Tuberculoid leprosy",
+    "icd_code": "A301",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless skin lesion",
+                "severity": "Mild",
+                "pattern": "Single or few, sharply demarcated, hypoesthetic or anesthetic lesions"
+            },
+            {
+                "name": "Hypopigmentation",
+                "severity": "Mild",
+                "pattern": "Slightly hypopigmented papule"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": null,
+        "physical_findings": [
+            "Slightly hypopigmented papule on the inner surface of the left knee",
+            "Residual actinic keratosis and regions of sun damage on arms and legs",
+            "No significant findings on peripheral nerve examination or hot and cold testing"
+        ],
+        "lab_values": {
+            "Histopathology": "Prominent granulomatous inflammation consisting of epithelioid histiocytes and associated small, mature lymphocytes. Focal admixed neutrophils present. Polarizable foreign material not seen.",
+            "FITE stain": "Innumerable positive mycobacteria clustered in small granules and as single organisms",
+            "AFB stain": "Foamy macrophages seen. Negative in one instance, suggesting potential sampling variation or a rare mixed leprosy form."
+        },
+        "risk_factors": [
+            "Extensive travel to Africa and Asia",
+            "Exposure to Mycobacterium leprae"
+        ],
+        "imaging_findings": null
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Mycobacterium leprae",
+            "Granulomatous inflammation with epithelioid histiocytes and lymphocytes on histopathology",
+            "Single or few, sharply demarcated hypoesthetic or anesthetic lesions"
+        ],
+        "supportive": [
+            "Hypopigmentation",
+            "Travel history to leprosy-endemic regions",
+            "Long incubation period"
+        ]
+    },
+    "differential_diagnoses": [
+        "Environmental non-tuberculous mycobacterium (NTM)"
+    ]
+}

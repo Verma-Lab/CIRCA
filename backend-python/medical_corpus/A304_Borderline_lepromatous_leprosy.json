@@ -1,0 +1,90 @@
+{
+    "disease": "Borderline Lepromatous Leprosy",
+    "icd_code": "A304",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Reddish patches and plaques",
+                "severity": "Variable",
+                "pattern": "Progressive enlargement and spread to trunk and limbs"
+            },
+            {
+                "name": "Hypochromic macules",
+                "severity": "Variable",
+                "pattern": "Can become red, edematous, and enlarged during type 1 reaction"
+            },
+            {
+                "name": "Diminished skin sensation",
+                "severity": "Variable",
+                "pattern": "Present on lesions"
+            },
+            {
+                "name": "Tender and thickened peripheral nerves",
+                "severity": "Variable",
+                "pattern": "Develops during type 1 reaction"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild",
+                "pattern": "Can occur with dapsone-induced side effects"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild",
+                "pattern": "Can occur with dapsone-induced side effects"
+            },
+            {
+                "name": "Edema and pain",
+                "severity": "Mild",
+                "pattern": "Can occur during type 1 reaction"
+            },
+            {
+                "name": "Skin discoloration and ichthyosis",
+                "severity": "Variable",
+                "pattern": "Can be induced by clofazimine"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "oxygen_saturation": "90% on room air (during dapsone-induced side effects)"
+        },
+        "physical_findings": [
+            "Multiple infiltrated reddish patches and plaques",
+            "Partially pigmented desquamation",
+            "Diminished skin sensation on lesions",
+            "Peripheral nerve thickening (during type 1 reaction)",
+            "Edema (during type 1 reaction)"
+        ],
+        "lab_values": {
+            "neutrophils": "40/\u03bcL (during dapsone-induced side effects)",
+            "hemoglobin": "8.1 g/dL (during dapsone-induced side effects)",
+            "methemoglobin": "12.9% (during dapsone-induced side effects)",
+            "acid-fast bacilli": "4+ (positive staining in skin biopsy)"
+        },
+        "risk_factors": [
+            "Nonpolar forms of leprosy",
+            "Close contact with untreated individuals"
+        ],
+        "imaging_findings": {
+            "ultrasonography": "Reduction of blood flow around ulnar nerve (during type 1 reaction)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (reddish patches and plaques, diminished sensation)",
+            "Positive acid-fast bacilli staining in skin biopsy",
+            "Detection of M. leprae DNA by PCR"
+        ],
+        "supportive": [
+            "Histopathology showing plasmocytic and lymphocytic infiltration in nerve tract",
+            "Type 1 reaction with characteristic clinical and imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Sarcoidosis",
+        "Cutaneous lupus erythematosus",
+        "Cutaneous leishmaniasis",
+        "Fungal infection",
+        "Other mycobacterial infections"
+    ]
+}

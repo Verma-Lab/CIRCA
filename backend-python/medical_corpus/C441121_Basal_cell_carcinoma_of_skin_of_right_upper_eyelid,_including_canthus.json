@@ -1,0 +1,60 @@
+{
+    "disease": "Basal cell carcinoma of skin of right upper eyelid, including canthus",
+    "icd_code": "C441121",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Central ulcerated crater"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May occur if the center of the tumor becomes necrotic"
+            },
+            {
+                "name": "Change in size, color, or appearance",
+                "severity": "Variable",
+                "pattern": "Worrisome for malignancy"
+            },
+            {
+                "name": "Madarosis (loss of eyelashes)",
+                "severity": "Variable",
+                "pattern": "In the area of the lesion"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Slightly pigmented area in the lateral right upper eyelid with central ulceration, rolled edges, and loss of eyelashes (madarosis) in the area of the lesion",
+            "Small translucent nodule or papule with pearly outer margins",
+            "White-pink to yellow plaque with indistinct clinical margins and no obvious ulceration (morpheaform type)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Ultraviolet light (particularly UVB) induced damage to the epidermis",
+            "Fair skin",
+            "Sun exposure",
+            "Defects of the PTCH gene located on chromosome 9q22.3"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation following incisional biopsy"
+        ],
+        "supportive": [
+            "Clinical suspicion based on physical examination findings and risk factors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Any benign or malignant condition of the eyelid skin",
+        "Squamous cell carcinoma",
+        "Sebaceous gland carcinoma",
+        "Malignant melanoma",
+        "Chalazion",
+        "Intradermal nevus",
+        "Blepharitis"
+    ]
+}

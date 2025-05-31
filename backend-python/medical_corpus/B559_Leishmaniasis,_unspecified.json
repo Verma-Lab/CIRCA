@@ -1,0 +1,92 @@
+{
+    "disease": "Leishmaniasis, unspecified",
+    "icd_code": "B559",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin sores",
+                "severity": "Variable, can be painless or painful",
+                "pattern": "One or more sores, may change in size and appearance over time, often resembling a volcano with a raised edge and central crater; some sores may be covered by a scab; swollen glands near sores may be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in visceral leishmaniasis"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Present in visceral leishmaniasis"
+            },
+            {
+                "name": "Enlarged spleen and liver",
+                "severity": "Variable",
+                "pattern": "Present in visceral leishmaniasis; usually spleen is larger than liver"
+            },
+            {
+                "name": "Swollen glands",
+                "severity": "Variable",
+                "pattern": "May be present in visceral leishmaniasis and cutaneous leishmaniasis"
+            },
+            {
+                "name": "Ulcers in nose, mouth, or throat",
+                "severity": "Variable",
+                "pattern": "Present in mucocutaneous leishmaniasis"
+            },
+            {
+                "name": "Abdominal swelling",
+                "severity": "Variable",
+                "pattern": "Present in visceral leishmaniasis"
+            },
+            {
+                "name": "Low blood counts (anemia, low white blood cell count, low platelet count)",
+                "severity": "Variable",
+                "pattern": "Present in visceral leishmaniasis"
+            },
+            {
+                "name": "Macular, papular, or nodular rash (Post-kala-azar dermal leishmaniasis)",
+                "severity": "Variable",
+                "pattern": "Usually on face, upper arms, and trunk; occurs months to years after kala-azar treatment"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin sores (variable size, appearance, and presence of scabs)",
+            "Swollen lymph nodes (near sores)",
+            "Enlarged spleen and liver (visceral leishmaniasis)",
+            "Ulcers in mucous membranes (mucocutaneous leishmaniasis)",
+            "Macular, papular, or nodular rash (Post-kala-azar dermal leishmaniasis)"
+        ],
+        "lab_values": {
+            "Complete blood count": "Low red blood cell count (anemia), low white blood cell count, low platelet count (visceral leishmaniasis)",
+            "Parasitological tests": "Presence of Leishmania parasites in tissue samples (ulcers, spleen, lymph node, bone marrow)",
+            "Serological tests": "Detection of Leishmania antibodies (limited value in cutaneous leishmaniasis, potential cross-reactivity with Trypanosoma cruzi)"
+        },
+        "risk_factors": [
+            "Living in rural areas of tropical or subtropical regions",
+            "Inadequate sanitation",
+            "Weakened immune system (HIV, other conditions)",
+            "Exposure to infected sand flies",
+            "Poverty",
+            "Poor housing and domestic sanitary conditions",
+            "Human behavior (sleeping outside or on the ground)",
+            "Diets lacking protein-energy, iron, vitamin A, and zinc",
+            "Movement of people into areas with high transmission",
+            "Changes in urbanization, deforestation, or human incursion into forested areas",
+            "Climate change (changes in temperature and rainfall)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (symptoms and physical findings)",
+            "Parasitological confirmation (microscopic examination of tissue samples for amastigotes)"
+        ],
+        "supportive": [
+            "Serological tests (limited value in cutaneous leishmaniasis)",
+            "Molecular methods (PCR, DNA sequencing)"
+        ]
+    },
+    "differential_diagnoses": []
+}

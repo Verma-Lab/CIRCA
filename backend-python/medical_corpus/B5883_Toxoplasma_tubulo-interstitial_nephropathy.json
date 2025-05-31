@@ -1,0 +1,92 @@
+{
+    "disease": "Toxoplasma tubulo-interstitial nephropathy",
+    "icd_code": "B5883",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Eye pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Rise in serum creatinine",
+                "severity": "Variable",
+                "pattern": "Indicator of renal dysfunction"
+            },
+            {
+                "name": "Urinary protein",
+                "severity": "Variable",
+                "pattern": "Indicator of renal dysfunction"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Asthenia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Tenderness in eyes",
+            "Iritis",
+            "Keratic precipitations"
+        ],
+        "lab_values": {
+            "Toxoplasma gondii IgG": "Positive in some cases",
+            "Toxoplasma gondii IgM": "Positive in some cases, may persist for months or years",
+            "Serum creatinine": "Elevated in some cases",
+            "Urinary protein": "Elevated in some cases"
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Toxoplasma gondii infection",
+            "Drug use (e.g., diclofenac)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tubulointerstitial nephritis and uveitis syndrome",
+            "Positive serology for Toxoplasma gondii (IgG and/or IgM)"
+        ],
+        "supportive": [
+            "Renal biopsy showing acute granulomatous interstitial nephritis",
+            "Response to treatment for toxoplasmosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Drug-induced tubulointerstitial nephritis",
+        "Other infections causing tubulointerstitial nephritis",
+        "Autoimmune diseases causing tubulointerstitial nephritis and uveitis"
+    ]
+}

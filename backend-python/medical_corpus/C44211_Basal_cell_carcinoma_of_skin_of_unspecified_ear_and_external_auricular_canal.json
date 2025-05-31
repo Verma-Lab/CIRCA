@@ -1,0 +1,61 @@
+{
+    "disease": "Basal cell carcinoma of skin of unspecified ear and external auricular canal",
+    "icd_code": "C44211",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intermittent otorrhea",
+                "severity": "Unspecified",
+                "pattern": "Several years"
+            },
+            {
+                "name": "Pruritus of the ear",
+                "severity": "Unspecified",
+                "pattern": "2 weeks"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small nodular mass arising from the posterior inferior aspect of the right cartilaginous portion of the EAC (1.5\u00d71.2 cm)",
+            "Intact right tympanic membrane",
+            "Polypoidal lesion and purulent discharge in the left EAC"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": [
+                "Narrowing of the external auditory canal",
+                "Small nodule (5 mm in diameter) at the posterior wall of the right external auditory canal",
+                "Cutaneous lesion involving the left pinna and external auditory canal"
+            ],
+            "MRI": [
+                "1.3 cm sized contrast enhancing mass lesion at the lateral aspect of right external auditory canal",
+                "No definite abnormality in both middle and inner structures"
+            ],
+            "Ultrasound": "No metastatic disease in parotid and neck",
+            "Chest X-ray": "Negative",
+            "CT of chest": "Negative",
+            "PET-CT": "Negative",
+            "Bone scan": "Negative",
+            "Hepatobiliary sonography": "Negative",
+            "Duodenoscopy": "Negative"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histologic examination showing basal cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation of a nodular mass in the EAC",
+            "Imaging findings consistent with basal cell carcinoma"
+        ]
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Adenoid cystic carcinoma",
+        "Melanoma",
+        "Adenocarcinoma",
+        "Sarcoma"
+    ]
+}

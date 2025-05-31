@@ -1,0 +1,86 @@
+{
+    "disease": "Shigellosis due to Shigella sonnei",
+    "icd_code": "A033",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery or bloody diarrhea",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Typically starts 1-2 days after infection, lasts 7 days"
+            },
+            {
+                "name": "Abdominal pain and cramps",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in most cases",
+            "heart_rate": "May be elevated in severe cases"
+        },
+        "physical_findings": [
+            "Tenderness to palpation in the abdomen"
+        ],
+        "lab_values": {
+            "stool_culture": "Positive for Shigella sonnei",
+            "complete_blood_count": "May show leukocytosis"
+        },
+        "risk_factors": [
+            "Person-to-person contact",
+            "Contact with feces from an infected person",
+            "Indirect contact (flies, fomites)",
+            "Consumption of contaminated food or water",
+            "Sexual transmission (MSM)",
+            "Immunocompromised status",
+            "HIV infection",
+            "Homelessness",
+            "International travel"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive stool culture for Shigella sonnei"
+        ],
+        "supportive": [
+            "Clinical symptoms (diarrhea, abdominal pain, fever)",
+            "Epidemiological risk factors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial gastroenteritis",
+        "Viral gastroenteritis",
+        "Inflammatory bowel disease"
+    ]
+}

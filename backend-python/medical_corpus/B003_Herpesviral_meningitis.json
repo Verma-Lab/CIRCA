@@ -1,0 +1,106 @@
+{
+    "disease": "Herpesviral Meningitis",
+    "icd_code": "B003",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable, can be persistent",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Hallucinations",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Generalized rash",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Atypical symptoms (in immunocompromised)",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Increased (tachycardia)",
+            "respiratory_rate": "Increased (tachypnea)",
+            "blood_pressure": "Can be decreased (hypotension)",
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Neck rigidity",
+            "Encephalopathy (in severe cases)",
+            "Absence of agitation or clonus (in some cases)"
+        ],
+        "lab_values": {
+            "leucopenia": "Decreased white blood cell count",
+            "lactic_acidosis": "Elevated lactic acid levels",
+            "CSF analysis": {
+                "white_blood_cell_count": "Normal or decreased in immunocompromised individuals",
+                "lymphocytes": "Predominantly lymphocytes",
+                "HSV PCR": "Positive"
+            },
+            "AST/ALT/ALP": "May be abnormal"
+        },
+        "risk_factors": [
+            "HSV infection (HSV-1, HSV-2, VZV)",
+            "Immunocompromised status",
+            "Recent methamphetamine use",
+            "Alcohol abuse"
+        ],
+        "imaging_findings": {
+            "CT scan": "May be normal",
+            "MRI": "May be normal or show abnormalities depending on severity"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (headache, fever, neck stiffness)",
+            "Positive HSV PCR in CSF"
+        ],
+        "supportive": [
+            "Abnormal CSF findings (pleocytosis, lymphocytic predominance)",
+            "Abnormal brain imaging (MRI)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial meningitis",
+        "Other viral meningitides",
+        "Methamphetamine toxicity",
+        "Sepsis"
+    ]
+}

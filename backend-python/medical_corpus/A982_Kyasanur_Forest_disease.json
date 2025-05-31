@@ -1,0 +1,159 @@
+{
+    "disease": "Kyasanur Forest disease (KFD)",
+    "icd_code": "A98.2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high",
+                "pattern": "Sudden onset, biphasic in 20% of cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Body pain",
+                "severity": "Variable",
+                "pattern": "Generalized, especially neck, back, extremities"
+            },
+            {
+                "name": "Conjunctival inflammation",
+                "severity": "Variable",
+                "pattern": "Often noted in first phase"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Vomiting, abdominal pain, diarrhea in majority of patients"
+            },
+            {
+                "name": "Asthenia",
+                "severity": "Variable",
+                "pattern": "Can persist after fever subsides"
+            },
+            {
+                "name": "Listlessness",
+                "severity": "Variable",
+                "pattern": "Can persist after fever subsides"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "Aggravated by poor fluid intake"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Haemorrhagic manifestations",
+                "severity": "Variable",
+                "pattern": "Oral mucosal inflammation, maculopapular eruptions, haematemesis, epistaxis, bleeding per rectum"
+            },
+            {
+                "name": "Ocular manifestations",
+                "severity": "Variable",
+                "pattern": "Conjunctival congestion, serous discharge, retinal and vitreous involvement"
+            },
+            {
+                "name": "Muscle twitching",
+                "severity": "Variable",
+                "pattern": "During recovery phase"
+            },
+            {
+                "name": "Coarse tremors",
+                "severity": "Variable",
+                "pattern": "During recovery phase"
+            },
+            {
+                "name": "Paraesthesia",
+                "severity": "Variable",
+                "pattern": "During recovery phase"
+            },
+            {
+                "name": "Generalized shaking",
+                "severity": "Variable",
+                "pattern": "Due to weakness during recovery phase"
+            },
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable",
+                "pattern": "Predominant in second phase; drowsiness, disorientation, confusion, convulsions, loss of consciousness, positive Kernig sign, abnormal ankle reflex"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Prostration",
+                "severity": "Variable",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Present in first phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, variable"
+        },
+        "physical_findings": [
+            "Oral mucosal inflammation",
+            "Maculo-papular eruptions",
+            "Conjunctival congestion",
+            "Serous discharge",
+            "Positive Kernig sign",
+            "Abnormal ankle reflex"
+        ],
+        "lab_values": {
+            "blood_counts": "Leucopenia, eosinopenia, lymphopenia (first week); lymphocytosis (fourth week)",
+            "peripheral_blood": "Eosinophilia, atypical lymphocytes, atypical monocytes, thrombocytopenia",
+            "urine": "Granular casts, red blood cells, proteinuria",
+            "liver_function_tests": "Reduced serum albumin, increased alkaline phosphatase, bilirubin, gamma globulin",
+            "renal_function_tests": "Usually normal"
+        },
+        "risk_factors": [
+            "Tick bite",
+            "Exposure to monkey carcasses",
+            "Residence near monkey death sites",
+            "Household tick exposure",
+            "Occupation involving forest work"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with KFD",
+            "Laboratory confirmation (IgM ELISA, RT-PCR, virus isolation)"
+        ],
+        "supportive": [
+            "Epidemiological link to KFD-endemic area",
+            "Exposure to ticks"
+        ]
+    },
+    "differential_diagnoses": [
+        "Japanese encephalitis",
+        "West Nile fever",
+        "Dengue fever",
+        "Chikungunya fever",
+        "Malaria",
+        "Tuberculosis",
+        "Other viral hemorrhagic fevers"
+    ]
+}

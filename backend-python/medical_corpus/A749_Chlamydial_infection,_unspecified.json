@@ -1,0 +1,146 @@
+{
+    "disease": "Chlamydial infection, unspecified",
+    "icd_code": "A749",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal discharge",
+                "severity": "Mild to moderate",
+                "pattern": "May not appear until 3 weeks after infection"
+            },
+            {
+                "name": "Urethral discharge",
+                "severity": "Mild to moderate",
+                "pattern": "May not appear until 3 weeks after infection"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Mild to moderate",
+                "pattern": "May not appear until 3 weeks after infection"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to severe",
+                "pattern": "Can occur with PID"
+            },
+            {
+                "name": "Pelvic pain",
+                "severity": "Mild to severe",
+                "pattern": "Can occur with PID"
+            },
+            {
+                "name": "Anal discharge",
+                "severity": "Mild to moderate",
+                "pattern": "May not appear until 3 weeks after infection"
+            },
+            {
+                "name": "Anorectal pain",
+                "severity": "Mild to moderate",
+                "pattern": "May not appear until 3 weeks after infection"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Mild to moderate",
+                "pattern": "More common with LGV"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild to moderate",
+                "pattern": "More common with LGV"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Mild to moderate",
+                "pattern": "More common with LGV"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "More common with LGV"
+            },
+            {
+                "name": "Painful bowel movements",
+                "severity": "Mild to moderate",
+                "pattern": "More common with LGV"
+            },
+            {
+                "name": "Genital ulcers",
+                "severity": "Variable",
+                "pattern": "More common with LGV"
+            },
+            {
+                "name": "Lymph node enlargement",
+                "severity": "Variable",
+                "pattern": "More common with LGV"
+            },
+            {
+                "name": "Epididymitis",
+                "severity": "Mild to severe",
+                "pattern": "More common in men"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Mild to moderate",
+                "pattern": "Can occur as a complication"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Mild to moderate",
+                "pattern": "More common in newborns"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Mild to severe",
+                "pattern": "More common in newborns"
+            },
+            {
+                "name": "Preterm delivery",
+                "severity": "Severe",
+                "pattern": "Can occur in pregnant women"
+            },
+            {
+                "name": "Low birth weight",
+                "severity": "Severe",
+                "pattern": "Can occur in newborns"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Vaginal/cervical discharge",
+            "Urethral discharge",
+            "Tenderness to palpation in the abdomen or pelvis",
+            "Enlarged lymph nodes",
+            "Genital ulcers (LGV)",
+            "Conjunctivitis (neonatal)"
+        ],
+        "lab_values": {
+            "Nucleic acid amplification test (NAAT)": {
+                "abnormal_range": "Positive for Chlamydia trachomatis"
+            }
+        },
+        "risk_factors": [
+            "Multiple sexual partners",
+            "Unprotected sex",
+            "Young age",
+            "History of STIs"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive NAAT for Chlamydia trachomatis"
+        ],
+        "supportive": [
+            "Presence of characteristic symptoms",
+            "Abnormal physical examination findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Gonorrhea",
+        "Urinary tract infection",
+        "Cervicitis",
+        "Pelvic inflammatory disease",
+        "Other STIs"
+    ]
+}

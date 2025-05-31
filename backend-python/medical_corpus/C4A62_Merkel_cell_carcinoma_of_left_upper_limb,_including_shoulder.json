@@ -1,0 +1,38 @@
+{
+    "disease": "Merkel cell carcinoma of left upper limb, including shoulder",
+    "icd_code": "C4A62",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin growth",
+                "severity": "Variable",
+                "pattern": "Most often the first symptom; can be a mole, freckle, or bump that changes size, shape, or color; may grow fast or bleed easily after minor injury"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Firm, enlarged, elevated lymph node",
+            "Smooth skin surface with enlarged, visible blood vessels (in some cases)",
+            "Lesion may resemble a wart"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Long-term sun exposure",
+            "Weakened immune system",
+            "Skin that sunburns easily",
+            "Less melanin in the skin (more common in white people)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Wart",
+        "Stye",
+        "Cyst"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "disease": "Primary genital syphilis",
+    "icd_code": "A510",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless sore",
+                "severity": "mild",
+                "pattern": "single, small"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "mild to moderate",
+                "pattern": "near the sore"
+            },
+            {
+                "name": "Non-itchy skin rash",
+                "severity": "mild to moderate",
+                "pattern": "often on hands and feet"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Single, small, painless sore on genitals",
+            "Swollen lymph nodes",
+            "Non-itchy skin rash (in later stages)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact with an infected person",
+            "Pregnancy (mother to baby transmission)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a characteristic painless chancre (sore)"
+        ],
+        "supportive": [
+            "Positive serological tests for syphilis (e.g., VDRL, RPR, FTA-ABS)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,58 @@
+{
+    "disease": "Unspecified viral hepatitis C with hepatic coma",
+    "icd_code": "B1921",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hepatic encephalopathy symptoms",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty thinking",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Loss of consciousness",
+                "severity": "Severe",
+                "pattern": "Occurs in advanced stages"
+            },
+            {
+                "name": "Hepatic coma",
+                "severity": "Life-threatening",
+                "pattern": "Late-stage complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "liver function tests": "Abnormal",
+            "antibodies to hepatitis C virus": "Positive",
+            "PCR blood test for HCV RNA": "Positive"
+        },
+        "risk_factors": [
+            "Bloodborne transmission",
+            "Injection drug use",
+            "Exposure to infected blood"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology for hepatitis C virus",
+            "Presence of hepatic coma"
+        ],
+        "supportive": [
+            "Abnormal liver function tests",
+            "Symptoms of hepatic encephalopathy"
+        ]
+    },
+    "differential_diagnoses": []
+}

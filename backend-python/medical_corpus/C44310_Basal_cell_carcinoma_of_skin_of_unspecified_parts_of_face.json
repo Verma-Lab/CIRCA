@@ -1,0 +1,49 @@
+{
+    "disease": "Basal cell carcinoma of skin of unspecified parts of face",
+    "icd_code": "C44310",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesion",
+                "severity": "Variable",
+                "pattern": "A slightly transparent bump, or other forms; may be skin-colored, pink, brown, or glossy black with a rolled border"
+            },
+            {
+                "name": "Non-healing sore",
+                "severity": "Variable",
+                "pattern": "Persistent sore that does not heal"
+            },
+            {
+                "name": "New skin growth",
+                "severity": "Variable",
+                "pattern": "Appearance of a new growth on the skin"
+            },
+            {
+                "name": "Change in existing growth",
+                "severity": "Variable",
+                "pattern": "Alteration in the appearance of a pre-existing skin lesion"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesion (nodule, papule, ulcer)",
+            "Rolled border (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Long-term exposure to ultraviolet (UV) radiation from sunlight",
+            "Fair skin"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with basal cell carcinoma (e.g., pearly or waxy nodule, telangiectasia, ulceration)"
+        ],
+        "supportive": [
+            "Histopathological examination showing characteristic features of basal cell carcinoma"
+        ]
+    },
+    "differential_diagnoses": []
+}

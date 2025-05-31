@@ -1,0 +1,103 @@
+{
+    "disease": "Other infectious mononucleosis with other complication",
+    "icd_code": "B2789",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Variable, may persist for weeks or months",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, may reach 40.5\u00b0C",
+                "pattern": "Usually peaks in afternoon/evening"
+            },
+            {
+                "name": "Pharyngitis",
+                "severity": "Variable, may be severe, painful, and exudative",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable, may be the only manifestation",
+                "pattern": "Usually symmetric, may involve any group of nodes"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Present in about 50% of cases, maximal during 2nd and 3rd week",
+                "pattern": "Usually only barely palpable splenic tip"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Mild, with hepatic percussion tenderness",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Periorbital edema",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Palatal petechiae",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Maculopapular eruptions",
+                "severity": "Mild",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Rare",
+                "pattern": "Rare"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "39.5\u00b0C - 40.5\u00b0C"
+        },
+        "physical_findings": [
+            "Exudative pharyngitis",
+            "Anterior cervical lymphadenopathy",
+            "Posterior cervical or generalized adenopathy",
+            "Hepatosplenomegaly",
+            "Splenomegaly",
+            "Mild hepatomegaly and hepatic percussion tenderness",
+            "Periorbital edema",
+            "Palatal petechiae",
+            "Maculopapular eruptions (less frequent)",
+            "Jaundice (rare)"
+        ],
+        "lab_values": {
+            "complete blood count": "Lymphocytes that are morphologically atypical account for up to 30% of the white blood cells",
+            "liver function tests": "Elevated aminotransferase levels (about 2 to 3 times normal, returning to baseline over 3 to 4 weeks); occur in about 90% of patients",
+            "EBV serologic testing": "Positive"
+        },
+        "risk_factors": [
+            "Kissing",
+            "Sharing food utensils",
+            "Blood transfusion",
+            "Immunocompromised state (e.g., organ transplant recipients, HIV-positive individuals)",
+            "X-linked lymphoproliferative syndrome"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Typical symptoms and signs (fever, pharyngitis, lymphadenopathy, hepatosplenomegaly)"
+        ],
+        "supportive": [
+            "Atypical lymphocytosis on complete blood count",
+            "Positive EBV serologic testing",
+            "Heterophile antibody test (sometimes)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Group A beta-hemolytic streptococcal pharyngitis",
+        "Primary HIV infection",
+        "Cytomegalovirus mononucleosis",
+        "Toxoplasmosis"
+    ]
+}

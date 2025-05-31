@@ -1,0 +1,47 @@
+{
+    "disease": "Foodborne Clostridium perfringens [Clostridium welchii] intoxication",
+    "icd_code": "A052",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Mild",
+                "pattern": "Onset 6-24 hours after ingestion, resolves within 24 hours"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Mild",
+                "pattern": "Onset 6-24 hours after ingestion, resolves within 24 hours"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unusual",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unusual",
+                "pattern": "Rare"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of large-batch cooked food held at unsafe temperatures (40\u00b0F-140\u00b0F)",
+            "Consumption of contaminated meat, poultry, soups, sauces (e.g., gravy)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Epidemiologic evidence (consumption of implicated food)",
+            "Isolation of large numbers of C. perfringens from contaminated food or stool"
+        ],
+        "supportive": [
+            "Direct identification of enterotoxin in stool samples"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,31 @@
+{
+    "disease": "Malignant neoplasm of external lower lip",
+    "icd_code": "C00.1",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue on the external lower lip"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Abnormal growth of tissue on the external lower lip",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Malignant melanoma of lip (C43.0)",
+        "Merkel cell carcinoma of lip (C4A.0)",
+        "Other and unspecified malignant neoplasm of skin of lip (C44.0-)"
+    ]
+}

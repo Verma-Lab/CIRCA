@@ -1,0 +1,98 @@
+{
+    "disease": "Varicella encephalitis and encephalomyelitis",
+    "icd_code": "B0111",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hallucinations",
+                "severity": "Severe",
+                "pattern": "Intermittent, worsening over time"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Severe",
+                "pattern": "Generalized, impacting ambulation"
+            },
+            {
+                "name": "Difficulty finding words",
+                "severity": "Moderate",
+                "pattern": "Reported by family member"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Altered level of consciousness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Heel pain",
+                "severity": "Unspecified",
+                "pattern": "Initial symptom"
+            },
+            {
+                "name": "Painful vesicular rash",
+                "severity": "Moderate",
+                "pattern": "Localized to second sacral dermatome of right leg"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "99.4\u00b0 Fahrenheit",
+            "pulse": "92 beats per minute",
+            "respiratory_rate": "20 respirations per minute",
+            "blood_pressure": "196/91 millimeters of mercury"
+        },
+        "physical_findings": [
+            "Crusted lesions following the second sacral dermatome on the posterior right leg extending from the sacral region to the lower calf",
+            "Generalized weakness",
+            "Difficulty with ambulation without any focal deficits"
+        ],
+        "lab_values": {
+            "serum_blood_urea_nitrogen": "23.1 mg/dL (normal range 6.0\u201320.0 mg/dL)",
+            "creatinine": "3.03 mg/dL (normal range 0.67\u20131.17 mg/dL)",
+            "glomerular_filtration_rate": "22 mL/min (normal is >60 mL/min)",
+            "cerebrospinal_fluid_protein": "Elevated",
+            "cerebrospinal_fluid_cell_count": "Lymphocytic predominance"
+        },
+        "risk_factors": [
+            "Immunocompromised state (kidney transplant)",
+            "Age greater than 50 years old",
+            "Recent shingles infection"
+        ],
+        "imaging_findings": {
+            "brain_ct": "Chronic mild to moderate degenerative changes",
+            "brain_mri": "Moderate chronic microvascular ischemia and abnormal appearance of the distal left vertebral artery"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with encephalitis (e.g., hallucinations, weakness, altered mental status)",
+            "Positive VZV PCR in cerebrospinal fluid"
+        ],
+        "supportive": [
+            "Recent history of shingles",
+            "Immunocompromised state",
+            "Elevated protein and lymphocytic predominance in cerebrospinal fluid"
+        ]
+    },
+    "differential_diagnoses": []
+}

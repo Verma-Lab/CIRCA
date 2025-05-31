@@ -1,0 +1,61 @@
+{
+    "disease": "Enterocolitis due to Clostridium difficile, not specified as recurrent",
+    "icd_code": "A0472",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Severe diarrhea",
+                "severity": "Variable, can lead to dehydration",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases",
+            "hydration": "Dehydration possible due to diarrhea"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "stool_test": "Positive for Clostridium difficile toxins or molecular assays"
+        },
+        "risk_factors": [
+            "Recent antibiotic use (especially >1 week)",
+            "Hospitalization",
+            "Previous C. difficile infection",
+            "Immunosuppression",
+            "Underlying health conditions",
+            "Advanced age",
+            "Proton pump inhibitor use"
+        ],
+        "imaging_findings": {
+            "x-ray": "May show complications",
+            "CT scan": "May show complications"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (diarrhea, abdominal pain)",
+            "Positive stool test for C. difficile toxins or molecular assays"
+        ],
+        "supportive": [
+            "Recent antibiotic use",
+            "Imaging findings suggestive of complications"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pseudomembranous colitis (A04.71)",
+        "Other bacterial intestinal infections",
+        "Viral gastroenteritis",
+        "Food poisoning"
+    ]
+}

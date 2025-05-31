@@ -1,0 +1,119 @@
+{
+    "disease": "Pasteurellosis",
+    "icd_code": "A280",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Wound-related erythema",
+                "severity": "Variable",
+                "pattern": "Localized to wound site"
+            },
+            {
+                "name": "Tenderness",
+                "severity": "Variable",
+                "pattern": "Localized to wound site"
+            },
+            {
+                "name": "Edema",
+                "severity": "Variable",
+                "pattern": "Localized to wound site"
+            },
+            {
+                "name": "Purulent exudate",
+                "severity": "Variable",
+                "pattern": "Localized to wound site"
+            },
+            {
+                "name": "Cellulitis",
+                "severity": "Variable",
+                "pattern": "Localized to wound site"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Tracheitis",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Bronchitis",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Lung abscess",
+                "severity": "Severe",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Pleural empyema",
+                "severity": "Severe",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Sepsis",
+                "severity": "Severe",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Severe",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Osteomyelitis",
+                "severity": "Severe",
+                "pattern": "Localized or systemic"
+            },
+            {
+                "name": "Tenosynovitis",
+                "severity": "Severe",
+                "pattern": "Localized or systemic"
+            },
+            {
+                "name": "Septic arthritis",
+                "severity": "Severe",
+                "pattern": "Localized or systemic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Inflammation at the site of infection (within 24 hours)",
+            "Abscess formation",
+            "Localized or systemic infection"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Pasteurella multocida",
+            "wound_culture": "Positive for Pasteurella multocida"
+        },
+        "risk_factors": [
+            "Animal bites, scratches, or licks",
+            "Compromised immunity",
+            "Liver failure",
+            "Diabetes",
+            "Malignant tumors",
+            "Chronic respiratory diseases (COPD, bronchiectasis)",
+            "Old age"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Pasteurella multocida from a clinical specimen (wound swab, blood, sputum, etc.)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with pasteurellosis",
+            "History of animal contact"
+        ]
+    },
+    "differential_diagnoses": [
+        "Group A streptococcal infection",
+        "Other bacterial infections"
+    ]
+}

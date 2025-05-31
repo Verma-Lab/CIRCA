@@ -1,0 +1,78 @@
+{
+    "disease": "Monkeypox",
+    "icd_code": "B04",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Usually the first symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Muscle pains",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Variable",
+                "pattern": "Especially in the groin"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Exhaustion",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Backaches",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "May resemble blisters or pimples; can appear on face, inside mouth, hands, feet, chest, or genitals; develops before or after other symptoms"
+            },
+            {
+                "name": "Lesions",
+                "severity": "Variable",
+                "pattern": "May form in mucous membrane of rectum and external genital organs, mouth, and conjunctiva of the eye"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Enlarged lymph nodes (especially in the groin)",
+            "Skin rash (blisters or pimples)",
+            "Lesions in mucous membranes (rectum, genitals, mouth, conjunctiva)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected animals (rodents, monkeys)",
+            "Contact with infected person's rash, scabs, or bodily fluids",
+            "Prolonged face-to-face contact with infected person",
+            "Contact with contaminated objects (bedding, clothing)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with monkeypox (fever, rash, lymphadenopathy)"
+        ],
+        "supportive": [
+            "Positive PCR test on tissue sample from an open sore",
+            "Positive blood test"
+        ]
+    },
+    "differential_diagnoses": []
+}

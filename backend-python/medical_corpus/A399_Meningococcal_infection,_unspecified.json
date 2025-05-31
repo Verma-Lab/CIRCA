@@ -1,0 +1,113 @@
+{
+    "disease": "Meningococcal infection, unspecified",
+    "icd_code": "A399",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable, can be severe",
+                "pattern": "Present in meningitis"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Variable",
+                "pattern": "Present in meningitis"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Present in meningitis"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable, can be petechial or purpuric",
+                "pattern": "Present in septicemia"
+            },
+            {
+                "name": "Nausea and vomiting",
+                "severity": "Variable",
+                "pattern": "Present in meningitis and septicemia"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Present in meningitis"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Present in meningitis and septicemia"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Can occur in meningitis"
+            },
+            {
+                "name": "Shock",
+                "severity": "Severe",
+                "pattern": "Can occur in septicemia"
+            },
+            {
+                "name": "Refusal to eat",
+                "severity": "Variable",
+                "pattern": "Present in infants"
+            },
+            {
+                "name": "Twitching or floppiness",
+                "severity": "Variable",
+                "pattern": "Present in infants"
+            },
+            {
+                "name": "Extreme tiredness",
+                "severity": "Variable",
+                "pattern": "Present in infants"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Elevated",
+            "blood_pressure": "Can be decreased in septicemia",
+            "respiratory_rate": "Can be elevated"
+        },
+        "physical_findings": [
+            "Meningismus (stiff neck, photophobia)",
+            "Petechiae or purpura",
+            "Hypotension",
+            "Tachycardia",
+            "Altered mental status"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Neisseria meningitidis",
+            "cerebrospinal_fluid_analysis": "Elevated white blood cell count, decreased glucose, increased protein"
+        },
+        "risk_factors": [
+            "Close contact with an infected individual",
+            "Age (infants and young adults are at higher risk)",
+            "Immunodeficiency",
+            "Complement deficiencies"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood or cerebrospinal fluid culture for Neisseria meningitidis"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with meningococcal disease",
+            "Abnormal cerebrospinal fluid analysis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral meningitis",
+        "Bacterial meningitis (other causes)",
+        "Encephalitis",
+        "Sepsis (other causes)"
+    ]
+}

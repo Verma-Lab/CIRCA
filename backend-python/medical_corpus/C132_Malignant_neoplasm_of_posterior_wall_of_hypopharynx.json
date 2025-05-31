@@ -1,0 +1,87 @@
+{
+    "disease": "Malignant neoplasm of posterior wall of hypopharynx",
+    "icd_code": "C132",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Variable, can be progressive",
+                "pattern": "Progressive worsening with disease advancement"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malnutrition",
+                "severity": "Severe in advanced cases",
+                "pattern": "Develops in advanced stages due to dysphagia"
+            },
+            {
+                "name": "Airway compromise",
+                "severity": "Severe in advanced cases",
+                "pattern": "Occurs when tumor invades the larynx"
+            },
+            {
+                "name": "Globus sensation",
+                "severity": "Mild to moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Mild to moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Referred otalgia",
+                "severity": "Mild to moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Neck mass",
+                "severity": "Variable",
+                "pattern": "Often presents as initial symptom due to early nodal metastasis"
+            },
+            {
+                "name": "Dysphonia",
+                "severity": "Variable",
+                "pattern": "Develops as tumor invades larynx or causes vocal cord immobility"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Neck mass (common due to early lymph node metastasis)",
+            "Oral cavity inspection to rule out synchronous malignancies"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Prolonged tobacco use",
+            "Prolonged alcohol use",
+            "Plummer-Vinson syndrome",
+            "Asbestos exposure",
+            "Chronic gastroesophageal reflux",
+            "Betel nut chewing",
+            "Occupational exposure to coal dust, steel dust, iron compounds, and fumes",
+            "HPV infection (20-25% of cases)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with hypopharyngeal cancer (dysphagia, pain, bleeding, etc.)",
+            "Imaging findings suggestive of a hypopharyngeal mass"
+        ],
+        "supportive": [
+            "Biopsy confirming malignancy",
+            "Positive lymph node biopsy"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,121 @@
+{
+    "disease": "Mesothelioma of other sites",
+    "icd_code": "C457",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Focal ache"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Often indicating pleural effusion"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Usually nonproductive"
+            },
+            {
+                "name": "Palpable soft tissue fullness or mass",
+                "severity": "Variable",
+                "pattern": "Associated with pleural effusion"
+            },
+            {
+                "name": "Decreased respiratory sounds",
+                "severity": "Variable",
+                "pattern": "Due to pleural effusion"
+            },
+            {
+                "name": "Splinting",
+                "severity": "Variable",
+                "pattern": "Ipsilateral"
+            },
+            {
+                "name": "Scoliosis",
+                "severity": "Variable",
+                "pattern": "Ipsilateral"
+            },
+            {
+                "name": "Pleural effusion",
+                "severity": "Variable",
+                "pattern": "Most common initial finding, ~90% of patients, right-sided in 60%, bilateral in 5%"
+            },
+            {
+                "name": "Pleural plaques",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Bibasilar fibrosis",
+                "severity": "Variable",
+                "pattern": "1/5 patients, characteristic of chronic asbestosis"
+            },
+            {
+                "name": "Hypercalcemia",
+                "severity": "Variable",
+                "pattern": "Paraneoplastic syndrome"
+            },
+            {
+                "name": "Hypoglycemia",
+                "severity": "Variable",
+                "pattern": "Paraneoplastic syndrome"
+            },
+            {
+                "name": "Autoimmune hemolytic anemia",
+                "severity": "Variable",
+                "pattern": "Paraneoplastic syndrome"
+            },
+            {
+                "name": "Hypercoagulable states",
+                "severity": "Variable",
+                "pattern": "Paraneoplastic syndrome"
+            },
+            {
+                "name": "Disseminated intravascular coagulation",
+                "severity": "Variable",
+                "pattern": "Paraneoplastic syndrome"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Pleural effusion",
+            "Palpable soft tissue fullness or mass",
+            "Decreased respiratory sounds",
+            "Dullness to percussion",
+            "Splinting",
+            "Scoliosis"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Asbestos exposure",
+            "Radiation therapy",
+            "Genetic predisposition (BAP1 loss)",
+            "Carbon nanotubes"
+        ],
+        "imaging_findings": {
+            "CT": "Pleural-based nodularity",
+            "MRI": "Invasion of diaphragm or mediastinal structures",
+            "PET": "Hypermetabolic characteristics, useful for staging and post-treatment follow-up"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological findings consistent with mesothelioma"
+        ],
+        "supportive": [
+            "Asbestos exposure history",
+            "Imaging findings (CT, MRI, PET)",
+            "Immunohistochemical staining (positive for mesothelial markers, negative for other markers)",
+            "Molecular studies (BAP1 loss, CDKN2A deletion)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Metastatic carcinoma",
+        "Sarcoma",
+        "Other pleural-based malignancies"
+    ]
+}

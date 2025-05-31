@@ -1,0 +1,69 @@
+{
+    "disease": "Gonococcal cervicitis, unspecified",
+    "icd_code": "A5403",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Intermenstrual bleeding",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Postcoital bleeding",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Purulent or mucopurulent cervical discharge",
+            "Cervical friability (bleeding after touching the cervix)",
+            "Cervical erythema",
+            "Cervical edema"
+        ],
+        "lab_values": {
+            "Gram stain": "Presence of gram-negative intracellular diplococci (GNID) indicative of gonococcal infection",
+            "NAAT (Nucleic Acid Amplification Test)": "Positive for Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Unprotected sexual intercourse",
+            "Multiple sexual partners",
+            "History of sexually transmitted infections"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Cervical exudate (purulent or mucopurulent)",
+            "Cervical friability"
+        ],
+        "supportive": [
+            "Positive Gram stain for GNID",
+            "Positive NAAT for Neisseria gonorrhoeae",
+            "Symptoms such as vaginal discharge, intermenstrual or postcoital bleeding, dyspareunia"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chlamydial cervicitis",
+        "Trichomoniasis",
+        "Bacterial vaginosis",
+        "Herpes simplex virus cervicitis",
+        "Noninfectious cervicitis"
+    ]
+}

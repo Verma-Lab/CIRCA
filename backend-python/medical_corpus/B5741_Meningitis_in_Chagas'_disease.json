@@ -1,0 +1,146 @@
+{
+    "disease": "Meningitis in Chagas' disease",
+    "icd_code": "B5741",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Present in some cases, particularly in acute congenital phase"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Mood changes",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Difficulty in mental concentration",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Muscular disturbances (myoclonus, bradykinesia, dyspraxia)",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Speech disturbances",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Hemiplegia",
+                "severity": "Severe",
+                "pattern": "Present in some cases of reactivation"
+            },
+            {
+                "name": "Aphasia",
+                "severity": "Severe",
+                "pattern": "Present in some cases of reactivation"
+            },
+            {
+                "name": "Sensorial loss",
+                "severity": "Variable",
+                "pattern": "Present in some cases of reactivation and chronic phase"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Variable",
+                "pattern": "Present in chronic phase"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Present in chronic phase"
+            },
+            {
+                "name": "Neuritis",
+                "severity": "Variable",
+                "pattern": "Related to sensory impairment in chronic phase"
+            },
+            {
+                "name": "Altered tendon reflexes",
+                "severity": "Variable",
+                "pattern": "Associated with neuritis in chronic phase"
+            },
+            {
+                "name": "Decreased orientation",
+                "severity": "Variable",
+                "pattern": "Present in chronic phase"
+            },
+            {
+                "name": "Decreased attention",
+                "severity": "Variable",
+                "pattern": "Present in chronic phase"
+            },
+            {
+                "name": "Cognitive impairment",
+                "severity": "Variable",
+                "pattern": "Present in chronic phase"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases of reactivation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Signs of intracranial hypertension may be present in reactivation cases"
+        },
+        "physical_findings": [
+            "Focal neurological deficits (e.g., hemiplegia, aphasia)"
+        ],
+        "lab_values": {
+            "CSF": {
+                "leukocytes": "Elevated in acute phase",
+                "albumin": "Elevated in acute phase",
+                "trypomastigotes": "Present in acute phase and reactivation",
+                "glucose": "May be decreased",
+                "protein": "May be elevated"
+            },
+            "blood": {
+                "trypomastigotes": "May be present in acute phase"
+            }
+        },
+        "risk_factors": [
+            "Immunosuppression (HIV, transplant patients, etc.)",
+            "Prior infection with Trypanosoma cruzi",
+            "Living in or having lived in endemic areas"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show hypodensity in cerebral hemisphere, compression of ventricles, extensive hypodensity in white matter, cerebral mass lesions",
+            "MRI": "Not explicitly mentioned but could be used to further evaluate CNS involvement"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Trypanosoma cruzi in CSF or blood",
+            "Neurological manifestations consistent with meningitis or meningoencephalitis"
+        ],
+        "supportive": [
+            "Elevated CSF leukocytes and protein",
+            "Abnormal brain imaging findings",
+            "History of Chagas disease or residence in endemic area"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neurotoxoplasmosis",
+        "Other causes of encephalitis"
+    ]
+}

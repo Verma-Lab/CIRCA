@@ -1,0 +1,135 @@
+{
+    "disease": "Meningoencephalitis in Chagas' disease",
+    "icd_code": "B5742",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May or may not be present; often present in acute reactivation"
+            },
+            {
+                "name": "Focal neurological deficits",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe, including hemiplegia, aphasia, and sensory loss"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Progressive loss of consciousness",
+                "severity": "Severe",
+                "pattern": "Can progress to coma"
+            },
+            {
+                "name": "Signs and symptoms of intracranial hypertension",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Somnolence",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Mental concentration difficulty",
+                "severity": "Variable",
+                "pattern": "Can occur in acute phase"
+            },
+            {
+                "name": "Muscular disturbances (myoclonus, bradykinesia, dyspraxia)",
+                "severity": "Variable",
+                "pattern": "Can occur in acute phase"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can occur in acute phase"
+            },
+            {
+                "name": "Speech disturbances",
+                "severity": "Variable",
+                "pattern": "Can occur in acute phase"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Mood changes",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Sensory impairment",
+                "severity": "Variable",
+                "pattern": "Can occur in chronic phase"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Severe",
+                "pattern": "Can occur in chronic phase"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Can occur in chronic phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases",
+            "blood_pressure": "May be abnormal due to intracranial hypertension or sepsis"
+        },
+        "physical_findings": [
+            "Hemiplegia",
+            "Aphasia",
+            "Altered tendon reflexes"
+        ],
+        "lab_values": {
+            "cerebrospinal_fluid_analysis": {
+                "white_cell_count": "Elevated (lymphocytic predominance)",
+                "protein": "Elevated",
+                "glucose": "May be normal or slightly decreased",
+                "trypomastigotes": "Present"
+            },
+            "blood_tests": {
+                "parasitemia": "May be present",
+                "serology": "Positive for Trypanosoma cruzi antibodies"
+            },
+            "cd4_count": "Decreased in HIV co-infected patients"
+        },
+        "risk_factors": [
+            "Prior infection with Trypanosoma cruzi",
+            "Immunosuppression (e.g., HIV infection, immunosuppressive drugs)",
+            "Living in or having lived in a Chagas disease endemic area"
+        ],
+        "imaging_findings": {
+            "ct_scan": "May show hypodensity in the cerebral hemisphere, mass lesions, cerebral edema",
+            "mri": "May show subcortical hypodense lesions that enhance with contrast or gadolinium, often involving brain white matter"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningoencephalitis",
+            "Positive serology for Trypanosoma cruzi",
+            "Presence of Trypanosoma cruzi trypomastigotes in cerebrospinal fluid (CSF)"
+        ],
+        "supportive": [
+            "Abnormal CSF findings (pleocytosis, elevated protein)",
+            "Characteristic imaging findings (mass lesions, edema)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neurotoxoplasmosis",
+        "Other causes of encephalitis"
+    ]
+}

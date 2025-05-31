@@ -1,0 +1,80 @@
+{
+    "disease": "Pseudocowpox [milker's node]",
+    "icd_code": "B0803",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Erythematous lesion",
+                "severity": "Variable",
+                "pattern": "Centrifugal growth"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable, can be painful",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Mild to moderate",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Fever",
+                "severity": "Rare",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Rare",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Erythema multiforme",
+                "severity": "Rare",
+                "pattern": "N/A"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Nodular lesion",
+            "Erythematous-purplish lesion",
+            "Round lesion with clear center",
+            "Depressed center",
+            "Erythematous halo",
+            "Exudative nodule",
+            "Regenerative stage with dark spots",
+            "Papillomatous stage",
+            "Remission stage with erythematous macule and circular purplish areas"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with dairy cattle",
+            "Lack of personal protective equipment (PPE)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Epidemiologic history (contact with cattle)",
+            "Dermatological examination"
+        ],
+        "supportive": [
+            "Histopathological examination (squamous crusts, acanthosis, epidermal necrosis, vesiculae formation, keratinocyte apoptosis, ballooning degeneration, dense dermal inflammatory infiltrate rich in eosinophils)",
+            "Electron microscopy (viral particles)",
+            "Virus reproduction in tissue culture",
+            "PCR",
+            "Neutralizing antibodies for vaccinia group in serum"
+        ]
+    },
+    "differential_diagnoses": [
+        "Orf",
+        "Brown spider bite",
+        "Pyoderma",
+        "Cutaneous tuberculosis",
+        "Anthrax",
+        "Sporotrichosis",
+        "Atypical mycobacteriosis",
+        "Cowpox"
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of left upper limb, including shoulder",
+    "icd_code": "C4912",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Obvious",
+                "pattern": "Gradual worsening"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Obvious",
+                "pattern": "Progressive increase"
+            },
+            {
+                "name": "Limited abduction of left upper limb",
+                "severity": "Slight",
+                "pattern": "Present initially"
+            },
+            {
+                "name": "Increased local skin temperature",
+                "severity": "Present",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Tenderness",
+                "severity": "Present",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "N/A": "No abnormal vital signs explicitly mentioned"
+        },
+        "physical_findings": [
+            "Left shoulder joint in forced adduction",
+            "Obvious swelling and tenderness on the lateral and anterior sides of the left shoulder",
+            "No pulsation palpated",
+            "Increased local skin temperature"
+        ],
+        "lab_values": {
+            "C-reactive protein": "70.92 mg/L (normal range 0-5 mg/L)",
+            "Lactate dehydrogenase": "751 U/L (normal range 313-618 U/L)",
+            "Fibrinogen": "6.29 g/L (normal range 2-4 g/L)",
+            "D-dimer": "5.997 mg/L (normal range 0-0.3 mg/L)",
+            "Alkaline phosphatase": "453 U/L (normal range 35-105 U/L)",
+            "Ferritin": "790.80 \u03bcg/L (normal range 15-200 \u03bcg/L)",
+            "Neuron-specific enolase": "41.43 ng/L (normal range 0-25 ng/L)"
+        },
+        "risk_factors": [
+            "Trauma (in the case report)"
+        ],
+        "imaging_findings": {
+            "Radiography": "Linear low-density shadow at the greater tuberosity of the left humerus and small low-density flakes in the upper medullary cavity of the left humerus",
+            "CT": "Soft tissue mass in the left shoulder with strip-like calcifications; cortical edge and marrow cavity invasion; insect-like zone of destruction; needle-like periosteal reaction; multiple small nodules beneath the pleura of both lungs",
+            "MRI": "Huge mass (10.3 cm \u00d7 10.5 cm \u00d7 13.6 cm) surrounding the left humeral head and proximal shaft of humerus; mixed moderate hypointensity and hyperintensity on T1-weighted images; mixed hyperintensity on coronal fat-saturated T2-weighted images; heterogeneous enhancement with contrast; discontinuous humeral cortex; worm-eaten-like bone destruction; irregular patches of hypointensity on coronal T1-weighted images and mixed hyperintensity on fat-saturated T2-weighted images",
+            "Bone scan": "Increased activity in the left shoulder joint and proximal humerus"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings consistent with a soft tissue mass in the left upper limb, including the shoulder",
+            "Histopathological confirmation of malignant neoplasm of connective and soft tissue"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers",
+            "Clinical symptoms of pain and swelling"
+        ]
+    },
+    "differential_diagnoses": [
+        "Giant cell tumor of soft tissue (GCT-ST)",
+        "Other soft tissue tumors"
+    ]
+}

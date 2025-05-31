@@ -1,0 +1,176 @@
+{
+    "disease": "Scrub Typhus (Tsutsugamushi disease)",
+    "icd_code": "A753",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (often 40-40.5\u00b0C)",
+                "pattern": "Sudden onset, rising in the first week, may persist \u22652 weeks if untreated"
+            },
+            {
+                "name": "Chills",
+                "severity": "Present",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Common, present at onset"
+            },
+            {
+                "name": "Generalized lymphadenopathy",
+                "severity": "Present",
+                "pattern": "Present at onset"
+            },
+            {
+                "name": "Eschar",
+                "severity": "Variable (1-97%)",
+                "pattern": "Develops at bite site, begins as red indurated lesion, vesiculates, ruptures, black scab"
+            },
+            {
+                "name": "Macular rash",
+                "severity": "Variable",
+                "pattern": "Develops on trunk (5-8th day of fever), may extend to arms and legs, may disappear rapidly or become maculopapular"
+            },
+            {
+                "name": "Cough",
+                "severity": "Present",
+                "pattern": "Present in the first week"
+            },
+            {
+                "name": "Conjunctival injection",
+                "severity": "Present",
+                "pattern": "Common"
+            },
+            {
+                "name": "Pneumonitis",
+                "severity": "Can develop",
+                "pattern": "Second week of fever"
+            },
+            {
+                "name": "Increased pulse rate",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Decreased blood pressure",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Delirium",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Stupor",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Muscular twitching",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Can be present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Interstitial myocarditis",
+                "severity": "More common than in other rickettsial diseases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Gastrointestinal hemorrhage",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Gastrointestinal mucosal erosions and ulcers",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Acute renal failure",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Acute respiratory distress syndrome (ARDS)",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Septic shock",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Meningoencephalitis",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Pericarditis",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Disseminated intravascular coagulation (DIC)",
+                "severity": "Severe cases",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hearing loss or impairment",
+                "severity": "Can develop",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "40-40.5\u00b0C (often)",
+            "pulse": "Increased in severe cases",
+            "blood_pressure": "Decreased in severe cases"
+        },
+        "physical_findings": [
+            "Eschar at the bite site",
+            "Macular rash (trunk, arms, legs)",
+            "Generalized lymphadenopathy",
+            "Conjunctival injection",
+            "Splenomegaly (possible)",
+            "Marked hyperemia and hemorrhage (conjunctiva)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to chiggers (Leptotrombidium mites) in endemic areas (Asia-Pacific region)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (fever, headache, rash, eschar, lymphadenopathy)"
+        ],
+        "supportive": [
+            "Positive serology (acute and convalescent)",
+            "Polymerase chain reaction (PCR) detection of Orientia tsutsugamushi",
+            "Biopsy of rash with fluorescent antibody staining"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rocky Mountain spotted fever",
+        "Epidemic typhus"
+    ]
+}

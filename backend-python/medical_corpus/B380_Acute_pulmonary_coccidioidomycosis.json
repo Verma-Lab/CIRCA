@@ -1,0 +1,83 @@
+{
+    "disease": "Acute pulmonary coccidioidomycosis",
+    "icd_code": "B380",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Persistent, may be accompanied by chills and rigors"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "May be elevated",
+            "heart_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Crackles or wheezes on lung auscultation",
+            "Decreased breath sounds",
+            "Pleural friction rub"
+        ],
+        "lab_values": {
+            "CBC": "May show leukocytosis",
+            "ESR": "May be elevated",
+            "CRP": "May be elevated",
+            "Coccidioidomycosis serology": "Positive"
+        },
+        "risk_factors": [
+            "Residence in endemic areas (e.g., southwestern US, Mexico, Central and South America)",
+            "Exposure to dust or disturbed soil",
+            "Certain occupations (e.g., agricultural or construction workers)",
+            "Immunocompromised state",
+            "Male sex",
+            "Filipino or Black ethnicity (increased risk of extrapulmonary complications)"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show nodules, infiltrates, cavities, or pleural effusions",
+            "CT scan": "May provide more detailed imaging of lung lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with acute pulmonary coccidioidomycosis",
+            "Positive coccidioidomycosis serology"
+        ],
+        "supportive": [
+            "Abnormal chest imaging findings",
+            "Positive fungal culture from respiratory specimens"
+        ]
+    },
+    "differential_diagnoses": [
+        "Community-acquired pneumonia",
+        "Tuberculosis",
+        "Lung cancer",
+        "Other fungal infections"
+    ]
+}

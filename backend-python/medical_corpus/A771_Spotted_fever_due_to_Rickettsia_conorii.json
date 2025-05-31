@@ -1,0 +1,60 @@
+{
+    "disease": "Spotted fever due to Rickettsia conorii",
+    "icd_code": "A771",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Maculopapular rash",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Eschar (\"tache noire\")",
+                "severity": "Variable",
+                "pattern": "Characteristic, but not always present"
+            },
+            {
+                "name": "Atypical clinical features",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Severe multi-organ complications",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Maculopapular rash",
+            "Eschar (\"tache noire\")"
+        ],
+        "lab_values": {
+            "serological tests": "Positive for Rickettsia conorii antibodies"
+        },
+        "risk_factors": [
+            "Exposure to brown dog ticks (Rhipicephalus sanguineus) in endemic areas",
+            "Travel to Mediterranean basin or surrounding countries"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Mediterranean spotted fever (fever, rash, eschar)",
+            "Positive serological tests for Rickettsia conorii antibodies"
+        ],
+        "supportive": [
+            "Exposure to brown dog ticks in endemic areas",
+            "Molecular detection of Rickettsia conorii DNA"
+        ]
+    },
+    "differential_diagnoses": []
+}

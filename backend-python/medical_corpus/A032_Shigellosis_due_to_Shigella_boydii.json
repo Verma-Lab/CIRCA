@@ -1,0 +1,94 @@
+{
+    "disease": "Shigellosis due to Shigella boydii",
+    "icd_code": "A032",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Mucoid diarrhea",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Stomach cramps",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Common symptom"
+            },
+            {
+                "name": "Intestinal perforation",
+                "severity": "Severe",
+                "pattern": "Occasional complication"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Occasional complication, primarily in young children"
+            },
+            {
+                "name": "Invasive focal infections",
+                "severity": "Severe",
+                "pattern": "Occasional complication"
+            },
+            {
+                "name": "Reactive arthritis",
+                "severity": "Variable",
+                "pattern": "Postinfectious manifestation"
+            },
+            {
+                "name": "Hemolytic-uremic syndrome (HUS)",
+                "severity": "Severe",
+                "pattern": "Postinfectious manifestation, associated with Shiga toxin\u2013producing strains"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, variable depending on severity"
+        },
+        "physical_findings": [
+            "Tenderness to palpation in the abdomen"
+        ],
+        "lab_values": {
+            "stool culture": "Presence of Shigella boydii",
+            "antimicrobial susceptibility testing": "May show resistance to various antibiotics"
+        },
+        "risk_factors": [
+            "Direct person-to-person contact",
+            "Contaminated food and water",
+            "Contaminated fomites",
+            "Sexual contact (primarily among MSM)",
+            "International travel",
+            "Homelessness",
+            "HIV infection",
+            "Inadequate sanitation and hygiene"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Shigella boydii from stool culture"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with shigellosis (diarrhea, fever, abdominal cramps)"
+        ]
+    },
+    "differential_diagnoses": []
+}

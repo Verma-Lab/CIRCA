@@ -1,0 +1,82 @@
+{
+    "disease": "Visceral leishmaniasis",
+    "icd_code": "B550",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Prolonged, may be intermittent"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "Splenomegaly often more prominent"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Pancytopenia",
+                "severity": "Variable",
+                "pattern": "Anemia, leukopenia, thrombocytopenia"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Hepatosplenomegaly (especially splenomegaly)",
+            "Lymphadenopathy (may be present)"
+        ],
+        "lab_values": {
+            "Total protein": "High",
+            "Albumin": "Low",
+            "Hypergammaglobulinemia": "Present",
+            "Complete blood count": "Pancytopenia (anemia, leukopenia, thrombocytopenia)"
+        },
+        "risk_factors": [
+            "Poverty",
+            "Poor housing",
+            "Poor sanitation",
+            "Malnutrition (protein-energy, iron, vitamin A, zinc deficiencies)",
+            "HIV co-infection",
+            "Immunosuppression",
+            "Travel to endemic areas",
+            "Epidemics in areas with high transmission and non-immune populations",
+            "Changes in urbanization, deforestation, human incursion into forested areas",
+            "Climate change (affecting sandfly populations)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical signs (fever, hepatosplenomegaly, weight loss)",
+            "Parasitological or serological tests (e.g., rK39 RDT, DAT, microscopic examination of tissue aspirate)"
+        ],
+        "supportive": [
+            "Serological tests (limited value in cutaneous and mucocutaneous leishmaniasis)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hemophagocytic lymphohistiocytosis (HLH)"
+    ]
+}

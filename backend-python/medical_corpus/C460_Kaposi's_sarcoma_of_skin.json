@@ -1,0 +1,61 @@
+{
+    "disease": "Kaposi's sarcoma of skin",
+    "icd_code": "C460",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Purple patches or nodules",
+                "severity": "Variable",
+                "pattern": "Multifocal"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Lymphedema",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Secondary infection",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesions (patches, plaques, nodules)",
+            "Lymphadenopathy",
+            "Mucocutaneous involvement"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunosuppression (HIV, organ transplant, other)",
+            "Infection with Kaposi sarcoma-associated herpesvirus (KSHV)",
+            "Older age (classic KS)",
+            "Mediterranean, Middle Eastern, or Eastern European descent (classic KS)",
+            "Residence in sub-Saharan Africa (endemic KS)",
+            "Male sex (more common)",
+            "Men who have sex with men (MSM)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (skin lesions)",
+            "Histopathological examination (spindle cell proliferation, vascular channels)"
+        ],
+        "supportive": [
+            "Immunohistochemistry for LANA1 (confirms HHV-8 presence)"
+        ]
+    },
+    "differential_diagnoses": []
+}

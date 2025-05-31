@@ -1,0 +1,85 @@
+{
+    "disease": "Astrovirus enteritis",
+    "icd_code": "A0832",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Variable, can be severe",
+                "pattern": "2-5 days"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Common",
+                "pattern": "Often accompanies diarrhea"
+            },
+            {
+                "name": "Fever",
+                "severity": "Less common",
+                "pattern": "Often low grade"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Less common",
+                "pattern": "May accompany other symptoms"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Common",
+                "pattern": "Often accompanies vomiting and diarrhea"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Can range from mild to severe",
+                "pattern": "Especially in young children and immunocompromised individuals"
+            },
+            {
+                "name": "Lactose intolerance",
+                "severity": "Can be a sequela",
+                "pattern": "Following infection"
+            },
+            {
+                "name": "Poor weight gain",
+                "severity": "Can be a sequela",
+                "pattern": "Following infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated, but often low-grade",
+            "hydration status": "Can range from normal to severely dehydrated"
+        },
+        "physical_findings": [
+            "Signs of dehydration (e.g., dry mucous membranes, sunken eyes, decreased skin turgor)",
+            "Mild intestinal inflammation (in some cases)"
+        ],
+        "lab_values": {
+            "electrolytes": "May be abnormal in cases of dehydration",
+            "complete blood count": "May show signs of dehydration or infection"
+        },
+        "risk_factors": [
+            "Infancy",
+            "Immunocompromised status",
+            "Older age",
+            "Poor nutritional status"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gastroenteritis (diarrhea, vomiting, etc.)",
+            "Detection of astrovirus in stool sample (using methods such as ELISA, RT-PCR)"
+        ],
+        "supportive": [
+            "Epidemiological link to an outbreak",
+            "Absence of other identifiable pathogens"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rotavirus gastroenteritis",
+        "Norovirus gastroenteritis",
+        "Other viral gastroenteritis",
+        "Bacterial gastroenteritis",
+        "Other causes of diarrhea"
+    ]
+}

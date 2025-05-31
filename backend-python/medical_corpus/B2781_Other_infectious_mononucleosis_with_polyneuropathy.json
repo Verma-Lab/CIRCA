@@ -1,0 +1,109 @@
+{
+    "disease": "Other infectious mononucleosis with polyneuropathy",
+    "icd_code": "B2781",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Variable, may persist for weeks or months",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, may reach 40.5\u00b0C",
+                "pattern": "Intermittent, peaks in afternoon/evening"
+            },
+            {
+                "name": "Pharyngitis",
+                "severity": "Variable, may be severe and exudative",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable, may be the only manifestation",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Present in about 50% of cases",
+                "pattern": "Develops during 2nd and 3rd week"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hepatic tenderness",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Periorbital edema",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Palatal petechiae",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Maculopapular rash",
+                "severity": "Mild",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Rare",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Polyneuropathy",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "39.5\u00b0C - 40.5\u00b0C"
+        },
+        "physical_findings": [
+            "Exudative pharyngitis",
+            "Anterior and posterior cervical lymphadenopathy",
+            "Generalized lymphadenopathy",
+            "Hepatosplenomegaly",
+            "Splenomegaly",
+            "Hepatomegaly",
+            "Periorbital edema",
+            "Palatal petechiae",
+            "Maculopapular rash"
+        ],
+        "lab_values": {
+            "complete blood count": "Lymphocytosis with atypical lymphocytes (up to 30% of WBCs)",
+            "liver function tests": "Elevated aminotransferase levels (about 2-3 times normal)"
+        },
+        "risk_factors": [
+            "Exposure to Epstein-Barr virus (EBV)",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with infectious mononucleosis (fever, pharyngitis, lymphadenopathy)",
+            "Polyneuropathy"
+        ],
+        "supportive": [
+            "Positive heterophile antibody test",
+            "Positive EBV serologic testing",
+            "Atypical lymphocytosis on complete blood count"
+        ]
+    },
+    "differential_diagnoses": [
+        "Group A beta-hemolytic streptococcal pharyngitis",
+        "Primary HIV infection",
+        "Cytomegalovirus mononucleosis",
+        "Toxoplasmosis"
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "disease": "Zoster ocular disease, unspecified",
+    "icd_code": "B0230",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eye pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Unilateral, often precedes rash"
+            },
+            {
+                "name": "Eye pressure",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Tearing",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Eye redness",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Decreased vision",
+                "severity": "Variable, can be severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May precede rash"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May precede rash"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May precede rash"
+            },
+            {
+                "name": "Vesicular rash",
+                "severity": "Variable",
+                "pattern": "Unilateral, dermatomal distribution, often in forehead, lids, nose"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Unilateral, dermatomal distribution"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lid edema",
+            "Conjunctival congestion",
+            "Punctate keratopathy",
+            "Anterior uveitis",
+            "Episcleritis",
+            "Scleritis",
+            "Keratitis",
+            "Decreased corneal sensation",
+            "Iridocyclitis",
+            "Increased intraocular pressure",
+            "Optic neuritis",
+            "Hutchinson's sign (vesicular rash on tip of nose)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Advanced age",
+            "Immunocompromised status (HIV infection)",
+            "Diabetes (potential risk factor)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with herpes zoster ophthalmicus (HZO), including characteristic vesicular rash in the V1 dermatome of the trigeminal nerve"
+        ],
+        "supportive": [
+            "Positive Tzanck smear (though not always performed)",
+            "Ocular manifestations such as conjunctivitis, keratitis, uveitis, increased intraocular pressure"
+        ]
+    },
+    "differential_diagnoses": [
+        "Herpes simplex virus (HSV) infection",
+        "Other causes of conjunctivitis, keratitis, and uveitis"
+    ]
+}

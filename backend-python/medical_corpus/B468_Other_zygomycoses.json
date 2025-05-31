@@ -1,0 +1,32 @@
+{
+    "disease": "Other zygomycoses",
+    "icd_code": "B468",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised state",
+            "Hematologic malignancies (e.g., acute myeloid leukemia, acute lymphoblastic leukemia)"
+        ],
+        "imaging_findings": {
+            "CT scans": "Findings may vary depending on the location of infection (e.g., chest, cranial)",
+            "MRI": "Findings may vary depending on the location of infection (e.g., cranial)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of fungi (for proven diagnosis)"
+        ],
+        "supportive": [
+            "Host factor criteria",
+            "Clinical features",
+            "Mycological evidence (for probable diagnosis)",
+            "Radiological findings",
+            "Histopathological findings"
+        ]
+    },
+    "differential_diagnoses": []
+}

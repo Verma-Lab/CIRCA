@@ -1,0 +1,39 @@
+{
+    "disease": "Other forms of actinomycosis",
+    "icd_code": "A4289",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pus accumulation",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Formation of ducts from inflamed area",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Pus discharge via ducts",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Variable",
+                "pattern": "Progressive over a longer period"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

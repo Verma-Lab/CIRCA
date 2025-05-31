@@ -1,0 +1,40 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 90,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  His home glucose readings (120-180 mg/dL) and previous A1c of 7.8% indicate suboptimal glycemic control.  His chief complaint includes follow-up for diabetes management, further supporting this diagnosis.  The elevated creatinine (15 mg/dL, assuming this is a typo and should be in a different unit like mg/dL or \u00b5mol/L,  and is high relative to the reference range) suggests potential kidney involvement, a known complication of poorly controlled diabetes.  Further investigation is needed to confirm the creatinine value and assess kidney function."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 95,
+      "reasoning": "The patient's blood pressure reading of 144/88 mmHg is significantly elevated and above the goal of <140/90 mmHg.  His history includes hypertension, and he is currently on lisinopril, an antihypertensive medication. The elevated blood pressure is a key finding for hypertension.  The physical exam is otherwise unremarkable, which is consistent with essential hypertension."
+    }
+  ],
+  "differential_diagnoses": [
+    {
+      "disease": "Tension Headache",
+      "icd_code": "G44.9",
+      "probability": 70,
+      "reasoning": "The patient reports occasional mild headaches described as dull, pressure-like pain, lasting 2-3 hours, and relieved by acetaminophen. This is consistent with tension-type headaches. However, further investigation is needed to rule out other causes of headache."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Repeat creatinine measurement with correct units to verify the result and assess renal function.",
+    "HbA1c to assess long-term glycemic control.",
+    "Comprehensive metabolic panel (CMP) to evaluate renal function, electrolytes, and liver function.",
+    "Lipid panel to assess lipid profile.",
+    "ECG to evaluate cardiac function, especially given the hypertension.",
+    "Review of chest x-ray for any abnormalities."
+  ],
+  "clinical_summary": "The patient presents for follow-up of known type 2 diabetes mellitus and hypertension.  His blood pressure remains elevated despite medication, and his blood glucose control is suboptimal.  He also reports occasional tension headaches.  Additional testing is recommended to assess renal function, given the elevated creatinine (assuming a typographical error in the lab results), and to optimize management of his diabetes and hypertension.  The provided lab values need clarification, especially the creatinine value.  The absence of ECG analysis limits the assessment of cardiac involvement.",
+  "timestamp": "2025-04-08T10:41:59.020782",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

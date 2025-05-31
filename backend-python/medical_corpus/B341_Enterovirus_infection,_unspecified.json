@@ -1,0 +1,41 @@
+{
+    "disease": "Enterovirus infection, unspecified",
+    "icd_code": "B341",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Common cold symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Summer flu symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Inflammation of eyes",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Skin inflammation",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of enterovirus infection"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

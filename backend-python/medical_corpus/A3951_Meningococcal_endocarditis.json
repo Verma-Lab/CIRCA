@@ -1,0 +1,137 @@
+{
+    "disease": "Meningococcal endocarditis",
+    "icd_code": "A3951",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vomiting",
+                "severity": "Present",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "Absent on initial presentation",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Systolic murmur",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Bilateral rales",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Present",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Present",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Present",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Neck rigidity",
+                "severity": "Present",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Left-sided weakness",
+                "severity": "Present",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "Present",
+                "pattern": "Acute onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "110 bpm (tachycardia)",
+            "blood_pressure": "121/77 mm Hg (within normal range)",
+            "oxygen_saturation": "90% on room air (hypoxemia)",
+            "respiratory_rate": "Tachypnea",
+            "temperature": "Afebrile initially"
+        },
+        "physical_findings": [
+            "Altered level of consciousness (Glasgow Coma Scale of 7)",
+            "Bilateral horizontal nystagmus",
+            "Equal and reactive pupils",
+            "Absent meningeal signs",
+            "Systolic murmur at the apex",
+            "Bilateral rales",
+            "Left upper extremity rigidity",
+            "Increased tone on the left side compared to the right"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "22,000/uL (leukocytosis)",
+            "glucose": "1500 mg/dL (hyperglycemia)",
+            "plasma_osmolarity": "465 mOsm/L (hyperosmolarity)",
+            "BUN": "102 mg/dL (elevated)",
+            "creatinine": "3.3 mg/dL (elevated)",
+            "blood_cultures": "Initially negative, later positive for Neisseria meningitidis",
+            "CSF_analysis": {
+                "RBC_count": "2080/uL",
+                "protein": "77 mg/dL (mildly elevated)",
+                "WBC_count": "6 and 3 WBCs in the first and second CSF bottles respectively"
+            },
+            "platelets": "54\u00d710^9/L (thrombocytopenia)",
+            "sodium": "134 mEq/l (hyponatremia)",
+            "calcium": "8.4 mg/dl (hypocalcemia)",
+            "magnesium": "1.7 mg/dl (hypomagnesemia)",
+            "phosphorus": "3.2 mg/dl (hypophosphatemia)",
+            "bicarbonate": "24 mEq/l (normal)",
+            "blood_glucose": "142 mg/dl (slightly elevated)",
+            "troponin": "Increased from 0.16 ng/ml\u20130.38 ng/ml",
+            "ammonia": "47 mcmol/l (elevated)"
+        },
+        "risk_factors": [
+            "Poorly controlled type-2 diabetes",
+            "Marijuana use",
+            "Alcohol use disorder",
+            "Elderly age"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Pulmonary vascular congestion",
+            "head_CT_scan": "Diffuse right temporal, parietal, and left parietal subarachnoid hemorrhage and right frontal subdural hematoma",
+            "head_CT_angiography": "No intra- or extracranial large vessel stenosis",
+            "brain_MRI": "Multiple foci of embolic infarcts in bilateral occipital, parietal, and frontal lobes, basal ganglia, cerebellum, and left thalamus; subarachnoid hemorrhage in the right and left parietal lobes",
+            "abdominal_CT_scan": "Embolic splenic infarct",
+            "transesophageal_echocardiography": "Large vegetation on the posterior leaflet of the mitral valve (1.96cm \u00d7 1.29cm) with posterior leaflet perforation and moderate to severe anteriorly directed mitral regurgitation; small calcified vegetation post-antimicrobials"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Neisseria meningitidis",
+            "Echocardiographic evidence of endocarditis (vegetation on valve)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with endocarditis (fever, murmur, embolic phenomena)",
+            "Evidence of embolic events (e.g., stroke, splenic infarct)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial meningitis",
+        "Other types of infective endocarditis (e.g., staphylococcal, streptococcal)",
+        "Septic shock"
+    ]
+}

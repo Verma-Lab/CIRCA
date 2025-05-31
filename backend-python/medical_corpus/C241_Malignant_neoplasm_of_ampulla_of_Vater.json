@@ -1,0 +1,36 @@
+{
+    "disease": "Malignant neoplasm of ampulla of Vater",
+    "icd_code": "C241",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Usually the first sign, yellowing of the eyes and skin due to bile duct blockage"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Inherited syndromes"
+        ],
+        "imaging_findings": {
+            "CT-A/P/C": "Ampullary mass may not be well visualized; no significant biliary ductal dilation or pancreatic duct abnormalities identified in some cases."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy showing high-grade dysplasia or carcinoma"
+        ],
+        "supportive": [
+            "Jaundice",
+            "Imaging findings suggestive of ampullary mass"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pancreatic cancer",
+        "Periampullary cancers"
+    ]
+}

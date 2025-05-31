@@ -1,0 +1,99 @@
+{
+    "disease": "Chronic intestinal amebiasis",
+    "icd_code": "A061",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Chronic",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to severe",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Bloody stools",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Mucus in stools",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Liver enlargement",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Abdominal tenderness",
+                "severity": "Variable",
+                "pattern": "May be present, typically in the right upper quadrant"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in severe cases",
+            "heart_rate": "May be elevated in severe cases"
+        },
+        "physical_findings": [
+            "Abdominal tenderness",
+            "Liver enlargement"
+        ],
+        "lab_values": {
+            "stool_exam": "Presence of Entamoeba histolytica cysts or trophozoites",
+            "antigen_test": "Positive for E. histolytica antigen",
+            "PCR": "Positive for E. histolytica DNA"
+        },
+        "risk_factors": [
+            "Travel to areas with poor sanitation",
+            "Consumption of contaminated food or water",
+            "Living in crowded conditions with poor sanitation",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show liver abscess",
+            "CT_scan": "May show liver abscess"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Entamoeba histolytica in stool samples (cysts or trophozoites)",
+            "Clinical symptoms consistent with chronic intestinal amebiasis"
+        ],
+        "supportive": [
+            "Positive antigen test for E. histolytica",
+            "Positive PCR for E. histolytica DNA",
+            "Imaging findings suggestive of liver abscess (if present)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Irritable bowel syndrome",
+        "Inflammatory bowel disease",
+        "Other causes of diarrhea",
+        "Other intestinal infections"
+    ]
+}

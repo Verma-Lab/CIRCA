@@ -1,0 +1,80 @@
+{
+    "disease": "Parvovirus infection, unspecified",
+    "icd_code": "B343",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Flu-like symptoms",
+                "severity": "mild",
+                "pattern": "common"
+            },
+            {
+                "name": "Rash",
+                "severity": "mild to moderate",
+                "pattern": "Slapped cheek rash (erythema infectiosum) on face, may spread to chest, back, buttocks, arms, and legs; lacy appearance as it fades; itchy; duration 7-10 days, but can last several weeks"
+            },
+            {
+                "name": "Joint pain (arthralgia)",
+                "severity": "mild to moderate",
+                "pattern": "More common in adults, especially women; affects hands, feet, and knees; bilateral; duration 1-3 weeks, but can last months"
+            },
+            {
+                "name": "Low blood count (anemia)",
+                "severity": "severe",
+                "pattern": "In individuals with blood disorders or weakened immune system"
+            },
+            {
+                "name": "Fever",
+                "severity": "low-grade",
+                "pattern": "common"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "mild to moderate",
+                "pattern": "common"
+            },
+            {
+                "name": "Headache",
+                "severity": "mild to moderate",
+                "pattern": "common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "mild to moderate",
+                "pattern": "common"
+            },
+            {
+                "name": "Rhinorrhea",
+                "severity": "mild to moderate",
+                "pattern": "common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Slapped cheek rash (erythema infectiosum)",
+            "Generalized rash",
+            "Joint swelling",
+            "Joint tenderness"
+        ],
+        "lab_values": {
+            "Hemoglobin": "Decreased, especially in individuals with hemoglobinopathies or hemolytic anemias (2-6 g/dL decrease)"
+        },
+        "risk_factors": [
+            "Blood disorders",
+            "Weakened immune system",
+            "Pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with parvovirus B19 infection (e.g., rash, joint pain, flu-like symptoms)"
+        ],
+        "supportive": [
+            "Positive serologic test for parvovirus B19 IgM antibodies",
+            "Detection of parvovirus B19 DNA by PCR"
+        ]
+    },
+    "differential_diagnoses": []
+}

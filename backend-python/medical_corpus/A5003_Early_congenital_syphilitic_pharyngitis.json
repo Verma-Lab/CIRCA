@@ -1,0 +1,78 @@
+{
+    "disease": "Early congenital syphilitic pharyngitis",
+    "icd_code": "A50.03",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rhinitis",
+                "severity": "Variable",
+                "pattern": "Mucopurulent nasal discharge"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "Enlarged liver and spleen"
+            },
+            {
+                "name": "Pustules",
+                "severity": "Variable",
+                "pattern": "On palms and soles"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Desquamating, maculopapular lesions; punched-out, pale, blistered lesions mainly on ears and nasal bridge; desquamation of feet and palms"
+            },
+            {
+                "name": "Pharyngitis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the pharynx"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Yellowing of skin and eyes"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Reduced red blood cell count"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Variable",
+                "pattern": "Reduced platelet count"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Rhinitis",
+            "Hepatosplenomegaly",
+            "Pustules on palms and soles",
+            "Desquamating skin rash",
+            "Maculopapular rash",
+            "Punched-out, pale, blistered lesions on ears and nasal bridge",
+            "Desquamation of feet and palms",
+            "Pharyngeal inflammation"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Maternal syphilis during pregnancy"
+        ],
+        "imaging_findings": {
+            "X-ray": "Bone abnormalities, syphilitic metaphysitis with diminished density in the ends of the shaft and destruction at the proximal end of the tibia"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical manifestations consistent with congenital syphilis in the infant (e.g., rhinitis, hepatosplenomegaly, rash, bone abnormalities)"
+        ],
+        "supportive": [
+            "Positive maternal serologic test for syphilis",
+            "Abnormal laboratory findings in the infant (e.g., elevated liver enzymes, anemia, thrombocytopenia)",
+            "Radiographic evidence of bone abnormalities"
+        ]
+    },
+    "differential_diagnoses": []
+}

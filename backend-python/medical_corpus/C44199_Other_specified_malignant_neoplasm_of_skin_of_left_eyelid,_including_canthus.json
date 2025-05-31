@@ -1,0 +1,30 @@
+{
+    "disease": "Other specified malignant neoplasm of skin of left eyelid, including canthus",
+    "icd_code": "C44199",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lesion on left eyelid, possibly involving canthus"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant neoplasm of skin"
+        ],
+        "supportive": [
+            "Location of lesion on left eyelid, possibly involving canthus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignant melanoma of skin (C43.-)",
+        "Kaposi's sarcoma of skin (C46.0)",
+        "Malignant neoplasm of connective tissue of eyelid (C49.0)",
+        "Merkel cell carcinoma (C4A.-)",
+        "Malignant neoplasm of skin of genital organs (C51-C52, C60.-, C63.2)"
+    ]
+}

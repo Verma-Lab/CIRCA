@@ -1,0 +1,43 @@
+{
+    "disease": "Cholera due to Vibrio cholerae O1, biovar eltor",
+    "icd_code": "A001",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Severe runny diarrhea",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "dehydration": "Significant fluid loss leading to severe dehydration"
+        },
+        "physical_findings": [
+            "Dehydration",
+            "Signs of severe fluid and electrolyte imbalance"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of contaminated water",
+            "Consumption of contaminated food"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Vibrio cholerae O1, biovar eltor from stool sample",
+            "Presence of characteristic symptoms (severe watery diarrhea and vomiting)"
+        ],
+        "supportive": [
+            "Exposure to contaminated water or food",
+            "Epidemiological link to a cholera outbreak"
+        ]
+    },
+    "differential_diagnoses": []
+}

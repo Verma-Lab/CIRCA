@@ -1,0 +1,22 @@
+{
+    "disease": "Malignant neoplasm of external lip, unspecified",
+    "icd_code": "C002",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Malignant melanoma of lip (C43.0)",
+        "Merkel cell carcinoma of lip (C4A.0)",
+        "Other and unspecified malignant neoplasm of skin of lip (C44.0-)"
+    ]
+}

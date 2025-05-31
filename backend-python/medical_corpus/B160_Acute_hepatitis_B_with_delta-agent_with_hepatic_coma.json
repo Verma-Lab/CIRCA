@@ -1,0 +1,100 @@
+{
+    "disease": "Acute hepatitis B with delta-agent with hepatic coma",
+    "icd_code": "B160",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hepatic encephalopathy (hepatic coma)",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Clay-colored stools",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "May be low",
+            "heart_rate": "May be elevated or decreased",
+            "respiratory_rate": "May be altered",
+            "temperature": "May be elevated or normal"
+        },
+        "physical_findings": [
+            "Jaundice",
+            "Hepatomegaly",
+            "Ascites (possible)",
+            "Asterixis (possible)",
+            "Altered mental status"
+        ],
+        "lab_values": {
+            "ALT": "Elevated",
+            "AST": "Elevated",
+            "bilirubin": "Elevated",
+            "PT/INR": "Prolonged",
+            "HBsAg": "Positive",
+            "anti-HDV": "Positive"
+        },
+        "risk_factors": [
+            "Exposure to HBV",
+            "Exposure to HDV",
+            "Injection drug use",
+            "Sexual contact with infected individual",
+            "Mother-to-child transmission"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show hepatomegaly, cirrhosis",
+            "CT scan": "May show hepatomegaly, cirrhosis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms and signs consistent with acute hepatitis",
+            "Elevated liver enzymes (ALT, AST)",
+            "Positive HBsAg",
+            "Positive anti-HDV"
+        ],
+        "supportive": [
+            "Elevated bilirubin",
+            "Prolonged PT/INR",
+            "Imaging findings consistent with hepatitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute hepatitis A",
+        "Acute hepatitis C",
+        "Other causes of hepatic encephalopathy",
+        "Drug-induced liver injury"
+    ]
+}

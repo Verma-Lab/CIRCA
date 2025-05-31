@@ -1,0 +1,73 @@
+{
+    "disease": "Other amebic genitourinary infections",
+    "icd_code": "A0682",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blood-stained vaginal discharge",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "White vaginal discharge",
+                "severity": "Mild",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Vaginal bleeding",
+                "severity": "Moderate to Severe",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to Moderate",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Mild to Moderate",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Ulcerative genital lesion",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Cervical mass",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Cervical growth",
+            "Ulcerative lesion/growth on vaginal vault",
+            "Irregular ulceroproliferative cervical growth involving up to upper one-third of the vagina"
+        ],
+        "lab_values": {
+            "Microscopic examination of biopsy": "Abundant necroinflammatory exudates with scattered squamous cells showing reactive nuclear atypia; Amebic trophozoites resembling large histiocyte-like cells with granular cytoplasm; small, round nuclei; and engulfed erythrocytes"
+        },
+        "risk_factors": [
+            "Rectosigmoid infection",
+            "Perianal trauma",
+            "Poor genital hygiene",
+            "Anal/vaginal intercourse with a person suffering from amebic dysentery"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological identification of amebic trophozoites in biopsy specimens"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with amebic genitourinary infection (e.g., vaginal bleeding, ulcerative lesions)",
+            "Positive stool antigen detection test for E. histolytica (if intestinal involvement is suspected)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Vaginal and cervical carcinoma",
+        "High-grade dysplasia"
+    ]
+}

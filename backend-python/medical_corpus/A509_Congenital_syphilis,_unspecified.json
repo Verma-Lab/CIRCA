@@ -1,0 +1,105 @@
+{
+    "disease": "Congenital syphilis, unspecified",
+    "icd_code": "A509",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dermatologic conditions",
+                "severity": "Variable",
+                "pattern": "Various skin manifestations"
+            },
+            {
+                "name": "Ocular impairment",
+                "severity": "Variable",
+                "pattern": "Visual problems"
+            },
+            {
+                "name": "Hydrops fetalis",
+                "severity": "Severe",
+                "pattern": "Fluid accumulation"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Respiratory infection"
+            },
+            {
+                "name": "Central nervous system diseases",
+                "severity": "Severe",
+                "pattern": "Neurological complications"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "Variable",
+                "pattern": "Liver inflammation"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Low red blood cell count"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Variable",
+                "pattern": "Low platelet count"
+            },
+            {
+                "name": "Musculoskeletal abnormalities",
+                "severity": "Variable",
+                "pattern": "Bone and joint problems"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Variable",
+                "pattern": "Auditory impairment"
+            },
+            {
+                "name": "Vision loss",
+                "severity": "Variable",
+                "pattern": "Visual impairment"
+            },
+            {
+                "name": "Stunted growth",
+                "severity": "Variable",
+                "pattern": "Delayed growth"
+            },
+            {
+                "name": "Cardiac abnormalities",
+                "severity": "Variable",
+                "pattern": "Heart defects"
+            },
+            {
+                "name": "Morbid dermatologic manifestations",
+                "severity": "Severe",
+                "pattern": "Severe skin conditions"
+            },
+            {
+                "name": "Neurodevelopmental delay",
+                "severity": "Variable",
+                "pattern": "Delayed development"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "RPR": {
+                "abnormal": "Reactive"
+            }
+        },
+        "risk_factors": [
+            "Maternal syphilis infection during pregnancy or delivery"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Maternal history of syphilis",
+            "Positive newborn nontreponemal test (e.g., RPR)"
+        ],
+        "supportive": [
+            "Clinical manifestations consistent with congenital syphilis"
+        ]
+    },
+    "differential_diagnoses": []
+}

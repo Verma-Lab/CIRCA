@@ -1,0 +1,72 @@
+{
+    "disease": "Herpesviral encephalitis",
+    "icd_code": "B004",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Behavioral changes",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Speech disturbances",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some adult cases"
+            },
+            {
+                "name": "Aphasia",
+                "severity": "Variable",
+                "pattern": "Present in some adult cases"
+            },
+            {
+                "name": "Pupillary dilatation",
+                "severity": "Variable",
+                "pattern": "Present in some adult cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "CSF": "May be normal in some cases"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "EEG": "Most useful neurodiagnostic aid",
+            "CT scan": "Useful neurodiagnostic aid",
+            "Brain scan": "May be normal in some cases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Viral isolation (gold standard)"
+        ],
+        "supportive": [
+            "Clinical findings",
+            "Neurodiagnostic tests (EEG, CT scan)"
+        ]
+    },
+    "differential_diagnoses": []
+}

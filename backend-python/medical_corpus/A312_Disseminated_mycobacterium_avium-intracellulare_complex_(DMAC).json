@@ -1,0 +1,118 @@
+{
+    "disease": "Disseminated Mycobacterium avium-intracellulare complex (DMAC)",
+    "icd_code": "A312",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Progressive weakness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Seizure activity",
+                "severity": "Variable",
+                "pattern": "Single episode or recurrent"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Often out of proportion to HIV stage"
+            },
+            {
+                "name": "Nonspecific symptoms",
+                "severity": "Variable",
+                "pattern": "Can overlap with other opportunistic infections"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Can be low (e.g., 106/80 mm Hg)",
+            "pulse": "Can be elevated (e.g., 113 beats/min)",
+            "respiration": "Can be elevated (e.g., 19 cycles/min)",
+            "temperature": "Can be elevated (e.g., 99.4\u00b0F)"
+        },
+        "physical_findings": [
+            "Moderate muscle wasting",
+            "Moderate ascites",
+            "3+ pitting pedal swelling",
+            "Hepatomegaly",
+            "Splenomegaly",
+            "Lymphadenopathy (paratracheal, retroperitoneal, para-aortic, or less commonly peripheral)"
+        ],
+        "lab_values": {
+            "hemoglobin": "Low (e.g., 5.9 g/dL)",
+            "platelet_count": "Low (e.g., 4100/\u00b5L)",
+            "white_blood_cells": "Can be elevated (e.g., 9300/\u00b5L)",
+            "D-dimer": "Elevated (e.g., 3.6 \u00b5G/mL)",
+            "serum_fibrinogen": "Low (e.g., 189 mg/dL)",
+            "prothrombin_time": "Abnormal (e.g., 17.8 seconds)",
+            "partial_thromboplastin_time": "Abnormal (e.g., 52.7 seconds)",
+            "international_normalized_ratio": "Abnormal (e.g., 1.53)",
+            "albumin": "Low (e.g., 1.0 g/dL)",
+            "aspartate_aminotransferase": "Can be elevated (e.g., 92 U/L)",
+            "alkaline_phosphatase": "Elevated (e.g., 325 U/L)",
+            "lactate_dehydrogenase": "Elevated (e.g., 469 U/L)",
+            "serum_ferritin": "Elevated (e.g., 4770 ng/mL)"
+        },
+        "risk_factors": [
+            "Advanced HIV infection (CD4 count < 50 cells/mm3)",
+            "High HIV viral load",
+            "Poor compliance with antiretroviral therapy (ART)",
+            "Previous or concurrent opportunistic infections",
+            "Reduced in vitro lymphoproliferative immune responses to M. avium antigens",
+            "Genetic predisposition"
+        ],
+        "imaging_findings": {
+            "chest_radiograph": "Often unremarkable",
+            "abdominal_ultrasound": "Can show liver cirrhosis and ascites",
+            "brain_computed_tomography": "Usually negative for hemorrhage or mass"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Compatible clinical signs and symptoms",
+            "Isolation of MAC from cultures of blood, lymph fluid, bone marrow, or other normally sterile tissue or body fluids"
+        ],
+        "supportive": [
+            "Acid-fast bacilli smear and culture of tissue",
+            "Radiographic imaging",
+            "Other studies aimed at isolating organisms from focal infection sites"
+        ]
+    },
+    "differential_diagnoses": [
+        "Disseminated histoplasmosis",
+        "Other mycobacterial infections",
+        "Cryptococcosis",
+        "Viral hepatitis"
+    ]
+}

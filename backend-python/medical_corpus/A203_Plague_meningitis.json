@@ -1,0 +1,65 @@
+{
+    "disease": "Plague Meningitis",
+    "icd_code": "A203",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Common",
+                "pattern": "Present in 66% of cases"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Common",
+                "pattern": "Present in 45% of cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Common",
+                "pattern": "Present in 36% of cases"
+            },
+            {
+                "name": "Focal neurologic deficits",
+                "severity": "Common",
+                "pattern": "Present in 29% of cases (e.g., cranial nerve abnormalities)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Nuchal rigidity",
+            "Focal neurologic deficits (e.g., cranial nerve abnormalities)"
+        ],
+        "lab_values": {
+            "Cerebrospinal fluid (CSF)": {
+                "Pleocytosis": ">5 cells/mm3"
+            },
+            "Gram stain": {
+                "Yersinia pestis": "Positive"
+            },
+            "Culture": {
+                "Yersinia pestis": "Positive"
+            },
+            "Polymerase chain reaction (PCR)": {
+                "Yersinia pestis": "Positive"
+            }
+        },
+        "risk_factors": [
+            "Delayed or inadequate treatment of another clinical form of plague (e.g., bubonic plague)",
+            "Hematogenous spread of Yersinia pestis",
+            "Axillary or cervical buboes (potentially greater risk than inguinal buboes)",
+            "Age (potentially more common in children)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of meningitis in a patient with plague (nuchal rigidity or at least 2 other clinical signs/symptoms of meningitis: altered mental status, headache, seizures, or focal neurologic signs)",
+            "Laboratory evidence of meningitis in a patient with plague (Yersinia pestis in CSF by culture, PCR, or Gram stain)"
+        ],
+        "supportive": [
+            "Author report of plague meningitis"
+        ]
+    },
+    "differential_diagnoses": []
+}

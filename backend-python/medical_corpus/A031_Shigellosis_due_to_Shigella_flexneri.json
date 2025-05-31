@@ -1,0 +1,83 @@
+{
+    "disease": "Shigellosis due to Shigella flexneri",
+    "icd_code": "A031",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Frequent"
+            },
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Frequent"
+            },
+            {
+                "name": "Mucoid diarrhea",
+                "severity": "Variable",
+                "pattern": "Frequent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Stomach cramps",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "May be elevated in severe cases"
+        },
+        "physical_findings": [
+            "Tenderness to palpation of the abdomen"
+        ],
+        "lab_values": {
+            "stool_culture": "Presence of Shigella flexneri",
+            "antimicrobial_susceptibility_testing": "May show resistance to multiple antibiotics"
+        },
+        "risk_factors": [
+            "Poor hygiene",
+            "Fecal-oral transmission",
+            "Contaminated food and water",
+            "Direct person-to-person contact",
+            "Sexual contact (MSM)",
+            "Travel to low- and middle-income countries",
+            "Compromised immune system",
+            "Living in overcrowded conditions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Shigella flexneri from stool culture"
+        ],
+        "supportive": [
+            "Clinical symptoms (diarrhea, fever, abdominal cramps)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of infectious diarrhea",
+        "Inflammatory bowel disease"
+    ]
+}

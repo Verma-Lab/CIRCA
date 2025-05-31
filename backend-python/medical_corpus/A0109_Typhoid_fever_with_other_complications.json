@@ -1,0 +1,35 @@
+{
+    "disease": "Typhoid fever with other complications",
+    "icd_code": "A0109",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Sustained"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (>38\u00b0C)"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Travel to areas with poor sanitation",
+            "Consumption of contaminated food or water"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of typhoid fever (fever, etc.)",
+            "Positive blood culture for Salmonella Typhi"
+        ],
+        "supportive": [
+            "Positive Widal test (though not always reliable)",
+            "Other clinical findings consistent with typhoid fever"
+        ]
+    },
+    "differential_diagnoses": []
+}

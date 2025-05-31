@@ -1,0 +1,83 @@
+{
+    "disease": "Pulmonary Cryptococcosis",
+    "icd_code": "B450",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent, six-month history in one case"
+            },
+            {
+                "name": "Cough with expectoration",
+                "severity": "Mild to moderate",
+                "pattern": "Six-month history in one case"
+            },
+            {
+                "name": "Left-sided pleuritic chest pain",
+                "severity": "Mild to moderate",
+                "pattern": "Six-month history in one case"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Unspecified",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Unspecified",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Decreased breath sounds",
+                "severity": "Mild",
+                "pattern": "Localized to left infra-axillary and infra-scapular area in one case"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Can be present in immunocompetent patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "afebrile (in one case)",
+            "hemodynamically stable": "Yes (in one case)"
+        },
+        "physical_findings": [
+            "Decreased breath sounds in the left infra-axillary and infra-scapular area (in one case)",
+            "Mucosal erythema and mild mucoid secretions in the left tracheobronchial tree (in one case)"
+        ],
+        "lab_values": {
+            "Complete blood counts": "Leukocytosis with eosinophilia (in one case)",
+            "Renal function tests": "Within normal limits (in one case)",
+            "Liver function tests": "Within normal limits (in one case)",
+            "Blood sugars": "Within normal limits (in one case)",
+            "Pleural fluid analysis": "Lymphocytic predominant exudative effusion with low adenosine deaminase (24.8 U/L) in one case",
+            "Sputum examination for tuberculosis": "Negative (in one case)",
+            "Viral markers (HIV, HBsAg, anti-HCV antibodies)": "Negative (in one case)",
+            "CD4 count": "Normal (in one case)"
+        },
+        "risk_factors": [
+            "Immunocompromised state (HIV infection, transplant recipients, diabetes mellitus, chronic liver and kidney disease, chronic steroid use, defects of cell-mediated immunity)",
+            "No apparent predisposing factors (10-40% of cases)"
+        ],
+        "imaging_findings": {
+            "Chest radiograph": "Left-sided pleural effusion and left hilar prominence (in one case)",
+            "Contrast-enhanced computed tomography (CECT) of the chest": "Enhanced left hilar mass with ipsilateral pleural effusion (in one case), resolution of pleural effusion with a decrease in the size of the mass after treatment (in one case)",
+            "Other": "Single or multiple pulmonary nodules, masses mimicking lung cancer, air space consolidation, and patchy interstitial or alveolar infiltrates"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": "Demonstration of yeast cells in normal sterile tissues (blood, sputum, other body fluids cultures)",
+        "supportive": [
+            "Clinical presentation (symptoms and physical findings)",
+            "Radiological findings (chest X-ray, CT scan)",
+            "Histopathology (microscopy and culture)",
+            "Detection of cryptococcal polysaccharide antigen or Cryptococcus-derived nucleic acids"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lung cancer"
+    ]
+}

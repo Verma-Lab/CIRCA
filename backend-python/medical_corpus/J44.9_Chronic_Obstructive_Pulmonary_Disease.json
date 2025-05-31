@@ -1,0 +1,82 @@
+{
+    "disease": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "icd_code": "J44.9",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chronic cough",
+                "severity": "Variable",
+                "pattern": "Persistent, may be productive"
+            },
+            {
+                "name": "Shortness of breath (dyspnea)",
+                "severity": "Variable",
+                "pattern": "Progressive, exacerbated by exertion"
+            },
+            {
+                "name": "Wheezing",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Chest tightness",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Increased sputum production",
+                "severity": "Variable",
+                "pattern": "Chronic or episodic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased",
+            "oxygen_saturation": "Decreased"
+        },
+        "physical_findings": [
+            "Decreased breath sounds",
+            "Wheezes",
+            "Rhonchi",
+            "Use of accessory muscles for breathing",
+            "Barrel chest (in advanced cases)",
+            "Digital clubbing (in advanced cases)"
+        ],
+        "lab_values": {
+            "Arterial blood gas": {
+                "PaO2": "Decreased",
+                "PaCO2": "Increased or normal"
+            },
+            "Complete blood count": "May show polycythemia in advanced cases"
+        },
+        "risk_factors": [
+            "Smoking (most significant)",
+            "Exposure to air pollution",
+            "Occupational dusts and fumes",
+            "Genetic predisposition (alpha-1 antitrypsin deficiency)"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Hyperinflation, flattened diaphragm, increased retrosternal air space",
+            "CT scan": "Emphysema (air trapping), bronchiectasis, mucus plugging"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of chronic airflow limitation (e.g., cough, sputum production, dyspnea)",
+            "Spirometry demonstrating airflow limitation (FEV1/FVC ratio < 0.7)"
+        ],
+        "supportive": [
+            "History of exposure to risk factors",
+            "Physical examination findings consistent with COPD",
+            "Abnormal imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Asthma",
+        "Bronchiectasis",
+        "Cystic fibrosis",
+        "Pulmonary fibrosis",
+        "Heart failure",
+        "Lung cancer"
+    ]
+}

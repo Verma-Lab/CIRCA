@@ -1,0 +1,86 @@
+{
+    "disease": "Charcot's arthropathy (tabetic)",
+    "icd_code": "A5216",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Progressive swelling",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Pain",
+                "severity": "Worsening",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Edema",
+                "severity": "Present",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Joint destruction",
+                "severity": "Severe",
+                "pattern": "Rapid"
+            },
+            {
+                "name": "Deformity",
+                "severity": "Present",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Loss of functionality",
+                "severity": "Significant",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Swelling of the right knee",
+            "Edema of the right leg",
+            "Varus deviation",
+            "Deformity of the femoral-tibial joint",
+            "Erosion of the medial femoral condyle",
+            "Significant intra-articular swelling"
+        ],
+        "lab_values": {
+            "Glucose": "Normal",
+            "Glycated hemoglobin": "36 mmol/mol (normal value < 42 mmol/mol)",
+            "C-reactive protein": "Normal",
+            "Procalcitonin": "Normal",
+            "Blood and urine cultures": "Negative for bacteria and fungi",
+            "RPR": "Positive at significant titers",
+            "TPHA": "Positive at significant titers"
+        },
+        "risk_factors": [
+            "Poorly controlled diabetes mellitus",
+            "Neurosyphilis (Tertiary syphilis)"
+        ],
+        "imaging_findings": {
+            "X-ray": "Deformity of the femoral-tibial joint, erosion of the medial femoral condyle, significant intra-articular swelling",
+            "CT scan": "Deformity of the femoral-tibial joint, erosion of the medial femoral condyle, significant intra-articular swelling, local contrast-enhancement",
+            "MRI": "Severe joint erosion, diffused calcifications, inhomogeneous contrast enhancement of the bone at the femoral condyle and tibial plateau",
+            "Scintigraphy": "Uneven hyper-captation of the right knee"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Progressive joint destruction",
+            "Neuropathy",
+            "Radiographic evidence of joint destruction"
+        ],
+        "supportive": [
+            "History of syphilis",
+            "Positive serologic tests for syphilis",
+            "Absence of other causes of joint destruction"
+        ]
+    },
+    "differential_diagnoses": [
+        "Osteomyelitis",
+        "Osteonecrosis",
+        "Calcium pyrophosphate dihydrate crystal deposition disease",
+        "Psoriatic arthritis",
+        "Osteoarthritis"
+    ]
+}

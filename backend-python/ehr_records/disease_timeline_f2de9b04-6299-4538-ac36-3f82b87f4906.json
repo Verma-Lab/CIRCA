@@ -1,0 +1,480 @@
+{
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "patient_name": "John Doe",
+  "primary_diagnosis": "Type 2 Diabetes Mellitus",
+  "confidence": 90,
+  "generated_at": "2025-04-08T23:21:27.323818",
+  "timeline_range": "1-year",
+  "timeline_data": [
+    {
+      "date": "2025-04-08",
+      "timepoint_label": "Initial",
+      "symptoms": [
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased urination",
+          "severity": "mild"
+        },
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Review current medications, discontinue Crocin unless needed for pain relief",
+        "Dietary changes: reduce refined carbohydrates and increase fiber intake",
+        "Regular exercise program (at least 150 minutes/week)"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.5%",
+          "interpretation": "Indicates suboptimal glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "150 mg/dL",
+          "interpretation": "Elevated blood sugar levels"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0 mg/dL",
+          "interpretation": "Monitor for kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Dehydration"
+      ],
+      "notes": "Patient needs education on diabetes management"
+    },
+    {
+      "date": "2025-05-08",
+      "timepoint_label": "Month 1",
+      "symptoms": [
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased urination",
+          "severity": "mild"
+        },
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Initiate Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.2%",
+          "interpretation": "Slight improvement in glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "140 mg/dL",
+          "interpretation": "Improved blood sugar levels"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0 mg/dL",
+          "interpretation": "Monitor for kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Gastrointestinal side effects from Metformin"
+      ],
+      "notes": "Monitor for Metformin side effects"
+    },
+    {
+      "date": "2025-06-08",
+      "timepoint_label": "Month 2",
+      "symptoms": [
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased urination",
+          "severity": "mild"
+        },
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.0%",
+          "interpretation": "Further improvement in glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "130 mg/dL",
+          "interpretation": "Improved blood sugar levels"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (if Metformin dose increased)"
+      ],
+      "notes": "Patient education on self-monitoring of blood glucose"
+    },
+    {
+      "date": "2025-07-08",
+      "timepoint_label": "Month 3",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.8%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "120 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2025-08-08",
+      "timepoint_label": "Month 4",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.5%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "110 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2025-09-08",
+      "timepoint_label": "Month 5",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.2%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "100 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2025-10-08",
+      "timepoint_label": "Month 6",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.0%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "95 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2025-11-08",
+      "timepoint_label": "Month 7",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "5.8%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "90 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2025-12-08",
+      "timepoint_label": "Month 8",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "5.6%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "85 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2026-01-08",
+      "timepoint_label": "Month 9",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "5.5%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "80 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2026-02-08",
+      "timepoint_label": "Month 10",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "5.4%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "75 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2026-03-08",
+      "timepoint_label": "Month 11",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "5.3%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "70 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    },
+    {
+      "date": "2026-04-08",
+      "timepoint_label": "Month 12",
+      "symptoms": [],
+      "status": "improving",
+      "disease_stage": "early",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg once daily",
+        "Continue dietary and exercise recommendations",
+        "Regular blood glucose monitoring"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "5.2%",
+          "interpretation": "Good glycemic control"
+        },
+        {
+          "test": "Fasting blood glucose",
+          "expected_value": "65 mg/dL",
+          "interpretation": "Within normal range"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "0.9 mg/dL",
+          "interpretation": "Stable kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hypoglycemia"
+      ],
+      "notes": "Continue monitoring and reinforce healthy lifestyle choices"
+    }
+  ]
+}

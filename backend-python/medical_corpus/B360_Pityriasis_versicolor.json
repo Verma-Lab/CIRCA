@@ -1,0 +1,63 @@
+{
+    "disease": "Pityriasis versicolor",
+    "icd_code": "B360",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Scaly patches",
+                "severity": "mild",
+                "pattern": "poorly to well-demarcated, discolored (hypo- or hyperpigmented), light pink"
+            },
+            {
+                "name": "Skin discoloration",
+                "severity": "variable",
+                "pattern": "transient, may be hypo- or hyperpigmented"
+            },
+            {
+                "name": "Itching",
+                "severity": "variable",
+                "pattern": "may be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hypopigmented or hyperpigmented macular lesions on seborrheic areas of the trunk",
+            "Patches primarily affecting the upper trunk, neck, and upper arms",
+            "Scaly macules on the trunk and upper arms"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Hot and humid environment",
+            "Hyperhidrosis",
+            "Application of oily emollients",
+            "Use of protective face masks",
+            "Seborrhea",
+            "Endocrine and neuropathic disorders",
+            "Pregnancy",
+            "Use of oral contraceptives and corticosteroids",
+            "Malnutrition",
+            "Poor general health",
+            "Genetic predisposition",
+            "Increased sebum production",
+            "Physically active individuals",
+            "Patients with diabetes and obesity",
+            "Immunocompromised individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic clinical appearance (scaly, discolored patches)"
+        ],
+        "supportive": [
+            "KOH preparation demonstrating fungal elements with a characteristic spaghetti-and-meatballs appearance",
+            "Dermatoscopy",
+            "Ultraviolet-induced fluorescence dermatoscopy",
+            "Wood's light examination",
+            "Direct microscopy",
+            "Confocal microscopy"
+        ]
+    },
+    "differential_diagnoses": []
+}

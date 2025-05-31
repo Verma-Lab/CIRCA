@@ -1,0 +1,134 @@
+{
+    "disease": "Conjunctivitis due to adenovirus",
+    "icd_code": "B301",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eye irritation",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Excessive tearing",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Soreness",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Foreign body sensation",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Light sensitivity (photophobia)",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "variable",
+                "pattern": "advanced cases"
+            },
+            {
+                "name": "Lid swelling (blepharedema)",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Redness (conjunctival hyperemia)",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Swelling (chemosis)",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Follicular reaction",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Subconjunctival hemorrhage",
+                "severity": "variable",
+                "pattern": "occasional"
+            },
+            {
+                "name": "Membrane or pseudomembrane formation",
+                "severity": "variable",
+                "pattern": "occasional"
+            },
+            {
+                "name": "Preauricular lymph node swelling",
+                "severity": "occasional",
+                "pattern": "acute"
+            },
+            {
+                "name": "Itching",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Pain",
+                "severity": "variable",
+                "pattern": "acute"
+            },
+            {
+                "name": "Watery discharge",
+                "severity": "variable",
+                "pattern": "frequent"
+            },
+            {
+                "name": "Flu-like symptoms (fever, malaise, respiratory symptoms, nausea, vomiting, diarrhea, or myalgia)",
+                "severity": "variable",
+                "pattern": "preceding eye symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Conjunctival hyperemia",
+            "Chemosis",
+            "Follicular conjunctivitis",
+            "Blepharedema",
+            "Subconjunctival hemorrhage",
+            "Pseudomembrane formation",
+            "Superficial punctate keratopathy",
+            "Symblepharon",
+            "Subepithelial corneal infiltrates"
+        ],
+        "lab_values": {
+            "Polymerase chain reaction (PCR)": "Positive for adenovirus in 59% of cases in one study"
+        },
+        "risk_factors": [
+            "Contact with infected individuals",
+            "Contaminated ophthalmic instruments",
+            "Contaminated eye solutions",
+            "Swimming pools",
+            "Fomites"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Acute onset of conjunctivitis",
+            "Clinical features consistent with viral conjunctivitis (e.g., hyperemia, chemosis, follicular reaction, watery discharge)"
+        ],
+        "supportive": [
+            "Positive PCR for adenovirus",
+            "Preauricular lymphadenopathy",
+            "Recent history of exposure to infected individuals"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial conjunctivitis",
+        "Allergic conjunctivitis",
+        "Herpetic conjunctivitis",
+        "Other viral conjunctivitis (e.g., enterovirus, herpes simplex virus)"
+    ]
+}

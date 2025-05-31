@@ -1,0 +1,36 @@
+{
+    "disease": "Coronavirus infection, unspecified",
+    "icd_code": "B342",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Airway inflammation",
+                "severity": "Variable (mild to severe)",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Chest symptoms",
+                "severity": "Variable (mild to severe)",
+                "pattern": "Can progress to severe in 75% of patients (based on COVID-19 data)"
+            },
+            {
+                "name": "Unspecified symptoms",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "Unspecified": "Unspecified"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

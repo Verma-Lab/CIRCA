@@ -1,0 +1,96 @@
+{
+    "disease": "Malignant melanoma of right upper eyelid, including canthus",
+    "icd_code": "C43111",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Asymmetry",
+                "severity": "Variable",
+                "pattern": "Present in suspicious lesions"
+            },
+            {
+                "name": "Border irregularity",
+                "severity": "Variable",
+                "pattern": "Present in suspicious lesions"
+            },
+            {
+                "name": "Color variation",
+                "severity": "Variable",
+                "pattern": "Present in suspicious lesions; may include tan, black, gray, pink, blue, or white"
+            },
+            {
+                "name": "Diameter",
+                "severity": "Variable",
+                "pattern": "Present in suspicious lesions"
+            },
+            {
+                "name": "Erythema",
+                "severity": "Variable",
+                "pattern": "May be present in amelanotic lesions"
+            },
+            {
+                "name": "Scaling",
+                "severity": "Variable",
+                "pattern": "May be present in amelanotic lesions"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Associated with vertical growth and increased risk of metastasis"
+            },
+            {
+                "name": "Regional lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Palpable lymph nodes"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Flat tan macules with irregular borders",
+            "Nodular or elevated lesion with a combination of colors",
+            "Amelanotic lesions (lack of pigmentation)",
+            "Regional lymphadenopathy"
+        ],
+        "lab_values": {
+            "S100": {
+                "abnormal_range": "Sensitivity 97-100%, specificity 75-87%"
+            },
+            "MelanA/MART-1": {
+                "abnormal_range": "Sensitivity 75-92%, specificity 95-100%"
+            },
+            "HMB-45": {
+                "abnormal_range": "Sensitivity 69-93%, specificity ~97%"
+            },
+            "LDH": {
+                "abnormal_range": "May be checked in stage IV disease"
+            }
+        },
+        "risk_factors": [
+            "UV light exposure",
+            "Fair skin",
+            "Dysplastic or congenital nevi",
+            "Family history of melanoma",
+            "Older age",
+            "Tumor thickness",
+            "Ulceration",
+            "Mitotic rate"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion based on ABCD criteria (Asymmetry, Border irregularity, Color variation, Diameter)",
+            "Histological confirmation"
+        ],
+        "supportive": [
+            "Immunohistochemical staining (S100, MelanA/MART-1, HMB-45)",
+            "Sentinel lymph node biopsy (SLN biopsy)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Sebaceous gland carcinoma"
+    ]
+}

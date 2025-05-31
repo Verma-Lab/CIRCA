@@ -1,0 +1,46 @@
+{
+    "disease": "Other tuberculosis of eye",
+    "icd_code": "A1859",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Adherent scar",
+            "Contracted scar",
+            "Painful scar",
+            "Vicious scar",
+            "Corneal scar",
+            "Corneal opacity",
+            "Conjunctival involvement",
+            "Optic nerve involvement",
+            "Orbital involvement",
+            "Calcification",
+            "Caseous necrosis",
+            "Fibrocaseous lesions",
+            "Fistula",
+            "Interstitial lesions",
+            "Isolated circumscribed lesions",
+            "Parenchymatous lesions",
+            "Ulcerative lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of tuberculosis infection"
+        ],
+        "supportive": [
+            "Clinical findings consistent with tuberculosis of the eye (e.g., scarring, inflammation, lesions)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lupus vulgaris of eyelid (A18.4)",
+        "Unspecified corneal scar and opacity (H17.9)",
+        "Unspecified conjunctivitis (H10.9)",
+        "Unspecified glaucoma (H40.9)",
+        "Respiratory tuberculosis unspecified (A15.9)"
+    ]
+}

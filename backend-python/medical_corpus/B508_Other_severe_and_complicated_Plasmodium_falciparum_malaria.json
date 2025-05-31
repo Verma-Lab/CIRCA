@@ -1,0 +1,110 @@
+{
+    "disease": "Other severe and complicated Plasmodium falciparum malaria",
+    "icd_code": "B508",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Chills",
+                "severity": "Moderate to Severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate to Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Diaphoresis",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Mild to Moderate",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to Moderate",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Mild to Moderate",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Mild diarrhea",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": ">37.5\u00b0C (99.5\u00b0F)",
+            "heart_rate": "Tachycardia",
+            "blood_pressure": "Orthostatic hypotension"
+        },
+        "physical_findings": [
+            "Fever",
+            "Tachycardia",
+            "Jaundice",
+            "Pallor",
+            "Orthostatic hypotension",
+            "Hepatomegaly",
+            "Splenomegaly"
+        ],
+        "lab_values": {
+            "parasitemia": "High",
+            "hemoglobin": "Low",
+            "blood_pH": "Metabolic acidosis",
+            "blood_glucose": "Hypoglycemia"
+        },
+        "risk_factors": [
+            "Age > 65 years",
+            "Female sex (especially pregnancy)",
+            "Non-immune status",
+            "Coexisting medical conditions",
+            "No antimalarial prophylaxis",
+            "Delay in treatment",
+            "Severity of illness at admission (coma, acute renal failure, shock, pulmonary edema, coagulation disorders)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of malaria (fever, chills, headache, etc.)",
+            "Positive malaria test (microscopy or rapid diagnostic test)"
+        ],
+        "supportive": [
+            "Travel history to malaria-endemic area",
+            "Severe complications (cerebral malaria, pulmonary edema, acute renal failure, severe anemia, bleeding, acidosis, hypoglycemia)"
+        ]
+    },
+    "differential_diagnoses": []
+}

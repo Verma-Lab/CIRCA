@@ -1,0 +1,71 @@
+{
+    "disease": "Salmonella infection, unspecified",
+    "icd_code": "A029",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Usually starts 6-72 hours after exposure, lasting up to 10 days"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Usually starts 6-72 hours after exposure"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Variable",
+                "pattern": "Usually starts 6-72 hours after exposure"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Can be severe",
+                "pattern": "Due to diarrhea and vomiting"
+            },
+            {
+                "name": "Reactive arthritis",
+                "severity": "Can be severe and long-lasting",
+                "pattern": "Develops after infection, causing joint pain, eye irritation, and painful urination"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "stool culture": "Presence of Salmonella bacteria"
+        },
+        "risk_factors": [
+            "Consumption of raw or undercooked meat, poultry, eggs, or egg products",
+            "Consumption of unpasteurized milk",
+            "Travel to countries with poor sanitation",
+            "Weakened immune system",
+            "Infancy",
+            "Old age",
+            "Pregnant women",
+            "Organ transplant recipients"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Salmonella bacteria in stool or blood sample"
+        ],
+        "supportive": [
+            "Characteristic symptoms (diarrhea, fever, abdominal cramps)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,82 @@
+{
+    "disease": "Other specified sepsis",
+    "icd_code": "A4189",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Organ dysfunction",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": ">100 bpm",
+            "respiratory_rate": ">20 breaths/min",
+            "blood_pressure": "<90/60 mmHg",
+            "temperature": ">38\u00b0C or <36\u00b0C"
+        },
+        "physical_findings": [
+            "Tachycardia",
+            "Tachypnea",
+            "Hypotension",
+            "Altered mental status",
+            "Organ dysfunction"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": ">12,000/\u00b5L",
+            "lactate": ">2 mmol/L",
+            "procalcitonin": "Elevated"
+        },
+        "risk_factors": [
+            "Underlying infection",
+            "Immunocompromised state",
+            "Advanced age",
+            "Chronic illness"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Suspected or confirmed infection",
+            "Two or more systemic inflammatory response syndrome (SIRS) criteria"
+        ],
+        "supportive": [
+            "Organ dysfunction",
+            "Hypotension",
+            "Elevated lactate",
+            "Elevated white blood cell count"
+        ]
+    },
+    "differential_diagnoses": []
+}

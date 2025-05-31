@@ -1,0 +1,52 @@
+{
+    "disease": "Malignant neoplasm of lower third of esophagus",
+    "icd_code": "C155",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Early satiety",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Smoking",
+            "Heavy alcohol consumption",
+            "Acid reflux (GERD)",
+            "Age"
+        ],
+        "imaging_findings": {
+            "Endoscopy": "Biopsy confirmation",
+            "Imaging (e.g., CT, X-ray)": "Tumor visualization"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy confirmation of malignant cells"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of esophageal malignancy",
+            "Clinical symptoms (dysphagia, odynophagia, weight loss)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,64 @@
+{
+    "disease": "Enteritis due to Yersinia enterocolitica",
+    "icd_code": "A046",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to moderate",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild to moderate",
+                "pattern": "2-3 times a day, without hematochezia"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Erythema nodosum",
+                "severity": "Variable",
+                "pattern": "May appear days after initial symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "37.4\u00b0C - 38\u00b0C",
+            "blood_pressure": "110/66 mmHg",
+            "pulse": "84 beats/min"
+        },
+        "physical_findings": [
+            "Flat, soft abdomen with normal bowel peristalsis",
+            "Mild tenderness from the right side of the abdomen to the umbilical region",
+            "Multiple tender infiltrative erythematous plaques on the extensor surfaces of both lower legs"
+        ],
+        "lab_values": {
+            "WBC": "Elevated",
+            "CRP": "Elevated"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": "Wall thickening of the ileocecal area and swelling of the surrounding lymph nodes",
+            "Colonoscopy": "Aphthous-like ulcers and erosions scattered from the distal end of the ileum to the cecum and ascending colon; round ulcers"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture of Yersinia enterocolitica from intestinal fluid or biopsy (cold culture may be necessary)",
+            "Characteristic colonoscopy and computed tomography findings (wall thickening of the ileocecal area, swollen lymph nodes, aphthous ulcers and erosions)"
+        ],
+        "supportive": [
+            "Symptoms of abdominal pain, diarrhea, and fever",
+            "Erythema nodosum",
+            "Pathological findings of lymphocyte aggregates in the mucosal to submucosal layers (no granuloma formation)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Inflammatory bowel disease (IBD)",
+        "Urinary tract infection",
+        "Mild gastroenteritis"
+    ]
+}

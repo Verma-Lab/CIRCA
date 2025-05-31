@@ -1,0 +1,33 @@
+{
+    "disease": "Malignant neoplasm of vertebral column",
+    "icd_code": "C412",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Back pain",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Cancer elsewhere in the body (metastatic cancer)",
+            "Cancers affecting blood cells and bone marrow (e.g., multiple myeloma, lymphoma)",
+            "Previous cancer treatment"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in the vertebrae"
+        ],
+        "supportive": [
+            "Imaging findings consistent with vertebral tumor",
+            "Symptoms such as back pain"
+        ]
+    },
+    "differential_diagnoses": []
+}

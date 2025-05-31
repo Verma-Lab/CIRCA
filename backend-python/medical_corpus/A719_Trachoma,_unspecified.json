@@ -1,0 +1,71 @@
+{
+    "disease": "Trachoma, unspecified",
+    "icd_code": "A719",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itching",
+                "severity": "mild",
+                "pattern": "initial"
+            },
+            {
+                "name": "Eye irritation",
+                "severity": "mild",
+                "pattern": "initial"
+            },
+            {
+                "name": "Swollen eyelids",
+                "severity": "variable",
+                "pattern": "later"
+            },
+            {
+                "name": "Pus draining from eyes",
+                "severity": "variable",
+                "pattern": "later"
+            },
+            {
+                "name": "Pain",
+                "severity": "constant",
+                "pattern": "advanced"
+            },
+            {
+                "name": "Light intolerance",
+                "severity": "variable",
+                "pattern": "advanced"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Follicles > 0.5mm",
+            "Intense trachoma",
+            "Tarsal conjunctival scarring",
+            "Corneal opacification",
+            "Trachomatous trichiasis",
+            "Entropion",
+            "Herbert's pits"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Close proximity to others with active disease",
+            "Crowded living conditions",
+            "Poor hygiene practices",
+            "Limited access to medical care",
+            "Low socioeconomic status",
+            "Presence of eye-seeking flies"
+        ],
+        "imaging_findings": {
+            "confocal microscopy": "Accurate grading of scarring progression"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Chlamydia trachomatis"
+        ],
+        "supportive": [
+            "Clinical findings (follicles, scarring, trichiasis)",
+            "Epidemiological context (endemic area)"
+        ]
+    },
+    "differential_diagnoses": []
+}

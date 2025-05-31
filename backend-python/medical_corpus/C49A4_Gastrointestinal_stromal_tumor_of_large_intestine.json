@@ -1,0 +1,82 @@
+{
+    "disease": "Gastrointestinal stromal tumor of large intestine",
+    "icd_code": "C49A4",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Belly pain",
+                "severity": "Variable",
+                "pattern": "Can be present as the tumor grows"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can be present as the tumor grows"
+            },
+            {
+                "name": "GI bleeding",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Rectal or pelvic pain",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Obstruction",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Urinary symptoms (hesitancy, decreased stream)",
+                "severity": "Variable",
+                "pattern": "Can be present with rectal mass abutting the prostate"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Mass on examination"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": "Solid hyperdense-enhancing mass with no surrounding lymphadenopathy. Smaller tumors (<6cm) usually homogeneous, larger tumors heterogeneous with areas of hemorrhage or necrosis.",
+            "MRI": "Similar findings to CT",
+            "Endoscopy/EUS": "Demonstrates origin from muscularis propria and layers of wall involved"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive CD117 expression (c-kit)"
+        ],
+        "supportive": [
+            "Imaging findings consistent with GIST",
+            "Clinical presentation"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other mesenchymal tumors",
+        "Smooth muscle tumors (leiomyoma, leiomyoblastoma, leiomyosarcoma)",
+        "Adenocarcinomas",
+        "Squamous cell carcinomas",
+        "Neuroendocrine tumors (NETs)",
+        "Carcinoid tumors"
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "disease": "Molluscum contagiosum",
+    "icd_code": "B081",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Umbilicated papules",
+                "severity": "Mild",
+                "pattern": "Firm, rounded, 2-5mm, pink or skin-colored, shiny surface. Can be single, multiple, or clustered. May have erythematous halo or be pediculated."
+            },
+            {
+                "name": "Pruritus",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Eczema-like reaction",
+                "severity": "Mild to Moderate",
+                "pattern": "Pink, rough, itchy skin around molluscum lesions. Can lead to scratching and spread of infection."
+            },
+            {
+                "name": "Red and swollen bumps",
+                "severity": "Mild",
+                "pattern": "Molluscum bumps may become red and swollen, sometimes forming pus-filled pimples. This is usually a sign of the immune system fighting the virus."
+            },
+            {
+                "name": "Pink-purple or white spots",
+                "severity": "Mild",
+                "pattern": "May appear after molluscum bumps go away and fade over time."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Dome-shaped, shiny bumps with a central dimple or whitish core",
+            "Pink to skin-colored lesions",
+            "Pinhead- to pencil eraser-sized lesions",
+            "Lesions located anywhere on the skin except palms and soles (common sites: neck, armpits, sides of chest, thighs, buttocks, genitals, face)",
+            "Lesions often grouped together",
+            "BOTE sign (erythema, edema, crusting) indicating spontaneous regression"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Direct skin-to-skin contact",
+            "Contact with contaminated objects (towels, gym mats, razors)",
+            "Autoinoculation (scratching or rubbing lesions)",
+            "Sexual activity (in adolescents and adults)",
+            "Immunocompromised individuals (HIV, organ transplant recipients, pediatric cancer patients)",
+            "Atopic dermatitis (controversial)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic clinical presentation of umbilicated papules"
+        ],
+        "supportive": [
+            "Dermoscopy",
+            "Confocal microscopy",
+            "Skin biopsy (especially in immunocompromised patients or when diagnosis is uncertain)",
+            "Enzyme-linked immunoassays (ELISA) - used in research, not routine clinical practice"
+        ]
+    },
+    "differential_diagnoses": [
+        "Verruca plana (flat warts)",
+        "Disseminated Cryptococcus neoformans infection"
+    ]
+}

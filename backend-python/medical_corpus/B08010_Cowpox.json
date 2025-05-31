@@ -1,0 +1,72 @@
+{
+    "disease": "Cowpox",
+    "icd_code": "B08010",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Umbilicated vesicopapules",
+                "severity": "Severe, generalized eruption",
+                "pattern": "Developed over 5 days"
+            },
+            {
+                "name": "Fever",
+                "severity": "38\u00b0C",
+                "pattern": "Present"
+            },
+            {
+                "name": "Feeling unwell",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Swollen red extremities",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Progressing to deep-seated, hard, black eschars",
+                "pattern": "Macular, papular, vesicular, pustular, ulceral, and eschar stages over 2 weeks"
+            },
+            {
+                "name": "Localized lesion",
+                "severity": "Mild",
+                "pattern": "Mainly on fingers, hands, or face (in immunocompetent individuals)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38\u00b0C"
+        },
+        "physical_findings": [
+            "Umbilicated vesicopapules",
+            "Lesions on swollen red extremities, body, face, and vulva",
+            "Lesions at the same stage of development",
+            "Deep-seated, hard, black eschars (day 12)"
+        ],
+        "lab_values": {
+            "IgM antibodies": "High titer at admission, low after 60 days",
+            "IgG antibodies": "Low avidity at admission, high after 60 days"
+        },
+        "risk_factors": [
+            "Contact with infected animals (dogs, potentially from wild rodents)",
+            "Atopic dermatitis (in the case study)"
+        ],
+        "imaging_findings": {
+            "Electron microscopy": "Orthopoxvirus particles 230 \u00d7 300 nm in size"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Electron microscopy showing orthopoxvirus particles",
+            "Virus isolation",
+            "Polymerase chain reaction (PCR) positive for orthopoxvirus",
+            "Presence of IgM and low-avidity IgG antibodies"
+        ],
+        "supportive": [
+            "Clinical presentation (vesicular lesions)",
+            "Epidemiological factors (contact with animals)"
+        ]
+    },
+    "differential_diagnoses": []
+}

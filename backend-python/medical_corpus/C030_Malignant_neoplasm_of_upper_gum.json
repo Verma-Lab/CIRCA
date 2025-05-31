@@ -1,0 +1,27 @@
+{
+    "disease": "Malignant neoplasm of upper gum",
+    "icd_code": "C03.0",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue in the upper gum"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse and dependence",
+            "History of tobacco dependence",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Uncontrolled multiplication of cells in the upper gum tissue"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

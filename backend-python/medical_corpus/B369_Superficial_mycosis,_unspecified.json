@@ -1,0 +1,95 @@
+{
+    "disease": "Superficial mycosis, unspecified",
+    "icd_code": "B369",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Erythematous scales",
+                "severity": "Variable",
+                "pattern": "Scattered or localized"
+            },
+            {
+                "name": "Itch",
+                "severity": "Variable",
+                "pattern": "Localized or widespread"
+            },
+            {
+                "name": "Flaky skin",
+                "severity": "Variable",
+                "pattern": "Localized or widespread"
+            },
+            {
+                "name": "Nail disfigurement",
+                "severity": "Variable",
+                "pattern": "Localized to affected nails"
+            },
+            {
+                "name": "Hair loss (alopecia)",
+                "severity": "Variable",
+                "pattern": "Focal or widespread"
+            },
+            {
+                "name": "Red spots",
+                "severity": "Variable",
+                "pattern": "Scattered or localized"
+            },
+            {
+                "name": "Papules",
+                "severity": "Variable",
+                "pattern": "At margins of lesions"
+            },
+            {
+                "name": "Thickened nail bed",
+                "severity": "Variable",
+                "pattern": "Localized to affected nails"
+            },
+            {
+                "name": "Damaged nail plate",
+                "severity": "Variable",
+                "pattern": "Localized to affected nails"
+            },
+            {
+                "name": "Flaky white turbidity of nails",
+                "severity": "Variable",
+                "pattern": "Localized to affected nails"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Thinning hair",
+            "Focal alopecia",
+            "Oyster crust covering affected area",
+            "Irregular red patches on face",
+            "Papules on margins of lesions",
+            "Small amount of scale covering lesions",
+            "Damaged nail plate",
+            "Partially shed nail plate",
+            "Thickened nail bed"
+        ],
+        "lab_values": {
+            "KOH mount": "Positive for fungal elements in 96.92% of cases in one study",
+            "Fungal culture": "Positive in 47.69% of cases in one study; dermatophytes (43.54%), non-dermatophyte molds (14.51%), Candida (12.9%), Malassezia"
+        },
+        "risk_factors": [
+            "Hot and humid climate",
+            "Immunosuppression (e.g., SLE, steroid use)",
+            "Occupation (farmers, laborers)",
+            "Contact with contaminated fomites (combs, shoes, towels, nail tools)",
+            "Use of topical or systemic antifungals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with superficial mycosis",
+            "Positive microscopic examination (KOH mount, fluorescence microscopy) showing fungal elements"
+        ],
+        "supportive": [
+            "Positive fungal culture"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other skin diseases (specified in individual cases)"
+    ]
+}

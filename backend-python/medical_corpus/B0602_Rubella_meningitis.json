@@ -1,0 +1,43 @@
+{
+    "disease": "Rubella meningitis",
+    "icd_code": "B06.02",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "May occur within five days of MMR vaccination"
+            },
+            {
+                "name": "Rash",
+                "severity": "Unspecified",
+                "pattern": "May occur within five days of MMR vaccination"
+            },
+            {
+                "name": "Meningitis symptoms",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "C-reactive protein": {
+                "abnormal_range": "Raised"
+            }
+        },
+        "risk_factors": [
+            "Recent MMR vaccination (within 5 days)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Raised C-reactive protein",
+            "Fever or rash within five days of MMR vaccination"
+        ]
+    },
+    "differential_diagnoses": []
+}

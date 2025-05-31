@@ -1,0 +1,48 @@
+{
+    "disease": "Plantar wart",
+    "icd_code": "B070",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present, especially with pressure"
+            },
+            {
+                "name": "Discomfort",
+                "severity": "Variable",
+                "pattern": "May interfere with activities"
+            },
+            {
+                "name": "Lesion",
+                "severity": "Variable",
+                "pattern": "Small, rough, grayish-brown or flesh-colored papules or plaques"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small, rough, grayish-brown or flesh-colored papules or plaques on the sole of the foot",
+            "May be single or multiple lesions",
+            "Lesions may be painful or tender to palpation"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Direct contact with infected individuals",
+            "Walking barefoot in public areas",
+            "Compromised immune system",
+            "Minor trauma to the skin"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with plantar wart"
+        ],
+        "supportive": [
+            "History of exposure to infected individuals",
+            "Presence of multiple lesions"
+        ]
+    },
+    "differential_diagnoses": []
+}

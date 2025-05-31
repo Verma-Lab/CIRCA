@@ -1,0 +1,62 @@
+{
+    "disease": "Anogenital (venereal) warts",
+    "icd_code": "A630",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable, depending on size and location",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Pruritus",
+                "severity": "Variable, depending on size and location",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "Common",
+                "pattern": "Usually asymptomatic"
+            },
+            {
+                "name": "Psychosocial distress",
+                "severity": "Variable",
+                "pattern": "Can cause considerable distress due to appearance"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Flat, papular, or pedunculated growths on the genital mucosa",
+            "Commonly occur around the vaginal introitus, under the foreskin of the uncircumcised penis, and on the shaft of the circumcised penis",
+            "Can occur at multiple sites in the anogenital epithelium or within the anogenital tract (e.g., cervix, vagina, urethra, perineum, perianal skin, anus, or scrotum)",
+            "Intra-anal warts are observed predominantly in persons who have had receptive anal intercourse"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual activity",
+            "Multiple partners",
+            "Early start to sexual activity",
+            "Smoking",
+            "Sexually transmitted diseases",
+            "Lack or delayed treatment",
+            "Disruption of skin integrity"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Visual inspection"
+        ],
+        "supportive": [
+            "Biopsy (if lesions are atypical, uncertain diagnosis, no response to therapy, or worsening during therapy)",
+            "HPV testing is not recommended for diagnosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Normal skin variations (pearly penile papules, parafrenular glands, Fordyce spots, vestibular papillae, sebaceous cysts)",
+        "Other infectious or inflammatory conditions",
+        "Other papules (syphilis, molluscum contagiosum, lichen planus, psoriasis, condyloma lata)",
+        "Benign or malignant neoplastic lesions (papillomatoses of vulva, nevi, verrucous carcinoma, invasive carcinoma, seborrhoeic keratosis, Bowen's disease, Buschke-L\u00f6wenstein disease, pigmented or unpigmented grade 2-3 intraepithelial neoplasia, lymphangioma)"
+    ]
+}

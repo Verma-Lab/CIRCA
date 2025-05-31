@@ -1,0 +1,34 @@
+{
+    "disease": "Other manifestations of yaws",
+    "icd_code": "A667",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Juxta-articular nodules",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Mucosal lesions",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Juxta-articular nodules",
+            "Mucosal lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of juxta-articular nodules or mucosal lesions"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

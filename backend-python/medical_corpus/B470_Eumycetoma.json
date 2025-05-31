@@ -1,0 +1,96 @@
+{
+    "disease": "Eumycetoma",
+    "icd_code": "B470",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Enlarging mass",
+                "severity": "Variable",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Local inflammation and swelling",
+                "severity": "Mild to severe",
+                "pattern": "Initial symptom"
+            },
+            {
+                "name": "Subcutaneous tissue invasion",
+                "severity": "Progressive",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Draining sinuses",
+                "severity": "Variable",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Discharging grains",
+                "severity": "Variable",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Painless nodule",
+                "severity": "Mild",
+                "pattern": "Early stage"
+            },
+            {
+                "name": "Purulent fluid accumulation",
+                "severity": "Variable",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Deformity",
+                "severity": "Severe",
+                "pattern": "Late stage, untreated"
+            },
+            {
+                "name": "Disfigurement",
+                "severity": "Severe",
+                "pattern": "Late stage, untreated"
+            },
+            {
+                "name": "Disability",
+                "severity": "Severe",
+                "pattern": "Late stage, untreated"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Subcutaneous mass",
+            "Multiple secondary nodules",
+            "Suppuration",
+            "Draining sinuses",
+            "Discharging grains"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Living in endemic areas (tropical and subtropical regions)",
+            "Low socioeconomic status",
+            "Agricultural employment",
+            "History of trauma",
+            "Limited access to healthcare",
+            "Male gender",
+            "Younger age (11-30 years)"
+        ],
+        "imaging_findings": {
+            "MRI": "Heterogeneous mass, T1/T2 hyperintense, septations, foci of hypointense debris (suggestive of edema or necrosis), mild peripheral susceptibility artifact, mild surrounding inflammatory change"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (subcutaneous mass, draining sinuses, discharging grains)",
+            "Histopathological examination (fungal elements with surrounding inflammation and edema, Splendore-Hoeppli phenomenon)"
+        ],
+        "supportive": [
+            "Imaging findings (MRI)",
+            "Culture (though often negative)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Soft-tissue sarcoma",
+        "Lipoma",
+        "Neuroma",
+        "Actinomycetoma"
+    ]
+}

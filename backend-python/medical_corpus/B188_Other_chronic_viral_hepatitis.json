@@ -1,0 +1,98 @@
+{
+    "disease": "Other chronic viral hepatitis",
+    "icd_code": "B188",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice (yellowing of skin and eyes)",
+                "severity": "Variable",
+                "pattern": "May be present or absent; often develops years after infection"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Symptoms of liver damage (e.g., stomach pain)",
+                "severity": "Variable",
+                "pattern": "May be present or absent; often develops years after infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Alanine transaminase (ALT)": {
+                "abnormal_range": "Sustained increase, usually 2-3 times the upper limit of normal; may be normal despite active liver inflammation in Hepatitis C"
+            },
+            "\u03b3-glutamyltransferase (GGT)": {
+                "abnormal_range": "Often raised in Hepatitis C infection"
+            },
+            "Hepatitis B surface antigen (HBsAg)": {
+                "abnormal_range": "Positive in most patients with chronic Hepatitis B infection"
+            },
+            "Hepatitis B viral DNA": {
+                "abnormal_range": "Elevated levels indicate viral activity"
+            },
+            "Viral RNA (Hepatitis C)": {
+                "abnormal_range": "Presence confirms Hepatitis C infection; best test to determine infectivity and assess response to treatment"
+            }
+        },
+        "risk_factors": [
+            "Vertical transmission (mother to child)",
+            "Sexual contact",
+            "Blood contact (e.g., intravenous drug use, blood transfusions)",
+            "Exposure to infected body fluids"
+        ],
+        "imaging_findings": {
+            "Liver ultrasonography": {
+                "findings": "May show normal or abnormal liver texture; abnormal texture may indicate cirrhosis"
+            },
+            "Liver biopsy": {
+                "findings": "Can assess the extent of liver inflammation and fibrosis"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Abnormal liver biochemistry (e.g., elevated ALT)",
+            "Evidence of chronic viral infection (e.g., positive HBsAg for Hepatitis B, positive viral RNA for Hepatitis C)"
+        ],
+        "supportive": [
+            "Abnormal liver imaging (e.g., ultrasonography)",
+            "Liver biopsy findings consistent with chronic hepatitis"
+        ]
+    },
+    "differential_diagnoses": []
+}

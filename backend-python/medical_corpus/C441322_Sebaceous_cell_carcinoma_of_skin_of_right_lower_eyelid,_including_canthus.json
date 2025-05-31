@@ -1,0 +1,68 @@
+{
+    "disease": "Sebaceous cell carcinoma of skin of right lower eyelid, including canthus",
+    "icd_code": "C441322",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Yellowish nodule or thickening of the eyelid",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Loss of eyelashes",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Blepharoconjunctivitis",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Chalazion-like presentation",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Painless mass",
+                "severity": "Mild to none",
+                "pattern": "Localized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Yellowish, hard, immobile nodule (nodular type)",
+            "Diffuse thickening of lid margin (spreading type)",
+            "Pagetoid spread to conjunctiva or skin",
+            "Possible involvement of the canthus"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age (elderly, predominantly women)",
+            "Sun exposure",
+            "Prior radiation therapy to the head or neck",
+            "Muir-Torre syndrome",
+            "Asian descent",
+            "Immunosuppression"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic features: multifocal origin, pagetoid spread, foamy vacuolated cytoplasm, hyperchromatic nuclei, positive staining for lipid (oil red O)"
+        ],
+        "supportive": [
+            "Clinical presentation (nodule or thickening of eyelid)",
+            "Imaging findings (if necessary)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign lesions (chalazion, blepharoconjunctivitis)",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Other eyelid tumors",
+        "Superior limbic keratoconjunctivitis",
+        "Ocular cicatricial pemphigoid"
+    ]
+}

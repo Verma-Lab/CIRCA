@@ -1,0 +1,72 @@
+{
+    "disease": "Cyclosporiasis",
+    "icd_code": "A074",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Profuse watery diarrhea",
+                "severity": "Variable, can be severe in infants, elderly, and immunocompromised individuals",
+                "pattern": "Chronic or protracted"
+            },
+            {
+                "name": "Abdominal cramping",
+                "severity": "Variable",
+                "pattern": "Chronic or protracted"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Chronic or protracted"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic or protracted"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Chronic or protracted"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Chronic or protracted"
+            },
+            {
+                "name": "Mucus or blood in stool",
+                "severity": "Less common",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Low-grade fever (may be present)",
+            "other": "Dehydration (due to prolonged diarrhea)"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of fecally contaminated food and water",
+            "Travel to tropical and subtropical regions",
+            "Consumption of imported produce from endemic areas",
+            "Consumption of locally grown produce (increasingly implicated)",
+            "Infancy, elderly age, and immunocompromised status"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Detection of *Cyclospora cayetanensis* oocysts in stool samples"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with cyclosporiasis (diarrhea, abdominal cramping, etc.)"
+        ]
+    },
+    "differential_diagnoses": []
+}

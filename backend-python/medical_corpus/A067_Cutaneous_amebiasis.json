@@ -1,0 +1,74 @@
+{
+    "disease": "Cutaneous amebiasis",
+    "icd_code": "A067",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painful nodular lesions and abscesses",
+                "severity": "Variable, can be severe",
+                "pattern": "Disseminated, can spread from initial site"
+            },
+            {
+                "name": "Purulent secretion drainage",
+                "severity": "Variable",
+                "pattern": "Spontaneous drainage from ulcerated centers"
+            },
+            {
+                "name": "Ulcers",
+                "severity": "Variable, can be severe",
+                "pattern": "Gray-white necrotic base with red edges, rapid progression"
+            },
+            {
+                "name": "Erythematous-violaceous skin",
+                "severity": "Mild to moderate",
+                "pattern": "Slightly desquamative, covering nodules and tumors"
+            },
+            {
+                "name": "Pain on palpation",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Systemic symptoms (fever, weight loss, night sweats)",
+                "severity": "Absent in many cases",
+                "pattern": "Not always present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Nodules and subcutaneous tumors (up to 6 cm)",
+            "Ulcerated centers in some lesions",
+            "Slightly desquamative erythematous-violaceous skin",
+            "Spontaneous drainage of purulent secretion"
+        ],
+        "lab_values": {
+            "liver enzymes": "Normal in many cases",
+            "stool examination": "Negative for helminths and protozoa in some cases",
+            "blood culture": "Negative in some cases"
+        },
+        "risk_factors": [
+            "Chronic kidney disease",
+            "Catheter implantation",
+            "Intestinal amebiasis",
+            "Immunocompromised state",
+            "Contact with contaminated fomites",
+            "Sexual intercourse"
+        ],
+        "imaging_findings": {
+            "CT scan": "No liver or intestinal abscesses in some cases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of lesions (nodules, abscesses, ulcers)",
+            "Identification of Entamoeba histolytica trophozoites in lesion secretion or biopsy"
+        ],
+        "supportive": [
+            "History of intestinal amebiasis",
+            "Negative stool examination for other parasites",
+            "Response to anti-amebic treatment"
+        ]
+    },
+    "differential_diagnoses": []
+}

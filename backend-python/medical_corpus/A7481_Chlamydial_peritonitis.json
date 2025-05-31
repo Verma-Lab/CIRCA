@@ -1,0 +1,91 @@
+{
+    "disease": "Chlamydial peritonitis",
+    "icd_code": "A74.81",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Worsening",
+                "pattern": "Initially right lower quadrant, then shifting to left lower quadrant, aggravated by exercise"
+            },
+            {
+                "name": "Ascites",
+                "severity": "Diffuse",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Pelvic cysts",
+                "severity": "Multiple",
+                "pattern": "Bilateral, septated, up to 5 cm"
+            },
+            {
+                "name": "Early satiety",
+                "severity": "Present",
+                "pattern": "Onset unclear"
+            },
+            {
+                "name": "Weight gain",
+                "severity": "15 pounds in 2 months",
+                "pattern": "Unintentional"
+            },
+            {
+                "name": "Vaginal discharge",
+                "severity": "Minimal, yellow-white",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "afebrile",
+            "blood_pressure": "hemodynamically stable"
+        },
+        "physical_findings": [
+            "Distended and tympanic abdomen in upper quadrants",
+            "Mild epigastric tenderness on deep palpation",
+            "Absence of rebound tenderness or guarding",
+            "Negative Murphy's sign",
+            "Positive fluid wave",
+            "Bilateral adnexal tenderness (left > right)",
+            "Pelvic fullness"
+        ],
+        "lab_values": {
+            "hemoglobin": "10.8 g/dL (mild anemia)",
+            "white_blood_cell_count": "6,800/microliter (within normal limits)",
+            "platelet_count": "358,000/microliter (within normal limits)",
+            "serum_ca_125": "97.1 U/mL (elevated)",
+            "inhibin": "35 pg/mL (elevated)",
+            "chlamydia_trachomatis_test": "Positive",
+            "other_sti_tests": "Negative (HIV, VDRL)"
+        },
+        "risk_factors": [
+            "Multipartner sexual activity",
+            "History of two dilatation and curettage procedures for elective abortion",
+            "Current use of oral contraceptive pills",
+            "Continued sexual activity",
+            "Smoking"
+        ],
+        "imaging_findings": {
+            "ultrasound": "Bilateral septated ovarian cysts, free fluid in pelvis",
+            "ct_scan": "Rim-enhancing complex cystic lesions in adnexa, multiple nodules in both adnexa, peritoneal enhancement in pelvis, large amount of ascites, indeterminate 1 cm liver lesion, mesenteric soft tissue densities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive Chlamydia trachomatis test",
+            "Imaging findings consistent with PID and ascites (e.g., CT scan showing ascites, pelvic masses, and peritoneal thickening)",
+            "Exclusion of other etiologies through appropriate workup"
+        ],
+        "supportive": [
+            "Clinical presentation with abdominal pain, ascites, and pelvic masses",
+            "Elevated CA-125 levels",
+            "Laparoscopic findings consistent with Fitz-Hugh-Curtis syndrome and severe PID"
+        ]
+    },
+    "differential_diagnoses": [
+        "Ovarian neoplasm",
+        "Tuberculous peritonitis",
+        "Other infectious causes of peritonitis",
+        "Inflammatory causes of peritonitis",
+        "Malignant causes of peritonitis"
+    ]
+}

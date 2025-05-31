@@ -1,0 +1,52 @@
+{
+    "disease": "Other human herpesvirus encephalitis",
+    "icd_code": "B1009",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild to severe",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Encephalitis symptoms in infants",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "other": "May vary depending on severity"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

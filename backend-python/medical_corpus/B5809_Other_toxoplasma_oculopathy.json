@@ -1,0 +1,62 @@
+{
+    "disease": "Other toxoplasma oculopathy",
+    "icd_code": "B5809",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eye inflammation",
+                "severity": "Variable",
+                "pattern": "Can be painful or reddened, photophobia, impaired vision"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild",
+                "pattern": "General malaise"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Mild to moderate",
+                "pattern": "Generalized lymphadenopathy"
+            },
+            {
+                "name": "Muscle aches and pains",
+                "severity": "Mild to moderate",
+                "pattern": "Generalized myalgia"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Mild",
+                "pattern": "Generalized fatigue"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Mild to moderate",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Inflamed eye(s)",
+            "Swollen lymph nodes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to cat feces",
+            "Consumption of undercooked meat",
+            "Consumption of unwashed vegetables",
+            "Compromised immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with toxoplasma oculopathy (e.g., eye inflammation, visual impairment)"
+        ],
+        "supportive": [
+            "Positive serology for Toxoplasma gondii",
+            "Imaging findings suggestive of toxoplasmosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

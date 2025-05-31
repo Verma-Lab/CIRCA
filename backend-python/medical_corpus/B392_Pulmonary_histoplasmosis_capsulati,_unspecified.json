@@ -1,0 +1,52 @@
+{
+    "disease": "Pulmonary histoplasmosis capsulati, unspecified",
+    "icd_code": "B392",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mild flu-like illness",
+                "severity": "Mild",
+                "pattern": "Common in immunocompetent individuals"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Can be present in severe cases"
+            },
+            {
+                "name": "Breathing problems",
+                "severity": "Variable",
+                "pattern": "Can be present in severe cases"
+            },
+            {
+                "name": "No symptoms",
+                "severity": "None",
+                "pattern": "Most common outcome"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible, severity varies"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "fungal culture": "Positive for Histoplasma capsulatum",
+            "serology": "Positive for Histoplasma capsulatum antibodies"
+        },
+        "risk_factors": [
+            "Travel to or living in central or eastern United States near Ohio and Mississippi river valleys",
+            "Exposure to bird and bat droppings",
+            "Exposure to spores after demolition of old buildings or cave exploration",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Histoplasma capsulatum fungus or signs of the fungus in the body",
+            "Immune system reaction to the fungus"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

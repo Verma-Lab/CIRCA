@@ -1,0 +1,128 @@
+{
+    "disease": "Brucellosis due to Brucella canis",
+    "icd_code": "A233",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Reproductive failure",
+                "severity": "Severe",
+                "pattern": "Infertility, abortion (mid- to late-term, days 45-59), embryonic death with resorption, odorless brown-to-yellow vaginal discharge (1-6 weeks)"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Mild to Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Epididymitis",
+                "severity": "Moderate to Severe",
+                "pattern": "In male dogs"
+            },
+            {
+                "name": "Prostatitis",
+                "severity": "Moderate to Severe",
+                "pattern": "In male dogs"
+            },
+            {
+                "name": "Orchitis",
+                "severity": "Moderate to Severe",
+                "pattern": "In male dogs"
+            },
+            {
+                "name": "Testicular atrophy",
+                "severity": "Severe",
+                "pattern": "Chronic, can be unilateral or bilateral"
+            },
+            {
+                "name": "Lameness",
+                "severity": "Mild to Severe",
+                "pattern": "Associated with diskospondylitis"
+            },
+            {
+                "name": "Spinal pain",
+                "severity": "Mild to Severe",
+                "pattern": "Associated with diskospondylitis"
+            },
+            {
+                "name": "Neurologic dysfunction",
+                "severity": "Mild to Severe",
+                "pattern": "Associated with diskospondylitis"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Mild to Severe",
+                "pattern": "Associated with diskospondylitis"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to Moderate",
+                "pattern": "In humans"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to Moderate",
+                "pattern": "In humans"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to Moderate",
+                "pattern": "In humans"
+            },
+            {
+                "name": "Peripheral lymphadenomegaly",
+                "severity": "Mild to Moderate",
+                "pattern": "In humans"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Mild to Moderate",
+                "pattern": "In humans"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Swollen lymph nodes",
+            "Swelling of prostate, testicles, and epididymis (in males)",
+            "Subcutaneous edema, hemorrhage, or congestion (in aborted pups)",
+            "Lameness, spinal pain, neurologic dysfunction, muscle weakness (associated with diskospondylitis)"
+        ],
+        "lab_values": {
+            "serologic tests": {
+                "rapid slide agglutination test (RSAT)": "May have false positives with Bordetella bronchiseptica infection",
+                "2-mercaptoethanol rapid slide agglutination test": "Improved specificity compared to RSAT",
+                "agar-gel immunodiffusion": "Used for screening",
+                "ELISA": "Used for screening",
+                "indirect fluorescent antibody test": "Used for confirmation"
+            }
+        },
+        "risk_factors": [
+            "Contact with aborted fetuses or placenta",
+            "Contact with vaginal secretions",
+            "Contact with semen",
+            "Ingestion of contaminated material",
+            "Inhalation of contaminated material"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serologic test (e.g., indirect fluorescent antibody test)"
+        ],
+        "supportive": [
+            "Clinical signs consistent with Brucella canis infection (reproductive failure, diskospondylitis)",
+            "History of exposure to infected dogs"
+        ]
+    },
+    "differential_diagnoses": []
+}

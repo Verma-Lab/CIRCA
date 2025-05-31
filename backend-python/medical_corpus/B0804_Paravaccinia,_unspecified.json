@@ -1,0 +1,46 @@
+{
+    "disease": "Paravaccinia",
+    "icd_code": "B0804",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "General sign of infection"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "General sign of infection"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Blisters, nodules, or lesions about 4 mm in diameter, typically at the site of contact with infected livestock; may be systemic in rare cases; lesions may take up to three weeks to appear after contact"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesions (blisters, nodules, or lesions about 4 mm in diameter)",
+            "Lesions may be systemic in rare cases"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with livestock infected with bovine papular stomatitis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with paravaccinia (skin lesions, fever, fatigue)"
+        ],
+        "supportive": [
+            "Polymerase chain reaction (PCR) screening"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cowpox",
+        "Orf"
+    ]
+}

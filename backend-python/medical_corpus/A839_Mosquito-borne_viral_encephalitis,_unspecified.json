@@ -1,0 +1,69 @@
+{
+    "disease": "Mosquito-borne viral encephalitis, unspecified",
+    "icd_code": "A83.9",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Altered behavior",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Sensory disturbances",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Mild flu-like symptoms",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Severe illness",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with encephalitis"
+        ],
+        "supportive": [
+            "Exposure to mosquitoes in an endemic area",
+            "Positive serological testing for mosquito-borne viruses"
+        ]
+    },
+    "differential_diagnoses": []
+}

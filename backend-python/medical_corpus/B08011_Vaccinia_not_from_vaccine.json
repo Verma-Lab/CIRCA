@@ -1,0 +1,37 @@
+{
+    "disease": "Vaccinia not from vaccination",
+    "icd_code": "B08011",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Generalized or localized"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Rash (generalized or localized)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with vaccinia infection (rash, fever)"
+        ],
+        "supportive": [
+            "Exposure to vaccinia virus (excluding vaccination)"
+        ]
+    },
+    "differential_diagnoses": []
+}

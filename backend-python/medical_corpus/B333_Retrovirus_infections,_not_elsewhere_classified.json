@@ -1,0 +1,40 @@
+{
+    "disease": "Retrovirus infections, not elsewhere classified",
+    "icd_code": "B333",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Serious illness",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected body fluids (e.g., blood, sperm)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of retrovirus infection"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

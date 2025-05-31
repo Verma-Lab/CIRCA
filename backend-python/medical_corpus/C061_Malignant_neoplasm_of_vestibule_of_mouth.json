@@ -1,0 +1,26 @@
+{
+    "disease": "Malignant neoplasm of vestibule of mouth",
+    "icd_code": "C061",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue in the mouth between teeth and lips or between teeth and cheek"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Abnormal growth of tissue in the vestibule of the mouth"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

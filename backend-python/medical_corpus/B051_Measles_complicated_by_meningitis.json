@@ -1,0 +1,79 @@
+{
+    "disease": "Measles complicated by meningitis",
+    "icd_code": "B051",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blurred vision",
+                "severity": "Bilateral",
+                "pattern": "Onset 1 week after measles diagnosis"
+            },
+            {
+                "name": "Eye irritation",
+                "severity": "Mild",
+                "pattern": "Present alongside blurred vision"
+            },
+            {
+                "name": "Conjunctival discharge",
+                "severity": "Mild",
+                "pattern": "Present alongside blurred vision"
+            },
+            {
+                "name": "Occipital headaches",
+                "severity": "Moderate to severe",
+                "pattern": "Compressive, radiating to the front"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Mild",
+                "pattern": "Present alongside headaches"
+            },
+            {
+                "name": "Phonophobia",
+                "severity": "Mild",
+                "pattern": "Present alongside headaches"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Mild",
+                "pattern": "Present on examination"
+            },
+            {
+                "name": "Fever",
+                "severity": "Afebrile",
+                "pattern": "Absent on examination"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Afebrile"
+        },
+        "physical_findings": [
+            "Mild neck stiffness",
+            "Bilateral pseudodendritic lesions (ophthalmic examination)"
+        ],
+        "lab_values": {
+            "CSF": "Viral meningitis confirmed by lumbar puncture"
+        },
+        "risk_factors": [
+            "Prior measles infection",
+            "Lack of MMR vaccination (implied)"
+        ],
+        "imaging_findings": {
+            "CT of the brain": "No structural pathology"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive IgM and IgG antibodies for measles (ELISA)",
+            "Clinical presentation consistent with meningitis (headache, neck stiffness, etc.)",
+            "Confirmation of viral meningitis via lumbar puncture"
+        ],
+        "supportive": [
+            "Presence of pseudodendritic lesions"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cytomegalovirus infection"
+    ]
+}

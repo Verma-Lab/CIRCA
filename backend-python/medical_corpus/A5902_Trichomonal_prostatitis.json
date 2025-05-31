@@ -1,0 +1,63 @@
+{
+    "disease": "Trichomonal prostatitis",
+    "icd_code": "A59.02",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Urethral discharge",
+                "severity": "Scanty, mucoid",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Present",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Perineal pain",
+                "severity": "Present",
+                "pattern": "Recent onset"
+            },
+            {
+                "name": "Ejaculatory pain",
+                "severity": "Present",
+                "pattern": "Recent onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Scanty mucoid urethral discharge",
+            "No inguinal adenopathy",
+            "No genital lesions",
+            "No intrascrotal abnormalities",
+            "10-15 PMNLs per high power field in expressed prostatic secretions (indicating prostate infection and inflammation)"
+        ],
+        "lab_values": {
+            "Gram stain": ">15 PMNLs per oil immersion field, no intracellular Gram-negative diplococci",
+            "Direct immunofluorescence assay for C. trachomatis": "Negative",
+            "Culture for N. gonorrhoeae": "Negative",
+            "Cultures for Mycoplasma genitalium and Ureaplasma urealyticum": "Negative",
+            "Wet mount microscopy": "Negative except for urine sediment after prostate massage",
+            "Trichomonas vaginalis culture": "Positive in prostate secretions, post-prostate massage urine sediment, and semen sample (positive after 5 days of incubation)"
+        },
+        "risk_factors": [
+            "Multiple casual female sexual partners"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture for Trichomonas vaginalis from prostate secretions, urine sediment after prostatic massage, or semen"
+        ],
+        "supportive": [
+            "Symptoms of urethritis and prostatitis",
+            "Physical examination findings consistent with prostatitis",
+            "Increased PMNLs in prostatic secretions"
+        ]
+    },
+    "differential_diagnoses": [
+        "Non-gonococcal urethritis (NGU)",
+        "Other bacterial prostatitis"
+    ]
+}

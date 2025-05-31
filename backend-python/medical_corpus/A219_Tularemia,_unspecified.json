@@ -1,0 +1,166 @@
+{
+    "disease": "Tularemia, unspecified",
+    "icd_code": "A219",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Muscle pain (myalgia)",
+                "severity": "Variable",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Joint pain (arthralgia)",
+                "severity": "Variable",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Skin ulcer",
+                "severity": "Variable",
+                "pattern": "Localized at infection site (ulceroglandular tularemia)"
+            },
+            {
+                "name": "Swollen lymph nodes (lymphadenopathy)",
+                "severity": "Variable, can be severe",
+                "pattern": "Localized or generalized"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable, can be severe",
+                "pattern": "In pneumonic tularemia"
+            },
+            {
+                "name": "Pleural effusion",
+                "severity": "Variable",
+                "pattern": "In pneumonic tularemia"
+            },
+            {
+                "name": "Lung abscesses",
+                "severity": "Variable",
+                "pattern": "In pneumonic tularemia"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "In oropharyngeal tularemia"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "In oropharyngeal tularemia"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "In oropharyngeal tularemia"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "In oropharyngeal tularemia"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "In oropharyngeal tularemia"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Variable",
+                "pattern": "Rare, in oropharyngeal tularemia"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "In oculoglandular tularemia"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Severe",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Endocarditis",
+                "severity": "Severe",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "Severe",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Sepsis",
+                "severity": "Severe",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Osteomyelitis",
+                "severity": "Severe",
+                "pattern": "Complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Skin ulcer (ulceroglandular tularemia)",
+            "Lymphadenopathy",
+            "Conjunctivitis (oculoglandular tularemia)"
+        ],
+        "lab_values": {
+            "blood_culture": "Often negative",
+            "serology": "Positive IgM and/or IgG antibodies to F. tularensis"
+        },
+        "risk_factors": [
+            "Exposure to infected animals (e.g., rabbits, rodents)",
+            "Tick or deer fly bites",
+            "Inhalation of aerosolized bacteria",
+            "Ingestion of contaminated food or water",
+            "Handling of infected animal tissue"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of F. tularensis from a clinical specimen",
+            "Positive serology (IgM and/or IgG antibodies to F. tularensis)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with tularemia",
+            "Exposure history"
+        ]
+    },
+    "differential_diagnoses": [
+        "Influenza",
+        "Other respiratory infections",
+        "Cat-scratch disease",
+        "Plague",
+        "Lyme disease"
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "disease": "Cholera, unspecified",
+    "icd_code": "A009",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute watery diarrhea",
+                "severity": "Severe, profuse; sometimes described as \"rice-water stools\"",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be watery or bloody"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Leg cramps",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Often present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "dehydration": "Severe dehydration can be life-threatening"
+        },
+        "physical_findings": [
+            "Signs of dehydration (e.g., dry mucous membranes, sunken eyes, decreased skin turgor)"
+        ],
+        "lab_values": {
+            "stool culture": "Presence of toxigenic Vibrio cholerae O1, O139, or other toxigenic serogroups",
+            "PCR": "Detection of ctx or toxR gene",
+            "Seroagglutination": "Positive for V. cholerae"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Limited access to safe water, basic sanitation, and hygiene",
+            "Conflict, population displacement, climate events (cyclones, floods, drought)",
+            "Lack of investment in WASH services and infrastructure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory confirmation of toxigenic Vibrio cholerae from an appropriate clinical specimen (stool, rectal swab, vomit, blood)"
+        ],
+        "supportive": [
+            "Clinical illness (acute watery diarrhea, vomiting, etc.) in a person epidemiologically linked to a confirmed case",
+            "Detection of Vibrio cholerae nucleic acid (ctx or toxR gene) with or without clinical illness"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other diarrheal illnesses",
+        "Vibriosis (caused by non-toxigenic V. cholerae or other Vibrio species)"
+    ]
+}

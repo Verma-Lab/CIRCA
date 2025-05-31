@@ -1,0 +1,107 @@
+{
+    "disease": "Borderline tuberculoid leprosy",
+    "icd_code": "A302",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hypopigmented patches",
+                "severity": "Multiple, well-defined, varying sizes (1x2 cm to 4x4 cm)",
+                "pattern": "Bilateral cheeks, lower limbs"
+            },
+            {
+                "name": "Ulcers",
+                "severity": "Solitary ulcer on left thumb (2x2 cm), recurrent ulcers on bilateral lower limbs, one on right lateral malleolus (3x2 cm)",
+                "pattern": "Well-defined, erythematous base"
+            },
+            {
+                "name": "Neuritis",
+                "severity": "Acute, painful",
+                "pattern": "Thickened nerves (supraorbital, greater auricular, ulnar, common peroneal)"
+            },
+            {
+                "name": "Loss of sensation",
+                "severity": "Present",
+                "pattern": "Left ulnar nerve distribution, left foot"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Weak left-hand grip, weak left-sided reflexes",
+                "pattern": "Left limbs"
+            },
+            {
+                "name": "Facial nerve palsy",
+                "severity": "Lower motor neuron type, right sided",
+                "pattern": "Incomplete right eye closure, reduced right forehead wrinkles, flattened right nasolabial fold"
+            },
+            {
+                "name": "Involuntary movements",
+                "severity": "Present",
+                "pattern": "Left hand"
+            },
+            {
+                "name": "Tingling sensation",
+                "severity": "Present",
+                "pattern": "Face and trunk"
+            },
+            {
+                "name": "Lacrimation",
+                "severity": "Frequent",
+                "pattern": "Right eye"
+            },
+            {
+                "name": "Intermittent fever",
+                "severity": "Present",
+                "pattern": "Episodes over past six months"
+            },
+            {
+                "name": "Epistaxis",
+                "severity": "Present",
+                "pattern": "Episodes over past six months"
+            },
+            {
+                "name": "Ichthyotic scaling",
+                "severity": "Multiple",
+                "pattern": "Bilateral lower limbs"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Multiple well-defined hypopigmented patches over bilateral cheeks",
+            "Multiple ichthyotic scaling over bilateral lower limbs",
+            "Solitary well-defined ulcer with an erythematous base over the palmar aspect of the left thumb",
+            "Solitary well-defined punched-out ulcer over the right lateral malleolus",
+            "Thickened left and right supraorbital, right greater auricular, left ulnar, and left common peroneal nerves",
+            "Loss of sensation over the left ulnar nerve distribution and over the left foot",
+            "Weak left-hand grip with weak left-sided reflexes",
+            "Incomplete closure of the right eye",
+            "Reduced wrinkles over the right forehead and flattening of the right nasolabial fold"
+        ],
+        "lab_values": {
+            "slit skin smear": {
+                "finding": "Initially positive for acid-fast bacilli, negative after four months of treatment"
+            },
+            "nerve biopsy": {
+                "finding": "Lymphoplasmacytic infiltrate in epineurium, perineurium, and endoneurium; marked epineurial and endoneurial collagenization and hyalinization with marked thickening of the perineurium; epineurial nutrient artery showed thickening of the wall, subintimal fibrosis, and narrowing of the lumen; occasional lepra bacilli on Fite Faraco stain"
+            },
+            "nerve conduction studies": {
+                "finding": "Asymmetrical sensorimotor axonal peripheral neuropathy worse on the left limbs"
+            }
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with borderline tuberculoid leprosy (hypopigmented patches, ulcers, nerve thickening, sensory loss)",
+            "Positive slit skin smear for acid-fast bacilli (initially)"
+        ],
+        "supportive": [
+            "Histopathological findings consistent with borderline tuberculoid leprosy and type 1 lepra reaction",
+            "Response to multidrug therapy and corticosteroids"
+        ]
+    },
+    "differential_diagnoses": [
+        "Sarcoidosis"
+    ]
+}

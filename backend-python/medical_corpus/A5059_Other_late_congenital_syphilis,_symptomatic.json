@@ -1,0 +1,45 @@
+{
+    "disease": "Other late congenital syphilis, symptomatic",
+    "icd_code": "A5059",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Liver and spleen swelling",
+                "severity": "Unspecified",
+                "pattern": "Present in some infants"
+            },
+            {
+                "name": "Bone inflammation",
+                "severity": "Unspecified",
+                "pattern": "Present in some infants"
+            },
+            {
+                "name": "Various symptoms (depending on age)",
+                "severity": "Variable",
+                "pattern": "May develop over time"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Liver and spleen swelling",
+            "Bone inflammation"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Mother infected with syphilis and not fully treated during pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with late congenital syphilis"
+        ],
+        "supportive": [
+            "Positive maternal syphilis serology during pregnancy",
+            "Abnormal placental findings",
+            "Positive infant syphilis serology"
+        ]
+    },
+    "differential_diagnoses": []
+}

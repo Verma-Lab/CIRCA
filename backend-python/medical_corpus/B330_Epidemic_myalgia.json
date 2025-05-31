@@ -1,0 +1,116 @@
+{
+    "disease": "Epidemic myalgia",
+    "icd_code": "B330",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high (39.5\u00b0C)",
+                "pattern": "Present in most cases, can resolve within days"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Extreme, severe, widespread",
+                "pattern": "Predominantly in the trunk (chest, epigastrium), can also affect extremities; intermittent intensification, exacerbated by movement and breathing"
+            },
+            {
+                "name": "Low back pain",
+                "severity": "Acute episodes, can hinder daily life",
+                "pattern": "Reported in some cases, may mimic acute purulent spondylitis and discitis"
+            },
+            {
+                "name": "Pharyngitis",
+                "severity": "Mild to moderate",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Gastrointestinal disorders",
+                "severity": "Mild to moderate",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Chest wall pressure pain",
+                "severity": "Mild to moderate",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Otitis",
+                "severity": "Mild to moderate",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Dermatitis",
+                "severity": "Mild to moderate",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Orchiodynia",
+                "severity": "Severe in some cases",
+                "pattern": "Reported in some cases, particularly in males"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Can be severe, hindering ambulation",
+                "pattern": "Predominantly affecting proximal muscles of extremities"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (38\u00b0C or higher)",
+            "heart_rate": "Elevated (110 bpm)",
+            "respiratory_rate": "Elevated (20 breaths/minute)"
+        },
+        "physical_findings": [
+            "Pain upon spinal percussion (limited to 4th and 5th lumbar vertebrae)",
+            "Red pharynx",
+            "Swollen tonsils",
+            "Severe myalgia and muscle weakness predominantly involving the four extremities; however, no redness, swelling, or local warmth was noted",
+            "No rashes or abnormal joint findings"
+        ],
+        "lab_values": {
+            "leukocytes": "Low (2350/\u03bcL)",
+            "neutrophils": "Low (1557/\u03bcL)",
+            "lymphocytes": "Low (416/\u03bcL)",
+            "CRP": "Normal or slightly elevated (0.76 mg/dL)",
+            "procalcitonin": "\u22640.05 ng/mL",
+            "AST": "Normal or slightly elevated (21 U/L)",
+            "ALT": "Normal or slightly elevated (17 U/L)",
+            "LDH": "Normal or slightly elevated (109 U/L)",
+            "CK": "Normal or slightly elevated (115 U/L)",
+            "coxsackievirus B3 neutralizing antibodies": "Significant increase in paired serum samples"
+        },
+        "risk_factors": [
+            "Contact with individuals with acute upper respiratory tract infections"
+        ],
+        "imaging_findings": {
+            "CT scan (abdomen and pelvis)": "No abnormalities",
+            "MRI (spine)": "No abnormalities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with epidemic myalgia (fever, severe myalgia)",
+            "Significant increase in enterovirus-neutralizing antibodies (e.g., Coxsackievirus B3)"
+        ],
+        "supportive": [
+            "History of contact with infected individuals",
+            "Absence of abnormalities on imaging studies (CT, MRI)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute purulent spondylitis",
+        "Acute purulent discitis",
+        "Acute coronary syndrome",
+        "Acute abdomen"
+    ]
+}

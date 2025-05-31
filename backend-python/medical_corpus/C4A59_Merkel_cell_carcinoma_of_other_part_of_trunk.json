@@ -1,0 +1,70 @@
+{
+    "disease": "Merkel cell carcinoma of other part of trunk",
+    "icd_code": "C44.59",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Growing mass",
+                "severity": "Variable",
+                "pattern": "Single lump, firm, non-tender, red to violaceous, 2-4cm"
+            },
+            {
+                "name": "Skin changes",
+                "severity": "Variable",
+                "pattern": "Cherry red color, minimally fixed"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Solitary cutaneous or subcutaneous nodule",
+            "Firm mass",
+            "Non-tender mass",
+            "Red to violaceous nodule",
+            "Skin thickening",
+            "Possible peritumoral enhancement"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised individuals",
+            "Elderly people",
+            "Patients with hematological neoplasms",
+            "History of other cutaneous tumors",
+            "Chronic exposure to ultraviolet light",
+            "Merkel cell polyomavirus (MCPyV) infection"
+        ],
+        "imaging_findings": {
+            "US": [
+                "Heterogeneous echogenicity",
+                "Perpendicular hypoechoic linear bands resembling \u201ccolumns of smoke\u201d",
+                "Mild to prominent vascularity"
+            ],
+            "MRI": [
+                "Hypointensity on T1-weighted images",
+                "Hyperintensity on proton density and T2-weighted images",
+                "Linear low-signal bands in the skin and subcutaneous layers",
+                "Intense enhancement on T1-enhanced images",
+                "Peritumoral enhancement with skin thickening"
+            ],
+            "CT": [
+                "Cutaneous fat stranding adjacent to the primary site suggesting engorgement and edema from lymphatic invasions"
+            ],
+            "PET-CT": "No residual tumor or metastasis observed in one case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological features",
+            "Immunological marker expression profiles (e.g., CK20, chromogranin, CD56, synaptophysin)"
+        ],
+        "supportive": [
+            "Imaging findings (US, MRI, CT)",
+            "Merkel cell polyomavirus (MCPyV) detection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignant superficial soft tissue tumors",
+        "Vascular tumors",
+        "Lymphoma"
+    ]
+}

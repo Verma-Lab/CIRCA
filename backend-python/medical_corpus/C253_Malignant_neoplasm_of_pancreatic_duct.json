@@ -1,0 +1,28 @@
+{
+    "disease": "Malignant neoplasm of pancreatic duct",
+    "icd_code": "C253",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Malignant cells in the pancreatic duct",
+            "Histological confirmation of adenocarcinoma"
+        ],
+        "supportive": [
+            "Abrupt transition between markedly atypical intraductal epithelium and normal duct epithelium or circumferential involvement of a duct",
+            "Concordant p53 and Smad4 immunolabeling between COD and invasive PDAC",
+            "Imaging findings suggestive of pancreatic mass"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pancreatic intraepithelial neoplasia (PanIN)",
+        "Other pancreatic tumors"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "disease": "Malignant melanoma of other part of trunk",
+    "icd_code": "C4359",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Change in mole size, shape, color, or feel",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Presence of black or black-blue area",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Appearance of a new mole",
+                "severity": "Variable",
+                "pattern": "Sudden"
+            },
+            {
+                "name": "Abnormal or \"ugly looking\" mole",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant melanoma"
+        ],
+        "supportive": [
+            "Clinical findings consistent with melanoma (ABCDEs of melanoma)"
+        ]
+    },
+    "differential_diagnoses": []
+}

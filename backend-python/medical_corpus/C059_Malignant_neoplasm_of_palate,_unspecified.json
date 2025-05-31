@@ -1,0 +1,27 @@
+{
+    "disease": "Malignant neoplasm of palate, unspecified",
+    "icd_code": "C059",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "alcohol abuse and dependence",
+            "history of tobacco dependence",
+            "tobacco dependence",
+            "tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "uncontrolled cell multiplication leading to abnormal tissue growth in the palate"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Kaposi's sarcoma of palate (C46.2)"
+    ]
+}

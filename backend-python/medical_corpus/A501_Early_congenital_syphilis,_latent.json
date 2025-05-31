@@ -1,0 +1,26 @@
+{
+    "disease": "Early congenital syphilis, latent",
+    "icd_code": "A501",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Mother with untreated syphilis during pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Infant born to mother with syphilis"
+        ],
+        "supportive": [
+            "Clinical examination findings",
+            "Radiology (if available)",
+            "Laboratory tests at birth and follow-up tests"
+        ]
+    },
+    "differential_diagnoses": []
+}

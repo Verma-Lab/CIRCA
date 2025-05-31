@@ -1,0 +1,64 @@
+{
+    "disease": "Viral pharyngoconjunctivitis",
+    "icd_code": "B30.2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Pharyngitis",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Redness and inflammation of the conjunctiva",
+            "Sore throat"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to adenovirus serotypes 3, 4, and 7"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Conjunctivitis",
+            "Pharyngitis"
+        ],
+        "supportive": [
+            "Fever",
+            "Headache",
+            "Sore throat"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial conjunctivitis",
+        "Allergic conjunctivitis",
+        "Keratoconjunctivitis due to adenovirus",
+        "Conjunctivitis due to adenovirus",
+        "Acute epidemic hemorrhagic conjunctivitis (enteroviral)"
+    ]
+}

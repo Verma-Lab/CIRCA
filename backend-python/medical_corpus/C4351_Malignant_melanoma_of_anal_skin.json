@@ -1,0 +1,97 @@
+{
+    "disease": "Malignant melanoma of anal skin",
+    "icd_code": "C4351",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rectal bleeding",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Anal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Painful anal mass",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Alteration of bowel habit",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Pruritis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Prolapsed hemorrhoid",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Change in stool habits",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in metastatic disease"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Present in metastatic disease"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Present in metastatic disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "Hemoglobin": "<6 gm%"
+        },
+        "physical_findings": [
+            "Fleshy mass occupying almost whole of the anal lumen and reaching upto the anal verge",
+            "Ulcerating black-colored nodular growth starting at the anorectal junction and extending proximally",
+            "Protruding anal lesion"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Human Papilloma virus (HPV) infection",
+            "HIV infection"
+        ],
+        "imaging_findings": {
+            "Rigid sigmoidoscopy": "Ulcerating black-colored nodular growth",
+            "Computed tomography (CT) scan of the abdomen and pelvis": "Polypoidal intraluminal mass in the rectum causing near total obliteration of the lumen, extending proximally from just below the rectosigmoid junction to the anal verge distally. Extramural extension of mass into peri-rectal fat planes with stranding. Loco-regional, para-aortic and external iliac lymphadenopathy suggestive of nodal metastasis. Loss of recto-vaginal fat plane with involvement of right postero-lateral wall of the vagina.",
+            "MRI of pelvis": "Heterogeneous mass in the rectum with intra- and extra-luminal extension along with involvement of mesorectal fat and postero-lateral wall of the vagina. The mass revealed heterogeneous signal intensity"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing pleomorphic lesions displaying high mitotic rate and prominent nucleoli with intra- and extra-cellular melanin pigment"
+        ],
+        "supportive": [
+            "Clinical presentation with rectal bleeding, anal pain, anal mass, alteration in bowel habits",
+            "Imaging findings consistent with malignant melanoma"
+        ]
+    },
+    "differential_diagnoses": []
+}

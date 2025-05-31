@@ -1,0 +1,80 @@
+{
+    "disease": "Actinomycotic meningitis",
+    "icd_code": "A4281",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Neck pain",
+                "severity": "Progressive, radiating to shoulders",
+                "pattern": "Gradual onset, worsening over 10 days"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Present for 2 days",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "102\u00b0F",
+                "pattern": "Present"
+            },
+            {
+                "name": "Drowsiness",
+                "severity": "Present",
+                "pattern": "Present on physical exam"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Present",
+                "pattern": "Present on physical exam"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Present on readmission",
+                "pattern": "Acute onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "102\u00b0F"
+        },
+        "physical_findings": [
+            "Drowsiness",
+            "Neck stiffness"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "22.7 \u00d7 10\u00b3/\u03bcL (predominantly neutrophilic)",
+            "cerebrospinal_fluid_protein": "199 mg/dL",
+            "cerebrospinal_fluid_glucose": "3 mg/dL",
+            "cerebrospinal_fluid_white_blood_cell_count": "6650/mm\u00b3",
+            "cerebrospinal_fluid_red_blood_cell_count": "158/mm\u00b3",
+            "cerebrospinal_fluid_segmented_neutrophils": "96%"
+        },
+        "risk_factors": [
+            "Oropharyngeal squamous cell carcinoma of the tongue (human papillomavirus\u2013positive)",
+            "Recent chemotherapy"
+        ],
+        "imaging_findings": {
+            "computed_tomography_of_the_neck_with_contrast": "Gas in the upper cervical spinal canal with a heterogeneous mass on the right side of the tongue",
+            "magnetic_resonance_imaging_of_the_cervical_spine": "C2-C3 epidural abscess anteriorly consistent with a 3.4 \u00d7 1.4 \u00d7 0.8 cm epidural abscess with cord compression",
+            "repeat_magnetic_resonance_imaging_of_the_cervical_spine": "Epidural collection at the C2-C3 level with surrounding edema"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (neck pain, confusion, fever, drowsiness, neck stiffness)",
+            "Abnormal cerebrospinal fluid findings (elevated protein, low glucose, high white blood cell count, predominantly neutrophils)",
+            "Isolation of Actinomyces species from culture (surgical biopsy or abscess drainage)"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of epidural abscess or meningitis",
+            "Gram stain showing gram-positive cocci in pairs and short chains"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial meningitis",
+        "Tuberculosis",
+        "Nocardiosis",
+        "Malignancy"
+    ]
+}

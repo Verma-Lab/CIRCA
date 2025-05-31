@@ -1,0 +1,91 @@
+{
+    "disease": "Diphtheria, unspecified",
+    "icd_code": "A369",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Pseudomembrane formation in throat",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Variable",
+                "pattern": "Progressive in severe cases"
+            },
+            {
+                "name": "Neck swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "Variable",
+                "pattern": "Can occur days to weeks after infection"
+            },
+            {
+                "name": "Neuritis",
+                "severity": "Variable",
+                "pattern": "Can occur weeks after infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (>38\u00b0C)",
+            "heart_rate": "Variable, may be elevated due to myocarditis",
+            "respiratory_rate": "Variable, may be elevated due to respiratory compromise",
+            "blood_pressure": "Variable, may be low in severe cases"
+        },
+        "physical_findings": [
+            "Pseudomembrane in throat or nasopharynx",
+            "Enlarged lymph nodes in neck",
+            "Bull neck (severe cases)",
+            "Myocardial dysfunction (tachycardia, arrhythmias)",
+            "Neurological signs (weakness, paralysis)"
+        ],
+        "lab_values": {
+            "CBC": "Leukocytosis",
+            "Culture": "Corynebacterium diphtheriae"
+        },
+        "risk_factors": [
+            "Lack of vaccination",
+            "Crowded living conditions",
+            "Poor sanitation",
+            "Immunodeficiency"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show cardiomegaly or pneumonia"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with diphtheria (sore throat, pseudomembrane, fever)",
+            "Positive culture for Corynebacterium diphtheriae"
+        ],
+        "supportive": [
+            "Elevated white blood cell count",
+            "Abnormal electrocardiogram"
+        ]
+    },
+    "differential_diagnoses": [
+        "Streptococcal pharyngitis",
+        "Epiglottitis",
+        "Retropharyngeal abscess",
+        "Other infectious causes of sore throat"
+    ]
+}

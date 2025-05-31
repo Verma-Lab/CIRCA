@@ -1,0 +1,112 @@
+{
+    "disease": "Sepsis due to Hemophilus influenzae",
+    "icd_code": "A413",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Productive cough",
+                "severity": "Moderate",
+                "pattern": "Present for two days"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Moderate",
+                "pattern": "Present for two days"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Reported, but temperature not documented initially"
+            },
+            {
+                "name": "Acute confusion",
+                "severity": "Severe",
+                "pattern": "Developed the day before admission"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate",
+                "pattern": "Present the day before admission"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate",
+                "pattern": "Present the day before admission"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Moderate",
+                "pattern": "Present the day before admission"
+            },
+            {
+                "name": "Fever",
+                "severity": "High-grade",
+                "pattern": "39.1-39.4\u00b0C on admission and during EMS transport"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Severe",
+                "pattern": "Present on admission"
+            },
+            {
+                "name": "Seizure",
+                "severity": "Severe",
+                "pattern": "Tonic clonic seizure during EMS transport"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "oxygen_saturation": "82-83% (initial), 100% on room air (second case)",
+            "pulse_rate": "90 bpm (initial), 114 bpm (second case)",
+            "blood_pressure": "Normal (initial), 163/94 mmHg (second case)",
+            "temperature": "Not documented initially, 39.1-39.4\u00b0C (second case)",
+            "respiratory_rate": "32 breaths/min (second case)"
+        },
+        "physical_findings": [
+            "Bilateral decreased breath sounds with inspiratory crackles",
+            "Bilateral non-pitting edema on lower extremities",
+            "Nuchal rigidity",
+            "Agitation",
+            "Glasgow Coma Scale score of 11",
+            "Several dental caries"
+        ],
+        "lab_values": {
+            "lactate": "3.8 mmol/L (initial), 14.79 mmol/L (second case)",
+            "white_blood_cell_count": "Normal (initial), 3.5 \u00d7 103/\u00b5L (second case)",
+            "hemoglobin": "10.5 g/dL (initial), 12.7 g/dL (second case)",
+            "CD4+ cell count": "Less than 200 (second case), 182 cells/mm3 (second case)",
+            "CSF glucose": "< 10 mg/dL (second case)",
+            "CSF protein": "1185 mg/dL (second case)",
+            "CSF WBC": "2663/\u00b5L (second case)"
+        },
+        "risk_factors": [
+            "Atrial fibrillation",
+            "Heart failure with reduced ejection fraction",
+            "Hypertension",
+            "Chronic bilateral lymphedema",
+            "HIV infection (second case)",
+            "Age (69 years old in first case, 33 years old in second case)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Bilateral infiltrates consistent with atypical pneumonia",
+            "head_ct": "Unremarkable (second case), increased brain swelling (second case after cardiac arrest)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for H. influenzae",
+            "Evidence of systemic infection (e.g., sepsis)"
+        ],
+        "supportive": [
+            "Symptoms and signs consistent with sepsis",
+            "Abnormal vital signs",
+            "Abnormal laboratory values"
+        ]
+    },
+    "differential_diagnoses": [
+        "Influenza A infection",
+        "Atypical pneumonia",
+        "Other bacterial pneumonias",
+        "Neisseria meningitidis (second case)"
+    ]
+}

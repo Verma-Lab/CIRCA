@@ -1,0 +1,97 @@
+{
+    "disease": "Urban yellow fever",
+    "icd_code": "A951",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high in severe cases",
+                "pattern": "Present in most cases, may be biphasic"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to severe, can be bloody in severe cases",
+                "pattern": "Common"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Severe",
+                "pattern": "Present in a small percentage of cases, indicative of severe disease"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Severe",
+                "pattern": "Can occur from mouth, nose, eyes, or stomach in severe cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "High fever (above 38.5\u00b0C or 101.3\u00b0F) in severe cases",
+            "heart_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Jaundice (yellowing of skin and eyes)",
+            "Bleeding (from various sites)"
+        ],
+        "lab_values": {
+            "RT-PCR": "Detects viral genetic material in early stages, may be unreliable later",
+            "ELISA": "Detects antibodies, can have cross-reactivity with other flaviviruses",
+            "PRNT": "More specific antibody test"
+        },
+        "risk_factors": [
+            "Travel to endemic areas",
+            "Lack of vaccination",
+            "Presence of Aedes aegypti mosquitoes",
+            "Contact with infected non-human primates (sylvatic cycle)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with yellow fever",
+            "Positive RT-PCR or antibody test (ELISA, PRNT)"
+        ],
+        "supportive": [
+            "Travel history to endemic area",
+            "Exposure to Aedes aegypti mosquitoes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malaria",
+        "Leptospirosis",
+        "Viral hepatitis",
+        "Other hemorrhagic fevers",
+        "Dengue",
+        "Zika"
+    ]
+}

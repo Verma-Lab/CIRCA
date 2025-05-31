@@ -1,0 +1,114 @@
+{
+    "disease": "Tuberculous peritonitis",
+    "icd_code": "A1831",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Common, can be severe"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade to high",
+                "pattern": "Common, can be intermittent"
+            },
+            {
+                "name": "Ascites",
+                "severity": "Variable",
+                "pattern": "Present in majority of cases"
+            },
+            {
+                "name": "Nausea/vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Can be present, often associated with pulmonary involvement"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Less common, associated with pulmonary involvement"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "Uncommon"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "heart_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Distended abdomen",
+            "Tender abdomen",
+            "Ascites (in 73-93% of cases)",
+            "Abdominal masses (in plastic/fibroadhesive type)",
+            "Adhesions (between omentum, bowel, and abdominal wall)"
+        ],
+        "lab_values": {
+            "Leukocytosis": "Mild to moderate (12.5 \u00d7 103 cells/mL in one case)",
+            "ESR": "Elevated (108 mm/hr in one case)",
+            "CRP": "Elevated (16.6 mg/dL in one case)",
+            "SAAG": "<1.1 mg/dl (suggestive, not diagnostic)",
+            "Adenosine deaminase": "Elevated in ascitic fluid (newer technique)",
+            "Interferon gamma": "Elevated in ascitic fluid (newer technique)"
+        },
+        "risk_factors": [
+            "Immunocompromised state (HIV/AIDS)",
+            "Chronic kidney disease (CKD)",
+            "Cirrhosis/liver disease",
+            "Continuous ambulatory peritoneal dialysis (CAPD)",
+            "Recent immigration from areas of high endemicity",
+            "Diabetes mellitus",
+            "Underlying malignancy",
+            "Use of corticosteroids and/or other immunosuppressants",
+            "Alcoholism"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show old or active pulmonary tuberculosis, often nonspecific",
+            "CT scan": "Diffuse thickening and nodularity of the omentum, infiltration of the mesentery, ascites, prominent mesenteric lymph nodes, diffuse thickening of the small bowel, hemoperitoneum",
+            "Ultrasound": "Mesenteric thickness >15mm, increased mesenteric echogenicity, mesenteric lymphadenopathy, multiple small septations in the peritoneum"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion based on symptoms and risk factors",
+            "Positive ascitic fluid analysis (lymphocyte predominance)",
+            "Microbiological or pathological confirmation (mycobacterial culture growth, peritoneal biopsy)"
+        ],
+        "supportive": [
+            "Elevated adenosine deaminase and interferon gamma levels in ascitic fluid",
+            "Characteristic imaging findings (CT, US)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Peritoneal carcinomatosis",
+        "Other forms of peritonitis (bacterial, etc.)"
+    ]
+}

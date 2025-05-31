@@ -1,0 +1,86 @@
+{
+    "disease": "Malignant neoplasm of duodenum",
+    "icd_code": "C170",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable (15-60%)",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable (30-59%)",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Nausea and vomiting",
+                "severity": "Variable (25-30%)",
+                "pattern": "Episodic or persistent"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable (20-30%)",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Hemorrhage",
+                "severity": "Variable (10-38%)",
+                "pattern": "Acute or chronic"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "name": "Palpable abdominal mass",
+                "frequency": "<5%"
+            }
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Familial polyposis",
+            "Gardner's syndrome",
+            "Celiac disease"
+        ],
+        "imaging_findings": {
+            "Barium studies": "Irregular stricture (most cases), normal findings or benign stricture possible",
+            "Fiberoptic endoscopy": "Precise tumor location, allows biopsy for diagnosis",
+            "Ultrasonography": "Diagnosis of liver metastases (some authors)",
+            "CT Scan": "Accuracy not well studied",
+            "IRM": "Accuracy not well studied",
+            "Angiography": "Accuracy not well studied",
+            "Endoscopic ultrasonography": "Useful for staging ampullary and pancreatic carcinomas, accuracy in duodenal tumors not well studied"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Fiberoptic endoscopy with biopsy confirming adenocarcinoma or other histological type"
+        ],
+        "supportive": [
+            "Barium studies showing irregular stricture",
+            "Imaging findings suggestive of malignancy (CT, MRI, US)",
+            "Symptoms such as abdominal pain, weight loss, nausea, vomiting, jaundice, or hemorrhage"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignant tumors of the ampulla",
+        "Pancreatic cancer",
+        "Common bile duct cancer",
+        "Lymphomas",
+        "Leiomyosarcomas",
+        "Carcinoid tumors",
+        "Gastrinomas",
+        "Stromal tumors"
+    ]
+}

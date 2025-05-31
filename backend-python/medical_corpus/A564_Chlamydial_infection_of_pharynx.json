@@ -1,0 +1,38 @@
+{
+    "disease": "Chlamydial infection of pharynx",
+    "icd_code": "A564",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore throat",
+                "severity": "Variable, often asymptomatic",
+                "pattern": "May be mild or absent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Nucleic acid amplification test (NAAT)": {
+                "abnormal_range": "Positive result indicates infection"
+            }
+        },
+        "risk_factors": [
+            "Receptive oral sex",
+            "Multiple sexual partners",
+            "History of other STIs",
+            "Use of methamphetamine or amyl nitrate"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive NAAT for Chlamydia trachomatis in a pharyngeal specimen"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Acute pharyngitis (viral or bacterial)",
+        "Other sexually transmitted infections"
+    ]
+}

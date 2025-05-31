@@ -1,0 +1,89 @@
+{
+    "disease": "Salmonella pyelonephritis",
+    "icd_code": "A02.25",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Low-grade to high",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Frequent urination",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Thirst",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Unconsciousness",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Significant",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Gastrointestinal symptoms (vomiting, diarrhea)",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "May be normal or low (orthostatic hypotension)",
+            "pulse_rate": "Variable",
+            "body_temperature": "Elevated (35.6\u00b0C in one case)"
+        },
+        "physical_findings": [
+            "Orthostatic hypotension",
+            "Reduced ankle reflexes",
+            "Decreased vibration perception"
+        ],
+        "lab_values": {
+            "white_blood_count": "Elevated (21,600/\u03bcL in one case)",
+            "c_reactive_protein": "Elevated (22.5 mg/dL in one case)",
+            "blood_glucose": "Elevated (845 mg/dL in one case)",
+            "glycated_hemoglobin": "Elevated (11.5% in one case)",
+            "serum_creatinine": "May be elevated (1.25 mg/dL in one case)",
+            "urinalysis": "Bacteriuria with many WBC casts"
+        },
+        "risk_factors": [
+            "Diabetes mellitus",
+            "Neurogenic bladder",
+            "Hydronephrosis",
+            "Immunosuppression",
+            "Structural abnormalities of the genitourinary tract",
+            "Exposure to reptiles"
+        ],
+        "imaging_findings": {
+            "abdominal_ct": "Hydronephrosis, enlargement and perinephric stranding of the right kidney",
+            "lumbar_mri": "Destruction of vertebrae (L3 and L4 in one case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Salmonella from blood and/or urine culture",
+            "Clinical presentation consistent with pyelonephritis (fever, back pain, urinary symptoms)"
+        ],
+        "supportive": [
+            "Abnormal imaging findings (hydronephrosis, vertebral destruction)",
+            "Elevated inflammatory markers (WBC, CRP)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial pyelonephritis (e.g., E. coli)",
+        "Fungal pyelonephritis",
+        "Tuberculous pyelonephritis"
+    ]
+}

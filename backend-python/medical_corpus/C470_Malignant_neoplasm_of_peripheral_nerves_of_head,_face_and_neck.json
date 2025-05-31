@@ -1,0 +1,40 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves of head, face and neck",
+    "icd_code": "C470",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Often worsening quickly"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Localized to the area of the tumor"
+            },
+            {
+                "name": "Growing lump or mass",
+                "severity": "Variable",
+                "pattern": "Progressive growth"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or lump"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Changes in DNA of cells in the lining around a nerve"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in peripheral nerves of the head, face, or neck"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,85 @@
+{
+    "disease": "Acute Chagas' disease with heart involvement",
+    "icd_code": "B570",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diffuse lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Cardiac dilatation",
+                "severity": "Variable",
+                "pattern": "May be present in acute myocarditis"
+            },
+            {
+                "name": "Pericardial effusion",
+                "severity": "Variable",
+                "pattern": "May be present in acute myocarditis"
+            },
+            {
+                "name": "Acute heart failure",
+                "severity": "Variable",
+                "pattern": "Frequent in severe presentations"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present in chronic phase"
+            },
+            {
+                "name": "Symptomatic ventricular arrhythmias",
+                "severity": "Variable",
+                "pattern": "May be present in chronic phase"
+            },
+            {
+                "name": "Symptomatic bradyarrhythmias",
+                "severity": "Variable",
+                "pattern": "May be present in chronic phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Lower systolic blood pressure in acute decompensated heart failure"
+        },
+        "physical_findings": [
+            "Diffuse lymphadenopathy",
+            "Hepatomegaly",
+            "Splenomegaly",
+            "Cardiac dilatation",
+            "Pericardial effusion"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to Trypanosoma cruzi"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Trypanosoma cruzi infection",
+            "Evidence of heart involvement (e.g., cardiac dilatation, arrhythmias, heart failure)"
+        ],
+        "supportive": [
+            "Diffuse lymphadenopathy",
+            "Hepatomegaly",
+            "Splenomegaly",
+            "Myocarditis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Coronary artery disease",
+        "Idiopathic dilated cardiomyopathy"
+    ]
+}

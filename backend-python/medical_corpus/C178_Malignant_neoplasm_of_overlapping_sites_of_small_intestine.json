@@ -1,0 +1,20 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of small intestine",
+    "icd_code": "C178",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Malignant neoplasm involving multiple sites within the small intestine"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

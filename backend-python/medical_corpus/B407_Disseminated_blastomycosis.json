@@ -1,0 +1,122 @@
+{
+    "disease": "Disseminated blastomycosis",
+    "icd_code": "B407",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Dyspnea on exertion",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Verrucous skin lesions",
+                "severity": "Moderate",
+                "pattern": "Present for two months prior to presentation"
+            },
+            {
+                "name": "Cough",
+                "severity": "Absent",
+                "pattern": "Absent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Absent",
+                "pattern": "Absent"
+            },
+            {
+                "name": "Painful rash",
+                "severity": "Moderate",
+                "pattern": "Present for 1 week"
+            },
+            {
+                "name": "Productive cough with yellow and blood-tinged sputum",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Unintentional weight loss",
+                "severity": "Moderate",
+                "pattern": "11 kg over 3 months"
+            },
+            {
+                "name": "Decreased appetite",
+                "severity": "Moderate",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Occasional night sweats",
+                "severity": "Mild",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Non-pruritic, tender papulopustular nodules",
+                "severity": "Moderate",
+                "pattern": "Widespread"
+            },
+            {
+                "name": "Eroded nodules with purulent drainage",
+                "severity": "Moderate",
+                "pattern": "Present on left lower leg"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless large verrucous skin lesion over the left thigh",
+            "Smaller lesion over the right posterior shoulder",
+            "Decreased air entry over the left upper lung field",
+            "Pink-purple, fluctuant nodules widespread on trunk, back, neck, and extremities"
+        ],
+        "lab_values": {
+            "Sputum culture": "Unrevealing",
+            "Skin biopsy": "Broad-based budding yeast",
+            "Blood cultures": "Negative",
+            "COVID PCR": "Negative",
+            "Leukocytosis": "18.7",
+            "ESR": ">130 mm/hr",
+            "CRP": "16.6 mg/dL",
+            "Beta-D-Glucan": "Positive",
+            "Serum Histoplasma": "Unspecified",
+            "Serum Coccidioides": "Unspecified"
+        },
+        "risk_factors": [
+            "Residence in Missouri (endemic area)",
+            "Possible exposure to soil in southern Illinois near Mississippi River",
+            "Prior COVID-19 infection (in one case)"
+        ],
+        "imaging_findings": {
+            "CT Chest": [
+                "Left upper lobe cavitary lung lesion with surrounding consolidation",
+                "Significant interval improvement with decreased size of left upper lobe cavitary lung lesion and near resolution of surrounding consolidation (post-treatment)"
+            ],
+            "CT Angiogram": "Left upper-lobe mass indeterminate for malignancy versus rounded bacterial pneumonia"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing broad-based budding yeast"
+        ],
+        "supportive": [
+            "Clinical presentation (symptoms and physical findings)",
+            "Positive Blastomyces urine enzyme immunoassay",
+            "Positive fungal culture from bronchoscopy samples (in one case)",
+            "Imaging findings consistent with blastomycosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

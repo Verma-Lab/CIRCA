@@ -1,0 +1,51 @@
+{
+    "disease": "Viral wart, unspecified",
+    "icd_code": "B079",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin growths",
+                "severity": "Variable",
+                "pattern": "One or more growths"
+            },
+            {
+                "name": "Lesion appearance",
+                "severity": "Variable",
+                "pattern": "Small, grainy bumps; flesh-colored, white, pink, or tan"
+            },
+            {
+                "name": "Location of growths",
+                "severity": "Variable",
+                "pattern": "Hands, fingers, feet, or other areas"
+            },
+            {
+                "name": "Pain",
+                "severity": "Usually absent",
+                "pattern": "May cause discomfort or irritation depending on location"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Rough to the touch skin growths",
+            "Lesions consistent with viral warts (unspecified type)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to environments where viral warts are commonly contracted (e.g., communal showers, swimming pools)",
+            "History of similar skin growths"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of skin growths consistent with viral warts",
+            "Clinical examination confirming viral warts without specifying a particular type"
+        ],
+        "supportive": [
+            "Patient history of similar growths or exposure to high-risk environments",
+            "Absence of other skin conditions"
+        ]
+    },
+    "differential_diagnoses": []
+}

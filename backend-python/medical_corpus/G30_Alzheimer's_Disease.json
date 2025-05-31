@@ -1,0 +1,56 @@
+{
+    "disease": "Alzheimer's Disease",
+    "icd_code": "G30",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Memory loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Cognitive decline",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty with language",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Impaired judgment",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Changes in personality and behavior",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Age",
+            "Family history"
+        ],
+        "imaging_findings": {
+            "MRI": "Brain atrophy",
+            "PET": "Reduced metabolism in specific brain regions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Cognitive impairment",
+            "Progressive decline in cognitive function"
+        ],
+        "supportive": [
+            "Neuropsychological testing",
+            "Brain imaging"
+        ]
+    },
+    "differential_diagnoses": []
+}

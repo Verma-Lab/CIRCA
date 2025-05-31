@@ -1,0 +1,106 @@
+{
+    "disease": "Nocardiosis, unspecified",
+    "icd_code": "A439",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary and disseminated infections"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary infections"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary infections"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary infections"
+            },
+            {
+                "name": "Lung abscesses",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary infections"
+            },
+            {
+                "name": "Cavitary lesions",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary infections"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in CNS infections"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Present in CNS infections"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Present in CNS infections"
+            },
+            {
+                "name": "Skin ulcers",
+                "severity": "Variable",
+                "pattern": "Present in cutaneous infections"
+            },
+            {
+                "name": "Shallow sores",
+                "severity": "Variable",
+                "pattern": "Present in cutaneous infections"
+            },
+            {
+                "name": "Nodules",
+                "severity": "Variable",
+                "pattern": "Present in cutaneous infections"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in many cases"
+        },
+        "physical_findings": [
+            "Skin abscesses",
+            "Lung findings consistent with pneumonia or abscess"
+        ],
+        "lab_values": {
+            "Culture": "Positive for Nocardia species"
+        },
+        "risk_factors": [
+            "Weakened immune system",
+            "Organ transplant",
+            "Diabetes",
+            "HIV",
+            "Cancer",
+            "Steroid use",
+            "Male sex"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show pneumonia, lung abscesses, or cavitary lesions",
+            "CT scan": "Provides more detailed images of lung lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Nocardia species from clinical specimens"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with nocardiosis",
+            "Imaging findings suggestive of nocardiosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pneumonia",
+        "Tuberculosis",
+        "Other bacterial or fungal infections"
+    ]
+}

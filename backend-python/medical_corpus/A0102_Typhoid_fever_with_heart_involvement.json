@@ -1,0 +1,67 @@
+{
+    "disease": "Typhoid fever with heart involvement",
+    "icd_code": "A01.02",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high",
+                "pattern": "Sustained or intermittent"
+            },
+            {
+                "name": "Myocarditis symptoms (if present)",
+                "severity": "Variable, depending on severity of myocarditis",
+                "pattern": "Can range from asymptomatic to severe heart failure"
+            },
+            {
+                "name": "Endocarditis symptoms (if present)",
+                "severity": "Variable, depending on severity of endocarditis",
+                "pattern": "Can include fever, fatigue, heart murmur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (>38\u00b0C or 100.4\u00b0F)",
+            "heart_rate": "Variable, may be tachycardic",
+            "blood_pressure": "Variable, may be hypotensive in severe cases"
+        },
+        "physical_findings": [
+            "Enlarged spleen (splenomegaly)",
+            "Rose spots (rare)",
+            "Heart murmur (if endocarditis present)",
+            "Signs of heart failure (if myocarditis severe)"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Salmonella Typhi",
+            "complete_blood_count": "Leukocytosis or leukopenia",
+            "liver_function_tests": "Elevated liver enzymes",
+            "inflammatory_markers": "Elevated CRP and ESR"
+        },
+        "risk_factors": [
+            "Travel to areas with poor sanitation",
+            "Consumption of contaminated food or water",
+            "Poor hygiene practices"
+        ],
+        "imaging_findings": {
+            "echocardiogram": "May show valvular abnormalities (endocarditis), decreased ejection fraction (myocarditis)",
+            "chest_x_ray": "May show cardiomegaly (enlarged heart) if myocarditis is severe"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with typhoid fever",
+            "Positive blood culture for Salmonella Typhi"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers",
+            "Abnormal echocardiogram findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial infections",
+        "Viral infections",
+        "Infective endocarditis (other causes)",
+        "Myocarditis (other causes)",
+        "Rheumatic fever"
+    ]
+}

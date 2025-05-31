@@ -1,0 +1,35 @@
+{
+    "disease": "Malignant neoplasm of oropharynx, unspecified",
+    "icd_code": "C109",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unspecified oropharyngeal symptoms",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lumps in the neck",
+            "Abnormal findings on examination of the mouth, throat, and neck"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Human papillomavirus (HPV) infection, particularly HPV type 16",
+            "Tobacco use",
+            "Alcohol consumption",
+            "History of head and neck cancer",
+            "Radiation therapy to the head and neck"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant neoplasm in the oropharynx"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

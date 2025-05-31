@@ -1,0 +1,141 @@
+{
+    "disease": "Necrotizing ulcerative stomatitis (NUS)",
+    "icd_code": "A690",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Oral ulceration",
+                "severity": "Severe",
+                "pattern": "Progressive, initially localized to lower lip mucosa, progressing to necrosis of all layers of the lip and oral commissure"
+            },
+            {
+                "name": "Pain",
+                "severity": "Severe",
+                "pattern": "Burning sensation"
+            },
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Severe",
+                "pattern": "Soft left side of face"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Moderate",
+                "pattern": "Present in months before admission"
+            },
+            {
+                "name": "Difficulty moving",
+                "severity": "Moderate",
+                "pattern": "Present in months before admission"
+            },
+            {
+                "name": "Poor appetite",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Bloating",
+                "severity": "Moderate",
+                "pattern": "Alternating constipation and profuse diarrhea"
+            },
+            {
+                "name": "Gingival ulcers",
+                "severity": "Moderate",
+                "pattern": "Precedes NUS onset"
+            },
+            {
+                "name": "Necrotic periodontitis",
+                "severity": "Moderate",
+                "pattern": "Precedes NUS onset"
+            },
+            {
+                "name": "Oral candidiasis",
+                "severity": "Moderate",
+                "pattern": "Present in one case report"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "High fever",
+            "leukocytes": "Elevated (19.2/mm3)"
+        },
+        "physical_findings": [
+            "Deep and large ulcer in the lower lip region",
+            "Swelling of the soft left side of the face",
+            "Necrosis of all layers of the left side of the lip and oral commissure",
+            "Swollen and reddened gingiva (in one case report)",
+            "Large necrotic ulcerative lesion of the anterior hard palate with exposure of underlying bone (in one case report)",
+            "Mobile teeth (in one case report)",
+            "Foul-smelling oral cavity (in one case report)",
+            "White plaques on oral mucosa (in one case report)"
+        ],
+        "lab_values": {
+            "leukocyte count": "Elevated (19.2/mm3)",
+            "neutrophils": "Increased (19%)",
+            "C-reactive protein": "Elevated (174 mg/L)",
+            "erythrocyte sedimentation rate": "Elevated (61/mm/h)",
+            "erythrocytes": "Decreased (3.37 \u00d7 1012)",
+            "hemoglobin": "Decreased (89 g/L)",
+            "hematocrit": "Decreased (0.34 L/L)",
+            "blood glucose": "Decreased (3.5 mmol/L)",
+            "total protein": "Decreased (61 g/L)",
+            "albumin": "Decreased (32 g/L)",
+            "iron": "Decreased (2.8 \u03bcmol/L)",
+            "ferritin": "Decreased (11 \u03bcg/L)",
+            "calcium": "Decreased (1.92 mmol/L)",
+            "copper": "Decreased (11.2 \u03bcmol/L)",
+            "25-OH D": "Decreased (53 nmol/L)",
+            "vitamin B12": "Decreased (102 nmol/L)",
+            "folic acid": "Decreased (7.6 nmol/L)",
+            "HIV": "Positive in some cases",
+            "tissue transglutaminase antibodies": "Elevated (>10)"
+        },
+        "risk_factors": [
+            "Celiac disease",
+            "Poor dental and gingival status",
+            "Impaired immune system",
+            "Malnutrition",
+            "HIV infection",
+            "Unbalanced diet",
+            "Poor general condition"
+        ],
+        "imaging_findings": {
+            "radiography": "Alveolar bone absorption (in one case report)",
+            "computed tomography (CT)": "Extensive destruction of bone within the oral cavity (in one case report)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Progressive necrotizing ulcerative lesion of the oral mucosa"
+        ],
+        "supportive": [
+            "Systemic symptoms (fever, dehydration)",
+            "Elevated inflammatory markers (CRP, ESR, leukocytosis)",
+            "Underlying conditions (celiac disease, HIV infection, malnutrition)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Trauma lesions",
+        "Self-harm",
+        "Drug use",
+        "Autoimmune diseases",
+        "Dermatosis",
+        "Systemic infections",
+        "Other inflammatory conditions",
+        "Malignant disease",
+        "Granulomatous inflammation",
+        "Necrotizing sialometaplasia",
+        "Diseases of the small salivary glands",
+        "Crohn's disease"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "disease": "Pinta",
+    "icd_code": "A670",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Macules",
+                "severity": "Variable",
+                "pattern": "Initially small, hypopigmented or erythematous macules that gradually enlarge"
+            },
+            {
+                "name": "Papules",
+                "severity": "Variable",
+                "pattern": "May develop into papules, which can be hyperpigmented or depigmented"
+            },
+            {
+                "name": "Nodules",
+                "severity": "Variable",
+                "pattern": "In later stages, nodules may form"
+            },
+            {
+                "name": "Scaling",
+                "severity": "Mild to moderate",
+                "pattern": "May be present on lesions"
+            },
+            {
+                "name": "Itch",
+                "severity": "Mild to moderate",
+                "pattern": "May be present, especially in early stages"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hypopigmented or erythematous macules",
+            "Papules",
+            "Nodules",
+            "Scaling",
+            "Lesions may be distributed across the body"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to Treponema carateum"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic clinical presentation of lesions"
+        ],
+        "supportive": [
+            "Serological tests (e.g., FTA-ABS, TPHA) may be helpful but are not always positive"
+        ]
+    },
+    "differential_diagnoses": []
+}

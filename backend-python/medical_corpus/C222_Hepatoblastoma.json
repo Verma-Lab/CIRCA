@@ -1,0 +1,131 @@
+{
+    "disease": "Hepatoblastoma",
+    "icd_code": "C222",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Enlarging abdominal mass",
+                "severity": "Variable",
+                "pattern": "Most common presentation"
+            },
+            {
+                "name": "Abdominal distension",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Abdominal discomfort",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Generalized fatigue",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Loss of appetite (anorexia)",
+                "severity": "Variable",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can occur with tumor rupture"
+            },
+            {
+                "name": "Symptoms of peritoneal irritation",
+                "severity": "Variable",
+                "pattern": "Can occur with tumor rupture"
+            },
+            {
+                "name": "Severe anemia",
+                "severity": "Variable",
+                "pattern": "Can occur with tumor rupture"
+            },
+            {
+                "name": "Precocious puberty/virilization",
+                "severity": "Variable",
+                "pattern": "Rare, due to \u03b2-hCG secretion"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Variable",
+                "pattern": "Common finding on physical exam"
+            },
+            {
+                "name": "Upper respiratory infection symptoms",
+                "severity": "Variable",
+                "pattern": "Can be present at initial presentation"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Present in some cases"
+        },
+        "physical_findings": [
+            "Hepatomegaly",
+            "Palpable liver edge below costal margin",
+            "Splenomegaly"
+        ],
+        "lab_values": {
+            "alpha-fetoprotein (AFP)": "Elevated in 90% of patients; levels correlate with disease extent and response to treatment; low levels associated with poor prognosis",
+            "White blood cell count": "Elevated (e.g., 13.7 x 10^9/L)",
+            "Absolute neutrophil count": "Elevated (e.g., 10.3 x 10^9/L)",
+            "Platelet count": "Can be elevated (thrombocytosis) or decreased; etiology unclear; decreasing count may indicate chemotherapy toxicity",
+            "Bilirubin and liver enzymes": "Usually normal"
+        },
+        "risk_factors": [
+            "Beckwith-Wiedemann syndrome",
+            "Familial adenomatous polyposis",
+            "Hemihypertrophy",
+            "Biliary atresia",
+            "Early exposure to hepatitis B infection",
+            "Prematurity",
+            "Low birth weight",
+            "Very low birth weight",
+            "Edward syndrome (trisomy 18)",
+            "Nephroblastoma",
+            "Down syndrome",
+            "Preeclampsia",
+            "Parental tobacco smoking (before and during pregnancy)",
+            "Oxygen therapy",
+            "Certain medications (furosemide)",
+            "Radiation",
+            "Plasticizers",
+            "Total parenteral nutrition (TPN)"
+        ],
+        "imaging_findings": {
+            "Abdominal X-ray": "Hepatomegaly with multiple radio densities",
+            "Ultrasound": "Large, ill-defined hepatic lobe mass, possible extension into other lobes, splenomegaly",
+            "CT scan": "Unresectable liver mass, bilateral effusions, ascites, pulmonary nodules (metastasis)",
+            "MRI": "Can define tumor extent and aid in pre-surgical planning",
+            "Chest CT": "Detects lung metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy demonstrating hepatoblastoma"
+        ],
+        "supportive": [
+            "Elevated AFP levels",
+            "Imaging findings consistent with hepatoblastoma (e.g., large liver mass)",
+            "Clinical presentation (e.g., abdominal mass, hepatomegaly)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hepatocellular carcinoma (HCC)",
+        "Focal nodular hyperplasia",
+        "Other pediatric liver tumors"
+    ]
+}

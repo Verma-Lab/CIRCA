@@ -1,0 +1,18 @@
+{
+  "id": "87ce73eb-cb1d-44c1-ac50-1c1b83b093dd",
+  "mrn": "MRNB9564FC9",
+  "first_name": "Christy",
+  "last_name": "Davis",
+  "date_of_birth": "2004-05-02",
+  "gender": "Female",
+  "address": "83718 Eric Lights",
+  "phone": "001-903-391-3047x995",
+  "email": "stephaniechandler@hotmail.com",
+  "insurance_provider": "United Health",
+  "insurance_id": "tg328284",
+  "primary_care_provider": "Dr. Williams",
+  "emergency_contact_name": "Eric Robinson",
+  "emergency_contact_phone": "161-328-4560",
+  "created_at": "2025-03-24T12:52:01.079400",
+  "updated_at": "2025-03-24T12:52:01.079400"
+}

@@ -1,0 +1,104 @@
+{
+    "disease": "Squamous cell carcinoma of skin of right eyelid, including canthus",
+    "icd_code": "C44122",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless nodular or plaque-like lesions",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Irregular rolled edges",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Chronic scaling with roughened patches",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fissuring of the skin",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pearly borders",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Telangiectasia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Central ulceration",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Violaceous red hue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Madarosis (loss of eyelashes)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Trichiasis (misdirected eyelashes)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless nodular or plaque-like lesions with irregular rolled edges",
+            "Chronic scaling with roughened patches",
+            "Fissuring of the skin",
+            "Pearly borders",
+            "Telangiectasia",
+            "Central ulceration",
+            "Violaceous red hue",
+            "Madarosis (loss of eyelashes)",
+            "Trichiasis (misdirected eyelashes)",
+            "Extension into the underlying dermis"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Chronic sun exposure",
+            "Actinic keratosis",
+            "Bowen's disease",
+            "Radiation dermatoses",
+            "Fair skin",
+            "Elderly age",
+            "Arsenic exposure",
+            "Immunosuppression",
+            "Previous skin lesions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with SCC (nodular or plaque-like lesion with irregular borders, ulceration, scaling)",
+            "Presence of risk factors (sun exposure, actinic keratosis, etc.)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Sebaceous gland carcinoma",
+        "Malignant melanoma",
+        "Actinic keratosis",
+        "Bowen's disease",
+        "Keratoacanthoma",
+        "Cutaneous horn",
+        "Benign eyelid lesions (e.g., chalazion, nevus)"
+    ]
+}

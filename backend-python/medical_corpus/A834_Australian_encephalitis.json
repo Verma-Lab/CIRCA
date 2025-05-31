@@ -1,0 +1,79 @@
+{
+    "disease": "Australian encephalitis",
+    "icd_code": "A834",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Reduced neurological function",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Altered consciousness",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Focal neurological signs",
+                "severity": "Variable",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Altered behavior",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Memory disturbance",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Movement disorder",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Autonomic dysfunction",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Decreased level of consciousness",
+                "severity": "Variable",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": "Normal or non-specific",
+            "MRI": "Normal or non-specific"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Hospitalized at John Hunter Hospital",
+            "Age \u226518 years",
+            "Suspected encephalitis (acute febrile illness with altered behavior/consciousness, or new onset seizures, or new focal neurological signs)"
+        ],
+        "supportive": [
+            "Laboratory findings (e.g., CSF analysis, PCR for HSV)",
+            "Expert panel review"
+        ]
+    },
+    "differential_diagnoses": []
+}

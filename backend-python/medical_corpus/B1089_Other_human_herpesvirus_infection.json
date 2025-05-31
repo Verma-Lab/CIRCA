@@ -1,0 +1,24 @@
+{
+    "disease": "Other human herpesvirus infection",
+    "icd_code": "B10.89",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Cytomegalovirus infection (B25.9)",
+        "Epstein-Barr virus infection (B27.0-)",
+        "Herpes simplex infection (B00.-)",
+        "Herpes zoster infection (B02.-)",
+        "Varicella infection (B01.-)"
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "disease": "Merkel cell carcinoma of left upper eyelid, including canthus",
+    "icd_code": "C4A121",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Growth on eyelid",
+                "severity": "Moderate to severe (obstructing vision)",
+                "pattern": "Rapidly growing over two weeks, present for one month"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Mild",
+                "pattern": "On manipulation"
+            },
+            {
+                "name": "Pain",
+                "severity": "Absent",
+                "pattern": "None reported"
+            },
+            {
+                "name": "Flaking",
+                "severity": "Absent",
+                "pattern": "None reported"
+            },
+            {
+                "name": "Itching",
+                "severity": "Absent",
+                "pattern": "None reported"
+            },
+            {
+                "name": "Painless solitary nodule",
+                "severity": "Variable",
+                "pattern": "Often present, violaceous (purple-red) hue"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Occasional",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Satellite lesions",
+                "severity": "Occasional",
+                "pattern": "May develop"
+            },
+            {
+                "name": "Madarosis (loss of eyelashes)",
+                "severity": "Partial or complete",
+                "pattern": "Often present with malignant lesions"
+            },
+            {
+                "name": "Telangiectatic vessels",
+                "severity": "Present",
+                "pattern": "Overlying vessels"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Large lesion arising from the left medial canthus, flesh-colored with a violaceous hue, nearly all inferior to the medial canthal tendon",
+            "Firm, purple, vascularized lesion on the upper eyelid (metastatic case)",
+            "Mass in the form of a vascularized nodule approximately 1.5 \u00d7 1 cm in size on the midline of the left upper lid (metastatic case)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Older age (94 years in one case, 63 years in another with history of kidney transplant)",
+            "Multiple previous skin cancers",
+            "Immunosuppression (kidney transplant in one case)",
+            "Chronic sun exposure",
+            "Male sex (predominant in some studies)"
+        ],
+        "imaging_findings": {
+            "PET scan": "Enhancing lesion near the inferior border of the ipsilateral parotid gland (suggestive of metastasis)",
+            "PET/CT scan": "Parotid gland uptake consistent with metastases, multiple metastases at various sites including vertebrae, bone marrow, ribs, pelvis, liver (metastatic case)",
+            "MRI": "New enhancing mass on the left upper eyelid (metastatic case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic features of Merkel cell carcinoma",
+            "Immunohistochemical staining confirming the diagnosis"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with MCC (e.g., violaceous nodule, rapid growth)",
+            "Positive PET/CT scan showing metastatic lesions",
+            "Presence of risk factors (e.g., age, immunosuppression, sun exposure)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cystic/acneiform lesions",
+        "Lipoma",
+        "Non-melanoma skin carcinoma",
+        "Lymphoma",
+        "Chalazion",
+        "Dermatofibroma",
+        "Cysts",
+        "Vascular lesions",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Sebaceous carcinoma",
+        "Cutaneous metastases from other cancers (especially metastatic small-cell lung cancer)"
+    ]
+}

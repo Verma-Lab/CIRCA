@@ -1,0 +1,122 @@
+{
+    "disease": "Varicella myelitis",
+    "icd_code": "B0112",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Lower limb weakness",
+                "severity": "Variable, from mild weakness to paralysis",
+                "pattern": "Acute onset, progressive in some cases"
+            },
+            {
+                "name": "Sensory impairment",
+                "severity": "Variable, can affect pain, temperature, touch, vibration, and proprioception",
+                "pattern": "Often below a specific dermatome level"
+            },
+            {
+                "name": "Bladder dysfunction",
+                "severity": "Variable, from urinary retention to incontinence",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Bowel dysfunction",
+                "severity": "Variable, from constipation to incontinence",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May precede or accompany neurological symptoms"
+            },
+            {
+                "name": "Generalized vesicular eruptions",
+                "severity": "Variable",
+                "pattern": "May precede, accompany, or be absent in some cases"
+            },
+            {
+                "name": "Throbbing pain",
+                "severity": "Variable",
+                "pattern": "May be localized to a specific area"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "May be localized to a specific area"
+            },
+            {
+                "name": "Spastic paraparesis",
+                "severity": "Variable",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Band-like sensation",
+                "severity": "Variable",
+                "pattern": "Around the abdomen"
+            },
+            {
+                "name": "Tingling paraesthesia",
+                "severity": "Variable",
+                "pattern": "In lower limbs"
+            },
+            {
+                "name": "Deterioration of consciousness",
+                "severity": "Variable",
+                "pattern": "Can occur in severe cases"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Variable",
+                "pattern": "Can occur in severe cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Can be elevated (e.g., 140/110 mmHg)",
+            "heart_rate": "Can be normal or slightly elevated",
+            "body_temperature": "Can be elevated (e.g., 39\u00b0C)"
+        },
+        "physical_findings": [
+            "Multiple vesicles and pustules",
+            "Decreased strength in lower limbs (variable grades)",
+            "Decreased sensation in lower limbs (variable modalities and levels)",
+            "Exaggerated deep tendon reflexes",
+            "Positive Babinski sign",
+            "Reduced anal tone",
+            "Macular scarred lesions"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated (e.g., 7.09 x 103/mL, 7830/mm3)",
+            "protein_in_csf": "Elevated (e.g., 442.5 mg/dL, 1.134 g/l)",
+            "white_blood_cell_count_in_csf": "Elevated (e.g., 1076 cells/\u03bcL, 40 cells/\u00b5L)",
+            "VZV_igm_antibodies": "Positive in serum and CSF",
+            "VZV_igg_antibodies": "Positive in serum",
+            "VZV_dna_in_csf": "Positive by PCR"
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Advanced age",
+            "Primary VZV infection",
+            "VZV reactivation"
+        ],
+        "imaging_findings": {
+            "mri_spine": "Diffuse hyperintensity in spinal cord on T2-weighted images, often at a specific level (e.g., T4-T11, C6-C7)",
+            "mri_brain": "Increased signal intensity in certain lobes (e.g., right temporo-occipital lobe, left frontal lobe) suggesting encephalitis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with myelitis (e.g., weakness, sensory loss, bladder/bowel dysfunction)",
+            "Evidence of VZV infection (e.g., positive serology, PCR detection of VZV DNA in CSF)"
+        ],
+        "supportive": [
+            "Characteristic MRI findings",
+            "Elevated protein and white blood cell count in CSF"
+        ]
+    },
+    "differential_diagnoses": [
+        "Transverse myelitis due to other causes (e.g., autoimmune diseases, infections with other viruses)",
+        "Spinal cord infarction",
+        "Guillain-Barr\u00e9 syndrome",
+        "Compressive lesions of the spinal cord"
+    ]
+}

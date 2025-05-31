@@ -1,0 +1,78 @@
+{
+    "disease": "Gonococcal spondylopathy",
+    "icd_code": "A5441",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "May affect one or more joints; can be migratory"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Pustules with erythematous base on hands or feet may be present"
+            },
+            {
+                "name": "Tenosynovitis",
+                "severity": "Variable",
+                "pattern": "May be present in small joints of hands"
+            },
+            {
+                "name": "Low back pain",
+                "severity": "Variable",
+                "pattern": "Often secondary to inflammatory sacroiliitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Joint inflammation",
+            "Erythematous pustules",
+            "Tenosynovitis"
+        ],
+        "lab_values": {
+            "Joint fluid analysis": {
+                "White blood cell count": "Elevated"
+            },
+            "Blood tests": {
+                "Erythrocyte sedimentation rate": "Elevated",
+                "C-reactive protein": "Elevated"
+            }
+        },
+        "risk_factors": [
+            "Gonorrhea infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Gonorrhea infection",
+            "Spondylopathy (inflammation of the spine)"
+        ],
+        "supportive": [
+            "Joint pain",
+            "Fever",
+            "Skin lesions",
+            "Elevated inflammatory markers"
+        ]
+    },
+    "differential_diagnoses": [
+        "Reactive arthritis",
+        "Gouty arthritis",
+        "Still's disease",
+        "Rheumatic fever",
+        "Psoriatic arthritis",
+        "Rheumatoid arthritis"
+    ]
+}

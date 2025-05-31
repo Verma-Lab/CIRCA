@@ -1,0 +1,65 @@
+{
+    "disease": "Malaria due to simian plasmodia",
+    "icd_code": "B531",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "other": "May vary depending on severity"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_smear": "Presence of Plasmodium parasites"
+        },
+        "risk_factors": [
+            "Travel to areas with simian malaria",
+            "Proximity to macaque monkeys and Anopheles mosquitoes"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood test for simian Plasmodium species (e.g., PCR)"
+        ],
+        "supportive": [
+            "Symptoms consistent with malaria",
+            "Travel history to endemic areas"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other types of malaria (Plasmodium falciparum, P. vivax, P. ovale, P. malariae)",
+        "Other infectious diseases with similar symptoms"
+    ]
+}

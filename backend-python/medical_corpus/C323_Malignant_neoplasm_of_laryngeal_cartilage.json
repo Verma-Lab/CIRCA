@@ -1,0 +1,28 @@
+{
+    "disease": "Malignant neoplasm of laryngeal cartilage",
+    "icd_code": "C32.3",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Bulging area at the front of the neck (Adam's apple), particularly noticeable in men"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse and dependence",
+            "Exposure to environmental tobacco smoke",
+            "Exposure to tobacco smoke in the perinatal period",
+            "History of tobacco dependence",
+            "Occupational exposure to environmental tobacco smoke",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

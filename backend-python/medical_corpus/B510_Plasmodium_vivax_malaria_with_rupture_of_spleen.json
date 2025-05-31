@@ -1,0 +1,141 @@
+{
+    "disease": "Plasmodium vivax malaria with rupture of spleen",
+    "icd_code": "B510",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Pallor",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Oliguria",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Sweating",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Nausea and vomiting",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Left upper quadrant abdominal tenderness and rigidity",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Kehr's sign (left shoulder pain radiating from abdomen)",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Enlarged spleen (splenomegaly)",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Generalized myalgia",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Asthenia",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Hypotension",
+            "heart_rate": "Tachycardia"
+        },
+        "physical_findings": [
+            "Pallor",
+            "Sweating",
+            "Left hypochondriac region tenderness",
+            "Rebound tenderness",
+            "Abdominal guarding",
+            "Enlarged spleen"
+        ],
+        "lab_values": {
+            "hemoglobin": "<5.53 g/dL",
+            "hematocrit": "<15.98%",
+            "platelets": "<22,000/mm3",
+            "total_bilirubin": ">1.59 mg/dL",
+            "indirect_bilirubin": ">1.48 mg/dL",
+            "creatinine": ">3.1 mg/dL",
+            "INR": ">1.43",
+            "parasitemia": "Variable, can be low despite severe clinical presentation"
+        },
+        "risk_factors": [
+            "Plasmodium vivax infection",
+            "Acute infection",
+            "Primary attack",
+            "Splenomegaly"
+        ],
+        "imaging_findings": {
+            "ultrasound": "Free fluid in splenorenal space and pelvis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Plasmodium vivax infection",
+            "Splenic rupture confirmed by imaging (e.g., ultrasound)"
+        ],
+        "supportive": [
+            "Symptoms and signs of splenic rupture (abdominal pain, tenderness, hypotension, etc.)",
+            "Abnormal laboratory findings (anemia, thrombocytopenia, etc.)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,101 @@
+{
+    "disease": "Tuberculosis of spleen",
+    "icd_code": "A1885",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever of unknown origin (FUO)",
+                "severity": "Variable",
+                "pattern": "Insidious onset, high-grade in some cases"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Moderate to gross",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Moderate",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Hypersplenism",
+                "severity": "Variable",
+                "pattern": "Present in some cases, with bleeding manifestations (melaena, hematemesis)"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Dull aching pain in left hypochondrium, dragging in nature, non-radiating, gradually progressive"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Present in some cases, emaciation"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in some cases, pronounced"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases, diffuse"
+            },
+            {
+                "name": "Frequent bowel movements",
+                "severity": "Variable",
+                "pattern": "Watery stools, not associated with blood or mucus"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (100.4\u00b0F or higher in some cases)",
+            "pulse": "Elevated (100 bpm in some cases)"
+        },
+        "physical_findings": [
+            "Splenomegaly (moderate to gross)",
+            "Hepatomegaly",
+            "Pallor",
+            "Ascites (in some cases)"
+        ],
+        "lab_values": {
+            "Hemoglobin": "Decreased (<10 g/dL in some cases)",
+            "Leukocyte count": "Decreased (<4,000/uL in some cases)",
+            "Platelet count": "Decreased (<1.5 \u00d7 105/mm3 in some cases)",
+            "ESR": "Elevated (64 mm in the first hour in some cases)",
+            "CRP": "Elevated (90 mg/dL in some cases)",
+            "Acid-fast bacilli (AFB)": "Positive in sputum in some cases, negative in splenic aspirate in some cases"
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Disseminated tuberculosis",
+            "HIV infection (although cases in immunocompetent individuals are reported)"
+        ],
+        "imaging_findings": {
+            "Ultrasound": "Splenomegaly, multiple small hypoechoic lesions, multiple abscesses (in some cases)",
+            "CT scan": "Splenomegaly, multiple hypodense lesions, splenic abscesses (in some cases), large circular lesion of mixed density (in some cases), small patches of low-density liquefaction necrosis (in some cases)",
+            "MRI": "Large lesion with high T2 signal, equal or slightly high heterogeneous T1-weighted signal, and visibly high diffusion-weighted signal (in some cases)",
+            "Chest X-ray": "Normal in most cases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination of splenectomy specimen showing epithelioid granulomas with caseous necrosis"
+        ],
+        "supportive": [
+            "Clinical presentation with FUO and splenomegaly",
+            "Positive AFB stain or culture (although often negative)",
+            "Imaging findings suggestive of splenic lesions",
+            "Positive tuberculin skin test"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lymphomatous infiltration",
+        "Sarcoidosis",
+        "Fungal infection",
+        "Multiple pyogenic abscesses",
+        "Splenic abscess"
+    ]
+}

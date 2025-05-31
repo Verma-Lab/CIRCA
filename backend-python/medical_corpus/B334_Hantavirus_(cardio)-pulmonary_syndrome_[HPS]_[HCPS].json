@@ -1,0 +1,146 @@
+{
+    "disease": "Hantavirus (cardio)-pulmonary syndrome [HPS] [HCPS]",
+    "icd_code": "B334",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Prodromal"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Prodromal"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Prodromal"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Prodromal"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Progressive",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Progressive",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Hypoxaemia",
+                "severity": "Progressive",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Pulmonary edema",
+                "severity": "Severe",
+                "pattern": "Late"
+            },
+            {
+                "name": "Cardiogenic shock",
+                "severity": "Life-threatening",
+                "pattern": "Late"
+            },
+            {
+                "name": "Hemorrhagic complications",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Variable",
+                "pattern": "Late"
+            },
+            {
+                "name": "Intense prostration",
+                "severity": "Variable",
+                "pattern": "Late"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Late"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Late"
+            },
+            {
+                "name": "Respiratory discomfort",
+                "severity": "Variable",
+                "pattern": "Late"
+            },
+            {
+                "name": "Cough with blood",
+                "severity": "Variable",
+                "pattern": "Late"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Prodromal"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Prodromal"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "pulse_rate": ">125 beats/min",
+            "respiratory_rate": ">32 breaths/min",
+            "blood_oxygen_saturation": "<90% on room air"
+        },
+        "physical_findings": [
+            "Bilateral diffuse alveolar pulmonary infiltrates (chest X-ray)",
+            "Universally audible vesicular murmurs without adventitious sounds (auscultation)"
+        ],
+        "lab_values": {
+            "hemoglobin": ">18.3 g/dL",
+            "hematocrit": ">50.4%",
+            "total_leukocyte_count": "6,200/mm3 with left shift",
+            "platelet_count": "<68,000/mm3",
+            "creatinine": ">1.83 mg/dL",
+            "urea": ">22 mg/dL",
+            "alanine_aminotransferase": ">60 IU/L",
+            "aspartate_aminotransferase": ">120 IU/L"
+        },
+        "risk_factors": [
+            "Rodent infestation in or around dwelling",
+            "Cleaning out rodent-contaminated enclosed areas",
+            "Exposure to rodent excreta via aerosol"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Bilateral, diffuse alveolar pulmonary infiltrates"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with HCPS (fever, headache, myalgias, gastrointestinal symptoms, followed by progressive respiratory distress, hypoxaemia, and potentially shock)",
+            "Detection of hantavirus RNA in blood or respiratory samples via RT-PCR"
+        ],
+        "supportive": [
+            "Characteristic imaging findings (bilateral pulmonary infiltrates)",
+            "Laboratory abnormalities (thrombocytopenia, leukocytosis, hemoconcentration, elevated liver enzymes)"
+        ]
+    },
+    "differential_diagnoses": [
+        "COVID-19",
+        "Influenza",
+        "Other respiratory infections"
+    ]
+}

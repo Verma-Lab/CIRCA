@@ -1,0 +1,100 @@
+{
+    "disease": "Malignant melanoma of unspecified ear and external auricular canal",
+    "icd_code": "C4320",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ear pain",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bleeding from the ear",
+                "severity": "Intermittent",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Postauricular swelling",
+                "severity": "Present",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Mass in the external auditory canal",
+                "severity": "Present",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Long-standing",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Otorrhea",
+                "severity": "Present",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bloody discharge",
+                "severity": "Present",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Mild",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "afebrile"
+        },
+        "physical_findings": [
+            "3x3cm spherical swelling in the right post auricular region",
+            "Swelling variable in consistency and very tender",
+            "Skin over swelling stretched, shiny, and smooth except for a small 0.5x0.5cm irregular ulcer with indurated margins in the inferior part of the swelling which was bleeding",
+            "Bluish-black mass arising in the EAC",
+            "Left sided parotid and preauricular lymph node swellings"
+        ],
+        "lab_values": {
+            "HMB 45": "Positive",
+            "S100": "Positive",
+            "Vimentin": "Positive"
+        },
+        "risk_factors": [
+            "Frequent sun exposure",
+            "Fair skin",
+            "Lack of hair covering ears",
+            "Family history of melanoma (approximately 10% of patients)"
+        ],
+        "imaging_findings": {
+            "CT scan of the right temporal bone": "Large ill-defined homogenous, moderately enhancing infiltrative soft tissue lesion occupying the entire EAC causing widening and erosion of anterior, posterior and inferior walls of the bony part of the EAC. Scutum, long process and the lenticular process of incus appeared irregular and eroded.",
+            "Chest X-ray": "No evidence of metastasis",
+            "Ultrasound abdomen": "No evidence of metastasis",
+            "Whole body scan": "No evidence of metastasis",
+            "Bone scan": "Increased tracer concentration in the right temporal bone - possibility of a neoplastic lesion"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing sheets and nests of atypical melanocytes with large pleomorphic nuclei with prominent nucleoli. Cytoplasm may or may not contain melanin pigment.",
+            "Immunohistochemistry positive for HMB45 and S100"
+        ],
+        "supportive": [
+            "Clinical presentation with ear pain, bleeding, postauricular swelling, and mass in the external auditory canal",
+            "Imaging findings consistent with malignant melanoma"
+        ]
+    },
+    "differential_diagnoses": [
+        "Aural polyp",
+        "Mastoid abscess",
+        "Tubercular otitis media",
+        "Fungal granuloma",
+        "Haemangioma",
+        "Nevus",
+        "Adenoid cystic carcinoma",
+        "Squamous cell carcinoma",
+        "Adenocarcinoma",
+        "Basal cell carcinoma",
+        "Mucoepidermoid carcinoma"
+    ]
+}

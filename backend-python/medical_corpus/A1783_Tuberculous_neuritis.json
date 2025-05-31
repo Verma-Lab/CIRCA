@@ -1,0 +1,157 @@
+{
+    "disease": "Tuberculous neuritis",
+    "icd_code": "A1783",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Burning sensation",
+                "severity": "Severe",
+                "pattern": "Constant, involving both legs, present for 15 months"
+            },
+            {
+                "name": "Tingling sensation",
+                "severity": "Mild",
+                "pattern": "Involving both legs"
+            },
+            {
+                "name": "Pain",
+                "severity": "Severe",
+                "pattern": "Aggravated by walking on rough surfaces and cold air"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low grade",
+                "pattern": "Evening rise, present for six months"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Significant",
+                "pattern": "17 kg over six months"
+            },
+            {
+                "name": "Hyperaesthesia",
+                "severity": "Present",
+                "pattern": "Over lower limbs"
+            },
+            {
+                "name": "Allodynia",
+                "severity": "Present",
+                "pattern": "Over lower limbs"
+            },
+            {
+                "name": "Painless lump",
+                "severity": "Present",
+                "pattern": "In left breast, present for one month"
+            },
+            {
+                "name": "Mild pallor",
+                "severity": "Mild",
+                "pattern": "Present at presentation"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Significant",
+                "pattern": "Present at presentation"
+            },
+            {
+                "name": "Diminished breath sounds",
+                "severity": "Present",
+                "pattern": "Over right lung base"
+            },
+            {
+                "name": "Dullness on percussion",
+                "severity": "Present",
+                "pattern": "Over right lung base"
+            },
+            {
+                "name": "Firm, non-tender, mobile lump",
+                "severity": "Present",
+                "pattern": "In infero-lateral quadrant of left breast"
+            },
+            {
+                "name": "Progressive nodular swellings",
+                "severity": "Present",
+                "pattern": "Over right wrist joint, accompanied by mild pain for a year"
+            },
+            {
+                "name": "Crusting and ulceration",
+                "severity": "Present",
+                "pattern": "On one swelling"
+            },
+            {
+                "name": "Thickened superficial branch of right radial nerve",
+                "severity": "Gross",
+                "pattern": "Compared to contralateral side, no sensory loss"
+            },
+            {
+                "name": "Unilateral vision loss",
+                "severity": "Complete",
+                "pattern": "Left eye, progressing to bilateral"
+            },
+            {
+                "name": "Blurry vision",
+                "severity": "Present",
+                "pattern": "Right eye"
+            },
+            {
+                "name": "Headache",
+                "severity": "Present",
+                "pattern": "Left sided"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia"
+        },
+        "physical_findings": [
+            "Hyperaesthesia and allodynia over the soles of her feet",
+            "Diminished breath sounds over the right lung base with dullness on percussion",
+            "Firm, non-tender and mobile lump in the infero-lateral quadrant of the left breast",
+            "Three non-compressible, ill-defined swellings around the right wrist",
+            "Thickened superficial branch of the right radial nerve"
+        ],
+        "lab_values": {
+            "haemoglobin": "10.6 g/dL (anaemia)",
+            "ESR": "46 mm/hour (elevated)",
+            "albumin": "2.2 g/dL (hypoalbuminemia)",
+            "gammaglobulin": "4.6 g/dL (hypergammaglobulinemia)"
+        },
+        "risk_factors": [
+            "High prevalence of tuberculosis in developing countries",
+            "Immunocompromised status"
+        ],
+        "imaging_findings": {
+            "thoracic_radiography": "Inhomogeneous fluffy shadows in the left mid- and lower zones and the right lower zone, with multiple cavities",
+            "Ultrasound of breast mass": "Retro-mammary collection with internal echoes, extending from an erosion in the left fifth rib",
+            "MRI of right wrist": "Tenosynovitis of the extensor pollicis brevis and abductor pollicis longus tendons",
+            "High-resolution ultrasound of right wrist": "Three hypoechoic lesions, thickening of the superficial branch of the radial nerve",
+            "Head CT": "No acute intracranial abnormalities",
+            "MRI of head, spine, and orbit": "Bilateral optic neuritis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive acid-fast bacilli (AFB) test from sputum or aspirate",
+            "Clinical presentation consistent with tuberculous neuritis (e.g., peripheral neuropathy, systemic symptoms)"
+        ],
+        "supportive": [
+            "Nerve conduction studies showing sensory neuropathy",
+            "Nerve biopsy suggestive of chronic axonopathy",
+            "Imaging findings consistent with tuberculosis (e.g., pulmonary infiltrates, lymphadenopathy)",
+            "Response to anti-tubercular therapy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Leprosy",
+        "Sporotrichosis",
+        "Sarcoidosis",
+        "Trauma-related causes",
+        "Diabetic complications",
+        "Connective tissue diseases",
+        "Guillain-Barre syndrome",
+        "Chronic inflammatory demyelinating polyneuropathy (CIDP)",
+        "Autoimmune diseases",
+        "Infectious causes (other than tuberculosis)",
+        "Nutritional deficiencies"
+    ]
+}

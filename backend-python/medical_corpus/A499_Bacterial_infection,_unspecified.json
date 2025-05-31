@@ -1,0 +1,68 @@
+{
+    "disease": "Bacterial infection, unspecified",
+    "icd_code": "A499",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Systemic"
+            },
+            {
+                "name": "Abscess",
+                "severity": "Variable",
+                "pattern": "Localized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (>37.5\u00b0C or 99.5\u00b0F)"
+        },
+        "physical_findings": [
+            "Redness",
+            "Pain",
+            "Swelling",
+            "Inflammation",
+            "Abscess (possible)"
+        ],
+        "lab_values": {
+            "blood culture": "Presence of bacteria"
+        },
+        "risk_factors": [
+            "Physical contact with infected person",
+            "Touching contaminated objects and surfaces",
+            "Animal or insect bites",
+            "Ingesting contaminated food and fluids"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Confirmation of bacterial infection through lab tests (e.g., blood culture)"
+        ],
+        "supportive": [
+            "Presence of symptoms such as redness, pain, swelling, inflammation, fever, and/or abscess"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,35 @@
+{
+    "disease": "Malignant neoplasm of sigmoid colon",
+    "icd_code": "C187",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Changes in bowel habits",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Blood in stool",
+                "severity": "Variable",
+                "pattern": "Intermittent or chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Mutations in tumor-suppressing genes (APC and TP53)"
+        ],
+        "imaging_findings": {
+            "colonoscopy": "Polypoid lesions (protruding into the lumen of the gastrointestinal tract)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant neoplasm in the sigmoid colon"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

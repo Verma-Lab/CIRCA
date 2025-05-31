@@ -1,0 +1,24 @@
+{
+    "disease": "Malignant neoplasm of lateral wall of nasopharynx",
+    "icd_code": "C112",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Exposure to environmental tobacco smoke",
+            "Exposure to tobacco smoke in the perinatal period",
+            "History of tobacco dependence",
+            "Occupational exposure to environmental tobacco smoke"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

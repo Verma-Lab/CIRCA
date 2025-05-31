@@ -1,0 +1,45 @@
+{
+    "disease": "Unspecified viral infection characterized by skin and mucous membrane lesions",
+    "icd_code": "B09",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesions",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Mucous membrane lesions",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesions",
+            "Mucous membrane lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of skin lesions",
+            "Presence of mucous membrane lesions",
+            "Viral etiology (unspecified)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Herpes simplex virus infection",
+        "Varicella (chickenpox)",
+        "Herpes zoster (shingles)",
+        "Smallpox",
+        "Monkeypox",
+        "Measles",
+        "Rubella (German measles)",
+        "Viral warts"
+    ]
+}

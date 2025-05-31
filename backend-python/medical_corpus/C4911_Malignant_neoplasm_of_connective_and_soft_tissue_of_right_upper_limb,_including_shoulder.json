@@ -1,0 +1,61 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of right upper limb, including shoulder",
+    "icd_code": "C4911",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless lump or swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Shoulder pain",
+                "severity": "Variable",
+                "pattern": "May occur if tumor presses on a nerve"
+            },
+            {
+                "name": "Numbness in the shoulder",
+                "severity": "Variable",
+                "pattern": "May occur if tumor presses on a nerve"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Variable",
+                "pattern": "May occur if tumor presses on surrounding muscles or blood vessels"
+            },
+            {
+                "name": "General malaise or weakness",
+                "severity": "Variable",
+                "pattern": "May occur with rapid progression"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass in the right upper limb or shoulder"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "X-ray": "May show a mass",
+            "CT scan": "Provides detailed images of the mass and surrounding structures",
+            "MRI": "Provides detailed images of the soft tissues, helpful in assessing tumor extent and involvement of nearby structures"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass in the right upper limb or shoulder",
+            "Histopathological confirmation of malignant neoplasm of connective or soft tissue"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with a soft tissue sarcoma",
+            "Elevated tumor markers (if applicable)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign soft tissue tumors",
+        "Other types of sarcoma (e.g., synovial sarcoma)",
+        "Inflammatory conditions",
+        "Cysts"
+    ]
+}

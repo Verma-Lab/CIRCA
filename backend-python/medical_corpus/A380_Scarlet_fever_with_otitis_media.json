@@ -1,0 +1,98 @@
+{
+    "disease": "Scarlet fever with otitis media",
+    "icd_code": "A38.0",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Scarlet fever rash",
+                "severity": "Variable",
+                "pattern": "Sandpaper-like rash, typically starting on the neck and chest, spreading to the rest of the body"
+            },
+            {
+                "name": "High fever",
+                "severity": "High",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Often severe"
+            },
+            {
+                "name": "Ear pain",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Variable",
+                "pattern": "Can be temporary or permanent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "White coating on the tongue",
+                "severity": "Variable",
+                "pattern": "Strawberry tongue"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (>38\u00b0C or 100.4\u00b0F)",
+            "heart_rate": "Elevated (tachycardia)"
+        },
+        "physical_findings": [
+            "Sandpaper-like rash",
+            "Strawberry tongue",
+            "Enlarged tonsils",
+            "Tenderness to palpation over the affected ear",
+            "Redness and swelling of the tympanic membrane (otitis media)"
+        ],
+        "lab_values": {
+            "throat_culture": "Positive for Group A Streptococcus"
+        },
+        "risk_factors": [
+            "Poor hygiene",
+            "Inadequate nutrition",
+            "Close contact with infected individuals"
+        ],
+        "imaging_findings": {
+            "tympanometry": "Abnormal findings consistent with otitis media"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic rash",
+            "Positive throat culture for Group A Streptococcus",
+            "Symptoms of otitis media (ear pain, hearing loss, etc.)"
+        ],
+        "supportive": [
+            "Elevated temperature",
+            "Strawberry tongue",
+            "Abnormal tympanometry"
+        ]
+    },
+    "differential_diagnoses": [
+        "Streptococcal pharyngitis",
+        "Other bacterial infections",
+        "Viral infections"
+    ]
+}

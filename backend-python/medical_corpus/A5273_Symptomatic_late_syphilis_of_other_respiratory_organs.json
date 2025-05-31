@@ -1,0 +1,97 @@
+{
+    "disease": "Symptomatic late syphilis of other respiratory organs",
+    "icd_code": "A5273",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pleuritic chest pain",
+                "severity": "Worsening",
+                "pattern": "Gradual onset, four weeks duration"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "One week duration"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Moderate (2.5 kg over three weeks)",
+                "pattern": "Three weeks duration"
+            },
+            {
+                "name": "Scalp tenderness",
+                "severity": "Moderate",
+                "pattern": "Three weeks duration"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild, nonpruritic, nontender",
+                "pattern": "Three weeks duration, forehead, trunk, palms, and soles"
+            },
+            {
+                "name": "Red, painful eyes",
+                "severity": "Moderate",
+                "pattern": "Two weeks duration"
+            },
+            {
+                "name": "Cough",
+                "severity": "Unspecified",
+                "pattern": "Mentioned as a possible symptom in general description of pulmonary syphilis"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Unspecified",
+                "pattern": "Mentioned as a possible symptom in general description of pulmonary syphilis"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Unspecified",
+                "pattern": "Mentioned as a possible symptom in general description of pulmonary syphilis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "afebrile"
+        },
+        "physical_findings": [
+            "Macular rash predominantly on trunk and soles of feet, occasional scattered lesions on palms",
+            "No oral or genital lesions",
+            "Normal cardiovascular, respiratory, and abdominal examinations"
+        ],
+        "lab_values": {
+            "electrolytes": "within normal limits",
+            "creatinine": "within normal limits",
+            "calcium": "within normal limits",
+            "albumin": "within normal limits",
+            "urinalysis": "within normal limits",
+            "hepatitis A": "immune",
+            "hepatitis B": "immune",
+            "hepatitis C": "negative",
+            "HIV": "negative",
+            "mononucleosis": "negative",
+            "syphilis serology (EIA)": "positive",
+            "syphilis serology (RPR)": "reactive, titre 1:128",
+            "syphilis serology (TPPA)": "reactive",
+            "skin biopsy": "perivascular and interstitial mixed infiltrate of plasma cells with focal collections of histiocytes and giant cells. No organisms seen on Ziehl-Neelsen staining; dark-field microscopy not performed. PCR positive for syphilis (bmp, tpp-47, and polA genes)."
+        },
+        "risk_factors": [
+            "Sexually active with one male partner who had previously been treated for sexually transmitted infections"
+        ],
+        "imaging_findings": {
+            "chest radiograph": "1.5-cm rounded opacity in the left middle to lower lobe of her lung",
+            "CT scan": "Four necrotic-appearing nodules in the right middle lobe and both lower lobes of the lungs (6\u201329 mm in diameter). Almost complete resolution three months after treatment."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serologic tests for syphilis (e.g., EIA, RPR, TPPA)",
+            "Characteristic clinical presentation (e.g., rash, chest pain, etc.)",
+            "Imaging findings consistent with pulmonary syphilis (e.g., nodules)"
+        ],
+        "supportive": [
+            "Positive PCR for syphilis in tissue sample",
+            "Response to syphilis treatment"
+        ]
+    },
+    "differential_diagnoses": []
+}

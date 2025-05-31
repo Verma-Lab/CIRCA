@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data files - include only what's necessary
+# Keep specific data files you need
+*.pkl
+*.db
+# Keep the JSON files you specifically want to include
+# all_sources.json
+# diagnosis_combined_articles.json
+# etc.
+
+# Folders you want to exclude
+chroma_data/
+corpus/
+
+
+
+# Logs
+*.log
+corpus_builder.log
+
+# Large files
+# Consider using Git LFS for files over 100MB
+# https://git-lfs.github.com/
+
+# Local configuration
+.env
+.venv
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.dbop8imize-58b8c4ee316b.json

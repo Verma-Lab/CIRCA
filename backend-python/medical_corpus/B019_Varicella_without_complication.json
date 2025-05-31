@@ -1,0 +1,43 @@
+{
+    "disease": "Varicella without complication",
+    "icd_code": "B019",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Small red blisters and pustules",
+                "severity": "Variable",
+                "pattern": "All over the body, except palms and soles"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Small red blisters and pustules all over the body except palms and soles"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of characteristic small red blisters and pustules"
+        ],
+        "supportive": [
+            "Fever",
+            "Itching"
+        ]
+    },
+    "differential_diagnoses": []
+}

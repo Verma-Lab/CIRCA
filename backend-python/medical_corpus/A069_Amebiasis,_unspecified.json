@@ -1,0 +1,64 @@
+{
+    "disease": "Amebiasis, unspecified",
+    "icd_code": "A069",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Can be bloody"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Stomach cramps",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Stool changes",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Stool examination": {
+                "abnormal": "Presence of Entamoeba histolytica cysts or trophozoites"
+            },
+            "Blood test": {
+                "abnormal": "Presence of antibodies against E. histolytica"
+            }
+        },
+        "risk_factors": [
+            "Travel to areas with poor sanitation",
+            "Contact with contaminated food or water",
+            "Contact with fecal matter",
+            "Men who have sex with men",
+            "Immunocompromised individuals",
+            "Institutionalized populations",
+            "Recent immigrants"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Entamoeba histolytica in stool sample"
+        ],
+        "supportive": [
+            "Characteristic symptoms (diarrhea, nausea, stomach cramps, fever)",
+            "Positive serology for E. histolytica antibodies"
+        ]
+    },
+    "differential_diagnoses": []
+}

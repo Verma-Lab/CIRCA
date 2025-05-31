@@ -1,0 +1,78 @@
+{
+    "disease": "Basal cell carcinoma of skin of left ear and external auricular canal",
+    "icd_code": "C44219",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Canal mass",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Otorrhea",
+                "severity": "Variable",
+                "pattern": "Intermittent or chronic"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Facial nerve palsy",
+                "severity": "Variable",
+                "pattern": "May be present in advanced cases"
+            },
+            {
+                "name": "Pruritus",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Nodular mass in external auditory canal (EAC)",
+            "Polypoidal lesion",
+            "Purulent discharge",
+            "Intact tympanic membrane (in some cases)",
+            "Thickening of soft tissues in the external left auricle and EAC (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": [
+                "Bony canal erosion",
+                "Extension into middle ear and mastoid",
+                "Soft tissue extension",
+                "Extension into dura, cochlea, and petrous apex",
+                "Narrowing of EAC",
+                "Small nodule in posterior wall of EAC",
+                "Infiltrating process in inferior portion of EAC",
+                "Infiltration of external surface of parotid gland, tragus, antitragus, antihelix, and retroauricular groove"
+            ],
+            "MRI": [
+                "Soft tissue involvement",
+                "Loss of signal on T1",
+                "Contrast enhancement on T1 C+ (Gd)",
+                "Distinguishing tumor from fluid in middle ear and mastoid opacification",
+                "Contrast enhancing mass lesion"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of basal cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (mass, otorrhea, otalgia)",
+            "Imaging findings (CT and MRI)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Adenoid cystic carcinoma",
+        "Melanoma",
+        "External auditory canal cholesteatoma"
+    ]
+}

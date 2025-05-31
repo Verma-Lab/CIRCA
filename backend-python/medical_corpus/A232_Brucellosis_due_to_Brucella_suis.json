@@ -1,0 +1,138 @@
+{
+    "disease": "Brucellosis due to Brucella suis",
+    "icd_code": "A232",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intermittent fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Lower back pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Arthromyalgia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Sepsis",
+                "severity": "Severe",
+                "pattern": "Can occur in some cases"
+            },
+            {
+                "name": "Left chest discomfort",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Left chest induration",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Left chest edema",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Subjective low-grade fever",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Migration of AICD to left chest wall",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Intermittent, variable severity"
+        },
+        "physical_findings": [
+            "Inguinal lymph node enlargement",
+            "Left chest induration and edema"
+        ],
+        "lab_values": {
+            "WBC count": "Decreased (2.2 G/L)",
+            "Neutrophils": "Decreased (1.04 G/L)",
+            "Lymphocytes": "Decreased (0.76 G/L)",
+            "Hemoglobin": "Decreased (10.4 g/dL)",
+            "Platelets": "Decreased (91 G/L)",
+            "CRP": "Increased (53.4 mg/L, 150.9 mg/L)",
+            "AST": "Increased (74 IU/L)",
+            "ALT": "Increased (71 IU/L)",
+            "HIV": "Positive",
+            "Brucella antibody serology (ELISA)": "Positive (IgG 4.5)"
+        },
+        "risk_factors": [
+            "Contact with infected animals (swine)",
+            "Consumption of unpasteurized dairy products or undercooked meat",
+            "Inhalation of contaminated aerosols",
+            "Occupation involving animal contact (e.g., gold miner, hunter, butcher, veterinarian)",
+            "Handling of raw meat and blood from feral swine"
+        ],
+        "imaging_findings": {
+            "Chest-abdomen-pelvis CT": "Normal",
+            "Lumbar spine MRI": "Negative for spondylodiscitis",
+            "Transesophageal echocardiography": "Negative for native valve endocarditis",
+            "Transthoracic echocardiogram": "No vegetations",
+            "Positron emission tomography scan": "Increased fluorodeoxyglucose avidity of the generator pocket, surrounding soft tissue, and AICD leads in the left chest wall"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Brucella suis"
+        ],
+        "supportive": [
+            "Clinical symptoms (fever, weakness, arthromyalgia, etc.)",
+            "Elevated CRP",
+            "Positive Brucella antibody serology",
+            "Imaging findings consistent with brucellosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Ochrobactrum anthropi infection",
+        "Other causes of fever of unknown origin",
+        "Other zoonotic diseases"
+    ]
+}

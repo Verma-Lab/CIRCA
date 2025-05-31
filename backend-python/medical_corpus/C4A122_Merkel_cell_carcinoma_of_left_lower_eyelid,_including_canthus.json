@@ -1,0 +1,117 @@
+{
+    "disease": "Merkel cell carcinoma of left lower eyelid, including canthus",
+    "icd_code": "C4A122",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless nodule",
+                "severity": "Variable",
+                "pattern": "Solitary"
+            },
+            {
+                "name": "Rapid growth",
+                "severity": "Variable",
+                "pattern": "Over weeks to months"
+            },
+            {
+                "name": "Violaceous hue (purple-red)",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Occasional",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Satellite lesions",
+                "severity": "Occasional",
+                "pattern": "Can develop"
+            },
+            {
+                "name": "Madarosis (loss of eyelashes)",
+                "severity": "Partial or complete",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Telangiectatic vessels",
+                "severity": "Variable",
+                "pattern": "Overlying the lesion"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Occasional",
+                "pattern": "On manipulation"
+            },
+            {
+                "name": "Vision obstruction",
+                "severity": "Variable",
+                "pattern": "Can occur with large lesions"
+            },
+            {
+                "name": "Photophobic tears",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless solitary nodule",
+            "Violaceous (purple-red) hue",
+            "Possible ulceration",
+            "Satellite lesions",
+            "Madarosis (loss of eyelashes)",
+            "Telangiectatic vessels",
+            "Lymphadenopathy (in up to 37% of patients at diagnosis)",
+            "Red and swollen eyelid",
+            "Irregular mass on lower eyelid",
+            "Hard mass with poor mobility and unclear boundary"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 50 years",
+            "Immunosuppression",
+            "UV exposure",
+            "Fair skin"
+        ],
+        "imaging_findings": {
+            "CT": [
+                "Slightly hyperdense mass",
+                "Poorly demarcated from surrounding tissues",
+                "Markedly intense and tortuous vascular shadows"
+            ],
+            "MRI": [
+                "Slightly hyperintense on T2WI",
+                "Equal signal with soft tissue on T1WI",
+                "Mild enhancement on contrast-enhanced scans",
+                "Markedly enhanced tortuous vascular shadows"
+            ],
+            "PET/CT": [
+                "Increased 18F-FDG uptake in the lesion",
+                "Possible detection of metastases"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic features",
+            "Immunohistochemical staining positive for cytokeratin 8, 18, 19, and neuron-specific enolase, negative for S-100 protein"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with MCC (AEIOU mnemonic)",
+            "Imaging findings suggestive of malignancy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chalazion",
+        "Lipoma",
+        "Dermatofibroma",
+        "Cysts",
+        "Vascular lesions",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Sebaceous carcinoma",
+        "Cutaneous metastases from other cancers (especially metastatic small-cell lung cancer)"
+    ]
+}

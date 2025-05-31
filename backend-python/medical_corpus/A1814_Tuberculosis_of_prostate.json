@@ -1,0 +1,91 @@
+{
+    "disease": "Tuberculosis of prostate",
+    "icd_code": "A1814",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Lower urinary tract symptoms (LUTS)",
+                "severity": "Variable",
+                "pattern": "Irritative voiding (common), obstructive (can lead to surgery)"
+            },
+            {
+                "name": "Pelvic pain",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Genital pain",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Perineal pain",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Recurrent or persistent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Associated with acute prostatitis"
+            },
+            {
+                "name": "Hemospermia",
+                "severity": "Variable",
+                "pattern": "Can be a strong indicator"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Incidental finding during autopsy, biopsy, or prostatectomy"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "ESR": "Elevated (80% in one study)"
+        },
+        "physical_findings": [
+            "Enlarged prostate with hard consistency and nodules (suspicious for cancer)",
+            "Non-tender, nodular, firm to hard prostate (rarely enlarged)",
+            "Prostate abscess (with spontaneous drainage or requiring drainage)"
+        ],
+        "lab_values": {
+            "PSA": "Slightly elevated (mean 8.26-13.24 ng/ml, can be very high)",
+            "Urine analysis": "Sterile pyuria (common), negative urine culture (common)",
+            "Acid-fast bacilli (AFB) smear": "Positive in some cases (variable positivity rate)",
+            "Mycobacterium tuberculosis culture": "Positive in some cases (variable positivity rate)",
+            "PCR for M. tuberculosis": "Highly sensitive and specific (100% positivity in one study)"
+        },
+        "risk_factors": [
+            "History of pulmonary tuberculosis",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {
+            "Transrectal ultrasonogram (TRUS)": "Hypoechoic areas with irregular outlines, calcification"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing chronic granulomatous prostatitis with Langhans-type giant cells",
+            "Positive Mycobacterium tuberculosis culture",
+            "Positive PCR for M. tuberculosis"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with tuberculosis of the prostate",
+            "Abnormal imaging findings (TRUS)",
+            "Elevated PSA levels",
+            "Sterile pyuria",
+            "Positive AFB smear"
+        ]
+    },
+    "differential_diagnoses": [
+        "Prostate cancer",
+        "Benign prostatic hyperplasia",
+        "Chronic prostatitis",
+        "Prostatic abscess"
+    ]
+}

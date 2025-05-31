@@ -1,0 +1,34 @@
+{
+    "disease": "Squamous cell carcinoma of skin of unspecified eyelid, including canthus",
+    "icd_code": "C44121",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lesion on eyelid or canthus"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sun exposure",
+            "Chronic inflammation",
+            "Immunosuppression",
+            "Exposure to certain chemicals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation of a lesion on the eyelid or canthus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Malignant melanoma",
+        "Other skin cancers",
+        "Benign eyelid lesions"
+    ]
+}

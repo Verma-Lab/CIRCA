@@ -1,0 +1,51 @@
+{
+    "disease": "Mucocutaneous leishmaniasis",
+    "icd_code": "B552",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesions",
+                "severity": "Variable, can range from small and localized to large nodules or plaques",
+                "pattern": "Develops on exposed skin within weeks or months of infection; can appear later, sometimes in context of trauma; progresses from papules or plaques to ulcers with raised border and central crater; can be painless or painful if superinfected"
+            },
+            {
+                "name": "Mucosal ulcers",
+                "severity": "Can be severe, leading to facial disfigurement; potentially fatal if untreated",
+                "pattern": "Develops in nose, mouth, or throat; often appears years after initial skin lesions heal; can cause bleeding, stuffiness, inflamed mucosa, brassy cough, or hoarseness; in advanced cases, can lead to ulcerative destruction of mouth, nose, larynx, and pharynx"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesions (papules, nodules, plaques, ulcers)",
+            "Mucosal lesions (ulcers, inflammation)",
+            "Regional lymphadenopathy",
+            "Nodular lymphangitis",
+            "Nasal septum perforation (in advanced cases)",
+            "Laryngeal or tracheal damage (in advanced cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Travel to endemic areas",
+            "Exposure to infected sand flies",
+            "Occupational exposure to Leishmania parasites",
+            "Immunosuppression (e.g., HIV infection)",
+            "Poor housing and sanitation",
+            "Malnutrition (protein-energy deficiency, iron, vitamin A, zinc deficiency)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (skin and/or mucosal lesions)",
+            "Detection of Leishmania parasites or DNA in infected tissue (microscopic examination, culture, PCR)"
+        ],
+        "supportive": "Travel history to endemic areas"
+    },
+    "differential_diagnoses": [
+        "Leprosy",
+        "Squamous cell cancer",
+        "Fungal infections",
+        "Other skin infections"
+    ]
+}

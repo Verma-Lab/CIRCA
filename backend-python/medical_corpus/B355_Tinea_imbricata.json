@@ -1,0 +1,55 @@
+{
+    "disease": "Tinea imbricata",
+    "icd_code": "B355",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pruritus",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Dry skin",
+                "severity": "Variable",
+                "pattern": "Associated with scaling"
+            },
+            {
+                "name": "Scaling",
+                "severity": "Significant",
+                "pattern": "Abundant, thick scales, lamellar detachment"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Multiple brownish-red scaly papules",
+            "Annular and/or concentric rings",
+            "Serpiginous or polycyclic plaques with or without erythema",
+            "Overlapping lesions forming lamellar plaques",
+            "Appearance of overlapping roof tiles, lace, or fish scales"
+        ],
+        "lab_values": {
+            "KOH prep": {
+                "abnormal_range": "Short septate hyphae, numerous chlamydoconidia, no arthroconidia"
+            }
+        },
+        "risk_factors": [
+            "Living in primitive and isolated environments in developing countries",
+            "Indigenous populations in Southeast Asia, Oceania, and Central and South America",
+            "Travel history to endemic zones",
+            "Close contact with affected individuals",
+            "Severe malnutrition",
+            "Autosomal recessive gene (potential)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic skin lesions: scaly, concentric annular rings and overlapping plaques"
+        ],
+        "supportive": [
+            "Positive potassium hydroxide (KOH) wet-mount examination showing short septate hyphae, numerous chlamydoconidia, and no arthroconidia"
+        ]
+    },
+    "differential_diagnoses": []
+}

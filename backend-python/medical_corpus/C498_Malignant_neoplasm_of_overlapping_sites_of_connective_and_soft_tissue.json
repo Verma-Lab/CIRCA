@@ -1,0 +1,82 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of connective and soft tissue",
+    "icd_code": "C498",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be localized or widespread depending on location and extent of tumor"
+            },
+            {
+                "name": "Mass or lump",
+                "severity": "Variable",
+                "pattern": "Palpable mass or swelling in affected area"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Generalized weakness and tiredness"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained weight loss"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent fever"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Excessive sweating during sleep"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in advanced stages",
+            "respiratory_rate": "May be elevated in advanced stages",
+            "temperature": "May be elevated due to infection or inflammation"
+        },
+        "physical_findings": [
+            "Palpable mass or lump",
+            "Enlarged lymph nodes",
+            "Limited range of motion",
+            "Skin changes (e.g., discoloration, ulceration)"
+        ],
+        "lab_values": {
+            "Complete blood count (CBC)": "May show anemia, leukocytosis, or thrombocytopenia",
+            "Liver function tests (LFTs)": "May be abnormal if liver metastasis is present",
+            "Tumor markers": "May be elevated depending on the specific type of connective tissue tumor"
+        },
+        "risk_factors": [
+            "Exposure to radiation",
+            "Exposure to certain chemicals",
+            "Genetic predisposition",
+            "Previous cancer treatment"
+        ],
+        "imaging_findings": {
+            "X-ray": "May show bone destruction or soft tissue mass",
+            "CT scan": "Provides detailed images of the tumor and surrounding tissues",
+            "MRI": "Provides high-resolution images of soft tissues, helpful in assessing tumor extent",
+            "PET scan": "Detects metabolic activity of the tumor, useful in staging and monitoring treatment response"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant neoplasm in connective or soft tissue",
+            "Involvement of overlapping sites of connective and soft tissue"
+        ],
+        "supportive": [
+            "Imaging findings consistent with malignant neoplasm",
+            "Clinical symptoms and physical examination findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign tumors of connective and soft tissue",
+        "Inflammatory conditions",
+        "Other malignant neoplasms"
+    ]
+}

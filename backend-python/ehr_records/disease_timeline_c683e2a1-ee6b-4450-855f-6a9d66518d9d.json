@@ -1,0 +1,597 @@
+{
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "patient_name": "John Doe",
+  "primary_diagnosis": "Type 2 Diabetes Mellitus",
+  "confidence": 95,
+  "generated_at": "2025-05-22T18:01:42.897621",
+  "timeline_range": "1-year",
+  "timeline_data": [
+    {
+      "date": "2025-05-22",
+      "timepoint_label": "Initial",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Review current medications (crocin is not a standard diabetes medication and should be clarified)",
+        "Initiate Metformin 500mg twice daily with meals (if not contraindicated)",
+        "Provide education on diet and exercise for diabetes management",
+        "Refer to a certified diabetes educator"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.8%",
+          "interpretation": "Reflects average blood sugar over the past 2-3 months; target is <7%"
+        },
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "120-180 mg/dL",
+          "interpretation": "Target is 80-130 mg/dL"
+        },
+        {
+          "test": "Lipid Panel",
+          "expected_value": "Variable",
+          "interpretation": "Assess for dyslipidemia, common in T2DM"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function; elevated creatinine needs investigation"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Dyslipidemia",
+        "Kidney dysfunction"
+      ],
+      "notes": "Confirm current medications and address the use of crocin. Elevated creatinine requires further investigation to rule out diabetic nephropathy or other renal issues. Start lifestyle modifications immediately."
+    },
+    {
+      "date": "2025-06-22",
+      "timepoint_label": "Month 1",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Assess adherence to Metformin and lifestyle modifications",
+        "If HbA1c not improving, consider increasing Metformin dosage to 1000mg twice daily",
+        "Reinforce dietary and exercise recommendations"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "120-180 mg/dL",
+          "interpretation": "Monitor response to Metformin and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Gastrointestinal side effects from Metformin"
+      ],
+      "notes": "Monitor for side effects of Metformin. Emphasize the importance of consistent blood glucose monitoring at home."
+    },
+    {
+      "date": "2025-07-22",
+      "timepoint_label": "Month 2",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Assess adherence to Metformin and lifestyle modifications",
+        "If HbA1c not improving, consider adding a DPP-4 inhibitor (e.g., Sitagliptin 100mg daily)",
+        "Review dietary and exercise logs"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "110-170 mg/dL",
+          "interpretation": "Monitor response to Metformin and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin and DPP-4 inhibitors alone)"
+      ],
+      "notes": "Monitor for signs of hypoglycemia, although less likely with the current regimen. Reinforce the importance of regular exercise."
+    },
+    {
+      "date": "2025-08-22",
+      "timepoint_label": "Month 3",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Check HbA1c",
+        "Assess adherence to medications and lifestyle modifications",
+        "Adjust medications as needed based on HbA1c and blood glucose readings"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.0-7.5%",
+          "interpretation": "Assess overall glycemic control"
+        },
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "100-160 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin and DPP-4 inhibitors alone)"
+      ],
+      "notes": "HbA1c result will guide further treatment adjustments. If HbA1c is still above target, consider adding or switching medications."
+    },
+    {
+      "date": "2025-09-22",
+      "timepoint_label": "Month 4",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue current medications if HbA1c is within target range",
+        "If HbA1c is not within target range, consider adding an SGLT2 inhibitor (e.g., Empagliflozin 10mg daily) or a GLP-1 receptor agonist (e.g., Liraglutide 0.6mg subcutaneously daily)",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "90-150 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if considering SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "Carefully consider the patient's renal function and cardiovascular risk factors when choosing between an SGLT2 inhibitor and a GLP-1 receptor agonist."
+    },
+    {
+      "date": "2025-10-22",
+      "timepoint_label": "Month 5",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Assess adherence to medications and lifestyle modifications",
+        "Monitor for side effects of new medications",
+        "Adjust medications as needed based on blood glucose readings"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "90-140 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if on SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "Continue to emphasize the importance of lifestyle modifications. Monitor for any signs of complications."
+    },
+    {
+      "date": "2025-11-22",
+      "timepoint_label": "Month 6",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Check HbA1c",
+        "Assess adherence to medications and lifestyle modifications",
+        "Adjust medications as needed based on HbA1c and blood glucose readings"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.5-7.0%",
+          "interpretation": "Assess overall glycemic control"
+        },
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "80-130 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if on SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "HbA1c result will guide further treatment adjustments. If HbA1c is still above target, consider further medication adjustments or referral to an endocrinologist."
+    },
+    {
+      "date": "2025-12-22",
+      "timepoint_label": "Month 7",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue current medications if HbA1c is within target range",
+        "If HbA1c is not within target range, consider further medication adjustments or referral to an endocrinologist",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "80-130 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if on SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "Continue to monitor for any signs of complications. Emphasize the importance of regular follow-up appointments."
+    },
+    {
+      "date": "2026-01-22",
+      "timepoint_label": "Month 8",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Assess adherence to medications and lifestyle modifications",
+        "Monitor for side effects of medications",
+        "Adjust medications as needed based on blood glucose readings"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "80-130 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if on SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "Continue to reinforce the importance of lifestyle modifications. Address any barriers to adherence."
+    },
+    {
+      "date": "2026-02-22",
+      "timepoint_label": "Month 9",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Check HbA1c",
+        "Assess adherence to medications and lifestyle modifications",
+        "Adjust medications as needed based on HbA1c and blood glucose readings"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.5-7.0%",
+          "interpretation": "Assess overall glycemic control"
+        },
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "80-130 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if on SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "HbA1c result will guide further treatment adjustments. If HbA1c is consistently above target despite optimized therapy, consider referral to an endocrinologist for insulin initiation."
+    },
+    {
+      "date": "2026-03-22",
+      "timepoint_label": "Month 10",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue current medications if HbA1c is within target range",
+        "If HbA1c is not within target range, consider further medication adjustments or referral to an endocrinologist",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "80-130 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if on SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "Continue to monitor for any signs of complications. Emphasize the importance of regular foot exams and eye exams."
+    },
+    {
+      "date": "2026-04-22",
+      "timepoint_label": "Month 11",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "mild"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Assess adherence to medications and lifestyle modifications",
+        "Monitor for side effects of medications",
+        "Adjust medications as needed based on blood glucose readings"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Blood Glucose",
+          "expected_value": "80-130 mg/dL",
+          "interpretation": "Monitor response to medications and lifestyle changes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.5 mg/dL",
+          "interpretation": "Monitor kidney function"
+        },
+        {
+          "test": "eGFR",
+          "expected_value": ">60 mL/min/1.73 m2",
+          "interpretation": "Monitor kidney function, especially if on SGLT2 inhibitor"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Hypoglycemia (rare with Metformin, DPP-4 inhibitors, SGLT2 inhibitors, or GLP-1 receptor agonists alone)",
+        "UTIs (with SGLT2 inhibitors)",
+        "Gastrointestinal side effects (with GLP-1 receptor agonists)"
+      ],
+      "notes": "Continue to reinforce the importance of lifestyle modifications. Address any barriers to adherence. Review foot care practices."
+    }
+  ]
+}

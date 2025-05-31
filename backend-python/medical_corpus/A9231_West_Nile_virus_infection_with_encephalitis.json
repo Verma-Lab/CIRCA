@@ -1,0 +1,150 @@
+{
+    "disease": "West Nile virus infection with encephalitis",
+    "icd_code": "A9231",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "High",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Backache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Variable",
+                "pattern": "Can be severe, leading to flaccid paralysis"
+            },
+            {
+                "name": "Flaccid paralysis",
+                "severity": "Severe",
+                "pattern": "Asymmetric, with hyporeflexia, and without sensory impairment"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Variable",
+                "pattern": "Indicative of meningeal involvement"
+            },
+            {
+                "name": "Kernig's sign",
+                "severity": "Variable",
+                "pattern": "Indicative of meningeal involvement"
+            },
+            {
+                "name": "Brudzinski's sign",
+                "severity": "Variable",
+                "pattern": "Indicative of meningeal involvement"
+            },
+            {
+                "name": "Altered consciousness",
+                "severity": "Variable",
+                "pattern": "More common with cerebral involvement"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "More common with cerebral involvement"
+            },
+            {
+                "name": "Personality changes",
+                "severity": "Variable",
+                "pattern": "More common with cerebral involvement"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Long-term complication"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Long-term complication"
+            },
+            {
+                "name": "Depression",
+                "severity": "Variable",
+                "pattern": "Long-term complication"
+            },
+            {
+                "name": "Difficulty walking",
+                "severity": "Variable",
+                "pattern": "Long-term complication"
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Variable",
+                "pattern": "Long-term complication"
+            },
+            {
+                "name": "Memory loss",
+                "severity": "Variable",
+                "pattern": "Long-term complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "blood_pressure": "Potentially low"
+        },
+        "physical_findings": [
+            "Maculopapular rash",
+            "Swollen lymph glands",
+            "Muscle weakness and flaccid paralysis"
+        ],
+        "lab_values": {
+            "IgM antibodies": "Elevated in serum or CSF"
+        },
+        "risk_factors": [
+            "Age > 50 years",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {
+            "MRI": "Often normal unless brain involvement and flaccid paralysis are present"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms suggestive of encephalitis",
+            "Detection of IgM antibodies in serum or CSF"
+        ],
+        "supportive": [
+            "Abnormal vital signs",
+            "Abnormal physical findings",
+            "Abnormal imaging findings"
+        ]
+    },
+    "differential_diagnoses": []
+}

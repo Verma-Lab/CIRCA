@@ -1,0 +1,50 @@
+{
+    "disease": "Foodborne Vibrio parahaemolyticus intoxication",
+    "icd_code": "A053",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Mild to moderate",
+                "pattern": "Most common symptom, usually self-limiting, lasting around three days but may last for one week"
+            },
+            {
+                "name": "Gastroenteritis",
+                "severity": "Variable",
+                "pattern": "Commonly follows ingestion of undercooked seafood"
+            },
+            {
+                "name": "Other symptoms",
+                "severity": "Variable",
+                "pattern": "May include nausea, vomiting, abdominal cramps"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in severe cases",
+            "heart_rate": "May be elevated in severe cases",
+            "blood_pressure": "May be affected in severe cases"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "stool_culture": "Positive for Vibrio parahaemolyticus"
+        },
+        "risk_factors": [
+            "Consumption of raw or undercooked seafood, especially shellfish (oysters, mussels, clams)",
+            "Exposure to contaminated seawater",
+            "Warmer water temperatures"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive stool culture for Vibrio parahaemolyticus"
+        ],
+        "supportive": [
+            "Symptoms of gastroenteritis (diarrhea, nausea, vomiting, abdominal cramps)",
+            "Recent consumption of raw or undercooked seafood",
+            "Exposure to contaminated seawater"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,102 @@
+{
+    "disease": "Other musculoskeletal tuberculosis",
+    "icd_code": "A1809",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Insidious onset, may be chronic"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "May be present at affected site"
+            },
+            {
+                "name": "Joint stiffness",
+                "severity": "Variable",
+                "pattern": "May be present at affected site"
+            },
+            {
+                "name": "Limited range of motion",
+                "severity": "Variable",
+                "pattern": "May be present at affected site"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present, especially in acute cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Paraplegia",
+                "severity": "Severe",
+                "pattern": "May occur in cases of spinal involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in acute cases",
+            "pulse": "May be elevated in acute cases",
+            "respiratory_rate": "May be elevated in acute cases"
+        },
+        "physical_findings": [
+            "Pain on palpation of affected area",
+            "Swelling of affected joint or area",
+            "Limited range of motion of affected joint",
+            "Deformity of affected bone or joint",
+            "Abscess formation (e.g., psoas abscess)",
+            "Sinus tracts"
+        ],
+        "lab_values": {
+            "ESR": "Elevated",
+            "CRP": "Elevated",
+            "Complete blood count": "May show anemia, leukocytosis"
+        },
+        "risk_factors": [
+            "Exposure to individuals with tuberculosis",
+            "Immunocompromised state (e.g., HIV infection)",
+            "Use of TNF-\u03b1 inhibitors",
+            "Foreign-born status",
+            "Previous tuberculosis infection"
+        ],
+        "imaging_findings": {
+            "X-ray": "May show bone destruction, joint space narrowing, periosteal reaction",
+            "CT scan": "Provides better visualization of bone and soft tissue involvement",
+            "MRI": "Imaging procedure of choice; shows bone marrow edema, soft tissue inflammation, and abscesses"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with musculoskeletal tuberculosis",
+            "Positive microbiological findings (culture, PCR) for Mycobacterium tuberculosis"
+        ],
+        "supportive": [
+            "Abnormal imaging findings (X-ray, CT, MRI)",
+            "Elevated inflammatory markers (ESR, CRP)",
+            "Response to anti-tuberculosis treatment"
+        ]
+    },
+    "differential_diagnoses": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Septic arthritis",
+        "Bone tumors",
+        "Malignancy"
+    ]
+}

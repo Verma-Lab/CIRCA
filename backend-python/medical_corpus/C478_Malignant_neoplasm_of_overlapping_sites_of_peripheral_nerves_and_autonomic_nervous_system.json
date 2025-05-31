@@ -1,0 +1,58 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of peripheral nerves and autonomic nervous system",
+    "icd_code": "C478",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Growing lump or mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Muscle movement difficulty",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Numbness or tingling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or lump",
+            "Muscle weakness or atrophy",
+            "Sensory deficits (numbness, tingling)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings suggestive of malignant peripheral nerve sheath tumor",
+            "Imaging evidence of a mass involving peripheral nerves and/or autonomic nervous system"
+        ],
+        "supportive": [
+            "Histopathological confirmation of malignancy"
+        ]
+    },
+    "differential_diagnoses": []
+}

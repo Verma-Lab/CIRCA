@@ -1,0 +1,44 @@
+{
+    "disease": "Yaba pox virus disease",
+    "icd_code": "B08.72",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cutaneous histiocytomas",
+                "severity": "Variable, may be large",
+                "pattern": "Appears 4-5 days post-infection, resolves in 2-3 months"
+            },
+            {
+                "name": "Mild fever",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Epidermal lesions",
+                "severity": "Mild",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Cutaneous histiocytomas on face, palms, digits, forearm, nose, sinuses, lips, and palate"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Direct contact with infected primates",
+            "Mosquito transmission"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of cutaneous histiocytomas"
+        ],
+        "supportive": [
+            "Exposure to infected primates",
+            "Epidemiological context"
+        ]
+    },
+    "differential_diagnoses": []
+}

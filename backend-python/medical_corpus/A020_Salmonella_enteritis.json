@@ -1,0 +1,68 @@
+{
+    "disease": "Salmonella enteritis",
+    "icd_code": "A020",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Usually starts 8-72 hours after exposure, can last up to 10 days"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Rose spots",
+                "severity": "Mild",
+                "pattern": "Tiny pink spots on the skin"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Tender abdomen",
+            "Rose spots (tiny pink spots on skin)"
+        ],
+        "lab_values": {
+            "stool culture": "Positive for Salmonella"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Undercooked meat, poultry, eggs",
+            "Unpasteurized milk",
+            "Poor hygiene",
+            "Weakened immune system",
+            "Travel to countries with poor sanitation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with Salmonella enteritis (diarrhea, fever, abdominal cramps)",
+            "Positive stool culture for Salmonella"
+        ],
+        "supportive": [
+            "Exposure to known risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

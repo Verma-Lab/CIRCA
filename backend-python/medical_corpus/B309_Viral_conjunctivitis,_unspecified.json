@@ -1,0 +1,85 @@
+{
+    "disease": "Viral conjunctivitis, unspecified",
+    "icd_code": "B309",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Redness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Itchy eyes",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Painful eyes",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Eyelid swelling",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Excessive tear fluid",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Mucus or pus discharge",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Swollen lymph nodes in front of the ear",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Unspecified",
+                "pattern": "Associated with upper respiratory infection"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Associated with upper respiratory infection"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Associated with upper respiratory infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Redness and inflammation of the conjunctiva",
+            "Possible follicular conjunctivitis (small, dome-shaped nodules)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Redness and inflammation of the conjunctiva"
+        ],
+        "supportive": [
+            "Symptoms of upper respiratory infection (sore throat, fever, headache)",
+            "Follicular conjunctivitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial conjunctivitis",
+        "Allergic conjunctivitis"
+    ]
+}

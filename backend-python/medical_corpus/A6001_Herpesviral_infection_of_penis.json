@@ -1,0 +1,104 @@
+{
+    "disease": "Herpesviral infection of penis",
+    "icd_code": "A60.01",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painful rash",
+                "severity": "Variable, can be severe during first outbreak",
+                "pattern": "Develops in genital area, often in clusters of small blisters that can tear open and weep, forming scabs as they heal; may also itch or burn"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate, more common during first outbreak",
+                "pattern": "Flu-like symptoms"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate, more common during first outbreak",
+                "pattern": "Often accompanies other symptoms"
+            },
+            {
+                "name": "General exhaustion",
+                "severity": "Mild to moderate, more common during first outbreak",
+                "pattern": "Often accompanies other symptoms"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Mild to moderate, more common during first outbreak",
+                "pattern": "Often accompanies other symptoms"
+            },
+            {
+                "name": "Swollen lymph nodes in groin",
+                "severity": "Mild to moderate, more common during first outbreak",
+                "pattern": "Often accompanies other symptoms"
+            },
+            {
+                "name": "Tingling sensation in genitals",
+                "severity": "Mild",
+                "pattern": "May precede outbreak"
+            },
+            {
+                "name": "Pain in bottom, hips, or legs",
+                "severity": "Mild to moderate",
+                "pattern": "May precede outbreak"
+            },
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Blisters and ulcers on cervix",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Ulcers and blisters on the inside of the back passage",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Small red or itchy area with one or two blisters",
+                "severity": "Mild",
+                "pattern": "May be the only symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small, painful blisters around the genitals",
+            "Shallow, sore ulcers",
+            "Swollen glands in the groin"
+        ],
+        "lab_values": {
+            "Herpes virus test": "Positive for herpes simplex virus (HSV-1 or HSV-2)"
+        },
+        "risk_factors": [
+            "Frequent changing sexual partners",
+            "Not using condoms",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive herpes virus test from a sample of cells from the affected area"
+        ],
+        "supportive": [
+            "Characteristic clinical presentation (blisters, ulcers, pain)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Yeast infections",
+        "Chlamydia",
+        "Psoriasis",
+        "Other sexually transmitted infections",
+        "Syphilis"
+    ]
+}

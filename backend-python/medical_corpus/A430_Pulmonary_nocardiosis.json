@@ -1,0 +1,127 @@
+{
+    "disease": "Pulmonary Nocardiosis",
+    "icd_code": "A430",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Breathlessness",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe, present at rest in some cases"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in many cases, can be productive"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases, often right-sided"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pneumonia-like symptoms",
+                "severity": "Variable",
+                "pattern": "Common presentation"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Progressive in some cases"
+            },
+            {
+                "name": "High-grade fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Can include loose stools, severe gastric disturbances"
+            },
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable",
+                "pattern": "Can include deranged consciousness"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Tachypnea (increased respiratory rate)",
+            "blood_pressure": "Not specified",
+            "heart_rate": "Not specified",
+            "temperature": "Fever in some cases",
+            "oxygen_saturation": "Can be decreased in severe cases (Type II respiratory failure)"
+        },
+        "physical_findings": [
+            "Decreased intensity of breath sounds",
+            "Bilateral expiratory wheeze",
+            "Crackles (abnormal lung sounds)",
+            "Bronchial breath sounds"
+        ],
+        "lab_values": {
+            "leukocytes": "Leukocytosis (increased white blood cell count), neutrophilia (increased neutrophils)",
+            "arterial_blood_gases": "Type II respiratory failure in some cases",
+            "sputum_culture": "Positive for Nocardia spp.",
+            "bronchoalveolar_lavage (BAL)": "Positive for Nocardia spp.",
+            "blood_culture": "Positive for Nocardia spp. in some cases",
+            "electrolytes": "Hyponatremia (low sodium), hypokalemia (low potassium) in some cases",
+            "complete_blood_count": "Pancytopenia (decreased blood cells) in some cases",
+            "acid-fast_stain": "Weak, acid-fast, filamentous bacilli resembling Nocardia spp."
+        },
+        "risk_factors": [
+            "Weakened immune system",
+            "Chronic lung problems (smoking, emphysema, tuberculosis)",
+            "Malignant tumor",
+            "Collagen vascular disease",
+            "Chronic obstructive pulmonary disease",
+            "Interstitial pneumonia",
+            "Treatment with steroids or immunosuppressants",
+            "Diabetes mellitus",
+            "Acquired immune deficiency syndrome"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": [
+                "Non-homogenous opacity",
+                "Air-fluid levels",
+                "Infiltrates",
+                "Homogenous opacity",
+                "Mass-like consolidations",
+                "Air bronchograms",
+                "Cavitating nodules",
+                "Necrotizing consolidation",
+                "Loculated hydropneumothorax",
+                "Residual fibrotic scarring"
+            ],
+            "chest_ct": [
+                "Necrotizing consolidation",
+                "Loculated hydropneumothorax",
+                "Cavitating nodules",
+                "Areas of necrotizing consolidation",
+                "Mass-like consolidations",
+                "Air bronchograms",
+                "Pleural effusion"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pulmonary nocardiosis (e.g., pneumonia-like symptoms, lung infiltrates)",
+            "Positive culture for Nocardia spp. from respiratory samples (sputum, BAL, etc.)"
+        ],
+        "supportive": [
+            "Characteristic Gram-positive rods on Gram stain",
+            "Abnormal findings on chest imaging (X-ray, CT)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Fungal infections",
+        "Lung cancer",
+        "Pneumonia (due to other organisms)"
+    ]
+}

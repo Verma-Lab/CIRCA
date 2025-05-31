@@ -1,0 +1,23 @@
+{
+    "disease": "Basal cell carcinoma of skin of nose",
+    "icd_code": "C44311",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Suspicious skin markings",
+            "Changes in skin appearance"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Increased sun exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

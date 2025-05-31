@@ -1,0 +1,111 @@
+{
+    "disease": "Zoster meningitis",
+    "icd_code": "B021",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can be severe"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Can precede other symptoms"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Painless rash",
+                "severity": "Variable",
+                "pattern": "May mimic atopic dermatitis; can be absent"
+            },
+            {
+                "name": "Occipital rash",
+                "severity": "Variable",
+                "pattern": "Can be present, often along the greater occipital nerve"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Poor appetite",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "37.5\u2103 - 38.7\u2103",
+            "heart_rate": "88 bpm"
+        },
+        "physical_findings": [
+            "Painless rash on the right side of the occipital region",
+            "Atopic dermatitis on back and lower legs",
+            "No nuchal rigidity or jolt accentuation of the neck",
+            "Spontaneous back pain consistent with lumbar herniation",
+            "No spinal tapping pain",
+            "Blurred lateral disc margins (in some cases)",
+            "Grade 1-2 disc swelling in both eyes (in some cases)",
+            "Changes on the inferior and superior arcuate (in some cases)",
+            "Clover-leaf peripheral visual field defect (in some cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "9.2 \u00d710\u2079/L (70.5% neutrophils, 15.5% lymphocytes, 12.0% monocytes, 2.0% atypical lymphocytes)",
+            "c_reactive_protein": "2.1\u2009mg/dL (<0.3)",
+            "serum_glucose": "151\u2009mg/dL (70\u2013140)",
+            "csf_white_blood_cell_count": "173 cells/\u03bcL (<5) (98% lymphocytes)",
+            "csf_protein": "168\u2009mg/dL (10\u201350)",
+            "csf_glucose": "28\u2009mg/dL (45\u201380)",
+            "csf_serum_glucose_ratio": "0.18 (0.5\u20130.8)",
+            "opening_pressure": "35 mmHg (in some cases)"
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Older age",
+            "Prior varicella infection",
+            "Herpes zoster"
+        ],
+        "imaging_findings": {
+            "mri": "No abnormal intracranial signals (in some cases)",
+            "ct": "Normal (in some cases)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive VZV PCR in CSF",
+            "Symptoms of meningitis (headache, fever, meningeal signs)"
+        ],
+        "supportive": [
+            "CSF lymphocytosis",
+            "Low CSF glucose levels",
+            "Herpes zoster rash (may be absent)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial meningitis",
+        "Viral meningitis (other viruses)",
+        "Aseptic meningitis",
+        "Idiopathic intracranial hypertension"
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "disease": "Measles complicated by otitis media",
+    "icd_code": "B053",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in measles"
+            },
+            {
+                "name": "Koplik's spots",
+                "severity": "Variable",
+                "pattern": "May be present in measles"
+            },
+            {
+                "name": "Maculopapular rash",
+                "severity": "Variable",
+                "pattern": "Starts on face and spreads downwards"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in measles"
+            },
+            {
+                "name": "Coryza",
+                "severity": "Variable",
+                "pattern": "Present in measles"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "Present in measles"
+            },
+            {
+                "name": "Ear pain",
+                "severity": "Variable",
+                "pattern": "Due to otitis media"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Variable",
+                "pattern": "Potential complication of otitis media"
+            },
+            {
+                "name": "Discharge from ear",
+                "severity": "Variable",
+                "pattern": "Potential complication of otitis media"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Koplik's spots (small, white spots on the buccal mucosa)",
+            "Maculopapular rash (starts on face and spreads downwards)",
+            "Erythematous tympanic membrane (in otitis media)",
+            "Tenderness to palpation of the ear (in otitis media)"
+        ],
+        "lab_values": {
+            "complete_blood_count": "May show leukopenia",
+            "viral_culture": "Positive for measles virus",
+            "serology": "Positive for measles IgM and IgG antibodies"
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Lack of measles vaccination",
+            "Exposure to measles virus",
+            "Age (young children are at higher risk)"
+        ],
+        "imaging_findings": {
+            "tympanometry": "Abnormal findings suggestive of otitis media"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with measles (fever, cough, coryza, conjunctivitis, rash)",
+            "Presence of otitis media (ear pain, erythematous tympanic membrane, possible discharge)"
+        ],
+        "supportive": [
+            "Positive measles serology",
+            "Positive viral culture for measles virus",
+            "Abnormal tympanometry"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rubella",
+        "Roseola infantum",
+        "Drug rash",
+        "Other viral exanthems"
+    ]
+}

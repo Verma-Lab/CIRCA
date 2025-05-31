@@ -1,0 +1,51 @@
+{
+    "disease": "Basal cell carcinoma of skin of lip",
+    "icd_code": "C4401",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hard, firm, crusted ulcer",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Nodule",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Papule",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Painless ulcer",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hard, firm, crusted, painless ulcer",
+            "Nodule",
+            "Papule"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Chronic sun exposure",
+            "UV radiation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological diagnosis of basal cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with basal cell carcinoma (e.g., nodule, papule, ulcer)",
+            "Location on the lip"
+        ]
+    },
+    "differential_diagnoses": []
+}

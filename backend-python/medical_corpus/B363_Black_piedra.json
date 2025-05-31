@@ -1,0 +1,57 @@
+{
+    "disease": "Black piedra",
+    "icd_code": "B363",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Difficulty in combing hair",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic, intermittent"
+            },
+            {
+                "name": "Blackish small nodules attached to scalp hair",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Raspy sensation when hair is pulled between fingers",
+                "severity": "Mild",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Multiple discrete firm to hard, brown to black tiny nodules attached to hair shaft",
+            "Nodules distributed irregularly along the length of hair shaft",
+            "Normal underlying scalp",
+            "Normal axillary and pubic hair"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Poor hygiene",
+            "Long hair",
+            "Excessive use of hair oil",
+            "Cultural practices such as tying of veil (especially when done on wet hair)",
+            "Humid tropical and semi-tropical climates"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of multiple brown to black oval nodules attached to hair shaft",
+            "KOH examination revealing concretion forming a collar around hair shaft made up of filamentous hyphae with spores at edges",
+            "Culture growing small, compact, blackish conical colonies with velvety surface",
+            "Microscopic examination of colonies showing round, dark brown, globus ascus confirmatory for Piedraia hortae"
+        ],
+        "supportive": [
+            "History of similar symptoms",
+            "Raspy sensation when hair is pulled"
+        ]
+    },
+    "differential_diagnoses": [
+        "Trichorrhexis nodosa",
+        "Monilethrix",
+        "Nits (pediculosis capitis)"
+    ]
+}

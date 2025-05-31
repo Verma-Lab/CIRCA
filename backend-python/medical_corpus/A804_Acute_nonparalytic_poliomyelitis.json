@@ -1,0 +1,103 @@
+{
+    "disease": "Acute nonparalytic poliomyelitis",
+    "icd_code": "A804",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Low fever",
+                "severity": "mild",
+                "pattern": "present in abortive poliomyelitis"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "mild",
+                "pattern": "present in abortive poliomyelitis"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "variable",
+                "pattern": "present in nonparalytic aseptic meningitis"
+            },
+            {
+                "name": "Stiff back",
+                "severity": "variable",
+                "pattern": "present in nonparalytic aseptic meningitis"
+            },
+            {
+                "name": "Stiff legs",
+                "severity": "variable",
+                "pattern": "present in nonparalytic aseptic meningitis"
+            },
+            {
+                "name": "Increased or abnormal sensations (pain in limbs, back, or neck)",
+                "severity": "variable",
+                "pattern": "present in nonparalytic aseptic meningitis"
+            },
+            {
+                "name": "Headache",
+                "severity": "variable",
+                "pattern": "present in nonparalytic aseptic meningitis"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "variable",
+                "pattern": "present in nonparalytic aseptic meningitis"
+            },
+            {
+                "name": "Malaise",
+                "severity": "mild",
+                "pattern": "present in minor infection"
+            },
+            {
+                "name": "Headache",
+                "severity": "mild",
+                "pattern": "present in minor infection"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "mild",
+                "pattern": "present in minor infection"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "mild",
+                "pattern": "present in minor infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "low-grade fever (present in abortive poliomyelitis and minor infection)"
+        },
+        "physical_findings": [
+            "Stiff neck and/or back (in nonparalytic aseptic meningitis)",
+            "No other remarkable physical findings (in minor infection)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Increasing age",
+            "Recent tonsillectomy or intramuscular injection",
+            "Pregnancy",
+            "Humoral immunodeficiency",
+            "Physical exertion concurrent with onset of the central nervous system phase"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Acute onset of flaccid paralysis of one or more limbs",
+            "Decreased or absent tendon reflexes in the affected limbs",
+            "Absence of other apparent cause",
+            "Absence of sensory or cognitive loss"
+        ],
+        "supportive": [
+            "Asymmetric paralysis",
+            "Descending paralysis",
+            "Epidemiologic clues (immunization history, recent travel, age, season)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Guillain-Barr\u00e9 syndrome",
+        "Other nonpolio enteroviruses (D68, A71, etc.)",
+        "West Nile virus"
+    ]
+}

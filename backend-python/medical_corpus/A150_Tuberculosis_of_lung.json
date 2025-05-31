@@ -1,0 +1,88 @@
+{
+    "disease": "Tuberculosis of lung",
+    "icd_code": "A150",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Nocturnal"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Elevated (potentially)"
+        },
+        "physical_findings": [
+            "Crackles or rales on auscultation",
+            "Decreased breath sounds",
+            "Dullness to percussion"
+        ],
+        "lab_values": {
+            "sputum_smear": "Acid-fast bacilli (AFB) positive",
+            "sputum_culture": "Mycobacterium tuberculosis growth",
+            "blood_tests": "Elevated inflammatory markers (e.g., ESR, CRP)"
+        },
+        "risk_factors": [
+            "HIV infection",
+            "Immunosuppression",
+            "Malnutrition",
+            "Diabetes",
+            "Smoking",
+            "Close contact with infected individual",
+            "Babies and children"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Infiltrates, cavities, nodules, hilar lymphadenopathy",
+            "CT_scan": "More detailed visualization of lung lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms suggestive of TB",
+            "Positive microbiological test (e.g., sputum smear, culture, molecular test)"
+        ],
+        "supportive": [
+            "Positive tuberculin skin test (TST) or interferon-gamma release assay (IGRA)",
+            "Abnormal chest X-ray findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lung cancer",
+        "Pneumonia",
+        "Lung abscess",
+        "Sarcoidosis",
+        "Histoplasmosis"
+    ]
+}

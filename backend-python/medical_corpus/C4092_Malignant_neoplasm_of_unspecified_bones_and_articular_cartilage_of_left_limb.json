@@ -1,0 +1,18 @@
+{
+    "disease": "Malignant neoplasm of unspecified bones and articular cartilage of left limb",
+    "icd_code": "C4092",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

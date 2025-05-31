@@ -1,0 +1,98 @@
+{
+    "disease": "Zygomycosis, unspecified",
+    "icd_code": "B469",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rhinocerebral infection",
+                "severity": "Severe",
+                "pattern": "Most frequently reported localized symptom"
+            },
+            {
+                "name": "Pulmonary infection",
+                "severity": "Severe",
+                "pattern": "Common localized symptom"
+            },
+            {
+                "name": "Cutaneous infection",
+                "severity": "Variable",
+                "pattern": "Common localized symptom"
+            },
+            {
+                "name": "Cerebral infection",
+                "severity": "Severe",
+                "pattern": "Common localized symptom"
+            },
+            {
+                "name": "Gastrointestinal infection",
+                "severity": "Severe",
+                "pattern": "Common localized symptom"
+            },
+            {
+                "name": "Disseminated infection",
+                "severity": "Severe",
+                "pattern": "Common localized symptom"
+            },
+            {
+                "name": "Nasal obstruction",
+                "severity": "Variable",
+                "pattern": "Associated with rhinocerebral infection"
+            },
+            {
+                "name": "Nasal discharge",
+                "severity": "Variable",
+                "pattern": "Associated with rhinocerebral infection"
+            },
+            {
+                "name": "Sinus pain",
+                "severity": "Variable",
+                "pattern": "Associated with rhinocerebral infection"
+            },
+            {
+                "name": "Subcutaneous swelling",
+                "severity": "Variable",
+                "pattern": "Associated with cutaneous or rhinocerebral infection"
+            },
+            {
+                "name": "Gangrene",
+                "severity": "Severe",
+                "pattern": "Associated with cutaneous infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Subcutaneous swelling (around nose and perinasal region, face, or limbs)",
+            "Generalized swelling of the face",
+            "Necrotic tissue"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised state (hematologic malignancies, bone marrow transplants, solid organ transplantation, drug-induced immunosuppression, HIV)",
+            "Diabetes mellitus",
+            "Neutropenia",
+            "Ketoacidosis",
+            "High serum iron concentrations",
+            "Major trauma",
+            "Thermal burns",
+            "Toxic epidermal necrolysis",
+            "Prolonged use of corticosteroids",
+            "Illicit intravenous drug use",
+            "Neonatal prematurity",
+            "Malnourishment",
+            "Previous exposure to antifungal drugs ineffective against zygomycetes"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with zygomycosis",
+            "Positive culture or histopathology demonstrating zygomycetes"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of zygomycosis",
+            "Presence of risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

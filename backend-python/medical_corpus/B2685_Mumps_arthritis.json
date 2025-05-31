@@ -1,0 +1,38 @@
+{
+    "disease": "Mumps arthritis",
+    "icd_code": "B2685",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint inflammation",
+                "severity": "Variable",
+                "pattern": "Acute monoarthritis (primarily)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Inflamed knee (reported case)"
+        ],
+        "lab_values": {
+            "Synovial fluid leucocytes": {
+                "abnormal_range": "4.3 x 10(9)/l (reported case)"
+            }
+        },
+        "risk_factors": [
+            "Mumps infection",
+            "Mumps vaccination (particularly in children under 5 years)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with arthritis"
+        ],
+        "supportive": [
+            "History of mumps infection or vaccination",
+            "Elevated synovial fluid leucocytes"
+        ]
+    },
+    "differential_diagnoses": []
+}

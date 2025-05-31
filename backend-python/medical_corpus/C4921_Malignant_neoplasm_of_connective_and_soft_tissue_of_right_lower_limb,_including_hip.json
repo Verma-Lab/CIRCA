@@ -1,0 +1,18 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of right lower limb, including hip",
+    "icd_code": "C4921",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,111 @@
+{
+    "disease": "Amebic brain abscess",
+    "icd_code": "A066",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Altered state of consciousness",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Moderate to Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Sleepiness",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Memory loss",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be absent or present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present in cases with disseminated amebiasis"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present in cases with disseminated amebiasis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "High (e.g., 149/100 mmHg)",
+            "temperature": "Variable, may be normal or elevated (e.g., 38\u00b0C)"
+        },
+        "physical_findings": [
+            "Pallor",
+            "Cognitive impairment",
+            "Bradypsychia",
+            "Disorientation in time and space",
+            "Difficulty in carrying out simple calculations",
+            "Absence of meningeal signs (in some cases)",
+            "Tachycardia (in some cases)",
+            "Tachypnea (in some cases)",
+            "Amebic skin lesions (in some cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Leucocytosis (e.g., 14 \u00d7 109/l)",
+            "serum_transaminases": "Elevated",
+            "c_reactive_protein": "Elevated (e.g., 308 mg/l)",
+            "procalcitonin": "Elevated (e.g., 39 ng/l)"
+        },
+        "risk_factors": [
+            "Infection of the colon by Entamoeba histolytica trophozoites",
+            "Travel to endemic areas",
+            "Poor sanitation",
+            "Compromised immune system",
+            "Pre-existing liver abscess",
+            "Alcohol and drug abuse"
+        ],
+        "imaging_findings": {
+            "nmri": "Multiple bilateral cystic lesions containing varying amounts of fluid; ring enhancement after contrast administration; lesions detected in frontal, temporal, and occipital lobes; supra- and infratentorial zones; may mimic neurocysticercosis",
+            "ct_scan": "Multiple liver abscesses (in cases with disseminated amebiasis); abscess in the right lower pulmonary lobe (in cases with disseminated amebiasis); small disseminated intraabdominal abscesses (in cases with disseminated amebiasis); pleural effusion (in cases with disseminated amebiasis)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with amebic brain abscess (e.g., altered mental status, focal neurological deficits)",
+            "Positive imaging findings (e.g., NMRI showing cystic lesions with ring enhancement)"
+        ],
+        "supportive": [
+            "Positive immunofluorescence study for the 140 kDa fibronectin receptor of E. histolytica",
+            "Positive PCR for E. histolytica in biopsy tissue",
+            "Positive visualization of E. histolytica trophozoites in tissue samples",
+            "Positive real-time PCR for E. histolytica in tissue or stool samples",
+            "History of travel to endemic areas or exposure to contaminated water/food"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neurocysticercosis",
+        "Pyogenic brain abscess",
+        "Brain tumor",
+        "Other parasitic infections (e.g., acanthamebiasis, naegleriasis)"
+    ]
+}

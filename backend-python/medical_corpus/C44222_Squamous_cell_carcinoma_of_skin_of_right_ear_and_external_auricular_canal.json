@@ -1,0 +1,116 @@
+{
+    "disease": "Squamous cell carcinoma of skin of right ear and external auricular canal",
+    "icd_code": "C44222",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Otorrhea",
+                "severity": "Frequent",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Frequent",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Frequent",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Frequent",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Facial palsy",
+                "severity": "Less frequent",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Aural or preauricular mass",
+                "severity": "Less frequent",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Ear fullness",
+                "severity": "Present in some cases",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Itching",
+                "severity": "Present in some cases",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Irregular cauliflower-like uneven neoplasm with stench and yellowish-white discharge",
+            "Ulcer easy bleeding",
+            "Swollen and movable lymph nodes in right supraclavicular fossa",
+            "Firm, red nodules and sores on skin of the ear with a scaly crust"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Chronic suppurative otitis media",
+            "Previous radiotherapy",
+            "Exposure to chemicals",
+            "Smoking",
+            "Actinic damage (sun exposure)",
+            "Chronic infection of the external auditory canal",
+            "Family history of skin cancer",
+            "Use of tobacco products",
+            "Age",
+            "Weakened immune system",
+            "Xeroderma pigmentosum"
+        ],
+        "imaging_findings": {
+            "CT scan": [
+                "Tumor mass filling right pinna and external auditory canal",
+                "Infiltration of right parotid, temporomandibular joint, external auditory canal, and middle ear",
+                "Metastasis of right neck lymph node",
+                "Destruction of right parotid, mandibular condyle, temporomandibular joint, external auditory canal, and middle ear",
+                "Involvement of left pterygoid muscle and temporomandibular joint",
+                "Destruction of submandibular gland and lymph, parapharyngeal space, masseter",
+                "Right ear mass extending along tragus, antitragus, replacing auricle and filling external auditory canal",
+                "Extension to tympanic membrane with thickening and probable atelectasis",
+                "Probable middle ear involvement",
+                "Sclerotic ossicles on right with generalized hyperostosis",
+                "Diffuse enhancement of mass with ulceration and hemorrhage",
+                "Right parotid lymph node enlargement",
+                "Diffuse and extensive right mastoiditis",
+                "Invasion of right lateral pterygoid muscle group and masseter space",
+                "Extension into calvarium without intracranial extension"
+            ],
+            "MRI": [
+                "Large right ear mass extending along tragus, antitragus, replacing auricle and filling external auditory canal",
+                "Extension to tympanic membrane with thickening and probable atelectasis",
+                "Probable middle ear involvement",
+                "Diffuse enhancement of mass with ulceration and hemorrhage",
+                "Right parotid lymph node enlargement",
+                "Diffuse and extensive right mastoiditis",
+                "Invasion of right lateral pterygoid muscle group and masseter space",
+                "Extension into calvarium without intracranial extension"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (otorrhea, otalgia, hearing loss, bleeding, facial palsy, mass)",
+            "Imaging findings (CT, MRI showing tumor extent and metastasis)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Adenoid cystic carcinoma",
+        "Ceruminous adenocarcinoma",
+        "Middle ear adenocarcinoma",
+        "Malignant otitis externa",
+        "Chronic suppurative otitis media"
+    ]
+}

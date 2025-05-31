@@ -1,0 +1,46 @@
+{
+    "disease": "Tuberculosis of intrathoracic lymph nodes",
+    "icd_code": "A154",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Often initial symptom"
+            },
+            {
+                "name": "Erythema nodosum",
+                "severity": "Variable",
+                "pattern": "Reddish nodules of inflammation on the skin"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Significant portion of patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Recent immigration",
+            "Exposure to individuals with active TB"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Enlarged and dense hilar shadows (lymphadenopathy)",
+            "Other imaging": "Radiological necrosis (in symptomatic patients), number of affected nodal stations, and largest node size were significantly greater in symptomatic patients"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with ITLNTB",
+            "Positive mycobacterial culture (e.g., from EBUS sampling)"
+        ],
+        "supportive": [
+            "Radiological findings of lymphadenopathy",
+            "Positive tuberculin skin test (TST)"
+        ]
+    },
+    "differential_diagnoses": []
+}

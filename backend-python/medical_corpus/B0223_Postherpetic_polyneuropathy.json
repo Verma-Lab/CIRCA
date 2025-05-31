@@ -1,0 +1,45 @@
+{
+    "disease": "Postherpetic neuralgia (PHN)",
+    "icd_code": "B02.23",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Burning pain",
+                "severity": "Variable, potentially debilitating",
+                "pattern": "Chronic, constant, intermittent, spontaneous, or evoked; localized, unilateral"
+            },
+            {
+                "name": "Allodynia",
+                "severity": "Variable",
+                "pattern": "Pain evoked by normally nonpainful stimuli (e.g., light touch)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Pain in the area of previous shingles rash",
+            "Possible scarring from previous rash"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Advanced age (especially >60 years)",
+            "Severe prodromal pain (pain before rash)",
+            "Severe rash",
+            "Shingles affecting trigeminal dermatomes or brachial plexus",
+            "Immunocompromised state",
+            "Prior herpes zoster infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Pain persisting >3 months after onset of shingles rash in the same affected area"
+        ],
+        "supportive": [
+            "History of herpes zoster (shingles)",
+            "Presence of allodynia",
+            "Pain localized to the dermatome affected by shingles"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,121 @@
+{
+    "disease": "West Nile virus infection, unspecified",
+    "icd_code": "A9230",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to high",
+                "pattern": "Present in most cases, can be persistent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to severe",
+                "pattern": "Common in both mild and severe cases"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Mild to moderate",
+                "pattern": "Common in mild cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to moderate",
+                "pattern": "Common in mild cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional in mild cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional in mild cases"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Mild",
+                "pattern": "Present in about half of cases, typically on the trunk"
+            },
+            {
+                "name": "Swollen lymph glands",
+                "severity": "Mild",
+                "pattern": "Occasional in mild cases"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Stupor",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Tremors",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever) in most cases, high fever in severe cases"
+        },
+        "physical_findings": [
+            "No specific findings in many cases",
+            "Skin rash (approximately 50% of cases)"
+        ],
+        "lab_values": {
+            "serology": "Detection of IgM and IgG antibodies against West Nile virus",
+            "PCR": "Detection of viral RNA in blood or CSF"
+        },
+        "risk_factors": [
+            "Exposure to mosquito bites (especially during peak mosquito season)",
+            "Age over 50",
+            "Immunocompromised status"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with West Nile virus infection (mild or severe)",
+            "Positive serological test (IgM and/or IgG antibodies)"
+        ],
+        "supportive": [
+            "Positive PCR test for West Nile virus RNA",
+            "Epidemiological link to areas with West Nile virus activity"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other viral infections (e.g., influenza, other arboviruses)",
+        "Bacterial meningitis",
+        "Encephalitis due to other causes"
+    ]
+}

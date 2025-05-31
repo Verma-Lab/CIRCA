@@ -1,0 +1,51 @@
+{
+    "disease": "Merkel cell carcinoma of left ear and external auricular canal",
+    "icd_code": "C4A22",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin growth",
+                "severity": "Variable",
+                "pattern": "Most often appears as a bump on the face, head, or neck; can occur anywhere on the body, especially sun-exposed skin"
+            },
+            {
+                "name": "Change in size, shape, or color of mole, freckle, or bump",
+                "severity": "Variable",
+                "pattern": "May indicate progression of the carcinoma"
+            },
+            {
+                "name": "Rapidly growing bump",
+                "severity": "Variable",
+                "pattern": "Characteristic of Merkel cell carcinoma"
+            },
+            {
+                "name": "Easy bleeding after minor injury",
+                "severity": "Variable",
+                "pattern": "May occur with the growth"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin growth (nodule) on the left ear and external auricular canal"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Long-term sun exposure",
+            "Weakened immune system",
+            "Skin that sunburns easily",
+            "Less melanin in the skin (more common in white people)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a rapidly growing skin lesion"
+        ],
+        "supportive": [
+            "Histopathological examination confirming the presence of Merkel cell carcinoma cells",
+            "Imaging studies to assess the extent of the tumor and presence of metastasis"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,23 @@
+{
+    "disease": "Malignant neoplasm of frontal sinus",
+    "icd_code": "C312",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a malignant tumor in the frontal sinus"
+        ],
+        "supportive": [
+            "Imaging findings consistent with a malignant neoplasm",
+            "Histopathological confirmation of malignancy"
+        ]
+    },
+    "differential_diagnoses": []
+}

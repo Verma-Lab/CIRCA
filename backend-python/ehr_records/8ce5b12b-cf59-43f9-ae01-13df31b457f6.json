@@ -1,0 +1,191 @@
+{
+  "id": "8ce5b12b-cf59-43f9-ae01-13df31b457f6",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Risk Assessment",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: Chest Pain\n\nSS (Subjective):\n\nPatient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: Chest Pain\n\nPatient describes no history of illness. Reports chest pain starting this morning, calling it a sharp, stabbing feeling on the left side, coming and going every 5-10 minutes. Says it\u2019s annoying as hell but denies shortness of breath, puking, or sweating. No recent bangs or bruises. No allergies or meds he\u2019s on.\n\nO (Objective):\n\n\nVitals (made up): BP 118/76 mmHg, HR 70 bpm, RR 14 breaths/min, Temp 98.7\u00b0F (37.1\u00b0C), SpO2 99% on room air.\n\nLooks fine\u2014awake, knows where he is, not freaking out.\n\nA (Assessment):\n\nGuess: Chest pain, no clue why yet\u2014maybe his ribs are pissed off, or could be his heart acting up, though he\u2019s young for that shit. Could be stress, could be nothing, could be something. Need more info.\n\nP (Plan):\n\n\nGet an ECG and chest X-ray to check his ticker and lungs. Tell him to chill out, no heavy lifting or running around. Throw him some ibuprofen, 400 mg if it\u2019s just sore muscles. Check back in a day or two, or sooner if it gets worse. Tell him if it feels like an elephant\u2019s sitting on his chest or he can\u2019t breathe, haul ass to the ER.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let\u2019s analyze this ECG. Here\u2019s a detailed breakdown of what I see, along with potential observations and considerations:\n\n**Overall Impression:**\n\nThis ECG shows a sinus rhythm, but there are some concerning features that warrant further investigation. The primary observation is the presence of significant left ventricular hypertrophy (LVH). \n\n**Detailed Analysis:**\n\n1. **Rate:** The heart rate appears to be approximately 75-85 beats per minute. This is within the normal range.\n\n2. **Rhythm:** The rhythm is regular, indicating sinus rhythm. The P waves are present and appear generally consistent with the QRS complexes. \n\n3. **P Waves:**  The P waves are present and appear normal in morphology.  They are upright in leads I, II, aVL, and V1-V6, suggesting normal atrial depolarization.\n\n4. **PR Interval:** The PR intervals are generally within the normal range (0.16-0.20 seconds).\n\n5. **QRS Complexes:** This is where the most significant findings lie.\n   * **Width:** The QRS complexes are wider than normal (greater than 0.12 seconds). This is a key indicator of LVH.\n   * **Morphology:** The QRS complexes are broader and more slurred, particularly in leads V1 and V2. This suggests increased ventricular depolarization time, consistent with thickening of the ventricular muscle. \n   * **Tall R Waves:** The R waves are notably tall, especially in leads V1, V2, V3, V4, V5, and V6. This is a classic finding of LVH. The tall R waves are likely a consequence of the increased muscle mass.\n\n6. **ST Segment and T Waves:**\n   * **ST Segment:** The ST segments are generally isoelectric (flat) except for subtle, possibly early signs of T-wave inversion in leads V4-V6.\n   * **T Waves:** The T waves are predominantly positive, but exhibit some degree of flattening, particularly in the later leads (V5 & V6). This can be associated with LVH and may indicate myocardial strain.\n\n7. **QT Interval:** The QT interval appears to be within normal limits.\n\n8. **Axis:** The QRS axis is slightly leftward, likely due to the left ventricular hypertrophy. \n\n**Significant Findings & Potential Abnormalities:**\n\n* **Left Ventricular Hypertrophy (\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nDETAILED_DESCRIPTION: 2006-02-16, side, room air, elephant, sitting, I, II, aVL, and V1-V6, and, , V2, V3, V4, V5, and V, -V6, V5 & V6\nBIOLOGICAL_STRUCTURE: Chest, chest, ribs, lungs, muscles, leads V1, V2, ventricular muscle, 6, leads V4, later leads\nSIGN_SYMPTOM: Pain, pain, shortness of breath, puking, sweating, bangs, bruises, awake, freaking out, sore, s, chest, can, t breathe, left ventricular, P waves, atrial depolarization, T-wave inversion\nHISTORY: of illness, allergies or meds he, s on, knows where, is, heavy lifting, running\nDURATION: morning, day\nLAB_VALUE: sharp, stabbing, and, 5-, minutes, 118/76 mmHg, 70 bpm, 14 breaths/min, 98.7\u00b0F, 99%, sinus rhythm, 75-85 beats per minute, regular, normal, upright, within, normal range, 0.16-0.20 seconds, wider than normal, than 0.12 seconds, broader, slurred, increased, Tall, tall, isoelectric, flat, predominantly positive, flattening, within normal limits, leftward\nDISTANCE: 10\nDIAGNOSTIC_PROCEDURE: Vitals, BP, HR, RR, Temp, SpO2, ECG, X-ray, ticker, heart rate, Rhythm, rhythm, P waves, S complexes, P Waves, leads, PR Interval, PR intervals, QRS Complexes, QRS complexes, ventricular depolarization time, R Waves, R waves, R, ST Segment, T Waves, ST segments, T waves, QT Interval, QT interval, QRS axis\nDISEASE_DISORDER: off, heart, up, stress, hypertrophy, LVH, thickening, myocardial strain, ricular, Hypertrophy\nTHERAPEUTIC_PROCEDURE: out\nMEDICATION: ibuprofen\nDOSAGE: 400 mg\nDATE: or two, 3/25/2025, 2025-03-25, 09:09\nNONBIOLOGICAL_LOCATION: ER\nSEVERITY: significant, subtle",
+  "recommendation": "Error",
+  "reasoning": "Failed to parse LLM response: sequence item 0: expected str instance, dict found",
+  "confidence": "0%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "perplexity",
+      "contents": "--- WEB CONTEXT FROM PERPLEXITY AI ---\n\nAssessing the cardiovascular and other health risks for a patient with conditions such as stress, hypertrophy, and a history of illness, allergies, or medications requires a comprehensive approach. Here's a breakdown of the risks and preventive measures:\n\n## Cardiovascular Risks\n\n1. **Stress**: Chronic stress can lead to increased inflammation, higher blood pressure, and increased risk of heart disease, including coronary artery disease, heart attacks, and strokes[1][3][5]. Stress can also exacerbate pre-existing heart conditions like arrhythmias[1].\n\n2. **Hypertrophy**: Cardiac hypertrophy, depending on its type, can be a response to exercise (physiological) or a pathological condition leading to heart failure. Pathological hypertrophy is associated with increased risk of heart failure and sudden death[2][4].\n\n3. **History of Illness**: Previous cardiovascular diseases or conditions like hypertension, diabetes, or high cholesterol increase the risk of further cardiovascular complications[5].\n\n4. **Allergies or Medications**: Certain medications or allergies can impact cardiovascular health. For example, some medications may increase blood pressure or heart rate[5].\n\n## Other Health Risks\n\n1. **Heavy Lifting**: Engaging in heavy lifting can increase the risk of musculoskeletal injuries and may also temporarily increase blood pressure, posing a risk for those with pre-existing cardiovascular conditions[2].\n\n2. **Running**: While generally beneficial for cardiovascular health, running can pose risks if not done appropriately, especially for those with pre-existing heart conditions. It's crucial to consult with a healthcare provider before starting a running regimen[2].\n\n3. **Abnormal Laboratory Values**: Abnormal lab values, such as high cholesterol or blood sugar levels, can indicate increased risk for cardiovascular diseases and require management through lifestyle changes or medication[5].\n\n## Risk Assessment\n\n- **Identify Specific Risks**: Determine the specific type of hypertrophy (physiological vs. pathological) and assess the impact of stress and other conditions on cardiovascular health.\n- **Medical History Review**: Review the patient's medical history to identify any previous illnesses or conditions that could increase cardiovascular risk.\n- **Medication Review**: Assess any medications the patient is taking and their potential impact on cardiovascular health.\n\n## Preventive Measures\n\n1. **Stress Management**: Engage in stress-reducing activities such as meditation, yoga, or walking. Improving sleep hygiene and maintaining social connections can also help manage stress[1][3].\n\n2. **Exercise**: Regular physical activity, tailored to the patient's health status, can improve cardiovascular health. For those with hypertrophic cardiomyopathy, exercise should be carefully managed under medical supervision[4].\n\n3. **Dietary Changes**: Adopt a healthy diet low in saturated fats and high in fruits and vegetables to reduce cardiovascular risk factors[5].\n\n4. **Regular Check-Ups**: Regular health check-ups can help monitor cardiovascular health and address any emerging issues early[3][5].\n\n5. **Medication Management**: Ensure that any medications are taken as prescribed and monitored for side effects[5].\n\n6. **Lifestyle Modifications**: Avoid heavy lifting if it poses a risk, and ensure that running or other strenuous activities are done under medical guidance if necessary[2][4].\n\nBy understanding these risks and implementing preventive measures, patients can significantly reduce their risk of cardiovascular complications and improve overall health.\n\nSOURCES:\n- https://www.yalemedicine.org/news/stress-affects-your-heart\n- https://pmc.ncbi.nlm.nih.gov/articles/PMC10861254/\n- https://www.pdcenterlv.com/blog/link-between-stressful-jobs-and-cardiovascular-health/\n- https://www.michiganmedicine.org/health-lab/exercising-hypertrophic-cardiomyopathy-i-want-be-fit-and-strong\n- https://www.ahajournals.org/doi/10.1161/CIRCIMAGING.120.010931\n\n"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let\u2019s analyze this ECG. Here\u2019s a detailed breakdown of what I see, along with potential observations and considerations:\n\n**Overall Impression:**\n\nThis ECG shows a sinus rhythm, but there are some concerning features that warrant further investigation. The primary observation is the presence of significant left ventricular hypertrophy (LVH). \n\n**Detailed Analysis:**\n\n1. **Rate:** The heart rate appears to be approximately 75-85 beats per minute. This is within the normal range.\n\n2. **Rhythm:** The rhythm is regular, indicating sinus rhythm. The P waves are present and appear generally consistent with the QRS complexes. \n\n3. **P Waves:**  The P waves are present and appear normal in morphology.  They are upright in leads I, II, aVL, and V1-V6, suggesting normal atrial depolarization.\n\n4. **PR Interval:** The PR intervals are generally within the normal range (0.16-0.20 seconds).\n\n5. **QRS Complexes:** This is where the most significant findings lie.\n   * **Width:** The QRS complexes are wider than normal (greater than 0.12 seconds). This is a key indicator of LVH.\n   * **Morphology:** The QRS complexes are broader and more slurred, particularly in leads V1 and V2. This suggests increased ventricular depolarization time, consistent with thickening of the ventricular muscle. \n   * **Tall R Waves:** The R waves are notably tall, especially in leads V1, V2, V3, V4, V5, and V6. This is a classic finding of LVH. The tall R waves are likely a consequence of the increased muscle mass.\n\n6. **ST Segment and T Waves:**\n   * **ST Segment:** The ST segments are generally isoelectric (flat) except for subtle, possibly early signs of T-wave inversion in leads V4-V6.\n   * **T Waves:** The T waves are predominantly positive, but exhibit some degree of flattening, particularly in the later leads (V5 & V6). This can be associated with LVH and may indicate myocardial strain.\n\n7. **QT Interval:** The QT interval appears to be within normal limits.\n\n8. **Axis:** The QRS axis is slightly leftward, likely due to the left ventricular hypertrophy. \n\n**Significant Findings & Potential Abnormalities:**\n\n* **Left Ventricular Hypertrophy ("
+    }
+  ],
+  "medical_entities": {
+    "DETAILED_DESCRIPTION": [
+      "2006-02-16",
+      "side",
+      "room air",
+      "elephant",
+      "sitting",
+      "I, II, aVL, and V1-V6",
+      "and",
+      ", V2, V3, V4, V5, and V",
+      "-V6",
+      "V5 & V6"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "Chest",
+      "chest",
+      "ribs",
+      "lungs",
+      "muscles",
+      "leads V1",
+      "V2",
+      "ventricular muscle",
+      "6",
+      "leads V4",
+      "later leads"
+    ],
+    "SIGN_SYMPTOM": [
+      "Pain",
+      "pain",
+      "shortness of breath",
+      "puking",
+      "sweating",
+      "bangs",
+      "bruises",
+      "awake",
+      "freaking out",
+      "sore",
+      "s",
+      "chest",
+      "can",
+      "t breathe",
+      "left ventricular",
+      "P waves",
+      "atrial depolarization",
+      "T-wave inversion"
+    ],
+    "HISTORY": [
+      "of illness",
+      "allergies or meds he",
+      "s on",
+      "knows where",
+      "is",
+      "heavy lifting",
+      "running"
+    ],
+    "DURATION": [
+      "morning",
+      "day"
+    ],
+    "LAB_VALUE": [
+      "sharp",
+      "stabbing",
+      "and",
+      "5-",
+      "minutes",
+      "118/76 mmHg",
+      "70 bpm",
+      "14 breaths/min",
+      "98.7\u00b0F",
+      "99%",
+      "sinus rhythm",
+      "75-85 beats per minute",
+      "regular",
+      "normal",
+      "upright",
+      "within",
+      "normal range",
+      "0.16-0.20 seconds",
+      "wider than normal",
+      "than 0.12 seconds",
+      "broader",
+      "slurred",
+      "increased",
+      "Tall",
+      "tall",
+      "isoelectric",
+      "flat",
+      "predominantly positive",
+      "flattening",
+      "within normal limits",
+      "leftward"
+    ],
+    "DISTANCE": [
+      "10"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "Vitals",
+      "BP",
+      "HR",
+      "RR",
+      "Temp",
+      "SpO2",
+      "ECG",
+      "X-ray",
+      "ticker",
+      "heart rate",
+      "Rhythm",
+      "rhythm",
+      "P waves",
+      "S complexes",
+      "P Waves",
+      "leads",
+      "PR Interval",
+      "PR intervals",
+      "QRS Complexes",
+      "QRS complexes",
+      "ventricular depolarization time",
+      "R Waves",
+      "R waves",
+      "R",
+      "ST Segment",
+      "T Waves",
+      "ST segments",
+      "T waves",
+      "QT Interval",
+      "QT interval",
+      "QRS axis"
+    ],
+    "DISEASE_DISORDER": [
+      "off",
+      "heart",
+      "up",
+      "stress",
+      "hypertrophy",
+      "LVH",
+      "thickening",
+      "myocardial strain",
+      "ricular",
+      "Hypertrophy"
+    ],
+    "THERAPEUTIC_PROCEDURE": [
+      "out"
+    ],
+    "MEDICATION": [
+      "ibuprofen"
+    ],
+    "DOSAGE": [
+      "400 mg"
+    ],
+    "DATE": [
+      "or two",
+      "3/25/2025",
+      "2025-03-25",
+      "09:09"
+    ],
+    "NONBIOLOGICAL_LOCATION": [
+      "ER"
+    ],
+    "SEVERITY": [
+      "significant",
+      "subtle"
+    ]
+  },
+  "analysis_date": "2025-03-25T12:48:04.219900",
+  "created_at": "2025-03-25T12:48:04.219903"
+}

@@ -1,0 +1,90 @@
+{
+    "disease": "Candidal meningitis",
+    "icd_code": "B375",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Prolonged, may be present in acute and chronic forms"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable, can be severe",
+                "pattern": "Progressive, present in most cases"
+            },
+            {
+                "name": "Altered consciousness",
+                "severity": "Variable, can range from lethargy to coma",
+                "pattern": "May be present, especially in severe cases"
+            },
+            {
+                "name": "Meningismus",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Focal neurological deficits",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present in chronic cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May accompany headache"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Nuchal rigidity"
+        ],
+        "lab_values": {
+            "CSF WBC count": "Elevated, neutrophilic or mononuclear pleocytosis",
+            "CSF protein": "Elevated",
+            "CSF glucose": "Decreased"
+        },
+        "risk_factors": [
+            "Immunocompromised state (hematological malignancy, lymphoblastic lymphoma, myelodysplasia with leukemia transformation)",
+            "Neurosurgical procedures",
+            "Presence of foreign intracranial materials (shunts, drains)",
+            "Disseminated candidiasis",
+            "Prior treatment with broad-spectrum antibiotics",
+            "Anemia"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show subarachnoid hemorrhage, hydrocephalus",
+            "MRI scan": "May show hydrocephalus, hematoma, mycotic aneurysm"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms suggestive of meningitis (fever, headache, altered consciousness, meningismus)",
+            "Positive CSF culture for Candida species (may require special techniques)"
+        ],
+        "supportive": [
+            "Elevated CSF WBC count with neutrophilic or mononuclear pleocytosis",
+            "Elevated CSF protein",
+            "Decreased CSF glucose",
+            "Imaging findings consistent with meningitis (e.g., hydrocephalus, hemorrhage)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial meningitis",
+        "Cryptococcal meningitis",
+        "Tuberculous meningitis",
+        "Other fungal meningitides"
+    ]
+}

@@ -1,0 +1,210 @@
+{
+  "id": "889fc658-371b-44cd-9073-9aa771219ac0",
+  "patient_id": "908b9209-245c-45cb-8558-ca4f2800962b",
+  "encounter_id": "c7a22607-5c2b-4e6d-b39d-f8ac89fd05f8",
+  "analysis_type": "Genetic Testing Recommendation",
+  "input_text": "Patient: Jorge Thomas, DOB: 1979-12-30, Gender: Male\n\nChief Complaint: headache\n\nS: No medical history\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- Chest Scan (3/24/2025): Chest scan\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: Chest Scan (2025-03-24T23:06:13.575979)]\nFile: images.jpeg\nDescription: Chest scan\nAnalysis: Okay, let\u2019s analyze this chest CT scan. Here's a detailed breakdown of what I observe, keeping in mind this is a visual interpretation and a full clinical context is needed for a definitive diagnosis:\n\n**Overall Impression:**\n\nThe scan shows a relatively unremarkable appearance of the lungs, with some concerning findings that warrant further investigation. The density is fairly uniform throughout, suggesting adequate aeration in most areas. However, there\u2019s a significant area of increased density within the left lower lobe.\n\n**Specific Findings:**\n\n1. **Left Lower Lobe Opacity:**  This is the most prominent finding. There\u2019s a large, ill-defined area of increased density (appearing whiter than normal lung tissue) in the lower lobe of the left lung. It\u2019s not sharply demarcated, which makes it harder to classify immediately. This suggests the presence of fluid, consolidation, or potentially a mass. \n\n2. **Hilar Enlargement:**  The hila (the areas where the bronchi and blood vessels enter the lungs) appear slightly enlarged on the left side. This can be due to several factors, including inflammation, fluid accumulation, or a mass compressing the vessels. \n\n3. **Subpleural Linear Opacities:**  I see some faint, linear (thin, elongated) areas of increased density along the lower posterior aspect of the left lower lobe. These could represent early signs of pneumonia, small airway disease, or even subpleural bleeding.\n\n4. **No Obvious Pleural Effusion:**  There's no obvious pleural effusion (fluid in the space between the lung and the chest wall) visible on this single slice. However, a full scan would be needed to rule this out completely. \n\n5. **Mediastinal Width:** The mediastinum (the space in the middle of the chest containing the heart, great vessels, and trachea) appears to be of normal width. \n\n6. **Cardiac Silhouette:** The cardiac silhouette appears normal in size and shape. \n\n**Possible Interpretations (Differential Diagnosis):**\n\nGiven these findings, several possibilities need to be considered:\n\n*   **Pneumonia:** The consolidation and subpleural linear opacities could represent an active pneumonia, particularly if the patient has symptoms like fever, cough, and shortness of breath.\n*   **Mass:** The ill-defined opacity in the left lower lobe raises the possibility of a lung mass (benign or malignant).\n*   **Lung Abscess:**  A localized\n",
+  "recommendation": "recommended",
+  "reasoning": "The chest scan reveals a significant left lower lobe opacity, hilar enlargement, and subpleural linear opacities.  These findings, while not definitive, raise concerns about several possibilities including pneumonia, a lung mass, or a lung abscess. The provided literature mentions imaging findings associated with Chronic Granulomatous Disease (CGD), including consolidation, ground-glass opacity, and other opacities in the lungs, which overlap with the findings in Jorge's chest scan.  Given the lack of a documented medical history and the concerning imaging results, genetic testing to rule out CGD and other potential rare genetic lung diseases is warranted.  The differential diagnosis includes several conditions that could benefit from genetic testing to confirm or rule out a diagnosis and guide appropriate treatment.  Further investigation is needed to determine the underlying cause of the lung abnormalities.  The absence of a detailed medical history makes it difficult to assess for other rare genetic diseases that might present with similar symptoms.",
+  "confidence": "60%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "cgd_txt_19",
+      "contents": "Other conditions associated with abnormal dihydrorhodamine (DHR) test results. Other conditions that may afect the ability of the neutrophil to generate the respiratory burst that is detected in the DHR assay include myeloperoxidase defciency (OMIM 254600) [Mauch et al 2007] and SAPHO (the syndrome of synovitis, acne, pustulosis, hyperostosis, and osteitis) [Daoussis et al 2019]. In these two conditions the DHR results are \nabnormal, but superoxide production levels and NBT staining are normal. In addition, neither of these syndromes has infection profles that overlap with CGD. \nRecently, acetominophen administration has been shown to afect the DHR assay and should be considered in the diferential of a low DHR response [Almutairi et al 2020]. \nManagement \nNo clinical practice guidelines for chronic granulomatous disease (CGD) have been published. \nEvaluations Following Initial Diagnosis \nTo establish the extent of disease and needs in an individual diagnosed with chronic granulomatous disease (CGD), the evaluations summarized in Table 5 (if not performed as part of the evaluation that led to the diagnosis) are recommended. \nTable 5. Recommended Evaluations Following Initial Diagnosis in Individuals with Chronic Granulomatous Disease (CGD) \nAffected Organs / Manifestations of CGD on Imaging \nLungs/pneumonia [Godoy et al 2008] \n\u2022 Chest x-ray. Consolidation, reticular nodular opacities, scarring   \n\u2022 CT \u26ac Consolidation, ground-glass opacity, tree-in-bud opacity, centrilobular or random nodules, septal thickening, air trapping, scarring \u26ac Empyema or abscess \u26ac Mediastinal or hilar adenopathy, honeycomb lung, pleural thickening in chronic cases \u26ac Contiguous spread to chest wall, associated osteomyelitis of ribs and vertebral bodies   \n\u2022 PET [G\u00fcng\u00f6r et al 2001]. Increased uptake at areas of consolidation \nLymph nodes / suppurative adenitis [Towbin & Chaves 2010] \nCT. Enhancing lymph node with central area of hypodensity and enhancing septations   \n",
+      "token_count": 480,
+      "sentence_count": 19
+    },
+    {
+      "id": "myotonia-c_txt_19",
+      "contents": "Author History \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "pf_txt_21",
+      "contents": "King TE Jr, Bradford WZ, Castro-Bernardini S, Fagan EA, Glaspole I, Glassberg MK, Gorina E, Hopkins PM, Kardatzke D, Lancaster L, Lederer DJ, Nathan SD, Pereira CA, Sahn SA, Sussman R, Swigris JJ, Noble PW, et al. A phase 3 trial of pirfenidone in patients with idiopathic pulmonary fbrosis. N Engl J Med. 2014;370:2083-92. PubMed PMID: 24836312.   \nKropski JA, Mitchell DB, Markin C, Polosukhin VV, Choi L, Johnson JE, Lawson WE, Phillips JA 3rd, Cogan JD, Blackwell TS, Loyd JE. A novel dyskerin (DKC1) mutation is associated with familial interstitial pneumonia. Chest. 2014;146:e1-7. PubMed PMID: 24504062.   \nKropski JA, Young LR, Cogan JD, Mitchell DB, Lancaster LH, Worrell JA, Markin C, Liu N, Mason WR, Fingerlin TE, Schwartz DA, Lawson WE, Blackwell TS, Phillips JA 3rd, Loyd JE. Genetic evaluation and testing of patients and families with idiopathic pulmonary fbrosis. Am J Respir Crit Care Med. 2017;195:1423-8. PubMed PMID: 27786550.   \nLee HY, Seo JB, Steele MP, Schwarz MI, Brown KK, Loyd JE, Talbert JL, Schwartz DA, Lynch DA. Highresolution CT scan fndings in familial interstitial pneumonia do not conform to those of idiopathic interstitial pneumonia. Chest. 2012;142:1577-83. PubMed PMID: 23364926.   \nMaher TM, Corte TJ, Fischer A, Kreuter M, Lederer DJ, Molina-Molina M, Axmann J, Kirchgaessler KU, Samara K, Gilberg F, Cottin V. Pirfenidone in patients with unclassifable progressive fbrosing interstitial lung disease: a double-blind, randomised, placebo-controlled, phase 2 trial. Lancet Respir Med.",
+      "token_count": 491,
+      "sentence_count": 21
+    },
+    {
+      "id": "cgd_txt_42",
+      "contents": "Godoy MC, Vos PM, Cooperberg PL, Lydell CP, Phillips P, M\u00fcller NL. Chest radiographic and CT manifestations of chronic granulomatous disease in adults. AJR Am J Roentgenol. 2008;191:1570\u20135. PubMed PMID: 18941103.   \nGono T, Yazaki M, Agematsu K, Matsuda M, Yasui K, Yamaura M, Hidaka F, Mizukami T, Nunoi H, Kubota T, Ikeda S. Adult onset X-linked chronic granulomatous disease in a woman patient caused by a de novo mutation in paternal-origin CYBB gene and skewed inactivation of normal maternal X chromosome. Intern Med. 2008;47:1053\u20136. PubMed PMID: 18520120.   \nGreenberg DE, Ding L, Zelazny AM, Stock F, Wong A, Anderson VL, Miller G, Kleiner DE, Tenorio AR, Brinster L, Dorward DW, Murray PR, Holland SM. A novel bacterium associated with lymphadenitis in a patient with chronic granulomatous disease. PLoS Pathog. 2006;2:e28. PubMed PMID: 16617373.   \nGreenberg DE, Goldberg JB, Stock F, Murray PR, Holland SM, Lipuma JJ. Recurrent Burkholderia infection in patients with chronic granulomatous disease: 11-year experience at a large referral center. Clin Infect Dis. 2009;48:1577\u20139. PubMed PMID: 19400745.   \nGreenberger PA. Allergic bronchopulmonary aspergillosis. J Allergy Clin Immunol. 2002;110:685\u201392. PubMed PMID: 12417875.   \nG\u00fcng\u00f6r T, Engel-Bicik I, Eich G, Villi UV, Nadal D, Hossle JP, Seger RA, Steinert HC. Diagnostic and therapeutic impact of whole body positron emission tomography using fuorine-18-fuoro-2-deoxy-Dglucose in children with chronic granulomatous disease. Arch Dis Child. 2001;85:341\u20135.",
+      "token_count": 477,
+      "sentence_count": 27
+    },
+    {
+      "id": "cdkl5-def_txt_22",
+      "contents": "22 August 2023 (tb) Original submission \nReferences \nLiterature Cited \n",
+      "token_count": 12,
+      "sentence_count": 2
+    },
+    {
+      "id": "alpha1-a_txt_9",
+      "contents": " For example, in the National Heart, Lung, and Blood Institute Registry, of 1,129 participants with severe defcienc y of AAT, $84\\%$ described dyspnea, $76\\%$ wheezed with an upper respiratory tract infection, and $50\\%$ reported cough and phlegm [McElvaney et al 1997, Eden et al 2003]. Of note, the prevalence of AATD in persons with asthma does not difer from that found in the general population [Wencker et al 2002, Miravitlles et al 2003]. \nMost individuals $(\\sim\\!95\\%)$ with severe AATD have evidence of bronchiectasis on chest CT, with $27\\%$ demonstrating clinical symptoms of bronchiectasis [Parr et al 2007]. \n\u2022 Chest CT shows loss of lung parenchyma and hyperlucency. In contrast to the usual pattern observed in centriacinar emphysema (emphysematous changes more pronounced in the lung apices than bases), the pattern observed in two thirds of individuals with AATD is that of more pronounced emphysematous changes in the bases than apices [Parr et al 2004]. \u2022 Lung function tests show decreased expiratory airfow, increased lung volumes, and decreased difusin g capacity. Approximately $60\\%$ of individuals with AATD-associated emphysema demonstrate a component of reversible airfow obstruction, defned as a $200{\\-}{\\bmod{L}}$ and $12\\%$ increase in the post-bronchodilator $\\mathrm{FEV}_{1}$ and/or FVC. \n\nChildhood-onset lung disease. Although reported, emphysema in children with AATD is extremely rare and may result from the coexistence of other unidentifed genetic factors afecting the lung [Cox & Talamo 1979]. \nStudies that followed newborns with severe AAT defciency through age 32 years showed that most adults did not smoke and lacked physiologic and CT evidence of emphysema [Mostafavi et al 2018]. Longer-term followup studies are not currently available.",
+      "token_count": 484,
+      "sentence_count": 12
+    },
+    {
+      "id": "tuberous-sclerosis_txt_32",
+      "contents": "Gupta N, Finlay GA, Kotlof RM, Strange C, Wilson KC, Young LR, Taveira-DaSilva AM, Johnson SR, Cottin V, Sahn SA, Ryu JH, Seyama K, Inoue Y, Downey GP, Han MK, Colby TV, Wikenheiser-Brokamp KA, Meyer CA, Smith K, Moss J, McCormack FX; ATS Assembly on Clinical Problems. Lymphangioleiomyomatosis diagnosis and management: high-resolution chest computed tomography, transbronchial lung biopsy, and pleural disease management. an ofcial American Toracic Society/Japanese Respiratory Society Clinical Practice Guideline. Am J Respir Crit Care Med. 2017;196:1337\u201348. PubMed PMID: 29140122. \n",
+      "token_count": 176,
+      "sentence_count": 6
+    },
+    {
+      "id": "jln_txt_0",
+      "contents": "Jervell and Lange-Nielsen Syndrome \nSynonym: JLNS   \nLisbeth Tranebj\u00e6rg, MD, PhD, $^{1,2}$ Ricardo A Samson, MD,3 and Glenn Edward Green, MD4   \nCreated: July 29, 2002; Updated: August 17, 2017. \nSummary \nClinical characteristics \n",
+      "token_count": 66,
+      "sentence_count": 5
+    },
+    {
+      "id": "dbh_txt_23",
+      "contents": "PubMed PMID: 11170900. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "hirschsprung-ov_txt_39",
+      "contents": " 2005;48:97\u2013111. PubMed PMID: 16053902. \nChapter Notes \nAuthor History \n",
+      "token_count": 21,
+      "sentence_count": 4
+    },
+    {
+      "id": "spg4_txt_37",
+      "contents": " PubMed PMID: 17389232. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "chd4-ndd_txt_15",
+      "contents": " PubMed PMID: 27616479. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "lgmd-overview_txt_46",
+      "contents": " PubMed PMID: 9382102. \nChapter Notes \nAuthor History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "sickle_txt_29",
+      "contents": " A macrolide antibiotic should be added if pneumonia/ACS is a concern.   \nAdditional antibiotics should be added only for proven or suspected meningitis or other severe illness. \n\nNote: With the changing natural history of fever and sepsis in individuals with SCD in the US there is increasing evidence that empiric treatment with parenteral antibiotics without obtaining cultures may be appropriate for well-appearing, fully immunized children with fever $<\\!39\\,^{\\circ}\\mathrm{C};$ ; however, this work has not yet been replicated [Baskin et al 2013, Ellison et al 2015] nor has it become widely accepted practice. Tere are additional published clinical pathways that outline outpatient management [Ellison et al 2018, Erno et al 2022]. \nAcute chest syndrome (ACS). Te index of suspicion for ACS should be high when individuals with SCD have fever, chest pain, or signs or symptoms of respiratory compromise. Given the high mortality associated with ACS, an aggressive multimodal treatment strategy should be initiated [Miller 2011]: \n\u2022 Perform chest radiograph examination.   \n\u2022 Provide aggressive treatment with oxygen, analgesics, and antibiotics (including a macrolide).   \n\u2022 Incentive spirometry should be encouraged.   \n\u2022 Hypoxemia can progress to need for intubation and mechanical ventilatory support.   \n\u2022 Simple RBC transfusion may be required for those who are critically ill, have multilobar disease, or have progressive disease despite conservative therapy.   \n\u2022 Emergent RBC exchange should be considered in certain severe cases in which the hemoglobin is greater than $10\\,\\mathrm{g/dL}$ and/or the HbS is greater than $30\\%$ ; however, the quality of evidence in this area is still low [NHLBI 2014, Dolatkhah & Dastgiri 2020]. \nStroke. Any history of an acute neurologic symptom or event warrants emergent evaluation including a CBC with reticulocyte count and a noncontrast brain CT examination. Cerebral hemorrhage requires immediate neurosurgical consultation. An MRI/MRA to defne injury should be obtained as soon as available, but defnitiv e treatment with exchange transfusion should never be delayed for these results. \nTreatment for children with acute ischemic stroke includes the following: \n",
+      "token_count": 491,
+      "sentence_count": 18
+    },
+    {
+      "id": "fragilex_txt_61",
+      "contents": " 2014;3:153\u201361. PubMed PMID: 25606365. \nChapter Notes \nAuthor History \n",
+      "token_count": 22,
+      "sentence_count": 4
+    },
+    {
+      "id": "hna_txt_25",
+      "contents": " PubMed PMID: 21262397. \nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "vodi_txt_23",
+      "contents": " PubMed PMID: 14559998. \n\nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "pnknd_txt_16",
+      "contents": " PubMed PMID: 25572910. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "pku_txt_40",
+      "contents": " PubMed PMID: 17091341. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "ea2_txt_31",
+      "contents": "Chapter Notes \nRevision History \n",
+      "token_count": 4,
+      "sentence_count": 2
+    },
+    {
+      "id": "syne1ca-ar_txt_24",
+      "contents": " PubMed PMID: 17761684. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "leukodys-ov_txt_1",
+      "contents": "Clinical characteristics \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "pdc_txt_20",
+      "contents": " PubMed PMID: 18676167. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "cmt-4a_txt_31",
+      "contents": " PubMed PMID: 25231362. \n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "pcd_txt_21",
+      "contents": " 2016;99:489\u2013500.",
+      "token_count": 9,
+      "sentence_count": 1
+    },
+    {
+      "id": "tetra-amelia_txt_13",
+      "contents": " PubMed PMID: 8256824. \n\nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "sca7_txt_25",
+      "contents": "Tomas D Bird, MD; University of Washington (2007-2012)   \nGwenn Garden, MD, PhD; University of Washington (2012-2020)   \nLaunce G-C Gouw, MD, PhD; University of Utah School of Medicine (1998-2007)   \nAlbert R La Spada, MD, PhD (2007-2012; 2020-present)   \nRoberta A Pagon, MD; University of Washington (2007-2012)   \nLouis J Ptacek, MD; University of California, San Francisco (1998-2007) \nRevision History \n\u2022 23 July 2020 (bp) Comprehensive update posted live 20 December 2012 (me) Comprehensive update posted live 6 September 2007 (tb) Revision: Natural History (Clinical Description)   \n\u2022 9 February 2007 (me) Comprehensive update posted live   \n11 December 2003 (me) Comprehensive update posted live 20 June 2001 (me) Comprehensive update posted live 27 August 1998 (pb) Review posted live   \n\u2022 1 June 1998 (lg) Original submission \nLicense \nGeneReviews\u00ae chapters are owned by the University of Washington. Permission is hereby granted to reproduce, distribute, and translate copies of content materials for noncommercial research purposes only, provided that (i) credit for source (http://www.genereviews.org/) and copyright ( $\\circledcirc$ 1993-2024 University of Washington) are included with each copy; (ii) a link to the original material is provided whenever the material is published elsewhere on the Web; and (iii) reproducers, distributors, and/or translators comply with the GeneReviews $\\circledast$ Copyright Notice and Usage Disclaimer. No further modifcations are allowed. For clarity, excerpts of GeneReviews chapters for use in lab reports and clinic notes are a permitted use. \nFor more information, see the GeneReviews $\\circledast$ Copyright Notice and Usage Disclaimer. \nFor questions regarding permissions or whether a specifed use is allowed, contact: admasst@uw.edu. ",
+      "token_count": 415,
+      "sentence_count": 19
+    },
+    {
+      "id": "pknd_txt_28",
+      "contents": " PubMed PMID: 18541410. \n\n\n\nChapter Notes \nRevision History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "mstn_txt_10",
+      "contents": " PubMed PMID: 15215484. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "glyt1-dis_txt_15",
+      "contents": " PubMed PMID: 28363510. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "hlh_txt_11",
+      "contents": " Zur Stadt et al [2006], Meeths et al [2011], Cichocki et al [2014], Tesi et al [2015], Gadoury-Levesque et al [2020] \nClinical Characteristics \nClinical Description \n",
+      "token_count": 50,
+      "sentence_count": 3
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "Chest Scan",
+      "scan_date": "2025-03-24T23:06:13.575979",
+      "file_name": "images.jpeg",
+      "description": "Chest scan",
+      "analysis": "Okay, let\u2019s analyze this chest CT scan. Here's a detailed breakdown of what I observe, keeping in mind this is a visual interpretation and a full clinical context is needed for a definitive diagnosis:\n\n**Overall Impression:**\n\nThe scan shows a relatively unremarkable appearance of the lungs, with some concerning findings that warrant further investigation. The density is fairly uniform throughout, suggesting adequate aeration in most areas. However, there\u2019s a significant area of increased density within the left lower lobe.\n\n**Specific Findings:**\n\n1. **Left Lower Lobe Opacity:**  This is the most prominent finding. There\u2019s a large, ill-defined area of increased density (appearing whiter than normal lung tissue) in the lower lobe of the left lung. It\u2019s not sharply demarcated, which makes it harder to classify immediately. This suggests the presence of fluid, consolidation, or potentially a mass. \n\n2. **Hilar Enlargement:**  The hila (the areas where the bronchi and blood vessels enter the lungs) appear slightly enlarged on the left side. This can be due to several factors, including inflammation, fluid accumulation, or a mass compressing the vessels. \n\n3. **Subpleural Linear Opacities:**  I see some faint, linear (thin, elongated) areas of increased density along the lower posterior aspect of the left lower lobe. These could represent early signs of pneumonia, small airway disease, or even subpleural bleeding.\n\n4. **No Obvious Pleural Effusion:**  There's no obvious pleural effusion (fluid in the space between the lung and the chest wall) visible on this single slice. However, a full scan would be needed to rule this out completely. \n\n5. **Mediastinal Width:** The mediastinum (the space in the middle of the chest containing the heart, great vessels, and trachea) appears to be of normal width. \n\n6. **Cardiac Silhouette:** The cardiac silhouette appears normal in size and shape. \n\n**Possible Interpretations (Differential Diagnosis):**\n\nGiven these findings, several possibilities need to be considered:\n\n*   **Pneumonia:** The consolidation and subpleural linear opacities could represent an active pneumonia, particularly if the patient has symptoms like fever, cough, and shortness of breath.\n*   **Mass:** The ill-defined opacity in the left lower lobe raises the possibility of a lung mass (benign or malignant).\n*   **Lung Abscess:**  A localized"
+    }
+  ],
+  "analysis_date": "2025-03-25T08:43:50.225992",
+  "created_at": "2025-03-25T08:43:50.225997"
+}

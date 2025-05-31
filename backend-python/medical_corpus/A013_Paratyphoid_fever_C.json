@@ -1,0 +1,113 @@
+{
+    "disease": "Paratyphoid fever C",
+    "icd_code": "A013",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Gradually increasing, low-grade to 102\u00b0F\u2013104\u00b0F (38\u00b0C\u201340\u00b0C)",
+                "pattern": "Lowest in the morning, peaking in the late afternoon or evening"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Gradually increasing",
+                "pattern": "Insidious onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Common",
+                "pattern": "Present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Nearly universal",
+                "pattern": "Present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Common",
+                "pattern": "Present"
+            },
+            {
+                "name": "Constipation or diarrhea",
+                "severity": "Common",
+                "pattern": "Diarrhea more common in children"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Nearly universal",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Often detectable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Maculopapular rash",
+                "severity": "Occasionally seen",
+                "pattern": "Rose-colored spots on the trunk"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "102\u00b0F\u2013104\u00b0F (38\u00b0C\u201340\u00b0C)"
+        },
+        "physical_findings": [
+            "Hepatosplenomegaly",
+            "Maculopapular rash (occasionally)"
+        ],
+        "lab_values": {
+            "blood culture": {
+                "abnormal": "Positive in only \u224850% of cases with a single culture; multiple cultures increase sensitivity"
+            },
+            "bone marrow culture": {
+                "abnormal": "Increases sensitivity to \u224880% of cases"
+            },
+            "stool culture": {
+                "abnormal": "Not usually positive during the first week of illness; less sensitive than blood culture"
+            },
+            "urine culture": {
+                "abnormal": "Lower diagnostic yield than stool culture"
+            },
+            "Widal test": {
+                "abnormal": "Measures elevated antibody titers; unreliable but widely used in developing countries"
+            }
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Travel to endemic areas (Africa, Latin America, Asia)",
+            "Poor sanitation and hygiene",
+            "Lack of access to safe food and water"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Combination of risk factors for infection",
+            "Gradual onset of fever increasing in severity over several days"
+        ],
+        "supportive": [
+            "Positive blood culture",
+            "Positive bone marrow culture"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malaria"
+    ]
+}

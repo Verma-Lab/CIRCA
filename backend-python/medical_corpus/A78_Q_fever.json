@@ -1,0 +1,88 @@
+{
+    "disease": "Q fever",
+    "icd_code": "A78",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Febrile illness",
+                "severity": "Variable, can be mild or severe",
+                "pattern": "Acute or chronic"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Endocarditis",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Meningoencephalitis",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Abortion",
+                "severity": "Severe",
+                "pattern": "In pregnant women"
+            },
+            {
+                "name": "Premature birth",
+                "severity": "Severe",
+                "pattern": "In pregnant women"
+            },
+            {
+                "name": "Low birth weight",
+                "severity": "Severe",
+                "pattern": "In newborns of infected mothers"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Present in acute cases"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "serology": {
+                "IgM anti-phase II antibodies": "Detected 2-3 weeks after infection",
+                "IgG anti-phase II antibodies": "Detected 2-3 weeks after infection",
+                "IgG anti-phase I antibodies (\u22651:800)": "Indicative of chronic Q fever"
+            }
+        },
+        "risk_factors": [
+            "Contact with domestic animals (cattle, sheep, goats)",
+            "Contact with parturient females and their birth products",
+            "Inhalation of contaminated aerosols",
+            "Occupation (farmers, veterinarians, abattoir workers)",
+            "Contact with dairy products",
+            "Laboratory personnel working with C. burnetii",
+            "Pre-existing valvulopathy",
+            "Immunocompromised status",
+            "Pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Serology (IgM and IgG anti-phase II antibodies in acute, IgG anti-phase I antibodies in chronic)"
+        ],
+        "supportive": [
+            "Clinical presentation",
+            "Exposure history",
+            "Isolation of C. burnetii"
+        ]
+    },
+    "differential_diagnoses": []
+}

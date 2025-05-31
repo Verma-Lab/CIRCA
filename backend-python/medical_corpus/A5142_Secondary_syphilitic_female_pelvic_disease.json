@@ -1,0 +1,61 @@
+{
+    "disease": "Secondary syphilitic female pelvic disease",
+    "icd_code": "A5142",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pelvic inflammatory disease symptoms",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Secondary syphilis rash",
+                "severity": "Variable",
+                "pattern": "Generalized rash, often macular or papular"
+            },
+            {
+                "name": "Systemic symptoms",
+                "severity": "Variable",
+                "pattern": "Fever, malaise, headache, myalgia"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Pelvic tenderness",
+            "Cervical motion tenderness",
+            "Adnexal tenderness",
+            "Secondary syphilis rash (macular, papular, or pustular)",
+            "Lymphadenopathy"
+        ],
+        "lab_values": {
+            "RPR/VDRL": "Reactive",
+            "FTA-ABS/TPPA": "Reactive",
+            "CBC": "Possible leukocytosis"
+        },
+        "risk_factors": [
+            "Unprotected sex",
+            "Multiple sexual partners",
+            "History of sexually transmitted infections"
+        ],
+        "imaging_findings": {
+            "Ultrasound": "Possible findings consistent with pelvic inflammatory disease (e.g., thickened endometrium, fluid in cul-de-sac)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with secondary syphilis and pelvic inflammatory disease",
+            "Reactive serological tests for syphilis (RPR/VDRL, FTA-ABS/TPPA)"
+        ],
+        "supportive": [
+            "Positive dark-field microscopy or PCR for Treponema pallidum",
+            "Abnormal pelvic ultrasound findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of pelvic inflammatory disease (e.g., gonorrhea, chlamydia)",
+        "Other causes of rash (e.g., drug reactions, viral exanthems)"
+    ]
+}

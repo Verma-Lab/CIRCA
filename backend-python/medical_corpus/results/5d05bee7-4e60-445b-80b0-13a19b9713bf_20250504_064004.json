@@ -1,0 +1,45 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Japanese Encephalitis",
+      "icd_code": "A830",
+      "probability": 0,
+      "reasoning": "The patient data lacks any symptoms, vital signs, physical findings, or lab results.  Therefore, it's impossible to assess the presence of key symptoms like fever, headache, neck stiffness, or positive JEV-specific IgM antibody."
+    },
+    {
+      "disease": "Campylobacter enteritis",
+      "icd_code": "A045",
+      "probability": 0,
+      "reasoning": "Similar to Japanese Encephalitis, the absence of any clinical data prevents evaluation for symptoms like diarrhea, abdominal pain, or a positive stool culture."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 0,
+      "reasoning": "No blood pressure readings or other relevant findings (edema, shortness of breath) are available to assess for hypertension."
+    },
+    {
+      "disease": "Infectious mononucleosis, unspecified with polyneuropathy",
+      "icd_code": "B27.91",
+      "probability": 0,
+      "reasoning": "The complete lack of symptoms, physical findings, and lab results makes it impossible to evaluate for fatigue, sore throat, lymphadenopathy, or positive EBV serology."
+    },
+    {
+      "disease": "Malignant neoplasm of lateral wall of oropharynx",
+      "icd_code": "C102",
+      "probability": 0,
+      "reasoning": "No information is provided to suggest or rule out this diagnosis.  The absence of symptoms and findings makes assessment impossible."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Complete history taking including detailed symptom review",
+    "Comprehensive physical examination",
+    "Complete blood count (CBC)",
+    "Basic metabolic panel (BMP)",
+    "Blood pressure measurement"
+  ],
+  "clinical_summary": "The patient data is entirely insufficient for any meaningful clinical assessment or diagnosis.  A complete history, physical examination, and relevant laboratory investigations are urgently required before any disease can be considered. The patient's age is listed as -1, which is impossible and indicates a data entry error that needs correction.",
+  "timestamp": "2025-05-04T06:40:04.879092",
+  "identified_icd_codes": []
+}

@@ -1,0 +1,156 @@
+{
+    "disease": "Gonococcal heart infection",
+    "icd_code": "A5483",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Heart failure",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Retrosternal pain",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Palpitations",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Orthopnea",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Lower limb edema",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable",
+                "pattern": "Subacute onset"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Cardiac murmur",
+                "severity": "Variable",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38.3\u00b0C (or higher)",
+            "blood_pressure": "120/40 mmHg (or lower)",
+            "heart_rate": "Tachycardia",
+            "respiratory_rate": "Tachypnea",
+            "oxygen_saturation": "Decreased"
+        },
+        "physical_findings": [
+            "Ill-looking patient",
+            "Tachypnea",
+            "Tachycardia",
+            "Febrile",
+            "Intermittent third heart sound",
+            "Ejection murmur radiating to carotids",
+            "Diastolic murmur at the base of the heart",
+            "Decreased breath sounds in the right lung base",
+            "Mildly enlarged liver",
+            "Bilateral lower limb edema",
+            "Mild swelling and pain in right knee and left wrist"
+        ],
+        "lab_values": {
+            "leukocytes": "Marked leukocytosis (22,800 leukocytes/mm3)",
+            "creatinine": "Increased",
+            "C-reactive protein": "Elevated (209 mg/L)"
+        },
+        "risk_factors": [
+            "Sexually active young adults",
+            "Previous gonorrhea infection",
+            "Drug resistant strains of Neisseria gonorrhoeae"
+        ],
+        "imaging_findings": {
+            "echocardiogram": [
+                "Thickened aortic cusps",
+                "Valve insufficiency",
+                "Aortic valve thickening with marked diastolic reflux",
+                "Normal-sized cardiac chambers",
+                "Normal septum and posterior wall thickness",
+                "Preserved systolic function",
+                "Aortic root abscess",
+                "Fistula from right ventricle to aortic root",
+                "Bicuspid aortic valve",
+                "Severe aortic insufficiency",
+                "Moderate mitral insufficiency"
+            ],
+            "chest_x_ray": [
+                "Normal cardiac silhouette",
+                "Alveolar space-filling opacity in both inferior pulmonary lobes",
+                "Tiny pleural effusion on the right side",
+                "Pulmonary edema"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Neisseria gonorrhoeae",
+            "Echocardiographic evidence of valvular involvement (vegetations, abscesses, destruction)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with infective endocarditis (fever, malaise, new murmur)",
+            "Evidence of disseminated gonococcal infection (arthritis, rash)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other types of infective endocarditis",
+        "Non-infective endocarditis",
+        "Aortic dissection",
+        "Rheumatic heart disease"
+    ]
+}

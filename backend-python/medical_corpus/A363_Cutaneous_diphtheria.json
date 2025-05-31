@@ -1,0 +1,70 @@
+{
+    "disease": "Cutaneous diphtheria",
+    "icd_code": "A363",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ulcers",
+                "severity": "Variable",
+                "pattern": "Well-demarcated, often covered with pseudo-membranes, slow-healing, located on limbs"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Paronychia",
+                "severity": "Variable",
+                "pattern": "Painful infection around the nail"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "One or several well-delimitated ulcers",
+            "Ulcers classically covered with pseudo-membranes",
+            "Superficial ulcerations",
+            "Infected wounds",
+            "Exudative lower leg wound"
+        ],
+        "lab_values": {
+            "Culture": {
+                "abnormal_range": "Presence of Corynebacterium diphtheriae or Corynebacterium ulcerans, often with co-infection of Staphylococcus aureus and Streptococcus pyogenes"
+            },
+            "Elek test": {
+                "abnormal_range": "Positive for toxigenic strains"
+            },
+            "Throat swab": {
+                "abnormal_range": "Positive for C. diphtheriae or C. ulcerans carriage"
+            },
+            "MALDI-TOF": {
+                "abnormal_range": "Rapid screening for identification of bacterial pathogens, including C. diphtheriae"
+            },
+            "PCR": {
+                "abnormal_range": "Confirms the presence of C. diphtheriae and detects toxigenicity"
+            }
+        },
+        "risk_factors": [
+            "Migration",
+            "Travel to countries with endemic disease",
+            "Low vaccination coverage",
+            "Vaccine skepticism",
+            "Pre-existing wounds or lesions",
+            "Poor hygiene",
+            "Contact with animals (C. ulcerans)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Corynebacterium diphtheriae or Corynebacterium ulcerans from cutaneous swabs"
+        ],
+        "supportive": [
+            "Clinical presentation of well-demarcated ulcers, possibly with pseudo-membranes",
+            "History of travel to endemic areas",
+            "Low vaccination status"
+        ]
+    },
+    "differential_diagnoses": []
+}

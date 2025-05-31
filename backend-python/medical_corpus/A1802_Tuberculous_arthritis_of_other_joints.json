@@ -1,0 +1,72 @@
+{
+    "disease": "Tuberculous arthritis of other joints",
+    "icd_code": "A1802",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint swelling",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Erythematous swelling",
+                "severity": "Variable",
+                "pattern": "Localized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Swollen joint",
+            "Synovial thickening",
+            "Erythematous swelling above patella",
+            "Inflamed synovium"
+        ],
+        "lab_values": {
+            "Cytological findings": "Consistent with TB arthritis"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "X-ray": [
+                "Osteoarthritis",
+                "Osteopenia",
+                "Periarticular calcification",
+                "Lytic lesion",
+                "Synovial thickening",
+                "Bone marrow edema"
+            ],
+            "MRI": [
+                "Rice bodies",
+                "Synovitis",
+                "Free floating articular bodies"
+            ],
+            "Arthroscopy": [
+                "Rice bodies",
+                "Granulomatous inflammation in synovium",
+                "Necrosis at synovial surface",
+                "Granuloma with necrosis",
+                "Granuloma without necrosis",
+                "Langhans type giant cells"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tuberculous arthritis",
+            "Positive cytological findings for TB"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of tuberculous arthritis",
+            "Presence of granulomas on biopsy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Osteoarthritis",
+        "Other forms of arthritis"
+    ]
+}

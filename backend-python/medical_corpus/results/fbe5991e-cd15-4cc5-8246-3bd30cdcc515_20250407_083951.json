@@ -1,0 +1,39 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 95,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  His home glucose readings (120-180 mg/dL) and previous A1c of 7.8% clearly indicate suboptimal glycemic control.  The patient's fatigue could also be a symptom of poorly managed diabetes.  The assessment and plan already reflect this diagnosis with medication adjustments and further testing (HbA1c) planned."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 90,
+      "reasoning": "The patient's blood pressure reading of 144/88 mmHg is significantly elevated and above the goal of <140/90 mmHg.  This is consistent with the diagnosis of essential hypertension, which is further supported by the patient's history and the plan to continue his current antihypertensive medication (lisinopril)."
+    }
+  ],
+  "differential_diagnoses": [
+    {
+      "disease": "Tension Headache",
+      "icd_code": "G44.9",
+      "probability": 70,
+      "reasoning": "The patient reports occasional mild headaches described as dull, pressure-like pain, lasting 2-3 hours, and relieved by acetaminophen. This is consistent with tension-type headaches. However, further investigation might be needed if headaches worsen or change in character."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Thyroid Stimulating Hormone (TSH) level:  While the physical exam shows no thyromegaly,  the patient's fatigue and the presence of other conditions warrant checking for thyroid dysfunction.  This is especially important given the information in the provided medical literature linking thyroid issues to fatigue.",
+    "Comprehensive Metabolic Panel (CMP): Already ordered, this will help assess renal function given the elevated creatinine level and the use of medications that can affect the kidneys.",
+    "Complete Blood Count (CBC): Already ordered, this will help evaluate for causes of fatigue, including anemia or infection.",
+    "ECG:  While not currently available, an ECG is recommended to assess for cardiac involvement related to hypertension.  The elevated blood pressure warrants this evaluation.",
+    "Chest X-ray analysis: The report mentions a chest x-ray was taken but no analysis is available.  A thorough review of the chest x-ray is crucial to rule out any underlying pulmonary or cardiac pathology contributing to the patient's symptoms."
+  ],
+  "clinical_summary": "The patient presents with a history of type 2 diabetes mellitus and hypertension, both of which are poorly controlled.  His elevated blood pressure and suboptimal glucose control are the most significant findings.  Occasional tension headaches are also reported.  Additional testing is recommended to assess renal function, evaluate for anemia or infection as a cause of fatigue, and rule out cardiac or thyroid pathology.  The elevated creatinine warrants further investigation into renal function.  The provided medical literature on thyromegaly is not directly relevant to the patient's presentation, as there are no physical findings suggestive of thyroid enlargement.",
+  "timestamp": "2025-04-07T08:39:51.861578",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

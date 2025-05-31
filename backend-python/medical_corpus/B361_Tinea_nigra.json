@@ -1,0 +1,56 @@
+{
+    "disease": "Tinea nigra",
+    "icd_code": "B361",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Asymptomatic brown to black macules",
+                "severity": "Mild",
+                "pattern": "Unilateral, well-defined, slowly enlarging"
+            },
+            {
+                "name": "Slightly scaly patches",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Absence of itching or stinging",
+                "severity": "None",
+                "pattern": "Consistent finding"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Asymptomatic, unilateral, well-defined brown to black macules",
+            "Predominantly affects palms and soles",
+            "Non-scaling (in some cases slightly scaly)",
+            "Non-palpable",
+            "Irregular borders (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Hyperhidrosis (excessive sweating)",
+            "Living in tropical or subtropical regions",
+            "Travel to endemic areas",
+            "Microtrauma to the stratum corneum"
+        ],
+        "imaging_findings": {
+            "dermoscopy": "Can help distinguish tinea nigra from other brown-black skin lesions; may show wispy brown strands or pigmented spicules that do not follow dermatoglyphic furrows and ridges"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of asymptomatic, unilateral, well-defined brown to black macules on palms or soles",
+            "Microscopic examination of KOH preparations revealing pigmented yeast and hyphae"
+        ],
+        "supportive": [
+            "Culture of Hortaea werneckii",
+            "Skin biopsy showing characteristic histopathological features"
+        ]
+    },
+    "differential_diagnoses": [
+        "Melanocytic nevi",
+        "Melanoma"
+    ]
+}

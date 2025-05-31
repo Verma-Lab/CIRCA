@@ -1,0 +1,25 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of palate",
+    "icd_code": "C058",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "alcohol abuse and dependence",
+            "history of tobacco dependence",
+            "tobacco dependence",
+            "tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Kaposi's sarcoma of palate (C46.2)"
+    ]
+}

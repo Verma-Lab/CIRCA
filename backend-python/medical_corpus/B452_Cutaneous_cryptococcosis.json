@@ -1,0 +1,75 @@
+{
+    "disease": "Cutaneous cryptococcosis",
+    "icd_code": "B452",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesions",
+                "severity": "Variable, ranging from papules and acneiform lesions to ulcers and nodules",
+                "pattern": "Can be single or multiple, disseminated; may resemble other dermatological conditions like bacterial cellulitis, sarcoidosis, panniculitis, or molluscum contagiosum (in AIDS patients)"
+            },
+            {
+                "name": "Erythematous papules",
+                "severity": "Variable",
+                "pattern": "Well-defined, solid, regular; may be accompanied by telangiectasia and petechiae"
+            },
+            {
+                "name": "Dome-shaped papule with umbilicated center",
+                "severity": "Variable",
+                "pattern": "A typical, but not exclusive, lesion presentation"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, can be hectic",
+                "pattern": "Associated with disseminated disease"
+            },
+            {
+                "name": "Cachexia",
+                "severity": "Progressive",
+                "pattern": "Associated with disseminated disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (hectic fever reported in severe cases)"
+        },
+        "physical_findings": [
+            "Erythematous, solid, regular, and well-defined papules",
+            "Telangiectasia",
+            "Petechiae",
+            "Skin lesions resembling molluscum contagiosum (in AIDS patients)",
+            "Ulcerative lesions"
+        ],
+        "lab_values": {
+            "blood cultures": "May show presence of Cryptococcus neoformans (but can be transient)",
+            "serum antigen level": "Elevated in disseminated disease"
+        },
+        "risk_factors": [
+            "Immunosuppression (HIV, solid organ transplantation, corticosteroid use, lymphomas)",
+            "Low CD4+ T cell count",
+            "Renal transplantation (especially with tacrolimus)",
+            "Genetic defects in the immune system (familial cases)"
+        ],
+        "imaging_findings": {
+            "chest x-ray": "Unilateral, nodular, or cavitary infiltrates (in pulmonary cryptococcosis)",
+            "PET scan": "May reveal active metabolic processes in various organs (e.g., thyroid, pancreas, lungs) in disseminated disease"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with cutaneous cryptococcosis",
+            "Histopathological examination showing cryptococcal organisms (e.g., using Alcian blue and mucicarmine staining)",
+            "Culture confirmation of Cryptococcus neoformans or Cryptococcus gatti"
+        ],
+        "supportive": [
+            "Evidence of disseminated cryptococcosis (e.g., CNS involvement, positive blood cultures, elevated serum antigen levels)",
+            "Immunosuppression"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial cellulitis",
+        "Sarcoidosis",
+        "Panniculitis",
+        "Molluscum contagiosum"
+    ]
+}

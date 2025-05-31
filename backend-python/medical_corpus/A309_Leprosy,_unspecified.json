@@ -1,0 +1,72 @@
+{
+    "disease": "Leprosy, unspecified",
+    "icd_code": "A309",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin sores",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Can be single or multiple, hypopigmented or reddish patches"
+            },
+            {
+                "name": "Nerve damage",
+                "severity": "Variable, can lead to muscle weakness and loss of sensation",
+                "pattern": "Peripheral nerve involvement, potentially leading to disability"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Progressive, worsening over time",
+                "pattern": "Affects muscles supplied by affected nerves"
+            },
+            {
+                "name": "Leonine facies",
+                "severity": "Severe, characteristic facial features",
+                "pattern": "Thickening of facial features"
+            },
+            {
+                "name": "Nodules",
+                "severity": "Present in lepromatous form",
+                "pattern": "Large lumps and bumps"
+            },
+            {
+                "name": "Painful rash",
+                "severity": "Variable",
+                "pattern": "Erythematous rash, can progress to involve trunk and face"
+            },
+            {
+                "name": "Macules",
+                "severity": "Variable",
+                "pattern": "Violaceous, nonblanching macules coalescing into patches"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesions (hypopigmented or reddish patches)",
+            "Thickened or enlarged peripheral nerves",
+            "Loss of sensation in affected areas",
+            "Muscle weakness",
+            "Diffuse dermal infiltrate composed of disorganized aggregates of foamy histiocytes and lymphocytes",
+            "Acid-fast bacilli within histiocytes and cutaneous nerve twigs"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Prolonged close contact with untreated individuals",
+            "Exposure to armadillos (potential zoonotic transmission)",
+            "Childhood exposure",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "At least one of the following: definite loss of sensation in a pale (hypopigmented) or reddish skin patch; thickened or enlarged peripheral nerve, with loss of sensation and/or weakness of the muscles supplied by that nerve; microscopic detection of bacilli in a slit-skin smear"
+        ],
+        "supportive": [
+            "Clinical presentation",
+            "Positive lepromin skin test (differentiates forms, not diagnostic)",
+            "Histopathological examination showing acid-fast bacilli"
+        ]
+    },
+    "differential_diagnoses": []
+}

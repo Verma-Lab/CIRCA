@@ -1,0 +1,55 @@
+{
+    "disease": "Candidal otitis externa",
+    "icd_code": "B3784",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ear pain",
+                "severity": "Variable, can range from mild itching to severe pain exacerbated by chewing",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Ear discharge",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Aural fullness",
+                "severity": "Variable",
+                "pattern": "Can occur with sufficient swelling"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Variable",
+                "pattern": "Can occur with sufficient swelling"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erythema and swelling of the external auditory canal",
+            "Variable discharge"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Excessive moisture",
+            "Trauma to the ear canal",
+            "Compromised immune system",
+            "Antibiotic use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Rapid onset (generally within 48 hours) of symptoms within the past 3 weeks",
+            "Signs of ear canal inflammation"
+        ],
+        "supportive": [
+            "Presence of Candida in ear discharge (requires lab testing)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute bacterial otitis externa",
+        "Otitis media"
+    ]
+}

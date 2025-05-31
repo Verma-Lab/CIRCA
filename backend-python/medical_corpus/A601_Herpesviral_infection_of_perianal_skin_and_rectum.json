@@ -1,0 +1,59 @@
+{
+    "disease": "Herpesviral infection of perianal skin and rectum",
+    "icd_code": "A601",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Present with blisters"
+            },
+            {
+                "name": "Blisters",
+                "severity": "Variable",
+                "pattern": "May burst and form scabs"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Swollen and painful groin lymph nodes",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Blisters in the perianal region",
+            "Scabs in the perianal region",
+            "Swollen and painful inguinal lymph nodes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with herpesviral infection of perianal skin and rectum (e.g., presence of blisters, itching, pain)"
+        ],
+        "supportive": [
+            "Positive viral culture or PCR testing for herpes simplex virus"
+        ]
+    },
+    "differential_diagnoses": []
+}

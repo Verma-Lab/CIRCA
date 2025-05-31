@@ -1,0 +1,120 @@
+{
+    "disease": "Orf Virus Disease",
+    "icd_code": "B0802",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Scabby lesions",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Usually on lips, mouth, gums, palate, tongue, teats, legs; can spread to other body parts"
+            },
+            {
+                "name": "Vesicular lesions",
+                "severity": "Variable",
+                "pattern": "Prominently appearing in the lips and mouth of affected animals"
+            },
+            {
+                "name": "Papular lesions",
+                "severity": "Variable",
+                "pattern": "Prominently appearing in the lips and mouth of affected animals"
+            },
+            {
+                "name": "Nodular lesions",
+                "severity": "Variable",
+                "pattern": "Prominently appearing in the lips and mouth of affected animals"
+            },
+            {
+                "name": "Pustules",
+                "severity": "Variable",
+                "pattern": "Flat-topped, blood-tinged; may leak fluid before crusting"
+            },
+            {
+                "name": "Blisters",
+                "severity": "Variable, up to 5cm in diameter",
+                "pattern": "May be solitary or few in number, most commonly on fingers, hands, or forearms; can appear on the face"
+            },
+            {
+                "name": "Red streaks (lymphangitis)",
+                "severity": "Mild to moderate",
+                "pattern": "Up the lymph channels"
+            },
+            {
+                "name": "Enlarged lymph glands (lymphadenopathy)",
+                "severity": "Mild to moderate",
+                "pattern": "Inner side of elbow and/or under the arm"
+            },
+            {
+                "name": "Mild fever",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable, can be significant in young lambs",
+                "pattern": "Due to reduced suckling"
+            },
+            {
+                "name": "Debilitation",
+                "severity": "Variable, can be significant in young lambs",
+                "pattern": "Due to inability to eat"
+            },
+            {
+                "name": "Secondary bacterial infection",
+                "severity": "Variable, can be severe",
+                "pattern": "Can lead to prolonged disease or death"
+            },
+            {
+                "name": "Erythema multiforme",
+                "severity": "Variable",
+                "pattern": "Secondary rash; target-like macules, plaques, and blisters on hands and feet, face, arms, and legs; may develop 10\u201314 days after onset of orf"
+            },
+            {
+                "name": "Toxic erythemas",
+                "severity": "Variable",
+                "pattern": "Less distinctive red rashes"
+            },
+            {
+                "name": "Pemphigoid",
+                "severity": "Rare",
+                "pattern": "Blistering disorder"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Scabby lesions",
+            "Vesicular, papular, and nodular lesions",
+            "Pustules",
+            "Blisters",
+            "Lymphangitis",
+            "Lymphadenopathy"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Direct contact with infected animals",
+            "Contact with contaminated fomites",
+            "Traumatized skin",
+            "Compromised immunity (e.g., orphaned lambs)",
+            "High stocking rates",
+            "Indoor lambing"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical history of handling sheep or goats",
+            "Characteristic skin lesions"
+        ],
+        "supportive": [
+            "Skin biopsy",
+            "Polymerase chain reaction (PCR) test",
+            "Cell culture",
+            "Electron microscopy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Foot-and-mouth disease (FMD)",
+        "Milker's nodule",
+        "Cutaneous anthrax"
+    ]
+}

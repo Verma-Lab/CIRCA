@@ -1,0 +1,77 @@
+{
+    "disease": "Latent syphilis, unspecified as early or late",
+    "icd_code": "A530",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless jaundice",
+                "severity": "Present",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Macular lesions",
+                "severity": "Multiple, scattered",
+                "pattern": "Present on torso"
+            },
+            {
+                "name": "Moth-eaten alopecia",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": "Normal",
+        "physical_findings": [
+            "Painless jaundice",
+            "Multiple scattered macular lesions on torso",
+            "Post-cholecystectomy scar",
+            "Moth-eaten alopecia",
+            "Normal oral examination",
+            "Mild spleen enlargement"
+        ],
+        "lab_values": {
+            "Alkaline phosphatase (ALP)": "569 IU/L (elevated)",
+            "Total bilirubin": "2.89 mg/dL (elevated)",
+            "Liver enzymes": "Elevated",
+            "Albumin": "Mildly decreased",
+            "International normalized ratio (INR)": "1.8 (elevated)",
+            "Platelet count": "15 \u00d7 103/\u00b5L (decreased)",
+            "Leucocyte levels": "Normal",
+            "Serum electrolytes, lipids, and renal function": "Within normal range",
+            "VDRL": "Reactive",
+            "T. pallidum hemagglutination assay": "1:640 (positive)",
+            "IgG fluorescent T. pallidum antibody absorbance (FTA-Abs IgG)": "Positive",
+            "Antibodies against common viral hepatitis": "Negative",
+            "HIV": "Negative",
+            "Epstein\u2013Barr virus": "Negative",
+            "Herpes simplex virus 2 and cytomegalovirus IgG": "Positive",
+            "Serum immunoglobulins, Alpha-1 antitrypsin, ceruloplasmin, and transferrin saturation": "Within normal range"
+        },
+        "risk_factors": [
+            "Previous syphilis infection (unspecified treatment)",
+            "Reluctance to provide detailed sexual history",
+            "Occasional alcohol consumption"
+        ],
+        "imaging_findings": {
+            "Ultrasound of the abdomen": "Intense liver echogenicity, normal bile ducts, mild spleen enlargement, no ascites, patent portal hepatic flow",
+            "Computer tomography (CT)": "Increased liver and spleen size, no bile duct obstruction, no masses",
+            "Magnetic resonance imaging (MRI)": "Increased liver and spleen size, no bile duct obstruction, no masses",
+            "Upper endoscopy": "Unremarkable"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology (VDRL, TPHA, FTA-Abs)",
+            "Cholestatic liver panel in the absence of alternative causes"
+        ],
+        "supportive": [
+            "Characteristic clinical features (e.g., painless jaundice, macular lesions)",
+            "Normalization of liver parameters after antibiotic therapy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral hepatitis",
+        "Autoimmune hepatitis",
+        "Primary biliary cholangitis"
+    ]
+}

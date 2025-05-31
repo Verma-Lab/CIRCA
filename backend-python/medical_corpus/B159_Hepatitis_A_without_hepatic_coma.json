@@ -1,0 +1,70 @@
+{
+    "disease": "Hepatitis A without hepatic coma",
+    "icd_code": "B159",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice (yellowing of skin and eyes)",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pale stools",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Jaundice (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected person's stool",
+            "HIV, Hepatitis B, or Hepatitis C co-infection (increases severity risk)",
+            "Age over 50 (increases severity risk)",
+            "Pre-existing liver disease (increases severity risk)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Hepatitis A"
+        ],
+        "supportive": [
+            "Positive Hepatitis A virus test"
+        ]
+    },
+    "differential_diagnoses": []
+}

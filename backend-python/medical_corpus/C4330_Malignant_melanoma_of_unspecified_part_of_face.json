@@ -1,0 +1,26 @@
+{
+    "disease": "Malignant melanoma of unspecified part of face",
+    "icd_code": "C4330",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dark patch on the skin",
+                "severity": "Variable",
+                "pattern": "Localized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant melanoma cells"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

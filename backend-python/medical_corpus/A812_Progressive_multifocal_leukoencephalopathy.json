@@ -1,0 +1,68 @@
+{
+    "disease": "Progressive multifocal leukoencephalopathy (PML)",
+    "icd_code": "A812",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mental impairment",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Visual symptoms",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty moving",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Epilepsy",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Subtle initial symptoms",
+                "severity": "Mild",
+                "pattern": "Early"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Weakened immune system",
+            "HIV/AIDS",
+            "Hematologic malignancies",
+            "Organ transplantation",
+            "Autoimmune diseases (e.g., SLE) with chronic immunosuppression",
+            "Use of natalizumab",
+            "Use of efalizumab",
+            "Use of rituximab",
+            "Multiple sclerosis",
+            "Crohn's disease"
+        ],
+        "imaging_findings": {
+            "MRI": "Findings suggestive of demyelination in the white matter of the brain"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms suggestive of PML",
+            "Imaging findings consistent with PML (e.g., MRI showing demyelination)"
+        ],
+        "supportive": [
+            "Positive JC virus antibody titer",
+            "Evidence of immunosuppression"
+        ]
+    },
+    "differential_diagnoses": []
+}

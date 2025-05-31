@@ -1,0 +1,104 @@
+{
+    "disease": "Rickettsialpox",
+    "icd_code": "A791",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Abrupt onset"
+            },
+            {
+                "name": "Eschar",
+                "severity": "Present in most cases",
+                "pattern": "Develops ~1 week post-bite, starts as raised spot, develops blister, then dries to brown/black crust"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable, present in most cases",
+                "pattern": "Vesicular, starts 1-10 days post-bite, resolves in 2-3 weeks, not on palms/soles"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Regional to eschar"
+            },
+            {
+                "name": "Headache",
+                "severity": "Common",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Common",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Abdominal distention/pain",
+                "severity": "Reported in one case",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Hematura",
+                "severity": "Reported in one case",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Mild, reported in one case",
+                "pattern": "Associated with pleuritic chest discomfort"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Elevated (105 bpm reported in one case)",
+            "temperature": "Elevated (38.2\u00b0C reported in one case)"
+        },
+        "physical_findings": [
+            "Eschar",
+            "Erythema",
+            "Lymphadenopathy",
+            "Abdominal distention",
+            "Anasarca (reported in one case)",
+            "Mild crackles at lung base (reported in one case)"
+        ],
+        "lab_values": {
+            "leukocytes": "Elevated (16.7 \u00d7 10^9 cells/L reported in one case)",
+            "hemoglobin": "Decreased (100 g/L reported in one case)",
+            "creatinine": "Elevated (191 \u00b5mol/L reported in one case)",
+            "C-reactive protein": "Elevated (342 mg/L reported in one case)",
+            "AST": "Slightly elevated (71 U/L reported in one case)",
+            "ALT": "Slightly elevated (64 U/L reported in one case)",
+            "albumin": "Slightly decreased (28 g/L reported in one case)"
+        },
+        "risk_factors": [
+            "Exposure to house mice and their mites (Liponyssoides sanguineus)",
+            "Living in urban environments with rodent infestations",
+            "Exposure to bats and mice (reported in one case)"
+        ],
+        "imaging_findings": {
+            "CT scan (abdomen and pelvis)": [
+                "Marked inflammatory change in right retroperitoneal fascial planes",
+                "Inflammation around right psoas muscle",
+                "Small amount of fluid in perirectal space",
+                "Small pericardial and left pleural effusions"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Fever",
+            "Eschar",
+            "Rash"
+        ],
+        "supportive": [
+            "Lymphadenopathy",
+            "Elevated SFGR titers in convalescent serum",
+            "Positive R. akari species-specific serology (significant increase in IgG titers)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cutaneous anthrax",
+        "Chickenpox"
+    ]
+}

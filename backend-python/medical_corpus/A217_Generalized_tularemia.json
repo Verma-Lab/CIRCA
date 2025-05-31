@@ -1,0 +1,79 @@
+{
+    "disease": "Generalized Tularemia",
+    "icd_code": "A217",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Flu-like illness",
+                "severity": "Variable",
+                "pattern": "Early symptom, may evolve into other forms"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "May or may not be present depending on the form of tularemia"
+            },
+            {
+                "name": "Skin ulcer",
+                "severity": "Variable",
+                "pattern": "Present in ulceroglandular tularemia"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "Present in oculoglandular tularemia"
+            },
+            {
+                "name": "Oropharyngeal lesions",
+                "severity": "Variable",
+                "pattern": "Present in oropharyngeal tularemia"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Present in pulmonary tularemia"
+            },
+            {
+                "name": "Systemic symptoms",
+                "severity": "Variable",
+                "pattern": "Present in typhoidal tularemia"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lymphadenopathy",
+            "Skin ulcer",
+            "Conjunctivitis",
+            "Oropharyngeal lesions",
+            "Pneumonia findings"
+        ],
+        "lab_values": {
+            "blood_culture": "Often negative",
+            "serology": "Positive IgM and/or IgG antibodies to F. tularensis"
+        },
+        "risk_factors": [
+            "Handling infected animals",
+            "Tick and mosquito bites",
+            "Conjunctival infection",
+            "Ingestion of contaminated food or water",
+            "Inhalation of bacteria"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of F. tularensis from a clinical specimen",
+            "Positive IgM and/or IgG antibodies to F. tularensis (seroconversion)"
+        ],
+        "supportive": [
+            "Detection of F. tularensis via PCR or other molecular methods",
+            "Positive antibodies to F. tularensis in a single serologic test"
+        ]
+    },
+    "differential_diagnoses": [
+        "Influenza",
+        "Cat-scratch disease",
+        "Plague"
+    ]
+}

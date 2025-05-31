@@ -1,0 +1,18 @@
+{
+    "disease": "Other specified malignant neoplasm of skin of right upper limb, including shoulder",
+    "icd_code": "C44692",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

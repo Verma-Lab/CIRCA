@@ -1,0 +1,84 @@
+{
+    "disease": "Rhodesiense trypanosomiasis",
+    "icd_code": "B561",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common in early stages"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common in early stages"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Common in early stages"
+            },
+            {
+                "name": "Chancre at bite site",
+                "severity": "Variable",
+                "pattern": "May be present in early stages"
+            },
+            {
+                "name": "Neurological signs and symptoms",
+                "severity": "Severe",
+                "pattern": "Dominant in later stages, varies geographically"
+            },
+            {
+                "name": "Endocrinological disturbances",
+                "severity": "Severe",
+                "pattern": "Present in later stages"
+            },
+            {
+                "name": "Mental disturbances",
+                "severity": "Severe",
+                "pattern": "Present in later stages"
+            },
+            {
+                "name": "Severe motor problems",
+                "severity": "Severe",
+                "pattern": "Present in later stages"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "No specific vital sign abnormalities consistently reported."
+        },
+        "physical_findings": [
+            "Chancre at the site of the infective bite (early stage)",
+            "Neurological signs and symptoms (later stage)"
+        ],
+        "lab_values": {
+            "CSF WBC count": {
+                "abnormal_range": ">=5 cells/mm3 (indicative of second stage)",
+                "note": "Significantly higher in Tanzania compared to Uganda in one study"
+            },
+            "Blood trypanosomes": {
+                "abnormal_range": "Present (early stage)"
+            },
+            "PCR for SRA gene": {
+                "abnormal_range": "Positive (confirms T.b. rhodesiense)"
+            }
+        },
+        "risk_factors": [
+            "Living in rural areas of East and South Africa",
+            "Exposure to tsetse flies"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of trypanosomes in blood or lymph (early stage)",
+            "Presence of trypanosomes and/or elevated WBC count (\u22655 cells/mm3) in CSF (second stage)",
+            "Positive PCR for SRA gene"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with Rhodesiense trypanosomiasis"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,85 @@
+{
+    "disease": "Malignant neoplasm of retroperitoneum",
+    "icd_code": "C480",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be absent or present, depending on the size and location of the tumor and involvement of adjacent structures."
+            },
+            {
+                "name": "Abdominal mass",
+                "severity": "Variable",
+                "pattern": "May be palpable or detected on imaging."
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be significant in advanced stages."
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present due to the disease process."
+            },
+            {
+                "name": "Nausea/vomiting",
+                "severity": "Variable",
+                "pattern": "May be present if the tumor obstructs the gastrointestinal tract."
+            },
+            {
+                "name": "Constipation or bowel obstruction",
+                "severity": "Variable",
+                "pattern": "May be present if the tumor compresses the intestines."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in advanced stages due to anemia or other complications.",
+            "blood_pressure": "May be elevated due to tumor compression of blood vessels or other complications.",
+            "respiratory_rate": "May be elevated due to tumor compression of the lungs or other complications."
+        },
+        "physical_findings": [
+            "Abdominal mass",
+            "Ascites (fluid accumulation in the abdomen)",
+            "Lymphadenopathy (swollen lymph nodes)",
+            "Hepatomegaly (enlarged liver)",
+            "Splenomegaly (enlarged spleen)"
+        ],
+        "lab_values": {
+            "Complete blood count (CBC)": "May show anemia, leukocytosis, or thrombocytopenia.",
+            "Liver function tests (LFTs)": "May be abnormal if the liver is involved.",
+            "Tumor markers": "May be elevated (e.g., CA 19-9, CEA)"
+        },
+        "risk_factors": [
+            "Exposure to radiation",
+            "Genetic predisposition",
+            "Previous abdominal surgery",
+            "Certain types of asbestos exposure",
+            "Smoking"
+        ],
+        "imaging_findings": {
+            "CT scan": "Shows the location, size, and extent of the tumor; may reveal lymph node involvement or distant metastases.",
+            "MRI": "Provides detailed images of soft tissues, helpful in assessing tumor characteristics and involvement of adjacent structures.",
+            "Ultrasound": "May be used to guide biopsies or other procedures.",
+            "PET scan": "May be used to detect metastatic disease."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a retroperitoneal mass",
+            "Histological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Clinical symptoms suggestive of retroperitoneal malignancy",
+            "Elevated tumor markers"
+        ]
+    },
+    "differential_diagnoses": [
+        "Retroperitoneal fibrosis",
+        "Lymphoma",
+        "Sarcoma",
+        "Other retroperitoneal tumors (benign or malignant)"
+    ]
+}

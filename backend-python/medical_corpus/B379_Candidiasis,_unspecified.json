@@ -1,0 +1,93 @@
+{
+    "disease": "Candidiasis, unspecified",
+    "icd_code": "B379",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "White patches in the mouth",
+                "severity": "Variable",
+                "pattern": "Persistent in oral candidiasis"
+            },
+            {
+                "name": "Burning",
+                "severity": "Variable",
+                "pattern": "Persistent in vaginal candidiasis"
+            },
+            {
+                "name": "Abnormal cottage cheese-like vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Persistent in vaginal candidiasis"
+            },
+            {
+                "name": "Red, itchy rashes",
+                "severity": "Variable",
+                "pattern": "Persistent in cutaneous candidiasis"
+            },
+            {
+                "name": "Pustules",
+                "severity": "Variable",
+                "pattern": "Occasional in cutaneous candidiasis"
+            },
+            {
+                "name": "Fever",
+                "severity": "Severe",
+                "pattern": "Present in systemic candidiasis"
+            },
+            {
+                "name": "Chills",
+                "severity": "Severe",
+                "pattern": "Present in systemic candidiasis"
+            },
+            {
+                "name": "Organ dysfunction",
+                "severity": "Severe",
+                "pattern": "Present in systemic candidiasis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "White patches on mucous membranes",
+            "Skin lesions",
+            "Red, itchy rashes",
+            "Pustules"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Weakened immune system (HIV, cancer, chemotherapy, organ transplant)",
+            "Prolonged use of antibiotics",
+            "Prolonged use of corticosteroids",
+            "Prolonged use of immunosuppressive drugs"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of symptoms commonly associated with candidiasis",
+            "Clinical examination findings suggestive of candidiasis",
+            "Laboratory tests confirming the presence of Candida species"
+        ],
+        "supportive": [
+            "Patient history of recurrent infections or predisposing conditions",
+            "Response to antifungal treatment",
+            "Exclusion of other conditions",
+            "Consultation with specialists"
+        ]
+    },
+    "differential_diagnoses": []
+}

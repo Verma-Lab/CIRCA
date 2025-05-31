@@ -1,0 +1,88 @@
+{
+    "disease": "Gastrointestinal mucormycosis",
+    "icd_code": "B462",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Nonspecific, depends on affected area"
+            },
+            {
+                "name": "Abdominal distention",
+                "severity": "Variable",
+                "pattern": "Nonspecific"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Variable",
+                "pattern": "Upper or lower GI bleed; hematemesis common in stomach involvement"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common, especially in immunosuppressed patients; low- or high-grade"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Melena",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Intestinal obstruction",
+                "severity": "Variable",
+                "pattern": "Can be a complication"
+            },
+            {
+                "name": "Intestinal perforation",
+                "severity": "Variable",
+                "pattern": "Can be a complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Present in many cases, variable severity"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Diabetes mellitus",
+            "Hemodialysis/peritoneal dialysis",
+            "Malnutrition",
+            "Alcohol use",
+            "Corticosteroid therapy",
+            "Organ transplantation (liver, renal)",
+            "Surgery",
+            "Healthcare-associated infections (ICU admission, intestinal surgery)",
+            "Immunocompromised state",
+            "Hematologic malignancy"
+        ],
+        "imaging_findings": {
+            "CT scan": "Diffuse bowel wall thickening, areas of intense and poor contrast enhancement (mimicking ischemic bowel)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathologic examination showing broad, non-septate hyphae consistent with Mucorales"
+        ],
+        "supportive": [
+            "Endoscopic findings (hemorrhagic and edematous mucosa, ulceration, necrosis, thrombosis)",
+            "Mucorales PCR of formalin-fixed paraffin-embedded tissue",
+            "Fungal culture (though often negative)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Ischemic bowel disease",
+        "Cytomegalovirus infection"
+    ]
+}

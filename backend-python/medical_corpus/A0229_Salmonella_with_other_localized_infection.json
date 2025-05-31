@@ -1,0 +1,71 @@
+{
+    "disease": "Salmonella infection (non-typhoidal)",
+    "icd_code": "A0229",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Can be severe and life-threatening, especially in children and elderly",
+                "pattern": "Can develop with severe diarrhea"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "May be elevated due to dehydration or infection severity"
+        },
+        "physical_findings": [
+            "Tender abdomen",
+            "Rose spots (tiny pink spots on skin)"
+        ],
+        "lab_values": {
+            "stool_culture": "Positive for Salmonella",
+            "blood_culture": "May be positive in severe cases"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Weakened immune system",
+            "Infancy",
+            "Elderly age",
+            "Contact with infected animals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with Salmonella infection (fever, abdominal pain, diarrhea, nausea, vomiting)",
+            "Positive stool culture for Salmonella"
+        ],
+        "supportive": [
+            "Exposure to known source of Salmonella",
+            "Abnormal vital signs",
+            "Physical findings (tender abdomen, rose spots)"
+        ]
+    },
+    "differential_diagnoses": []
+}

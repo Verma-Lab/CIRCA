@@ -1,0 +1,105 @@
+{
+    "disease": "Other conditions associated with Lyme disease",
+    "icd_code": "A6929",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Memory loss",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Severe",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Mental impairments",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable",
+                "pattern": "Can be a complication"
+            },
+            {
+                "name": "Brain fog",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Heart tissue damage",
+                "severity": "Variable",
+                "pattern": "Can be a complication"
+            },
+            {
+                "name": "Brain tissue damage",
+                "severity": "Variable",
+                "pattern": "Can be a complication"
+            },
+            {
+                "name": "Sleep disturbance",
+                "severity": "Variable",
+                "pattern": "Persistent in some cases"
+            },
+            {
+                "name": "Depression",
+                "severity": "Variable",
+                "pattern": "Persistent in some cases"
+            },
+            {
+                "name": "Cognitive problems (short-term memory, speed of thinking, multitasking)",
+                "severity": "Variable",
+                "pattern": "Persistent in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Elevated in some cases"
+        },
+        "physical_findings": [
+            "Bullseye-shaped rash"
+        ],
+        "lab_values": {
+            "autoantibodies against phospholipids": "Elevated levels in some patients with persistent symptoms",
+            "interferon-alpha": "Abnormally high levels in some patients with persistent symptoms"
+        },
+        "risk_factors": [
+            "Increased severity of initial illness",
+            "Presence of neurologic symptoms",
+            "Initial misdiagnosis",
+            "Genetic predispositions",
+            "Immunologic variables"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Persistent functionally impairing symptoms 6 months or more following the end of treatment",
+            "Elevated levels of autoantibodies against phospholipids",
+            "Abnormally high levels of interferon-alpha"
+        ]
+    },
+    "differential_diagnoses": [
+        "Long COVID",
+        "ME/CFS",
+        "Other autoimmune diseases (e.g., lupus)"
+    ]
+}

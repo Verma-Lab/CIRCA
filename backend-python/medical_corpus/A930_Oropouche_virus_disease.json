@@ -1,0 +1,112 @@
+{
+    "disease": "Oropouche virus disease",
+    "icd_code": "A930",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to severe",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Joint pain (arthralgia)",
+                "severity": "Mild to moderate",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Muscle pain (myalgia)",
+                "severity": "Mild to moderate",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Aseptic meningitis",
+                "severity": "Severe",
+                "pattern": "Occasional complication"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Severe",
+                "pattern": "Rare complication"
+            },
+            {
+                "name": "Guillain-Barr\u00e9 syndrome",
+                "severity": "Severe",
+                "pattern": "Rare complication"
+            },
+            {
+                "name": "Microcephaly",
+                "severity": "Severe",
+                "pattern": "Possible complication in newborns from infected mothers"
+            },
+            {
+                "name": "Stillbirth",
+                "severity": "Severe",
+                "pattern": "Possible complication in pregnancies"
+            },
+            {
+                "name": "Spontaneous miscarriage",
+                "severity": "Severe",
+                "pattern": "Possible complication in pregnancies"
+            },
+            {
+                "name": "Congenital anomalies",
+                "severity": "Severe",
+                "pattern": "Possible complication in newborns from infected mothers"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Elevated temperature"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "RT-PCR": "Positive for Oropouche virus RNA"
+        },
+        "risk_factors": [
+            "Travel to or residence in areas with Oropouche virus transmission",
+            "Pregnancy (risk of fetal infection)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms consistent with Oropouche virus disease"
+        ],
+        "supportive": [
+            "Positive RT-PCR test for Oropouche virus RNA",
+            "Epidemiological link to an area with Oropouche virus transmission",
+            "Positive serologic assays (if available and performed by trained personnel)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Dengue",
+        "Chikungunya",
+        "Zika",
+        "Other arboviral infections"
+    ]
+}

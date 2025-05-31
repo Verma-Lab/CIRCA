@@ -1,0 +1,74 @@
+{
+    "disease": "Actinomycotic encephalitis",
+    "icd_code": "A4282",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Progressive",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Facial hypoesthesia",
+                "severity": "Progressive",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Normal (afebrile in some cases, but fever possible)",
+            "white_blood_cell_count": "Elevated (possible)"
+        },
+        "physical_findings": [
+            "Left lower facial droop",
+            "Trismus (in some cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated",
+            "ESR": "Elevated",
+            "CRP": "Elevated",
+            "blood_cultures": "May be negative (due to prior antibiotic use or low bacterial load)"
+        },
+        "risk_factors": [
+            "Poor dental hygiene",
+            "Dental procedures",
+            "Immunocompromised state (rare)",
+            "Pre-existing nasopharyngeal actinomycosis"
+        ],
+        "imaging_findings": {
+            "CT": "Bulging mass, erosion of bone structures (e.g., pterygopalatine fossa, skull base)",
+            "MRI": "Brain abscess, midline shift"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing Gram-positive filamentous sulfur granules",
+            "Imaging findings consistent with brain abscess"
+        ],
+        "supportive": [
+            "Clinical symptoms (headache, facial hypoesthesia, etc.)",
+            "Positive bacterial culture (though often negative due to prior antibiotic use or difficulty culturing Actinomyces)",
+            "Elevated inflammatory markers (ESR, CRP)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignancy",
+        "Tuberculosis",
+        "Nocardiosis"
+    ]
+}

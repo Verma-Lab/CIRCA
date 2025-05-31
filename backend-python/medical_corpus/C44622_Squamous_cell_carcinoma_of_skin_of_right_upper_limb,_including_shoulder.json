@@ -1,0 +1,72 @@
+{
+    "disease": "Squamous cell carcinoma of skin of right upper limb, including shoulder",
+    "icd_code": "C44622",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore or scab that doesn't heal in about two months",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Flat patch of scaly skin that won't go away",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Cancerous bumps, marks or lesions",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fungating lesion",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fixated swelling",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Ulcerated lesion",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Large lesion with fixation to underlying structures",
+            "Extensive involvement of the second and third metacarpals and interossei",
+            "No axillary lymphadenopathy"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Excessive ultraviolet (UV) radiation exposure",
+            "Sunburns",
+            "Low levels of melanin in the skin",
+            "Blond or red hair",
+            "Light-colored eyes",
+            "Freckles",
+            "Immunosuppression",
+            "Occupational and environmental exposure to radiation, arsenic and polycystic hydrocarbons",
+            "Human Papilloma Virus (HPV) infection",
+            "Chronically inflamed skin (burns, ulcers)"
+        ],
+        "imaging_findings": {
+            "MRI": "Extensive involvement of the second and third metacarpals and interossei which extended volarly",
+            "CT": "No evidence of metastatic spread"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (sore, scab, scaly patch, lesion)",
+            "Imaging findings (MRI, CT)"
+        ]
+    },
+    "differential_diagnoses": []
+}

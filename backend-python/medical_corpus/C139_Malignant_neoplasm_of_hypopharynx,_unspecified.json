@@ -1,0 +1,70 @@
+{
+    "disease": "Malignant neoplasm of hypopharynx, unspecified",
+    "icd_code": "C139",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Neck mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Hoarseness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Swollen lymph nodes in the neck",
+            "Throat lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Alcohol use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant cells in hypopharyngeal tissue"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with hypopharyngeal cancer",
+            "Imaging findings suggestive of hypopharyngeal cancer"
+        ]
+    },
+    "differential_diagnoses": []
+}

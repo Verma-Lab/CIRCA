@@ -1,0 +1,67 @@
+{
+    "disease": "Measles without complication",
+    "icd_code": "B059",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "moderate",
+                "pattern": "red, slightly raised spots all over the body"
+            },
+            {
+                "name": "Cough",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Sneezing",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "High fever",
+                "severity": "moderate to severe",
+                "pattern": "present"
+            },
+            {
+                "name": "Red and watery eyes",
+                "severity": "mild to moderate",
+                "pattern": "present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Koplik's spots (may be present)",
+            "Maculopapular rash"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Lack of vaccination",
+            "Exposure to infected individuals",
+            "Travel to areas with measles outbreaks",
+            "Immunocompromised status"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic maculopapular rash",
+            "Fever",
+            "Cough",
+            "Coryza (runny nose)",
+            "Conjunctivitis"
+        ],
+        "supportive": [
+            "Koplik's spots"
+        ]
+    },
+    "differential_diagnoses": []
+}

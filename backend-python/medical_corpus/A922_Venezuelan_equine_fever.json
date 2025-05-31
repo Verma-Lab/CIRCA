@@ -1,0 +1,86 @@
+{
+    "disease": "Venezuelan Equine Encephalitis (VEE)",
+    "icd_code": "A922",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Depression",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Difficulty swallowing",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Gait abnormalities",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Other neurological signs",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "ELISA": "Positive for VEE virus",
+            "PCR (CSF)": "Positive for VEE virus"
+        },
+        "risk_factors": [
+            "Exposure to infected mosquitoes",
+            "Exposure to aerosolized VEE virus"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive ELISA or PCR for VEE virus"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with VEE"
+        ]
+    },
+    "differential_diagnoses": []
+}

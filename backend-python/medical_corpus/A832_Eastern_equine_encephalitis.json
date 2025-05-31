@@ -1,0 +1,94 @@
+{
+    "disease": "Eastern Equine Encephalitis (EEE)",
+    "icd_code": "A832",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in systemic and neuroinvasive forms"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in neuroinvasive form"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in neuroinvasive form"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in neuroinvasive form"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Present in systemic form"
+            },
+            {
+                "name": "Arthralgias",
+                "severity": "Variable",
+                "pattern": "Present in systemic form"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in systemic form"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Present in neuroinvasive form"
+            },
+            {
+                "name": "Behavioral changes",
+                "severity": "Severe",
+                "pattern": "Present in neuroinvasive form"
+            },
+            {
+                "name": "Drowsiness",
+                "severity": "Variable",
+                "pattern": "Present in neuroinvasive form"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "CSF pleocytosis": {
+                "abnormal_range": "Initially neutrophilic or lymphocytic, normal glucose, potentially elevated protein"
+            },
+            "Serology (IgM tests)": {
+                "abnormal_range": "Positive in serum and/or CSF"
+            },
+            "Nucleic acid tests (RT-PCR)": {
+                "abnormal_range": "Positive in CSF or tissue"
+            }
+        },
+        "risk_factors": [
+            "Mosquito bites",
+            "Living in areas with high mosquito populations (East Coast, Great Lakes, Gulf Coast states)",
+            "Older age",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {
+            "Brain imaging (e.g., MRI)": {
+                "findings": "Lesions in basal ganglia, thalami, brainstem, subcortical, and/or cortical areas"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology (IgM tests) in serum and/or CSF",
+            "Positive nucleic acid tests (RT-PCR) in CSF or tissue (particularly in immunosuppressed patients)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with EEE",
+            "CSF pleocytosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

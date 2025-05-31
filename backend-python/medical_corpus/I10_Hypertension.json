@@ -1,0 +1,58 @@
+{
+    "disease": "Hypertension",
+    "icd_code": "I10",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Elevated blood pressure",
+                "severity": "Variable, depending on the stage of hypertension",
+                "pattern": "Persistent elevation"
+            },
+            {
+                "name": "Shortness of breath (dyspnea)",
+                "severity": "Variable",
+                "pattern": "Can be present in advanced stages with heart involvement"
+            },
+            {
+                "name": "Orthopnea",
+                "severity": "Variable",
+                "pattern": "Can be present in advanced stages with heart involvement"
+            },
+            {
+                "name": "Edema",
+                "severity": "Variable",
+                "pattern": "Can be present in advanced stages with kidney or heart involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Systolic \u2265140 mmHg and/or Diastolic \u226590 mmHg"
+        },
+        "physical_findings": [
+            "Pitting edema",
+            "Cardiomegaly (on EKG)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Smoking",
+            "Family history of hypertension",
+            "Obesity",
+            "Age",
+            "High sodium diet"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show pulmonary edema"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Persistent elevation of blood pressure (systolic \u2265140 mmHg and/or diastolic \u226590 mmHg)"
+        ],
+        "supportive": [
+            "Presence of symptoms like shortness of breath, edema",
+            "Family history",
+            "Risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

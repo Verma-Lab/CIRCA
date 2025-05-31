@@ -1,0 +1,112 @@
+{
+    "disease": "Chagas' disease (chronic) with heart involvement",
+    "icd_code": "B572",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Heart failure (HF)",
+                "severity": "Variable, can be severe",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Ventricular arrhythmias",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Chronic, intermittent or persistent"
+            },
+            {
+                "name": "Bradyarrhythmias",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Chronic, intermittent or persistent"
+            },
+            {
+                "name": "Sudden cardiac death",
+                "severity": "Fatal",
+                "pattern": "Can occur at any time"
+            },
+            {
+                "name": "Embolic events",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Stroke",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Dilated cardiomyopathy",
+                "severity": "Variable, progressive",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Left ventricular aneurysm",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Global systolic dysfunction",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Acute decompensated HF (ADHF)",
+                "severity": "Severe",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Cardiogenic shock",
+                "severity": "Life-threatening",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Right ventricular HF",
+                "severity": "Variable",
+                "pattern": "Chronic or episodic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Lower systolic blood pressure in ADHF"
+        },
+        "physical_findings": [
+            "Cardiomegaly",
+            "Murmurs"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Infection with Trypanosoma cruzi"
+        ],
+        "imaging_findings": {
+            "echocardiography": [
+                "Dilated cardiomyopathy",
+                "Reduced ejection fraction",
+                "Left ventricular aneurysm",
+                "Global systolic dysfunction"
+            ],
+            "electrocardiography": [
+                "Arrhythmias (bradycardia, tachycardia)",
+                "Conduction abnormalities"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology for Trypanosoma cruzi",
+            "Evidence of cardiac involvement (ECG, echocardiography)"
+        ],
+        "supportive": [
+            "History of Chagas disease",
+            "Clinical symptoms consistent with Chagas cardiomyopathy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Ischemic cardiomyopathy",
+        "Idiopathic dilated cardiomyopathy",
+        "Other causes of heart failure"
+    ]
+}

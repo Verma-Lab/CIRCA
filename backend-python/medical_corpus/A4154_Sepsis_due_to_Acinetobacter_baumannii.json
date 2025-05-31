@@ -1,0 +1,73 @@
+{
+    "disease": "Sepsis due to Acinetobacter baumannii",
+    "icd_code": "A4154",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Variable",
+                "pattern": "Increased heart rate"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Variable",
+                "pattern": "Increased respiratory rate"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Variable",
+                "pattern": "Low blood pressure, potentially leading to septic shock"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Confusion, disorientation"
+            },
+            {
+                "name": "Organ dysfunction",
+                "severity": "Variable",
+                "pattern": "Can affect multiple organs"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Increased",
+            "respiratory_rate": "Increased",
+            "blood_pressure": "Decreased (in severe cases, leading to septic shock)",
+            "temperature": "Elevated (may be absent)"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "PTX3": "Elevated in severe cases",
+            "leukocytes": "Elevated",
+            "myeloperoxidase": "Elevated"
+        },
+        "risk_factors": [
+            "Pre-existing infection (lungs, stomach, kidneys, bladder)",
+            "Recent surgery",
+            "Compromised immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Suspected infection",
+            "Systemic inflammatory response syndrome (SIRS)"
+        ],
+        "supportive": [
+            "Positive blood cultures for Acinetobacter baumannii",
+            "Elevated inflammatory markers"
+        ]
+    },
+    "differential_diagnoses": []
+}

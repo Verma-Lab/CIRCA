@@ -1,0 +1,75 @@
+{
+    "disease": "Foodborne staphylococcal intoxication",
+    "icd_code": "A050",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nausea",
+                "severity": "Severe",
+                "pattern": "Abrupt onset, sometimes within 30 minutes to 8 hours after ingestion"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Severe",
+                "pattern": "Abrupt onset, sometimes within 30 minutes to 8 hours after ingestion, violent"
+            },
+            {
+                "name": "Abdominal cramping",
+                "severity": "Variable",
+                "pattern": "Abrupt onset"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Abrupt onset, often present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Sometimes present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Sometimes present"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Due to fluid and electrolyte loss"
+            },
+            {
+                "name": "Low blood pressure (shock)",
+                "severity": "Severe",
+                "pattern": "Due to severe fluid and electrolyte loss"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Very low (shock) in severe cases"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of contaminated food",
+            "Improper food handling",
+            "Inadequate food storage (leaving food at room temperature)",
+            "Food handlers carrying Staphylococcus aureus",
+            "Contaminated milk or cheese",
+            "Young children",
+            "Elderly individuals",
+            "Individuals with weakened immune systems"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic symptoms (nausea, vomiting, abdominal cramping, diarrhea) with abrupt onset"
+        ],
+        "supportive": [
+            "Multiple individuals experiencing similar symptoms after consuming the same food",
+            "Identification of staphylococci in the suspected food (though not routinely done)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,121 @@
+{
+    "disease": "Pneumonic plague",
+    "icd_code": "A202",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (40.5\u00b0C in one case)",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Present in at least one case",
+                "pattern": "Significant"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Present in at least one case",
+                "pattern": "Significant"
+            },
+            {
+                "name": "Cough",
+                "severity": "Present in at least one case",
+                "pattern": "Significant, with bloody sputum"
+            },
+            {
+                "name": "Coma",
+                "severity": "Present in at least one case",
+                "pattern": "Developed within 48 hours of admission"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mentioned in multiple sources",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mentioned in one source",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Mentioned in one source",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Mentioned in one source",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mentioned in one source",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mentioned in one source",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Present in at least one case",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Cyanotic lips",
+                "severity": "Present in at least one case",
+                "pattern": "Developed rapidly"
+            },
+            {
+                "name": "Cold extremities",
+                "severity": "Present in at least one case",
+                "pattern": "Developed rapidly"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (38.5\u00b0C - 40.5\u00b0C)",
+            "respiratory_rate": "Increased (46 breaths per minute in one case)"
+        },
+        "physical_findings": [
+            "Coarse breath sounds",
+            "Moist rales (both sides)",
+            "No palpable carotid artery pulse (in one fatal case)"
+        ],
+        "lab_values": {
+            "WBC": "Decreased",
+            "Platelets": "Decreased",
+            "Electrolytes": "Disturbed"
+        },
+        "risk_factors": [
+            "Contact with dead marmots",
+            "Living in an area with dead marmots",
+            "Exposure to infected individuals (person-to-person transmission)"
+        ],
+        "imaging_findings": {
+            "CT_scan": [
+                "Multiple nodules in central regions of lung lobes",
+                "Consolidation in secondary pulmonary lobules",
+                "Gravity-dependent distribution pattern",
+                "Findings consistent with pulmonary hemorrhage and diffuse alveolar damage",
+                "Significant progression of diffuse nodules and patchy consolidations in a short time frame"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pneumonic plague",
+            "Isolation of Yersinia pestis from autopsy specimens",
+            "Positive F1 antigen test"
+        ],
+        "supportive": [
+            "Chest CT scan showing findings consistent with pulmonary hemorrhage and diffuse alveolar damage",
+            "Epidemiological evidence (contact with dead marmots)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Severe pneumonia"
+    ]
+}

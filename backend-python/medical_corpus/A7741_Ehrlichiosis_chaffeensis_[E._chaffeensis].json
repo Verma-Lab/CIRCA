@@ -1,0 +1,51 @@
+{
+    "disease": "Ehrlichiosis chaffeensis",
+    "icd_code": "A7741",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Moderate to severe",
+                "pattern": "Common"
+            },
+            {
+                "name": "Multiple tick bites",
+                "severity": "Variable",
+                "pattern": "Preceding symptoms"
+            },
+            {
+                "name": "Unexplained illness",
+                "severity": "Variable",
+                "pattern": "Common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "peripheral blood smear": "Intracytoplasmic inclusions in monocytes"
+        },
+        "risk_factors": [
+            "Tick bites",
+            "Immunocompromised individuals (aging, infectious causes, malignancy, medical therapy)",
+            "Exposure to infected ticks",
+            "White-tailed deer populations"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Intracytoplasmic inclusions in monocytes (on peripheral blood smear)",
+            "Molecular methods (PCR)"
+        ],
+        "supportive": [
+            "History of tick bite",
+            "Clinical symptoms (fever, unexplained illness)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rocky Mountain spotted fever"
+    ]
+}

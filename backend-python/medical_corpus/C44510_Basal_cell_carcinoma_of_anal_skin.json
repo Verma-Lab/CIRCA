@@ -1,0 +1,90 @@
+{
+    "disease": "Basal cell carcinoma of anal skin",
+    "icd_code": "C44510",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Anorectal bleeding",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pruritus",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Perianal mass",
+                "severity": "Variable",
+                "pattern": "Progressive growth"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Exophytic condyloma-like nodular lesion",
+            "Surface ulceration",
+            "Erythematous papules, nodules, and ulcerations",
+            "Well-defined, ulcerated, erythematous neoformation"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Advanced age",
+            "Male gender",
+            "Immunosuppression",
+            "Arsenic exposure",
+            "Chronic inflammation",
+            "Burn scars",
+            "Squamous cell cancer",
+            "Ulcers",
+            "Chronic trauma (itching, chronic dermatitis)",
+            "Nevoid BCC syndrome",
+            "p53 mutation",
+            "Immune deficiency",
+            "Sexually transmitted disease"
+        ],
+        "imaging_findings": {
+            "Magnetic Resonance Imaging (MRI)": "No evidence of infiltration into the sphincteric musculature"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Typical histopathological findings: Edematous stroma containing mononuclear inflammatory cells under a stratified squamous epithelium with epithelial cell islands containing pleomorphic cells and showing infiltrative growth and tumor cell islands with peripheral palisading. Palisading appearance.",
+            "Negative HPV assessment"
+        ],
+        "supportive": [
+            "Ber-EP4 monoclonal antibody expression",
+            "Lack of tumor retraction artifact and atypical mitotic figures on histopathology",
+            "Strong Ber-EP4 and BCL2 staining on immunohistochemical evaluation"
+        ]
+    },
+    "differential_diagnoses": [
+        "Condyloma acuminatum",
+        "Bowen's disease",
+        "Paget's disease",
+        "Squamous cell carcinoma",
+        "Perianal basaloid (cloacogenic) squamous cell tumors",
+        "Crohn's disease",
+        "Adenocarcinoma",
+        "Melanoma",
+        "Neuroendocrine tumors",
+        "Gastrointestinal stromal tumors",
+        "Verrucous carcinoma",
+        "Kaposi sarcoma",
+        "Paget disease",
+        "Sexually transmitted diseases",
+        "Candidiasis",
+        "Tuberculosis granuloma",
+        "Fungal infections",
+        "Amoebiasis",
+        "Hemorrhoids",
+        "Fistulas",
+        "Fissures",
+        "Infections"
+    ]
+}

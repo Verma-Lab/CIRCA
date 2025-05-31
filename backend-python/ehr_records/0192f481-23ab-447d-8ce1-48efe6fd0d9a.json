@@ -1,0 +1,201 @@
+{
+  "id": "0192f481-23ab-447d-8ce1-48efe6fd0d9a",
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "encounter_id": "a7445baa-dbe6-45a0-b1f4-6f6c9ee603dc",
+  "analysis_type": "Genetic Testing Recommendation",
+  "input_text": "Patient: John Doe, DOB: 1980-05-15, Gender: Male\n\nChief Complaint: headache\n\nS: no previous history of headache\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "recommendation": "not recommended",
+  "reasoning": "Based on the provided patient data, there is no clinical indication for genetic testing. The chief complaint is a headache with no prior history, and there is no physical exam, assessment, or plan documented.  The relevant medical literature describes various genetic disorders and their diagnostic approaches, but none are suggested by the minimal information available for John Doe.  To recommend genetic testing, we would need a comprehensive medical history, detailed physical examination findings, and potentially imaging studies to suggest a specific genetic disorder with associated symptoms. The current information is insufficient to even formulate a differential diagnosis, let alone justify genetic testing.",
+  "confidence": "95%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "myotonia-c_txt_19",
+      "contents": "Author History \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "pnknd_txt_16",
+      "contents": " PubMed PMID: 25572910. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "cmt-4a_txt_31",
+      "contents": " PubMed PMID: 25231362. \n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "spg4_txt_37",
+      "contents": " PubMed PMID: 17389232. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "pku_txt_40",
+      "contents": " PubMed PMID: 17091341. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "dbh_txt_23",
+      "contents": "PubMed PMID: 11170900. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "ced_txt_12",
+      "contents": " Treatment with cellulose phosphate led to worsening hypocalcemia and proximal myopathy in one individual. \nEvaluation of Relatives at Risk \nIt is appropriate to evaluate relatives at risk in order to identify the diagnosis as early as possible, avoid potential misdiagnosis, and provide appropriate treatment for extremity pain. Evaluations can include: \n\u2022 Molecular genetic testing if the pathogenic variant in the family is known;   \n\u2022 Radiographic evaluation for hyperostosis if the pathogenic variant in the family is not known. \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for access to information on clinical studies for a wide range of diseases and conditions. Note: Tere may not be clinical trials for this disorder. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.  Te following section deals with genetic risk assessment and the use of family history and genetic testing to clarify genetic status for family members; it is not meant to address all personal, cultural, or ethical issues that may arise or to substitute for consultation with a genetics professional. \u2014ED. \nMode of Inheritance \nCamurati-Engelmann disease (CED) is inherited in an autosomal dominant manner. \nRisk to Family Members \nParents of a proband \n\u2022 Many individuals diagnosed with CED have an afected parent.   \n\u2022 Some individuals diagnosed with CED may have the disorder as the result of a de novo TGFB1 pathogenic variant. Te proportion of individuals with CED caused by a de novo pathogenic variant is unknown.   \n\u2022 If a molecular diagnosis has been established in the proband and the proband appears to be the only afected family member (i.e., a simplex case), molecular genetic testing is recommended for the parents of the proband to evaluate their genetic status and inform recurrence risk assessment.   \n\u2022 If the pathogenic variant identifed in the proband is not identifed in either parent and parental identity testing has confrmed biological maternity and paternity, the following possibilities should be considered: \u26ac Te proband has a de novo pathogenic variant.",
+      "token_count": 482,
+      "sentence_count": 24
+    },
+    {
+      "id": "syne1ca-ar_txt_24",
+      "contents": " PubMed PMID: 17761684. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "dent_txt_21",
+      "contents": "Elizabeth Abrash, BA (2017-present) Lada Beara-Lasic, MD (2012-present) Andrea Cogal, BS (2014-present) Peter Harris, PhD (2014-present) Katharina Hopp, PhD; Mayo Clinic (2014-2017) John C Lieske, MD (2012-present) Kari Mattison, BS; Mayo Clinic (2014-2017) Dawn S Milliner, MD (2012-present) Sandro Rossetti, MD; Mayo Clinic (2012-2014) \nRevision History \n14 December 2017 (ha) Comprehensive update posted live 25 September 2014 (me) Comprehensive update posted live 9 August 2012 (me) Review posted live 1 March 2012 (jcl) Original submission \nReferences \nLiterature Cited \n",
+      "token_count": 151,
+      "sentence_count": 4
+    },
+    {
+      "id": "lgmd-overview_txt_46",
+      "contents": " PubMed PMID: 9382102. \nChapter Notes \nAuthor History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "ea2_txt_31",
+      "contents": "Chapter Notes \nRevision History \n",
+      "token_count": 4,
+      "sentence_count": 2
+    },
+    {
+      "id": "vodi_txt_23",
+      "contents": " PubMed PMID: 14559998. \n\nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "mstn_txt_10",
+      "contents": " PubMed PMID: 15215484. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "hna_txt_25",
+      "contents": " PubMed PMID: 21262397. \nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "pdc_txt_20",
+      "contents": " PubMed PMID: 18676167. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "hfg_txt_21",
+      "contents": " PubMed PMID: 26590955. \n\nChapter Notes \nAuthor Notes \nAuthor's website \nRevision History \n",
+      "token_count": 19,
+      "sentence_count": 5
+    },
+    {
+      "id": "chd4-ndd_txt_15",
+      "contents": " PubMed PMID: 27616479. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "pknd_txt_28",
+      "contents": " PubMed PMID: 18541410. \n\n\n\nChapter Notes \nRevision History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "edm-ad_txt_9",
+      "contents": "To establish the extent of disease and needs in an individual diagnosed with multiple epiphyseal dysplasia (MED), the evaluations summarized in this section (if not performed as part of the evaluation that led to the diagnosis) are recommended: \nElicitation of pain history   \nAssessment of joint mobility   \nRadiographs to determine the extent and severity of joint involvement   \nConsultation with a clinical geneticist and/or genetic counselor \nTreatment of Manifestations \nFor pain control, a combination of analgesics and physiotherapy including hydrotherapy is helpful to many afected individuals; however, pain can be difcult to control. Referral to a rheumatologist or pain specialist may be indicated. \nLimitation of joint destruction and the development of osteoarthritis is a goal. Consultation with an orthopedic surgeon can determine if realignment osteotomy and/or acetabular osteotomy may be helpful in slowing the progression of symptoms. \nIn some individuals, total joint arthroplasty may be required if the degenerative hip changes are causing too much pain or dysfunction. \nPsychosocial support addressing issues of short stature, chronic pain, disability, and employment is appropriate. \nSurveillance \nEvaluation by an orthopedic surgeon is recommended if the afected individual has chronic pain or limb deformities (genu varum, genu valgum). \nAgents/Circumstances to Avoid \nTe following should be avoided: \nObesity, which increases stress on joints \u2022 Exercise that causes repetitive strain on afected joints \nEvaluation of Relatives at Risk \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for information on clinical studies for a wide range of diseases and conditions. Note: Tere may not be clinical trials for this disorder. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.  Te following section deals with genetic risk assessment and the use of family history and genetic testing to clarify genetic status for family members; it is not meant to address all personal, cultural, or ethical issues that may arise or to substitute for consultation with a genetics professional. \u2014ED. \nMode of Inheritance \n",
+      "token_count": 484,
+      "sentence_count": 27
+    },
+    {
+      "id": "ea2_txt_0",
+      "contents": "Episodic Ataxia Type 2 \u2013 RETIRED CHAPTER, FOR HISTORICAL REFERENCE ONLY \nSian Spacey, MD1 Created: February 24, 2003; Updated: October 15, 2015. \nSummary \nNOTE: THIS PUBLICATION HAS BEEN RETIRED. THIS ARCHIVAL VERSION IS FOR HISTORICAL REFERENCE ONLY, AND THE INFORMATION MAY BE OUT OF DATE. \nClinical characteristics \n",
+      "token_count": 65,
+      "sentence_count": 5
+    },
+    {
+      "id": "glyt1-dis_txt_15",
+      "contents": " PubMed PMID: 28363510. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "fevr_txt_30",
+      "contents": " PubMed PMID: 20688566. \n\n\nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "vldlr-ch_txt_17",
+      "contents": " PubMed PMID: 31261436. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "rotor_txt_15",
+      "contents": " PubMed PMID: 22232210. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "26431_txt_241",
+      "contents": "RESEARCH AND REVIEW ARTICLES \nBier, J. D., W. G. M. Scholten-Peeters, J. B. Staal, J. Pool, M. W. van Tulder, E. Beekman, J. Knoop, G. Meerhoff, and A. P. Verhagen. 2018. Clinical practice guideline for physical therapy assessment and treatment in patients with nonspecific neck pain. Physical Therapy 98(3):162-171. https://doi.org/10.1093/ptj/pzx118.   \nBlanpied, P. R., A. R. Gross, J. M. Elliott, L. L. Devaney, D. Clewley, D. M. Walton, C. Sparks, and E. K. Robertson. 2017. Neck pain: Revision 2017. Journal of Orthopaedic and Sports Physical Therapy 47(7):A1-A83. https://doi.org/10.2519/jospt.2017.0302.   \nByers, P. H., J. Belmont, J. Black, J. De Backer, M. Frank, X. Jeunemaitre, D. Johnson, M. Pepin, L. Robert, L. Sanders, and N. Wheeldon. 2017. Diagnosis, natural history, and management in vascular Ehlers-Danlos syndrome. American Journal of Medical Genetics. Part C: Seminars in Medical Genetics 175(1):40-47. https://onlinelibrary.wiley.com/doi/10.1002/ ajmg.c.31553.   \nCarpal tunnel syndrome: A summary of clinical practice guideline recommendations\u2014Using the evidence to guide physical therapist practice. 2019. Journal of Orthopaedic and Sports Physical Therapy 49(5):359-360. https://doi.org/10.2519/jospt.2019.0501.   \nCastori, M., B. Tinkle, H. Levy, R. Grahame, F. Malfait, and A. Hakim. 2017. A framework for the classification of joint hypermobility and related conditions. American Journal of Medical Genetics.",
+      "token_count": 480,
+      "sentence_count": 26
+    },
+    {
+      "id": "fragilex_txt_61",
+      "contents": " 2014;3:153\u201361. PubMed PMID: 25606365. \nChapter Notes \nAuthor History \n",
+      "token_count": 22,
+      "sentence_count": 4
+    },
+    {
+      "id": "thompson_thompson_genetics_8th_edition_medicoscompanion_com_txt_1",
+      "contents": " Genomic information has stimulated the creation of powerful new tools that are changing human genetics research and medical genetics practice. Throughout, we have continued to expand the scope of the book to incorporate the concepts of personalized health care and precision medicine into Genetics in Medicine by providing more examples of how genomics is being used to identify the contributions made by genetic variation to disease susceptibility and treatment outcomes. \n\nThe book is not intended to be a compendium of genetic diseases nor is it an encyclopedic treatise on human genetics and genomics in general. Rather, the authors hope that the eighth edition of Genetics in Medicine will provide students with a framework for understanding the field of medical genetics and genomics while giving them a basis on which to establish a program of continuing education in this area. The Clinical Cases\u2014first introduced in the sixth edition to demonstrate and reinforce general principles of disease inheritance, pathogenesis, diagnosis, management, and counseling\u2014continue to be an important feature of the book. We have expanded the set of cases to add more common complex disorders to the set of cases. To enhance further the teaching value of the Clinical Cases, we continue to provide a case number (highlighted in      green) throughout the text to direct readers to the case in the Clinical Case Studies section that is relevant to the concepts being discussed at that point in the text. \nAny medical or genetic counseling student, advanced undergraduate, graduate student in genetics or genomics, resident in any field of clinical medicine, practicing physician, or allied medical professional in nursing or physical therapy should find this book to be a thorough but not exhaustive (or exhausting!) presentation of the fundamentals of human genetics and genomics as applied to health and disease. \nRobert L. Nussbaum, MD Roderick R. McInnes, MD, PhD Huntington F. Willard, PhD \nThe authors wish to express their appreciation and gratitude to their many colleagues who, through their ideas, suggestions, and criticisms, improved the eighth edition of Genetics in Medicine. In particular, we are grateful to Anthony Wynshaw-Boris for sharing his knowledge and experience in molecular dysmorphology and developmental genetics in the writing of Chapter 14 and to Ada Hamosh for her continuing dedication to and stewardship of the Clinical Case Studies. \n",
+      "token_count": 457,
+      "sentence_count": 14
+    },
+    {
+      "id": "tetra-amelia_txt_13",
+      "contents": " PubMed PMID: 8256824. \n\nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "hirschsprung-ov_txt_39",
+      "contents": " 2005;48:97\u2013111. PubMed PMID: 16053902. \nChapter Notes \nAuthor History \n",
+      "token_count": 21,
+      "sentence_count": 4
+    },
+    {
+      "id": "msx2_txt_7",
+      "contents": "To establish the extent of disease and needs of an individual diagnosed with enlarged parietal foramina / cranium bifdum, the following evaluations (if not performed as part of the evaluation that led to the diagnosis) are recommended: \nPlain skull radiography   \n\u2022 3D CT scan of the head with bone windows Brain imaging using CT or MRI scanning, if appropriate   \n\u2022 Consultation with a clinical geneticist and/or genetic counselor \nTreatment of Manifestations \nTe management of enlarged parietal foramina is generally conservative. Although surgical closure of parietal bone defects has been advocated and performed [Kortesis et al 2003], its role is controversial. Te procedure is \nnot likely to be routinely clinically indicated, given the benign natural history of the skull defects, their tendency to reduce in size with age, and uncertainty as to whether symptoms such as headaches are improved. However, persistent cranium bifdum may warrant operative closure [Perlyn et al 2005]. \nAssociated headaches or seizures should be treated symptomatically. \nTe risk of penetrating injury to the brain is small but may cause anxiety. Education of parents, teachers, and the afected child to avoid risky behaviors sufces in most circumstances. \nAgents/Circumstances to Avoid \nContact sports should be avoided if a midline bony defect persists. \nEvaluation of Relatives at Risk \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nPregnancy Management \nWhen large skull defects are identifed prenatally, consideration should be given to the planning of the delivery (e.g., review of indications to use scalp electrodes, forceps, and/or vacuum extraction). Elective cesarean section may reduce the theoretic risk for traumatic birth injury. \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for access to information on clinical studies for a wide range of diseases and conditions. Note: Tere may not be clinical trials for this disorder. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.",
+      "token_count": 447,
+      "sentence_count": 27
+    },
+    {
+      "id": "ssadh_txt_26",
+      "contents": " PubMed PMID: 10774997. \n\n\n\nChapter Notes \nAcknowledgments \n",
+      "token_count": 18,
+      "sentence_count": 3
+    }
+  ],
+  "analysis_date": "2025-03-23T22:20:38.956937",
+  "created_at": "2025-03-23T22:20:38.956941"
+}

@@ -1,0 +1,124 @@
+{
+    "disease": "Adenovirus infection, unspecified",
+    "icd_code": "B340",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Mild to severe",
+                "pattern": "Variable duration, may linger"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Cold-like symptoms",
+                "severity": "Mild",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Gastroenteritis",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Severe",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Croup",
+                "severity": "Severe",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Bronchitis",
+                "severity": "Moderate to severe",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Cystitis",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Neurological disease",
+                "severity": "Severe",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Severe",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Severe",
+                "pattern": "Variable duration"
+            },
+            {
+                "name": "Urinary tract infections",
+                "severity": "Variable",
+                "pattern": "Variable duration"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible, variable"
+        },
+        "physical_findings": [
+            "Inflammation in airways or stomach area"
+        ],
+        "lab_values": {
+            "NAATs (PCR)": "May be positive for adenovirus"
+        },
+        "risk_factors": [
+            "Age < 5 years",
+            "Weakened immune system",
+            "Crowded environments (e.g., daycare, military quarters, hospitals)",
+            "Cardiac or respiratory disease"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with adenovirus infection"
+        ],
+        "supportive": [
+            "Positive NAATs (PCR) for adenovirus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Common cold",
+        "Influenza",
+        "Other respiratory viruses",
+        "Gastrointestinal infections"
+    ]
+}

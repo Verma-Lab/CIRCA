@@ -1,0 +1,98 @@
+{
+    "disease": "Gonococcal arthritis",
+    "icd_code": "A5442",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain",
+                "severity": "Severe",
+                "pattern": "Sudden onset, migratory"
+            },
+            {
+                "name": "Joint swelling",
+                "severity": "Prominent",
+                "pattern": "Localized or multiple joints"
+            },
+            {
+                "name": "Decreased range of motion",
+                "severity": "Significant",
+                "pattern": "Due to edema and pain"
+            },
+            {
+                "name": "Tenosynovitis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present, up to 102\u00b0F"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "May be present as part of disseminated gonococcal infection"
+            },
+            {
+                "name": "Burning sensation during urination",
+                "severity": "Variable",
+                "pattern": "May be present if urethral infection is also present"
+            },
+            {
+                "name": "Genital or anal discharge",
+                "severity": "Variable",
+                "pattern": "May be present if genital or anal infection is also present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated (up to 102\u00b0F)",
+            "white blood cell count": "Elevated (e.g., 14,000/uL)"
+        },
+        "physical_findings": [
+            "Joint swelling",
+            "Joint tenderness",
+            "Decreased range of motion",
+            "Skin lesions (in some cases)",
+            "Tenosynovitis (in some cases)"
+        ],
+        "lab_values": {
+            "white blood cell count": "Elevated (e.g., 14,000/uL)",
+            "neutrophils": "Elevated (e.g., 82%)",
+            "erythrocyte sedimentation rate (ESR)": "Elevated (e.g., 21 mm/hr)",
+            "C-reactive protein (CRP)": "Elevated (e.g., 170 mg/L)",
+            "synovial fluid WBC": "Markedly elevated (e.g., 108,000/uL)",
+            "synovial fluid neutrophils": "Elevated (e.g., 89%)",
+            "blood cultures": "Often negative"
+        },
+        "risk_factors": [
+            "Gonorrhea infection",
+            "Unprotected sex",
+            "Multiple sexual partners",
+            "Sex with infected partner"
+        ],
+        "imaging_findings": {
+            "radiograph": "May show soft tissue swelling, but usually no osseous or articular abnormalities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gonococcal arthritis (joint pain, swelling, fever, etc.)",
+            "Positive test for Neisseria gonorrhoeae (e.g., culture of synovial fluid, blood culture)"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (ESR, CRP)",
+            "Elevated white blood cell count"
+        ]
+    },
+    "differential_diagnoses": [
+        "Reactive arthritis",
+        "Other forms of septic arthritis",
+        "Other causes of joint inflammation"
+    ]
+}

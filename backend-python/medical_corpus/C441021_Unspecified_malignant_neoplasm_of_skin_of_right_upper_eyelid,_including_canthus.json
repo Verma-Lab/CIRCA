@@ -1,0 +1,31 @@
+{
+    "disease": "Unspecified malignant neoplasm of skin of right upper eyelid, including canthus",
+    "icd_code": "C441021",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Mass or lesion on the right upper eyelid, possibly involving the canthus"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant neoplasm"
+        ],
+        "supportive": [
+            "Clinical findings consistent with a malignant skin lesion on the right upper eyelid, including the canthus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Basal cell carcinoma",
+        "Melanoma",
+        "Other specified malignant neoplasms of skin",
+        "Malignant neoplasm of sebaceous glands",
+        "Malignant neoplasm of sweat glands"
+    ]
+}

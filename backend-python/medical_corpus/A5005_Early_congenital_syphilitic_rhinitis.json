@@ -1,0 +1,121 @@
+{
+    "disease": "Early congenital syphilitic rhinitis",
+    "icd_code": "A5005",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rhinitis (snuffles)",
+                "severity": "Variable, can be severe",
+                "pattern": "Usually develops in the 2nd-3rd week of life; may be the earliest clinical sign"
+            },
+            {
+                "name": "Maculopapular rash",
+                "severity": "Variable",
+                "pattern": "On palms and soles, may be associated with desquamation; can be widespread"
+            },
+            {
+                "name": "Bullous eruption (pemphigus syphiliticus)",
+                "severity": "Variable",
+                "pattern": "On palms and soles, superficial erosions and blisters"
+            },
+            {
+                "name": "Cutaneous lesions",
+                "severity": "Variable",
+                "pattern": "Visible from birth on palms and soles, erosions with moist, erythematous base in acral distribution, perianal moist erythematous lesion, cheilitis"
+            },
+            {
+                "name": "Congenital pneumonia (pneumonia alba)",
+                "severity": "Can be severe, requiring intubation",
+                "pattern": "Diffuse, uniform opacification of both lungs on chest X-ray"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Mild to moderate",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Elevations of both conjugated and unconjugated bilirubin"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Associated symptom"
+            },
+            {
+                "name": "Failure to thrive",
+                "severity": "Variable",
+                "pattern": "Associated symptom"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Variable",
+                "pattern": "Aggravated by touch, suggestive of pseudoparalysis"
+            },
+            {
+                "name": "Pseudoparalysis",
+                "severity": "Variable",
+                "pattern": "Due to osteochondritis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Tachypnea",
+            "other": "Severe respiratory distress, grunting"
+        },
+        "physical_findings": [
+            "Bullous eruption on palms and soles",
+            "Erythematous skin, mild edema, prominent desquamation of fingers",
+            "Superficial erosions and blisters on feet",
+            "Tachypnea, chest retractions, decreased breath sounds, crackles, cyanosis, grunting, glue-like secretions",
+            "Moderately distended abdomen",
+            "Hepatomegaly",
+            "Acrodermatitis",
+            "Periorificial moist lesion",
+            "Cheilitis"
+        ],
+        "lab_values": {
+            "Hemoglobin": "11.4 g/dL (low)",
+            "White blood cell count": "29,000/mm\u00b3 (high)",
+            "Platelet count": "156,000/mm\u00b3 (low)",
+            "Total protein": "62 g/dL (high)",
+            "Albumin": "14 g/dL (low)",
+            "C-reactive protein": "12.8 mg/L (high)",
+            "Aspartate aminotransferase (AST)": "Twice the normal value (high)",
+            "Alanine aminotransferase (ALT)": "Normal",
+            "Total bilirubin": "75 mg/dL (high)",
+            "RPR": "Positive",
+            "VDRL": "Positive",
+            "TPHA": "Positive (1:160)",
+            "CSF VDRL": "Non-reactive",
+            "CSF glucose": "4.1 mmol/L (high)",
+            "CSF protein": "93.1 mg/dL (high)"
+        },
+        "risk_factors": [
+            "Maternal syphilis",
+            "Inadequate prenatal care",
+            "Socioeconomic factors"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Diffuse, uniform opacification of both lungs (pneumonia alba)",
+            "Long bone X-ray": "Increased radiolucency, widening, irregularity, and erosions in the metaphyseal regions of the long bones",
+            "Cerebral MRI": "Periventricular leukomalacia and possible petechial hemorrhages"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive treponemal serologic test (e.g., TPHA)",
+            "Positive non-treponemal serologic test (e.g., RPR, VDRL)"
+        ],
+        "supportive": [
+            "Characteristic clinical findings (e.g., rhinitis, rash, hepatomegaly)",
+            "Abnormal laboratory values (e.g., anemia, thrombocytopenia, elevated liver enzymes)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Allergic rhinitis",
+        "Other causes of neonatal pneumonia",
+        "Acrodermatitis due to vitamin or nutrient deficiency"
+    ]
+}

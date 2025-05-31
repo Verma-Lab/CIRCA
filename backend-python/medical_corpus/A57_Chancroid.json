@@ -1,0 +1,70 @@
+{
+    "disease": "Chancroid",
+    "icd_code": "A57",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painful genital ulcers",
+                "severity": "Variable",
+                "pattern": "Develops 4-10 days post-infection (range 1-35 days)"
+            },
+            {
+                "name": "Painful swollen lymph glands (buboes)",
+                "severity": "Variable",
+                "pattern": "Develops 1-2 weeks after initial ulcers, in 50% of untreated cases"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Pain on defecation",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            },
+            {
+                "name": "Rectal bleeding",
+                "severity": "Variable",
+                "pattern": "More common in women"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Deep ulcer with shaggy undermined borders",
+            "Purulent exudate from ulcer base",
+            "Easily bleeding ulcer base",
+            "Swollen, hard, painful lymph nodes (buboes) in groin",
+            "Buboes may burst and discharge pus",
+            "Ulcers on labia, vaginal entrance, cervix, perineum, and perianal area (women)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact with infected individual",
+            "Microscopic breaks in skin during sex"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of painful genital ulcers"
+        ],
+        "supportive": [
+            "Presence of painful swollen lymph glands (buboes)",
+            "Positive culture of Haemophilus ducreyi from ulcer base (sensitivity 60-80%)",
+            "Gram stain showing clumping of H. ducreyi ('school of fish')"
+        ]
+    },
+    "differential_diagnoses": []
+}

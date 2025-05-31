@@ -1,0 +1,130 @@
+{
+    "disease": "Herpes simplex myelitis",
+    "icd_code": "B00.82",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute back pain",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Rapidly ascending flaccid tetraparesis",
+                "severity": "Severe",
+                "pattern": "Within 8 hours"
+            },
+            {
+                "name": "Sensory level at C6",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Sphincter dysfunction",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Urinary retention",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Ascending sensorimotor disturbances",
+                "severity": "Severe",
+                "pattern": "Subacute to acute"
+            },
+            {
+                "name": "Weakness in upper extremities progressing to quadriplegia",
+                "severity": "Severe",
+                "pattern": "Rapid progression"
+            },
+            {
+                "name": "Descending paralysis",
+                "severity": "Severe",
+                "pattern": "Unusual presentation"
+            },
+            {
+                "name": "Sensory disturbances in lower limbs",
+                "severity": "Variable",
+                "pattern": "Initial symptom"
+            },
+            {
+                "name": "Urinary disturbances",
+                "severity": "Variable",
+                "pattern": "Initial symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia (106 bpm)",
+            "respiratory_rate": "Tachypnea (25 bpm)"
+        },
+        "physical_findings": [
+            "Severe tetraparesis",
+            "Absent deep tendon reflexes in upper limbs",
+            "Extensor plantar responses",
+            "Atonic bladder contraction",
+            "Strength 0/5 in all four extremities (in one case)",
+            "Decreased sensation (3/5) in right arm (in one case)",
+            "Absent sensation over rest of body (in one case)",
+            "Moderate flaccid weakness of upper limbs (3 months later in one case)",
+            "Severe spastic paraparesis (3 months later in one case)",
+            "Distended bladder (3 months later in one case)"
+        ],
+        "lab_values": {
+            "csf_protein": "Elevated (76 mg/dl in one case, 209 mg/dl in another)",
+            "csf_cell_count": "Normal (2 cells/ml in one case), Elevated (49 RBCs, 1 WBC in one case; 92,000 RBCs, 40 WBCs in another)",
+            "csf_glucose": "Normal (65 mg/dl in one case, 72 mg/dl in another)",
+            "csf_igg_index": "Normal (0.49 in one case)",
+            "anti-hsv_igm": "Positive (2,000 mg/dl in one case)",
+            "anti-hsv_igg": "Negative (in one case)",
+            "hsv_2_dna_pcr": "Positive (50 copies/\u03bcl in one case)",
+            "complete_blood_count": "Normal (in one case)",
+            "comprehensive_metabolic_panels": "Normal (in one case)"
+        },
+        "risk_factors": [
+            "Immunocompromised status (in some cases)",
+            "Malignancy (in some cases)"
+        ],
+        "imaging_findings": {
+            "mri_spine": [
+                "Bilateral anterior horn tractopathy from C2 to T2",
+                "Cervicothoracic cord swelling",
+                "Pencil-like T2 lesion in anterior horn from C2 to T2",
+                "Focal atrophy and cavitation (follow-up)",
+                "Hyperintense lesion on T2-weighted images",
+                "Gadolinium enhancement (in some cases)",
+                "Hyperintense lesion on T1- and T2-weighted images (suggesting hemorrhagic necrosis in one case)",
+                "Segmental increase in T2 and STIR signal with associated mild expansion of the spinal cord",
+                "Cord enhancement and possible hemorrhage",
+                "Interval increase in abnormal signal intensity of cervical cord",
+                "Acute cervical cord edema with associated diffuse intramedullary enhancement with complete effacement of the CSF space surrounding the cervical spinal cord",
+                "Areas suggestive of possible spinal cord hemorrhages",
+                "Marked improvement in focal expansile appearance of upper cervical cord and abnormal T2 signal within the spinal cord and slightly decreased in craniocaudal extent, improved in cystic myelomalacia with T2 signal changes and minimal persistent enhancement"
+            ],
+            "mri_brain": "Unremarkable (in one case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with myelitis (ascending or non-ascending)",
+            "Positive HSV PCR in CSF"
+        ],
+        "supportive": [
+            "Characteristic MRI findings",
+            "Elevated CSF protein",
+            "Positive HSV serology"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neuromyelitis optica spectrum disorder",
+        "Multiple sclerosis",
+        "Acute disseminated encephalomyelitis",
+        "Parainfectious disorder",
+        "Subacute combined degeneration",
+        "Tuberculous myelitis",
+        "Spinal arteriovenous malformation",
+        "Systemic lupus erythematosus",
+        "Guillain-Barre syndrome"
+    ]
+}

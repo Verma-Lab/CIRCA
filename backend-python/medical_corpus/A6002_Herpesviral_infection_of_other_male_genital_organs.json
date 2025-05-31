@@ -1,0 +1,82 @@
+{
+    "disease": "Herpesviral infection of other male genital organs",
+    "icd_code": "A6002",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bumps or blisters",
+                "severity": "Variable, can be mild or severe",
+                "pattern": "Appear in crops, may recur"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Ulcers",
+                "severity": "Variable",
+                "pattern": "Develop from burst blisters"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "More common during primary infection"
+            },
+            {
+                "name": "Aches and pains",
+                "severity": "Mild to moderate",
+                "pattern": "More common during primary infection"
+            },
+            {
+                "name": "Swollen groin glands",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Tingling or itch",
+                "severity": "Mild",
+                "pattern": "May precede recurrence"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated during primary infection"
+        },
+        "physical_findings": [
+            "Bumps, blisters, or ulcers on penis, scrotum, or anus",
+            "Swollen inguinal lymph nodes"
+        ],
+        "lab_values": {
+            "PCR test": "Detects viral DNA in fluid from sores",
+            "Blood test": "Detects antibodies to HSV"
+        },
+        "risk_factors": [
+            "Sexual contact with infected person",
+            "Multiple sexual partners",
+            "Lack of condom use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with genital herpes",
+            "Positive PCR test for HSV DNA"
+        ],
+        "supportive": [
+            "Positive HSV antibody blood test",
+            "History of sexual contact with infected person"
+        ]
+    },
+    "differential_diagnoses": []
+}

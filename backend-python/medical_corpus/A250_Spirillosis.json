@@ -1,0 +1,51 @@
+{
+    "disease": "Spirillosis",
+    "icd_code": "A250",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Relapsing"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Migratory"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_culture": "May be positive for Spirillum minus",
+            "serology": "May show antibodies to Spirillum minus"
+        },
+        "risk_factors": [
+            "Contact with infected rodents (e.g., rat bites, scratches, contact with bodily fluids)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with spirillosis (fever, joint pain, rash)",
+            "Positive blood culture for Spirillum minus or detection of Spirillum minus in tissue samples"
+        ],
+        "supportive": [
+            "Exposure to infected rodents",
+            "Positive serology for Spirillum minus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Streptobacillary rat-bite fever",
+        "Other bacterial infections",
+        "Lyme disease"
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "disease": "Rubella encephalitis",
+    "icd_code": "B0601",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "Mild",
+                "pattern": "Present in some cases, may be missed"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Present in some cases, may be missed"
+            },
+            {
+                "name": "Deafness",
+                "severity": "Profound",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Developmental delay",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Spastic diplegia",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Learning difficulties",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Precocious puberty",
+                "severity": "Present",
+                "pattern": "Likely due to late-onset endocrine disturbances"
+            },
+            {
+                "name": "Convergent squint",
+                "severity": "Minimal",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Feeding difficulty",
+                "severity": "Present",
+                "pattern": "Present in neonates"
+            },
+            {
+                "name": "Difficulty maintaining temperature",
+                "severity": "Present",
+                "pattern": "Present in neonates"
+            },
+            {
+                "name": "Progressive dementia",
+                "severity": "Severe",
+                "pattern": "In progressive rubella panencephalitis (PRP)"
+            },
+            {
+                "name": "Pyramidal dysfunction",
+                "severity": "Severe",
+                "pattern": "In progressive rubella panencephalitis (PRP)"
+            },
+            {
+                "name": "Progressive spasticity",
+                "severity": "Severe",
+                "pattern": "In progressive rubella panencephalitis (PRP)"
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Severe",
+                "pattern": "In progressive rubella panencephalitis (PRP)"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Severe",
+                "pattern": "In progressive rubella panencephalitis (PRP)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small head circumference (not microcephalic)",
+            "Minimal right convergent squint",
+            "Spastic diplegia"
+        ],
+        "lab_values": {
+            "Rubella IgM antibody test": "Positive (suggestive of intrauterine infection)",
+            "Rubella IgG antibody titre": ">15 IU/mL (suggestive of reinfection)"
+        },
+        "risk_factors": [
+            "Congenital rubella infection",
+            "Maternal rubella infection during pregnancy (especially before 20th week of gestation)"
+        ],
+        "imaging_findings": {
+            "MRI": [
+                "Multiple focal periventricular and subcortical fluid-attenuated inversion-recovery hyperintense lesions (suggestive of gliosis or demyelinating lesions)",
+                "Several cystic changes in bilateral temporal lobes (suggestive of encephalomalacia)",
+                "No evidence of diffuse brain atrophy"
+            ],
+            "CT": "Multiple foci of calcified nodules in the periventricular region"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with rubella encephalitis",
+            "Positive serological test for rubella IgM or IgG antibodies"
+        ],
+        "supportive": [
+            "Characteristic MRI or CT findings",
+            "History of maternal rubella infection during pregnancy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Subacute sclerosing panencephalitis (SSPE)",
+        "Progressive multifocal leukoencephalopathy",
+        "Other causes of encephalitis"
+    ]
+}

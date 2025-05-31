@@ -1,0 +1,151 @@
+{
+    "disease": "Disseminated sporotrichosis",
+    "icd_code": "B427",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Significant (11kg in 9 months in one case)",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Pharyngeal pain",
+                "severity": "Present in one case",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hematic rhinorrhea",
+                "severity": "Present in one case",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Present in one case",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dermatitis",
+                "severity": "Variable, can be extensive",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Nodular lesions",
+                "severity": "Variable",
+                "pattern": "Multiple"
+            },
+            {
+                "name": "Ulcers",
+                "severity": "Variable, can be necrotic",
+                "pattern": "Multiple"
+            },
+            {
+                "name": "Gums",
+                "severity": "Present in one case",
+                "pattern": "Multiple"
+            },
+            {
+                "name": "Scabs",
+                "severity": "Present in one case",
+                "pattern": "Multiple"
+            },
+            {
+                "name": "Retractile scar tissue",
+                "severity": "Present in one case",
+                "pattern": "In extremities"
+            },
+            {
+                "name": "Retropharyngeal haematic yellow discharge",
+                "severity": "Present in one case",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Mouth breathing",
+                "severity": "Present in one case",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Nasal speech",
+                "severity": "Present in one case",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Edematous, erythematous and granulose mucosa",
+                "severity": "Present in one case",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Papular lesion",
+                "severity": "Present in one case",
+                "pattern": "Initial lesion"
+            },
+            {
+                "name": "Necrotic pustules",
+                "severity": "Severe in one case",
+                "pattern": "Multiple"
+            },
+            {
+                "name": "Purulent exudate",
+                "severity": "Present in one case",
+                "pattern": "Multiple"
+            },
+            {
+                "name": "Verrucous surface",
+                "severity": "Present in one case",
+                "pattern": "Some lesions"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Intermittent fever reported in some cases"
+        },
+        "physical_findings": [
+            "Generalized dermatosis with nodular lesions, ulcers, gums and scabs on face, chest, legs and buttocks",
+            "Retractile scar tissue in the extremities",
+            "Retropharyngeal haematic yellow discharge",
+            "Oedematous, erythematous and granulose (cobblestone appearance) mucosa both on the palate and pharynx",
+            "Multiple, very painful necrotic pustules and ulcers of varying size with purulent exudate, some with a verrucous surface"
+        ],
+        "lab_values": {
+            "blood culture": "Oxacillin-resistant Staphylococcus haemolyticus in one case",
+            "skin biopsy culture": "Acinetobacter baumannii (>250,000 colony-forming units) in one case",
+            "pustule exudate culture": "Multiresistant Pseudomonas aeruginosa in one case"
+        },
+        "risk_factors": [
+            "Immunocompromised state (HIV, diabetes, chronic obstructive pulmonary disease, alcoholism, chronic steroid use)",
+            "Occupation (farmers, gardeners, florists, carpenters)",
+            "Chronic alcohol consumption"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Culture of Sporothrix schenckii from affected tissue"
+        ],
+        "supportive": [
+            "Positive intradermal reaction with sporotrichin",
+            "Histopathological findings showing granulomas with yeast cells (cigar-shaped or round)",
+            "Clinical presentation consistent with disseminated sporotrichosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Leishmaniasis",
+        "Chromoblastomycosis",
+        "Tuberculosis verrucosa",
+        "Lymphangitis"
+    ]
+}

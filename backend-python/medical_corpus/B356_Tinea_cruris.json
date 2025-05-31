@@ -1,0 +1,46 @@
+{
+    "disease": "Tinea cruris",
+    "icd_code": "B356",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itchiness",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Annular or irregular patches"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erythematous, annular, scaly patches on the inner thighs, often sparing the scrotum",
+            "May involve the upper thighs opposite the scrotum"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Adolescence and young adulthood",
+            "Male sex",
+            "Increased sweating",
+            "Occlusive clothing",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic clinical presentation (erythematous, annular, scaly patches on the inner thighs)"
+        ],
+        "supportive": [
+            "Positive potassium hydroxide (KOH) preparation",
+            "Positive fungal culture"
+        ]
+    },
+    "differential_diagnoses": [
+        "Candidiasis",
+        "Erythrasma"
+    ]
+}

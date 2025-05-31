@@ -1,0 +1,105 @@
+{
+    "disease": "Tuberculosis of cervix",
+    "icd_code": "A1816",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Gradually increasing, white colored, foul smelling vaginal discharge",
+                "severity": "Moderate",
+                "pattern": "Chronic, lasting two months in one case"
+            },
+            {
+                "name": "Postcoital bleeding",
+                "severity": "Moderate",
+                "pattern": "Chronic, lasting 3 months in one case, 1 year in another"
+            },
+            {
+                "name": "Mass descending per vaginum",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Moderate",
+                "pattern": "Chronic, lasting 3 months in one case"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Abnormal vaginal bleeding",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Menstrual irregularities",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Constitutional symptoms of infection",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Infertility",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Thinly built, averagely nourished",
+            "Grossly erythematous, congested cervix bleeding on touch",
+            "White colored, foul smelling discharge",
+            "Grade II/IV uterovaginal prolapse with cystocoele",
+            "Normal sized retroverted uterus, freely mobile",
+            "No adnexal mass or forniceal tenderness",
+            "Large irregular friable growth on cervix bleeding on touch",
+            "3-cm exophytic cervical lesion",
+            "Cervix replaced by a large irregular and friable growth which bled on touch"
+        ],
+        "lab_values": {
+            "ESR": "Raised (35 mm fall in first hour)",
+            "Mantoux test": "Positive (23 mm)"
+        },
+        "risk_factors": [
+            "Exposure to tuberculosis",
+            "Past history of tuberculosis",
+            "Immunocompromised state (HIV positive)"
+        ],
+        "imaging_findings": {
+            "Chest radiograph": "Normal in some cases, scarring with bronchiectatic changes in both lung apices in one case",
+            "CT scan of abdomen": "Multiple peritoneal nodules in one case",
+            "MRI pelvis": "3.4-cm cervical tumor with possible parametrial invasion in one case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological examination of cervical biopsy showing caseating granulomas"
+        ],
+        "supportive": [
+            "Positive Mantoux test",
+            "Raised ESR",
+            "Acid-fast bacilli on microscopy (though not always present)",
+            "Culture of Mycobacterium tuberculosis (gold standard, but often negative)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Carcinoma of cervix",
+        "Amoebiasis",
+        "Schistosomiasis",
+        "Brucellosis",
+        "Tularemia",
+        "Sarcoidosis",
+        "Foreign body reaction"
+    ]
+}

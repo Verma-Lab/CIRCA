@@ -1,0 +1,124 @@
+{
+    "disease": "Blastomycotic meningoencephalitis",
+    "icd_code": "B4081",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Progressive right upper extremity weakness",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Dysarthria",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Balance difficulties",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Severe mandibular tooth pain",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Right hemineglect",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Right apraxia",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Left facial droop",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dysarthria with expressive aphasia",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Increased left upper extremity tone",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild",
+                "pattern": "Resolves within days"
+            },
+            {
+                "name": "Acute or chronic pneumonia",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Acute respiratory distress syndrome",
+                "severity": "Severe",
+                "pattern": "Can occur in elderly or immunocompromised patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Hypertensive (167/87 mm Hg)",
+            "temperature": "Afebrile",
+            "heart_rate": "Normal",
+            "oxygen_saturation": "93% on room air"
+        },
+        "physical_findings": [
+            "Coarse breath sounds throughout all lung fields",
+            "4/5 strength of the right upper extremity",
+            "Right hemineglect",
+            "Right apraxia",
+            "Left facial droop",
+            "Dysarthria with expressive aphasia",
+            "Increased left upper extremity tone",
+            "Poor dentition with more than 50% of teeth missing and multiple dental caries"
+        ],
+        "lab_values": {
+            "leukocytes": "Elevated (11.4 k/\u03bcL) with eosinophilia (2.03 k/\u03bcL)",
+            "hemoglobin": "Normocytic anemia (13.4 g/dL)",
+            "hemoglobin_a1c": "Elevated (8.6%)",
+            "erythrocyte_sedimentation_rate": "Elevated (27 mm/h)",
+            "c_reactive_protein": "Elevated (1.5 mg/dL)",
+            "blood_cultures": "Negative",
+            "hiv": "Negative",
+            "viral_hepatitis": "Negative",
+            "fungal_serologies": "Negative for blastomyces, aspergillus, histoplasma, and coccidioides"
+        },
+        "risk_factors": [
+            "Residence in or travel to endemic areas",
+            "Outdoor occupation, particularly near open bodies of water and activities that disrupt soil",
+            "Immunosuppression",
+            "Noninsulin-dependent diabetes mellitus",
+            "Chronic obstructive pulmonary disease",
+            "Black lung disease",
+            "Hypertension",
+            "Chronic diverticulitis",
+            "History of working as a coal miner"
+        ],
+        "imaging_findings": {
+            "mri_brain": "3 \u00d7 2.5 \u00d7 2 cm lesion in the left postcentral gyrus with thick, enhancing walls and a central area of restricted diffusion; 8 mm enhancing lesion in the right medial precentral gyrus; 3 mm enhancing lesion in the right midcentral, precentral gyrus",
+            "dental_panoramic_radiograph": "Large periapical lucencies around the right mandibular canine with surrounding severe periodontal disease, consistent with abscesses",
+            "chest_radiographs": "Unremarkable",
+            "ct_lungs": "Evidence of small chronic pulmonary emboli, hyperinflation with air trapping, chronic bronchitis, and emphysema-related changes"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture of Blastomyces dermatitidis from brain abscess"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with blastomycotic meningoencephalitis",
+            "Imaging findings suggestive of brain abscesses",
+            "Elevated inflammatory markers"
+        ]
+    },
+    "differential_diagnoses": []
+}

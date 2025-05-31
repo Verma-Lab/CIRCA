@@ -1,0 +1,122 @@
+{
+  "id": "0305d674-5365-4156-bc33-4227837a40ad",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: headache\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let\u2019s analyze this ECG. Here\u2019s a detailed breakdown of what I observe, focusing on potential abnormalities and relevant findings:\n\n**Overall Impression:**\n\nThe ECG appears to be a relatively normal sinus rhythm ECG, but there are some notable features that warrant attention. The rate is within the normal range (approximately 60-100 bpm, based on the strip). However, there are some subtle changes that suggest possible underlying issues. \n\n**Detailed Findings:**\n\n1. **Rate:** The heart rate is approximately 75 bpm, which is within the normal range. The rhythm appears regular.\n\n2. **Rhythm:** The rhythm is regular, indicating a consistent beat-to-beat pattern.\n\n3. **P Waves:** The P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6.  They appear relatively normal in morphology. However, in lead II, the P wave is slightly notched and may be difficult to precisely identify. \n\n4. **PR Interval:** The PR intervals are mostly within the normal range (0.12-0.20 seconds). However, in lead II, there\u2019s a slightly prolonged PR interval (approximately 0.21 seconds). This prolongation can be suggestive of first-degree AV block, but it\u2019s subtle and could be influenced by limb lead placement.\n\n5. **QRS Complexes:** The QRS complexes are predominantly narrow (less than 0.12 seconds).  This suggests that the ventricular depolarization is not significantly delayed. \n    * **Lead V1:** The QRS complex appears wider than in other leads, with a slight degree of precordial bulging.\n    * **Lead V6:** The QRS complex is relatively normal in morphology.\n\n6. **ST Segment & T Waves:**\n   * **ST Segment:** The ST segments are mostly isoelectric (flat) in the majority of leads. There\u2019s a slight elevation of the ST segment in lead V4 and V5, which could be indicative of early ischemia or myocardial injury. This needs further evaluation.\n   * **T Waves:** The T waves are generally upright in most leads, but they appear slightly inverted in lead V1.  This inversion could be due to the lead placement or a subtle change in myocardial repolarization. \n\n7. **QT Interval:** The QT interval appears to be within normal limits.\n\n**Potential Abnormalities/Observations\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 2006-02-16, history of illness\nDIAGNOSTIC_PROCEDURE: physical exam, ECG, sinus rhythm, rate, Rate, heart rate, rhythm, Rhythm, P Waves, morphology, P wave, PR Interval, PR intervals, PR interval, QRS Complexes, QRS complexes, ventricular depolarization, Lead, 1, QRS complex, precordial, 6, ST Segment, T Waves, ST segments, T waves, QT Interval, QT interval\nDATE: 03-25T09:09:28, 833\nLAB_VALUE: relatively, normal, within, normal range, 60, bpm, 75 bpm, regular, beat-to-beat pattern, upright, relatively normal, slightly notched, within the normal range, 0.12-0.20 seconds, slightly prolonged, 0.21 seconds, prolongation, narrow, less than 0.12 seconds, wider than, flat, slightly inverted, within normal limits\nSIGN_SYMPTOM: P waves, bulging, isoelectric, elevation, polarization\nDETAILED_DESCRIPTION: leads I, aVL, V1, V2, V5, and V6, lead II, first-degree, V, other leads, leads, lead V4 and V5, early, lead V1\nDISEASE_DISORDER: AV block, ischemia, myocardial injury\nSEVERITY: slight\nBIOLOGICAL_STRUCTURE: ST segment",
+  "recommendation": "Benign ECG findings with possible early signs of myocardial ischemia requiring further investigation",
+  "reasoning": "The ECG shows a predominantly normal sinus rhythm with a heart rate within the normal range. However, several subtle findings warrant further investigation. The slightly prolonged PR interval in lead II could indicate first-degree AV block, but it's not definitive. More concerning is the slight ST segment elevation in leads V4 and V5, which is suggestive of early myocardial ischemia.  This, combined with the patient's chief complaint of headache (although no other symptoms or physical exam findings are documented), necessitates further evaluation to rule out significant cardiac pathology.  The absence of a detailed history and physical exam makes definitive diagnosis challenging.  The 'okay' assessment of the ECG is insufficient for a conclusive diagnosis.\n\nDifferential Diagnoses:\n- {'diagnosis': 'First-degree AV block', 'explanation': \"The slightly prolonged PR interval in lead II is suggestive of this, but it's subtle and could be due to lead placement.  Further ECGs and potentially other investigations would be needed to confirm.\"}\n- {'diagnosis': 'Myocardial ischemia', 'explanation': \"Slight ST segment elevation in leads V4 and V5 raises concern for this. However, it's a subtle finding and could be a normal variant.  Further investigation is crucial to rule this out.\"}\n- {'diagnosis': 'Normal Sinus Rhythm', 'explanation': 'The overall rhythm and rate are within normal limits.  The abnormalities are subtle and may not represent a significant pathology.'}\n- {'diagnosis': 'Benign ECG variant', 'explanation': 'Some of the observed changes (e.g., slight T wave inversion in V1, subtle QRS complex variations) could be normal variations in ECG morphology.'}",
+  "confidence": "70",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "Error retrieving medical literature: 'MedicalLiteratureManager' object has no attribute 'process_entity_groups_for_retrieval'"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let\u2019s analyze this ECG. Here\u2019s a detailed breakdown of what I observe, focusing on potential abnormalities and relevant findings:\n\n**Overall Impression:**\n\nThe ECG appears to be a relatively normal sinus rhythm ECG, but there are some notable features that warrant attention. The rate is within the normal range (approximately 60-100 bpm, based on the strip). However, there are some subtle changes that suggest possible underlying issues. \n\n**Detailed Findings:**\n\n1. **Rate:** The heart rate is approximately 75 bpm, which is within the normal range. The rhythm appears regular.\n\n2. **Rhythm:** The rhythm is regular, indicating a consistent beat-to-beat pattern.\n\n3. **P Waves:** The P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6.  They appear relatively normal in morphology. However, in lead II, the P wave is slightly notched and may be difficult to precisely identify. \n\n4. **PR Interval:** The PR intervals are mostly within the normal range (0.12-0.20 seconds). However, in lead II, there\u2019s a slightly prolonged PR interval (approximately 0.21 seconds). This prolongation can be suggestive of first-degree AV block, but it\u2019s subtle and could be influenced by limb lead placement.\n\n5. **QRS Complexes:** The QRS complexes are predominantly narrow (less than 0.12 seconds).  This suggests that the ventricular depolarization is not significantly delayed. \n    * **Lead V1:** The QRS complex appears wider than in other leads, with a slight degree of precordial bulging.\n    * **Lead V6:** The QRS complex is relatively normal in morphology.\n\n6. **ST Segment & T Waves:**\n   * **ST Segment:** The ST segments are mostly isoelectric (flat) in the majority of leads. There\u2019s a slight elevation of the ST segment in lead V4 and V5, which could be indicative of early ischemia or myocardial injury. This needs further evaluation.\n   * **T Waves:** The T waves are generally upright in most leads, but they appear slightly inverted in lead V1.  This inversion could be due to the lead placement or a subtle change in myocardial repolarization. \n\n7. **QT Interval:** The QT interval appears to be within normal limits.\n\n**Potential Abnormalities/Observations"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "2006-02-16",
+      "history of illness"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical exam",
+      "ECG",
+      "sinus rhythm",
+      "rate",
+      "Rate",
+      "heart rate",
+      "rhythm",
+      "Rhythm",
+      "P Waves",
+      "morphology",
+      "P wave",
+      "PR Interval",
+      "PR intervals",
+      "PR interval",
+      "QRS Complexes",
+      "QRS complexes",
+      "ventricular depolarization",
+      "Lead",
+      "1",
+      "QRS complex",
+      "precordial",
+      "6",
+      "ST Segment",
+      "T Waves",
+      "ST segments",
+      "T waves",
+      "QT Interval",
+      "QT interval"
+    ],
+    "DATE": [
+      "03-25T09:09:28",
+      "833"
+    ],
+    "LAB_VALUE": [
+      "relatively",
+      "normal",
+      "within",
+      "normal range",
+      "60",
+      "bpm",
+      "75 bpm",
+      "regular",
+      "beat-to-beat pattern",
+      "upright",
+      "relatively normal",
+      "slightly notched",
+      "within the normal range",
+      "0.12-0.20 seconds",
+      "slightly prolonged",
+      "0.21 seconds",
+      "prolongation",
+      "narrow",
+      "less than 0.12 seconds",
+      "wider than",
+      "flat",
+      "slightly inverted",
+      "within normal limits"
+    ],
+    "SIGN_SYMPTOM": [
+      "P waves",
+      "bulging",
+      "isoelectric",
+      "elevation",
+      "polarization"
+    ],
+    "DETAILED_DESCRIPTION": [
+      "leads I, aVL, V1, V2, V5, and V6",
+      "lead II",
+      "first-degree",
+      "V",
+      "other leads",
+      "leads",
+      "lead V4 and V5",
+      "early",
+      "lead V1"
+    ],
+    "DISEASE_DISORDER": [
+      "AV block",
+      "ischemia",
+      "myocardial injury"
+    ],
+    "SEVERITY": [
+      "slight"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "ST segment"
+    ]
+  },
+  "analysis_date": "2025-03-26T09:03:58.437602",
+  "created_at": "2025-03-26T09:03:58.437607"
+}

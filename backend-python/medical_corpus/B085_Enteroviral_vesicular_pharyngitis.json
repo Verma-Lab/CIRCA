@@ -1,0 +1,101 @@
+{
+    "disease": "Enteroviral vesicular pharyngitis",
+    "icd_code": "B085",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May precede rash"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Oral lesions",
+                "severity": "Variable, painful",
+                "pattern": "Vesicles and ulcerations on soft palate, tonsillar pillars, uvula, tongue, and posterior oropharynx"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diminished appetite",
+                "severity": "Variable",
+                "pattern": "Due to oral lesions"
+            },
+            {
+                "name": "Refusal to eat or drink",
+                "severity": "Variable",
+                "pattern": "Due to oral lesions"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Vesicles and ulcerations (1-2 mm) with a yellow-gray base on the soft palate, tonsillar pillars, uvula, tongue, and posterior oropharynx",
+            "Generalized morbilliform eruption (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Poor toilet hygiene",
+            "Contact with respiratory secretions and vesicle fluid"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with vesicular pharyngitis",
+            "Presence of vesicles and ulcerations in the oropharynx"
+        ],
+        "supportive": [
+            "Positive PCR for enterovirus in vesicular fluid, blood, urine, respiratory secretions, or stool",
+            "Epidemiological factors (e.g., contact with infected individuals, seasonal occurrence)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Adenovirus infection",
+        "Epstein-Barr virus infection",
+        "Group A streptococcal infection",
+        "Herpes simplex virus infection",
+        "Human herpesvirus 6 infection",
+        "Measles",
+        "Meningococcemia",
+        "Parvovirus B19 infection",
+        "Rubella"
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "disease": "Malignant melanoma of left ear and external auricular canal",
+    "icd_code": "C4322",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ear pain",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bleeding from ear",
+                "severity": "Intermittent",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Postauricular swelling",
+                "severity": "Moderate to severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Mass in external auditory canal",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Variable",
+                "pattern": "Long-standing"
+            },
+            {
+                "name": "Otorrhea",
+                "severity": "Variable",
+                "pattern": "Long-standing"
+            },
+            {
+                "name": "Bloody discharge",
+                "severity": "Variable",
+                "pattern": "Long-standing"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Mild",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Skin changes (mole changes in size, color, texture, or shape)",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Ulceration with indurated margins",
+                "severity": "Moderate",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "afebrile"
+        },
+        "physical_findings": [
+            "3x3cm spherical swelling in the right post auricular region",
+            "Swelling variable in consistency and very tender",
+            "Skin over swelling stretched, shiny, and smooth except for a small 0.5x0.5cm irregular ulcer with indurated margins",
+            "Mass in EAC firm in consistency, highly vascular, and friable",
+            "Bluish-black mass arising in the EAC (in one case)"
+        ],
+        "lab_values": {
+            "HMB-45": "Positive",
+            "S100": "Positive",
+            "Vimentin": "Positive"
+        },
+        "risk_factors": [
+            "Frequent sun exposure",
+            "Fair skin",
+            "Male gender",
+            "Age over 60",
+            "Lack of hair covering ears",
+            "Family history of melanoma"
+        ],
+        "imaging_findings": {
+            "CT scan of right temporal bone": "Large ill-defined homogenous, moderately enhancing infiltrative soft tissue lesion occupying the entire EAC causing widening and erosion of anterior, posterior, and inferior walls of the bony part of the EAC. Scutum, long process, and lenticular process of incus appeared irregular and eroded.",
+            "Chest X-ray": "No evidence of metastasis",
+            "Ultrasound abdomen": "No evidence of metastasis",
+            "Whole body scan": "No evidence of metastasis",
+            "Bone scan": "Increased tracer concentration in the right temporal bone"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing sheets and nests of atypical melanocytes with large pleomorphic nuclei, prominent nucleoli, and melanin pigment (may be absent)",
+            "Immunohistochemistry positive for HMB45 and S100"
+        ],
+        "supportive": [
+            "Clinical presentation with ear pain, bleeding, swelling, and mass",
+            "Imaging findings showing mass in EAC with bone erosion"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute mastoiditis with subperiosteal abscess with aural polyp",
+        "Tubercular otitis media",
+        "Fungal granuloma",
+        "Haemangioma",
+        "Compound nevus",
+        "Adenoid cystic carcinoma",
+        "Squamous cell carcinoma",
+        "Adenocarcinoma",
+        "Basal cell carcinoma",
+        "Mucoepidermoid carcinoma"
+    ]
+}

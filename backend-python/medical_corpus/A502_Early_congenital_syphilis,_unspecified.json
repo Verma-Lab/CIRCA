@@ -1,0 +1,84 @@
+{
+    "disease": "Early congenital syphilis, unspecified",
+    "icd_code": "A502",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Maculopapular rash",
+                "severity": "Widespread, hyperemic",
+                "pattern": "Present in whole body, including face; may involve palms and soles"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Mild",
+                "pattern": "Facial only"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Common in early congenital syphilis, but absent in this case",
+                "pattern": "Almost always present in infected infants"
+            },
+            {
+                "name": "Syphilitic rhinitis",
+                "severity": "Can be serious, bloody, purulent, and infectious",
+                "pattern": "Earliest finding, often seen in the first week of life; absent in this case"
+            },
+            {
+                "name": "Bone pathologies",
+                "severity": "Can involve multiple bones, usually bilateral and symmetric; osteochondritis can cause pain and pseudoparalysis",
+                "pattern": "Absent in this case"
+            },
+            {
+                "name": "Neurosyphilis",
+                "severity": "Asymptomatic in 40% of patients; acute form presents with symptoms similar to bacterial meningitis (vomiting, feeding difficulties, fontanel bulging, rapid head growth) within the first year; chronic form presents with hydrocephalus, cranial nerve paralysis, growth retardation, optic atrophy, and seizures after the first year",
+                "pattern": "Not assessed in this case due to parental refusal of lumbar puncture"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": "Within normal limits",
+        "physical_findings": [
+            "Weight loss of 7% by birth",
+            "Maculopapular rash",
+            "Facial jaundice",
+            "Fontanelles: anterior 1x1 cm, posterior 0.5x0.5 cm",
+            "Normal cardiovascular and respiratory systems",
+            "No organomegaly",
+            "Normal newborn reflexes and tonus",
+            "Patent foramen ovale (detected by echocardiography)"
+        ],
+        "lab_values": {
+            "VDRL": {
+                "newborn": "Positive at birth (titre unknown)",
+                "mother": "Positive (titre unknown at birth; 1/320 positive on first day of baby's life)"
+            },
+            "TPHA": "Positive on first day of life",
+            "Anti-T. pallidum IgG + IgM": "Positive (23.83 IU/mL at 48 hours of treatment; decreased to 22.42-13.48 IU/mL at 3 months)",
+            "Hyperbilirubinemia": "Within physiological limits",
+            "Coagulation cascade": "Normal",
+            "Infection markers": "Negative",
+            "Complete blood count": "Not specified, but anemia, thrombocytopenia, and leukopenia/leukocytosis are common in congenital syphilis"
+        },
+        "risk_factors": [
+            "Mother with inadequately treated syphilis",
+            "Assisted reproduction (IVF-ET)",
+            "Maternal syphilis diagnosis since 2008"
+        ],
+        "imaging_findings": {
+            "Bone survey": "No pathology found",
+            "Ophthalmologic evaluation": "Normal (no chorioretinitis)",
+            "Auditory brainstem response audiometry": "No hearing loss detected",
+            "Transfontanel and abdominal ultrasonography": "Normal"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive treponemal test (e.g., TPHA)",
+            "Clinical manifestations consistent with early congenital syphilis (e.g., rash, jaundice, hepatomegaly, bone lesions, neurosyphilis)"
+        ],
+        "supportive": [
+            "Positive nontreponemal test (e.g., VDRL)",
+            "Maternal history of syphilis"
+        ]
+    },
+    "differential_diagnoses": []
+}

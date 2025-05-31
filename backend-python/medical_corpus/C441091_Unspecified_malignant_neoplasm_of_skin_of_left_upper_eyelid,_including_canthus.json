@@ -1,0 +1,30 @@
+{
+    "disease": "Unspecified malignant neoplasm of skin of left upper eyelid, including canthus",
+    "icd_code": "C441091",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lesion on the left upper eyelid, possibly involving the canthus"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant neoplasm of skin"
+        ],
+        "supportive": [
+            "Clinical findings consistent with a skin lesion on the left upper eyelid, including canthus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Kaposi's sarcoma of skin (C46.0)",
+        "Malignant melanoma of skin (C43.-)",
+        "Malignant neoplasm of skin of genital organs (C51-C52, C60.-, C63.2)",
+        "Merkel cell carcinoma (C4A.-)",
+        "Connective tissue of eyelid (C49.0)"
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "disease": "Retroperitoneal Tuberculosis",
+    "icd_code": "A1839",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Right upper abdominal pain",
+                "severity": "Moderate to severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Bilious vomiting",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38\u00b0C",
+            "erythrocyte sedimentation rate": "120 mm/1\u00b0",
+            "C-reactive protein": "80 mg/L",
+            "leucocytosis": "19000/mm3 (83% neutrophils, 7% lymphocytes)",
+            "anaemia": "Mild (haemoglobin 11.2 g/dL)",
+            "thrombocytosis": "Platelets = 773000/UL"
+        },
+        "physical_findings": [
+            "Painful mass over the right flank region"
+        ],
+        "lab_values": {
+            "ESR": "Increased (120 mm/1\u00b0)",
+            "CRP": "Increased (80 mg/L)",
+            "WBC": "Increased (19000/mm3)",
+            "Hemoglobin": "Decreased (11.2 g/dL)",
+            "Platelets": "Increased (773000/UL)"
+        },
+        "risk_factors": [
+            "HIV infection (although negative in this case)",
+            "Diabetes mellitus",
+            "End-stage renal disease",
+            "Immunocompromised state",
+            "Previous splenectomy (possibly unrelated)"
+        ],
+        "imaging_findings": {
+            "CT scan": "Large cystic retroperitoneal mass (184 \u00d7 126 mm) extending from the flank to right iliac fossa, pushing the right colon anteriorly, surrounding the anterior sides of the abdominal aorta and the inferior vena cava. Located behind duodenum, ahead the kidney and under the liver, without signs of invasion and without lymph node involvement. Spontaneous density between 12 and 30 Hounsfield units. Complete enhancement of the lesion.",
+            "MR scan": "Cystic mass, hypointense in T1, and hyperintense in T2 with an enhancement of the entire lesion."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing epithelioid granulomas with necrosis, giant cells, and lymphoepitheloid infiltrate"
+        ],
+        "supportive": [
+            "Clinical presentation (abdominal pain, fever, vomiting)",
+            "Abnormal laboratory findings (increased ESR, CRP, WBC)",
+            "Imaging findings suggestive of retroperitoneal mass"
+        ]
+    },
+    "differential_diagnoses": [
+        "Retroperitoneal abscess (polymicrobial)",
+        "Perforated colonic carcinoma",
+        "Crohn's disease",
+        "Diverticulitis",
+        "Perforated appendicitis",
+        "Trauma",
+        "Pyelonephritis",
+        "Renal carbuncle",
+        "Cancer"
+    ]
+}

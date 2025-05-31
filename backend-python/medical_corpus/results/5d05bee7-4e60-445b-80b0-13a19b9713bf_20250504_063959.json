@@ -1,0 +1,44 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Japanese Encephalitis",
+      "icd_code": "A830",
+      "probability": 0,
+      "reasoning": "The patient data lacks any symptoms, vital signs, physical findings, or lab results.  Therefore, no assessment of Japanese Encephalitis is possible."
+    },
+    {
+      "disease": "Campylobacter enteritis",
+      "icd_code": "A045",
+      "probability": 0,
+      "reasoning": "The patient data lacks any symptoms, vital signs, physical findings, or lab results.  Therefore, no assessment of Campylobacter enteritis is possible."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 0,
+      "reasoning": "The patient data lacks any symptoms, vital signs, physical findings, or lab results.  Therefore, no assessment of Hypertension is possible."
+    },
+    {
+      "disease": "Infectious mononucleosis, unspecified with polyneuropathy",
+      "icd_code": "B27.91",
+      "probability": 0,
+      "reasoning": "The patient data lacks any symptoms, vital signs, physical findings, or lab results.  Therefore, no assessment of Infectious mononucleosis is possible."
+    },
+    {
+      "disease": "Malignant neoplasm of lateral wall of oropharynx",
+      "icd_code": "C102",
+      "probability": 0,
+      "reasoning": "The patient data lacks any symptoms, vital signs, physical findings, or lab results.  Therefore, no assessment of Malignant neoplasm of lateral wall of oropharynx is possible."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Complete history and physical examination",
+    "Complete blood count (CBC)",
+    "Comprehensive metabolic panel (CMP)",
+    "Further investigations based on findings from history and physical examination"
+  ],
+  "clinical_summary": "The patient data is insufficient to make any diagnosis.  The patient's age is listed as -1, indicating missing or erroneous data.  A complete history, physical examination, and relevant laboratory tests are necessary to evaluate the patient for any of the listed potential diseases.",
+  "timestamp": "2025-05-04T06:39:59.644258",
+  "identified_icd_codes": []
+}

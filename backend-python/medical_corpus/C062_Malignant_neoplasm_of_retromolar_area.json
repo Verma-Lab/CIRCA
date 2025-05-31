@@ -1,0 +1,60 @@
+{
+    "disease": "Malignant neoplasm of retromolar area",
+    "icd_code": "C062",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "Palpable mass in retromolar area"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Difficulty swallowing (dysphagia)",
+                "severity": "Variable",
+                "pattern": "May be present if tumor is large"
+            },
+            {
+                "name": "Numbness or tingling",
+                "severity": "Variable",
+                "pattern": "May be present due to nerve involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass in retromolar area",
+            "Ulceration or lesion in retromolar area",
+            "Lymphadenopathy (swollen lymph nodes)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Alcohol abuse"
+        ],
+        "imaging_findings": {
+            "Panoramic radiograph": "May show bone destruction",
+            "CT scan": "Can delineate the extent of the tumor",
+            "MRI": "Can better visualize soft tissue involvement"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings (mass, ulceration)",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Imaging findings consistent with malignancy"
+        ]
+    },
+    "differential_diagnoses": []
+}

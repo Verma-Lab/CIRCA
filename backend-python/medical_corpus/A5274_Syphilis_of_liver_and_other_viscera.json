@@ -1,0 +1,25 @@
+{
+    "disease": "Syphilis of liver and other viscera",
+    "icd_code": "A5274",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Untreated syphilis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive syphilis serology"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with tertiary syphilis",
+            "Imaging findings suggestive of liver or visceral involvement"
+        ]
+    },
+    "differential_diagnoses": []
+}

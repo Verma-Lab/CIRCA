@@ -1,0 +1,124 @@
+{
+  "id": "3a03d2e1-cdd6-4d94-881c-fea8688d3436",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: Chest Pain\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let\u2019s analyze this ECG strip. Here\u2019s a detailed breakdown of what I see, incorporating observations and potential considerations:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm, but with some notable features that warrant further investigation.  The rate appears to be around 70-80 bpm, which is within the normal range. However, there are signs of left ventricular hypertrophy (LVH) and some concerning T-wave morphology.\n\n**Detailed Findings:**\n\n1. **Rate:** The rhythm appears to be regular. The R-R intervals are consistent, suggesting a rate of approximately 70-80 beats per minute.\n\n2. **P Waves:** The P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6. They appear normal in morphology.  The P wave preceding each QRS complex is consistent with a normal sinus rhythm.\n\n3. **QRS Complexes:** The QRS complexes are predominantly narrow (less than 0.12 seconds), which is a good sign. However, there is some variability in the duration of the QRS complexes.\n\n4. **ST Segment & T Waves:** This is where the most significant concerns lie:\n   * **ST Depression:** There is significant ST depression, particularly in leads V1, V2, V3, V4, V5, and V6. This is a key finding.\n   * **T Waves:** The T waves are predominantly inverted, especially in the anterior leads (V1-V3) and the lateral leads (V5-V6). This inversion is consistent with the ST depression and suggests myocardial ischemia or injury. The T wave morphology in V1 and V2 is particularly concerning, suggesting a greater degree of myocardial involvement in the anterior region.\n\n5. **Axis:** The QRS axis appears to be normal, slightly left-axis deviation (around -30 to -45 degrees).\n\n6. **PR Interval:** The PR intervals are normal in duration.\n\n7. **R-R Interval Variation:**  There's a slight, but noticeable, variation in the R-R intervals.  This isn't massive, but it\u2019s a bit beyond what would be expected in a purely sinus rhythm.\n\n**Possible Abnormalities and Considerations:**\n\n* **Left Ventricular Hypertrophy (LVH):** The prominent R waves in leads V1 and V2, along with the ST\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 02-16, illness\nSIGN_SYMPTOM: Chest Pain, T-wave morphology, P waves, ST Depression, ST depression, T waves, T, R waves, ST\nDIAGNOSTIC_PROCEDURE: physical, ECG, rate, rhythm, R-R intervals, P Waves, P wave, QRS complex, QRS Complexes, QRS complexes, ST Segment, T Waves, wave, QRS axis, PR Interval, PR intervals, R-R Interval Variation\nDATE: 03-25T09:09:28.833517\nLAB_VALUE: sinus rhythm, 70-80 bpm, regular, consistent, 70-80 beats per minute, upright, normal, normal sinus, narrow, less than 0.12 seconds, inverted, slightly left-axis deviation, -30 to -45 degrees, duration, variation\nDISEASE_DISORDER: left ventricular hypertrophy, LVH, ST depression, myocardial, ischemia, injury, myocardial involvement, Left Ventricular Hypertrophy\nDETAILED_DESCRIPTION: leads, , a, ,, , V2, V5, and V, , V, V, leads (V, -V3), lateral leads (V5-V6\nBIOLOGICAL_STRUCTURE: I, VL, V1, 6, leads V1, V2, 3, 4, 5, and, anterior, 1, V1 and, V2, leads V1 and V2\nSEVERITY: significant",
+  "recommendation": "Left Ventricular Hypertrophy (LVH) with possible underlying myocardial ischemia",
+  "reasoning": "The ECG shows clear evidence of left ventricular hypertrophy (LVH), indicated by prominent R waves in leads V1 and V2.  The significant ST depression and inverted T waves, particularly in the anterior and lateral leads, strongly suggest myocardial ischemia. While ACS is a possibility, the absence of a detailed history and physical exam makes LVH with possible underlying ischemia a more likely primary diagnosis.  The patient's age is also a factor; ACS is more common in older individuals.  Fabry disease is considered in the differential diagnosis due to the overlap in ECG findings and the provided literature, but requires further investigation for confirmation.  The absence of additional symptoms and family history makes other cardiomyopathies less likely at this stage.\n\nDifferential Diagnoses:\n- {'diagnosis': 'Acute Coronary Syndrome (ACS)', 'explanation': \"The ECG shows ST depression and T-wave inversions, which are suggestive of myocardial ischemia, a hallmark of ACS. However, the absence of other clinical findings and the patient's young age make this less likely than LVH.\"}\n- {'diagnosis': 'Fabry Disease', 'explanation': 'The ECG findings (LVH, ST-T wave abnormalities, possible short PR interval \u2013 although not explicitly stated) are consistent with Fabry disease, particularly given the literature provided.  However, further investigation (genetic testing, enzyme assays) is crucial to confirm this diagnosis.'}\n- {'diagnosis': 'Hypertrophic Cardiomyopathy (HCM)', 'explanation': 'LVH is a key feature of HCM.  The ECG findings overlap, but the absence of a family history and other clinical features makes this less likely than LVH with possible ischemia.'}\n- {'diagnosis': 'Other cardiomyopathies', 'explanation': 'Several other cardiomyopathies can present with LVH and ECG abnormalities.  Further investigation would be needed to rule these out.'}",
+  "confidence": "75",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "Document [0]: - **Journal:** American Family Physician.\n- **Year:** 2005.\n- **Summary:** Acute coronary syndrome diagnosis involves ECG evaluation for ST-segment elevation or depression, Q waves, and conduction defects. Serum troponin levels are also critical for diagnosing myocardial infarction[4].\n\n## 5. **Chest Pain Differential Diagnosis**\n- **Article Title:** \"Diagnosing the Cause of Chest Pain\"\n- **Authors:** Not specified in the search results.\n- **Journal:** American Family Physician.\n- **Year:** 2005.\n- **Summary:** Chest pain diagnosis requires a thorough history, physical examination, ECG, and chest radiograph. Differential diagnoses include acute coronary syndrome, pulmonary embolism, and pneumonia[5].\n\nThese sources provide a comprehensive overview of how ECG findings, including P waves and inverted segments, are used in diagnosing cardiac conditions and differentiating them from non-cardiac causes of chest pain.\n\nDocument [1]: Title: Chest Discomfort, Left Ventricular Hypertrophy, Global T\u2010Wave Inversion, and Short PR Interval Points to a Particular Cardiac Condition. What Could Be the Diagnosis?\n\nSource: Unknown Journal, Year: Unknown Date\n\nAbstract: Correspondence:Min Gao (gmbeauty@163.com)\n\nCorresponding author.\n\nRevised 2024 Dec 15; Received 2024 Dec 2; Accepted 2025 Jan 6; Collection date 2025 Mar.\n\nThis is an open access article under the terms of thehttp://creativecommons.org/licenses/by/4.0/License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.\n\nThis article describes a 44\u2010year\u2010old female with Fabry disease presenting with a 7\u2010year history of chest discomfort, extremity p\n\nFull Text: Correspondence:Min Gao (gmbeauty@163.com)\n\nCorresponding author.\n\nRevised 2024 Dec 15; Received 2024 Dec 2; Accepted 2025 Jan 6; Collection date 2025 Mar.\n\nThis is an open access article under the terms of thehttp://creativecommons.org/licenses/by/4.0/License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.\n\nThis article describes a 44\u2010year\u2010old female with Fabry disease presenting with a 7\u2010year history of chest discomfort, extremity pain, and hypohidrosis. ECG revealed sinus bradycardia (52\u2009bpm), a short PR interval (100\u2009ms) with a delta wave, and a QRS complex (126\u2009ms) showing a complete right bundle branch block. T\u2010wave inversion and ST\u2010segment depression were observed in leads I, AVL, II, aVF, and V2\u2013V6. Genetic testing confirmed Fabry disease (GLA: c.700_702del).\n\nDocument [2]: T\u2010wave inversion and ST\u2010segment depression were observed in leads I, AVL, II, aVF, and V2\u2013V6. Genetic testing confirmed Fabry disease (GLA: c.700_702del). Short PR interval with left ventricular hypertrophy (LVH) poses a diagnostic challenge, requiring advanced imaging and genetic testing to differentiate Fabry disease from other cardiomyopathies.\n\nKeywords:Fabry disease, left ventricular hypertrophy, Sokolow\u2013Lyon index\n\nThe co\u2010occurrence of short PR interval and left ventricular hypertrophy may indicate conditions such as Fabry disease, Danon disease, PRKAG2 mutation cardiomyopathy, Pompe disease, or mitochondrial disorders. This patient presents with symptoms of anhidrosis and chest discomfort. We identified one heterozygous mutation in exon 5 of GLA. Consequently, the diagnosis of FD was confirmed\n\nA 40\u2010year\u2010old patient presented with concerns about chest discomfort, episodic pain in the hands and feet, and hypohidrosis for 7\u2009years. The patient had no history of hypertension or diabetes, and her vital signs were normal. Examination revealed a heart rate of 52 beats/min, and blood pressure was 122/81\u2009mmHg. The electrocardiogram from the patient's admission is shown in Figure1. The echocardiogram revealed an interventricular septum diameter (IVSD) of 11\u2009mm and a left ventricular posterior wall diameter (LVPWD) of 12\u2009mm. The left ventricular ejection fraction was recorded at 65%. Laboratory values were as follows: potassium, 4.09\u2009mmol/L, creatine kinase\u2010MB 15 (0\u201325\u2009IU/L), NT\u2010proBNP, 1160\u2009pg/mL (0\u2013100\u2009pg/mL), D\u2010dimer 0.13\u2009mg/L (0.01\u20130.50 \u03bcg/mL), urine protein +.\n\nTwelve lead ECG on admission.\n\nDocument [3]: Twelve lead ECG on admission. The ECG displayed a sinus bradycardia with a heart rate of 52 beats per minute. The PR interval was short, measured at 100 milliseconds, accompanied by a delta wave. The QRS complex, with a duration of 126 milliseconds, exhibited a complete right bundle branch block pattern. The R\u2010wave amplitude recorded in lead V5 was 6.62\u2009mV, the Sokolow\u2013Lyon index (S in V1\u2009+\u2009R in V5) was also 6.62\u2009mV. T\u2010wave inversion and ST segment depression were noted in leads I, AVL, II, aVF, and V2\u2013V6.\n\nThe ECG displayed a sinus bradycardia with a heart rate of 52 beats per minute. The PR interval was short, measured at 100 milliseconds, accompanied by a delta wave. The QRS complex, with a duration of 126 milliseconds, exhibited a complete right bundle branch block pattern. The R\u2010wave amplitude recorded in lead V5 was 6.62\u2009mV, the Sokolow\u2013Lyon index (S in V1\u2009+\u2009R in V5) was also 6.62\u2009mV. T\u2010wave inversion and ST\u2010segment depression were noted in leads I, AVL, II, aVF, and V2\u2013V6. The provisional diagnosis was acute myocardial infarction. However, the patient's creatine kinase\u2010MB levels remained within normal limits. Therefore, the diagnosis of acute myocardial infarction was excluded. The contrast\u2010enhanced cardiac magnetic resonance imaging (CMR) demonstrated delayed gadolinium enhancement in the lateral region of the left ventricle. The Lyso\u2010GL\u20103 level was 8.74\u2009ng/mL (<\u20091.11\u2009ng/mL).\n\nDocument [4]: Medical professionals should be increasingly vigilant about differentiating hypertrophic cardiomyopathy from Fabry disease, as both conditions induce cardiac hypertrophy that appears similar to HCM but require distinct management approaches. Therefore, clinicians should recognize this ECG finding immediately and initiate appropriate treatment promptly as these measures may be vital in saving the patient's life.\n\nJing\u2010Xiu Li and Xue\u2010Qi Li contributed significantly to data collection and manuscript preparation. Xin\u2010Xin Di, Yan\u2010Lin Wang, Jie Zheng, and Min Gao performed the analysis with discussion. All authors agree on the order in which their names will be listed in the manuscript.\n\nWe identify that the ethics committee of The First Affiliated Hospital of USTC has approved the case and that this case conforms to recognized standards, the Declaration of Helsinki.\n\nThe authors declare no conflicts of interest.\n\nThis study was supported by Anhui Provincial Health Research Project (No. AHWJ2022a008). The funders had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript. We would like to thank Professor Yun\u2010Tao Zhao MD, PhD (Department of Cardiology, Aerospace Center Hospital, Beijing, China) for his assistance with the interpretation of electrocardiograms.\n\nFunding:This work was supported by Anhui Provincial Health Research Project (AHWJ2022a008).\n\nThe authors have nothing to report.\n\nThis section collects any data citations, data availability statements, or supplementary materials included in this article.\n\nThe authors have nothing to report.\n\nArticles from Annals of Noninvasive Electrocardiology are provided here courtesy ofInternational Society for Holter and Noninvasive Electrocardiology, Inc. and Wiley Periodicals, Inc.\n\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC11803285/\n\nDocument [5]: After individuals accumulate globotriaosylceramide and glycosphingolipids in the lysosomes and cytoplasm of cells, leading to multiorgan dysfunction of the cardiac, renal, skin, and cerebrovascular system. Electrocardiographic findings can provide crucial indicators of FD, encompassing a short PR interval, fulfillment of Sokolow voltage criteria for LVH, repolarization abnormalities, bundle branch block, atrioventricular conduction delay, progressive sinus node dysfunction, and arrhythmic manifestations including premature ventricular contractions. This patient exhibits high voltage in the left ventricle, alterations in repolarization as evidenced by changes in the ST segment and T wave, a short PR interval, a prominent delta wave, bundle branch block, and episodes of premature ventricular contractions. We pointed out that the delayed lateral endocardial gadolinium enhancement identified on the patient's MRI likely contributes to the extensive ST\u2010T segment alterations observed on the patient's ECG. Cardiac disease is linked to the buildup of globotriaosylceramide within all cellular elements of the heart, such as cardiomyocytes, cells of the conduction system, vascular fibroblasts, endothelial cells, and vascular smooth muscle cells (Mehta et\u00a0al.2010). In this Fabry disease patient, the pathological accumulation of glycosphingolipids within the cardiovascular system, particularly in small vessels and myocardial cells, underlies the occurrence of chest pain. This glycosphingolipid deposition leads to microvascular dysfunction, diminished coronary blood flow, and subsequent myocardial ischemia. Furthermore, associated cardiac remodeling, including left ventricular hypertrophy and fibrosis, contributes to impaired oxygen delivery and increased myocardial strain, thereby intensifying the likelihood of chest pain in these patients. Notably, the short PR interval is due to the accumulation of globotriaosylceramide in the atrioventricular node.\n\nMedical professionals should be increasingly vigilant about differentiating hypertrophic cardiomyopathy from Fabry disease, as both conditions induce cardiac hypertrophy that appears similar to HCM but require distinct management approaches.\n\nDocument [6]: Title: ST-segment elevation: Differential diagnosis, caveats.\n\nJournal: Cleveland Clinic journal of medicine, Year: 2016\n\nAbstract: The differential diagnosis of ST-segment elevation includes four major processes: ST-segment elevation myocardial infarction (STEMI); early repolarization; pericarditis; and ST elevation secondary to an abnormality of the QRS complex (left bundle branch block, left ventricular hypertrophy, or preexcitation). Other processes that may be associated with ST elevation include hyperkalemia, pulmonary embolism, and Brugada syndrome. The clinical setting and specific electrocardiographic criteria often allow identification of the cause. This article reviews ST-T and QRS configurations specific to each diagnosis.\n\nSource: PubMed (PMID: 26086496)"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let\u2019s analyze this ECG strip. Here\u2019s a detailed breakdown of what I see, incorporating observations and potential considerations:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm, but with some notable features that warrant further investigation.  The rate appears to be around 70-80 bpm, which is within the normal range. However, there are signs of left ventricular hypertrophy (LVH) and some concerning T-wave morphology.\n\n**Detailed Findings:**\n\n1. **Rate:** The rhythm appears to be regular. The R-R intervals are consistent, suggesting a rate of approximately 70-80 beats per minute.\n\n2. **P Waves:** The P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6. They appear normal in morphology.  The P wave preceding each QRS complex is consistent with a normal sinus rhythm.\n\n3. **QRS Complexes:** The QRS complexes are predominantly narrow (less than 0.12 seconds), which is a good sign. However, there is some variability in the duration of the QRS complexes.\n\n4. **ST Segment & T Waves:** This is where the most significant concerns lie:\n   * **ST Depression:** There is significant ST depression, particularly in leads V1, V2, V3, V4, V5, and V6. This is a key finding.\n   * **T Waves:** The T waves are predominantly inverted, especially in the anterior leads (V1-V3) and the lateral leads (V5-V6). This inversion is consistent with the ST depression and suggests myocardial ischemia or injury. The T wave morphology in V1 and V2 is particularly concerning, suggesting a greater degree of myocardial involvement in the anterior region.\n\n5. **Axis:** The QRS axis appears to be normal, slightly left-axis deviation (around -30 to -45 degrees).\n\n6. **PR Interval:** The PR intervals are normal in duration.\n\n7. **R-R Interval Variation:**  There's a slight, but noticeable, variation in the R-R intervals.  This isn't massive, but it\u2019s a bit beyond what would be expected in a purely sinus rhythm.\n\n**Possible Abnormalities and Considerations:**\n\n* **Left Ventricular Hypertrophy (LVH):** The prominent R waves in leads V1 and V2, along with the ST"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "02-16",
+      "illness"
+    ],
+    "SIGN_SYMPTOM": [
+      "Chest Pain",
+      "T-wave morphology",
+      "P waves",
+      "ST Depression",
+      "ST depression",
+      "T waves",
+      "T",
+      "R waves",
+      "ST"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical",
+      "ECG",
+      "rate",
+      "rhythm",
+      "R-R intervals",
+      "P Waves",
+      "P wave",
+      "QRS complex",
+      "QRS Complexes",
+      "QRS complexes",
+      "ST Segment",
+      "T Waves",
+      "wave",
+      "QRS axis",
+      "PR Interval",
+      "PR intervals",
+      "R-R Interval Variation"
+    ],
+    "DATE": [
+      "03-25T09:09:28.833517"
+    ],
+    "LAB_VALUE": [
+      "sinus rhythm",
+      "70-80 bpm",
+      "regular",
+      "consistent",
+      "70-80 beats per minute",
+      "upright",
+      "normal",
+      "normal sinus",
+      "narrow",
+      "less than 0.12 seconds",
+      "inverted",
+      "slightly left-axis deviation",
+      "-30 to -45 degrees",
+      "duration",
+      "variation"
+    ],
+    "DISEASE_DISORDER": [
+      "left ventricular hypertrophy",
+      "LVH",
+      "ST depression",
+      "myocardial",
+      "ischemia",
+      "injury",
+      "myocardial involvement",
+      "Left Ventricular Hypertrophy"
+    ],
+    "DETAILED_DESCRIPTION": [
+      "leads",
+      ", a",
+      ",",
+      ", V2, V5, and V",
+      ", V",
+      "V",
+      "leads (V",
+      "-V3)",
+      "lateral leads (V5-V6"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "I",
+      "VL",
+      "V1",
+      "6",
+      "leads V1, V2",
+      "3",
+      "4",
+      "5",
+      "and",
+      "anterior",
+      "1",
+      "V1 and",
+      "V2",
+      "leads V1 and V2"
+    ],
+    "SEVERITY": [
+      "significant"
+    ]
+  },
+  "analysis_date": "2025-03-26T09:57:05.598893",
+  "created_at": "2025-03-26T09:57:05.598897"
+}

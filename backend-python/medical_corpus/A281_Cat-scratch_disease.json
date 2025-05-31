@@ -1,0 +1,133 @@
+{
+    "disease": "Cat-scratch disease",
+    "icd_code": "A281",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Papule at inoculation site",
+                "severity": "Mild",
+                "pattern": "Initial symptom"
+            },
+            {
+                "name": "Solitary or regional lymphadenopathy",
+                "severity": "Mild to moderate",
+                "pattern": "Develops within 1-2 weeks"
+            },
+            {
+                "name": "Aching",
+                "severity": "Mild to moderate",
+                "pattern": "Present in 75% of patients"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Present in 75% of patients"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to moderate",
+                "pattern": "Present in 75% of patients"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "Present in 9% of patients"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Meningoencephalitis",
+                "severity": "Severe",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Oculoglandular syndrome",
+                "severity": "Variable",
+                "pattern": "Atypical manifestation"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Severe",
+                "pattern": "Atypical manifestation"
+            },
+            {
+                "name": "Neuroretinitis",
+                "severity": "Severe",
+                "pattern": "Atypical manifestation"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Atypical manifestation"
+            },
+            {
+                "name": "Osteomyelitis",
+                "severity": "Severe",
+                "pattern": "Atypical manifestation"
+            },
+            {
+                "name": "Erythema nodosum",
+                "severity": "Variable",
+                "pattern": "Atypical manifestation"
+            },
+            {
+                "name": "Thrombocytopenic purpura",
+                "severity": "Variable",
+                "pattern": "Atypical manifestation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Low-grade fever in 9% of patients"
+        },
+        "physical_findings": [
+            "Tender regional unilateral lymphadenopathy",
+            "Swollen, tender lymph nodes (may suppurate)",
+            "Primary skin lesion (vesicle at inoculation site)"
+        ],
+        "lab_values": {
+            "IgG antibody to B. henselae": "High titers (>1:256) suggest active or recent infection",
+            "IgM antibody to B. henselae": "Suggests acute disease"
+        },
+        "risk_factors": [
+            "Scratch or bite from a cat (especially kittens)",
+            "Exposure to cat fleas or ticks"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "History of cat exposure",
+            "Regional lymphadenopathy"
+        ],
+        "supportive": [
+            "Positive serologic test for B. henselae (IgG titer >1:256)",
+            "Positive PCR for B. henselae"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of unilateral lymphadenopathy",
+        "Tuberculosis",
+        "Tularemia",
+        "Pasteurellosis",
+        "Infectious mononucleosis"
+    ]
+}

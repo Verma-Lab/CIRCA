@@ -1,0 +1,145 @@
+{
+    "disease": "Spotted fever due to Rickettsia siberica",
+    "icd_code": "A772",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Maculopapular, hyperpigmented, petechial; may be spread around trunk and extremities"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Eschar",
+                "severity": "Variable",
+                "pattern": "Inoculation eschar at the site of tick bite; present in some cases"
+            },
+            {
+                "name": "Lymphangitis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chest distress",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Edema (legs)",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Oliguria",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Tinnitus",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Increased in severe cases"
+        },
+        "physical_findings": [
+            "Inoculation eschar",
+            "Lymphangitis",
+            "Maculopapular rash",
+            "Petechial rash",
+            "Hyperpigmented rash"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Leukocytosis or leukopenia",
+            "platelet_count": "Thrombocytopenia",
+            "neutrophil_count": "Neutrocytosis",
+            "lymphocyte_count": "Lymphopenia",
+            "alanine_aminotransferase": "Increased",
+            "aspartate_aminotransferase": "Increased",
+            "glutamyl_transpeptidase": "Increased",
+            "creatinine": "Increased",
+            "urea_nitrogen": "Increased",
+            "uric_acid": "Increased",
+            "c_reactive_protein": "Increased",
+            "\u03b22_macroglobulin": "Increased",
+            "albumin": "Decreased",
+            "cholinesterase": "Decreased",
+            "calcium": "Decreased",
+            "carbon_dioxide_combining_power": "Decreased",
+            "lactate_dehydrogenase": "Increased",
+            "hydroxybutyrate_dehydrogenase": "Increased",
+            "D-Dimer": "Increased"
+        },
+        "risk_factors": [
+            "Tick bite",
+            "Contact with animals (cats, dogs, horses, birds)"
+        ],
+        "imaging_findings": {
+            "chest_radiograph": "Increased lung markings",
+            "ultrasonic_examination": "Cholecystitis, hepatic and renal diffuse changes, cyst of right kidney, thickening of left pleura, slight hydropericardium"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with spotted fever rickettsiosis (fever, rash, etc.)",
+            "Positive PCR for Rickettsia siberica"
+        ],
+        "supportive": [
+            "Positive serology (IFA) for Rickettsia siberica",
+            "History of tick bite",
+            "Exposure to tick vectors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other tick-borne diseases (e.g., Lyme disease, ehrlichiosis, anaplasmosis)",
+        "Other rickettsioses",
+        "Viral infections",
+        "Bacterial infections"
+    ]
+}

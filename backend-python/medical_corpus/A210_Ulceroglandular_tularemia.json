@@ -1,0 +1,100 @@
+{
+    "disease": "Ulceroglandular tularemia",
+    "icd_code": "A210",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high (up to 39-39.2\u00b0C)",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Ulcer",
+                "severity": "Variable in size (e.g., 12x6 mm to 2 cm)",
+                "pattern": "Superficial, may have fibrin bed, surrounded by erythema"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable, can be tender and enlarged (inguinal, axillary)",
+                "pattern": "Regional to the ulcer site"
+            },
+            {
+                "name": "Erysipelas",
+                "severity": "Variable, can be extensive",
+                "pattern": "Erythema with ill-defined borders, often surrounding the ulcer"
+            },
+            {
+                "name": "Groin pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Can be present (e.g., 70/25 mmHg)",
+                "pattern": "Acute onset in some cases"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Can be present (e.g., 116 bpm)",
+                "pattern": "Associated with fever and hypotension"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Associated with fever"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Can be present",
+                "pattern": "Associated with inguinal swelling"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (39-39.2\u00b0C)",
+            "blood_pressure": "Can be hypotensive (70/25 mmHg)",
+            "heart_rate": "Can be tachycardic (116 bpm)"
+        },
+        "physical_findings": [
+            "Superficial ulcer with fibrin bed and surrounding erythema",
+            "Enlarged, tender lymph nodes (regional lymphadenopathy)",
+            "Subcutaneous edema",
+            "Erythema extending from ulcer site",
+            "Necrotic eschar (in some cases)"
+        ],
+        "lab_values": {
+            "leukocytes": "Elevated (14-15 x 10^9/L)",
+            "CRP": "Elevated (329 mg/L)",
+            "ESR": "Elevated (110 mm/h)",
+            "antistreptolysin_O_titer": "Can be elevated (508 U/mL)",
+            "Francisella_tularensis_serology": "Positive IgM and/or IgG"
+        },
+        "risk_factors": [
+            "Contact with infected animals (e.g., lagomorphs)",
+            "Insect or tick bites",
+            "Direct contact with contaminated environment (mud, water)",
+            "Ingestion of undercooked meat",
+            "Inhalation of contaminated dust"
+        ],
+        "imaging_findings": {
+            "ultrasound": "Subcutaneous edema and reactive enlarged lymph nodes",
+            "chest_x_ray": "Usually normal",
+            "pelvic_x_ray": "May show findings unrelated to tularemia (e.g., tendinopathy)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology for Francisella tularensis (IgM and/or IgG)"
+        ],
+        "supportive": [
+            "Characteristic clinical presentation (ulcer, lymphadenopathy, fever)",
+            "History of exposure to risk factors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Erysipelas",
+        "Cellulitis",
+        "Bartonella infection",
+        "Streptococcal infection"
+    ]
+}

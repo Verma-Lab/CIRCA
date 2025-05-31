@@ -1,0 +1,80 @@
+{
+    "disease": "Acute candidiasis of vulva and vagina",
+    "icd_code": "B37.31",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vulvar and vaginal irritation",
+                "severity": "severe (in acute cases), mild (in C. glabrata infections)",
+                "pattern": "often prominent just before menstruation"
+            },
+            {
+                "name": "Itching",
+                "severity": "variable",
+                "pattern": "often prominent just before menstruation"
+            },
+            {
+                "name": "Burning",
+                "severity": "variable",
+                "pattern": "often prominent just before menstruation"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "variable",
+                "pattern": "present in some cases"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "variable",
+                "pattern": "present in some cases"
+            },
+            {
+                "name": "Swelling",
+                "severity": "variable",
+                "pattern": "present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Vulvar and vaginal erythema",
+            "Excoriations",
+            "Thick white adherent discharge",
+            "Swelling (in some cases, little to no discharge)",
+            "Inflammation (cervix typically normal, no cervical motion tenderness, no abnormal cervical discharge, absence of ulcers, asymmetric swelling, masses, or foreign bodies)"
+        ],
+        "lab_values": {
+            "Vaginal pH": "<5",
+            "KOH prep": "budding yeast, hyphae, or pseudohyphae",
+            "Wet mount": "prominence of lactobacillus bacteria and inflammatory cells, negative whiff test"
+        },
+        "risk_factors": [
+            "Estrogen use",
+            "Elevated endogenous estrogens (pregnancy, obesity)",
+            "Diabetes mellitus",
+            "Immunosuppression (chemotherapy, antimetabolite medications, HIV infection, transplant)",
+            "Broad-spectrum antibiotic use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Candida in the vagina",
+            "Associated symptoms (irritation, itching, dysuria, inflammation)"
+        ],
+        "supportive": [
+            "Vulvar and vaginal erythema",
+            "Excoriations",
+            "Thick white adherent discharge",
+            "Vaginal pH < 5",
+            "Positive KOH prep for budding yeast, hyphae, or pseudohyphae",
+            "Positive wet mount for lactobacillus bacteria and inflammatory cells, negative whiff test"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial vaginosis",
+        "Trichomoniasis",
+        "Gonococcal infection",
+        "Chlamydial infection"
+    ]
+}

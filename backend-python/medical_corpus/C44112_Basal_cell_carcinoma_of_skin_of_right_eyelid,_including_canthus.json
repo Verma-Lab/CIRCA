@@ -1,0 +1,50 @@
+{
+    "disease": "Basal cell carcinoma of skin of right eyelid, including canthus",
+    "icd_code": "C44112",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless lump or ulcer",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Excessive tearing",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Periocular mass lesion",
+            "Assessment for orbital extension (especially relevant for medial canthal lesions)",
+            "Assessment of facial sensation",
+            "Lesion assessment for biopsy (incisional or excisional)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Ultraviolet light (particularly UVB) induced damage to the epidermis",
+            "Light pigmentation",
+            "Sun exposure",
+            "Defects of the PTCH gene located on chromosome 9q22.3",
+            "Smoking"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion of BCC",
+            "Histological confirmation following incisional biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Any benign or malignant condition of the eyelid skin"
+    ]
+}

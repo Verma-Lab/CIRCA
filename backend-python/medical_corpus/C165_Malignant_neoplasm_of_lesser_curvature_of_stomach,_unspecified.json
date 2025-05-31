@@ -1,0 +1,31 @@
+{
+    "disease": "Malignant neoplasm of lesser curvature of stomach, unspecified",
+    "icd_code": "C165",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "CEA": {
+                "abnormal": "Positive in 71.1% of patients"
+            },
+            "CA 19-9": {
+                "abnormal": "Positive in 24.8% of patients"
+            },
+            "alpha-fetoprotein": {
+                "abnormal": "Positive in 17.4% of patients"
+            },
+            "EGFR": {
+                "abnormal": "Higher expression rate in lesser curvature (40.55%) compared to greater curvature (25.92%)"
+            }
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

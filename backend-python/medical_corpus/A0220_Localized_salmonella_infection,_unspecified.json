@@ -1,0 +1,69 @@
+{
+    "disease": "Localized salmonella infection, unspecified",
+    "icd_code": "A02.20",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible, variable severity"
+        },
+        "physical_findings": [
+            "Inflammation of affected tissue or organ"
+        ],
+        "lab_values": {
+            "Salmonella culture": "Positive",
+            "Nucleic acid test (NAT) for Salmonella": "Positive"
+        },
+        "risk_factors": [
+            "Consumption of undercooked poultry, meat, or eggs"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive Salmonella culture",
+            "Localized infection"
+        ],
+        "supportive": [
+            "Clinical symptoms (diarrhea, abdominal pain, fever, etc.)",
+            "Positive NAT for Salmonella"
+        ]
+    },
+    "differential_diagnoses": []
+}

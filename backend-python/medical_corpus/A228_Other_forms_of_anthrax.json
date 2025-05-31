@@ -1,0 +1,85 @@
+{
+    "disease": "Other forms of anthrax",
+    "icd_code": "A228",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pneumonia",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Present in gastrointestinal anthrax"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Present in injection anthrax, similar to cutaneous anthrax"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Elevated",
+            "blood_pressure": "Potentially abnormal depending on severity"
+        },
+        "physical_findings": [
+            "Skin lesions (injection anthrax)",
+            "Respiratory distress",
+            "Signs of gastrointestinal distress (gastrointestinal anthrax)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Occupation (welders, metalworkers)",
+            "Injection drug use (injection anthrax)",
+            "Contact with infected animals or contaminated animal products"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with other forms of anthrax (e.g., inhalation, gastrointestinal, injection anthrax)"
+        ],
+        "supportive": [
+            "Exposure history",
+            "Positive bacterial culture (Bacillus anthracis)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other pneumonias",
+        "Other gastrointestinal infections",
+        "Skin infections (other than anthrax)"
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "disease": "Cutaneous mycobacterial infection",
+    "icd_code": "A31.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rashes",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Pus",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Nodules",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Plaques",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Ulcers",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Abscesses",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Cellulitis",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Lymphadenitis",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Necrotic plaques",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Verrucous lesions",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Rashes",
+            "Swelling",
+            "Redness",
+            "Pain",
+            "Pus",
+            "Itching",
+            "Nodules",
+            "Plaques",
+            "Ulcers",
+            "Abscesses",
+            "Cellulitis",
+            "Lymphadenitis",
+            "Necrotic plaques",
+            "Verrucous lesions",
+            "Granulomatous inflammation"
+        ],
+        "lab_values": {
+            "skin culture": "Positive for mycobacteria",
+            "blood tests": "May be used"
+        },
+        "risk_factors": [
+            "Weakened immune system (e.g., AIDS)",
+            "Breaks, cuts, or wounds on the skin",
+            "Skin rubbing together (especially if moist)",
+            "Poor blood supply to an area of the body",
+            "Immunosuppressive medications",
+            "Prior invasive surgical procedure",
+            "Exposure to contaminated water or soil",
+            "Exposure to infected animals or their products",
+            "Contaminated medical products",
+            "Indwelling catheters",
+            "Surgical procedures"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive skin culture for mycobacteria",
+            "Compatible clinical syndrome (e.g., chronic ulcers, wound drainage, abscess)"
+        ],
+        "supportive": [
+            "Acid-fast staining of skin biopsy",
+            "Molecular probe assays"
+        ]
+    },
+    "differential_diagnoses": []
+}

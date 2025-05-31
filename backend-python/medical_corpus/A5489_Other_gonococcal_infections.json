@@ -1,0 +1,33 @@
+{
+    "disease": "Other gonococcal infections",
+    "icd_code": "A5489",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Adenitis",
+            "Bubo",
+            "Cellulitis",
+            "Skin lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Neisseria gonorrhoeae infection at a site other than those specified by other A54 codes"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Other nonspecific lymphadenitis (I88.8)",
+        "Cellulitis, unspecified (L03.90)",
+        "Disorder of the skin and subcutaneous tissue, unspecified (L98.9)",
+        "Gonococcal infection, unspecified (A54.9)",
+        "Other specified congenital malformations of skin (Q82.8)",
+        "Actinic keratosis (L57.0)",
+        "Nonspecific lymphadenitis, unspecified (I88.9)"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "disease": "Gonococcal pharyngitis",
+    "icd_code": "A545",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Can be asymptomatic or present with varying degrees of severity"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Redness and swelling of the pharynx"
+        ],
+        "lab_values": {
+            "Culture": {
+                "abnormal": "Positive for Neisseria gonorrhoeae"
+            },
+            "NAAT": {
+                "abnormal": "Positive for Neisseria gonorrhoeae"
+            },
+            "Gram stain": {
+                "abnormal": "Presence of polymorphonuclear leukocytes with intracellular gram-negative diplococci (low sensitivity, not recommended for diagnosis)"
+            }
+        },
+        "risk_factors": [
+            "High-risk sexual behavior",
+            "Multiple sexual partners",
+            "Partners with gonococcal infections",
+            "Unprotected sex",
+            "Previous or coexisting STIs",
+            "Sex work"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture or NAAT for Neisseria gonorrhoeae from a pharyngeal swab"
+        ],
+        "supportive": [
+            "Symptoms of pharyngitis",
+            "History of recent unprotected oral sex"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral pharyngitis",
+        "Streptococcal pharyngitis",
+        "Other bacterial pharyngitis"
+    ]
+}

@@ -1,0 +1,117 @@
+{
+    "disease": "Lepromatous Leprosy",
+    "icd_code": "A305",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diffuse rash",
+                "severity": "Progressive",
+                "pattern": "Multiple morphologies (papules, nodules, hyperpigmented patches)"
+            },
+            {
+                "name": "Neuropathy",
+                "severity": "Progressive",
+                "pattern": "Pain, decreased sensation in lower extremities, \"glove and stocking\" distribution"
+            },
+            {
+                "name": "Fever",
+                "severity": "Subjective",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Difficulty walking",
+                "severity": "Increasing",
+                "pattern": "Bilateral lower extremity involvement"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Macules, papules, nodules, hyperpigmented patches, erythematous plaques, annular lesions, non-pitting edema"
+            },
+            {
+                "name": "Nasal mucosal thickening",
+                "severity": "Variable",
+                "pattern": "Nasal passages almost blocked"
+            },
+            {
+                "name": "Loss of eyebrows",
+                "severity": "Partial",
+                "pattern": "Bilateral"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Variable",
+                "pattern": "Hips, knees, hands"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Multiple skin-colored papules and nodules on face",
+            "Skin-colored papules on confluent hyperpigmented patches on trunk",
+            "Hyperpigmented patches on bilateral lower extremities with non-pitting edema",
+            "Thickened nasal mucosa",
+            "Nearly diffuse erythema and induration of face, ears, neck, and chest",
+            "Focal involvement of dorsal aspects of forearms",
+            "Partial loss of eyebrows bilaterally",
+            "Small, crusted ulcer on right auricle",
+            "Ulnar and superficial cervical nerves not easily palpated"
+        ],
+        "lab_values": {
+            "Acid-fast bacilli": {
+                "abnormal_range": "Present in skin biopsy, Fite stain positive"
+            },
+            "Complete blood count": {
+                "abnormal_range": "Within reference ranges"
+            },
+            "Erythrocyte sedimentation rate": {
+                "abnormal_range": "Within reference ranges"
+            },
+            "C-reactive protein": {
+                "abnormal_range": "Within reference ranges"
+            },
+            "Creatinine": {
+                "abnormal_range": "Within reference ranges"
+            },
+            "QuantiFERON-TB Gold In-Tube Test": {
+                "abnormal_range": "Negative"
+            },
+            "HIV serologies": {
+                "abnormal_range": "Negative"
+            },
+            "Rheumatoid factor": {
+                "abnormal_range": "Positive (2 years prior), negative at presentation"
+            },
+            "Cyclic citrullinated peptide antibodies": {
+                "abnormal_range": "Negative"
+            }
+        },
+        "risk_factors": [
+            "Travel to endemic areas (e.g., Mexico)",
+            "Contact with infected individuals (potential)"
+        ],
+        "imaging_findings": {
+            "Chest radiograph": {
+                "findings": "Unremarkable"
+            },
+            "Electromyography": {
+                "findings": "Sensorimotor peripheral neuropathy"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of acid-fast bacilli in skin biopsy",
+            "Histopathological findings consistent with lepromatous leprosy (diffuse histiocytic infiltrate with Virchow cells and numerous intracellular organisms)"
+        ],
+        "supportive": [
+            "Clinical presentation with multiple morphologies of skin lesions",
+            "Neuropathy with \"glove and stocking\" distribution",
+            "Travel history to endemic areas"
+        ]
+    },
+    "differential_diagnoses": [
+        "Sweet syndrome",
+        "Rheumatoid arthritis"
+    ]
+}

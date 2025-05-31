@@ -1,0 +1,70 @@
+{
+    "disease": "Paratyphoid fever A",
+    "icd_code": "A011",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Constant"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Present in some cases, particularly on the chest"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood culture": "Positive for Salmonella Paratyphi A",
+            "stool culture": "Positive for Salmonella Paratyphi A",
+            "bone marrow culture": "Positive for Salmonella Paratyphi A (in severe cases)"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Contact with infected person",
+            "Travel to areas with poor sanitation",
+            "Consumption of raw or undercooked foods",
+            "Consumption of milk, raw fruits and vegetables, and shellfish"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Salmonella Paratyphi A from blood, stool, or bone marrow culture"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with paratyphoid fever (fever, diarrhea, fatigue, headache, loss of appetite, skin rash)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,62 @@
+{
+    "disease": "Malignant neoplasm of pyloric antrum",
+    "icd_code": "C163",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Indigestion",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Stomach discomfort",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Blood in stool",
+                "severity": "Variable",
+                "pattern": "Occasional to frequent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Occasional to frequent"
+            },
+            {
+                "name": "Unexplained weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Trouble swallowing",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Older age (two-thirds of patients are over 65)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical exam",
+            "Blood tests",
+            "Imaging tests",
+            "Endoscopy",
+            "Biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

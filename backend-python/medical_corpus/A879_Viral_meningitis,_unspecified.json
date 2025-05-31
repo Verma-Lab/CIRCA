@@ -1,0 +1,74 @@
+{
+    "disease": "Viral meningitis, unspecified",
+    "icd_code": "A879",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Severe headache",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Phonophobia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Unspecified",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Loss of consciousness",
+                "severity": "Unspecified",
+                "pattern": "Possible"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Stiff neck"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of meningitis (fever, headache, stiff neck)"
+        ],
+        "supportive": [
+            "Lumbar puncture (spinal tap) showing viral etiology"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial meningitis"
+    ]
+}

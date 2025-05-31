@@ -1,0 +1,87 @@
+{
+    "disease": "Tuberculous Meningitis",
+    "icd_code": "A170",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Variable",
+                "pattern": "May be absent in early stages"
+            },
+            {
+                "name": "Cranial nerve palsies",
+                "severity": "Variable",
+                "pattern": "Common, often involving CN III, VI, and VII"
+            },
+            {
+                "name": "Hemiparesis",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Paraparesis",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "Glasgow Coma Scale": "May be 10 or less in advanced stages"
+        },
+        "physical_findings": [
+            "Meningeal signs (may be absent in early stages)",
+            "Cranial nerve palsies",
+            "Hemiparesis",
+            "Paraparesis"
+        ],
+        "lab_values": {
+            "CSF cell count": "Pleocytosis with lymphocytic predominance (median 136/\u00b5L in HIV-negative patients)",
+            "CSF protein": "High (median 160 mg/dL in HIV-negative patients)",
+            "CSF glucose": "Low (CSF glucose/blood glucose ratio 0.13 in HIV-negative patients)",
+            "CSF ZN stain": "Low sensitivity (11% positive in one study)",
+            "CSF culture": "Low yield (36% positive by solid culture, 44% by liquid culture in one study)"
+        },
+        "risk_factors": [
+            "HIV coinfection",
+            "Pulmonary tuberculosis",
+            "Immunosuppression",
+            "Living in areas with high prevalence of pulmonary tuberculosis"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Suggestive of active or previous pulmonary TB in approximately 50% of cases",
+            "Brain CT/MRI": "Meningeal enhancement, hydrocephalus, basal exudates, infarcts, and tuberculomas are common findings"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation suggestive of meningitis",
+            "Abnormal CSF findings (pleocytosis, high protein, low glucose)"
+        ],
+        "supportive": [
+            "Positive CSF culture for Mycobacterium tuberculosis",
+            "Positive Xpert MTB/RIF assay on CSF",
+            "Characteristic neuroimaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Non-tuberculous bacterial meningitis",
+        "Fungal meningitis",
+        "Carcinomatous meningitis",
+        "Subarachnoid hemorrhage"
+    ]
+}

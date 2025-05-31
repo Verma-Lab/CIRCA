@@ -1,0 +1,15 @@
+{
+    "disease": "Viral carditis, unspecified",
+    "icd_code": "B3320",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {},
+    "differential_diagnoses": []
+}

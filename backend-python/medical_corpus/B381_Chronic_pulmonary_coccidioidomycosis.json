@@ -1,0 +1,73 @@
+{
+    "disease": "Chronic pulmonary coccidioidomycosis",
+    "icd_code": "B38.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent, can last for months or longer"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Can be present, but only reported in about half of patients"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "IgM antibodies": "Positive early in infection",
+            "IgG antibodies": "Allows for assessment of disease severity"
+        },
+        "risk_factors": [
+            "Age \u226565 years",
+            "Diabetes",
+            "Smoking",
+            "High inoculum exposure",
+            "Depressed cellular immune function (e.g., HIV, organ transplant recipients)",
+            "Pregnancy",
+            "African American, Filipino, and Pacific Island descent (increased risk suggested, but requires further study)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Coccidioides from fungal culture of respiratory specimens or tissue"
+        ],
+        "supportive": [
+            "Microscopy of sputum or tissue identifying Coccidioides spherules (low sensitivity)",
+            "Molecular techniques (DNA probe, PCR)",
+            "Serology (EIA, immunodiffusion, complement fixation, lateral flow assays)"
+        ]
+    },
+    "differential_diagnoses": []
+}

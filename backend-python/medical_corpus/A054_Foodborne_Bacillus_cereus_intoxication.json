@@ -1,0 +1,63 @@
+{
+    "disease": "Foodborne Bacillus cereus intoxication",
+    "icd_code": "A054",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nausea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Usually onset within 0.5-6 hours (emetic) or 6-15 hours (diarrheal) after ingestion of contaminated food"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Usually onset within 0.5-6 hours (emetic) or 6-15 hours (diarrheal) after ingestion of contaminated food; more common in emetic form"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "More common in diarrheal form"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "More common in diarrheal form; watery diarrhea"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade, occasional",
+                "pattern": "More common in diarrheal form"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Low-grade fever possible in diarrheal syndrome"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "stool culture": ">100,000 B. cereus organisms/gram of implicated food",
+            "blood culture": "For non-intestinal B. cereus infections",
+            "toxin detection": "Blood test for diarrheal syndrome toxin"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food left at room temperature",
+            "Compromised immune system (increases risk of severe illness)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with emetic or diarrheal syndrome",
+            "Isolation of >100,000 B. cereus organisms/gram from epidemiologically implicated food"
+        ],
+        "supportive": [
+            "History of consuming potentially contaminated food",
+            "Positive blood culture (for non-intestinal infections)",
+            "Positive toxin detection in blood (for diarrheal syndrome)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Staphylococcus aureus food poisoning",
+        "Clostridium perfringens food poisoning"
+    ]
+}

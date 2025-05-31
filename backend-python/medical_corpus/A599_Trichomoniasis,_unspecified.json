@@ -1,0 +1,74 @@
+{
+    "disease": "Trichomoniasis, unspecified",
+    "icd_code": "A599",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Can be present or absent; if present, may be intermittent or persistent"
+            },
+            {
+                "name": "Vaginal irritation",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Can be present or absent; if present, may be intermittent or persistent"
+            },
+            {
+                "name": "Urethral burning or itching",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "More common in men; can be present or absent; if present, may be intermittent or persistent"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Dyspareunia",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "No symptoms",
+                "severity": "Asymptomatic",
+                "pattern": "Most common presentation, especially in men"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Red blotches on the vaginal wall or cervix (in women)",
+            "Inflammation or infection-causing germs in vaginal fluids (in women)"
+        ],
+        "lab_values": {
+            "Microscopic examination of vaginal discharge": "Presence of Trichomonas vaginalis",
+            "Nucleic acid amplification tests (NAATs)": "Detection of T. vaginalis DNA or RNA"
+        },
+        "risk_factors": [
+            "Sexual contact with an infected partner",
+            "Multiple sexual partners",
+            "HIV/AIDS",
+            "Lower socioeconomic status",
+            "Lower educational level",
+            "Older age (especially in women)",
+            "Black race/ethnicity"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Microscopic examination of vaginal discharge showing T. vaginalis (in women)",
+            "Positive NAAT for T. vaginalis"
+        ],
+        "supportive": [
+            "Clinical symptoms suggestive of trichomoniasis",
+            "Diagnosis of trichomoniasis in sexual partner"
+        ]
+    },
+    "differential_diagnoses": []
+}

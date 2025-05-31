@@ -1,0 +1,96 @@
+{
+    "disease": "Disseminated Aspergillosis",
+    "icd_code": "B447",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (39.5\u00b0C in one case)",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Cough",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Severe (right-sided in one case)",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pleural effusion",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fluctuant masses (chest wall)",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (e.g., 39.5\u00b0C)"
+        },
+        "physical_findings": [
+            "Multiple gray-yellow plaques in the heart",
+            "Multiple gray-white necrotic areas in the lungs",
+            "Grey-yellow necrotic areas in the kidneys"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised state",
+            "Prolonged antibiotic therapy",
+            "Steroid therapy",
+            "AIDS",
+            "Hematological malignancies",
+            "Organ transplantation",
+            "Cytotoxic therapy",
+            "Diabetes mellitus",
+            "Alcohol abuse",
+            "Renal failure",
+            "Hepatic failure",
+            "Chronic debilitating disease",
+            "Prolonged stay in ICU with mechanical ventilation",
+            "Chronic granulomatous disease (CGD)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing branching septate hyphae consistent with Aspergillus spp."
+        ],
+        "supportive": [
+            "Clinical presentation consistent with disseminated aspergillosis",
+            "Presence of risk factors",
+            "Positive culture or microscopic examination of specimens (sputum, BAL, biopsy)"
+        ]
+    },
+    "differential_diagnoses": []
+}

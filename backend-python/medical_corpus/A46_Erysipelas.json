@@ -1,0 +1,84 @@
+{
+    "disease": "Erysipelas",
+    "icd_code": "A46",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Erythema",
+                "severity": "Variable",
+                "pattern": "Sharply demarcated, inflammatory reaction of the upper dermis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases"
+        },
+        "physical_findings": [
+            "Sharply demarcated erythema",
+            "Inflammatory reaction of the upper dermis",
+            "Occasionally a primary lesion such as a wound or skin crack"
+        ],
+        "lab_values": {
+            "blood_culture": {
+                "positive_rate": "4.6%",
+                "common_isolates": [
+                    "Group G streptococci",
+                    "Group A streptococci",
+                    "Group B streptococci",
+                    "Staphylococcus aureus",
+                    "Group C streptococci"
+                ]
+            },
+            "wound_culture": {
+                "positive_rate": "Variable",
+                "common_isolates": [
+                    "Group A streptococci",
+                    "Group G streptococci",
+                    "Group C streptococci",
+                    "Staphylococcus aureus"
+                ]
+            },
+            "CRP": "Elevated in some cases"
+        },
+        "risk_factors": [
+            "Underlying diseases",
+            "Predisposing conditions",
+            "Wounds",
+            "Previous radiation therapy",
+            "Local operation",
+            "Peripheral venous insufficiency",
+            "Polyneuropathy",
+            "Lymphedema",
+            "Skin disease"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical picture of sharply demarcated erythema and inflammatory reaction of the upper dermis"
+        ],
+        "supportive": [
+            "Positive blood culture",
+            "Positive wound culture"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cellulitis",
+        "Necrotizing fasciitis"
+    ]
+}

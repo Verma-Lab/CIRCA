@@ -1,0 +1,23 @@
+{
+    "disease": "Other specified superficial mycoses",
+    "icd_code": "B368",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Dermatitis (eczematous)",
+        "Superficial mycosis, unspecified",
+        "Local infection of the skin and subcutaneous tissue, unspecified",
+        "Unspecified infectious disease"
+    ]
+}

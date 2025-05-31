@@ -1,0 +1,68 @@
+{
+    "disease": "Enterocolitis due to Clostridium difficile, recurrent",
+    "icd_code": "A0471",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Severe diarrhea",
+                "severity": "Severe",
+                "pattern": "Recurrent, within 2-8 weeks of initial infection"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "Can result from severe diarrhea"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Can be severe in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated due to dehydration or infection severity",
+            "blood_pressure": "May be low due to dehydration",
+            "temperature": "May be elevated due to infection"
+        },
+        "physical_findings": [
+            "Abdominal tenderness",
+            "Signs of dehydration (dry mucous membranes, decreased skin turgor)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "May be elevated in severe cases",
+            "serum_creatinine": "May be elevated in severe cases",
+            "stool_test": "Positive for C. difficile toxin"
+        },
+        "risk_factors": [
+            "Recent antibiotic use (especially for >1 week)",
+            "Advanced age",
+            "Gastric acid suppression",
+            "Infection with hypervirulent strain (NAP1/BI/027)",
+            "Severe underlying disease",
+            "Renal insufficiency",
+            "Prolonged hospital stays",
+            "Lack of adaptive immune response to toxins A and B"
+        ],
+        "imaging_findings": {
+            "x-ray": "May show signs of colitis",
+            "CT_scan": "May show signs of colitis or complications"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Unexplained diarrhea (3 or more unformed stools per day)",
+            "Positive C. difficile toxin assay"
+        ],
+        "supportive": [
+            "Recent antibiotic use",
+            "Symptoms consistent with C. difficile infection",
+            "Abnormal vital signs",
+            "Abnormal lab values",
+            "Imaging findings consistent with colitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of diarrhea (viral gastroenteritis, bacterial gastroenteritis, inflammatory bowel disease)"
+    ]
+}

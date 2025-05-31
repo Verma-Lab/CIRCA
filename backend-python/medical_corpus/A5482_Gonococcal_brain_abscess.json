@@ -1,0 +1,86 @@
+{
+    "disease": "Gonococcal brain abscess",
+    "icd_code": "A5482",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Self-reported",
+                "pattern": "10-day history"
+            },
+            {
+                "name": "General malaise",
+                "severity": "Self-reported",
+                "pattern": "10-day history"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Self-reported",
+                "pattern": "10-day history"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Present",
+                "pattern": "At presentation"
+            },
+            {
+                "name": "Left-sided weakness",
+                "severity": "Acute onset",
+                "pattern": "Developed in emergency department"
+            },
+            {
+                "name": "Right deviation of the eyes",
+                "severity": "Acute onset",
+                "pattern": "Developed in emergency department"
+            },
+            {
+                "name": "Seizure",
+                "severity": "Present",
+                "pattern": "Detected by EEG"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "36.9\u00b0C",
+            "heart_rate": "77 bpm",
+            "blood_pressure": "160/108 mmHg"
+        },
+        "physical_findings": [
+            "Disorientation to place and time",
+            "Nuchal rigidity"
+        ],
+        "lab_values": {
+            "peripheral_leukocytosis": "15.9 \u00d7 10\u2079/L (normal 4.5\u201311.0 \u00d7 10\u2079/L)",
+            "neutrophil_predominance": "93.4% of total leukocyte count",
+            "absolute_lymphocyte_count": "0.51 \u00d7 10\u2079/L (normal 1.3\u20133.2 \u00d7 10\u2079/L)",
+            "CSF_total_cell_count": "350 \u00d7 10\u2076/L (normal 0\u20135 \u00d7 10\u2076/L)",
+            "CSF_polymorphonuclear_leukocytes": "73%",
+            "CSF_total_protein": "6 g/L (normal 0.2\u20130.4 g/L)",
+            "CSF_glucose": "0.6 mmol/L (normal 2.3\u20134.7 mmol/L)",
+            "serum_glucose": "7.1 mmol/L"
+        },
+        "risk_factors": [
+            "Methamphetamine abuse",
+            "Alcohol use disorder",
+            "Smoking",
+            "Previous positive urine NAAT for N. gonorrhoeae and C. trachomatis"
+        ],
+        "imaging_findings": {
+            "CT_scan": "No abnormalities",
+            "CT_angiography": "Severe vasospasm of entire intracranial circulation, most markedly involving the right middle cerebral artery territory with early ischemic changes",
+            "MRI": "Right MCA ischemic stroke"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive CSF culture for N. gonorrhoeae",
+            "Clinical presentation consistent with meningitis (e.g., fever, headache, nuchal rigidity)"
+        ],
+        "supportive": [
+            "Presence of gram-negative diplococci on CSF gram stain",
+            "Evidence of disseminated gonococcal infection (e.g., skin lesions, arthritis, tenosynovitis)",
+            "Imaging findings consistent with brain abscess or stroke"
+        ]
+    },
+    "differential_diagnoses": []
+}

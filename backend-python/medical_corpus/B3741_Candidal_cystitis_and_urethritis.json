@@ -1,0 +1,133 @@
+{
+    "disease": "Candidal cystitis and urethritis",
+    "icd_code": "B3741",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Present in some cases of cystitis; uncertain in urethritis"
+            },
+            {
+                "name": "Frequency",
+                "severity": "Variable",
+                "pattern": "Present in cystitis"
+            },
+            {
+                "name": "Urgency",
+                "severity": "Variable",
+                "pattern": "Present in cystitis"
+            },
+            {
+                "name": "Suprapubic pain",
+                "severity": "Variable",
+                "pattern": "Present in cystitis"
+            },
+            {
+                "name": "Hematuria",
+                "severity": "Variable",
+                "pattern": "Common in cystitis"
+            },
+            {
+                "name": "Urethral itching",
+                "severity": "Mild",
+                "pattern": "Possible in urethritis"
+            },
+            {
+                "name": "Watery discharge",
+                "severity": "Mild",
+                "pattern": "Possible in urethritis"
+            },
+            {
+                "name": "Pneumaturia",
+                "severity": "Variable",
+                "pattern": "Occurs in poorly controlled diabetes with emphysematous cystitis"
+            },
+            {
+                "name": "Symptoms of urethral obstruction",
+                "severity": "Variable",
+                "pattern": "Caused by fungus balls or bezoars"
+            },
+            {
+                "name": "Antibiotic-resistant fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases of renal candidiasis"
+            },
+            {
+                "name": "Unexplained deteriorating renal function",
+                "severity": "Variable",
+                "pattern": "Present in some cases of renal candidiasis"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Occasional in renal candidiasis with papillary necrosis or abscesses"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Occasional in renal candidiasis with papillary necrosis or abscesses"
+            },
+            {
+                "name": "Hypertension",
+                "severity": "Variable",
+                "pattern": "Occasional in renal candidiasis with papillary necrosis or abscesses"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Suprapubic tenderness (cystitis)",
+            "Urethral discharge (urethritis)",
+            "Penile discharge (urethritis)",
+            "Meatal crusts (urethritis)",
+            "Costovertebral angle tenderness (renal involvement)",
+            "Epididymal tenderness (epididymitis)",
+            "Prostatic tenderness (prostatitis)"
+        ],
+        "lab_values": {
+            "Urine culture": "Positive for Candida species",
+            "Urine microscopy": "Pyuria (\u226510 WBCs per mm3) in cystitis",
+            "Blood cultures": "Often negative in renal candidiasis"
+        },
+        "risk_factors": [
+            "Urinary catheters",
+            "Antibiotic therapy",
+            "Diabetes",
+            "Immunocompromised state",
+            "Renal transplantation",
+            "Nephrostomy tubes",
+            "Indwelling devices",
+            "Stents",
+            "Indwelling intravascular catheter",
+            "Sexual intercourse (urethritis)",
+            "Exposure to sexually transmitted diseases (urethritis)",
+            "Multiple sexual partners (urethritis)"
+        ],
+        "imaging_findings": {
+            "Cystoscopy": "May detect bezoars and obstruction",
+            "Ultrasonography": "May detect bezoars and obstruction",
+            "Imaging of the urinary tract": "May reveal the degree of involvement in renal candidiasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of UTI",
+            "Positive urine culture for Candida species",
+            "Evidence of tissue reaction (in cystitis) or pyelonephritis"
+        ],
+        "supportive": [
+            "Predisposing factors",
+            "Candidemia",
+            "Imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial cystitis and urethritis",
+        "Interstitial cystitis",
+        "Hemorrhagic cystitis",
+        "Prostatitis",
+        "Epididymitis",
+        "Other causes of urethritis (e.g., STIs)"
+    ]
+}

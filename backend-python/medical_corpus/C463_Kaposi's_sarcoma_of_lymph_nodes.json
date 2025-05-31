@@ -1,0 +1,88 @@
+{
+    "disease": "Kaposi's sarcoma of lymph nodes",
+    "icd_code": "C463",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable, ranging from pea-sized to 3x4 cm",
+                "pattern": "Generalized or localized; may involve cervical, tonsillar, intraparotid, axillary, and inguinal regions"
+            },
+            {
+                "name": "Erythematous rash",
+                "severity": "Variable",
+                "pattern": "May be present on lower extremities, associated with angiomatous nodules, vesicles, blisters, and purple papules"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable, may be significant enough to impair daily activities",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade, intermittent",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Significant but unquantified",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Epistaxis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "May be normal (115/70 mmHg, 112/82 mmHg)",
+            "pulse_rate": "May be normal (68 bpm, 66 bpm)",
+            "temperature": "May be slightly elevated (37.4 \u00b0C, 37.6 \u00b0C)",
+            "oxygen_saturation": "Usually normal (96%, 97%)"
+        },
+        "physical_findings": [
+            "Generalized lymphadenopathy",
+            "Erythematous rash with angiomatous nodules",
+            "Lymphoedema of the left lower limb",
+            "Palpable lymph nodes (various sizes and locations)",
+            "Pallor (in some cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "May be elevated (13,200 cells/mm3, 8400/uL)",
+            "platelet_count": "May be elevated (560,000 cells/mm3, 256\u00d7103 mm3)",
+            "c-reactive_protein": "May be elevated (108 mg/l)",
+            "erythrocyte_sedimentation_rate": "May be elevated (88 mm)",
+            "hemoglobin": "May be decreased (12.4 mg/dl)",
+            "hiv_viral_load": "Variable, may be undetectable or elevated (35,400 copies/mL)",
+            "cd4_count": "Variable, may be decreased (29 cells/cubic millimeter)"
+        },
+        "risk_factors": [
+            "HIV infection",
+            "Immunosuppression",
+            "Organ transplantation",
+            "Antiretroviral therapy",
+            "Human herpes virus-8 (HHV-8) infection",
+            "Age (elderly men of Jewish and East European origin for classic KS)"
+        ],
+        "imaging_findings": {
+            "computed_tomography": "Hypervascularized, partly necrotic lymphadenopathy; may involve cervical, thoracic, para-aortic, axillary, and inguinal regions",
+            "doppler_ultrasound": "Voluminous, richly vascularized lymphadenopathy with mass effect on adjacent vessels"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing spindle-shaped cells, neoangiogenesis, inflammation, and edema in lymph node biopsy"
+        ],
+        "supportive": [
+            "Clinical presentation with lymphadenopathy, possibly with skin lesions",
+            "Positive HHV-8 immunohistochemistry",
+            "Imaging findings consistent with lymphadenopathy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lymphoma",
+        "Other types of lymphadenopathy",
+        "Erysipelas"
+    ]
+}

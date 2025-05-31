@@ -1,0 +1,129 @@
+{
+    "disease": "Septicemic plague",
+    "icd_code": "A207",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Chills",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate to Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate to Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Severe",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Low back pain",
+                "severity": "Severe",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Severe",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Crackles in lungs",
+                "severity": "Moderate to Severe",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Necrotic skin plaques with surrounding erythema",
+                "severity": "Severe",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Gangrenous toes",
+                "severity": "Severe",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "\u226538.2\u00b0C",
+            "pulse": "\u2265110 beats/min",
+            "blood_pressure": "Variable, can be low",
+            "oxygen_saturation": "<80% on room air"
+        },
+        "physical_findings": [
+            "Altered mental status",
+            "Crackles at the left lung base",
+            "Soft abdomen with normal bowel sounds",
+            "Absence of lymphadenopathy",
+            "No focal neurological deficits",
+            "Necrotic skin plaques with surrounding erythema",
+            "Gangrenous toes"
+        ],
+        "lab_values": {
+            "leukocytes": ">46,800 cells/\u03bcL",
+            "bands": "19%",
+            "serum_creatinine": ">1.9 mg/dL",
+            "AST": ">336 U/L",
+            "ALT": ">59 U/L",
+            "platelets": "<54,000 cells/\u00b5L",
+            "lactate_dehydrogenase": ">3,296 IU/mL",
+            "prothrombin_time": "1.2 times control",
+            "partial_thromboplastin_time": "1.3 times control",
+            "blood_cultures": "May be positive for Yersinia pestis"
+        },
+        "risk_factors": [
+            "Flea bites",
+            "Handling infected animals",
+            "Untreated bubonic plague",
+            "Living in areas endemic for plague",
+            "Exposure to rodents (e.g., deer mice, wood rats)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show atelectasis",
+            "CT_abdomen": "May show bilateral renal cortical necrosis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with septicemic plague (fever, chills, weakness, etc.)",
+            "Positive blood culture for Yersinia pestis"
+        ],
+        "supportive": [
+            "Exposure to rodents or fleas",
+            "Abnormal lab values (leukocytosis, thrombocytopenia, elevated liver enzymes, renal dysfunction)",
+            "Imaging findings (atelectasis, renal cortical necrosis)",
+            "Necrotic skin lesions"
+        ]
+    },
+    "differential_diagnoses": [
+        "Community-acquired pneumonia",
+        "Thrombotic thrombocytopenic purpura",
+        "Other bacterial infections (e.g., Pseudomonas aeruginosa)"
+    ]
+}

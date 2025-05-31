@@ -1,0 +1,63 @@
+{
+    "disease": "Cerebral Sporotrichosis",
+    "icd_code": "B4281",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Small, painless, red lump",
+                "severity": "Mild",
+                "pattern": "Develops at the site of infection, progresses to ulcer"
+            },
+            {
+                "name": "Ulcer (sore)",
+                "severity": "Variable",
+                "pattern": "Develops from initial lump, may drain pus, may last for years"
+            },
+            {
+                "name": "Linear ulcers along lymph channels",
+                "severity": "Variable",
+                "pattern": "Appear as infection spreads along lymphatic system"
+            },
+            {
+                "name": "Lung and breathing problems",
+                "severity": "Variable",
+                "pattern": "Occurs in systemic sporotrichosis"
+            },
+            {
+                "name": "Bone infection",
+                "severity": "Variable",
+                "pattern": "Occurs in systemic sporotrichosis"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable",
+                "pattern": "Occurs in systemic sporotrichosis"
+            },
+            {
+                "name": "Nervous system infection",
+                "severity": "Variable",
+                "pattern": "Occurs in systemic sporotrichosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Typical sores caused by the fungus"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to plants (rosebushes, briars, mulch)",
+            "Occupation involving plant handling (farmers, horticulturists, gardeners)",
+            "Weakened immune system (for disseminated sporotrichosis)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (characteristic sores)",
+            "Microscopic examination of tissue sample showing Sporothrix schenckii"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

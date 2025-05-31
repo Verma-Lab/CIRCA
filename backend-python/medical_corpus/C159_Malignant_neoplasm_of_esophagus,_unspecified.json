@@ -1,0 +1,93 @@
+{
+    "disease": "Malignant neoplasm of esophagus, unspecified",
+    "icd_code": "C159",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Variable, often severe in advanced stages",
+                "pattern": "Progressive difficulty swallowing solids, then liquids"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Variable",
+                "pattern": "Painful swallowing"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable, often significant",
+                "pattern": "Unintentional weight loss"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be localized or radiating"
+            },
+            {
+                "name": "Hematemesis",
+                "severity": "Variable",
+                "pattern": "Vomiting blood"
+            },
+            {
+                "name": "Melena",
+                "severity": "Variable",
+                "pattern": "Black, tarry stools"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Generalized weakness and tiredness"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in advanced stages due to anemia or other complications",
+            "blood_pressure": "May be low in advanced stages due to dehydration or bleeding",
+            "respiratory_rate": "May be elevated in advanced stages due to respiratory compromise"
+        },
+        "physical_findings": [
+            "Palpable mass in the neck or chest (in advanced cases)",
+            "Lymph node enlargement",
+            "Jaundice (if metastasis to the liver)",
+            "Ascites (if metastasis to the liver)",
+            "Evidence of malnutrition"
+        ],
+        "lab_values": {
+            "CBC": "Anemia (low hemoglobin and hematocrit)",
+            "Liver function tests": "Elevated liver enzymes if liver metastasis",
+            "Tumor markers": "CEA, CA 19-9 may be elevated"
+        },
+        "risk_factors": [
+            "Alcohol abuse",
+            "Smoking",
+            "Barrett's esophagus",
+            "Obesity",
+            "Achalasia",
+            "Plummer-Vinson syndrome",
+            "Family history of esophageal cancer"
+        ],
+        "imaging_findings": {
+            "Endoscopy": "Visualization of esophageal lesion, biopsy for diagnosis",
+            "Barium swallow": "Demonstrates esophageal stricture or obstruction",
+            "CT scan": "Staging of the tumor, assessment of lymph node involvement, detection of distant metastases",
+            "PET scan": "Detection of distant metastases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Endoscopic findings consistent with esophageal cancer",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Characteristic imaging findings",
+            "Clinical symptoms suggestive of esophageal cancer"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign esophageal strictures",
+        "Esophageal spasm",
+        "Achalasia",
+        "Esophagitis",
+        "Other esophageal tumors (e.g., leiomyoma)"
+    ]
+}

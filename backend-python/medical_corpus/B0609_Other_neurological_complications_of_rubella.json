@@ -1,0 +1,91 @@
+{
+    "disease": "Other neurological complications of rubella",
+    "icd_code": "B0609",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Loss of consciousness",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Cramps",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Altered behavior and thinking",
+                "severity": "Variable",
+                "pattern": "Persistent or episodic"
+            },
+            {
+                "name": "Loss of motor control",
+                "severity": "Variable",
+                "pattern": "Persistent or episodic"
+            },
+            {
+                "name": "High fever",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Severe headache",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Phonophobia",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Stiff neck"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of rubella infection",
+            "Presence of neurological symptoms"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

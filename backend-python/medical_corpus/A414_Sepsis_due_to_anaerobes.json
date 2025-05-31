@@ -1,0 +1,64 @@
+{
+    "disease": "Sepsis due to anaerobes",
+    "icd_code": "A41.4",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Sleepiness",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Oliguria",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Elevated",
+            "respiratory_rate": "Elevated",
+            "blood_pressure": "May be decreased in severe cases (septic shock)",
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Pre-existing infection (e.g., lung, stomach, kidney, bladder infections)",
+            "Surgical procedures",
+            "Infected wounds"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of infection",
+            "Systemic inflammatory response syndrome (SIRS) criteria"
+        ],
+        "supportive": [
+            "Organ dysfunction",
+            "Hypotension"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,71 @@
+{
+    "disease": "Acute poliomyelitis, unspecified",
+    "icd_code": "A809",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Mild",
+                "pattern": "Sporadic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Sporadic"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild",
+                "pattern": "Sporadic"
+            },
+            {
+                "name": "Nausea/Vomiting",
+                "severity": "Mild",
+                "pattern": "Sporadic"
+            },
+            {
+                "name": "Inflammation of cerebral membranes (meningitis)",
+                "severity": "Variable",
+                "pattern": "Sporadic"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Variable",
+                "pattern": "Associated with meningitis"
+            },
+            {
+                "name": "Severe headache",
+                "severity": "Variable",
+                "pattern": "Associated with meningitis"
+            },
+            {
+                "name": "Sensory disturbances",
+                "severity": "Variable",
+                "pattern": "Sporadic"
+            },
+            {
+                "name": "Muscle palsy",
+                "severity": "Variable",
+                "pattern": "Sporadic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Stiff neck",
+            "Muscle palsy"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with saliva or excretions of an infected person"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Acute flaccid myelitis (G04.82)"
+    ]
+}

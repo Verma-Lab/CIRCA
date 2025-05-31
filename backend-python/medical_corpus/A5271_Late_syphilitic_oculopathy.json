@@ -1,0 +1,93 @@
+{
+    "disease": "Late syphilitic oculopathy",
+    "icd_code": "A5271",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Decreased visual acuity",
+                "severity": "Variable",
+                "pattern": "Bilateral or unilateral"
+            },
+            {
+                "name": "Eye pain",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Flashers/floaters",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Copper colored/hyperpigmented macules on bilateral feet and ankles with overlying xerotic patches",
+            "Inferior retinal hole in the left eye",
+            "Bilateral panuveitis",
+            "Retinal pigment epithelium (RPE) mottling in a circinate pattern",
+            "Outer retinal disruption"
+        ],
+        "lab_values": {
+            "Rapid plasma reagin (RPR)": {
+                "abnormal_range": ">1:8",
+                "finding": "Positive with a 1:64 titer in one case, 1:128 in another"
+            },
+            "Treponemal antibody": {
+                "abnormal_range": "Reactive",
+                "finding": "Reactive in multiple cases"
+            },
+            "Cerebrospinal fluid (CSF) analysis": {
+                "abnormal_range": "Variable",
+                "finding": "Can show normal or abnormal findings (e.g., elevated protein, increased white blood cells).  VDRL may be reactive or non-reactive."
+            },
+            "HIV": {
+                "abnormal_range": "Positive",
+                "finding": "Can be positive in some cases, but not always associated with ocular syphilis"
+            }
+        },
+        "risk_factors": [
+            "Increasing age",
+            "Higher RPR titers",
+            "HIV co-infection (though not always present)"
+        ],
+        "imaging_findings": {
+            "Fundoscopic exam": [
+                "Retinal pigment epithelium (RPE) mottling",
+                "Circinate pattern"
+            ],
+            "Optical coherence tomography (OCT)": [
+                "Outer retinal disruption"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological tests for syphilis (both treponemal and non-treponemal)",
+            "Ophthalmologic examination findings consistent with ocular syphilis (e.g., uveitis, retinitis, optic neuritis)"
+        ],
+        "supportive": [
+            "Abnormal CSF findings (if neurosyphilis is suspected)",
+            "History of syphilis infection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other inflammatory eye disorders (e.g., other types of uveitis, retinitis)",
+        "Infectious causes of ocular inflammation"
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "disease": "Trichomonal vulvovaginitis",
+    "icd_code": "A5901",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal discharge",
+                "severity": "Profuse",
+                "pattern": "Green or yellow, sometimes frothy, fishy odor"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Irritation",
+                "severity": "Variable",
+                "pattern": "Present in many cases, vaginal redness and tenderness"
+            },
+            {
+                "name": "Painful intercourse",
+                "severity": "Variable",
+                "pattern": "May occur due to vaginal irritation"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "May occur if bladder is infected"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Red blotches on vaginal wall or cervix",
+            "Vaginal redness and tenderness"
+        ],
+        "lab_values": {
+            "Microscopic examination of vaginal discharge": "Presence of Trichomonas vaginalis"
+        },
+        "risk_factors": [
+            "Sexual contact with infected partner",
+            "Multiple sexual partners",
+            "High-risk sexual partners"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of vaginal infection (e.g., unusual or persistent vaginal discharge, itching, irritation)",
+            "Microscopic examination of vaginal discharge revealing Trichomonas vaginalis"
+        ],
+        "supportive": [
+            "Physical examination findings (e.g., red blotches on vaginal wall or cervix, vaginal redness and tenderness)",
+            "History of sexual contact with infected partner"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial vaginosis",
+        "Vulvovaginal candidiasis",
+        "Other vaginal infections"
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "disease": "Enteropathogenic Escherichia coli infection",
+    "icd_code": "A040",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Variable, can be severe",
+                "pattern": "Usually the first symptom; can be persistent in some cases"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Variable, can be severe",
+                "pattern": "More common in STEC infections"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade, if present",
+                "pattern": "More common in some types of E. coli infections"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in some cases, but usually low-grade or absent",
+            "heart_rate": "May be elevated due to dehydration or infection severity"
+        },
+        "physical_findings": [
+            "Abdominal tenderness"
+        ],
+        "lab_values": {
+            "stool_culture": "Positive for enteropathogenic E. coli",
+            "blood_tests": "May show signs of dehydration or kidney damage (HUS)"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Person-to-person contact",
+            "Contact with animals or their environment",
+            "Swimming in untreated water",
+            "Travel to low- and middle-income countries (for some types)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive stool culture for enteropathogenic E. coli"
+        ],
+        "supportive": [
+            "Characteristic symptoms (watery diarrhea, abdominal cramps)",
+            "Exposure to risk factors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other diarrheagenic E. coli infections (ETEC, STEC, EAEC, EIEC)",
+        "Other causes of gastroenteritis (viral, parasitic, other bacterial)"
+    ]
+}

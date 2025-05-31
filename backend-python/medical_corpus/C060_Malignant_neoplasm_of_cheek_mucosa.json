@@ -1,0 +1,61 @@
+{
+    "disease": "Malignant neoplasm of cheek mucosa",
+    "icd_code": "C060",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mouth lesion",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Intermittent or constant"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Intermittent or constant"
+            },
+            {
+                "name": "Difficulty chewing or swallowing",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Facial swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Numbness or tingling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Ulcerated or exophytic lesion on the cheek mucosa",
+            "Induration or fixation to underlying structures",
+            "Lymphadenopathy (enlarged lymph nodes)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Alcohol abuse",
+            "History of tobacco dependence"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignancy in cheek mucosa tissue"
+        ],
+        "supportive": [
+            "Clinical findings consistent with malignant neoplasm (e.g., ulcerated lesion, induration)"
+        ]
+    },
+    "differential_diagnoses": []
+}

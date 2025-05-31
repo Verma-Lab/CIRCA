@@ -1,0 +1,83 @@
+{
+    "disease": "Candidal balanitis",
+    "icd_code": "B3742",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "During urination"
+            },
+            {
+                "name": "Erythema",
+                "severity": "Variable",
+                "pattern": "Inflammation of the glans penis"
+            },
+            {
+                "name": "Fissuring",
+                "severity": "Variable",
+                "pattern": "Cracks or splits in the skin of the prepuce"
+            },
+            {
+                "name": "Phimosis",
+                "severity": "Variable",
+                "pattern": "Tight foreskin"
+            },
+            {
+                "name": "Ulcer",
+                "severity": "Variable",
+                "pattern": "Open sores"
+            },
+            {
+                "name": "Subpreputial discharge",
+                "severity": "Variable",
+                "pattern": "Discharge from under the foreskin"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Inflammation of the glans penis",
+            "Tight foreskin (phimosis)",
+            "Erythema",
+            "Fissuring",
+            "Ulcers",
+            "Subpreputial discharge"
+        ],
+        "lab_values": {
+            "KOH mount": "Positive in 73.47% of cases with candidal balanoposthitis",
+            "Fungal culture": "Positive for Candida albicans in most cases"
+        },
+        "risk_factors": [
+            "Poor hygiene",
+            "Uncircumcised penis",
+            "Diabetes mellitus",
+            "Immunosuppression",
+            "Tight prepuce",
+            "Use of antibiotics",
+            "Urinary catheterization",
+            "Obesity",
+            "Living in a nursing home",
+            "Exposure to irritants"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with candidal balanitis (inflammation of the glans penis, erythema, fissuring, phimosis, ulcers, subpreputial discharge)",
+            "Positive KOH mount or fungal culture for Candida albicans"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Herpes simplex virus balanitis",
+        "Human papilloma virus balanitis",
+        "Scabies",
+        "Syphilis",
+        "Gonorrhea",
+        "Dermatophytosis",
+        "Lichen planus",
+        "Psoriasis",
+        "Adverse drug reaction"
+    ]
+}

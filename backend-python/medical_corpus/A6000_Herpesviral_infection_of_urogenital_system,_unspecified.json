@@ -1,0 +1,51 @@
+{
+    "disease": "Herpesviral infection of urogenital system, unspecified",
+    "icd_code": "A6000",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blisters",
+                "severity": "Variable",
+                "pattern": "May itch, burst, and form scabs"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Swollen and painful lymph nodes in the groin",
+                "severity": "Variable",
+                "pattern": "May occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Blisters on genitalia and/or urogenital tract",
+            "Swollen and painful inguinal lymph nodes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact",
+            "Weakened immune system",
+            "Stress"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

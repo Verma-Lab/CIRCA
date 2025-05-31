@@ -1,0 +1,92 @@
+{
+    "disease": "Yaws",
+    "icd_code": "A669",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mother yaw (primary lesion)",
+                "severity": "Variable, can be painless or itchy",
+                "pattern": "Single papilloma (wart-like tumor) initially, may ulcerate; most often on limbs; incubation period 9-90 days"
+            },
+            {
+                "name": "Secondary yaws",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Multiple raised yellow lesions, pain and swelling of long bones and fingers (dactylitis), weeks to months after primary infection"
+            },
+            {
+                "name": "Tertiary yaws",
+                "severity": "Severe, can lead to disfigurement and disability",
+                "pattern": "Skin and bone lesions, deformities of legs, nose, palate, and upper jaw; occurs in up to 20% of untreated cases, years after infection"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Can be present, especially in secondary yaws"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Pallor",
+                "severity": "Variable",
+                "pattern": "Can be present, associated with anemia"
+            },
+            {
+                "name": "Itching",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with primary lesion"
+            },
+            {
+                "name": "Yellow discharge",
+                "severity": "Variable",
+                "pattern": "From ulcerated nodules"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated (e.g., 37.8\u00b0C)"
+        },
+        "physical_findings": [
+            "Papilloma (wart-like tumor)",
+            "Ulcerated nodule",
+            "Granulomatous plaques",
+            "Yellow-crusted lesions",
+            "Hypopigmented scarring",
+            "Bone pain (dactylitis)",
+            "Palmar/plantar hyperkeratosis (thickening)"
+        ],
+        "lab_values": {
+            "Treponema pallidum particle agglutination (TPPA)": "Positive in treponemal infections (cannot distinguish yaws from syphilis)",
+            "Rapid plasma reagin (RPR)": "Positive in treponemal infections (cannot distinguish yaws from syphilis)",
+            "Treponema pallidum hemagglutination (TPHA)": "Positive in treponemal infections",
+            "Venereal Disease Research Laboratory (VDRL)": "Positive in treponemal infections",
+            "Polymerase chain reaction (PCR)": "Detects T. pallidum subspecies pertenue DNA in skin lesions; can monitor azithromycin resistance",
+            "Hemoglobin": "May be low (e.g., 3.9 mg/dL, indicative of anemia)",
+            "Eosinophil count": "May be slightly elevated (e.g., 2.3%)"
+        },
+        "risk_factors": [
+            "Living in poor communities in warm, humid, tropical areas",
+            "Low socioeconomic conditions",
+            "Poor personal hygiene",
+            "Contact with skin sores of infected individuals",
+            "Age under 15 years (most common in 6-10 year olds)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with yaws (papilloma, ulcer, etc.)",
+            "Positive serological test (TPPA, RPR, TPHA, VDRL)"
+        ],
+        "supportive": [
+            "Darkfield examination of skin lesion showing T. pallidum subspecies pertenue"
+        ]
+    },
+    "differential_diagnoses": [
+        "Syphilis",
+        "Other tropical diseases (e.g., mycobacterial disease, cutaneous leishmaniasis, fungal infections)",
+        "Haemophilus ducreyi infection"
+    ]
+}

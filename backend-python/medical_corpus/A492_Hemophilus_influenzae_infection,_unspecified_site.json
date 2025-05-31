@@ -1,0 +1,35 @@
+{
+    "disease": "Haemophilus influenzae infection, unspecified site",
+    "icd_code": "A492",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Symptoms vary depending on the infection site",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Potentially elevated",
+            "heart_rate": "Potentially elevated",
+            "respiratory_rate": "Potentially elevated",
+            "blood_pressure": "Potentially decreased"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_culture": "Positive for Haemophilus influenzae"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory confirmation of Haemophilus influenzae infection"
+        ],
+        "supportive": [
+            "Clinical evidence of invasive disease (meningitis, bacteremia, epiglottitis, pneumonia, pericarditis, septic arthritis, empyema)"
+        ]
+    },
+    "differential_diagnoses": []
+}

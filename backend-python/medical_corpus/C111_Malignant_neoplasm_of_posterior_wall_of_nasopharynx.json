@@ -1,0 +1,34 @@
+{
+    "disease": "Malignant neoplasm of posterior wall of nasopharynx",
+    "icd_code": "C111",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unspecified",
+                "severity": "Unspecified",
+                "pattern": "May be asymptomatic initially"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to environmental tobacco smoke",
+            "Exposure to tobacco smoke in the perinatal period",
+            "History of tobacco dependence",
+            "Occupational exposure to environmental tobacco smoke",
+            "Tobacco dependence",
+            "Tobacco use",
+            "Epstein-Barr virus (EBV) infection (higher risk in certain populations)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant cells in the posterior wall of the nasopharynx"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

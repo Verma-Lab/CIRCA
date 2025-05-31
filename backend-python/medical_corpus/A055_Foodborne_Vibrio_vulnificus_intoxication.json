@@ -1,0 +1,84 @@
+{
+    "disease": "Foodborne Vibrio vulnificus intoxication",
+    "icd_code": "A05.5",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in more severe cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in more severe cases"
+            },
+            {
+                "name": "Septic shock",
+                "severity": "Severe",
+                "pattern": "Decreased blood pressure"
+            },
+            {
+                "name": "Blistering skin wounds",
+                "severity": "Severe",
+                "pattern": "Associated with bloodstream infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Decreased (septic shock)"
+        },
+        "physical_findings": [
+            "Blistering skin wounds"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for V. vulnificus in severe cases",
+            "stool_culture": "Positive for V. vulnificus in some cases",
+            "wound_culture": "Positive for V. vulnificus in wound infections"
+        },
+        "risk_factors": [
+            "Consumption of contaminated seafood (especially raw oysters)",
+            "Open wound exposure to contaminated seawater",
+            "Chronic liver disease",
+            "Alcoholism",
+            "Hematological disorders",
+            "Diabetes mellitus",
+            "End-stage renal disease",
+            "Rheumatoid arthritis",
+            "Hemochromatosis",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with V. vulnificus infection (e.g., diarrhea, abdominal pain, fever, chills, skin lesions)",
+            "Positive culture for V. vulnificus from blood, stool, or wound"
+        ],
+        "supportive": [
+            "History of consumption of raw or undercooked seafood, especially oysters",
+            "Exposure to contaminated seawater"
+        ]
+    },
+    "differential_diagnoses": []
+}

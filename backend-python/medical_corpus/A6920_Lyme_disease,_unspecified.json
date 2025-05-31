@@ -1,0 +1,71 @@
+{
+    "disease": "Lyme Disease, unspecified",
+    "icd_code": "A6920",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Erythema migrans (bull's-eye rash) common in early stages"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common in early stages"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common in early stages"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Common in early and late stages"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Can occur in later stages"
+            },
+            {
+                "name": "Heart problems",
+                "severity": "Variable",
+                "pattern": "Can occur in later stages (Lyme carditis)"
+            },
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable",
+                "pattern": "Can occur in later stages (neuroborreliosis)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Elevated temperature (>100.4\u00b0F or 38\u00b0C)"
+        },
+        "physical_findings": [
+            "Erythema migrans rash",
+            "Joint swelling and pain",
+            "Neurological deficits (e.g., facial palsy, meningitis)"
+        ],
+        "lab_values": {
+            "antibody tests": "Positive serologic tests (ELISA, Western blot) for Borrelia burgdorferi antibodies.  Note that these can be negative in early stages."
+        },
+        "risk_factors": [
+            "Exposure to ticks in endemic areas",
+            "Outdoor activities in wooded or grassy areas"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Lyme disease",
+            "Positive serologic test for Borrelia burgdorferi antibodies (ELISA, Western blot) \u2013 though a negative test does not rule out early-stage disease"
+        ],
+        "supportive": [
+            "History of tick bite in endemic area",
+            "Characteristic rash (erythema migrans)"
+        ]
+    },
+    "differential_diagnoses": []
+}

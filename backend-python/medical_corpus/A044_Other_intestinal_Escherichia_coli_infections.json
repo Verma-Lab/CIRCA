@@ -1,0 +1,66 @@
+{
+    "disease": "Other intestinal Escherichia coli infections",
+    "icd_code": "A044",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Watery, mucous, sometimes bloody"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "finding": "Intestinal inflammation"
+            }
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of contaminated food",
+            "Recent travel to developing countries",
+            "Exposure to food handlers",
+            "Attendance at daycare",
+            "Residence in nursing homes",
+            "Recent hospitalization",
+            "Recent antibiotic use",
+            "Altered immunity due to underlying disease or medication (antacids, H2 blockers, proton pump inhibitors)",
+            "Cross-contamination of food",
+            "Improper food preparation and storage",
+            "Pregnancy",
+            "Age <5 years or >65 years",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Escherichia coli in the intestines"
+        ],
+        "supportive": [
+            "Symptoms of intestinal inflammation (diarrhea, nausea, abdominal pain, fever, weakness)"
+        ]
+    },
+    "differential_diagnoses": []
+}

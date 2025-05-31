@@ -1,0 +1,107 @@
+{
+    "disease": "Type 2 Diabetes Mellitus",
+    "icd_code": "E11",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Polyuria",
+                "severity": "Variable",
+                "pattern": "Can be mild and develop slowly"
+            },
+            {
+                "name": "Polydipsia",
+                "severity": "Variable",
+                "pattern": "Can be mild and develop slowly"
+            },
+            {
+                "name": "Polyphagia",
+                "severity": "Variable",
+                "pattern": "Can be mild and develop slowly"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Can be a late symptom"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can be mild and develop slowly"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Can be a symptom, especially in type 1"
+            },
+            {
+                "name": "Frequent infections",
+                "severity": "Variable",
+                "pattern": "Can be a symptom"
+            },
+            {
+                "name": "Slow-healing sores",
+                "severity": "Variable",
+                "pattern": "Can be a symptom"
+            },
+            {
+                "name": "Numbness or tingling in the extremities",
+                "severity": "Variable",
+                "pattern": "Can be a symptom"
+            },
+            {
+                "name": "Hyperosmolar syndrome",
+                "severity": "Severe",
+                "pattern": "Life-threatening complication; symptoms include confused thinking, weakness, nausea, seizure, and coma"
+            },
+            {
+                "name": "Hypoglycemia",
+                "severity": "Variable",
+                "pattern": "Can be a side effect of treatment; symptoms include sudden weakness, sweating, feeling unwell, and difficulty thinking clearly"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Often elevated",
+            "heart_rate": "Can be elevated or normal"
+        },
+        "physical_findings": [
+            "Obesity",
+            "Acanthosis nigricans"
+        ],
+        "lab_values": {
+            "fasting_plasma_glucose": ">125 mg/dL",
+            "HbA1c": ">6.5%",
+            "random_plasma_glucose": ">200 mg/dL",
+            "OGTT": ">200 mg/dL 2 hours after glucose load"
+        },
+        "risk_factors": [
+            "Age 45 or older",
+            "Family history of diabetes",
+            "Overweight or obesity",
+            "Physical inactivity",
+            "High blood pressure",
+            "Prediabetes",
+            "Gestational diabetes",
+            "Ethnicity (African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Fasting plasma glucose \u2265 126 mg/dL",
+            "HbA1c \u2265 6.5%",
+            "2-hour plasma glucose \u2265 200 mg/dL during an oral glucose tolerance test",
+            "Random plasma glucose \u2265 200 mg/dL in the presence of classic symptoms"
+        ],
+        "supportive": [
+            "Symptoms of diabetes",
+            "Family history of diabetes",
+            "Obesity"
+        ]
+    },
+    "differential_diagnoses": [
+        "Type 1 diabetes",
+        "Gestational diabetes",
+        "Other endocrine disorders"
+    ]
+}

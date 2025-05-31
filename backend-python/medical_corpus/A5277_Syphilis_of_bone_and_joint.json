@@ -1,0 +1,141 @@
+{
+    "disease": "Syphilis of bone and joint",
+    "icd_code": "A5277",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Migratory polyarthralgia, most severe at night, aggravated by heat, relieved by movement"
+            },
+            {
+                "name": "Joint swelling",
+                "severity": "Marked",
+                "pattern": "Present in affected joints"
+            },
+            {
+                "name": "Restricted range of motion",
+                "severity": "Present",
+                "pattern": "In affected joints"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable, can be progressive",
+                "pattern": "Can be present, especially in neurosyphilis"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Shoulder pain",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Arthralgias",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Maculopapular rash, can be pruritic"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Urinary incontinence",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "Can affect nose and ears"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Decreased abduction of the left shoulder due to pain",
+            "Pain in the left trapezius with shoulder movement",
+            "Pruritic rash on the neck",
+            "Decreased leg strength (3/5)",
+            "Painful nodular lesion on the right sixth rib",
+            "3 x 3 cm non-painful nodular lesion on forehead",
+            "Erythematous macules in palms",
+            "Diffuse erythematous maculopapular rash on palms and soles",
+            "Swelling and tenderness in affected joints"
+        ],
+        "lab_values": {
+            "RPR": "Positive",
+            "VDRL": "Positive",
+            "CBC": "Usually unremarkable",
+            "CMP": "Usually unremarkable",
+            "ESR": "Can be elevated",
+            "Lyme disease panel": "Usually negative",
+            "Urine analysis": "Can show blood",
+            "CSF": {
+                "glucose": "Can be decreased",
+                "white blood cells": "Can be increased",
+                "protein": "Can be increased",
+                "VDRL": "Can be positive"
+            }
+        },
+        "risk_factors": [
+            "Untreated syphilis",
+            "Congenital syphilis",
+            "HIV infection",
+            "Sexual activity with multiple partners",
+            "Needle sharing"
+        ],
+        "imaging_findings": {
+            "X-ray": "Usually unremarkable",
+            "CT scan": "Can show lytic lesions in bone",
+            "MRI": "Can show degenerative changes, ligamentum flavum hypertrophy, neural foraminal stenosis",
+            "Bone scan": "Can show lytic lesions",
+            "PET scan": "Can show lytic lesions with increased metabolism"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological tests (RPR, VDRL, FTA-ABS)",
+            "Clinical presentation consistent with syphilitic arthritis (joint pain, swelling, restricted range of motion)",
+            "Imaging findings suggestive of bone involvement (lytic lesions)"
+        ],
+        "supportive": [
+            "Positive CSF findings (in neurosyphilis)",
+            "Histopathological findings showing chronic granulomatous process or lymphoplasmocytic infiltrate with spirochetes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other forms of arthritis (rheumatoid arthritis, osteoarthritis)",
+        "Bone tumors",
+        "Hyperparathyroidism",
+        "Enchondromatosis",
+        "Langerhans cell histiocytosis",
+        "Multiple myeloma",
+        "Metastatic lesions",
+        "Other infectious etiologies (depending on immunosuppression)"
+    ]
+}

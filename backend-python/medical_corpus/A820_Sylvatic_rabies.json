@@ -1,0 +1,22 @@
+{
+    "disease": "Sylvatic rabies",
+    "icd_code": "A820",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected red foxes, badgers, cattle, dogs, martens, cats, and horses"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Detection of rabies virus in animal samples (e.g., brain tissue) using methods such as fluorescent antibody test (FAT) or molecular techniques"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

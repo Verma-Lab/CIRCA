@@ -1,0 +1,49 @@
+{
+    "disease": "Toxoplasma oculopathy, unspecified",
+    "icd_code": "B58.00",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eye damage",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe, depending on the location and extent of the infection."
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "May occur in some cases, but are not always present."
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Mild to moderate",
+                "pattern": "May occur in some cases, but are not always present."
+            },
+            {
+                "name": "Muscle aches and pains",
+                "severity": "Mild to moderate",
+                "pattern": "May occur in some cases, but are not always present."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Eye findings may vary depending on the severity and location of the infection.  May include inflammation, lesions, or visual impairment."
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Compromised immune system",
+            "Congenital infection (although this is coded separately as P37.1)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with toxoplasma oculopathy (e.g., eye inflammation, lesions, visual impairment)"
+        ],
+        "supportive": [
+            "Positive serological tests for Toxoplasma gondii antibodies",
+            "Imaging findings suggestive of toxoplasmosis (e.g., retinal lesions)"
+        ]
+    },
+    "differential_diagnoses": []
+}

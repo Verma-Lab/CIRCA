@@ -1,0 +1,24 @@
+{
+    "disease": "Papovavirus infection, unspecified",
+    "icd_code": "B34.4",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Anogenital human papillomavirus infection (A63.0)",
+        "Cytomegaloviral disease NOS (B25.9)",
+        "Herpesvirus [herpes simplex] infection NOS (B00.9)",
+        "Retrovirus infection NOS (B33.3)",
+        "Viral warts due to human papillomavirus infection (B07)"
+    ]
+}

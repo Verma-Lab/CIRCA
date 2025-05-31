@@ -1,0 +1,84 @@
+{
+    "disease": "Listerial Sepsis",
+    "icd_code": "A327",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (>38\u2103)",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": ">38\u2103",
+            "heart_rate": "Tachycardia"
+        },
+        "physical_findings": [
+            "Meningeal signs",
+            "Poor general condition",
+            "Lethargy"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Listeria monocytogenes",
+            "white_blood_cell_count": "Decreased in some cases (e.g., pancytopenia, neutropenia)",
+            "CSF_analysis": "Increased protein, pleocytosis with predominance of PMNs (in cases with meningitis)"
+        },
+        "risk_factors": [
+            "Immunocompromised individuals",
+            "Hematologic malignancy",
+            "Diabetes mellitus",
+            "Amyloidosis",
+            "Hepatic cirrhosis",
+            "Immunosuppressive or corticosteroid therapy",
+            "Pregnancy",
+            "Elderly age",
+            "Neonatal age",
+            "Treatment with carfilzomib and daratumumab"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": "Positive blood culture for Listeria monocytogenes",
+        "supportive": [
+            "Clinical presentation consistent with sepsis",
+            "Other positive cultures (e.g., CSF, peritoneal fluid)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,85 @@
+{
+    "disease": "Basal cell carcinoma of skin of left upper limb, including shoulder",
+    "icd_code": "C44619",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Open sore that does not heal",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Reddish patch or irritated area",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Shiny bump or nodule",
+                "severity": "Variable",
+                "pattern": "Slowly growing"
+            },
+            {
+                "name": "Scar-like area that is flat, white, yellow, or waxy in color",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Small pink growth with a slightly raised, rolled edge and a crusted indentation in the center",
+                "severity": "Variable",
+                "pattern": "Slowly growing"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May occur with ulceration"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May occur with ulceration"
+            },
+            {
+                "name": "Infection",
+                "severity": "Variable",
+                "pattern": "May occur with ulceration"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small, sometimes shiny bump or scaly flat patch on the skin",
+            "Slowly growing lesion",
+            "May be pigmented (brown) in people with darker skin",
+            "Open sore",
+            "Reddish patch",
+            "Nodule",
+            "Scar-like area"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 50",
+            "Fair skin and light eyes",
+            "Previous BCC",
+            "Excessive exposure to ultraviolet (UV) rays from sunlight or tanning beds",
+            "Basal cell nevus syndrome (Gorlin syndrome)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical examination revealing characteristic lesion"
+        ],
+        "supportive": [
+            "Biopsy confirming diagnosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Psoriasis",
+        "Eczema"
+    ]
+}

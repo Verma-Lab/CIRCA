@@ -1,0 +1,10 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [],
+  "additional_testing_recommended": [],
+  "clinical_summary": "The patient is a 0-year-old male with no reported symptoms, vital signs, physical findings, lab values, risk factors, imaging findings, medications, or allergies. Given the absence of any clinical information, it is impossible to diagnose or suggest any of the listed diseases. Further information is needed to assess the patient.",
+  "timestamp": "2025-05-22T13:59:21.791039",
+  "identified_icd_codes": [
+    "Z00.1"
+  ]
+}

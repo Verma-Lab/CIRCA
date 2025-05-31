@@ -1,0 +1,115 @@
+{
+    "disease": "Typhoid Arthritis",
+    "icd_code": "A01.04",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (38-39\u00b0C)",
+                "pattern": "Intermittent, lasting 1 month or more"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Severe",
+                "pattern": "Bilateral knee joint pain, swelling, difficulty in walking"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Moderate",
+                "pattern": "Present for 1 month"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate",
+                "pattern": "Present for 1 month"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Moderate",
+                "pattern": "Present for 1 month"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate",
+                "pattern": "Present for 1 month"
+            },
+            {
+                "name": "Breathlessness",
+                "severity": "Severe",
+                "pattern": "Developed during the course of typhoid fever"
+            },
+            {
+                "name": "Swollen knee",
+                "severity": "Severe",
+                "pattern": "Bilateral"
+            },
+            {
+                "name": "Tenderness",
+                "severity": "Severe",
+                "pattern": "Bilateral knee"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Moderate",
+                "pattern": "Present for 2 weeks"
+            },
+            {
+                "name": "Walking disability",
+                "severity": "Severe",
+                "pattern": "Present for 2 weeks"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "pulse": "99/min",
+            "blood_pressure": "110/70 mmHg",
+            "respiratory_rate": "16/min (increased to 40/min during ARDS)",
+            "temperature": "38.5\u00b0C (38-39\u00b0C)"
+        },
+        "physical_findings": [
+            "Swollen and tender knees",
+            "Mild hepatosplenomegaly",
+            "Bilateral basal crepitations (during ARDS)",
+            "Bilateral lung infiltrates (during ARDS)"
+        ],
+        "lab_values": {
+            "total_leucocyte_count": "15350/mm3 (with 90% neutrophils)",
+            "erythrocyte_sedimentation_rate": "120 mm/h",
+            "c_reactive_protein": "28.7 g/L",
+            "serum_glutamic_oxaloacetic_transaminase": "76 U/L (mildly elevated)",
+            "serum_glutamic_pyruvic_transaminase": "80 U/L (mildly elevated)",
+            "synovial_fluid_cell_count": "2000 cells/mm3 (90% neutrophils)",
+            "widal_test": "Negative",
+            "typhidot_test": "Positive for IgM antibodies"
+        },
+        "risk_factors": [
+            "Living in developing countries",
+            "Pre-existing typhoid fever"
+        ],
+        "imaging_findings": {
+            "x_rays": "Unremarkable chest and knee X-rays",
+            "ultrasound": "Mild hepatosplenomegaly, marked joint effusion with hyperechoic shadow in knee",
+            "chest_x_ray_ards": "Bilateral lung infiltrates suggestive of ARDS"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical manifestations consistent with typhoid fever (fever, abdominal pain, vomiting, anorexia)",
+            "Positive Salmonella Typhidot test for IgM antibodies"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (ESR, CRP)",
+            "Arthritis (joint pain, swelling)",
+            "Sterile blood, urine, and synovial fluid cultures (in some cases)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Brucellosis",
+        "Septic arthritis",
+        "HIV",
+        "Malaria",
+        "Dengue fever",
+        "Rheumatoid arthritis"
+    ]
+}

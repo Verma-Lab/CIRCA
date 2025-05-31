@@ -1,0 +1,63 @@
+{
+    "disease": "Other symptomatic late syphilis",
+    "icd_code": "A5279",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Non-itchy, often on hands and feet"
+            },
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe, depending on the affected area of the nervous system"
+            },
+            {
+                "name": "Cardiovascular symptoms",
+                "severity": "Variable",
+                "pattern": "Can include aortic aneurysms, heart valve damage"
+            },
+            {
+                "name": "Ocular symptoms",
+                "severity": "Variable",
+                "pattern": "Can include uveitis, optic neuritis"
+            },
+            {
+                "name": "Other systemic symptoms",
+                "severity": "Variable",
+                "pattern": "Can include fatigue, weight loss, fever"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "VDRL": {
+                "abnormal_range": "Reactive"
+            },
+            "FTA-ABS": {
+                "abnormal_range": "Positive"
+            }
+        },
+        "risk_factors": [
+            "Unprotected sex",
+            "Multiple sexual partners",
+            "History of syphilis",
+            "Pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological test for syphilis (e.g., VDRL, FTA-ABS)",
+            "Presence of characteristic clinical manifestations of late syphilis"
+        ],
+        "supportive": [
+            "History of untreated early syphilis",
+            "Neurological examination findings consistent with neurosyphilis",
+            "Cardiovascular examination findings consistent with cardiovascular syphilis"
+        ]
+    },
+    "differential_diagnoses": []
+}

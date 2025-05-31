@@ -1,0 +1,43 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Japanese Encephalitis",
+      "icd_code": "A830",
+      "probability": 5,
+      "reasoning": "Given the complete lack of symptoms, vital signs, physical findings, and lab results, the probability of Japanese Encephalitis is extremely low.  This is a serious disease with characteristic symptoms that are entirely absent in this patient."
+    },
+    {
+      "disease": "Campylobacter enteritis",
+      "icd_code": "A045",
+      "probability": 5,
+      "reasoning": "Similar to Japanese Encephalitis, the absence of any gastrointestinal symptoms or relevant lab data makes this diagnosis highly improbable."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 5,
+      "reasoning": "Hypertension requires elevated blood pressure readings, which are missing from the patient data.  The absence of symptoms like shortness of breath or edema further reduces the likelihood."
+    },
+    {
+      "disease": "Infectious mononucleosis, unspecified with polyneuropathy",
+      "icd_code": "B27.91",
+      "probability": 5,
+      "reasoning": "The patient shows no signs of fatigue, fever, sore throat, swollen lymph nodes, or neurological deficits.  The key lab values are also missing."
+    },
+    {
+      "disease": "Malignant neoplasm of lateral wall of oropharynx",
+      "icd_code": "C102",
+      "probability": 5,
+      "reasoning": "There is no information provided that would suggest an oropharyngeal malignancy.  This diagnosis is purely speculative without any clinical findings."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Complete physical examination",
+    "Comprehensive blood work (including complete blood count, liver function tests)",
+    "Vital signs assessment (temperature, heart rate, blood pressure, respiratory rate)"
+  ],
+  "clinical_summary": "The patient, Alice Gaze, is a 0-year-old female with no reported symptoms, vital signs, physical findings, lab values, risk factors, imaging findings, medications, or allergies.  Therefore, no definitive diagnosis can be made.  A complete clinical evaluation is urgently needed to gather essential data for proper assessment and to rule out any potential underlying conditions. The provided medical literature is irrelevant without clinical data.",
+  "timestamp": "2025-05-02T13:18:31.128847",
+  "identified_icd_codes": []
+}

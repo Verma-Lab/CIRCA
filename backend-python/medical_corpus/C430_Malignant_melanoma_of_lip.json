@@ -1,0 +1,29 @@
+{
+    "disease": "Malignant melanoma of lip",
+    "icd_code": "C430",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dark patch",
+                "severity": "Variable",
+                "pattern": "Appears on the lip"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue on the lip",
+            "Dark patch on the lip"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant melanoma"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,67 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of pelvis",
+    "icd_code": "C49.5",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be absent initially, can become severe as the tumor grows and invades surrounding structures"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "Palpable mass in the pelvic region"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Muscle weakness due to tumor infiltration"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "General feeling of tiredness and weakness"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained weight loss"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in the presence of infection or inflammation",
+            "heart_rate": "May be elevated due to pain or systemic effects",
+            "blood_pressure": "May be elevated due to pain or systemic effects"
+        },
+        "physical_findings": [
+            "Palpable mass",
+            "Local tenderness",
+            "Limited range of motion",
+            "Lymph node enlargement"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "May show a mass in the pelvis, its size, location, and extent of invasion",
+            "MRI": "Provides detailed images of soft tissues, helping to characterize the tumor and assess its relationship to surrounding structures",
+            "PET scan": "May be used to detect metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass in the pelvis",
+            "Histopathological confirmation of malignant neoplasm"
+        ],
+        "supportive": [
+            "Clinical symptoms and signs consistent with a pelvic mass",
+            "Elevated tumor markers (if applicable)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign tumors of the pelvis",
+        "Inflammatory conditions",
+        "Other pelvic masses"
+    ]
+}

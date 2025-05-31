@@ -1,0 +1,153 @@
+{
+    "disease": "Secondary syphilitic oculopathy",
+    "icd_code": "A5143",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Decreased visual acuity",
+                "severity": "Variable",
+                "pattern": "Bilateral"
+            },
+            {
+                "name": "Flashers",
+                "severity": "Variable",
+                "pattern": "Bilateral"
+            },
+            {
+                "name": "Eye pain",
+                "severity": "Variable",
+                "pattern": "Bilateral"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Bilateral"
+            },
+            {
+                "name": "Mild conjunctivitis",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Sarcoidosis-like conjunctivitis with granulomas",
+                "severity": "Variable",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Episcleritis",
+                "severity": "Variable",
+                "pattern": "More common in secondary stage"
+            },
+            {
+                "name": "Scleritis",
+                "severity": "Variable",
+                "pattern": "More common in tertiary stage, may be nodular or diffuse"
+            },
+            {
+                "name": "Keratitis",
+                "severity": "Variable",
+                "pattern": "Unilateral or bilateral, immune-mediated, non-ulcerative, non-suppurative"
+            },
+            {
+                "name": "Cataract",
+                "severity": "Variable",
+                "pattern": "Most likely due to uveal inflammation"
+            },
+            {
+                "name": "Panuveitis",
+                "severity": "Variable",
+                "pattern": "Most common manifestation"
+            },
+            {
+                "name": "Posterior uveitis",
+                "severity": "Variable",
+                "pattern": "Predominant in HIV-negative patients"
+            },
+            {
+                "name": "Chorioretinitis",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Retinal vasculitis",
+                "severity": "Variable",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Necrotizing or non-necrotizing retinitis",
+                "severity": "Variable",
+                "pattern": "Macula, midperiphery, and peripheral retina"
+            },
+            {
+                "name": "Placoid confluent lesions",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Exudative retinal detachment",
+                "severity": "Variable",
+                "pattern": "Uncommon"
+            },
+            {
+                "name": "Tractional and rhegmatogenous retinal detachment",
+                "severity": "Variable",
+                "pattern": "Rare complication of uveitis"
+            },
+            {
+                "name": "Pruritic rash",
+                "severity": "Variable",
+                "pattern": "May be present on lower extremities"
+            },
+            {
+                "name": "Genital ulcer",
+                "severity": "Variable",
+                "pattern": "May be present, resolves"
+            },
+            {
+                "name": "Copper colored/hyperpigmented macules",
+                "severity": "Variable",
+                "pattern": "May be present on feet and ankles"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Copper colored/hyperpigmented macules on bilateral feet and ankles with overlying xerotic patches",
+            "Inferior retinal hole in the left eye",
+            "Bilateral panuveitis"
+        ],
+        "lab_values": {
+            "Rapid plasma reagin (RPR)": "Positive with a 1:64 titer",
+            "Treponemal antibody": "Reactive",
+            "HIV screen": "Negative",
+            "Lumbar puncture (LP)": {
+                "nucleated cells": "2",
+                "red blood cells (RBCs)": "0",
+                "protein": "23",
+                "glucose": "60",
+                "CSF VDRL": "Non-reactive",
+                "HSV IgG and IgM": "Negative"
+            }
+        },
+        "risk_factors": [
+            "Sexual contact with an individual carrying the disease",
+            "HIV co-infection",
+            "Being a man who has sex with men (MSM)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology (RPR, treponemal antibody)",
+            "Ophthalmologic findings consistent with secondary syphilitic oculopathy (e.g., panuveitis, retinitis, keratitis)"
+        ],
+        "supportive": [
+            "History of syphilis",
+            "Presence of other secondary syphilis symptoms (e.g., rash, genital ulcer)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other inflammatory eye disorders",
+        "Infectious and immune ocular inflammatory disorders"
+    ]
+}

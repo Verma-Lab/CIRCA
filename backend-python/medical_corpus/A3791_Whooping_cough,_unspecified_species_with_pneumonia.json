@@ -1,0 +1,15 @@
+{
+    "disease": "Whooping cough, unspecified species with pneumonia",
+    "icd_code": "A3791",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {},
+    "differential_diagnoses": []
+}

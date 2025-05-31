@@ -1,0 +1,68 @@
+{
+    "disease": "Tinea manuum",
+    "icd_code": "B35.2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itching",
+                "severity": "Mild",
+                "pattern": "Present"
+            },
+            {
+                "name": "Scaling",
+                "severity": "Diffuse",
+                "pattern": "Present"
+            },
+            {
+                "name": "Erythema",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dryness",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Blisters",
+                "severity": "Variable",
+                "pattern": "Present in some cases, containing sticky clear fluid"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erythema and diffuse white scaling on the palmar aspect of the hand",
+            "White scales localized to palmar skin furrows and adjoining dermatoglyphics",
+            "Dotted vessels in the skin furrows (seen with immersion fluid in dermoscopy)"
+        ],
+        "lab_values": {
+            "KOH examination": "Presence of septate hyphae"
+        },
+        "risk_factors": [
+            "Manual work",
+            "Profuse sweating (hyperhidrosis)",
+            "Pre-existing hand dermatitis",
+            "Contact with other fungal infections (e.g., tinea pedis, tinea cruris)"
+        ],
+        "imaging_findings": {
+            "Dermoscopy": [
+                "White scales accentuated in skin furrows and adjoining dermatoglyphics",
+                "Dotted vessels localized to skin furrows (with immersion fluid)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tinea manuum (erythema, scaling, itching)",
+            "Positive KOH examination showing septate hyphae"
+        ],
+        "supportive": [
+            "Dermoscopic findings: white scales in skin furrows, dotted vessels in furrows"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chronic hand eczema",
+        "Palmar psoriasis"
+    ]
+}

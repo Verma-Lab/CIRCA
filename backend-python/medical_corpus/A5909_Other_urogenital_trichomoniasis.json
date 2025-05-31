@@ -1,0 +1,105 @@
+{
+    "disease": "Other urogenital trichomoniasis",
+    "icd_code": "A5909",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable, can be copious, yellow-green, frothy, with fishy odor",
+                "pattern": "May be present in over 50% of women; can be purulent"
+            },
+            {
+                "name": "Genital itching",
+                "severity": "Variable",
+                "pattern": "Common in women"
+            },
+            {
+                "name": "Painful urination (dysuria)",
+                "severity": "Variable",
+                "pattern": "Common in women; can also occur in men"
+            },
+            {
+                "name": "Pain during intercourse (dyspareunia)",
+                "severity": "Variable",
+                "pattern": "Common in women"
+            },
+            {
+                "name": "Red and sore vagina",
+                "severity": "Variable",
+                "pattern": "Can occur in women"
+            },
+            {
+                "name": "Urethral discharge/urethritis",
+                "severity": "Variable, can be transient, frothy, or purulent",
+                "pattern": "More common in men, often asymptomatic; can cause dysuria and frequency"
+            },
+            {
+                "name": "Penile irritation",
+                "severity": "Mild",
+                "pattern": "Can occur in men"
+            },
+            {
+                "name": "Vulvar soreness and perineum soreness",
+                "severity": "Variable",
+                "pattern": "Can occur in women"
+            },
+            {
+                "name": "Strawberry cervix",
+                "severity": "Variable",
+                "pattern": "Punctate, red spots on the cervix; seen in some women"
+            },
+            {
+                "name": "Epididymitis",
+                "severity": "Rare",
+                "pattern": "Can occur in men"
+            },
+            {
+                "name": "Prostatitis",
+                "severity": "Rare",
+                "pattern": "Can occur in men"
+            },
+            {
+                "name": "Cystitis",
+                "severity": "Occasional",
+                "pattern": "Can occur in both men and women"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Vaginal discharge (in women)",
+            "Inflammation and edema in labia (in women)",
+            "Punctate, red \u201cstrawberry\u201d spots on vaginal walls and cervix (in women)",
+            "Urethral discharge (in men)",
+            "Urethral irritation (in men)"
+        ],
+        "lab_values": {
+            "Vaginal pH": ">5 (increased)",
+            "Wet mount microscopy": "Presence of trichomonads (pear-shaped with flagella, often motile)",
+            "NAATs": "Detection of T. vaginalis nucleic acid",
+            "Culture": "Growth of T. vaginalis"
+        },
+        "risk_factors": [
+            "Sexual intercourse without condoms",
+            "Multiple sexual partners",
+            "History of other STIs"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of symptoms suggestive of trichomoniasis (vaginal discharge, dysuria, etc.)",
+            "Positive diagnostic test for T. vaginalis (e.g., wet mount microscopy, NAATs, culture)"
+        ],
+        "supportive": [
+            "History of unprotected sex",
+            "Presence of other STIs"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial vaginosis",
+        "Candidiasis",
+        "Gonorrhea",
+        "Chlamydia"
+    ]
+}

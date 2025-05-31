@@ -1,0 +1,67 @@
+{
+    "disease": "Candidal enteritis",
+    "icd_code": "B3782",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Loose stools",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "White, yellow, or brown mucus in stool",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Stool culture": {
+                "abnormal_range": "High levels of Candida species"
+            }
+        },
+        "risk_factors": [
+            "Inflammatory bowel disease (IBD)",
+            "Ulcerative colitis",
+            "Crohn's disease",
+            "Gastric ulcers",
+            "Antibiotic use",
+            "Weakened immune system (HIV, AIDS, cancer)",
+            "Diabetes",
+            "Oral contraceptives",
+            "Stress",
+            "Smoking",
+            "Use of corticosteroids, proton pump inhibitors"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of enteritis",
+            "High levels of Candida species detected in stool culture"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Inflammatory bowel disease",
+        "Infectious gastroenteritis",
+        "Other causes of diarrhea"
+    ]
+}

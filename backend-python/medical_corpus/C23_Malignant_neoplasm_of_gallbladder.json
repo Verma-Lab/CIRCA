@@ -1,0 +1,22 @@
+{
+    "disease": "Malignant neoplasm of gallbladder",
+    "icd_code": "C23",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Uncontrolled multiplication of cells in the gallbladder tissue",
+            "Destruction of surrounding healthy tissue",
+            "Potential for spread to other parts of the body"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

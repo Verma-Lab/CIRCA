@@ -1,0 +1,43 @@
+{
+    "disease": "Squamous cell carcinoma of skin of unspecified parts of face",
+    "icd_code": "C44320",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Non-healing sore or scab",
+                "severity": "Unspecified",
+                "pattern": "Persistent for about two months or longer"
+            },
+            {
+                "name": "Flat patch of scaly skin",
+                "severity": "Unspecified",
+                "pattern": "Persistent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Excessive ultraviolet (UV) radiation exposure (sunlight, tanning beds)",
+            "Fair skin that sunburns easily",
+            "Light-colored eyes and hair",
+            "Freckling",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with squamous cell carcinoma (non-healing sore, scaly patch)"
+        ],
+        "supportive": [
+            "Biopsy confirming presence of squamous cells with malignant changes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Melanoma",
+        "Other skin lesions"
+    ]
+}

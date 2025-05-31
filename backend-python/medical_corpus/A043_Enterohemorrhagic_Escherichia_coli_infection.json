@@ -1,0 +1,98 @@
+{
+    "disease": "Enterohemorrhagic Escherichia coli infection",
+    "icd_code": "A043",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal cramps",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Severe",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Nonbloody diarrhea",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low grade or absent",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Hemolytic uremic syndrome (HUS)",
+                "severity": "Life-threatening",
+                "pattern": "Can develop in second week"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Usually absent or low-grade fever, occasionally reaching 39\u00b0C",
+            "blood_pressure": "May be elevated in HUS"
+        },
+        "physical_findings": [
+            "Erythema and edema (in HUS)",
+            "Pale skin (in HUS)",
+            "Signs of fluid overload (in HUS)",
+            "Bleeding diathesis (in HUS)",
+            "Neurologic symptoms and signs (in HUS)"
+        ],
+        "lab_values": {
+            "stool_culture": "Positive for EHEC, requires special media (sorbitol MacConkey agar)",
+            "shiga_toxin_assay": "Positive for Shiga toxin",
+            "hematocrit": "Rapid fall in HUS",
+            "platelet_count": "Rapid fall in HUS",
+            "serum_creatinine": "Elevated in HUS",
+            "proteinuria": "Present in HUS",
+            "hematuria": "Present in HUS",
+            "red_cell_casts": "Present in HUS"
+        },
+        "risk_factors": [
+            "Eating undercooked beef",
+            "Drinking raw (unpasteurized) milk",
+            "Drinking contaminated water",
+            "Working with cattle, goats, or sheep",
+            "Eating food contaminated with animal feces",
+            "Not washing hands after using the bathroom",
+            "Touching animals at a petting zoo",
+            "Age <5 years or >60 years (increased risk of HUS)"
+        ],
+        "imaging_findings": {
+            "barium_enema": "May show edema with thumbprinting",
+            "abdominal_radiographs": "May show edema with thumbprinting"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive stool culture for EHEC (requires special media)",
+            "Positive Shiga toxin assay or molecular testing for Shiga toxin gene"
+        ],
+        "supportive": [
+            "Severe bloody diarrhea",
+            "Severe abdominal cramps",
+            "Low-grade or absent fever",
+            "Clinical presentation consistent with HUS"
+        ]
+    },
+    "differential_diagnoses": [
+        "Ischemic colitis",
+        "Intussusception",
+        "Inflammatory bowel disease",
+        "Shigellosis",
+        "Salmonellosis"
+    ]
+}

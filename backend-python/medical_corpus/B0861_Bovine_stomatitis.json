@@ -1,0 +1,62 @@
+{
+    "disease": "Bovine Stomatitis",
+    "icd_code": "B0861",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Erosive papules",
+                "severity": "mild",
+                "pattern": "localized on muzzle, lips, inside nostrils and mouth; rarely oesophagus and rumen"
+            },
+            {
+                "name": "Brownish erosions",
+                "severity": "mild",
+                "pattern": "ring or horseshoe shape on inner sides of lips and gums"
+            },
+            {
+                "name": "Erythema",
+                "severity": "mild",
+                "pattern": "precedes lesion formation"
+            },
+            {
+                "name": "Hypersalivation",
+                "severity": "mild",
+                "pattern": "infrequent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "body_temperature": "no significant variation",
+            "appetite": "no significant variation"
+        },
+        "physical_findings": [
+            "Lesions 5 to 15 mm in diameter",
+            "Lesions regress after one or two weeks, leaving brownish spots",
+            "Superficial lymph nodes: no significant clinical patterns"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Stress",
+            "Immunosuppression",
+            "Crowding"
+        ],
+        "imaging_findings": {
+            "transmission_electron_microscopy": "Large amounts of particles with characteristic size (approximately 320 nm by 190 nm) and ovoid morphology of parapoxviruses; typical criss-cross pattern of filaments at their surface"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of erosive papules on muzzle, lips, and oral cavity",
+            "Detection of parapoxvirus particles via transmission electron microscopy"
+        ],
+        "supportive": [
+            "PCR detection of parapoxvirus DNA",
+            "Viral isolation and identification"
+        ]
+    },
+    "differential_diagnoses": [
+        "Foot-and-mouth disease",
+        "Bovine virus diarrhoea/mucosal disease",
+        "Rinderpest"
+    ]
+}

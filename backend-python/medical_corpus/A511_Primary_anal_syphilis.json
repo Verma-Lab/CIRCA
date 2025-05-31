@@ -1,0 +1,47 @@
+{
+    "disease": "Primary anal syphilis",
+    "icd_code": "A511",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chancre",
+                "severity": "Variable",
+                "pattern": "Single, painless ulcer at the site of infection (anus)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Single, painless ulcer (chancre) on anus",
+            "Indurated base of chancre",
+            "Nontender lymph nodes in the inguinal region"
+        ],
+        "lab_values": {
+            "RPR": "Positive",
+            "VDRL": "Positive",
+            "TRUST": "Positive",
+            "Treponema pallidum": "Positive (microscopic examination or PCR)"
+        },
+        "risk_factors": [
+            "Anal sex without a condom",
+            "Multiple sexual partners",
+            "Sex with a person who has syphilis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with primary syphilis (anal chancre)",
+            "Positive serological test for syphilis (e.g., RPR, VDRL, TRUST)"
+        ],
+        "supportive": [
+            "Positive darkfield microscopy or PCR for Treponema pallidum"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other anorectal ulcers (e.g., herpes simplex, chancroid, granuloma inguinale)",
+        "Anal fissures",
+        "Anal abscess",
+        "Anal cancer"
+    ]
+}

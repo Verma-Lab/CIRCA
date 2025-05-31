@@ -1,0 +1,60 @@
+{
+    "disease": "Rubella arthritis",
+    "icd_code": "B0682",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Joint pain (arthralgia)",
+                "severity": "Variable, from mild to severe",
+                "pattern": "Transient, usually resolving within weeks; can be recurrent"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable, from mild to severe",
+                "pattern": "Sudden onset, can involve multiple joints; may include swelling, redness, heat, and limitation of motion"
+            },
+            {
+                "name": "Stiffness",
+                "severity": "Variable",
+                "pattern": "Often present with arthralgia"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Joint swelling",
+            "Joint redness",
+            "Joint warmth",
+            "Limitation of joint motion",
+            "Joint effusion (especially in knees, fingers, and wrists)"
+        ],
+        "lab_values": {
+            "Rubella IgG antibodies": "Elevated in serum and joint aspirates",
+            "Rubella IgM antibodies": "May be elevated in serum"
+        },
+        "risk_factors": [
+            "Female sex",
+            "Adult age",
+            "Rubella infection (natural or vaccine-induced)",
+            "Immunodeficiency (e.g., common variable immune deficiency)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of arthritis or arthralgia",
+            "Recent history of rubella infection or vaccination"
+        ],
+        "supportive": [
+            "Elevated rubella-specific IgG antibodies in serum and/or joint fluid",
+            "Detection of rubella virus RNA or isolation of rubella virus from joint fluid"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rheumatoid arthritis",
+        "Other inflammatory arthritides",
+        "Infectious arthritis",
+        "Gout",
+        "Osteoarthritis"
+    ]
+}

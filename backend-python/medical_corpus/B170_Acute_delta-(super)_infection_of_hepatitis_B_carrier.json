@@ -1,0 +1,54 @@
+{
+    "disease": "Acute delta-(super) infection of hepatitis B carrier",
+    "icd_code": "B17.0",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "Present for two weeks"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Moderate",
+                "pattern": "Present for two weeks"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Moderate",
+                "pattern": "Present for two weeks"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "HBsAg": {
+                "initial": "Negative",
+                "later": "Positive, with fluctuating titre"
+            },
+            "IgM anti-HAV": "Negative",
+            "IgM anti-HBc": "Positive",
+            "IgM anti-CMV": "Negative",
+            "IgM EBV capsid Ab": "Negative",
+            "anti-delta": "Positive",
+            "anti-HBs": "Positive initially, decreasing then lost"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive anti-delta antibodies",
+            "Positive anti-HBc antibodies",
+            "Presence of Hepatitis B surface antigen (HBsAg) (may be transient)"
+        ],
+        "supportive": [
+            "Symptoms and signs of acute hepatitis",
+            "Abnormal liver function tests"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute non-A, non-B hepatitis"
+    ]
+}

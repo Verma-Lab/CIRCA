@@ -1,0 +1,21 @@
+{
+    "disease": "Other specified viral hemorrhagic fevers",
+    "icd_code": "A988",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Chikungunya hemorrhagic fever (A92.0)",
+        "Dengue hemorrhagic fever (A91)"
+    ]
+}

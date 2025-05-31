@@ -1,0 +1,109 @@
+{
+    "disease": "Chronic Meningococcemia",
+    "icd_code": "A393",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Intermittent or continuous",
+                "pattern": "Periodic (e.g., every two days in one case), can persist even with antibiotic treatment"
+            },
+            {
+                "name": "Polymorphic cutaneous rash",
+                "severity": "Variable, can range from maculopapular to nodular, petechial, polymorphous, or necrotic",
+                "pattern": "Migratory, progressing over time"
+            },
+            {
+                "name": "Migratory arthropathy",
+                "severity": "Variable, can range from arthralgia to arthritis",
+                "pattern": "Migratory, affecting larger joints like knees and ankles, more evident during febrile periods"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Present in one case",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Variable, can be symmetric",
+                "pattern": "Affects knees and elbows"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Present in one case",
+                "pattern": "Associated with fever"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Present in one case",
+                "pattern": "Resolved spontaneously"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Can be present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Can be present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Headache",
+                "severity": "Can be present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Chills",
+                "severity": "Intermittent",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Can be present",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (38.5\u00b0C in one case), can persist despite treatment",
+            "pulse": "Elevated (100 bpm in one case)",
+            "blood_pressure": "Can be normal (106/65 mmHg in one case), or slightly elevated (112/84 mmHg in one case)"
+        },
+        "physical_findings": [
+            "Edema in lower limbs",
+            "Joint effusion",
+            "Limited range of motion in affected joints",
+            "Local heat and swelling in affected joints",
+            "Violaceous maculae (purpura)",
+            "Necrotic skin lesions",
+            "Maculopapular rash",
+            "Papular rash",
+            "Petechial lesions"
+        ],
+        "lab_values": {
+            "blood_cultures": "Positive for Neisseria meningitidis (often requires multiple samples due to intermittent bacteremia)",
+            "leukocytosis": "Present during febrile periods",
+            "CRP": "Elevated (205 mg/L in one case, 140 mg/L in another case)",
+            "other_tests": "Serology for HIV, hepatitis B and C, syphilis, rheumatoid factor, ANF, anti-ds DNA, anti Ro, anti-Sm, C3, and C4 (often negative in chronic meningococcemia)"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "echocardiography": "Normal in one case",
+            "abdominal_ultrasound": "Enlarged liver and possible hemangioma in one case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Chronic meningococcal bacteremia (lasting at least one week)",
+            "Absence of meningeal signs or symptoms",
+            "Positive blood cultures for Neisseria meningitidis (may require multiple samples)"
+        ],
+        "supportive": [
+            "Intermittent or continuous fever",
+            "Polymorphic cutaneous rash",
+            "Migratory arthropathy"
+        ]
+    },
+    "differential_diagnoses": []
+}

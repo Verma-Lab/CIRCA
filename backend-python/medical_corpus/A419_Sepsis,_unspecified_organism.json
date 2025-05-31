@@ -1,0 +1,37 @@
+{
+    "disease": "Sepsis, unspecified organism",
+    "icd_code": "A419",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Elevated",
+            "blood_pressure": "Potentially low (hypotension)",
+            "respiratory_rate": "Elevated",
+            "temperature": "Potentially elevated or low"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated",
+            "lactate": "Elevated",
+            "procalcitonin": "Elevated"
+        },
+        "risk_factors": [
+            "Underlying infection",
+            "Age (elderly)",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of sepsis"
+        ],
+        "supportive": [
+            "Underlying infection (unspecified in A419)",
+            "Abnormal vital signs",
+            "Elevated inflammatory markers (e.g., WBC, lactate, procalcitonin)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,57 @@
+{
+    "disease": "Mumps meningitis",
+    "icd_code": "B261",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Significant",
+                "pattern": "Present in 94.7% of cases with meningitis vs 31% without"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases with meningitis"
+            },
+            {
+                "name": "Nausea/Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases with meningitis"
+            },
+            {
+                "name": "Meningeal irritation signs",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases with meningitis"
+            },
+            {
+                "name": "Parotitis (unilateral or bilateral)",
+                "severity": "Variable",
+                "pattern": "Present in 37% of cases in one study; bilateral in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": ">=38.0\u2103"
+        },
+        "physical_findings": [
+            "Meningeal irritation signs"
+        ],
+        "lab_values": {
+            "CSF WBC count": ">5 cells/mm3"
+        },
+        "risk_factors": [
+            "Older age",
+            "Longer interval from last vaccination",
+            "Febrile presentation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Aseptic meningitis (CSF pleocytosis and negative bacteriological studies)",
+            "Confirmed or probable mumps infection (positive lab findings or clinical case definition)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

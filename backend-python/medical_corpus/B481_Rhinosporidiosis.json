@@ -1,0 +1,60 @@
+{
+    "disease": "Rhinosporidiosis",
+    "icd_code": "B481",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unilateral epistaxis",
+                "severity": "Mild",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hoarseness",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Feeling of a lump in the throat",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Facial swelling",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless, friable, polypoid mass",
+            "Unilateral lesion (often)",
+            "Reddish, friable, painless, pedunculated, hyperplastic soft tissue mass",
+            "Flesh-like, reddish, exophytic and lobular mass",
+            "Strawberry-like mass, pink to purple in color"
+        ],
+        "lab_values": {
+            "ESR": "Elevated"
+        },
+        "risk_factors": [
+            "Exposure to aquatic environments",
+            "Farming or fishing activities",
+            "Sand work",
+            "Paddy cultivation",
+            "Trauma to nasal epithelium"
+        ],
+        "imaging_findings": {
+            "CT scan": "Mass with nodular appearance, soft tissue characteristics"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological findings showing sporangia with internal endospores"
+        ],
+        "supportive": [
+            "Clinical presentation of painless, friable, polypoid mass",
+            "Imaging findings consistent with a mass in the affected area"
+        ]
+    },
+    "differential_diagnoses": []
+}

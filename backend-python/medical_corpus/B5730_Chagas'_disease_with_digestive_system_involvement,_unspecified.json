@@ -1,0 +1,123 @@
+{
+    "disease": "Chagas' disease with digestive system involvement, unspecified",
+    "icd_code": "B5730",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Prolonged constipation",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fecaloma",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Malnutrition",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Severe weight loss",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Sialorrhea",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Regurgitation",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Delayed gastric emptying of solid meals",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fast gastric emptying of liquid meals",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Gastric dysrhythmias",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Lower basal and stimulated acid gastric secretion",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Abnormally slow propagation of the interdigestive migrating motor complex",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Excessively prolonged interdigestive migrating motor complex",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bacterial overgrowth",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pseudo-obstructive syndromes",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dyspeptic syndrome",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Megacolon",
+            "Megaesophagus",
+            "Megastomach",
+            "Salivary gland hypertrophy"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Infection with Trypanosoma cruzi",
+            "Blood transfusion",
+            "Organ transplantation",
+            "Mother-to-fetus transmission",
+            "Ingestion of contaminated food"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Compatible epidemiological antecedents",
+            "Two positive serological tests with different antigens"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

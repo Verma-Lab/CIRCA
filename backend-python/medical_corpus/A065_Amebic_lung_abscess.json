@@ -1,0 +1,96 @@
+{
+    "disease": "Amebic lung abscess",
+    "icd_code": "A065",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chronic cough",
+                "severity": "Intermittent",
+                "pattern": "30-year duration"
+            },
+            {
+                "name": "Expectoration",
+                "severity": "Present",
+                "pattern": "Concomitant with cough"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Present",
+                "pattern": "6 months duration"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Present",
+                "pattern": "6 months duration"
+            },
+            {
+                "name": "Right-side chest pain",
+                "severity": "Present",
+                "pattern": "6 months duration"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Present",
+                "pattern": "6 months duration"
+            },
+            {
+                "name": "Rales in the right lung",
+                "severity": "Few",
+                "pattern": "On physical examination"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "SpO2": "90% on room air",
+            "PR": "80 bpm",
+            "Blood pressure": "116/70 mmHg"
+        },
+        "physical_findings": [
+            "Decreased air entry on right side on auscultation",
+            "Few rales in the right lung"
+        ],
+        "lab_values": {
+            "Eosinophil count": "0.59 K/\u03bcL (9.0%)",
+            "Liver function": "Normal",
+            "Sputum culture": "Streptococcus Viridans 3+ and Neisseria 2+",
+            "Stool sample": "Normal",
+            "AFP": "2.65 \u03bcg/L",
+            "CEA": "0.48 \u03bcg/L",
+            "NSE": "15.47 ng/L",
+            "Beta 2-microglobulin": "1.13 \u03bcg/mL",
+            "CYFRA21-1": "3.61 ng/mL",
+            "CA50": "2.66 U/mL",
+            "SCCA": "1.15 ng/mL",
+            "ADA": "22",
+            "Protein (pleural fluid)": "4.7",
+            "Sugar (pleural fluid)": "70",
+            "Amebic serology IgG (indirect immunofluorescence assay)": "Positive",
+            "Serum PCR for amoeba": "Positive"
+        },
+        "risk_factors": [
+            "History of E. histolytica infections",
+            "Poor socioeconomic and unhygienic conditions (in some cases)"
+        ],
+        "imaging_findings": {
+            "Chest radiograph": "Right-side pleural effusion",
+            "Thorax and abdomen sonography": "Right-side massive pleural effusion, no significant abdominal findings",
+            "Chest CT scan": "Mass in right lower lung lobe with multiple nodules and pleural effusion; slow progression of pulmonary mass and nodules on follow-up"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive amebic serology (e.g., indirect immunofluorescence assay)",
+            "Positive PCR for Entamoeba histolytica in pleural fluid or tissue",
+            "Imaging findings consistent with lung abscess (e.g., CT scan)"
+        ],
+        "supportive": [
+            "Microscopic identification of amebic trophozoites in pleural fluid or tissue",
+            "Clinical symptoms suggestive of amebic lung abscess (e.g., cough, expectoration, chest pain)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lung cancer",
+        "Tuberculosis",
+        "Bacterial lung infection"
+    ]
+}

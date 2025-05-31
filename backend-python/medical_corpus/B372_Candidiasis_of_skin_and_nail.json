@@ -1,0 +1,96 @@
+{
+    "disease": "Candidiasis of skin and nail",
+    "icd_code": "B372",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin inflammation",
+                "severity": "Variable",
+                "pattern": "Localized or widespread"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Soreness",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Nail brittleness",
+                "severity": "Variable",
+                "pattern": "Affected nails"
+            },
+            {
+                "name": "Nail discoloration",
+                "severity": "Variable",
+                "pattern": "Affected nails"
+            },
+            {
+                "name": "Rashes",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Pus",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin inflammation",
+            "Redness",
+            "Swelling",
+            "Soreness",
+            "Brittle nails",
+            "Discolored nails"
+        ],
+        "lab_values": {
+            "skin culture": "Presence of Candida species"
+        },
+        "risk_factors": [
+            "Weakened immune system",
+            "Antibiotic use",
+            "Kidney dysfunction",
+            "Diabetes mellitus",
+            "Cushing syndrome",
+            "Hypoparathyroidism",
+            "Hypothyroidism",
+            "Polyendocrinopathy",
+            "Iron deficiency anemia",
+            "Deficiencies in vitamins B1, B2, B6, C, and folic acid",
+            "AIDS",
+            "Primary immune deficiencies",
+            "Increased age",
+            "Tissue damage",
+            "Xerostomia",
+            "Radiation-induced mucositis",
+            "Ulcerations",
+            "Skin maceration",
+            "Occlusion"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with candidiasis of skin and nails (e.g., inflammation, redness, swelling, soreness, brittle or discolored nails)",
+            "Positive skin culture for Candida species"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

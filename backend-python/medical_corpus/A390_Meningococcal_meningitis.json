@@ -1,0 +1,106 @@
+{
+    "disease": "Meningococcal meningitis",
+    "icd_code": "A390",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Confusion or altered mental status",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Sensitivity to light",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea and vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Neurological deficits (e.g., limb weakness)",
+                "severity": "Variable",
+                "pattern": "Less frequent"
+            },
+            {
+                "name": "Cold hands and feet",
+                "severity": "Variable",
+                "pattern": "Associated with bloodstream infection"
+            },
+            {
+                "name": "Fast breathing",
+                "severity": "Variable",
+                "pattern": "Associated with bloodstream infection"
+            },
+            {
+                "name": "Low blood pressure",
+                "severity": "Variable",
+                "pattern": "Associated with bloodstream infection"
+            },
+            {
+                "name": "Non-blanching skin rash",
+                "severity": "Variable",
+                "pattern": "Characteristic of meningococcal sepsis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Potentially elevated",
+            "blood_pressure": "Potentially low",
+            "respiratory_rate": "Potentially elevated"
+        },
+        "physical_findings": [
+            "Neck stiffness",
+            "Non-blanching skin rash (meningococcal sepsis)"
+        ],
+        "lab_values": {
+            "cerebrospinal_fluid_analysis": "Abnormal findings consistent with bacterial meningitis (e.g., increased white blood cell count, decreased glucose, increased protein)"
+        },
+        "risk_factors": [
+            "Age (newborns, children, adolescents, and young adults)",
+            "Immunocompromised individuals",
+            "HIV infection",
+            "Crowded living conditions",
+            "Close contact with infected individuals",
+            "Recent travel to areas with high prevalence"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (fever, headache, neck stiffness)",
+            "Abnormal cerebrospinal fluid analysis"
+        ],
+        "supportive": [
+            "Positive bacterial culture from cerebrospinal fluid or blood"
+        ]
+    },
+    "differential_diagnoses": []
+}

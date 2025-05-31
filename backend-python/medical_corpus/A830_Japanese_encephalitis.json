@@ -1,0 +1,80 @@
+{
+    "disease": "Japanese Encephalitis",
+    "icd_code": "A830",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Variable",
+                "pattern": "Rapid onset"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Spastic paralysis",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Gastrointestinal pain",
+                "severity": "Variable",
+                "pattern": "Initial, more common in children"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Initial, more common in children"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Neck stiffness"
+        ],
+        "lab_values": {
+            "JEV-specific IgM antibody": "Elevated in CSF or serum"
+        },
+        "risk_factors": [
+            "Living in or traveling to a JE-endemic area",
+            "Childhood",
+            "Proximity to pigs and water birds"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with JE",
+            "Positive JEV-specific IgM antibody test in CSF (preferred) or serum"
+        ],
+        "supportive": [
+            "Epidemiological link to JE-endemic area",
+            "Abnormal CSF findings"
+        ]
+    },
+    "differential_diagnoses": []
+}

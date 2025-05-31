@@ -1,0 +1,42 @@
+{
+    "disease": "Other forms of cryptococcosis",
+    "icd_code": "B458",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable",
+                "pattern": "Slow onset"
+            },
+            {
+                "name": "Swelling and irritation of brain and spinal cord",
+                "severity": "Variable",
+                "pattern": "Present at diagnosis"
+            },
+            {
+                "name": "Lung symptoms",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Other symptoms",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Weakened immune system (C. neoformans)",
+            "Normal immune system (C. gattii)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

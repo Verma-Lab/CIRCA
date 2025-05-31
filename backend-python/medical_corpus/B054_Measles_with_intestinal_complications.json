@@ -1,0 +1,70 @@
+{
+    "disease": "Measles with intestinal complications",
+    "icd_code": "B05.4",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Maculopapular rash",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Sneezing",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "High fever",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "other": "May vary depending on severity"
+        },
+        "physical_findings": [
+            "Maculopapular rash",
+            "Inflamed intestines (may be inferred from symptoms)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of measles rash",
+            "Intestinal symptoms (abdominal pain and diarrhea)"
+        ],
+        "supportive": [
+            "Other measles symptoms (cough, fever, conjunctivitis)"
+        ]
+    },
+    "differential_diagnoses": []
+}

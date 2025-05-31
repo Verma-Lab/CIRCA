@@ -1,0 +1,66 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of abdomen",
+    "icd_code": "C494",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be localized or diffuse"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "Palpable or detected on imaging"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in advanced stages",
+            "blood_pressure": "May be elevated or decreased depending on the stage and complications"
+        },
+        "physical_findings": [
+            "Palpable abdominal mass",
+            "Abdominal distension",
+            "Ascites (fluid accumulation in the abdomen)",
+            "Lymphadenopathy (swollen lymph nodes)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "May show a mass, its size, location, and involvement of adjacent structures",
+            "MRI": "May provide more detailed information about the tumor's characteristics",
+            "Ultrasound": "May be used to guide biopsies"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass in the abdomen",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Clinical symptoms suggestive of malignancy",
+            "Elevated tumor markers (if applicable)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign tumors of the abdomen",
+        "Inflammatory conditions of the abdomen",
+        "Other abdominal malignancies (e.g., gastrointestinal cancers)"
+    ]
+}

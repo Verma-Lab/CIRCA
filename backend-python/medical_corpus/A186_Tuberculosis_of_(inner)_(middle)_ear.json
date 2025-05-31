@@ -1,0 +1,81 @@
+{
+    "disease": "Tuberculosis of the middle ear",
+    "icd_code": "A186",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Otorrhea",
+                "severity": "Variable",
+                "pattern": "Chronic, may be serous or purulent due to secondary infection"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Significant",
+                "pattern": "Present in most cases, possibly due to pressure from granulation tissue"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Severe to profound, mixed or conductive",
+                "pattern": "Early onset, may persist even after treatment"
+            },
+            {
+                "name": "Post-auricular swelling",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nocturnal fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": "Normal vital signs in the reported case, but fever may be present",
+        "physical_findings": [
+            "Posterior sagging of the ear canal with granulation tissue",
+            "Tympanic membrane not visualized",
+            "Fluctuant, soft, and tender swelling behind the ear",
+            "Negative Rinne test on affected side (conductive hearing loss)",
+            "Weber test lateralized to the affected side",
+            "Intact facial nerve",
+            "No palpable lymph nodes (although lymphadenopathy may be present in other cases)"
+        ],
+        "lab_values": {
+            "Erythrocyte sedimentation rate (ESR)": "Elevated (80 mm/h in the reported case)",
+            "Tuberculosis screening": "Unremarkable in the reported case",
+            "AFB smear": "Often negative",
+            "Culture": "May be negative or show no growth"
+        },
+        "risk_factors": [
+            "Contact with tuberculosis patients",
+            "Professional contact with patients (healthcare workers)",
+            "Exposure to pathogenic microorganisms in airways",
+            "Immunocompromised state",
+            "Underlying conditions like HIV, diabetes, or alcoholism"
+        ],
+        "imaging_findings": {
+            "High-resolution CT scan (HRCT)": "Soft tissue density in the external auditory canal, mesotympanum, and mastoid cavity; erosion of ossicles and bone structures; possible obliteration of parts of the facial nerve; thinning of the tegmen tympani"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological evidence of tuberculous granuloma"
+        ],
+        "supportive": [
+            "Clinical presentation (otorrhea, otalgia, hearing loss)",
+            "Imaging findings (bone erosion, soft tissue density)",
+            "Failure of standard treatment for otitis media",
+            "Positive tuberculin skin test or other evidence of active tuberculosis elsewhere in the body"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cholesteatoma",
+        "Acute otitis media",
+        "Chronic otitis media",
+        "Fungal otitis externa",
+        "Syphilis",
+        "Wegener's granulomatosis",
+        "Eosinophilic granulomatosis",
+        "Sarcoidosis"
+    ]
+}

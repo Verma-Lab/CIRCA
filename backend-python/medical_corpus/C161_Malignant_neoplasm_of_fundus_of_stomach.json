@@ -1,0 +1,100 @@
+{
+    "disease": "Malignant neoplasm of fundus of stomach",
+    "icd_code": "C161",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Difficulty swallowing",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Bloating after eating",
+                "severity": "Variable",
+                "pattern": "Postprandial"
+            },
+            {
+                "name": "Early satiety",
+                "severity": "Variable",
+                "pattern": "Consistent"
+            },
+            {
+                "name": "Heartburn",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Indigestion",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Episodic or chronic"
+            },
+            {
+                "name": "Stomach pain",
+                "severity": "Variable",
+                "pattern": "Intermittent or constant"
+            },
+            {
+                "name": "Unintentional weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Episodic or chronic"
+            },
+            {
+                "name": "Vomiting blood",
+                "severity": "Severe",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Black stools",
+                "severity": "Severe",
+                "pattern": "Consistent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Smoking",
+            "Family history of stomach cancer",
+            "H. pylori infection",
+            "Long-term stomach inflammation",
+            "Gastroesophageal reflux disease (GERD)",
+            "Stomach polyps",
+            "Diet high in salty and smoked foods",
+            "Diet low in fruits and vegetables",
+            "Higher weight"
+        ],
+        "imaging_findings": {
+            "Upper endoscopy": "Suspicious findings may lead to biopsy",
+            "CT scan": "To determine the extent of cancer",
+            "Barium swallow": "Special x-ray to visualize the stomach",
+            "Endoscopic ultrasound": "To stage the cancer",
+            "PET scan": "To stage the cancer"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy confirming malignant cells in the fundus of the stomach"
+        ],
+        "supportive": [
+            "Characteristic symptoms",
+            "Abnormal imaging findings"
+        ]
+    },
+    "differential_diagnoses": []
+}

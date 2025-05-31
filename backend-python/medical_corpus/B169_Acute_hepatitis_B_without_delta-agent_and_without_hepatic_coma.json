@@ -1,0 +1,98 @@
+{
+    "disease": "Acute hepatitis B without delta-agent and without hepatic coma",
+    "icd_code": "B169",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pale stools",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Stomach pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Bloated stomach",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Jaundice (yellowing of skin and eyes)"
+        ],
+        "lab_values": {
+            "Liver function tests": "Abnormal in some cases"
+        },
+        "risk_factors": [
+            "Exposure to infected body fluids (blood, saliva, vaginal fluids, semen)",
+            "Mother-to-child transmission during childbirth",
+            "Needlestick injury",
+            "Tattooing",
+            "Piercing",
+            "Exposure to infected blood",
+            "Reuse of contaminated needles and syringes",
+            "Multiple sexual partners (unvaccinated)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Hepatitis B virus in blood",
+            "Symptoms consistent with acute hepatitis B (may be absent)"
+        ],
+        "supportive": [
+            "Abnormal liver function tests",
+            "Physical examination findings (jaundice)"
+        ]
+    },
+    "differential_diagnoses": []
+}

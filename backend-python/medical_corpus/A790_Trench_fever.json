@@ -1,0 +1,142 @@
+{
+    "disease": "Trench Fever",
+    "icd_code": "A790",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (up to 40.5\u00b0C)",
+                "pattern": "Acute, recurring, 5-6 days, relapses 1-8 times at 5-6 day intervals"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Moderate to Severe",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Moderate",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Pain behind the eyes, present during acute phase"
+            },
+            {
+                "name": "Conjunctival injection",
+                "severity": "Mild to Moderate",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Severe",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Leg pain",
+                "severity": "Severe",
+                "pattern": "Shin pain, present during acute phase"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Moderate",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Moderate",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Moderate",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to Moderate",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild",
+                "pattern": "Intermittent, present during acute phase"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild",
+                "pattern": "Transient macular or papular, occasional"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Occasional",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Occasional",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate",
+                "pattern": "Present after acute phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Low (e.g., 99/65)",
+            "heart_rate": "High (e.g., 133)",
+            "respiratory_rate": "High (e.g., 26)",
+            "temperature": "High (e.g., 102.5\u00b0F)"
+        },
+        "physical_findings": [
+            "Listlessness",
+            "Plethoric face",
+            "Decreased concentration and short-term memory",
+            "Tachycardia",
+            "No murmur, rub, or gallop",
+            "Clear lungs",
+            "Unremarkable abdominal exam"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Bartonella quintana (may take 1-4 weeks)",
+            "serology": "Positive for IgG/IgM (Rocky Mountain spotted fever in one case, Bartonella quintana in another)",
+            "complete_blood_count": "Elevated absolute lymphocytes, thrombocytopenia, red blood cells with Rouleaux formation",
+            "liver_function_tests": "Elevated"
+        },
+        "risk_factors": [
+            "Body louse infestation",
+            "Chronic alcoholism",
+            "Homelessness",
+            "Exposure to farm animals"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "No acute process",
+            "abdominal_pelvic_ct": "Evidence of recent liver biopsy, no inflammation or abscess"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with trench fever (fever, headache, back and leg pain, etc.)",
+            "Positive blood culture for Bartonella quintana"
+        ],
+        "supportive": [
+            "Positive serology for Bartonella quintana",
+            "Positive PCR for Bartonella quintana",
+            "History of body louse infestation"
+        ]
+    },
+    "differential_diagnoses": [
+        "Q fever",
+        "Upper respiratory infection",
+        "Sinus infection",
+        "Influenza",
+        "Leptospirosis",
+        "Typhus",
+        "Relapsing fever",
+        "Malaria",
+        "Occult cancer"
+    ]
+}

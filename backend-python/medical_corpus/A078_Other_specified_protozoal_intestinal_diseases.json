@@ -1,0 +1,64 @@
+{
+    "disease": "Other specified protozoal intestinal diseases",
+    "icd_code": "A078",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe; may be absent"
+            },
+            {
+                "name": "Gastroenteritis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the stomach and intestinal lining"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "Can be a serious complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in severe cases due to dehydration",
+            "blood_pressure": "May be low in severe dehydration"
+        },
+        "physical_findings": [
+            "Abdominal tenderness",
+            "Signs of dehydration (dry mucous membranes, decreased skin turgor)"
+        ],
+        "lab_values": {
+            "complete_blood_count": "May show leukocytosis",
+            "electrolytes": "May show abnormalities due to dehydration",
+            "stool_exam": "May reveal presence of protozoa"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Travel to areas with poor sanitation",
+            "Exposure to infected individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms suggestive of intestinal protozoal infection (e.g., diarrhea, vomiting, abdominal cramps)",
+            "Identification of protozoa in stool sample"
+        ],
+        "supportive": [
+            "Exposure history consistent with infection",
+            "Abnormal lab values suggestive of infection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral gastroenteritis",
+        "Bacterial gastroenteritis",
+        "Other intestinal infections",
+        "Inflammatory bowel disease"
+    ]
+}

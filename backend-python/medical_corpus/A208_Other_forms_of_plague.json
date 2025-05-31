@@ -1,0 +1,52 @@
+{
+    "disease": "Other forms of plague",
+    "icd_code": "A208",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "High temperature",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Continuous/Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected rodents",
+            "Flea bites from infected rodents",
+            "Person-to-person transmission (airborne or skin contact)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Infection due to Yersinia pestis"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

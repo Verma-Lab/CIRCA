@@ -1,0 +1,91 @@
+{
+    "disease": "Glanders",
+    "icd_code": "A240",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Initial symptom"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Pustules",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Abscesses",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Variable",
+                "pattern": "In equine cases"
+            },
+            {
+                "name": "Cutaneous lesions",
+                "severity": "Variable",
+                "pattern": "In equine cases"
+            },
+            {
+                "name": "Lymphatic nodular lesions",
+                "severity": "Variable",
+                "pattern": "In equine cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in acute cases"
+        },
+        "physical_findings": [
+            "Respiratory symptoms (equine cases)",
+            "Cutaneous lesions (equine cases)",
+            "Lymphatic nodular lesions (equine cases)",
+            "Splenic and liver abscesses (human case)"
+        ],
+        "lab_values": {
+            "IgA": {
+                "abnormal": "8-fold increase in one human case"
+            },
+            "IgG": {
+                "abnormal": "16-fold increase in one human case"
+            },
+            "IgM": {
+                "abnormal": "4-fold increase in one human case"
+            },
+            "Blood culture": {
+                "abnormal": "Rarely positive in human cases"
+            }
+        },
+        "risk_factors": [
+            "Close contact with infected animals (equines)",
+            "Laboratory work with B. mallei"
+        ],
+        "imaging_findings": {
+            "CT scan": {
+                "findings": "Improvement of splenic and hepatic abscesses after treatment in one human case"
+            },
+            "Chest X-ray": {
+                "findings": "Consolidations, cavitary lesions, effusions, empyemas, and multiple lung abscesses (in melioidosis, but relevant for comparison)"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture of Burkholderia mallei"
+        ],
+        "supportive": [
+            "Elevated IgA, IgG, and IgM titers against B. mallei",
+            "Clinical presentation consistent with glanders"
+        ]
+    },
+    "differential_diagnoses": [
+        "Melioidosis"
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "disease": "Sporotrichosis, unspecified",
+    "icd_code": "B429",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Papulo-nodule",
+                "severity": "Variable, progressively enlarging",
+                "pattern": "At inoculation site, may ulcerate or spread along lymphatics"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "May occur at inoculation site"
+            },
+            {
+                "name": "Multiple nodules",
+                "severity": "Variable",
+                "pattern": "May appear proximally along lymphatics (lymphocutaneous sporotrichosis)"
+            },
+            {
+                "name": "Systemic symptoms",
+                "severity": "Variable, more common in immunocompromised individuals",
+                "pattern": "May involve multiple visceral organs, particularly the central nervous system"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Indurated, progressively enlarging papulo-nodule at inoculation site",
+            "Ulcerated lesions",
+            "Multiple nodules along lymphatics",
+            "Subcutaneous swellings or masses",
+            "Discharging sinuses",
+            "Heterogeneous morphology of lesions (nodules, plaques, noduloulcerative, ulcerative, nodulocystic or warty lesions)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Traumatic inoculation of pathogen (thorns, hay, splinters, etc.)",
+            "Exposure to soil, decaying wood, hay, sphagnum moss",
+            "Occupational exposure (farmers, gardeners, florists, etc.)",
+            "Immunosuppression (HIV, cancer treatment, etc.)",
+            "Zoonotic transmission (cat scratches, bites from other animals)",
+            "Human-to-human transmission (contaminated dressings)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with sporotrichosis",
+            "Isolation of Sporothrix spp. from clinical specimens"
+        ],
+        "supportive": [
+            "Histopathological examination showing characteristic features",
+            "Positive serological tests"
+        ]
+    },
+    "differential_diagnoses": []
+}

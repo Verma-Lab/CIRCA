@@ -1,0 +1,52 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves of unspecified lower limb, including hip",
+    "icd_code": "C4720",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Swelling",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Muscle weakness or paralysis",
+                "severity": "Unspecified",
+                "pattern": "Dependent on nerve affected"
+            },
+            {
+                "name": "Numbness or paresthesia",
+                "severity": "Unspecified",
+                "pattern": "Dependent on nerve affected"
+            },
+            {
+                "name": "Pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "General malaise or weakness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Swelling",
+            "Muscle weakness or atrophy",
+            "Sensory deficits (numbness, paresthesia)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant peripheral nerve sheath tumor in the lower limb, including hip"
+        ],
+        "supportive": [
+            "Clinical findings consistent with peripheral nerve involvement (e.g., pain, weakness, sensory deficits, swelling)"
+        ]
+    },
+    "differential_diagnoses": []
+}

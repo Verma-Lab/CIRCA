@@ -1,0 +1,53 @@
+{
+    "disease": "Pulmonary Candidiasis",
+    "icd_code": "B371",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be profound in profoundly neutropenic patients",
+                "pattern": "May be the only presenting symptom in some cases"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "beta-D-glucan (BDG)": "Elevated in BAL and tracheal aspirate; serum BDG not a reliable predictor, may be positive in other fungal infections"
+        },
+        "risk_factors": [
+            "Immunocompromised status",
+            "Use of broad-spectrum antibiotics",
+            "Severe neutropenia",
+            "Chemotherapy-induced mucositis",
+            "Prolonged hospital stay",
+            "Mechanical ventilation",
+            "Critical illness",
+            "Hospital or intensive care unit stay"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Nonspecific findings; may show bronchopneumonia, nodular opacities, lung abscess, or cavitary lesions",
+            "CT-thorax": "Most common finding is the presence of nodules"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": "Histopathological demonstration of Candida species in lung tissue along with evidence of inflammation",
+        "supportive": [
+            "Isolation of Candida from respiratory samples (BAL/tracheal aspirate)",
+            "Elevated BAL BDG levels"
+        ]
+    },
+    "differential_diagnoses": []
+}

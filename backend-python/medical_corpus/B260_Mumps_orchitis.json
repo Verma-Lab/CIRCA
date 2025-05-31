@@ -1,0 +1,40 @@
+{
+    "disease": "Mumps orchitis",
+    "icd_code": "B260",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Onset around a week after parotitis"
+            },
+            {
+                "name": "Testicular swelling",
+                "severity": "Variable",
+                "pattern": "Onset around a week after parotitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painful swelling of one or both testes",
+            "Testicular atrophy (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Unvaccinated postpubertal males",
+            "Mumps infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Mumps infection",
+            "Painful testicular swelling"
+        ],
+        "supportive": [
+            "Parotitis preceding orchitis by approximately one week"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,55 @@
+{
+    "disease": "Cutaneous coccidioidomycosis",
+    "icd_code": "B383",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Unspecified",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Knee pain",
+                "severity": "Unspecified",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Facial rash",
+                "severity": "Unspecified",
+                "pattern": "Persistent, scaling, erythematous"
+            },
+            {
+                "name": "Multiple lesions on face and scalp",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": "Normal",
+        "physical_findings": [
+            "Scaling, erythematous rash on right cheek, forehead, and scalp"
+        ],
+        "lab_values": {
+            "Cocci IgM titer": "1.2",
+            "IgG titer": "8.8",
+            "Antibody by complement fixation titer": "1:128"
+        },
+        "risk_factors": [
+            "Dust exposure in endemic areas (occupational and recreational activities)",
+            "Intense exposure to aerosolized arthroconidia (agricultural or construction workers, outdoor activities)"
+        ],
+        "imaging_findings": {
+            "Chest CT": "Multiple pulmonary nodules consistent with a history of coccidioidomycosis infection"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture for Coccidioides immitis"
+        ],
+        "supportive": [
+            "Clinical presentation (e.g., facial rash, scaling, erythematous lesions)",
+            "Positive serological tests (e.g., IgM, IgG, complement fixation)"
+        ]
+    },
+    "differential_diagnoses": []
+}

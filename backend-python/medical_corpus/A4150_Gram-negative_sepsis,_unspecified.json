@@ -1,0 +1,34 @@
+{
+    "disease": "Gram-negative sepsis, unspecified",
+    "icd_code": "A41.50",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Elevated",
+            "respiratory_rate": "Elevated",
+            "blood_pressure": "Potentially Hypotensive"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated",
+            "C-reactive_protein": "Elevated",
+            "procalcitonin": "Elevated",
+            "blood_cultures": "Gram-negative bacteria present"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of gram-negative bacteria in blood cultures",
+            "Systemic inflammatory response syndrome (SIRS)"
+        ],
+        "supportive": [
+            "Hypotension",
+            "Organ dysfunction"
+        ]
+    },
+    "differential_diagnoses": []
+}

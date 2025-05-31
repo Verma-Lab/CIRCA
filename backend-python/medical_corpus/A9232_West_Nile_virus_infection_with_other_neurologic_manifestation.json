@@ -1,0 +1,184 @@
+{
+    "disease": "West Nile virus infection with other neurologic manifestation",
+    "icd_code": "A9232",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases, can be persistent"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Joint pains",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can be persistent, lasting weeks or months"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can be persistent, lasting weeks or months"
+            },
+            {
+                "name": "Tremor",
+                "severity": "Variable",
+                "pattern": "Common in some cases"
+            },
+            {
+                "name": "Myoclonus",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Parkinsonism",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Poliomyelitis-like acute flaccid paralysis",
+                "severity": "Severe",
+                "pattern": "Present in some cases, may not recover"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Can be persistent"
+            },
+            {
+                "name": "Gait disorders",
+                "severity": "Variable",
+                "pattern": "Can be persistent"
+            },
+            {
+                "name": "Movement disorders",
+                "severity": "Variable",
+                "pattern": "Can be persistent"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Generalized convulsions",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Respiratory insufficiency",
+                "severity": "Severe",
+                "pattern": "Can be caused by diffuse weakness"
+            },
+            {
+                "name": "Focal weakness",
+                "severity": "Severe",
+                "pattern": "Similar to poliomyelitis"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (e.g., 101.6\u00b0F)",
+            "pulse": "Normal in some cases",
+            "blood pressure": "Normal in some cases"
+        },
+        "physical_findings": [
+            "Supple neck",
+            "Tremor",
+            "Muscle weakness (variable location and severity)",
+            "Absent deep tendon reflexes",
+            "Impaired sensation",
+            "Agitation",
+            "Combativeness"
+        ],
+        "lab_values": {
+            "leukocyte count": "Elevated (e.g., 9,600 with 89% neutrophils)",
+            "hemoglobin": "Decreased (e.g., 11.3 g/dl)",
+            "glucose": "Elevated (e.g., 146 mg/dl)",
+            "transaminases": "Mildly elevated",
+            "cerebrospinal fluid (CSF) analysis": {
+                "WBCs": "Elevated (e.g., 958 WBCs/mm3)",
+                "protein": "Elevated (e.g., 218 mg/dl)",
+                "glucose": "Decreased (e.g., 59 mg/dl)"
+            },
+            "West Nile virus IgM EIA": "Elevated (ratio >2.0)"
+        },
+        "risk_factors": [
+            "Exposure to mosquitoes"
+        ],
+        "imaging_findings": {
+            "computed tomography (CT) of brain": [
+                "Extra-axial frontal mass (possible meningioma)",
+                "Mild generalized atrophy"
+            ],
+            "chest x-ray": [
+                "Small left pleural effusion",
+                "Intermittent right infrahilar opacity"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with West Nile virus infection (e.g., fever, neurological symptoms)",
+            "Positive serological test for West Nile virus (e.g., IgM EIA, plaque reduction neutralization test)"
+        ],
+        "supportive": [
+            "Elevated WBC count in CSF",
+            "Characteristic imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other arboviral infections (e.g., St. Louis encephalitis, Eastern Equine encephalitis)",
+        "Bacterial meningitis",
+        "Viral encephalitis (e.g., herpes simplex encephalitis)",
+        "Other causes of acute flaccid paralysis"
+    ]
+}

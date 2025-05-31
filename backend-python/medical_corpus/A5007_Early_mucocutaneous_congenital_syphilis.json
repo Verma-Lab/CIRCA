@@ -1,0 +1,32 @@
+{
+    "disease": "Early mucocutaneous congenital syphilis",
+    "icd_code": "A5007",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mucous patches",
+                "severity": "Variable",
+                "pattern": "Mucocutaneous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Mucous patches"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Congenital syphilis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with mucocutaneous lesions"
+        ],
+        "supportive": [
+            "Positive serological tests for syphilis (e.g., VDRL, RPR, FTA-ABS)"
+        ]
+    },
+    "differential_diagnoses": []
+}

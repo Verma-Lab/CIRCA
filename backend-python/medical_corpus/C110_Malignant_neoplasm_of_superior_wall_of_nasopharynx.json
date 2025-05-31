@@ -1,0 +1,28 @@
+{
+    "disease": "Malignant neoplasm of superior wall of nasopharynx",
+    "icd_code": "C110",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Genetic mutations",
+            "Epstein-Barr virus (EBV) infection",
+            "Environmental influences",
+            "Exposure to environmental tobacco smoke",
+            "Exposure to tobacco smoke in the perinatal period",
+            "History of tobacco dependence",
+            "Occupational exposure to environmental tobacco smoke",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

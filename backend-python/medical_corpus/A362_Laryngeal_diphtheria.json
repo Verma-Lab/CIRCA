@@ -1,0 +1,62 @@
+{
+    "disease": "Laryngeal diphtheria",
+    "icd_code": "A362",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Stridor",
+                "severity": "Variable, can indicate airway obstruction",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Airway obstruction",
+                "severity": "Severe, potentially life-threatening",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "Variable, depending on the degree of obstruction",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased",
+            "oxygen_saturation": "Decreased"
+        },
+        "physical_findings": [
+            "Pseudomembrane formation in the larynx",
+            "Stridor",
+            "Respiratory distress",
+            "Cyanosis (in severe cases)"
+        ],
+        "lab_values": {
+            "Diphtheria toxin detection": "Positive"
+        },
+        "risk_factors": [
+            "Lack of immunization",
+            "Partial immunization",
+            "Close contact with infected individuals",
+            "Poor socioeconomic conditions",
+            "Inadequate healthcare access"
+        ],
+        "imaging_findings": {
+            "X-ray": "May show narrowing of the airway"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with laryngeal diphtheria (stridor, respiratory distress, airway obstruction)",
+            "Positive detection of diphtheria toxin"
+        ],
+        "supportive": [
+            "Pseudomembrane formation in the larynx (visualized during laryngoscopy)",
+            "Epidemiological link to a diphtheria outbreak"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute obstructive laryngitis (croup)",
+        "Laryngeal spasm",
+        "Epiglottitis"
+    ]
+}

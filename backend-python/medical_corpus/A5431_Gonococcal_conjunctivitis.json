@@ -1,0 +1,116 @@
+{
+    "disease": "Gonococcal conjunctivitis",
+    "icd_code": "A5431",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eyelid swelling",
+                "severity": "Severe",
+                "pattern": "Unilateral (in most cases)"
+            },
+            {
+                "name": "Ocular pain",
+                "severity": "Severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Purulent discharge",
+                "severity": "Severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Decreased visual acuity",
+                "severity": "Variable, can be severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Conjunctival injection",
+                "severity": "Severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Chemosis",
+                "severity": "Severe",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Vessel dilatation",
+                "severity": "Present",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Tarsal conjunctival follicles",
+                "severity": "Multiple",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Corneal lesions (superficial punctate)",
+                "severity": "Diffuse, mild to hazy edema",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Urethral discharge",
+                "severity": "Can be present",
+                "pattern": "In adults, often associated with gonococcal urethritis"
+            },
+            {
+                "name": "Urinary frequency, urgency, and dysuria",
+                "severity": "Can be present",
+                "pattern": "In adults, often associated with gonococcal urethritis"
+            },
+            {
+                "name": "Preauricular lymphadenopathy",
+                "severity": "Can be present",
+                "pattern": "Unilateral"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Can be elevated (fever)"
+        },
+        "physical_findings": [
+            "Severe chemosis",
+            "Conjunctival injection",
+            "Vessel dilatation",
+            "Multiple tarsal conjunctival follicles",
+            "Diffuse superficial punctate corneal lesions",
+            "Hazy and mild corneal edema",
+            "Purulent discharge in the conjunctival sac",
+            "Mild redness and small amount of genital discharge (in adults)"
+        ],
+        "lab_values": {
+            "Gram stain": "Gram-negative intracellular diplococci",
+            "Conjunctival culture": "Positive for Neisseria gonorrhoeae",
+            "C-reactive protein": "Slightly elevated",
+            "Erythrocyte sedimentation rate": "Slightly elevated",
+            "Urethral culture (in adults)": "May show growth of N. gonorrhoeae and C. trachomatis",
+            "PCR (in children)": "Positive for N. gonorrhoeae in conjunctiva and pharynx; negative in rectum and urine"
+        },
+        "risk_factors": [
+            "Neonatal infection",
+            "Sexual activity (adults)",
+            "Auto-inoculation from genital secretions",
+            "Contact with contaminated fomites (towels, toilet seats)",
+            "Sexual abuse (children)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gonococcal conjunctivitis (severe purulent discharge, conjunctival injection, eyelid edema)",
+            "Positive culture for Neisseria gonorrhoeae from conjunctival swab"
+        ],
+        "supportive": [
+            "Gram stain showing gram-negative intracellular diplococci",
+            "Elevated inflammatory markers (CRP, ESR)",
+            "History of sexual contact (adults)",
+            "Evidence of other sexually transmitted infections"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial conjunctivitis",
+        "Viral conjunctivitis",
+        "Chlamydial conjunctivitis",
+        "Postseptal cellulitis"
+    ]
+}

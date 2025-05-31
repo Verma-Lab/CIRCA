@@ -1,0 +1,118 @@
+{
+  "id": "e67b08a2-f80f-4eb2-8873-74d9dcae83e7",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: headache\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let\u2019s analyze this ECG strip. Here\u2019s a detailed breakdown of what I see, considering it\u2019s an ECG scan for a patient:\n\n**Overall Impression:**\n\nThe ECG appears to be a relatively normal sinus rhythm, but with some notable findings that warrant further investigation. \n\n**Detailed Observations:**\n\n1. **Rate:** The heart rate is approximately 75 beats per minute. This falls within the normal range (60-100 bpm). The rhythm appears regular.\n\n2. **Rhythm:** The rhythm is regular, indicating a consistent and coordinated heartbeat.\n\n3. **P Waves:**  P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6. They appear to be of normal morphology (shape and amplitude). This supports the interpretation of sinus rhythm.\n\n4. **PR Interval:** The PR intervals are generally within the normal range (0.12-0.20 seconds).  I see some variability, with a couple appearing slightly prolonged, particularly in V6.\n\n5. **QRS Complex:** This is where we see the most significant observation.\n   * **Width:** The QRS complexes are wide, ranging from 0.11 to 0.14 seconds. This is a key finding.  Normal QRS duration is typically less than 0.12 seconds.\n   * **Morphology:** The QRS complexes have a notched appearance, particularly in V1, V2, V5, and V6. This suggests some degree of ventricular depolarization heterogeneity. \n   * **Axis:** The QRS axis appears to be predominantly right, based on the morphology in leads I, aVL, V1, V2, V5, and V6.\n\n6. **ST Segment and T Waves:**\n   * **ST Segment:** The ST segments are mostly isoelectric (flat) \u2013 meaning they are at the baseline. However, there is a subtle, small degree of ST depression noted in leads V2, V3, V5, and V6. This is a subtle finding and could be due to various factors.\n   * **T Waves:** The T waves are generally upright, but there's some inversion noted in V1 and V2.\n\n7. **QT Interval:** The QT interval is difficult to accurately measure precisely from this strip, but it appears to be within the normal range.\n\n**Potential Abnormalities/\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 2006-02-16, history of illness\nSIGN_SYMPTOM: headache, P waves, variability, ventricular depolarization, isoelectric, ST depression, inversion\nDIAGNOSTIC_PROCEDURE: physical exam, ECG, sinus rhythm, heart rate, rhythm, Rhythm, heartbeat, P Waves, leads I,, VL, PR Interval, PR intervals, QRS Complex, QRS complexes, QRS duration, ology, QRS axis, I, aVL, ST Segment, T Waves, ST segments, T waves, QT Interval, QT interval\nDATE: 03-25, 09, 28\nLAB_VALUE: normal, 75 beats per minute, regular, coordinated, upright, within, 0.12-0.20 seconds, prolonged, wide, 0.11 to 0., seconds, 0.12 seconds, notched, right, flat, baseline\nBIOLOGICAL_STRUCTURE: a, V1, V2, V5, V6, V1, V2, V5, 1, 2, 5, 6, leads V2, V3, V5\nDETAILED_DESCRIPTION: ,, leads, , V, V\nDISTANCE: 14\nSEVERITY: subtle, small",
+  "recommendation": "Benign Wide QRS Complex with Possible Right Axis Deviation",
+  "reasoning": "The ECG shows a wide QRS complex (0.11-0.14 seconds), which is outside the normal range (<0.12 seconds).  The notched appearance of the QRS complexes and the potential right axis deviation are significant findings.  While several conditions can cause wide QRS complexes, the absence of other significant abnormalities (e.g., significant ST elevation, complete heart block) makes a benign cause more likely at this stage.  The subtle ST depression and T-wave inversions are relatively minor and could be normal variants or non-specific findings.  The patient's lack of reported symptoms beyond the headache further supports a benign interpretation.  Further investigation, including a repeat ECG and possibly other cardiac tests, is warranted to rule out more serious conditions and to clarify the cause of the wide QRS complexes.  The headache needs separate evaluation.\n\nDifferential Diagnoses:\n- {'diagnosis': 'Wolff-Parkinson-White (WPW) Syndrome', 'explanation': 'The wide QRS complexes and potential right axis deviation could be indicative of pre-excitation syndromes like WPW.  However, the lack of a delta wave makes this less likely.'}\n- {'diagnosis': 'Left Bundle Branch Block (LBBB)', 'explanation': 'LBBB typically presents with wide QRS complexes, but the ECG description suggests a right axis deviation, making LBBB less probable.'}\n- {'diagnosis': 'Right Bundle Branch Block (RBBB)', 'explanation': 'RBBB is characterized by wide QRS complexes and right axis deviation.  However, the notched QRS complexes and subtle ST-T changes warrant further investigation.'}\n- {'diagnosis': 'Other Cardiac Conditions', 'explanation': 'Conditions like hyperkalemia, pulmonary embolism, or Brugada syndrome can cause ST-segment changes, but these are less likely given the overall ECG picture.'}\n- {'diagnosis': 'Tension-type Headache or Migraine', 'explanation': 'The chief complaint is a headache, but there is no correlation between the ECG findings and headache etiology.  Further investigation is needed to determine the cause of the headache.'}",
+  "confidence": "60",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "--- RELEVANT MEDICAL LITERATURE ---\n\n[Literature 1] Medical Literature Summary \nTitle: Medical Literature Summary\n\nSource: Web Search Results\n\nYear: Current\n\nContent: Here's a comprehensive overview of the requested medical literature topics, including headache diagnosis, cardiac irregularities like premature atrial contractions (PACs) and ventricular premature contractions (VPCs), and conditions such as atrial enlargement, pre-excitation, Wolff-Parkinson-White syndrome, and myocardial infarction.\n\n## 1. Sinus Headache Diagnosis\n\n- **\"Sinus headache\": rhinogenic headache or migraine? An evidence-based guide to diagnosis and treatment**  \n  Authors: Zara M. Patel, David W. Kennedy, Michael Setzen, David M. Poetker, John M. DelGaudio  \n  Journal: Otolaryngology\u2013Head and Neck Surgery  \n  Year: 2006  \n  Summary: This consensus paper highlights that the term \"sinus headache\" is often misused, with many cases actually being migraines or tension-type headaches. The American Academy of Otolaryngology\u2013Head and Neck Surgery and the International Headache Society provide diagnostic criteria for rhinosinusitis and migraine, emphasizing the need for comprehensive evaluation to avoid misdiagnosis[1].\n\n- **Etiology of 'Sinus Headache'\u2014Moving the Focus from Rhinology to Neurology**  \n  Authors: Not specified  \n  Journal: PMC  \n  Year: 2021  \n  Summary: This review emphasizes that most cases of \"sinus headache\" are attributed to primary headaches like migraines and tension-type headaches. It suggests that treatment should focus on these neurologic causes rather than rhinologic ones[3].\n\n## 2. Premature Atrial Contractions (PACs)\n\n- **Premature Atrial Complex (PAC) - ECG Library**  \n  Source: LITFL  \n  Year: 2024  \n  Summary: PACs are premature beats originating from ectopic atrial tissue, characterized by abnormal P waves followed by normal QRS complexes. They are generally benign but can cause palpitations and may trigger arrhythmias in susceptible individuals[2].\n\n## 3.\n\n[Literature 2] ST-segment elevation: Differential diagnosis, caveats. (PMID: 26086496) - Cleveland Clinic journal of medicine, 2016\nTitle: ST-segment elevation: Differential diagnosis, caveats.\n\nJournal: Cleveland Clinic journal of medicine, Year: 2016\n\nAbstract: The differential diagnosis of ST-segment elevation includes four major processes: ST-segment elevation myocardial infarction (STEMI); early repolarization; pericarditis; and ST elevation secondary to an abnormality of the QRS complex (left bundle branch block, left ventricular hypertrophy, or preexcitation). Other processes that may be associated with ST elevation include hyperkalemia, pulmonary embolism, and Brugada syndrome. The clinical setting and specific electrocardiographic criteria often allow identification of the cause. This article reviews ST-T and QRS configurations specific to each diagnosis.\n\nSource: PubMed (PMID: 26086496)\n\n[Literature 3] Medical Literature Summary \nTitle: Medical Literature Summary\n\nSource: Web Search Results\n\nYear: Current\n\nContent: Here is a comprehensive overview of medical literature related to the diagnosis of chest pain, P waves, inverted segments, and relevant cardiac research:\n\n## 1. **Prolonged P-wave Duration and Cardiac Risk**\n- **Article Title:** \"Relation of Prolonged P-wave Duration to Risk of Sudden Cardiac Death\"\n- **Authors:** Not specified in the search results.\n- **Journal:** Available on PMC.\n- **Year:** Not specified in the search results.\n- **Summary:** Prolonged P-wave duration is associated with increased risk of sudden cardiac death (SCD), independent of atrial fibrillation and other cardiovascular risk factors. This association suggests that prolonged P-wave duration may reflect underlying atrial and ventricular arrhythmogenic substrates[1].\n\n## 2. **ECG Changes in Pneumothorax**\n- **Article Title:** \"Electrocardiographic Changes in Young Patients with Spontaneous Pneumothorax\"\n- **Authors:** Not specified in the search results.\n- **Journal:** MD Journal.\n- **Year:** 2021.\n- **Summary:** ECG changes in patients with spontaneous pneumothorax can mimic cardiac conditions, including ST-segment elevation and T-wave inversion. These changes are not necessarily correlated with the size or side of the pneumothorax[2].\n\n## 3. **Nonconducted P Waves and Cardiac Arrhythmias**\n- **Article Title:** \"Premature Complexes and Blocked P Wave\"\n- **Authors:** Not specified in the search results.\n- **Journal:** Circulation.\n- **Year:** 2022.\n- **Summary:** Nonconducted P waves can be due to concealed junctional/His-bundle ectopy, which may mimic second-degree AV block. Electrophysiology testing is crucial for diagnosing the underlying mechanism[3].\n\n## 4. **Diagnosis of Acute Coronary Syndrome**\n- **Article Title:** \"Diagnosis of Acute Coronary Syndrome\"\n- **Authors:** Not specified in the search results.\n- **Journal:** American Family Physician.\n- **Year:** 2005.\n- **Summary:** Acute coronary syndrome diagnosis involves ECG evaluation for ST-segment elevation or depression, Q waves, and conduction defects.\n\n[Literature 4] Medical Literature Summary \n- **Journal:** American Family Physician.\n- **Year:** 2005.\n- **Summary:** Acute coronary syndrome diagnosis involves ECG evaluation for ST-segment elevation or depression, Q waves, and conduction defects. Serum troponin levels are also critical for diagnosing myocardial infarction[4].\n\n## 5. **Chest Pain Differential Diagnosis**\n- **Article Title:** \"Diagnosing the Cause of Chest Pain\"\n- **Authors:** Not specified in the search results.\n- **Journal:** American Family Physician.\n- **Year:** 2005.\n- **Summary:** Chest pain diagnosis requires a thorough history, physical examination, ECG, and chest radiograph. Differential diagnoses include acute coronary syndrome, pulmonary embolism, and pneumonia[5].\n\nThese sources provide a comprehensive overview of how ECG findings, including P waves and inverted segments, are used in diagnosing cardiac conditions and differentiating them from non-cardiac causes of chest pain.\n\n[Literature 5] **Title:** P Wave Parameters and Indices: A Critical Appraisal of Clinical Relevance\n   - **Authors:** Not specified in the search results \nTitle: **Title:** P Wave Parameters and Indices: A Critical Appraisal of Clinical Relevance\n   - **Authors:** Not specified in the search results\n\nSource: **Title:** P Wave Parameters and Indices: A Critical Appraisal of Clinical Relevance\n   - **Authors:** Not specified in the search results - Unknown Journal (Unknown Year)\n\nYear: Unknown Year\n\nContent: Authors: Unknown Authors\nJournal: Unknown Journal, Unknown Year\n\nSummary: ** This paper discusses how P wave parameters reflect atrial structure and function, and their alterations can indicate increased risk of atrial fibrillation, ischemic stroke, and other cardiovascular outcomes. While not directly focused on chest pain, it highlights the importance of P wave analysis in cardiac diagnostics[1].\n\n[Literature 6] **Approach to Palpitations**\n   - **Title**: Approach to Palpitations\n   - **Authors**: Not specified\n   - **Journal**: Australian Journal of General Practice\n   - **Year**: 2019\n   - **DOI**: Not specified\n   - **Summary**: This article provides a systematic approach to diagnosing palpitations, which can be a symptom of Wolff-Parkinson-White syndrome among other conditions \nIt emphasizes the importance of distinguishing between arrhythmic and non-arrhythmic causes[4].\n\nTo find more specific papers on atrial enlargement, pre-excitation, Wolff-Parkinson-White syndrome, headache, sinus\n\n[Literature 7] [Functional cardiovascular symptoms]. \nTitle: [Functional cardiovascular symptoms].\n\nSource: PubMed: Deutsche medizinische Wochenschrift (1946), 2022 (PMID: 35545069)\n\nYear: 2022\n\nContent: This review provides an update on the diagnosis, differential diagnosis and management of functional cardiovascular symptoms. Typical heart-related symptoms like non-cardiac chest pain and palpitations are frequently complemented by other symptoms like dyspnea, sweating, trembling, dizziness and also further somatic symptoms like pain and fatigue. Functional cardiac symptoms are frequent, with rates of up to 30&#x200a;% in chest pain units. The differential diagnosis comprises gastrointestinal disorders like gastro-esophageal reflux disease and also mental disorders, particularly panic and other anxiety disorders. Successful management depends on an attitude of realizing and confirming the reality and seriousness of the symptoms despite the absence of a clear structural organic cause. Good cooperation with psychotherapists is helpful for stepped care strategies that start with supportive communication with the patient and biopsychosocial self-help activities, leading, if necessary, to formal psychotherapy."
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let\u2019s analyze this ECG strip. Here\u2019s a detailed breakdown of what I see, considering it\u2019s an ECG scan for a patient:\n\n**Overall Impression:**\n\nThe ECG appears to be a relatively normal sinus rhythm, but with some notable findings that warrant further investigation. \n\n**Detailed Observations:**\n\n1. **Rate:** The heart rate is approximately 75 beats per minute. This falls within the normal range (60-100 bpm). The rhythm appears regular.\n\n2. **Rhythm:** The rhythm is regular, indicating a consistent and coordinated heartbeat.\n\n3. **P Waves:**  P waves are present and generally upright in leads I, aVL, V1, V2, V5, and V6. They appear to be of normal morphology (shape and amplitude). This supports the interpretation of sinus rhythm.\n\n4. **PR Interval:** The PR intervals are generally within the normal range (0.12-0.20 seconds).  I see some variability, with a couple appearing slightly prolonged, particularly in V6.\n\n5. **QRS Complex:** This is where we see the most significant observation.\n   * **Width:** The QRS complexes are wide, ranging from 0.11 to 0.14 seconds. This is a key finding.  Normal QRS duration is typically less than 0.12 seconds.\n   * **Morphology:** The QRS complexes have a notched appearance, particularly in V1, V2, V5, and V6. This suggests some degree of ventricular depolarization heterogeneity. \n   * **Axis:** The QRS axis appears to be predominantly right, based on the morphology in leads I, aVL, V1, V2, V5, and V6.\n\n6. **ST Segment and T Waves:**\n   * **ST Segment:** The ST segments are mostly isoelectric (flat) \u2013 meaning they are at the baseline. However, there is a subtle, small degree of ST depression noted in leads V2, V3, V5, and V6. This is a subtle finding and could be due to various factors.\n   * **T Waves:** The T waves are generally upright, but there's some inversion noted in V1 and V2.\n\n7. **QT Interval:** The QT interval is difficult to accurately measure precisely from this strip, but it appears to be within the normal range.\n\n**Potential Abnormalities/"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "2006-02-16",
+      "history of illness"
+    ],
+    "SIGN_SYMPTOM": [
+      "headache",
+      "P waves",
+      "variability",
+      "ventricular depolarization",
+      "isoelectric",
+      "ST depression",
+      "inversion"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical exam",
+      "ECG",
+      "sinus rhythm",
+      "heart rate",
+      "rhythm",
+      "Rhythm",
+      "heartbeat",
+      "P Waves",
+      "leads I,",
+      "VL",
+      "PR Interval",
+      "PR intervals",
+      "QRS Complex",
+      "QRS complexes",
+      "QRS duration",
+      "ology",
+      "QRS axis",
+      "I, aVL",
+      "ST Segment",
+      "T Waves",
+      "ST segments",
+      "T waves",
+      "QT Interval",
+      "QT interval"
+    ],
+    "DATE": [
+      "03-25",
+      "09",
+      "28"
+    ],
+    "LAB_VALUE": [
+      "normal",
+      "75 beats per minute",
+      "regular",
+      "coordinated",
+      "upright",
+      "within",
+      "0.12-0.20 seconds",
+      "prolonged",
+      "wide",
+      "0.11 to 0.",
+      "seconds",
+      "0.12 seconds",
+      "notched",
+      "right",
+      "flat",
+      "baseline"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "a",
+      "V1",
+      "V2",
+      "V5",
+      "V6",
+      "V1, V2, V5",
+      "1",
+      "2",
+      "5",
+      "6",
+      "leads V2, V3, V5"
+    ],
+    "DETAILED_DESCRIPTION": [
+      ",",
+      "leads",
+      ", V",
+      "V"
+    ],
+    "DISTANCE": [
+      "14"
+    ],
+    "SEVERITY": [
+      "subtle",
+      "small"
+    ]
+  },
+  "analysis_date": "2025-03-26T08:36:39.236961",
+  "created_at": "2025-03-26T08:36:39.236965"
+}

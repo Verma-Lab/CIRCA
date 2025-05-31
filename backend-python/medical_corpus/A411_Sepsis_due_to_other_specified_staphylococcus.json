@@ -1,0 +1,58 @@
+{
+    "disease": "Sepsis due to other specified staphylococcus",
+    "icd_code": "A411",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Confusion",
+                "severity": "Moderate to Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Sleepiness",
+                "severity": "Moderate to Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or Continuous"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Oliguria",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Elevated",
+            "respiratory_rate": "Elevated",
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Pre-existing infections (e.g., pneumonia, abdominal infections)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of sepsis symptoms",
+            "Confirmation of Staphylococcus infection through laboratory tests"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

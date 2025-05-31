@@ -1,0 +1,55 @@
+{
+    "disease": "Variant Creutzfeldt-Jakob disease",
+    "icd_code": "A8101",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Psychiatric symptoms",
+                "severity": "Variable",
+                "pattern": "Early onset"
+            },
+            {
+                "name": "Sensory symptoms",
+                "severity": "Variable",
+                "pattern": "Early onset"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Progressive",
+                "pattern": "Later onset"
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Progressive",
+                "pattern": "Later onset"
+            },
+            {
+                "name": "Neurologic abnormalities",
+                "severity": "Progressive",
+                "pattern": "Later onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of meat from BSE-infected cows"
+        ],
+        "imaging_findings": {
+            "MRI": "Abnormal signal in the posterior thalami on T2- and diffusion-weighted images and fluid-attenuated inversion recovery sequences; highly specific for vCJD in the appropriate clinical context"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with vCJD",
+            "Confirmation through neuropathologic examination of brain tissue"
+        ],
+        "supportive": [
+            "Abnormal MRI findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Classic Creutzfeldt-Jakob disease"
+    ]
+}

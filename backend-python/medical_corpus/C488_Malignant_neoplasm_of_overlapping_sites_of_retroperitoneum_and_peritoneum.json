@@ -1,0 +1,36 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of retroperitoneum and peritoneum",
+    "icd_code": "C488",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "General unwellness",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to severe illness depending on cancer progression"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe depending on cancer progression"
+            },
+            {
+                "name": "Absence of symptoms",
+                "severity": "None",
+                "pattern": "Possible in slow-progressing cancers"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant neoplasm involving both retroperitoneal and peritoneal sites"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

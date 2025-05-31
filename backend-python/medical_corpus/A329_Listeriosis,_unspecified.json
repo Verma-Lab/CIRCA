@@ -1,0 +1,44 @@
+{
+    "disease": "Listeriosis, unspecified",
+    "icd_code": "A329",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of contaminated food (unwashed vegetables, raw milk, raw meat, raw fish)",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory test showing growth of Listeria from a sample of body fluid or tissue"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

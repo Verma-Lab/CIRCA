@@ -1,0 +1,48 @@
+{
+    "disease": "Other early skin lesions of yaws",
+    "icd_code": "A66.2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Macular lesions",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Maculopapular lesions",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Micropapular lesions",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Papular lesions",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Frambesioma",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of early skin lesions characteristic of yaws"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

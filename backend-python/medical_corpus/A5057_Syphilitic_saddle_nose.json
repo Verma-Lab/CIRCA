@@ -1,0 +1,61 @@
+{
+    "disease": "Syphilitic saddle nose",
+    "icd_code": "A5057",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Saddle nose deformity",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Nasal pain",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Nasal crusting",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Yellowish nasal discharge",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Saddle nose deformity",
+            "Rhonchi bilaterally",
+            "Multiple shallow ulcerative lesions on tongue"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Syphilis"
+        ],
+        "imaging_findings": {
+            "CT Chest": "Extensive ground-glass opacities with areas of nodular consolidation"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Saddle nose deformity"
+        ],
+        "supportive": [
+            "History of syphilis",
+            "Positive serological tests for syphilis (not mentioned in text)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Trauma",
+        "Granulomatosis with polyangiitis",
+        "Relapsing polychondritis",
+        "Intranasal cocaine use",
+        "Malignancies",
+        "Crohn\u2019s disease",
+        "Lepromatous leprosy",
+        "Coccidioidomycosis"
+    ]
+}

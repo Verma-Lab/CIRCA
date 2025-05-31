@@ -1,0 +1,108 @@
+{
+    "disease": "Congestive Heart Failure",
+    "icd_code": "I50.9",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable, mild to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable, mild to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fluid buildup in lungs, legs, and feet",
+                "severity": "Variable, mild to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Heart palpitations",
+                "severity": "Variable",
+                "pattern": "Can occur with increased heart rate"
+            },
+            {
+                "name": "Edema (swelling)",
+                "severity": "Variable",
+                "pattern": "Often in lower extremities"
+            },
+            {
+                "name": "Weight gain",
+                "severity": "Variable",
+                "pattern": "Due to fluid retention"
+            },
+            {
+                "name": "Reduced exercise tolerance",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Often productive"
+            },
+            {
+                "name": "Wheezing",
+                "severity": "Variable",
+                "pattern": "Due to fluid in lungs"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Increased",
+            "blood_pressure": "Variable, can be elevated or low",
+            "respiratory_rate": "Increased"
+        },
+        "physical_findings": [
+            "Enlarged heart (cardiomegaly)",
+            "Crackles in lungs (rales)",
+            "Jugular venous distention (JVD)",
+            "Peripheral edema",
+            "Hepatomegaly (enlarged liver)",
+            "Ascites (abdominal fluid)"
+        ],
+        "lab_values": {
+            "BNP": "Elevated",
+            "Electrolytes": "May be abnormal"
+        },
+        "risk_factors": [
+            "Coronary artery disease",
+            "High blood pressure",
+            "Diabetes",
+            "Obesity",
+            "Smoking",
+            "High cholesterol",
+            "Family history of heart failure",
+            "Age",
+            "Valve disease",
+            "Cardiomyopathy",
+            "Arrhythmias"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Enlarged heart, pleural effusions",
+            "Echocardiogram": "Reduced ejection fraction, valvular abnormalities, wall motion abnormalities",
+            "ECG": "Arrhythmias, evidence of prior myocardial infarction"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of heart failure (shortness of breath, fatigue, edema)",
+            "Evidence of structural or functional cardiac abnormality (echocardiogram, chest x-ray)"
+        ],
+        "supportive": [
+            "Elevated BNP levels",
+            "Abnormal ECG findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Valvular heart disease",
+        "Cardiomyopathy",
+        "Coronary artery disease",
+        "Hypertension",
+        "Lung disease",
+        "Kidney disease",
+        "Anemia"
+    ]
+}

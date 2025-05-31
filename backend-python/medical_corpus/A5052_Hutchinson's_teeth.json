@@ -1,0 +1,49 @@
+{
+    "disease": "Hutchinson's teeth",
+    "icd_code": "A5052",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Peg-shaped incisors",
+                "severity": "Variable",
+                "pattern": "Present in permanent upper central incisors"
+            },
+            {
+                "name": "Notched enamel",
+                "severity": "Variable",
+                "pattern": "Present on incisal edges of incisors"
+            },
+            {
+                "name": "Widely spaced teeth",
+                "severity": "Variable",
+                "pattern": "Increased spacing between incisors"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Peg-shaped, widely spaced upper incisors",
+            "Notched enamel on incisors",
+            "Palatal perforation (in some cases)"
+        ],
+        "lab_values": {
+            "VDRL": "Reactive (in cases of congenital syphilis)"
+        },
+        "risk_factors": [
+            "Congenital syphilis (maternal syphilis during pregnancy)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic appearance of permanent upper central incisors (peg-shaped, notched enamel, widely spaced)"
+        ],
+        "supportive": [
+            "History of maternal syphilis",
+            "Presence of other features of Hutchinson's triad (interstitial keratitis, eighth nerve deafness)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of dental abnormalities"
+    ]
+}

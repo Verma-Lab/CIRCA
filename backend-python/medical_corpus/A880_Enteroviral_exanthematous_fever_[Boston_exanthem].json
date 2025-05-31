@@ -1,0 +1,47 @@
+{
+    "disease": "Enteroviral exanthematous fever [Boston exanthem]",
+    "icd_code": "A880",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Common",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Rash",
+                "severity": "Unspecified",
+                "pattern": "On face, chest, or back; red, slightly raised spots"
+            },
+            {
+                "name": "Neck pain",
+                "severity": "Unspecified",
+                "pattern": "On forward head bending"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Rubella",
+        "Human herpesvirus 6"
+    ]
+}

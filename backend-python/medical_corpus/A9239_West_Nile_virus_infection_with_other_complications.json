@@ -1,0 +1,115 @@
+{
+    "disease": "West Nile virus infection with other complications",
+    "icd_code": "A9239",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be mild to high",
+                "pattern": "Present in West Nile fever and severe disease"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Present in West Nile fever and severe disease"
+            },
+            {
+                "name": "Tiredness",
+                "severity": "Mild to moderate",
+                "pattern": "Present in West Nile fever"
+            },
+            {
+                "name": "Body aches",
+                "severity": "Mild to moderate",
+                "pattern": "Present in West Nile fever"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Present in West Nile fever"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "Present in West Nile fever"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Mild",
+                "pattern": "Occasional, on the trunk"
+            },
+            {
+                "name": "Swollen lymph glands",
+                "severity": "Mild to moderate",
+                "pattern": "Present in West Nile fever"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Stupor",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Tremors",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Severe",
+                "pattern": "Present in severe neuroinvasive disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in West Nile fever and severe disease",
+            "other": "May include abnormal blood pressure and respiratory rate depending on severity"
+        },
+        "physical_findings": [
+            "Encephalitis",
+            "Meningitis",
+            "Poliomyelitis"
+        ],
+        "lab_values": {
+            "IgM antibody": "Detected in CSF and serum of infected patients"
+        },
+        "risk_factors": [
+            "Age over 50",
+            "Immunocompromised individuals (e.g., transplant patients)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with West Nile virus infection"
+        ],
+        "supportive": [
+            "Detection of IgM antibody in serum or CSF"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,50 @@
+{
+    "disease": "Unspecified malignant neoplasm of skin, unspecified",
+    "icd_code": "C4490",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Inflammation",
+                "severity": "Unspecified",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Reddened skin",
+                "severity": "Unspecified",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Skin discoloration (darker or lighter)",
+                "severity": "Unspecified",
+                "pattern": "Localized"
+            },
+            {
+                "name": "General unwellness or weakness",
+                "severity": "Unspecified",
+                "pattern": "May be present or absent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Inflamed skin",
+            "Reddened skin",
+            "Skin discoloration (darker or lighter)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant neoplasm of unspecified skin origin"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Kaposi's sarcoma of skin (C46.0)",
+        "Malignant melanoma of skin (C43.-)",
+        "Malignant neoplasm of skin of genital organs (C51-C52, C60.-, C63.2)",
+        "Merkel cell carcinoma (C4A.-)"
+    ]
+}

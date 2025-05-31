@@ -1,0 +1,125 @@
+{
+    "disease": "Lymphocytic Choriomeningitis (LCM)",
+    "icd_code": "A872",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Aseptic meningitis",
+                "severity": "Moderate",
+                "pattern": "Several weeks, full recovery in most cases"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Mild",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Testicle pain",
+                "severity": "Mild",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Mouth gland pain",
+                "severity": "Mild",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Neurologic distress",
+                "severity": "Severe",
+                "pattern": "Second phase, may involve fluid buildup on the brain and inflammation of the brain, membranes, and spinal cord"
+            },
+            {
+                "name": "Deafness",
+                "severity": "Variable",
+                "pattern": "Possible long-term sequelae"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Variable",
+                "pattern": "Possible long-term sequelae"
+            },
+            {
+                "name": "Heart swelling",
+                "severity": "Variable",
+                "pattern": "Possible long-term sequelae"
+            },
+            {
+                "name": "Microencephaly",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            },
+            {
+                "name": "Periventricular calcifications",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            },
+            {
+                "name": "Hydrocephalus",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            },
+            {
+                "name": "Cerebellar hypoplasia",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            },
+            {
+                "name": "Focal cerebral destruction",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            },
+            {
+                "name": "Gyral dysplasia",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            },
+            {
+                "name": "Encephalomalacia",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            },
+            {
+                "name": "Chorioretinitis",
+                "severity": "Severe",
+                "pattern": "Congenital infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with secretions (urine, droppings, saliva, blood, nesting materials) of infected rodents",
+            "Organ transplantation from an infected person",
+            "Prenatal infection"
+        ],
+        "imaging_findings": {
+            "CT scan": [
+                "Periventricular calcifications",
+                "Ventriculomegaly",
+                "Encephalomalacia"
+            ],
+            "MRI": []
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Detection of LCMV or its antibodies in blood or spinal fluid"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Other causes of aseptic meningitis",
+        "Other causes of congenital neurological and ophthalmological diseases"
+    ]
+}

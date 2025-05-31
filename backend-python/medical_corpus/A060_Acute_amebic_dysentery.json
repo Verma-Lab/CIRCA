@@ -1,0 +1,83 @@
+{
+    "disease": "Acute amebic dysentery",
+    "icd_code": "A060",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Mucous diarrhea",
+                "severity": "Severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Moderate to Severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to Moderate",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Potentially elevated"
+        },
+        "physical_findings": [
+            "Abdominal tenderness (typically in the right upper quadrant)",
+            "Liver enlargement"
+        ],
+        "lab_values": {
+            "stool_exam": "Presence of Entamoeba histolytica cysts or trophozoites"
+        },
+        "risk_factors": [
+            "Travel to areas with poor sanitation",
+            "Crowded living conditions",
+            "Poor sanitation",
+            "Consumption of contaminated food or water",
+            "Compromised immune system",
+            "Oral and anal sex (in resource-rich countries)",
+            "Living in institutions (in the US)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Entamoeba histolytica in stool sample",
+            "Symptoms of dysentery (bloody and mucous diarrhea)"
+        ],
+        "supportive": [
+            "Abdominal pain",
+            "Fever",
+            "Travel history to endemic areas",
+            "Exposure to contaminated food or water"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of dysentery (bacterial, viral)",
+        "Inflammatory bowel disease",
+        "Colonic carcinoma",
+        "Pyogenic abscess"
+    ]
+}

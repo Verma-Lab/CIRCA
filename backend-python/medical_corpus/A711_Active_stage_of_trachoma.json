@@ -1,0 +1,88 @@
+{
+    "disease": "Active stage of trachoma",
+    "icd_code": "A71.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore eye",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Itchy eye",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Reddened eye",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Watery eye",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Corneal cloudiness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Papules in conjunctiva",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Contracture scars",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Inward turning of eyelid (entropion)",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Blindness",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Conjunctival inflammation",
+            "Corneal inflammation",
+            "Papules in conjunctiva",
+            "Contracture scars",
+            "Entropion (inward turning of eyelid)",
+            "Corneal damage"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Infection with Chlamydia trachomatis",
+            "Living in tropical areas (Africa, South America)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings consistent with active trachoma (e.g., conjunctival inflammation, corneal inflammation, papillary hypertrophy)"
+        ],
+        "supportive": [
+            "Positive Chlamydia trachomatis test (if available)"
+        ]
+    },
+    "differential_diagnoses": []
+}

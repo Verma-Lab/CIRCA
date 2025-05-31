@@ -1,0 +1,89 @@
+{
+    "disease": "Disseminated zoster",
+    "icd_code": "B027",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Radiating pain",
+                "severity": "Variable",
+                "pattern": "Unilateral, may involve multiple dermatomes"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May affect limbs"
+            },
+            {
+                "name": "Erythematous patches",
+                "severity": "Variable",
+                "pattern": "Widespread"
+            },
+            {
+                "name": "Vesicles",
+                "severity": "Variable",
+                "pattern": "Widespread, at least 20 lesions in multiple dermatomes"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Burning-like pain",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Mucosal lesions",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "white_blood_cell_count": "Elevated (e.g., 35,000 cell/L)"
+        },
+        "physical_findings": [
+            "Vesicular lesions in multiple dermatomes (at least 20)",
+            "Erythematous patches",
+            "Muscle weakness (grade 3-4)",
+            "Radiating pain along dermatomes",
+            "Skin lesions on head, face, ear, neck, trunk, back, and lower extremities"
+        ],
+        "lab_values": {
+            "polymerase_chain_reaction_analysis": "Positive for varicella-zoster virus",
+            "procalcitonin": "Elevated (e.g., 0.75 ng/mL)",
+            "white_blood_cell_count": "Elevated (e.g., 35,000 cell/L)"
+        },
+        "risk_factors": [
+            "Older age",
+            "Immunocompromised state",
+            "Hypertension"
+        ],
+        "imaging_findings": {
+            "lumbar_mri": "No pathologic lesions",
+            "ct_scan_of_lower_extremity_artery": "No pathologic lesions",
+            "chest_x-ray": "Possible pneumonia"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of at least 20 skin lesions in multiple dermatomes"
+        ],
+        "supportive": [
+            "Positive polymerase chain reaction analysis for varicella-zoster virus",
+            "Clinical presentation consistent with disseminated zoster"
+        ]
+    },
+    "differential_diagnoses": [
+        "Herniation of the nucleus pulposus",
+        "Vascular problems",
+        "Chickenpox",
+        "Other viral infections"
+    ]
+}

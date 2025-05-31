@@ -1,0 +1,104 @@
+{
+    "disease": "Angiosarcoma of liver",
+    "icd_code": "C223",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Right upper quadrant"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Ascites",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hemoperitoneum",
+                "severity": "Severe",
+                "pattern": "Due to spontaneous tumor rupture (17-27% of cases)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "May be normal initially, but can show abnormalities with disease progression."
+        },
+        "physical_findings": [
+            "Hepatomegaly",
+            "Ascites",
+            "Jaundice",
+            "Right upper quadrant tenderness"
+        ],
+        "lab_values": {
+            "Alanine transaminase (ALT)": "Elevated",
+            "Aspartate transaminase (AST)": "Elevated",
+            "Thrombocytopenia": "Present",
+            "Anemia": "May be present",
+            "D-dimer": "Significantly increased",
+            "Alpha-fetoprotein (AFP)": "Normal or slightly elevated",
+            "Carcinoembryonic antigen (CEA)": "Normal or slightly elevated",
+            "CA 19-9": "Normal or slightly elevated",
+            "CA 125": "Normal or slightly elevated",
+            "Gamma-glutamyl transferase (GGT)": "Elevated"
+        },
+        "risk_factors": [
+            "Exposure to vinyl chloride monomer",
+            "Exposure to Thorotrast (colloidal thorium dioxide)",
+            "Androgenic steroid use",
+            "Chronic arsenic ingestion",
+            "Exposure to radium",
+            "Exposure to diethylstilbestrol",
+            "Exposure to urethane",
+            "Exposure to cyclophosphamide",
+            "Exposure to oral contraceptives"
+        ],
+        "imaging_findings": {
+            "Ultrasound": "Multiple nodules or solitary mass with varying echogenicity from necrosis and hemorrhage",
+            "Contrast-enhanced computed tomography (CT)": "Hypodense lesions with multiple patterns of enhancement, becoming partly or completely isodense with hepatic tissue post-contrast",
+            "Magnetic resonance imaging (MRI)": "Hemorrhagic, heterogeneous, and hypervascular lesions",
+            "Contrast-enhanced ultrasound (CEUS)": "Nodular peripheral enhancement in arterial and portal phases, low enhancement in late phase, non-enhanced areas suggesting angiogenic malignant tumors"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of angiosarcoma",
+            "Immunohistochemical staining positive for CD31 and ERG"
+        ],
+        "supportive": [
+            "Characteristic imaging findings",
+            "Clinical presentation (symptoms and physical findings)",
+            "Abnormal laboratory values"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hemangioma",
+        "Metastatic tumors",
+        "Hepatocellular carcinoma",
+        "Other hepatic malignancies"
+    ]
+}

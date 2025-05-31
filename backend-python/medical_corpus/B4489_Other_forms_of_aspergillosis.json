@@ -1,0 +1,59 @@
+{
+    "disease": "Other forms of aspergillosis",
+    "icd_code": "B4489",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Wheezing",
+                "severity": "Variable",
+                "pattern": "May be present in allergic bronchopulmonary aspergillosis (ABPA)"
+            },
+            {
+                "name": "Coughing",
+                "severity": "Variable",
+                "pattern": "May be present in ABPA"
+            },
+            {
+                "name": "Tissue damage",
+                "severity": "Variable",
+                "pattern": "Present in invasive aspergillosis"
+            },
+            {
+                "name": "Organ infection",
+                "severity": "Variable",
+                "pattern": "Possible in invasive aspergillosis"
+            },
+            {
+                "name": "Disseminated infection",
+                "severity": "Severe",
+                "pattern": "Possible in invasive aspergillosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Lung diseases",
+            "Weakened immune system",
+            "Organ transplant",
+            "High-dose steroid use",
+            "Chemotherapy"
+        ],
+        "imaging_findings": {
+            "chest x-ray": "May show findings consistent with aspergillosis",
+            "CT scan of the lungs": "May show findings consistent with aspergillosis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with aspergillosis",
+            "Positive imaging findings (chest x-ray, CT scan)"
+        ],
+        "supportive": [
+            "Histopathological evidence of Aspergillus",
+            "Positive Aspergillus culture"
+        ]
+    },
+    "differential_diagnoses": []
+}

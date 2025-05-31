@@ -1,0 +1,59 @@
+{
+    "disease": "Streptococcal sepsis, unspecified",
+    "icd_code": "A409",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Confusion",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Sleepiness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Oliguria",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Elevated",
+            "respiratory_rate": "Elevated",
+            "blood_pressure": "Unspecified"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Pre-existing infections (e.g., lung or abdominal organ inflammation)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of streptococcal infection",
+            "Systemic inflammatory response"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

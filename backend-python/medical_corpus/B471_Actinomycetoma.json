@@ -1,0 +1,66 @@
+{
+    "disease": "Actinomycetoma",
+    "icd_code": "B471",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nodules",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Scars",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Abscesses",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fistulae",
+                "severity": "Variable",
+                "pattern": "Chronic, draining serous or purulent material"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Chronic, localized"
+            },
+            {
+                "name": "Pain",
+                "severity": "Usually painless, but can be painful",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Ulcers",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Localized swelling",
+            "Indurated subcutaneous mass",
+            "Multiple discharging sinuses",
+            "Presence of grains in purulent or seropurulent discharge",
+            "Bone involvement (in approximately 50% of cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to soil (farmers/agricultural workers)",
+            "Minor trauma to skin"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (nodules, abscesses, fistulae, draining material)",
+            "Identification of etiological agent (direct grain examination, histopathology, culture, or serology)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

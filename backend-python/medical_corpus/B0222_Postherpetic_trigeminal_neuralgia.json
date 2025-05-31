@@ -1,0 +1,64 @@
+{
+    "disease": "Postherpetic trigeminal neuralgia",
+    "icd_code": "B02.22",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Constant, aching, burning, jabbing; can last weeks, months, or over a year"
+            },
+            {
+                "name": "Itchiness",
+                "severity": "Constant",
+                "pattern": "Present in affected area"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "May be present in affected area"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Even without strenuous activity"
+            },
+            {
+                "name": "Sleep disturbance",
+                "severity": "Variable",
+                "pattern": "Due to pain"
+            },
+            {
+                "name": "Difficulty concentrating",
+                "severity": "Variable",
+                "pattern": "Due to pain"
+            },
+            {
+                "name": "Appetite changes",
+                "severity": "Variable",
+                "pattern": "May be reduced"
+            },
+            {
+                "name": "Depression",
+                "severity": "Variable",
+                "pattern": "May occur secondary to pain and other symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Prior history of chickenpox",
+            "Shingles (herpes zoster)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Pain in the distribution of the trigeminal nerve following a shingles outbreak"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

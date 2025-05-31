@@ -1,0 +1,88 @@
+{
+    "disease": "Tinea pedis",
+    "icd_code": "B353",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pruritus (itching)",
+                "severity": "Variable",
+                "pattern": "Localized to interdigital spaces"
+            },
+            {
+                "name": "Erythema (redness)",
+                "severity": "Variable",
+                "pattern": "Localized to interdigital spaces, soles"
+            },
+            {
+                "name": "Scaling",
+                "severity": "Variable",
+                "pattern": "Localized to interdigital spaces, soles"
+            },
+            {
+                "name": "Fissuring",
+                "severity": "Variable",
+                "pattern": "Localized to interdigital spaces"
+            },
+            {
+                "name": "Oozing",
+                "severity": "Uncommon",
+                "pattern": "Between toes (ulcerative type)"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Uncommon",
+                "pattern": "Between toes (ulcerative type)"
+            },
+            {
+                "name": "Pustules",
+                "severity": "Uncommon",
+                "pattern": "More common in T. interdigitale infections"
+            },
+            {
+                "name": "Thickened, cloudy yellow toenails",
+                "severity": "Variable",
+                "pattern": "Can occur with spread of infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Asymmetrical presentation",
+            "Unilateral presentation",
+            "Interdigital involvement",
+            "Hyperkeratotic (moccasin-type) lesions",
+            "Vesiculobullous (inflammatory) lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Male sex",
+            "Adolescence/young adulthood",
+            "Direct contact with causative organism (e.g., shared towels)",
+            "Walking barefoot in public areas",
+            "Occlusive footwear",
+            "Hot, humid climates",
+            "Hyperhidrosis",
+            "Diabetes mellitus",
+            "Peripheral vascular disease",
+            "Atopic dermatitis",
+            "Psoriasis",
+            "Obesity",
+            "Immunodeficiency",
+            "Family history of tinea pedis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic clinical features (erythema, scaling, pruritus, fissuring in interdigital spaces)"
+        ],
+        "supportive": [
+            "Positive KOH microscopy showing segmented hyphae",
+            "Positive fungal culture",
+            "Fungal infection in other typical sites (toenails, groin, palms)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other inflammatory skin disorders (more likely to be symmetrical and bilateral, with negative mycology)"
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of trunk, unspecified",
+    "icd_code": "C496",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be absent initially, can become severe as tumor grows"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "Palpable lump or swelling"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be localized or generalized depending on tumor location and size"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained weight loss"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Generalized fatigue"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in advanced stages",
+            "respiratory_rate": "May be elevated in advanced stages",
+            "blood_pressure": "May be elevated or decreased depending on tumor location and size"
+        },
+        "physical_findings": [
+            "Palpable mass",
+            "Skin changes (discoloration, ulceration)",
+            "Lymphadenopathy (swollen lymph nodes)",
+            "Neurological deficits (depending on tumor location)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "May show mass, extent of involvement",
+            "MRI": "May show mass, extent of involvement, tissue characteristics",
+            "PET scan": "May show metabolic activity of tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass in the trunk"
+        ],
+        "supportive": [
+            "Histopathological confirmation of malignant neoplasm",
+            "Clinical symptoms and physical findings consistent with the diagnosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign soft tissue tumors",
+        "Sarcomas of other locations",
+        "Metastatic disease"
+    ]
+}

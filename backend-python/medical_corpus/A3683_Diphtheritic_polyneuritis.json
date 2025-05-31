@@ -1,0 +1,96 @@
+{
+    "disease": "Diphtheritic polyneuritis",
+    "icd_code": "A3683",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bulbar palsy",
+                "severity": "Present in all 13 children in one study, isolated palatal palsy in 7 (53%)",
+                "pattern": "Descending and symmetric in nature in some cases"
+            },
+            {
+                "name": "Quadriparesis",
+                "severity": "Developed in 6 (46.1%) children in one study",
+                "pattern": "Descending and symmetric"
+            },
+            {
+                "name": "Isolated palatal palsy",
+                "severity": "Seen in 7 (53%) children in one study",
+                "pattern": "Isolated"
+            },
+            {
+                "name": "Oculomotor nerve involvement (accommodation paralysis)",
+                "severity": "Seen in 3 children in one study",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Unilateral lower motor neuron facial palsy",
+                "severity": "Seen in 1 child in one study",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Numbness in gingivae, tongue, and face",
+                "severity": "Present in 24 of 32 patients in one study",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Paresthesia in fingers and toes",
+                "severity": "Present in all 32 patients in one study",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Dysphonia with dysphagia",
+                "severity": "Present in all 32 patients in one study",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Respiratory muscle weakness",
+                "severity": "Mild in one child in one study; 85.4% in another study, 60.4% requiring mechanical ventilation",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Sensory signs (proprioceptive more often than superficial)",
+                "severity": "Present in all 32 patients in one study",
+                "pattern": "N/A"
+            },
+            {
+                "name": "Autonomic disturbances",
+                "severity": "Present in all 32 patients in one study",
+                "pattern": "N/A"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Decreases observed in some patients; vascular collapses between weeks 4-7 in severe cases"
+        },
+        "physical_findings": [
+            "Membranous tonsillitis (history in most cases)",
+            "Reduced or absent deep tendon reflexes",
+            "Acute flaccid paralysis (AFP)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Incomplete or lack of immunization",
+            "Severe diphtheria infection"
+        ],
+        "imaging_findings": {
+            "MRI brain": "Done in some studies, findings not specified",
+            "Diaphragm motility (radiological examination)": "Performed in some studies, findings not specified"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "History of diphtheria",
+            "Development of neurological symptoms (polyneuropathy) after a latency period (10 days to 3 months)",
+            "Presence of characteristic neurological symptoms (e.g., bulbar palsy, quadriparesis, sensory disturbances)"
+        ],
+        "supportive": [
+            "CSF analysis (similar findings to Guillain-Barr\u00e9 syndrome)",
+            "NCV studies (similar findings to Guillain-Barr\u00e9 syndrome)",
+            "Electrodiagnostic studies"
+        ]
+    },
+    "differential_diagnoses": [
+        "Guillain-Barr\u00e9 syndrome"
+    ]
+}

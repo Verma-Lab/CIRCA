@@ -1,0 +1,75 @@
+{
+    "disease": "Gas gangrene",
+    "icd_code": "A480",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Swelling",
+                "severity": "Severe",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Pain",
+                "severity": "Severe",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Crackling sound on palpation",
+                "severity": "Moderate",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Discoloration",
+                "severity": "Severe",
+                "pattern": "Yellowish-brown to black"
+            },
+            {
+                "name": "Unpleasant smell",
+                "severity": "Moderate",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Blister formation",
+                "severity": "Moderate",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Tissue necrosis",
+                "severity": "Severe",
+                "pattern": "Localized to affected area"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "May show signs of systemic illness if organ damage occurs.  Specific ranges not provided in text."
+        },
+        "physical_findings": [
+            "Swelling",
+            "Pain",
+            "Crackling sound on palpation",
+            "Discoloration (yellowish-brown to black)",
+            "Unpleasant odor",
+            "Blister formation",
+            "Tissue necrosis"
+        ],
+        "lab_values": {
+            "description": "Lab and culture reports needed for confirmation. Specific abnormal ranges not provided in text."
+        },
+        "risk_factors": [
+            "Injury to body tissue",
+            "Presence of Clostridium perfringens bacteria (usually)"
+        ],
+        "imaging_findings": {
+            "description": "Not specified in provided text."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of characteristic clinical findings (swelling, pain, crepitus, discoloration, foul odor)"
+        ],
+        "supportive": [
+            "Positive bacterial culture (Clostridium perfringens)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,70 @@
+{
+    "disease": "Hutchinson's triad",
+    "icd_code": "A50.53",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Interstitial keratitis",
+                "severity": "Variable, can lead to glaucoma or corneal scarring, blurring to blindness",
+                "pattern": "Usually between 5 and 20 years of age, often bilateral"
+            },
+            {
+                "name": "Eighth nerve deafness",
+                "severity": "Variable, can be high-frequency hearing loss progressing to permanent hearing loss",
+                "pattern": "Often starts between 8 and 10 years of age, but can start younger, may have sudden onset"
+            },
+            {
+                "name": "Hutchinson's teeth",
+                "severity": "Malformed teeth (peg-shaped, notched incisors; mulberry molars)",
+                "pattern": "Dental defects apparent with eruption of permanent incisors and molars around 6 years of age"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Peg-shaped, notched upper central incisors (Hutchinson incisors)",
+            "Mulberry molars (first molars with many small cusps)",
+            "Corneal scarring",
+            "Corneal opacity",
+            "Palatal perforation (in some cases)"
+        ],
+        "lab_values": {
+            "VDRL": "Reactive (in cases of congenital syphilis)"
+        },
+        "risk_factors": [
+            "Maternal syphilis during pregnancy",
+            "Poor socioeconomic conditions",
+            "Low educational level"
+        ],
+        "imaging_findings": {
+            "Panoramic radiograph": "May show restorations in posterior teeth and absence of some deciduous teeth"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Interstitial keratitis",
+            "Eighth nerve deafness",
+            "Hutchinson's teeth"
+        ],
+        "supportive": [
+            "Positive VDRL test",
+            "History of maternal syphilis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Tertiary syphilis",
+        "Typhoid",
+        "Diphtheria",
+        "Mucormycosis",
+        "Actinomycosis",
+        "Lymphoma",
+        "Carcinoma",
+        "Melanoma",
+        "Wegener's granulomatosis",
+        "SLE",
+        "Midline lethal granulomas",
+        "Sarcoidosis",
+        "Cocaine abuse"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "disease": "Malignant neoplasm of liver, not specified as primary or secondary",
+    "icd_code": "C229",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal lump or pain (right side)",
+                "severity": "Variable, may be absent until advanced stages",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Jaundice (yellowing of skin)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse and dependence",
+            "Hepatitis B",
+            "Hepatitis C"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Malignant neoplasm of biliary tract NOS (C24.9)",
+        "Secondary malignant neoplasm of liver and intrahepatic bile duct (C78.7)"
+    ]
+}

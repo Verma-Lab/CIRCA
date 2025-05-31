@@ -1,0 +1,38 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Essential Hypertension",
+      "icd_code": "I10",
+      "probability": 95,
+      "reasoning": "The patient's chief complaint includes hypertension, and his blood pressure reading of 144/88 mmHg is significantly elevated.  His history indicates a known history of hypertension, and he is currently on medication (Lisinopril) for its management. The physical exam is otherwise unremarkable, supporting the diagnosis of essential hypertension."
+    },
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 90,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  His home glucose readings (120-180 mg/dL) indicate suboptimal control, consistent with his previous A1c of 7.8%. The plan includes adjusting his metformin dosage to improve glycemic control.  This strongly supports the diagnosis."
+    },
+    {
+      "disease": "Tension-type Headache",
+      "icd_code": "G44.9",
+      "probability": 80,
+      "reasoning": "The patient reports recurring headaches described as dull, pressure-like pain, lasting 2-3 hours, and relieved by acetaminophen. These characteristics align with tension-type headaches.  The absence of neurological deficits or other alarming symptoms further supports this diagnosis. However, further investigation might be warranted if headaches worsen or change in character."
+    }
+  ],
+  "differential_diagnoses": [],
+  "additional_testing_recommended": [
+    "HbA1c (to assess long-term glycemic control)",
+    "Lipid panel (as per the plan, to assess hyperlipidemia)",
+    "Comprehensive metabolic panel (to monitor renal function given elevated creatinine)",
+    "Complete blood count (CBC) (to investigate fatigue)",
+    "ECG (although initially unavailable, an ECG would be beneficial to rule out cardiac causes of chest pain and hypertension)"
+  ],
+  "clinical_summary": "The patient presents with well-established Type 2 Diabetes Mellitus and Essential Hypertension, both requiring ongoing management.  His reported headaches are consistent with tension-type headaches.  The elevated creatinine warrants further investigation into renal function.  Additional testing is recommended to optimize diabetes management, assess cardiovascular health, and investigate the cause of fatigue.  The patient's physical exam is largely unremarkable except for the elevated blood pressure, which is consistent with his known hypertension.",
+  "timestamp": "2025-04-05T21:28:35.389288",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+    "disease": "Viral intestinal infection, unspecified",
+    "icd_code": "A084",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Cramping"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade",
+                "pattern": "Present in more severe cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Watery, frequent"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "Due to prolonged vomiting and diarrhea"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Infants",
+            "Young children",
+            "Immunocompromised individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of gastroenteritis (nausea, vomiting, diarrhea, abdominal pain)"
+        ],
+        "supportive": [
+            "Exposure to contaminated food or water",
+            "Contact with infected individuals",
+            "Epidemiological evidence of outbreak"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial gastroenteritis",
+        "Parasitic gastroenteritis",
+        "Food poisoning",
+        "Other causes of gastroenteritis"
+    ]
+}

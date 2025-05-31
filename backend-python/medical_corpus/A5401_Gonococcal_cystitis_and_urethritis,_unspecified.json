@@ -1,0 +1,59 @@
+{
+    "disease": "Gonococcal cystitis and urethritis, unspecified",
+    "icd_code": "A5401",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Urethral discharge",
+                "severity": "Variable",
+                "pattern": "Mucoid, mucopurulent, or purulent; may be present even without other symptoms"
+            },
+            {
+                "name": "Urethral pruritis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cystitis symptoms (if cystitis present)",
+                "severity": "Variable",
+                "pattern": "Frequency, urgency, suprapubic pain"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Urethral discharge",
+            "Perimeatal erythema",
+            "Signs of urethral inflammation"
+        ],
+        "lab_values": {
+            "Gram stain": "Gram-negative intracellular diplococci (GNID)",
+            "Culture": "Neisseria gonorrhoeae",
+            "NAAT": "Positive for N. gonorrhoeae"
+        },
+        "risk_factors": [
+            "Unprotected sexual intercourse",
+            "Multiple sexual partners"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Identification of Neisseria gonorrhoeae in mucosal secretions (Gram stain, culture, NAAT)"
+        ],
+        "supportive": [
+            "Symptoms of dysuria and urethral discharge",
+            "Physical findings of urethral discharge and perimeatal erythema"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chlamydial urethritis",
+        "Nongonococcal urethritis (NGU)",
+        "Urethritis caused by other pathogens (M. genitalium, T. vaginalis, etc.)"
+    ]
+}

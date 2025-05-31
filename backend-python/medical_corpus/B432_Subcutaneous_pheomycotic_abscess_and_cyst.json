@@ -1,0 +1,77 @@
+{
+    "disease": "Subcutaneous Phaeomycotic Abscess and Cyst",
+    "icd_code": "B432",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless swelling",
+                "severity": "Variable",
+                "pattern": "Gradual onset and progression"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable, can be absent or present",
+                "pattern": "May develop later in the course of the disease"
+            },
+            {
+                "name": "Purulent discharge",
+                "severity": "Variable",
+                "pattern": "May be present in some cases"
+            },
+            {
+                "name": "Erythema",
+                "severity": "Variable",
+                "pattern": "May surround the nodules"
+            },
+            {
+                "name": "Crusting",
+                "severity": "Variable",
+                "pattern": "May be present on the surface of the nodules"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Afebrile (in some cases)"
+        },
+        "physical_findings": [
+            "Firm, fluctuant, mobile swelling",
+            "Well-circumscribed soft tissue nodule",
+            "Not attached to underlying bone",
+            "Tenderness (in some cases)",
+            "Purulent material on incision (in some cases)",
+            "Multiple pustules and nodules (in some cases)"
+        ],
+        "lab_values": {
+            "Hemoglobin": "May be low (e.g., 9.0 gm/dL)",
+            "Blood sugar": "Within normal limits (in some cases)",
+            "Blood urea nitrogen": "Within normal limits (in some cases)",
+            "Creatinine": "Within normal limits (in some cases)"
+        },
+        "risk_factors": [
+            "Trauma (e.g., thorn prick, wooden splinter)",
+            "Immunocompromised state (less common)"
+        ],
+        "imaging_findings": {
+            "X-ray": "Well-circumscribed soft tissue nodule in the subcutaneous plane"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing pigmented, septate hyphae, often with constrictions at septations (bamboo stem appearance)",
+            "Granulomatous reaction with foreign-body giant cells, epithelioid cells, and xanthoma cells"
+        ],
+        "supportive": [
+            "Clinical presentation of a subcutaneous cyst or abscess",
+            "History of trauma",
+            "Culture of the fungus (though often not possible due to formalin fixation)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Epidermoid cyst",
+        "Sebaceous cyst",
+        "Chromoblastomycosis",
+        "Black grain eumycotic mycetoma",
+        "Alternariosis",
+        "Aspergillosis"
+    ]
+}

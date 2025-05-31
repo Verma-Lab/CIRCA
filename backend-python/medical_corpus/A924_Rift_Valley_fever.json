@@ -1,0 +1,92 @@
+{
+    "disease": "Rift Valley fever",
+    "icd_code": "A924",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Common",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Renal failure",
+                "severity": "Moderate to Severe",
+                "pattern": "Present in a significant proportion of cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate",
+                "pattern": "Present in a significant proportion of cases"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Moderate",
+                "pattern": "Present in a significant proportion of cases"
+            },
+            {
+                "name": "Hemorrhagic disease",
+                "severity": "Moderate to Severe",
+                "pattern": "Present in a significant proportion of cases"
+            },
+            {
+                "name": "Partial blindness",
+                "severity": "Moderate",
+                "pattern": "Present in a significant proportion of cases"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Moderate to Severe",
+                "pattern": "Present in a significant proportion of cases"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild",
+                "pattern": "Present in a small proportion of cases"
+            },
+            {
+                "name": "Miscarriage",
+                "severity": "Severe",
+                "pattern": "High rate in pregnant women"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Reported in some cases"
+            },
+            {
+                "name": "Retinitis",
+                "severity": "Variable",
+                "pattern": "Reported in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected mosquitoes",
+            "Contact with infected animals or their products",
+            "Travel to endemic areas",
+            "Heavy rainfall and flooding"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms consistent with RVF",
+            "Laboratory confirmation (e.g., PCR, serology)"
+        ],
+        "supportive": [
+            "Epidemiological link to RVF outbreak",
+            "Exposure to risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

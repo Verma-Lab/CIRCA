@@ -1,0 +1,60 @@
+{
+    "disease": "Cutaneous chromomycosis",
+    "icd_code": "B43.0",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Verrucous lesions",
+                "severity": "Variable, can be extensive",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Nodular lesions",
+                "severity": "Variable",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Tumoral lesions",
+                "severity": "Variable",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Plaque-like lesions",
+                "severity": "Variable",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Atrophic lesions",
+                "severity": "Variable",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Secondary bacterial infections",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Polymorphous lesions (verrucous, nodular, tumoral, plaque-like, atrophic)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Occupation (agricultural workers, miners, woodsmen)",
+            "Exposure to soil, plants, and decomposing wood",
+            "Traumatic inoculation of fungi"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of characteristic lesions",
+            "Microscopic examination showing muriform (sclerotic) bodies (Medlar's bodies)"
+        ],
+        "supportive": [
+            "Fungal culture isolating causative agents (e.g., Fonsecaea pedrosoi, Cladophialophora carrionii)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,78 @@
+{
+    "disease": "Tuberculosis of other urinary organs",
+    "icd_code": "A1813",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hematuria",
+                "severity": "unspecified",
+                "pattern": "unspecified"
+            },
+            {
+                "name": "Urinary tract infection symptoms",
+                "severity": "unspecified",
+                "pattern": "unspecified"
+            },
+            {
+                "name": "Fistula formation",
+                "severity": "unspecified",
+                "pattern": "unspecified"
+            },
+            {
+                "name": "Pain",
+                "severity": "unspecified",
+                "pattern": "unspecified"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "unspecified",
+                "pattern": "unspecified"
+            },
+            {
+                "name": "Frequency",
+                "severity": "unspecified",
+                "pattern": "unspecified"
+            },
+            {
+                "name": "Urgency",
+                "severity": "unspecified",
+                "pattern": "unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Urine analysis": {
+                "Leukocyturia": "May be present in adults with KTB-1"
+            },
+            "Urine culture": {
+                "Mycobacterium tuberculosis": "Positive in some cases"
+            }
+        },
+        "risk_factors": [
+            "Compromised immune system (HIV, malnutrition, diabetes)",
+            "Tobacco use",
+            "Previous tuberculosis infection"
+        ],
+        "imaging_findings": {
+            "Intravenous urography (IVU)": "Normal in KTB-1, abnormal in other stages"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms suggestive of urinary tuberculosis",
+            "Positive urine culture for Mycobacterium tuberculosis (in some cases)"
+        ],
+        "supportive": [
+            "Abnormal imaging findings (IVU)",
+            "Abnormal urine analysis (leukocyturia)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Urinary tract infection",
+        "Renal calculi",
+        "Bladder cancer",
+        "Other urinary tract diseases"
+    ]
+}

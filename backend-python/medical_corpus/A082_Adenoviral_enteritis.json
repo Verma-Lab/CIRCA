@@ -1,0 +1,53 @@
+{
+    "disease": "Adenoviral enteritis",
+    "icd_code": "A082",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Moderate to severe",
+                "pattern": "Can be bloody in some cases;  variable duration"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "PCR": {
+                "adenovirus 40/41": "Positive"
+            },
+            "EIA": {
+                "adenovirus 40/41": "May be false negative for type 41"
+            }
+        },
+        "risk_factors": [
+            "Age less than 2 years, particularly infants less than 12 months",
+            "Low- and middle-income countries (LMICs)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of gastroenteritis (fever, vomiting, diarrhea)",
+            "Positive PCR for adenovirus types 40/41"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Other viral gastroenteritis (rotavirus, norovirus)",
+        "Bacterial gastroenteritis (Shigella)",
+        "Other causes of diarrhea"
+    ]
+}

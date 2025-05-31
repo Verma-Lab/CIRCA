@@ -1,0 +1,39 @@
+{
+    "disease": "Malignant neoplasm of soft palate",
+    "icd_code": "C051",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "lump or sore that doesn't heal",
+                "severity": "Unspecified",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Changes in the look and feel of the tissue on the soft palate",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "lump",
+            "sore"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use (cigarettes, cigars, pipes, chewing tobacco, snuff)",
+            "Frequent and heavy alcohol consumption",
+            "Human papillomavirus (HPV) infection",
+            "Weakened immune system (due to medication or illness)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in the soft palate tissue confirmed by biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

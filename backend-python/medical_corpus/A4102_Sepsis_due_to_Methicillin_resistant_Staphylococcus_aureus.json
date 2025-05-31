@@ -1,0 +1,106 @@
+{
+    "disease": "Sepsis due to Methicillin-resistant Staphylococcus aureus (MRSA)",
+    "icd_code": "A4102",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Variable",
+                "pattern": "Increased heart rate"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Variable",
+                "pattern": "Increased respiratory rate"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Variable",
+                "pattern": "Low blood pressure"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Confusion, lethargy"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Bumps, infected areas, may resemble spider bites"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Lung infection"
+            },
+            {
+                "name": "Soft tissue infection",
+                "severity": "Variable",
+                "pattern": "Infection of skin and subcutaneous tissue"
+            },
+            {
+                "name": "Bacteremia",
+                "severity": "Variable",
+                "pattern": "Bacteria in the bloodstream"
+            },
+            {
+                "name": "Multisystem dysfunction",
+                "severity": "Variable",
+                "pattern": "Organ failure"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Increased",
+            "respiratory_rate": "Increased",
+            "blood_pressure": "Decreased",
+            "temperature": "Elevated (may be absent)"
+        },
+        "physical_findings": [
+            "Skin lesions (bumps, infected areas)",
+            "Signs of pneumonia (cough, shortness of breath)",
+            "Signs of soft tissue infection (pain, swelling, redness)",
+            "Altered mental status (confusion, lethargy)"
+        ],
+        "lab_values": {
+            "prothrombin_time": "Prolonged",
+            "calcium": "Decreased",
+            "potassium": "Abnormal (may be increased or decreased)",
+            "white_blood_cell_count": "Elevated"
+        },
+        "risk_factors": [
+            "Hospitalization",
+            "Nursing home stays",
+            "Skin-to-skin contact",
+            "Exposure to crowded and unhygienic places",
+            "Broken skin",
+            "Pre-existing medical conditions"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show findings consistent with pneumonia",
+            "other_imaging": "May be used to evaluate other organ systems"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Suspected infection",
+            "Evidence of organ dysfunction"
+        ],
+        "supportive": [
+            "Hypotension",
+            "Elevated lactate",
+            "Positive blood cultures"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other types of sepsis",
+        "Other bacterial infections",
+        "Viral infections",
+        "Fungal infections"
+    ]
+}

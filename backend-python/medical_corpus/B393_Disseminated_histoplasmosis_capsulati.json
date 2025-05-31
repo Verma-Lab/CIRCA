@@ -1,0 +1,134 @@
+{
+    "disease": "Disseminated histoplasmosis capsulati",
+    "icd_code": "B393",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Multiple subcutaneous swellings and ulcerations",
+                "severity": "Moderate to severe",
+                "pattern": "Chronic, over 11 months"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Intermittent, over 2 months"
+            },
+            {
+                "name": "Weakness in lower limbs",
+                "severity": "Moderate",
+                "pattern": "Chronic, following spinal injury"
+            },
+            {
+                "name": "Non-healing sinus",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Moderate",
+                "pattern": "Chronic, over 2 years"
+            },
+            {
+                "name": "Significant weight loss",
+                "severity": "Moderate",
+                "pattern": "Chronic, over 2 years"
+            },
+            {
+                "name": "Intermittent fever",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic, over seven weeks"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic, over seven weeks"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic, over seven weeks"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic, over seven weeks"
+            },
+            {
+                "name": "Profuse sweating",
+                "severity": "Mild to moderate",
+                "pattern": "Episodic, over seven weeks"
+            },
+            {
+                "name": "Soreness of left tongue",
+                "severity": "Moderate",
+                "pattern": "Chronic, several weeks"
+            },
+            {
+                "name": "Difficulty swallowing",
+                "severity": "Mild to moderate",
+                "pattern": "Recent onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Ulcers over left hand, right hand, and right foot",
+            "Generalized lymphadenopathy (firm, non-tender, mobile, painless)",
+            "Multiple subcutaneous swellings (cystic, painless, mobile, local rise in temperature)",
+            "Surgical scar over spine (T10 to L4)",
+            "Sinus at lumbar region",
+            "Hepatosplenomegaly (possible, not explicitly stated in all cases)",
+            "Pallor (possible, not explicitly stated in all cases)",
+            "Petechiae (possible, if pancytopenia present)"
+        ],
+        "lab_values": {
+            "Hemoglobin": "12.7 g/dL (mild anemia)",
+            "Total leukocyte count": "3400/L (leukopenia)",
+            "Neutrophils": "70%",
+            "ESR": "45 mm/h (elevated)",
+            "Platelets": "2.3 lakhs/mm3 (normal)",
+            "Random blood sugar": "111 mg%",
+            "Liver and renal function tests": "Normal",
+            "HIV": "Negative",
+            "Alkaline phosphatase": "209 U/L (elevated)",
+            "AST": "40 U/L (slightly elevated)",
+            "Thrombocytopenia": "130 per uL (mild)",
+            "CD4 count": "Mildly elevated",
+            "CRP": "2.0 mg/dL (elevated)",
+            "Erythrocyte sedimentation rate (sed rate)": "65 mm/hr (elevated)",
+            "Histoplasma antibodies/antigens": "Negative (in one case)"
+        },
+        "risk_factors": [
+            "Heavy smoker",
+            "Past granulomatous infection (bone and soft tissue)",
+            "Immunocompetence (in some cases)",
+            "Exposure to endemic area (Ohio, Missouri, Mississippi River valleys, Central America)"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Non-homogenous opacity in the left upper lobe",
+            "MRI of spine": "Paraspinal collection",
+            "X-ray of feet and hand": "Multiple periarticular lytic lesions",
+            "Ultrasonography of abdomen": "Multiple enlarged intraabdominal lymph nodes",
+            "CT scan": "Pulmonary nodule, oral/buccal lesions, bilateral adrenal hyperplasia",
+            "PET scan": "Increased FDG uptake at left tongue and jawline, hypermetabolic adrenal masses"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological demonstration of Histoplasma capsulatum (capsulated yeast cells with narrow-based budding)",
+            "Positive fungal culture (Sabouraud's dextrose agar)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with disseminated granulomatous disease",
+            "Imaging findings suggestive of disseminated infection",
+            "Elevated inflammatory markers (ESR, CRP)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Atypical mycobacterial infection",
+        "Sarcoidosis",
+        "Tuberculosis"
+    ]
+}

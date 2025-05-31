@@ -1,0 +1,121 @@
+{
+    "disease": "Human herpesvirus 7 infection",
+    "icd_code": "B1082",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Exanthema subitum",
+                "severity": "Mild to moderate",
+                "pattern": "Infants"
+            },
+            {
+                "name": "Acute febrile respiratory disease",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Low lymphocyte counts",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Febrile seizures",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Drug-induced hypersensitivity syndrome (DIHS)",
+                "severity": "Severe",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Encephalopathy",
+                "severity": "Severe",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Hemiconvulsion-hemiplegia-epilepsy syndrome",
+                "severity": "Severe",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "Variable",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Postinfectious myeloradiculoneuropathy",
+                "severity": "Severe",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Pityriasis rosea",
+                "severity": "Variable",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Reactivation of HHV-4 (mononucleosis-like illness)",
+                "severity": "Variable",
+                "pattern": "Associated"
+            },
+            {
+                "name": "DRESS (Drug reaction with eosinophilia and systemic symptoms)",
+                "severity": "Severe",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Lichen planus",
+                "severity": "Variable",
+                "pattern": "Associated"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Severe",
+                "pattern": "Increased risk"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "name": "Rash",
+                "description": "Variable presentation"
+            },
+            {
+                "name": "Lytic syncytia",
+                "description": "Cellular level finding"
+            }
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Detection of HHV-7 DNA by PCR",
+            "Serological evidence of HHV-7 infection (though reliable tests are still under development)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,60 @@
+{
+    "disease": "Bubonic plague",
+    "icd_code": "A200",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Buboes (swollen, painful lymph nodes)",
+                "severity": "Variable",
+                "pattern": "Characteristic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (high fever)"
+        },
+        "physical_findings": [
+            "Buboes (swollen, painful lymph nodes)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected fleas",
+            "Contact with contaminated bodily fluids or tissues",
+            "Inhalation of respiratory droplets"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of bubo"
+        ],
+        "supportive": [
+            "Fever",
+            "Headache",
+            "Chills",
+            "Weakness",
+            "Positive Yersinia pestis culture"
+        ]
+    },
+    "differential_diagnoses": []
+}

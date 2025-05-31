@@ -1,0 +1,92 @@
+{
+    "disease": "Listerial endocarditis",
+    "icd_code": "A3282",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blurred vision",
+                "severity": "Unspecified",
+                "pattern": "Sudden onset, persisting for 20 days"
+            },
+            {
+                "name": "Acute illness",
+                "severity": "Unspecified",
+                "pattern": "Present"
+            },
+            {
+                "name": "Cardiac fatigue",
+                "severity": "Worsening over two years",
+                "pattern": "Post-activity"
+            },
+            {
+                "name": "Systolic blowing murmur",
+                "severity": "Present",
+                "pattern": "Apical region"
+            },
+            {
+                "name": "Mid-to-late diastolic rumbling murmur",
+                "severity": "Present",
+                "pattern": "Unspecified location"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "36.3\u00b0C (in one case)",
+            "heart_rate": "77 bpm (atrial fibrillation in one case)"
+        },
+        "physical_findings": [
+            "Enlarged cardiac sector",
+            "Arrhythmia",
+            "Enlarged left atrium",
+            "Irregular thickening and severe stenosis of the mitral valve",
+            "Severe mitral regurgitation",
+            "Irregular thickening of the aortic valve with mild stenosis",
+            "Mild tricuspid regurgitation",
+            "Thickening, calcification, and adhesion at the mitral valve junction",
+            "1 cm \u00d7 1 cm vegetation on aortic valve",
+            "2 cm \u00d7 2 cm abscess at the junction of the left coronary sinus"
+        ],
+        "lab_values": {
+            "leukocyte_count": "10.71\u00d710\u2079/L (elevated)",
+            "neutrophil_granulocyte_count": "7.83\u00d710\u2079/L (elevated)",
+            "C-reactive_protein": "47.80 mg/L (elevated)",
+            "sedimentation_rate": "68.0 mm/h (elevated)",
+            "NT-ProBNP": "2007 ng/L (elevated)",
+            "troponin_T": "117.8 ng/L (elevated)",
+            "lactate_dehydrogenase": "265 IU/L (elevated)",
+            "hydroxybutyrate_dehydrogenase": "221 IU/L (elevated)"
+        },
+        "risk_factors": [
+            "Heart valve disease",
+            "Advanced age",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {
+            "transesophageal_echocardiography": [
+                "Enlarged left atrium",
+                "Irregular thickening and severe stenosis of the mitral valve",
+                "Severe mitral regurgitation",
+                "Irregular thickening of the aortic valve with mild stenosis",
+                "Mild tricuspid regurgitation",
+                "Echogenic flopping on the aortic valve"
+            ],
+            "electrocardiogram": "Atrial fibrillation with left ventricular high voltage"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Listeria monocytogenes",
+            "Evidence of endocarditis (e.g., echocardiographic findings)"
+        ],
+        "supportive": [
+            "Symptoms and signs consistent with infective endocarditis",
+            "Elevated inflammatory markers"
+        ]
+    },
+    "differential_diagnoses": []
+}

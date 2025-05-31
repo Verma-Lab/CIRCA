@@ -1,0 +1,61 @@
+{
+    "disease": "Syphilitic alopecia",
+    "icd_code": "A5132",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hair loss",
+                "severity": "Variable, can be patchy or diffuse",
+                "pattern": [
+                    "Moth-eaten",
+                    "Diffuse",
+                    "Mixed"
+                ]
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Patchy or diffuse nonscarring alopecia",
+            "Moth-eaten pattern (most common)",
+            "Diffuse hair loss",
+            "Irregular alopecia areata-like patches",
+            "Thin hair with rough texture",
+            "Positive pull test for telogen and anagen dystrophic hairs",
+            "Decreased hair density",
+            "Yellow dots",
+            "Broken hairs",
+            "Zigzag hairs",
+            "Palmoplantar lesions (in some cases)",
+            "Maculopapular rash (in some cases)",
+            "Oral lesions (in some cases)"
+        ],
+        "lab_values": {
+            "VDRL": "Increased titers (e.g., 1:8)",
+            "FTA-ABS": "Positive"
+        },
+        "risk_factors": [
+            "Syphilis infection",
+            "High-risk sexual behavior"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological tests for syphilis (e.g., VDRL, FTA-ABS)",
+            "Clinical presentation of alopecia (patchy, diffuse, or mixed)"
+        ],
+        "supportive": [
+            "Trichoscopy findings (yellow dots, broken hairs, zigzag hairs)",
+            "Histopathological findings (perifollicular lymphocytic infiltrate, increased telogen/catagen hairs, follicular hyperkeratosis)",
+            "Immunohistochemistry showing spirochetes in hair follicles"
+        ]
+    },
+    "differential_diagnoses": [
+        "Alopecia areata",
+        "Telogen effluvium",
+        "Tinea capitis",
+        "Trichotillomania",
+        "Systemic lupus erythematosus"
+    ]
+}

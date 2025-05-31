@@ -1,0 +1,162 @@
+{
+    "disease": "Chagas' disease with nervous system involvement, unspecified",
+    "icd_code": "B5740",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Increased",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Poor general condition",
+                "severity": "Significant",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Impaired vision",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "General fatigue",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Motor deficits",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Meningismus",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Focal neurological deficits",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Chronic encephalopathy",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Sensory impairment",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Mood changes",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Difficulty in mental concentration",
+                "severity": "Unspecified",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Muscular disturbances (myoclonus, bradykinesia, dyspraxia)",
+                "severity": "Unspecified",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Unspecified",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Speech disturbances",
+                "severity": "Unspecified",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Marked cachexia"
+        ],
+        "lab_values": {
+            "CD4+ T cells": {
+                "range": "48 cells per mm3 (average)"
+            },
+            "HIV": {
+                "status": "Stage 3"
+            }
+        },
+        "risk_factors": [
+            "Immunocompromised status (HIV positive)",
+            "Chagas disease infection"
+        ],
+        "imaging_findings": {
+            "MRI": [
+                "Two brain lesions in the right hemisphere (frontal and occipital lobes)",
+                "Hypointense on T1-weighted images",
+                "Hyperintense on T2-weighted and FLAIR images",
+                "No water diffusion restriction pattern on DWI images",
+                "Ring enhancement after contrast injection (Gd-DTPA)",
+                "Significant size increase of lesions over time"
+            ],
+            "MRS": [
+                "Increased choline",
+                "Decreased or absent NAA",
+                "Presence of mobile lipids and/or lactate",
+                "Marked neuronal loss even outside the necrotic core"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology for T. cruzi (ELISA and IFI positive)",
+            "Histopathological findings of necrosis and chronic inflammation with intracellular parasites"
+        ],
+        "supportive": [
+            "Clinical symptoms (headache, fatigue, etc.)",
+            "Neuroimaging findings (lesions with ring enhancement)",
+            "MRS findings (metabolic changes)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Toxoplasmosis",
+        "CNS lymphoma",
+        "Progressive multifocal leukoencephalopathy (PML)"
+    ]
+}

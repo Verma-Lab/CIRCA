@@ -1,0 +1,81 @@
+{
+    "disease": "Gonococcal vulvovaginitis, unspecified",
+    "icd_code": "A5402",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mucopurulent vaginal discharge",
+                "severity": "Variable, can be large amounts (staining underwear) or small amounts",
+                "pattern": "Continuous for 1-2 weeks or longer"
+            },
+            {
+                "name": "Vaginal itching (pruritus)",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Vulvar erythema",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Bleeding between periods",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Increased vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Pain during urination",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Vulvar erythema",
+            "Mucopurulent vaginal discharge (white, yellow, or greenish)",
+            "Intact hymen (in prepubertal children)"
+        ],
+        "lab_values": {
+            "Gram stain": "Intracellular and extracellular gram-negative diplococci with polymorphonuclear (PMN) leukocytes >25/LPB",
+            "Culture": "Positive for Neisseria gonorrhoeae",
+            "Nucleic acid amplification testing (NAAT)": "Positive for Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Sexual contact (including oral, anal, or vaginal intercourse)",
+            "Prepubertal age (due to alkaline vaginal pH and lack of estrogen)",
+            "Non-sexual transmission (rare)",
+            "Inconsistent condom use",
+            "Multiple sexual partners",
+            "Sex partner with concurrent partners",
+            "Sex partner with STI",
+            "Sex work"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive lab test for Neisseria gonorrhoeae (culture, NAAT, or Gram stain in symptomatic men)"
+        ],
+        "supportive": [
+            "Symptoms of vulvovaginitis (mucopurulent discharge, itching, erythema, dysuria)",
+            "History of sexual contact"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial vaginosis",
+        "Yeast infection (candidiasis)",
+        "Trichomoniasis",
+        "Allergic vaginitis"
+    ]
+}

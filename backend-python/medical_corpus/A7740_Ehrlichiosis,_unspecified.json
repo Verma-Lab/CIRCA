@@ -1,0 +1,74 @@
+{
+    "disease": "Ehrlichiosis, unspecified",
+    "icd_code": "A7740",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Upset stomach",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild",
+                "pattern": "Present in <1/3 of cases"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Variable",
+                "pattern": "Initial presentation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Potentially elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "complete_blood_count": "Abnormal white blood cell count",
+            "serology": "Positive for Ehrlichia antibodies"
+        },
+        "risk_factors": [
+            "Tick bite",
+            "Exposure to wooded or grassy areas",
+            "Presence of ticks on pets"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms consistent with ehrlichiosis",
+            "Positive serological test for Ehrlichia antibodies"
+        ],
+        "supportive": [
+            "History of tick bite",
+            "Abnormal complete blood count"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rocky Mountain spotted fever",
+        "Lyme disease",
+        "Influenza"
+    ]
+}

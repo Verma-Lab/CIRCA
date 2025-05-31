@@ -1,0 +1,20 @@
+{
+    "disease": "Malignant neoplasm of middle third of esophagus",
+    "icd_code": "C154",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "alcohol abuse and dependence"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

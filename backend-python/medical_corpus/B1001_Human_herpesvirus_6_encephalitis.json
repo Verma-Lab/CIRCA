@@ -1,0 +1,158 @@
+{
+    "disease": "Human herpesvirus 6 encephalitis",
+    "icd_code": "B1001",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Generalized tonic-clonic seizure",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate",
+                "pattern": "One week duration"
+            },
+            {
+                "name": "General malaise",
+                "severity": "Moderate",
+                "pattern": "One month duration"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Moderate",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Moderate",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Low-grade fevers",
+                "severity": "Mild",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Asthenia",
+                "severity": "Moderate",
+                "pattern": "Three-week history"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Moderate",
+                "pattern": "Three-week history"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "Three-week history"
+            },
+            {
+                "name": "Urinary retention",
+                "severity": "Moderate",
+                "pattern": "Three-week history"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Moderate",
+                "pattern": "Three-week history"
+            },
+            {
+                "name": "Weakness of all extremities",
+                "severity": "Moderate",
+                "pattern": "Onset unclear"
+            },
+            {
+                "name": "Paresis of lower limbs",
+                "severity": "Moderate",
+                "pattern": "Onset unclear"
+            },
+            {
+                "name": "Generalized hyperreflexia",
+                "severity": "Moderate",
+                "pattern": "Onset unclear"
+            },
+            {
+                "name": "Bilateral papillitis",
+                "severity": "Moderate",
+                "pattern": "Onset unclear"
+            },
+            {
+                "name": "Optic neuritis",
+                "severity": "Moderate",
+                "pattern": "Onset unclear"
+            },
+            {
+                "name": "Dysesthesia of lower limbs",
+                "severity": "Mild",
+                "pattern": "One month post-discharge"
+            },
+            {
+                "name": "Tonsillitis",
+                "severity": "Mild",
+                "pattern": "One month post-discharge"
+            },
+            {
+                "name": "Asthenia",
+                "severity": "Mild",
+                "pattern": "One month post-discharge"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "One month post-discharge"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Low-grade fevers reported in multiple cases"
+        },
+        "physical_findings": [
+            "Weakness of all extremities",
+            "Paresis of lower limbs",
+            "Generalized hyperreflexia",
+            "Bilateral papillitis",
+            "Optic neuritis"
+        ],
+        "lab_values": {
+            "CSF": {
+                "leukocytes": "Elevated (178 leukocytes/mm3 in one case, 115 leukocytes/mm3 in another)",
+                "lymphocytes": "Increased percentage (90% in one case, 95% in another)",
+                "protein": "Elevated (0.77 g/L and 0.6 g/L in reported cases)",
+                "glucose": "Low (1.8 mmol/L in one case)",
+                "HHV-6 DNA": "Positive by PCR"
+            },
+            "serum": {
+                "anti-HHV-6 IgG": "Positive",
+                "anti-HHV-6 IgM": "Positive (except on day 66 in one case)",
+                "avidity index": "Near 100% in early samples, suggesting reactivation"
+            }
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "Normal in one case",
+            "MRI": {
+                "brain": "Focal lesion in the left thalamus in one case",
+                "spinal cord": "Medullar cord enlargement and multiple lesions in the spinal cord white matter in one case"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with encephalitis",
+            "Positive HHV-6 DNA in CSF by PCR"
+        ],
+        "supportive": [
+            "Elevated CSF protein and leukocytes",
+            "Positive HHV-6 serology (IgG and IgM)",
+            "Response to antiviral treatment (ganciclovir or cidofovir)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other viral encephalitides (HSV, VZV, CMV, EBV)",
+        "Bacterial meningitis",
+        "Autoimmune encephalitis",
+        "Multiple sclerosis"
+    ]
+}

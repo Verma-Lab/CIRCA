@@ -1,0 +1,97 @@
+{
+    "disease": "Meningococcal encephalitis",
+    "icd_code": "A3981",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Altered mentation",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Common long-term sequelae"
+            },
+            {
+                "name": "Cognitive impairment",
+                "severity": "Variable",
+                "pattern": "Common long-term sequelae"
+            },
+            {
+                "name": "Memory deficits",
+                "severity": "Variable",
+                "pattern": "Common long-term sequelae"
+            },
+            {
+                "name": "Epileptic seizures",
+                "severity": "Variable",
+                "pattern": "Possible long-term sequelae"
+            },
+            {
+                "name": "Excessive daytime sleepiness",
+                "severity": "Variable",
+                "pattern": "Common long-term sequelae"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Variable",
+            "blood_pressure": "Variable",
+            "respiratory_rate": "Variable"
+        },
+        "physical_findings": [
+            "Neck stiffness",
+            "Altered mental status",
+            "Possible focal neurological deficits"
+        ],
+        "lab_values": {
+            "CSF analysis": {
+                "pleocytosis": "Increased white blood cell count",
+                "protein": "Elevated",
+                "glucose": "Decreased"
+            },
+            "blood_culture": "May be positive for Neisseria meningitidis"
+        },
+        "risk_factors": [
+            "Weakened immune system",
+            "Close contact with infected individuals",
+            "Age (particularly young children and older adults)"
+        ],
+        "imaging_findings": {
+            "MRI": "May show inflammation of the brain and meninges"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningococcal encephalitis",
+            "Positive CSF analysis showing signs of inflammation and possibly the presence of Neisseria meningitidis"
+        ],
+        "supportive": [
+            "Positive blood culture for Neisseria meningitidis",
+            "Abnormal brain imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral encephalitis",
+        "Bacterial meningitis",
+        "Other types of meningoencephalitis",
+        "Autoimmune encephalitis"
+    ]
+}

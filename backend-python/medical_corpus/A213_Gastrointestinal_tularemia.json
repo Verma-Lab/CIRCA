@@ -1,0 +1,22 @@
+{
+    "disease": "Gastrointestinal Tularemia",
+    "icd_code": "A21.3",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected animals (e.g., rabbits, hares, rodents)",
+            "Exposure to arthropod vectors (e.g., ticks, flies, mosquitoes)",
+            "Ingestion of contaminated food or water"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

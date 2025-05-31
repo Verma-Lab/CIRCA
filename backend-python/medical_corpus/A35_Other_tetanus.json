@@ -1,0 +1,43 @@
+{
+    "disease": "Other tetanus",
+    "icd_code": "A35",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Muscle spasms",
+                "severity": "Severe",
+                "pattern": "Long-term"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Triggered by light or noise"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Wound contamination with tetanus bacteria"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of tetanus neurotoxin"
+        ],
+        "supportive": [
+            "Muscle spasms",
+            "Difficulty breathing",
+            "Seizures",
+            "History of wound contamination"
+        ]
+    },
+    "differential_diagnoses": []
+}

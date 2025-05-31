@@ -1,0 +1,18 @@
+{
+  "id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "mrn": "MRNADF33C3B",
+  "first_name": "Steven",
+  "last_name": "Ortega",
+  "date_of_birth": "2006-02-16",
+  "gender": "Male",
+  "address": "8491 Williams Village",
+  "phone": "(517)480-5156x308",
+  "email": "mgibson@cortez-morgan.org",
+  "insurance_provider": "Blue Cross",
+  "insurance_id": "MG490723",
+  "primary_care_provider": "Dr. Johnson",
+  "emergency_contact_name": "Danielle Dean",
+  "emergency_contact_phone": "038.036.7029",
+  "created_at": "2025-03-24T12:52:01.080448",
+  "updated_at": "2025-03-24T12:52:01.080448"
+}

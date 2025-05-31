@@ -1,0 +1,68 @@
+{
+    "disease": "Chagas' disease",
+    "icd_code": "B5739",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fecaloma",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "finding": "Megacolon"
+            },
+            {
+                "finding": "Megaesophagus"
+            },
+            {
+                "finding": "Gastric distension (infrequent)"
+            },
+            {
+                "finding": "Pyloric hypertrophy (infrequent)"
+            },
+            {
+                "finding": "Small bowel dilatation (with or without Chagas enteropathy)"
+            }
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Infection with Trypanosoma cruzi",
+            "Residence in or immigration from endemic areas (Central and Southern South America)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Compatible epidemiological antecedents (exposure to Trypanosoma cruzi)",
+            "Two positive serological tests for Trypanosoma cruzi using different antigens (a third test is indicated in case of discrepancies)"
+        ],
+        "supportive": [
+            "Constipation",
+            "Dysphagia",
+            "Abdominal pain",
+            "Megacolon",
+            "Megaesophagus",
+            "Other digestive symptoms"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,138 @@
+{
+    "disease": "Pharyngeal diphtheria",
+    "icd_code": "A360",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Present",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Severe throat pain",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Neck pain",
+                "severity": "Present",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Neck swelling",
+                "severity": "Present",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Present",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Present",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Low-grade fever (less than 101\u00b0F)",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hoarseness",
+                "severity": "Present",
+                "pattern": "Present in laryngeal diphtheria"
+            },
+            {
+                "name": "Barking cough",
+                "severity": "Present",
+                "pattern": "Present in laryngeal diphtheria"
+            },
+            {
+                "name": "Mucopurulent nasal discharge",
+                "severity": "Present",
+                "pattern": "Present in nasal diphtheria"
+            },
+            {
+                "name": "Blood-tinged nasal discharge",
+                "severity": "Present",
+                "pattern": "Present in nasal diphtheria"
+            },
+            {
+                "name": "Prostration",
+                "severity": "Severe",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Pallor",
+                "severity": "Present",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Rapid pulse",
+                "severity": "Present",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Stupor",
+                "severity": "Present",
+                "pattern": "Present in severe cases"
+            },
+            {
+                "name": "Coma",
+                "severity": "Present",
+                "pattern": "Present in severe cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "pulse": "Rapid in severe cases"
+        },
+        "physical_findings": [
+            "Gray, leathery membrane on soft palate",
+            "Membrane extending to edematous uvula",
+            "Membrane extending to hypopharynx",
+            "Edematous epiglottis and left aryepiglottic fold",
+            "Bilateral level 2 and 3 lymph nodes, tender and enlarged, measuring more than 2 cm",
+            "Minimal mucosal erythema surrounding the membrane",
+            "Membrane firmly adherent to tissue",
+            "Bull neck appearance (in severe cases)",
+            "Normal oropharyngeal mucosa after treatment"
+        ],
+        "lab_values": {
+            "Albert stain": "Green-colored bacilli with blue-colored metachromatic granules arranged in a Chinese letter pattern",
+            "Culture": "Tiny white nonhemolytic colonies on blood agar; Corynebacterium diphtheriae identified by MALDI-TOF MS",
+            "Molecular analysis": "Positive for diphtheria toxin encoding genes (toxA and toxB) and diphtheria toxin repressor (DtxR) genes"
+        },
+        "risk_factors": [
+            "Poor immunization coverage",
+            "Failure to receive booster doses of DPT vaccine",
+            "Waning immunity in adults"
+        ],
+        "imaging_findings": {
+            "Video laryngoscopy (VLS)": "Membrane seen extending up to the hypopharynx on the left side; edematous epiglottis and left aryepiglottic fold; normal vocal cord mobility; wide glottic chink"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (pharyngitis, membrane formation)",
+            "Positive Albert stain showing Corynebacterium diphtheriae"
+        ],
+        "supportive": [
+            "Positive culture for Corynebacterium diphtheriae",
+            "Positive Elek test (confirms toxin production)",
+            "Positive molecular analysis for toxin genes"
+        ]
+    },
+    "differential_diagnoses": []
+}

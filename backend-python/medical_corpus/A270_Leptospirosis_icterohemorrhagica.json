@@ -1,0 +1,179 @@
+{
+    "disease": "Leptospirosis icterohemorrhagica",
+    "icd_code": "A270",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high",
+                "pattern": "Acute, biphasic in many cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Intense",
+                "pattern": "Acute, bilateral temporal or frontal"
+            },
+            {
+                "name": "Muscle aches (myalgia)",
+                "severity": "Severe",
+                "pattern": "Acute, often in calf muscles and lower back"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Conjunctival suffusion",
+                "severity": "Characteristic",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Subconjunctival hemorrhage",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable, can be severe in Weil's disease",
+                "pattern": "Develops in severe cases"
+            },
+            {
+                "name": "Rash",
+                "severity": "Rare",
+                "pattern": "If present, suggests alternative diagnoses"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Variable",
+                "pattern": "Present in 20-57%"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Rare",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Rare",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Can be severe",
+                "pattern": "Develops in the immune phase"
+            },
+            {
+                "name": "Kidney failure",
+                "severity": "Can be severe",
+                "pattern": "Develops in the immune phase"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable, can be severe",
+                "pattern": "Can involve lungs, stomach, nose; petechiae, ecchymoses"
+            },
+            {
+                "name": "Altered level of consciousness",
+                "severity": "Can be severe",
+                "pattern": "Associated with meningitis"
+            },
+            {
+                "name": "Neurological complications",
+                "severity": "Variable",
+                "pattern": "Can include hemiparesis, transverse myelitis, Guillain-Barr\u00e9 syndrome"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "Rare",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Pericarditis",
+                "severity": "Rare",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Cardiac conduction abnormalities",
+                "severity": "Rare",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Cardiac arrhythmias",
+                "severity": "Rare",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "blood_pressure": "May be low in severe cases",
+            "heart_rate": "May be elevated or abnormal",
+            "respiratory_rate": "May be elevated in severe cases with pulmonary hemorrhage"
+        },
+        "physical_findings": [
+            "Jaundice",
+            "Conjunctival suffusion",
+            "Subconjunctival hemorrhage",
+            "Hepatosplenomegaly (rare)",
+            "Lymphadenopathy (rare)",
+            "Petechiae",
+            "Ecchymoses"
+        ],
+        "lab_values": {
+            "liver_function_tests": "Elevated bilirubin, other enzymes may be elevated",
+            "renal_function_tests": "Elevated creatinine, BUN; reduced urine output",
+            "complete_blood_count": "May show leukocytosis, thrombocytopenia",
+            "coagulation_studies": "Prolonged prothrombin time in severe cases"
+        },
+        "risk_factors": [
+            "Exposure to contaminated water or soil",
+            "Contact with infected animals (rodents, livestock)",
+            "Occupations with high risk of exposure (farmers, veterinarians, sewer workers)",
+            "Poor sanitation",
+            "Flooding",
+            "Heavy rainfall",
+            "Travel to endemic areas",
+            "HLA-DQ6 allele"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show pulmonary infiltrates or edema in severe cases",
+            "other": "Not routinely used in diagnosis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with leptospirosis (fever, headache, myalgia)",
+            "Positive serological test for leptospiral antibodies (MAT, ELISA)"
+        ],
+        "supportive": [
+            "Isolation of Leptospira from blood or urine",
+            "PCR detection of Leptospira DNA in blood or urine"
+        ]
+    },
+    "differential_diagnoses": [
+        "Influenza",
+        "Dengue fever",
+        "Other viral hemorrhagic fevers",
+        "Typhoid fever",
+        "Malaria",
+        "Sepsis",
+        "Acute pancreatitis",
+        "Acute cholecystitis"
+    ]
+}

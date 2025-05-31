@@ -1,0 +1,124 @@
+{
+    "disease": "Anthrax Sepsis",
+    "icd_code": "A227",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shock",
+                "severity": "Severe",
+                "pattern": "Common in gastrointestinal, inhalational, and injectional anthrax; less common in cutaneous anthrax"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Can occur in cutaneous anthrax"
+            },
+            {
+                "name": "Regional lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Can occur in cutaneous anthrax"
+            },
+            {
+                "name": "Painless or pruritic papule",
+                "severity": "Mild to moderate",
+                "pattern": "Initial skin lesion in cutaneous anthrax, progressing to vesicle, ulcer, and black eschar"
+            },
+            {
+                "name": "Edema",
+                "severity": "Variable",
+                "pattern": "Disproportionate edema associated with cutaneous anthrax lesions; can cause airway compromise in face or neck infections"
+            },
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Variable",
+                "pattern": "Can be a clue to anthrax infection, especially in clusters of patients"
+            },
+            {
+                "name": "Pulmonary edema",
+                "severity": "Severe",
+                "pattern": "Observed in inhalational anthrax and in some cases of sepsis"
+            },
+            {
+                "name": "Hemorrhagic lesions",
+                "severity": "Severe",
+                "pattern": "Observed in the lungs in some cases of sepsis"
+            },
+            {
+                "name": "Serosanguinous pleural effusions",
+                "severity": "Severe",
+                "pattern": "Observed in the lungs in some cases of sepsis"
+            },
+            {
+                "name": "Intra-alveolar edema",
+                "severity": "Severe",
+                "pattern": "Observed in the lungs in some cases of sepsis"
+            },
+            {
+                "name": "Disseminated intravascular coagulation (DIC)",
+                "severity": "Severe",
+                "pattern": "Observed in some cases of sepsis"
+            },
+            {
+                "name": "Systemic inflammation",
+                "severity": "Severe",
+                "pattern": "Observed in some cases of sepsis"
+            },
+            {
+                "name": "Changes in vascular permeability",
+                "severity": "Severe",
+                "pattern": "Observed in some cases of sepsis"
+            },
+            {
+                "name": "Persistent somatic symptoms",
+                "severity": "Variable",
+                "pattern": "Reported in survivors one year post-infection, affecting multiple body systems"
+            },
+            {
+                "name": "Psychological distress",
+                "severity": "Significant",
+                "pattern": "Reported in survivors one year post-infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Hypotension (common in shock)",
+            "heart_rate": "Tachycardia (common in shock)",
+            "respiratory_rate": "Tachypnea (common in shock and pulmonary involvement)",
+            "temperature": "Fever (variable, can be present)"
+        },
+        "physical_findings": [
+            "Painless or pruritic papule progressing to vesicle, ulcer, and black eschar (cutaneous anthrax)",
+            "Edema (cutaneous anthrax)",
+            "Regional lymphadenopathy (cutaneous anthrax)",
+            "Pulmonary edema (inhalational anthrax and sepsis)",
+            "Hemorrhagic lesions (sepsis)",
+            "Serosanguinous pleural effusions (sepsis)",
+            "Intra-alveolar edema (sepsis)"
+        ],
+        "lab_values": {
+            "blood_cultures": "Positive for Bacillus anthracis",
+            "complete_blood_count": "Leukocytosis or leukopenia (variable)",
+            "coagulation_studies": "Abnormal in DIC"
+        },
+        "risk_factors": [
+            "Exposure to herbivore animal products",
+            "Heroin use",
+            "Bioterrorist event"
+        ],
+        "imaging_findings": {
+            "chest_x-ray": "Pulmonary edema, infiltrates (inhalational anthrax and sepsis)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Bacillus anthracis",
+            "Gram stain and culture from blood or surgical specimens showing gram-positive, rod-shaped bacteria"
+        ],
+        "supportive": [
+            "History of exposure to risk factors",
+            "Clinical presentation consistent with anthrax",
+            "Positive PCR or immunohistochemistry"
+        ]
+    },
+    "differential_diagnoses": []
+}

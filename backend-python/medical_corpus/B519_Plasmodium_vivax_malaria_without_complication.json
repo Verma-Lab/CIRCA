@@ -1,0 +1,48 @@
+{
+    "disease": "Plasmodium vivax malaria",
+    "icd_code": "B519",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "blood_smear": {
+                "abnormal_range": "Presence of Plasmodium vivax parasites"
+            }
+        },
+        "risk_factors": [
+            "Travel to areas with endemic malaria",
+            "Infancy",
+            "Age under 5 years",
+            "Pregnancy",
+            "HIV/AIDS"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Plasmodium vivax parasites in blood smear"
+        ],
+        "supportive": [
+            "Symptoms of malaria (fever, headache, chills)"
+        ]
+    },
+    "differential_diagnoses": []
+}

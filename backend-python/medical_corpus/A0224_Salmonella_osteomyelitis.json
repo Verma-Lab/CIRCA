@@ -1,0 +1,124 @@
+{
+    "disease": "Salmonella osteomyelitis",
+    "icd_code": "A02.24",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in many cases, can be prolonged"
+            },
+            {
+                "name": "Bone pain",
+                "severity": "Severe",
+                "pattern": "Localized to affected bone, can be insidious"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Severe",
+                "pattern": "Common in vertebral osteomyelitis"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May precede osteomyelitis"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "May alternate with diarrhea"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Erythema",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (pyrexia)",
+            "heart_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Paravertebral spasm",
+            "Diminished spine movement",
+            "Hepatomegaly",
+            "Swelling",
+            "Tenderness",
+            "Erythema"
+        ],
+        "lab_values": {
+            "hemoglobin": "May be decreased",
+            "white_blood_cell_count": "Elevated (leukocytosis)",
+            "neutrophils": "Elevated",
+            "lymphocytes": "May be decreased",
+            "ESR": "Elevated",
+            "CRP": "Elevated",
+            "liver_function_tests": "Deranged (GGT, ALT, Alk Phos)",
+            "D-dimer": "Elevated"
+        },
+        "risk_factors": [
+            "Hemoglobinopathies (sickle cell disease, thalassemia)",
+            "Diabetes mellitus",
+            "Systemic lupus erythematosus",
+            "Lymphoma",
+            "Liver disease",
+            "Cardiovascular disease",
+            "Previous surgery or trauma",
+            "Steroid use",
+            "Recent foreign travel",
+            "Gastrointestinal infection"
+        ],
+        "imaging_findings": {
+            "X-ray": "May show lytic lesions, reduced intervertebral disc space",
+            "CT": "May show hepatomegaly, splenomegaly",
+            "MRI": "Demonstrates osteomyelitis, decreased intervertebral disc space, increased signal intensity on T2-weighted images, decreased signal intensity on T1-weighted images"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with osteomyelitis (fever, bone pain, swelling)",
+            "Positive blood culture for Salmonella (although often negative)",
+            "Imaging findings consistent with osteomyelitis (MRI)"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (ESR, CRP)",
+            "History of recent gastrointestinal infection or travel"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neoplastic processes (osteosarcoma, aneurysmal bone cyst, giant cell tumor)",
+        "Tuberculosis",
+        "Other bacterial osteomyelitis"
+    ]
+}

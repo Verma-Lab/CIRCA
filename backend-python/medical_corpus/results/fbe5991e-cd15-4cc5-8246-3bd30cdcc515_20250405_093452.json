@@ -1,0 +1,38 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Essential Hypertension",
+      "icd_code": "I10",
+      "probability": 95,
+      "reasoning": "The patient's chief complaint includes hypertension, and his blood pressure is significantly elevated (144/88 mmHg) on presentation.  His history indicates prior diagnosis and management of hypertension.  The physical exam is otherwise unremarkable, supporting a diagnosis of essential hypertension."
+    },
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 90,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  His home glucose readings (120-180 mg/dL) indicate suboptimal control.  The plan includes adjusting his metformin dosage and ordering an HbA1c to further assess glycemic control."
+    },
+    {
+      "disease": "Tension-type Headache",
+      "icd_code": "G44.9",
+      "probability": 80,
+      "reasoning": "The patient reports occasional mild headaches, described as dull and pressure-like, lasting 2-3 hours, and relieved by acetaminophen. These characteristics are consistent with tension-type headaches.  The absence of neurological deficits further supports this diagnosis."
+    }
+  ],
+  "additional_testing_recommended": [
+    "HbA1c",
+    "Lipid panel",
+    "Comprehensive metabolic panel (to monitor renal function given elevated creatinine)",
+    "Complete blood count (to evaluate fatigue)",
+    "ECG (as noted in the patient information, ECG analysis is unavailable and should be performed to assess for cardiac involvement related to hypertension)"
+  ],
+  "clinical_summary": "The patient presents for follow-up of known hypertension and type 2 diabetes mellitus.  His blood pressure remains elevated, and his blood glucose control is suboptimal.  He also reports recurrent tension-type headaches.  The elevated creatinine warrants further investigation of renal function.  Additional testing, including an ECG, is recommended to fully assess the patient's cardiovascular health and to rule out other potential causes of his symptoms.  The provided medical literature is not directly relevant to this patient's presentation, as it focuses on Legionnaires' disease and its renal complications, which are not suggested by the patient's clinical picture.",
+  "timestamp": "2025-04-05T09:34:52.047547",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

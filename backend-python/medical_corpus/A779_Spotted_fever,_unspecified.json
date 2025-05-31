@@ -1,0 +1,45 @@
+{
+    "disease": "Spotted fever, unspecified",
+    "icd_code": "A779",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Chills",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Rigors",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Tick exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with spotted fever"
+        ],
+        "supportive": [
+            "Positive serology for Rickettsia species"
+        ]
+    },
+    "differential_diagnoses": [
+        "Typhus fever, unspecified (A75.9)",
+        "Fever, unspecified (R50.9)"
+    ]
+}

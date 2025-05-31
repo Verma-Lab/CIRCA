@@ -1,0 +1,84 @@
+{
+    "disease": "Rhinocerebral mucormycosis",
+    "icd_code": "B461",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Often initial symptom, progressing in severity"
+            },
+            {
+                "name": "Facial and orbital pain",
+                "severity": "Variable",
+                "pattern": "Common, can be severe"
+            },
+            {
+                "name": "Ophthalmologic symptoms",
+                "severity": "Variable",
+                "pattern": "Range from pain, ptosis, and proptosis to ophthalmoplegia and blindness"
+            },
+            {
+                "name": "Rhinorrhea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Facial edema",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Often initial, nonspecific symptom"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "Can be present in later stages"
+            },
+            {
+                "name": "Encephalopathy",
+                "severity": "Severe",
+                "pattern": "Can occur with intracranial extension"
+            },
+            {
+                "name": "Cerebritis",
+                "severity": "Severe",
+                "pattern": "Can occur with intracranial extension"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Facial edema",
+            "Ptosis",
+            "Proptosis",
+            "Ophthalmoplegia"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Uncontrolled diabetes mellitus",
+            "Immunosuppression (e.g., following organ transplantation, hematologic malignancies)",
+            "Recent COVID-19 infection with steroid treatment"
+        ],
+        "imaging_findings": {
+            "CT": "Findings consistent with fulminant sinusitis",
+            "MRI": "Sinonasal and cavernous sinus invasive fungal infiltration; Temporal lobe abscess; Frontal lobe abscess; Frontal bone osteomyelitis; Cavernous sinus thrombosis; Multiple infarcts; Internal carotid artery thrombosis; Cribriform plate osteomyelitis; Pachymeningitis; Extensive skull base osteomyelitis; Mucormycosis associated ICA bifurcation aneurysm"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with rhinocerebral mucormycosis (e.g., headache, facial/orbital pain, ophthalmologic symptoms)",
+            "Histopathologic evidence of Mucorales species"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of sinusitis with intracranial extension",
+            "Risk factors for mucormycosis (e.g., diabetes, immunosuppression)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial sinusitis"
+    ]
+}

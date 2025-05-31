@@ -1,0 +1,105 @@
+{
+    "disease": "Systemic bartonellosis",
+    "icd_code": "A440",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Prolonged, may be of unknown origin"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Regional in most cases, may be widespread"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Stomach discomfort",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Hepatosplenic illness",
+                "severity": "Variable",
+                "pattern": "Less frequent, atypical variant"
+            },
+            {
+                "name": "Osteomyelitis",
+                "severity": "Variable",
+                "pattern": "Less frequent, atypical variant"
+            },
+            {
+                "name": "Ophthalmic abnormalities",
+                "severity": "Variable",
+                "pattern": "Less frequent, atypical variant"
+            },
+            {
+                "name": "Neurological involvement (encephalitis or endocarditis)",
+                "severity": "Variable",
+                "pattern": "Less frequent, atypical variant"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Lymphadenopathy",
+            "Splenomegaly",
+            "Hepatic microabscesses (occasional)"
+        ],
+        "lab_values": {
+            "Hemoglobin": "May be decreased (mean 12.6 mg/dL in one study)",
+            "WBC count": "May be elevated (mean 13.1 \u00d7 10\u00b3 cells/microliter in one study)",
+            "Platelet count": "May be elevated (mean 340.6 \u00d7 10\u00b3 per microliter in one study)",
+            "ESR": "Elevated in 47.4% of patients in one study",
+            "CRP": "Elevated in 21.1% of patients in one study",
+            "Bartonella henselae IgM": "Positive in 63.2% of patients in one study",
+            "Bartonella henselae IgG": "Positive in 94.7% of patients in one study"
+        },
+        "risk_factors": [
+            "Contact with animals (especially felines)",
+            "Immunocompromise"
+        ],
+        "imaging_findings": {
+            "Ultrasound": "Widespread lymphadenopathy, occasional splenomegaly, hepatic microabscesses (multiple hypoechoic lesions with well-defined thick margins)",
+            "CT": "Granulomatous lesions in liver and spleen",
+            "MRI": "Granulomatous lesions in liver and spleen"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Contact with animals",
+            "Prolonged fever of unknown origin",
+            "Positive serological tests for Bartonella henselae"
+        ],
+        "supportive": [
+            "Hematological manifestations",
+            "Hepatosplenic disease",
+            "Imaging findings consistent with bartonellosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lymphoma"
+    ]
+}

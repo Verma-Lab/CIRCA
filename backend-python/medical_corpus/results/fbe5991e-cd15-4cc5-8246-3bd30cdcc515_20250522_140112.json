@@ -1,0 +1,32 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11",
+      "probability": 95,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus. His home glucose readings range from 120-180 mg/dL, and his last A1c was 7.8% three months ago, indicating suboptimal control. While specific lab values for fasting glucose or OGTT are not provided, the elevated A1c meets the diagnostic criteria. He also reports fatigue, which can be a symptom of diabetes."
+    },
+    {
+      "disease": "Hypertension",
+      "icd_code": "I10",
+      "probability": 90,
+      "reasoning": "The patient has a history of hypertension. His blood pressure today is elevated at 144/88, above the goal of <140/90. This persistent elevation of blood pressure confirms the diagnosis. He also reports fatigue, which can be a symptom of hypertension."
+    }
+  ],
+  "differential_diagnoses": [],
+  "additional_testing_recommended": [
+    "Repeat HbA1c to confirm current glycemic control.",
+    "Fasting lipid panel to assess hyperlipidemia management.",
+    "Comprehensive metabolic panel to monitor renal function, especially given the elevated creatinine.",
+    "Complete blood count to evaluate for causes of fatigue."
+  ],
+  "clinical_summary": "The patient is a 58-year-old male with a history of type 2 diabetes mellitus and hypertension. His diabetes is suboptimally controlled, and his blood pressure is elevated. Further investigation into the cause of his fatigue is warranted. The elevated creatinine should be monitored closely.",
+  "timestamp": "2025-05-22T14:01:12.023961",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G43.909",
+    "E78.5",
+    "M16.9"
+  ]
+}

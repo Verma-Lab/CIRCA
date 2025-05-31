@@ -1,0 +1,61 @@
+{
+    "disease": "Brucellosis due to Brucella melitensis",
+    "icd_code": "A230",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, from acute and nonspecific to chronic",
+                "pattern": "Intermittent or undulating"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Endocarditis",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Neurological disorders",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, variable"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood cultures": "Positive for Brucella melitensis",
+            "serological assays": "Positive for Brucella antibodies",
+            "molecular methods": "Detection of Brucella melitensis DNA"
+        },
+        "risk_factors": [
+            "Consumption of contaminated animal products (unpasteurized milk, cheese)",
+            "Contact with infected animals",
+            "Occupational exposure (farmers, veterinarians, slaughterhouse workers)",
+            "Living in endemic areas"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Brucella melitensis",
+            "Positive serological tests for Brucella antibodies"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with brucellosis",
+            "Epidemiological risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

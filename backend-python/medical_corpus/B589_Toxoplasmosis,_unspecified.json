@@ -1,0 +1,42 @@
+{
+    "disease": "Toxoplasmosis, unspecified",
+    "icd_code": "B589",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Mild to moderate",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Muscle aches and pains",
+                "severity": "Mild to moderate",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Swollen lymph nodes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Compromised immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological test for Toxoplasma gondii antibodies"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with toxoplasmosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,92 @@
+{
+    "disease": "Borderline Leprosy",
+    "icd_code": "A303",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Reddish patches and plaques",
+                "severity": "Variable",
+                "pattern": "Progressive enlargement and spread to trunk and limbs"
+            },
+            {
+                "name": "Hypochromic macules",
+                "severity": "Variable",
+                "pattern": "Can become red, edematous, and enlarged after MDT initiation"
+            },
+            {
+                "name": "Diminished skin sensation",
+                "severity": "Variable",
+                "pattern": "Present on lesions"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild",
+                "pattern": "Occurred in one case after MDT initiation"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild",
+                "pattern": "Occurred in one case after MDT initiation"
+            },
+            {
+                "name": "Pain",
+                "severity": "Mild",
+                "pattern": "Accompanied edema in one case during type 1 reaction"
+            },
+            {
+                "name": "Skin discoloration",
+                "severity": "Mild to moderate",
+                "pattern": "Induced by clofazimine"
+            },
+            {
+                "name": "Ichthyosis",
+                "severity": "Mild to moderate",
+                "pattern": "Induced by clofazimine"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "oxygen_saturation": "90% on room air (in one case)"
+        },
+        "physical_findings": [
+            "Multiple infiltrated reddish patches and plaques",
+            "Partially pigmented desquamation",
+            "Diminished skin sensation on lesions",
+            "Tender and thickened peripheral nerves (ulnar nerves in one case)",
+            "Edema",
+            "Skin discoloration and ichthyosis (clofazimine-induced)"
+        ],
+        "lab_values": {
+            "acid-fast_bacilli": "4+ positive in one case",
+            "neutrophils": "40/\u03bcL (in one case)",
+            "hemoglobin": "8.1 g/dL (in one case)",
+            "methemoglobin": "12.9% (in one case)",
+            "HLA-B*13:01": "Negative in one case"
+        },
+        "risk_factors": [
+            "Nonpolar forms of leprosy",
+            "Close contact with untreated leprosy cases"
+        ],
+        "imaging_findings": {
+            "ultrasonography": "Reduction of blood flow around ulnar nerves in one case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "At least one of the following: definite loss of sensation in a pale (hypopigmented) or reddish skin patch; thickened or enlarged peripheral nerve, with loss of sensation and/or weakness of the muscles supplied by that nerve; microscopic detection of bacilli in a slit-skin smear"
+        ],
+        "supportive": [
+            "Clinical presentation",
+            "Histopathological findings (plasmocytic and lymphocytic infiltration in the nerve tract)",
+            "Positive AFB stain",
+            "Positive PCR for M. leprae"
+        ]
+    },
+    "differential_diagnoses": [
+        "Sarcoidosis",
+        "Cutaneous lupus erythematosus",
+        "Cutaneous leishmaniasis",
+        "Fungal infection",
+        "Other mycobacterial infections"
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "disease": "Tuberculosis of kidney and ureter",
+    "icd_code": "A1811",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Left low back pain",
+                "severity": "Persistent",
+                "pattern": "8 months duration"
+            },
+            {
+                "name": "Hematuria",
+                "severity": "Present",
+                "pattern": "Associated with back pain"
+            },
+            {
+                "name": "Flank pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Constitutional symptoms",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "urine culture": "Positive in 2/8 patients"
+        },
+        "risk_factors": [
+            "Ureteral obstruction (e.g., ureteral lithiasis)",
+            "Decreased immunity (e.g., diabetes mellitus, malnutrition, alcoholism, HIV infection)"
+        ],
+        "imaging_findings": {
+            "Plain film": [
+                "Calcification (triangular in papillary necrosis, focal or amorphous in putty kidney)",
+                "Parenchymal scars (50%)",
+                "Moth-eaten calyces",
+                "Irregular caliectasis",
+                "Phantom calyx",
+                "Hydronephrosis",
+                "Hiked up renal calyx"
+            ],
+            "IVP": [
+                "Parenchymal scars",
+                "Moth-eaten calyces",
+                "Irregular caliectasis",
+                "Phantom calyx",
+                "Hydronephrosis"
+            ],
+            "Ultrasound": [
+                "Normal kidney or small focal cortical lesions",
+                "Calcification",
+                "Papillary destruction with echogenic masses",
+                "Distorted renal parenchyma",
+                "Irregular hypoechoic masses",
+                "Mucosal thickening",
+                "Small, fibrotic thick-walled bladder",
+                "Echogenic foci or calcification in bladder wall",
+                "Pyonephrosis",
+                "Small, shrunken kidney",
+                "Paper-thin cortex",
+                "Dense dystrophic calcification"
+            ],
+            "CT": [
+                "Papillary necrosis",
+                "Uneven caliectasis",
+                "Multifocal strictures",
+                "Hydronephrosis",
+                "Mural thickening and enhancement",
+                "Poorly enhancing renal parenchyma",
+                "Amorphous dystrophic calcification (putty kidney)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive urine culture or histology showing tuberculosis",
+            "Imaging findings consistent with renal tuberculosis"
+        ],
+        "supportive": [
+            "Symptoms of renal tuberculosis (e.g., flank pain, hematuria)",
+            "Risk factors for renal tuberculosis (e.g., history of ureteral obstruction, immunosuppression)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Papillary necrosis",
+        "Medullary sponge kidney",
+        "Transitional cell carcinoma (TCC) of renal tract",
+        "Squamous cell carcinoma (SCC) of renal tract",
+        "Xanthogranulomatous pyelonephritis (XGP)"
+    ]
+}

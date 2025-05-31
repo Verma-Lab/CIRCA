@@ -1,0 +1,89 @@
+{
+    "disease": "Penicillosis (Talaromycosis)",
+    "icd_code": "B484",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intermittent fever",
+                "severity": "Moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Dry cough",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Unspecified",
+                "pattern": "Distributed mainly over the face, trunk, and upper limbs; various morphologies (vesicles, papules, nodules, hemorrhagic, crusted lesions)"
+            },
+            {
+                "name": "Oral and vaginal candidiasis",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Respiratory signs",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Multiple lesions on the face with different morphologies such as vesicles, papules, and nodules interspersed with hemorrhagic and crusted lesions",
+            "Few lesions also present over the trunk and upper limbs",
+            "Bilateral diffuse reticulonodular opacities with prominent bronchovascular markings (chest X-ray)"
+        ],
+        "lab_values": {
+            "HIV": "Positive",
+            "CD4 T cell count": "62/\u03bcL"
+        },
+        "risk_factors": [
+            "Immunocompromised state (HIV infection)",
+            "Exposure to soil containing spores"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Bilateral diffuse reticulonodular opacities with prominent bronchovascular markings"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological findings: Multiple fungal elements with nonbudding yeast cells having transverse septum",
+            "Culture: Flat, glabrous, moist, and radially folded colonies with diffusible red pigment after 5 days of incubation at 25\u00b0C"
+        ],
+        "supportive": [
+            "Clinical presentation: Fever, cough, characteristic skin lesions",
+            "Immunocompromised status"
+        ]
+    },
+    "differential_diagnoses": [
+        "Histoplasmosis",
+        "Cryptococcosis",
+        "Hemorrhagic varicella",
+        "Pulmonary tuberculosis",
+        "Melioidosis",
+        "Leishmaniasis"
+    ]
+}

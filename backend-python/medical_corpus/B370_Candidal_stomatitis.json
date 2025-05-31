@@ -1,0 +1,72 @@
+{
+    "disease": "Candidal stomatitis",
+    "icd_code": "B370",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "White plaques or film",
+                "severity": "Variable",
+                "pattern": "Extensive in pseudomembranous candidiasis; may be absent in atrophic candidiasis"
+            },
+            {
+                "name": "Burning sensation",
+                "severity": "Variable",
+                "pattern": "Common in acute atrophic candidiasis"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present in various forms"
+            },
+            {
+                "name": "Redness (erythema)",
+                "severity": "Variable",
+                "pattern": "Underlying erythema may be visible after removal of plaques; bright red tongue in atrophic candidiasis"
+            },
+            {
+                "name": "Fissuring and scaling",
+                "severity": "Variable",
+                "pattern": "Present in angular cheilitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "White, cottage cheese-like plaques on buccal mucosa, tongue, periodontal tissues, and oropharynx (pseudomembranous candidiasis)",
+            "Bright red and painful tongue (acute atrophic candidiasis)",
+            "Fissuring, scaling, and erythema at the corners of the mouth (angular cheilitis)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Reduced salivary production",
+            "Use of dentures",
+            "Use of topical or inhaled corticosteroids",
+            "Unbalanced diet high in sugars, carbohydrates, and dairy products",
+            "Extremes of age (immature or weakened immunity)",
+            "Malnutrition (iron deficiency, deficiencies in other nutrients)",
+            "Prolonged use of broad-spectrum antibiotics or immunosuppressants",
+            "Endocrine dysfunctions (diabetes, Cushing's syndrome)",
+            "Immunodeficiency conditions (AIDS)",
+            "Chemotherapy and radiotherapy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with candidal stomatitis (e.g., white plaques, erythema, burning sensation)"
+        ],
+        "supportive": [
+            "Positive culture for Candida species",
+            "Microscopic examination of mucosal smear or biopsy showing Candida overgrowth"
+        ]
+    },
+    "differential_diagnoses": [
+        "Mucositis",
+        "Denture stomatitis",
+        "Erythema migrans",
+        "Thermal burns",
+        "Erythroplakia",
+        "Anemia",
+        "Bacterial infections (Staphylococcus, Streptococcus)"
+    ]
+}

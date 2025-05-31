@@ -1,0 +1,174 @@
+{
+    "disease": "Fatal Familial Insomnia (FFI)",
+    "icd_code": "A8183",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Insomnia",
+                "severity": "Severe, progressive, refractory",
+                "pattern": "Initially reduced sleep duration, progressing to total insomnia lasting 72-96 hours"
+            },
+            {
+                "name": "Hand tremor",
+                "severity": "Present",
+                "pattern": "Developed in subsequent months after insomnia onset"
+            },
+            {
+                "name": "Fever spikes",
+                "severity": "High, up to 102\u00b0F",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Profuse sweating",
+                "severity": "Present",
+                "pattern": "Occurred alongside fever spikes"
+            },
+            {
+                "name": "Short-term memory problems",
+                "severity": "Serious impairment",
+                "pattern": "Progressive worsening"
+            },
+            {
+                "name": "Confusion and disorientation",
+                "severity": "Frequent",
+                "pattern": "Especially during periods of prolonged insomnia"
+            },
+            {
+                "name": "Hypertension",
+                "severity": "Present",
+                "pattern": "Elevated blood pressure (160/90 mm Hg)"
+            },
+            {
+                "name": "Cardiac arrhythmias",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Renal hypertension",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Diabetes",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Heart attack",
+                "severity": "Present",
+                "pattern": "Occurred during the course of the illness"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Intense",
+                "pattern": "Occurred after 5 consecutive nights of insomnia"
+            },
+            {
+                "name": "Delusions",
+                "severity": "Present",
+                "pattern": "Occurred after 5 consecutive nights of insomnia"
+            },
+            {
+                "name": "Minor stroke",
+                "severity": "Present",
+                "pattern": "Occurred during the course of the illness"
+            },
+            {
+                "name": "Panic attacks",
+                "severity": "Present",
+                "pattern": "Treated with meprobate"
+            },
+            {
+                "name": "Hallucinations",
+                "severity": "Present",
+                "pattern": "Occurred while driving"
+            },
+            {
+                "name": "Loss of sense of time",
+                "severity": "Complete",
+                "pattern": "Present in later stages"
+            },
+            {
+                "name": "Difficulty maintaining attention",
+                "severity": "Present",
+                "pattern": "Often unaware of phone ringing"
+            },
+            {
+                "name": "Difficulty distinguishing reality from fantasy",
+                "severity": "Present",
+                "pattern": "Uncertainty about actions performed"
+            },
+            {
+                "name": "Persistent headaches",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abnormal movements",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Laryngeal stridor",
+                "severity": "Present",
+                "pattern": "Occurred after falling asleep"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Rapidly progressing",
+                "pattern": "Progressive memory decline"
+            },
+            {
+                "name": "Mental disorders",
+                "severity": "Obvious, serious",
+                "pattern": "Progressive worsening"
+            },
+            {
+                "name": "Mobility dysfunction",
+                "severity": "Severe",
+                "pattern": "Inability to move independently"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Elevated (160/90 mm Hg from premorbid 120/80 mm Hg)",
+            "temperature": "Elevated, as high as 102\u00b0F"
+        },
+        "physical_findings": [
+            "Hand tremor",
+            "Profuse sweating",
+            "Abnormal movements",
+            "Laryngeal stridor",
+            "Frontal temporal lobe atrophy (imaging)"
+        ],
+        "lab_values": {
+            "14-3-3 protein": "Negative",
+            "PRNP gene": "Mutation at codon 178 (D178N)"
+        },
+        "risk_factors": [
+            "Family history of FFI",
+            "Genetic predisposition (PRNP gene mutation)"
+        ],
+        "imaging_findings": {
+            "cranial_MRI": "Frontal temporal lobe atrophy"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Progressive insomnia",
+            "Autonomic dysfunction",
+            "Neurological symptoms (e.g., ataxia, dysarthria)",
+            "PRNP gene mutation (D178N)"
+        ],
+        "supportive": [
+            "Family history of FFI",
+            "Specific imaging findings (thalamic atrophy)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Morvan syndrome",
+        "Delirium tremens",
+        "Other prion diseases",
+        "Alzheimer's disease"
+    ]
+}

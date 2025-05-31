@@ -1,0 +1,100 @@
+{
+    "disease": "Eczema herpeticum",
+    "icd_code": "B000",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be spiky and persistent",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Rhinorrhea",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to severe",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Periorbital swelling",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Purulent discharge from lesions",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Itchy blisters or punched-out erosions",
+                "severity": "Variable",
+                "pattern": "Characteristic finding"
+            },
+            {
+                "name": "Painful blisters",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable, can be absent",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (e.g., 38.6\u00b0C)",
+            "heart_rate": "Elevated (e.g., 124 bpm)",
+            "respiratory_rate": "Elevated (e.g., 24 breaths/min)"
+        },
+        "physical_findings": [
+            "Multiple grouped punched-out ulcers with local dissemination",
+            "Erosions and excoriations",
+            "Secondary impetiginization",
+            "Absence of palpable lymphadenopathy (in some cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated (e.g., 8 \u00d7 109/L)",
+            "neutrophils": "Elevated (e.g., 48.9%)",
+            "lymphocytes": "Within normal range (e.g., 38%)",
+            "monocytes": "Within normal range (e.g., 12%)",
+            "hemoglobin": "Within normal range (e.g., 114 g/L)",
+            "platelet_count": "Within normal range (e.g., 275 \u00d7 109/L)",
+            "C-reactive_protein": "Elevated (e.g., 5.43 nmol/L)"
+        },
+        "risk_factors": [
+            "Atopic dermatitis (AD)",
+            "Early-onset AD",
+            "Head and neck AD",
+            "Large body surface area involvement of AD",
+            "Impaired skin barrier function"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Patient with known atopic dermatitis",
+            "Acute eruption of painful, monomorphic clustered vesicles",
+            "Associated fever and malaise"
+        ],
+        "supportive": [
+            "Positive viral swab (HSV-1 or HSV-2)",
+            "Tzanck test showing multinucleated giant cells",
+            "Virus isolation",
+            "Skin biopsy showing characteristic pathological changes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Impetigo",
+        "Eczema vaccinatum",
+        "Primary varicella infection"
+    ]
+}

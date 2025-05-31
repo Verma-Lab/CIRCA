@@ -1,0 +1,65 @@
+{
+    "disease": "Malignant neoplasm of unspecified bones and articular cartilage of unspecified limb",
+    "icd_code": "C4090",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bone pain",
+                "severity": "Variable",
+                "pattern": "Can be localized or widespread"
+            },
+            {
+                "name": "Bone fracture",
+                "severity": "Variable",
+                "pattern": "May occur due to weakened bone structure"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be present due to tumor growth and bone destruction"
+            },
+            {
+                "name": "General unwellness",
+                "severity": "Variable",
+                "pattern": "May be present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in case of infection",
+            "heart_rate": "May be elevated in case of pain or infection",
+            "respiratory_rate": "May be elevated in case of pain or infection",
+            "blood_pressure": "May be elevated in case of pain or infection"
+        },
+        "physical_findings": [
+            "Palpable mass or swelling",
+            "Localized tenderness",
+            "Limited range of motion",
+            "Signs of bone destruction (e.g., pathological fracture)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Ionizing radiation",
+            "Genetic disorders (Li-Fraumeni, Rothmund-Thompson syndromes, hereditary retinoblastoma)",
+            "Paget's disease",
+            "Osteomyelitis"
+        ],
+        "imaging_findings": {
+            "X-ray": "May show lytic or blastic lesions, cortical destruction, or periosteal reaction",
+            "CT scan": "Provides detailed images of bone structure and can help delineate the extent of the tumor",
+            "MRI": "Can help assess the soft tissue involvement and differentiate between benign and malignant lesions",
+            "Bone scan": "Can detect metastatic disease"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Radiological evidence of bone lesion",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Clinical symptoms (pain, swelling, fracture)",
+            "Elevated inflammatory markers (if infection present)"
+        ]
+    },
+    "differential_diagnoses": []
+}

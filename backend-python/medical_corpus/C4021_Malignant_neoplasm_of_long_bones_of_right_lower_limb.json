@@ -1,0 +1,80 @@
+{
+    "disease": "Malignant neoplasm of long bones of right lower limb",
+    "icd_code": "C4021",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bone pain",
+                "severity": "Variable",
+                "pattern": "Localized, may worsen at night"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Localized over affected bone"
+            },
+            {
+                "name": "Limited range of motion",
+                "severity": "Variable",
+                "pattern": "In affected joint"
+            },
+            {
+                "name": "Fracture",
+                "severity": "Severe",
+                "pattern": "Pathologic fracture of affected bone"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in presence of infection",
+            "heart_rate": "May be elevated due to pain or infection",
+            "respiratory_rate": "May be elevated due to pain or infection",
+            "blood_pressure": "May be elevated due to pain or stress"
+        },
+        "physical_findings": [
+            "Localized tenderness",
+            "Swelling",
+            "Mass",
+            "Limited range of motion",
+            "Signs of pathologic fracture"
+        ],
+        "lab_values": {
+            "Alkaline phosphatase": "Elevated",
+            "Lactate dehydrogenase": "Elevated",
+            "Complete blood count": "May show anemia"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "X-ray": "Lytic or blastic lesions, cortical destruction, periosteal reaction",
+            "CT scan": "Detailed assessment of bone involvement, soft tissue extension",
+            "MRI": "Evaluation of marrow involvement, soft tissue masses",
+            "Bone scan": "Detection of metastatic disease"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings consistent with malignant bone neoplasm",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Clinical symptoms and signs",
+            "Elevated tumor markers"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign bone tumors",
+        "Osteomyelitis",
+        "Stress fracture",
+        "Metastatic bone disease"
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "disease": "Unspecified viral hepatitis with hepatic coma",
+    "icd_code": "B1911",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Pale stools",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Fever",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Present",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Hepatic encephalopathy (hepatic coma)",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Severe bleeding",
+                "severity": "Severe",
+                "pattern": "Episodic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Jaundice (yellowing of skin and eyes)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of liver inflammation",
+            "Hepatic encephalopathy (hepatic coma)"
+        ],
+        "supportive": [
+            "Jaundice",
+            "Pale stools",
+            "Dark urine",
+            "Nausea",
+            "Fever",
+            "Muscle pain",
+            "Fatigue",
+            "Weakness",
+            "Severe bleeding"
+        ]
+    },
+    "differential_diagnoses": []
+}

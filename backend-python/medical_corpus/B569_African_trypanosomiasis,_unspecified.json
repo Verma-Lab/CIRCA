@@ -1,0 +1,124 @@
+{
+    "disease": "African trypanosomiasis, unspecified",
+    "icd_code": "B569",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Trypanosomal chancre",
+                "severity": "Variable",
+                "pattern": "Appears at the site of the tsetse fly bite within a few days to 2 weeks; evolves into a red, painful, indurated nodule that may ulcerate."
+            },
+            {
+                "name": "Intermittent fever",
+                "severity": "Variable",
+                "pattern": "Develops over several months in T. b. gambiense infection, weeks in T. b. rhodesiense; irregular pattern over many weeks."
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in both early and late stages; can be persistent in CNS involvement."
+            },
+            {
+                "name": "Rigors",
+                "severity": "Variable",
+                "pattern": "Present in the hemolymphatic stage."
+            },
+            {
+                "name": "Transient edema",
+                "severity": "Variable",
+                "pattern": "Facial swelling, can be present in the hemolymphatic stage."
+            },
+            {
+                "name": "Generalized lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Often occurs; Winterbottom's sign (enlarged lymph nodes in the posterior cervical triangle) is characteristic with T. b. gambiense."
+            },
+            {
+                "name": "Muscle and joint pain (myalgia, arthralgia)",
+                "severity": "Variable",
+                "pattern": "Present in the hemolymphatic stage."
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Evanescent, circinate erythematous rash; more readily visible in light-skinned patients."
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "Common in early stages, especially in West African trypanosomiasis."
+            },
+            {
+                "name": "Daytime somnolence",
+                "severity": "Severe",
+                "pattern": "Develops in the second stage (CNS involvement); progresses to a terminal somnolent state."
+            },
+            {
+                "name": "Mental changes",
+                "severity": "Severe",
+                "pattern": "Reduced higher mental functions, difficulty in concentration, inability to cope with surroundings; progresses to coma."
+            },
+            {
+                "name": "Tremor",
+                "severity": "Variable",
+                "pattern": "Present in the late stage (CNS involvement)."
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Variable",
+                "pattern": "Present in the late stage (CNS involvement)."
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in the hemolymphatic stage."
+            },
+            {
+                "name": "Pruritus",
+                "severity": "Variable",
+                "pattern": "Present in the hemolymphatic stage."
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Present in the hemolymphatic stage."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, intermittent fever",
+            "blood_pressure": "May be affected in severe cases due to myocardial involvement"
+        },
+        "physical_findings": [
+            "Trypanosomal chancre",
+            "Lymphadenopathy (generalized, Winterbottom's sign)",
+            "Hepatosplenomegaly",
+            "Edema (transient, facial)",
+            "Skin rash",
+            "Neurological signs in late stages (tremor, ataxia, somnolence)"
+        ],
+        "lab_values": {
+            "blood_smear": "Presence of trypanosomes (often low concentration, requiring concentration techniques)",
+            "lymph_node_aspirates": "Presence of trypanosomes",
+            "cerebrospinal_fluid": "Increased lymphocyte count (\u22656 cells/mcL), increased protein levels, presence of trypanosomes, Mott cells",
+            "complete_blood_count": "Anemia, monocytosis",
+            "serum_immunoglobulins": "Markedly elevated serum levels of polyclonal IgM"
+        },
+        "risk_factors": [
+            "Residence in or travel to rural sub-Saharan Africa",
+            "Exposure to tsetse flies",
+            "Contact with infected animals (especially for T. b. rhodesiense)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Identification of trypanosomes in blood, lymph node aspirate, or cerebrospinal fluid"
+        ],
+        "supportive": [
+            "Clinical symptoms (fever, headache, lymphadenopathy, neurological signs)",
+            "Positive serological tests (for T. b. gambiense)"
+        ]
+    },
+    "differential_diagnoses": []
+}

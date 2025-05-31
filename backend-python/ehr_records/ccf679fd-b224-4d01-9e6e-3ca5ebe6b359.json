@@ -1,0 +1,120 @@
+{
+  "id": "ccf679fd-b224-4d01-9e6e-3ca5ebe6b359",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: headache\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let's analyze this ECG strip. Here's a detailed breakdown of what I observe, keeping in mind I'm interpreting this as a medical imaging expert:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm with some notable findings that warrant further investigation. The rate appears to be around 75 bpm, which is within the normal range. However, there's evidence of left ventricular hypertrophy (LVH) and some subtle changes that could indicate underlying cardiac issues. \n\n**Detailed Breakdown by Waveform and Interval:**\n\n* **Rhythm:** The rhythm is regular and appears to be originating from the sinus node.  The P waves are present, although they are somewhat buried within the T waves, making them difficult to clearly identify.\n* **Heart Rate:**  Based on the strip length (approximately 16 seconds), and the small boxes between the R-R intervals, the heart rate is approximately 75 beats per minute (bpm).\n* **P Waves:**  The P waves are present but appear small and may be difficult to distinguish clearly. Their morphology is somewhat notched, which can be associated with underlying conduction abnormalities.\n* **PR Interval:** The PR interval is normal, approximately 0.16 seconds (160 ms).\n* **QRS Complex:** The QRS complexes are relatively wide, with a duration of approximately 0.11 seconds (110 ms). This is a significant finding.  The morphology of the QRS complexes is fairly consistent across the leads, but there's some variation in the amplitude.\n* **ST Segment:**  The ST segments are generally isoelectric, meaning they are flat. However, there\u2019s a subtle elevation of the ST segment in leads V1, V2, V5, and V6. This is a key finding and should be investigated.\n* **T Waves:** The T waves are predominantly upright in most leads, but show some inversion in V1 and V6.\n* **QT Interval:**  The QT interval is difficult to precisely measure on this strip due to the overlapping waveforms, but it appears to be within normal limits. \n\n**Significant Findings & Potential Abnormalities:**\n\n1. **Left Ventricular Hypertrophy (LVH):** This is the most prominent finding. The wide QRS complexes, the tall and peaked T waves (particularly in V1 and V6), and the ST segment elevation strongly suggest LVH. This indicates an enlargement of the left ventricle\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 2006-02-16, illness\nSIGN_SYMPTOM: headache, sinus, P waves, notched, elevation, inversion, S, waves\nDIAGNOSTIC_PROCEDURE: physical exam, assessment, ECG, rhythm, rate, form, Rhythm, Heart Rate, heart rate, P Waves, PR Interval, PR interval, QRS Complex, QRS complexes, ST Segment, segments, T Waves, T waves, QT Interval, QT interval, QR, complexes, T\nDATE: 25, 2025-03-25T09:09:28, 833\nLAB_VALUE: 75 bpm, regular, 75 beats per minute, bpm, small, normal, 0.16 seconds, 160, wide, 0., seconds, isoelectric, flat, upright, tall, peaked\nDISEASE_DISORDER: left ventricular hypertrophy, LVH, cardiac issues, conduction abnormalities, Left Ventricular Hypertrophy, enlargement\nBIOLOGICAL_STRUCTURE: sinus node, ST, ST segment, V1, 6, left ventricle\nDETAILED_DESCRIPTION: waves, boxes between, R-R intervals, leads, leads V1, V2, V5, and V6, and V6, V\nDISTANCE: 11",
+  "recommendation": "Left Ventricular Hypertrophy (LVH)",
+  "reasoning": "The ECG shows several features strongly suggestive of Left Ventricular Hypertrophy (LVH): wide QRS complexes (approximately 0.11 seconds), subtle ST segment elevation in leads V1, V2, V5, and V6, and tall, peaked T waves.  Literature review supports the association between these ECG findings and LVH. While ST-segment elevation is a concerning finding that can indicate conditions like STEMI, the other ECG characteristics and the absence of other symptoms make LVH the most likely primary diagnosis.  The literature highlights the challenges in diagnosing STEMI in the presence of LVH due to overlapping ECG changes.  Further investigation, including potentially an echocardiogram, is necessary to confirm the diagnosis and assess the severity of the LVH and rule out other conditions.\n\nDifferential Diagnoses:\n- {'diagnosis': 'ST-segment elevation myocardial infarction (STEMI)', 'explanation': 'ST segment elevation was observed in the ECG, a key feature of STEMI. However, the presence of LVH complicates the interpretation, as LVH can mimic STEMI on ECG.'}\n- {'diagnosis': 'Early repolarization', 'explanation': 'Early repolarization can also cause ST-segment elevation on ECG.  Further investigation is needed to differentiate this from LVH.'}\n- {'diagnosis': 'Pericarditis', 'explanation': 'Pericarditis can present with ST-segment elevation.  However, the other ECG findings (LVH) make this less likely.'}\n- {'diagnosis': 'Hyperkalemia', 'explanation': 'Hyperkalemia can cause ECG changes, including ST-segment elevation.  However, this is less likely given the other findings.'}\n- {'diagnosis': 'Pulmonary embolism', 'explanation': \"Pulmonary embolism can sometimes cause ECG changes, but it's less likely given the prominent LVH findings.\"}",
+  "confidence": "85",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "--- RELEVANT MEDICAL LITERATURE ---\n\n[Literature 1] ST-segment elevation: Differential diagnosis, caveats. (PMID: 26086496) - Cleveland Clinic journal of medicine, 2016\nTitle: ST-segment elevation: Differential diagnosis, caveats.\n\nJournal: Cleveland Clinic journal of medicine, Year: 2016\n\nAbstract: The differential diagnosis of ST-segment elevation includes four major processes: ST-segment elevation myocardial infarction (STEMI); early repolarization; pericarditis; and ST elevation secondary to an abnormality of the QRS complex (left bundle branch block, left ventricular hypertrophy, or preexcitation). Other processes that may be associated with ST elevation include hyperkalemia, pulmonary embolism, and Brugada syndrome. The clinical setting and specific electrocardiographic criteria often allow identification of the cause. This article reviews ST-T and QRS configurations specific to each diagnosis.\n\nSource: PubMed (PMID: 26086496)\n\n[Literature 2] LVH and the diagnosis of STEMI - how should we apply the current guidelines? (PMID: 24997779) - Journal of electrocardiology, 2015\nTitle: LVH and the diagnosis of STEMI - how should we apply the current guidelines?\n\nJournal: Journal of electrocardiology, Year: 2015\n\nAbstract: Left ventricular hypertrophy (LVH) induces changes in the depolarization and repolarization of the heart that alter the resting electrocardiogram (ECG). These changes include widening of the QRS duration, an increase in the QRS amplitude and secondary changes in the ST segment and T waves. Typically, there is ST segment depression and T wave inversion (or biphasic T waves) in the lateral leads and ST segment elevation (STE) in the precordial leads V1-V3. However, other patterns of ST-T changes may occur. These changes may vary over time and may not necessarily reflect acute ischemia. The ST-T changes secondary to LVH interfere with ECG interpretation and may affect our accuracy in diagnosing STEMI and other forms of active ischemia. The current guidelines specify thresholds for STE in patients without LVH for whom acute reperfusion therapy is indicated; however, there are no such thresholds for patients with LVH.\n\nSource: PubMed (PMID: 24997779)\n\n[Literature 3] Masked hypertension and echocardiographic left ventricular hypertrophy: an updated overview. (PMID: 22183044) - Blood pressure monitoring, 2012\nTitle: Masked hypertension and echocardiographic left ventricular hypertrophy: an updated overview.\n\nJournal: Blood pressure monitoring, Year: 2012\n\nAbstract: Masked hypertension (MH) is an emerging clinical entity predisposing to subclinical organ damage and to increased cardiovascular risk. We sought to review the recent literature focusing on the association between MH and echocardiographic left ventricular hypertrophy (LVH). A MEDLINE search was performed in order to identify relevant papers using the key words such as 'masked hypertension', 'ambulatory hypertension', 'left ventricular hypertrophy', 'cardiac damage', 'target organ damage', 'left ventricular dysfunction'. Full articles published in English language in the last decade, namely from 1 December 1999 to 31 July 2011, reporting studies in adult or elderly individuals, were considered. Checks of the reference lists of selected papers complemented the electronic search. A total of 13 studies, including 966 patients with MH (sample size range 17-222 patients, mean age range 30-70 years; men 71%) and 2640 controls with sustained normotension, controlled hypertension, and white coat hypertension were considered. The prevalence of LVH, defined according to six criteria, ranged from 7 to 66% in MH and from 0.4 to 42% in non-MH counterparts (average 29 vs. 9%, P&lt;0.01). In conclusion, available evidence linking a selective blood pressure elevation outside office to echocardiographic LVH in clinically normotensive individuals is supported by limited evidence. Further studies are needed to expand our knowledge in this area and to explore the beneficial effects of antihypertensive treatment on subclinical cardiac damage in patients with MH.\n\nSource: PubMed (PMID: 22183044)\n\n[Literature 4] The notched T in left ventricular hypertrophy and in alcoholism. (PMID: 5509634) - Chest, 1971\nTitle: The notched T in left ventricular hypertrophy and in alcoholism.\n\nJournal: Chest, Year: 1971\n\nAbstract: No abstract available\n\nSource: PubMed (PMID: 5509634)\n\n[Literature 5] [Particularities of African descent patient's electrocardiogram]. (PMID: 33039116) - Annales de cardiologie et d'angeiologie, 2021\nTitle: [Particularities of African descent patient's electrocardiogram].\n\nJournal: Annales de cardiologie et d'angeiologie, Year: 2021\n\nAbstract: Particularities of African descent patient's electrocardiogram have been described for many years. Variations such as higher QRS voltage, early repolarization pattern, precordial T-wave inversion and anterior ST segment elevation associated with T-wave inversion are more frequently observed. Ignorance of these variations can lead to misdiagnosis or therapeutic negligence. We present the electrocardiographic particularities attributed to the patient of African origin.\n\nSource: PubMed (PMID: 33039116)\n\n[Literature 6] Sinus Rhythm With Frequent Funny-Looking Beats. (PMID: 32114618) - American journal of critical care : an official publication, American Association of Critical-Care Nurses, 2021\nTitle: Sinus Rhythm With Frequent Funny-Looking Beats.\n\nJournal: American journal of critical care : an official publication, American Association of Critical-Care Nurses, Year: 2021\n\nAbstract: No abstract available\n\nSource: PubMed (PMID: 32114618)\n\n[Literature 7] Cardiac disease in patients with mucopolysaccharidosis: presentation, diagnosis and management. (PMID: 21744090) - Journal of inherited metabolic disease, 2012\nTitle: Cardiac disease in patients with mucopolysaccharidosis: presentation, diagnosis and management.\n\nJournal: Journal of inherited metabolic disease, Year: 2012\n\nAbstract: The mucopolysaccharidoses (MPSs) are inherited lysosomal storage disorders caused by the absence of functional enzymes that contribute to the degradation of glycosaminoglycans (GAGs). The progressive systemic deposition of GAGs results in multi-organ system dysfunction that varies with the particular GAG deposited and the specific enzyme mutation(s) present. Cardiac involvement has been reported in all MPS syndromes and is a common and early feature, particularly for those with MPS I, II, and VI. Cardiac valve thickening, dysfunction (more severe for left-sided than for right-sided valves), and hypertrophy are commonly present; conduction abnormalities, coronary artery and other vascular involvement may also occur. Cardiac disease emerges silently and contributes significantly to early mortality.The clinical examination of individuals with MPS is often difficult due to physical and, sometimes, intellectual patient limitations. The absence of precordial murmurs does not exclude the presence of cardiac disease. Echocardiography and electrocardiography are key diagnostic techniques for evaluation of valves, ventricular dimensions and function, which are recommended on a regular basis. The optimal technique for evaluation of coronary artery involvement remains unsettled.Standard medical and surgical techniques can be modified for MPS patients, and systemic therapies such as hematopoietic stem cell transplantation and enzyme replacement therapy (ERT) may alter overall disease progression with regression of ventricular hypertrophy and maintenance of ventricular function. Cardiac valve disease is usually unresponsive or, at best, stabilized, although ERT within the first few months of life may prevent valve involvement, a fact that emphasizes the importance of early diagnosis and treatment in MPS.\n\nSource: PubMed (PMID: 21744090)"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let's analyze this ECG strip. Here's a detailed breakdown of what I observe, keeping in mind I'm interpreting this as a medical imaging expert:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm with some notable findings that warrant further investigation. The rate appears to be around 75 bpm, which is within the normal range. However, there's evidence of left ventricular hypertrophy (LVH) and some subtle changes that could indicate underlying cardiac issues. \n\n**Detailed Breakdown by Waveform and Interval:**\n\n* **Rhythm:** The rhythm is regular and appears to be originating from the sinus node.  The P waves are present, although they are somewhat buried within the T waves, making them difficult to clearly identify.\n* **Heart Rate:**  Based on the strip length (approximately 16 seconds), and the small boxes between the R-R intervals, the heart rate is approximately 75 beats per minute (bpm).\n* **P Waves:**  The P waves are present but appear small and may be difficult to distinguish clearly. Their morphology is somewhat notched, which can be associated with underlying conduction abnormalities.\n* **PR Interval:** The PR interval is normal, approximately 0.16 seconds (160 ms).\n* **QRS Complex:** The QRS complexes are relatively wide, with a duration of approximately 0.11 seconds (110 ms). This is a significant finding.  The morphology of the QRS complexes is fairly consistent across the leads, but there's some variation in the amplitude.\n* **ST Segment:**  The ST segments are generally isoelectric, meaning they are flat. However, there\u2019s a subtle elevation of the ST segment in leads V1, V2, V5, and V6. This is a key finding and should be investigated.\n* **T Waves:** The T waves are predominantly upright in most leads, but show some inversion in V1 and V6.\n* **QT Interval:**  The QT interval is difficult to precisely measure on this strip due to the overlapping waveforms, but it appears to be within normal limits. \n\n**Significant Findings & Potential Abnormalities:**\n\n1. **Left Ventricular Hypertrophy (LVH):** This is the most prominent finding. The wide QRS complexes, the tall and peaked T waves (particularly in V1 and V6), and the ST segment elevation strongly suggest LVH. This indicates an enlargement of the left ventricle"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "2006-02-16",
+      "illness"
+    ],
+    "SIGN_SYMPTOM": [
+      "headache",
+      "sinus",
+      "P waves",
+      "notched",
+      "elevation",
+      "inversion",
+      "S",
+      "waves"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical exam",
+      "assessment",
+      "ECG",
+      "rhythm",
+      "rate",
+      "form",
+      "Rhythm",
+      "Heart Rate",
+      "heart rate",
+      "P Waves",
+      "PR Interval",
+      "PR interval",
+      "QRS Complex",
+      "QRS complexes",
+      "ST Segment",
+      "segments",
+      "T Waves",
+      "T waves",
+      "QT Interval",
+      "QT interval",
+      "QR",
+      "complexes",
+      "T"
+    ],
+    "DATE": [
+      "25",
+      "2025-03-25T09:09:28",
+      "833"
+    ],
+    "LAB_VALUE": [
+      "75 bpm",
+      "regular",
+      "75 beats per minute",
+      "bpm",
+      "small",
+      "normal",
+      "0.16 seconds",
+      "160",
+      "wide",
+      "0.",
+      "seconds",
+      "isoelectric",
+      "flat",
+      "upright",
+      "tall",
+      "peaked"
+    ],
+    "DISEASE_DISORDER": [
+      "left ventricular hypertrophy",
+      "LVH",
+      "cardiac issues",
+      "conduction abnormalities",
+      "Left Ventricular Hypertrophy",
+      "enlargement"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "sinus node",
+      "ST",
+      "ST segment",
+      "V1",
+      "6",
+      "left ventricle"
+    ],
+    "DETAILED_DESCRIPTION": [
+      "waves",
+      "boxes between",
+      "R-R intervals",
+      "leads",
+      "leads V1, V2, V5, and V6",
+      "and V6",
+      "V"
+    ],
+    "DISTANCE": [
+      "11"
+    ]
+  },
+  "analysis_date": "2025-03-25T23:08:03.862938",
+  "created_at": "2025-03-25T23:08:03.862943"
+}

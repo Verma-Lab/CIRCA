@@ -1,0 +1,66 @@
+{
+    "disease": "Erythema infectiosum [fifth disease]",
+    "icd_code": "B083",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Slapped cheek rash",
+                "severity": "Mild to moderate",
+                "pattern": "Bright red rash on cheeks, followed by lacy rash on body"
+            },
+            {
+                "name": "Fever",
+                "severity": "Low-grade",
+                "pattern": "Present in some cases, usually precedes rash"
+            },
+            {
+                "name": "Cold-like symptoms",
+                "severity": "Mild",
+                "pattern": "Runny nose, stuffy nose, fatigue, body aches, headache"
+            },
+            {
+                "name": "Joint pain and swelling",
+                "severity": "Mild to moderate, more common in adults",
+                "pattern": "Affects hands, wrists, knees; can last weeks to months"
+            },
+            {
+                "name": "Itchy rash",
+                "severity": "Mild to moderate",
+                "pattern": "Can be present, especially in children"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Severe, rare",
+                "pattern": "Pale skin, dizziness, drowsiness, rapid breathing, rapid pulse"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Low-grade",
+            "pulse": "Rapid in severe anemia",
+            "respirations": "Rapid in severe anemia"
+        },
+        "physical_findings": [
+            "Slapped cheek rash",
+            "Lacy, reticulated rash on trunk and extremities",
+            "Joint swelling",
+            "Pallor (in severe anemia)"
+        ],
+        "lab_values": {
+            "antibodies to parvovirus B19": "Elevated in recent infection",
+            "Complete blood count (CBC)": "May show anemia in severe cases"
+        },
+        "risk_factors": [
+            "Age 5-15 years (most common)",
+            "Pregnant women (risk of fetal complications)",
+            "Individuals with blood disorders (sickle cell anemia, hemolytic anemia)",
+            "Immunocompromised individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": "Characteristic slapped cheek rash",
+        "supportive": "Positive serology for parvovirus B19, cold-like symptoms, joint pain"
+    },
+    "differential_diagnoses": []
+}

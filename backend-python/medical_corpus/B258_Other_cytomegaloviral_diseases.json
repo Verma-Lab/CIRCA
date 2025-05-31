@@ -1,0 +1,26 @@
+{
+    "disease": "Other cytomegaloviral diseases",
+    "icd_code": "B258",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Weakened immune system",
+            "Pregnancy (for potential transmission to fetus)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive CMV blood test"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Congenital cytomegalovirus infection (P35.1)",
+        "Cytomegaloviral mononucleosis (B27.1-)"
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "disease": "Typhoid osteomyelitis",
+    "icd_code": "A01.05",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bone pain",
+                "severity": "Variable",
+                "pattern": "Localized to affected bone"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present, may be absent (as seen in case reports)"
+            },
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Overlying affected bone"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "General weakness"
+            },
+            {
+                "name": "Discharge",
+                "severity": "Variable",
+                "pattern": "From affected area, may be intermittent or continuous"
+            },
+            {
+                "name": "Backache",
+                "severity": "Variable",
+                "pattern": "In case of spinal involvement"
+            },
+            {
+                "name": "Reduced sensation",
+                "severity": "Variable",
+                "pattern": "In case of spinal involvement"
+            },
+            {
+                "name": "Muscle spasm",
+                "severity": "Variable",
+                "pattern": "In case of spinal involvement"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May precede osteomyelitis symptoms"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May precede osteomyelitis symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases",
+            "white blood cell count": "Elevated (leukocytosis)"
+        },
+        "physical_findings": [
+            "Redness and swelling over affected bone",
+            "Tenderness to palpation over affected bone",
+            "Limited range of motion in affected joint",
+            "Muscle spasm (in spinal involvement)",
+            "Neurological deficits (in spinal involvement)"
+        ],
+        "lab_values": {
+            "white blood cell count": "Elevated",
+            "C-reactive protein": "Elevated",
+            "Erythrocyte sedimentation rate (ESR)": "Elevated",
+            "Blood culture": "May be positive for Salmonella Typhi",
+            "Bone and tissue culture": "Positive for Salmonella Typhi (often resistant to ciprofloxacin)"
+        },
+        "risk_factors": [
+            "Previous typhoid fever",
+            "Immunocompromised state",
+            "Hemoglobinopathies",
+            "Previous joint trauma or surgery",
+            "Connective tissue diseases",
+            "Lymphoma",
+            "Diabetes",
+            "Alcoholism",
+            "Extremes of age"
+        ],
+        "imaging_findings": {
+            "X-ray": "Cortical abnormality, cortical thickening, focal abnormality within the cortex and medullary cavity, paradisical erosions, reduction of disc spaces",
+            "MRI": "Significant cortical thickening, focal abnormality within the cortex and medullary cavity, spondylodiscitis, epidural collection, cord compression, edema"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with osteomyelitis",
+            "Positive culture for Salmonella Typhi from bone or tissue sample"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (CRP, ESR, WBC)",
+            "Characteristic imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pott's spine",
+        "Other bacterial osteomyelitis",
+        "Infected sebaceous cyst"
+    ]
+}

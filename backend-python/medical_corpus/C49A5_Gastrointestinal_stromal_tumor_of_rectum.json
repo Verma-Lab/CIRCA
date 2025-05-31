@@ -1,0 +1,88 @@
+{
+    "disease": "Gastrointestinal stromal tumor of rectum",
+    "icd_code": "C49A5",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Constipation",
+                "severity": "Occasional",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Rectal pain",
+                "severity": "Unspecified",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Bleeding per rectum",
+                "severity": "Unspecified",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Rectal tenesmus",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable growth (in some cases)",
+            "Submucosal mass in the rectal wall (approximately 1 cm from anus)",
+            "Significant luminal narrowing of the rectum",
+            "Submucosal mass in the anterosuperior region of the rectum (3 cm from anal verge)"
+        ],
+        "lab_values": {
+            "Ki-67": "<1% (in one case)",
+            "CD34": "Positive (in one case)",
+            "CD117": "Positive (in one case)",
+            "Carcinoembryonic antigen": "Negative",
+            "Carbohydrate antigen-724": "Negative",
+            "Carbohydrate antigen-199": "Negative",
+            "Squamous cell carcinoma": "Negative",
+            "Carbohydrate antigen-211": "Negative",
+            "Carbohydrate antigen-50": "Negative",
+            "Carbohydrate antigen-242": "Negative",
+            "Alpha fetoprotein": "Negative",
+            "Neuron-specific enolase": "Negative"
+        },
+        "risk_factors": [
+            "Extreme obesity"
+        ],
+        "imaging_findings": {
+            "Contrast-enhanced CT (CECT)": [
+                "Well-defined hypodense, enhancing lesion with a small calcified area at its periphery in the rectum",
+                "Significant luminal narrowing of the rectum"
+            ],
+            "Colonoscopy": [
+                "Mass located in the submucosal region of the rectal wall"
+            ],
+            "Transrectal ultrasound": [
+                "Mass involving the muscularis propria",
+                "Well-circumscribed intramural mass"
+            ],
+            "Perianal MRI": [
+                "Well-circumscribed intramural mass involving the anterior and superior sides of the rectum"
+            ],
+            "Ultrasonic contrast": [
+                "Well-circumscribed intramural mass"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological examination revealing spindle cell tumor",
+            "Immunohistochemical examination showing positive expression of CD34 and CD117"
+        ],
+        "supportive": [
+            "Imaging findings consistent with GIST (CECT, MRI, ultrasound)",
+            "Clinical symptoms suggestive of rectal GIST"
+        ]
+    },
+    "differential_diagnoses": []
+}

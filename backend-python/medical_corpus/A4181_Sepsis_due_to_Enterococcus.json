@@ -1,0 +1,101 @@
+{
+    "disease": "Sepsis due to Enterococcus",
+    "icd_code": "A4181",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (39\u00b0C maximum recorded in one case, 38-40\u00b0C in another)",
+                "pattern": "Recurrent, persistent"
+            },
+            {
+                "name": "Cough",
+                "severity": "Severe",
+                "pattern": "Paroxysmal, dry initially, productive later"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Severe",
+                "pattern": "Exertional"
+            },
+            {
+                "name": "Hot flashes",
+                "severity": "Moderate",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Sweating",
+                "severity": "Moderate",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Moderate",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Impaired consciousness",
+                "severity": "Severe",
+                "pattern": "Developed in one case"
+            },
+            {
+                "name": "Chest congestion",
+                "severity": "Severe",
+                "pattern": "Developed in one case"
+            },
+            {
+                "name": "Inability to expectorate",
+                "severity": "Severe",
+                "pattern": "Developed in one case"
+            },
+            {
+                "name": "Blood oxygen desaturation",
+                "severity": "Severe",
+                "pattern": "Developed in one case"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Can drop to dangerous levels in severe cases (septic shock)",
+            "temperature": "Elevated (38-40\u00b0C or higher)",
+            "oxygen_saturation": "Decreased in severe cases"
+        },
+        "physical_findings": [
+            "Increased airway secretions",
+            "Chest congestion"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Enterococcus",
+            "urine_culture": "Positive for Enterococcus in one case",
+            "leukocytes": "Elevated (leukocytosis)",
+            "neutrophils": "Elevated (neutrophilia)",
+            "CRP": "Elevated",
+            "procalcitonin": "Elevated, decreased after treatment in one case"
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Previous infection (e.g., tuberculosis)",
+            "Prolonged hospitalization",
+            "Use of invasive devices",
+            "Antibiotic exposure"
+        ],
+        "imaging_findings": {
+            "chest_ct": "Right hilar soft-tissue mass, signs of congestive pneumonia, proliferative foci with partial calcification in one case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Enterococcus",
+            "Clinical signs and symptoms of sepsis (fever, tachycardia, tachypnea, altered mental status)"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (CRP, procalcitonin)",
+            "Positive cultures from other sites (urine, endotracheal aspirate)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Other bacterial infections",
+        "Fungal infections (e.g., Candida tropicalis)"
+    ]
+}

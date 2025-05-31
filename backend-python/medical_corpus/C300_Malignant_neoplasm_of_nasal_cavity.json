@@ -1,0 +1,24 @@
+{
+    "disease": "Malignant neoplasm of nasal cavity",
+    "icd_code": "C300",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Black race",
+            "Uninsured",
+            "Medicaid patients"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Uncontrolled cell multiplication in the nasal cavity"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

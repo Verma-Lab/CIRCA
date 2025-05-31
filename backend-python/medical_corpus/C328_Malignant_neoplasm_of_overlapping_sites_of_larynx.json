@@ -1,0 +1,27 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of larynx",
+    "icd_code": "C328",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Heavy drinking",
+            "HPV (for certain types of throat cancer)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical exam",
+            "History",
+            "Imaging tests",
+            "Biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

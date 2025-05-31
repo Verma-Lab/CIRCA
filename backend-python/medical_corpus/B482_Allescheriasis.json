@@ -1,0 +1,23 @@
+{
+    "disease": "Allescheriasis",
+    "icd_code": "B482",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Refractory acute lymphoblastic leukemia (implied from the provided text)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Lobomycosis",
+        "Rhinosporidiosis"
+    ]
+}

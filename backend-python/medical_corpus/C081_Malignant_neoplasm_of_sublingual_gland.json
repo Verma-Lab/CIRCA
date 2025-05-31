@@ -1,0 +1,49 @@
+{
+    "disease": "Malignant neoplasm of sublingual gland",
+    "icd_code": "C081",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless mass",
+                "severity": "Variable",
+                "pattern": "Non-ulcerative mass on the floor of the mouth (early stage)"
+            },
+            {
+                "name": "Tongue numbness",
+                "severity": "Variable",
+                "pattern": "Due to lingual nerve paralysis (advanced stage)"
+            },
+            {
+                "name": "Submandibular gland swelling",
+                "severity": "Variable",
+                "pattern": "Due to tumor obstruction of the submandibular duct"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Submucosal mass in the floor of the mouth",
+            "Possible lingual nerve paralysis"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": "Well-defined mass in the sublingual space, may show abutment to the mandible (without invasion)",
+            "MRI": "Well-defined mass in the sublingual space, may show abutment to the mandible (without invasion)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings consistent with a mass in the sublingual gland",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Symptoms of a mass in the floor of the mouth",
+            "Possible lingual nerve involvement"
+        ]
+    },
+    "differential_diagnoses": [
+        "Sialolithiasis",
+        "Inflammatory or chronic sialadenitis"
+    ]
+}

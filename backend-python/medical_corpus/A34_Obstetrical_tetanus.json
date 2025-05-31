@@ -1,0 +1,138 @@
+{
+    "disease": "Obstetrical tetanus",
+    "icd_code": "A34",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Facial numbness",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Neck pain",
+                "severity": "Moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Trismus (lockjaw)",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Dysphagia (difficulty swallowing)",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate",
+                "pattern": "Onset 14 days post-partum"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Moderate",
+                "pattern": "Onset 14 days post-partum"
+            },
+            {
+                "name": "General malaise",
+                "severity": "Moderate",
+                "pattern": "Onset 14 days post-partum"
+            },
+            {
+                "name": "Fever",
+                "severity": "Moderate",
+                "pattern": "Onset 14 days post-partum"
+            },
+            {
+                "name": "Muscle spasms",
+                "severity": "Severe",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Limb stiffness",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Gait disorder",
+                "severity": "Mild",
+                "pattern": "Long-term"
+            },
+            {
+                "name": "Mild long-term memory impairment",
+                "severity": "Mild",
+                "pattern": "Long-term"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia",
+            "blood_pressure": "Hypotension"
+        },
+        "physical_findings": [
+            "Flaccid uterus",
+            "Nuchal rigidity",
+            "Limb stiffness",
+            "Generalized muscle spasms",
+            "Trismus"
+        ],
+        "lab_values": {
+            "hematocrit": "<24%",
+            "hemoglobin": "<7.3 g/dL",
+            "white_blood_cells": ">14,000/mm3",
+            "creatinine": ">104 \u03bcmol/L"
+        },
+        "risk_factors": [
+            "Unvaccinated",
+            "Home birth",
+            "Unlicensed childbirth assistant",
+            "Breech presentation",
+            "Postpartum hemorrhage",
+            "Uterine curettage"
+        ],
+        "imaging_findings": {
+            "pelvic_ultrasound": "Retention of placental tissue",
+            "cerebral_ct": "Unremarkable"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of muscle spasms and rigidity"
+        ],
+        "supportive": [
+            "Exposure to Clostridium tetani spores",
+            "Lack of vaccination",
+            "Abnormal lab values"
+        ]
+    },
+    "differential_diagnoses": [
+        "Urinary tract infection",
+        "Severe anemia",
+        "Meningitis"
+    ]
+}

@@ -1,0 +1,172 @@
+{
+    "disease": "Gonococcal sepsis",
+    "icd_code": "A5486",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Generalized malaise",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Urethral discharge",
+                "severity": "Variable, purulent in 80% of cases within 24 hours",
+                "pattern": "Present in men with urethritis"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Mild to moderate",
+                "pattern": "Present in about half of cases of urethritis"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Variable",
+                "pattern": "Present if posterior urethra is involved"
+            },
+            {
+                "name": "Terminal hematuria",
+                "severity": "Variable",
+                "pattern": "Present if posterior urethra is involved"
+            },
+            {
+                "name": "Urethral pain",
+                "severity": "Variable",
+                "pattern": "Present if posterior urethra is involved"
+            },
+            {
+                "name": "Mucopurulent vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Present in some cases of cervicitis"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Mild to moderate",
+                "pattern": "Present in some cases of cervicitis"
+            },
+            {
+                "name": "Hypogastric pain",
+                "severity": "Variable",
+                "pattern": "Present in 25% of cases of cervicitis"
+            },
+            {
+                "name": "Metrorrhagia or menorrhagia",
+                "severity": "Variable",
+                "pattern": "Less common symptom of cervicitis"
+            },
+            {
+                "name": "Pain, discomfort, or anorectal pruritus",
+                "severity": "Variable",
+                "pattern": "Present in some cases of proctitis"
+            },
+            {
+                "name": "Purulent discharge",
+                "severity": "Variable",
+                "pattern": "Present in some cases of proctitis"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Variable",
+                "pattern": "Less common symptom of proctitis"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "Less common symptom of proctitis"
+            },
+            {
+                "name": "Anal bleeding",
+                "severity": "Variable",
+                "pattern": "Less common symptom of proctitis"
+            },
+            {
+                "name": "Tonsillitis",
+                "severity": "Variable",
+                "pattern": "Occasional symptom of pharyngeal involvement"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Occasional symptom of pharyngeal involvement"
+            },
+            {
+                "name": "Leucorrhoea",
+                "severity": "Variable",
+                "pattern": "Present in PID"
+            },
+            {
+                "name": "Metrorrhagia",
+                "severity": "Variable",
+                "pattern": "Present in PID"
+            },
+            {
+                "name": "Menorrhagia",
+                "severity": "Variable",
+                "pattern": "Present in PID"
+            },
+            {
+                "name": "Hypogastric pain",
+                "severity": "Variable",
+                "pattern": "Present in PID"
+            },
+            {
+                "name": "Pyrexia",
+                "severity": "Variable",
+                "pattern": "Present in PID"
+            },
+            {
+                "name": "Leucocytosis",
+                "severity": "Variable",
+                "pattern": "Present in PID"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (e.g., 38.5\u00b0C)",
+            "heart_rate": "May be elevated",
+            "blood_pressure": "May be decreased in severe cases (septic shock)"
+        },
+        "physical_findings": [
+            "Erythema and edema of the urethral meatus",
+            "Balanitis (in uncircumcised males)",
+            "Mucopurulent cervical exudate",
+            "Friable cervix",
+            "Edema, erythema, and/or friability of the rectal mucosa with mucopurulent exudate"
+        ],
+        "lab_values": {
+            "complete_blood_count": "Elevated white blood cell count, may have low hemoglobin",
+            "liver_function_tests": "Elevated AST and ALT",
+            "blood_culture": "Positive for Neisseria gonorrhoeae",
+            "urine_culture": "May be positive for Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Sexually transmitted infection",
+            "Pregnancy",
+            "Acquired complement deficiencies",
+            "Systemic lupus erythematosus",
+            "Sickle cell disease",
+            "Splenectomy",
+            "Virulence of the infecting strain"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Neisseria gonorrhoeae"
+        ],
+        "supportive": [
+            "Symptoms of sepsis (fever, malaise)",
+            "Abnormal vital signs",
+            "Positive cultures from other sites (e.g., urethra, cervix, rectum)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Enteric fever",
+        "Other bacterial infections",
+        "Viral infections"
+    ]
+}

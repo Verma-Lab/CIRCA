@@ -1,0 +1,86 @@
+{
+    "disease": "Primary respiratory tuberculosis",
+    "icd_code": "A157",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Chronic, may be productive or non-productive"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Occurring at night"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Crackles or rales on auscultation",
+            "Decreased breath sounds",
+            "Dullness to percussion"
+        ],
+        "lab_values": {
+            "sputum_smear": "Acid-fast bacilli (AFB) positive",
+            "sputum_culture": "Mycobacterium tuberculosis positive",
+            "blood_tests": "Elevated white blood cell count (WBC)"
+        },
+        "risk_factors": [
+            "Close contact with an individual with active TB",
+            "Immunocompromised state (HIV, diabetes, malnutrition)",
+            "Substance abuse",
+            "Crowded living conditions",
+            "Poor ventilation"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Infiltrates, cavities, nodules",
+            "CT_scan": "More detailed visualization of lung lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms suggestive of TB",
+            "Positive microbiological confirmation (sputum smear, culture, or molecular test)"
+        ],
+        "supportive": [
+            "Abnormal chest x-ray findings",
+            "Positive tuberculin skin test (TST) or interferon-gamma release assay (IGRA)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lung cancer",
+        "Pneumonia",
+        "Bronchitis",
+        "Other lung infections",
+        "Sarcoidosis"
+    ]
+}

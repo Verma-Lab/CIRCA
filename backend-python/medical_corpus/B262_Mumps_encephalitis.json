@@ -1,0 +1,166 @@
+{
+    "disease": "Mumps encephalitis",
+    "icd_code": "B262",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Febrile illness",
+                "severity": "Acute",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Altered sensorium",
+                "severity": "Severe",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Decreased responsiveness to command",
+                "severity": "Severe",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Excessive sleepiness",
+                "severity": "Severe",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Generalized-onset motor seizures",
+                "severity": "Severe",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Brudzinski's sign",
+                "severity": "Positive",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Kerning's sign",
+                "severity": "Positive",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Brisk reflexes",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Bilateral Babinski's sign",
+                "severity": "Positive",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Wide-based gait",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Tendency to fall",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Submandibular lymphadenopathy",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Bilateral parotid swelling",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Unsteadiness",
+                "severity": "Unspecified",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Cerebellar signs",
+                "severity": "Severe",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Cranial nerve signs",
+                "severity": "Severe",
+                "pattern": "Onset"
+            },
+            {
+                "name": "Bulbar palsy",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Drowsiness",
+            "Reduced spontaneous activity and interaction",
+            "Photophobia",
+            "Neck stiffness",
+            "Brudzinski\u2019s sign",
+            "Kerning\u2019s signs",
+            "Brisk reflexes",
+            "Bilateral Babinski\u2019s sign",
+            "Normal muscle power and tone",
+            "Normal fundi",
+            "Wide-based gait with tendency to fall on the left side",
+            "Submandibular lymphadenopathy",
+            "Diffuse swelling in the bilateral parotid regions"
+        ],
+        "lab_values": {
+            "Hemoglobin": "76 g/L (low)",
+            "Platelet count": "264 \u00d7 10^9/L (normal)",
+            "Total leucocyte count": "810 \u00d7 10^9/L (high)",
+            "Neutrophils": "48% (high)",
+            "Lymphocytes": "38% (normal)",
+            "Monocytes": "14% (normal)",
+            "Total serum amylase": "240 U/L (high)",
+            "CSF cells": "2667 cells/mL (high)",
+            "CSF neutrophils": "23% (high)",
+            "CSF lymphocytes": "77% (high)",
+            "CSF glucose": "49 mg/dL (low)",
+            "CSF protein": "122 mg/dL (high)",
+            "Mumps IgM antibodies": "Elevated"
+        },
+        "risk_factors": [
+            "Lack of mumps vaccination"
+        ],
+        "imaging_findings": {
+            "MRI brain": "Hyperintensities in bilateral cerebellar, left parieto-occipital and parasagittal areas in bilateral frontal lobes with diffusion restrictions; multiple diffuse grey matter lesions, a brainstem lesion and possible white matter involvement with some mass effect"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with mumps encephalitis",
+            "Elevated mumps IgM antibodies"
+        ],
+        "supportive": [
+            "Abnormal CSF findings (pleocytosis, low glucose, high protein)",
+            "Characteristic MRI findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute disseminated encephalomyelitis (ADEM)"
+    ]
+}

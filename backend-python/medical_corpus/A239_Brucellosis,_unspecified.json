@@ -1,0 +1,50 @@
+{
+    "disease": "Brucellosis, unspecified",
+    "icd_code": "A239",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high and spiking, or persistent",
+                "pattern": "Undulant (rising and falling in waves), can persist for days or weeks"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, often spiking in the afternoon"
+        },
+        "physical_findings": [
+            "Inflammation of bones, joints, or inner organs"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected animals (cattle, goats, camels, dogs, pigs)",
+            "Consumption of unpasteurized animal products (dairy products, meat)",
+            "Occupation involving contact with animals or meat (slaughterhouse workers, farmers, veterinarians)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical evaluation",
+            "Laboratory examinations (blood cultures, serological testing, molecular methods)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

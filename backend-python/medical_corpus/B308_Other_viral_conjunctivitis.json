@@ -1,0 +1,95 @@
+{
+    "disease": "Other viral conjunctivitis",
+    "icd_code": "B308",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Conjunctival hyperemia",
+                "severity": "Variable",
+                "pattern": "Usually begins in one eye and spreads to the other"
+            },
+            {
+                "name": "Watery discharge",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Ocular irritation",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "May be present, especially in severe cases"
+            },
+            {
+                "name": "Foreign body sensation",
+                "severity": "Variable",
+                "pattern": "May be present, especially in severe cases"
+            },
+            {
+                "name": "Chemosis",
+                "severity": "Variable",
+                "pattern": "May be present, especially in severe cases"
+            },
+            {
+                "name": "Preauricular lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Follicles on palpebral conjunctiva",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Corneal involvement",
+                "severity": "Variable",
+                "pattern": "May be present in severe cases (epidemic keratoconjunctivitis)"
+            },
+            {
+                "name": "Pseudomembranes",
+                "severity": "Variable",
+                "pattern": "May be present in severe cases"
+            },
+            {
+                "name": "Corneal subepithelial opacities",
+                "severity": "Variable",
+                "pattern": "May persist for months or years after resolution"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Conjunctival hyperemia",
+            "Watery discharge",
+            "Preauricular lymphadenopathy",
+            "Follicles on palpebral conjunctiva",
+            "Chemosis (in severe cases)",
+            "Pseudomembranes (in severe cases)",
+            "Corneal involvement (in severe cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected individuals",
+            "Recent upper respiratory infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with viral conjunctivitis"
+        ],
+        "supportive": [
+            "Positive viral culture or immunodiagnostic testing",
+            "Absence of purulent discharge"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial conjunctivitis",
+        "Allergic conjunctivitis",
+        "Noninfectious conjunctivitis",
+        "Epidemic keratoconjunctivitis"
+    ]
+}

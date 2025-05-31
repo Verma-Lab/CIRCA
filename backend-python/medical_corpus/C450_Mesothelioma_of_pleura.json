@@ -1,0 +1,52 @@
+{
+    "disease": "Mesothelioma of pleura",
+    "icd_code": "C450",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Often the first symptom, indicating pleural effusion"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Common symptom"
+            },
+            {
+                "name": "Pleural effusion",
+                "severity": "Common",
+                "pattern": "Occurs in approximately 90% of patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Asbestos exposure (occupational or environmental)",
+            "Zeolite (erionite) exposure",
+            "SV-40 viruses",
+            "Recurrent infection",
+            "Genetic predisposition",
+            "Smoking (increases lung cancer risk in conjunction with asbestos)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological findings (epithelioid, sarcomatoid, or biphasic)",
+            "Immunohistochemistry (positive markers: calretinin, WT1, D2-40; negative markers: CEA, Ber-EP4)",
+            "Molecular studies (BAP1 loss, CDKN2A deletion)"
+        ],
+        "supportive": [
+            "Imaging studies (showing pleural thickening, nodules, effusion)",
+            "Detailed exposure history (asbestos)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Metastatic carcinoma",
+        "Sarcoma",
+        "Lung cancer"
+    ]
+}

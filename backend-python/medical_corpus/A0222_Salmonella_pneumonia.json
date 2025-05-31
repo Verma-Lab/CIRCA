@@ -1,0 +1,97 @@
+{
+    "disease": "Salmonella pneumonia",
+    "icd_code": "A02.22",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Elevated",
+            "heart_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Crackles or rales on lung auscultation",
+            "Decreased breath sounds",
+            "Increased tactile fremitus",
+            "Dullness to percussion"
+        ],
+        "lab_values": {
+            "complete_blood_count": {
+                "white_blood_cell_count": "Elevated"
+            },
+            "blood_cultures": {
+                "Salmonella": "Positive"
+            },
+            "chest_x_ray": {
+                "infiltrates": "Present"
+            }
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Underlying lung disease",
+            "Exposure to Salmonella contaminated food or water"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": {
+                "findings": "Consolidation, infiltrates, or pleural effusion consistent with pneumonia"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pneumonia",
+            "Positive blood culture for Salmonella"
+        ],
+        "supportive": [
+            "Chest x-ray findings consistent with pneumonia",
+            "Elevated white blood cell count"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other bacterial pneumonias",
+        "Viral pneumonia",
+        "Fungal pneumonia",
+        "Tuberculosis"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "disease": "California encephalitis",
+    "icd_code": "A835",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Encephalitis",
+                "severity": "Variable, can be fatal",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Neurologic disease",
+                "severity": "Variable",
+                "pattern": "Associated with encephalitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Neutralizing antibody (NAb) titer": {
+                "abnormal_range": "4-fold rise between acute and convalescent phase serum samples indicates infection"
+            },
+            "IgM test": {
+                "abnormal_range": "Positive for JCV (Jamestown Canyon virus), may indicate cross-reactivity with other California serogroup viruses"
+            }
+        },
+        "risk_factors": [
+            "Mosquito bite"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "4-fold rise in NAb titer between acute and convalescent phase serum samples"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with encephalitis",
+            "Negative tests for other viruses causing similar illness (e.g., mumps, herpes simplex, enteroviruses)"
+        ]
+    },
+    "differential_diagnoses": [
+        "West Nile virus",
+        "La Crosse virus",
+        "Jamestown Canyon virus",
+        "Trivittatus virus",
+        "Snowshoe hare virus",
+        "St. Louis encephalitis",
+        "Western equine encephalitis",
+        "Japanese B encephalitis",
+        "Yellow fever",
+        "Rift Valley fever",
+        "Colorado tick fever",
+        "Herpes simplex",
+        "Other arboviruses"
+    ]
+}

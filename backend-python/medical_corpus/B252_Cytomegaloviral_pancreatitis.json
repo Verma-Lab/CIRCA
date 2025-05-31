@@ -1,0 +1,134 @@
+{
+    "disease": "Cytomegaloviral Pancreatitis",
+    "icd_code": "B25.2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Epigastric pain",
+                "severity": "severe",
+                "pattern": "progressive, radiating to back"
+            },
+            {
+                "name": "Febrile syndrome",
+                "severity": "severe",
+                "pattern": "protracted, two weeks prior to admission"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "severe",
+                "pattern": "present for one week"
+            },
+            {
+                "name": "Arthralgias",
+                "severity": "severe",
+                "pattern": "present for one week"
+            },
+            {
+                "name": "Chills",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "Diaphoresis",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "Nausea",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "Nonbloody emesis",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "Orthostasis",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            },
+            {
+                "name": "5-pound weight loss",
+                "severity": "moderate",
+                "pattern": "present on admission"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "98.8\u00b0F",
+            "blood_pressure": "133/83 mmHg",
+            "heart_rate": "103 beats per minute",
+            "respiratory_rate": "18 breaths per minute",
+            "oxygen_saturation": "100% on room air"
+        },
+        "physical_findings": [
+            "Tenderness in the right upper quadrant",
+            "Positive Murphy sign",
+            "Mild splenomegaly",
+            "Negative for cervical lymphadenopathy or pharyngeal exudates"
+        ],
+        "lab_values": {
+            "lipase": "398 U/L (on admission), peaked at 3,012 U/L",
+            "alanine aminotransferase (ALT)": "78 U/L (on admission), peaked at 717 U/L",
+            "aspartate aminotransferase (AST)": "normal (on admission), peaked at 540 U/L",
+            "total bilirubin": "normal",
+            "alkaline phosphatase": "normal",
+            "triglycerides": "normal",
+            "antinuclear antibody": "negative",
+            "F-actin": "negative",
+            "antimitochondrial M2 antibody": "negative",
+            "immunoglobulin (Ig)-G4": "negative",
+            "Hepatitis A, B, and C serologies": "negative",
+            "ceruloplasmin": "normal",
+            "urinary copper": "normal",
+            "ferritin": "normal",
+            "human immunodeficiency virus (HIV) serology": "negative",
+            "Mumps IgG": "immunity, IgM negative",
+            "Epstein-Barr virus (EBV) serology": "evidence of past exposure, no active infection",
+            "CMV IgM": "positive at 209 U/mL",
+            "CMV IgG": "positive at 4.8 U/mL",
+            "CMV DNA polymerase chain reaction (PCR)": "1,000 copies (log 3.0) initially, negative after treatment"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "abdominal CT scan": "mild splenomegaly, no walled-off necrosis or pancreatic inflammation",
+            "abdominal ultrasound": "fatty liver infiltrates",
+            "magnetic resonance cholangiopancreatography (MRCP)": "fatty liver infiltration, no choledocholithiasis",
+            "upper endoscopy": "mild reflux esophagitis and gastritis, mixed acute and chronic inflammation with reactive epithelial changes, no atypia",
+            "endoscopic ultrasound": "negative for biliary system dilation and/or choledocholithiasis",
+            "CT-guided liver biopsy": "mild to moderate infiltrate of small lymphocytes in the sinusoids and a beaded sinusoidal infiltrate characteristic of CMV infection"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive CMV DNA polymerase chain reaction (PCR)",
+            "Elevated liver enzymes (ALT, AST)",
+            "Elevated lipase",
+            "Clinical presentation consistent with pancreatitis and hepatitis"
+        ],
+        "supportive": [
+            "Liver biopsy showing characteristic CMV changes",
+            "Response to antiviral treatment (e.g., ganciclovir)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of acute pancreatitis (e.g., gallstones, alcohol abuse)",
+        "Other causes of hepatitis (e.g., viral hepatitis, autoimmune hepatitis)"
+    ]
+}

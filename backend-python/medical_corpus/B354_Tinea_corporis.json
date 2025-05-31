@@ -1,0 +1,113 @@
+{
+    "disease": "Tinea corporis",
+    "icd_code": "B35.4",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itching",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Burning",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Discomfort",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Erythematous circular lesions",
+                "severity": "Variable",
+                "pattern": "Characteristic"
+            },
+            {
+                "name": "Raised borders",
+                "severity": "Variable",
+                "pattern": "Characteristic"
+            },
+            {
+                "name": "Central clearing",
+                "severity": "Variable",
+                "pattern": "Characteristic"
+            },
+            {
+                "name": "Scaly leading edge",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Papules",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Pustules",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Hypopigmentation",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Multiple lesions",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Polycyclic pattern",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Asymmetrical distribution",
+                "severity": "Variable",
+                "pattern": "Typical"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Well-demarcated, sharply circumscribed, oval or circular, mildly erythematous, scaly patch or plaque with a raised leading edge",
+            "Annular lesion",
+            "Central clearing",
+            "Raised scaly border"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Genetic predisposition",
+            "Warm, humid climate",
+            "Sharing of fomites (bedding, towels, clothing)",
+            "Dermatophyte infection elsewhere on the skin (tinea pedis)",
+            "Immunosuppression",
+            "Atopic dermatitis",
+            "Hyperhidrosis",
+            "Low \u03b2-defensin 4 levels",
+            "Diabetes mellitus",
+            "Xerosis",
+            "Ichthyosis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (characteristic annular lesion)",
+            "Positive KOH preparation showing hyphae and spores",
+            "Positive fungal culture"
+        ],
+        "supportive": [
+            "Dermoscopy findings",
+            "Skin biopsy with characteristic histology"
+        ]
+    },
+    "differential_diagnoses": [
+        "Psoriasis",
+        "Eczema",
+        "Pityriasis rosea",
+        "Other annular lesions"
+    ]
+}

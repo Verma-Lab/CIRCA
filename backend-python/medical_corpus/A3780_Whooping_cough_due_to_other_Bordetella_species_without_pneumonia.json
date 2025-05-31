@@ -1,0 +1,42 @@
+{
+    "disease": "Whooping cough due to other Bordetella species without pneumonia",
+    "icd_code": "A3780",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable, can be severe and paroxysmal",
+                "pattern": "Initially mild, resembling a common cold; progresses to severe, spasmodic coughing fits with characteristic inspiratory 'whoop' and post-tussive emesis"
+            },
+            {
+                "name": "Common cold-like symptoms",
+                "severity": "Mild",
+                "pattern": "Present in the early stages"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Age < 1 year",
+            "Pre-existing health conditions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with whooping cough (paroxysmal cough, whoop, post-tussive emesis)"
+        ],
+        "supportive": [
+            "Exposure to someone with whooping cough",
+            "Positive Bordetella culture or PCR"
+        ]
+    },
+    "differential_diagnoses": []
+}

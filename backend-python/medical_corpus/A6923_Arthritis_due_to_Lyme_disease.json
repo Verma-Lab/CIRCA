@@ -1,0 +1,60 @@
+{
+    "disease": "Arthritis due to Lyme disease",
+    "icd_code": "A6923",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Monoarticular or oligoarticular arthritis",
+                "severity": "Variable, ranging from brief arthralgia to persistent swelling and pain",
+                "pattern": "Recurrent attacks, intermittent swelling and pain, may be chronic"
+            },
+            {
+                "name": "Joint pain (arthralgia)",
+                "severity": "Transient or migratory",
+                "pattern": "May occur early in infection, often asymptomatic"
+            },
+            {
+                "name": "Swelling in large joints (e.g., knee)",
+                "severity": "Variable",
+                "pattern": "Most common site of involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Asymmetric swelling and pain in large joints",
+            "Synovial hypertrophy",
+            "Vascular proliferation (in post-infectious arthritis)"
+        ],
+        "lab_values": {
+            "IFN-\u03b3": "Exceptionally elevated levels, persisting in post-infectious period",
+            "IL-10": "Inadequate levels in post-infectious period"
+        },
+        "risk_factors": [
+            "Infection with highly inflammatory RST-1 type strain of Borrelia burgdorferi",
+            "Certain HLA-DR alleles (e.g., DRB1:0401)",
+            "TLR1-1805GG polymorphism",
+            "Steroid use prior to antibiotic treatment (in children)",
+            "Older age (in children)",
+            "Longer duration of arthritis prior to diagnosis (in children)",
+            "Poor initial response to antibiotics (in children)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Lyme arthritis (monoarticular or oligoarticular arthritis)",
+            "Positive serology for Borrelia burgdorferi"
+        ],
+        "supportive": [
+            "History of tick bite in endemic area",
+            "Erythema migrans rash"
+        ]
+    },
+    "differential_diagnoses": [
+        "Juvenile rheumatoid arthritis",
+        "Rheumatoid arthritis",
+        "Peripheral spondyloarthritis",
+        "Psoriatic arthritis"
+    ]
+}

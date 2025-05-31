@@ -1,0 +1,37 @@
+{
+    "disease": "Whooping cough due to Bordetella parapertussis without pneumonia",
+    "icd_code": "A3710",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Paroxysmal (fits of coughing), often followed by a 'whooping' sound during inhalation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "PCR": {
+                "Bordetella parapertussis": "Positive"
+            }
+        },
+        "risk_factors": [
+            "Close contact with infected individuals",
+            "Lack of vaccination",
+            "Age under five (higher incidence)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive PCR test for Bordetella parapertussis"
+        ],
+        "supportive": [
+            "Characteristic paroxysmal cough",
+            "Whooping sound during inhalation"
+        ]
+    },
+    "differential_diagnoses": []
+}

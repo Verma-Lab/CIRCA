@@ -1,0 +1,101 @@
+{
+    "disease": "Zoster Encephalitis",
+    "icd_code": "B020",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hallucinations",
+                "severity": "Severe",
+                "pattern": "Intermittent, worsening over time"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Severe",
+                "pattern": "Generalized, impacting ambulation"
+            },
+            {
+                "name": "Difficulty with word finding",
+                "severity": "Moderate",
+                "pattern": "Reported by family member"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Moderate",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Headache",
+                "severity": "Moderate",
+                "pattern": "Frontal"
+            },
+            {
+                "name": "Diplopia",
+                "severity": "Moderate",
+                "pattern": "Three weeks duration, paresis of left cranial nerve III"
+            },
+            {
+                "name": "Heel pain",
+                "severity": "Mild",
+                "pattern": "Initial symptom"
+            },
+            {
+                "name": "Painful vesicular rash",
+                "severity": "Moderate",
+                "pattern": "Localized to second sacral dermatome of right leg"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Temperature 99.4\u00b0 Fahrenheit"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "99.4\u00b0 Fahrenheit",
+            "pulse": "92 beats per minute",
+            "respiratory_rate": "20 respirations per minute",
+            "blood_pressure": "196/91 millimeters of mercury"
+        },
+        "physical_findings": [
+            "Crusted lesions following the second sacral dermatome on the posterior right leg extending from the sacral region to the lower calf",
+            "Generalized weakness",
+            "Difficulty with ambulation without any focal deficits",
+            "Paresis of the III left cranial nerve (in one case)"
+        ],
+        "lab_values": {
+            "serum_blood_urea_nitrogen": "23.1 mg/dL (normal range 6.0\u201320.0 mg/dL)",
+            "creatinine": "3.03 mg/dL (normal range 0.67\u20131.17 mg/dL)",
+            "glomerular_filtration_rate": "22 mL/min (normal is >60 mL/min)",
+            "cerebrospinal_fluid_protein": "Elevated",
+            "cerebrospinal_fluid_cell_count": "Lymphocytic pleocytosis (37 cells, 88% lymphocytes in one case)"
+        },
+        "risk_factors": [
+            "Immunocompromised state (kidney transplant, HIV infection)",
+            "Age greater than 50 years old",
+            "Poor adherence to antiretroviral therapy (in one case)"
+        ],
+        "imaging_findings": {
+            "brain_CT": "Chronic mild to moderate degenerative changes",
+            "brain_MRI": [
+                "Moderate chronic microvascular ischemia",
+                "Abnormal appearance of the distal left vertebral artery",
+                "Three hyperintense T2-weighted lesions surrounded by edema in the right sublenticular, left occipital and left parietal regions (in one case)",
+                "Small nodular lesion in the right sublenticular region with hyperintense signal on the axial T2-weighted image and homogeneous enhancement on the axial T1-weighted image after gadolinium, surrounded by edema (in one case)"
+            ],
+            "chest_radiograph": "Unremarkable"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with encephalitis (e.g., altered mental status, hallucinations, weakness)",
+            "Positive VZV PCR in CSF"
+        ],
+        "supportive": [
+            "Recent history of shingles",
+            "Immunocompromised state",
+            "Lymphocytic pleocytosis and elevated protein in CSF",
+            "Characteristic imaging findings on brain MRI"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,42 @@
+{
+    "disease": "Liver cell carcinoma",
+    "icd_code": "C220",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Viral hepatitis (hepatitis B and hepatitis C)",
+            "Alcoholic liver disease",
+            "Non-alcoholic steatohepatitis (NASH)/non-alcoholic fatty liver disease (NAFLD)",
+            "Aflatoxins",
+            "Iron overload",
+            "Glycogen storage disease",
+            "Wilson disease",
+            "Alpha-1 antitrypsin deficiency",
+            "Hypercitrullinemia",
+            "Alagille syndrome",
+            "Acute intermittent porphyrias"
+        ],
+        "imaging_findings": {
+            "Abdominal CT": [],
+            "Abdominal MRI (T1) without contrast": [],
+            "Abdominal MRI (T1) with contrast": []
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": [
+            "Trabecular pattern",
+            "Pseudoacinar pattern",
+            "Hyaline eosinophilic inclusions",
+            "Peripheral endothelial wrapping",
+            "Malignant hepatocytes with hyaline inclusion bodies",
+            "Thickened trabeculae with endothelial wrapping",
+            "Clusters of malignant cells"
+        ]
+    },
+    "differential_diagnoses": []
+}

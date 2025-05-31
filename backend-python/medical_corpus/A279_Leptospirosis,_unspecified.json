@@ -1,0 +1,96 @@
+{
+    "disease": "Leptospirosis, unspecified",
+    "icd_code": "A279",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Variable",
+                "pattern": "Can occur in both acute and delayed phases"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Can occur in both acute and delayed phases"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Can occur in both acute and delayed phases"
+            },
+            {
+                "name": "Muscle and joint aches",
+                "severity": "Variable",
+                "pattern": "Can occur in both acute and delayed phases"
+            },
+            {
+                "name": "Red spots on skin",
+                "severity": "Mild",
+                "pattern": "Can occur in acute phase"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can occur in delayed phase"
+            },
+            {
+                "name": "Inflammation of organs (kidneys, heart)",
+                "severity": "Variable",
+                "pattern": "Can occur in delayed phase"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Variable",
+                "pattern": "Common in leptospiremic phase"
+            },
+            {
+                "name": "Internal bleeding",
+                "severity": "Severe",
+                "pattern": "Occurs in Weil's syndrome (severe leptospirosis)"
+            },
+            {
+                "name": "Kidney damage",
+                "severity": "Severe",
+                "pattern": "Occurs in Weil's syndrome (severe leptospirosis)"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Severe",
+                "pattern": "Occurs in Weil's syndrome (severe leptospirosis)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (high fever)"
+        },
+        "physical_findings": [
+            "Red spots on skin",
+            "Jaundice (in severe cases)"
+        ],
+        "lab_values": {
+            "blood tests": "Signs of infection in leptospiremic phase",
+            "urine tests": "Signs of bacteria and antibodies to Leptospira in immune phase"
+        },
+        "risk_factors": [
+            "Contact with contaminated water (e.g., floodwaters, recreational freshwater)",
+            "Contact with urine of infected animals (dogs, pigs, horses, mice, etc.)",
+            "Living in or traveling to tropical or warmer climates with high rainfall",
+            "Exposure to contaminated soil"
+        ],
+        "imaging_findings": {
+            "chest X-ray": "May be performed in severe cases",
+            "CT scan": "May be performed in severe cases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms (variable)",
+            "Positive blood or urine tests for Leptospira"
+        ],
+        "supportive": [
+            "Exposure history (contact with contaminated water or animals)",
+            "Imaging findings (in severe cases)"
+        ]
+    },
+    "differential_diagnoses": []
+}

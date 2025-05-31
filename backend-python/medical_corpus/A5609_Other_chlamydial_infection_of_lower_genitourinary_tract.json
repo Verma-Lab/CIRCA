@@ -1,0 +1,93 @@
+{
+    "disease": "Other chlamydial infection of lower genitourinary tract",
+    "icd_code": "A5609",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Urethral discharge",
+                "severity": "Variable",
+                "pattern": "Present in some individuals"
+            },
+            {
+                "name": "Abnormal vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Present in some individuals"
+            },
+            {
+                "name": "Cervicitis",
+                "severity": "Variable",
+                "pattern": "Present in some individuals"
+            },
+            {
+                "name": "Contact bleeding",
+                "severity": "Variable",
+                "pattern": "Present in some individuals"
+            },
+            {
+                "name": "Tenderness on bimanual examination",
+                "severity": "Variable",
+                "pattern": "Present in some individuals"
+            },
+            {
+                "name": "Rectal discharge",
+                "severity": "Variable",
+                "pattern": "Present in some individuals"
+            },
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Pain in genital organ",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Painful or reddened external genitalia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Approximately 70% of infected women and 50% of infected men"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Urethral discharge",
+            "Abnormal vaginal discharge",
+            "Cervicitis",
+            "Contact bleeding",
+            "Tenderness on bimanual examination (cervical excitation and pelvic adnexal tenderness)",
+            "Rectal discharge",
+            "Painful or reddened external genitalia"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Multiple infections over time"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory tests to confirm diagnosis"
+        ],
+        "supportive": [
+            "Urethral discharge",
+            "Abnormal vaginal discharge",
+            "Cervicitis",
+            "Contact bleeding",
+            "Tenderness on bimanual examination",
+            "Rectal discharge"
+        ]
+    },
+    "differential_diagnoses": []
+}

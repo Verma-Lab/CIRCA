@@ -1,0 +1,65 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue, unspecified",
+    "icd_code": "C499",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can range from mild to severe depending on location and extent of tumor"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "Palpable lump or swelling; size and location vary"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Muscle weakness due to tumor infiltration"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "General feeling of tiredness and lack of energy"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained weight loss"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in advanced stages",
+            "blood_pressure": "May be elevated in advanced stages"
+        },
+        "physical_findings": [
+            "Palpable mass",
+            "Local swelling",
+            "Limited range of motion",
+            "Skin changes (e.g., discoloration, ulceration)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "May show mass and extent of involvement",
+            "MRI": "May show mass, extent of involvement, and relationship to surrounding structures",
+            "PET scan": "May show metabolic activity of the tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant neoplasm of connective or soft tissue"
+        ],
+        "supportive": [
+            "Imaging findings consistent with a malignant neoplasm",
+            "Clinical symptoms and signs suggestive of a malignant neoplasm"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign neoplasms of connective and soft tissue",
+        "Inflammatory conditions",
+        "Other soft tissue masses"
+    ]
+}

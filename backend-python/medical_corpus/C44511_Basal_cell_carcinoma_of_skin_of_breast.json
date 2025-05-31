@@ -1,0 +1,87 @@
+{
+    "disease": "Basal cell carcinoma of the breast",
+    "icd_code": "C44511",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rapid enlargement of a nevus",
+                "severity": "Significant",
+                "pattern": "Over three months"
+            },
+            {
+                "name": "Hyperpigmented mass",
+                "severity": "Present",
+                "pattern": "Over right nipple areola complex and surrounding area"
+            },
+            {
+                "name": "Erythematous plaque",
+                "severity": "Present",
+                "pattern": "6x4 cm size, with erosions and ulceration"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Significant",
+                "pattern": "Two-day history in one case"
+            },
+            {
+                "name": "Oozing",
+                "severity": "Present",
+                "pattern": "From ulcerated mass"
+            },
+            {
+                "name": "Localized breast pain",
+                "severity": "Present",
+                "pattern": "Associated with ulceration"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Present",
+                "pattern": "In one case"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Elevated (164/85 mmHg in one case)"
+        },
+        "physical_findings": [
+            "Single hyperpigmented, erythematous plaque (6x4 cm) with erosions and ulceration over the nipple and areola of right breast",
+            "No lymph node enlargement (in one case)",
+            "Large fungating mass >10cm, occupying most of mid and outer breast with distortion of nipple areola complex",
+            "Several open wounds with active bleeding and foul smell",
+            "Area of erythema",
+            "Palpable left axillary lymph nodes (in one case)"
+        ],
+        "lab_values": {
+            "Fine needle aspiration cytology": "Inconclusive",
+            "HMB-45 staining": "Negative (to rule out melanoma)",
+            "Enzyme-linked immunosorbent assay for HIV": "Negative"
+        },
+        "risk_factors": [
+            "Sun exposure (low in breast)",
+            "Immunocompromised status",
+            "Exposure to radiation",
+            "Prior burns",
+            "Exposure to arsenic",
+            "Genetic predisposition",
+            "Frequent basal cell carcinomas (multiple occurrences)"
+        ],
+        "imaging_findings": {
+            "Ultrasonography": "Normal",
+            "Mammography": "Normal",
+            "CT scan": "Large, partially enhancing heterogeneous mass in left breast; calcified granuloma in right lung; mildly enlarged left axillary lymph nodes",
+            "MRI of brain": "Negative for brain lesions",
+            "Bone scintigraphy": "Negative for osseous metastatic disease"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": "Histopathological examination showing features of basal cell carcinoma",
+        "supportive": [
+            "Clinical presentation consistent with BCC",
+            "Imaging findings suggestive of a mass"
+        ]
+    },
+    "differential_diagnoses": [
+        "Melanoma",
+        "Invasive primary breast carcinoma"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Migraine",
+      "icd_code": "G43.1",
+      "probability": 70,
+      "reasoning": "The patient's chief complaint is a headache, and the history is non-contributory.  Given the lack of other symptoms,  migraine is a high possibility.  The literature strongly suggests that headaches attributed to sinusitis are often misdiagnosed migraines.  Further investigation is needed to rule out other causes."
+    },
+    {
+      "disease": "Tension-type headache",
+      "icd_code": "G44.2",
+      "probability": 60,
+      "reasoning": "Tension-type headaches are common and present with a less specific presentation than migraine.  The absence of other symptoms makes this a possible diagnosis, but further investigation is needed to differentiate from migraine."
+    },
+    {
+      "disease": "Allergic Rhinitis with Headache",
+      "icd_code": "J30.1",
+      "probability": 30,
+      "reasoning": "While the patient only reports a headache, the literature highlights the frequent association between allergic rhinitis and headaches.  The absence of other allergy symptoms lowers the probability, but it cannot be entirely ruled out without further investigation."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Detailed neurological examination",
+    "Complete history taking, including detailed headache characteristics (location, duration, intensity, associated symptoms like nausea, photophobia, phonophobia)",
+    "Allergy testing (skin prick test or blood test) if allergy symptoms develop",
+    "Sinus imaging (if sinus pain is reported or suspected)",
+    "Consider keeping a headache diary to track frequency, duration, and associated symptoms"
+  ],
+  "clinical_summary": "A 19-year-old male presents with a chief complaint of headache.  The history is non-contributory.  Based on the limited information, migraine and tension-type headache are the most likely diagnoses.  Allergic rhinitis with headache is a less likely possibility.  Further investigation is crucial to establish a definitive diagnosis and appropriate management.  A detailed history, neurological examination, and potentially allergy testing are recommended.",
+  "timestamp": "2025-04-18T07:03:01.247723",
+  "identified_icd_codes": []
+}

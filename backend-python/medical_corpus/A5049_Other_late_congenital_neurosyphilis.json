@@ -1,0 +1,17 @@
+{
+    "disease": "Other late congenital neurosyphilis",
+    "icd_code": "A5049",
+    "parameters": {
+        "symptoms": [],
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

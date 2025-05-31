@@ -1,0 +1,113 @@
+{
+    "disease": "Plasmodium ovale malaria",
+    "icd_code": "B530",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Tertian periodicity (every 48 hours)"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Often accompanies fever"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Arthralgias",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Hypoglycemia",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Pulmonary dysfunction",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Renal dysfunction",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Neurologic changes",
+                "severity": "Variable",
+                "pattern": "Possible"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated, often \u2265101\u00b0F (38.3\u00b0C), sometimes \u2265104\u00b0F (40\u00b0C)"
+        },
+        "physical_findings": [
+            "Splenomegaly"
+        ],
+        "lab_values": {
+            "blood_smear": "Presence of Plasmodium ovale parasites; oval-shaped infected erythrocytes with Sch\u00fcffner's dots",
+            "PCR": "Detection of Plasmodium ovale DNA"
+        },
+        "risk_factors": [
+            "Travel to or residence in malaria-endemic areas (primarily sub-Saharan Africa and some western Pacific islands)",
+            "Lack of preventative measures (e.g., mosquito nets, insect repellent)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Plasmodium ovale parasites on blood smear microscopy"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with malaria (fever, chills, headache, etc.)",
+            "Positive PCR test for Plasmodium ovale DNA"
+        ]
+    },
+    "differential_diagnoses": [
+        "Plasmodium vivax malaria",
+        "Plasmodium malariae malaria",
+        "Other febrile illnesses"
+    ]
+}

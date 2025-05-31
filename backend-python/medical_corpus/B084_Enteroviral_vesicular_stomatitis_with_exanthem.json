@@ -1,0 +1,152 @@
+{
+    "disease": "Enteroviral vesicular stomatitis with exanthem",
+    "icd_code": "B084",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vesicular stomatitis",
+                "severity": "Variable",
+                "pattern": "Oral mucosa and skin lesions"
+            },
+            {
+                "name": "Exanthem",
+                "severity": "Variable",
+                "pattern": "Generalized rash, may involve palms, soles, buttocks, thighs, genitalia"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "May precede rash"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Oral lesions",
+                "severity": "Mild to moderate",
+                "pattern": "Vesicles and ulcerations"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with meningitis"
+            },
+            {
+                "name": "Nuchal rigidity",
+                "severity": "Moderate",
+                "pattern": "Associated with meningitis"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with meningitis"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Severe",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Eye pain",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with conjunctivitis"
+            },
+            {
+                "name": "Lid edema",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with conjunctivitis"
+            },
+            {
+                "name": "Excessive lacrimation",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with conjunctivitis"
+            },
+            {
+                "name": "Subconjunctival hemorrhage",
+                "severity": "Mild to moderate",
+                "pattern": "Associated with conjunctivitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Variable, may be present"
+        },
+        "physical_findings": [
+            "Vesicles and ulcerations on oral mucosa",
+            "Maculopapular or vesicular rash on skin",
+            "Lymphadenopathy (occasionally)"
+        ],
+        "lab_values": {
+            "PCR": "Positive for enterovirus",
+            "Viral culture": "May be positive, but less sensitive than PCR"
+        },
+        "risk_factors": [
+            "Contact with infected individuals",
+            "Poor hygiene",
+            "Seasonal variation (summer and fall)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with enteroviral vesicular stomatitis and exanthem"
+        ],
+        "supportive": [
+            "Positive PCR for enterovirus",
+            "Positive viral culture"
+        ]
+    },
+    "differential_diagnoses": [
+        "Adenovirus infection",
+        "Epstein-Barr virus infection",
+        "Group A streptococcal infection",
+        "Herpes simplex virus infection",
+        "Human herpesvirus 6 infection (roseola)",
+        "Measles",
+        "Meningococcemia",
+        "Parvovirus B19 infection",
+        "Rubella"
+    ]
+}

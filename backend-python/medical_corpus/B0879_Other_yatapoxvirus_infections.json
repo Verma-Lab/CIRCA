@@ -1,0 +1,46 @@
+{
+    "disease": "Other yatapoxvirus infections",
+    "icd_code": "B0879",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Mild fever",
+                "severity": "Mild",
+                "pattern": "Present in Tanapox virus and Yaba-like disease virus infections"
+            },
+            {
+                "name": "Epidermal lesions",
+                "severity": "Variable",
+                "pattern": "Present in Tanapox virus and Yaba-like disease virus infections;  vesicular in Tanapox virus, subcutaneous tumor-like masses (histiocytomas) in Yaba monkey tumor virus"
+            },
+            {
+                "name": "Subcutaneous tumor-like masses (histiocytomas)",
+                "severity": "Variable, generally non-invasive and spontaneously regress",
+                "pattern": "Characteristic of Yaba monkey tumor virus infection, commonly located on head and limbs"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Localized cutaneous lesions (Tanapox virus)",
+            "Subcutaneous tumor-like masses (histiocytomas) (Yaba monkey tumor virus)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected primates",
+            "Laboratory exposure (accidental infection)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with yatapoxvirus infection (fever, skin lesions, or histiocytomas)",
+            "Isolation of virus from clinical specimens"
+        ],
+        "supportive": [
+            "Serological evidence of yatapoxvirus infection",
+            "Molecular detection of yatapoxvirus DNA"
+        ]
+    },
+    "differential_diagnoses": []
+}

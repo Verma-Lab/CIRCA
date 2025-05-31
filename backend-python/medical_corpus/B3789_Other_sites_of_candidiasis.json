@@ -1,0 +1,21 @@
+{
+    "disease": "Other sites of candidiasis",
+    "icd_code": "B3789",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Weakened immune systems (HIV, cancer, organ transplant)",
+            "Prolonged use of antibiotics, corticosteroids, or immunosuppressive drugs"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

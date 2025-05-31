@@ -1,0 +1,90 @@
+{
+    "disease": "Rubella with neurological complication, unspecified",
+    "icd_code": "B0600",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Present in some cases, small, bright red spots"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Loss of consciousness",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Muscle cramps",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Altered behavior and thinking",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Loss of motor control",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Phonophobia",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Possible"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Encephalitis",
+            "Meningitis"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of rubella infection",
+            "Presence of neurological complications"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

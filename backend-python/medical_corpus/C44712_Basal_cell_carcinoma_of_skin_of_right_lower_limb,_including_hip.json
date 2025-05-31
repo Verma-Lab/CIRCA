@@ -1,0 +1,57 @@
+{
+    "disease": "Basal cell carcinoma of skin of right lower limb, including hip",
+    "icd_code": "C44712",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Small, shiny bump or scaly flat patch",
+                "severity": "Variable",
+                "pattern": "Slow growth over time"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            },
+            {
+                "name": "Infection",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small, sometimes shiny bump or scaly flat patch on the skin",
+            "Lesion on the right lower limb, including hip"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 50",
+            "Fair skin and light eyes",
+            "Previous BCC",
+            "Excessive exposure to ultraviolet (UV) rays from sunlight or tanning beds",
+            "Basal cell nevus syndrome (Gorlin syndrome)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical examination revealing a suspicious lesion"
+        ],
+        "supportive": [
+            "Biopsy confirming the presence of basal cell carcinoma"
+        ]
+    },
+    "differential_diagnoses": []
+}

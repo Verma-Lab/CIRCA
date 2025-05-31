@@ -1,0 +1,36 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of heart, mediastinum and pleura",
+    "icd_code": "C388",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "General unwellness",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to severe illness depending on cancer progression"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe depending on cancer progression"
+            },
+            {
+                "name": "Organ compression symptoms",
+                "severity": "Variable",
+                "pattern": "Depends on the size of the tumor and the organs compressed"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of malignant neoplasm involving at least two of the following sites: heart, mediastinum, pleura"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

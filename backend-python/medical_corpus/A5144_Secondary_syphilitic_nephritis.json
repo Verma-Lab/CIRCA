@@ -1,0 +1,105 @@
+{
+    "disease": "Secondary syphilitic nephritis",
+    "icd_code": "A5144",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bilateral lower limb swelling",
+                "severity": "Significant",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Weight gain",
+                "severity": "Significant",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Hypertension",
+                "severity": "New onset",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Acute bilateral flank pain",
+                "severity": "Acute",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Present",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Cola-colored urine",
+                "severity": "Present",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Non-pruritic generalized maculopapular rash",
+                "severity": "Present",
+                "pattern": "New onset"
+            },
+            {
+                "name": "Palpable cervical lymphadenopathy",
+                "severity": "Present",
+                "pattern": "New onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Elevated in Case 2",
+            "pulse_rate": "Within normal limits in Case 1"
+        },
+        "physical_findings": [
+            "Volume overload (Case 1)",
+            "Maculopapular rash (Case 2)",
+            "Cervical lymphadenopathy (Case 2)"
+        ],
+        "lab_values": {
+            "hemoglobin": "7.7 g/dL (Case 1), 11 g/dL (Case 2) - both hypochromic microcytic anemia",
+            "urine_protein_to_creatinine_ratio": "2153 mg/mmol (Case 1)",
+            "creatinine": "156 umol/L (Case 1), 188 umol/L (Case 2)",
+            "eGFR": "46 mL/min/1.73 m2 (Case 1)",
+            "serum_albumin": "18 g/L (Case 1)",
+            "24-hour_urine_protein": "18 g/day (Case 1)",
+            "RPR": "1:128 (Case 1)",
+            "TPHA": ">1:10240 (Case 1)",
+            "complement_levels": "Normal (Case 2)",
+            "ANA": "Normal (Case 1, Case 2)",
+            "ANCA": "Normal (Case 2)",
+            "urine_PCR": "350 mg/mmol (Case 2)"
+        },
+        "risk_factors": [
+            "HIV infection (Case 1)",
+            "Type 1 diabetes mellitus (Case 1)",
+            "Underlying asthma (Case 2)",
+            "Sexually transmitted infection"
+        ],
+        "imaging_findings": {
+            "abdominal_ultrasound": "Normal-size kidneys with no evidence of obstruction (Case 1)",
+            "kidney_biopsy": {
+                "Case 1": "Diffuse global and segmental glomerulosclerosis, features of diabetic glomerulosclerosis, moderate interstitial fibrosis and tubular atrophy",
+                "Case 2": "Mesangial proliferative glomerulonephritis, minimal interstitial fibrosis and tubular atrophy"
+            },
+            "electron_microscopy": {
+                "Case 2": "Few mesangial and sub-endothelial deposits"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive syphilis serology (e.g., RPR, TPHA)",
+            "Renal involvement (e.g., proteinuria, hematuria, AKI)"
+        ],
+        "supportive": [
+            "Kidney biopsy findings consistent with syphilitic nephritis (e.g., membranous nephropathy, C3 glomerulonephritis)",
+            "Improvement in renal function after syphilis treatment"
+        ]
+    },
+    "differential_diagnoses": [
+        "HIV-associated nephropathy",
+        "Diabetic nephropathy",
+        "Membranous nephropathy",
+        "C3 glomerulonephritis",
+        "Post-infectious glomerulonephritis"
+    ]
+}

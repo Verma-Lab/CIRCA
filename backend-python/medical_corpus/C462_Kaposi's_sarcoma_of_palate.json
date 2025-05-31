@@ -1,0 +1,111 @@
+{
+    "disease": "Kaposi's sarcoma of palate",
+    "icd_code": "C462",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Bluish-red nodular enlargement",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Surface ulceration",
+                "severity": "Variable",
+                "pattern": "May occur in later stages"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Variable",
+                "pattern": "Associated with palatal lesions"
+            },
+            {
+                "name": "Poor oral intake",
+                "severity": "Variable",
+                "pattern": "Associated with palatal lesions"
+            },
+            {
+                "name": "Cervical lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Purple ulcerated plaque",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Violaceous plaques and nodules",
+                "severity": "Variable",
+                "pattern": "May be present in disseminated cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Purplish exophytic lesion on hard palate",
+            "Discrete papules on soft palate",
+            "Similar lesion on chest wall",
+            "Palpable cervical lymphadenopathy (firm, non-tender)",
+            "Diffuse bluish-red nodular enlargement on left hard palate",
+            "Nodular enlargement crossing midline, involving almost entire hard palate",
+            "Protrusion at occlusal plane interfering with mastication",
+            "Firm, non-tender swelling with surface ulceration"
+        ],
+        "lab_values": {
+            "CD4 count": {
+                "abnormal_range": "<500 cells/\u00b5L (multiple reports show values as low as 70 cells/\u00b5L)"
+            },
+            "Viral load": {
+                "abnormal_range": "Elevated (e.g., 44,913 copies/mL)"
+            },
+            "Full blood picture": {
+                "abnormal_range": "Normal in some cases"
+            },
+            "Peripheral blood film": {
+                "abnormal_range": "Normal in some cases"
+            }
+        },
+        "risk_factors": [
+            "HIV infection",
+            "Immunodeficiency (AIDS)",
+            "Human herpesvirus 8 (HHV-8) infection"
+        ],
+        "imaging_findings": {
+            "Panoramic radiograph": "No significant changes in adjacent bone",
+            "Chest radiography": "No pathology in some cases",
+            "Ultrasonography of abdomen": "No pathology in some cases",
+            "Upper gastrointestinal endoscopy": "Violaceous plaques on esophagus and gastric fundus in some cases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing fibrous connective tissue stroma with numerous irregular slit-like spaces containing extravasated red blood cells, surrounded by ill-defined fascicles of spindle-shaped cells"
+        ],
+        "supportive": [
+            "Clinical presentation of purplish lesions on palate",
+            "HIV infection",
+            "HHV-8 positivity (immunohistochemistry)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacillary angiomatosis",
+        "Lymphoma",
+        "Ecchymosis",
+        "Low-grade mucoepidermoid carcinoma",
+        "Hemangiomas",
+        "Lymphangiomas",
+        "Arteriovenous hemangiomas",
+        "Pyogenic granuloma",
+        "Peripheral giant cell proliferation",
+        "Well-differentiated angiosarcoma",
+        "Fibrosarcoma",
+        "Arteriovenous malformations",
+        "Kaposiform hemangioendothelioma",
+        "Spindle cell hemangioendothelioma"
+    ]
+}

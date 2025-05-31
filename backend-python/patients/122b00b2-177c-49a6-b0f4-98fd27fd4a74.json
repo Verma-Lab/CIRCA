@@ -1,0 +1,18 @@
+{
+  "id": "122b00b2-177c-49a6-b0f4-98fd27fd4a74",
+  "mrn": "MRN3F9B8A23",
+  "first_name": "Jeffrey",
+  "last_name": "Pena",
+  "date_of_birth": "1966-05-04",
+  "gender": "Male",
+  "address": "41272 Sims Circles Suite 338",
+  "phone": "001-247-555-4994",
+  "email": "ortizkimberly@ball.com",
+  "insurance_provider": "Kaiser",
+  "insurance_id": "JI329241",
+  "primary_care_provider": "Dr. Williams",
+  "emergency_contact_name": "Michael Lawrence",
+  "emergency_contact_phone": "(981)723-7111",
+  "created_at": "2025-03-24T12:52:01.082051",
+  "updated_at": "2025-03-24T12:52:01.082051"
+}

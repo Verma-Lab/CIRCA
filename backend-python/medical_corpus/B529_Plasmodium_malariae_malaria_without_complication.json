@@ -1,0 +1,70 @@
+{
+    "disease": "Plasmodium malariae malaria without complication",
+    "icd_code": "B529",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_smear": "Presence of Plasmodium malariae parasites"
+        },
+        "risk_factors": [
+            "Travel to malaria-endemic regions",
+            "Lack of preventative measures (e.g., mosquito nets, antimalarial medication)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Plasmodium malariae parasites in blood smear"
+        ],
+        "supportive": [
+            "Symptoms consistent with malaria (fever, chills, headache)"
+        ]
+    },
+    "differential_diagnoses": []
+}

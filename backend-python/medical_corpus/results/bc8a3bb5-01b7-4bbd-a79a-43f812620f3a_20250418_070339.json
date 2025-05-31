@@ -1,0 +1,31 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Migraine",
+      "icd_code": "G43.1",
+      "probability": 70,
+      "reasoning": "The patient's chief complaint is a headache, and there is no other information provided.  Given the lack of other symptoms,  migraine is a high possibility.  The literature emphasizes the frequent misdiagnosis of sinus headaches as migraines, and the high prevalence of migraine headaches.  The absence of other symptoms makes other listed diseases less likely."
+    },
+    {
+      "disease": "Tension-type headache",
+      "icd_code": "G44.2",
+      "probability": 60,
+      "reasoning": "Tension-type headaches are common and often present with only headache as a symptom.  Without further information, this is a reasonable differential diagnosis."
+    },
+    {
+      "disease": "Sinus Headache (secondary to allergic rhinitis)",
+      "icd_code": "G44.0",
+      "probability": 30,
+      "reasoning": "While the literature mentions sinus headaches associated with allergies, the patient presents only with a headache.  The probability is low due to the lack of other symptoms suggestive of allergic rhinitis (runny nose, congestion, sneezing, etc.).  This would be a possibility if further investigation revealed allergy symptoms."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Detailed history taking focusing on headache characteristics (location, duration, intensity, associated symptoms like nausea, photophobia, phonophobia, aura).",
+    "Physical examination to assess for neurological signs.",
+    "Consider allergy testing if other allergy symptoms are present or suspected."
+  ],
+  "clinical_summary": "A 19-year-old male presents with a chief complaint of headache.  The history is non-contributory.  Given the limited information, the most likely diagnoses are migraine and tension-type headache.  Further history taking and physical examination are crucial to determine the exact nature of the headache and rule out other potential causes.  Allergy testing may be considered if additional symptoms suggestive of allergic rhinitis emerge.",
+  "timestamp": "2025-04-18T07:03:39.999441",
+  "identified_icd_codes": []
+}

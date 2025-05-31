@@ -1,0 +1,123 @@
+{
+    "disease": "Enterocolitis due to Clostridium difficile",
+    "icd_code": "A047",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Profuse watery diarrhea",
+                "severity": "Mild to severe",
+                "pattern": "90-95% of cases, onset within 7 days of antibiotic initiation, within 2-21 days of cessation"
+            },
+            {
+                "name": "Crampy abdominal pain",
+                "severity": "Mild to severe",
+                "pattern": "80-90% of cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to severe",
+                "pattern": "80% of cases"
+            },
+            {
+                "name": "Leukocytosis",
+                "severity": "Mild to severe",
+                "pattern": "80% of cases"
+            },
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Uncommon",
+                "pattern": "Should prompt investigation for other causes"
+            },
+            {
+                "name": "Nonspecific malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Often present"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Severe",
+                "pattern": "Can be life-threatening in severe cases"
+            },
+            {
+                "name": "Toxic megacolon",
+                "severity": "Severe",
+                "pattern": "Rare, life-threatening complication requiring emergency surgery"
+            },
+            {
+                "name": "Sepsis",
+                "severity": "Severe",
+                "pattern": "Rare, life-threatening complication"
+            },
+            {
+                "name": "Colonic perforation",
+                "severity": "Severe",
+                "pattern": "Life-threatening complication"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Mild to severe",
+                "pattern": "Common, especially in severe cases"
+            },
+            {
+                "name": "Pus in stool",
+                "severity": "Severe",
+                "pattern": "Indicates colonic inflammation"
+            },
+            {
+                "name": "Joint pain, inflammation, and swelling (reactive arthritis)",
+                "severity": "Severe",
+                "pattern": "Rare complication"
+            },
+            {
+                "name": "Albumin loss",
+                "severity": "Severe",
+                "pattern": "Can cause leaky blood vessels and swelling"
+            },
+            {
+                "name": "Peritonitis",
+                "severity": "Severe",
+                "pattern": "Can result from bowel perforation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in 80% of cases",
+            "heart_rate": "May be elevated in severe cases",
+            "blood_pressure": "May be decreased in severe cases due to dehydration"
+        },
+        "physical_findings": [
+            "Few and nonspecific unless fulminant disease is present",
+            "Abdominal tenderness may be present"
+        ],
+        "lab_values": {
+            "stool_toxin_assay": "Positive for toxin B in most cases",
+            "complete_blood_count": "Leukocytosis (increased white blood cell count) in 80% of cases",
+            "albumin": "May be decreased in severe cases due to albumin loss"
+        },
+        "risk_factors": [
+            "Recent antibiotic use",
+            "Immunosuppression (elderly patients, transplant patients, cancer patients)",
+            "Hospitalization or residence in long-term care facilities",
+            "Previous C. difficile infection",
+            "Proton pump inhibitor use",
+            "Certain medical conditions or procedures"
+        ],
+        "imaging_findings": {
+            "computed_tomography(CT)": "Nonspecific findings including diffuse pancolonic wall thickening, mucosal edema, thumbprinting, doughnut-like appearance of the ascending and descending colon, and colonic dilatation. Small bowel usually spared."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive stool toxin assay for Clostridium difficile toxin B"
+        ],
+        "supportive": [
+            "Characteristic endoscopic findings (pseudomembranes)",
+            "Clinical symptoms (diarrhea, abdominal pain, fever)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Inflammatory bowel disease",
+        "Other colitides",
+        "Infectious colitis due to other pathogens"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "disease": "Other streptococcal sepsis",
+    "icd_code": "A408",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "present",
+            "leukocytosis": "present",
+            "tachycardia": "present",
+            "tachypnea": "present",
+            "hypotension": "present (in septic shock)"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Infection",
+            "At least two signs of systemic inflammatory response syndrome (SIRS): fever, leukocytosis, tachycardia, tachypnea"
+        ],
+        "supportive": [
+            "Organ dysfunction (for severe sepsis)",
+            "Hypotension despite adequate volume administration (for septic shock)"
+        ]
+    },
+    "differential_diagnoses": []
+}

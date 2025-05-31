@@ -1,0 +1,122 @@
+{
+    "disease": "Gonococcal keratitis",
+    "icd_code": "A5433",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Purulent ocular discharge",
+                "severity": "Intense",
+                "pattern": "Unilateral or bilateral"
+            },
+            {
+                "name": "Red eye",
+                "severity": "Severe",
+                "pattern": "Unilateral or bilateral"
+            },
+            {
+                "name": "Corneal ulcer or melt",
+                "severity": "Variable",
+                "pattern": "Peripheral or para-central"
+            },
+            {
+                "name": "Corneal opacity",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Decreased visual acuity",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Acute pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Conjunctival injection",
+                "severity": "Severe",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Chemosis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Tender eyelid edema",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Restricted ocular motility",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Sub-epithelial and/or stromal infiltrates",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Discrete edema of the entire cornea",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Periorbital edema",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pre-auricular lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated",
+            "blood_pressure": "Usually normal",
+            "heart_rate": "Usually normal",
+            "respiratory_rate": "Usually normal"
+        },
+        "physical_findings": [
+            "Conjunctival injection",
+            "Purulent discharge",
+            "Corneal ulcer or melt",
+            "Corneal thinning",
+            "Corneal opacity",
+            "Anterior segment inflammation",
+            "Periorbital edema (in some cases)",
+            "Pre-auricular lymphadenopathy (in some cases)"
+        ],
+        "lab_values": {
+            "Gram stain": "Gram-negative diplococci",
+            "Culture": "Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Sexually active individuals",
+            "Contact with infected urine and/or genital secretions (direct or indirect autoinoculation)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gonococcal keratitis (purulent discharge, corneal ulceration, etc.)",
+            "Positive culture for Neisseria gonorrhoeae from ocular discharge"
+        ],
+        "supportive": [
+            "Gram stain showing gram-negative diplococci"
+        ]
+    },
+    "differential_diagnoses": [
+        "Epidemic keratoconjunctivitis",
+        "Immune-mediated peripheral corneal melt"
+    ]
+}

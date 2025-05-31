@@ -1,0 +1,99 @@
+{
+    "disease": "Chagas' disease (chronic)",
+    "icd_code": "B575",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Arrhythmias",
+                "severity": "Variable",
+                "pattern": "Years after infection"
+            },
+            {
+                "name": "Chronic cardiomyopathy",
+                "severity": "Variable",
+                "pattern": "Years after infection"
+            },
+            {
+                "name": "Megaesophagus",
+                "severity": "Variable",
+                "pattern": "Years after infection"
+            },
+            {
+                "name": "Megacolon",
+                "severity": "Variable",
+                "pattern": "Years after infection"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Associated with megaesophagus"
+            },
+            {
+                "name": "Obstipation",
+                "severity": "Variable",
+                "pattern": "Associated with megacolon"
+            },
+            {
+                "name": "Intestinal volvulus",
+                "severity": "Variable",
+                "pattern": "Associated with megacolon"
+            },
+            {
+                "name": "Heart failure",
+                "severity": "Variable",
+                "pattern": "Associated with cardiomyopathy"
+            },
+            {
+                "name": "Syncope",
+                "severity": "Variable",
+                "pattern": "Associated with cardiomyopathy"
+            },
+            {
+                "name": "Sudden death",
+                "severity": "Severe",
+                "pattern": "Associated with heart block or ventricular arrhythmia"
+            },
+            {
+                "name": "Thromboembolism",
+                "severity": "Variable",
+                "pattern": "Associated with cardiomyopathy"
+            },
+            {
+                "name": "Conduction abnormalities (e.g., right bundle branch block, left anterior fascicular block)",
+                "severity": "Variable",
+                "pattern": "Associated with cardiac disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Flaccid enlargement of all heart chambers",
+            "Apical aneurysms"
+        ],
+        "lab_values": {
+            "Serologic tests (ELISA, IFA, RIPA)": "Positive for antibodies to T. cruzi"
+        },
+        "risk_factors": [
+            "Living in poorly constructed housing",
+            "Limited resources",
+            "Residing in areas of poverty",
+            "High rates of migration",
+            "Seasonal farm work"
+        ],
+        "imaging_findings": {
+            "ECG": "May show right bundle branch or complete heart block",
+            "Cardiac ultrasonography": "May show flaccid enlargement of all chambers, apical aneurysms"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical assessment",
+            "Positive serology (at least two different tests)"
+        ],
+        "supportive": [
+            "Epidemiological history",
+            "Parasitological findings (in acute phase)"
+        ]
+    },
+    "differential_diagnoses": []
+}

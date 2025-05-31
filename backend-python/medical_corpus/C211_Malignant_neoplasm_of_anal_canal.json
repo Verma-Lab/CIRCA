@@ -1,0 +1,48 @@
+{
+    "disease": "Malignant neoplasm of anal canal",
+    "icd_code": "C211",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bright red bleeding",
+                "severity": "Variable",
+                "pattern": "Can be intermittent or continuous"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Can be intermittent or continuous"
+            },
+            {
+                "name": "Palpable mass",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Human papillomavirus (HPV) infection",
+            "Immunosuppression",
+            "Cigarette smoking",
+            "Receptive anal intercourse",
+            "Multiple sexual partners",
+            "Sexually transmitted diseases",
+            "History of cervical, vulvar, or vaginal carcinoma",
+            "Immunosuppression after solid organ transplantation",
+            "HIV positive"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Cytologic or histologic confirmation of malignancy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

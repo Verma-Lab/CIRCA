@@ -1,0 +1,55 @@
+{
+    "disease": "Anogenital herpesviral infection, unspecified",
+    "icd_code": "A609",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blisters",
+                "severity": "Variable",
+                "pattern": "May itch, burst, and form scabs"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Swollen and painful lymph nodes in the groin",
+                "severity": "Variable",
+                "pattern": "Occasional"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Blisters in the anogenital region",
+            "Swollen and painful inguinal lymph nodes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact",
+            "Weakened immune system",
+            "Stress"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with anogenital herpesviral infection"
+        ],
+        "supportive": [
+            "Positive viral culture or PCR testing"
+        ]
+    },
+    "differential_diagnoses": []
+}

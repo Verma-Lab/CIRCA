@@ -1,0 +1,111 @@
+{
+  "id": "4c680eb0-109f-41ad-ad71-dd8c11bd1a9e",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: headache\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let\u2019s analyze this ECG. Here's a detailed breakdown of what I see, incorporating observations and potential areas of concern:\n\n**Overall Impression:**\n\nThis ECG demonstrates a sinus rhythm, but with several notable findings that warrant careful consideration.  The rate appears to be within the normal range (approximately 60-100 bpm based on the QRS complexes), but there are concerning changes suggesting underlying cardiac pathology.\n\n**Detailed Analysis by Leads:**\n\n* **Lead I:**  The P waves are present, but appear slightly peaked. The QRS complexes are narrow, which is consistent with a normal ventricular depolarization.\n* **Lead II:** Similar to Lead I, the P waves are slightly peaked and the QRS complexes are narrow.\n* **Lead III:**  Similar to Leads I and II \u2013 P waves are slightly peaked, QRS complexes are narrow.\n* **Lead aVR:**  The P waves are inverted, suggesting right atrial activity is being attenuated. The QRS complexes are normal.\n* **Lead aVL:**  The P waves are normal in morphology. The QRS complexes are normal.\n* **V1-V6:** This is where we see the most significant abnormalities.\n    * **ST-segment Depression:** There's prominent ST-segment depression in leads V2-V4. This is the most prominent finding. The depression is most evident in V3 and V4, suggesting a septal region involvement. \n    * **T-wave Changes:** The T-waves in V2-V4 are also flattened and have a slight inverse appearance.\n    * **QRS Complexes:** The QRS complexes appear narrow, consistent with normal ventricular depolarization.\n\n**Specific Findings and Observations:**\n\n1. **Slightly Peaked P Waves:** The slightly elevated P waves could indicate mild left atrial enlargement or increased left atrial pressure.  It's a subtle finding but worth noting.\n\n2. **ST-Segment Depression in V2-V4:** This is the most concerning element.  The ST-segment depression in this region strongly suggests:\n   * **Myocardial Ischemia:** The most likely explanation is an area of myocardial ischemia (lack of blood flow) in the septum.\n   * **Early Repolarization:**  While possible, this is less likely given the consistent pattern and the severity of the depression.\n   * **Pericarditis:**  Less likely, as the ST depression is more typical of\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 02-16, illness\nDATE: 03-25, 09:09:28, 833517\nDETAILED_DESCRIPTION: .\nDIAGNOSTIC_PROCEDURE: ECG, rate, S, Leads, I, QRS complexes, ventricular depolarization, II, waves, III, Lead aVR, P waves, Lead aVL, T-wave Changes, T-waves, QRS Complexes, P Waves\nLAB_VALUE: sinus, within, normal range, 60, bpm, slightly peaked, narrow, normal, inverted, flattened, inverse, Peaked, slightly elevated, increased\nSIGN_SYMPTOM: rhythm, P waves, P, right atrial activity, ST-segment Depression, ST-segment depression, depression, involvement, left atrial enlargement, left atrial pressure, ST-Segment Depression, blood flow, Early Repolarization\nDISEASE_DISORDER: cardiac pathology, Myocardial Ischemia, myocardial ischemia, Pericarditis\nBIOLOGICAL_STRUCTURE: V1-V6, leads V2-V4, V3 and V4, septal region, V2-V4, septum\nSEVERITY: prominent, light, mild",
+  "recommendation": "Myocardial Ischemia",
+  "reasoning": "The ECG shows prominent ST-segment depression in leads V2-V4, accompanied by flattened and slightly inverted T-waves in the same leads. This pattern is highly suggestive of myocardial ischemia, indicating a lack of blood flow to a portion of the heart muscle, most likely in the septal region.  The slightly peaked P waves suggest possible left atrial enlargement or increased pressure, which could be a consequence of the ischemia or an independent finding. While early repolarization and pericarditis are considered in the differential, the severity and location of the ST-segment depression strongly favor myocardial ischemia as the primary diagnosis. The patient's chief complaint of headache could be related to the underlying cardiac issue, although further investigation is needed to establish a direct link.\n\nDifferential Diagnoses:\n- {'diagnosis': 'Early Repolarization', 'explanation': 'While the ECG shows ST-segment depression, the pattern and severity make early repolarization less likely than myocardial ischemia. Early repolarization typically presents with less prominent and more diffuse ST-segment depression.'}\n- {'diagnosis': 'Pericarditis', 'explanation': 'Pericarditis can cause ST-segment elevation, but the pattern of ST-segment depression in leads V2-V4 is more consistent with myocardial ischemia.  Further investigation would be needed to rule this out.'}\n- {'diagnosis': 'Benign ECG Variant', 'explanation': \"It's possible that the ECG findings represent a benign variant, however, the significant ST-segment depression in leads V2-V4 warrants further investigation to rule out serious pathology.\"}",
+  "confidence": "75",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "No relevant medical literature found for this case."
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let\u2019s analyze this ECG. Here's a detailed breakdown of what I see, incorporating observations and potential areas of concern:\n\n**Overall Impression:**\n\nThis ECG demonstrates a sinus rhythm, but with several notable findings that warrant careful consideration.  The rate appears to be within the normal range (approximately 60-100 bpm based on the QRS complexes), but there are concerning changes suggesting underlying cardiac pathology.\n\n**Detailed Analysis by Leads:**\n\n* **Lead I:**  The P waves are present, but appear slightly peaked. The QRS complexes are narrow, which is consistent with a normal ventricular depolarization.\n* **Lead II:** Similar to Lead I, the P waves are slightly peaked and the QRS complexes are narrow.\n* **Lead III:**  Similar to Leads I and II \u2013 P waves are slightly peaked, QRS complexes are narrow.\n* **Lead aVR:**  The P waves are inverted, suggesting right atrial activity is being attenuated. The QRS complexes are normal.\n* **Lead aVL:**  The P waves are normal in morphology. The QRS complexes are normal.\n* **V1-V6:** This is where we see the most significant abnormalities.\n    * **ST-segment Depression:** There's prominent ST-segment depression in leads V2-V4. This is the most prominent finding. The depression is most evident in V3 and V4, suggesting a septal region involvement. \n    * **T-wave Changes:** The T-waves in V2-V4 are also flattened and have a slight inverse appearance.\n    * **QRS Complexes:** The QRS complexes appear narrow, consistent with normal ventricular depolarization.\n\n**Specific Findings and Observations:**\n\n1. **Slightly Peaked P Waves:** The slightly elevated P waves could indicate mild left atrial enlargement or increased left atrial pressure.  It's a subtle finding but worth noting.\n\n2. **ST-Segment Depression in V2-V4:** This is the most concerning element.  The ST-segment depression in this region strongly suggests:\n   * **Myocardial Ischemia:** The most likely explanation is an area of myocardial ischemia (lack of blood flow) in the septum.\n   * **Early Repolarization:**  While possible, this is less likely given the consistent pattern and the severity of the depression.\n   * **Pericarditis:**  Less likely, as the ST depression is more typical of"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "02-16",
+      "illness"
+    ],
+    "DATE": [
+      "03-25",
+      "09:09:28",
+      "833517"
+    ],
+    "DETAILED_DESCRIPTION": [
+      "."
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "ECG",
+      "rate",
+      "S",
+      "Leads",
+      "I",
+      "QRS complexes",
+      "ventricular depolarization",
+      "II",
+      "waves",
+      "III",
+      "Lead aVR",
+      "P waves",
+      "Lead aVL",
+      "T-wave Changes",
+      "T-waves",
+      "QRS Complexes",
+      "P Waves"
+    ],
+    "LAB_VALUE": [
+      "sinus",
+      "within",
+      "normal range",
+      "60",
+      "bpm",
+      "slightly peaked",
+      "narrow",
+      "normal",
+      "inverted",
+      "flattened",
+      "inverse",
+      "Peaked",
+      "slightly elevated",
+      "increased"
+    ],
+    "SIGN_SYMPTOM": [
+      "rhythm",
+      "P waves",
+      "P",
+      "right atrial activity",
+      "ST-segment Depression",
+      "ST-segment depression",
+      "depression",
+      "involvement",
+      "left atrial enlargement",
+      "left atrial pressure",
+      "ST-Segment Depression",
+      "blood flow",
+      "Early Repolarization"
+    ],
+    "DISEASE_DISORDER": [
+      "cardiac pathology",
+      "Myocardial Ischemia",
+      "myocardial ischemia",
+      "Pericarditis"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "V1-V6",
+      "leads V2-V4",
+      "V3 and V4",
+      "septal region",
+      "V2-V4",
+      "septum"
+    ],
+    "SEVERITY": [
+      "prominent",
+      "light",
+      "mild"
+    ]
+  },
+  "analysis_date": "2025-03-26T08:49:18.223439",
+  "created_at": "2025-03-26T08:49:18.223444"
+}

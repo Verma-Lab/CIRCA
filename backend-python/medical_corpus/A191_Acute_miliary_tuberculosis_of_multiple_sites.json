@@ -1,0 +1,48 @@
+{
+    "disease": "Acute miliary tuberculosis of multiple sites",
+    "icd_code": "A191",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Prolonged fever",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Elevated"
+        },
+        "physical_findings": [
+            "Swelling of lymph nodes",
+            "Swelling of other affected organs"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Weakened immune system",
+            "HIV"
+        ],
+        "imaging_findings": {
+            "chest x-ray": "Millet-seed-like appearance (in miliary TB)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical evaluation (medical history and physical examination)",
+            "Lab tests",
+            "Imaging"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

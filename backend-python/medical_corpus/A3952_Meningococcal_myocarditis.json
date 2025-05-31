@@ -1,0 +1,155 @@
+{
+    "disease": "Meningococcal Myocarditis",
+    "icd_code": "A39.52",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chest pain",
+                "severity": "Unspecified",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "High (39\u00b0C)",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Body ache",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Worsening",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Orthopnea",
+                "severity": "Acute onset",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Shock",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Edema",
+                "severity": "Worsening",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Ecchymotic rash",
+                "severity": "Numerous",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Petechial rash",
+                "severity": "Present in some cases",
+                "pattern": "Characteristic of fulminant meningococcemia"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38.5-39\u00b0C",
+            "heart_rate": "120 bpm",
+            "blood_pressure": "78/45 mmHg - 100/50 mmHg",
+            "respiratory_rate": "30 breaths/min"
+        },
+        "physical_findings": [
+            "Tachycardia",
+            "Distended jugular veins",
+            "Cold extremities",
+            "Meningeal signs (in some cases)",
+            "Purpuric lesions (in some cases)",
+            "Absence of peripheral edema (in some cases)",
+            "Flat neck veins (in some cases)",
+            "Bilaterally clear chest (in some cases)",
+            "Nontender abdomen (in some cases)",
+            "Normal bowel sounds (in some cases)",
+            "Absence of hepatosplenomegaly (in some cases)",
+            "Normal state of consciousness (in some cases)",
+            "Absence of meningismus or sensorimotor impairment (in some cases)"
+        ],
+        "lab_values": {
+            "blood_cultures": "Positive for Neisseria meningitidis",
+            "C-reactive protein": "Elevated (114 mg/liter)",
+            "white_blood_cell_count": "Elevated (27 \u00d7 109/liter)",
+            "platelet_count": "Decreased (70,000/\u00b5L)",
+            "international_normalized_ratio_(INR)": "Elevated (4)",
+            "cardiac_troponin": "Elevated (75 ng/L - 55 ng/ml)",
+            "total_creatine_kinase_(CK)": "Elevated (8547 U/L)",
+            "cerebrospinal_fluid_(CSF)_pleocytosis": "Elevated (2750, 100% polynuclear neutrophil)",
+            "CSF_protein": "Elevated (1.75g)"
+        },
+        "risk_factors": [],
+        "imaging_findings": {
+            "electrocardiogram_(ECG)": [
+                "Isolated sinus tachycardia",
+                "Acute concave upwards ST-segment elevation in posterior and lateral leads",
+                "ST segment elevation in leads V1, V2, V3, DII, DIII and AVF"
+            ],
+            "chest_x-ray": "Pulmonary edema",
+            "echocardiography": [
+                "Posterolateral dyskinesis",
+                "Normal inferior kinetic",
+                "Impaired right ventricular contractility",
+                "Dilation of the inferior vena cava",
+                "No pericardial effusion",
+                "Global myocardial hyperkinesia with lowered ejection fraction (35%)",
+                "Ejection fraction of 60% with good mobility of the myocardium (after recovery)"
+            ],
+            "cardiovascular_magnetic_resonance_imaging_(MRI)": [
+                "Impairment of right ventricular function associated with nonischemic damage",
+                "Hypersignal T2 of the right ventricular",
+                "Myocardial edema",
+                "Late gadolinium contrast enhancement of the left ventricular posterolateral segment"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Neisseria meningitidis",
+            "Evidence of myocardial dysfunction (e.g., elevated cardiac troponin, echocardiographic abnormalities)"
+        ],
+        "supportive": [
+            "ECG changes (ST-segment elevation)",
+            "Imaging findings consistent with myocarditis (MRI)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Myositis secondary to meningococcemia",
+        "Cytokine effect",
+        "Fluid overload"
+    ]
+}

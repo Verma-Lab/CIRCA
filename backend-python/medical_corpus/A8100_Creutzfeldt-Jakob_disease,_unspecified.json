@@ -1,0 +1,121 @@
+{
+    "disease": "Creutzfeldt-Jakob disease, unspecified",
+    "icd_code": "A8100",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Memory loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Problems thinking",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Uncontrolled muscle spasms",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Movement difficulties",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Behavioral changes",
+                "severity": "Mild to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Trouble focusing",
+                "severity": "Mild to moderate",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Myoclonus (involuntary muscle jerks)",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Ataxia (lack of coordination)",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Difficulty swallowing",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Blindness",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Speech problems",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Loss of ability to care for oneself",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Other infections",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Muscle weakness",
+            "Ataxia",
+            "Myoclonus"
+        ],
+        "lab_values": {
+            "Spinal fluid": "May show elevated protein levels or other abnormalities",
+            "RT-QuIC": "Can detect prion proteins"
+        },
+        "risk_factors": [
+            "Age (50-80 years)",
+            "Genetic predisposition (familial CJD)",
+            "Exposure to contaminated tissue (iatrogenic CJD)",
+            "Consumption of beef from BSE-infected cattle (vCJD)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with CJD",
+            "Positive RT-QuIC test"
+        ],
+        "supportive": [
+            "Abnormal EEG",
+            "Brain biopsy showing characteristic spongiform changes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Alzheimer's disease",
+        "Huntington's disease",
+        "Other dementias"
+    ]
+}

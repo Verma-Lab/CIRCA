@@ -1,0 +1,95 @@
+{
+    "disease": "Mesothelioma of peritoneum",
+    "icd_code": "C451",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal distension",
+                "severity": "Variable",
+                "pattern": "Present in 30-80% of patients"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present in 27-58% of patients, usually diffuse and nonspecific"
+            },
+            {
+                "name": "Early satiety",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Bowel obstruction",
+                "severity": "Variable",
+                "pattern": "Can lead to acute abdomen"
+            },
+            {
+                "name": "Ascites",
+                "severity": "Variable",
+                "pattern": "Present in 60-100% of newly diagnosed patients"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Rare, may indicate advanced disease"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Rare"
+            },
+            {
+                "name": "New onset hernia",
+                "severity": "Variable",
+                "pattern": "Rare, related to ascites"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Increased abdominal girth",
+            "Abdominal or pelvic mass",
+            "Ascites",
+            "Abdominal wall hernia (13%)"
+        ],
+        "lab_values": {
+            "CA-125": "Frequently elevated, but low specificity"
+        },
+        "risk_factors": [
+            "Asbestos exposure (10-33% of cases)",
+            "Talc exposure",
+            "Thorotrast dye exposure",
+            "Radiation exposure",
+            "Papovavirus",
+            "Simian virus",
+            "Chronic inflammation"
+        ],
+        "imaging_findings": {
+            "CT scan": "Solid, heterogeneous, soft tissue mass with irregular margins; diffuse distribution throughout the abdominal cavity; ascites; omental caking, thickening or masses; mesenteric nodules; peritoneal thickening; diaphragmatic involvement; scalloping of intra-abdominal organs"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of mesothelioma"
+        ],
+        "supportive": [
+            "Characteristic imaging findings (CT scan)",
+            "Elevated CA-125 (low specificity)",
+            "Clinical presentation (abdominal distension, pain, ascites)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Ovarian cancer",
+        "Other peritoneal carcinomatosis"
+    ]
+}

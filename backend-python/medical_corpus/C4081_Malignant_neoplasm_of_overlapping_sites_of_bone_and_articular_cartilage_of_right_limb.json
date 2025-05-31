@@ -1,0 +1,43 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of bone and articular cartilage of right limb",
+    "icd_code": "C4081",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can be severe if bone fracture occurs"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe depending on the extent of the disease"
+            },
+            {
+                "name": "Bone fracture",
+                "severity": "Severe",
+                "pattern": "Can occur due to weakening of the bone by the tumor"
+            },
+            {
+                "name": "General unwellness",
+                "severity": "Variable",
+                "pattern": "Can be present, especially in cases of rapidly progressing cancer"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of malignant neoplasm involving both bone and articular cartilage of the right limb"
+        ],
+        "supportive": [
+            "Histopathological confirmation of malignant cells"
+        ]
+    },
+    "differential_diagnoses": []
+}

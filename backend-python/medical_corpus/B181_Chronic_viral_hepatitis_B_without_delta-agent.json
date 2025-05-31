@@ -1,0 +1,71 @@
+{
+    "disease": "Chronic viral hepatitis B without delta-agent",
+    "icd_code": "B181",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Yellowing of skin and eyes",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            },
+            {
+                "name": "Dark yellow urine",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            },
+            {
+                "name": "Diarrhoea",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May not appear until years after infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "HBsAg": "Positive",
+            "HBeAg": "Positive or Negative (variable)",
+            "Anti-HCV": "Negative"
+        },
+        "risk_factors": [
+            "Contact with blood, semen, and other body fluids from an HBV-infected person"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive HBsAg",
+            "Negative Anti-HCV"
+        ],
+        "supportive": [
+            "Abnormal liver function tests",
+            "Liver biopsy showing chronic inflammation"
+        ]
+    },
+    "differential_diagnoses": []
+}

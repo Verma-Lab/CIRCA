@@ -1,0 +1,79 @@
+{
+    "disease": "Gonococcal infection of eye, unspecified",
+    "icd_code": "A5430",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eye redness",
+                "severity": "Variable",
+                "pattern": "Present in both babies and adults"
+            },
+            {
+                "name": "Swelling of the conjunctiva (chemosis)",
+                "severity": "Variable",
+                "pattern": "Present in both babies and adults"
+            },
+            {
+                "name": "Itchy eyes",
+                "severity": "Variable",
+                "pattern": "Present in both babies and adults"
+            },
+            {
+                "name": "Eye tenderness or pain",
+                "severity": "Variable",
+                "pattern": "Present in both babies and adults"
+            },
+            {
+                "name": "Swollen eyelids",
+                "severity": "Variable",
+                "pattern": "Present in both babies and adults"
+            },
+            {
+                "name": "Eye discharge",
+                "severity": "Variable",
+                "pattern": "Present in both babies and adults, leading to difficulty opening eyes in the morning"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Conjunctival inflammation",
+            "Purulent discharge"
+        ],
+        "lab_values": {
+            "Gram stain": "Intracellular gram-negative diplococci",
+            "Culture": "Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Exposure to infected vaginal fluids during birth (neonates)",
+            "Direct or indirect contact with infected genital secretions (adults)",
+            "Unsafe sex practices (adults)",
+            "Compromised immune system",
+            "Poor hygiene"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gonococcal conjunctivitis",
+            "Positive Gram stain showing intracellular gram-negative diplococci",
+            "Culture positive for Neisseria gonorrhoeae"
+        ],
+        "supportive": [
+            "History of exposure to infected individual",
+            "Elevated white blood cell count in conjunctival exudate"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral conjunctivitis",
+        "Allergic conjunctivitis",
+        "Chlamydial conjunctivitis",
+        "Dry eyes",
+        "Blepharitis",
+        "Episcleritis",
+        "Scleritis",
+        "Iritis",
+        "Acute angle-closure glaucoma",
+        "Epidemic keratoconjunctivitis"
+    ]
+}

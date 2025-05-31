@@ -1,0 +1,98 @@
+{
+    "disease": "Tuberculous female pelvic inflammatory disease",
+    "icd_code": "A1817",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Menstrual dysfunction",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Infertility",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Pelvic pain",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Abnormal vaginal discharge",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Tubo-ovarian masses",
+            "Adhesions",
+            "Pelvic tenderness",
+            "Enlarged fallopian tubes",
+            "Irregular uterine contour"
+        ],
+        "lab_values": {
+            "Endometrial biopsy": "Presence of caseating granulomas (may be absent due to menstruation)",
+            "Ascitic fluid (if present)": "Increased adenosine deaminase levels"
+        },
+        "risk_factors": [
+            "Poverty",
+            "Overcrowding",
+            "Lack of healthcare facilities",
+            "Poor ventilation",
+            "Diabetes",
+            "Illicit drug use",
+            "Kidney ailment",
+            "HIV infection",
+            "Previous pulmonary tuberculosis",
+            "Early marriage and childbearing"
+        ],
+        "imaging_findings": {
+            "Laparoscopy/Laparotomy": [
+                "Hydrosalpinx",
+                "Pyosalpinx",
+                "Tubal adhesions",
+                "Tubal distortion",
+                "Ovarian adhesions",
+                "Peritoneal adhesions",
+                "Ascites"
+            ],
+            "Ultrasound": [
+                "Tubo-ovarian masses",
+                "Thickened endometrium",
+                "Ascites"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pelvic inflammatory disease",
+            "Positive endometrial biopsy or ascitic fluid analysis showing caseating granulomas or increased adenosine deaminase levels"
+        ],
+        "supportive": [
+            "Positive tuberculin skin test",
+            "Imaging findings suggestive of tubal or peritoneal tuberculosis",
+            "Response to anti-tubercular treatment"
+        ]
+    },
+    "differential_diagnoses": [
+        "Non-tuberculous pelvic inflammatory disease",
+        "Endometriosis",
+        "Ovarian cancer",
+        "Appendicitis"
+    ]
+}

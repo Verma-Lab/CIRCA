@@ -1,0 +1,22 @@
+{
+    "disease": "Tuberculosis of nervous system, unspecified",
+    "icd_code": "A179",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Compromised immune system (HIV, undernutrition, diabetes)",
+            "Tobacco use",
+            "Alcohol use disorders"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

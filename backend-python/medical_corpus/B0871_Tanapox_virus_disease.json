@@ -1,0 +1,92 @@
+{
+    "disease": "Tanapox",
+    "icd_code": "B0871",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Febrile illness",
+                "severity": "mild, short-lived",
+                "pattern": "precedes lesion development"
+            },
+            {
+                "name": "Headache",
+                "severity": "severe",
+                "pattern": "occurs after lesion appearance"
+            },
+            {
+                "name": "Pruritus",
+                "severity": "present",
+                "pattern": "precedes lesion development"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "present",
+                "pattern": "leads to prostration"
+            },
+            {
+                "name": "Prostration",
+                "severity": "present",
+                "pattern": "due to myalgia"
+            },
+            {
+                "name": "Painful skin lesions",
+                "severity": "severe",
+                "pattern": "1-2 lesions, large, raised, umbilicated, ulcerate"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "present",
+                "pattern": "occurs after lesion appearance"
+            },
+            {
+                "name": "Fever",
+                "severity": "present",
+                "pattern": "occurs after lesion appearance"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "1-2 large, raised, umbilicated, painful skin lesions",
+            "Lesions ulcerate without becoming pustular",
+            "Localized lymphadenopathy (may be present)",
+            "Lesions resolve over 6 weeks, leaving slight discoloration"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to arthropods (e.g., mosquitoes, ticks)",
+            "Contact with nonhuman primates (potential zoonotic transmission)"
+        ],
+        "imaging_findings": {
+            "light microscopy": "Acidophilic intracytoplasmic inclusion bodies and cellular vacuolation; lesions confined to epithelial layers with vacuolated nuclei and ballooning cells",
+            "electron microscopy": "Brick-shaped virions (287 nm x 221 nm) with surface tubules and outer membrane layer"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic skin lesions (1-2, large, raised, umbilicated, ulcerating)",
+            "Histopathological findings (acidophilic intracytoplasmic inclusion bodies, cellular vacuolation)"
+        ],
+        "supportive": [
+            "Electron microscopy showing brick-shaped virions",
+            "PCR confirming Tanapox virus DNA"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cutaneous anthrax",
+        "Other poxvirus infections",
+        "Sporotrichosis",
+        "Mycobacterium marinum infection",
+        "Spotted fever group rickettsial infections",
+        "Tropical ulcers",
+        "Insect bites",
+        "Scabies",
+        "Allergies",
+        "Cellulitis",
+        "Erysipelas",
+        "Pyoderma gangrenosum",
+        "Granulomas caused by foreign bodies or insect bites (e.g., mango fly bites)"
+    ]
+}

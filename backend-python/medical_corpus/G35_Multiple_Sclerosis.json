@@ -1,0 +1,95 @@
+{
+    "disease": "Multiple Sclerosis",
+    "icd_code": "G35",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Muscle weakness",
+                "severity": "Variable, can range from mild to severe enough to cause paralysis",
+                "pattern": "Often begins in the hands and legs"
+            },
+            {
+                "name": "Tingling and burning sensations",
+                "severity": "Variable",
+                "pattern": "Can affect various parts of the body"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "Can affect various parts of the body"
+            },
+            {
+                "name": "Chronic pain",
+                "severity": "Variable",
+                "pattern": "Can be associated with optic neuritis, trigeminal neuralgia, limb spasms"
+            },
+            {
+                "name": "Coordination and balance problems",
+                "severity": "Variable",
+                "pattern": "Can affect mobility"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Common symptom"
+            },
+            {
+                "name": "Vision problems",
+                "severity": "Variable, can range from blurred vision to temporary blindness",
+                "pattern": "Can include blurred or grayed vision, temporary blindness in one eye, loss of normal color vision, issues with depth perception, or loss of vision in parts of the visual field. Nystagmus, opsoclonus, and double vision can also occur."
+            },
+            {
+                "name": "Difficulty with bladder control",
+                "severity": "Variable",
+                "pattern": "Can range from urgency to incontinence"
+            },
+            {
+                "name": "Depression",
+                "severity": "Variable",
+                "pattern": "Can be a significant symptom"
+            },
+            {
+                "name": "Cognitive difficulties",
+                "severity": "Variable",
+                "pattern": "Can affect thinking clearly"
+            },
+            {
+                "name": "Muscle stiffness and spasms",
+                "severity": "Variable",
+                "pattern": "Can affect walking or standing"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Muscle weakness",
+            "Muscle stiffness and spasms",
+            "Ataxia (lack of coordination)",
+            "Nystagmus (involuntary eye movements)",
+            "Optic neuritis (inflammation of the optic nerve)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Female sex",
+            "Family history of MS",
+            "Epstein-Barr virus infection",
+            "Smoking",
+            "Low vitamin D levels",
+            "Lack of sun exposure"
+        ],
+        "imaging_findings": {
+            "MRI": "Characteristic lesions (plaques) in the brain and spinal cord"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms consistent with MS",
+            "Characteristic MRI findings"
+        ],
+        "supportive": [
+            "Evoked potential studies",
+            "CSF analysis (may show oligoclonal bands)"
+        ]
+    },
+    "differential_diagnoses": []
+}

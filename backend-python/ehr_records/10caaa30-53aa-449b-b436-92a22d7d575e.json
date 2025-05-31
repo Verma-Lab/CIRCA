@@ -1,0 +1,165 @@
+{
+  "id": "10caaa30-53aa-449b-b436-92a22d7d575e",
+  "patient_id": "1f774d9c-d71e-41fc-930a-36f00d43d389",
+  "encounter_id": "4173ac5d-4e52-4790-8976-35b2550819f0",
+  "analysis_type": "Genetic Testing Recommendation",
+  "input_text": "Patient: Olivia Gaines, DOB: 1962-01-21, Gender: Female\n\nChief Complaint: headache\n\nS: No Medical History\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "recommendation": "not recommended",
+  "reasoning": "Based on the provided patient data, there is no clinical information to suggest a need for genetic testing for a rare genetic disease.  The chief complaint is only a headache, with no documented medical history, physical exam, assessment, or plan.  The literature provided discusses various rare genetic diseases and their diagnostic approaches, but none of these are indicated given the extremely limited information about Olivia Gaines's condition.  To recommend genetic testing, we would need a detailed medical history, family history, and physical examination findings suggestive of a specific genetic disorder. The current information is insufficient to even formulate a differential diagnosis.",
+  "confidence": "99%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "myotonia-c_txt_19",
+      "contents": "Author History \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "ea2_txt_31",
+      "contents": "Chapter Notes \nRevision History \n",
+      "token_count": 4,
+      "sentence_count": 2
+    },
+    {
+      "id": "ea2_txt_0",
+      "contents": "Episodic Ataxia Type 2 \u2013 RETIRED CHAPTER, FOR HISTORICAL REFERENCE ONLY \nSian Spacey, MD1 Created: February 24, 2003; Updated: October 15, 2015. \nSummary \nNOTE: THIS PUBLICATION HAS BEEN RETIRED. THIS ARCHIVAL VERSION IS FOR HISTORICAL REFERENCE ONLY, AND THE INFORMATION MAY BE OUT OF DATE. \nClinical characteristics \n",
+      "token_count": 65,
+      "sentence_count": 5
+    },
+    {
+      "id": "pnknd_txt_16",
+      "contents": " PubMed PMID: 25572910. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "spg4_txt_37",
+      "contents": " PubMed PMID: 17389232. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "cmt-4a_txt_31",
+      "contents": " PubMed PMID: 25231362. \n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "isovaleric-a_txt_1",
+      "contents": "Supportive care: Routine daily treatment includes education of afected individuals and caregivers about the natural history, maintenance and emergency treatment, prognosis, and risks of acute encephalopathic crises; emergency treatment letter and MedicAlert ; management of movement disorder per neurologist; physical therapy and aggressive rehabilitation therapy for gross motor delay; notify metabolic center prior to planned surgeries; consult metabolic disease specialist with any emergency surgery/procedure. \n\nEmergency outpatient treatment includes carbohydrate supplementation orally or via tube feeding, transient reduction of natural protein intake, elevation of carnitine supplementation, and glycine; antipyretics for fever; antiemetics for vomiting. \nAcute inpatient treatment includes stopping protein intake, intravenous glucose, and hydration with normal saline; adjusting treatments for new or evolving neurologic manifestations; consider bufers as needed for lifethreatening metabolic acidosis; nitrogen scavengers for hyperammonemia. \nSurveillance: Quantitative analysis of plasma amino acids at least every three months until age one year, every six months from age one to six years, and annually in those age six years and older; blood gases, albumin, calcium, phosphate, parathyroid hormone, complete blood count, and vitamin $\\mathtt{B}_{12}$ at least annually in those on a proteinrestricted diet; measurement of growth and head circumference at each visit throughout childhood; monitor weight throughout adulthood; monitor developmental milestones at each visit; neuropsychological testing and standardized quality-of-life assessments as needed; assessment of movement disorder at each visit. \nAgents/circumstances to avoid: Excess of dietary protein or protein malnutrition inducing catabolic state;   \nprolonged fasting; catabolism during illness. \nEvaluation of relatives at risk: Biochemical or molecular genetic testing of all at-risk sibs of any age is warranted to allow for early diagnosis and treatment of classic IVA. \nGenetic counseling \nClassic IVA is inherited in an autosomal recessive manner.",
+      "token_count": 422,
+      "sentence_count": 9
+    },
+    {
+      "id": "pku_txt_40",
+      "contents": " PubMed PMID: 17091341. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "plosl_txt_9",
+      "contents": "Evaluations Following Initial Diagnosis \nTo establish the extent of disease and needs in an individual diagnosed with PLOSL, the evaluations summarized in Table 3 (if not performed as part of the evaluation that led to the diagnosis) are recommended. \nTreatment of Manifestations \nOnly symptomatic treatment is available. \nSurveillance \nTe interval of surveillance for bone lesions, neurologic, and psychiatric manifestations must be determined individually. \nEvaluation of Relatives at Risk \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for access to information on clinical studies for a wide range of diseases and conditions. Note: Tere may not be clinical trials for this disorder. \nOther \nCalcium substitution alone has been shown to be inefective in preventing the development of the osseous manifestations. Te efect of bisphosphonates has not been studied. \nIt has been speculated that nonsteroidal anti-infammatory drugs could slow the progression of PLOSL; however, clinical trials have not been performed. \nA single individual with PLOSL improved temporarily when taking donepezil [D Hemelsoet, personal observation]. Clinical trials in a series of individuals with PLOSL have not been reported. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.  Te following section deals with genetic risk assessment and the use of family history and genetic testing to clarify genetic status for family members; it is not meant to address all personal, cultural, or ethical issues that may arise or to substitute for consultation with a genetics professional. \u2014ED. \nMode of Inheritance \nPolycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy (PLOSL) is inherited in an autosomal recessive manner. \nRisk to Family Members \nParents of a proband \n\u2022 Te parents of an afected individual are obligate heterozygotes (i.e., presumed to be carriers of one TREM2 or TYROBP pathogenic variant based on family history). \n",
+      "token_count": 464,
+      "sentence_count": 26
+    },
+    {
+      "id": "syne1ca-ar_txt_24",
+      "contents": " PubMed PMID: 17761684. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "dbh_txt_23",
+      "contents": "PubMed PMID: 11170900. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "chd4-ndd_txt_15",
+      "contents": " PubMed PMID: 27616479. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "hna_txt_25",
+      "contents": " PubMed PMID: 21262397. \nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "pdc_txt_20",
+      "contents": " PubMed PMID: 18676167. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "lgmd-overview_txt_46",
+      "contents": " PubMed PMID: 9382102. \nChapter Notes \nAuthor History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "dent_txt_21",
+      "contents": "Elizabeth Abrash, BA (2017-present) Lada Beara-Lasic, MD (2012-present) Andrea Cogal, BS (2014-present) Peter Harris, PhD (2014-present) Katharina Hopp, PhD; Mayo Clinic (2014-2017) John C Lieske, MD (2012-present) Kari Mattison, BS; Mayo Clinic (2014-2017) Dawn S Milliner, MD (2012-present) Sandro Rossetti, MD; Mayo Clinic (2012-2014) \nRevision History \n14 December 2017 (ha) Comprehensive update posted live 25 September 2014 (me) Comprehensive update posted live 9 August 2012 (me) Review posted live 1 March 2012 (jcl) Original submission \nReferences \nLiterature Cited \n",
+      "token_count": 151,
+      "sentence_count": 4
+    },
+    {
+      "id": "vodi_txt_23",
+      "contents": " PubMed PMID: 14559998. \n\nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "gcps_txt_9",
+      "contents": " Note: Tere may not be clinical trials for this disorder. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.  Te following section deals with genetic risk assessment and the use of family history and genetic testing to clarify genetic status for family members; it is not meant to address all personal, cultural, or ethical issues that may arise or to substitute for consultation with a genetics professional. \u2014ED. \nMode of Inheritance \nGreig cephalopolysyndactyly syndrome (GCPS) is inherited in an autosomal dominant manner and is caused by either a pathogenic variant involving GLI3 or a deletion of chromosome 7p14.1 involving GLI3. \nBalanced chromosome rearrangement. If the causative genetic alteration in the proband is a deletion of chromosome 7p14.1 [Schulz et al 2008], the parents of the proband are at risk of having a balanced chromosome rearrangement and should be ofered chromosome analysis. If a parent has a balanced structural chromosome rearrangement, the risk to sibs is increased and depends on the specifc chromosome rearrangement and the possibility of other variables. \nRisk to Family Members \nParents of a proband \n\u2022 Some individuals diagnosed with GCPS have the disorder as the result of a genetic alteration inherited from a parent.   \n\u2022 Some individuals diagnosed with GCPS have the disorder as the result of a de novo GCPS-causing genetic alteration. Te proportion of individuals with GCPS caused by de novo genetic alteration is unknown, as the frequency of subtle signs of the disorder in parents has not been thoroughly evaluated and molecular genetic data are insufcient.   \n\u2022 Recommendations for the evaluation of parents of a child with GCPS and no known family history of GCPS consist of clinical examination and radiographs of hands and feet unless physical signs suggest the need for other studies (e.g., neuroimaging for possible hydrocephalus in a parent). Molecular genetic testing of the parents is indicated if the GCPS-causing genetic alteration has been identifed in the proband.   \n",
+      "token_count": 462,
+      "sentence_count": 19
+    },
+    {
+      "id": "mstn_txt_10",
+      "contents": " PubMed PMID: 15215484. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "pomc-def_txt_1",
+      "contents": " THIS ARCHIVAL VERSION IS FOR HISTORICAL REFERENCE ONLY, AND THE INFORMATION MAY BE OUT OF DATE. \nClinical characteristics \n",
+      "token_count": 20,
+      "sentence_count": 2
+    },
+    {
+      "id": "pknd_txt_28",
+      "contents": " PubMed PMID: 18541410. \n\n\n\nChapter Notes \nRevision History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "thompson_thompson_genetics_8th_edition_medicoscompanion_com_txt_3",
+      "contents": "Few areas of science and medicine are seeing advances at the pace we are experiencing in the related fields of genetics and genomics. It may appear surprising to many students today, then, to learn that an appreciation of the role of genetics in medicine dates back well over a century, to the recognition by the British physician Archibald Garrod and others that Mendel\u2019s laws of inheritance could explain the recurrence of certain clinical disorders in families. During the ensuing years, with developments in cellular and molecular biology, the field of medical genetics grew from a small clinical subspecialty concerned with a few rare hereditary disorders to a recognized medical specialty whose concepts and approaches are important components of the diagnosis and management of many disorders, both common and rare. \nAt the beginning of the 21st century, the Human Genome Project provided a virtually complete sequence of human DNA\u2014our genome (the suffix -ome coming from the Greek for \u201call\u201d or \u201ccomplete\u201d)\u2014which now serves as the foundation of efforts to catalogue all human genes, understand their structure and regulation, determine the extent of variation in these genes in different populations, and uncover how genetic variation contributes to disease. The human genome of any individual can now be studied in its entirety, rather than one gene at a time. These developments are making possible the field of genomic medicine, which seeks to apply a large-scale analysis of the human genome and its products, including the control of gene expression, human gene variation, and interactions between genes and the environment, to medical care. \nGENETICS AND GENOMICS IN MEDICINE The Practice of Genetics \nThe medical geneticist is usually a physician who works as part of a team of health care providers, including many other physicians, nurses, and genetic counselors, to evaluate patients for possible hereditary diseases. They characterize the patient\u2019s illness through careful history taking and physical examination, assess possible modes of inheritance, arrange for diagnostic testing, develop treatment and surveillance plans, and participate in outreach to other family members at risk for the disorder. \n\nHowever, genetic principles and approaches are not restricted to any one medical specialty or subspecialty; they permeate many, and perhaps all, areas of medicine. Here are just a few examples of how genetics and genomics are applied to medicine today: \n",
+      "token_count": 456,
+      "sentence_count": 11
+    },
+    {
+      "id": "glyt1-dis_txt_15",
+      "contents": " PubMed PMID: 28363510. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "rotor_txt_15",
+      "contents": " PubMed PMID: 22232210. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "tetra-amelia_txt_13",
+      "contents": " PubMed PMID: 8256824. \n\nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    }
+  ],
+  "analysis_date": "2025-03-24T13:08:34.441119",
+  "created_at": "2025-03-24T13:08:34.441123"
+}

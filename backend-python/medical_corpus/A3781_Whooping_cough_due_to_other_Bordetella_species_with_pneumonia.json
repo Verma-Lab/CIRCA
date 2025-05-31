@@ -1,0 +1,69 @@
+{
+    "disease": "Whooping cough due to other Bordetella species with pneumonia",
+    "icd_code": "A3781",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable, can be severe",
+                "pattern": "Hacking cough followed by whooping; can be intense and violent, making it hard to breathe"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Runny nose",
+                "severity": "Mild",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Relatively common complication"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Rare",
+                "pattern": "Occasional complication"
+            },
+            {
+                "name": "Brain disease",
+                "severity": "Rare",
+                "pattern": "Occasional complication"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Occasional",
+                "pattern": "Present in some patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased due to coughing fits and potential pneumonia",
+            "temperature": "Mildly elevated in early stages"
+        },
+        "physical_findings": [
+            "High-pitched breathing sounds during coughing fits",
+            "Signs of pneumonia (e.g., crackles, wheezes)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age less than 1 year",
+            "Pre-existing health conditions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with whooping cough (paroxysmal cough, whooping sound)"
+        ],
+        "supportive": [
+            "Positive bacterial culture for Bordetella species (other than B. pertussis)",
+            "Exposure to an individual with whooping cough",
+            "Chest X-ray findings consistent with pneumonia"
+        ]
+    },
+    "differential_diagnoses": []
+}

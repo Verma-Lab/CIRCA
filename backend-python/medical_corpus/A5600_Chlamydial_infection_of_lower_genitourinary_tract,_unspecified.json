@@ -1,0 +1,72 @@
+{
+    "disease": "Chlamydial infection of lower genitourinary tract",
+    "icd_code": "A5600",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painful urination",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Genital pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Redness of external genitalia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Penile discharge",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Approximately 70% of infected women and 50% of infected men"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Urethral discharge",
+            "Abnormal vaginal discharge",
+            "Cervicitis",
+            "Contact bleeding",
+            "Tenderness on bimanual examination",
+            "Cervical excitation",
+            "Pelvic adnexal tenderness",
+            "Rectal discharge"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Multiple infections over time",
+            "Unprotected sex",
+            "Multiple sexual partners"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive laboratory test for Chlamydia trachomatis"
+        ],
+        "supportive": [
+            "Symptoms suggestive of chlamydial infection",
+            "Physical examination findings consistent with chlamydial infection"
+        ]
+    },
+    "differential_diagnoses": []
+}

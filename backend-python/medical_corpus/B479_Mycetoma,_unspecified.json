@@ -1,0 +1,74 @@
+{
+    "disease": "Mycetoma, unspecified",
+    "icd_code": "B479",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless subcutaneous tumor-like swelling",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Multiple sinuses and fistulas",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Discharged grains in pus",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable, often absent in early stages, increased with secondary infection",
+                "pattern": "Localized, may become widespread"
+            },
+            {
+                "name": "Deformity",
+                "severity": "Variable, progressive if untreated",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Disability",
+                "severity": "Variable, progressive if untreated",
+                "pattern": "Localized to affected area"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless subcutaneous mass",
+            "Multiple sinuses",
+            "Discharge containing grains",
+            "Granulomatous lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Trauma (thorn pricks, wood splinters, cuts)",
+            "Barefoot walking",
+            "Manual labor",
+            "Poor hygiene",
+            "Malnutrition",
+            "Diabetes",
+            "Immunodeficiency"
+        ],
+        "imaging_findings": {
+            "X-ray": "May show bone involvement",
+            "Ultrasound": "Can assess lesion extent",
+            "MRI": "Can assess lesion extent",
+            "CT": "Can assess lesion extent"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical triad: painless subcutaneous swelling, multiple sinuses with discharge, and grains in pus"
+        ],
+        "supportive": [
+            "Microscopic examination of grains",
+            "Culture of causative organism",
+            "PCR for identification of causative organism",
+            "Imaging studies to assess extent of disease"
+        ]
+    },
+    "differential_diagnoses": []
+}

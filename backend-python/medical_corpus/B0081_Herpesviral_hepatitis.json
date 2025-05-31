@@ -1,0 +1,83 @@
+{
+    "disease": "Herpesviral Hepatitis",
+    "icd_code": "B0081",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Coagulopathy",
+                "severity": "Severe, life-threatening",
+                "pattern": "Can lead to hemorrhage"
+            },
+            {
+                "name": "Acute Renal Failure",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May be absent (anicteric) in many cases"
+            },
+            {
+                "name": "Mucocutaneous lesions",
+                "severity": "Variable",
+                "pattern": "Present in less than half of cases"
+            },
+            {
+                "name": "Leukopenia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Encephalopathy",
+                "severity": "Severe",
+                "pattern": "Associated with fulminant hepatic failure"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases"
+        },
+        "physical_findings": [
+            "Hepatomegaly (possible)",
+            "Mucocutaneous lesions (in <50% of cases)"
+        ],
+        "lab_values": {
+            "transaminases": "Elevated >10 times the upper limit of normal",
+            "HSV DNA PCR": "Positive in cases of HSV hepatitis",
+            "HSV serology": "May be positive, but less sensitive than PCR"
+        },
+        "risk_factors": [
+            "Immunocompromised state (pregnancy, corticosteroid use, HIV, autoimmune disease)",
+            "Female gender (predominant)"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show hepatomegaly and diffuse hypodense 1-4 mm lesions (representing foci of acute hepatic necrosis)",
+            "Ultrasound": "Useful for excluding other diagnoses"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Elevated transaminases (>10 times ULN)",
+            "Positive HSV DNA PCR"
+        ],
+        "supportive": [
+            "Liver biopsy showing focal or confluent areas of acidophilic necrosis with little inflammation and Cowdry type A bodies",
+            "Clinical presentation consistent with acute hepatitis",
+            "CT scan findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of acute hepatic failure (e.g., Hepatitis A, B, C, D, E, acetaminophen toxicity, ischemic liver injury)"
+    ]
+}

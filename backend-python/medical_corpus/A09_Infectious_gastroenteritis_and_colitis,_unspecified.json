@@ -1,0 +1,68 @@
+{
+    "disease": "Infectious gastroenteritis and colitis, unspecified",
+    "icd_code": "A09",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases",
+            "heart_rate": "Potentially elevated due to dehydration or severity"
+        },
+        "physical_findings": [
+            "Abdominal tenderness",
+            "Dehydration signs (dry mucous membranes, decreased skin turgor)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Consumption of contaminated food or drinks",
+            "Contact with infected individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of gastroenteritis (vomiting and/or diarrhea)"
+        ],
+        "supportive": [
+            "Exposure to known pathogens",
+            "Positive stool culture (if performed)"
+        ]
+    },
+    "differential_diagnoses": []
+}

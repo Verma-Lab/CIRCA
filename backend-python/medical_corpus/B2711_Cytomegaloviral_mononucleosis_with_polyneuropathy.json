@@ -1,0 +1,104 @@
+{
+    "disease": "Cytomegaloviral mononucleosis with polyneuropathy",
+    "icd_code": "B2711",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be of unknown origin",
+                "pattern": "May develop 9-60 days after primary infection"
+            },
+            {
+                "name": "Pharyngitis",
+                "severity": "Mild to moderate",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Lymph nodes and spleen may be enlarged"
+            },
+            {
+                "name": "Polyneuropathy",
+                "severity": "Variable",
+                "pattern": "Can affect almost every organ, including nerves"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild",
+                "pattern": "Common in immunocompetent individuals"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Can occur in immunocompromised individuals"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "Variable",
+                "pattern": "Can occur in immunocompromised individuals"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Variable",
+                "pattern": "Can occur in immunocompromised individuals"
+            },
+            {
+                "name": "Myelitis",
+                "severity": "Variable",
+                "pattern": "Can occur in immunocompromised individuals"
+            },
+            {
+                "name": "Colitis",
+                "severity": "Variable",
+                "pattern": "Can occur in immunocompromised individuals"
+            },
+            {
+                "name": "Uveitis",
+                "severity": "Variable",
+                "pattern": "Can occur in immunocompromised individuals"
+            },
+            {
+                "name": "Retinitis",
+                "severity": "Variable",
+                "pattern": "Can occur in immunocompromised individuals"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Enlarged lymph nodes",
+            "Enlarged spleen",
+            "Fine crackles on lung examination"
+        ],
+        "lab_values": {
+            "CMV detection": "Positive via culture, serologies, antigen assays, PCR, or cytopathology"
+        },
+        "risk_factors": [
+            "Immunocompromised status (HIV/AIDS, organ transplant, bone marrow transplant, immunosuppressive medications)",
+            "Congenital infection (mother with acute infection during pregnancy)",
+            "Blood transfusions",
+            "Multiple sex partners",
+            "CMV mismatched organ or bone marrow transplants",
+            "Attendance at or work in daycare centers"
+        ],
+        "imaging_findings": {
+            "Chest radiography": "May suggest CMV pneumonia but cannot differentiate from other causes"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with CMV mononucleosis",
+            "Positive CMV detection via lab tests"
+        ],
+        "supportive": [
+            "Abnormal physical findings (lymphadenopathy, splenomegaly)",
+            "Imaging findings suggestive of CMV involvement (e.g., pneumonia)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other viral infections causing mononucleosis",
+        "Infectious mononucleosis (Epstein-Barr virus)",
+        "Other causes of polyneuropathy"
+    ]
+}

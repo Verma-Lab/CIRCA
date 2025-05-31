@@ -1,0 +1,45 @@
+{
+    "disease": "Other specified malignant neoplasm of skin of unspecified upper limb, including shoulder",
+    "icd_code": "C44691",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin inflammation",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Reddened skin",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "Skin discoloration (darker or lighter)",
+                "severity": "Variable",
+                "pattern": "Localized to affected area"
+            },
+            {
+                "name": "General malaise or weakness",
+                "severity": "Variable",
+                "pattern": "May be present, especially with rapidly progressing cancers"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal skin lesion on upper limb or shoulder"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant neoplasm of skin"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with skin cancer (e.g., lesion on upper limb or shoulder)"
+        ]
+    },
+    "differential_diagnoses": []
+}

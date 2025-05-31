@@ -1,0 +1,42 @@
+{
+    "disease": "Malignant melanoma of overlapping sites of skin",
+    "icd_code": "C438",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dark patch on skin",
+                "severity": "Variable",
+                "pattern": "Localized initially, may spread"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "May be present over dermal nests"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Atypical nests of pigmented melanocytes",
+            "Enlarged hyperchromatic melanocytes",
+            "Collarette and exophytic profile"
+        ],
+        "lab_values": {
+            "PRAME": "Elevated",
+            "SOX10": "Potentially abnormal"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant melanoma"
+        ],
+        "supportive": [
+            "Clinical presentation (dark patch, ulceration)",
+            "Dermoscopic findings (atypical nests, enlarged melanocytes, collarette)",
+            "Positive sentinel lymph node biopsy (if performed)"
+        ]
+    },
+    "differential_diagnoses": []
+}

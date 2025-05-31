@@ -1,0 +1,92 @@
+{
+    "disease": "Plasmodium falciparum malaria, unspecified",
+    "icd_code": "B509",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to life-threatening",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate to severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Increased in severe cases",
+            "heart_rate": "Increased in severe cases",
+            "blood_pressure": "May be decreased in severe cases"
+        },
+        "physical_findings": [
+            "Pallor",
+            "Jaundice",
+            "Enlarged spleen (splenomegaly)",
+            "Signs of dehydration",
+            "Altered mental status (in severe cases)"
+        ],
+        "lab_values": {
+            "parasitemia": "Elevated",
+            "hemoglobin": "Decreased (anemia)",
+            "platelets": "Decreased (thrombocytopenia)",
+            "liver_enzymes": "Elevated",
+            "kidney_function_tests": "Abnormal in severe cases",
+            "CRP": "Elevated",
+            "lactate": "Elevated in severe cases"
+        },
+        "risk_factors": [
+            "Infancy",
+            "Age under 5 years",
+            "Pregnancy",
+            "Travel to malaria-endemic areas",
+            "HIV/AIDS",
+            "Lack of access to preventative measures (e.g., bed nets)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive malaria parasite test (microscopy or rapid diagnostic test)"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with malaria",
+            "Travel history to malaria-endemic area",
+            "Exposure to mosquito bites"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other febrile illnesses",
+        "Typhoid fever",
+        "Dengue fever",
+        "Influenza",
+        "Sepsis"
+    ]
+}

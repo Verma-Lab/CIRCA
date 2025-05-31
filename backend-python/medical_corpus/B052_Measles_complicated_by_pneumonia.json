@@ -1,0 +1,68 @@
+{
+    "disease": "Measles complicated by pneumonia",
+    "icd_code": "B052",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Rash",
+                "severity": "moderate to severe",
+                "pattern": "maculopapular, all over body"
+            },
+            {
+                "name": "Cough",
+                "severity": "variable",
+                "pattern": "chronic"
+            },
+            {
+                "name": "Sneezing",
+                "severity": "variable",
+                "pattern": "intermittent"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "variable",
+                "pattern": "present"
+            },
+            {
+                "name": "High fever",
+                "severity": "variable",
+                "pattern": "present"
+            },
+            {
+                "name": "Red and watery eyes",
+                "severity": "variable",
+                "pattern": "present"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "variable",
+                "pattern": "present"
+            },
+            {
+                "name": "Feeling very sick",
+                "severity": "variable",
+                "pattern": "present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Increased"
+        },
+        "physical_findings": [
+            "Maculopapular rash",
+            "Lung inflammation"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of measles rash",
+            "Evidence of pneumonia (e.g., cough, fever, difficulty breathing, abnormal lung sounds)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

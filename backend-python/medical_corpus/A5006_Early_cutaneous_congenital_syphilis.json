@@ -1,0 +1,111 @@
+{
+    "disease": "Early cutaneous congenital syphilis",
+    "icd_code": "A5006",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "Acrodermatitis, erosions with moist, erythematous base, perianal moist erythematous lesion, cheilitis, vesiculobullous rash (sometimes called syphilitic pemphigus), maculopapular rash on palms and soles, desquamation, erythema multiforme, papulosquamous lesions, generalized erythematous, targetoid, scaly macules, papules, pustules"
+            },
+            {
+                "name": "Rhinitis",
+                "severity": "Variable",
+                "pattern": "Bloody and purulent, may be the earliest clinical sign"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Failure to thrive",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Mild",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Aggravated on touching",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Pseudoparalysis",
+                "severity": "Suspected",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Facial"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "7%",
+                "pattern": "At birth"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erosions with moist, erythematous base in acral distribution",
+            "Cheilitis",
+            "Perianal moist erythematous lesion",
+            "Mild hepatomegaly",
+            "Generalized erythematous, targetoid, scaly macules, papules, pustules",
+            "Desquamation at hand and foot",
+            "Multiple erosions with a dry, erythematous base and scaling over borders of bilateral palms and soles",
+            "Erythematous, bilaterally symmetrical, moist patches over the perianal area",
+            "Cheilitis with a moist erosion over the upper lip",
+            "Discrete, skin-colored papulosquamous lesions in both palms (mother)",
+            "Two\u2013three nontender, firm, shotty, discrete, bilaterally palpable inguinal lymph nodes with overlying skin normal, without any other cutaneous findings such as a healed scar or postinflammatory hypopigmentation over the genitals (father)",
+            "Diaphyseal periostitis"
+        ],
+        "lab_values": {
+            "RPR": "1:512 (patient), 1:32 (both parents)",
+            "VDRL": "1:32 (patient), 1:4 (mother), 1:1 (father)",
+            "TPHA": "Positive",
+            "CBC": "Normocytic normochromic anemia (hemoglobin 8.3 g/dL, hematocrit 27.8%), leukocytosis (WBC 20,000/mm3), thrombocytopenia (86,000/\u00b5L)",
+            "Serum protein": "4.9 g/dL, albumin 2.7 g/dL",
+            "Liver function tests": "Normal",
+            "Serum iron": "Normal",
+            "Coombs' test": "Negative",
+            "CSF VDRL": "1:1",
+            "CSF WBCs": "5/mm3",
+            "CSF RBCs": "40/mm3",
+            "CSF protein": "26.3 mg/dL",
+            "CSF glucose": "68 mg/dL (plasma glucose 156 mg/dL)",
+            "Anti-T. pallidum IgG + IgM": "Positive (23.83 IU/mL at diagnosis, decreased at 3 months)"
+        },
+        "risk_factors": [
+            "Maternal syphilis",
+            "Lack of antenatal care",
+            "Inadequate treatment of maternal syphilis during pregnancy",
+            "Contact with infectious lesion during birth"
+        ],
+        "imaging_findings": {
+            "Radiography": "Diaphyseal periostitis",
+            "MRI": "Normal (brain)",
+            "Ultrasonography": "Normal (transfontanel and abdominal), Patent foramen ovale (echocardiography)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive non-treponemal serologic test (e.g., RPR, VDRL)",
+            "Characteristic mucocutaneous findings"
+        ],
+        "supportive": [
+            "Positive treponemal test",
+            "Abnormal laboratory findings (e.g., anemia, thrombocytopenia, leukocytosis)",
+            "Imaging findings consistent with congenital syphilis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acrodermatitis",
+        "Vitamin or nutrient deficiency"
+    ]
+}

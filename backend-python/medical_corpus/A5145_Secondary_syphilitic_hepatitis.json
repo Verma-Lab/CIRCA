@@ -1,0 +1,23 @@
+{
+    "disease": "Secondary Syphilitic Hepatitis",
+    "icd_code": "A5145",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Untreated syphilis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of secondary syphilis",
+            "Abnormal liver function tests suggestive of hepatitis"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

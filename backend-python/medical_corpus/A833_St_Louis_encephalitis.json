@@ -1,0 +1,59 @@
+{
+    "disease": "St. Louis encephalitis",
+    "icd_code": "A83.3",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Encephalitis",
+                "severity": "Severe",
+                "pattern": "Common"
+            },
+            {
+                "name": "Febrile illness",
+                "severity": "Mild to Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Moderate",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Acute flaccid paralysis",
+                "severity": "Severe",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Other acute signs of neurologic dysfunction",
+                "severity": "Variable",
+                "pattern": "Rare"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "SLEV virus, antigen, or nucleic acid": "Detected in tissue, blood, CSF, or other body fluid",
+            "SLEV quantitative antibody titers": "4-fold or greater change in paired sera",
+            "SLEV IgM antibodies": "In serum with confirmatory SLEV-neutralizing antibodies, or in CSF with negative result for other IgM antibodies in CSF for arboviruses endemic to the region"
+        },
+        "risk_factors": [
+            "Exposure to mosquitoes (Culex tarsalis, Culex pipiens, Culex quinquefasciatus, Culex nigripalpus)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory evidence of disease (detection of SLEV virus, antigen, or nucleic acid; 4-fold or greater change in SLEV quantitative antibody titers in paired sera; SLEV IgM antibodies in serum with confirmatory SLEV-neutralizing antibodies; SLEV IgM antibodies in CSF and a negative result for other IgM antibodies in CSF for arboviruses endemic to the region)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with encephalitis, meningitis, or other neuroinvasive disease"
+        ]
+    },
+    "differential_diagnoses": [
+        "West Nile virus encephalitis",
+        "Other arboviral encephalitis"
+    ]
+}

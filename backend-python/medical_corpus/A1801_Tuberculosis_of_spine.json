@@ -1,0 +1,94 @@
+{
+    "disease": "Tuberculosis of spine",
+    "icd_code": "A1801",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Back pain",
+                "severity": "Variable, from mild to severe",
+                "pattern": "Chronic, gradually worsening, dull, aching, typically non-radiating"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Lack of appetite",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Evening fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Neurological deficits",
+                "severity": "Variable, can be severe",
+                "pattern": "Can include paraplegia; may be early or late onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Kyphosis",
+            "Spinal deformity",
+            "Tenderness to palpation over affected vertebrae",
+            "Limited spinal mobility"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Poverty",
+            "Economic distress",
+            "Vulnerability",
+            "HIV infection",
+            "Immunosuppression",
+            "Diabetes",
+            "Cancer therapy",
+            "Contact with a patient with active TB",
+            "Poor nutrition",
+            "Overcrowding",
+            "Lack of proper hygiene"
+        ],
+        "imaging_findings": {
+            "X-ray": [
+                "Vertebral body destruction",
+                "Kyphosis",
+                "Anterior vertebral height loss"
+            ],
+            "MRI": [
+                "Paradiscal involvement",
+                "Cord compression",
+                "Cord edema",
+                "Loss of CSF anterior to the cord",
+                "Canal encroachment",
+                "Abscess formation",
+                "Granulation tissue",
+                "Tubercular sequestra",
+                "Caseous material"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with spinal TB (e.g., back pain, neurological deficits)",
+            "Positive imaging findings (e.g., vertebral body destruction, abscess formation on X-ray and MRI)"
+        ],
+        "supportive": [
+            "Positive microbiological findings (e.g., culture of Mycobacterium tuberculosis)",
+            "Positive histological findings (e.g., caseating granulomas)"
+        ]
+    },
+    "differential_diagnoses": []
+}

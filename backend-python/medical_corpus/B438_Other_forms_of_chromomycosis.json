@@ -1,0 +1,65 @@
+{
+    "disease": "Chromoblastomycosis (Chromomycosis)",
+    "icd_code": "B438",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Warty lesions",
+                "severity": "Variable, can be severe in advanced cases",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Cutaneous lesion at inoculation site",
+                "severity": "Variable",
+                "pattern": "Initial lesion, followed by spread"
+            },
+            {
+                "name": "Fibrotic and granulomatous reactions",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Microabscesses",
+                "severity": "Variable",
+                "pattern": "Associated with tissue proliferation"
+            },
+            {
+                "name": "Tissue proliferation",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Incapacity for labor (in severe cases)",
+                "severity": "Severe",
+                "pattern": "Due to fibrotic sequelae and complications"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Warty lesions",
+            "Cutaneous and subcutaneous tissue involvement",
+            "Fibrosis",
+            "Granulomas",
+            "Microabscesses",
+            "Tissue proliferation"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Traumatic inoculation from environmental source",
+            "Living in tropical or subtropical zones"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of muriform (sclerotic) cells in affected tissue"
+        ],
+        "supportive": [
+            "Clinical presentation (warty lesions, chronic progression)",
+            "Exposure to environmental sources in tropical/subtropical regions",
+            "Isolation of causative fungi"
+        ]
+    },
+    "differential_diagnoses": []
+}

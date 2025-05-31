@@ -1,0 +1,123 @@
+{
+    "disease": "Typhoid pneumonia",
+    "icd_code": "A01.03",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (39.1\u00b0C max in reported case)",
+                "pattern": "Persistent, increasing daily"
+            },
+            {
+                "name": "Cough",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Watery diarrhea",
+                "severity": "Present",
+                "pattern": "Present for 2 days in reported case"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Present",
+                "pattern": "Present for 2 days in reported case"
+            },
+            {
+                "name": "Diffuse abdominal pain",
+                "severity": "Mild",
+                "pattern": "Present for 2 days in reported case"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "Severe (requiring ventilator support in reported case)",
+                "pattern": "Developed overnight in reported case"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Severe (90/50 mmHg in reported case)",
+                "pattern": "Developed overnight in reported case"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Present (3 days in reported case)",
+                "pattern": "Developed after extubation in reported case"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Present",
+                "pattern": "Gradual onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Possible",
+                "pattern": "Possible"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Possible",
+                "pattern": "Possible"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (38.3\u00b0C to 39.1\u00b0C in reported case)",
+            "heart_rate": "Tachycardia (165 bpm in reported case)",
+            "blood_pressure": "Hypotension (90/50 mmHg in reported case), wide pulse pressure (111/45 mmHg initially in reported case)",
+            "respiratory_rate": "Tachypnea (55/minute in reported case)"
+        },
+        "physical_findings": [
+            "Distressed child",
+            "Distended abdomen with mild diffuse tenderness",
+            "Bilateral pulmonary infiltrates (chest x-ray)",
+            "Increased bilateral opacities and pleural effusions (repeat chest x-ray)",
+            "Hepatosplenomegaly (possible)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated (6,870/mm3 in reported case)",
+            "platelet_count": "Decreased (120,000/mm3 in reported case)",
+            "serum_creatinine": "Normal (0.4 mg/dL in reported case)",
+            "aspartate_aminotransferase": "Elevated (90 U/L in reported case)",
+            "alanine_aminotransferase": "Elevated (70 U/L in reported case)",
+            "serum_albumin": "Decreased (1.9 g/dL in reported case)",
+            "total_bilirubin": "Normal (0.4 mg/dL in reported case)",
+            "erythrocyte_sedimentation_rate": "Elevated (54 mm/hour in reported case)",
+            "c_reactive_protein": "Elevated (303 mg/L in reported case)"
+        },
+        "risk_factors": [
+            "Travel to endemic areas (e.g., India)",
+            "Consumption of contaminated food or water"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Bilateral pulmonary infiltrates, increased opacities, pleural effusions",
+            "abdominal_ct": "Enlarged ileocolic lymph nodes",
+            "brain_mri": "Unremarkable in reported case"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Salmonella Typhi",
+            "Clinical presentation consistent with typhoid fever (fever, abdominal pain, etc.)",
+            "Radiological evidence of pneumonia (e.g., chest x-ray showing infiltrates)"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (ESR, CRP)",
+            "Abnormal liver function tests"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of pneumonia",
+        "Other causes of fever of unknown origin",
+        "Malaria"
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "disease": "Gambiense trypanosomiasis",
+    "icd_code": "B560",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Bouts"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Enlarged lymph nodes",
+                "severity": "Variable",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Joint pains",
+                "severity": "Variable",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Present in early stages"
+            },
+            {
+                "name": "Behaviour changes",
+                "severity": "Variable",
+                "pattern": "Present in later stages"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Present in later stages"
+            },
+            {
+                "name": "Sensory disturbances",
+                "severity": "Variable",
+                "pattern": "Present in later stages"
+            },
+            {
+                "name": "Poor coordination",
+                "severity": "Variable",
+                "pattern": "Present in later stages"
+            },
+            {
+                "name": "Sleep cycle disturbance",
+                "severity": "Prominent",
+                "pattern": "Present in later stages"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Enlarged lymph nodes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Living in rural sub-Saharan Africa",
+            "Exposure to tsetse flies",
+            "Occupation involving agriculture, fishing, animal husbandry, or hunting"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Parasite detection in blood or lymph (early stage)",
+            "Parasite detection in cerebrospinal fluid (late stage)"
+        ],
+        "supportive": [
+            "Clinical symptoms"
+        ]
+    },
+    "differential_diagnoses": []
+}

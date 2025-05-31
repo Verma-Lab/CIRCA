@@ -1,0 +1,88 @@
+{
+    "disease": "Yaws",
+    "icd_code": "A664",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Primary lesion (Mother Yaw)",
+                "severity": "Variable, can be indolent or ulcerative",
+                "pattern": "Single lesion at inoculation site, evolves into papilloma or ulcer"
+            },
+            {
+                "name": "Papilloma",
+                "severity": "Variable, can be exudative",
+                "pattern": "Wart-like tumor, 2-5 cm, often on limbs"
+            },
+            {
+                "name": "Ulcer",
+                "severity": "Variable, can be non-tender",
+                "pattern": "Single ulcer covered by yellow crust, often on legs and ankles"
+            },
+            {
+                "name": "Secondary yaws",
+                "severity": "Variable, can be mild or severe",
+                "pattern": "Multiple raised yellow lesions, pain and swelling of long bones and fingers (dactylitis), skin rash, macules, papules, pustules, or crusted lesions"
+            },
+            {
+                "name": "Late yaws",
+                "severity": "Severe, chronic, disfiguring",
+                "pattern": "Gummata, extensive skin lesions, bone destruction, neurological involvement"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Common in secondary yaws"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable, can be severe in dactylitis and late-stage lesions",
+                "pattern": "Associated with dactylitis and plantar lesions"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable, can be severe in dactylitis",
+                "pattern": "Associated with dactylitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Primary lesion (papilloma or ulcer)",
+            "Regional lymphadenopathy",
+            "Multiple skin lesions (secondary yaws)",
+            "Dactylitis",
+            "Gummata (late yaws)",
+            "Bone destruction (late yaws)",
+            "Neurological signs (late yaws)"
+        ],
+        "lab_values": {
+            "TPPA": "Positive in yaws and syphilis",
+            "RPR": "Positive in yaws and syphilis",
+            "PCR": "Detects T. pallidum pertenue DNA in skin lesions"
+        },
+        "risk_factors": [
+            "Living in poor communities in warm, humid tropical areas",
+            "Low socioeconomic conditions",
+            "Poor personal hygiene",
+            "Contact with infectious lesions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with yaws (papilloma, ulcer, or other characteristic lesions)",
+            "Positive serological test (TPPA or RPR), although these tests do not distinguish yaws from syphilis"
+        ],
+        "supportive": [
+            "Positive PCR for T. pallidum pertenue DNA",
+            "Epidemiological factors (exposure to yaws in endemic area)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Syphilis",
+        "Leishmaniasis",
+        "Leprosy",
+        "Buruli ulcer",
+        "Other skin infections"
+    ]
+}

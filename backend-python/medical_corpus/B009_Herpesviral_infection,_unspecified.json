@@ -1,0 +1,39 @@
+{
+    "disease": "Herpesviral infection, unspecified",
+    "icd_code": "B009",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painful blisters or sores",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "May appear on skin or mucous membranes"
+            },
+            {
+                "name": "Severe illness",
+                "severity": "Variable, depends on location and extent of infection",
+                "pattern": "Possible in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painful blisters or sores on skin or mucous membranes"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Stress",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation suggestive of herpesviral infection"
+        ],
+        "supportive": [
+            "Positive laboratory tests (if performed)",
+            "Absence of other identifiable causes"
+        ]
+    },
+    "differential_diagnoses": []
+}

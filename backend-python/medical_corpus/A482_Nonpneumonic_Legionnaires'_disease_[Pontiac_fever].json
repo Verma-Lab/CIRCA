@@ -1,0 +1,54 @@
+{
+    "disease": "Nonpneumonic Legionnaires' disease (Pontiac fever)",
+    "icd_code": "A482",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Mild to moderate",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild",
+                "pattern": "Common"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild",
+                "pattern": "Common"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Older adults",
+            "People with weakened immune systems"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Pontiac fever (fever, myalgia, headache, chills)"
+        ],
+        "supportive": [
+            "Epidemiological link to other confirmed cases of Legionnaires' disease or Pontiac fever",
+            "Exposure to potential sources of Legionella bacteria"
+        ]
+    },
+    "differential_diagnoses": []
+}

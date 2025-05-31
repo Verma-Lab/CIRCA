@@ -1,0 +1,79 @@
+{
+    "disease": "Sepsis due to Streptococcus, group B",
+    "icd_code": "A401",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present or absent, especially in early stages"
+            },
+            {
+                "name": "Lethargy",
+                "severity": "Variable",
+                "pattern": "May be present or absent, especially in early stages"
+            },
+            {
+                "name": "Poor feeding",
+                "severity": "Variable",
+                "pattern": "May be present or absent, especially in early stages"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Apnea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hypotonia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia",
+            "respiratory_rate": "Tachypnea",
+            "temperature": "Fever or hypothermia",
+            "blood_pressure": "Hypotension"
+        },
+        "physical_findings": [
+            "Poor perfusion",
+            "Lethargy",
+            "Respiratory distress",
+            "Jaundice"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Streptococcus agalactiae",
+            "complete_blood_count": "Leukocytosis or leukopenia",
+            "C-reactive_protein": "Elevated"
+        },
+        "risk_factors": [
+            "Prematurity",
+            "Prolonged rupture of membranes",
+            "Maternal fever",
+            "Maternal colonization with GBS"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Streptococcus agalactiae"
+        ],
+        "supportive": [
+            "Clinical symptoms of sepsis",
+            "Abnormal vital signs",
+            "Abnormal laboratory values"
+        ]
+    },
+    "differential_diagnoses": []
+}

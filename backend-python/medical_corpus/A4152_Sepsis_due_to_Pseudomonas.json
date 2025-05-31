@@ -1,0 +1,131 @@
+{
+    "disease": "Sepsis due to Pseudomonas",
+    "icd_code": "A4152",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (39.4\u00b0C in one case)",
+                "pattern": "Present in multiple cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Severe (in affected limb)",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Marked (in affected limb)",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Severe (70\u201380/40\u201350 mmHg)",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "Severe (leading to respiratory failure and apnea)",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Present",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Impaired general condition",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Vesiculobullous and petechial exanthema",
+                "severity": "Present",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Necrosis",
+                "severity": "Severe (skin, soft tissue, muscle)",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Cyanosis",
+                "severity": "Present",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Mydriasis",
+                "severity": "Present",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Loss of papillary light reflex",
+                "severity": "Present",
+                "pattern": "Late stage"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (\u226539.4\u00b0C)",
+            "blood_pressure": "Hypotension (70\u201380/40\u201350 mmHg)",
+            "heart_rate": "Tachycardia (130-150 bpm)",
+            "respiratory_rate": "Tachypnea (40-60 breaths/min)"
+        },
+        "physical_findings": [
+            "Swelling and pyrexia of the left lower limb",
+            "Subcutaneous edema of the lower limbs",
+            "Subcutaneous vein thrombosis",
+            "Subcutaneous tissue necrosis",
+            "Muscle and full-thickness necrosis"
+        ],
+        "lab_values": {
+            "white_cell_count": "Decreased (1.18\u00d7109/l)",
+            "C-reactive_protein": "Elevated (76.70 mg/l)",
+            "arterial_blood_gas": {
+                "pH": "Decreased (7.040)",
+                "PaO2": "Decreased (48.5 mmHg)",
+                "PaCO2": "Increased (72.5 mmHg)",
+                "HCO3": "Decreased (\u221219.6 mmol/l)",
+                "base_excess": "Decreased (\u221212.3 mmol/l)"
+            },
+            "creatine_kinase": "Markedly increased (1208 U/l)",
+            "procalcitonin": "Intensely positive",
+            "inflammatory_markers": "Intensely positive",
+            "pancytopenia": "Severe",
+            "coagulation_disorders": "Present",
+            "nitrogen_retention": "Present",
+            "hypoalbuminemia": "Present",
+            "hepatic_cytolysis": "Present"
+        },
+        "risk_factors": [
+            "Immunocompromised state (e.g., neutropenia, myeloma, diabetes mellitus)",
+            "Recent chemotherapy",
+            "Presence of invasive devices (e.g., central venous catheter)",
+            "Intensive care unit admission",
+            "Bedridden status",
+            "Diabetes mellitus",
+            "Tracheostomy",
+            "Recent broad-spectrum antimicrobial treatment",
+            "History of carbapenem-resistant P. aeruginosa infection",
+            "Burn wounds",
+            "Pressure ulcers",
+            "Anal fissure"
+        ],
+        "imaging_findings": {
+            "ultrasonography": "Subcutaneous edema of the lower limbs, more marked on the left; no gas formation or deep vein thrombosis observed"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with sepsis (fever, hypotension, tachycardia, tachypnea)",
+            "Positive blood culture for Pseudomonas aeruginosa",
+            "Evidence of organ dysfunction"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (e.g., CRP, procalcitonin)",
+            "Abnormal vital signs",
+            "Positive cultures from other sites (e.g., skin, wound)"
+        ]
+    },
+    "differential_diagnoses": []
+}

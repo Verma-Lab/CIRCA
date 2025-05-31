@@ -1,0 +1,92 @@
+{
+    "disease": "Acute paralytic poliomyelitis, wild virus, indigenous",
+    "icd_code": "A802",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Initial symptom, lasting 2-10 days"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to moderate",
+                "pattern": "Initial symptom, lasting 2-10 days"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Initial symptom, lasting 2-10 days"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate",
+                "pattern": "Initial symptom, lasting 2-10 days"
+            },
+            {
+                "name": "Stiff neck",
+                "severity": "Mild to moderate",
+                "pattern": "Initial symptom, lasting 2-10 days"
+            },
+            {
+                "name": "Limb pain",
+                "severity": "Mild to moderate",
+                "pattern": "Initial symptom, lasting 2-10 days"
+            },
+            {
+                "name": "Acute flaccid paralysis",
+                "severity": "Severe",
+                "pattern": "Can occur rapidly, often permanent, usually affecting legs"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Severe",
+                "pattern": "Associated with paralysis"
+            },
+            {
+                "name": "Respiratory muscle paralysis",
+                "severity": "Life-threatening",
+                "pattern": "Can lead to death"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Asymmetrical paralysis",
+            "Absent or reduced deep tendon reflexes",
+            "Intact sensation",
+            "Muscle weakness or paralysis (flaccid)"
+        ],
+        "lab_values": {
+            "viral culture": "Positive for poliovirus (stool specimen preferred)",
+            "RT-PCR": "Positive for poliovirus, determines serotype and strain",
+            "Serology": "May show four-fold rise in antibody titer, but has limitations"
+        },
+        "risk_factors": [
+            "Lack of immunization",
+            "Poor hygiene and sanitation",
+            "Contact with infected individuals",
+            "Ingestion of contaminated food or water",
+            "Increasing age (increased risk of severe disease and death)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation of acute flaccid paralysis",
+            "Positive identification of wild poliovirus"
+        ],
+        "supportive": [
+            "Epidemiological link to a known outbreak",
+            "Abnormal lab findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other enteroviral infections",
+        "Guillain-Barr\u00e9 syndrome",
+        "Transverse myelitis",
+        "West Nile virus infection"
+    ]
+}

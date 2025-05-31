@@ -1,0 +1,94 @@
+{
+    "disease": "Herpesviral gingivostomatitis and pharyngotonsillitis",
+    "icd_code": "B002",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Present in 99.5% of cases in one study, mean duration 5.11 days",
+                "pattern": "Common"
+            },
+            {
+                "name": "Oral ulcers",
+                "severity": "Present in 84.3% of cases in one study",
+                "pattern": "Common, located in anterior and posterior oral cavity"
+            },
+            {
+                "name": "Gum swelling and/or bleeding",
+                "severity": "Present in 67.6% of cases in one study",
+                "pattern": "Common"
+            },
+            {
+                "name": "Exudate coated tonsils",
+                "severity": "Present in 16.8% of cases in one study",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Painful sores in mouth or throat",
+                "severity": "Very painful",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Swollen and painful lymph nodes",
+                "severity": "Unspecified",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in 99.5% of cases in one study"
+        },
+        "physical_findings": [
+            "Oral ulcers",
+            "Gum swelling and/or bleeding",
+            "Exudate coated tonsils",
+            "Inflamed gums"
+        ],
+        "lab_values": {
+            "WBC count": ">15,000/uL in 28.1% of cases in one study",
+            "C-reactive protein": ">40 mg/L in 29.7% of cases in one study"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with herpesviral gingivostomatitis and pharyngotonsillitis (oral ulcers, gum swelling, etc.)",
+            "Positive viral culture or PCR for HSV"
+        ],
+        "supportive": [
+            "Leukocytosis",
+            "Elevated C-reactive protein"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial pharyngitis",
+        "Enteroviral pharyngitis",
+        "Other viral infections"
+    ]
+}

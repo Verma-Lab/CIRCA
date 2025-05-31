@@ -1,0 +1,48 @@
+{
+    "disease": "Malignant neoplasm of mandible",
+    "icd_code": "C411",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Bone fracture",
+                "severity": "Variable",
+                "pattern": "Can occur due to weakened bone structure"
+            },
+            {
+                "name": "General unwellness",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to severe illness, depending on cancer progression"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass in the mandible",
+            "Jaw deformity"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant neoplasm"
+        ],
+        "supportive": [
+            "Imaging findings consistent with mandibular malignancy",
+            "Clinical presentation suggestive of mandibular cancer"
+        ]
+    },
+    "differential_diagnoses": [
+        "Adamantinoma",
+        "Ameloblastoma",
+        "Calcifying odontogenic cyst",
+        "Fibrosarcoma",
+        "Odontosarcoma"
+    ]
+}

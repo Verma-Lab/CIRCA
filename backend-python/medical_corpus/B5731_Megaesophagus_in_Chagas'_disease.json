@@ -1,0 +1,101 @@
+{
+    "disease": "Megaesophagus in Chagas' disease",
+    "icd_code": "B5731",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Odynophagia",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Epigastralgia",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Sialorrhea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Regurgitation",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Malnutrition",
+                "severity": "Variable, depending on dysphagia severity",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Oral and pharyngeal residues",
+                "severity": "Variable",
+                "pattern": "Frequent finding in videofluoroscopy"
+            },
+            {
+                "name": "Ineffective ejection in oral phase",
+                "severity": "Variable",
+                "pattern": "Frequent finding in videofluoroscopy"
+            },
+            {
+                "name": "Residues in vallecula, pharynx, and pyriform sinuses",
+                "severity": "Variable",
+                "pattern": "Frequent finding in pharyngeal phase of videofluoroscopy"
+            },
+            {
+                "name": "Abnormal esophageal motility",
+                "severity": "Variable",
+                "pattern": "Frequent finding in esophageal phase of videofluoroscopy"
+            },
+            {
+                "name": "Longer esophageal clearance and transit time",
+                "severity": "Variable, correlated with megaesophagus grade",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Laryngeal penetration",
+                "severity": "Variable",
+                "pattern": "Seen in 28% of patients in one study"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Serological tests for Trypanosoma cruzi": "Positive"
+        },
+        "risk_factors": [
+            "Chagas disease (infection with Trypanosoma cruzi)"
+        ],
+        "imaging_findings": {
+            "Barium swallow": "Esophageal dilation (megaesophagus), varying degrees depending on disease severity.  May show delayed esophageal transit time.",
+            "Videofluoroscopy": "Can reveal impaired oral, pharyngeal, and esophageal phases of swallowing, including residues and abnormal motility."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological tests for Trypanosoma cruzi",
+            "Esophageal dilation (megaesophagus) on imaging (e.g., barium swallow)"
+        ],
+        "supportive": [
+            "Symptoms of dysphagia, odynophagia, regurgitation, chest pain",
+            "Abnormal esophageal motility on manometry (if available)",
+            "Videofluoroscopic findings of impaired swallowing phases"
+        ]
+    },
+    "differential_diagnoses": [
+        "Achalasia",
+        "Other esophageal motility disorders"
+    ]
+}

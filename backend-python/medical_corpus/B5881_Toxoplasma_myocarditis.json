@@ -1,0 +1,108 @@
+{
+    "disease": "Toxoplasma myocarditis",
+    "icd_code": "B5881",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute chest pain",
+                "severity": "Severe, intermittent",
+                "pattern": "Substernal, radiating to both forearms"
+            },
+            {
+                "name": "Fever",
+                "severity": "Fluctuating",
+                "pattern": "Present in some cases, up to 38\u00b0C"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Occasional, intermittent",
+                "pattern": "Present in some cases after treatment"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Present in some cases",
+                "pattern": "Neck region"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Present in some cases",
+                "pattern": "Diffuse"
+            },
+            {
+                "name": "Rash",
+                "severity": "Diffuse",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Absent in some cases",
+                "pattern": "Not a prominent symptom"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Absent in some cases",
+                "pattern": "Not a prominent symptom"
+            },
+            {
+                "name": "Sweating",
+                "severity": "Absent in some cases",
+                "pattern": "Not a prominent symptom"
+            },
+            {
+                "name": "Proximal limb weakness",
+                "severity": "Present in some cases",
+                "pattern": "Recurrent after antibiotic treatment"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "98.5\u00b0F (37\u00b0C) in one case, 38\u00b0C in another",
+            "pulse": "68 bpm in one case, 104 bpm in another",
+            "blood_pressure": "128/75 mmHg in one case"
+        },
+        "physical_findings": [
+            "Normal physical examination in one case",
+            "Lymphadenopathy in the neck region in one case",
+            "Diffuse rash in one case"
+        ],
+        "lab_values": {
+            "serum_troponin": "Elevated (8.51 ng/mL, peak 12.8 ng/mL; normal < 0.30 ng/mL)",
+            "transaminases (AST, ALT)": "Mildly elevated in one case (108 and 91, respectively)",
+            "Toxoplasma gondii IgM and IgG": "Elevated titers in multiple cases",
+            "high sensitivity troponin T": "Elevated (571 ng/ml in one case)",
+            "CK-MB": "Elevated (41 IU/l in one case)",
+            "LDH": "Elevated (518 U/l in one case)",
+            "NT-proBNP": "Elevated (88 pg/ml in one case)",
+            "hs-cardiac troponin": "Elevated (200 ng/L; ref. < 34 ng/L) in one case"
+        },
+        "risk_factors": [
+            "Recent travel to rural areas",
+            "Consumption of undercooked meat (capybara)",
+            "Exposure to cats or other animals"
+        ],
+        "imaging_findings": {
+            "ECG": "Subtle lateral ST elevations in one case, small q waves and t wave flattening in another",
+            "coronary angiography": "Normal coronary artery anatomy in one case",
+            "echocardiography": "Normal with LVEF 60-65% in one case, systolic dysfunction (LVEF 45%) with hypokinesia in another",
+            "cardiac MRI": "Biventricular myocarditis and failure with LVEF 45% and RVEF 41% in one case, myocardial necrosis in multiple segments in another, late gadolinium enhancement with non-ischemic, inflammatory pattern in another"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with myocarditis (chest pain, fever, etc.)",
+            "Elevated Toxoplasma gondii serologies (IgM and IgG)"
+        ],
+        "supportive": [
+            "Cardiac MRI showing evidence of myocarditis",
+            "Response to anti-Toxoplasma treatment"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute coronary syndrome",
+        "Stress-induced cardiomyopathy",
+        "Pericarditis",
+        "Pulmonary embolism",
+        "Other infectious myocarditis (viral, bacterial)",
+        "Myositis"
+    ]
+}

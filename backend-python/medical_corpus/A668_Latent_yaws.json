@@ -1,0 +1,42 @@
+{
+    "disease": "Latent yaws",
+    "icd_code": "A668",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "TPPA": {
+                "abnormal": "Positive in latent yaws, but cannot distinguish from syphilis"
+            },
+            "RPR": {
+                "abnormal": "Positive in latent yaws, but cannot distinguish from syphilis"
+            },
+            "PCR": {
+                "abnormal": "Positive for Treponema pallidum subspecies pertenue DNA in active lesions; negative in latent yaws"
+            }
+        },
+        "risk_factors": [
+            "Living in poor communities in warm, humid, and tropical forest areas",
+            "Low socioeconomic conditions",
+            "Poor personal hygiene",
+            "Contact with infectious lesions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with latent yaws (absence of active lesions)",
+            "Positive serological tests (TPPA, RPR), but requires careful clinical assessment to differentiate from syphilis"
+        ],
+        "supportive": [
+            "Epidemiological context (residence in endemic area)",
+            "History of previous yaws infection",
+            "Negative PCR for T. pallidum subspecies pertenue DNA in skin lesions"
+        ]
+    },
+    "differential_diagnoses": [
+        "Syphilis"
+    ]
+}

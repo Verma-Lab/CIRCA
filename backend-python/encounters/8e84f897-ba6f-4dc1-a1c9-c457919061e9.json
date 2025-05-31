@@ -1,0 +1,19 @@
+{
+  "id": "8e84f897-ba6f-4dc1-a1c9-c457919061e9",
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "provider_id": "36c35b23-b466-4479-9c37-a2792ee85478",
+  "encounter_date": "2025-03-24T09:44:17.591136",
+  "encounter_type": "Office Visit",
+  "chief_complaint": "chest pain",
+  "vital_signs": {},
+  "hpi": "no medical history of chest pain",
+  "ros": "",
+  "physical_exam": "",
+  "assessment": "",
+  "plan": "",
+  "diagnosis_codes": "",
+  "followup_instructions": "",
+  "clinical_note": "Patient: John Doe, DOB: 1980-05-15, Gender: Male\n\nChief Complaint: chest pain\nVital Signs:\n\nS: no medical history of chest pain\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "created_at": "2025-03-24T09:44:17.591141",
+  "updated_at": "2025-03-24T09:44:17.591143"
+}

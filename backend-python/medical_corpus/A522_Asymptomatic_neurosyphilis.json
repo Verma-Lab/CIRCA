@@ -1,0 +1,55 @@
+{
+    "disease": "Asymptomatic Neurosyphilis",
+    "icd_code": "A52.2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Neurological manifestations",
+                "severity": "Absent",
+                "pattern": "Asymptomatic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "CSF": {
+                "mononuclear pleocytosis": "Increased",
+                "protein concentration": "Increased",
+                "VDRL": "Reactive"
+            },
+            "serum": {
+                "VDRL": "Positive",
+                "RPR": "Positive",
+                "TPPA": "Positive"
+            },
+            "CD4 T-cell count": {
+                "abnormal_range": "<350 cells/mL (risk factor)"
+            }
+        },
+        "risk_factors": [
+            "HIV coinfection",
+            "Low CD4 T-cell count (<350 cells/mL)",
+            "High rapid plasma reagin (RPR) titer (\u22651:32)",
+            "Poor HIV virological control"
+        ],
+        "imaging_findings": {
+            "Brain imaging (e.g., MRI)": [
+                "Infarction lesions (in late-stage)",
+                "Mild-to-severe brain atrophy (in late-stage)",
+                "White matter demyelination (in late-stage)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological tests for syphilis (e.g., VDRL, RPR, TPPA)",
+            "Positive CSF tests for syphilis (e.g., VDRL, TPPA)",
+            "CSF white blood cell count >5 \u00d7 10^6/L or CSF protein >500 mg/L"
+        ],
+        "supportive": [
+            "Absence of neurological signs or symptoms"
+        ]
+    },
+    "differential_diagnoses": []
+}

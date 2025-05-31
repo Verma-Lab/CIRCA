@@ -1,0 +1,43 @@
+{
+    "disease": "Other shigellosis",
+    "icd_code": "A038",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Typically starts 1-2 days after infection, lasts 7 days"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable, depending on the severity of diarrhea",
+                "pattern": "Can occur due to fluid loss from diarrhea"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Potentially elevated",
+            "heart_rate": "Potentially elevated due to dehydration or infection"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "stool_culture": "Presence of Shigella bacteria",
+            "rapid_diagnostic_test": "Detection of Shigella genetic material"
+        },
+        "risk_factors": [
+            "Weakened immune system",
+            "Exposure to contaminated food, water, surfaces, or objects"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory identification of Shigella bacteria in stool sample"
+        ],
+        "supportive": [
+            "Symptoms of bloody diarrhea",
+            "History of exposure to contaminated food or water"
+        ]
+    },
+    "differential_diagnoses": []
+}

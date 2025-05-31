@@ -1,0 +1,70 @@
+{
+    "disease": "Mumps nephritis",
+    "icd_code": "B2683",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Parotitis",
+                "severity": "Variable, can be unilateral or bilateral",
+                "pattern": "Typically follows a prodrome of fever, malaise, headache, myalgia, and anorexia"
+            },
+            {
+                "name": "Nephritis",
+                "severity": "Variable, can be fatal in rare cases",
+                "pattern": "May occur as a rare complication of mumps"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Part of prodromal phase"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Part of prodromal phase"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Part of prodromal phase"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "Part of prodromal phase"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Variable",
+                "pattern": "Part of prodromal phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painful inflammation of the area between the earlobe and the angle of the mandible (parotitis)",
+            "Red and swollen mucosa of the Stensen duct",
+            "Involvement of the submaxillary and submandibular glands"
+        ],
+        "lab_values": {
+            "Urine mumps virus": {
+                "abnormal_range": "Presence of mumps virus in urine during the first five days of parotitis in 72% of cases"
+            }
+        },
+        "risk_factors": [
+            "Immunodeficiency",
+            "International travel",
+            "Living in a crowded or close-knit setting",
+            "Lack of vaccination"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical observation of symptoms consistent with mumps",
+            "Laboratory testing confirming mumps infection (e.g., presence of mumps virus in urine)"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,76 @@
+{
+    "disease": "Other infectious mononucleosis with meningitis",
+    "icd_code": "B2782",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intermittent high fever",
+                "severity": "High",
+                "pattern": "Intermittent, worse in afternoon/night"
+            },
+            {
+                "name": "Headache",
+                "severity": "High",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Profuse",
+                "pattern": "Periodic"
+            },
+            {
+                "name": "Profuse sweating",
+                "severity": "High",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "High",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Neck rigidity",
+                "severity": "Unspecified",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "intracranial_pressure": "320-335 mmHg"
+        },
+        "physical_findings": [
+            "Neck rigidity"
+        ],
+        "lab_values": {
+            "high-sensitivity C-reactive protein": "Elevated",
+            "erythrocyte sedimentation rate": "Elevated",
+            "EBV immunoglobulin G": "Positive",
+            "EBV immunoglobulin M": "Negative",
+            "cerebrospinal fluid glucose": "Significantly lower than blood glucose (more than three times lower)",
+            "EBV DNA": "Elevated (Day 15)"
+        },
+        "risk_factors": [
+            "Prior EBV infection",
+            "Immunocompetent status (in this case)"
+        ],
+        "imaging_findings": {
+            "MRI": "No abnormal signal in brain parenchyma and meninges"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (fever, headache, neck rigidity)",
+            "Elevated EBV DNA in CSF",
+            "Negative results for other pathogens"
+        ],
+        "supportive": [
+            "Low CSF glucose",
+            "High intracranial pressure",
+            "Positive serum EBV IgG, negative IgM"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other viral meningitis",
+        "Bacterial meningitis"
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "disease": "Waterhouse-Friderichsen syndrome",
+    "icd_code": "A391",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shock",
+                "severity": "Severe",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Purpuric lesions/rash",
+                "severity": "Variable",
+                "pattern": "Sudden onset, can be widespread"
+            },
+            {
+                "name": "Cyanosis",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Nausea/vomiting",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May precede other symptoms"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May precede other symptoms"
+            },
+            {
+                "name": "Pharyngitis",
+                "severity": "Mild to moderate",
+                "pattern": "May precede other symptoms"
+            },
+            {
+                "name": "Cervical lymphadenopathy",
+                "severity": "Mild",
+                "pattern": "May precede other symptoms"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Variable",
+                "pattern": "May occur with worsening condition"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Hypotensive",
+            "heart_rate": "Tachycardic",
+            "respiratory_rate": "Tachypneic",
+            "temperature": "Febrile"
+        },
+        "physical_findings": [
+            "Petechiae",
+            "Purpura",
+            "Hemorrhagic rash",
+            "Bilateral adrenal hemorrhage",
+            "Signs of upper airway infection",
+            "Bronchopneumonia",
+            "Skin rash",
+            "Lung congestion",
+            "Cervical spine tenderness"
+        ],
+        "lab_values": {
+            "blood_cultures": "Positive for various bacteria (e.g., Neisseria meningitidis, Streptococcus pneumoniae, Streptococcus pyogenes, Staphylococcus aureus)",
+            "complete_blood_count": "Leukocytosis, thrombocytopenia, abnormal clotting parameters (DIC)",
+            "c-reactive_protein": "Elevated",
+            "procalcitonin": "Elevated",
+            "cortisol": "Decreased (<18 \u00b5g/dL)",
+            "ACTH": "Elevated (>48.8 pg/mL)",
+            "D-dimer": "Elevated"
+        },
+        "risk_factors": [
+            "Meningococcal infection",
+            "Other bacterial infections (e.g., Streptococcus pneumoniae, Streptococcus pyogenes, Staphylococcus aureus)",
+            "Disseminated intravascular coagulation (DIC)",
+            "Intravenous drug use",
+            "Asplenia"
+        ],
+        "imaging_findings": {
+            "ultrasound": "Bilateral adrenal hemorrhage",
+            "MRI": "Cervical epidural abscess (in one case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Acute adrenal insufficiency",
+            "Bilateral adrenal hemorrhage"
+        ],
+        "supportive": [
+            "Overwhelming sepsis",
+            "Purpura",
+            "DIC",
+            "Positive blood cultures for causative organism"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of septic shock",
+        "Other causes of adrenal insufficiency"
+    ]
+}

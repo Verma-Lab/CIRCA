@@ -1,0 +1,77 @@
+{
+    "disease": "Unspecified viral hepatitis C without hepatic coma",
+    "icd_code": "B1920",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "HCV RNA": "Positive",
+            "Liver function tests": "Potentially abnormal"
+        },
+        "risk_factors": [
+            "Intravenous drug use",
+            "Unsafe medical procedures",
+            "Unprotected sexual activity",
+            "Mother to baby transmission",
+            "Multiple sexual partners",
+            "Men who have sex with men"
+        ],
+        "imaging_findings": {
+            "Ultrasound": "Potentially abnormal findings"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive HCV RNA test"
+        ],
+        "supportive": [
+            "Abnormal liver function tests",
+            "Abnormal liver imaging",
+            "Liver biopsy (if performed)"
+        ]
+    },
+    "differential_diagnoses": []
+}

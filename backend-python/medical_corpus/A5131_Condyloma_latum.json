@@ -1,0 +1,87 @@
+{
+    "disease": "Condyloma latum",
+    "icd_code": "A5131",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nodular cutaneous lesions",
+                "severity": "Variable",
+                "pattern": "Progressing over time (e.g., two months)"
+            },
+            {
+                "name": "Malodorous lesions",
+                "severity": "Present",
+                "pattern": "Associated with the nodular lesions"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable (can be present)",
+                "pattern": "Associated with lesions, particularly in interdigital locations"
+            },
+            {
+                "name": "White spots on lesion surface",
+                "severity": "Present in some cases",
+                "pattern": "Disperse, pearly, rounded, well-defined edges"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "May or may not be present; often on hands and feet in untreated cases"
+            },
+            {
+                "name": "Swelling in lymph nodes",
+                "severity": "Variable",
+                "pattern": "May be present near affected area"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Large verrucous/nodular lesion (3 cm in diameter)",
+            "Multiple nodular lesions in inguinal regions and on penis",
+            "Non-tender lesions",
+            "Small inguinal lymph nodes bilaterally",
+            "Flat-topped, moist papules or plaques",
+            "Smooth, verrucous, or hypertrophic surface",
+            "Raised lesions with pink fleshy edges surrounding a friable erythematous center",
+            "Lesions in perianal region"
+        ],
+        "lab_values": {
+            "RPR": "Positive (titre of 1:128 in one case)",
+            "TRUST": "Positive (1:64 in one case; 1:4 after treatment in another)",
+            "Treponema pallidum immunostain": "Positive",
+            "HIV": "Negative (in multiple cases)",
+            "Hepatitis B": "Negative (in one case)",
+            "Hepatitis C": "Negative (in one case)",
+            "HPV": "Positive in some cases"
+        },
+        "risk_factors": [
+            "Sexual activity with multiple partners",
+            "Unprotected sex",
+            "Sex work"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serology for syphilis (e.g., RPR, TRUST)",
+            "Histopathological findings consistent with condyloma latum (e.g., prominent irregular epidermal hyperplasia, mixed inflammatory infiltrate, positive Treponema pallidum immunostain)"
+        ],
+        "supportive": [
+            "Clinical presentation of nodular or verrucous lesions, often in anogenital area or areas of skin apposition",
+            "Presence of white spots on lesion surface (dermoscopically visible)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Condyloma acuminata",
+        "Squamous cell carcinoma",
+        "Tinea pedis",
+        "Erythrasma",
+        "Macerated corns",
+        "Ulcerated warts",
+        "Bowen disease",
+        "Anal epidermoid carcinoma",
+        "Hemorrhoids",
+        "Lymphogranuloma venereum"
+    ]
+}

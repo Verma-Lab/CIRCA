@@ -1,0 +1,52 @@
+{
+    "disease": "Primary syphilis of other sites",
+    "icd_code": "A512",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chancre",
+                "severity": "Variable",
+                "pattern": "Single, painless ulcer at the site of infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Indurated, painless ulcer (chancre) at extragenital site"
+        ],
+        "lab_values": {
+            "VDRL": {
+                "abnormal_range": "Reactive"
+            },
+            "RPR": {
+                "abnormal_range": "Reactive"
+            },
+            "FTA-ABS": {
+                "abnormal_range": "Positive"
+            },
+            "TPPA": {
+                "abnormal_range": "Positive"
+            }
+        },
+        "risk_factors": [
+            "Unprotected oral, anal, or vaginal sex",
+            "Multiple sexual partners",
+            "Contact with infectious lesions"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with primary syphilis (chancre)",
+            "Positive serological test for syphilis (e.g., VDRL, RPR, FTA-ABS, TPPA)"
+        ],
+        "supportive": [
+            "History of exposure to syphilis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other ulcerative lesions (e.g., herpes simplex, chancroid, granuloma inguinale)",
+        "Trauma",
+        "Neoplasms"
+    ]
+}

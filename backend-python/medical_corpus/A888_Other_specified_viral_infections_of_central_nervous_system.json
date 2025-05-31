@@ -1,0 +1,44 @@
+{
+    "disease": "Other specified viral infections of central nervous system",
+    "icd_code": "A888",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sensory disturbances",
+                "severity": "Variable",
+                "pattern": "Localized or generalized"
+            },
+            {
+                "name": "Motor dysfunction",
+                "severity": "Variable",
+                "pattern": "Localized or generalized"
+            },
+            {
+                "name": "Behavioral changes",
+                "severity": "Variable",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Evidence of viral infection"
+        ],
+        "supportive": [
+            "Neurological symptoms consistent with CNS involvement",
+            "Exclusion of other causes"
+        ]
+    },
+    "differential_diagnoses": []
+}

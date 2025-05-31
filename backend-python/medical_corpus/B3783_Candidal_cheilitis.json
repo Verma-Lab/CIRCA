@@ -1,0 +1,69 @@
+{
+    "disease": "Candidal cheilitis",
+    "icd_code": "B37.83",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Redness",
+                "severity": "Variable",
+                "pattern": "Bilateral and symmetrical, but can be unilateral"
+            },
+            {
+                "name": "Erosion",
+                "severity": "Variable",
+                "pattern": "At the corners of the mouth"
+            },
+            {
+                "name": "Crusting",
+                "severity": "Variable",
+                "pattern": "At the corners of the mouth"
+            },
+            {
+                "name": "Oozing",
+                "severity": "Variable",
+                "pattern": "At the corners of the mouth"
+            },
+            {
+                "name": "Maceration",
+                "severity": "Variable",
+                "pattern": "Greyish appearance at the corners of the mouth"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Inflammation at the corners of the mouth (oral commissures)",
+            "Redness and/or erosion of the lateral oral skin folds",
+            "Crusting and oozing at the angles of the mouth",
+            "Greyish maceration at the angles of the mouth (in some cases)",
+            "Possible pale areas surrounded by a darkened rim in dark skin"
+        ],
+        "lab_values": {
+            "Culture": "May reveal Candida species"
+        },
+        "risk_factors": [
+            "Prolonged exposure of the corners of the mouth to saliva and its digestive enzymes",
+            "Poor health",
+            "Denture wearing",
+            "Licking lips"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with candidal cheilitis (redness, erosion, crusting, oozing at the corners of the mouth)"
+        ],
+        "supportive": [
+            "Positive culture for Candida species"
+        ]
+    },
+    "differential_diagnoses": [
+        "Eczematous cheilitis (irritant contact dermatitis)",
+        "Other forms of cheilitis (e.g., angular cheilitis due to other causes)"
+    ]
+}

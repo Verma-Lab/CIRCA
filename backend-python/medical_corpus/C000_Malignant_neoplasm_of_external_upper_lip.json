@@ -1,0 +1,75 @@
+{
+    "disease": "Malignant neoplasm of external upper lip",
+    "icd_code": "C000",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ulcer with hard edge",
+                "severity": "Variable",
+                "pattern": "Persistent, non-healing"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Dark red lumps",
+                "severity": "Variable",
+                "pattern": "Develops over time"
+            },
+            {
+                "name": "Leukoplakia",
+                "severity": "Variable",
+                "pattern": "White patches that cannot be wiped off"
+            },
+            {
+                "name": "Actinic cheilitis",
+                "severity": "Variable",
+                "pattern": "Precancerous lesion due to sun exposure"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Ulcer with hard edge",
+            "Bleeding",
+            "Swelling",
+            "Pain",
+            "Dark red lumps",
+            "Leukoplakia (white patches)",
+            "Actinic cheilitis"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Smoking",
+            "Excessive alcohol consumption",
+            "Poor oral hygiene",
+            "Prolonged sun exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a malignant neoplasm on the external upper lip"
+        ],
+        "supportive": [
+            "Histopathological confirmation",
+            "Clinical findings consistent with malignancy (ulcer, bleeding, swelling, pain)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cold sores",
+        "Syphilis"
+    ]
+}

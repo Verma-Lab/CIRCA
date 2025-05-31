@@ -1,0 +1,104 @@
+{
+    "disease": "Gonococcal prostatitis",
+    "icd_code": "A54.22",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pelvic pain",
+                "severity": "Variable",
+                "pattern": "Acute or chronic"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "Acute or chronic"
+            },
+            {
+                "name": "Urinary frequency",
+                "severity": "Variable",
+                "pattern": "Acute or chronic"
+            },
+            {
+                "name": "Urinary retention",
+                "severity": "Variable",
+                "pattern": "Acute or chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present in acute cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "May be present in acute cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May be present in acute cases"
+            },
+            {
+                "name": "Emesis",
+                "severity": "Variable",
+                "pattern": "May be present in acute cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present in acute cases"
+            },
+            {
+                "name": "Painful ejaculation",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Hematospermia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Painful defecation",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (>38.4\u00b0C or 101.1\u00b0F) in acute cases"
+        },
+        "physical_findings": [
+            "Tender prostate",
+            "Enlarged prostate",
+            "Boggy prostate",
+            "Distended bladder (possible)",
+            "Costovertebral angle tenderness (possible)"
+        ],
+        "lab_values": {
+            "urinalysis": "May show pyuria and bacteriuria",
+            "urine culture": "Positive for Neisseria gonorrhoeae",
+            "blood culture": "May be positive in severe cases",
+            "PSA": "May be elevated"
+        },
+        "risk_factors": [
+            "Gonorrhea infection",
+            "Unprotected sex",
+            "Multiple sexual partners",
+            "Age over 35 (increased risk for other bacterial prostatitis)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with prostatitis",
+            "Positive urine culture for Neisseria gonorrhoeae"
+        ],
+        "supportive": [
+            "Elevated PSA",
+            "Abnormal urinalysis",
+            "Positive blood culture"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,165 @@
+{
+    "disease": "Tuberculous Meningoencephalitis",
+    "icd_code": "A1782",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Disturbance of consciousness",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Epilepsy",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Changes in mental state",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Stroke (cerebral infarction, intracranial vein thrombosis, subarachnoid hemorrhage)",
+                "severity": "Variable",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Variable",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Visual impairment",
+                "severity": "Variable",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Hemiplegia",
+                "severity": "Variable",
+                "pattern": "Can occur with stroke"
+            },
+            {
+                "name": "Aphasia",
+                "severity": "Variable",
+                "pattern": "Can occur with stroke"
+            },
+            {
+                "name": "Eye movement disorder",
+                "severity": "Variable",
+                "pattern": "Can occur with stroke"
+            },
+            {
+                "name": "Diplopia",
+                "severity": "Variable",
+                "pattern": "Can occur with stroke or CVT"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Can occur with CVT"
+            },
+            {
+                "name": "Cranial nerve paralysis",
+                "severity": "Variable",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Paraplegia",
+                "severity": "Variable",
+                "pattern": "With spinal involvement"
+            },
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "With spinal involvement"
+            },
+            {
+                "name": "Nerve root pain",
+                "severity": "Variable",
+                "pattern": "With spinal involvement"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Variable",
+                "pattern": "With tuberculous granuloma"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "May be elevated due to intracranial hypertension",
+            "heart_rate": "May be elevated due to fever or other complications",
+            "respiratory_rate": "May be elevated due to complications",
+            "temperature": "Elevated in many cases"
+        },
+        "physical_findings": [
+            "Signs of meningeal irritation (nuchal rigidity, Brudzinski's sign, Kernig's sign)",
+            "Focal neurological deficits (depending on the location of the lesion)",
+            "Papilledema (due to increased intracranial pressure)"
+        ],
+        "lab_values": {
+            "CSF analysis": {
+                "opening_pressure": "Elevated",
+                "appearance": "Cloudy or turbid",
+                "cell_count": "Increased lymphocytes",
+                "glucose": "Decreased",
+                "protein": "Increased",
+                "acid-fast_bacilli": "May be present"
+            },
+            "blood_tests": {
+                "complete_blood_count": "May show anemia, leukocytosis",
+                "ESR": "Elevated"
+            }
+        },
+        "risk_factors": [
+            "HIV infection",
+            "Immunosuppression",
+            "Malnutrition",
+            "Diabetes",
+            "Exposure to tuberculosis"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show hydrocephalus, basal meningeal enhancement, or focal lesions",
+            "MRI": "More sensitive than CT in detecting meningeal enhancement, parenchymal lesions, and hydrocephalus. DWI can show ischemic tissue early.",
+            "MRV": "Can detect intracranial venous thrombosis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tuberculous meningoencephalitis",
+            "Abnormal CSF findings (lymphocytic pleocytosis, low glucose, elevated protein)",
+            "Positive tuberculin skin test or interferon-gamma release assay"
+        ],
+        "supportive": [
+            "Positive acid-fast bacilli in CSF",
+            "Detection of Mycobacterium tuberculosis DNA in CSF by PCR",
+            "Imaging findings consistent with tuberculous meningoencephalitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Viral meningitis",
+        "Fungal meningitis",
+        "Brain abscess",
+        "Brain tumor",
+        "Other CNS infections"
+    ]
+}

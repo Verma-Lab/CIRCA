@@ -1,0 +1,42 @@
+{
+    "disease": "Acute Chagas' disease without heart involvement",
+    "icd_code": "B571",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diffuse lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Variable",
+                "pattern": "Present in acute phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Diffuse lymphadenopathy",
+            "Hepatomegaly",
+            "Splenomegaly"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Trypanosoma cruzi infection",
+            "Symptoms consistent with acute Chagas disease (lymphadenopathy, hepatomegaly, splenomegaly)",
+            "Absence of cardiac involvement"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

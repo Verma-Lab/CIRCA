@@ -1,0 +1,93 @@
+{
+    "disease": "Keratoconjunctivitis due to adenovirus",
+    "icd_code": "B300",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Unilateral initially, may become bilateral"
+            },
+            {
+                "name": "Tearing",
+                "severity": "Variable",
+                "pattern": "Unilateral initially, may become bilateral"
+            },
+            {
+                "name": "Burning",
+                "severity": "Variable",
+                "pattern": "Unilateral initially, may become bilateral"
+            },
+            {
+                "name": "Foreign body sensation",
+                "severity": "Variable",
+                "pattern": "Unilateral initially, may become bilateral"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Unilateral initially, may become bilateral"
+            },
+            {
+                "name": "Epibulbar and tarsal hemorrhages",
+                "severity": "Severe in acute hemorrhagic conjunctivitis",
+                "pattern": "Present within 48 hours in >90% of AHC cases"
+            },
+            {
+                "name": "Precervical lymph node enlargement",
+                "severity": "Variable",
+                "pattern": "May be present in acute hemorrhagic conjunctivitis"
+            },
+            {
+                "name": "Corneal infiltrates",
+                "severity": "Variable, may cause decreased visual acuity",
+                "pattern": "Multifocal, non-vascularized, centrally located, nummular; appear after a few days in 95% of cases"
+            },
+            {
+                "name": "Superficial punctate keratitis",
+                "severity": "Rare",
+                "pattern": "Particularly with HAdV8"
+            },
+            {
+                "name": "Conjunctival scarring and symblepharon",
+                "severity": "Severe in 25% of cases",
+                "pattern": "May occur with membranous or pseudomembranous conjunctivitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Serofibrinous or mucopurulent exudate",
+            "Chemosis",
+            "Hyperemia",
+            "Swelling of the plica",
+            "Tarsal and epibulbar follicles",
+            "Petechial hemorrhages (in case of HAdV3, 4)",
+            "Corneal sensitivity usually unaffected",
+            "Tarsal pseudomembranes (in acute fulminant disease or immunodeficiency)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected surfaces or objects",
+            "Finger-to-eye contact",
+            "Inadequate hand washing by healthcare personnel",
+            "Inadequate disinfection of equipment (e.g., tonometers)",
+            "Improper use of dropper bottles and vials",
+            "Multiple use of contact lenses",
+            "Crowded environments with low personal hygiene"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with adenoviral keratoconjunctivitis (symptoms and physical findings)"
+        ],
+        "supportive": [
+            "Positive adenovirus detection by PCR, cell culture, or immunoassay (e.g., AdenoPlus)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial conjunctivitis",
+        "Herpetic keratitis"
+    ]
+}

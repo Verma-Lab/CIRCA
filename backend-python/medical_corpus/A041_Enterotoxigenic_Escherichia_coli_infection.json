@@ -1,0 +1,53 @@
+{
+    "disease": "Enterotoxigenic Escherichia coli infection",
+    "icd_code": "A041",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Acute",
+                "pattern": "Rapid onset, leading to dehydration and prostration within hours"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Stomach cramps",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild",
+                "pattern": "Rare"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "dehydration": "Significant dehydration can occur due to severe diarrhea"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Ingestion of contaminated food and water",
+            "Travel to developing countries with poor sanitation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of ETEC in stool sample"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with ETEC infection (acute watery diarrhea, vomiting, stomach cramps)"
+        ]
+    },
+    "differential_diagnoses": []
+}

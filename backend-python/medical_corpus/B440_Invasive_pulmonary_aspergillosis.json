@@ -1,0 +1,61 @@
+{
+    "disease": "Invasive Pulmonary Aspergillosis",
+    "icd_code": "B440",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unspecified",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Potentially elevated",
+            "respiratory_rate": "Potentially elevated",
+            "oxygen_saturation": "Potentially decreased"
+        },
+        "physical_findings": [
+            "Variable, often nonspecific"
+        ],
+        "lab_values": {
+            "galactomannan": "Elevated in blood and bronchoalveolar lavage fluid",
+            "aspergillus_dna": "Detected in blood and bronchoalveolar lavage fluid",
+            "white_blood_cell_count": "Potentially decreased (neutropenia)"
+        },
+        "risk_factors": [
+            "Neutropenia",
+            "Hematologic malignancy (e.g., AML, MDS)",
+            "Allogeneic hematopoietic stem cell transplantation",
+            "Solid organ transplantation",
+            "Prolonged corticosteroid use",
+            "Viral pneumonias (e.g., influenza, COVID-19)",
+            "Hepatic dysfunction",
+            "New anticancer drugs",
+            "Acute respiratory distress syndrome (ARDS)",
+            "Post-cardiac surgery",
+            "Prolonged corticosteroid use (\u22650.3 mg/kg for \u22653 weeks)",
+            "Liver failure",
+            "Respiratory diseases",
+            "Cardiovascular disease",
+            "Diabetes",
+            "Sepsis-associated immuno-paralysis"
+        ],
+        "imaging_findings": {
+            "computed_tomography": "Pulmonary lesions with various features",
+            "positron_emission_tomography": "Can provide additional information"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Suggestive radiological findings",
+            "Detection of galactomannan or Aspergillus DNA in blood or bronchoalveolar lavage fluid",
+            "Direct microscopy and culture showing mold infection (in some cases)"
+        ],
+        "supportive": [
+            "Risk factors for invasive pulmonary aspergillosis",
+            "Clinical presentation consistent with invasive pulmonary aspergillosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

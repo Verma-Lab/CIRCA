@@ -1,0 +1,80 @@
+{
+    "disease": "Toxoplasmosis with other organ involvement",
+    "icd_code": "B5889",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Muscle aches and pains",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Loss of coordination",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Lung infection symptoms (cough, shortness of breath)",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            },
+            {
+                "name": "Encephalitis symptoms (headache, fever, seizures)",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in encephalitis",
+            "other": "May vary depending on organ involvement"
+        },
+        "physical_findings": [
+            "Swollen lymph nodes",
+            "Neurological findings in encephalitis (e.g., altered mental status, focal neurological deficits)"
+        ],
+        "lab_values": {
+            "serology": "Positive toxoplasma IgG and/or IgM antibodies"
+        },
+        "risk_factors": [
+            "Weakened immune system (HIV/AIDS, cancer treatment, organ transplant)",
+            "Pregnancy",
+            "Consumption of undercooked meat",
+            "Contact with cat feces"
+        ],
+        "imaging_findings": {
+            "CT/MRI": "May show lesions in the brain (encephalitis), lungs, or other organs"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with toxoplasmosis",
+            "Positive serological test for toxoplasma antibodies"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of toxoplasmosis",
+            "Evidence of organ involvement"
+        ]
+    },
+    "differential_diagnoses": []
+}

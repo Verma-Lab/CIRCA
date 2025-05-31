@@ -1,0 +1,74 @@
+{
+    "disease": "Unspecified malaria",
+    "icd_code": "B54",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Variable",
+                "pattern": "Paroxysmal, irregularly recurring"
+            },
+            {
+                "name": "Sweating",
+                "severity": "Variable",
+                "pattern": "Paroxysmal"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Paroxysmal"
+            },
+            {
+                "name": "Extreme exhaustion",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Continuous or episodic"
+            },
+            {
+                "name": "Aching limbs",
+                "severity": "Variable",
+                "pattern": "Continuous or episodic"
+            },
+            {
+                "name": "Alternating hot and cold sensations",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Blackwater fever (complication)",
+                "severity": "Severe",
+                "pattern": "Dark red to black urine"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Splenomegaly"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected Anopheles mosquitoes in endemic areas"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with malaria"
+        ],
+        "supportive": [
+            "Parasitological confirmation (though not required for B54)"
+        ]
+    },
+    "differential_diagnoses": []
+}

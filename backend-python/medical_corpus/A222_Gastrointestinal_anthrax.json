@@ -1,0 +1,103 @@
+{
+    "disease": "Gastrointestinal anthrax",
+    "icd_code": "A222",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Abdominal pain and tenderness",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be bloody",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Abdominal distention",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Hemorrhage (bloody diarrhea)",
+                "severity": "Severe",
+                "pattern": "Occurs in severe cases"
+            },
+            {
+                "name": "Intestinal obstruction or perforation",
+                "severity": "Severe",
+                "pattern": "Occurs in severe cases"
+            },
+            {
+                "name": "Ascites",
+                "severity": "Severe",
+                "pattern": "Occurs in severe cases"
+            },
+            {
+                "name": "Sepsis",
+                "severity": "Severe",
+                "pattern": "Occurs in severe cases"
+            },
+            {
+                "name": "Shock",
+                "severity": "Life-threatening",
+                "pattern": "Occurs in severe cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "blood_pressure": "Can be low in severe cases (shock)"
+        },
+        "physical_findings": [
+            "Abdominal tenderness",
+            "Abdominal distention (in severe cases)",
+            "Signs of shock (in severe cases)"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Bacillus anthracis",
+            "stool_culture": "Positive for Bacillus anthracis"
+        },
+        "risk_factors": [
+            "Ingestion of contaminated meat or animal products",
+            "Exposure to infected animals",
+            "Weakened public health systems (in some regions)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with gastrointestinal anthrax",
+            "Positive blood or stool culture for Bacillus anthracis",
+            "Positive PCR for Bacillus anthracis"
+        ],
+        "supportive": [
+            "History of exposure to potentially contaminated food or animals",
+            "Epidemiological link to an outbreak"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other forms of gastroenteritis",
+        "Infectious colitis caused by other bacteria, viruses, or parasites"
+    ]
+}

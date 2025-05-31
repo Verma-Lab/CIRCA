@@ -1,0 +1,68 @@
+{
+    "disease": "Gonococcal infection of lower genitourinary tract, unspecified",
+    "icd_code": "A5400",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysuria",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Urethral discharge",
+                "severity": "Variable",
+                "pattern": "May be purulent or mucopurulent"
+            },
+            {
+                "name": "Vaginal discharge",
+                "severity": "Variable",
+                "pattern": "May be purulent or mucopurulent"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            },
+            {
+                "name": "Intermenstrual bleeding",
+                "severity": "Variable",
+                "pattern": "May be present in women"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Purulent urethral discharge (males)",
+            "Cervicitis (females)",
+            "Urethritis (males and females)",
+            "Tenderness to palpation in the lower abdomen (variable)"
+        ],
+        "lab_values": {
+            "Gram stain": "Presence of gram-negative intracellular diplococci",
+            "Culture": "Positive for Neisseria gonorrhoeae"
+        },
+        "risk_factors": [
+            "Unprotected sexual intercourse",
+            "Multiple sexual partners",
+            "History of sexually transmitted infections"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture for Neisseria gonorrhoeae",
+            "Clinical symptoms consistent with gonococcal infection"
+        ],
+        "supportive": [
+            "Positive Gram stain showing gram-negative intracellular diplococci",
+            "Positive nucleic acid amplification test (NAAT)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chlamydia trachomatis infection",
+        "Trichomoniasis",
+        "Candida infection",
+        "Bacterial vaginosis",
+        "Urethritis due to other pathogens"
+    ]
+}

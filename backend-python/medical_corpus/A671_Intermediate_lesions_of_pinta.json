@@ -1,0 +1,40 @@
+{
+    "disease": "Intermediate lesions of pinta",
+    "icd_code": "A67.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hyperchromic lesions",
+                "severity": "Unspecified",
+                "pattern": "Plaques"
+            },
+            {
+                "name": "Erythematous plaques",
+                "severity": "Unspecified",
+                "pattern": "Plaques"
+            },
+            {
+                "name": "Hyperkeratosis",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hyperchromic lesions",
+            "Erythematous plaques",
+            "Hyperkeratosis"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of hyperchromic skin lesions characteristic of intermediate-stage pinta"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

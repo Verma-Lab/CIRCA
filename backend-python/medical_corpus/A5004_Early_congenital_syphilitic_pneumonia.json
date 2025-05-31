@@ -1,0 +1,112 @@
+{
+    "disease": "Early congenital syphilitic pneumonia",
+    "icd_code": "A5004",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Respiratory distress",
+                "severity": "Severe",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Grunting",
+                "severity": "Severe",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Severe",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Chest retractions",
+                "severity": "Severe",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Decreased breath sounds",
+                "severity": "Severe",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Crackles",
+                "severity": "Moderate",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Cyanosis",
+                "severity": "Severe",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Glue-like secretions",
+                "severity": "Moderate",
+                "pattern": "Present at birth"
+            },
+            {
+                "name": "Bullous eruption (pemphigus syphiliticus)",
+                "severity": "Moderate",
+                "pattern": "Present at birth on palms and soles"
+            },
+            {
+                "name": "Moderately distended abdomen",
+                "severity": "Mild",
+                "pattern": "Present at birth"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased",
+            "oxygen_saturation": "Decreased"
+        },
+        "physical_findings": [
+            "Tachypnea",
+            "Chest retractions",
+            "Decreased breath sounds",
+            "Crackles",
+            "Cyanosis",
+            "Grunting",
+            "Glue-like secretions",
+            "Bullous eruption (pemphigus syphiliticus) on palms and soles",
+            "Moderately distended abdomen"
+        ],
+        "lab_values": {
+            "Hemoglobin": "11.4 g/dL (low)",
+            "White blood cell count": "29,000/mm\u00b3 (high)",
+            "Platelet count": "156,000/mm\u00b3 (low)",
+            "Total protein": "62 g/dL (high)",
+            "Albumin": "14 g/dL (low)",
+            "C-reactive protein": "12.8 mg/L (high)",
+            "Aspartate aminotransferase (AST)": "Twice the normal value (high)",
+            "Alanine aminotransferase (ALT)": "Normal",
+            "Total bilirubin": "75 mg/dL (high)",
+            "RPR": "Positive",
+            "VDRL": "Positive",
+            "TPHA": "Positive (1:160 titer)"
+        },
+        "risk_factors": [
+            "Maternal syphilis",
+            "Lack of prenatal care",
+            "Socioeconomic factors"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Diffuse, uniform opacification of both lungs (\"white lung\"), consistent with congenital pneumonia (pneumonia alba)",
+            "Long bone X-ray": "Increased radiolucency, widening, irregularity, and erosions in the metaphyseal regions of the long bones",
+            "Cerebral MRI": "Periventricular leukomalacia and possible petechial hemorrhages"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with congenital syphilitic pneumonia (respiratory distress, tachypnea, etc.)",
+            "Positive serologic tests for syphilis (RPR, VDRL, TPHA)"
+        ],
+        "supportive": [
+            "Characteristic radiological findings on chest X-ray (\"white lung\")",
+            "Other manifestations of congenital syphilis (e.g., skin lesions, bone abnormalities)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of neonatal pneumonia",
+        "Other causes of neonatal respiratory distress"
+    ]
+}

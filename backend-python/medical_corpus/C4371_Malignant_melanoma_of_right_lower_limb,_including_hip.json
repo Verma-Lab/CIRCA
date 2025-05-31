@@ -1,0 +1,28 @@
+{
+    "disease": "Malignant melanoma of right lower limb, including hip",
+    "icd_code": "C4371",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dark patch on the skin",
+                "severity": "Variable",
+                "pattern": "Localized initially, may spread"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Excessive sun exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant melanoma cells"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

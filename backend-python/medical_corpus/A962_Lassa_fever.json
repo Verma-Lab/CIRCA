@@ -1,0 +1,172 @@
+{
+    "disease": "Lassa fever",
+    "icd_code": "A962",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be mild or severe",
+                "pattern": "Gradual onset"
+            },
+            {
+                "name": "General weakness",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Diarrhoea",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Develops after a few days"
+            },
+            {
+                "name": "Facial swelling",
+                "severity": "Severe",
+                "pattern": "Develops as disease progresses"
+            },
+            {
+                "name": "Fluid in the lung cavity",
+                "severity": "Severe",
+                "pattern": "Develops as disease progresses"
+            },
+            {
+                "name": "Bleeding from the mouth, nose, vagina, or gastrointestinal tract",
+                "severity": "Severe",
+                "pattern": "Develops as disease progresses"
+            },
+            {
+                "name": "Low blood pressure",
+                "severity": "Severe",
+                "pattern": "Develops as disease progresses"
+            },
+            {
+                "name": "Shock",
+                "severity": "Severe",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Tremor",
+                "severity": "Severe",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Severe",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Late stage"
+            },
+            {
+                "name": "Sudden hearing loss",
+                "severity": "Variable, can be permanent",
+                "pattern": "During acute disease or after recovery"
+            },
+            {
+                "name": "Neurological signs",
+                "severity": "Variable",
+                "pattern": "Sequelae"
+            },
+            {
+                "name": "Visual impairment",
+                "severity": "Variable",
+                "pattern": "Sequelae"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable",
+                "pattern": "Sequelae"
+            },
+            {
+                "name": "Transient hair loss",
+                "severity": "Variable",
+                "pattern": "Sequelae"
+            },
+            {
+                "name": "Psychological disorders",
+                "severity": "Variable",
+                "pattern": "Sequelae"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Low blood pressure"
+        },
+        "physical_findings": [
+            "Facial swelling",
+            "Fluid in the lung cavity"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected rodents (Mastomys natalensis)",
+            "Contact with blood, urine, feces, or other bodily fluids of an infected person",
+            "Contact with contaminated medical equipment"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Lassa fever",
+            "Laboratory confirmation of Lassa virus infection"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Malaria",
+        "Typhoid fever",
+        "Shigellosis",
+        "Yellow fever",
+        "Other viral hemorrhagic fevers"
+    ]
+}

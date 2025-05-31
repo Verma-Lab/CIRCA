@@ -1,0 +1,65 @@
+{
+    "disease": "Calicivirus enteritis",
+    "icd_code": "A0831",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, mild to severe",
+                "pattern": "Watery stools, frequency varies"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable, mild to severe",
+                "pattern": "Frequency varies"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Variable, can be severe",
+                "pattern": "Depending on severity of diarrhea and vomiting"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases",
+            "heart_rate": "May be elevated due to dehydration or severity of illness",
+            "blood_pressure": "May be low due to dehydration"
+        },
+        "physical_findings": [
+            "Dehydration signs (dry mucous membranes, decreased skin turgor)",
+            "Abdominal tenderness or cramping"
+        ],
+        "lab_values": {
+            "complete_blood_count": "May show signs of dehydration (hemoconcentration)",
+            "electrolytes": "May show electrolyte imbalances due to dehydration"
+        },
+        "risk_factors": [
+            "Young age (especially children under 5 years)",
+            "Exposure to infected individuals",
+            "Consumption of contaminated food or water"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms of gastroenteritis (diarrhea and/or vomiting)",
+            "Detection of calicivirus in stool sample (RT-PCR)"
+        ],
+        "supportive": [
+            "Epidemiological link to other cases",
+            "Clinical findings consistent with gastroenteritis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rotavirus gastroenteritis",
+        "Other viral gastroenteritis",
+        "Bacterial gastroenteritis",
+        "Parasitic gastroenteritis",
+        "Food poisoning"
+    ]
+}

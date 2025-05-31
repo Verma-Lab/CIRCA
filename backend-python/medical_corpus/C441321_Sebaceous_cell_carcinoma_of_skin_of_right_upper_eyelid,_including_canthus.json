@@ -1,0 +1,91 @@
+{
+    "disease": "Sebaceous cell carcinoma of skin of right upper eyelid, including canthus",
+    "icd_code": "C441321",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Eyelid mass",
+                "severity": "Variable, can be small or large",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Loss of eyelashes (madarosis)",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Eyelid thickening",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Yellowish discoloration of the eyelid",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Usually painless",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Loss of vision",
+                "severity": "Can occur in advanced cases",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Swelling of the eyelid",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Firm, painless, indurated mass or ulceration",
+            "Yellowish nodule (due to lipid)",
+            "Diffuse thickening of lid margin",
+            "Loss of eyelashes",
+            "Pagetoid infiltration of conjunctival epithelium or skin epidermis",
+            "Fungating mass"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age (elderly, especially women)",
+            "Sun exposure",
+            "Radiation therapy to the head or neck",
+            "Muir-Torre syndrome",
+            "Asian descent",
+            "Immunosuppression"
+        ],
+        "imaging_findings": {
+            "MRI": "May show extent of tumor involvement",
+            "Ultrasonography": "Can help characterize the mass",
+            "PET scan": "Can detect metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing characteristic features of sebaceous carcinoma (e.g., lobular arrangement, vacuolated cytoplasm, hyperchromatic nuclei)"
+        ],
+        "supportive": [
+            "Clinical presentation (e.g., eyelid mass, loss of eyelashes, yellowish discoloration)",
+            "Immunohistochemical staining (e.g., positive for EMA, Ber-Ep4, androgen receptor, adipophilin)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chalazion",
+        "Chronic blepharoconjunctivitis",
+        "Blepharitis",
+        "Meibomian cyst",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Lymphoma",
+        "Preseptal cellulitis",
+        "Lacrimal gland neoplasm",
+        "Cutaneous horn",
+        "Merkel cell carcinoma",
+        "Pyogenic granuloma",
+        "Metastatic carcinoma"
+    ]
+}

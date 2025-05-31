@@ -1,0 +1,80 @@
+{
+    "disease": "Malignant melanoma of skin of breast",
+    "icd_code": "C4352",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless mass in the breast",
+                "severity": "Variable",
+                "pattern": "Progressive growth over time"
+            },
+            {
+                "name": "Black pigmented skin lesion",
+                "severity": "Variable",
+                "pattern": "May be present at birth, rapid growth and bleeding"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "3\u00d72-cm firm irregular mass in the upper inner quadrant of the left breast",
+            "No change in the appearance of the local skin",
+            "No discharge from, or retraction of, the nipple",
+            "Small number of lymph nodes palpated in the left axilla",
+            "2.0 \u00d7 1.5 cm ulcerative pigmented skin lesion in the right breast",
+            "No axillary lymph node palpation",
+            "No nipple discharge or retraction"
+        ],
+        "lab_values": {
+            "Immunohistochemistry": {
+                "S-100": "Positive",
+                "HMB-45": "Positive",
+                "Melan-A": "Positive",
+                "Cytokeratin (CK)": "Negative",
+                "Epithelial membrane antigen (EMA)": "Negative",
+                "Vimentin": "Negative",
+                "Smooth muscle antigen (SMA)": "Negative",
+                "Estrogen receptor": "Negative",
+                "Progesterone receptor": "Negative",
+                "HER2": "Negative",
+                "Ki-67": "30%"
+            }
+        },
+        "risk_factors": [
+            "Excessive exposure to ultraviolet radiation",
+            "Ethnicity",
+            "Endocrine and immune systems",
+            "Chronic stimulation",
+            "Improper surgery"
+        ],
+        "imaging_findings": {
+            "Breast MRI": "Left breast cancer due to enlarged left axillary lymph nodes",
+            "Chest CT scan": "Widespread lung and pleural nodules (lung and pleural metastases)",
+            "Emission CT whole body bone scintigraphy": "Destruction to multiple ribs, cervical vertebrae, and thoracic bone",
+            "Mammography": "Dense breast",
+            "Breast ultrasonography": "Normal findings",
+            "Magnetic resonance imaging": "Normal findings",
+            "Brain computed tomography (CT)": "No evidence of metastasis",
+            "Positron emission tomography-CT": "No evidence of metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Pleomorphism of tumor cells and nuclear atypia",
+            "Positive expression of S-100, HMB-45, and Melan-A",
+            "Exclusion of tumor metastases and invasion from neighboring sites"
+        ],
+        "supportive": [
+            "Scattered intracellular pigment granules (although amelanotic melanoma exists)",
+            "Electron microscopy identifying melanosome and former melanosome",
+            "Absence of transition between tumor tissue and normal breast tissue",
+            "Negative expression of CK, vimentin, and SMA"
+        ]
+    },
+    "differential_diagnoses": [
+        "Breast cancer",
+        "Metastatic melanoma to the breast",
+        "In-transit metastases to breast tissue and skin",
+        "Primary malignant melanoma of the breast gland"
+    ]
+}

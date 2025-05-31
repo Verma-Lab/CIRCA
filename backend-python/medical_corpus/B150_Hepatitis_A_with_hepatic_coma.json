@@ -1,0 +1,92 @@
+{
+    "disease": "Hepatitis A with hepatic coma",
+    "icd_code": "B150",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hepatic coma symptoms (e.g., altered mental status, loss of consciousness)",
+                "severity": "Severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Clay-colored stools",
+                "severity": "Variable",
+                "pattern": "May or may not be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "May be abnormal depending on severity",
+            "heart_rate": "May be abnormal depending on severity",
+            "respiratory_rate": "May be abnormal depending on severity"
+        },
+        "physical_findings": [
+            "Jaundice (icterus)",
+            "Hepatomegaly (enlarged liver)",
+            "Ascites (fluid in the abdomen)",
+            "Asterixis (flapping tremor)",
+            "Altered mental status (ranging from confusion to coma)"
+        ],
+        "lab_values": {
+            "liver_function_tests": "Elevated liver enzymes (ALT, AST, bilirubin)",
+            "hepatitis_a_virus": "Positive serology for Hepatitis A virus"
+        },
+        "risk_factors": [
+            "Exposure to fecal matter from an infected individual",
+            "Travel to areas with high rates of Hepatitis A",
+            "Injection drug use",
+            "Men who have sex with men",
+            "Pre-existing liver disease (e.g., Hepatitis B, Hepatitis C, HIV)",
+            "Age over 50"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show hepatomegaly, ascites",
+            "CT_scan": "May show hepatomegaly, ascites, and other complications"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with hepatic coma",
+            "Positive serology for Hepatitis A virus",
+            "Elevated liver enzymes"
+        ],
+        "supportive": [
+            "Imaging findings consistent with liver disease",
+            "History of exposure to Hepatitis A virus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of hepatic encephalopathy (e.g., liver failure from other causes, drug-induced hepatic injury)",
+        "Other causes of coma (e.g., stroke, brain injury, metabolic disorders)"
+    ]
+}

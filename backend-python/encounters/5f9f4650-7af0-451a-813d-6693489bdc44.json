@@ -1,0 +1,19 @@
+{
+  "id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "provider_id": "36c35b23-b466-4479-9c37-a2792ee85478",
+  "encounter_date": "2025-03-25T09:07:35.650692",
+  "encounter_type": "Office Visit",
+  "chief_complaint": "headache",
+  "vital_signs": {},
+  "hpi": "Patient Describes no history of illness",
+  "ros": "",
+  "physical_exam": "",
+  "assessment": "",
+  "plan": "",
+  "diagnosis_codes": "",
+  "followup_instructions": "",
+  "clinical_note": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: headache\nVital Signs:\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "created_at": "2025-03-25T09:07:35.650696",
+  "updated_at": "2025-03-25T09:07:35.650698"
+}

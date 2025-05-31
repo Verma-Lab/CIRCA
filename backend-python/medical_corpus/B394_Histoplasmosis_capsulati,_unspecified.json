@@ -1,0 +1,68 @@
+{
+    "disease": "Histoplasmosis capsulati, unspecified",
+    "icd_code": "B394",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Present in acute pulmonary histoplasmosis; may be absent in other forms"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Present in acute pulmonary histoplasmosis; may be absent in other forms"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Present in acute and progressive disseminated histoplasmosis"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Mild to moderate",
+                "pattern": "Present in chronic cavitary pulmonary histoplasmosis"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Mild to moderate",
+                "pattern": "Present in chronic cavitary pulmonary histoplasmosis and progressive disseminated histoplasmosis"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to severe",
+                "pattern": "Present in progressive disseminated histoplasmosis"
+            },
+            {
+                "name": "Skin ulcers",
+                "severity": "Variable",
+                "pattern": "Present in progressive disseminated histoplasmosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to bird or bat droppings",
+            "Weakened immune system (e.g., HIV)",
+            "Emphysema",
+            "Chronic obstructive pulmonary disease (COPD)",
+            "Occupations or hobbies involving disturbance of soil containing fungus"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "May show changes or damage caused by H. capsulatum",
+            "CT scan": "May show changes or damage caused by H. capsulatum"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with histoplasmosis",
+            "Positive laboratory tests (e.g., blood, urine, sputum, bone marrow, tissue culture)"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of histoplasmosis (chest X-ray, CT scan)"
+        ]
+    },
+    "differential_diagnoses": []
+}

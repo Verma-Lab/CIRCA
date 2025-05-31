@@ -1,0 +1,23 @@
+{
+    "disease": "Malignant neoplasm of floor of mouth, unspecified",
+    "icd_code": "C049",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "alcohol abuse and dependence",
+            "history of tobacco dependence",
+            "tobacco dependence",
+            "tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

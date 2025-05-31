@@ -1,0 +1,80 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of unspecified upper limb, including shoulder",
+    "icd_code": "C4910",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can range from mild to severe"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "Palpable lump or swelling in the affected area"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Muscle weakness in the affected limb"
+            },
+            {
+                "name": "Limited range of motion",
+                "severity": "Variable",
+                "pattern": "Difficulty moving the affected limb"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Generalized tiredness and weakness"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Unexplained weight loss"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in some cases due to pain or stress",
+            "blood_pressure": "May be elevated in some cases due to pain or stress",
+            "respiratory_rate": "Usually normal unless there are complications"
+        },
+        "physical_findings": [
+            "Palpable mass or swelling",
+            "Limited range of motion",
+            "Muscle atrophy",
+            "Lymph node enlargement",
+            "Skin changes (e.g., discoloration, ulceration)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to radiation",
+            "Exposure to certain chemicals",
+            "Genetic predisposition",
+            "Previous history of cancer"
+        ],
+        "imaging_findings": {
+            "X-ray": "May show bone destruction or soft tissue mass",
+            "CT scan": "Provides detailed images of the mass and surrounding tissues",
+            "MRI": "Provides detailed images of the soft tissues, including muscles, ligaments, and tendons",
+            "PET scan": "May be used to detect metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings suggestive of a soft tissue mass in the upper limb",
+            "Imaging findings consistent with a malignant neoplasm"
+        ],
+        "supportive": [
+            "Biopsy confirming the diagnosis of malignancy",
+            "Elevated tumor markers (if applicable)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign soft tissue tumors",
+        "Infections",
+        "Inflammation",
+        "Trauma"
+    ]
+}

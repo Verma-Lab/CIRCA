@@ -1,0 +1,85 @@
+{
+    "disease": "Osseous Cryptococcosis",
+    "icd_code": "B453",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Localized to affected bone, can be severe enough to wake patient at night"
+            },
+            {
+                "name": "Soft tissue swelling",
+                "severity": "Variable",
+                "pattern": "Localized to area surrounding affected bone"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Can be sharp, dull, or throbbing; may be localized or lateralized"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild or absent",
+                "pattern": "Present in a minority of patients"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Mild or absent",
+                "pattern": "Present in a minority of patients"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Mild or absent",
+                "pattern": "Present in a minority of patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Normal or slightly elevated",
+            "heart_rate": "Normal",
+            "blood_pressure": "Can be elevated (as seen in one case)"
+        },
+        "physical_findings": [
+            "Tender, fluctuant mass",
+            "Increased skin temperature over mass (in some cases)",
+            "No induration, erythema, or discharge (in some cases)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Can be elevated (e.g., 9.2 x 10^6 cells/L)",
+            "lymphocytes": "Can be decreased (e.g., CD4 lymphopenia)",
+            "creatinine": "Can be elevated with amphotericin B treatment",
+            "CRP": "Can be elevated (e.g., 36.4 mg/L)",
+            "ESR": "Can be elevated (e.g., 54 mm/h)",
+            "PCT": "Can be elevated (e.g., 0.06 ng/mL)",
+            "IL-6": "Can be elevated (e.g., 12.95 pg/mL)"
+        },
+        "risk_factors": [
+            "Immunocompromised state (particularly defects in cell-mediated immunity)",
+            "HIV infection (although not always present)",
+            "Chronic hepatitis B",
+            "Exposure to pigeons"
+        ],
+        "imaging_findings": {
+            "plain_x-ray": "Nonspecific, may show lytic lesions",
+            "bone_scan": "Increased uptake in affected area",
+            "CT_scan": "Destructive changes in bone, soft tissue swelling",
+            "MRI": "Lesions of the pubis and surrounding soft tissue, bone destruction"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Culture isolation of Cryptococcus neoformans from bone tissue"
+        ],
+        "supportive": [
+            "Clinical presentation (pain, swelling)",
+            "Imaging findings (lytic lesions, increased uptake on bone scan)",
+            "Positive cryptococcal antigen test"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignancy",
+        "Bacterial osteomyelitis",
+        "Benign epidermoid or dermoid cyst"
+    ]
+}

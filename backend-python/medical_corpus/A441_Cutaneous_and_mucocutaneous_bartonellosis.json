@@ -1,0 +1,17 @@
+{
+    "disease": "Cutaneous and mucocutaneous bartonellosis",
+    "icd_code": "A441",
+    "parameters": {
+        "symptoms": [],
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

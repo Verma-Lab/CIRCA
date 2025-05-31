@@ -1,0 +1,36 @@
+{
+    "disease": "Other specified predominantly sexually transmitted diseases",
+    "icd_code": "A638",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact (vaginal, anal, oral)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Syphilis",
+        "Gonorrhea",
+        "Chlamydia",
+        "Trichomoniasis",
+        "Hepatitis B",
+        "Herpes simplex virus (HSV)",
+        "HIV",
+        "Human papillomavirus (HPV)",
+        "Mpox",
+        "Shigella sonnei",
+        "Neisseria meningitidis",
+        "Ebola",
+        "Zika",
+        "Lymphogranuloma venereum",
+        "Mycoplasma genitalium"
+    ]
+}

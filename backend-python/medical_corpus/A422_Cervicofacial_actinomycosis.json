@@ -1,0 +1,126 @@
+{
+    "disease": "Cervicofacial actinomycosis",
+    "icd_code": "A42.2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Chronic, progressive"
+            },
+            {
+                "name": "Abscesses",
+                "severity": "Variable",
+                "pattern": "Solitary or multiple, draining"
+            },
+            {
+                "name": "Fistula formation",
+                "severity": "Variable",
+                "pattern": "Across normal tissue planes"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Intermittent, lancinating"
+            },
+            {
+                "name": "Pus discharge",
+                "severity": "Variable",
+                "pattern": "Recurrent"
+            },
+            {
+                "name": "Granulomatous lesion",
+                "severity": "Variable",
+                "pattern": "Mimicking malignancy"
+            },
+            {
+                "name": "Trismus",
+                "severity": "Variable",
+                "pattern": "Difficulty swallowing"
+            },
+            {
+                "name": "Nasal obstruction",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hoarseness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Tongue pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible, variable severity"
+        },
+        "physical_findings": [
+            "Palpable mass",
+            "Tenderness on palpation",
+            "Soft or firm consistency",
+            "Erythematous areas",
+            "Multiple nodular eruptions",
+            "Orange peel appearance of skin",
+            "Asymmetric face",
+            "Stiff, hard submandibular area",
+            "Limited interincisal distance",
+            "Displacement of uvula",
+            "Multiple sinus tract openings"
+        ],
+        "lab_values": {
+            "Culture": "Often unsuccessful due to fastidious nature of bacteria",
+            "Histopathology": "Shows actinomycotic granules"
+        },
+        "risk_factors": [
+            "Odontogenic source (periapical abscess)",
+            "Posttraumatic or surgical complications",
+            "Poor hygiene",
+            "Immunosuppression",
+            "Local trauma leading to mucosal breakdown"
+        ],
+        "imaging_findings": {
+            "CT": [
+                "Well-defined or ill-defined mass",
+                "Infiltrative nature, crossing tissue planes",
+                "Moderate homogeneous contrast enhancement",
+                "Small low-attenuating foci",
+                "Expansile soft-tissue lesion"
+            ],
+            "MR": [
+                "Intermediate signal intensity",
+                "Moderate contrast enhancement"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with cervicofacial actinomycosis (e.g., swelling, abscesses, fistulas)",
+            "Histopathological evidence of actinomycotic granules"
+        ],
+        "supportive": [
+            "Positive bacterial culture (though often difficult)",
+            "Characteristic imaging findings (CT, MRI)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignancy",
+        "Granulomatous lesions (e.g., tuberculosis)",
+        "Fungal infections",
+        "Nocardiosis",
+        "Abscess"
+    ]
+}

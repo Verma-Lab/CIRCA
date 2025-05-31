@@ -1,0 +1,112 @@
+{
+    "disease": "Merkel Cell Carcinoma of Nose",
+    "icd_code": "C4A31",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nasal obstruction",
+                "severity": "Moderate to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Rhinorrhea",
+                "severity": "Moderate",
+                "pattern": "Present"
+            },
+            {
+                "name": "Reduced visual acuity",
+                "severity": "Moderate",
+                "pattern": "Unilateral (right eye)"
+            },
+            {
+                "name": "Proptosis",
+                "severity": "Present",
+                "pattern": "Unilateral (right eye)"
+            },
+            {
+                "name": "Blindness",
+                "severity": "Severe",
+                "pattern": "Unilateral (right eye)"
+            },
+            {
+                "name": "Infraorbital hypoesthesia",
+                "severity": "Present",
+                "pattern": "Unilateral (right)"
+            },
+            {
+                "name": "Facial pain",
+                "severity": "Present",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Progressive",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia"
+        },
+        "physical_findings": [
+            "Large reddish mass within the nasal fossa, filling the nasal vestibule",
+            "Filling of the right choana",
+            "Proptosis of the right eye",
+            "Blindness in the right eye",
+            "Right-sided infraorbital hypoesthesia",
+            "Enlarging neck mass causing tracheal deviation"
+        ],
+        "lab_values": {
+            "Ki-67": "Elevated (50% and 90% in different cases)",
+            "neurospecific enolase (NSE)": "Positive",
+            "S-100 protein": "Negative",
+            "cytokeratin": "Positive",
+            "synaptophysin": "Positive",
+            "chromogranin": "Positive",
+            "CK20": "Positive (perinuclear dot-like pattern)",
+            "Merkel cell polyomavirus": "Positive (in some cases)"
+        },
+        "risk_factors": [
+            "UV exposure",
+            "Merkel cell polyomavirus",
+            "Long-term systemic immunosuppression",
+            "Age (elderly patients)",
+            "Smoking (in one case)"
+        ],
+        "imaging_findings": {
+            "CT": [
+                "Large, homogeneous soft-tissue mass of the right nasal fossa without calcifications",
+                "Involvement of adjacent paranasal sinuses",
+                "Destruction of the nasal septum, medial wall of the orbit, and roof of the ethmoid",
+                "Voluminous homogeneous mass without calcifications, expanding the right nasal fossa and destroying the nasal septum and the lamina papiracea",
+                "Extension into the superior orbital fissure",
+                "Soft tissue mass filling the right nasal cavity and right maxillary sinus"
+            ],
+            "MRI": [
+                "Large soft-tissue mass of intermediate signal intensity on T1-weighted and T2-weighted imaging",
+                "Maximal enhancement within the first 30 seconds after contrast medium administration",
+                "Tumor had invaded the right pterygopalatine fossa and the orbit, with wide involvement of the extraconal fat",
+                "Right optical nerve was stretched with dilatation of its arachnoid sheath",
+                "Large necrotic intratumoral areas (after chemo- and radiotherapy)"
+            ],
+            "PET/CT": [
+                "Hypermetabolic left neck mass arising from the thyroid gland, extending into the mediastinum, and deviating the airway to the right",
+                "Hypermetabolic right maxillary sinus with high-density contents",
+                "No other hypermetabolic sites were seen"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histologic findings: very rich tumoral vascularization and a uniform population of cells with round-to-oval nuclei, inconspicuous nucleoli, evenly dispersed chromatin, ill-defined cytoplasm, abundant mitotic activity",
+            "Positive markers for cytokeratin, synaptophysin, chromogranin, and CK20 (perinuclear dot-like pattern)",
+            "Negative staining for S-100 protein",
+            "Positive Merkel cell polyomavirus (in some cases)"
+        ],
+        "supportive": [
+            "Imaging findings consistent with a hypervascular mass in the nasal fossa",
+            "Clinical presentation with nasal obstruction, rhinorrhea, and/or visual disturbances"
+        ]
+    },
+    "differential_diagnoses": []
+}

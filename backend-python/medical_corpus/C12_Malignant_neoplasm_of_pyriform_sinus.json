@@ -1,0 +1,27 @@
+{
+    "disease": "Malignant neoplasm of pyriform sinus",
+    "icd_code": "C12",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Heavy drinking",
+            "HPV (for certain types of throat cancer)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical exam",
+            "History",
+            "Imaging tests",
+            "Biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

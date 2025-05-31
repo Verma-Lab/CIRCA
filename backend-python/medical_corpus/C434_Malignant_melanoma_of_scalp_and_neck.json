@@ -1,0 +1,59 @@
+{
+    "disease": "Malignant melanoma of scalp and neck",
+    "icd_code": "C434",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pigmented lesion",
+                "severity": "Variable",
+                "pattern": "Asymmetry, irregular border, variegated color, diameter >6mm, elevation (ABCDE criteria), pain, itching, ulceration"
+            },
+            {
+                "name": "Amelanotic lesion",
+                "severity": "Variable",
+                "pattern": "Pink, red, purple, or normal skin color"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Asymmetry of lesion",
+            "Irregular border",
+            "Variegated color",
+            "Diameter greater than 6 mm",
+            "Elevation",
+            "Ulceration",
+            "Nodularity",
+            "Satellite lesions",
+            "Changes in existing mole"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Fair skin",
+            "Red hair",
+            "Intense sun exposure",
+            "Pigmented lesions (junctional nevi, dysplastic nevi, congenital nevi >20cm)",
+            "Large number of benign nevi",
+            "Dysplastic nevus syndrome",
+            "Xeroderma pigmentosa",
+            "Childhood sun exposure with sunburn"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant melanoma"
+        ],
+        "supportive": [
+            "Clinical findings consistent with melanoma (ABCDE criteria)",
+            "Imaging findings (if indicated)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign lesions",
+        "Sun-induced lesions",
+        "Vascular lesions",
+        "Inflammatory lesions",
+        "Neoplastic lesions"
+    ]
+}

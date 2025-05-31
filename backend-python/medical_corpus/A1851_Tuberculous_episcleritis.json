@@ -1,0 +1,57 @@
+{
+    "disease": "Tuberculous episcleritis",
+    "icd_code": "A1851",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Redness",
+                "severity": "Unspecified",
+                "pattern": "Present in all cases"
+            },
+            {
+                "name": "Pain/tenderness",
+                "severity": "Unspecified",
+                "pattern": "Present in all cases"
+            },
+            {
+                "name": "Impaired vision",
+                "severity": "Unspecified",
+                "pattern": "Reported in five patients"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "finding": "Nodular episcleritis",
+                "prevalence": "25% of reported cases"
+            },
+            {
+                "finding": "Simple episcleritis",
+                "prevalence": "4.8% of reported cases"
+            },
+            {
+                "finding": "Unilateral involvement",
+                "prevalence": "Dominant"
+            }
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Residence in or relocation from endemic countries",
+            "Contact with confirmed pulmonary TB",
+            "Concurrent active pulmonary disease",
+            "Latent TB (17/40 cases)",
+            "Active/pulmonary TB (13/40 cases)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion",
+            "Laboratory evidence of TB",
+            "Positive response to antituberculous therapy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,81 @@
+{
+    "disease": "Tuberculous Enteritis",
+    "icd_code": "A1832",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal complaints",
+                "severity": "Variable",
+                "pattern": "Associated with active pulmonary tuberculosis"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Intestinal obstruction",
+                "severity": "Variable",
+                "pattern": "May be a complication"
+            },
+            {
+                "name": "Intestinal perforation",
+                "severity": "Severe",
+                "pattern": "May be a complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "Tuberculin skin test (TST)": {
+                "abnormal_range": "Usually positive, but does not distinguish between latent and active infection"
+            },
+            "Interferon gamma release assay (IGRA)": {
+                "abnormal_range": "Usually positive, but does not distinguish between latent and active infection"
+            },
+            "Mycobacterial culture": {
+                "abnormal_range": "Positive in gold standard diagnosis, but low yield and prolonged growth time"
+            },
+            "Xpert MTB/RIF assay": {
+                "abnormal_range": "Sensitivity varies depending on sample type (lymph node, gastric aspirate, ascitic fluid, fecal samples)"
+            }
+        },
+        "risk_factors": [
+            "Active pulmonary tuberculosis",
+            "Ingestion of contaminated respiratory tract secretions",
+            "Hematogenous spread from active pulmonary infection",
+            "Contiguous spread from adjacent infected viscera or lymph nodes",
+            "Ingestion of contaminated unpasteurized dairy products (uncommon)"
+        ],
+        "imaging_findings": {
+            "Contrast studies of the gastrointestinal tract": {
+                "findings": "Disease in the gastrointestinal tract"
+            },
+            "Chest X-ray": {
+                "findings": "Associated pulmonary disease in majority of cases"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive mycobacterial culture (gold standard, but low yield)"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with tuberculous enteritis",
+            "Positive TST or IGRA",
+            "Abnormal findings on contrast studies of the gastrointestinal tract",
+            "Positive Xpert MTB/RIF assay (sensitivity varies by sample type)",
+            "Histologic examination showing granulomatous inflammation"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neoplasm",
+        "Inflammatory bowel disease"
+    ]
+}

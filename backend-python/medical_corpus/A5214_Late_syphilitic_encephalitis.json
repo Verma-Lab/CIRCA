@@ -1,0 +1,82 @@
+{
+    "disease": "Late syphilitic encephalitis",
+    "icd_code": "A52.14",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Neurological symptoms",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Cognitive impairment",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Focal or generalized"
+            },
+            {
+                "name": "Meningitis symptoms (e.g., fever, neck stiffness)",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Psychiatric symptoms (e.g., personality changes, psychosis)",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated during acute phases",
+            "blood_pressure": "May be abnormal depending on other complications"
+        },
+        "physical_findings": [
+            "Cranial nerve palsies",
+            "Motor weakness",
+            "Sensory deficits",
+            "Reflex abnormalities",
+            "Signs of meningeal irritation (if meningitis is present)"
+        ],
+        "lab_values": {
+            "VDRL/RPR": "Reactive",
+            "FTA-ABS": "Reactive",
+            "CSF VDRL/RPR": "Reactive (often)",
+            "CSF cell count": "Elevated (lymphocytic pleocytosis)",
+            "CSF protein": "Elevated"
+        },
+        "risk_factors": [
+            "Untreated or inadequately treated syphilis",
+            "Late-stage syphilis"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show nonspecific findings or evidence of stroke",
+            "MRI": "May show abnormalities in the brain parenchyma, such as areas of inflammation or infarction"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with late syphilitic encephalitis",
+            "Positive serological tests for syphilis (VDRL/RPR, FTA-ABS)"
+        ],
+        "supportive": [
+            "Positive CSF VDRL/RPR",
+            "Elevated CSF cell count and protein",
+            "Characteristic imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other forms of encephalitis (viral, autoimmune)",
+        "Brain tumor",
+        "Multiple sclerosis",
+        "Stroke"
+    ]
+}

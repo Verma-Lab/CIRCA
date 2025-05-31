@@ -1,0 +1,59 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves of thorax",
+    "icd_code": "C473",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Growing lump or mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Muscle movement difficulty",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Numbness or tingling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or lump",
+            "Muscle weakness or atrophy",
+            "Sensory deficits (numbness, tingling)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass involving peripheral nerves in the thorax",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with peripheral nerve involvement (pain, weakness, sensory changes)",
+            "Elevated tumor markers (if applicable)"
+        ]
+    },
+    "differential_diagnoses": []
+}

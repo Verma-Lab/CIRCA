@@ -1,0 +1,107 @@
+{
+    "disease": "Tuberculous iridocyclitis",
+    "icd_code": "A1854",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blurry vision",
+                "severity": "Variable",
+                "pattern": "Can be the only symptom reported"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Can be the only symptom reported"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Redness of the eye",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Floaters",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Flashes",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present in systemic involvement"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "May be present in systemic involvement"
+            },
+            {
+                "name": "Chronic pulmonary infection",
+                "severity": "Variable",
+                "pattern": "May be present in systemic involvement"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present in systemic involvement"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Granulomatous anterior uveitis",
+            "Mutton-fat keratic precipitates",
+            "Iris or angle granulomas",
+            "Posterior synechiae",
+            "Hypopyon",
+            "Secondary glaucoma",
+            "Panuveitis",
+            "Intermediate uveitis",
+            "Posterior uveitis with disseminated choroiditis (most common)",
+            "Multiple, discrete, yellow lesions in the posterior pole",
+            "Disc edema",
+            "Periphlebitis",
+            "Vasculitis",
+            "Vitritis",
+            "Single large choroidal tuberculomas (with or without retinal detachment and macular star formation)",
+            "Multifocal choroiditis",
+            "Serpiginous-like choroiditis",
+            "Subretinal abscesses"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised state (HIV/AIDS, chronic disease, medication)",
+            "Healthcare workers",
+            "Recent immigrants from endemic areas",
+            "Prior exposure to acutely infected individual",
+            "Travel to endemic areas"
+        ],
+        "imaging_findings": {
+            "Fluorescein angiography": "Early hypofluorescence of active choroiditis and late leakage; Cicatricial lesions show early blocked hyperfluorescence with late staining",
+            "Indocyanine green angiography": "Early and late-stage hypofluorescence of the lesions; Subclinical lesions may be seen",
+            "Ultrasonography": "Moderate to low internal reflectivity of large tuberculomas; Can distinguish them from intraocular malignancy",
+            "Chest X-ray/CT": "May be negative in half of patients with extrapulmonary involvement",
+            "Optical Coherence Tomography (OCT)": "Shows macular edema, which may resolve with treatment"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tuberculous uveitis (e.g., granulomatous anterior uveitis, posterior uveitis with disseminated choroiditis)"
+        ],
+        "supportive": [
+            "Positive tuberculin skin test (PPD) or interferon-gamma release assay (IGRA)",
+            "Positive chest X-ray or CT scan suggestive of pulmonary tuberculosis",
+            "Evidence of systemic tuberculosis",
+            "Response to antituberculous therapy"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,28 @@
+{
+    "disease": "Malignant neoplasm of branchial cleft",
+    "icd_code": "C104",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lateral cervical cysts"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Malignant neoplasm originating from tissue of branchial cleft passages"
+        ],
+        "supportive": [
+            "Lateral cervical cyst",
+            "Histological evidence of malignancy",
+            "Absence of identifiable primary tumor elsewhere"
+        ]
+    },
+    "differential_diagnoses": [
+        "Cystic metastasis from primary carcinomas in the tonsillar tissue of Waldeyer's ring"
+    ]
+}

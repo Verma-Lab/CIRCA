@@ -1,0 +1,81 @@
+{
+    "disease": "Rubella pneumonia",
+    "icd_code": "B0681",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Low-grade fever",
+                "severity": "mild",
+                "pattern": "present in prodromal phase"
+            },
+            {
+                "name": "Malaise",
+                "severity": "mild",
+                "pattern": "present in prodromal phase"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "mild",
+                "pattern": "present in prodromal phase"
+            },
+            {
+                "name": "Headaches",
+                "severity": "mild",
+                "pattern": "present in prodromal phase"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "mild",
+                "pattern": "present in prodromal phase"
+            },
+            {
+                "name": "Adenopathy",
+                "severity": "mild to moderate",
+                "pattern": "involves postauricular, suboccipital, and anterior cervical lymph nodes"
+            },
+            {
+                "name": "Maculopapular rash",
+                "severity": "mild",
+                "pattern": "begins on face, spreads to trunk and extremities, lasts 3 days"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "variable",
+                "pattern": "can be a complication, especially in infants"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "low-grade fever"
+        },
+        "physical_findings": [
+            "Lymphadenopathy (postauricular, suboccipital, anterior cervical)",
+            "Maculopapular rash",
+            "Petechiae on soft palate (Forchheimer spots, in ~20%)",
+            "Pneumonia findings (if present)"
+        ],
+        "lab_values": {
+            "Rubella-specific IgM antibodies": "Detectable 4 days after rash onset",
+            "Rubella-specific IgG titers": "Four-fold or greater increase between acute and convalescent sera indicates infection or reinfection"
+        },
+        "risk_factors": [
+            "Under-vaccinated or unvaccinated individuals",
+            "Travel to endemic areas",
+            "Exposure to household members with rubella",
+            "Immunodeficiency",
+            "Pregnancy (for congenital rubella syndrome)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Detection of rubella-specific IgM antibodies",
+            "Four-fold or greater increase in rubella-specific IgG titers"
+        ],
+        "supportive": [
+            "Clinical symptoms (fever, rash, lymphadenopathy)",
+            "Epidemiological factors (exposure to rubella)"
+        ]
+    },
+    "differential_diagnoses": []
+}

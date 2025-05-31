@@ -1,0 +1,102 @@
+{
+    "disease": "Mumps pancreatitis",
+    "icd_code": "B263",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Low-grade intermittent fever",
+                "severity": "mild",
+                "pattern": "intermittent"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Multiple episodes of non-bilious vomiting",
+                "severity": "moderate",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Swelling below the left ear",
+                "severity": "moderate to severe",
+                "pattern": "progressive"
+            },
+            {
+                "name": "Painful swelling below the left ear",
+                "severity": "moderate to severe",
+                "pattern": "continuous, aggravated by chewing"
+            },
+            {
+                "name": "Painful right scrotal swelling",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Epigastric pain",
+                "severity": "mild to moderate",
+                "pattern": "increasing"
+            },
+            {
+                "name": "Bilateral parotid swelling",
+                "severity": "moderate",
+                "pattern": "gradual worsening"
+            },
+            {
+                "name": "Numbness at the side of the forehead",
+                "severity": "mild",
+                "pattern": "continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "100\u00b0F (37.8\u00b0C)",
+            "pulse": "105 beats/minute",
+            "blood_pressure": "110/70 mmHg",
+            "respiratory_rate": "16/minute"
+        },
+        "physical_findings": [
+            "Average built male",
+            "Diffuse, tender, fluctuant, and erythematous swelling near the angle of the mandible on the left side",
+            "No visible purulent discharge from Stenson\u2019s duct",
+            "Tense abdomen with absent bowel sounds",
+            "Painful and swollen right testis (approx. 5x3x3 cm)"
+        ],
+        "lab_values": {
+            "hemoglobin": "13 gm/dL (13-16 gm/dL)",
+            "platelet_count": "1.5 x105/L (1.5-4.0 x105/L)",
+            "total_leucocyte_count": "10x103cells/mm3 (4.0-10.0 x103cells/mm3)",
+            "erythrocyte_sedimentation_rate": "32 mm (0-20 mm) in the first hour",
+            "serum_amylase": "249 IU/L (23-125 IU/L)",
+            "serum_lipase": "348 IU/L (13-60 IU/L)",
+            "total_bilirubin": "0.55 mg/dL (0.2-1.0 mg/dL)",
+            "alkaline_phosphatase": "65 IU/L (40-130 IU/L)",
+            "serum_calcium": "9.3 mg/dL (8.0-10.4 mg/dL)",
+            "triglycerides": "72mg/dL (10-150 mg/dL)",
+            "mumps_virus_RNA": "positive (by RT-PCR)"
+        },
+        "risk_factors": [
+            "Waning of vaccine-induced immunity",
+            "Low efficacy of the mumps component of the MMR vaccine",
+            "Antigenic differences between the vaccine and strain-causing illness"
+        ],
+        "imaging_findings": {
+            "ultrasound_parotid_glands": "Enlargement with loss of normal echotexture and diffuse hypoechogenicity, suggestive of parotitis",
+            "CT_scan_abdomen": "Findings consistent with acute pancreatitis",
+            "ultrasound_testes": "Swelling, heterogeneous hypoechogenicity of the testis, and scrotal wall thickening; increased flow, hypervascularity, and hyperemia of the right testis and epididymis; testicular hyperemia on the left side"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with mumps (parotitis, orchitis, etc.)",
+            "Elevated serum amylase and lipase levels",
+            "Positive mumps virus RNA detection (RT-PCR)"
+        ],
+        "supportive": [
+            "Imaging findings consistent with pancreatitis (CT scan)",
+            "Elevated inflammatory markers (ESR, WBC)"
+        ]
+    },
+    "differential_diagnoses": []
+}

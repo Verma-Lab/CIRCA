@@ -1,0 +1,46 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of esophagus",
+    "icd_code": "C158",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dysphagia",
+                "severity": "Persistent",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Significant",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Significant",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "GERD symptoms",
+                "severity": "Unresponsive to OTC medication",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Smoking",
+            "Heavy alcohol consumption",
+            "Chronic irritation (e.g., GERD)",
+            "Genetic mutations"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Neoplastic growth in overlapping areas of the esophagus that cannot be assigned to a single, specific esophageal region"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

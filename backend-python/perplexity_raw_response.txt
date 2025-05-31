@@ -1,0 +1,33 @@
+## 1. Fascicular Blocks: Update 2019
+
+### Title: Fascicular Blocks: Update 2019
+### Authors: Not specified in the search results
+### Journal: Not specified in the search results
+### Year: 2019
+
+This review aims to redefine reliable criteria for the electrocardiographic and vectorcardiographic diagnosis of left fascicular blocks, also known as hemiblocks. The concept of hemiblocks was significantly advanced by the Argentinian School of Electrocardiology, which helped bridge gaps in understanding electrocardiograms that were previously unexplained. The review discusses the anatomy of the left bundle branch and its clinical significance, including the incidence and prevalence of left anterior and left posterior hemiblocks, both isolated and associated with right bundle branch block (RBBB).
+
+The trifascicular nature of the intraventricular conduction system is supported by clinical and experimental observations. The presence of RBBB facilitates the interpretation of these blocks by showing how impulses can follow different pathways within the left ventricle. When the impulse follows the posterior division (due to an anterior block), the axis of the QRS complex shifts superiorly to the left. Conversely, when the impulse follows the anterior division (due to a posterior block), the axis shifts inferiorly to the right.
+
+The review highlights that left anterior hemiblock (LAH) alone or associated with RBBB is common in conditions like coronary artery disease, cardiomyopathies, and certain degenerative diseases. Experimental studies in animals have supported the concept of hemiblocks by demonstrating "divisional" left bundle branch block and "trifascicular" heart block. These findings have implications for understanding various pathophysiological and electrocardiographic phenomena, including the mechanism of bidirectional tachycardia and the site of origin of ventricular ectopic beats.
+
+The most reliable evidence for diagnosing hemiblocks comes from experimental approaches, clinical cases with intermittent conduction disturbances in the left bundle branch divisions, and aberrant ventricular conduction of premature supraventricular beats. The association of hemiblocks with RBBB provides strong evidence for the trifascicular nature of the intraventricular conduction system.
+
+### Clinical Implications:
+- **Diagnosis and Understanding**: The review enhances understanding and diagnosis of fascicular blocks, which are crucial for identifying potential cardiac conditions.
+- **Clinical Significance**: Hemiblocks can be markers for underlying cardiac diseases and may influence the interpretation of other electrocardiographic abnormalities.
+- **Future Research**: Further studies are needed to fully explore the clinical implications of hemiblocks in various cardiac conditions.
+
+## 2. Analyzing Prominent T Waves and ST-Segment Abnormalities in Acute Myocardial Infarction
+
+### Title: Analyzing Prominent T Waves and ST-Segment Abnormalities in Acute Myocardial Infarction
+### Authors: Not specified in the search results
+### Journal: Journal of Emergency Medicine
+### Year: 2012
+
+This article discusses the differential diagnosis of prominent T waves and ST-segment abnormalities in acute myocardial infarction (AMI). Early changes in AMI include hyperacute T waves and non-concave ST segment elevation. The article aims to review tools that help distinguish these ECG patterns from other conditions with similar appearances.
+
+The study presents a case of a 42-year-old woman with minimal cardiac risk factors who developed an ST-segment elevation myocardial infarction (STEMI), illustrating the evolution of early and classic ECG changes associated with her infarct. The article emphasizes the importance of recognizing these patterns early in the disease process to ensure appropriate treatment.
+
+### Methodology:
+- **Case Presentation**: A detailed case report of a STEMI patient highlighting the

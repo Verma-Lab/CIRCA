@@ -1,0 +1,95 @@
+{
+    "disease": "Toxic Shock Syndrome (TSS)",
+    "icd_code": "A483",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (\u226538.9 \u00b0C)",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Rash",
+                "severity": "Diffuse macular erythroderma",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Desquamation",
+                "severity": "Significant",
+                "pattern": "1-2 weeks after onset, particularly on palms and soles"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Systolic blood pressure \u2264 90 mm Hg for adults or <5th percentile for children <16 years",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Flu-like symptoms",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Organ failure",
+                "severity": "Variable, can be severe",
+                "pattern": "Can develop rapidly"
+            },
+            {
+                "name": "Shock",
+                "severity": "Severe, can be life-threatening",
+                "pattern": "Rapid onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Systolic blood pressure \u2264 90 mm Hg (adults) or <5th percentile (children <16 years)",
+            "temperature": "\u2265 38.9 \u00b0C"
+        },
+        "physical_findings": [
+            "Diffuse macular erythroderma",
+            "Desquamation of palms and soles (1-2 weeks after onset)"
+        ],
+        "lab_values": {
+            "blood_culture": "May be positive for Staphylococcus aureus",
+            "other_cultures": "Positive cultures from normally sterile sites (blood, CSF, joint fluid, etc.) or non-sterile sites (throat, vagina, sputum)"
+        },
+        "risk_factors": [
+            "Use of highly absorbent tampons",
+            "Menstruation",
+            "Skin wounds",
+            "Surgical incisions",
+            "Nasal packing",
+            "Scrapes",
+            "Burns",
+            "Childbirth",
+            "Surgery on the uterus",
+            "Use of birth control devices (diaphragms, contraceptive sponges)",
+            "Diabetes",
+            "Weak immune system",
+            "Chronic lung disease",
+            "Heart disease"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Fever \u2265 38.9 \u00b0C",
+            "Rash (diffuse macular erythroderma)",
+            "Hypotension (systolic blood pressure \u2264 90 mm Hg for adults or <5th percentile for children <16 years)",
+            "Desquamation (1-2 weeks after onset, particularly on palms and soles)"
+        ],
+        "supportive": [
+            "Positive blood culture for Staphylococcus aureus",
+            "Positive cultures from other normally sterile or non-sterile sites"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rocky Mountain spotted fever",
+        "Leptospirosis",
+        "Measles"
+    ]
+}

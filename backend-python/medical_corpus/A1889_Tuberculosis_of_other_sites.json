@@ -1,0 +1,67 @@
+{
+    "disease": "Tuberculosis of other sites",
+    "icd_code": "A1889",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Variable, depending on affected site",
+                "severity": "Variable",
+                "pattern": "Variable"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            {
+                "name": "Variable, depending on affected site",
+                "description": "Physical findings will vary depending on the location of the tuberculosis infection.  For example, spinal tuberculosis might present with back pain and stiffness, while kidney tuberculosis could manifest with flank pain and hematuria."
+            }
+        ],
+        "lab_values": {
+            "TB blood test": {
+                "abnormal_range": "Positive result indicating presence of TB antibodies"
+            },
+            "TB skin test": {
+                "abnormal_range": "Positive result indicating presence of TB antibodies"
+            },
+            "Sputum culture": {
+                "abnormal_range": "Positive for Mycobacterium tuberculosis"
+            },
+            "Other lab tests": {
+                "abnormal_range": "Depending on the affected organ, other lab tests may reveal abnormalities (e.g., kidney function tests for kidney TB)."
+            }
+        },
+        "risk_factors": [
+            "Weakened immune system (HIV, malnutrition, diabetes)",
+            "Close contact with someone with active TB",
+            "Living in areas with high TB prevalence",
+            "Substance abuse (alcohol, tobacco)"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": {
+                "findings": "May show abnormalities depending on the location of the TB (e.g., lung involvement)"
+            },
+            "CT scan": {
+                "findings": "Provides more detailed images of affected organs"
+            },
+            "MRI": {
+                "findings": "Useful for imaging the brain, spine, and other soft tissues"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive TB test (blood or skin test)",
+            "Evidence of active TB infection (e.g., positive sputum culture, imaging findings)"
+        ],
+        "supportive": [
+            "Symptoms consistent with TB at the affected site",
+            "Risk factors for TB"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other infections (fungal, bacterial)",
+        "Malignancies",
+        "Autoimmune diseases"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "disease": "Pheomycotic brain abscess",
+    "icd_code": "B431",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Poor cognition",
+                "severity": "Moderate",
+                "pattern": "Over 2 weeks"
+            },
+            {
+                "name": "Memory decline",
+                "severity": "Moderate",
+                "pattern": "Over 2 weeks"
+            },
+            {
+                "name": "Expressive dysphasia",
+                "severity": "Intermittent",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Intermittent",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": "Stable",
+        "physical_findings": [
+            "Consciousness",
+            "No neurologic deficits except intermittent expressive dysphasia and disorientation"
+        ],
+        "lab_values": {
+            "Leukocytosis": "Normal",
+            "C-reactive protein": "Normal"
+        },
+        "risk_factors": [
+            "Occupation (farmer)",
+            "Exposure to soil"
+        ],
+        "imaging_findings": {
+            "MRI": [
+                "20 mm sized nodular enhancing mass with peritumoral edema in the left frontal lobe",
+                "Central cystic portion with diffusion restriction",
+                "Ring-enhancing lesion with a low-attenuation core"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Surgical biopsy showing multiple necrotizing granulomas with brown pigmented fungal hyphae",
+            "Septated hyphae and melanin pigments confirmed on Fontana-Masson stain"
+        ],
+        "supportive": [
+            "Brain MRI showing a ring-enhancing lesion with a low-attenuation core"
+        ]
+    },
+    "differential_diagnoses": [
+        "High-grade glioma",
+        "Metastatic tumor"
+    ]
+}

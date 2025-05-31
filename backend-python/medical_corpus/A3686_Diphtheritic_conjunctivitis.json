@@ -1,0 +1,56 @@
+{
+    "disease": "Diphtheritic conjunctivitis",
+    "icd_code": "A3686",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Left eyelid redness",
+                "severity": "Unspecified",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Left eyelid swelling",
+                "severity": "Unspecified",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Eye discharge",
+                "severity": "Unspecified",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Pseudomembranous conjunctivitis",
+                "severity": "Unspecified",
+                "pattern": "Localized"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Left eyelid redness",
+            "Left eyelid swelling",
+            "Eye discharge",
+            "Pseudomembrane formation"
+        ],
+        "lab_values": {
+            "Culture": "Corynebacterium ulcerans (toxin-producing)"
+        },
+        "risk_factors": [
+            "Immunocompromised state (non-Hodgkin\u2019s lymphoma)",
+            "Age (73 years)",
+            "Not up-to-date for tetanus-diphtheria (Td) vaccine"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of pseudomembrane on the conjunctiva",
+            "Isolation of toxigenic Corynebacterium species (C. diphtheriae or C. ulcerans) from conjunctival culture"
+        ],
+        "supportive": [
+            "Symptoms of conjunctivitis (redness, swelling, discharge)",
+            "Exposure to infected individuals or animals"
+        ]
+    },
+    "differential_diagnoses": []
+}

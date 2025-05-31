@@ -1,0 +1,108 @@
+{
+    "disease": "Squamous cell carcinoma of skin of left ear and external auricular canal",
+    "icd_code": "C44229",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ear discharge",
+                "severity": "Variable",
+                "pattern": "Persistent, non-resolving"
+            },
+            {
+                "name": "Ear pain",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Tinnitus",
+                "severity": "Mild",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Conductive",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Bleeding from ear",
+                "severity": "Spontaneous",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Firm, red nodules and sores",
+                "severity": "Variable",
+                "pattern": "Present on the skin of the ear with scaly crust"
+            },
+            {
+                "name": "Otalgia",
+                "severity": "Variable",
+                "pattern": "Eight-year history in one case"
+            },
+            {
+                "name": "Ear fullness",
+                "severity": "Variable",
+                "pattern": "Present in one case"
+            },
+            {
+                "name": "Itching",
+                "severity": "Variable",
+                "pattern": "Present in one case"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Exophytic mass occupying external auditory canal",
+            "Minimal pus in external auditory canal",
+            "Tympanic membrane not visualized",
+            "No facial nerve palsy",
+            "No mastoid swelling or tenderness",
+            "Irregular cauliflower-like uneven neoplasm with stench and yellowish-white discharge",
+            "Ulcer easy bleeding",
+            "Swollen and movable lymph nodes in right supraclavicular fossa"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Ultraviolet light exposure",
+            "Chronic infection",
+            "Skin irritations from ear infections and ear drainage",
+            "Genetic abnormalities (e.g., xeroderma pigmentosum)",
+            "Family history of skin cancer",
+            "Tobacco use",
+            "Age",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {
+            "CT scan": [
+                "Tumor mass filling right pinna and external auditory canal",
+                "Infiltration of right parotid, temporomandibular joint, external auditory canal, and middle ear",
+                "Metastasis of right neck lymph node",
+                "External auditory canal obliterated by soft tissue mass extending into left middle ear cavity, epitympanum, and mastoid cavity",
+                "Inner ear structures and internal auditory canal normal"
+            ],
+            "MRI scan": "May be used to identify location and spread of growth"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing invasive well-differentiated SCC with keratin pearls"
+        ],
+        "supportive": [
+            "Clinical presentation with ear discharge, pain, hearing loss, tinnitus, and/or bleeding",
+            "Imaging findings showing a mass in the external auditory canal and/or temporal bone"
+        ]
+    },
+    "differential_diagnoses": [
+        "Otitis externa",
+        "Otitis media",
+        "Chronic suppurative otitis media",
+        "Granulation in external auditory canal",
+        "Cholesteatoma",
+        "Papilloma",
+        "Basal cell carcinoma",
+        "Adenoid cystic carcinoma",
+        "Ceruminous adenocarcinoma",
+        "Middle ear adenocarcinoma",
+        "Malignant otitis externa"
+    ]
+}

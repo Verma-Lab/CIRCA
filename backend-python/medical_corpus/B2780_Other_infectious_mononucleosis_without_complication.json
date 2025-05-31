@@ -1,0 +1,104 @@
+{
+    "disease": "Other infectious mononucleosis without complication",
+    "icd_code": "B2780",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Significant",
+                "pattern": "Common, may persist for several months"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Lymph node enlargement",
+                "severity": "Variable",
+                "pattern": "Common, particularly posterior cervical"
+            },
+            {
+                "name": "Palatal petechiae",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "May persist for several months"
+            },
+            {
+                "name": "Tonsillar enlargement",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Pharyngeal inflammation",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Hepatomegaly",
+                "severity": "Variable",
+                "pattern": "Less common, more likely in older adults"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Less common, more likely in older adults"
+            },
+            {
+                "name": "Splenomegaly",
+                "severity": "Variable",
+                "pattern": "Can occur, but rare"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Lymph node enlargement",
+            "Splenomegaly",
+            "Hepatomegaly",
+            "Tonsillar enlargement",
+            "Pharyngeal inflammation",
+            "Palatal petechiae"
+        ],
+        "lab_values": {
+            "lymphocytes": "Increased, with atypical lymphocytes (at least 10%, or 20% atypical lymphocytosis)",
+            "heterophile antibody test": "Positive (but can be false-negative early in infection)"
+        },
+        "risk_factors": [
+            "Contact with infected saliva",
+            "Age 10-30 years (most common)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (fever, pharyngitis, adenopathy, fatigue, atypical lymphocytosis)"
+        ],
+        "supportive": [
+            "Positive heterophile antibody test"
+        ]
+    },
+    "differential_diagnoses": [
+        "Streptococcal pharyngitis",
+        "Viral pharyngitis",
+        "Acute cytomegalovirus infection",
+        "Toxoplasmosis",
+        "Acute HIV infection"
+    ]
+}

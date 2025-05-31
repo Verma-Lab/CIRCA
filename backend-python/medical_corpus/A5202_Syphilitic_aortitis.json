@@ -1,0 +1,104 @@
+{
+    "disease": "Syphilitic aortitis",
+    "icd_code": "A5202",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shortness of breath",
+                "severity": "Worsening",
+                "pattern": "Two weeks duration"
+            },
+            {
+                "name": "Orthopnea",
+                "severity": "Present",
+                "pattern": "Two weeks duration"
+            },
+            {
+                "name": "Exertional chest tightness",
+                "severity": "Present",
+                "pattern": "20 days duration"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Present",
+                "pattern": "20 days duration"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Present",
+                "pattern": "20 days duration"
+            },
+            {
+                "name": "Acute respiratory distress",
+                "severity": "Present",
+                "pattern": "At presentation"
+            },
+            {
+                "name": "Increased work of breathing",
+                "severity": "Present",
+                "pattern": "At presentation"
+            },
+            {
+                "name": "Angina",
+                "severity": "Exertional",
+                "pattern": "Preceding hospital presentation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "96/51 mmHg (hypotensive)",
+            "heart_rate": "62 bpm",
+            "respiratory_rate": "20 bpm",
+            "oxygen_saturation": "90% on room air"
+        },
+        "physical_findings": [
+            "2/6 systolic ejection murmur",
+            "2/6 diastolic murmur at the right upper sternal border",
+            "Increased work of breathing",
+            "No wheezing or crackles on auscultation",
+            "No jugular venous distension",
+            "No peripheral edema",
+            "No abdominal tenderness",
+            "Aortic valve thickening",
+            "Severe eccentric regurgitation",
+            "Valve leaflet stiffness",
+            "Mildly thickened ascending aorta"
+        ],
+        "lab_values": {
+            "NT-proBNP": "8060 pg/mL (<177 pg/mL)",
+            "Troponin": "0.141 ng/mL (0.000-0.045 ng/mL), peaked at 0.294 ng/mL",
+            "Treponema pallidum antibody (TP-Ab)": "197.9 COI (positive)",
+            "Treponema pallidum particle agglutination test (TPPA)": "Positive",
+            "Hepatitis B, C, HIV": "Negative"
+        },
+        "risk_factors": [
+            "Smoking (5-6 cigarettes daily for 10 years)",
+            "Untreated syphilis"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Cardiomegaly, bilateral pulmonary infiltrates",
+            "CT angiography (CTA)": "Large aortic root aneurysm (5.9 cm)",
+            "Transthoracic echocardiography (TTE)": "Severe left ventricular dilation, reduced ejection fraction (30-35%), severe aortic insufficiency",
+            "Coronary angiography": "Patent coronary arteries, no flow limitations or obstruction",
+            "Coronary computed tomography angiography (CCTA)": "Mild occlusion at the origin of the right coronary artery, moderate (approximately 66%) stenosis at the origin of the left coronary artery"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive syphilis serology (e.g., TPPA, VDRL)",
+            "Characteristic pathological findings on aortic biopsy (chronic inflammation, medial scarring, perivascular lympho-plasmacytic infiltrate, endarteritis obliterans)"
+        ],
+        "supportive": [
+            "Aortic aneurysm",
+            "Aortic regurgitation",
+            "Coronary ostial stenosis",
+            "Clinical presentation consistent with cardiovascular syphilis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Takayasu aortitis",
+        "Giant cell arteritis",
+        "Beh\u00e7et's disease",
+        "Atherosclerosis"
+    ]
+}

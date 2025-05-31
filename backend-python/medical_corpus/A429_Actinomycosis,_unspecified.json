@@ -1,0 +1,63 @@
+{
+    "disease": "Actinomycosis, unspecified",
+    "icd_code": "A429",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pus-filled areas (abscesses) surrounded by bumpy tissue",
+                "severity": "Variable",
+                "pattern": "Chronic, slowly progressive"
+            },
+            {
+                "name": "Tunneling wound with yellowish pus and sulfur granules",
+                "severity": "Variable",
+                "pattern": "Chronic, slowly progressive"
+            },
+            {
+                "name": "Symptoms may not develop for months or years after infection starts",
+                "severity": "Variable",
+                "pattern": "Delayed onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Pus accumulations",
+            "Ducts formed from inflamed area to other body areas",
+            "Discharge of pus via ducts",
+            "Necrosis with yellowish sulfur granules and filamentous Gram-positive fungal-like pathogens"
+        ],
+        "lab_values": {
+            "Gram stain": "Non-spore-forming Gram-positive rods (except A. meyeri, which is small and nonbranching; other species are branching filamentous rods)",
+            "Culture": "Slow growth (5-20 days), requires anaerobic conditions, may be negative due to prior antibiotic use or inadequate culture conditions"
+        },
+        "risk_factors": [
+            "Surgery",
+            "Injury",
+            "Disease",
+            "Gum disease",
+            "Dental procedures",
+            "Alcohol abuse",
+            "Poor dental hygiene",
+            "Intrauterine devices (IUDs)",
+            "Compromised immune system",
+            "Male sex"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with actinomycosis",
+            "Identification of Actinomyces spp. from a sterile site (culture or histopathology)"
+        ],
+        "supportive": [
+            "Presence of sulfur granules",
+            "Positive Gram stain showing Gram-positive filamentous bacteria"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malignancy",
+        "Tuberculosis",
+        "Nocardiosis"
+    ]
+}

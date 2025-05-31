@@ -1,0 +1,30 @@
+{
+    "disease": "Early syphilis, latent",
+    "icd_code": "A515",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "treponema_pallidum_test": {
+                "abnormal_range": "Positive"
+            }
+        },
+        "risk_factors": [
+            "Sexual contact with infected individual",
+            "Pregnancy (mother to child transmission)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serological test for syphilis"
+        ],
+        "supportive": [
+            "History of sexual contact with infected individual",
+            "Presence of characteristic lesions (though often absent in latent syphilis)"
+        ]
+    },
+    "differential_diagnoses": []
+}

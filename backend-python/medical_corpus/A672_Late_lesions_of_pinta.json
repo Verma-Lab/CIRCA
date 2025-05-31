@@ -1,0 +1,49 @@
+{
+    "disease": "Late lesions of pinta",
+    "icd_code": "A672",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hypopigmented macules",
+                "severity": "Variable",
+                "pattern": "Diffuse"
+            },
+            {
+                "name": "Hyperpigmented macules",
+                "severity": "Variable",
+                "pattern": "Diffuse"
+            },
+            {
+                "name": "Atrophic lesions",
+                "severity": "Variable",
+                "pattern": "Diffuse"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hypopigmented macules",
+            "Hyperpigmented macules",
+            "Atrophic lesions",
+            "Loss of hair in affected areas (possible)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to Treponema carateum"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic late-stage lesions (hypopigmented, hyperpigmented, and atrophic macules)"
+        ],
+        "supportive": [
+            "History of early pinta lesions",
+            "Epidemiological context (exposure to T. carateum)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Leprosy",
+        "Other dermatological conditions causing hypopigmentation or hyperpigmentation"
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "disease": "Zoster keratitis",
+    "icd_code": "B0233",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Unilateral"
+            },
+            {
+                "name": "Dendriform epithelial keratitis",
+                "severity": "Variable",
+                "pattern": "Early manifestation"
+            },
+            {
+                "name": "Stromal keratitis",
+                "severity": "Variable",
+                "pattern": "Late manifestation"
+            },
+            {
+                "name": "Endotheliitis",
+                "severity": "Variable",
+                "pattern": "Late manifestation"
+            },
+            {
+                "name": "Mucous plaque keratitis",
+                "severity": "Variable",
+                "pattern": "Late manifestation"
+            },
+            {
+                "name": "Delayed pseudodendrites",
+                "severity": "Variable",
+                "pattern": "Late manifestation"
+            },
+            {
+                "name": "Corneal scarring",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Neovascularization",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Lipid keratopathy",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Neurotrophic keratitis",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Persistent epithelial defects",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Microbial superinfection",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Corneal perforation",
+                "severity": "Severe",
+                "pattern": "Late complication"
+            },
+            {
+                "name": "Astigmatism",
+                "severity": "Variable",
+                "pattern": "Late complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Unilateral dermatomal vesicular rash",
+            "Hutchinson sign (lesions on the nose)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Increasing age",
+            "Immunosuppression"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of herpes zoster ophthalmicus (HZO)",
+            "Ocular involvement (conjunctivitis, keratitis, uveitis)"
+        ],
+        "supportive": [
+            "Hutchinson's sign",
+            "Dendritic or stromal keratitis"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,22 @@
+{
+    "disease": "Malignant neoplasm of anterior wall of nasopharynx",
+    "icd_code": "C113",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Epstein-Barr virus",
+            "Tobacco use",
+            "Salt-cured foods"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

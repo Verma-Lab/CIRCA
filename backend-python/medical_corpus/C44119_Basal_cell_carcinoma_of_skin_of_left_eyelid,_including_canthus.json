@@ -1,0 +1,47 @@
+{
+    "disease": "Basal cell carcinoma of skin of left eyelid, including canthus",
+    "icd_code": "C44119",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Lesion on left lower eyelid",
+                "severity": "Unspecified",
+                "pattern": "Present for 2 years, occasional inflammation and healing, no change in size"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lesion on left lower eyelid",
+            "Slowly enlarging ulceration with raised, pearly borders (classic presentation)",
+            "Nodular type in this case",
+            "Involvement of medial canthus (often more deeply invasive)",
+            "In one case, loss of substance with destruction of the eye's inner canthus, lacrimal apparatus and medial half of the left lower eyelid; periorbital fat invasion; intimate contact with anterior lower boundary and extrinsic muscles of the eye (right medial, inferior and oblique inferior); no bone infiltration"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to sunlight",
+            "History of other skin cancers",
+            "Multiple recurrences",
+            "Large lesion size",
+            "Aggressive histological subtype",
+            "Medial canthus location",
+            "Advanced patient age"
+        ],
+        "imaging_findings": {
+            "CT scan": [
+                "In one case, pathological tissue along the edge of the left lower orbital, invading periorbital fat; intimate contact with anterior lower boundary and extrinsic muscles of the eye (right medial, inferior and oblique inferior); no bone infiltration"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy showing cohesive nests of cells with bland-appearing nuclei and nuclear palisading of the peripheral cell layer"
+        ],
+        "supportive": [
+            "Slowly enlarging ulceration with raised, pearly borders",
+            "Location on lower eyelid, medial canthus"
+        ]
+    },
+    "differential_diagnoses": []
+}

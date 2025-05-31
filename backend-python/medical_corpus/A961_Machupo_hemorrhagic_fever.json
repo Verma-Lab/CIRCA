@@ -1,0 +1,104 @@
+{
+    "disease": "Machupo hemorrhagic fever",
+    "icd_code": "A961",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "high",
+                "pattern": "persistent"
+            },
+            {
+                "name": "Malaise",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Headache",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Petechiae",
+                "severity": "variable",
+                "pattern": "progressing"
+            },
+            {
+                "name": "Bleeding from nose and gums",
+                "severity": "variable",
+                "pattern": "progressing"
+            },
+            {
+                "name": "Hemorrhaging",
+                "severity": "variable",
+                "pattern": "progressing"
+            },
+            {
+                "name": "Tremors",
+                "severity": "variable",
+                "pattern": "late"
+            },
+            {
+                "name": "Delirium",
+                "severity": "variable",
+                "pattern": "late"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "variable",
+                "pattern": "late"
+            },
+            {
+                "name": "Bleeding from bronchopulmonary, gastrointestinal, and genitourinary tracts",
+                "severity": "variable",
+                "pattern": "progressing"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (hyperpyrexia)"
+        },
+        "physical_findings": [
+            "Petechiae",
+            "Bleeding from nose and gums",
+            "Tremors",
+            "Loss of muscle control",
+            "Seizures"
+        ],
+        "lab_values": {
+            "Antigen detection": "Positive in BS-4 lab using ELISA",
+            "IgM antibodies": "Positive in BS-4 lab using ELISA"
+        },
+        "risk_factors": [
+            "Contact with Calomys callosus (large vesper mouse)",
+            "Inhalation of aerosolized virus particles from mouse excreta",
+            "Consumption of food contaminated with mouse excreta"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Machupo hemorrhagic fever",
+            "Laboratory confirmation (Antigen or IgM antibody detection)"
+        ],
+        "supportive": [
+            "Exposure to Calomys callosus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other arenavirus hemorrhagic fevers (Jun\u00edn, Sabia)",
+        "Dengue fever",
+        "Malaria",
+        "Yellow fever"
+    ]
+}

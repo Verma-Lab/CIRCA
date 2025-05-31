@@ -1,0 +1,55 @@
+{
+    "disease": "Blastomycosis, unspecified",
+    "icd_code": "B409",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute pulmonary symptoms",
+                "severity": "Variable",
+                "pattern": "Most common presentation"
+            },
+            {
+                "name": "Flu-like illness",
+                "severity": "Variable",
+                "pattern": "Common in pulmonary blastomycosis, may be misdiagnosed as tuberculosis"
+            },
+            {
+                "name": "Cutaneous lesions",
+                "severity": "Variable",
+                "pattern": "Common in extrapulmonary blastomycosis"
+            },
+            {
+                "name": "Skeletal involvement symptoms",
+                "severity": "Variable",
+                "pattern": "Less common, part of extrapulmonary blastomycosis"
+            },
+            {
+                "name": "Urogenital involvement symptoms",
+                "severity": "Variable",
+                "pattern": "Less common, part of extrapulmonary blastomycosis"
+            },
+            {
+                "name": "Central nervous system involvement symptoms",
+                "severity": "Variable",
+                "pattern": "Less common, part of extrapulmonary blastomycosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to soil, especially moist and acidic soil near waterways",
+            "Excavation and construction operations",
+            "Recreational activities involving contact with soil"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Tuberculosis"
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "disease": "Intrahepatic bile duct carcinoma",
+    "icd_code": "C221",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "CA 19-9": {
+                "abnormal_range": "Elevated"
+            }
+        },
+        "risk_factors": [
+            "Primary sclerosing cholangitis",
+            "Primary biliary cirrhosis",
+            "Congenital malformations of the bile duct (choledochal cysts)",
+            "Hepatolithiasis",
+            "Hepatitis B and C virus",
+            "Alcoholic liver cirrhosis",
+            "Smoking",
+            "Liver fluke infections (Opisthorchis viverrini and Clonorchis sinensis)",
+            "Chronic liver disease",
+            "Type 2 diabetes",
+            "Obesity",
+            "Alcohol consumption",
+            "Cigarette smoking",
+            "Exposure to Thorotrast",
+            "Exposure to asbestos",
+            "Exposure to propylene dichloride"
+        ],
+        "imaging_findings": {
+            "CT": {
+                "findings": "Mass-forming ICC typically has a diameter of 5\u201310 cm at the time of diagnosis. Intraductal ICC is a 1\u20132 cm mass within the bile duct with proximal ductal dilatation. Periductal infiltrating cholangiocarcinoma presents as a small lesion or diffuse bile duct thickening."
+            },
+            "MRI": {
+                "findings": "Similar findings to CT"
+            }
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings suggestive of intrahepatic bile duct carcinoma",
+            "Histological confirmation of adenocarcinoma"
+        ],
+        "supportive": [
+            "Elevated CA 19-9 levels",
+            "Presence of risk factors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hepatocellular carcinoma",
+        "Metastatic adenocarcinoma"
+    ]
+}

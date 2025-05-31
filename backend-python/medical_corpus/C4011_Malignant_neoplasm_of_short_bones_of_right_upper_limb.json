@@ -1,0 +1,44 @@
+{
+    "disease": "Malignant neoplasm of short bones of right upper limb",
+    "icd_code": "C4011",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Can range from mild to severe"
+            },
+            {
+                "name": "Bone fracture",
+                "severity": "Variable",
+                "pattern": "Can occur due to weakened bone structure"
+            },
+            {
+                "name": "General malaise",
+                "severity": "Variable",
+                "pattern": "Can range from mild weakness to severe illness, depending on cancer progression"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or swelling in the affected bone",
+            "Localized tenderness"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "X-ray": "May show lytic lesions, bone destruction, or periosteal reaction"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings consistent with malignant neoplasm of bone"
+        ],
+        "supportive": [
+            "Symptoms such as pain and bone fracture",
+            "Physical examination findings such as palpable mass or tenderness"
+        ]
+    },
+    "differential_diagnoses": []
+}

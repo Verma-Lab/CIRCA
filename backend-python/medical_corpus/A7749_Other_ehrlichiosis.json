@@ -1,0 +1,88 @@
+{
+    "disease": "Other ehrlichiosis",
+    "icd_code": "A7749",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Muscle aches (myalgia)",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Upset stomach",
+                "severity": "Variable",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Less common"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild",
+                "pattern": "Less common (<1/3 of cases)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Potentially elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "leukocytes": "<4,500/mm\u00b3 (leukopenia)",
+            "platelets": "<150,000/mm\u00b3 (thrombocytopenia)",
+            "aminotransferases": "Increased"
+        },
+        "risk_factors": [
+            "Tick bite (Amblyomma americanum, Ixodes scapularis)",
+            "Exposure to areas where ticks are common",
+            "Immunosuppressive conditions (increased risk of severe illness)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with ehrlichiosis (fever, headache, myalgia, etc.)",
+            "Evidence of infection with Ehrlichia species (at least two of three tests: serology, PCR, or microscopy)"
+        ],
+        "supportive": [
+            "History of tick bite",
+            "Leukopenia",
+            "Thrombocytopenia",
+            "Increased aminotransferase levels"
+        ]
+    },
+    "differential_diagnoses": [
+        "Influenza",
+        "Rocky Mountain spotted fever",
+        "Lyme disease",
+        "Babesiosis"
+    ]
+}

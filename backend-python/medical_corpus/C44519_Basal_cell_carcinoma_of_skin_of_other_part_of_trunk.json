@@ -1,0 +1,60 @@
+{
+    "disease": "Basal cell carcinoma of skin of other part of trunk",
+    "icd_code": "C44519",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Bullous lesion",
+                "severity": "Slowly increasing in size over five years",
+                "pattern": "Well-defined, erythematous, measuring 2.5x1.5 cm on the right lumbar region"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": "Normal findings on presentation",
+        "physical_findings": [
+            "Well-defined erythematous bullous lesion measuring 2.5x1.5 cm on trunk, over the right lumbar region",
+            "No lesions elsewhere on the body"
+        ],
+        "lab_values": {
+            "Immunohistochemistry (IHC)": {
+                "Ber-EP4": "Positive",
+                "EMA": "Negative"
+            }
+        },
+        "risk_factors": [
+            "Skin type I",
+            "Fair skin",
+            "Red or blonde hair",
+            "Blue or green eyes",
+            "Freckling or sunburn in childhood",
+            "Arsenic exposure",
+            "Family history of skin cancer",
+            "Immunosuppressive treatment",
+            "Albinism",
+            "Xeroderma pigmentosa",
+            "Bazex's syndrome",
+            "Naevoid basal cell carcinoma syndrome (Gorlin's syndrome)",
+            "Sun exposure",
+            "Smoking (in females)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological examination showing thin anastomosing epithelial cords of atypical basaloid cells surrounded by fibromyxoid stroma with cyst formation filled with mucin",
+            "Positive Ber-EP4 immunohistochemistry"
+        ],
+        "supportive": [
+            "Clinical presentation of a slowly growing bullous lesion"
+        ]
+    },
+    "differential_diagnoses": [
+        "Vascular nevus",
+        "Eccrine syringofibroadenoma",
+        "Malignant melanoma",
+        "Melanocytic naevi",
+        "Sebaceous hyperplasia",
+        "Molluscum contagiosum",
+        "Appendageal tumors"
+    ]
+}

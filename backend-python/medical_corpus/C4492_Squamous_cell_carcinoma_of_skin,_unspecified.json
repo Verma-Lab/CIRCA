@@ -1,0 +1,38 @@
+{
+    "disease": "Squamous cell carcinoma of skin, unspecified",
+    "icd_code": "C4492",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Non-healing sore or scab",
+                "severity": "Unspecified",
+                "pattern": "Persistent for about two months or longer"
+            },
+            {
+                "name": "Flat patch of scaly skin",
+                "severity": "Unspecified",
+                "pattern": "Persistent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Excessive ultraviolet (UV) radiation exposure (sunlight, tanning beds)",
+            "Fair skin that sunburns easily",
+            "Low levels of melanin",
+            "Blond or red hair, light-colored eyes, freckles",
+            "Weakened immune system"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a non-healing sore or scab lasting for at least two months",
+            "Presence of a persistent flat patch of scaly skin"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,38 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves of right upper limb, including shoulder",
+    "icd_code": "C4711",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Growing lump or mass",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable mass or lump"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a malignant peripheral nerve sheath tumor in the right upper limb, including the shoulder"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

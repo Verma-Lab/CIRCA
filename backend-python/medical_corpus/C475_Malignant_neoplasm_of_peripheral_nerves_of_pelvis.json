@@ -1,0 +1,58 @@
+{
+    "disease": "Malignant neoplasm of peripheral nerves of pelvis",
+    "icd_code": "C475",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Slowly progressive",
+                "pattern": "Radiating in lower extremities"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Depending on nerve involvement"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "Localized mass"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "In affected skin areas"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Growing lump or mass in the pelvic region",
+            "Elastic and hard mass on palpation (in one case report)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Neurofibromatosis type 1 (NF1)"
+        ],
+        "imaging_findings": {
+            "CT": "Heterogeneous mass in the right greater sciatic foramen",
+            "MRI": "Heterogeneous, signal-hyperintense mass on T2-weighted imaging",
+            "PET-CT": "High uptake (SUVmax 12.7) consistent with pelvic mass"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings suggestive of a pelvic mass",
+            "Histopathological examination showing atypical spindle-shaped cells",
+            "Immunostaining positive for S100 protein"
+        ],
+        "supportive": [
+            "Symptoms of pain, weakness, or numbness in the lower extremities",
+            "History of NF1"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neurofibroma",
+        "Schwannoma"
+    ]
+}

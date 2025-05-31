@@ -1,0 +1,34 @@
+{
+    "disease": "Balantidiasis",
+    "icd_code": "A070",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Chronic or acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "fecal_exam": {
+                "abnormal_range": "Presence of Balantidium coli"
+            }
+        },
+        "risk_factors": [
+            "Untidiness",
+            "Mental conditions leading to poor hygiene",
+            "Exposure to contaminated water or food"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Identification of Balantidium coli in fecal specimens"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

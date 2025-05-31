@@ -1,0 +1,137 @@
+{
+    "disease": "Ebola virus disease",
+    "icd_code": "A984",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Bleeding (internal and external)",
+                "severity": "Variable",
+                "pattern": "Later symptom"
+            },
+            {
+                "name": "Hypovolemia",
+                "severity": "Variable",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Electrolyte abnormalities",
+                "severity": "Variable",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Hematologic abnormalities",
+                "severity": "Variable",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Refractory shock",
+                "severity": "Severe",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Hypoxia",
+                "severity": "Variable",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Hemorrhage",
+                "severity": "Variable",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Septic shock",
+                "severity": "Severe",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Multiorgan failure",
+                "severity": "Severe",
+                "pattern": "Complication"
+            },
+            {
+                "name": "Disseminated intravascular coagulation (DIC)",
+                "severity": "Severe",
+                "pattern": "Complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "blood_pressure": "Hypotension (due to adrenocortical necrosis and vascular leak)",
+            "heart_rate": "Variable, may be tachycardic"
+        },
+        "physical_findings": [
+            "Bleeding (petechiae, ecchymoses, hematomas)",
+            "Dehydration (due to diarrhea and vomiting)",
+            "Signs of shock (tachycardia, hypotension, altered mental status)"
+        ],
+        "lab_values": {
+            "complete_blood_count": "Decreased lymphocyte counts",
+            "coagulation_studies": "Coagulopathy (due to hepatocellular necrosis)",
+            "liver_function_tests": "Elevated liver enzymes",
+            "PCR": "Positive for Ebola virus",
+            "antibody_tests": "Positive for Ebola virus antibodies"
+        },
+        "risk_factors": [
+            "Contact with body fluids of an infected person (sick or dead)",
+            "Contact with infected animals (bats, primates)",
+            "Healthcare workers treating patients without proper infection control",
+            "Participation in burial ceremonies involving direct contact with the deceased"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Consistent clinical presentation (symptoms)",
+            "Epidemiological risk factors (exposure to Ebola virus)",
+            "Positive PCR test for Ebola virus",
+            "Positive antibody test for Ebola virus"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Malaria",
+        "Typhoid fever",
+        "Meningitis"
+    ]
+}

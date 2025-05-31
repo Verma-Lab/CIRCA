@@ -1,0 +1,24 @@
+{
+    "disease": "Hemorrhagic fever with renal syndrome (HFRS)",
+    "icd_code": "A98.5",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with rodent urine, feces, and saliva",
+            "Inhalation of dust or aerosols contaminated with hantavirus",
+            "Gastrointestinal transmission",
+            "Direct contact",
+            "Insect bites",
+            "Placental transmission (from infected mother to fetus)",
+            "Occupation (farmers)",
+            "Age <15 or >60 years"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {},
+    "differential_diagnoses": []
+}

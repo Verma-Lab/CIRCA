@@ -1,0 +1,97 @@
+{
+    "disease": "Tinea unguium",
+    "icd_code": "B35.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nail discoloration",
+                "severity": "Variable",
+                "pattern": "May vary in color and intensity"
+            },
+            {
+                "name": "Nail thickening",
+                "severity": "Variable",
+                "pattern": "Can range from mild thickening to significant hypertrophy"
+            },
+            {
+                "name": "Nail brittleness",
+                "severity": "Variable",
+                "pattern": "Nails may become fragile and easily break"
+            },
+            {
+                "name": "Nail crumbling",
+                "severity": "Variable",
+                "pattern": "Nails may become friable and crumble"
+            },
+            {
+                "name": "Subungual debris",
+                "severity": "Variable",
+                "pattern": "Accumulation of debris under the nail plate"
+            },
+            {
+                "name": "Nail detachment",
+                "severity": "Variable",
+                "pattern": "Separation of the nail plate from the nail bed (onycholysis)"
+            },
+            {
+                "name": "Pain",
+                "severity": "Mild to moderate",
+                "pattern": "May be present, especially with severe infection"
+            },
+            {
+                "name": "Discomfort",
+                "severity": "Mild to moderate",
+                "pattern": "May be present due to nail deformity or infection"
+            },
+            {
+                "name": "Foul-smelling nails",
+                "severity": "Variable",
+                "pattern": "May be present due to secondary bacterial infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Thickened nails",
+            "Discolored nails",
+            "Brittle nails",
+            "Crumbly nails",
+            "Subungual debris",
+            "Nail plate detachment"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 60 years",
+            "Recurrent nail trauma",
+            "Tobacco use",
+            "Diabetes mellitus",
+            "Obesity",
+            "Psoriasis",
+            "Malignancy",
+            "HIV",
+            "Peripheral vascular disease",
+            "Immunocompromised state",
+            "Occlusive footwear",
+            "Locker room exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical evaluation showing characteristic nail changes (discoloration, thickening, brittleness, crumbling, detachment)",
+            "Positive dermatophyte culture or microscopic examination of nail clippings showing fungal elements"
+        ],
+        "supportive": [
+            "History of exposure to risk factors",
+            "Presence of other dermatophytic infections (e.g., tinea pedis, tinea corporis)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Psoriasis",
+        "Lichen planus",
+        "Contact dermatitis",
+        "Trauma",
+        "Nail bed tumor",
+        "Yellow nail syndrome"
+    ]
+}

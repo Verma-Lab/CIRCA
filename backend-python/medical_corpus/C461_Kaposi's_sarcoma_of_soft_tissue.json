@@ -1,0 +1,52 @@
+{
+    "disease": "Kaposi's sarcoma of soft tissue",
+    "icd_code": "C461",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesions",
+                "severity": "Variable, from harmless to severe",
+                "pattern": "Violaceous pink to purple plaques or macules, may ulcerate, may be painful with associated lymphedema and secondary infection; lesions may progress from patches to plaques to nodules"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable, often asymptomatic",
+                "pattern": "Bloody stools, pain, diarrhea, or physical obstruction"
+            },
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "Breathlessness due to blockage, coughing up blood"
+            },
+            {
+                "name": "Lymphedema",
+                "severity": "Variable",
+                "pattern": "Swelling due to lymphatic obstruction"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Violaceous pink to purple plaques or macules on skin or mucocutaneous surfaces",
+            "Lesions may be ulcerated or nodular",
+            "Lymphedema may be present"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunosuppression (HIV/AIDS, organ transplant, immunosuppressant medications)",
+            "Older age",
+            "Eastern European or Mediterranean descent (classic KS)",
+            "HHV-8 infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (skin lesions, etc.)",
+            "Histopathological examination showing spindle cell proliferation with characteristic vascular channels",
+            "Immunohistochemistry positive for HHV-8 LANA1"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

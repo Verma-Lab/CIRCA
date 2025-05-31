@@ -1,0 +1,65 @@
+{
+    "disease": "Aspergillosis, unspecified",
+    "icd_code": "B449",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Wheezing",
+                "severity": "Variable",
+                "pattern": "May be present in allergic bronchopulmonary aspergillosis (ABPA)"
+            },
+            {
+                "name": "Coughing",
+                "severity": "Variable",
+                "pattern": "May be present in ABPA"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present in invasive aspergillosis"
+            },
+            {
+                "name": "Organ-specific symptoms",
+                "severity": "Variable",
+                "pattern": "Depends on the affected organ; may include respiratory distress, hemoptysis, etc."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in invasive aspergillosis",
+            "respiratory_rate": "May be elevated in severe cases"
+        },
+        "physical_findings": [
+            "Findings may vary depending on the type and severity of aspergillosis",
+            "May include abnormal lung sounds (wheezes, rales) in ABPA or invasive aspergillosis"
+        ],
+        "lab_values": {
+            "blood_tests": "May show elevated inflammatory markers (e.g., ESR, CRP)",
+            "sputum_culture": "May reveal Aspergillus species"
+        },
+        "risk_factors": [
+            "Lung diseases",
+            "Weakened immune system",
+            "Asthma",
+            "Cystic fibrosis",
+            "Organ transplantation",
+            "High-dose steroid use",
+            "Chemotherapy"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show opacities, nodules, or cavities",
+            "CT_scan": "Provides more detailed images of lung lesions"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with aspergillosis",
+            "Positive Aspergillus culture or detection of Aspergillus antigens"
+        ],
+        "supportive": [
+            "Characteristic imaging findings",
+            "Elevated inflammatory markers"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,31 @@
+{
+    "disease": "Malignant neoplasm of lip, unspecified, inner aspect",
+    "icd_code": "C005",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue on the inner aspect of the lip"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse and dependence",
+            "History of tobacco dependence",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant neoplasm on the inner aspect of the lip"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Malignant melanoma of lip (C43.0)",
+        "Merkel cell carcinoma of lip (C4A.0)",
+        "Other and unspecified malignant neoplasm of skin of lip (C44.0-)"
+    ]
+}

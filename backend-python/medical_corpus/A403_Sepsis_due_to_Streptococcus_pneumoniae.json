@@ -1,0 +1,105 @@
+{
+    "disease": "Sepsis due to Streptococcus pneumoniae",
+    "icd_code": "A403",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Severe (40\u00b0C)",
+                "pattern": "Present for 5 days"
+            },
+            {
+                "name": "Chills",
+                "severity": "Moderate",
+                "pattern": "Present for 5 days"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate",
+                "pattern": "Present for 5 days"
+            },
+            {
+                "name": "Generalized myalgia",
+                "severity": "Moderate",
+                "pattern": "Present for 5 days"
+            },
+            {
+                "name": "Cough with brown sputum",
+                "severity": "Moderate",
+                "pattern": "Present for 5 days"
+            },
+            {
+                "name": "Mild confusion",
+                "severity": "Mild",
+                "pattern": "Present on admission"
+            },
+            {
+                "name": "Rales",
+                "severity": "Moderate",
+                "pattern": "Present on physical examination"
+            },
+            {
+                "name": "Decreased breath sounds",
+                "severity": "Moderate",
+                "pattern": "Present on physical examination, over left base"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "39.6\u00b0C",
+            "respiratory_rate": "30 breaths per minute",
+            "pulse": "84 beats per minute",
+            "blood_pressure": "110/70 mmHg"
+        },
+        "physical_findings": [
+            "Mild confusion",
+            "Rales",
+            "Decreased breath sounds over the left base",
+            "Bilateral lower lobe pulmonary infiltration (chest X-ray)",
+            "Right-sided pleural effusion (chest X-ray)"
+        ],
+        "lab_values": {
+            "hemoglobin": "7.6 g/dL",
+            "white_blood_cell_count": "16,900/mm3 (neutrophils 91%)",
+            "platelets": "41,000/mm3",
+            "c_reactive_protein": "300 mg/dL",
+            "erythrocyte_sedimentation_rate": "146 mm/h",
+            "serum_creatinine": "0.74 mg/dL",
+            "aspartate_aminotransferase": "59 IU/mL",
+            "alanine_aminotransferase": "22 IU/mL",
+            "alkaline_phosphatase": "303 IU/mL",
+            "lactate_dehydrogenase": "364 IU/mL",
+            "gamma_glutamyl_transpeptidase": "134 IU/mL",
+            "albumin": "2.2 g/dL",
+            "d_dimer": "0.667 \u00b5g/mL",
+            "procalcitonin": "64.05 ng/mL",
+            "ferritin": "1,116 ng/mL",
+            "urine_protein": "3+",
+            "microscopic_hematuria": "Present"
+        },
+        "risk_factors": [
+            "Age (23 years old in one case)",
+            "Underlying immunosuppression (SLE in one case)",
+            "Lack of pneumococcal vaccination (in one case)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Bilateral lower lobe pulmonary infiltration and right-sided pleural effusion"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Streptococcus pneumoniae",
+            "Clinical evidence of infection (fever, chills, etc.)"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers (CRP, ESR, procalcitonin)",
+            "Abnormal vital signs",
+            "Imaging findings consistent with pneumonia or other organ involvement"
+        ]
+    },
+    "differential_diagnoses": [
+        "Community-acquired pneumonia",
+        "Other bacterial infections",
+        "Systemic lupus erythematosus (SLE)"
+    ]
+}

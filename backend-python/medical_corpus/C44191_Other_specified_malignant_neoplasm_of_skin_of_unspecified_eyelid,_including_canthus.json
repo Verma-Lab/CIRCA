@@ -1,0 +1,30 @@
+{
+    "disease": "Other specified malignant neoplasm of skin of unspecified eyelid, including canthus",
+    "icd_code": "C44191",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesion on eyelid or canthus"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of malignant neoplasm of skin"
+        ],
+        "supportive": [
+            "Location of lesion on eyelid or canthus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Kaposi's sarcoma of skin (C46.0)",
+        "Malignant melanoma of skin (C43.-)",
+        "Malignant neoplasm of skin of genital organs (C51-C52, C60.-, C63.2)",
+        "Merkel cell carcinoma (C4A.-)",
+        "Malignant neoplasm of connective tissue of eyelid (C49.0)"
+    ]
+}

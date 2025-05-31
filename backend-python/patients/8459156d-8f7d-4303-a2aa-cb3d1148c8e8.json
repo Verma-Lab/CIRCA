@@ -1,0 +1,18 @@
+{
+  "id": "8459156d-8f7d-4303-a2aa-cb3d1148c8e8",
+  "mrn": "MRN9ACC2937",
+  "first_name": "Kristen",
+  "last_name": "Rogers",
+  "date_of_birth": "1961-05-23",
+  "gender": "Female",
+  "address": "870 John Field Apt. 529",
+  "phone": "(729)980-0293",
+  "email": "trichardson@sanchez-ford.com",
+  "insurance_provider": "Kaiser",
+  "insurance_id": "zE226930",
+  "primary_care_provider": "Dr. Lee",
+  "emergency_contact_name": "Kristina Russell",
+  "emergency_contact_phone": "(256)852-1779",
+  "created_at": "2025-03-24T12:52:01.081857",
+  "updated_at": "2025-03-24T12:52:01.081857"
+}

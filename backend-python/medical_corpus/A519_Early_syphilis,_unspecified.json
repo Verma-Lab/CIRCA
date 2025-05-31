@@ -1,0 +1,31 @@
+{
+    "disease": "Early syphilis, unspecified",
+    "icd_code": "A519",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin changes",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Organ inflammation",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

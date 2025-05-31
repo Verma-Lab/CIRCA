@@ -1,0 +1,209 @@
+{
+    "disease": "Plasmodium falciparum malaria with cerebral complications",
+    "icd_code": "B500",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High temperature",
+                "severity": "severe",
+                "pattern": "intermittent"
+            },
+            {
+                "name": "Shivering",
+                "severity": "severe",
+                "pattern": "intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "moderate to severe",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Aching limbs",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "moderate",
+                "pattern": "intermittent"
+            },
+            {
+                "name": "Loss of consciousness",
+                "severity": "severe",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Seizures",
+                "severity": "severe",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Muscle cramps",
+                "severity": "moderate",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Altered behavior and thinking",
+                "severity": "severe",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Coma",
+                "severity": "severe",
+                "pattern": "prolonged"
+            },
+            {
+                "name": "Drowsiness",
+                "severity": "moderate",
+                "pattern": "progressive"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "moderate",
+                "pattern": "progressive"
+            },
+            {
+                "name": "Delirium",
+                "severity": "moderate",
+                "pattern": "progressive"
+            },
+            {
+                "name": "Agitation",
+                "severity": "moderate",
+                "pattern": "progressive"
+            },
+            {
+                "name": "Severe anemia",
+                "severity": "severe",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Renal failure",
+                "severity": "severe",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Respiratory distress",
+                "severity": "severe",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Central nervous system dysfunction",
+                "severity": "severe",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Liver dysfunction",
+                "severity": "severe",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Respiratory failure",
+                "severity": "severe",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Acute kidney failure",
+                "severity": "severe",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Nystagmoid eye movements",
+                "severity": "moderate",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Irregular breathing",
+                "severity": "moderate",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Excessive salivation",
+                "severity": "moderate",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Conjugate eye deviation",
+                "severity": "moderate",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Repetitive eye or hand movements",
+                "severity": "moderate",
+                "pattern": "episodic"
+            },
+            {
+                "name": "Forcible jaw closure",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Teeth grinding (bruxism)",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Pout reflex",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Increased muscle tone",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Increased tendon reflexes",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Ankle and patellar clonus",
+                "severity": "moderate",
+                "pattern": "continuous"
+            },
+            {
+                "name": "Extensor plantar responses",
+                "severity": "moderate",
+                "pattern": "continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (>38\u00b0C)",
+            "consciousness": "Altered, coma"
+        },
+        "physical_findings": [
+            "Abnormal corneal and oculocephalic reflexes",
+            "Abnormal plantar reflexes",
+            "Absent abdominal reflexes",
+            "Intact corneal and eyelash reflexes (in adults unless in deep coma)",
+            "Normal pupils (in adults)",
+            "Absent grasp reflex",
+            "Increased muscle tone and tendon reflexes"
+        ],
+        "lab_values": {
+            "parasite count": "Elevated",
+            "hemoglobin": "Decreased",
+            "lactate": "Elevated"
+        },
+        "risk_factors": [
+            "Living in malaria-endemic areas",
+            "Age under 5 years (children)",
+            "Pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical features consistent with cerebral malaria (coma, seizures, altered mental status)",
+            "Positive malaria blood smear or rapid diagnostic test for P. falciparum"
+        ],
+        "supportive": [
+            "Abnormal vital signs",
+            "Neurological examination findings"
+        ]
+    },
+    "differential_diagnoses": []
+}

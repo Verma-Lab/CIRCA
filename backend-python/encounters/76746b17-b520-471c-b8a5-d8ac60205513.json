@@ -1,0 +1,30 @@
+{
+  "id": "76746b17-b520-471c-b8a5-d8ac60205513",
+  "patient_id": "87ce73eb-cb1d-44c1-ac50-1c1b83b093dd",
+  "provider_id": "36c35b23-b466-4479-9c37-a2792ee85478",
+  "encounter_date": "2025-03-24T12:53:48.764379",
+  "encounter_type": "Follow-up",
+  "chief_complaint": "headache",
+  "vital_signs": {
+    "temperature": 98.6,
+    "heart_rate": 72,
+    "blood_pressure_systolic": 120,
+    "blood_pressure_diastolic": 80,
+    "respiratory_rate": 16,
+    "oxygen_saturation": 98,
+    "height": 170.0,
+    "weight": 70.0,
+    "bmi": 24.2,
+    "pain_score": 4
+  },
+  "hpi": "No history of illness just headache reported",
+  "ros": "",
+  "physical_exam": "",
+  "assessment": "",
+  "plan": "",
+  "diagnosis_codes": "",
+  "followup_instructions": "",
+  "clinical_note": "Patient: Christy Davis, DOB: 2004-05-02, Gender: Female\n\nChief Complaint: headache\nVital Signs: Temp: 98.6\u00b0F, HR: 72 bpm, BP: 120/80 mmHg, RR: 16 breaths/min, O2 Sat: 98%\n\nS: No history of illness just headache reported\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "created_at": "2025-03-24T12:53:48.764387",
+  "updated_at": "2025-03-24T12:53:48.764390"
+}

@@ -1,0 +1,81 @@
+{
+    "disease": "Infectious mononucleosis, unspecified with polyneuropathy",
+    "icd_code": "B27.91",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Variable",
+                "pattern": "Generalized"
+            },
+            {
+                "name": "Polyneuropathy",
+                "severity": "Variable",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Variable"
+        },
+        "physical_findings": [
+            "Splenomegaly",
+            "Hepatomegaly",
+            "Lymphadenopathy",
+            "Neurological deficits consistent with polyneuropathy (e.g., weakness, numbness, tingling, decreased reflexes)"
+        ],
+        "lab_values": {
+            "complete_blood_count": {
+                "white_blood_cell_count": "Elevated",
+                "lymphocytes": "Elevated",
+                "atypical_lymphocytes": "Present"
+            },
+            "liver_function_tests": {
+                "liver_enzymes": "Elevated"
+            },
+            "EBV_serology": {
+                "EBV_IgM": "Positive",
+                "EBV_IgG": "Positive"
+            }
+        },
+        "risk_factors": [
+            "Exposure to Epstein-Barr virus (EBV)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with infectious mononucleosis (fever, fatigue, sore throat, lymphadenopathy)",
+            "Presence of atypical lymphocytes on peripheral blood smear",
+            "Positive serology for EBV (IgM and/or IgG)"
+        ],
+        "supportive": [
+            "Splenomegaly",
+            "Hepatomegaly",
+            "Elevated liver enzymes",
+            "Neurological examination findings consistent with polyneuropathy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other viral infections",
+        "Cytomegalovirus infection",
+        "HIV infection",
+        "Other causes of polyneuropathy"
+    ]
+}

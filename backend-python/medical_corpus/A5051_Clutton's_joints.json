@@ -1,0 +1,38 @@
+{
+    "disease": "Clutton's joints",
+    "icd_code": "A50.51",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Knee swelling",
+                "severity": "relatively benign",
+                "pattern": "symmetrical, serous synovitis"
+            },
+            {
+                "name": "Pain",
+                "severity": "minimal or absent",
+                "pattern": "usually not present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Swelling of the knees",
+            "Effusion in knee joints"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Congenital syphilis"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symmetrical swelling of the knees",
+            "Serous synovitis",
+            "History of congenital syphilis"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

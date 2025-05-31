@@ -1,0 +1,84 @@
+{
+    "disease": "Rat-bite fever, unspecified",
+    "icd_code": "A259",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Recurring"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Headache",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Joint swelling",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Rash",
+                "severity": "Unspecified",
+                "pattern": "Appears on hands and feet 2-4 days after fever onset; flat, reddened areas with small bumps"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Unspecified",
+                "pattern": "May occur, especially in Asian variant"
+            },
+            {
+                "name": "Swelling around bite",
+                "severity": "Unspecified",
+                "pattern": "May occur in Asian variant"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Rash (flat, reddened areas with small bumps on hands and feet)",
+            "Swollen, red, or painful joints",
+            "Swollen lymph nodes (Asian variant)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with infected rodents (rats, mice, gerbils, guinea pigs, squirrels)",
+            "Contact with rodent saliva or urine",
+            "Contact with contaminated materials (rat bedding, cages)",
+            "Kissing pet rats",
+            "Eating or drinking contaminated food or drink",
+            "Working in pet stores or labs with rodents",
+            "Handling rodents as feed for snakes/reptiles",
+            "Contact with other animals (dogs, cats, ferrets, rabbits) infected by rodents"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Symptoms consistent with RBF (fever, rash, joint pain)",
+            "History of rodent contact"
+        ],
+        "supportive": [
+            "Positive bacterial culture"
+        ]
+    },
+    "differential_diagnoses": []
+}

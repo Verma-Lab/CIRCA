@@ -1,0 +1,18 @@
+{
+  "id": "9d280454-5be0-48fa-95a4-e998f1f73123",
+  "mrn": "MRNDC776BA4",
+  "first_name": "John",
+  "last_name": "Doe",
+  "date_of_birth": "1980-01-01",
+  "gender": "Male",
+  "address": "123 Main St",
+  "phone": "555-123-4567",
+  "email": "john@example.com",
+  "insurance_provider": "Blue Cross",
+  "insurance_id": "BC123456",
+  "primary_care_provider": "Dr. Smith",
+  "emergency_contact_name": "Jane Doe",
+  "emergency_contact_phone": "555-987-6543",
+  "created_at": "2025-03-24T12:52:01.078610",
+  "updated_at": "2025-03-24T12:52:01.078610"
+}

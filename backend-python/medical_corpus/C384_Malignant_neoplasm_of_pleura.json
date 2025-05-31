@@ -1,0 +1,118 @@
+{
+    "disease": "Malignant neoplasm of pleura",
+    "icd_code": "C384",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dyspnea",
+                "severity": "Progressive",
+                "pattern": "Up to 50% of patients, due to loss of functional lung tissue, mediastinal shift, and reduced chest wall compliance"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Nonspecific, can be dull, localized, or pleuritic; 60% of mesothelioma patients experience constant dull or localized pain"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Variable",
+                "pattern": "Suggests associated endobronchial lesion"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Nonspecific"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Constitutional symptom"
+            },
+            {
+                "name": "Decreased appetite",
+                "severity": "Variable",
+                "pattern": "Constitutional symptom"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Constitutional symptom"
+            },
+            {
+                "name": "Night sweats",
+                "severity": "Variable",
+                "pattern": "Constitutional symptom"
+            },
+            {
+                "name": "Restriction of daily activities",
+                "severity": "Variable",
+                "pattern": "Constitutional symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Superior vena cava obstruction",
+            "Soft tissue swellings",
+            "Lymph nodes",
+            "Pleural effusion (depending on amount)",
+            "Bilateral pleural effusions (possible)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Previous malignancy",
+            "Asbestos exposure (suggestive of mesothelioma)"
+        ],
+        "imaging_findings": {
+            "Chest radiograph": [
+                "May detect as little as 50 ml of pleural fluid",
+                "Massive or recurrent effusion with mediastinal shift suggests malignancy",
+                "Lobulated pleural thickening",
+                "Plaques",
+                "Atelectasis",
+                "Consolidation",
+                "Mass lesion",
+                "Mediastinal widening",
+                "Reticulonodular shadows",
+                "Lymphangitic patterns"
+            ],
+            "Ultrasound": [
+                "100% sensitivity for pleural effusion",
+                "Detects loculated effusions",
+                "Detects tumor in relation to parietal pleura and chest wall",
+                "Pleural nodularity",
+                "Pleural thickening >10 mm",
+                "Diaphragmatic thickening >7 mm (suggestive of malignancy)",
+                "Echogenic swirling pattern"
+            ],
+            "CT scan": [
+                "Superior to chest radiograph and ultrasound in detecting pleural thickening and focal masses",
+                "Assesses pleural space, lung parenchyma, and mediastinum",
+                "Nodular pleural thickening",
+                "Pleural irregularity",
+                "Mediastinal pleural thickening",
+                "Circumferential pleural thickening",
+                "Pleural thickness >10 mm (suggestive of malignancy)"
+            ],
+            "MRI": [
+                "Limited role due to poor spatial resolution and motion artifacts",
+                "May detect pleural enhancement with gadolinium contrast",
+                "Effective in detecting tumor invasion into chest wall and diaphragm"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Malignant cells in pleural fluid (cytological examination)"
+        ],
+        "supportive": [
+            "Characteristic imaging findings (chest radiograph, ultrasound, CT)",
+            "Pleural biopsy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Paramalignant pleural effusions",
+        "Trapped lung",
+        "Septated pleural effusions"
+    ]
+}

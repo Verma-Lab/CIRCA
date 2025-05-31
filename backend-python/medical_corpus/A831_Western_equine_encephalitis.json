@@ -1,0 +1,105 @@
+{
+    "disease": "Western Equine Encephalitis (WEE)",
+    "icd_code": "A831",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Mild to Severe",
+                "pattern": "Common"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild to Moderate",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Mild to Severe",
+                "pattern": "Present in some cases with CNS involvement"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "Present in some cases with CNS involvement"
+            },
+            {
+                "name": "Altered mental status",
+                "severity": "Variable",
+                "pattern": "Present in some cases with CNS involvement"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Severe",
+                "pattern": "Present in a small percentage of cases"
+            },
+            {
+                "name": "Convulsions",
+                "severity": "Severe",
+                "pattern": "Present in a small percentage of cases"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Present in a small percentage of cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Reported in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)"
+        },
+        "physical_findings": [
+            "Weakness",
+            "Focal neurological signs (movement disorders)"
+        ],
+        "lab_values": {
+            "PCR": "May be negative initially, especially in CSF",
+            "IgM antibodies": "Positive in later stages of infection (serum and CSF)"
+        },
+        "risk_factors": [
+            "Living in endemic areas",
+            "Working outdoors",
+            "Participating in outdoor activities in endemic areas",
+            "Contact with infected mosquitoes"
+        ],
+        "imaging_findings": {
+            "Medical imaging": "Patterns compatible with encephalitis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with WEE (neurological symptoms)",
+            "Laboratory confirmation (PCR or IgM antibody detection)"
+        ],
+        "supportive": [
+            "Epidemiological link (exposure to mosquitoes in endemic area)",
+            "Imaging findings consistent with encephalitis"
+        ]
+    },
+    "differential_diagnoses": []
+}

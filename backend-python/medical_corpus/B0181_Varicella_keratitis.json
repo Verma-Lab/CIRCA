@@ -1,0 +1,109 @@
+{
+    "disease": "Varicella keratitis",
+    "icd_code": "B0181",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Corneal ulcer",
+                "severity": "Severe",
+                "pattern": "Circular"
+            },
+            {
+                "name": "Stromal opacity",
+                "severity": "Dense",
+                "pattern": "Infiltration"
+            },
+            {
+                "name": "Conjunctival injection",
+                "severity": "Mild",
+                "pattern": "Present"
+            },
+            {
+                "name": "Ciliary injection",
+                "severity": "Mild",
+                "pattern": "Present"
+            },
+            {
+                "name": "Pain",
+                "severity": "Severe",
+                "pattern": "Present"
+            },
+            {
+                "name": "Tearing",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Foreign-body sensation",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Reduced visual acuity",
+                "severity": "Moderate",
+                "pattern": "Present in affected eye"
+            },
+            {
+                "name": "Dendriform lesions",
+                "severity": "Pleomorphic with thickened, opaque epithelium",
+                "pattern": "Linear pattern with multiple branches"
+            },
+            {
+                "name": "Corneal edema",
+                "severity": "Variable",
+                "pattern": "Present in endotheliitis"
+            },
+            {
+                "name": "Keratic precipitates",
+                "severity": "Variable",
+                "pattern": "Present in endotheliitis"
+            },
+            {
+                "name": "Mild anterior chamber inflammation",
+                "severity": "Mild",
+                "pattern": "Present in endotheliitis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "intraocular pressure": "Normal"
+        },
+        "physical_findings": [
+            "Conjunctival and ciliary injection",
+            "Corneal ulcer with underlying dense anterior corneal stromal infiltration",
+            "Slight to mild inflammation in the anterior chamber of the left eye",
+            "Mild cataract in the right eye with no inflammation",
+            "Residual corneal stromal opacity (after treatment)"
+        ],
+        "lab_values": {
+            "Bacterial cultures": "Negative",
+            "PCR for Acanthamoeba": "Negative",
+            "PCR for Herpes simplex virus": "Negative",
+            "PCR for Cytomegalovirus": "Negative",
+            "PCR for Varicella-zoster virus": "Positive in both affected and unaffected eyes"
+        },
+        "risk_factors": [
+            "History of soft contact lens use",
+            "Herpes zoster ophthalmicus (HZO)",
+            "Altered immune function (in some cases)",
+            "Age (increased incidence in older adults)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive PCR for VZV DNA in tear fluid"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with VZV keratitis (e.g., corneal ulcer, stromal opacity, injection)",
+            "Negative bacterial and fungal cultures"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bacterial keratitis",
+        "Fungal keratitis",
+        "Acanthamoeba keratitis",
+        "Herpes simplex keratitis",
+        "Cytomegalovirus keratitis"
+    ]
+}

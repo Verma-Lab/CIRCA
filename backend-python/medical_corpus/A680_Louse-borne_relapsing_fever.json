@@ -1,0 +1,201 @@
+{
+    "disease": "Louse-borne Relapsing Fever (LBRF)",
+    "icd_code": "A680",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "severe",
+                "pattern": "recurring, abrupt onset"
+            },
+            {
+                "name": "Rigors",
+                "severity": "moderate to severe",
+                "pattern": "recurring"
+            },
+            {
+                "name": "Headache",
+                "severity": "moderate to severe",
+                "pattern": "recurring"
+            },
+            {
+                "name": "Pain",
+                "severity": "moderate to severe",
+                "pattern": "generalized, affecting lower back, knees, and elbows"
+            },
+            {
+                "name": "Prostration",
+                "severity": "moderate to severe",
+                "pattern": "recurring"
+            },
+            {
+                "name": "Petechial rash",
+                "severity": "mild to moderate",
+                "pattern": "present in some cases, particularly on trunk"
+            },
+            {
+                "name": "Epistaxis",
+                "severity": "mild to severe",
+                "pattern": "recurring"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "mild to severe",
+                "pattern": "present in many cases"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "moderate",
+                "pattern": "present in some cases"
+            },
+            {
+                "name": "Liver dysfunction",
+                "severity": "mild to severe",
+                "pattern": "present in some cases"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "mild to moderate",
+                "pattern": "early symptom"
+            },
+            {
+                "name": "Nausea",
+                "severity": "mild to moderate",
+                "pattern": "early symptom"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "mild to moderate",
+                "pattern": "early symptom"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "mild to moderate",
+                "pattern": "early symptom"
+            },
+            {
+                "name": "Upper abdominal pain",
+                "severity": "mild to moderate",
+                "pattern": "later symptom"
+            },
+            {
+                "name": "Cough",
+                "severity": "mild to moderate",
+                "pattern": "later symptom"
+            },
+            {
+                "name": "Subconjunctival hemorrhages",
+                "severity": "mild to moderate",
+                "pattern": "common"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "severe",
+                "pattern": "less common"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "severe",
+                "pattern": "less common"
+            },
+            {
+                "name": "Retinal hemorrhages",
+                "severity": "severe",
+                "pattern": "less common"
+            },
+            {
+                "name": "Neurological involvement",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Acute respiratory distress syndrome",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Hepatic failure",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Spleen rupture",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Disseminated intravascular coagulation",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Intracranial hemorrhage",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Massive gastrointestinal hemorrhage",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Pulmonary hemorrhage",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Peripartum hemorrhage",
+                "severity": "severe",
+                "pattern": "in severe cases"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "mild to moderate",
+                "pattern": "early symptom"
+            },
+            {
+                "name": "Generalized aches and pains",
+                "severity": "moderate",
+                "pattern": "early symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "nearly 40\u00b0C (104\u00b0F)"
+        },
+        "physical_findings": [
+            "Petechial or ecchymotic rash",
+            "Jaundice",
+            "Subconjunctival hemorrhages",
+            "Hepatosplenomegaly"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Overcrowded conditions",
+            "Areas experiencing social disruption (e.g., refugee camps)",
+            "Infestation of body lice",
+            "Pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Recurring episodes of high fever",
+            "Symptoms such as headache, pain, and prostration",
+            "Exposure to body lice in endemic areas"
+        ],
+        "supportive": [
+            "Microscopy of blood films showing Borrelia recurrentis",
+            "PCR for species diagnosis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Severe falciparum malaria",
+        "Leptospirosis"
+    ]
+}

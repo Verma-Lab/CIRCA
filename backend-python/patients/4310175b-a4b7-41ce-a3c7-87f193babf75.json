@@ -1,0 +1,18 @@
+{
+  "id": "4310175b-a4b7-41ce-a3c7-87f193babf75",
+  "mrn": "MRN9D6D0303",
+  "first_name": "Carol",
+  "last_name": "Lee",
+  "date_of_birth": "1950-04-03",
+  "gender": "Female",
+  "address": "8828 Lisa Parkway",
+  "phone": "001-480-578-4272",
+  "email": "zdodson@berg-washington.net",
+  "insurance_provider": "Kaiser",
+  "insurance_id": "Or654393",
+  "primary_care_provider": "Dr. Lee",
+  "emergency_contact_name": "Luis Fischer",
+  "emergency_contact_phone": "683-425-6742x8588",
+  "created_at": "2025-03-24T12:52:01.082219",
+  "updated_at": "2025-03-24T12:52:01.082219"
+}

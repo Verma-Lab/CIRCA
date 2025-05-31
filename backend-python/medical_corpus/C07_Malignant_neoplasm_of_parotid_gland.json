@@ -1,0 +1,22 @@
+{
+    "disease": "Malignant neoplasm of parotid gland",
+    "icd_code": "C07",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth in the parotid gland (located between the ear and lower jaw)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in the parotid gland tissue"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

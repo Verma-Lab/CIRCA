@@ -1,0 +1,23 @@
+{
+    "disease": "Unspecified malignant neoplasm of overlapping sites of skin",
+    "icd_code": "C4480",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Kaposi's sarcoma of skin (C46.0)",
+        "Malignant melanoma of skin (C43.-)",
+        "Malignant neoplasm of skin of genital organs (C51-C52, C60.-, C63.2)",
+        "Merkel cell carcinoma (C4A.-)"
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "disease": "Exanthema subitum [sixth disease]",
+    "icd_code": "B0820",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "High (39.5-40.5\u00b0C)",
+                "pattern": "Lasts 3-5 days, abrupt onset, subsides rapidly on day 4"
+            },
+            {
+                "name": "Runny nose",
+                "severity": "Mild to moderate",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Mild to moderate",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Tiredness",
+                "severity": "Mild to moderate",
+                "pattern": "May or may not be present"
+            },
+            {
+                "name": "Rash (exanthem)",
+                "severity": "Mild",
+                "pattern": "Macular or maculopapular, appears after fever subsides, prominent on chest and abdomen, less on face and extremities, lasts hours to 2 days, may be absent in 70% of cases"
+            },
+            {
+                "name": "Febrile seizures",
+                "severity": "Variable, can be alarming but usually brief and not dangerous",
+                "pattern": "Occurs in 5-15% of cases, triggered by high fever"
+            },
+            {
+                "name": "Cervical and posterior auricular lymphadenopathy",
+                "severity": "Mild to moderate",
+                "pattern": "Often develops"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "39.5-40.5\u00b0C (high fever)"
+        },
+        "physical_findings": [
+            "Rash (macular or maculopapular)",
+            "Cervical and posterior auricular lymphadenopathy"
+        ],
+        "lab_values": {
+            "HHV-6 serology": "Positive in confirmed cases",
+            "PCR for HHV-6": "Positive in confirmed cases"
+        },
+        "risk_factors": [
+            "Age 6 months to 3 years",
+            "Weakened immune system (increased risk of severe complications)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic history (high fever followed by rash)",
+            "Physical examination findings (rash, lymphadenopathy)"
+        ],
+        "supportive": [
+            "Positive HHV-6 serology or PCR"
+        ]
+    },
+    "differential_diagnoses": [
+        "Measles"
+    ]
+}

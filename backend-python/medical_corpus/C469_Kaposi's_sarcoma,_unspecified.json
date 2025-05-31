@@ -1,0 +1,51 @@
+{
+    "disease": "Kaposi's sarcoma, unspecified",
+    "icd_code": "C469",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesions",
+                "severity": "Variable, from asymptomatic to severe",
+                "pattern": "Violaceous pink to purple plaques or nodules on skin or mucocutaneous surfaces; may ulcerate or invade nearby tissues; lesions may be painful with associated lymphedema and secondary infection; can occur on face, arms, legs, genitals, or in the mouth; can also involve lymph nodes, lungs, and gastrointestinal system"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "May occur if lesions are present in the digestive tract"
+            },
+            {
+                "name": "Respiratory symptoms",
+                "severity": "Variable, can be life-threatening",
+                "pattern": "May occur if lesions are present in the lungs"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Violaceous pink to purple plaques or nodules on the skin or mucocutaneous surfaces",
+            "Lesions may be painful",
+            "Lymphedema may be present",
+            "Secondary infection may be present"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunosuppression (HIV/AIDS, organ transplant)",
+            "Infection with Kaposi sarcoma-associated herpesvirus (KSHV) or human herpesvirus 8 (HHV-8)",
+            "Older age",
+            "Eastern European or Mediterranean descent (classic Kaposi sarcoma)",
+            "Male sex (increased risk in classic and iatrogenic Kaposi sarcoma)",
+            "Male homosexuals (increased risk in AIDS-related Kaposi sarcoma)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of characteristic skin lesions (patches, plaques, nodules)",
+            "Confirmation of HHV-8 infection (e.g., immunohistochemistry for LANA1)"
+        ],
+        "supportive": [
+            "Histopathological examination showing spindle cell proliferation, complex vascular channels, and extravasated red blood cells"
+        ]
+    },
+    "differential_diagnoses": []
+}

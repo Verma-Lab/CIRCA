@@ -1,0 +1,20 @@
+{
+    "disease": "Other forms of listeriosis",
+    "icd_code": "A3289",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Laboratory test growing Listeria from a sample of an ill person's body fluid or tissue"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

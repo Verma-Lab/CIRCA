@@ -1,0 +1,137 @@
+{
+    "disease": "Paratyphoid fever, unspecified",
+    "icd_code": "A014",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Sustained, for several days, usually without shivering"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Common, may be present initially or later"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "May occur later, potentially causing fluid loss"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "May occur initially"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Limb pain",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Rose-colored spots, particularly on the chest; more common in light-skinned individuals"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Sweating",
+                "severity": "Variable",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Nonspecific symptom, nonproductive in early stages"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Variable",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Muscle pains",
+                "severity": "Variable",
+                "pattern": "Nonspecific symptom"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Rare",
+                "pattern": "Rare symptom"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Rare",
+                "pattern": "Rare symptom"
+            },
+            {
+                "name": "Psychosis",
+                "severity": "Rare",
+                "pattern": "Rare symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Relative bradycardia (slow heart rate)"
+        },
+        "physical_findings": [
+            "Hepatosplenomegaly (enlarged liver and spleen)",
+            "Tarsal tunnel tenderness (on deep palpation)"
+        ],
+        "lab_values": {
+            "blood_culture": "Presence of Salmonella Paratyphi A, B, or C",
+            "stool_culture": "Presence of Salmonella Paratyphi A, B, or C",
+            "Widal test": "Antibodies anti-BH (for Paratyphi B)"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Poor sanitation",
+            "Crowded living conditions",
+            "Sexual contact (occasionally)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms consistent with paratyphoid fever",
+            "Isolation of Salmonella Paratyphi A, B, or C from blood or stool cultures"
+        ],
+        "supportive": [
+            "Positive Widal test (for Paratyphi B)",
+            "Detection of bacterial DNA in blood, stool, or bone marrow"
+        ]
+    },
+    "differential_diagnoses": [
+        "Typhoid fever",
+        "Other infectious diseases with similar symptoms"
+    ]
+}

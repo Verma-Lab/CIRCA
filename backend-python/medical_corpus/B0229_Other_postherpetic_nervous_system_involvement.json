@@ -1,0 +1,72 @@
+{
+    "disease": "Other postherpetic nervous system involvement",
+    "icd_code": "B0229",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable, can range from mild to severe",
+                "pattern": "Burning, aching, jabbing; can be constant or intermittent; may persist for weeks, months, or even years"
+            },
+            {
+                "name": "Numbness",
+                "severity": "Variable",
+                "pattern": "May occur in the affected area"
+            },
+            {
+                "name": "Itchiness",
+                "severity": "Variable",
+                "pattern": "Often accompanies pain"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Can be significant, even without strenuous activity"
+            },
+            {
+                "name": "Sleep disturbance",
+                "severity": "Variable",
+                "pattern": "Pain can interfere with sleep"
+            },
+            {
+                "name": "Difficulty concentrating",
+                "severity": "Variable",
+                "pattern": "Pain can impair cognitive function"
+            },
+            {
+                "name": "Appetite changes",
+                "severity": "Variable",
+                "pattern": "May experience decreased appetite"
+            },
+            {
+                "name": "Depression",
+                "severity": "Variable",
+                "pattern": "Can be a consequence of chronic pain"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painful rash (shingles) may be present initially, but resolves before the onset of postherpetic neuralgia",
+            "Tenderness to palpation in the affected dermatome"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 60",
+            "Weakened immune system (e.g., due to chemotherapy)",
+            "Previous history of chickenpox"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "History of shingles",
+            "Persistent pain in the dermatome affected by the previous shingles outbreak lasting longer than 4 months after resolution of the rash"
+        ],
+        "supportive": [
+            "Physical examination findings consistent with postherpetic neuralgia",
+            "Absence of other causes of neuropathic pain"
+        ]
+    },
+    "differential_diagnoses": []
+}

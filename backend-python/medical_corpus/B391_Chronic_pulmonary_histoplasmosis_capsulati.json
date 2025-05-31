@@ -1,0 +1,59 @@
+{
+    "disease": "Chronic pulmonary histoplasmosis capsulati",
+    "icd_code": "B391",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Low-grade chronic symptoms",
+                "severity": "Mild to moderate",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Progressive pulmonary insufficiency",
+                "severity": "Variable, can be severe",
+                "pattern": "Gradual"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "fungal culture of respiratory samples": {
+                "abnormal_range": "Positive for Histoplasma capsulatum"
+            },
+            "antibody testing": {
+                "abnormal_range": "Positive for Histoplasma capsulatum antibodies"
+            }
+        },
+        "risk_factors": [
+            "Emphysema",
+            "Older age",
+            "Male sex",
+            "White race",
+            "Preexisting immunosuppression",
+            "Preexisting chronic lung disease",
+            "Smoking"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": [
+                "Nodules",
+                "Lymphadenopathy",
+                "Infiltrates",
+                "Cavitation (less common in recent reports, more common in older reports)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "High index of suspicion",
+            "Positive fungal culture of respiratory samples",
+            "Positive antibody testing",
+            "Compatible radiological picture"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Pulmonary tuberculosis",
+        "Chronic pulmonary aspergillosis"
+    ]
+}

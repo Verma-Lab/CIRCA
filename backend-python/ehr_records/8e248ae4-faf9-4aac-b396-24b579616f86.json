@@ -1,0 +1,174 @@
+{
+  "id": "8e248ae4-faf9-4aac-b396-24b579616f86",
+  "patient_id": "908b9209-245c-45cb-8558-ca4f2800962b",
+  "encounter_id": "c7a22607-5c2b-4e6d-b39d-f8ac89fd05f8",
+  "analysis_type": "Genetic Testing Recommendation",
+  "input_text": "Patient: Jorge Thomas, DOB: 1979-12-30, Gender: Male\n\nChief Complaint: headache\n\nS: No medical history\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- Chest Scan (3/24/2025): Chest scan\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: Chest Scan (2025-03-24T23:06:13.575979)]\nFile: images.jpeg\nDescription: Chest scan\nAnalysis: Error analyzing scan: name 'description' is not defined\n",
+  "recommendation": "not recommended",
+  "reasoning": "The provided patient data is extremely limited.  There is no relevant medical history, physical exam findings, or assessment documented beyond a chief complaint of headache.  The chest scan analysis failed, providing no useful information.  The listed PubMed IDs are not linked to specific articles or abstracts, making it impossible to assess their relevance to the patient's complaint or any potential genetic disorder.  Without further clinical information, such as family history of genetic disorders, specific symptoms beyond a headache, or results from the chest scan, it is impossible to determine if genetic testing is warranted.  A headache alone is not indicative of a rare genetic disease.  More comprehensive data is needed before any recommendation for genetic testing can be made.",
+  "confidence": "99%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "myotonia-c_txt_19",
+      "contents": "Author History \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "pnknd_txt_16",
+      "contents": " PubMed PMID: 25572910. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "cmt-4a_txt_31",
+      "contents": " PubMed PMID: 25231362. \n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "syne1ca-ar_txt_24",
+      "contents": " PubMed PMID: 17761684. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "spg4_txt_37",
+      "contents": " PubMed PMID: 17389232. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "dbh_txt_23",
+      "contents": "PubMed PMID: 11170900. \n\nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "hfg_txt_21",
+      "contents": " PubMed PMID: 26590955. \n\nChapter Notes \nAuthor Notes \nAuthor's website \nRevision History \n",
+      "token_count": 19,
+      "sentence_count": 5
+    },
+    {
+      "id": "vodi_txt_23",
+      "contents": " PubMed PMID: 14559998. \n\nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "pdc_txt_20",
+      "contents": " PubMed PMID: 18676167. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "pku_txt_40",
+      "contents": " PubMed PMID: 17091341. \n\n\n\n\nChapter Notes \nAuthor History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "cmt4h_txt_1",
+      "contents": " THIS ARCHIVAL VERSION IS FOR HISTORICAL REFERENCE ONLY, AND THE INFORMATION MAY BE OUT OF DATE. \nClinical characteristics \n",
+      "token_count": 20,
+      "sentence_count": 2
+    },
+    {
+      "id": "lgmd-overview_txt_46",
+      "contents": " PubMed PMID: 9382102. \nChapter Notes \nAuthor History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "hna_txt_25",
+      "contents": " PubMed PMID: 21262397. \nChapter Notes \nRevision History \n",
+      "token_count": 14,
+      "sentence_count": 3
+    },
+    {
+      "id": "rotor_txt_15",
+      "contents": " PubMed PMID: 22232210. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "mstn_txt_10",
+      "contents": " PubMed PMID: 15215484. \nChapter Notes \nAuthor History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "fevr_txt_30",
+      "contents": " PubMed PMID: 20688566. \n\n\nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "tetra-amelia_txt_13",
+      "contents": " PubMed PMID: 8256824. \n\nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "vldlr-ch_txt_17",
+      "contents": " PubMed PMID: 31261436. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "glyt1-dis_txt_15",
+      "contents": " PubMed PMID: 28363510. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "chd4-ndd_txt_15",
+      "contents": " PubMed PMID: 27616479. \nChapter Notes \nRevision History \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "pknd_txt_28",
+      "contents": " PubMed PMID: 18541410. \n\n\n\nChapter Notes \nRevision History \n",
+      "token_count": 12,
+      "sentence_count": 3
+    },
+    {
+      "id": "ssadh_txt_26",
+      "contents": " PubMed PMID: 10774997. \n\n\n\nChapter Notes \nAcknowledgments \n",
+      "token_count": 18,
+      "sentence_count": 3
+    },
+    {
+      "id": "ea2_txt_31",
+      "contents": "Chapter Notes \nRevision History \n",
+      "token_count": 4,
+      "sentence_count": 2
+    },
+    {
+      "id": "nem_txt_55",
+      "contents": " PubMed PMID: 25654555. \nChapter Notes \nAuthor Notes \n",
+      "token_count": 13,
+      "sentence_count": 3
+    },
+    {
+      "id": "xdp_txt_36",
+      "contents": " PubMed PMID: 23389859. \n\n\n\nChapter Notes \nAcknowledgments \n",
+      "token_count": 18,
+      "sentence_count": 3
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "Chest Scan",
+      "scan_date": "2025-03-24T23:06:13.575979",
+      "file_name": "images.jpeg",
+      "description": "Chest scan",
+      "analysis": "Error analyzing scan: name 'description' is not defined"
+    }
+  ],
+  "analysis_date": "2025-03-25T08:57:49.799420",
+  "created_at": "2025-03-25T08:57:49.799425"
+}

@@ -1,0 +1,20 @@
+{
+    "disease": "Malignant neoplasm of overlapping sites of colon",
+    "icd_code": "C188",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant neoplasm in multiple overlapping sites of the colon"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

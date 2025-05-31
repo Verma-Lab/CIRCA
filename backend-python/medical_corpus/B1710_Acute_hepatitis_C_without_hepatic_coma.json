@@ -1,0 +1,95 @@
+{
+    "disease": "Acute hepatitis C without hepatic coma",
+    "icd_code": "B1710",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated",
+            "pulse": "May be elevated",
+            "blood_pressure": "Usually normal"
+        },
+        "physical_findings": [
+            "Jaundice (icterus)",
+            "Hepatomegaly (enlarged liver)",
+            "Splenomegaly (enlarged spleen)"
+        ],
+        "lab_values": {
+            "ALT": "Elevated",
+            "AST": "Elevated",
+            "ALP": "May be elevated",
+            "bilirubin": "May be elevated",
+            "HCV RNA": "Positive"
+        },
+        "risk_factors": [
+            "Injection drug use",
+            "Blood transfusions before 1992",
+            "Occupational exposure to blood",
+            "Sexual contact with an infected person",
+            "Mother-to-child transmission during birth"
+        ],
+        "imaging_findings": {
+            "ultrasound": "May show hepatomegaly",
+            "CT scan": "May show hepatomegaly",
+            "MRI": "May show hepatomegaly and other liver abnormalities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive HCV RNA test",
+            "Symptoms consistent with acute hepatitis"
+        ],
+        "supportive": [
+            "Elevated liver enzymes (ALT, AST)",
+            "Abnormal liver imaging"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hepatitis A",
+        "Hepatitis B",
+        "Other viral hepatitis",
+        "Drug-induced liver injury",
+        "Autoimmune hepatitis"
+    ]
+}

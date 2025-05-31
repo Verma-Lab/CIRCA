@@ -1,0 +1,125 @@
+{
+    "disease": "Other herpes zoster eye disease",
+    "icd_code": "B0239",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Blurry vision",
+                "severity": "Mild to severe",
+                "pattern": "Unilateral, can be the primary symptom"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Mild",
+                "pattern": "Associated with blurry vision"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Burning pain over forehead, unilateral"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild",
+                "pattern": "Present for approximately one week before other symptoms"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Mild",
+                "pattern": "Present for approximately one week before other symptoms"
+            },
+            {
+                "name": "Subjective fevers",
+                "severity": "Mild",
+                "pattern": "Present for approximately one week before other symptoms"
+            },
+            {
+                "name": "Dermatomal pain",
+                "severity": "Varying degrees",
+                "pattern": "In distribution of ophthalmic nerve, present in about 60% of patients"
+            },
+            {
+                "name": "Periorbital vesicular rash",
+                "severity": "Variable",
+                "pattern": "Distributed according to affected dermatome, may be absent in some cases"
+            },
+            {
+                "name": "Conjunctivitis",
+                "severity": "Variable",
+                "pattern": "Injected and edematous conjunctiva, often with petechial hemorrhages"
+            },
+            {
+                "name": "Keratitis",
+                "severity": "Variable",
+                "pattern": "Can result in significant vision loss, presents with decreased vision, pain, and light sensitivity"
+            },
+            {
+                "name": "Uveitis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the uvea"
+            },
+            {
+                "name": "Ocular cranial nerve palsies",
+                "severity": "Variable",
+                "pattern": "Paralysis of the eye muscles"
+            },
+            {
+                "name": "Blepharitis",
+                "severity": "Variable",
+                "pattern": "Inflammation of the eyelids"
+            },
+            {
+                "name": "Ptosis",
+                "severity": "Variable",
+                "pattern": "Drooping of the eyelid due to edema and inflammation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be slightly elevated (low-grade fever)",
+            "blood_pressure": "May be elevated"
+        },
+        "physical_findings": [
+            "Mild hyperesthesia over forehead",
+            "Conjunctival irritation",
+            "Dendritic or punctate keratitis",
+            "Vesicular lesions on eyelids",
+            "Hutchinson's sign (involvement of tip of nose)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Immunocompromised status",
+            "HIV infection",
+            "Normal aging",
+            "Poor nutrition",
+            "Physical or emotional stress",
+            "Fatigue"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with herpes zoster ophthalmicus (e.g., characteristic rash, ocular symptoms)"
+        ],
+        "supportive": [
+            "Positive Tzanck smear or Wright stain",
+            "Positive viral culture",
+            "Positive direct immunofluorescence assay",
+            "Positive PCR"
+        ]
+    },
+    "differential_diagnoses": [
+        "Herpes simplex keratitis",
+        "Other viral or bacterial conjunctivitis",
+        "Uveitis",
+        "Glaucoma",
+        "Trauma",
+        "Chemical exposure",
+        "Vascular occlusion",
+        "Migraine",
+        "Cluster headache",
+        "Trigeminal neuritis",
+        "Optic neuritis",
+        "Vasculitis"
+    ]
+}

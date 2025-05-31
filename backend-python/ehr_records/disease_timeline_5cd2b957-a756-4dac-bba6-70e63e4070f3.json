@@ -1,0 +1,541 @@
+{
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "patient_name": "John Doe",
+  "primary_diagnosis": "Type 2 Diabetes Mellitus",
+  "confidence": 95,
+  "generated_at": "2025-05-22T18:01:05.435273",
+  "timeline_range": "1-year",
+  "timeline_data": [
+    {
+      "date": "2025-05-22",
+      "timepoint_label": "Initial",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Review current medications (crocin is not a standard diabetes medication; investigate and correct)",
+        "Initiate Metformin 500mg twice daily with meals (if not contraindicated)",
+        "Provide education on diabetes management, diet, and exercise",
+        "Refer to a certified diabetes educator"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.8%",
+          "interpretation": "Suboptimal glycemic control"
+        },
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Elevated, confirming diabetes"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function, current values are high"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage (based on elevated creatinine)",
+        "Medication side effects (if Metformin is initiated)"
+      ],
+      "notes": "Confirm current medications and dosages. Address elevated creatinine levels with further investigation."
+    },
+    {
+      "date": "2025-06-22",
+      "timepoint_label": "Month 1",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg twice daily (if initiated)",
+        "Reinforce dietary and exercise recommendations",
+        "Monitor blood glucose levels regularly"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with Metformin"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Gastrointestinal side effects from Metformin",
+        "Kidney damage"
+      ],
+      "notes": "Assess patient adherence to treatment plan and address any barriers."
+    },
+    {
+      "date": "2025-07-22",
+      "timepoint_label": "Month 2",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin 500mg twice daily (if initiated)",
+        "Assess blood glucose logs and adjust medication if needed",
+        "Consider increasing Metformin to 1000mg twice daily if tolerated and glucose control is inadequate"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with Metformin"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Gastrointestinal side effects from Metformin",
+        "Kidney damage"
+      ],
+      "notes": "Titrate Metformin based on patient response and tolerance."
+    },
+    {
+      "date": "2025-08-22",
+      "timepoint_label": "Month 3",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin 1000mg twice daily (if initiated and tolerated)",
+        "Check HbA1c to assess long-term glycemic control",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "7.0-7.8%",
+          "interpretation": "Assess response to Metformin; aim for <7%"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Lack of adherence to treatment plan"
+      ],
+      "notes": "HbA1c result will guide further treatment decisions."
+    },
+    {
+      "date": "2025-09-22",
+      "timepoint_label": "Month 4",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "If HbA1c is not at target (<7%), consider adding a second oral agent (e.g., a DPP-4 inhibitor or SGLT2 inhibitor) or basal insulin",
+        "Continue Metformin 1000mg twice daily",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with added medication"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Side effects from additional medications"
+      ],
+      "notes": "Choice of second agent depends on patient-specific factors and comorbidities."
+    },
+    {
+      "date": "2025-10-22",
+      "timepoint_label": "Month 5",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin and second agent (if added)",
+        "Monitor blood glucose levels and adjust medication dosages as needed",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with added medication"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Side effects from additional medications"
+      ],
+      "notes": "Close monitoring is crucial after adding a new medication."
+    },
+    {
+      "date": "2025-11-22",
+      "timepoint_label": "Month 6",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin and second agent (if added)",
+        "Assess for signs and symptoms of complications (e.g., neuropathy, retinopathy)",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.5-7.5%",
+          "interpretation": "Assess response to treatment; aim for <7%"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Neuropathy",
+        "Retinopathy"
+      ],
+      "notes": "Consider referral to specialists (e.g., ophthalmologist, podiatrist) for complication screening."
+    },
+    {
+      "date": "2025-12-22",
+      "timepoint_label": "Month 7",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin and second agent (if added)",
+        "Monitor for signs and symptoms of complications",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with added medication"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Neuropathy",
+        "Retinopathy"
+      ],
+      "notes": "Address any emerging complications promptly."
+    },
+    {
+      "date": "2026-01-22",
+      "timepoint_label": "Month 8",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin and second agent (if added)",
+        "Assess medication adherence",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with added medication"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Neuropathy",
+        "Retinopathy"
+      ],
+      "notes": "Address any barriers to medication adherence."
+    },
+    {
+      "date": "2026-02-22",
+      "timepoint_label": "Month 9",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin and second agent (if added)",
+        "Monitor for signs and symptoms of cardiovascular disease",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "HbA1c",
+          "expected_value": "6.5-7.5%",
+          "interpretation": "Assess response to treatment; aim for <7%"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Neuropathy",
+        "Retinopathy",
+        "Cardiovascular disease"
+      ],
+      "notes": "Assess cardiovascular risk factors and manage accordingly."
+    },
+    {
+      "date": "2026-03-22",
+      "timepoint_label": "Month 10",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin and second agent (if added)",
+        "Review medication regimen and adjust as needed",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with added medication"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Neuropathy",
+        "Retinopathy",
+        "Cardiovascular disease"
+      ],
+      "notes": "Consider intensifying treatment if glycemic control remains inadequate."
+    },
+    {
+      "date": "2026-04-22",
+      "timepoint_label": "Month 11",
+      "symptoms": [
+        {
+          "name": "Fatigue",
+          "severity": "moderate"
+        },
+        {
+          "name": "Increased thirst",
+          "severity": "mild"
+        },
+        {
+          "name": "Frequent urination",
+          "severity": "mild"
+        }
+      ],
+      "status": "stable",
+      "disease_stage": "progressing",
+      "treatment_recommendations": [
+        "Continue Metformin and second agent (if added)",
+        "Monitor for signs and symptoms of complications",
+        "Reinforce lifestyle modifications"
+      ],
+      "expected_lab_values": [
+        {
+          "test": "Fasting Plasma Glucose",
+          "expected_value": ">126 mg/dL",
+          "interpretation": "Monitor for improvement with added medication"
+        },
+        {
+          "test": "Creatinine",
+          "expected_value": "1.0-1.2 mg/dL",
+          "interpretation": "Monitor kidney function"
+        }
+      ],
+      "potential_complications": [
+        "Hyperglycemia",
+        "Kidney damage",
+        "Neuropathy",
+        "Retinopathy",
+        "Cardiovascular disease"
+      ],
+      "notes": "Long-term management requires ongoing monitoring and adjustments."
+    }
+  ]
+}

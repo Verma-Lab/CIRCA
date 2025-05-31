@@ -1,0 +1,39 @@
+{
+    "disease": "Unspecified mycosis",
+    "icd_code": "B49",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "fungal culture": {
+                "Candida": "79.1% positive in patients with positive fungal lab tests",
+                "Unspecified fungus": "65.1% positive in patients with positive fungal lab tests (82.9% also positive for Candida)",
+                "Other specific pathogens": "<10% combined"
+            },
+            "beta-d-glucan": "43 of 145 patients positive",
+            "urine microscopy for yeast": "240 of 260 patients positive"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "ICD-10 code B49 listed on discharge record",
+            "No ICD-10 code for a more specific fungal disease"
+        ],
+        "supportive": [
+            "Positive fungal laboratory test (culture, microscopy, antibody, antigen, or molecular tests)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Candidiasis",
+        "Aspergillosis",
+        "Mucormycosis",
+        "Cryptococcosis",
+        "Blastomycosis",
+        "Coccidioidomycosis",
+        "Histoplasmosis"
+    ]
+}

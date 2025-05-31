@@ -1,0 +1,157 @@
+{
+    "disease": "Hyperkeratosis of yaws",
+    "icd_code": "A663",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Hyperkeratosis",
+                "severity": "Variable, can be severe in late stages",
+                "pattern": "Often present on soles of feet"
+            },
+            {
+                "name": "Cracking of skin",
+                "severity": "Variable",
+                "pattern": "Often associated with hyperkeratosis on soles"
+            },
+            {
+                "name": "Secondary infections",
+                "severity": "Variable",
+                "pattern": "Can occur in areas of hyperkeratosis and cracking"
+            },
+            {
+                "name": "Papilloma",
+                "severity": "Variable",
+                "pattern": "Present in primary and secondary stages"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Variable",
+                "pattern": "Can occur in primary and secondary stages"
+            },
+            {
+                "name": "Regional lymphadenopathy",
+                "severity": "Mild to moderate",
+                "pattern": "Can occur in primary stage"
+            },
+            {
+                "name": "Arthralgia",
+                "severity": "Mild to moderate",
+                "pattern": "Can occur in primary stage"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Can occur in secondary stage"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Can occur in secondary stage"
+            },
+            {
+                "name": "Measles-like eruption",
+                "severity": "Variable",
+                "pattern": "Can occur in secondary stage"
+            },
+            {
+                "name": "Papillomas in moist areas",
+                "severity": "Variable",
+                "pattern": "Can occur in secondary stage"
+            },
+            {
+                "name": "Osteoperiostitis",
+                "severity": "Variable",
+                "pattern": "Can occur in secondary stage, involving long bones and fingers"
+            },
+            {
+                "name": "Subcutaneous gummatous nodules",
+                "severity": "Variable",
+                "pattern": "Can occur in tertiary stage"
+            },
+            {
+                "name": "Exostoses of the maxillary bones (goundou)",
+                "severity": "Variable",
+                "pattern": "Can occur in tertiary stage"
+            },
+            {
+                "name": "Destructive osteitis of the septum and palate (gangosa)",
+                "severity": "Severe",
+                "pattern": "Can occur in tertiary stage"
+            },
+            {
+                "name": "Monodactylitis",
+                "severity": "Variable",
+                "pattern": "Can occur in tertiary stage"
+            },
+            {
+                "name": "Juxta-articular nodules",
+                "severity": "Variable",
+                "pattern": "Can occur in tertiary stage"
+            },
+            {
+                "name": "Apparent bowing of the tibia (saber shin)",
+                "severity": "Variable",
+                "pattern": "Can occur in tertiary stage"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Papilloma lesions",
+            "Ulcers",
+            "Hyperkeratosis",
+            "Skin cracking",
+            "Swelling",
+            "Bone lesions (in tertiary stage)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Living in tropical, rural, and poor communities",
+            "Low standards of hygiene",
+            "Heavy rainfall",
+            "Trauma to lower extremities",
+            "Age 2-15 years"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Emergence of disease in endemic area",
+            "Clinically typical papilloma lesions"
+        ],
+        "supportive": [
+            "Seropositivity in treponemal test",
+            "Direct detection (dark-field microscopy or rabbit infectivity test)",
+            "Molecular tests (PCR)",
+            "Serological tests (RPR, TPPA, etc.)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Chromomycosis",
+        "Cutaneous leishmaniasis",
+        "Ecthyma",
+        "Impetigo",
+        "Leprosy",
+        "Molluscum contagiosum",
+        "Planar warts",
+        "Psoriasis",
+        "Sarcoidosis",
+        "Scabies",
+        "Tropical ulcers",
+        "Tungiasis",
+        "Mucocutaneous leishmaniasis",
+        "Leprosy",
+        "Rhinoscleroma",
+        "Rhinosporidiosis",
+        "Tuberculosis",
+        "African histoplasmosis",
+        "Bacterial osteomyelitis",
+        "Bejel",
+        "Sickle cell anemia",
+        "Syphilis",
+        "Tuberculosis",
+        "Bejel",
+        "Acquired syphilis",
+        "Pinta"
+    ]
+}

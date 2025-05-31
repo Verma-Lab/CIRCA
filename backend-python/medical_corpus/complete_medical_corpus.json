@@ -1,0 +1,889 @@
+{
+    "E11": {
+        "disease": "Type 2 Diabetes Mellitus",
+        "icd_code": "E11",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Polyuria",
+                    "severity": "Variable",
+                    "pattern": "Can be mild and develop slowly"
+                },
+                {
+                    "name": "Polydipsia",
+                    "severity": "Variable",
+                    "pattern": "Can be mild and develop slowly"
+                },
+                {
+                    "name": "Polyphagia",
+                    "severity": "Variable",
+                    "pattern": "Can be mild and develop slowly"
+                },
+                {
+                    "name": "Blurred vision",
+                    "severity": "Variable",
+                    "pattern": "Can be a late symptom"
+                },
+                {
+                    "name": "Fatigue",
+                    "severity": "Variable",
+                    "pattern": "Can be mild and develop slowly"
+                },
+                {
+                    "name": "Weight loss",
+                    "severity": "Variable",
+                    "pattern": "Can be a symptom, especially in type 1"
+                },
+                {
+                    "name": "Frequent infections",
+                    "severity": "Variable",
+                    "pattern": "Can be a symptom"
+                },
+                {
+                    "name": "Slow-healing sores",
+                    "severity": "Variable",
+                    "pattern": "Can be a symptom"
+                },
+                {
+                    "name": "Numbness or tingling in the extremities",
+                    "severity": "Variable",
+                    "pattern": "Can be a symptom"
+                },
+                {
+                    "name": "Hyperosmolar syndrome",
+                    "severity": "Severe",
+                    "pattern": "Life-threatening complication; symptoms include confused thinking, weakness, nausea, seizure, and coma"
+                },
+                {
+                    "name": "Hypoglycemia",
+                    "severity": "Variable",
+                    "pattern": "Can be a side effect of treatment; symptoms include sudden weakness, sweating, feeling unwell, and difficulty thinking clearly"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {
+                "blood_pressure": "Often elevated",
+                "heart_rate": "Can be elevated or normal"
+            },
+            "physical_findings": [
+                "Obesity",
+                "Acanthosis nigricans"
+            ],
+            "lab_values": {
+                "fasting_plasma_glucose": ">125 mg/dL",
+                "HbA1c": ">6.5%",
+                "random_plasma_glucose": ">200 mg/dL",
+                "OGTT": ">200 mg/dL 2 hours after glucose load"
+            },
+            "risk_factors": [
+                "Age 45 or older",
+                "Family history of diabetes",
+                "Overweight or obesity",
+                "Physical inactivity",
+                "High blood pressure",
+                "Prediabetes",
+                "Gestational diabetes",
+                "Ethnicity (African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander)"
+            ],
+            "imaging_findings": {}
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Fasting plasma glucose \u2265 126 mg/dL",
+                "HbA1c \u2265 6.5%",
+                "2-hour plasma glucose \u2265 200 mg/dL during an oral glucose tolerance test",
+                "Random plasma glucose \u2265 200 mg/dL in the presence of classic symptoms"
+            ],
+            "supportive": [
+                "Symptoms of diabetes",
+                "Family history of diabetes",
+                "Obesity"
+            ]
+        },
+        "differential_diagnoses": [
+            "Type 1 diabetes",
+            "Gestational diabetes",
+            "Other endocrine disorders"
+        ]
+    },
+    "J18.9": {
+        "disease": "Community-Acquired Pneumonia",
+        "icd_code": "J18.9",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Fever",
+                    "severity": "Variable",
+                    "pattern": "Frequently absent in older patients"
+                },
+                {
+                    "name": "Cough",
+                    "severity": "Variable",
+                    "pattern": "Productive in older children and adults, dry in infants, young children, and older adults"
+                },
+                {
+                    "name": "Sputum production",
+                    "severity": "Variable",
+                    "pattern": "Present in many cases"
+                },
+                {
+                    "name": "Pleuritic chest pain",
+                    "severity": "Variable",
+                    "pattern": "Adjacent to the infected area"
+                },
+                {
+                    "name": "Dyspnea",
+                    "severity": "Variable",
+                    "pattern": "Usually mild and exertional, rarely present at rest"
+                },
+                {
+                    "name": "Tachypnea",
+                    "severity": "Variable",
+                    "pattern": "Common finding"
+                },
+                {
+                    "name": "Tachycardia",
+                    "severity": "Variable",
+                    "pattern": "Common finding"
+                },
+                {
+                    "name": "Malaise",
+                    "severity": "Variable",
+                    "pattern": "Common symptom"
+                },
+                {
+                    "name": "Chills",
+                    "severity": "Variable",
+                    "pattern": "Common symptom"
+                },
+                {
+                    "name": "Rigor",
+                    "severity": "Variable",
+                    "pattern": "Common symptom"
+                },
+                {
+                    "name": "Nausea",
+                    "severity": "Variable",
+                    "pattern": "Common gastrointestinal symptom"
+                },
+                {
+                    "name": "Vomiting",
+                    "severity": "Variable",
+                    "pattern": "Common gastrointestinal symptom"
+                },
+                {
+                    "name": "Diarrhea",
+                    "severity": "Variable",
+                    "pattern": "Common gastrointestinal symptom"
+                },
+                {
+                    "name": "Irritability",
+                    "severity": "Variable",
+                    "pattern": "May manifest as this in infants"
+                },
+                {
+                    "name": "Restlessness",
+                    "severity": "Variable",
+                    "pattern": "May manifest as this in infants"
+                },
+                {
+                    "name": "Confusion",
+                    "severity": "Variable",
+                    "pattern": "May manifest as this in older adults"
+                },
+                {
+                    "name": "Obtundation",
+                    "severity": "Variable",
+                    "pattern": "May manifest as this in older adults"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {
+                "temperature": "Elevated (fever, often absent in older patients)",
+                "respiratory_rate": "Increased (tachypnea)",
+                "heart_rate": "Increased (tachycardia)",
+                "oxygen_saturation": "May be decreased"
+            },
+            "physical_findings": [
+                "Crackles",
+                "Bronchial breath sounds",
+                "Egophony",
+                "Dullness to percussion",
+                "Signs of pleural effusion",
+                "Nasal flaring (infants)",
+                "Use of accessory muscles (infants)",
+                "Cyanosis (infants)"
+            ],
+            "lab_values": {
+                "complete_blood_count": "May show leukocytosis",
+                "basic_metabolic_profile": "May show abnormalities depending on severity"
+            },
+            "risk_factors": [
+                "Older age",
+                "Underlying comorbidities",
+                "Immunosuppression",
+                "Recent influenza",
+                "Known MRSA colonization",
+                "Prior MRSA infection",
+                "Hospitalization or antibiotic use in the previous 3 months",
+                "Severe chronic obstructive pulmonary disease (COPD)",
+                "Other structural lung disease",
+                "Exposure to infected animals or animal products"
+            ],
+            "imaging_findings": {
+                "chest_x_ray": "Infiltrate",
+                "computed_tomography (CT)": "May be used if chest x-ray is negative"
+            }
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Clinical presentation consistent with pneumonia",
+                "Infiltrate on chest x-ray"
+            ],
+            "supportive": [
+                "Abnormal lab values",
+                "Positive pathogen identification"
+            ]
+        },
+        "differential_diagnoses": [
+            "Acute bronchitis",
+            "Exacerbation of chronic obstructive pulmonary disease (COPD)",
+            "Heart failure",
+            "Organizing pneumonia",
+            "Hypersensitivity pneumonitis",
+            "Pulmonary embolism"
+        ]
+    },
+    "I50.9": {
+        "disease": "Congestive Heart Failure",
+        "icd_code": "I50.9",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Shortness of breath",
+                    "severity": "Variable, mild to severe",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Fatigue",
+                    "severity": "Variable, mild to severe",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Fluid buildup in lungs, legs, and feet",
+                    "severity": "Variable, mild to severe",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Heart palpitations",
+                    "severity": "Variable",
+                    "pattern": "Can occur with increased heart rate"
+                },
+                {
+                    "name": "Edema (swelling)",
+                    "severity": "Variable",
+                    "pattern": "Often in lower extremities"
+                },
+                {
+                    "name": "Weight gain",
+                    "severity": "Variable",
+                    "pattern": "Due to fluid retention"
+                },
+                {
+                    "name": "Reduced exercise tolerance",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Cough",
+                    "severity": "Variable",
+                    "pattern": "Often productive"
+                },
+                {
+                    "name": "Wheezing",
+                    "severity": "Variable",
+                    "pattern": "Due to fluid in lungs"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {
+                "heart_rate": "Increased",
+                "blood_pressure": "Variable, can be elevated or low",
+                "respiratory_rate": "Increased"
+            },
+            "physical_findings": [
+                "Enlarged heart (cardiomegaly)",
+                "Crackles in lungs (rales)",
+                "Jugular venous distention (JVD)",
+                "Peripheral edema",
+                "Hepatomegaly (enlarged liver)",
+                "Ascites (abdominal fluid)"
+            ],
+            "lab_values": {
+                "BNP": "Elevated",
+                "Electrolytes": "May be abnormal"
+            },
+            "risk_factors": [
+                "Coronary artery disease",
+                "High blood pressure",
+                "Diabetes",
+                "Obesity",
+                "Smoking",
+                "High cholesterol",
+                "Family history of heart failure",
+                "Age",
+                "Valve disease",
+                "Cardiomyopathy",
+                "Arrhythmias"
+            ],
+            "imaging_findings": {
+                "Chest X-ray": "Enlarged heart, pleural effusions",
+                "Echocardiogram": "Reduced ejection fraction, valvular abnormalities, wall motion abnormalities",
+                "ECG": "Arrhythmias, evidence of prior myocardial infarction"
+            }
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Symptoms of heart failure (shortness of breath, fatigue, edema)",
+                "Evidence of structural or functional cardiac abnormality (echocardiogram, chest x-ray)"
+            ],
+            "supportive": [
+                "Elevated BNP levels",
+                "Abnormal ECG findings"
+            ]
+        },
+        "differential_diagnoses": [
+            "Valvular heart disease",
+            "Cardiomyopathy",
+            "Coronary artery disease",
+            "Hypertension",
+            "Lung disease",
+            "Kidney disease",
+            "Anemia"
+        ]
+    },
+    "J44.9": {
+        "disease": "Chronic Obstructive Pulmonary Disease (COPD)",
+        "icd_code": "J44.9",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Chronic cough",
+                    "severity": "Variable",
+                    "pattern": "Persistent, may be productive"
+                },
+                {
+                    "name": "Shortness of breath (dyspnea)",
+                    "severity": "Variable",
+                    "pattern": "Progressive, exacerbated by exertion"
+                },
+                {
+                    "name": "Wheezing",
+                    "severity": "Variable",
+                    "pattern": "Intermittent or persistent"
+                },
+                {
+                    "name": "Chest tightness",
+                    "severity": "Variable",
+                    "pattern": "Intermittent or persistent"
+                },
+                {
+                    "name": "Increased sputum production",
+                    "severity": "Variable",
+                    "pattern": "Chronic or episodic"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {
+                "respiratory_rate": "Increased",
+                "oxygen_saturation": "Decreased"
+            },
+            "physical_findings": [
+                "Decreased breath sounds",
+                "Wheezes",
+                "Rhonchi",
+                "Use of accessory muscles for breathing",
+                "Barrel chest (in advanced cases)",
+                "Digital clubbing (in advanced cases)"
+            ],
+            "lab_values": {
+                "Arterial blood gas": {
+                    "PaO2": "Decreased",
+                    "PaCO2": "Increased or normal"
+                },
+                "Complete blood count": "May show polycythemia in advanced cases"
+            },
+            "risk_factors": [
+                "Smoking (most significant)",
+                "Exposure to air pollution",
+                "Occupational dusts and fumes",
+                "Genetic predisposition (alpha-1 antitrypsin deficiency)"
+            ],
+            "imaging_findings": {
+                "Chest X-ray": "Hyperinflation, flattened diaphragm, increased retrosternal air space",
+                "CT scan": "Emphysema (air trapping), bronchiectasis, mucus plugging"
+            }
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Symptoms of chronic airflow limitation (e.g., cough, sputum production, dyspnea)",
+                "Spirometry demonstrating airflow limitation (FEV1/FVC ratio < 0.7)"
+            ],
+            "supportive": [
+                "History of exposure to risk factors",
+                "Physical examination findings consistent with COPD",
+                "Abnormal imaging findings"
+            ]
+        },
+        "differential_diagnoses": [
+            "Asthma",
+            "Bronchiectasis",
+            "Cystic fibrosis",
+            "Pulmonary fibrosis",
+            "Heart failure",
+            "Lung cancer"
+        ]
+    },
+    "I10": {
+        "disease": "Hypertension",
+        "icd_code": "I10",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Elevated blood pressure",
+                    "severity": "Variable, depending on the stage of hypertension",
+                    "pattern": "Persistent elevation"
+                },
+                {
+                    "name": "Shortness of breath (dyspnea)",
+                    "severity": "Variable",
+                    "pattern": "Can be present in advanced stages with heart involvement"
+                },
+                {
+                    "name": "Orthopnea",
+                    "severity": "Variable",
+                    "pattern": "Can be present in advanced stages with heart involvement"
+                },
+                {
+                    "name": "Edema",
+                    "severity": "Variable",
+                    "pattern": "Can be present in advanced stages with kidney or heart involvement"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {
+                "blood_pressure": "Systolic \u2265140 mmHg and/or Diastolic \u226590 mmHg"
+            },
+            "physical_findings": [
+                "Pitting edema",
+                "Cardiomegaly (on EKG)"
+            ],
+            "lab_values": {},
+            "risk_factors": [
+                "Smoking",
+                "Family history of hypertension",
+                "Obesity",
+                "Age",
+                "High sodium diet"
+            ],
+            "imaging_findings": {
+                "chest_x_ray": "May show pulmonary edema"
+            }
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Persistent elevation of blood pressure (systolic \u2265140 mmHg and/or diastolic \u226590 mmHg)"
+            ],
+            "supportive": [
+                "Presence of symptoms like shortness of breath, edema",
+                "Family history",
+                "Risk factors"
+            ]
+        },
+        "differential_diagnoses": []
+    },
+    "J45": {
+        "disease": "Asthma",
+        "icd_code": "J45",
+        "parameters": {
+            "symptoms": [],
+            "reversion": "1",
+            "vital_signs": {},
+            "physical_findings": [],
+            "lab_values": {},
+            "risk_factors": [],
+            "imaging_findings": {}
+        },
+        "diagnostic_criteria": {},
+        "differential_diagnoses": []
+    },
+    "M05": {
+        "disease": "Rheumatoid Arthritis",
+        "icd_code": "M05",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Joint pain",
+                    "severity": "Variable",
+                    "pattern": "Symmetrical, often affecting small joints of hands and feet"
+                },
+                {
+                    "name": "Joint swelling",
+                    "severity": "Variable",
+                    "pattern": "Symmetrical, often affecting small joints of hands and feet"
+                },
+                {
+                    "name": "Joint stiffness",
+                    "severity": "Variable",
+                    "pattern": "Morning stiffness lasting >1 hour, improves with movement"
+                },
+                {
+                    "name": "Decreased joint flexibility",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Fatigue",
+                    "severity": "Variable",
+                    "pattern": "Generalized"
+                },
+                {
+                    "name": "Generalized feeling of sickness",
+                    "severity": "Variable",
+                    "pattern": "Present during flares"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {},
+            "physical_findings": [
+                "Symmetrical joint involvement",
+                "Joint swelling",
+                "Joint tenderness",
+                "Warm joints"
+            ],
+            "lab_values": {
+                "Rheumatoid factor": "Elevated",
+                "Anti-citrullinated peptide antibodies (ACPA)": "Elevated"
+            },
+            "risk_factors": [
+                "Female sex",
+                "Smoking",
+                "Genetics"
+            ],
+            "imaging_findings": {
+                "X-ray": "Joint erosions, narrowing of joint space",
+                "MRI": "Synovitis, bone marrow edema",
+                "Ultrasound": "Synovitis, tenosynovitis"
+            }
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Joint involvement (at least one joint)",
+                "Symmetrical joint involvement",
+                "Morning stiffness lasting >1 hour"
+            ],
+            "supportive": [
+                "Elevated rheumatoid factor",
+                "Elevated anti-citrullinated peptide antibodies (ACPA)",
+                "Imaging findings consistent with RA"
+            ]
+        },
+        "differential_diagnoses": []
+    },
+    "G35": {
+        "disease": "Multiple Sclerosis",
+        "icd_code": "G35",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Muscle weakness",
+                    "severity": "Variable, can range from mild to severe enough to cause paralysis",
+                    "pattern": "Often begins in the hands and legs"
+                },
+                {
+                    "name": "Tingling and burning sensations",
+                    "severity": "Variable",
+                    "pattern": "Can affect various parts of the body"
+                },
+                {
+                    "name": "Numbness",
+                    "severity": "Variable",
+                    "pattern": "Can affect various parts of the body"
+                },
+                {
+                    "name": "Chronic pain",
+                    "severity": "Variable",
+                    "pattern": "Can be associated with optic neuritis, trigeminal neuralgia, limb spasms"
+                },
+                {
+                    "name": "Coordination and balance problems",
+                    "severity": "Variable",
+                    "pattern": "Can affect mobility"
+                },
+                {
+                    "name": "Fatigue",
+                    "severity": "Variable",
+                    "pattern": "Common symptom"
+                },
+                {
+                    "name": "Vision problems",
+                    "severity": "Variable, can range from blurred vision to temporary blindness",
+                    "pattern": "Can include blurred or grayed vision, temporary blindness in one eye, loss of normal color vision, issues with depth perception, or loss of vision in parts of the visual field. Nystagmus, opsoclonus, and double vision can also occur."
+                },
+                {
+                    "name": "Difficulty with bladder control",
+                    "severity": "Variable",
+                    "pattern": "Can range from urgency to incontinence"
+                },
+                {
+                    "name": "Depression",
+                    "severity": "Variable",
+                    "pattern": "Can be a significant symptom"
+                },
+                {
+                    "name": "Cognitive difficulties",
+                    "severity": "Variable",
+                    "pattern": "Can affect thinking clearly"
+                },
+                {
+                    "name": "Muscle stiffness and spasms",
+                    "severity": "Variable",
+                    "pattern": "Can affect walking or standing"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {},
+            "physical_findings": [
+                "Muscle weakness",
+                "Muscle stiffness and spasms",
+                "Ataxia (lack of coordination)",
+                "Nystagmus (involuntary eye movements)",
+                "Optic neuritis (inflammation of the optic nerve)"
+            ],
+            "lab_values": {},
+            "risk_factors": [
+                "Female sex",
+                "Family history of MS",
+                "Epstein-Barr virus infection",
+                "Smoking",
+                "Low vitamin D levels",
+                "Lack of sun exposure"
+            ],
+            "imaging_findings": {
+                "MRI": "Characteristic lesions (plaques) in the brain and spinal cord"
+            }
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Clinical symptoms consistent with MS",
+                "Characteristic MRI findings"
+            ],
+            "supportive": [
+                "Evoked potential studies",
+                "CSF analysis (may show oligoclonal bands)"
+            ]
+        },
+        "differential_diagnoses": []
+    },
+    "G30": {
+        "disease": "Alzheimer's Disease",
+        "icd_code": "G30",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Memory loss",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Cognitive decline",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Difficulty with language",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Impaired judgment",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Changes in personality and behavior",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {},
+            "physical_findings": [],
+            "lab_values": {},
+            "risk_factors": [
+                "Age",
+                "Family history"
+            ],
+            "imaging_findings": {
+                "MRI": "Brain atrophy",
+                "PET": "Reduced metabolism in specific brain regions"
+            }
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Cognitive impairment",
+                "Progressive decline in cognitive function"
+            ],
+            "supportive": [
+                "Neuropsychological testing",
+                "Brain imaging"
+            ]
+        },
+        "differential_diagnoses": []
+    },
+    "G20": {
+        "disease": "Parkinson's Disease",
+        "icd_code": "G20",
+        "parameters": {
+            "symptoms": [
+                {
+                    "name": "Tremor",
+                    "severity": "Variable",
+                    "pattern": "Typically begins on one side of the body, eventually affecting both"
+                },
+                {
+                    "name": "Stiffness",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Impaired balance",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Difficulty walking",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Difficulty talking",
+                    "severity": "Variable",
+                    "pattern": "Progressive"
+                },
+                {
+                    "name": "Bradykinesia",
+                    "severity": "Variable",
+                    "pattern": "Slowness of movement"
+                },
+                {
+                    "name": "Festination",
+                    "severity": "Variable",
+                    "pattern": "Tendency to lean forward, taking small, quick steps"
+                },
+                {
+                    "name": "Start hesitation",
+                    "severity": "Variable",
+                    "pattern": "Difficulty initiating movement"
+                },
+                {
+                    "name": "Freezing",
+                    "severity": "Variable",
+                    "pattern": "Sudden stopping while walking"
+                },
+                {
+                    "name": "Depression",
+                    "severity": "Mild to disabling",
+                    "pattern": "Experienced by half of patients"
+                },
+                {
+                    "name": "Fatigue",
+                    "severity": "Variable",
+                    "pattern": "Not directly related to movement"
+                },
+                {
+                    "name": "Blood pressure changes",
+                    "severity": "Variable",
+                    "pattern": "Not directly related to movement"
+                },
+                {
+                    "name": "Cognitive impairment",
+                    "severity": "Variable",
+                    "pattern": "Can occur in later stages"
+                },
+                {
+                    "name": "Sleep disturbances",
+                    "severity": "Variable",
+                    "pattern": "Can occur in later stages"
+                },
+                {
+                    "name": "Constipation",
+                    "severity": "Variable",
+                    "pattern": "Can occur in later stages"
+                },
+                {
+                    "name": "Urinary problems",
+                    "severity": "Variable",
+                    "pattern": "Can occur in later stages"
+                },
+                {
+                    "name": "Dyskinesia",
+                    "severity": "Variable",
+                    "pattern": "Involuntary movements, often a side effect of medication"
+                },
+                {
+                    "name": "Hallucinations",
+                    "severity": "Variable",
+                    "pattern": "Can be a side effect of medication"
+                },
+                {
+                    "name": "Psychosis",
+                    "severity": "Variable",
+                    "pattern": "Can be a side effect of medication"
+                },
+                {
+                    "name": "Orthostatic hypotension",
+                    "severity": "Variable",
+                    "pattern": "Lightheadedness upon standing"
+                }
+            ],
+            "reversion": "1",
+            "vital_signs": {
+                "blood_pressure": "Orthostatic hypotension (low blood pressure upon standing)"
+            },
+            "physical_findings": [
+                "Tremor",
+                "Rigidity",
+                "Bradykinesia",
+                "Postural instability",
+                "Parkinsonian gait"
+            ],
+            "lab_values": {
+                "alpha-synuclein": "Abnormal levels detected in spinal fluid (and potentially blood in future tests)"
+            },
+            "risk_factors": [
+                "Genetics (family history)",
+                "Age (most common after 60)",
+                "Environmental factors (unknown)"
+            ],
+            "imaging_findings": {}
+        },
+        "diagnostic_criteria": {
+            "required": [
+                "Presence of at least two of the cardinal motor features: tremor, rigidity, bradykinesia, postural instability",
+                "Asymmetrical onset of symptoms"
+            ],
+            "supportive": [
+                "Response to levodopa therapy",
+                "Exclusion of other causes of parkinsonism"
+            ]
+        },
+        "differential_diagnoses": [
+            "Multiple system atrophy",
+            "Lewy body dementia",
+            "Progressive supranuclear palsy",
+            "Corticobasal degeneration",
+            "Other parkinsonian syndromes"
+        ]
+    }
+}

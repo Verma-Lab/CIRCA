@@ -1,0 +1,17 @@
+{
+    "disease": "Mesothelioma of pericardium",
+    "icd_code": "C452",
+    "parameters": {
+        "symptoms": [],
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

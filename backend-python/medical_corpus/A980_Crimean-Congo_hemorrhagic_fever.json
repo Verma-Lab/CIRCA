@@ -1,0 +1,177 @@
+{
+    "disease": "Crimean-Congo hemorrhagic fever",
+    "icd_code": "A980",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "high",
+                "pattern": "sudden onset"
+            },
+            {
+                "name": "Muscle ache (myalgia)",
+                "severity": "moderate to high",
+                "pattern": "early"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Neck pain and stiffness",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Backache",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Headache",
+                "severity": "moderate to high",
+                "pattern": "early"
+            },
+            {
+                "name": "Sore eyes",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Nausea",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "moderate",
+                "pattern": "early, may localize to upper right quadrant"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Mood swings",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Confusion",
+                "severity": "moderate",
+                "pattern": "early"
+            },
+            {
+                "name": "Sleepiness",
+                "severity": "moderate",
+                "pattern": "after 2-4 days"
+            },
+            {
+                "name": "Depression",
+                "severity": "moderate",
+                "pattern": "after 2-4 days"
+            },
+            {
+                "name": "Lassitude",
+                "severity": "moderate",
+                "pattern": "after 2-4 days"
+            },
+            {
+                "name": "Hepatomegaly (liver enlargement)",
+                "severity": "moderate to high",
+                "pattern": "after 2-4 days"
+            },
+            {
+                "name": "Tachycardia (fast heart rate)",
+                "severity": "moderate to high",
+                "pattern": "variable"
+            },
+            {
+                "name": "Lymphadenopathy (enlarged lymph nodes)",
+                "severity": "moderate",
+                "pattern": "variable"
+            },
+            {
+                "name": "Petechial rash",
+                "severity": "moderate to high",
+                "pattern": "variable, may progress to ecchymoses"
+            },
+            {
+                "name": "Ecchymoses (larger rashes)",
+                "severity": "high",
+                "pattern": "may follow petechiae"
+            },
+            {
+                "name": "Other hemorrhagic phenomena",
+                "severity": "variable",
+                "pattern": "variable"
+            },
+            {
+                "name": "Hepatitis",
+                "severity": "moderate to high",
+                "pattern": "usually present"
+            },
+            {
+                "name": "Rapid kidney deterioration",
+                "severity": "high",
+                "pattern": "in severely ill patients, after 5th day"
+            },
+            {
+                "name": "Sudden liver failure",
+                "severity": "high",
+                "pattern": "in severely ill patients, after 5th day"
+            },
+            {
+                "name": "Pulmonary failure",
+                "severity": "high",
+                "pattern": "in severely ill patients, after 5th day"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "increased (tachycardia)"
+        },
+        "physical_findings": [
+            "Hepatomegaly",
+            "Lymphadenopathy",
+            "Petechial rash",
+            "Ecchymoses"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Tick bite",
+            "Contact with viremic animal tissues (during and immediately post-slaughter)",
+            "Contact with infected blood or tissues",
+            "Human-to-human transmission (close contact with blood, secretions, organs, or bodily fluids of infected persons)",
+            "Hospital-acquired infections (improper sterilization, reuse of needles, contamination of medical supplies)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical symptoms consistent with CCHF",
+            "Positive laboratory test for CCHFV (virus or RNA detection in blood or tissue samples)"
+        ],
+        "supportive": [
+            "Exposure to risk factors (tick bite, contact with infected animals or humans)"
+        ]
+    },
+    "differential_diagnoses": []
+}

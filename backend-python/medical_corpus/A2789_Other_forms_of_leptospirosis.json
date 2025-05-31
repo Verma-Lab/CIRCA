@@ -1,0 +1,66 @@
+{
+    "disease": "Other forms of leptospirosis",
+    "icd_code": "A2789",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "Variable",
+                "pattern": "May occur initially or after a period of remission"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Muscle aches",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Joint aches",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Petechiae (small red spots)",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May occur after initial symptoms subside"
+            },
+            {
+                "name": "Organ inflammation (kidneys, heart, etc.)",
+                "severity": "Variable",
+                "pattern": "May occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (high fever)"
+        },
+        "physical_findings": [
+            "Petechiae (small red spots)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Contact with contaminated water or soil",
+            "Contact with infected animals (dogs, pigs, horses, mice)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

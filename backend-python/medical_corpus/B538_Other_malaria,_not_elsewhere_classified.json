@@ -1,0 +1,86 @@
+{
+    "disease": "Other malaria, not elsewhere classified",
+    "icd_code": "B538",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to life-threatening",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Chills",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Continuous or intermittent"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Moderate to severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Episodic"
+            },
+            {
+                "name": "Difficulty breathing",
+                "severity": "Severe",
+                "pattern": "Continuous"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "respiratory_rate": "Increased (in severe cases)"
+        },
+        "physical_findings": [
+            "Pallor",
+            "Jaundice (in severe cases)",
+            "Splenomegaly (in some cases)",
+            "Hepatomegaly (in some cases)"
+        ],
+        "lab_values": {
+            "blood_smear": "Presence of malaria parasites",
+            "hemoglobin": "Decreased",
+            "liver_function_tests": "Abnormal (in severe cases)",
+            "renal_function_tests": "Abnormal (in severe cases)"
+        },
+        "risk_factors": [
+            "Travel to malaria-endemic areas",
+            "Infancy",
+            "Age under 5 years",
+            "Pregnancy",
+            "HIV/AIDS",
+            "Blood transfusion",
+            "Contaminated needles"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malaria parasites in blood smear or rapid diagnostic test (RDT)"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with malaria",
+            "Travel history to malaria-endemic areas"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other febrile illnesses",
+        "Influenza",
+        "Dengue fever",
+        "Typhoid fever",
+        "Sepsis"
+    ]
+}

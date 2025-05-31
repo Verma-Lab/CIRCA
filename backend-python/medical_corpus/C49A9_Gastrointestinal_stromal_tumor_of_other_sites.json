@@ -1,0 +1,61 @@
+{
+    "disease": "Gastrointestinal stromal tumor of other sites",
+    "icd_code": "C49A9",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Variable",
+                "pattern": "Acute (melena or hematochezia) or chronic (anemia)"
+            },
+            {
+                "name": "Abdominal pain or discomfort",
+                "severity": "Variable",
+                "pattern": "Related to mass effect"
+            },
+            {
+                "name": "Early satiety",
+                "severity": "Variable",
+                "pattern": "Related to mass effect"
+            },
+            {
+                "name": "Abdominal distension",
+                "severity": "Variable",
+                "pattern": "Related to mass effect"
+            },
+            {
+                "name": "Palpable mass",
+                "severity": "Variable",
+                "pattern": "Related to mass effect"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "None",
+                "pattern": "Incidental finding"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abdominal mass (in some cases)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT": "Solid, contrast-enhancing mass with smooth margins",
+            "MRI": "Alternative to CT, especially if iodinated contrast is contraindicated",
+            "Endoscopy": "Sub-epithelial lesions (SEL) with a smooth bulge covered with normal-appearing mucosa",
+            "EUS": "Hypoechoic solid mass originating from the second (muscularis mucosa) or fourth (muscularis propria) layers of the GI tract wall"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Morphologic findings consistent with GIST on hematoxylin-eosin (H&E) staining",
+            "Immunohistochemical testing positive for KIT (in approximately 95% of cases), or DOG-1 and CD34 if KIT is negative"
+        ],
+        "supportive": [
+            "Genotyping"
+        ]
+    },
+    "differential_diagnoses": []
+}

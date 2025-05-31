@@ -1,0 +1,152 @@
+{
+    "disease": "Other early congenital syphilis, symptomatic",
+    "icd_code": "A5009",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vesiculobullous eruptions",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Macular, copper-colored rash",
+                "severity": "Variable",
+                "pattern": "Palms and soles; first 3 months of life"
+            },
+            {
+                "name": "Papular lesions",
+                "severity": "Variable",
+                "pattern": "Around nose and mouth, diaper area; first 3 months of life"
+            },
+            {
+                "name": "Petechial lesions",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Generalized lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Failure to thrive",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Mucopurulent or blood-stained nasal discharge (snuffles)",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Choroiditis",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Hydrocephalus",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Intellectual disability",
+                "severity": "Variable",
+                "pattern": "First 3 months of life"
+            },
+            {
+                "name": "Osteochondritis (chondroepiphysitis)",
+                "severity": "Variable",
+                "pattern": "Within first 8 months of life"
+            },
+            {
+                "name": "Pseudoparalysis",
+                "severity": "Variable",
+                "pattern": "Within first 8 months of life"
+            },
+            {
+                "name": "Restricted movements of upper extremities",
+                "severity": "Variable",
+                "pattern": "Soon after birth"
+            },
+            {
+                "name": "Swelling of elbow joints",
+                "severity": "Variable",
+                "pattern": "Soon after birth"
+            },
+            {
+                "name": "Swelling of knee joint",
+                "severity": "Variable",
+                "pattern": "Soon after birth"
+            },
+            {
+                "name": "Painful limitation of movements",
+                "severity": "Variable",
+                "pattern": "Soon after birth"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Mild icterus",
+            "Swelling of both elbow joints",
+            "Swelling of right knee joint",
+            "Painful limitation of movements",
+            "Marked paucity of spontaneous movements of both upper limbs",
+            "Parrot's pseudoparalysis"
+        ],
+        "lab_values": {
+            "VDRL": "Positive (1:2048 in baby, 1:128 in mother)",
+            "CRP": "Normal",
+            "Blood culture": "Sterile",
+            "CSF VDRL": "Positive",
+            "CSF analysis": "Normal sugar and proteins with lymphocytosis",
+            "TPHA": "Positive (baby, mother, and father)"
+        },
+        "risk_factors": [
+            "Maternal syphilis during pregnancy"
+        ],
+        "imaging_findings": {
+            "Infantogram": "Osteolytic erosions with indistinct cortical outlines of the ulnar ends of both humerus; stippling and erosions of the humeral end of left ulna; moth-eaten appearance along the medial sides of upper metaphyseal ends of both tibias (Wimberger's sign)",
+            "Neurosonogram": "Normal",
+            "Ultrasound scan of abdomen": "Normal"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive maternal serologic testing",
+            "Clinical manifestations (in symptomatic cases)",
+            "Positive infant serologic testing (VDRL, TPHA)",
+            "Characteristic radiographic findings (osteochondritis, periostitis, metaphysitis, osteitis)"
+        ],
+        "supportive": [
+            "Darkfield microscopy of lesions, placenta, or umbilical cord",
+            "CSF analysis (cell count, VDRL, protein)",
+            "Complete blood count with platelet count",
+            "Liver tests",
+            "Long-bone x-rays",
+            "Ophthalmologic evaluation",
+            "Chest x-rays",
+            "Neuroimaging",
+            "Auditory brain stem response"
+        ]
+    },
+    "differential_diagnoses": [
+        "Septic arthritis",
+        "Traumatic arthritis (Battered Baby Syndrome)"
+    ]
+}

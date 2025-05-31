@@ -1,0 +1,126 @@
+{
+    "disease": "Omsk hemorrhagic fever",
+    "icd_code": "A981",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (39\u201340 \u00b0C)",
+                "pattern": "Biphasic in some cases; initial phase 1-8 days, second phase after 3 weeks if not resolved"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in both phases, more severe in second phase"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Variable",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Hemorrhages",
+                "severity": "Variable",
+                "pattern": "Focal hemorrhage in mucosa of gingival, uterus, and lungs; petechial rash on upper body; subconjunctival hemorrhage; nasal, gingival and uterine bleeding; skin hemorrhages"
+            },
+            {
+                "name": "Papulovesicular rash",
+                "severity": "Variable",
+                "pattern": "On soft palate"
+            },
+            {
+                "name": "Cervical lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Enlarged lymph glandular tissue in the neck"
+            },
+            {
+                "name": "Neurological involvement",
+                "severity": "Variable",
+                "pattern": "Occasional in initial phase; encephalitis in second phase"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Present in initial phase"
+            },
+            {
+                "name": "Hyperesthesia",
+                "severity": "Variable",
+                "pattern": "Extreme sensitivity of the skin"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "Present in second phase"
+            },
+            {
+                "name": "Hearing loss",
+                "severity": "Variable",
+                "pattern": "Long-term consequence"
+            },
+            {
+                "name": "Hair loss",
+                "severity": "Variable",
+                "pattern": "Long-term consequence"
+            },
+            {
+                "name": "Behavioral or psychological difficulties",
+                "severity": "Variable",
+                "pattern": "Long-term consequence associated with neurological conditions"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Long-term consequence"
+            },
+            {
+                "name": "Loss of neurological functions",
+                "severity": "Variable",
+                "pattern": "Rare long-term consequence"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (39\u201340 \u00b0C)"
+        },
+        "physical_findings": [
+            "Petechial rash",
+            "Lymphadenopathy",
+            "Hemorrhages (various locations)"
+        ],
+        "lab_values": {
+            "virus isolation": "Positive from blood",
+            "serologic testing": "Positive using immunosorbent serological assay"
+        },
+        "risk_factors": [
+            "Tick bites",
+            "Contact with infected small mammals (muskrats, rodents)",
+            "Contact with blood, feces, or urine of infected muskrats",
+            "Consumption of milk from infected goats or sheep",
+            "Occupation involving contact with muskrats (trappers, poachers)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Omsk hemorrhagic fever",
+            "Positive virus isolation from blood",
+            "Positive serologic testing"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Tick-borne encephalitis",
+        "Other hemorrhagic fevers"
+    ]
+}

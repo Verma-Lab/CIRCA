@@ -1,0 +1,89 @@
+{
+    "disease": "Mumps polyneuropathy",
+    "icd_code": "B2684",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Burning paraesthesias",
+                "severity": "Transient",
+                "pattern": "Extending below the neck"
+            },
+            {
+                "name": "Postural syncope",
+                "severity": "Incapacitating",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Abdominal colic",
+                "severity": "Severe",
+                "pattern": "Associated with vomiting and intermittent diarrhea"
+            },
+            {
+                "name": "Diaphoresis",
+                "severity": "Profuse, generalized",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Urinary retention",
+                "severity": "Requiring catheterization",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Increased thirst",
+                "severity": "Present",
+                "pattern": "Ongoing"
+            },
+            {
+                "name": "Postural hypotension",
+                "severity": "Marked",
+                "pattern": "Systolic blood pressure drop on standing"
+            },
+            {
+                "name": "Postural giddiness",
+                "severity": "Occasional",
+                "pattern": "Persistent after initial symptoms"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Supine: 150/100 mmHg; Standing: 60 mmHg systolic (diastolic unrecordable); Later: Supine 110/70 mmHg, Standing 100/56 mmHg",
+            "heart_rate": "88 bpm (unchanged with postural changes)"
+        },
+        "physical_findings": [
+            "Bilateral parotid swelling",
+            "Dryness of mouth",
+            "Small pupils, sluggishly and symmetrically reacting to light and accommodation",
+            "Absent deep tendon jerks",
+            "No cerebellar signs or peripheral nerve thickening",
+            "No superficial or deep sensory loss, hyperaesthesias or trunkal sensory level"
+        ],
+        "lab_values": {
+            "blood_biochemistry": "Normal",
+            "haemogram": "Normal",
+            "serum_protein_electrophoresis": "Normal",
+            "urinary_porphobilinogen": "Negative",
+            "csf_cytology": "Normal",
+            "csf_biochemical_studies": "Normal",
+            "csf_viral_cultures": "Negative for mumps virus",
+            "nerve_conduction_studies": "Essentially normal except for absent F-response on peroneal nerve stimulation in the 3rd week"
+        },
+        "risk_factors": [
+            "Mumps infection"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Acute or subacute onset of autonomic dysfunction following mumps infection",
+            "Monophasic course",
+            "Gradual partial or complete recovery"
+        ],
+        "supportive": [
+            "Abnormal autonomic tests (e.g., absent sympathetic skin response, abnormal Valsalva ratio, no heart rate response to standing)",
+            "Possible sensory symptoms and absent F-response in peroneal nerve suggesting proximal somatic nerve involvement"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other causes of autonomic dysfunction (as listed in Table I of the source article)"
+    ]
+}

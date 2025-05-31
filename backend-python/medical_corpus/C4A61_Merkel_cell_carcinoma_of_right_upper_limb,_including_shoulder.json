@@ -1,0 +1,66 @@
+{
+    "disease": "Merkel cell carcinoma of right upper limb, including shoulder",
+    "icd_code": "C4A61",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless, firm, dome-shaped, red, and ulcerated lesion",
+                "severity": "Variable",
+                "pattern": "Localized to the right upper limb, including shoulder"
+            },
+            {
+                "name": "Rapid growth",
+                "severity": "Variable",
+                "pattern": "Over a few months"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Recurrent episodes"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "12 cm \u00d7 10 cm fungating soft tissue mass",
+            "No evidence of axillary or cervical lymphadenopathy",
+            "Firm, enlarged, elevated lymph node (in some cases)"
+        ],
+        "lab_values": {
+            "Histology": "Ulcerated and invasive tumor involving the dermis; composed of sheets of monotonous atypical round cells with hyperchromatic nuclei; positive for chromogranin, CD56, and CK20; negative for S-100, TTF-1, LCA, and Melan-A"
+        },
+        "risk_factors": [
+            "Long-term sun exposure",
+            "Weakened immune system",
+            "Previous skin malignancy",
+            "Exposure to ultraviolet light",
+            "Treatment with methoxsalen",
+            "Arsenic exposure",
+            "Merkel cell polyomavirus (MCPV) infection",
+            "Old age (>75 years)",
+            "Male gender",
+            "Central distribution of the tumor (head and neck)"
+        ],
+        "imaging_findings": {
+            "Ultrasound": "Highly vascularized mass",
+            "MRI": "Superficial and subcutaneous mass without underlying muscle involvement"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological examination showing sheets of monotonous atypical round cells with hyperchromatic nuclei",
+            "Immunohistochemical staining positive for chromogranin, CD56, and CK20; negative for S-100, TTF-1, LCA, and Melan-A"
+        ],
+        "supportive": [
+            "Clinical presentation of a painless, firm, dome-shaped, red, and ulcerated lesion",
+            "Rapid growth of the lesion",
+            "Imaging findings consistent with a highly vascularized mass"
+        ]
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Haemangioma",
+        "Wart",
+        "Cyst"
+    ]
+}

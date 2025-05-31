@@ -1,0 +1,74 @@
+{
+    "disease": "Salmonella sepsis",
+    "icd_code": "A021",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be severe leading to dehydration",
+                "pattern": "Within 8 to 72 hours after exposure, lasting up to 10 days"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high",
+                "pattern": "Within 8 to 72 hours after exposure, resolving within 48-72 hours in some cases"
+            },
+            {
+                "name": "Abdominal cramps",
+                "severity": "Variable",
+                "pattern": "Within 8 to 72 hours after exposure"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Within 8 to 72 hours after exposure"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Within 8 to 72 hours after exposure"
+            },
+            {
+                "name": "Dehydration",
+                "severity": "Severe, can be life-threatening",
+                "pattern": "Can occur as a result of severe diarrhea"
+            },
+            {
+                "name": "Reactive arthritis (Reiter's syndrome)",
+                "severity": "Variable",
+                "pattern": "Can develop as a complication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "heart_rate": "Potentially elevated depending on severity",
+            "blood_pressure": "Potentially low in case of severe dehydration"
+        },
+        "physical_findings": [
+            "Signs of dehydration (dry mucous membranes, decreased skin turgor)",
+            "Abdominal tenderness"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Salmonella",
+            "complete_blood_count": "Potentially showing leukocytosis (increased white blood cell count)"
+        },
+        "risk_factors": [
+            "Consumption of contaminated food or water",
+            "Travel to countries with poor sanitation",
+            "Weakened immune system (e.g., infants, young children, older adults, immunocompromised individuals)",
+            "Co-infection with malaria or HIV"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Salmonella"
+        ],
+        "supportive": [
+            "Clinical symptoms (fever, diarrhea, abdominal cramps)",
+            "Exposure to risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,32 @@
+{
+    "disease": "Squamous cell carcinoma of skin of unspecified ear and external auricular canal",
+    "icd_code": "C44221",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Ear lesion"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Fair skin",
+            "High ultraviolet index"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation of ear lesion"
+        ]
+    },
+    "differential_diagnoses": [
+        "Basal cell carcinoma",
+        "Adenoid cystic carcinoma",
+        "Ceruminous adenocarcinoma",
+        "Middle ear adenocarcinoma"
+    ]
+}

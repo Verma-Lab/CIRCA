@@ -1,0 +1,149 @@
+{
+    "disease": "Acute and fulminating melioidosis",
+    "icd_code": "A241",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Consistent"
+            },
+            {
+                "name": "Sepsis syndrome",
+                "severity": "High",
+                "pattern": "Common in acute disease"
+            },
+            {
+                "name": "Septic shock",
+                "severity": "High",
+                "pattern": "Develops in 20% of acute cases"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Most common acute infection in adults; approximately 20% in pediatric cases"
+            },
+            {
+                "name": "Skin lesions",
+                "severity": "Variable",
+                "pattern": "More frequent in children (60%) than adults (13%); often solitary at inoculation site"
+            },
+            {
+                "name": "Visceral abscesses",
+                "severity": "Variable",
+                "pattern": "Common in spleen, liver, adrenals, and kidneys; prostatic abscesses common in Australian males"
+            },
+            {
+                "name": "Encephalomyelitis",
+                "severity": "High",
+                "pattern": "Infrequent but potentially devastating; more common in Australia"
+            },
+            {
+                "name": "Osteomyelitis",
+                "severity": "Variable",
+                "pattern": "Can occur due to penetrating injuries or hematogenous dissemination"
+            },
+            {
+                "name": "Septic arthritis",
+                "severity": "Variable",
+                "pattern": "Common in acute disease; usually involves a single large joint"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "May predominate clinically in acute septicemic type"
+            },
+            {
+                "name": "Gastroenteritis",
+                "severity": "Variable",
+                "pattern": "May predominate clinically in acute septicemic type"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "May predominate clinically in acute septicemic type"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Variable",
+                "pattern": "Can be present in acute cases"
+            },
+            {
+                "name": "Constitutional symptoms",
+                "severity": "Variable",
+                "pattern": "Common in chronic melioidosis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Elevated",
+            "blood_pressure": "May be low in septic shock",
+            "respiratory_rate": "Elevated"
+        },
+        "physical_findings": [
+            "Skin lesions",
+            "Abscesses (various locations)",
+            "Signs of sepsis",
+            "Lung consolidation (pneumonia)"
+        ],
+        "lab_values": {
+            "CRP": "Elevated",
+            "WBC": "May be normal, slightly elevated, or decreased (leucopenia)",
+            "Lymphocytes": "Decreased (lymphopenia)",
+            "Transaminases": "Elevated",
+            "Bilirubin": "Elevated",
+            "Urea": "Elevated",
+            "Creatinine": "Elevated",
+            "Blood glucose": "Low (hypoglycemia)",
+            "Blood pH": "Low (acidosis)"
+        },
+        "risk_factors": [
+            "Diabetes mellitus",
+            "Thalassaemia",
+            "Male gender",
+            "Renal disease",
+            "Excessive alcohol consumption",
+            "Chronic lung disease",
+            "Glucocorticoid use",
+            "Exposure to contaminated soil or water",
+            "Sickle cell disease",
+            "Harmful ethanol consumption",
+            "Chronic kidney disease",
+            "Liver disease"
+        ],
+        "imaging_findings": {
+            "Chest X-ray": "Bilateral fluffy opacities, focal infiltrates, effusions, lung consolidation",
+            "CT scan": "Multiple cavitating consolidations, hepatosplenic abscesses, psoas abscess, prostatic abscess"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Burkholderia pseudomallei from clinical specimens"
+        ],
+        "supportive": [
+            "Clinical presentation consistent with melioidosis",
+            "Epidemiological risk factors",
+            "Positive serological tests (with careful interpretation)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malaria",
+        "Enteric fever",
+        "Typhus",
+        "Leptospirosis",
+        "Necrotising fasciitis",
+        "Gram-negative bacteraemia",
+        "Staphylococcal bacteraemia",
+        "Invasive pneumococcal disease",
+        "Invasive meningococcal disease",
+        "Plague",
+        "Vibrio vulnificus disease",
+        "Tuberculosis",
+        "Fungal infection",
+        "Neoplasm",
+        "Community-acquired pneumonia",
+        "Septicaemic shock",
+        "Localized skin infection"
+    ]
+}

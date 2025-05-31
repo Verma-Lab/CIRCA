@@ -1,0 +1,115 @@
+{
+    "disease": "Plasmodium vivax malaria with other complications",
+    "icd_code": "B518",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Tertian (every 48 hours)"
+            },
+            {
+                "name": "Hepatic dysfunction",
+                "severity": "Variable",
+                "pattern": "Elevated bilirubin, liver enzymes"
+            },
+            {
+                "name": "Renal dysfunction",
+                "severity": "Variable",
+                "pattern": "Elevated creatinine, blood urea nitrogen"
+            },
+            {
+                "name": "Cerebral malaria",
+                "severity": "Severe",
+                "pattern": "Impaired consciousness, coma"
+            },
+            {
+                "name": "Acute respiratory distress syndrome (ARDS)",
+                "severity": "Severe",
+                "pattern": "Respiratory distress"
+            },
+            {
+                "name": "Shock",
+                "severity": "Severe",
+                "pattern": "Circulatory collapse"
+            },
+            {
+                "name": "Severe anemia",
+                "severity": "Severe",
+                "pattern": "Hemoglobin <5 gm/dl"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Variable",
+                "pattern": "Low platelet count, potential for bleeding"
+            },
+            {
+                "name": "Hypoglycemia",
+                "severity": "Severe",
+                "pattern": "Blood glucose <40 mg/dl"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable",
+                "pattern": "Yellowing of skin and eyes"
+            },
+            {
+                "name": "Hemoglobinuria",
+                "severity": "Variable",
+                "pattern": "Hemoglobin in urine"
+            },
+            {
+                "name": "Abnormal bleeding",
+                "severity": "Variable",
+                "pattern": "Epistaxis, gum bleed, petechiae"
+            },
+            {
+                "name": "Pulmonary edema",
+                "severity": "Severe",
+                "pattern": "Fluid in lungs"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Variable",
+            "blood_pressure": "Variable (potentially low in shock)",
+            "respiratory_rate": "Variable (potentially elevated in ARDS)"
+        },
+        "physical_findings": [
+            "Jaundice",
+            "Petechiae",
+            "Signs of respiratory distress",
+            "Altered mental status"
+        ],
+        "lab_values": {
+            "bilirubin": ">3 mg/dl",
+            "AST": "Elevated",
+            "ALT": "Elevated",
+            "creatinine": ">3 mg/dl",
+            "BUN": "Elevated",
+            "hemoglobin": "<5 gm/dl",
+            "platelets": "Decreased",
+            "blood_glucose": "<40 mg/dl"
+        },
+        "risk_factors": [
+            "Living in malaria-endemic areas",
+            "Lack of preventative measures (e.g., insecticide-treated bed nets)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of Plasmodium vivax in peripheral blood smear, rapid diagnostic test, or PCR",
+            "One or more severe malaria complications (as defined by WHO criteria)"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with malaria",
+            "Abnormal laboratory findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Plasmodium falciparum malaria",
+        "Other infectious diseases mimicking malaria symptoms"
+    ]
+}

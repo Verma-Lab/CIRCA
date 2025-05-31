@@ -1,0 +1,136 @@
+{
+    "disease": "Kaposi's sarcoma of gastrointestinal sites",
+    "icd_code": "C464",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Intermittent or constant"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Intermittent or constant"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Intermittent or constant"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Malabsorption",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be bloody",
+                "pattern": "Intermittent or chronic"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Variable, can be severe",
+                "pattern": "Frank hemorrhage or occult bleeding"
+            },
+            {
+                "name": "Iron deficiency anemia",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Melena",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bowel obstruction",
+                "severity": "Severe",
+                "pattern": "Can be acute"
+            },
+            {
+                "name": "Bowel perforation",
+                "severity": "Severe",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "Tachycardia (can occur)",
+            "blood_pressure": "Hypertension (can occur)"
+        },
+        "physical_findings": [
+            "Multiple red-to-purple nodules on lower limbs (classical variant)",
+            "Lymphadenopathy (lymphadenopathy-associated variant)",
+            "Skin lesions (can be present, but often absent)",
+            "Umbilicated nodules with central ulceration (GI tract)",
+            "Plaque-like, violaceous skin lesions (AIDS-associated variant)",
+            "Edema in lower extremities (AIDS-associated variant)"
+        ],
+        "lab_values": {
+            "hemoglobin": "Decreased (anemia)",
+            "hematocrit": "Decreased",
+            "white_blood_cell_count": "Variable",
+            "platelet_count": "Variable",
+            "mean_corpuscular_volume": "Variable",
+            "CD4_count": "Decreased (in AIDS patients)",
+            "HIV_RNA": "Elevated (in AIDS patients)",
+            "ferritin": "Decreased (in cases with GI bleeding)",
+            "iron": "Decreased (in cases with GI bleeding)",
+            "red_cell_distribution_width": "Increased (in cases with anemia)",
+            "reticulocyte_index": "Low (in cases with anemia)",
+            "BUN": "Elevated (can occur)",
+            "creatinine": "Elevated (can occur)"
+        },
+        "risk_factors": [
+            "HIV/AIDS",
+            "Immunosuppression (transplantation, chemotherapy)",
+            "Advanced age (classical variant)",
+            "Eastern European or Mediterranean origin (classical variant)",
+            "Unprotected sexual contact"
+        ],
+        "imaging_findings": {
+            "computed_tomography": [
+                "Small bowel masses",
+                "Gastric wall thickening",
+                "Concentric gastric wall thickening"
+            ],
+            "endoscopy": [
+                "Scattered umbilicated nodules with central ulceration",
+                "Extensive, infiltrative, circumferential, reddish mass",
+                "Hemorrhagic stellate and annular lesions",
+                "Erythematous, nodular lesions"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological examination showing whorls of spindle-shaped cells and neovascularization",
+            "Positive immunostains for HHV-8 and CD31"
+        ],
+        "supportive": [
+            "Clinical presentation (symptoms, physical findings)",
+            "Imaging findings",
+            "Laboratory findings (anemia, decreased CD4 count)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Non-Hodgkin lymphomas",
+        "Leiomyomas",
+        "Rhabdomyosarcomas",
+        "High-grade pleomorphic sarcomas",
+        "Gastrointestinal stromal tumors",
+        "Colonic adenocarcinomas",
+        "Cryptosporidiosis"
+    ]
+}

@@ -1,0 +1,531 @@
+{
+  "id": "d135446d-a4b3-4e58-a7fa-ca5671ce4235",
+  "patient_id": "908b9209-245c-45cb-8558-ca4f2800962b",
+  "encounter_id": "c7a22607-5c2b-4e6d-b39d-f8ac89fd05f8",
+  "analysis_type": "Genetic Testing Recommendation",
+  "input_text": "Patient: Jorge Thomas, DOB: 1979-12-30, Gender: Male\n\nChief Complaint: headache\n\nS (Subjective)\nPatient presents with sudden onset chest pain that began 3 hours ago while at rest. Describes pain as \"squeezing\" and \"pressure-like\" in the center of chest, radiating to left arm and jaw. Pain is 7/10 in severity. Associated symptoms include shortness of breath, mild nausea, and diaphoresis. Denies fever, cough, or recent trauma. No prior similar episodes.\nMedical History: Hypertension diagnosed 5 years ago, Type 2 Diabetes (diagnosed 2 years ago), Hyperlipidemia\nSurgical History: Appendectomy (2001)\nMedications: Lisinopril 10mg daily, Metformin 500mg BID, Atorvastatin 20mg daily\nAllergies: Penicillin (rash)\nFamily History: Father died of MI at age 62, Mother with history of hypertension\nSocial History: Former smoker (quit 3 years ago, 20 pack-year history), social alcohol use (2-3 drinks/week), works as a construction manager\nO (Objective)\nVitals:\n\nBP: 162/94 mmHg\nHR: 92 bpm\nRR: 20/min\nTemp: 98.6\u00b0F\nSpO2: 95% on room air\n\nPhysical Examination:\n\nGeneral: Alert, anxious-appearing, mild distress\nHEENT: Normocephalic, atraumatic. Pupils equal and reactive. Mucous membranes moist.\nCardiovascular: Regular rate and rhythm. No murmurs, rubs, or gallops. No JVD.\nRespiratory: Clear to auscultation bilaterally. No wheezes, rales, or rhonchi.\nAbdominal: Soft, non-tender, non-distended. No hepatosplenomegaly.\nExtremities: No edema. Peripheral pulses intact. No cyanosis.\nSkin: Mild diaphoresis noted. No rash.\nNeurological: Alert and oriented x3. No focal deficits.\n\nDiagnostic Results:\n\nECG: Sinus rhythm with 1mm ST-segment depression in leads V3-V5\nChest X-ray: No acute cardiopulmonary process, no cardiomegaly\nLabs:\n\nTroponin I: 0.08 ng/mL (slightly elevated)\nCK-MB: 6.2 ng/mL (within normal range)\nBNP: 110 pg/mL (slightly elevated)\nCBC: WBC 9.2, Hgb 14.2, Plt 245\nBMP: Na 138, K 4.2, Cl 101, CO2 24, BUN 18, Cr 1.0, Glucose 156\nLipid Panel: Total cholesterol 220, LDL 142, HDL 38, TG 210\n\n\n\nA (Assessment)\n\nAcute coronary syndrome (NSTEMI) - most likely diagnosis given clinical presentation, risk factors, ECG changes, and mildly elevated troponin\nUncontrolled hypertension\nType 2 Diabetes Mellitus\nHyperlipidemia\nDifferential diagnoses include:\n\nUnstable angina\nAortic dissection\nPulmonary embolism\nGastroesophageal reflux disease\nMusculoskeletal chest pain\n\n\n\nP (Plan)\nAdmit to Cardiac Care Unit for monitoring and further management\nMedications:\n\nAspirin 325mg loading dose, then 81mg daily\nClopidogrel 300mg loading dose, then 75mg daily\nAtorvastatin increase to 40mg daily\nMetoprolol 25mg BID\nNitroglycerin 0.4mg SL PRN chest pain\nContinue home medications (Lisinopril, Metformin)\n\n\nDiagnostics:\n\nSerial cardiac enzymes q6h x 3\nRepeat ECG in 6 hours and PRN chest pain\nSchedule cardiac catheterization for tomorrow morning\nEchocardiogram to assess LV function\n\n\nConsultations:\n\nCardiology consult\nEndocrinology consult for diabetes management\n\n\nEducation:\n\nHeart-healthy diet\nMedication counseling\nSmoking cessation reinforcement\n\n\nFollow-up:\n\nCardiology follow-up within 1 week of discharge\nPCP follow-up within 2 weeks of discharge\n\n\n--- IMAGING & SCANS ---\n- Chest Scan (3/24/2025): Chest scan\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: Chest Scan (2025-03-24T23:06:13.575979)]\nFile: images.jpeg\nDescription: Chest scan\nAnalysis: Okay, let\u2019s analyze this chest CT scan. Here\u2019s a detailed breakdown of what I\u2019m observing, keeping in mind this is a visual assessment based on the image provided:\n\n**Overall Impression:**\n\nThe scan appears to show a significant degree of bilateral interstitial lung disease. There\u2019s a diffuse, reticular (net-like) pattern throughout both lungs. This suggests a widespread process affecting the lung tissue itself, rather than just localized consolidation or infection. \n\n**Specific Findings:**\n\n1. **Interstitial Pattern:** The most prominent finding is the widespread reticular pattern. This is characterized by a network of fine, linear strands within the lung parenchyma. This pattern is more pronounced in the lower lobes, but is also present throughout both lungs. This is a key indicator of interstitial lung disease.\n\n2. **Ground-Glass Opacities:** There are areas of ground-glass opacity (GGO) scattered throughout the lungs. GGO represents areas of increased lung density, but less dense than consolidation, suggesting inflammation or fluid accumulation without complete filling of the airspaces.  They are particularly noticeable in the lower lobes and along the fissures.\n\n3. **No Evidence of Consolidation:** I don\u2019t see any areas of dense consolidation \u2013 meaning no clearly defined, solid masses within the lung tissue. This makes a primary bacterial pneumonia less likely as the sole explanation.\n\n4. **Hilar Areas:** The hila (the areas where the pulmonary arteries and veins enter the lungs) appear relatively normal in terms of size and shape. \n\n5. **Mediastinum:** The mediastinum (the space between the lungs) appears unremarkable. \n\n6. **Pleura:** The pleura (the lining of the lungs) is not obviously inflamed or thickened. \n\n7. **Cardiac Silhouette:** The cardiac silhouette appears within normal limits.\n\n**Possible Causes/Differential Diagnoses:**\n\nGiven the findings, several conditions need to be considered:\n\n*   **Idiopathic Pulmonary Fibrosis (IPF):** This is a strong possibility due to the diffuse interstitial pattern.\n*   **Sarcoidosis:** This inflammatory disease can cause similar findings.\n*   **Hypersensitivity Pneumonitis:**  Often related to environmental exposures (e.g., mold, bird droppings).\n*   **Connective Tissue Diseases (e.g., Rheumatoid Arthritis, Scleroderma):** These can sometimes present with interstitial lung disease.\n*   **Drug-Induced Lung Disease:** Certain medications can cause\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nDETAILED_DESCRIPTION: Thomas, 1979-12-30, sudden, squeezing, pressure-like, Type, Penicillin, -3 drinks, week, manager, room air, bilaterally, -dist, focal, leads V3-V5, acute, Uncontrolled, Unstable, Musculoskeletal, PRN, home, Serial, bilateral, diffuse, reticular, net-like, widespread, reticular pattern, network, fine, linear strands, dense, solid, primary\nSIGN_SYMPTOM: headache, pain, Pain, shortness of breath, nausea, diaphoresis, fever, cough, anxious, distress, Normocephalic, murmurs, rubs, gallops, JVD, wheezes, rales, rhonchi, Soft, hepatosplenomegaly, edema, cyanosis, rash, oriented, deficits, Sinus rhythm, ST-segment depression, cardiomegaly, Interstitial Pattern, Ground-Glass Opacities, ground-glass opacity, GGO, increased, density, fluid accumulation, Consolidation, consolidation, masses, inflamed, thickened\nBIOLOGICAL_STRUCTURE: chest, center of chest, left arm, jaw, Abdominal, Extremities, Peripheral, Skin, Chest, both lungs, lung tissue, lung parenchyma, lower lobes, lungs, lung, s, fissures, Hilar Areas, hila, pulmonary arteries, veins enter the lungs, Mediastinum, mediastinum, space between the lungs, Pleura, pleura, lining of, Card, cardiac\nDURATION: 3 hours, 6 hours\nLAB_VALUE: 7/10, 2, 162/94 mmHg, 92 bpm, 20/min, 98.6\u00b0F, 95%, Alert, -appearing, atraumatic, equal, reactive, moist, Regular, Clear, non-tender, non, ended, intact, 3, 1mm, 0.08 ng/mL, 6.2 ng/mL, 110 pg/mL, 9.2, 14.2, 245, 138, 4.2, 101, 24, 18, 1.0, 156, 220, 142, 38, 210, elevated, normal, unremarkable, within normal limits\nSEVERITY: mild, Mild, significant\nDISEASE_DISORDER: Hypertension, 2 Diabetes, Hyperlipidemia, Allergies, construction, cardiopulmonary process, Acute coronary syndrome, NSTEMI, hypertension, Type 2 Diabetes Mellitus, angina, Aortic dissection, Pulmonary embolism, Gastroesophageal reflux disease, pain, interstitial lung disease, consolidation, infection, inflammation, bacterial pneumonia, Idiopathic Pulmonary Fibrosis, IPF, Sarcoidosis, Hypersensitivity Pneumonitis, Connective Tissue Diseases, Rheumatoid Arthritis, Scleroderma, Drug, Lung Disease\nDATE: 5 years ago, 2 years ago, 3 years, 1 week, 2 weeks\nTHERAPEUTIC_PROCEDURE: Appendectomy, cardiac catheterization\nMEDICATION: Lisinopril, Metformin, Atorvastatin, Aspirin, Clopidogrel, Metoprolol, Nitroglycerin, medications\nDOSAGE: 10mg daily, 500mg BID, 20mg daily, /, 325mg loading dose, 81mg daily, 300mg loading dose, 75mg daily, 40mg daily, 25mg BID, 0.4mg SL, q6h x 3\nFAMILY_HISTORY: died of MI at age 62, Mother, history of hypertension\nHISTORY: smoker, social alcohol use\nDIAGNOSTIC_PROCEDURE: Vitals, BP, HR, RR, Temp, SpO2, Physical Examination, HEENT, Pupils, Mucous membranes, Cardiovascular, rate, rhythm, Respiratory, auscultation, pulses, Neurological, ECG, X-ray, Labs, Troponin I, CK-MB, BNP, CBC, WBC, Hgb, Plt, BMP, Na, K, Cl, CO2, BUN, Cr, Glucose, Lipid Panel, Total cholesterol, LDL, HDL, TG, troponin, monitoring, cardiac enzymes, iac Silhouette, silhouette\nCLINICAL_EVENT: Admit\nNONBIOLOGICAL_LOCATION: Cardiac Care Unit",
+  "recommendation": "recommended",
+  "reasoning": "The patient, Jorge Thomas, presented with acute chest pain, shortness of breath, and diaphoresis, consistent with an acute coronary syndrome (ACS).  His ECG showed ST-segment depression, and slightly elevated troponin levels further support this diagnosis. However, the chest CT scan revealed significant bilateral interstitial lung disease, a diffuse reticular pattern, and ground-glass opacities. This imaging strongly suggests a widespread process affecting the lung parenchyma, raising concerns beyond the initial ACS diagnosis.  The differential diagnoses for this interstitial lung disease include Idiopathic Pulmonary Fibrosis (IPF), Sarcoidosis, Hypersensitivity Pneumonitis, Connective Tissue Diseases (e.g., Rheumatoid Arthritis, Scleroderma), and Drug-Induced Lung Disease. Many of these conditions have genetic components or associations. Given the severity and extent of the lung findings, genetic testing is warranted to investigate the underlying cause of the interstitial lung disease.  The patient's family history of hypertension and his father's death from myocardial infarction at a relatively young age (62) also adds to the rationale for genetic testing, as some genetic conditions predispose individuals to both cardiovascular disease and lung problems.  While the initial presentation points strongly towards ACS, the unexpected and significant lung findings necessitate a broader investigation to rule out a rare genetic disease that could be contributing to both the cardiac and pulmonary manifestations.",
+  "confidence": "75%",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "pfcp_txt_9",
+      "contents": "\u2022 When symptoms of the hyperviscosity syndrome are evident; OR \u2022 At routine intervals to maintain the hematocrit at an almost normal level. \nWhile low-dose aspirin can be considered for the prevention of thromboembolic events, no evidence of efcac y exists. Of note, at least one individual (a male age 40 yrs) died from myocardial infarction despite regularly performed phlebotomies [Prchal & Sokol 1996]. \nHyperviscosity symptoms (See Evaluations Following Initial Diagnosis.) \n\u2022 Grade 1. Consider aspirin treatment.   \nGrade 2. Consider aspirin treatment. In the presence of persistent symptoms perform phlebotomy. In the event of recurrent episodes consider regular phlebotomy to maintain the hematocrit in the age-respective normal range.   \nGrade 3. Consider regular phlebotomy to maintain hematocrit in the age-respective normal range. Consider additional aspirin treatment. \nTromboembolic events \n\u2022 Provide acute treatment according to established practice for the event.   \n\u2022 Evaluate for other thrombophilic risk factors.   \n\u2022 Start regular phlebotomy to maintain hematocrit in the age-respective normal range. Consider additional aspirin treatment in all patients.   \n\u2022 Consider life-long anticoagulation (e.g., heparins, warfarin) when other severe additional risk factors are present or thromboembolic events have recurred. \nPrevention of Primary Manifestations \nAlways maintain good hydration. \nAvoid activities that potentially increase blood viscosity (e.g., mountain climbing, scuba diving, smoking). \nFor those at increased risk for thromboembolic events: take precautions in higher-risk situations such as longdistance airline fights. \nSurveillance \nTe following are appropriate: \n\u2022 Regular cardiology assessment including cardiac function (echocardiography) and blood pressure measurement. In case of occasionally increased blood pressure, perform 24-hour measurement.   \n\u2022 Regular life-long follow up with investigation of any suspicious clinical events such as thromboembolic complications and symptoms that could be related to hyperviscosity   \nRegular life-long follow up to record manifestations of hyperviscosity syndrome and their severity (See Evaluations Following Initial Diagnosis.) \nAgents/Circumstances to Avoid \nAvoid: \nDehydration;   \n",
+      "token_count": 483,
+      "sentence_count": 30
+    },
+    {
+      "id": "hgps_txt_2",
+      "contents": " Nitroglycerin can be benefcial for angina; anticongestive therapy is routine for the treatment of congestive heart failure. General anesthesia and intubation should be performed with extreme caution, ideally with fberoptic intubation, if possible. Exposure keratopathy can be treated with ocular lubrication. Hearing aids can be used when clinically necessary. Age-appropriate schooling with adaptations for physical needs is usually recommended. \nPrevention of secondary complications: Low-dose aspirin $(2{-}3\\mathrm{~mg/kg}$ body weight) is recommended for prevention of cardiovascular and stroke complications. Because the stifened peripheral vasculature may be less tolerant to dehydration, maintaining optimal hydration orally is recommended. \nSurveillance: Annual or semiannual electrocardiogram (EKG), annual echocardiogram, carotid duplex ultrasound examination, neurologic examination, MRI/MRA of the head and neck, lipid profle, dental examination, hip x-ray to evaluate for avascular necrosis and progressing coxa valga, dual x-ray absorptiometry and/or peripheral cutaneous computed tomography to measure bone density, physical therapy assessment for joint contractures, ophthalmology examination, audiometry, and assessment of activities of daily living. \nAgents/circumstances to avoid: Dehydration; large crowds with taller/larger peers because of the risk of injury, trampolines and bouncy houses due to risk of hip dislocation. Physical activity should be self-limited. \nGenetic counseling \nAlmost all individuals with HGPS have the disorder as the result of a de novo autosomal dominant pathogenic variant. Recurrence risk to the sibs of a proband is small (as HGPS is typically caused by a de novo pathogenic variant) but greater than that of the general population because of the possibility of parental germline mosaicism. Once the LMNA pathogenic variant has been identifed in an afected family member, prenatal testing for a pregnancy at increased risk is possible. \nGeneReview Scope \nHutchinson-Gilford Progeria Syndrome: Included Genotypes \nHutchinson-Gilford progeria syndrome (HGPS), classic Atypical Hutchinson-Gilford progeria syndrome \n",
+      "token_count": 492,
+      "sentence_count": 17
+    },
+    {
+      "id": "myotonia-c_txt_19",
+      "contents": "Author History \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "brugada_txt_12",
+      "contents": " Terefore, it is important to distinguish between these two disorders. \nManagement \nEvaluations Following Initial Diagnosis \nTo establish the extent of disease and needs in an individual diagnosed with Brugada syndrome, the following evaluations (if not performed as part of the evaluation that led to the diagnosis) are recommended: \n\u2022 Electrocardiogram (EKG)   \n\u2022 Induction with sodium blockers (ajmaline, procainamide, pilsicainide, fecainide) in persons with a type 2 EKG or type 3 EKG and suspicion of the disease   \n\u2022 Electrophysiologic study to assess risk of sudden cardiac death. Although the data are controversial, no other risk stratifcation parameter is presently available for asymptomatic individuals [Nunn et al 2010].   \n\u2022 Consultation with a medical geneticist, certifed genetic counselor, or certifed advanced genetic nurse to inform afected individuals and their families about the nature, mode of inheritance, and implications of Brugada syndrome to facilitate medical and personal decision making \nTreatment of Manifestations \nBrugada syndrome is characterized by the presence of ST segment elevation in leads $\\mathrm{V}_{1^{-}}\\mathrm{V}_{3}$ . Implantable cardioverter defbrillators (ICDs) are the only therapy currently known to be efective in persons with Brugada syndrome with syncope or cardiac arrest [Brugada et al 1999b, Wilde et al 2002]. See Figure 3 for risk stratifcation and recommendations of ICD in individuals with Brugada syndrome. \nElectrical storms respond well to infusion of isoproterenol $\\left(1{-}3\\;\\upmu\\mathrm{g/min}\\right)$ , the frst line of therapy before other antiarrhythmics [Maury et al 2004]. \nIt is important to: \n\u2022 Eliminate/treat agents/circumstances such as fever, cocaine use, electrolyte disturbances, and use of class I antiarrhythmic medications and other noncardiac medications that can induce acute arrhythmias; AND   \n\u2022 Hospitalize the patient at least until the EKG pattern has normalized. \nControversy exists regarding the treatment of asymptomatic individuals.",
+      "token_count": 477,
+      "sentence_count": 17
+    },
+    {
+      "id": "brugada_txt_11",
+      "contents": "Note: Data on genetic modifers (e.g., susceptibility loci / polymorphisms identifed through genome-wide association studies) in Brugada syndrome-related genes that may contribute in small ways to risk of a given phenotype are not included in Table 2. \nDifferential Diagnosis \nBrugada syndrome should always be considered in the diferential diagnosis of the following: \n\u2022 Sudden cardiac death and syncope in persons with a structurally normal heart   \n\u2022 SIDS. Brugada syndrome does not usually cause problems at such a young age; however, SCN5A pathogenic variants have been described in a few infants with SIDS. SIDS is believed to be etiologically and genetically heterogeneous [Weese-Mayer et al 2007] with an unknown proportion attributed to Brugada syndrome.   \n\u2022 Sick sinus syndrome. Brugada syndrome could be observed in persons with sick sinus syndrome given the defects observed in cardiac conduction [Nakazato et al 2004]. \nOther conditions that can be associated with ST segment elevation in right precordial leads include the following (adapted from de Oliveira Neto et al [2019] and Wilde et al [2002] with permission). \nAbnormalities that can lead to ST segment elevation in the right precordial leads \n\u2022 Right or lef bundle branch block, lef ventricular hypertrophy   \nAcute myocardial ischemia or infarction   \nAcute myocarditis Hypothermia, causing Osborn wave in EKGs and sometimes resembling Brugada syndrome Right ventricular ischemia or infarction Dissecting aortic aneurysm Acute pulmonary thromboemboli Various central and autonomic nervous system abnormalities Heterocyclic antidepressant overdose Duchenne muscular dystrophy Friedreich ataxia Tiamine defciency   \n\u2022 Hypercalcemia   \nHyperkalemia   \n\u2022 Cocaine intoxication \nMediastinal tumor compressing the right ventricular outfow tract Arrhythmogenic right ventricular cardiomyopathy \nOther conditions that can lead to ST segment elevation in the right precordial leads \nEarly repolarization syndrome Other normal variants (particularly in males) \nMost of the above conditions can give rise to a type 1 EKG, whereas ARVC and Brugada syndrome can both give rise to type 2 and type 3 EKGs.",
+      "token_count": 490,
+      "sentence_count": 21
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_138",
+      "contents": "12,17,18 In-hospital mortality $(1\\,\\%{-}27\\%)^{1,4,6}$ and mid- and long-term surviva $|^{4-6}$ after operative repair for type A IMH are reasonable and comparable to or better than survival rates reported for type A aortic dissection. There are varied approaches to timing of surgery, with low mortality rate achieved with strategies of repair within 24 hours5 and slightly delayed repair (between 24 and 72 hours), when feasible.6 The slight delay may confer an advantage by allowing the hematoma to form and the tissue quality of the aorta to improve. In addition, the extra time can allow for further diagnostic evaluation, optimization of comorbidities, or clearance of novel oral anticoagulant medications, which may improve outcomes. Delay is only reasonable in stable patients. The experience with successful medical \nmanagement of type A IMH is mostly from Japan, Korea, and China, all reporting outcomes better than those reported in North America and Europe; the differences might be related to genetic or environmental factors that affect IMH natural history, so the Asian results may not be generalizable to other ethnic or geographic patient populations. The approach varies from initial medical management with planned \u201ctimely\u201d (ranging from within a few days to before discharge) surgery to expectant medical management with surgical intervention only for complications or disease progression.7-12 One meta-analysis showed acceptable pooled proportion of an all-cause in-hospital mortality rate of $7\\%$ and 30-day mortality rate of $1\\,5\\%^{8}$ with initial medical management. Another meta-analysis, comparing upfront surgery to initial medical management with \u201ctimely\u201d surgery, showed no significant difference in short-term survival (although an overall operative approach to type A IMH did show a survival benefit over medical therapy alone).9 For patients at increased operative risk (eg, advanced age, poor baseline renal function, coronary artery disease), medical management may therefore be an option. There are several high-risk imaging features (Table 30) that predict poor outcome (death, need for surgical intervention, or both) with this strategy.",
+      "token_count": 464,
+      "sentence_count": 12
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_123",
+      "contents": " Use of electrocardiographic-synchronized CT techniques should be considered when there is a need to accurately depict mediastinal structures (eg, proximal aorta, coronary ostia). When IMH is present, the extent and thickness of the hematoma can be documented and, when PAUs are present, the presence of and size of pseudoaneurysms can be easily defined. \n\n2. In general, the choice of the initial imaging modality should be based on the patient\u2019s history and clinical presentation, the specific clinical questions to be answered, and the institutional availability, experience, and expertise with each of the diagnostic imaging techniques.6 In certain clinical circumstances, for example, patients with a history of an iodinated contrast reaction or patients who are too unstable to travel to the radiology suite, CT may not be preferred. Echocardiography (TEE/ TTE) is an alternative. TTE is noninvasive, can be performed at the bedside, and may be helpful in eliciting the diagnosis of AAS and quickly identifying complications of AAS, such as AR or pericardial effusion and tamponade. TEE is preferred to TTE, however, because of its higher sensitivity and better anatomic resolution; TEE can be performed at the bedside in the emergency department or, alternatively, once the patient is in the operating room. MRI is most commonly the third-choice modality, given that it is not readily available, requires skilled interpretation, and has longer acquisition times, as well as the fact it is challenging to provide clinical care to potentially unstable patients while in an MRI scanner. Consequently, MRI is most often used as a follow-up imaging modality in patients in which there is diagnostic uncertainty. Nevertheless, MRI may be the study of choice in the acute setting for a stable patient with a contraindication to iodinated contrast. \n\n7.3. Medical Management of AAS \nSynopsis \nPatients presenting with AAS need to be treated promptly to prevent acute and chronic complications. In all patients with AAS, immediate medical therapy is indicated while considering urgent surgical (in patients with type A aortic dissection), endovascular intervention (in patients with type B aortic dissection), or both; medical therapy includes aggressive heart rate and BP management as well as pain control.",
+      "token_count": 480,
+      "sentence_count": 13
+    },
+    {
+      "id": "ada2-def_txt_19",
+      "contents": "Antiplatelet medications including aspirin Anticoagulation medications (except in the presence of atrial fbrillation) Smoking, which may exacerbate peripheral arterial disease \nEvaluation of Relatives at Risk \nIt is appropriate to clarify the genetic status of apparently asymptomatic older and younger at-risk sibs of an afected individual in order to identify as early as possible those with biallelic ADA2 pathogenic variants who are currently symptomatic and would beneft from prompt initiation of treatment and those who are currently asymptomatic and would beneft from treatment with anti-TNF agents to reduce the risk of stroke. \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nPregnancy Management \nInformation regarding the safety of use of anti-TNF agents during pregnancy is limited. One study evaluating use of anti-TNF agents in pregnant women with infammatory bowel disease determined that these drugs can cross the placenta from the latter part of the second trimester of gestation, though they are low risk in the short term [Gisbert & Chaparro 2013]. \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for access to information on clinical studies for a wide range of diseases and conditions. Note: Tere may not be clinical trials for this disorder. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.  Te following section deals with genetic risk assessment and the use of family history and genetic testing to clarify genetic status for family members; it is not meant to address all personal, cultural, or ethical issues that may arise or to substitute for consultation with a genetics professional. \u2014ED. \nMode of Inheritance \nAdenosine deaminase 2 defciency (DADA2) is inherited in an autosomal recessive manner. \nParents of a proband \n\u2022 Te parents of an afected child are obligate heterozygotes (i.e., carriers of one ADA2 pathogenic variant).   \n\u2022 Heterozygotes (carriers) are asymptomatic and are not thought to be at risk of developing the disorder. \nSibs of a proband \n",
+      "token_count": 479,
+      "sentence_count": 21
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_79",
+      "contents": " However, clinical outcomes data are limited, and further study of the efficacy of antiplatelet therapy in AAA is warranted. \nRecommendation-Specific Supportive Text \n1. Low-dose aspirin monotherapy in patients with noncoronary atherosclerosis is considered a treatment to mitigate risk of cardiovascular events, including stroke, death caused by coronary artery disease, and myocardial infarction.3 Data are limited on aortic-specific clinical outcomes in AAA. Use of low-dose aspirin has been hypothesized to reduce growth and progression of AAA attributable to the detrimental effects of platelet activation within the intraluminal thrombus. In 1 small cohort study, low-dose aspirin was associated with a reduced AAA growth rate and need for aneurysm repair at diameters of $4.0\\;\\mathsf{c m}$ to 4.9 cm but not for aneurysms $<\\!4.0$ cm. However, evidence from the Danish National Registry of Patients study of 4010 age- and sex-matched subjects with AAA1 showed an increased case-fatality rate associated with preadmission aspirin use in ruptured AAA $.66\\%$ in users versus $57\\%$ in nonusers; adjusted mortality rate ratio, 1.16; $95\\%$ CI, $1.06\\!-\\!1.27)$ ; there was no association between aspirin use and the risk of AAA rupture (adjusted OR, 0.97; $95\\%$ CI, $0.86{-}1.08)$ . \n\n6.4.3. Surveillance for Medical Management \nSynopsis \nIn patients with TAD, a detailed baseline assessment of all the segments of thoracic aorta, aortic valve anatomy, and aortic valve function is important. TTE, CT, and MRI are all commonly used for assessment of the thoracic aorta. \nRecommendation-Specific Supportive Text \n1. In patients with TAD not at surgical threshold, a detailed assessment with a TTE to evaluate aortic valve anatomy and aortic valve function is important for establishing a baseline. TTE usually provides clear images of the aortic root and ascending aorta, is safe and reproducible, and can be used for longitudinal surveillance.",
+      "token_count": 494,
+      "sentence_count": 19
+    },
+    {
+      "id": "A_Guide_To_Marfan_Syndrome_and_Related_Disorders_txt_29",
+      "contents": " the back, neck or arms)   \nIs this kind of pain like anything you have ever felt   \nbefore? \niv. Express a Sense of Urgency \nEmphasize to the nurse or doctor that the patient: \nHas Marfan syndrome   \nIs at high risk for aortic dissection   \nIs concerned about the pain being from a dissection \nv. Carry an Emergency Alert Card \nWe have created an Emergency Alert Card for people to carry which identifies them as a person with Marfan syndrome or a related disorder and being at increased risk for aortic dissection. The card also identifies the proper tests the hospital should do to rule out aortic dissection. The card can be printed out from the patient toolkit on our website. \nvi. Wear a Medical Alert Bracelet \nMedical alert bracelets are helpful, especially if a person is unable to provide their medical history. The bracelet can relate a few key words or phrases that may be helpful to emergency department personnel. People with Marfan syndrome might want to include on their bracelet: Marfan syndrome, aortic aneurysm, risk for aortic dissection, heart valve and Coumadin $\\textsuperscript{\\textregistered}$ . Talk to your doctor to decide what is most important to include on your bracelet. \n\nvii. Contact Your Primary Care Doctor \nProvide emergency department staff with the patient\u2019s primary care physician\u2019s name and phone number. Ask them to call at once for any additional information that may be needed for appropriate treatment. \nviii. Be Familiar with Tests that Confirm or Rule Out a Diagnosis of Aortic Dissection \nThe diagnostic test used to confirm aortic dissection should be that test which the specific institution can perform in the most timely and accurate manner. This is usually a CT scan of the chest with IV contrast or a transesophageal echocardiogram. An MRI is occasionally used as a first test. If the patient has an allergy to IV dye, shellfish or Iodine, this should be mentioned to the emergency department personnel. It is important to remember that a chest x-ray may not show an aortic dissection and, if dissection is suspected, a normal chest x-ray should not deter further evaluation. \n",
+      "token_count": 458,
+      "sentence_count": 25
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_178",
+      "contents": "8 (The data from these 2 studies relate specifically to atheroma thickness of ${\\ge}4$ mm, which does not align precisely with the most commonly used grading systems for severity of aortic atherosclerosis, which define severe atheromas by a thickness of ${>}5\\ m m.$ ) Although antiplatelet therapy is commonly used in patients with aortic atheromas, there is no evidence to support the use of prophylactic anticoagulation in this population. \n9.3.1. Aortic Thrombus \nAortic mural thrombus is typically associated with underlying aortic pathology, such as aneurysm, aortitis, atherosclerosis, dissection, and aortic graft material.1-3 Because such thrombi arise in the setting of underlying aortic pathology, the thrombi can be considered \u201csecondary,\u201d and they most often appear in the descending thoracic and abdominal aorta.1-3 In contrast, \u201cprimary\u201d thrombus occurs in a normal or minimally atherosclerotic aorta and, rather than being mural, are often pedunculated and protrude into the aortic lumen. Most often, primary aortic thrombi are idiopathic, but some have been associated with hypercoagulable states (eg, malignancy, heparininduced thrombocytopenia, and the antiphospholipid syndrome).2-6 \nAortic thrombus is most often asymptomatic but may present with limb ischemia, visceral ischemia, or stroke2-7 from embolization. The diagnosis is often typically confirmed by either CTA or TEE.8,9 Asymptomatic patients with secondary mural thrombus are usually managed conservatively, but patients with primary aortic thrombus or those presenting with embolic events are often managed with anticoagulation, endovascular intervention, or open surgical therapy; such treatments are informed by the patient\u2019s history and the location, size, and mobility of the thrombus.",
+      "token_count": 463,
+      "sentence_count": 10
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_75",
+      "contents": "Other Atherosclerotic Vascular Disease\u201d1 recommend use of low-dose aspirin $(75{-}162\\ m g/\\mathrm{d})$ in patients with atherosclerotic aortic disease. Even in the absence of TAA, this remains true in other atherosclerotic aortic diseases, such as high-grade atheroma, PAU, or both. \nRecommendation-Specific Supportive Text \n1. In the SPARC (Stroke Prevention: Assessment of Risk in a Community) study, aortic atherosclerosis was associated with coronary artery disease (OR, 2.99; $95\\%$ CI, 1.47\u20136.10; $P{=}0.003)$ .2 In turn, in the presence of coronary artery disease, aspirin has long been recommended to reduce the risk of cardiovascular events, including stroke, death caused by coronary artery disease, and myocardial infarction.1 \n6.4.2. Medical Therapy and Risk Factor Modification in AAA \nSynopsis \nReducing cardiovascular events such as myocardial infarction and stroke, as well as preventing aneurysm growth and rupture, are the main goals in antihypertensive therapy in AAA. Uncontrolled hypertension is a known risk factor for aortic rupture and dissection; therefore, achieving an SBP goal of ${<}130\\,\\mathsf{m m}\\,\\mathsf{H}\\mathfrak{g}$ , and a DBP goal of ${<}80$ mm Hg with the use of antihypertensive therapy in those with hypertension and AAA can reduce adverse clinical outcomes, and some patients may benefit from more intensive lowering with an SBP goal of ${<}120\\ m m\\ H{\\mathfrak{g}}.$ 4 The most robust evidence of antihypertensive therapy in AAA is for beta blockers and agents that alter the renin angiotensin system; however, in prospective clinical trials in humans, no specific agent has been proven to inhibit AAA growth. \nRecommendation-Specific Supportive Text \n1. Updated hypertension guidelines from the ACC and AHA suggest all patients with clinical cardiovascular disease have a target SBP of $<\\!",
+      "token_count": 492,
+      "sentence_count": 12
+    },
+    {
+      "id": "tfap_txt_28",
+      "contents": "Shu-ichi Ikeda, MD, PhD; Shinsu University Hospital (2001-2018) Yoshiki Sekijima, MD, PhD (2006-present) Takahiko Tokuda, MD, PhD; Kyoto Prefectural University Hospital (2001-2018) Kunihiro Yoshida, MD, PhD; Shinsu University Hospital (2001-2018) \nRevision History \n\u2022 17 June 2021 (ys) Revision: updated Summary of treatment of manifestations   \n",
+      "token_count": 94,
+      "sentence_count": 3
+    },
+    {
+      "id": "hyperchol_txt_1",
+      "contents": "Te molecular diagnosis of FH can be established by identifcation of heterozygous or biallelic pathogenic variants in APOB (variants that impair binding of LDL-C to the LDL receptor), LDLR, or PCSK9 (gain of function); or rarely, identifcation of biallelic pathogenic variants in LDLRAP1. \nManagement \nTreatment of manifestations: Adults: pharmacotherapy (statins with additional medications as needed) to reduce lipid levels; referral to a lipid specialist if necessary to reduce LDL-C levels; reduce CAD risk factors including cessation of smoking, regular physical activity, healthy diet, and weight control; treatment of hypertension; lowdose aspirin in high-risk individuals. Children: referral to a lipid specialist; diet and lifestyle modifcation s; statins can be used in children starting around age eight years. \nPrevention of primary manifestations: Heart-healthy diet (including reduced intake of saturated fat and increased intake of soluble fber to $10{\\cdot}20\\;\\mathrm{g/day)}$ ; increased physical activity; no smoking. \nSurveillance: Monitor lipid levels from age two years; consider noninvasive imaging modalities in adults; identify modifable risk factors (e.g., smoking, sedentary behavior, hypertension, diabetes, obesity). Individuals with severe FH (i.e., due to homozygous or compound heterozygous pathogenic variants in APOB, LDLR, or PCSK9) or autosomal recessive FH (due to homozygous or compound heterozygous pathogenic variants in LDLRAP1) should be monitored with various imaging modalities (including echocardiogram, CT angiogram, and cardiac catheterization) as recommended. \nAgents/circumstances to avoid: Smoking, high intake of saturated and trans unsaturated fat, sedentary lifestyle, obesity, hypertension, and diabetes mellitus. \nEvaluation of relatives at risk: Early diagnosis and treatment of frst-degree and second-degree relatives at risk for FH can reduce morbidity and mortality.",
+      "token_count": 468,
+      "sentence_count": 10
+    },
+    {
+      "id": "ea2_txt_31",
+      "contents": "Chapter Notes \nRevision History \n",
+      "token_count": 4,
+      "sentence_count": 2
+    },
+    {
+      "id": "leukodys-ov_txt_1",
+      "contents": "Clinical characteristics \n",
+      "token_count": 2,
+      "sentence_count": 1
+    },
+    {
+      "id": "fabry_txt_25",
+      "contents": " Te median change in interstitial capillary GL-3 from baseline was $-40.8\\%$ with migalastat and $-5.6\\%$ with placebo ${\\mathrm{~P~}}=0.10\\rangle$ [Germain et al 2016]. Other reports demonstrate improvement in gastrointestinal symptoms and stable long-term renal function [Schifmann et al 2018, Bichet et al 2021b]. Chaperone therapy in adults with Fabry disease is reviewed in Nowicki et al [2024]. \nCriteria for assessment of safety and treatment response from migalastat in females have been established [Giugliani et al 2013] (see Galafold\u00ae \u2012 prescribing information). \nSupportive Care \nSupportive care to improve quality of life, maximize function, and reduce complications is recommended. Ti s ideally involves multidisciplinary care by specialists in relevant felds. \nAcroparesthesia [Schuller et al 2016] \n\u2022 Diphenylhydantoin. Te severe pain of such episodes in afected males and heterozygous females o fen responds to low-maintenance doses of diphenylhydantoin by reducing the frequency and severity of the periodic crises of excruciating pain and constant discomfort. A potential side efect of diphenylhydantoin is gingival hypertrophy.   \n\u2022 Carbamazepine has similar efects. Te combination of the two drugs may also signifcantly reduce the frequency and severity of the pain. Dose-related autonomic complications with carbamazepine include urinary retention, nausea, vomiting, and ileus.   \n\u2022 Gabapentin has been demonstrated to improve pain [Ries et al 2003]. \nCardiovascular disease. Although evidence as to the efect on long-term outcomes is lacking, use of aspirin, lipid-lowering agents, and optimal blood pressure control are recommended in persons with symptoms of cardiac ischemia [Eng et al 2006]. \nNeurovascular disease. Aspirin and/or other anti-platelet agents such as clopidogrel may be recommended for stroke prophylaxis. \nRenal disease. Renal insufciency is the most serious late complication in males with the classic phenotype.",
+      "token_count": 486,
+      "sentence_count": 24
+    },
+    {
+      "id": "cantu_txt_19",
+      "contents": " J wave syndromes. Heart Rhythm.",
+      "token_count": 8,
+      "sentence_count": 2
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_111",
+      "contents": " Patients presenting with such symptoms should be admitted to an ICU for arterial BP monitoring, tight BP control, medical optimization, and AAA repair, ideally in 24 to 48 hours to reduce risk of free rupture. Other symptoms that warrant expedited, although not necessarily urgent AAA repair, include tenderness to palpation overlying the AAA in the abdomen, back, or flank, embolism (eg, blue toe syndrome) or compressive symptoms (eg, obstructive uropathy). Observational studies show that patients treated for symptomatic aneurysms have higher mortality and morbidity rates than those treated electively.7,8 Although timing of repair of symptomatic aneurysms remains controversial, most studies have reported outcomes of symptomatic aneurysms repaired during a patient\u2019s index operation, with some studies finding that performing surgery on a nonemergency basis and potentially optimizing patient\u2019s cardiorespiratory status during their hospitalization may be advantageous.8,13-15 \n3. Saccular AAAs are rare and, consequently, there are limited natural history data. In a Dutch registry of patients treated for fusiform and saccular AAAs, researchers found that saccular aneurysms appeared more common in women and were more likely to be symptomatic at smaller sizes than fusiform aneurysms.9 Of 7 659 patients with AAA, $6.1\\,\\%$ had saccular AAA. Of patients with saccular aneurysms and acute presentation, $25\\%$ had diameters $<\\tt5.5$ cm, and $8.4\\%$ had diameters $<\\!4.5$ cm. In contrast, only $8.1\\,\\%$ and $0.6\\%$ of patients with fusiform AAA presenting acutely had diameters $<\\!5.5$ cm and $<\\!4.5$ cm, respectively. In their 2017 guidelines on AAA,16 the Society for Vascular \nSurgery recommended elective repair of patients presenting with saccular AAA, although size guidance is lacking because of limited natural history data. Clearly, the decision to intervene must be informed by the patient\u2019s individual anatomy. \n4.",
+      "token_count": 479,
+      "sentence_count": 19
+    },
+    {
+      "id": "alstrom_txt_1",
+      "contents": "Te clinical diagnosis of Alstr\u00f6m syndrome is based on cardinal clinical features that emerge throughout infancy, childhood, and young adulthood. Te molecular diagnosis of Alstr\u00f6m syndrome is established in individuals of all ages by identifcation of biallelic pathogenic variants in ALMS1 on molecular genetic testing. \nManagement \nTreatment of manifestations: No therapy exists to prevent the progressive organ involvement of Alstr\u00f6m syndrome. Individuals with Alstr\u00f6m syndrome require coordinated multidisciplinary care to formulate management and therapeutic interventions. Red-orange tinted prescription lenses may reduce symptoms of photodysphoria; early educational planning should be based on the certainty of blindness. Obesity and insulin resistance are managed by a healthful, reduced-calorie diet with restricted simple carbohydrate intake and regular aerobic exercise. Myringotomy and/or hearing aids as needed for hearing impairment. Standard therapy for heart failure / cardiomyopathy. Standard treatment of insulin resistance / T2DM as in the general population. Consider nicotinic acid derivatives for hyperlipidemia; consultation with an endocrinologist if pubertal development and/or menses are abnormal; urinary diversion or self-catheterization in those with voiding difculties; renal transplantation has been successful in a number of cases; appropriate therapy for portal hypertension and esophageal varices. \nSurveillance: Routine assessment of vision and hearing; weight, height, and body mass index; heart (including echocardiography and EKG in all individuals, and MRI in those age ${>}18$ years); postprandial c-peptide and glucose and HbA1C starting at age four years; lipid profle; plasma ALT, AST, and GGT concentrations; thyroid function. Twice-yearly CBC, electrolytes, BUN, creatinine, cystatin-C, uric acid, urinalysis. Renal and bladder ultrasound examinations every one to two years if symptomatic and/or if urinalysis is abnormal. \nAgents/circumstances to avoid: Any substance contraindicated in persons with renal, hepatic, and/or myocardial disease. Terapy directed at one system may have adverse efects on other systems; for example, the use of glitazone therapy in diabetes mellitus is contraindicated in the presence of cardiac failure. \n",
+      "token_count": 491,
+      "sentence_count": 15
+    },
+    {
+      "id": "m-hfm-ov_txt_25",
+      "contents": " Individuals with renal anomalies should be referred to a nephrologist. \nSkeletal \n\u2022 Children should undergo screening with four-view cervical spine radiographs (i.e., AP, lateral, fexion, and extension) at age three years when the bones are ossifed. Tose with anomalies should be referred to an orthopedic surgeon.   \n\u2022 Children should be screened for scoliosis at diagnosis with annual physical examination. Te authors recommend obtaining radiographs for children with evidence of scoliosis. \nFamily and social support. Children with CFM may be at increased risk for psychosocial difculties [Maris et al 1999]. Social workers can provide support and guidance to children and their families, such as accessing community resources, making decisions about surgery, and adjusting to having facial diferences. \nSurveillance \nClick here (pdf) for an overview of the common medical and surgical management recommendations for children with craniofacial microsomia (Adapted from Birgfeld & Heike [2012], published with permission from Seminars in Plastic Surgery). \nAgents/Circumstances to Avoid \nIndividuals with any degree of hearing loss. Avoid exposure to ototoxic drugs. \nIndividuals with cervical spine anomalies. Follow guidelines outlined by the appropriate subspecialists (which likely include avoiding high-impact contact sports). \nIndividuals with a single kidney. Follow guidelines outlined by the appropriate subspecialists (which likely include avoiding high-impact contact sports). \nFor subsequent pregnancies of a woman who has had a child with CFM \n\u2022 Avoid vasoactive medications (pseudoephedrine, phenylpropanolamine, ibuprofen, and aspirin);   \n\u2022 Manage diabetes mellitus to maintain good control and avoid hyperglycemia. \nEvaluation of Relatives at Risk \nnseling for issues related to testing of at-risk relatives for gen \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for access to information on clinical studies for a wide range of diseases and conditions. Note: Tere may not be clinical trials for this disorder. \nReferences \nLiterature Cited \nAla-Mello S, Siggberg L, Knuutila S, von Koskull H, Taskinen M, Peippo M.",
+      "token_count": 470,
+      "sentence_count": 29
+    },
+    {
+      "id": "alstrom_txt_15",
+      "contents": "Cochlear implantation has benefted some patients [Florentzson et al 2010]. \nCardiomyopathy. Standard therapy for heart failure includes angiotensin-converting enzyme (ACE) inhibitors, aldosterone antagonists, and beta-blockers as well as cardiac resynchronization and implantable cardiodefbrillators in accordance with current guidelines. Cardiac transplantation has been successful in rare cases [Goerler et al 2007]. Attention should be paid to asymptomatic coronary artery disease given the adverse metabolic profle of these patients, with secondary prevention therapy required when atheromata are signifcant. \nInsulin resistance / type 2 diabetes (T2DM) should be treated as in the general population with T2DM including the accepted caveats where heart failure and/or liver dysfunction is present. Te diabetes mellitus is characterized by insulin resistance, and all patients will beneft from lifestyle modifcations (e.g., weight loss programs, exercise) and metformin [Paisey & Leeson-Beevers 2016]. \nGlitazones are added to further reduce insulin resistance but must be avoided in the presence of active or treated heart failure. Tese treatments should be discontinued when the serum creatinine concentration exceeds 200 $\\upmu\\mathrm{mol/L}$ $\\left(2.6\\:\\mathrm{mg/dL}\\right)$ or if cardiomyopathy is evident. Incretin analogs given subcutaneously, as in nonsyndromic T2DM, are successful in two thirds of patients in whom diabetes is suboptimally controlled on good nutrition, exercise, and metformin [Paisey et al 2008, Paisey et al 2009]. Second-line agents include GLP-1 agonists and insulin. \nTe progression to diabetes mellitus and the severity of hyperglycemia can be mitigated by lifestyle changes and reduction of severe obesity. \nHypertriglyceridemia \n\u2022 Nicotinic acid derivatives can be helpful in long-term reduction of severe hypertriglyceridemia $(>\\!",
+      "token_count": 457,
+      "sentence_count": 16
+    },
+    {
+      "id": "apoe-leu167del_txt_12",
+      "contents": "\u2022 Baseline lipoprotein profle, including total cholesterol, HDL cholesterol, LDL cholesterol, and triglycerides   \n\u2022 Liver function panel, albumin, INR (prothrombin time)   \n\u2022 Platelet count   \n\u2022 Physical examination to screen for splenomegaly. If splenomegaly is suspected, an abdominal ultrasound examination could be performed to further characterize the extent of splenomegaly.   \n\u2022 Consultation with a clinical geneticist and/or genetic counselor \nTreatment of Manifestations \nTere are no formal management guidelines for APOE p.Leu167del-related lipid disorders. \nGiven the limited number of reports of individuals with an APOE p.Leu167del-related lipid disorder and the clinical variability among afected individuals, it is unknown which individuals with the APOE p.Leu167del variant will develop hyperlipidemia, splenomegaly, and/or severe thrombocytopenia. However, the authors postulate that untreated hyperlipidemia may worsen the phenotype. \nHyperlipidemia. Discussion of the management of hyperlipidemia is beyond the scope of this article. For more in-depth discussion on management, see the 2013 American College of Cardiology/American Heart Association (ACC/AHA) Guideline on the Treatment of Blood Cholesterol to Reduce Atherosclerotic Cardiovascular Risk in Adults [Stone et al 2014] (full text). It should be noted that using risk prediction models in genetic dyslipidemia may markedly underestimate an individual\u2019s risk of developing ASCVD. \nTreatment for individuals with documented ASCVD or at high risk of developing ASCVD begins with lifestyle changes (adherence to a heart-healthy diet, exercise, tobacco avoidance, maintenance of a healthy weight). Medical therapy may include a statin (generally the mainstay of therapy to reduce ASCVD risk), a fbrate, highdose fsh oil, and/or niacin. If present, diabetes mellitus should be well controlled, as uncontrolled diabetes can worsen hypertriglyceridemia. \nIn patients with fasting triglyceride levels: \n",
+      "token_count": 466,
+      "sentence_count": 21
+    },
+    {
+      "id": "acpp_txt_12",
+      "contents": " Inheritance is autosomal dominant [Tristani-Firouzi & Etheridge 2010]. \nManagement \nEvaluations Following Initial Diagnosis \nTo establish the extent of disease and needs in an individual diagnosed with Andersen-Tawil syndrome (ATS), the evaluations summarized in Table 2 (if not performed as part of the evaluation that led to the diagnosis) are recommended. \nTreatment of Manifestations \nManagement of individuals with ATS requires the coordinated input of a neurologist familiar with the treatment of periodic paralysis and a cardiologist familiar with the treatment of cardiac arrhythmias. To date, no randomized clinical therapeutic trials have been conducted on ATS. \nManagement of attacks of episodic weakness depends on the associated serum potassium concentration: \n\u2022 If the serum potassium concentration is low $(<3.0\\;\\mathrm{mmol/L})$ , administer oral potassium $(20{-}30\\;\\mathrm{mEq}/\\mathrm{L})$ every 15-30 minutes (not to exceed $200\\;\\mathrm{mEq}$ in a 12-hour period) until the serum concentration normalizes ofen shortens the attack. As dysphagia is almost never a problem during attacks of paralysis, oral potassium replacement is the safest route. If intravenous potassium replacement is needed, a $5\\%$ mannitol solution instead of a saline or glucose solution (both of which may exacerbate weakness) is recommended. Close monitoring of serum potassium concentrations and EKG is necessary during potassium replacement therapy in an emergency setting to avoid secondary hyperkalemia. Whether a relative drop in serum potassium within the normal range causes episodic paralysis is not clear. If such cases are suspected, afected individuals can work with their physician to devise an individual potassium replacement regimen, with a goal of maintaining serum potassium levels in the high range of normal. \n\u2022 Attacks of weakness when serum potassium concentration is high usually resolve within 60 minutes. Episodes may be shortened by ingesting carbohydrates or continuing mild exercise. Intravenous calcium gluconate is rarely necessary for management in an individual seen in an emergency setting. \nVasovagal syncope in individuals with ATS mandates a careful cardiology assessment [Airey et al 2009]. \nPrevention of Primary Manifestations \n",
+      "token_count": 481,
+      "sentence_count": 19
+    },
+    {
+      "id": "williams_txt_1",
+      "contents": " Treatment of hypercalcemia may include diet modifcation, oral corticosteroids, and/or intravenous pamidronate. Early puberty may be treated with a gonadotropin-releasing hormone agonist. Treatment of hypertension, sleep disorders, ocular manifestations, recurrent otitis media, hearing loss, dental issues, hypothyroidism, and insulin resistance does not difer from that in the general population. \n\nSurveillance: Children younger than age two years should have serum calcium studies every four to six months. Tyroid function should be checked yearly until age three years and every two years thereafer. Medical evaluation, vision screening, hearing evaluation, measurement of blood pressure in both arms, calcium-tocreatinine ratio in spot urine, and urinalysis should be performed annually. Additional periodic evaluations for all individuals include: measurement of serum concentration of calcium every two years; cardiology evaluation for elastin arteriopathy at least annually until age fve years and every two to three years thereafer; and renal and bladder ultrasound examination every ten years. Oral glucose tolerance tests in adults should start at age 20 years. \nAgents/circumstances to avoid: Multivitamins for children, because all pediatric multivitamin preparations contain vitamin D. \nGenetic counseling \nWS is an autosomal dominant disorder. Most individuals diagnosed with WS have the disorder as the result of a de novo 1.5- to 1.8-Mb 7q11.23 deletion; rarely, an individual with WS has an afected parent. Recommendations for the parents of a proband with WS include obtaining a medical history to determine if signs or symptoms of WS are present. In the absence of clinical fndings of WS in the parents, testing of the parents for the 7q11.23 deletion identifed in the proband is not warranted. Each child of an individual with WS has a $50\\%$ chance of inheriting the 7q11.23 deletion and being afected. Once the WS-causing 1.5- to 1.8-Mb 7q11.23 deletion has been identifed in an afected family member, prenatal and preimplantation genetic testing are possible. \nDiagnosis \nSuggestive Findings \n",
+      "token_count": 485,
+      "sentence_count": 21
+    },
+    {
+      "id": "gsd1_txt_23",
+      "contents": "\u2022 Pre-pregnancy counseling regarding diet to avoid low blood glucose and to stress the importance of blood glucose monitoring prior to and during pregnancy   \n\u2022 Baseline ultrasound of liver and kidneys prior to pregnancy   \n\u2022 Consideration of referral to high-risk obstetrician   \n\u2022 Review of medications prior to conception to weigh risks and benefts: \u26ac Exposure to ACE inhibitors in the second and third trimesters of pregnancy can cause fetal damage and death. \u26ac No data on the use of allopurinol during pregnancy in humans exist; however, high doses have been shown to interfere with embryo development in animal models. \n\u26ac Lipid-lowering drugs may also lead to adverse fetal efects and should be avoided during pregnancy. \nMetabolic control should be followed closely throughout the pregnancy. Because carbohydrate requirements may increase with pregnancy, glucose levels should be monitored closely and treated accordingly [Ferrecchia et al 2014]. \nAbdominal ultrasound should be performed every six to 12 weeks. Sechi et al [2013] reported an increase in the size of preexistent adenomas and the development of new adenomas during pregnancy and recommended monitoring by imaging before, during, and afer pregnancy. Resection of large $(\\ge5\\;\\mathrm{cm})$ or growing adenomas before pregnancy has been recommended [Terkivatan et al 2000]. \nRenal function should be followed closely, as this may worsen during pregnancy [Dagli et al 2010, Yamamoto et al 2010]. Development of renal calculi has been reported in pregnant women with GSD Ib [Dagli et al 2010]. \nGlucose infusion during labor has been used [Ferrecchia et al 2014]. \nPlatelet count, hemoglobin, and clotting studies should be performed because of the potential for increased bleeding at delivery [Lewis et al 2005]. \nTherapies Under Investigation \nCurrent dietary treatment prevents hypoglycemia and greatly improves the life expectancy of individuals with GSD I. However, long-term complications \u2013 including progressive kidney failure and development of hepatic adenomas that progress to hepatocellular carcinoma \u2013 still occur. Te development of new therapies for GSD I has recently evolved into new concepts involving the following: \n",
+      "token_count": 465,
+      "sentence_count": 19
+    },
+    {
+      "id": "apoe-leu167del_txt_2",
+      "contents": " Liver function abnormalities and thrombocytopenia are managed in a routine manner. Diabetes mellitus (if present) should be well controlled. \nSurveillance: No formal surveillance guidelines exist. Te authors suggest the following: \n\u2022 Lipoprotein profle one year afer diagnosis and every 2-5 years thereafer (if normal). If abnormal, follow at regular intervals for treatment of hyperlipidemia.   \n\u2022 Liver function panel, albumin, INR (prothrombin time) one year afer diagnosis and every 2-5 years thereafer (if normal)   \n\u2022 Platelet count one year afer diagnosis and every 2-5 years thereafer (if normal) \nAgents/circumstances to avoid: Splenectomy, which may worsen the hypertriglyceridemia. For those with splenomegaly: contact sports given the increased risk for splenic rupture. \nEvaluation of relatives at risk: Clarifying the genetic status of relatives at risk of inheriting the APOE p.Leu167del variant allows early adoption of preventive measures and surveillance. \nPregnancy management: In a woman with the APOE p.Leu167del variant, triglyceride levels should be measured when pregnancy is identifed and at least one to two times later in pregnancy as severe hypertriglyceridemia $(>500\\mathrm{\\mg/dL})$ in pregnancy increases the risk for pancreatitis and fetal and maternal death. Before taking a medication during pregnancy, a pregnant woman should discuss with her physician the risks and benefts of that medication. \nGenetic counseling \nTe APOE p.Leu167del variant is inherited in an autosomal dominant manner. Te proportion of APOE p.Leu167del-related lipid disorders caused by de novo mutation is unknown. Te phenotype associated with the APOE p.Leu167del variant appears to depend on multiple factors. Each child of an afected individual has a $50\\%$ chance of inheriting the variant. Prenatal testing for at-risk pregnancies is possible; however, requests for prenatal testing for conditions such as APOE p.Leu167del-related lipid disorders are not common. \nGeneReview Scope \nAPOE p.",
+      "token_count": 481,
+      "sentence_count": 25
+    },
+    {
+      "id": "b-thal_txt_2",
+      "contents": " Cholecystectomy for biliary colic; vitamin D supplementation, regular physical activity, and bisphosphonates for osteoporosis; referral for treatment of pulmonary hypertension; anticoagulation for unprovoked venous thromboembolism. \nSurveillance: For $\\upbeta$ -thalassemia major, complete blood count every three to four weeks and with illnesses. For $\\upbeta$ thalassemia intermedia, complete blood count every three to four months and with illnesses. Additional surveillance in individuals with $\\upbeta$ -thalassemia major and $\\upbeta$ -thalassemia intermedia: monitor efcacy and side efects of transfusion therapy and chelation therapy with monthly physical examination; evaluation of growth and development every three months during childhood; ALT and serum ferritin every three months; annual evaluation of eyes, hearing, heart, endocrine function (thyroid, endocrine pancreas, parathyroid, adrenal, pituitary), and myocardial and liver MRI. In adults: bone densitometry to assess for osteoporosis; serum alphafetoprotein concentration for early detection of hepatocarcinoma in those with hepatitis C and iron overload. \nAgents/circumstances to avoid: Alcohol consumption if there is history of liver damage, iron-containing preparations, and exposure to infection. \nEvaluation of relatives at risk: If the pathogenic variants have been identifed in an afected family member, molecular genetic testing of at-risk sibs should be ofered to allow for early diagnosis and treatment. Hematologic testing can be used if the pathogenic variants in the family are not known. \nPregnancy management: Individuals with $\\upbeta$ -thalassemia major ofen require increased red blood cell transfusions during pregnancy. Individuals with $\\upbeta$ -thalassemia intermedia ofen have a signifcant drop in hemoglobin necessitating regular red blood cell transfusions during pregnancy, and those who have never received a red blood cell transfusion or who received minimal transfusions are at risk for severe alloimmune anemia if red blood cell transfusions are required during pregnancy.",
+      "token_count": 478,
+      "sentence_count": 10
+    },
+    {
+      "id": "alstrom_txt_16",
+      "contents": "20$ $_{\\mathrm{{mmol/L}}}$ or $1{,}770\\;\\mathrm{mg/dL})$ especially if pancreatitis has occurred and diabetes is absent or well controlled [Paisey et al 2004, Paisey et al 2009]. Statins may not be fully efective but can be considered for long-term prevention of atherosclerosis in adults with low HDL, high LDL, and diabetes. \u2022 Pancreatitis should be treated as in the general population. In order to reduce serum triglyceride levels, a 48-hour fast with intravenous saline will allow excess circulating triglyceride to be metabolized, thus resetting lipid trafcking. Subsequent healthy diet, exercise, and optimal treatment of diabetes will then sustain lower triglyceride levels [Paisey et al 2009]. \nOther endocrine issues \n\u2022 As children approach puberty, gonadotropin and pituitary hormones should be assessed to determine if hormone replacement is necessary.   \n\u2022 Male hypogonadism should be treated with testosterone according to local endocrine guidelines to preserve sexuality, muscle strength, and bone health. Tyroxine therapy should be initiated and monitored if the individual is hypothyroid. Free T4 and TSH monitoring is recommended as many people with Alstr\u00f6m syndrome have secondary hypothyroidism. \nUrologic. Urologic signs and symptoms should be evaluated by a urologist. Some individuals have required urinary diversion or self-catheterization to manage voiding difculties [MacDermott 2001]. \nRenal disease \n\u2022 Te use of enzyme ACE inhibitors is recommended if proteinuria is detected. As in the general population, intense inhibition of the renin-angiotensin-aldosterone axis with ACE inhibition, A2 \nblockade, and aldosterone blockade (spironolactone or eplenerone) is likely to result in hyperkalemia and potentially renal failure [Harel et al 2012]. \u2022 Although successful renal transplantation has occurred in increasing numbers of individuals [Poli et al 2017], it can be problematic in the presence of other complications including morbid obesity, uncontrolled diabetes, and cardiomyopathy. \nHepatic disease.",
+      "token_count": 484,
+      "sentence_count": 18
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_8",
+      "contents": " Adherence to recommendations can be enhanced by shared decision-making between clinicians and patients, with patient engagement in selecting interventions on the basis of individual values, preferences, and associated conditions and comorbidities. \nMethodology and Modernization \nThe AHA/ACC Joint Committee on Clinical Practice Guidelines (Joint Committee) continuously reviews, updates, and modifies guideline methodology on the basis of published standards from organizations, including the Institute of Medicine,1,2 and on the basis of internal reevaluation. Similarly, presentation and delivery of guidelines are reevaluated and modified in response to evolving technologies and other factors to optimally facilitate dissemination of information to health care professionals at the point of care. \nNumerous modifications to the guidelines have been implemented to make them shorter and enhance \u201cuser friendliness.\u201d Guidelines are written and presented in a modular, \u201cknowledge chunk\u201d format, in which each chunk includes a table of recommendations, a brief synopsis, recommendation-specific supportive text and, when appropriate, flow diagrams or additional tables. Hyperlinked references are provided for each modular knowledge chunk to facilitate quick access and review. \nIn recognition of the importance of cost\u2013value considerations, in certain guidelines, when appropriate and feasible, an analysis of value for a drug, device, or intervention may be performed in accordance with the ACC/ AHA methodology.3 \nTo ensure that guideline recommendations remain current, new data will be reviewed on an ongoing basis by the writing committee and staff. Going forward, targeted sections/knowledge chunks will be revised dynamically after publication and timely peer review of potentially practice-changing science. The previous designations of \u201cfull revision\u201d and \u201cfocused update\u201d will be phased out. For additional information and policies on guideline development, readers may consult the ACC/AHA guideline methodology manual4 and other methodology articles.5-7 \nSelection of Writing Committee Members \nThe Joint Committee strives to ensure that the guideline writing committee contains requisite content expertise and is representative of the broader cardiovascular community by selection of experts across a spectrum of backgrounds, representing different geographic regions, sexes, races, ethnicities, intellectual perspectives/biases, and clinical practice settings. Organizations and professional societies with related interests and expertise are invited to participate as partners or collaborators. \n\nRelationships With Industry and Other Entities \nThe ACC and AHA have rigorous policies and methods to ensure that documents are developed without bias or improper influence.",
+      "token_count": 478,
+      "sentence_count": 17
+    },
+    {
+      "id": "mhs_txt_19",
+      "contents": "\u2022 Obtain blood gases, serum concentration of electrolytes and CK, blood and urine for myoglobin, and coagulation profle (INR, PTT, D-dimer) every six to 12 hours. Te earliest sign of rhabdomyolysis is myoglobinuria/myoglobinemia. Serum CK levels may not rise for several hours. Serum CK concentration may remain elevated for days and should be monitored until it returns to normal.   \n\u2022 Treat hyperkalemia with hyperventilation, glucose and insulin, and calcium as dictated by laboratory and cardiovascular changes.   \n\u2022 Ensure urine output of $2.0\\,\\mathrm{mL/kg/hr}$ with mannitol, furosemide, and fuids as needed.   \n\u2022 Evaluate need for invasive monitoring and continued mechanical ventilation.   \n\u2022 Observe the individual in an ICU for at least 36 hours because of the $25\\%$ chance of recrudescence following initial treatment. Dantrolene should be continued for at least 36 hours following successful treatment in a dose of about $1.0\\:\\mathrm{mg/kg}$ every six hours or more depending on whether signs of MH are present.   \n\u2022 Afected individuals who display extreme hyperthermia are at risk for disseminated intravascular coagulation. A coagulation profle (INR, PTT, D-dimer) should be obtained on all individuals experiencing fulminant MH.   \n\u2022 Refer the afected individual to the Malignant Hyperthermia Association of the US (MHAUS) for information and counseling. Complete the Adverse Metabolic Reaction to Anesthesia form for enrollment in the North American MH Registry.   \n\u2022 Refer the individual to a MH diagnostic center for muscle biopsy and contracture testing afer discussion with MH consultants associated with MHAUS. \n\nMyoglobinuria. Te presence of myoglobinuria mandates referral to a neurologist for further investigation. \nPrevention of Primary Manifestations \nPreventive measures for individuals known to be susceptible to MH: \n\u2022 For any individual undergoing anesthesia, obtain a thorough anesthetic history to determine the possibility of the individual or a family member having experienced an MH episode. When suspicion of MHS exists, family members should not be given trigger anesthetic agents (i.e.",
+      "token_count": 481,
+      "sentence_count": 22
+    },
+    {
+      "id": "PIIS1443950616317371_txt_7",
+      "contents": " There is data regarding medical prophylaxis of aortic dilatation, largely limited to individuals with MFS. b. A number of trials have shown a positive effect on reducing aortic growth with the use of beta blockers, angiotensin receptor blockers (ARB) or angiotensin converting enzyme inhibitors (ACEI) [31,32]. We are not aware of currently available data regarding the effect of medical therapy on mortality. c. Superiority of a medication class has not been established, and treatment should be individualised as tolerated. Future recommendations may suggest concomitant use of more than one class of medication. d. It is unknown whether clinicians should aim for the dose used in trials or measure effect on a physiological variable (e.g. heart rate at submaximal exercise) or both.   \n2. Surveillance for aortic dilatation a. Usual practice is clinical review with yearly echocardiogram in MFS. b. Six-monthly echocardiogram if the aortic root is either close to surgical threshold or has increased significantly in size between prior imaging interval $(\\geq0.3\\;\\mathrm{cm/year})$ . c. If there is significant valvular disease (eg aortic or mitral regurgitation), then imaging frequency may be further individualised. d. Computed tomography angiography or MRI of the entire aorta should be undertaken in MFS. The interval for repeat screening of a normally sized aorta is not stipulated in most publications [4,5,23]. The ESC Grown Up Congenital Heart Disease Guidelines suggest this be done on a five-yearly basis [33]. More recent ESC and AHA multimodality imaging guidelines suggest a three-yearly interval, but this statement is unreferenced in the document [34]. If relatively frequent serial imaging is to be undertaken, MRA may be preferable to CTA in order to minimise the risks associated with recurrent radiation exposure. e. Computed tomography angiography or MRA of the entire vasculature (cerebral to pelvic) should be undertaken in the syndromic aortopathies where more widespread vascular involvement has been documented e.g. LDS, ATS.",
+      "token_count": 477,
+      "sentence_count": 18
+    },
+    {
+      "id": "jh_txt_17",
+      "contents": " Treatment relies on symptomatic measures with the use of analgesics and NSAIDs. Colchicine can be useful during fares most probably due to calcium pyrophosphate deposition. Intra-articular corticosteroid injections can be used but no relevant published data is available. Some data suggest the possible efcacy of phlebotomy but its efects, if any, are unpredictable. Joint prosthetic replacement (mainly hip and knee) is an option [Guggenbuhl et al 2011].   \n\u2022 Cardiac failure and arrhythmias require treatment as per cardiologist. Iron removal is mandatory because of the evidence of its signifcant efect in improving cardiac function [Murphy & Oudit 2010]. If  lef untreated, cardiac disease progresses rapidly and becomes refractory to treatment, leading to death in most afected individuals. Orthotopic heart transplantation has been used on occasion [Caines et al 2005]. \n\u2022 Based on data related to other liver disease and HFE hemochromatosis [Falize et al 2006] it can be assumed that iron depletion can improve fbrosis unless cirrhosis is fully established. Nevertheless, individuals with liver cirrhosis require endoscopic evaluation to document the presence of varices and ultrasounds every six months to monitor (nodular evolution, portal hypertension, gallstones). In general, hemochromatosis remains an uncommon indication for liver transplantation usually limited to individuals with hemochromatosis and hepatocellular carcinoma. Pretransplant iron depletion is recommended if tolerated as it reduces the risk of cardiac and infectious complications postoperatively [Dar et al 2009, Brissot et al 2018]. \n\u2022 Glucose intolerance or diabetes may require oral agents or insulin administration. Phlebotomy has a variable impact on diabetes control. In general, it may prevent progression if started in the earlier stages of disease, although the majority of individuals with diabetes will experience no signifcant change or worsening in their glucose metabolism control [Angelopoulos et al 2007, Pelusi et al 2016]. \nPrevention of Primary Manifestations \n",
+      "token_count": 455,
+      "sentence_count": 17
+    },
+    {
+      "id": "thompson_thompson_genetics_8th_edition_medicoscompanion_com_txt_755",
+      "contents": " The first-line screening consists of clinical testing with cardiac imaging and electrocardiography to identify phenotypepositive relatives. Genetic testing can also be used to identify family members at risk for developing disease who do not have LVH. \nNo treatments to prevent disease development or to reverse established manifestations currently exist. The treatment of manifestations includes medical management of diastolic dysfunction, medical or surgical management of ventricular outflow obstruction, restoration and maintenance of sinus rhythm in those with atrial fibrillation, implantable cardioverter-defibrillator in survivors of cardiac arrest and those at high risk for cardiac arrest, medical treatment for heart failure, and consideration for cardiac transplantation when necessary. The prevention of secondary complications includes consideration of anticoagulation in those with persistent or paroxysmal atrial fibrillation to reduce the risk for thromboembolism; consideration of antibiotic prophylaxis when necessary; and during the pregnancy of a woman with HCM, care by an experienced cardiologist and obstetrician trained in high-risk obstetrics. Patients should avoid competitive endurance training, burst activities (e.g., sprinting), intense isometric exercise (e.g., heavy weight lifting), dehydration, hypovolemia (i.e., use diuretics with caution), and medications that decrease afterload (e.g., angiotensin-converting enzyme [ACE] inhibitors, angiotensin receptor blockers, and other direct vasodilators). But the consensus recommendations from the 36th Bethesda Conference do not exclude individuals carrying pathogenic mutations but without manifestations of the disease from sports. \n\nINHERITANCE RISK \nHCM follows autosomal dominant inheritance with variable expressivity and incomplete, age-related penetrance; each first-degree relative of an affected patient has a $50\\%$ chance of carrying the mutation and potentially developing HCM. Alternatively, sporadic cases may be due to de novo mutations in the proband but absent from the parents. \nDisease prevention based on genetic testing is currently available in the form of assisted reproduction using preimplantation genetic diagnosis (PGD) or prenatal diagnosis with pregnancy termination in the event of an affected fetus (see Chapter 17). \nQUESTIONS FOR SMALL GROUP DISCUSSION \n1. Name other disorders that show age-related penetrance.",
+      "token_count": 496,
+      "sentence_count": 17
+    },
+    {
+      "id": "cvt_txt_11",
+      "contents": " Recommended Surveillance for Individuals with Catecholaminergic Polymorphic Ventricular Tachycardia \nAgents/Circumstances to Avoid \nCompetitive sports and other strenuous exercise are always contraindicated for individuals with CPVT. All individuals showing exercise-induced arrhythmias should avoid physical activity, except for light training for those individuals showing good suppression of arrhythmias on exercise stress testing while on therapy. It is important to note that efcacy needs to be periodically retested [Heidb\u00fcchel et al 2006]. Te risk for arrhythmias during sports in individuals who have pathogenic variants in genes associated with CPVT but no clinical phenotype (no exercise-induced arrhythmias) is not known; thus, it may be safest for these individuals to refrain from intense physical activity. \nDigitalis favors the onset of cardiac arrhythmias as a result of delayed aferdepolarization and triggered activity;   \ntherefore, digitalis should be avoided in all individuals with CPVT. \nEvaluation of Relatives at Risk \nBecause treatment and surveillance are available to reduce morbidity and mortality, frst-degree relatives should be ofered clinical evaluation and molecular genetic testing if the family-specifc pathogenic variant(s) are known. Te availability of efective preventive therapies can reduce the number of fatal arrhythmic events if individuals with pathogenic variants are diagnosed early. \nIf the family-specifc pathogenic variant(s) are not known, all frst-degree relatives of an afected individual should be evaluated with resting EKG, Holter monitoring, echocardiography, and \u2013 most importantly \u2013 exercise stress testing. \nSee Genetic Counseling for issues related to testing of at-risk relatives for genetic counseling purposes. \nPregnancy Management \nBeta blockers (preferentially nadolol or propranolol) should be administered throughout pregnancy in afecte d women. \nSee MotherToBaby for information on medication use during pregnancy. \nTherapies Under Investigation \nSearch ClinicalTrials.gov in the US and EU Clinical Trials Register in Europe for access to information on clinical studies for a wide range of diseases and conditions. \nGenetic Counseling \nGenetic counseling is the process of providing individuals and families with information on the nature, mode(s) of inheritance, and implications of genetic disorders to help them make informed medical and personal decisions.",
+      "token_count": 490,
+      "sentence_count": 21
+    },
+    {
+      "id": "isselbacher-et-al-2022-2022-acc-aha-guideline-for-the-diagnosis-and-management-of-aortic-disease-a-report-of-the_txt_184",
+      "contents": "5,11 In adults who have undergone a previous open surgical CoA repair and develop recoarctation, aneurysm, or pseudoaneurysm, an endovascular approach (assuming there is adequate iliofemoral access and absence of involvement of the supra-aortic trunks) avoids the need for reoperation.2,3,9,12,29 \n\n4. Patients with CoA are at risk for complications of hypertension, including heart failure, stroke, coronary artery disease, and aortic complications, so hypertension should be assessed and in accordance with current guidelines.13 Multiple studies have shown that persistent hypertension is common after CoA correction.3,6,7,23,24 Ambulatory BP monitoring and exercise testing may be useful in the evaluation and treatment of hypertension in patients with native CoA and after repair.3,22,24 \n5. Screening studies suggest that adults with CoA have an $10\\%$ prevalence of intracranial aneurysms (compared with a prevalence of $2\\%$ in the normal adult population), with the greatest risk among older adults and those with hypertension.14-16,18 Cost-effective analysis supports screening for intracranial aneurysms in adults with CoA, but preferred screening strategies remain unknown.17 Because many of the intracranial aneurysms detected by screening will be very small and not require treatment, shared decision-making about screening may be informed by age, risk factors, and anticoagulation considerations.18,30 \n9.4.2. Other Arch Abnormalities \nSynopsis \nAnomalies of the aortic arch are usually detected incidentally on a CT of the chest or neck ordered for other reasons. An ASCA arises as the fourth branch from the aorta, distal to the left subclavian artery (or right subclavian artery in the case of a right-sided aortic arch). It courses through the posterior mediastinum behind the esophagus in its path to perfuse the arm and can cause a vascular ring around the trachea and esophagus that results in dysphagia, respiratory symptoms, or recurrent laryngeal nerve palsy.",
+      "token_count": 458,
+      "sentence_count": 11
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "Chest Scan",
+      "scan_date": "2025-03-24T23:06:13.575979",
+      "file_name": "images.jpeg",
+      "description": "Chest scan",
+      "analysis": "Okay, let\u2019s analyze this chest CT scan. Here\u2019s a detailed breakdown of what I\u2019m observing, keeping in mind this is a visual assessment based on the image provided:\n\n**Overall Impression:**\n\nThe scan appears to show a significant degree of bilateral interstitial lung disease. There\u2019s a diffuse, reticular (net-like) pattern throughout both lungs. This suggests a widespread process affecting the lung tissue itself, rather than just localized consolidation or infection. \n\n**Specific Findings:**\n\n1. **Interstitial Pattern:** The most prominent finding is the widespread reticular pattern. This is characterized by a network of fine, linear strands within the lung parenchyma. This pattern is more pronounced in the lower lobes, but is also present throughout both lungs. This is a key indicator of interstitial lung disease.\n\n2. **Ground-Glass Opacities:** There are areas of ground-glass opacity (GGO) scattered throughout the lungs. GGO represents areas of increased lung density, but less dense than consolidation, suggesting inflammation or fluid accumulation without complete filling of the airspaces.  They are particularly noticeable in the lower lobes and along the fissures.\n\n3. **No Evidence of Consolidation:** I don\u2019t see any areas of dense consolidation \u2013 meaning no clearly defined, solid masses within the lung tissue. This makes a primary bacterial pneumonia less likely as the sole explanation.\n\n4. **Hilar Areas:** The hila (the areas where the pulmonary arteries and veins enter the lungs) appear relatively normal in terms of size and shape. \n\n5. **Mediastinum:** The mediastinum (the space between the lungs) appears unremarkable. \n\n6. **Pleura:** The pleura (the lining of the lungs) is not obviously inflamed or thickened. \n\n7. **Cardiac Silhouette:** The cardiac silhouette appears within normal limits.\n\n**Possible Causes/Differential Diagnoses:**\n\nGiven the findings, several conditions need to be considered:\n\n*   **Idiopathic Pulmonary Fibrosis (IPF):** This is a strong possibility due to the diffuse interstitial pattern.\n*   **Sarcoidosis:** This inflammatory disease can cause similar findings.\n*   **Hypersensitivity Pneumonitis:**  Often related to environmental exposures (e.g., mold, bird droppings).\n*   **Connective Tissue Diseases (e.g., Rheumatoid Arthritis, Scleroderma):** These can sometimes present with interstitial lung disease.\n*   **Drug-Induced Lung Disease:** Certain medications can cause"
+    }
+  ],
+  "medical_entities": {
+    "DETAILED_DESCRIPTION": [
+      "Thomas",
+      "1979-12-30",
+      "sudden",
+      "squeezing",
+      "pressure-like",
+      "Type",
+      "Penicillin",
+      "-3 drinks",
+      "week",
+      "manager",
+      "room air",
+      "bilaterally",
+      "-dist",
+      "focal",
+      "leads V3-V5",
+      "acute",
+      "Uncontrolled",
+      "Unstable",
+      "Musculoskeletal",
+      "PRN",
+      "home",
+      "Serial",
+      "bilateral",
+      "diffuse",
+      "reticular",
+      "net-like",
+      "widespread",
+      "reticular pattern",
+      "network",
+      "fine, linear strands",
+      "dense",
+      "solid",
+      "primary"
+    ],
+    "SIGN_SYMPTOM": [
+      "headache",
+      "pain",
+      "Pain",
+      "shortness of breath",
+      "nausea",
+      "diaphoresis",
+      "fever",
+      "cough",
+      "anxious",
+      "distress",
+      "Normocephalic",
+      "murmurs",
+      "rubs",
+      "gallops",
+      "JVD",
+      "wheezes",
+      "rales",
+      "rhonchi",
+      "Soft",
+      "hepatosplenomegaly",
+      "edema",
+      "cyanosis",
+      "rash",
+      "oriented",
+      "deficits",
+      "Sinus rhythm",
+      "ST-segment depression",
+      "cardiomegaly",
+      "Interstitial Pattern",
+      "Ground-Glass Opacities",
+      "ground-glass opacity",
+      "GGO",
+      "increased",
+      "density",
+      "fluid accumulation",
+      "Consolidation",
+      "consolidation",
+      "masses",
+      "inflamed",
+      "thickened"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "chest",
+      "center of chest",
+      "left arm",
+      "jaw",
+      "Abdominal",
+      "Extremities",
+      "Peripheral",
+      "Skin",
+      "Chest",
+      "both lungs",
+      "lung tissue",
+      "lung parenchyma",
+      "lower lobes",
+      "lungs",
+      "lung",
+      "s",
+      "fissures",
+      "Hilar Areas",
+      "hila",
+      "pulmonary arteries",
+      "veins enter the lungs",
+      "Mediastinum",
+      "mediastinum",
+      "space between the lungs",
+      "Pleura",
+      "pleura",
+      "lining of",
+      "Card",
+      "cardiac"
+    ],
+    "DURATION": [
+      "3 hours",
+      "6 hours"
+    ],
+    "LAB_VALUE": [
+      "7/10",
+      "2",
+      "162/94 mmHg",
+      "92 bpm",
+      "20/min",
+      "98.6\u00b0F",
+      "95%",
+      "Alert",
+      "-appearing",
+      "atraumatic",
+      "equal",
+      "reactive",
+      "moist",
+      "Regular",
+      "Clear",
+      "non-tender",
+      "non",
+      "ended",
+      "intact",
+      "3",
+      "1mm",
+      "0.08 ng/mL",
+      "6.2 ng/mL",
+      "110 pg/mL",
+      "9.2",
+      "14.2",
+      "245",
+      "138",
+      "4.2",
+      "101",
+      "24",
+      "18",
+      "1.0",
+      "156",
+      "220",
+      "142",
+      "38",
+      "210",
+      "elevated",
+      "normal",
+      "unremarkable",
+      "within normal limits"
+    ],
+    "SEVERITY": [
+      "mild",
+      "Mild",
+      "significant"
+    ],
+    "DISEASE_DISORDER": [
+      "Hypertension",
+      "2 Diabetes",
+      "Hyperlipidemia",
+      "Allergies",
+      "construction",
+      "cardiopulmonary process",
+      "Acute coronary syndrome",
+      "NSTEMI",
+      "hypertension",
+      "Type 2 Diabetes Mellitus",
+      "angina",
+      "Aortic dissection",
+      "Pulmonary embolism",
+      "Gastroesophageal reflux disease",
+      "pain",
+      "interstitial lung disease",
+      "consolidation",
+      "infection",
+      "inflammation",
+      "bacterial pneumonia",
+      "Idiopathic Pulmonary Fibrosis",
+      "IPF",
+      "Sarcoidosis",
+      "Hypersensitivity Pneumonitis",
+      "Connective Tissue Diseases",
+      "Rheumatoid Arthritis",
+      "Scleroderma",
+      "Drug",
+      "Lung Disease"
+    ],
+    "DATE": [
+      "5 years ago",
+      "2 years ago",
+      "3 years",
+      "1 week",
+      "2 weeks"
+    ],
+    "THERAPEUTIC_PROCEDURE": [
+      "Appendectomy",
+      "cardiac catheterization"
+    ],
+    "MEDICATION": [
+      "Lisinopril",
+      "Metformin",
+      "Atorvastatin",
+      "Aspirin",
+      "Clopidogrel",
+      "Metoprolol",
+      "Nitroglycerin",
+      "medications"
+    ],
+    "DOSAGE": [
+      "10mg daily",
+      "500mg BID",
+      "20mg daily",
+      "/",
+      "325mg loading dose",
+      "81mg daily",
+      "300mg loading dose",
+      "75mg daily",
+      "40mg daily",
+      "25mg BID",
+      "0.4mg SL",
+      "q6h x 3"
+    ],
+    "FAMILY_HISTORY": [
+      "died of MI at age 62",
+      "Mother",
+      "history of hypertension"
+    ],
+    "HISTORY": [
+      "smoker",
+      "social alcohol use"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "Vitals",
+      "BP",
+      "HR",
+      "RR",
+      "Temp",
+      "SpO2",
+      "Physical Examination",
+      "HEENT",
+      "Pupils",
+      "Mucous membranes",
+      "Cardiovascular",
+      "rate",
+      "rhythm",
+      "Respiratory",
+      "auscultation",
+      "pulses",
+      "Neurological",
+      "ECG",
+      "X-ray",
+      "Labs",
+      "Troponin I",
+      "CK-MB",
+      "BNP",
+      "CBC",
+      "WBC",
+      "Hgb",
+      "Plt",
+      "BMP",
+      "Na",
+      "K",
+      "Cl",
+      "CO2",
+      "BUN",
+      "Cr",
+      "Glucose",
+      "Lipid Panel",
+      "Total cholesterol",
+      "LDL",
+      "HDL",
+      "TG",
+      "troponin",
+      "monitoring",
+      "cardiac enzymes",
+      "iac Silhouette",
+      "silhouette"
+    ],
+    "CLINICAL_EVENT": [
+      "Admit"
+    ],
+    "NONBIOLOGICAL_LOCATION": [
+      "Cardiac Care Unit"
+    ]
+  },
+  "analysis_date": "2025-03-25T10:05:24.545295",
+  "created_at": "2025-03-25T10:05:24.545300"
+}

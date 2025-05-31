@@ -1,0 +1,51 @@
+{
+  "matched_diseases": [
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "icd_code": "E11.9",
+      "probability": 95,
+      "reasoning": "The patient has a 10-year history of type 2 diabetes mellitus.  Home glucose readings (120-180 mg/dL) and a previous A1c of 7.8% indicate suboptimal glycemic control.  The plan includes increasing metformin and ordering a new HbA1c, confirming the diagnosis and need for management adjustments."
+    },
+    {
+      "disease": "Essential Hypertension",
+      "icd_code": "I10",
+      "probability": 90,
+      "reasoning": "The patient's blood pressure is consistently elevated (144/88 mmHg today, above the goal of <140/90 mmHg).  This, combined with a history of hypertension and current medication (lisinopril), strongly suggests essential hypertension. The plan includes continuing lisinopril and emphasizing lifestyle modifications."
+    },
+    {
+      "disease": "Tension-type Headache",
+      "icd_code": "G44.9",
+      "probability": 80,
+      "reasoning": "The patient reports occasional mild headaches (2-3 times/week), described as dull, pressure-like pain across the forehead, lasting 2-3 hours, and relieved by acetaminophen.  These characteristics are consistent with tension-type headaches.  The absence of neurological symptoms or red flags further supports this diagnosis.  The plan includes symptomatic treatment with acetaminophen and stress reduction techniques."
+    }
+  ],
+  "differential_diagnoses": [
+    {
+      "disease": "Chronic Kidney Disease (CKD)",
+      "icd_code": "N18.9",
+      "probability": 30,
+      "reasoning": "Elevated creatinine (15 mgh - assuming this is a typo and should be in mg/dL, still high) warrants further investigation.  CKD can be a complication of diabetes and hypertension.  A comprehensive metabolic panel is ordered to assess renal function."
+    },
+    {
+      "disease": "Secondary Hypertension",
+      "icd_code": "I15.9",
+      "probability": 20,
+      "reasoning": "While essential hypertension is the most likely cause, secondary hypertension needs to be considered, especially given the elevated creatinine. Further investigation is needed to rule out underlying causes."
+    }
+  ],
+  "additional_testing_recommended": [
+    "HbA1c",
+    "Comprehensive Metabolic Panel (CMP)",
+    "Lipid Panel",
+    "Complete Blood Count (CBC)",
+    "ECG (if chest pain is persistent or concerning)"
+  ],
+  "clinical_summary": "The patient presents with well-controlled type 2 diabetes mellitus, essential hypertension, and tension-type headaches.  The elevated creatinine warrants further investigation to rule out chronic kidney disease.  The plan includes medication adjustments, lifestyle modifications, and further testing to monitor renal function and overall health.  The patient's fatigue also requires further evaluation with a CBC.",
+  "timestamp": "2025-04-05T05:19:04.867576",
+  "identified_icd_codes": [
+    "E11.9",
+    "I10",
+    "G44.9",
+    "R68.84"
+  ]
+}

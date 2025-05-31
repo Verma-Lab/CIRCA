@@ -1,0 +1,104 @@
+{
+    "disease": "Abdominal Actinomycosis",
+    "icd_code": "A421",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Right upper abdominal pain",
+                "severity": "Moderate to severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Palpable abdominal mass",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Left lower abdominal pain",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Vague abdominal pain",
+                "severity": "Mild to moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Lower abdominal pain",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Periumbilical pain with fever",
+                "severity": "Moderate to severe",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Menorrhagia",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Decreased stool caliber",
+                "severity": "Mild",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Peritonitis symptoms",
+                "severity": "Severe",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "WBC": "Elevated (mean 10,850.4 x 10^9/L; normal 4,000-10,000 x 10^9/L)",
+            "Segmented neutrophils": "Slightly elevated (mean 70.6%; normal 55.0%-70.0%)",
+            "ESR": "Elevated (mean 42.9 mm/hr; normal 0-10 mm/hr)",
+            "CRP": "Elevated (mean 6.8 mg/L; normal <5 mg/L)"
+        },
+        "physical_findings": [
+            "Palpable abdominal mass",
+            "Tender abdominal mass"
+        ],
+        "lab_values": {
+            "WBC": "Elevated",
+            "Segmented neutrophils": "Slightly elevated",
+            "ESR": "Elevated",
+            "CRP": "Elevated",
+            "Liver function tests": "Normal in most patients"
+        },
+        "risk_factors": [
+            "Prior invasive abdominal surgery or procedure",
+            "Intrauterine device (IUD)",
+            "Total abdominal hysterectomy (TAH)",
+            "Caesarean section (C/S)",
+            "Fish bone-induced rectal perforation",
+            "Polypectomy induced microperforation",
+            "Peritoneal dialysis",
+            "Cholecystectomy with T-tube drainage"
+        ],
+        "imaging_findings": {
+            "CT scan": "Intra-abdominal mass or abscess, mimicking malignancy;  Concentric wall thickening if bowel involved;  Infiltration of fascia and abdominal wall"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": "Histological confirmation of Actinomyces species",
+        "supportive": [
+            "Clinical presentation (abdominal pain, mass)",
+            "Abnormal lab values (elevated WBC, ESR, CRP)",
+            "Imaging findings (mass or abscess on CT scan)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute appendicitis",
+        "Pelvic inflammatory disease",
+        "Acute tubo-ovarian abscess",
+        "Ovarian cancer",
+        "Colon cancer"
+    ]
+}

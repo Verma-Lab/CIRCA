@@ -1,0 +1,82 @@
+{
+    "disease": "Exanthema subitum (Sixth Disease)",
+    "icd_code": "B08.21",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "High grade (>103.0\u00b0F [39.5\u00b0C])",
+                "pattern": "3-7 days, often resolving abruptly"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild, asymptomatic",
+                "pattern": "Appears after fever subsides, diffuse morbilliform, pink-red macules and papules (3-5mm), begins on neck and trunk, spreads to extremities, lasts 1-2 days"
+            },
+            {
+                "name": "Runny nose",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Tiredness",
+                "severity": "Mild to moderate",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild",
+                "pattern": "Occasional, non-productive"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "Occasional"
+            },
+            {
+                "name": "Nagayama spots",
+                "severity": "Mild",
+                "pattern": "Erythematous papules on uvula and soft palate, occasional"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated (e.g., 105 bpm)",
+            "respiratory_rate": "May be elevated (e.g., 26 breaths per minute)",
+            "temperature": "High fever (>103.0\u00b0F [39.5\u00b0C]) initially, normal after fever subsides"
+        },
+        "physical_findings": [
+            "Erythematous, pink, non-scaling, blanching, macular rash",
+            "Rash centrally distributed on torso, extending peripherally",
+            "Moist mucous membranes",
+            "Clear oropharynx",
+            "Absent lymphadenopathy",
+            "Clear lungs",
+            "Normal heart sounds"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic history of high fever followed by rash"
+        ],
+        "supportive": [
+            "Physical examination findings consistent with roseola"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rubeola (Measles)"
+    ]
+}

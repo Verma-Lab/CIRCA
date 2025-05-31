@@ -1,0 +1,19 @@
+{
+  "id": "c7a22607-5c2b-4e6d-b39d-f8ac89fd05f8",
+  "patient_id": "908b9209-245c-45cb-8558-ca4f2800962b",
+  "provider_id": "36c35b23-b466-4479-9c37-a2792ee85478",
+  "encounter_date": "2025-03-24T13:03:11.385190",
+  "encounter_type": "Follow-up",
+  "chief_complaint": "headache",
+  "vital_signs": {},
+  "hpi": "No medical history",
+  "ros": "",
+  "physical_exam": "",
+  "assessment": "",
+  "plan": "",
+  "diagnosis_codes": "",
+  "followup_instructions": "",
+  "clinical_note": "Patient: Jorge Thomas, DOB: 1979-12-30, Gender: Male\n\nChief Complaint: headache\nVital Signs:\n\nS: No medical history\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "created_at": "2025-03-24T13:03:11.385196",
+  "updated_at": "2025-03-24T13:03:11.385198"
+}

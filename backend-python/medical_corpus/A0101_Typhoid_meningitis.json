@@ -1,0 +1,153 @@
+{
+    "disease": "Typhoid Meningitis",
+    "icd_code": "A0101",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High grade",
+                "pattern": "Sudden onset, persistent"
+            },
+            {
+                "name": "Headache",
+                "severity": "Severe",
+                "pattern": "Present for several days"
+            },
+            {
+                "name": "Neck pain",
+                "severity": "Severe",
+                "pattern": "Present for several days"
+            },
+            {
+                "name": "Neck stiffness",
+                "severity": "Present",
+                "pattern": "Positive Kernig's sign"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Multiple episodes",
+                "pattern": "Daily for several days"
+            },
+            {
+                "name": "Altered level of consciousness",
+                "severity": "Gradual onset",
+                "pattern": "Present for one day"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Generalized",
+                "pattern": "Localized to upper limbs initially"
+            },
+            {
+                "name": "Loose stools",
+                "severity": "Present",
+                "pattern": "Present for two days"
+            },
+            {
+                "name": "Poor suck",
+                "severity": "Present",
+                "pattern": "Present"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Severe",
+                "pattern": "Developed acutely"
+            },
+            {
+                "name": "Stridor",
+                "severity": "Present",
+                "pattern": "Developed acutely"
+            },
+            {
+                "name": "Tachypnea",
+                "severity": "Present",
+                "pattern": "Developed acutely"
+            },
+            {
+                "name": "Tachycardia",
+                "severity": "Present",
+                "pattern": "Developed acutely"
+            },
+            {
+                "name": "Hypotension",
+                "severity": "Present",
+                "pattern": "Developed acutely"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Present",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38.5\u00b0C (or higher)",
+            "pulse": "102 bpm (or higher)",
+            "respiratory_rate": "16 breaths/minute (or higher)",
+            "blood_pressure": "130/80 mmHg (or abnormal for the patient)",
+            "oxygen_saturation": "60% (or lower)"
+        },
+        "physical_findings": [
+            "Well-nourished infant with a blank, vacant look",
+            "Neck stiffness",
+            "Global hypertonia",
+            "Hyperreflexia",
+            "Positive Kernig's sign",
+            "Irritability",
+            "Poor orientation",
+            "Bilaterally downgoing plantars",
+            "Neck swelling",
+            "Coarse crepitus bilaterally",
+            "Harsh vesicular breathing",
+            "Upper airway obstructed lesion",
+            "Subcutaneous emphysema",
+            "Pleural effusion bilaterally"
+        ],
+        "lab_values": {
+            "CSF": {
+                "glucose": "48 mg/dl (low)",
+                "protein": "25 mg/dl (high)",
+                "white_cell_count": "5 cells/\u00b5l (high, mainly lymphocytes)",
+                "culture": "Heavy growth of Salmonella typhi"
+            },
+            "blood": {
+                "white_cell_count": "10,400/mm3 (slightly elevated)",
+                "neutrophils": "45%",
+                "lymphocytes": "43%",
+                "monocytes": "12%",
+                "culture": "No growth"
+            },
+            "urine": {
+                "protein": "2++",
+                "glucose": "2++",
+                "ketone_bodies": "2++",
+                "blood": "2++",
+                "RBCs": "20-25 cells"
+            },
+            "C-reactive protein": "14.6 mg/dl (elevated)"
+        },
+        "risk_factors": [
+            "Poor hygiene",
+            "Unsanitary food",
+            "Unsatisfactory vaccination coverage",
+            "Immunocompromised state",
+            "Underlying disorders (HIV, malaria, malnutrition)"
+        ],
+        "imaging_findings": {
+            "CT scan": "Dilated ventricles, mild cerebral edema",
+            "MRI": "Not specified in provided text"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningitis (fever, headache, neck stiffness, altered mental status)",
+            "Positive culture of cerebrospinal fluid (CSF) for Salmonella typhi"
+        ],
+        "supportive": [
+            "Elevated white blood cell count in CSF",
+            "Abnormal CSF glucose and protein levels",
+            "Positive Gram stain (though negative in one case)"
+        ]
+    },
+    "differential_diagnoses": []
+}

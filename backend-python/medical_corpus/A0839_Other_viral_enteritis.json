@@ -1,0 +1,39 @@
+{
+    "disease": "Other viral enteritis",
+    "icd_code": "A0839",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Diarrhea",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Enteritis",
+                "severity": "Unspecified",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Viral enteritis not specified as Coxsackievirus, Echovirus, Enterovirus or Torovirus"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Coxsackievirus infection",
+        "Echovirus infection",
+        "Enterovirus infection",
+        "Torovirus infection",
+        "Infectious gastroenteritis and colitis, unspecified (A09)",
+        "Noninfective gastroenteritis and colitis, unspecified (K52.9)",
+        "Viral intestinal infection, unspecified (A08.4)"
+    ]
+}

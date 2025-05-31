@@ -1,0 +1,130 @@
+{
+    "disease": "Meningeal Tuberculoma",
+    "icd_code": "A171",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Headache",
+                "severity": "Intermittent to severe",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Neck pain",
+                "severity": "Intermittent",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Present",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Left-sided weakness",
+                "severity": "Progressive",
+                "pattern": "From mild to severe (0/5)"
+            },
+            {
+                "name": "Left-sided facial droop",
+                "severity": "Present",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Muscle weakness",
+                "severity": "4+/5 to 0/5",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Falling",
+                "severity": "Present",
+                "pattern": "Single incident"
+            },
+            {
+                "name": "Dragging left foot",
+                "severity": "Present",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Dropping objects",
+                "severity": "Present",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Altered sensorium",
+                "severity": "Intermittent",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Intermittent",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Fever",
+                "severity": "Possible",
+                "pattern": "Not specified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Vital signs were within normal limits in initial presentation."
+        },
+        "physical_findings": [
+            "Left-sided facial droop",
+            "Muscle weakness (initially 4+/5, later 0/5 on left upper and lower extremities)",
+            "Pupils 3 mm, equal and symmetrical bilaterally"
+        ],
+        "lab_values": {
+            "Cerebrospinal fluid (CSF)": {
+                "lymphocytic pleocytosis": "16 cells/ml (elevated)",
+                "protein": "149 mg/dl (elevated)",
+                "glucose": "49 mg/dl (normal)",
+                "culture": "Negative",
+                "Quantiferon release assay": "Indeterminate",
+                "Toxoplasma IgG": "Positive",
+                "Cryptococcus": "Negative",
+                "Epstein Barr virus (EBV)": "Negative",
+                "Cytomegalovirus (CMV)": "Negative",
+                "VDRL test": "Negative",
+                "Acid-fast staining": "Negative (initially), Positive (after biopsy)"
+            },
+            "HIV": {
+                "screening test": "Positive",
+                "viral load": "14000 copies/ml",
+                "CD4 cell count": "16 cells/ml"
+            },
+            "Basic labs": "Unremarkable"
+        },
+        "risk_factors": [
+            "Recent immigration from Africa",
+            "HIV-positive status",
+            "Prior history of TB infection",
+            "Immunocompromised status"
+        ],
+        "imaging_findings": {
+            "CT scan of the head with contrast": "Large (3.9 cm), poorly defined, predominantly enhanced right-sided frontoparietal mass with surrounding vasogenic edema, calcifications, and petechial hemorrhages. Significant effacement and mass effect on the right lateral ventricle with an 8 mm midline shift.",
+            "Chest X-ray": "Unremarkable",
+            "CT of chest, abdomen, and pelvis": "Unremarkable",
+            "MRI of abdomen": "Not feasible due to gunshot wound",
+            "Repeat CT head with contrast (after treatment)": "Reduction of vasogenic edema, better delineation of mass originating from the meninges"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with meningeal tuberculoma (focal neurological deficits, altered sensorium, headache)",
+            "Positive acid-fast bacilli staining on biopsy"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of tuberculoma (mass with surrounding edema)",
+            "Abnormal CSF findings (lymphocytic pleocytosis, elevated protein)",
+            "Positive HIV status",
+            "History of TB infection"
+        ]
+    },
+    "differential_diagnoses": [
+        "Brain tumor",
+        "Stroke",
+        "Toxoplasmosis",
+        "Lymphoma",
+        "Other infectious etiologies (Cryptococcus, VZV, Streptococcus, Neisseria, Listeria, human Parechovirus, human herpes virus 6, human simplex virus type 1 and 2, Haemophilus influenzae, Escherichia coli K1, Enterovirus, Cytomegalovirus)"
+    ]
+}

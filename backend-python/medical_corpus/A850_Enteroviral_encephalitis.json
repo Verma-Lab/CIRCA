@@ -1,0 +1,112 @@
+{
+    "disease": "Enteroviral encephalitis",
+    "icd_code": "A850",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Meningitis",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Encephalitis",
+                "severity": "Variable",
+                "pattern": "Defining characteristic"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Can be present, associated with unfavorable outcomes"
+            },
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "Can be present, associated with unfavorable outcomes"
+            },
+            {
+                "name": "Myoclonic jerks",
+                "severity": "Variable",
+                "pattern": "Can be present, associated with unfavorable outcomes"
+            },
+            {
+                "name": "Respiratory illness",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Neurological dysfunction",
+                "severity": "Variable",
+                "pattern": "Defining characteristic"
+            },
+            {
+                "name": "Acute flaccid paralysis",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Pulmonary edema",
+                "severity": "Severe",
+                "pattern": "Can be present, leading cause of death in some cases"
+            },
+            {
+                "name": "Pulmonary hemorrhage",
+                "severity": "Severe",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Cardiopulmonary collapse",
+                "severity": "Severe",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "leukocyte_count": ">13,000/mm3 (associated with unfavorable outcomes)"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "CSF viral yield": "Lower yield rate associated with unfavorable outcomes"
+        },
+        "risk_factors": [
+            "Young age (<4 years)",
+            "Neonates and infants"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical evidence of neurological dysfunction",
+            "Presence of inflammatory process in the brain"
+        ],
+        "supportive": [
+            "Positive enterovirus PCR or culture from CSF or other samples",
+            "Characteristic clinical presentation"
+        ]
+    },
+    "differential_diagnoses": []
+}

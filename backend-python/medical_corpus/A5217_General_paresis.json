@@ -1,0 +1,125 @@
+{
+    "disease": "General paresis",
+    "icd_code": "A5217",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dementia",
+                "severity": "Progressive",
+                "pattern": "Usually begins 10-30 years after initial syphilis infection"
+            },
+            {
+                "name": "Memory impairment",
+                "severity": "Variable",
+                "pattern": "Frequent initial symptom, present in 68% of patients in one study"
+            },
+            {
+                "name": "Impaired calculative ability",
+                "severity": "Variable",
+                "pattern": "Present in 50% of patients in one study"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Variable",
+                "pattern": "Early stage symptom"
+            },
+            {
+                "name": "Forgetfulness",
+                "severity": "Variable",
+                "pattern": "Early stage symptom"
+            },
+            {
+                "name": "Personality changes",
+                "severity": "Variable",
+                "pattern": "Early stage symptom"
+            },
+            {
+                "name": "Headaches",
+                "severity": "Variable",
+                "pattern": "Early stage symptom"
+            },
+            {
+                "name": "Changes in sleep habits",
+                "severity": "Variable",
+                "pattern": "Early stage symptom"
+            },
+            {
+                "name": "Emotional lability",
+                "severity": "Variable",
+                "pattern": "Late stage symptom"
+            },
+            {
+                "name": "Impaired judgment",
+                "severity": "Variable",
+                "pattern": "Late stage symptom"
+            },
+            {
+                "name": "Disorientation",
+                "severity": "Variable",
+                "pattern": "Late stage symptom"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Variable",
+                "pattern": "Late stage symptom"
+            },
+            {
+                "name": "Delusions",
+                "severity": "Variable",
+                "pattern": "Late stage symptom"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Occasional late stage symptom"
+            },
+            {
+                "name": "Agitation",
+                "severity": "Variable",
+                "pattern": "Common mood disturbance"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "CSF Treponema pallidum hemagglutination (TPHA)": "Positive in all patients in one study",
+            "CSF rapid plasma reagin (RPR)": "Positive in 43.3% of misdiagnosed patients and 30.8% of correctly diagnosed patients in one study; median titer 1:64 in another study",
+            "Serum TPPA": "Positive in all patients in one study",
+            "Serum RPR": "Positive in all patients in one study; median titer 1:64",
+            "CSF protein": "Increased (>450 mg/L or >500 mg/L)",
+            "CSF white blood cells": "Increased (\u22655 \u00d7 106/L)"
+        },
+        "risk_factors": [
+            "Untreated syphilis for many years",
+            "Promiscuous or high-risk sexual behavior",
+            "Long travel history for work",
+            "Drug abuse",
+            "Previous blood transfusion"
+        ],
+        "imaging_findings": {
+            "MRI": [
+                "Patchy or speckled hyperintensities (70.8% in one study)",
+                "Cerebral atrophy (45.8% in one study)",
+                "Lesions in ventricular and paraventricular area (50.0% in one study)",
+                "Lesions in temporal lobes (45.8% in one study)"
+            ],
+            "CT": "May show cortical atrophy"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical manifestations of neurological or psychiatric symptoms (cognitive impairment, mental abnormalities, impaired social function, affective disorders)",
+            "Positive serological test for syphilis (TPPA and RPR)"
+        ],
+        "supportive": [
+            "Positive CSF RPR",
+            "Positive CSF TPPA with pleocytosis or increased protein"
+        ]
+    },
+    "differential_diagnoses": [
+        "Schizophrenia",
+        "Mood disorders",
+        "Alzheimer's disease"
+    ]
+}

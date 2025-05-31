@@ -1,0 +1,96 @@
+{
+    "disease": "Pulmonary Paracoccidioidomycosis",
+    "icd_code": "B410",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Hemoptysis",
+                "severity": "Occasional",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Fever",
+                "severity": "Rare",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Cutaneous lesions",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Can be present in acute cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Can be present in acute cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated in acute cases"
+        },
+        "physical_findings": [
+            "Diffuse bilateral changes in pulmonary auscultation",
+            "Absence of respiratory symptoms despite extensive lung lesions (in some cases)",
+            "Palpable lymphadenopathy (in acute cases)",
+            "Hepatosplenomegaly (in acute cases)",
+            "Cutaneous ulcerated lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Occupation as a farm worker",
+            "Residence in endemic areas (Latin America)",
+            "Travel to endemic areas",
+            "Immunocompromised state"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Bilateral reticulo-nodular pattern, segmental consolidation",
+            "HRCT": [
+                "Exuberant bilateral parenchymal lesions",
+                "Fibrotic changes",
+                "Areas of active inflammatory disease",
+                "Multiple irregular spiculated nodular lesions (8-25mm)",
+                "Central cavitation",
+                "Confluence of lesions",
+                "Consolidation with air bronchogram",
+                "Architectural distortion",
+                "Ground glass attenuation",
+                "Septal thickening",
+                "Parenchymal bands",
+                "Diffuse pleural speculated thickening",
+                "Apical emphysematous bubbles",
+                "Traction bronchiectasis",
+                "Hilar adenopathy",
+                "Parietal irregularity of dilated trachea",
+                "Nodular-diffuse, confluent, and pseudo-tumoral patterns (in experimental mouse model)"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive mycological examination (culture, biopsy)",
+            "Characteristic imaging findings (HRCT)"
+        ],
+        "supportive": [
+            "Clinical presentation (symptoms, physical findings)",
+            "Epidemiological risk factors"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pulmonary tuberculosis"
+    ]
+}

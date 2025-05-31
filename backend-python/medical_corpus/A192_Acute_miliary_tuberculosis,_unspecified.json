@@ -1,0 +1,58 @@
+{
+    "disease": "Acute miliary tuberculosis, unspecified",
+    "icd_code": "A192",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unspecified",
+                "severity": "Variable",
+                "pattern": "Can be mild for many months or absent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Possible",
+            "tachycardia": "Possible",
+            "tachypnea": "Possible"
+        },
+        "physical_findings": [
+            "May be nonspecific or absent"
+        ],
+        "lab_values": {
+            "blood_tests": {
+                "CBC": "May show anemia or leukocytosis",
+                "liver_function_tests": "May be abnormal"
+            },
+            "sputum_culture": "Positive for Mycobacterium tuberculosis",
+            "other": "Elevated inflammatory markers (ESR, CRP)"
+        },
+        "risk_factors": [
+            "HIV infection",
+            "Immunosuppression",
+            "Malnutrition",
+            "Diabetes",
+            "Tobacco use",
+            "Close contact with individuals with active TB"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show miliary pattern (diffuse small nodules)",
+            "CT_scan": "Can better visualize miliary nodules"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical suspicion based on symptoms and risk factors",
+            "Positive microbiological confirmation (sputum culture, PCR)"
+        ],
+        "supportive": [
+            "Abnormal chest x-ray showing miliary pattern",
+            "Abnormal lab values (e.g., elevated inflammatory markers)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other disseminated infections",
+        "Malignancies",
+        "Sarcoidosis",
+        "Hypersensitivity pneumonitis"
+    ]
+}

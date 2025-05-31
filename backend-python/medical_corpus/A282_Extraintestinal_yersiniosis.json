@@ -1,0 +1,105 @@
+{
+    "disease": "Extraintestinal yersiniosis",
+    "icd_code": "A282",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "high",
+                "pattern": "present"
+            },
+            {
+                "name": "Chills",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Watery diarrhea",
+                "severity": "moderate",
+                "pattern": "present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "mild",
+                "pattern": "present"
+            },
+            {
+                "name": "Dyspepsia",
+                "severity": "mild",
+                "pattern": "present"
+            },
+            {
+                "name": "Fever",
+                "severity": "high",
+                "pattern": "present"
+            },
+            {
+                "name": "Pain in neck, lumbosacral region, and limbs",
+                "severity": "moderate to severe",
+                "pattern": "present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "38.4 \u00b0C and above",
+            "heart_rate": "75/min (within normal range in one case, but elevated in another)"
+        },
+        "physical_findings": [
+            "Icteric sclera",
+            "Localized tenderness in the lower abdomen",
+            "Diminished bowel sounds",
+            "Limited activities of lumbar and cervical vertebrae"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "Elevated (12,590 cells/mm3)",
+            "neutrophils": "Elevated (80.3%)",
+            "C-reactive_protein": "Elevated (9.340 mg/dL)",
+            "aspartate_aminotransferase": "Elevated (392 IU/L)",
+            "alanine_aminotransferase": "Elevated (136 IU/L)",
+            "\u03b3-glutamyl_transferase": "Elevated (487 IU/L)",
+            "prothrombin_time": "Slightly prolonged (12.7 s)",
+            "neutrophile granulocyte": "Elevated (80.7%)",
+            "CRP": "Elevated (115.29 mg/L and 200 mg/L in different cases)",
+            "ESR": "Elevated (20 mm/h)",
+            "PCT": "Elevated (0.191 ng/mL)"
+        },
+        "risk_factors": [
+            "Obesity",
+            "Smoking",
+            "Underlying illnesses (liver cirrhosis, diabetes, hemochromatosis, thalassemia, malignancy, immune suppression)",
+            "Ankylosing spondylitis"
+        ],
+        "imaging_findings": {
+            "abdominal_CT": "Marked wall thickening and mucosal hyper-enhancement in the terminal ileum, minimal intussusception at the ileocecal valve, multiple enlarged mesenteric lymph nodes",
+            "ultrasound": "Markedly increased liver echogenicity, mildly enlarged spleen",
+            "colonofiberscopy": "Hyperemic nodular edematous mucosa on the terminal ileum, hemorrhagic spots on the rest of the colon",
+            "X-ray and CT": "Double sacroiliac joint fusion (consistent with ankylosing spondylitis)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Isolation of Yersinia pseudotuberculosis or Yersinia enterocolitica from blood culture"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with extraintestinal yersiniosis (fever, abdominal pain, diarrhea, jaundice, etc.)",
+            "Elevated liver function tests",
+            "Abnormal inflammatory markers (CRP, WBC)",
+            "Imaging findings suggestive of intestinal or extraintestinal involvement"
+        ]
+    },
+    "differential_diagnoses": [
+        "Acute colitis",
+        "Hepatitis A",
+        "Aseptic arthritis"
+    ]
+}

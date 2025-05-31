@@ -1,0 +1,32 @@
+{
+  "matched_diseases": [],
+  "differential_diagnoses": [
+    {
+      "disease": "Migraine Headache",
+      "icd_code": "G43.1",
+      "probability": 70,
+      "reasoning": "The chief complaint is headache, and the patient is a 19-year-old male.  While there is no detailed history, migraine is a common headache type in this age group.  The literature highlights the frequent misdiagnosis of sinus headaches as migraines, and the overlap in symptoms makes it a strong differential.  The lack of information prevents a definitive diagnosis."
+    },
+    {
+      "disease": "Tension-type Headache",
+      "icd_code": "G44.2",
+      "probability": 60,
+      "reasoning": "Tension headaches are also very common, especially in young adults.  The absence of specific symptoms makes this a plausible differential.  Further history is needed to differentiate from migraine."
+    },
+    {
+      "disease": "Headache attributed to rhinosinusitis",
+      "icd_code": "G44.3",
+      "probability": 30,
+      "reasoning": "The literature mentions this as a possibility, but it's less likely given the lack of any history of sinus symptoms or nasal congestion.  This would require further investigation to rule out."
+    }
+  ],
+  "additional_testing_recommended": [
+    "Detailed history taking focusing on headache characteristics (location, duration, intensity, associated symptoms like nausea, vomiting, photophobia, phonophobia, aura), frequency, triggers, and any family history of headaches.",
+    "Physical examination of the head, neck, and sinuses.",
+    "Neurological examination to rule out any neurological causes.",
+    "Consider sinus imaging (CT or MRI) if sinus involvement is suspected based on further history."
+  ],
+  "clinical_summary": "A 19-year-old male presents with a chief complaint of headache.  The lack of detailed information in the provided patient data prevents a definitive diagnosis.  Migraine and tension-type headache are the most likely differential diagnoses, with headache attributed to rhinosinusitis being a less probable possibility.  Further history, physical examination, and potentially imaging are necessary to reach a conclusive diagnosis and appropriate management plan.",
+  "timestamp": "2025-04-05T11:01:16.143370",
+  "identified_icd_codes": []
+}

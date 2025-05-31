@@ -1,0 +1,19 @@
+{
+  "id": "2b92ede1-7eb4-48fb-949d-bc28adfafc1f",
+  "patient_id": "fbe5991e-cd15-4cc5-8246-3bd30cdcc515",
+  "provider_id": "36c35b23-b466-4479-9c37-a2792ee85478",
+  "encounter_date": "2025-03-25T15:15:01.850632",
+  "encounter_type": "Office Visit",
+  "chief_complaint": "leg pain",
+  "vital_signs": {},
+  "hpi": "No history of current illness",
+  "ros": "",
+  "physical_exam": "",
+  "assessment": "",
+  "plan": "",
+  "diagnosis_codes": "",
+  "followup_instructions": "",
+  "clinical_note": "Patient: John Doe, DOB: 1980-05-15, Gender: Male\n\nChief Complaint: leg pain\nVital Signs:\n\nS: No history of current illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.",
+  "created_at": "2025-03-25T15:15:01.850634",
+  "updated_at": "2025-03-25T15:15:01.850636"
+}

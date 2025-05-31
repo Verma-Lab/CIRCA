@@ -1,0 +1,20 @@
+{
+    "disease": "Malignant neoplasm of ethmoidal sinus",
+    "icd_code": "C311",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of malignant cells in the ethmoidal sinus tissue confirmed by biopsy or other definitive diagnostic methods."
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,52 @@
+{
+    "disease": "Basal cell carcinoma of skin, unspecified",
+    "icd_code": "C4491",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin lesion",
+                "severity": "Variable",
+                "pattern": "New growth, change in a previous growth, or recurring sore"
+            },
+            {
+                "name": "Slightly transparent bump",
+                "severity": "Mild",
+                "pattern": "Often on sun-exposed areas"
+            },
+            {
+                "name": "Skin-colored or pink bump",
+                "severity": "Mild to moderate",
+                "pattern": "Common on white skin"
+            },
+            {
+                "name": "Brown or glossy black bump with rolled border",
+                "severity": "Mild to moderate",
+                "pattern": "Common on brown and Black skin"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesion (new growth, change in a previous growth, or recurring sore)",
+            "Slightly transparent bump",
+            "Skin-colored or pink bump (on white skin)",
+            "Brown or glossy black bump with rolled border (on brown and Black skin)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Long-term exposure to ultraviolet (UV) radiation from sunlight",
+            "Sun exposure"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Presence of a skin lesion consistent with basal cell carcinoma"
+        ],
+        "supportive": [
+            "History of sun exposure",
+            "Physical examination findings"
+        ]
+    },
+    "differential_diagnoses": []
+}

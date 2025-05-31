@@ -1,0 +1,98 @@
+{
+    "disease": "Chronic viral hepatitis C",
+    "icd_code": "B182",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Jaundice (yellowing of skin or eyes)",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in acute phase, otherwise normal",
+            "pulse": "Variable",
+            "blood_pressure": "Variable",
+            "respirations": "Variable"
+        },
+        "physical_findings": [
+            "Jaundice",
+            "Hepatomegaly (enlarged liver)",
+            "Splenomegaly (enlarged spleen)"
+        ],
+        "lab_values": {
+            "ALT": "Elevated",
+            "AST": "Elevated",
+            "ALP": "Potentially elevated",
+            "bilirubin": "Elevated",
+            "HCV RNA": "Positive",
+            "HCV antibody": "Positive"
+        },
+        "risk_factors": [
+            "Sharing needles or syringes",
+            "Unsafe medical procedures (e.g., blood transfusions with unscreened blood products)",
+            "Mother-to-child transmission",
+            "Sexual practices leading to blood exposure (e.g., multiple sexual partners, men who have sex with men)",
+            "Intravenous drug use"
+        ],
+        "imaging_findings": {
+            "ultrasound": "Hepatomegaly, changes consistent with cirrhosis or fibrosis",
+            "CT scan": "Hepatomegaly, changes consistent with cirrhosis or fibrosis",
+            "MRI": "Hepatomegaly, changes consistent with cirrhosis or fibrosis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive HCV RNA test",
+            "Evidence of chronic liver inflammation (e.g., elevated liver enzymes)"
+        ],
+        "supportive": [
+            "Symptoms consistent with chronic hepatitis C",
+            "History of risk factors for HCV infection",
+            "Abnormal liver imaging findings"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other forms of viral hepatitis (e.g., hepatitis A, B, D)",
+        "Autoimmune hepatitis",
+        "Alcoholic liver disease",
+        "Nonalcoholic fatty liver disease",
+        "Drug-induced liver injury"
+    ]
+}

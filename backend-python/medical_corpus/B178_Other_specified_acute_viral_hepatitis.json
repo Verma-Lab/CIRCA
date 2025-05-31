@@ -1,0 +1,90 @@
+{
+    "disease": "Other specified acute viral hepatitis",
+    "icd_code": "B178",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Jaundice",
+                "severity": "Variable, can be severe",
+                "pattern": "Present in a significant portion of cases (e.g., 68.8% in one study)"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Present in a significant portion of cases (e.g., 57.6% in one study)"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable",
+                "pattern": "Present in a portion of cases (e.g., 36.1% in one study), can lead to hospitalization"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Present in a portion of cases (e.g., 25.7% in one study)"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "Commonly reported"
+            },
+            {
+                "name": "General weakness",
+                "severity": "Variable",
+                "pattern": "Commonly reported"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "Can lead to hospitalization"
+            },
+            {
+                "name": "Encephalopathy",
+                "severity": "Severe",
+                "pattern": "Rarely reported"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "description": "Not explicitly detailed in provided text, but abnormal liver function tests are a key indicator."
+        },
+        "physical_findings": [
+            "Jaundice"
+        ],
+        "lab_values": {
+            "AST": {
+                "abnormal_range": ">500 IU/L (in some studies, used as a diagnostic criterion)"
+            },
+            "ALT": {
+                "abnormal_range": ">500 IU/L (in some studies, used as a diagnostic criterion)"
+            },
+            "Total Bilirubin": {
+                "abnormal_range": "Elevated in many cases"
+            }
+        },
+        "risk_factors": [
+            "Adenovirus infection (particularly adenovirus type 41 species F)",
+            "SARS-CoV-2 infection (potential role in priming the immune system for subsequent liver damage)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Acute hepatitis (non-hepatitis A-E)",
+            "AST or ALT > 500 IU/L (in some studies)"
+        ],
+        "supportive": [
+            "Negative testing for hepatitis A, B, C, and E viruses",
+            "Positive testing for adenovirus (especially Ad-F41) or SARS-CoV-2"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hepatitis A",
+        "Hepatitis B",
+        "Hepatitis C",
+        "Hepatitis E",
+        "Other viral infections",
+        "Autoimmune hepatitis",
+        "Drug-induced liver injury"
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "disease": "Other secondary syphilis of skin",
+    "icd_code": "A5139",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin rash",
+                "severity": "Variable",
+                "pattern": "May occur on palms, soles, or trunk; may be non-itchy"
+            },
+            {
+                "name": "Swellings",
+                "severity": "Variable",
+                "pattern": "May resemble warts, may weep; often in armpits or on genitals"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin rash",
+            "Swellings resembling warts"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact with infected individual",
+            "Mother-to-child transmission during pregnancy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with secondary syphilis"
+        ],
+        "supportive": [
+            "Positive serological tests for syphilis"
+        ]
+    },
+    "differential_diagnoses": []
+}

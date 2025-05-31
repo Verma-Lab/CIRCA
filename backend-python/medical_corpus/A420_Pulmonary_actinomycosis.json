@@ -1,0 +1,78 @@
+{
+    "disease": "Pulmonary Actinomycosis",
+    "icd_code": "A420",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Chest pain",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Productive cough",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Unspecified",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "No significant findings on physical examination"
+        ],
+        "lab_values": {
+            "White blood cell count": "13840/uL (elevated)",
+            "C-reactive protein": "130mg/L (elevated, normal range 0-5mg/L)",
+            "Erythrocyte sedimentation rate": "58mm/h (elevated)",
+            "Hemoglobin": "14.4g/dL (within normal range)"
+        },
+        "risk_factors": [
+            "Poor oral hygiene",
+            "Preexisting dental disease",
+            "Alcoholism",
+            "Diabetes",
+            "Chronic lung disease",
+            "Sequelae following tuberculosis",
+            "Past smoking"
+        ],
+        "imaging_findings": {
+            "Chest CT": [
+                "Parenchymal consolidation in the anterior segment of the right upper lobe",
+                "Centrilobular micronodules in a tree-in-bud morphology"
+            ],
+            "PET/CT": [
+                "Area of parenchymal consolidation in the upper right lobe with high metabolism (SUV 10.5)",
+                "Hilar and mediastinal lymph nodes with SUV between three and four"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological examination showing branched filamentous gram-positive colonies consistent with Actinomyces species"
+        ],
+        "supportive": [
+            "Clinical presentation (chest pain, productive cough, dyspnea)",
+            "Imaging findings (consolidation, nodules)",
+            "Response to antibiotic treatment"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pulmonary tuberculosis",
+        "Lung abscess",
+        "Lung cancer"
+    ]
+}

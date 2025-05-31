@@ -1,0 +1,126 @@
+{
+    "disease": "Shigellosis due to Shigella dysenteriae",
+    "icd_code": "A030",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Watery diarrhea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Acute onset, lasting 5-7 days"
+            },
+            {
+                "name": "Bloody diarrhea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Acute onset, often present in severe cases"
+            },
+            {
+                "name": "Mucoid diarrhea",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Acute onset, often present in severe cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, can be mild to high",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Stomach cramps",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Tenesmus",
+                "severity": "Common",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Intestinal perforation",
+                "severity": "Occasional complication",
+                "pattern": "Can occur during infection"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Occasional complication, more common in young children",
+                "pattern": "Can occur during infection"
+            },
+            {
+                "name": "Invasive focal infections",
+                "severity": "Occasional complication",
+                "pattern": "Can occur during infection"
+            },
+            {
+                "name": "Reactive arthritis",
+                "severity": "Postinfectious manifestation",
+                "pattern": "Weeks after infection"
+            },
+            {
+                "name": "Hemolytic-uremic syndrome (HUS)",
+                "severity": "Postinfectious manifestation, associated with Shiga toxin-producing strains",
+                "pattern": "Weeks after infection"
+            },
+            {
+                "name": "Bacteremia",
+                "severity": "Occasional complication, more common in children under 5 and adults over 65 with underlying disease",
+                "pattern": "Can occur during infection"
+            },
+            {
+                "name": "Myocarditis",
+                "severity": "Rare complication",
+                "pattern": "Can occur during infection"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "heart_rate": "May be elevated in severe cases",
+            "blood_pressure": "May be decreased in severe dehydration"
+        },
+        "physical_findings": [
+            "Diffusely erythematous mucosa with numerous small ulcers (proctoscopy)",
+            "Rectal prolapse (in severe cases)"
+        ],
+        "lab_values": {
+            "stool_culture": "Positive for Shigella dysenteriae",
+            "white_blood_cell_count": "May be elevated or decreased",
+            "hemoconcentration": "Common in severe cases"
+        },
+        "risk_factors": [
+            "Direct person-to-person contact",
+            "Contaminated food and water",
+            "Poor sanitation and hygiene",
+            "International travel (especially to areas of high endemicity)",
+            "Men who have sex with men (MSM)",
+            "People experiencing homelessness",
+            "People living with HIV",
+            "Immunocompromised individuals"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive stool culture for Shigella dysenteriae"
+        ],
+        "supportive": [
+            "Clinical symptoms (fever, diarrhea, stomach cramps, tenesmus)",
+            "Presence of fecal leukocytes on stool smear"
+        ]
+    },
+    "differential_diagnoses": [
+        "Enterohemorrhagic E. coli infection",
+        "Salmonella infection",
+        "Yersinia infection",
+        "Campylobacter infection",
+        "Amebiasis",
+        "Clostridioides difficile infection"
+    ]
+}

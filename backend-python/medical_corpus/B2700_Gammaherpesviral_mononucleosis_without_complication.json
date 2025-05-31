@@ -1,0 +1,54 @@
+{
+    "disease": "Gammaherpesviral mononucleosis without complication",
+    "icd_code": "B2700",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High temperature",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Pain in limbs",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Inflamed throat",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Swollen lymph nodes (particularly in neck)",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Enlarged spleen",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Enlarged liver",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Inflamed throat",
+            "Swollen lymph nodes",
+            "Enlarged spleen",
+            "Enlarged liver"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

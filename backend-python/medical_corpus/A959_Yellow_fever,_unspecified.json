@@ -1,0 +1,105 @@
+{
+    "disease": "Yellow Fever, unspecified",
+    "icd_code": "A959",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable, can be high in second phase",
+                "pattern": "Present in both phases, higher in second phase"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Mild to moderate",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Mild to moderate",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild to moderate in first phase, can be severe with blood in second phase",
+                "pattern": "Present in both phases"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Severe",
+                "pattern": "Present in second phase"
+            },
+            {
+                "name": "Dark urine",
+                "severity": "Severe",
+                "pattern": "Present in second phase"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Severe",
+                "pattern": "Present in second phase"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Severe",
+                "pattern": "Can occur from mouth, nose, eyes, or stomach in second phase"
+            },
+            {
+                "name": "Shivering",
+                "severity": "Mild to moderate",
+                "pattern": "Present in first phase"
+            },
+            {
+                "name": "Limb pain",
+                "severity": "Mild to moderate",
+                "pattern": "Present in first phase"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in both phases, significantly higher in second phase"
+        },
+        "physical_findings": [
+            "Jaundice (yellowing of skin and eyes)",
+            "Bleeding from various orifices"
+        ],
+        "lab_values": {
+            "PCR": "May detect virus in early stages",
+            "ELISA and PRNT": "Detect antibodies in later stages",
+            "Liver function tests": "Abnormal in second phase",
+            "Kidney function tests": "Abnormal in second phase"
+        },
+        "risk_factors": [
+            "Travel to endemic areas",
+            "Exposure to infected mosquitoes"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with yellow fever",
+            "Positive PCR or antibody test"
+        ],
+        "supportive": [
+            "Epidemiological link to endemic area",
+            "Exposure to infected mosquitoes"
+        ]
+    },
+    "differential_diagnoses": [
+        "Malaria",
+        "Leptospirosis",
+        "Viral hepatitis",
+        "Other hemorrhagic fevers",
+        "Dengue fever",
+        "Poisoning"
+    ]
+}

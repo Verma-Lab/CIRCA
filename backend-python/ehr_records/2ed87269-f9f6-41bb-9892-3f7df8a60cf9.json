@@ -1,0 +1,110 @@
+{
+  "id": "2ed87269-f9f6-41bb-9892-3f7df8a60cf9",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: chest pain reported\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let\u2019s analyze this ECG. Here's a detailed breakdown of what I observe, focusing on key features and potential findings:\n\n**Overall Impression:**\n\nThis ECG demonstrates sinus rhythm with some notable findings suggestive of left ventricular hypertrophy (LVH).  The rate appears to be approximately 70-80 bpm. \n\n**Detailed Breakdown by Leads:**\n\n* **Lead I:**  The QRS complexes are generally narrow and appear normal in morphology.\n* **Lead II:**  The QRS complexes are again narrow and normal in morphology.\n* **Lead III:** Similar to leads I and II, QRS complexes are narrow and normal.\n* **Lead aVR:** The QRS complexes are narrow and normal.\n* **Lead aVL:** The QRS complexes are narrow and normal.\n* **V1-V6:** This is where we see the most significant changes:\n    * **Tall R Waves in V1 & V2:**  This is a *key* finding. The R waves in V1 and V2 are markedly elevated and prolonged. This is a classic indicator of left ventricular hypertrophy. The height of these waves is significantly greater than expected.\n    * **Moderate R Waves in V3-V5:** The R waves in these leads are also elevated, though less dramatically than in V1 & V2.\n    * **R Waves in V6 are Normal:** The R waves in V6 are within normal limits.\n    * **Normal Q Waves:**  The Q waves are generally normal in morphology.\n    * **Normal T Waves:** The T waves are generally upright and appear normal.\n    * **Normal ST Segments:** The ST segments appear mostly isoelectric (flat).\n\n**Measurements (Based on the provided ECG strip):**\n\n* **Rate:** Approximately 70-80 bpm (sinus rhythm)\n* **R-R Interval:** Approximately 0.8 seconds (60 Hz)\n* **PR Interval:** Within normal limits (not explicitly measured but appears normal visually)\n* **QT Interval:**  Difficult to accurately measure from this strip, but appears within normal limits.\n* **Axis:**  The QRS axis appears to be slightly right-shifted (based on the prominence of the R waves in V1 and V2).\n\n**Significant Findings & Potential Interpretations:**\n\n1. **Left Ventricular Hypertrophy (LVH):**  The most prominent finding is the tall,\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nDETAILED_DESCRIPTION: 02-16, T09:09:, .833517, -V, -, & V, V\nBIOLOGICAL_STRUCTURE: chest, V1, 6, V2, V3, V5, 2, V6\nSIGN_SYMPTOM: pain\nHISTORY: illness\nDIAGNOSTIC_PROCEDURE: physical exam, ECG, rhythm, rate, QRS complexes, aVR, aVL, R Waves, R waves, Q Waves, Q waves, T Waves, T waves, ST Segments, ST segments, Rate, R-R Interval, PR Interval, QT Interval, Axis, QRS axis\nDATE: 03-25, 28\nLAB_VALUE: sinus, 70-80 bpm, narrow, normal, morphology, Tall, elevated, prolonged, Moderate, less, Normal, within normal limits, upright, isoelectric, flat, 0.8 seconds, Hz, Within normal limits, slightly, right-shifted, tall\nDISEASE_DISORDER: left ventricular hypertrophy, LVH, Left Ventricular Hypertrophy",
+  "recommendation": "Left Ventricular Hypertrophy (LVH)",
+  "reasoning": "The ECG shows prominent findings strongly suggestive of LVH.  Specifically, the tall R waves in leads V1 and V2, along with moderately elevated R waves in V3-V5, are classic indicators of increased left ventricular mass.  The patient's chief complaint of chest pain, while nonspecific, is a symptom that can be associated with LVH, particularly as the condition progresses and the heart muscle becomes stiffer.  While the absence of a physical exam and detailed medical history limits the certainty, the ECG findings alone provide strong evidence for LVH as the primary diagnosis.  Further investigations, including a thorough physical exam, echocardiogram, and potentially other tests, are necessary to determine the underlying cause of the LVH and to assess the severity of the condition.\n\nDifferential Diagnoses:\n- {'diagnosis': 'Hypertensive Heart Disease', 'explanation': 'LVH is a common consequence of sustained hypertension, leading to increased workload on the left ventricle.  Further investigation is needed to rule out or confirm this underlying cause.'}\n- {'diagnosis': 'Aortic Valve Stenosis', 'explanation': 'Narrowing of the aortic valve increases the resistance against which the left ventricle must pump, causing hypertrophy.  Echocardiography would be crucial to confirm or refute this.'}\n- {'diagnosis': 'Hypertrophic Cardiomyopathy', 'explanation': 'A genetic condition causing thickening of the heart muscle, often presenting with LVH. Family history and genetic testing would be necessary for diagnosis.'}",
+  "confidence": "85",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "Document [0]: Title: Left Ventricular Hypertrophy (LVH): Causes, Diagnosis & Treatments | MedStar Health\n\nSource: Unknown Journal, Year: Unknown Date\n\nAbstract: Browse this page\n\nLeft ventricular hypertrophy (LVH) develops in response to certain medical conditions that can cause the left ventricle (the lower left chamber of the heart responsible for pumping blood to the body) to work harder than normal. Just like other muscles in your body, when the heart muscle works harder, it gets bigger.\n\nAn enlarged heart muscle can become stiffer, making it difficult to pump with as much force as necessary. This can put you at a higher risk forheart attackorstroke\n\nFull Text: Browse this page\n\nLeft ventricular hypertrophy (LVH) develops in response to certain medical conditions that can cause the left ventricle (the lower left chamber of the heart responsible for pumping blood to the body) to work harder than normal. Just like other muscles in your body, when the heart muscle works harder, it gets bigger.\n\nAn enlarged heart muscle can become stiffer, making it difficult to pump with as much force as necessary. This can put you at a higher risk forheart attackorstroke.\n\nSome conditions that can cause LVH include:\n\nHigh blood pressure, the most common cause\n\nAortic valve stenosis\n\nCongenital heart disease\n\nHypertrophic cardiomyopathy\n\nAs the condition progresses and the heart muscle becomes stiffer, you may experience:\n\nAtrial fibrillation, an irregular heartbeat\n\nChest pain\n\nDizziness orfainting\n\nHeart failure\n\nHeart palpitations, the sensation that the heart rate is skipping, slowing down or racing\n\nDiagnosing left ventricular hypertrophy is the first step to developing a treatment plan. Your doctor may recommend one or more diagnostic and imaging procedures.\n\nThe cardiac computed tomography scan, or cardiac CT, uses X-rays to create three-dimensional images of your heart and blood vessels.\n\nAn echocardiogram uses high-frequency sound waves to create images of your heart.\n\nAn electrocardiogram, also known as an ECG, measures the heart\u2019s electrical activity.\n\nDocument [1]: Email us atAskMHVI@medstar.net. If you have clinically-specific questions, please contact your physician\u2019s office.\n\nPlease Enable Location Services in Your Browser Settings to Continue\n\nOr\n\nEnter Your Preferred Location\n\nInvalid Address !\n\n\u00a9 2025 MedStar Health\n\nURL: https://www.medstarhealth.org/services/left-ventricular-hypertrophy\n\nDocument [2]: But as it gets\n                     worse over time, you may have symptoms, such as:\n\nSee your healthcare provider right away if you have any of these\n                     symptoms. This set of symptoms can be caused by a few different health conditions.\n\nIt can be hard to diagnose LVH because you may not have symptoms for\n                     a few years. But these two tests can often find LVH even before you have symptoms:\n\nA heart MRI can also be used to diagnose LVH. This imaging test makes\n                     detailed pictures of the heart using radio waves, magnets, and a computer.\n\nYour treatment will depend on what condition caused LVH. Treatment\n                     will focus on addressing that underlying problem, such as:\n\nHaving LVH may put you at higher risk for other health problems, such\n                     as:\n\nURL: https://www.saintlukeskc.org/health-library/understanding-left-ventricular-hypertrophy-lvh\n\nDocument [3]: Title: Left Ventricular Hypertrophy: Risk Factors, Symptoms, and Treatment\n\nSource: Healthline, Year: Unknown Date\n\nAbstract: Left ventricular hypertrophy (LVH) is when the heart\u2019s main pumping chamber, the left ventricle, becomes thicker and less able to pump blood efficiently. It usually develops because of another heart condition and treating that condition may stop progression or reverse LVH.\n\nLeft ventricular hypertrophy (LVH) doesn\u2019t usually cause symptoms at first, but when symptoms do occur, they often mirror those in conditions such as heart failure. A physical exam and cardiac imaging are usually enough to di\n\nFull Text: Left ventricular hypertrophy (LVH) is when the heart\u2019s main pumping chamber, the left ventricle, becomes thicker and less able to pump blood efficiently. It usually develops because of another heart condition and treating that condition may stop progression or reverse LVH.\n\nLeft ventricular hypertrophy (LVH) doesn\u2019t usually cause symptoms at first, but when symptoms do occur, they often mirror those in conditions such as heart failure. A physical exam and cardiac imaging are usually enough to diagnose LVH.\n\nTo manage the condition and improve your heart health, it\u2019s imperative to work closely with your cardiologist and maintain a lifestyle that promotes optimal blood pressure and cardiovascular well-being.\n\nTheleft ventriclepumps blood out of the heart throughthe aortato the body. The right ventricle pumps blood to the lungs, picking up oxygen before returning to the heart to be pumped out from the left ventricle.\n\nWhen a condition causes the heart to work harder to supply the body with oxygenated blood, the left ventricle walls can become thicker \u2014 similar to how other muscles can become bigger from lifting weights or other exercises. This extra work results in LVH.\n\nLess commonly, LVH results from the space within the left ventricle expanding due to an abnormal increase in blood volume traveling through the heart.\n\nHaving LVH can lead to life threatening complications, including heart failure and stroke, if it\u2019s not treated effectively.\n\nLVH can be present for a long time before any symptoms become obvious.\n\nDocument [4]: Treatment may include medications or surgery.\n\nLeft ventricular hypertrophy usually develops gradually. Some people do not have symptoms, especially during the early stages of the condition.\n\nLeft ventricular hypertrophy itself doesn't cause symptoms. But symptoms may occur as the strain on the heart worsens. They may include:\n\nSeek emergency care if:\n\nIf you have mild shortness of breath or other symptoms, such as palpitations, see your healthcare professional.\n\nIf you have high blood pressure or another condition that increases the risk of left ventricular hypertrophy, your healthcare team is likely to recommend regular health checkups to check your heart.\n\nThere is a problem with\n                                information submitted for this request. Review/update the\n                                information highlighted below and resubmit the form.\n\nSign up for free and stay up to date on research advancements, health tips, current health topics, and expertise on managing health.Click here for an email preview.\n\nErrorEmail field is required\n\nErrorInclude a valid email address\n\nWe use the data you provide to deliver you the content you requested. To provide you with the most relevant and helpful information, we may combine your email and website data with other information we have about you. If you are a Mayo Clinic patient, we will only use your protected health information as outlined in ourNotice of Privacy Practices. You may opt out of email communications at any time by clicking on the unsubscribe link in the email.\n\nYou'll soon start receiving the latest Mayo Clinic health information you requested in your inbox.\n\nPlease, try again in a couple of minutes\n\nAnything that puts stress on the heart's lower left chamber can cause left ventricular hypertrophy. The lower left chamber is called the left ventricle. As the strain on the lower left chamber increases, the muscle tissue in the chamber wall thickens. Sometimes, the size of the heart chamber itself also increases.\n\nLeft ventricular hypertrophy also may be caused by gene changes that affect the heart muscle's structure.\n\nThings that can cause the heart to work harder and may possibly lead to left ventricular hypertrophy include:\n\nCertain conditions passed down through families, called genetic conditions, can make the heart thicker.\n\nDocument [5]: Having LVH can lead to life threatening complications, including heart failure and stroke, if it\u2019s not treated effectively.\n\nLVH can be present for a long time before any symptoms become obvious. But when symptoms are present, they can include:\n\nA2022 studysuggests that the primary causes of LVH are high blood pressure andaortic valve stenosis, a condition in which the valve leading from the left ventricle to the aorta becomes stiff and can no longer open sufficiently to let the proper amount of blood enter the blood vessel.\n\nBecause the valve won\u2019t open properly, the heart muscle has to work harder to pump enough blood to meet the demands of the body. This results in the thickening of the left ventricle.\n\nSimilarly, becausehigh blood pressure (hypertension)means the heart is working harder to pump blood throughout the body, the left ventricle\u2019s walls can grow thicker and larger.\n\nThickening of the left ventricle can also occur in genetic conditions likehypertrophic cardiomyopathyand conditions that cause protein deposits, likecardiac amyloidosis.\n\nOther conditions that can result in LVH include:\n\nThe following imaging tools may be used to help diagnose LVH:\n\nHowever, a2017 reportsuggests that echocardiography is the most accurate imaging technique and is significantly more sensitive than electrocardiography in detecting LVH.\n\nIn addition to imaging, a proper diagnosis of LVH should include a physical exam and a review of your medical history and that of your family.\n\nThe most effective treatment of LVH is treating the condition that is causing the problem. For example, if high blood pressure has caused a thickening of the left ventricle, taking blood pressure-lowering drugs (antihypertensives) and making certain lifestyle changes may be sufficient.\n\nFor aortic valve stenosis or other valve problems, the procedure to repair or replace the affected valve may help reduce the risk of further complications.\n\nRegardless of the cause of LVH and the treatment recommended by your doctor, everyone with the condition should manage the followingheart-healthy behaviors:\n\nLVH can sometimes be reversed when the underlying condition is treated effectively. For others, changes to the left ventricle may be permanent.\n\nDocument [6]: Title: Left ventricular hypertrophy\n\nSource: Unknown Journal, Year: Unknown Date\n\nAbstract: To diagnose left ventricular hypertrophy, a healthcare professional does a physical exam and asks questions about your symptoms and family's health history. The care professional checks your blood pressure and listens to your heart with a device called a stethoscope.\n\nTests used to diagnose left ventricular hypertrophy may include:\n\nTreatment for left ventricular hypertrophy depends on the cause. It may include medicines, catheter procedures or surgery. It's important to manage conditions such a\n\nFull Text: To diagnose left ventricular hypertrophy, a healthcare professional does a physical exam and asks questions about your symptoms and family's health history. The care professional checks your blood pressure and listens to your heart with a device called a stethoscope.\n\nTests used to diagnose left ventricular hypertrophy may include:\n\nTreatment for left ventricular hypertrophy depends on the cause. It may include medicines, catheter procedures or surgery. It's important to manage conditions such as high blood pressure and sleep apnea, which can cause blood pressure to be higher.\n\nMedicines are used to treat symptoms and prevent complications of left ventricular hypertrophy. Blood pressure medicines may help reduce or prevent thickening of the heart muscle. The type of medicine used depends on the cause of left ventricular hypertrophy.\n\nMedicines that might be used to treat left ventricular hypertrophy or the conditions that cause it include:\n\nLeft ventricular hypertrophy that is caused by aortic valve stenosis might require a catheter procedure or surgery to repair or replace the valve.\n\nSurgery or other procedures may be needed to treat underlying conditions such as:\n\nTogether you and your care team can develop a treatment plan that's best for you.\n\nLifestyle changes can help lower blood pressure and improve heart health. Try these healthy lifestyle changes:\n\nYou may be referred to a doctor trained in treating heart diseases. This type of healthcare professional is called a cardiologist.\n\nDon't hesitate to ask any other questions during your appointment.\n\nYour healthcare professional is likely to ask you many questions. Being ready to answer them may leave time to go over items you want to spend more time on."
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let\u2019s analyze this ECG. Here's a detailed breakdown of what I observe, focusing on key features and potential findings:\n\n**Overall Impression:**\n\nThis ECG demonstrates sinus rhythm with some notable findings suggestive of left ventricular hypertrophy (LVH).  The rate appears to be approximately 70-80 bpm. \n\n**Detailed Breakdown by Leads:**\n\n* **Lead I:**  The QRS complexes are generally narrow and appear normal in morphology.\n* **Lead II:**  The QRS complexes are again narrow and normal in morphology.\n* **Lead III:** Similar to leads I and II, QRS complexes are narrow and normal.\n* **Lead aVR:** The QRS complexes are narrow and normal.\n* **Lead aVL:** The QRS complexes are narrow and normal.\n* **V1-V6:** This is where we see the most significant changes:\n    * **Tall R Waves in V1 & V2:**  This is a *key* finding. The R waves in V1 and V2 are markedly elevated and prolonged. This is a classic indicator of left ventricular hypertrophy. The height of these waves is significantly greater than expected.\n    * **Moderate R Waves in V3-V5:** The R waves in these leads are also elevated, though less dramatically than in V1 & V2.\n    * **R Waves in V6 are Normal:** The R waves in V6 are within normal limits.\n    * **Normal Q Waves:**  The Q waves are generally normal in morphology.\n    * **Normal T Waves:** The T waves are generally upright and appear normal.\n    * **Normal ST Segments:** The ST segments appear mostly isoelectric (flat).\n\n**Measurements (Based on the provided ECG strip):**\n\n* **Rate:** Approximately 70-80 bpm (sinus rhythm)\n* **R-R Interval:** Approximately 0.8 seconds (60 Hz)\n* **PR Interval:** Within normal limits (not explicitly measured but appears normal visually)\n* **QT Interval:**  Difficult to accurately measure from this strip, but appears within normal limits.\n* **Axis:**  The QRS axis appears to be slightly right-shifted (based on the prominence of the R waves in V1 and V2).\n\n**Significant Findings & Potential Interpretations:**\n\n1. **Left Ventricular Hypertrophy (LVH):**  The most prominent finding is the tall,"
+    }
+  ],
+  "medical_entities": {
+    "DETAILED_DESCRIPTION": [
+      "02-16",
+      "T09:09:",
+      ".833517",
+      "-V",
+      "-",
+      "& V",
+      "V"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "chest",
+      "V1",
+      "6",
+      "V2",
+      "V3",
+      "V5",
+      "2",
+      "V6"
+    ],
+    "SIGN_SYMPTOM": [
+      "pain"
+    ],
+    "HISTORY": [
+      "illness"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical exam",
+      "ECG",
+      "rhythm",
+      "rate",
+      "QRS complexes",
+      "aVR",
+      "aVL",
+      "R Waves",
+      "R waves",
+      "Q Waves",
+      "Q waves",
+      "T Waves",
+      "T waves",
+      "ST Segments",
+      "ST segments",
+      "Rate",
+      "R-R Interval",
+      "PR Interval",
+      "QT Interval",
+      "Axis",
+      "QRS axis"
+    ],
+    "DATE": [
+      "03-25",
+      "28"
+    ],
+    "LAB_VALUE": [
+      "sinus",
+      "70-80 bpm",
+      "narrow",
+      "normal",
+      "morphology",
+      "Tall",
+      "elevated",
+      "prolonged",
+      "Moderate",
+      "less",
+      "Normal",
+      "within normal limits",
+      "upright",
+      "isoelectric",
+      "flat",
+      "0.8 seconds",
+      "Hz",
+      "Within normal limits",
+      "slightly",
+      "right-shifted",
+      "tall"
+    ],
+    "DISEASE_DISORDER": [
+      "left ventricular hypertrophy",
+      "LVH",
+      "Left Ventricular Hypertrophy"
+    ]
+  },
+  "analysis_date": "2025-03-26T09:17:50.706013",
+  "created_at": "2025-03-26T09:17:50.706022"
+}

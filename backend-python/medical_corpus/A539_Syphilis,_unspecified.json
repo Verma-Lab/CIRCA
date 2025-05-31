@@ -1,0 +1,31 @@
+{
+    "disease": "Syphilis, unspecified",
+    "icd_code": "A539",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin changes",
+                "severity": "Unspecified",
+                "pattern": "May occur at the start; may be absent for a while; may reappear after a longer period"
+            },
+            {
+                "name": "Inflammations",
+                "severity": "Unspecified",
+                "pattern": "Can affect various areas of the body, including skin, bones, nervous system, or blood vessels"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Sexual contact"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

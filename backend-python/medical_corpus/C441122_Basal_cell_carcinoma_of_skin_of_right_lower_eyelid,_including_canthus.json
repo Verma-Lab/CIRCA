@@ -1,0 +1,67 @@
+{
+    "disease": "Basal cell carcinoma of skin of right lower eyelid, including canthus",
+    "icd_code": "C441122",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Painless lump or ulcer",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Excessive tearing",
+                "severity": "Variable",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Inflammation",
+                "severity": "Variable",
+                "pattern": "Intermittent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painless lump or ulcer that won\u2019t heal",
+            "Pearly outer margins",
+            "Central ulcerated crater with pearly rolled margins (nodular type)",
+            "White-pink to yellow plaque with indistinct clinical margins and no obvious ulceration (morpheaform type)",
+            "Hyperpigmentation"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Long-term exposure to ultraviolet (UV) radiation",
+            "Fair skin",
+            "Older age",
+            "Smoking"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy showing cohesive nests of cells with bland-appearing nuclei and nuclear palisading"
+        ],
+        "supportive": [
+            "Clinical presentation of a slowly enlarging ulceration with raised, pearly borders",
+            "Location on lower eyelid, especially near medial canthus"
+        ]
+    },
+    "differential_diagnoses": [
+        "Stye",
+        "Benign growth",
+        "Squamous cell carcinoma",
+        "Sebaceous gland carcinoma",
+        "Malignant melanoma",
+        "Actinic keratosis",
+        "Bowen's disease",
+        "Radiation dermatoses",
+        "Chalazion",
+        "Intradermal nevus",
+        "Blepharitis"
+    ]
+}

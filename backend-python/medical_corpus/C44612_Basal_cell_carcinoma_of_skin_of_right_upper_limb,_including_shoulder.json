@@ -1,0 +1,80 @@
+{
+    "disease": "Basal cell carcinoma of skin of right upper limb, including shoulder",
+    "icd_code": "C44612",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Open sore that does not heal",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Reddish patch or irritated area",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Shiny bump or nodule",
+                "severity": "Variable",
+                "pattern": "Slowly growing"
+            },
+            {
+                "name": "Scar-like area that is flat white, yellow or waxy in color",
+                "severity": "Variable",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Small pink growth with a slightly raised, rolled edge and a crusted indentation in the center",
+                "severity": "Variable",
+                "pattern": "Slowly growing"
+            },
+            {
+                "name": "Pigmented lesion (brown in color)",
+                "severity": "Variable",
+                "pattern": "Persistent; more common in individuals with darker skin"
+            },
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            },
+            {
+                "name": "Infection",
+                "severity": "Variable",
+                "pattern": "May occur in advanced stages"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Small, sometimes shiny bump or scaly flat patch on the skin of the right upper limb, including the shoulder",
+            "Slowly growing lesion"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Age over 50",
+            "Fair skin and light eyes",
+            "Previous BCC",
+            "Excessive exposure to ultraviolet (UV) rays from sunlight or tanning beds",
+            "Genetic predisposition (e.g., basal cell nevus syndrome)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Physical examination revealing a suspicious lesion"
+        ],
+        "supportive": [
+            "Biopsy confirming the presence of basal cell carcinoma"
+        ]
+    },
+    "differential_diagnoses": [
+        "Psoriasis",
+        "Eczema"
+    ]
+}

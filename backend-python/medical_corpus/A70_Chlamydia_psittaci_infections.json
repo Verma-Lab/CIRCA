@@ -1,0 +1,52 @@
+{
+    "disease": "Chlamydia psittaci infection (Psittacosis)",
+    "icd_code": "A70",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Upper respiratory tract infection",
+                "severity": "Predominant",
+                "pattern": "Typical"
+            },
+            {
+                "name": "Constitutional symptoms",
+                "severity": "Common",
+                "pattern": "Associated with upper respiratory infection"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Less frequent",
+                "pattern": "May be severe"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Variable, may be present"
+        },
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected birds or their droppings",
+            "Occupation involving birds (e.g., bird handlers, veterinarians)",
+            "Hobbies involving birds"
+        ],
+        "imaging_findings": {
+            "chest x-ray": "Lobar or interstitial infiltrates in pneumonia cases"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Exposure to infected birds",
+            "Clinical presentation consistent with psittacosis (e.g., upper respiratory infection, pneumonia)"
+        ],
+        "supportive": [
+            "Positive laboratory tests for C. psittaci (e.g., serology, PCR)"
+        ]
+    },
+    "differential_diagnoses": []
+}

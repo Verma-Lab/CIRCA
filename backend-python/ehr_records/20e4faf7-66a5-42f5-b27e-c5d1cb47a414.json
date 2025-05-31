@@ -1,0 +1,120 @@
+{
+  "id": "20e4faf7-66a5-42f5-b27e-c5d1cb47a414",
+  "patient_id": "bc8a3bb5-01b7-4bbd-a79a-43f812620f3a",
+  "encounter_id": "5f9f4650-7af0-451a-813d-6693489bdc44",
+  "analysis_type": "Diagnosis Suggestion",
+  "input_text": "Patient: Steven Ortega, DOB: 2006-02-16, Gender: Male\n\nChief Complaint: Chest Pain Reported\n\nS: Patient Describes no history of illness\n\nO: No physical exam documented.\n\nA: No assessment documented.\n\nP: No plan documented.\n\n--- IMAGING & SCANS ---\n- ECG (3/25/2025): ECG Scan for Patient\n\n--- IMAGING & SCANS ANALYSIS ---\n\n[Scan 1: ECG (2025-03-25T09:09:28.833517)]\nFile: norm.png\nDescription: ECG Scan for Patient\nAnalysis: Okay, let's analyze this ECG strip. Here's a detailed breakdown of what I observe, considering it's an ECG scan for a patient:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm, but with some notable findings suggesting possible ischemia or a prior myocardial infarction.  The morphology of the Q waves and ST segment changes are particularly concerning. \n\n**Detailed Observations:**\n\n1. **Rate:** The heart rate appears to be approximately 60-70 beats per minute. It\u2019s relatively regular.\n\n2. **Rhythm:** The rhythm is sinus rhythm \u2013 the P waves appear to be originating from the sinoatrial (SA) node, the heart's natural pacemaker. \n\n3. **P Waves:** The P waves are present and appear generally normal in morphology.  They are upright in leads II, III, and aVF, which is consistent with a normal left ventricular depolarization. \n\n4. **PR Interval:** The PR intervals are within the normal range, approximately 0.16-0.20 seconds.\n\n5. **QRS Complexes:** This is where the most significant abnormalities are present.\n   * **Morphology:** The QRS complexes are wider than normal (greater than 0.12 seconds). This suggests a possible bundle branch block, although it\u2019s not definitively diagnosed without further analysis. \n   * **Q Waves:**  **This is the most crucial finding.** There are *prominent, deep, and isolated Q waves* in leads V1, V2, V3, V4, V5, and V6. These Q waves are typically indicative of a previous myocardial infarction (heart attack). The depth of these Q waves suggests a substantial area of prior myocardial necrosis.\n   * **ST Segment:** The ST segments are elevated (ST-segment elevation) in leads V1-V4. This elevation is a strong indicator of acute myocardial ischemia or an evolving STEMI (ST-elevation myocardial infarction). The degree of elevation is moderate. \n\n6. **T Waves:** The T waves are predominantly negative and have a somewhat rounded morphology. \n\n7. **QT Interval:** The QT interval appears to be within the normal limits. \n\n8. **Axis:** The QRS axis appears to be normal, approximately +60 degrees. \n\n**Significant Findings & Potential Diagnoses:**\n\n* **Prior Myocardial Infarction:** The presence of deep, isolated Q waves is the most concerning\n\n\n--- MEDICAL ENTITY ANALYSIS ---\n\nHISTORY: 02-16, illness\nSIGN_SYMPTOM: Chest Pain, P waves, ventricular depolarization, Q waves\nDIAGNOSTIC_PROCEDURE: physical exam, ECG, Q waves, ST segment changes, heart rate, rhythm, P Waves, leads II, VF, PR Interval, PR intervals, QRS Complexes, QRS complexes, Q Waves, leads, ST Segment, ST segments, T Waves, T waves, QT Interval, QT interval, Axis, QRS axis\nDATE: 03, 25, 09, 28\nLAB_VALUE: sinus rhythm, 60-70 beats per minute, regular, normal, upright, within the normal range, 0.16-0.20 seconds, wider than normal, greater than 0.12 seconds, elevated, ST-segment elevation, moderate, negative, rounded, within the normal limits, +60 degrees\nDISEASE_DISORDER: ischemia, myocardial infarction, bundle branch block, heart attack, myocardial necrosis, myocardial ischemia, STEMI, -elevation myocardial infarction, Myocardial Infarction\nBIOLOGICAL_STRUCTURE: sinoatrial (SA, node, left, V1, V2, V3, V4, V5, and V6, V1\nDETAILED_DESCRIPTION: ), natural pacemaker, , III, and a, deep, ,, -V4, acute",
+  "recommendation": "Prior Myocardial Infarction (MI) with Possible Ongoing Ischemia",
+  "reasoning": "The ECG shows several significant findings strongly suggestive of a prior myocardial infarction (MI). The most compelling evidence is the presence of deep, isolated Q waves in multiple leads (V1-V6). These Q waves represent myocardial necrosis (death of heart muscle tissue), a hallmark of a previous MI.  The ST-segment elevation in leads V1-V4 suggests possible ongoing ischemia (reduced blood flow to the heart muscle). While the patient reports no history of illness, the ECG findings are highly suggestive of a significant cardiac event. The absence of a detailed physical exam and patient history limits the certainty of the diagnosis, but the ECG findings are highly concerning and warrant immediate further investigation, including cardiac enzyme tests (troponin levels), further ECG monitoring, and potentially cardiac catheterization.\n\nDifferential Diagnoses:\n- {'diagnosis': 'Acute Myocardial Infarction (STEMI)', 'explanation': 'The ECG shows ST-segment elevation, a hallmark of STEMI. However, the presence of significant Q waves suggests a prior MI, making an acute event less likely but not impossible.  Further investigation is crucial to rule this out.'}\n- {'diagnosis': 'Bundle Branch Block', 'explanation': 'The widened QRS complexes suggest a possible bundle branch block. This could be contributing to the ECG abnormalities, but is less likely the primary cause given the prominent Q waves.'}\n- {'diagnosis': 'Myocarditis', 'explanation': 'While less likely given the ECG findings, myocarditis can cause ST-segment changes and rhythm disturbances.  Further investigation would be needed to rule this out.'}\n- {'diagnosis': 'Benign ECG Variant', 'explanation': 'Although unlikely given the significant Q waves and ST-segment changes, some benign ECG variations can mimic pathological findings.  This possibility should be considered only after thorough investigation.'}",
+  "confidence": "85",
+  "model_used": "Gemini-Pro",
+  "retrieved_docs": [
+    {
+      "id": "medical_literature",
+      "contents": "Error retrieving medical literature: 'ChromaVectorStore' object has no attribute 'chroma_collection'"
+    }
+  ],
+  "scan_analyses": [
+    {
+      "scan_type": "ECG",
+      "scan_date": "2025-03-25T09:09:28.833517",
+      "file_name": "norm.png",
+      "description": "ECG Scan for Patient",
+      "analysis": "Okay, let's analyze this ECG strip. Here's a detailed breakdown of what I observe, considering it's an ECG scan for a patient:\n\n**Overall Impression:**\n\nThe ECG shows a sinus rhythm, but with some notable findings suggesting possible ischemia or a prior myocardial infarction.  The morphology of the Q waves and ST segment changes are particularly concerning. \n\n**Detailed Observations:**\n\n1. **Rate:** The heart rate appears to be approximately 60-70 beats per minute. It\u2019s relatively regular.\n\n2. **Rhythm:** The rhythm is sinus rhythm \u2013 the P waves appear to be originating from the sinoatrial (SA) node, the heart's natural pacemaker. \n\n3. **P Waves:** The P waves are present and appear generally normal in morphology.  They are upright in leads II, III, and aVF, which is consistent with a normal left ventricular depolarization. \n\n4. **PR Interval:** The PR intervals are within the normal range, approximately 0.16-0.20 seconds.\n\n5. **QRS Complexes:** This is where the most significant abnormalities are present.\n   * **Morphology:** The QRS complexes are wider than normal (greater than 0.12 seconds). This suggests a possible bundle branch block, although it\u2019s not definitively diagnosed without further analysis. \n   * **Q Waves:**  **This is the most crucial finding.** There are *prominent, deep, and isolated Q waves* in leads V1, V2, V3, V4, V5, and V6. These Q waves are typically indicative of a previous myocardial infarction (heart attack). The depth of these Q waves suggests a substantial area of prior myocardial necrosis.\n   * **ST Segment:** The ST segments are elevated (ST-segment elevation) in leads V1-V4. This elevation is a strong indicator of acute myocardial ischemia or an evolving STEMI (ST-elevation myocardial infarction). The degree of elevation is moderate. \n\n6. **T Waves:** The T waves are predominantly negative and have a somewhat rounded morphology. \n\n7. **QT Interval:** The QT interval appears to be within the normal limits. \n\n8. **Axis:** The QRS axis appears to be normal, approximately +60 degrees. \n\n**Significant Findings & Potential Diagnoses:**\n\n* **Prior Myocardial Infarction:** The presence of deep, isolated Q waves is the most concerning"
+    }
+  ],
+  "medical_entities": {
+    "HISTORY": [
+      "02-16",
+      "illness"
+    ],
+    "SIGN_SYMPTOM": [
+      "Chest Pain",
+      "P waves",
+      "ventricular depolarization",
+      "Q waves"
+    ],
+    "DIAGNOSTIC_PROCEDURE": [
+      "physical exam",
+      "ECG",
+      "Q waves",
+      "ST segment changes",
+      "heart rate",
+      "rhythm",
+      "P Waves",
+      "leads II",
+      "VF",
+      "PR Interval",
+      "PR intervals",
+      "QRS Complexes",
+      "QRS complexes",
+      "Q Waves",
+      "leads",
+      "ST Segment",
+      "ST segments",
+      "T Waves",
+      "T waves",
+      "QT Interval",
+      "QT interval",
+      "Axis",
+      "QRS axis"
+    ],
+    "DATE": [
+      "03",
+      "25",
+      "09",
+      "28"
+    ],
+    "LAB_VALUE": [
+      "sinus rhythm",
+      "60-70 beats per minute",
+      "regular",
+      "normal",
+      "upright",
+      "within the normal range",
+      "0.16-0.20 seconds",
+      "wider than normal",
+      "greater than 0.12 seconds",
+      "elevated",
+      "ST-segment elevation",
+      "moderate",
+      "negative",
+      "rounded",
+      "within the normal limits",
+      "+60 degrees"
+    ],
+    "DISEASE_DISORDER": [
+      "ischemia",
+      "myocardial infarction",
+      "bundle branch block",
+      "heart attack",
+      "myocardial necrosis",
+      "myocardial ischemia",
+      "STEMI",
+      "-elevation myocardial infarction",
+      "Myocardial Infarction"
+    ],
+    "BIOLOGICAL_STRUCTURE": [
+      "sinoatrial (SA",
+      "node",
+      "left",
+      "V1, V2",
+      "V3",
+      "V4",
+      "V5",
+      "and V6",
+      "V1"
+    ],
+    "DETAILED_DESCRIPTION": [
+      ")",
+      "natural pacemaker",
+      ", III, and a",
+      "deep",
+      ",",
+      "-V4",
+      "acute"
+    ]
+  },
+  "analysis_date": "2025-03-26T09:42:51.833898",
+  "created_at": "2025-03-26T09:42:51.833905"
+}

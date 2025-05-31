@@ -1,0 +1,100 @@
+{
+    "disease": "Cardiovascular syphilis, unspecified",
+    "icd_code": "A5200",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute shortness of breath",
+                "severity": "Severe",
+                "pattern": "Onset with cardiac failure"
+            },
+            {
+                "name": "Central chest pain",
+                "severity": "Severe",
+                "pattern": "Acute onset, preceded by less severe pain"
+            },
+            {
+                "name": "Aortic regurgitation",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Left ventricular dysfunction",
+                "severity": "Moderate",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dilated ascending aorta",
+                "severity": "Marked",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "ST elevation in anterior leads",
+                "severity": "3mm",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Reciprocal ST depression in inferior leads",
+                "severity": "Present",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Thickened aortic wall",
+            "Dilated aortic root and ascending aorta"
+        ],
+        "lab_values": {
+            "Rapid plasma reagin (RPR)": {
+                "abnormal_range": "Positive (1:2 to 1:64)",
+                "units": ""
+            },
+            "Treponema pallidum particle agglutination (TPPA)": {
+                "abnormal_range": "Reactive",
+                "units": ""
+            },
+            "Serum troponin": {
+                "abnormal_range": "4.9 \u03bcg/L (reference range, 0\u20130.4 \u03bcg/L)",
+                "units": "\u03bcg/L"
+            }
+        },
+        "risk_factors": [
+            "Hypertension",
+            "Smoking",
+            "Birth in a country where syphilis has been or continues to be common"
+        ],
+        "imaging_findings": {
+            "Transthoracic echocardiogram": [
+                "Moderate aortic regurgitation",
+                "Moderate left ventricular dysfunction",
+                "Markedly dilated ascending aorta (5.8 cm)"
+            ],
+            "Cardiac catheterization": [
+                "Dilated aortic root (4.3 cm)",
+                "Dilated ascending aorta (6 cm)",
+                "Normal coronary arteries (in one case)"
+            ],
+            "Coronary angiogram": [
+                "Completely occluded left main coronary artery at the ostium",
+                "90% ostial lesion of the right coronary artery"
+            ]
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive syphilis serology (RPR and/or TPPA)",
+            "Evidence of cardiovascular involvement (e.g., aortic regurgitation, dilated aorta, coronary ostial stenosis) on imaging or pathology"
+        ],
+        "supportive": [
+            "Histological findings consistent with syphilitic aortitis",
+            "Clinical presentation suggestive of cardiovascular syphilis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Atherosclerotic heart disease",
+        "Other causes of aortic regurgitation",
+        "Other causes of aortic aneurysm",
+        "Other causes of coronary artery disease"
+    ]
+}

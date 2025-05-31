@@ -1,0 +1,146 @@
+{
+    "disease": "Plague, unspecified",
+    "icd_code": "A209",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Chills",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Myalgias",
+                "severity": "Variable",
+                "pattern": "Sudden onset"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May be productive of bloody sputum"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Variable",
+                "pattern": "Swollen lymph nodes (buboes) in armpits, groin, or neck; tender or painful"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "In pneumonic plague"
+            },
+            {
+                "name": "Stridor",
+                "severity": "Variable",
+                "pattern": "In pneumonic plague"
+            },
+            {
+                "name": "Cyanosis",
+                "severity": "Variable",
+                "pattern": "In pneumonic plague"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "In septicemic plague"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "In septicemic plague"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "In septicemic plague"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable",
+                "pattern": "In septicemic plague"
+            },
+            {
+                "name": "Skin turning black",
+                "severity": "Severe",
+                "pattern": "In septicemic plague"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Severe",
+                "pattern": "In pneumonic plague"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Severe",
+                "pattern": "In pneumonic plague"
+            },
+            {
+                "name": "Bloody sputum",
+                "severity": "Severe",
+                "pattern": "In pneumonic plague"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "High fever (sudden onset)",
+            "respiratory_rate": "Increased in pneumonic plague",
+            "blood_pressure": "Decreased in severe cases"
+        },
+        "physical_findings": [
+            "Buboes (swollen, tender lymph nodes)",
+            "Signs of respiratory distress (in pneumonic plague)",
+            "Cyanosis (in pneumonic plague)",
+            "Petechiae or purpura (in septicemic plague)",
+            "Signs of circulatory collapse (in severe cases)"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Yersinia pestis",
+            "PCR": "Positive for Yersinia pestis DNA in blood, sputum, CSF, or bubo aspirates",
+            "complete_blood_count": "May show leukocytosis and thrombocytopenia",
+            "liver_function_tests": "May be elevated",
+            "coagulation_studies": "May show disseminated intravascular coagulation (DIC)"
+        },
+        "risk_factors": [
+            "Exposure to fleas or rodents",
+            "Living in or visiting areas where plague is endemic",
+            "Occupation involving outdoor work or contact with animals",
+            "Contact with infected animals (e.g., hunting, handling carcasses)"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "May show patchy or confluent bronchopneumonia (in pneumonic plague), widened mediastinum (suggestive of anthrax)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with plague (fever, lymphadenopathy, respiratory symptoms, etc.)",
+            "Positive laboratory test for Yersinia pestis (blood culture, PCR)"
+        ],
+        "supportive": [
+            "Epidemiological risk factors (exposure to rodents or fleas, travel to endemic areas)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tularemia",
+        "Staphylococcal or streptococcal adenitis",
+        "Meningococcemia",
+        "Enteric gram-negative sepsis",
+        "Cat scratch disease",
+        "Rickettsiosis",
+        "Anthrax",
+        "Staphylococcal enterotoxin B (SEB) inhalation"
+    ]
+}

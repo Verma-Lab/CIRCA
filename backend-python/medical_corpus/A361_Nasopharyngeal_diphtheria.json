@@ -1,0 +1,108 @@
+{
+    "disease": "Nasopharyngeal diphtheria",
+    "icd_code": "A36.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Malaise",
+                "severity": "Mild to moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild to severe",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Anorexia",
+                "severity": "Mild to moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Low-grade fever",
+                "severity": "Mild",
+                "pattern": "Early symptom, less than 101\u00b0F"
+            },
+            {
+                "name": "Bluish-white membrane formation",
+                "severity": "Moderate to severe",
+                "pattern": "Develops within 2-3 days, can extend to cover most of the soft palate, may become greyish-green or black"
+            },
+            {
+                "name": "Mucosal erythema",
+                "severity": "Minimal",
+                "pattern": "Surrounding the membrane"
+            },
+            {
+                "name": "Submandibular edema",
+                "severity": "Moderate to severe",
+                "pattern": "In severe cases, leading to \"bull neck\" appearance"
+            },
+            {
+                "name": "Lymphadenopathy",
+                "severity": "Moderate to severe",
+                "pattern": "In severe cases, leading to \"bull neck\" appearance"
+            },
+            {
+                "name": "Prostration",
+                "severity": "Severe",
+                "pattern": "In severe cases"
+            },
+            {
+                "name": "Pallor",
+                "severity": "Severe",
+                "pattern": "In severe cases"
+            },
+            {
+                "name": "Rapid pulse",
+                "severity": "Severe",
+                "pattern": "In severe cases"
+            },
+            {
+                "name": "Stupor",
+                "severity": "Severe",
+                "pattern": "In severe cases"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "In severe cases"
+            },
+            {
+                "name": "Mucopurulent nasal discharge",
+                "severity": "Mild to moderate",
+                "pattern": "In anterior nasal diphtheria, may become blood-tinged"
+            },
+            {
+                "name": "White membrane on nasal septum",
+                "severity": "Mild",
+                "pattern": "In anterior nasal diphtheria"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "<101\u00b0F (early stages), can be normal or slightly elevated in severe cases",
+            "pulse": "Rapid in severe cases"
+        },
+        "physical_findings": [
+            "Bluish-white membrane (later greyish-green or black) firmly adherent to tissue",
+            "Minimal mucosal erythema",
+            "Submandibular edema and lymphadenopathy (\"bull neck\") in severe cases"
+        ],
+        "lab_values": {
+            "culture": "C. diphtheriae, toxigenicity testing required",
+            "Elek test": "Confirms diphtheria toxin production"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (especially in respiratory diphtheria)",
+            "Positive culture for C. diphtheriae",
+            "Positive Elek test for toxin production"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

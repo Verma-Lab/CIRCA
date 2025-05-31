@@ -1,0 +1,73 @@
+{
+    "disease": "Squamous cell carcinoma of skin of right lower limb, including hip",
+    "icd_code": "C44722",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Ulcerative mass",
+                "severity": "5x4 cm",
+                "pattern": "Present for three months"
+            },
+            {
+                "name": "Hard, ulcerative mass",
+                "severity": "5x4 cm",
+                "pattern": "Irregular border, yellowish slough in the base, blood oozing"
+            },
+            {
+                "name": "Enlarged inguinal lymph nodes",
+                "severity": "Multiple, hard",
+                "pattern": "Present"
+            },
+            {
+                "name": "Sore or scab",
+                "severity": "Non-healing",
+                "pattern": "Present for about two months or more"
+            },
+            {
+                "name": "Flat patch of scaly skin",
+                "severity": "Non-healing",
+                "pattern": "Present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Hard ulcerative mass of 5x4 cm in the right inguinal region along the crease",
+            "Irregular border",
+            "Yellowish slough in the base",
+            "Blood oozing",
+            "Multiple hard enlargements of inguinal lymph nodes",
+            "Intact sensation and distal pulsation"
+        ],
+        "lab_values": {
+            "CEA": "Normal",
+            "alpha-fetoprotein cancer antigen (CA) 19.9": "Normal",
+            "free PSA": "Normal"
+        },
+        "risk_factors": [
+            "Sun exposure",
+            "Immunosuppression",
+            "Chronic wounds",
+            "Fair skin",
+            "Male gender",
+            "Older age",
+            "Smoking (ex-smoker in this case)",
+            "Tumor size >2.0 cm",
+            "Tumor thickness >2.0 mm",
+            "Long duration of the primary lesion"
+        ],
+        "imaging_findings": {
+            "PET/CT scan": "Diffuse metastasis, right inguinal mass (SUV max 9.6, 6.5x2.8 cm), diffuse bone metastasis in the left proximal femur (SUV max 11.5), bilateral iliac, sacrum, vertebral bodies, right scapula, right upper ribs, and right anterior pulmonary nodule (0.5x0.5 cm, SUV max 4.7). No abnormal uptake in the brain. US liver and biliary normal."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (ulcerative mass, enlarged lymph nodes)",
+            "Imaging findings (PET/CT scan showing metastasis)"
+        ]
+    },
+    "differential_diagnoses": []
+}

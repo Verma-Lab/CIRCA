@@ -1,0 +1,67 @@
+{
+    "disease": "Malignant melanoma of skin, unspecified",
+    "icd_code": "C439",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Asymmetrical lesion",
+                "severity": "Unspecified",
+                "pattern": "Present in many cases"
+            },
+            {
+                "name": "Itching",
+                "severity": "Unspecified",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Unspecified",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Ulceration",
+                "severity": "Unspecified",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Satellite lesions",
+                "severity": "Unspecified",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Symptoms related to affected organ systems",
+                "severity": "Variable",
+                "pattern": "Present in metastatic disease or primary sites other than skin"
+            },
+            {
+                "name": "Dark patch",
+                "severity": "Unspecified",
+                "pattern": "May appear on the skin due to uncontrolled melanin-producing cell multiplication"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Asymmetrical lesion",
+            "Ulceration",
+            "Bleeding",
+            "Satellite lesions"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to UV rays",
+            "Genetic factors (e.g., CDKN2A, CDK4, MC1R mutations)",
+            "Xeroderma pigmentosum (XP)",
+            "Cumulative solar damage (CSD)",
+            "BRAF mutation (V600E, V600K)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Biopsy confirming malignant melanoma"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

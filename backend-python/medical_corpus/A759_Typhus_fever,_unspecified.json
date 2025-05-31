@@ -1,0 +1,91 @@
+{
+    "disease": "Typhus fever, unspecified",
+    "icd_code": "A759",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Muscle pain (myalgia)",
+                "severity": "Variable",
+                "pattern": "Present"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "May be present, initially pink spots, darkening later"
+            },
+            {
+                "name": "Gastrointestinal symptoms",
+                "severity": "Variable",
+                "pattern": "May be present in murine typhus"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in epidemic typhus"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Variable",
+                "pattern": "Present in epidemic typhus"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Present in epidemic typhus"
+            },
+            {
+                "name": "Central nervous system abnormalities",
+                "severity": "Variable",
+                "pattern": "May be present, more common and severe in epidemic typhus"
+            },
+            {
+                "name": "Delirium",
+                "severity": "Variable",
+                "pattern": "May be present in epidemic typhus"
+            },
+            {
+                "name": "Coma",
+                "severity": "Variable",
+                "pattern": "May be present in epidemic typhus"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "May be present in epidemic typhus"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Rash (initially pink spots, later darkening into pustules)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected fleas (murine typhus)",
+            "Exposure to infected body lice (epidemic typhus)",
+            "Exposure to infected flying squirrels (epidemic typhus)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with typhus (fever, headache, rash, etc.)"
+        ],
+        "supportive": [
+            "Positive serological testing for Rickettsia typhi or Rickettsia prowazekii"
+        ]
+    },
+    "differential_diagnoses": []
+}

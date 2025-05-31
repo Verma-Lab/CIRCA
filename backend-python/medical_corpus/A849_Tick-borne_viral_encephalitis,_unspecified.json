@@ -1,0 +1,24 @@
+{
+    "disease": "Tick-borne viral encephalitis, unspecified",
+    "icd_code": "A849",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Unspecified symptoms",
+                "severity": "Variable",
+                "pattern": "Many infected individuals are asymptomatic.  Symptoms onset is typically 7-14 days post-tick bite, ranging from 4-28 days."
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

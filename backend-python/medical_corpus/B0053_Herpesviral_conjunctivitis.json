@@ -1,0 +1,96 @@
+{
+    "disease": "Herpesviral conjunctivitis",
+    "icd_code": "B00.53",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Foreign body sensation",
+                "severity": "Variable",
+                "pattern": "Recent onset"
+            },
+            {
+                "name": "Photophobia",
+                "severity": "Variable",
+                "pattern": "Associated with foreign body sensation"
+            },
+            {
+                "name": "Pain/irritation",
+                "severity": "Variable",
+                "pattern": "Associated with foreign body sensation and photophobia"
+            },
+            {
+                "name": "Burning",
+                "severity": "Variable",
+                "pattern": "Associated with foreign body sensation, photophobia, and pain/irritation"
+            },
+            {
+                "name": "Lacrimation",
+                "severity": "Variable",
+                "pattern": "Associated with other symptoms"
+            },
+            {
+                "name": "Ocular hyperemia",
+                "severity": "Variable",
+                "pattern": "Associated with other symptoms"
+            },
+            {
+                "name": "Lid swelling",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Preauricular lymph node swelling",
+                "severity": "Occasional",
+                "pattern": "Ipsilateral"
+            },
+            {
+                "name": "Dermal eruptions of vesicles around the orolabial area",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Blurred vision",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Loss of visual acuity",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Acute or recurrent follicular conjunctivitis",
+            "Pseudomembrane (rare)",
+            "Dendritic, dendrogeographic, or geographic ulcerations on the cornea epithelium",
+            "Punctate keratitis (initial presentation)",
+            "Stromal infiltrate (under dendrite)",
+            "Varying degrees of cellular activity and type in the anterior chamber and corneal endothelium"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Direct contact with infected lesions",
+            "Salivary droplets from infected individuals",
+            "Contact with asymptomatic virus-shedding carriers",
+            "Contaminated ophthalmic instruments",
+            "Unwashed hands of healthcare providers"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with herpesviral conjunctivitis (symptoms and physical findings)"
+        ],
+        "supportive": [
+            "Positive AdenoPlus test (to rule out adenoviral etiology)",
+            "Rose bengal staining highlighting epithelial absence and swollen infected cells",
+            "Fluorescein staining of the center of lesions"
+        ]
+    },
+    "differential_diagnoses": [
+        "Adenoviral conjunctivitis",
+        "Bacterial conjunctivitis"
+    ]
+}

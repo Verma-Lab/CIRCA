@@ -1,0 +1,61 @@
+{
+    "disease": "Trichomonal cystitis and urethritis",
+    "icd_code": "A59.03",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Urethritis",
+                "severity": "Mild to moderate",
+                "pattern": "Transient, frothy, or purulent discharge; dysuria; frequency (usually early morning); minimal urethral irritation; occasional moisture at the urethral meatus"
+            },
+            {
+                "name": "Cystitis",
+                "severity": "Occasional",
+                "pattern": "May occur in women"
+            },
+            {
+                "name": "Vaginitis (in women)",
+                "severity": "Variable",
+                "pattern": "Copious, yellow-green, frothy vaginal discharge with a fishy odor; soreness of the vulva and perineum; dyspareunia; dysuria; inflammation and edema of the vulva and perineum; punctate, red \u201cstrawberry\u201d spots on vaginal walls and cervix"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "Common",
+                "pattern": "May be asymptomatic in both men and women"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Punctate, red \u201cstrawberry\u201d spots on vaginal walls and cervix (in women)",
+            "Inflammation and edema of the vulva and perineum (in women)"
+        ],
+        "lab_values": {
+            "Vaginal pH": "Elevated",
+            "Microscopic examination of vaginal secretions": "Presence of trichomonads, neutrophils",
+            "NAATs (Nucleic Acid Amplification Tests)": "Positive for Trichomonas vaginalis",
+            "Dipstick tests": "Positive for Trichomonas vaginalis",
+            "Urine culture (men)": "Positive for Trichomonas vaginalis",
+            "Urethral swab culture (men)": "Positive for Trichomonas vaginalis"
+        },
+        "risk_factors": [
+            "Sexual activity",
+            "Coinfection with gonorrhea and other STIs"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive lab test for Trichomonas vaginalis (NAATs, microscopy, culture, dipstick tests)"
+        ],
+        "supportive": [
+            "Symptoms of urethritis and/or cystitis",
+            "Symptoms of vaginitis (in women)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Gonorrhea",
+        "Chlamydia infections",
+        "Bacterial vaginosis"
+    ]
+}

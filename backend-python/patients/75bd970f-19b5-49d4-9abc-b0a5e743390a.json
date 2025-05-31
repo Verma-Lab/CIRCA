@@ -1,0 +1,18 @@
+{
+  "id": "75bd970f-19b5-49d4-9abc-b0a5e743390a",
+  "mrn": "MRN17B4F073",
+  "first_name": "Angela",
+  "last_name": "Baker",
+  "date_of_birth": "1985-06-24",
+  "gender": "Female",
+  "address": "279 Sanders Ports Suite 512",
+  "phone": "001-753-463-4000x618",
+  "email": "oarellano@yahoo.com",
+  "insurance_provider": "Cigna",
+  "insurance_id": "Tf343095",
+  "primary_care_provider": "Dr. Smith",
+  "emergency_contact_name": "Jackson Davis",
+  "emergency_contact_phone": "661-432-4956",
+  "created_at": "2025-03-24T12:52:01.082367",
+  "updated_at": "2025-03-24T12:52:01.082367"
+}

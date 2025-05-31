@@ -1,0 +1,85 @@
+{
+    "disease": "Zoster conjunctivitis",
+    "icd_code": "B0231",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Burning or shooting pain",
+                "severity": "mild to severe",
+                "pattern": "unilateral"
+            },
+            {
+                "name": "Tingling",
+                "severity": "variable",
+                "pattern": "unilateral"
+            },
+            {
+                "name": "Itching",
+                "severity": "variable",
+                "pattern": "unilateral"
+            },
+            {
+                "name": "Eye redness",
+                "severity": "variable",
+                "pattern": "unilateral"
+            },
+            {
+                "name": "Eye irritation",
+                "severity": "variable",
+                "pattern": "unilateral"
+            },
+            {
+                "name": "Pain with blinking",
+                "severity": "variable",
+                "pattern": "unilateral"
+            },
+            {
+                "name": "Watery discharge",
+                "severity": "variable",
+                "pattern": "unilateral"
+            },
+            {
+                "name": "Vesicular rash",
+                "severity": "variable",
+                "pattern": "unilateral, dermatomal"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Vesicular rash (blisters) typically scab over in 7-10 days",
+            "Conjunctival follicles",
+            "Round, raised white lesions on the palpebral conjunctiva",
+            "Flat lesions on the bulbar conjunctiva",
+            "Focal conjunctival injection",
+            "Scattered vesicles across the face involving eyelids"
+        ],
+        "lab_values": {
+            "VZV PCR": "Positive in cases of zoster conjunctivitis"
+        },
+        "risk_factors": [
+            "Prior chickenpox infection",
+            "Increasing age (most common in people over 50)",
+            "Weakened immune system",
+            "Infection",
+            "Stress"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic vesicular rash in a dermatomal distribution",
+            "Positive VZV PCR from lesion"
+        ],
+        "supportive": [
+            "History of chickenpox",
+            "Unilateral eye symptoms consistent with conjunctivitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Herpes simplex conjunctivitis",
+        "Other viral conjunctivitis",
+        "Bacterial conjunctivitis",
+        "Allergic conjunctivitis"
+    ]
+}

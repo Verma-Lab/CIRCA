@@ -1,0 +1,117 @@
+{
+    "disease": "Tuberculous keratitis",
+    "icd_code": "A1852",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Vision loss",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Eye pain",
+                "severity": "Variable",
+                "pattern": "Recurring or continuous"
+            },
+            {
+                "name": "Corneal epithelial defect",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Corneal edema",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "White irregular infiltrative lesion",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Corneal ulcer",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Keratic precipitates",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Anterior chamber flare",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pigmented exudation",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "intraocular pressure": "Elevated in some cases (e.g., 65 mmHg)"
+        },
+        "physical_findings": [
+            "Corneal epithelial defect",
+            "Interstitial corneal edema",
+            "White irregular infiltrative lesion",
+            "Corneal ulcer",
+            "Keratic precipitates",
+            "Anterior chamber flare",
+            "Pigmented exudation",
+            "Peripheral corneal stromal thinning",
+            "Descemetocele (in some cases)",
+            "Corneal perforation (in some cases)"
+        ],
+        "lab_values": {
+            "Purified protein derivative skin test": "Positive induration (e.g., 10 mm)",
+            "Enzyme-linked immunospot assay for interferon-\u03b3": "Strongly positive",
+            "Erythrocyte sedimentation rate": "Elevated",
+            "Mycobacterium tuberculosis deoxyribonucleic acid polymerase chain reaction": "Positive from corneal scraping in some cases",
+            "Acid-fast staining": "May be negative"
+        },
+        "risk_factors": [
+            "Pulmonary tuberculosis",
+            "Residence in areas with high incidence of tuberculosis",
+            "Immunosuppression"
+        ],
+        "imaging_findings": {
+            "Chest computed tomography": "May show multiple spots and nodules in the lung"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tuberculous keratitis (e.g., corneal ulcer, infiltrates, edema)",
+            "Positive Mycobacterium tuberculosis DNA PCR from corneal scraping (if available)"
+        ],
+        "supportive": [
+            "Positive purified protein derivative skin test",
+            "Elevated erythrocyte sedimentation rate",
+            "Positive interferon-gamma release assay",
+            "Evidence of pulmonary tuberculosis on imaging"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other forms of keratitis (e.g., viral, bacterial, fungal)",
+        "Herpes simplex keratitis",
+        "Herpes zoster keratitis",
+        "Fungal keratitis"
+    ]
+}

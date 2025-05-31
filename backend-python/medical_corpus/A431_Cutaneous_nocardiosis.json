@@ -1,0 +1,96 @@
+{
+    "disease": "Cutaneous nocardiosis",
+    "icd_code": "A431",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Raised red lesions",
+                "severity": "Variable",
+                "pattern": "Localized, can progress"
+            },
+            {
+                "name": "Pus discharge",
+                "severity": "Occasional to frequent",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Nodules",
+                "severity": "Multiple",
+                "pattern": "Skin-colored, with erosions and crusting"
+            },
+            {
+                "name": "Fever",
+                "severity": "Intermittent",
+                "pattern": "Can be present in disseminated cases"
+            },
+            {
+                "name": "Chills",
+                "severity": "Intermittent",
+                "pattern": "Can be present in disseminated cases"
+            },
+            {
+                "name": "Pain",
+                "severity": "Intense",
+                "pattern": "In superficial acute skin infections"
+            },
+            {
+                "name": "Erythema",
+                "severity": "Intense",
+                "pattern": "In superficial acute skin infections"
+            },
+            {
+                "name": "Edema",
+                "severity": "Present",
+                "pattern": "In superficial acute skin infections"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "39.5\u00b0C (in one case)",
+            "pulse_rate": "80/min (in one case)",
+            "respiratory_rate": "14/min (in one case)",
+            "blood_pressure": "120/81 mm Hg (in one case)"
+        },
+        "physical_findings": [
+            "Multiple skin-coloured nodules with erosions and crusting",
+            "Subcutaneous abscesses (firm, nonfluctuant initially, then tender, fluctuant, and erythematous)",
+            "Ruptured abscesses with yellowish purulent discharge",
+            "Granules in discharge (in mycetoma)"
+        ],
+        "lab_values": {
+            "white_blood_cell_count": "17.5 \u00d7 109/L with 88.4% neutrophils (in one case)",
+            "erythrocyte_sedimentation_rate": "97 mm/h\u2191 (in one case)",
+            "procalcitonin": "0.340 ng/mL (in one case)",
+            "c-reactive_protein": "130.00 mg/L\u2191 (in one case)",
+            "serum_c3": "0.85 g/L\u2193 (in one case)",
+            "serum_c4": "0.33 g/L (in one case)"
+        },
+        "risk_factors": [
+            "Prior injury (e.g., road traffic accident, thorn prick, splinter injury)",
+            "Immunocompromised state (e.g., nephrotic syndrome, long-term corticosteroid therapy, HIV infection)",
+            "Agricultural work or labor"
+        ],
+        "imaging_findings": {
+            "ultrasound": "Subcutaneous anechoic lesions (in one case)",
+            "computed_tomography": "Negative for disseminated disease (in one case)"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Demonstration of Nocardia from clinical specimens (pus, granules) by Gram stain and modified acid-fast stain",
+            "Characteristic morphology of Nocardia on microscopy (thin, beaded, branching filaments)"
+        ],
+        "supportive": [
+            "Clinical presentation (nodules, abscesses, mycetoma)",
+            "Positive culture for Nocardia (though culture can be negative)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Actinomycosis",
+        "Deep mycoses",
+        "Cutaneous tuberculosis",
+        "Botryomycosis",
+        "Sporotrichosis",
+        "Common pyogenic infections"
+    ]
+}

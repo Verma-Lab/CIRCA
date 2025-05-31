@@ -1,0 +1,53 @@
+{
+    "disease": "Candidal sepsis",
+    "icd_code": "B377",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Septic shock",
+                "severity": "Severe",
+                "pattern": "Can be present"
+            },
+            {
+                "name": "Organ failure",
+                "severity": "Variable",
+                "pattern": "Can be present, may be used to define sepsis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated",
+            "heart_rate": "Elevated",
+            "blood_pressure": "Decreased",
+            "respiratory_rate": "Elevated"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_cultures": "Positive for Candida species",
+            "white_blood_cell_count": "May be elevated or decreased",
+            "\u03b2-d-glucan": "May be elevated (investigational)"
+        },
+        "risk_factors": [
+            "Immunocompromised state",
+            "Critical illness",
+            "Prolonged hospital stay",
+            "Intravenous catheters",
+            "Wounds",
+            "Urinary tract infection",
+            "Peritoneal cavity infection",
+            "Gastrointestinal colonization"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Candida species",
+            "Evidence of sepsis (e.g., systemic inflammatory response syndrome)"
+        ],
+        "supportive": [
+            "Elevated \u03b2-d-glucan levels",
+            "Clinical presentation consistent with sepsis"
+        ]
+    },
+    "differential_diagnoses": []
+}

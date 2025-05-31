@@ -1,0 +1,128 @@
+{
+    "disease": "Pulmonary mycobacterial infection",
+    "icd_code": "A310",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "May be productive or non-productive, may include hemoptysis"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable",
+                "pattern": "Difficulty breathing"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Pain in the ribcage"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Feeling tired and weak"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "May be present (more common in miliary TB)"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (fever)",
+            "respiratory_rate": "May be increased due to dyspnea"
+        },
+        "physical_findings": [
+            "Cough",
+            "Dyspnea",
+            "Chest pain",
+            "Abnormal breath sounds",
+            "Hepatomegaly (in miliary TB)",
+            "Splenomegaly (in miliary TB)",
+            "Generalized lymphadenopathy (in miliary TB)"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive in some cases, especially with HIV",
+            "sputum_culture": "May be positive for mycobacteria",
+            "ESR": "Elevated in approximately 50% of patients with miliary TB",
+            "alkaline_phosphatase": "Elevated in approximately 30% of patients with miliary TB",
+            "transaminases": "Elevated suggesting liver involvement or drug toxicity",
+            "leukocytes": "Leukopenia/leukocytosis may be present",
+            "sodium": "Decreased levels may correlate with disease severity",
+            "CSF analysis (in miliary TB)": {
+                "WBC count": "100-500 mononuclear cells/\u03bcL in approximately 65% of patients",
+                "lymphocytic predominance": "70%",
+                "lactic acid": "Mildly elevated",
+                "protein": "Elevated in 90%",
+                "glucose": "Low in 90%",
+                "RBCs": "Common",
+                "acid-fast bacilli": "\u226540% with serial spinal taps"
+            }
+        },
+        "risk_factors": [
+            "Immunosuppression",
+            "HIV infection",
+            "Malnutrition",
+            "Diabetes",
+            "Silicosis",
+            "End-stage renal disease",
+            "Major surgical procedures"
+        ],
+        "imaging_findings": {
+            "chest_x_ray": "Miliary pattern (in miliary TB), may show nodules",
+            "chest_ct": "Higher sensitivity and specificity than chest x-ray for detecting nodules",
+            "ultrasound": "May reveal hepatosplenomegaly or lymphadenopathy"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with pulmonary mycobacterial infection",
+            "Positive mycobacterial culture from respiratory specimens"
+        ],
+        "supportive": [
+            "Abnormal chest imaging findings",
+            "Positive serological tests",
+            "Positive PCR test"
+        ]
+    },
+    "differential_diagnoses": [
+        "Tuberculosis",
+        "Other mycobacterial infections",
+        "Fungal infections",
+        "Bacterial pneumonia",
+        "Viral pneumonia",
+        "Miliary tuberculosis",
+        "Acute respiratory distress syndrome",
+        "Addison disease",
+        "Ascites",
+        "Blastomycosis",
+        "Cardiac tamponade",
+        "Disseminated intravascular coagulation",
+        "Epididymal tuberculosis",
+        "Hypersensitivity pneumonitis",
+        "Pneumocystis carinii pneumonia",
+        "Community-acquired pneumonia",
+        "Fungal pneumonia",
+        "Viral pneumonia",
+        "Fungal infection",
+        "Histiocytosis X",
+        "HIV-related pulmonary opportunistic infections",
+        "Lymphangitic spread of cancer",
+        "Measles",
+        "Pancreatic abscess",
+        "Pulmonary alveolar microlithiasis",
+        "Talc granulomatosis"
+    ]
+}

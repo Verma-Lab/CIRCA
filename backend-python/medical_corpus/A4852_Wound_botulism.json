@@ -1,0 +1,82 @@
+{
+    "disease": "Wound botulism",
+    "icd_code": "A4852",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Cranial nerve palsies",
+                "severity": "Variable",
+                "pattern": "Descending paralysis, beginning with cranial nerves"
+            },
+            {
+                "name": "Extremity weakness",
+                "severity": "Variable, can progress to respiratory failure",
+                "pattern": "Proximal to distal"
+            },
+            {
+                "name": "Respiratory failure",
+                "severity": "Life-threatening",
+                "pattern": "Can occur early, may or may not be preceded by extremity weakness"
+            },
+            {
+                "name": "Diplopia",
+                "severity": "Variable",
+                "pattern": "Often an early symptom"
+            },
+            {
+                "name": "Dysarthria",
+                "severity": "Variable",
+                "pattern": "Often an early symptom"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Often an early symptom"
+            },
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable, can progress to respiratory failure",
+                "pattern": "Can be an early symptom"
+            },
+            {
+                "name": "Dyspnea",
+                "severity": "Variable, can progress to respiratory failure",
+                "pattern": "Can be an early symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "respiratory_rate": "Increased or decreased depending on severity",
+            "blood_pressure": "May be normal or abnormal depending on severity"
+        },
+        "physical_findings": [
+            "Descending flaccid paralysis",
+            "Cranial nerve palsies (e.g., diplopia, ptosis, dysarthria, dysphagia)",
+            "Extremity weakness (proximal to distal)"
+        ],
+        "lab_values": {
+            "botulinum toxin": "Detected in serum, gastric fluid, stool, or wound",
+            "Clostridium botulinum": "Isolated from wound"
+        },
+        "risk_factors": [
+            "Contamination of wound with Clostridium botulinum spores",
+            "Unsanitary injection of heroin (black tar heroin)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "High clinical suspicion based on characteristic clinical presentation (descending flaccid paralysis starting with cranial nerve palsies)",
+            "Laboratory confirmation (detection of botulinum toxin or isolation of C. botulinum from wound)"
+        ],
+        "supportive": [
+            "Epidemiologic link to a known outbreak",
+            "Exposure to risk factors (e.g., contaminated wound)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Myasthenia gravis",
+        "Guillain-Barr\u00e9 syndrome",
+        "Other neuromuscular disorders"
+    ]
+}

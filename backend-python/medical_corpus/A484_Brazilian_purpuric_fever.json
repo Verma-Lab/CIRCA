@@ -1,0 +1,48 @@
+{
+    "disease": "Brazilian Purpuric Fever",
+    "icd_code": "A484",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Purpuric rash",
+                "severity": "Variable",
+                "pattern": "Morbilliform"
+            },
+            {
+                "name": "Fever",
+                "severity": "High",
+                "pattern": "Persistent"
+            },
+            {
+                "name": "Purulent conjunctivitis",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "High fever (hyperpyrexia)"
+        },
+        "physical_findings": [
+            "Purpuric rash",
+            "Purulent conjunctivitis"
+        ],
+        "lab_values": {
+            "blood_culture": "Positive for Haemophilus influenzae biogroup aegyptius"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Purpuric rash",
+            "Fever",
+            "Positive blood culture for Haemophilus influenzae biogroup aegyptius"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Other invasive Haemophilus influenzae infections",
+        "Epstein-Barr virus infection"
+    ]
+}

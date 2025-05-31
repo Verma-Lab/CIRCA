@@ -1,0 +1,140 @@
+{
+    "disease": "Cutaneous mucormycosis",
+    "icd_code": "B463",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Indurated plaque",
+                "severity": "Variable",
+                "pattern": "Rapid evolution to necrosis"
+            },
+            {
+                "name": "Erythematous to purple lesions",
+                "severity": "Variable",
+                "pattern": "Necrosis with erythematous halo, can develop into eschar"
+            },
+            {
+                "name": "Targetoid lesions",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Tender nodules",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Ulcers",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Purpuric lesions",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Swollen and scaly plaques",
+                "severity": "Variable",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Cellulitis and necrosis",
+                "severity": "Variable",
+                "pattern": "Often seen in surgical wound infections and burns"
+            },
+            {
+                "name": "Erythema and tenderness",
+                "severity": "Variable",
+                "pattern": "Rapid evolution to necrosis in nosocomial infections"
+            },
+            {
+                "name": "Necrotic eschar",
+                "severity": "Severe",
+                "pattern": "Common in secondary cutaneous mucormycosis"
+            },
+            {
+                "name": "Necrotic, black or white ulcers",
+                "severity": "Severe",
+                "pattern": "Can occur with oral involvement"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Can occur in secondary disease"
+            },
+            {
+                "name": "Periorbital cellulitis",
+                "severity": "Severe",
+                "pattern": "Can occur in secondary disease"
+            },
+            {
+                "name": "Periorbital edema",
+                "severity": "Severe",
+                "pattern": "Can occur in secondary disease"
+            },
+            {
+                "name": "Ophthalmoplegia",
+                "severity": "Severe",
+                "pattern": "Can occur in secondary disease"
+            },
+            {
+                "name": "Proptosis",
+                "severity": "Severe",
+                "pattern": "Can occur in secondary disease"
+            },
+            {
+                "name": "Loss of vision",
+                "severity": "Severe",
+                "pattern": "Can occur in secondary disease"
+            },
+            {
+                "name": "Neurological deficits",
+                "severity": "Severe",
+                "pattern": "Can occur in secondary disease"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Indurated plaques",
+            "Necrotic lesions with erythematous halo",
+            "Ulcers",
+            "Necrotic eschar",
+            "Cellulitis",
+            "Swelling"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Uncontrolled diabetes mellitus",
+            "Immunosuppression",
+            "Trauma",
+            "Burns",
+            "Hematological malignancies",
+            "Allogeneic hematopoietic stem cell transplantation",
+            "Solid organ transplantation",
+            "Deferoxamine therapy",
+            "Drug injections",
+            "Renal failure",
+            "Low birth weight",
+            "Malnutrition",
+            "HIV infection",
+            "Systemic lupus erythematosus",
+            "Aplastic anemia",
+            "Steroid use",
+            "Contaminated dressings",
+            "Surgery"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Demonstration of the etiological agent (fungal culture, histopathology, molecular methods)"
+        ],
+        "supportive": [
+            "Clinical presentation (indurated plaque, necrosis, ulcers)",
+            "Risk factors (diabetes, immunosuppression, trauma)"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,90 @@
+{
+    "disease": "Amebic Liver Abscess",
+    "icd_code": "A064",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "High (up to 40.0\u2103)",
+                "pattern": "Persistent, lasting for several days"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable, can be absent or present in the liver region",
+                "pattern": "Localized tenderness"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Variable, can be absent",
+                "pattern": "Not always present"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable, can be absent",
+                "pattern": "Not always present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable, can be absent",
+                "pattern": "Not always present"
+            },
+            {
+                "name": "Jaundice",
+                "severity": "Variable, can be absent",
+                "pattern": "Not always present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (38\u2103 - 40\u2103)",
+            "pulse rate": "Elevated (111 bpm)",
+            "blood pressure": "Can be within normal range (121/69 mmHg)"
+        },
+        "physical_findings": [
+            "Abdominal tenderness, particularly in the liver region",
+            "Negative Murphy's sign (in some cases)"
+        ],
+        "lab_values": {
+            "WBC": "Elevated",
+            "Neutrophil count": "Elevated",
+            "Eosinophil count": "Elevated",
+            "Procalcitonin": "Elevated",
+            "IL-6": "Elevated",
+            "Total bilirubin": "Elevated",
+            "Alkaline phosphatase": "Elevated",
+            "Gamma-glutamyl transferase": "Elevated",
+            "Prothrombin time": "Abnormal",
+            "Activated partial thromboplastin time": "Abnormal"
+        },
+        "risk_factors": [
+            "Travel to tropical areas with poor sanitation",
+            "Consumption of contaminated food or water",
+            "Male gender (significantly higher prevalence in males)",
+            "Alcohol consumption",
+            "Immunocompromised state",
+            "Previous intestinal amebiasis"
+        ],
+        "imaging_findings": {
+            "CT scan": "Low-density lesion in the liver",
+            "Ultrasound": "Mixed mass with low enhancement in the peripheral ring and non-enhancement in the inner area, suggestive of liquefied abscess",
+            "Contrast-enhanced ultrasound": "Mixed mass (size varies), with low enhancement in the peripheral ring after SonoVue contrast agent injection, and non-enhancement in the inner area"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with amebic liver abscess (fever, abdominal pain, etc.)",
+            "Imaging findings suggestive of liver abscess (CT, ultrasound)",
+            "Positive PCR for Entamoeba histolytica DNA in abscess fluid or stool"
+        ],
+        "supportive": [
+            "Elevated inflammatory markers",
+            "Presence of Charcot-Leiden crystals in abscess fluid",
+            "Positive serology for Entamoeba histolytica (though less reliable in endemic areas)"
+        ]
+    },
+    "differential_diagnoses": [
+        "Pyogenic liver abscess",
+        "Hepatic malignancy",
+        "Other causes of liver inflammation"
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "disease": "Tuberculoma of brain and spinal cord",
+    "icd_code": "A1781",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Intracranial hypertensive syndrome",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Brave-Jacksonian seizures",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Progressive worsening in some cases"
+            },
+            {
+                "name": "Neurological deterioration",
+                "severity": "Severe",
+                "pattern": "Can occur"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Paresthesia",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Neck pain",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Back pain",
+                "severity": "Severe",
+                "pattern": "Progressive in some cases"
+            },
+            {
+                "name": "Malaise",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Dizziness",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Loss of balance",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Progressive paraplegia",
+                "severity": "Severe",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Numbness in lower extremities",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "Cerebrospinal fluid protein": "Increased in some cases"
+        },
+        "risk_factors": [
+            "Immunocompromised individuals",
+            "Congenital heart disease",
+            "Immunosuppressive therapy",
+            "HIV infection",
+            "History of TB",
+            "Kidney transplantation"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show lesions, hydrocephalus",
+            "MRI": "Shows ring-enhancing lesions, may show disseminated TB, ventricular dilation, cerebral ischemia, intramedullary mass"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tuberculoma",
+            "Histopathological evidence of granulomatous TB"
+        ],
+        "supportive": [
+            "Characteristic imaging findings (ring-enhancing lesions)",
+            "Positive tuberculin skin test (TST)",
+            "Elevated inflammatory markers"
+        ]
+    },
+    "differential_diagnoses": [
+        "Gliomas",
+        "Meningiomas",
+        "Metastases",
+        "Meningioma"
+    ]
+}

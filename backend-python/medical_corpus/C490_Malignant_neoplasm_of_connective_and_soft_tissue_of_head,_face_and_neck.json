@@ -1,0 +1,66 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of head, face and neck",
+    "icd_code": "C490",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be localized or widespread"
+            },
+            {
+                "name": "Mass or lump",
+                "severity": "Variable",
+                "pattern": "May be palpable or visible"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be localized or generalized"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated",
+            "blood_pressure": "May be elevated or decreased",
+            "respiratory_rate": "May be elevated"
+        },
+        "physical_findings": [
+            "Palpable mass",
+            "Skin changes (e.g., discoloration, ulceration)",
+            "Lymphadenopathy",
+            "Neurological deficits (depending on location)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "May show mass and extent of involvement",
+            "MRI": "May show mass characteristics and relationship to surrounding structures",
+            "PET scan": "May show metabolic activity of the tumor"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant neoplasm"
+        ],
+        "supportive": [
+            "Imaging findings consistent with malignant neoplasm",
+            "Clinical findings suggestive of malignant neoplasm"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign neoplasms of connective and soft tissue",
+        "Inflammatory conditions",
+        "Other malignancies"
+    ]
+}

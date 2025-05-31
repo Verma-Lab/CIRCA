@@ -1,0 +1,145 @@
+{
+    "disease": "Tuberculosis of skin and subcutaneous tissue",
+    "icd_code": "A184",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Skin inflammation",
+                "severity": "Variable",
+                "pattern": "Localized or disseminated"
+            },
+            {
+                "name": "Reddish-brown lumps",
+                "severity": "Variable",
+                "pattern": "May leave scars, often on the face"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Associated with systemic TB"
+            },
+            {
+                "name": "Coughing",
+                "severity": "Variable",
+                "pattern": "Associated with pulmonary TB"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Associated with systemic TB"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Associated with systemic TB"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "Associated with systemic TB"
+            },
+            {
+                "name": "Painless shallow ulcer",
+                "severity": "Variable",
+                "pattern": "Tuberculous chancre"
+            },
+            {
+                "name": "Granular base and undermined edge",
+                "severity": "Variable",
+                "pattern": "Tuberculous chancre"
+            },
+            {
+                "name": "Enlarged regional lymph nodes",
+                "severity": "Variable",
+                "pattern": "Tuberculous chancre"
+            },
+            {
+                "name": "Warty growth",
+                "severity": "Variable",
+                "pattern": "Tuberculosis verrucosa cutis"
+            },
+            {
+                "name": "Purplish or brownish-red lesions",
+                "severity": "Variable",
+                "pattern": "Tuberculosis verrucosa cutis"
+            },
+            {
+                "name": "Small sharply defined reddish-brown papules",
+                "severity": "Variable",
+                "pattern": "Lupus vulgaris"
+            },
+            {
+                "name": "Plaques with a gelatinous consistency",
+                "severity": "Variable",
+                "pattern": "Lupus vulgaris"
+            },
+            {
+                "name": "Firm, painless lesions",
+                "severity": "Variable",
+                "pattern": "Scrofuloderma"
+            },
+            {
+                "name": "Ulceration with a granular base",
+                "severity": "Variable",
+                "pattern": "Scrofuloderma"
+            },
+            {
+                "name": "Millet-sized red spots",
+                "severity": "Variable",
+                "pattern": "Miliary tuberculosis"
+            },
+            {
+                "name": "Necrosis, ulcers, and abscesses",
+                "severity": "Variable",
+                "pattern": "Miliary tuberculosis"
+            },
+            {
+                "name": "Shallow ulcers",
+                "severity": "Variable",
+                "pattern": "Orificial tuberculosis"
+            },
+            {
+                "name": "Subcutaneous nodule or cold abscess",
+                "severity": "Variable",
+                "pattern": "Tuberculous gumma"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Skin lesions (various types depending on presentation)",
+            "Enlarged lymph nodes (regional)"
+        ],
+        "lab_values": {
+            "Acid-fast bacilli (AFB)": "Positive in tissue samples",
+            "Polymerase chain reaction (PCR)": "Positive for Mycobacterium tuberculosis DNA",
+            "Culture": "Positive for Mycobacterium tuberculosis"
+        },
+        "risk_factors": [
+            "Exposure to Mycobacterium tuberculosis",
+            "Immunosuppression (HIV/AIDS, drug-induced)",
+            "Genetic susceptibility",
+            "Prior BCG vaccination (rarely)",
+            "Direct inoculation (e.g., piercing, tattooing)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic histopathological features on skin biopsy (caseating epithelioid granulomas with AFB)"
+        ],
+        "supportive": [
+            "Positive AFB smear",
+            "Positive PCR for Mycobacterium tuberculosis",
+            "Positive culture for Mycobacterium tuberculosis",
+            "Clinical presentation consistent with cutaneous TB"
+        ]
+    },
+    "differential_diagnoses": [
+        "Leprosy",
+        "Atypical mycobacterial infections",
+        "Other granulomatous diseases",
+        "Sarcoidosis",
+        "Fungal infections"
+    ]
+}

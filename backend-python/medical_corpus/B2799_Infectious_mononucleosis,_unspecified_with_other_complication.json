@@ -1,0 +1,99 @@
+{
+    "disease": "Infectious mononucleosis, unspecified with other complication",
+    "icd_code": "B2799",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Sore throat",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Cervical lymph node enlargement",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Extreme",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Swollen lymph glands in the neck, armpits, and groin",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Enlarged spleen",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Head and body aches",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Liver problems (mild liver inflammation)",
+                "severity": "Mild",
+                "pattern": "Rarely causes jaundice"
+            },
+            {
+                "name": "White patches in the back of the throat",
+                "severity": "Variable",
+                "pattern": "Common with sore throat"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "fever": "Variable"
+        },
+        "physical_findings": [
+            "Swollen lymph glands",
+            "Enlarged spleen",
+            "Atypical lymphocytosis"
+        ],
+        "lab_values": {
+            "White blood cell count": "Increased with atypical lymphocytes",
+            "EBV-specific antibodies": "Present",
+            "Heterophile antibody test (Monospot)": "May be positive, but not always specific or reliable"
+        },
+        "risk_factors": [
+            "Intimate oral contact (kissing)",
+            "Blood transfusion",
+            "Solid organ transplantation",
+            "Hematopoietic cell transplantation",
+            "Age (adolescents and young adults more susceptible)",
+            "Geographic region",
+            "Race/ethnicity",
+            "Socioeconomic status",
+            "Crowding",
+            "Sharing a bedroom",
+            "Maternal education",
+            "Day care attendance",
+            "School catchment area",
+            "Lack of health insurance",
+            "Lower household education and income"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation (fever, pharyngitis, lymphadenopathy, atypical lymphocytosis)"
+        ],
+        "supportive": [
+            "Positive serologic test for antibodies against EBV"
+        ]
+    },
+    "differential_diagnoses": []
+}

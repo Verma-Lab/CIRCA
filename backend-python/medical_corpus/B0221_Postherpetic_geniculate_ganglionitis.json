@@ -1,0 +1,88 @@
+{
+    "disease": "Postherpetic geniculate ganglionitis",
+    "icd_code": "B02.21",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Severe paroxysmal neuralgic pain",
+                "severity": "Severe",
+                "pattern": "Deep in the ear, may spread to ear canal, outer ear, mastoid or eye regions; sharp, shooting, or burning; lasting for hours; triggered by cold, noise, swallowing, or touch"
+            },
+            {
+                "name": "Increased salivation",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Bitter taste",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Tinnitus",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Vertigo",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Facial paresis (weakness)",
+                "severity": "Unspecified",
+                "pattern": "May be associated with herpes zoster oticus"
+            },
+            {
+                "name": "Deafness",
+                "severity": "Unspecified",
+                "pattern": "May be associated with herpes zoster oticus"
+            },
+            {
+                "name": "Disorders of lacrimation, salivation, and/or taste",
+                "severity": "Unspecified",
+                "pattern": "Sometimes accompany the pain"
+            },
+            {
+                "name": "Vesicular rash",
+                "severity": "Unspecified",
+                "pattern": "Unilateral, on the ear and mucous membrane of the oropharynx or palate"
+            },
+            {
+                "name": "Herpes zoster",
+                "severity": "Unspecified",
+                "pattern": "Common association"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Painful vesicular rash on the ear and mucous membrane of the oropharynx or palate (Ramsay Hunt Syndrome)",
+            "Facial nerve palsy (Ramsay Hunt Syndrome)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Previous history of varicella (chickenpox)",
+            "Middle age",
+            "Female sex (more common in women)"
+        ],
+        "imaging_findings": {
+            "MRI": "May be undertaken if there are polycranial neurological symptoms"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Pain paroxysms of intermittent occurrence, lasting for seconds or minutes, in the depth of the ear",
+            "Presence of a trigger area in the posterior wall of the auditory canal",
+            "Not attributed to another disorder"
+        ],
+        "supportive": [
+            "VZV polymerase chain reaction assay (using ear exudate) positive for Ramsay Hunt Syndrome"
+        ]
+    },
+    "differential_diagnoses": [
+        "Bell palsy",
+        "Trigeminal neuralgia",
+        "Glossopharyngeal neuralgia"
+    ]
+}

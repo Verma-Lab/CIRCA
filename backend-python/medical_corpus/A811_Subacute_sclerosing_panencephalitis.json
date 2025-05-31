@@ -1,0 +1,71 @@
+{
+    "disease": "Subacute sclerosing panencephalitis (SSPE)",
+    "icd_code": "A811",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Personality changes",
+                "severity": "Progressive",
+                "pattern": "Occurs in stages, worsening with each stage"
+            },
+            {
+                "name": "Myoclonic jerks",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Ataxia",
+                "severity": "Progressive",
+                "pattern": "Occurs in stages, worsening with each stage"
+            },
+            {
+                "name": "Dementia",
+                "severity": "Progressive",
+                "pattern": "Occurs in stages, worsening with each stage"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "Progressive"
+            },
+            {
+                "name": "Blindness",
+                "severity": "Progressive",
+                "pattern": "Can occur as a complication"
+            },
+            {
+                "name": "Coma",
+                "severity": "Severe",
+                "pattern": "Late-stage symptom"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [
+            "Prior measles infection (especially in unvaccinated children)",
+            "Age (children and adolescents are most commonly affected)",
+            "Male sex (more common in males)",
+            "Rural or poverty-stricken area",
+            "Overcrowding",
+            "Multiple siblings",
+            "Higher birth order",
+            "Acquired immunodeficiency syndrome",
+            "Maternal measles during pregnancy",
+            "Incomplete transfer of measles antibodies during gestation"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Progressive neurological deterioration",
+            "History of measles infection",
+            "Characteristic EEG findings"
+        ],
+        "supportive": [
+            "Brain biopsy showing characteristic histopathological changes"
+        ]
+    },
+    "differential_diagnoses": []
+}

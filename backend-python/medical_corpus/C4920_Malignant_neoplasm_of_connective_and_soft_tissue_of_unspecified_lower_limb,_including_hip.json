@@ -1,0 +1,76 @@
+{
+    "disease": "Malignant neoplasm of connective and soft tissue of unspecified lower limb, including hip",
+    "icd_code": "C4920",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Pain",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can range from mild to severe"
+            },
+            {
+                "name": "Swelling",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can range from mild to severe"
+            },
+            {
+                "name": "Mass",
+                "severity": "Variable",
+                "pattern": "May be palpable or non-palpable"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can range from mild to severe"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable",
+                "pattern": "May be present or absent; can range from mild to severe"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "May be present or absent"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "May be elevated in some cases",
+            "respiratory_rate": "May be elevated in some cases",
+            "blood_pressure": "May be elevated or decreased depending on the extent of the disease"
+        },
+        "physical_findings": [
+            "Palpable mass",
+            "Swelling",
+            "Erythema",
+            "Tenderness",
+            "Limited range of motion",
+            "Lymphadenopathy"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "X-ray": "May show bone destruction or soft tissue mass",
+            "CT scan": "Can provide detailed images of the mass and surrounding tissues",
+            "MRI": "Can provide detailed images of the mass and surrounding tissues, including soft tissues",
+            "PET scan": "Can help to determine the extent of the disease and the presence of metastasis"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical findings suggestive of a soft tissue mass in the lower limb, including the hip",
+            "Imaging findings consistent with a malignant neoplasm"
+        ],
+        "supportive": [
+            "Histopathological examination confirming the diagnosis of malignancy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Benign soft tissue tumors",
+        "Infections",
+        "Hematoma",
+        "Abscess",
+        "Bone cysts"
+    ]
+}

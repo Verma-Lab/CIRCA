@@ -1,0 +1,92 @@
+{
+    "disease": "Gonococcal Peritonitis",
+    "icd_code": "A5485",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Acute abdominal pain",
+                "severity": "Severe",
+                "pattern": "Central upper quadrants, onset 24 hours prior to presentation"
+            },
+            {
+                "name": "Fever",
+                "severity": "Present",
+                "pattern": "Body temperature of 38.5 \u00b0C"
+            },
+            {
+                "name": "Abdominal distension",
+                "severity": "Present",
+                "pattern": "One week history of progressively worsening distension"
+            },
+            {
+                "name": "Chills",
+                "severity": "Present",
+                "pattern": "Associated with fever and abdominal pain"
+            },
+            {
+                "name": "Tenderness",
+                "severity": "Present",
+                "pattern": "Superficial palpation"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "heart_rate": "103 bpm (case 1), 120/min (case 2)",
+            "blood_pressure": "115/60 mmHg (case 1)",
+            "temperature": "38.5 \u00b0C (case 1)",
+            "respiratory_rate": "22 breaths per minute (case 2)"
+        },
+        "physical_findings": [
+            "Tenderness at superficial palpation (case 1)",
+            "Icterus (case 2)",
+            "Features of sepsis (case 2)",
+            "Tense ascites (case 2)",
+            "Distended abdomen with mild diffuse tenderness and positive fluid wave consistent with ascites (case 2)",
+            "Edematous, erythematosus, and swollen uterus (case 1)"
+        ],
+        "lab_values": {
+            "WBC": "34.310 mm3 (case 1), 19.8/\u00b5L (case 2)",
+            "CRP": "161 mg/L (case 1)",
+            "Hb": "11.2 g/dL (case 1), 9.4 g/dL (case 2)",
+            "MCV": "69.2 fl (case 1)",
+            "Na": "127 mmol/L (case 2)",
+            "K": "5.4 mmol/L (case 2)",
+            "INR": "1.7 (case 2)",
+            "BUN": "71 mg/dL (case 2)",
+            "Creatinine": "1.7 mg/dL (case 2)",
+            "Ammonia": "77 \u00b5mol/L (case 2)",
+            "T. Bili": "3.8 \u00b5mol/L (case 2)",
+            "ALP": "158 U/L (case 2)",
+            "AST": "56 U/L (case 2)",
+            "ALT": "23 U/L (case 2)",
+            "ascitic_fluid_WBC": "1,050/\u00b5L (case 2), 1,180/\u00b5L (case 2)",
+            "ascitic_fluid_neutrophils": "89% (case 2)"
+        },
+        "risk_factors": [
+            "Pelvic inflammatory disease (PID)",
+            "Sexually active",
+            "Alcoholic cirrhosis (case 2)",
+            "Chronic hepatitis B (case 2)"
+        ],
+        "imaging_findings": {
+            "abdominal_x_ray": "Normal (case 1)",
+            "CT_scan_abdomen_pelvis": "Dilated loops of proximal small bowel with wall thickening and an air fluid level (case 1), cirrhotic liver with extensive varices, large ascites, and splenomegaly (case 2). No radiographic evidence of pelvic inflammatory disease observed in case 1."
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive culture for Neisseria gonorrhoeae from ascitic fluid or peritoneal fluid"
+        ],
+        "supportive": [
+            "Symptoms and signs consistent with peritonitis",
+            "Abnormal laboratory findings (e.g., elevated WBC count, CRP)",
+            "Imaging findings suggestive of peritonitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other types of peritonitis (e.g., bacterial peritonitis from other pathogens)",
+        "Bowel obstruction (case 1)",
+        "Appendicitis",
+        "Pelvic inflammatory disease"
+    ]
+}

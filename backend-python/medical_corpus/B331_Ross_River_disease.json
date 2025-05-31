@@ -1,0 +1,72 @@
+{
+    "disease": "Ross River disease",
+    "icd_code": "B331",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Polyarthritis",
+                "severity": "Variable, can be mild to severe",
+                "pattern": "Symmetrical, involving peripheral joints (knees, ankles, wrists, fingers, metacarpophalangeal joints)"
+            },
+            {
+                "name": "Fever",
+                "severity": "Variable, present in 20-60% of cases",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Variable, can persist for months",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Rash",
+                "severity": "Mild",
+                "pattern": "Maculopapular, primarily on limbs and trunk; purpuric and vesicular rashes less common"
+            },
+            {
+                "name": "Joint pain",
+                "severity": "Variable, can persist for months",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            },
+            {
+                "name": "Muscle pain",
+                "severity": "Mild to moderate",
+                "pattern": "Acute"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated in some cases"
+        },
+        "physical_findings": [
+            "Swollen and painful joints",
+            "Maculopapular rash"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Exposure to infected mosquitoes",
+            "Travel to endemic areas (Australia, Papua New Guinea, South Pacific Islands)",
+            "Living in tropical areas with standing water"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with Ross River virus disease (polyarthritis, fever, rash, fatigue)",
+            "Positive paired serology (two blood tests taken two weeks apart, showing a rise in antibody levels)"
+        ],
+        "supportive": [
+            "Appropriate travel history",
+            "Epidemiological evidence of outbreak in the area"
+        ]
+    },
+    "differential_diagnoses": [
+        "Other arboviral diseases (e.g., Barmah Forest virus, dengue, chikungunya, Zika virus)",
+        "Non-arboviral diseases (e.g., adenoviral, enteroviral, rickettsial infections)"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "disease": "Squamous cell carcinoma of skin of other part of trunk",
+    "icd_code": "C44529",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Enlarging scaly or crusted lumps",
+                "severity": "Variable",
+                "pattern": "Usually arises within pre-existing actinic keratosis or intraepidermal carcinoma"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Enlarging scaly or crusted lumps",
+            "May have central ulceration (mentioned in context of cutaneous SCC generally)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Numerous DNA mutations in multiple somatic genes",
+            "Mutations in the p53 tumor suppressor gene (caused by UV radiation)",
+            "Cigarette smoking",
+            "Ageing",
+            "Immune suppression",
+            "Beta-genus human papillomaviruses",
+            "HPV subtypes 5, 8, 17, 20, 24, and 38",
+            "Cumulative sun exposure",
+            "Chronic photoaging",
+            "Male sex",
+            "Long-term cutaneous inflammation (chronic wounds, burns, scars, ulcers, or sinus tracts)",
+            "Pharmacological treatments with BRAF inhibitor monotherapy"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical features (enlarging scaly or crusted lumps)",
+            "Histological confirmation via biopsy or excision"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

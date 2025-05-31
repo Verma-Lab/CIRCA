@@ -1,0 +1,107 @@
+{
+    "disease": "Exanthema subitum (Sixth Disease)",
+    "icd_code": "B08.22",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "High fever",
+                "severity": "High (often > 103\u00b0F or 39.5\u00b0C)",
+                "pattern": "Lasts 3-5 days, often resolves suddenly"
+            },
+            {
+                "name": "Rash (exanthem)",
+                "severity": "Mild",
+                "pattern": "Appears after fever subsides, starts on trunk, spreads to neck, face, arms, and legs; pink or red spots; not itchy; lasts hours to a few days"
+            },
+            {
+                "name": "Irritability",
+                "severity": "Mild to moderate",
+                "pattern": "Present during fever"
+            },
+            {
+                "name": "Fatigue",
+                "severity": "Mild to moderate",
+                "pattern": "Present during fever"
+            },
+            {
+                "name": "Runny nose",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Sore throat",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Swollen lymph nodes",
+                "severity": "Mild",
+                "pattern": "May be present in the neck"
+            },
+            {
+                "name": "Diarrhea",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cough",
+                "severity": "Mild",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Myringitis",
+                "severity": "Rare",
+                "pattern": "Inflammation of the tympanic membranes"
+            },
+            {
+                "name": "Pharyngitis with lymphoid hyperplasia",
+                "severity": "Rare",
+                "pattern": "Inflammation of the pharynx with enlarged lymphoid tissue"
+            },
+            {
+                "name": "Swelling of the eyelids",
+                "severity": "Rare",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Cervical and postoccipital lymphadenopathy",
+                "severity": "Rare",
+                "pattern": "Swollen lymph nodes in the neck and back of the head"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "> 103\u00b0F (39.5\u00b0C)"
+        },
+        "physical_findings": [
+            "Erythematous morbilliform exanthem",
+            "Soft pink, discrete, slightly raised lesions (2-5mm diameter)",
+            "Centrifugal rash spread (trunk to extremities)"
+        ],
+        "lab_values": {
+            "white blood cells": "Low numbers may be present"
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Characteristic history of high fever followed by rash"
+        ],
+        "supportive": [
+            "Physical examination findings consistent with roseola"
+        ]
+    },
+    "differential_diagnoses": [
+        "Rubella",
+        "Measles",
+        "Fifth disease",
+        "Scarlet fever",
+        "Drug reactions"
+    ]
+}

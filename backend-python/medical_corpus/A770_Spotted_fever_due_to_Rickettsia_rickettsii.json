@@ -1,0 +1,98 @@
+{
+    "disease": "Spotted fever due to Rickettsia rickettsii",
+    "icd_code": "A770",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Usually present"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Usually present"
+            },
+            {
+                "name": "Rash",
+                "severity": "Variable",
+                "pattern": "Develops within 3 days in about 50% of people; may be absent"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Muscle pains",
+                "severity": "Variable",
+                "pattern": "Common"
+            },
+            {
+                "name": "Eschar",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Anemia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Thrombocytopenia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Elevated hepatic transaminases",
+                "severity": "Variable",
+                "pattern": "May be present"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Variable",
+                "pattern": "May be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Rash (maculopapular, petechial)",
+            "Eschar (possible)"
+        ],
+        "lab_values": {
+            "Complete blood count": "May show anemia and thrombocytopenia",
+            "Liver function tests": "May show elevated transaminases",
+            "Serology": "May show a 4-fold rise in IgG-specific antibodies to R. rickettsii or other spotted fever group rickettsiae",
+            "PCR": "May detect R. rickettsii DNA in clinical specimens"
+        },
+        "risk_factors": [
+            "Exposure to ticks in endemic areas",
+            "Recent hiking or outdoor activities in tick-infested areas",
+            "Tick bite (although not always recalled)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Febrile illness",
+            "At least one of the following: rash, eschar, headache, myalgia, anemia, thrombocytopenia, or elevated hepatic transaminases"
+        ],
+        "supportive": [
+            "Serological evidence (elevated IgG or IgM antibodies)",
+            "PCR detection of R. rickettsii DNA",
+            "Isolation of R. rickettsii from a clinical specimen"
+        ]
+    },
+    "differential_diagnoses": [
+        "Lyme disease",
+        "Other tick-borne illnesses"
+    ]
+}

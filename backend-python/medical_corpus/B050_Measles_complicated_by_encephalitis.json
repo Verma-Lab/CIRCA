@@ -1,0 +1,87 @@
+{
+    "disease": "Measles complicated by encephalitis",
+    "icd_code": "B050",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Variable",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Headache",
+                "severity": "Variable",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Altered level of consciousness",
+                "severity": "Variable",
+                "pattern": "Present during acute phase"
+            },
+            {
+                "name": "Focal neurological deficits",
+                "severity": "Variable",
+                "pattern": "May develop later"
+            },
+            {
+                "name": "Seizures",
+                "severity": "Variable",
+                "pattern": "May occur"
+            },
+            {
+                "name": "Measles rash",
+                "severity": "Variable",
+                "pattern": "Usually precedes neurological symptoms"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Common measles symptom"
+            },
+            {
+                "name": "Coryza",
+                "severity": "Variable",
+                "pattern": "Common measles symptom"
+            },
+            {
+                "name": "Koplik spots",
+                "severity": "Variable",
+                "pattern": "May precede rash"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated"
+        },
+        "physical_findings": [
+            "Measles rash",
+            "Koplik spots",
+            "Focal neurological deficits (variable)"
+        ],
+        "lab_values": {
+            "Measles-specific antibodies": "Elevated"
+        },
+        "risk_factors": [
+            "Measles infection",
+            "Age <5 years or adulthood",
+            "Immunocompromised status"
+        ],
+        "imaging_findings": {
+            "CT": "May show abnormalities",
+            "MRI": "May show abnormalities",
+            "CSF analysis": "May show abnormalities"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with measles",
+            "Development of encephalitis symptoms (fever, headache, altered mental status, focal neurological deficits)"
+        ],
+        "supportive": [
+            "Elevated measles-specific antibodies",
+            "Abnormal findings on neuroimaging (CT, MRI)",
+            "Abnormal CSF findings"
+        ]
+    },
+    "differential_diagnoses": []
+}

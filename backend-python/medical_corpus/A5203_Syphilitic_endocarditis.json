@@ -1,0 +1,72 @@
+{
+    "disease": "Syphilitic endocarditis",
+    "icd_code": "A5203",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Myalgia",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Significant (30kg)",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Ataxic gait",
+                "severity": "Present",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Pansystolic murmur",
+                "severity": "Present",
+                "pattern": "In axilla"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Pansystolic murmur in the axilla",
+            "Ataxic gait"
+        ],
+        "lab_values": {
+            "Inflammatory markers": "Raised",
+            "Blood cultures": "Negative",
+            "Serological titres for fastidious organisms": "Negative",
+            "Antibody tests": "Negative",
+            "Serum treponemal antibodies": "Positive",
+            "TPPA": "Positive at 1:1280",
+            "RPR": "1:4",
+            "Treponemal IgM": "Negative",
+            "Lumbar puncture syphilis serology": "Negative"
+        },
+        "risk_factors": [
+            "Previous syphilis infection (16 years prior)"
+        ],
+        "imaging_findings": {
+            "CT Chest, Abdomen, Pelvis": "Hepatosplenomegaly with multiple splenic infarcts",
+            "MRI Head with contrast": "Multiple punctate enhancement in the bilateral hemispheres with leptomeningeal enhancement",
+            "Transthoracic echocardiogram": "Large vegetation leading to severe mitral regurgitation"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive serum treponemal antibodies",
+            "Evidence of valvular involvement (e.g., echocardiographic findings, surgical findings)"
+        ],
+        "supportive": [
+            "History of syphilis",
+            "Clinical symptoms suggestive of endocarditis",
+            "Response to antibiotic therapy and/or surgery"
+        ]
+    },
+    "differential_diagnoses": [
+        "Infective endocarditis"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "disease": "Merkel cell carcinoma of unspecified ear and external auricular canal",
+    "icd_code": "C4A20",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Erythematous papular lesion",
+                "severity": "Unspecified",
+                "pattern": "Present in one case report"
+            },
+            {
+                "name": "Firm, enlarged, elevated lymph node",
+                "severity": "Unspecified",
+                "pattern": "Indicative of metastasis, observed in one case"
+            },
+            {
+                "name": "Tumor resembling a wart",
+                "severity": "Unspecified",
+                "pattern": "Smooth skin surface with enlarged, visible blood vessels"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Erythematous papular lesion",
+            "Firm, enlarged, elevated lymph node",
+            "Tumor resembling a wart with smooth skin surface and enlarged, visible blood vessels"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Extensive sun damage",
+            "Greater UV exposure (left side)"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological confirmation of Merkel cell carcinoma"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Squamous cell carcinoma",
+        "Wart",
+        "Cyst"
+    ]
+}

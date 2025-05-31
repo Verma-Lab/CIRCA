@@ -1,0 +1,28 @@
+{
+    "disease": "Malignant neoplasm of hard palate",
+    "icd_code": "C050",
+    "parameters": {
+        "symptoms": [],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abnormal growth of tissue in the hard palate"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Alcohol abuse",
+            "Tobacco dependence",
+            "Tobacco use"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Abnormal growth of tissue in the hard palate confirmed by biopsy"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": [
+        "Kaposi's sarcoma of palate"
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "disease": "Gastrointestinal stromal tumor of stomach",
+    "icd_code": "C49A2",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Nausea",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abdominal distension",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Early satiety",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Abdominal pain",
+                "severity": "Unspecified",
+                "pattern": "Unspecified"
+            },
+            {
+                "name": "Palpable abdominal mass",
+                "severity": "Unspecified",
+                "pattern": "Rare"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Unspecified",
+                "pattern": "Associated with larger tumors causing obstruction"
+            },
+            {
+                "name": "Obstructive jaundice",
+                "severity": "Unspecified",
+                "pattern": "Associated with larger tumors causing obstruction"
+            },
+            {
+                "name": "Constipation",
+                "severity": "Unspecified",
+                "pattern": "Associated with larger tumors causing obstruction"
+            },
+            {
+                "name": "Peritonitis",
+                "severity": "Unspecified",
+                "pattern": "Associated with perforated neoplasms"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Unspecified",
+                "pattern": "Associated with perforated neoplasms"
+            },
+            {
+                "name": "Indolent or massive intraperitoneal bleeding",
+                "severity": "Unspecified",
+                "pattern": "Secondary to pressure necrosis and ulceration"
+            },
+            {
+                "name": "Gastrointestinal bleeding",
+                "severity": "Unspecified",
+                "pattern": "May present as acute bleed with melena or hematochezia, or chronic bleeding with anemia"
+            },
+            {
+                "name": "Abdominal pain or discomfort",
+                "severity": "Unspecified",
+                "pattern": "Due to mass effect"
+            },
+            {
+                "name": "Abdominal distension",
+                "severity": "Unspecified",
+                "pattern": "Due to mass effect"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Palpable abdominal mass (rare)"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "CT scan": "Contrast-enhancing mass with smooth margins;  can identify location, perforation, invasion, metastasis",
+            "Abdominal ultrasound": "Useful if tumor >5cm, but reliability affected by necrosis, ulceration, air, operator expertise",
+            "MRI": "Alternative to CT if contrast is contraindicated",
+            "PET": "Mentioned as a modality for imaging, but details not specified",
+            "Endoscopy": "Subendothelial lesions; smooth bulge covered with normal mucosa",
+            "Endoscopic ultrasound (EUS)": "Hypoechoic solid mass originating from second (muscularis mucosa) or fourth (muscularis propria) layers of GI tract wall"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Morphologic findings consistent with GIST on hematoxylin-eosin (H&E) staining",
+            "Immunohistochemical testing positive for KIT (95% of cases), or DOG-1 and CD34 if KIT is negative"
+        ],
+        "supportive": [
+            "Imaging findings (CT, MRI, ultrasound, EUS) showing a mass consistent with GIST"
+        ]
+    },
+    "differential_diagnoses": []
+}

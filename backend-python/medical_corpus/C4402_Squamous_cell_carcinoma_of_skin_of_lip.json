@@ -1,0 +1,45 @@
+{
+    "disease": "Squamous cell carcinoma of skin of lip",
+    "icd_code": "C4402",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Lip lesion",
+                "severity": "Variable, depending on stage",
+                "pattern": "Progressive growth"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Lip lesion (size and location variable)",
+            "Possible nodal involvement (depending on stage)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Tobacco use",
+            "Alcohol consumption",
+            "Betel nut chewing",
+            "Sun exposure",
+            "Human papillomavirus infection",
+            "Orodental factors",
+            "Dietary deficiencies",
+            "Syphilis",
+            "Chronic candidiasis"
+        ],
+        "imaging_findings": {
+            "MRI": "Assess local extent of tumor and nodal involvement",
+            "CT scan": "Assess local extent of tumor and nodal involvement"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histologically confirmed squamous cell carcinoma"
+        ],
+        "supportive": [
+            "Clinical presentation (lip lesion)",
+            "Imaging findings (MRI, CT scan)"
+        ]
+    },
+    "differential_diagnoses": []
+}

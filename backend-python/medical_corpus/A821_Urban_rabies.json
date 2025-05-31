@@ -1,0 +1,91 @@
+{
+    "disease": "Urban rabies",
+    "icd_code": "A82.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Mild to moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Headache",
+                "severity": "Mild to moderate",
+                "pattern": "Early symptom"
+            },
+            {
+                "name": "Redness and soreness at bite site",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Tingling or numbness at bite site",
+                "severity": "Variable",
+                "pattern": "Localized"
+            },
+            {
+                "name": "Brain inflammation (encephalitis)",
+                "severity": "Severe",
+                "pattern": "Late symptom"
+            },
+            {
+                "name": "Agitation",
+                "severity": "Severe",
+                "pattern": "Late symptom"
+            },
+            {
+                "name": "Confusion",
+                "severity": "Severe",
+                "pattern": "Late symptom"
+            },
+            {
+                "name": "Hallucinations",
+                "severity": "Severe",
+                "pattern": "Late symptom"
+            },
+            {
+                "name": "Hydrophobia (fear of water)",
+                "severity": "Severe",
+                "pattern": "Late symptom"
+            },
+            {
+                "name": "Drooling",
+                "severity": "Variable",
+                "pattern": "Late symptom"
+            },
+            {
+                "name": "Ascending paralysis",
+                "severity": "Severe",
+                "pattern": "Late symptom, progressing from legs to head"
+            },
+            {
+                "name": "Breathing problems",
+                "severity": "Severe",
+                "pattern": "Late symptom, due to paralysis"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Redness and soreness at bite site",
+            "Tingling or numbness at bite site",
+            "Ascending paralysis (in late stages)"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Bite or scratch from a rabid domestic animal",
+            "Contact with saliva of a rabid domestic animal through broken skin or mucous membranes"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with rabies",
+            "Exposure to a rabid domestic animal"
+        ],
+        "supportive": [
+            "Positive rabies virus detection in saliva or brain tissue"
+        ]
+    },
+    "differential_diagnoses": []
+}

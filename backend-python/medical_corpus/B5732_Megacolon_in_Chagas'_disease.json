@@ -1,0 +1,61 @@
+{
+    "disease": "Megacolon in Chagas' disease",
+    "icd_code": "B5732",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Obstipation",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Dilatation of colonic segment",
+                "severity": "Severe",
+                "pattern": "Chronic, irreversible"
+            },
+            {
+                "name": "Fecal stasis",
+                "severity": "Moderate to Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "Atony",
+                "severity": "Severe",
+                "pattern": "Chronic"
+            },
+            {
+                "name": "In-coordinate contractions (aperistalsis)",
+                "severity": "Moderate to Severe",
+                "pattern": "Chronic"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Irreversible dilation of a colonic segment"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Chronic Chagas' disease"
+        ],
+        "imaging_findings": {
+            "radiology": "Dilatation of colonic segment"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Chronic Chagas' disease",
+            "Irreversible dilation of a colonic segment"
+        ],
+        "supportive": [
+            "Myenteric neuron loss",
+            "Hypersensitive response of denervated muscle layer",
+            "Hypertrophic muscle layer",
+            "Fecal stasis",
+            "Atony"
+        ]
+    },
+    "differential_diagnoses": [
+        "Hirschsprung's disease"
+    ]
+}

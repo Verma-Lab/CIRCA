@@ -1,0 +1,81 @@
+{
+    "disease": "Gastrointestinal Stromal Tumor of Small Intestine",
+    "icd_code": "C49A3",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Varies, can be dull or severe",
+                "pattern": "Chronic or intermittent"
+            },
+            {
+                "name": "Bleeding (hematemesis/melena)",
+                "severity": "Varies",
+                "pattern": "Intermittent or continuous"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Varies",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Mild to moderate",
+                "pattern": "Intermittent"
+            },
+            {
+                "name": "Abdominal mass (palpable)",
+                "severity": "Varies with size",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Loss of appetite",
+                "severity": "Mild to moderate",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Bowel obstruction",
+                "severity": "Varies",
+                "pattern": "Can occur with large tumors"
+            },
+            {
+                "name": "Anemia of unknown origin",
+                "severity": "Varies",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Abdominal lump/mass"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Carney triad syndrome",
+            "Carney\u2013Stratakis syndrome",
+            "Neurofibromatosis type 1 (NF1)"
+        ],
+        "imaging_findings": {
+            "Contrast-enhanced computed tomography (CECT)": "Well-defined, avidly enhancing mass lesion arising from the wall of the small intestine, may cause luminal narrowing",
+            "Upper GI endoscopy": "Smooth, round, submucosal tumor with central ulceration (in some cases)",
+            "Endoscopic ultrasound (EUS)": "Can help in diagnosis and staging"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging findings suggestive of GIST",
+            "Histopathological examination showing spindle cells arranged in fascicles and interlacing bundles",
+            "Immunohistochemistry positive for CD117, DOG1 (often), CD34 (sometimes), and/or PDGFRA"
+        ],
+        "supportive": [
+            "Clinical symptoms (abdominal pain, bleeding, etc.)",
+            "Positive smooth muscle antibody"
+        ]
+    },
+    "differential_diagnoses": [
+        "Neuroendocrine tumor",
+        "Other GI tumors",
+        "Leiomyoma",
+        "Leiomyosarcoma"
+    ]
+}

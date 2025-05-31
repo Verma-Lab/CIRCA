@@ -1,0 +1,64 @@
+{
+    "disease": "Adenoviral Meningitis",
+    "icd_code": "A87.1",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fever",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Pallor",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Petechiae",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Hepatosplenomegaly",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Cervical lymphadenopathy",
+                "severity": "Unspecified",
+                "pattern": "Present in some cases"
+            },
+            {
+                "name": "Asymptomatic",
+                "severity": "Unspecified",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Pleocytosis (can morphologically mimic ALL blasts)"
+        ],
+        "lab_values": {
+            "CSF": {
+                "adenovirus": "Positive in some cases",
+                "leukemia cells": "Can be present or absent, potentially mimicking other conditions"
+            }
+        },
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive adenovirus detection in CSF"
+        ],
+        "supportive": [
+            "Pleocytosis in CSF",
+            "Clinical symptoms consistent with meningitis"
+        ]
+    },
+    "differential_diagnoses": [
+        "Central nervous system leukemia (in patients with ALL)",
+        "Other CNS infections"
+    ]
+}

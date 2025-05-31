@@ -1,0 +1,64 @@
+{
+    "disease": "Far Eastern tick-borne encephalitis (Russian spring-summer encephalitis)",
+    "icd_code": "A840",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Meningitis",
+                "severity": "Mild to severe",
+                "pattern": "Biphasic in approximately two-thirds of patients"
+            },
+            {
+                "name": "Meningoencephalitis",
+                "severity": "Mild to severe",
+                "pattern": "Can occur with or without paralysis"
+            },
+            {
+                "name": "Paralysis",
+                "severity": "Variable",
+                "pattern": "Can occur with meningoencephalitis"
+            },
+            {
+                "name": "Abortive form",
+                "severity": "Mild",
+                "pattern": "Occasional manifestation"
+            },
+            {
+                "name": "Chronic progressive form",
+                "severity": "Severe",
+                "pattern": "Rare manifestation"
+            },
+            {
+                "name": "Post-encephalitic syndrome",
+                "severity": "Variable, can be long-lasting",
+                "pattern": "Develops in up to 50% of patients after acute illness"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {
+            "serum IgM and IgG antibodies": {
+                "abnormal_range": "Presence of specific antibodies indicates infection"
+            },
+            "cerebrospinal fluid IgM and IgG antibodies": {
+                "abnormal_range": "Presence of specific antibodies indicates infection"
+            }
+        },
+        "risk_factors": [
+            "Tick bites",
+            "Consumption of unpasteurized milk or milk products from infected livestock",
+            "Living in or visiting tick-borne encephalitis endemic areas"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with tick-borne encephalitis"
+        ],
+        "supportive": [
+            "Detection of specific IgM and IgG antibodies in serum and/or cerebrospinal fluid"
+        ]
+    },
+    "differential_diagnoses": []
+}

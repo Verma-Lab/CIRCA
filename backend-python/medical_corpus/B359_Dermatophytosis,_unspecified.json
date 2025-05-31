@@ -1,0 +1,53 @@
+{
+    "disease": "Dermatophytosis, unspecified",
+    "icd_code": "B359",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Round, red spots",
+                "severity": "Unspecified",
+                "pattern": "Localized or widespread"
+            },
+            {
+                "name": "Scaly skin",
+                "severity": "Unspecified",
+                "pattern": "Around the edges of spots"
+            },
+            {
+                "name": "Darker skin",
+                "severity": "Unspecified",
+                "pattern": "Around the edges of spots"
+            },
+            {
+                "name": "Itchiness",
+                "severity": "Unspecified",
+                "pattern": "Variable"
+            },
+            {
+                "name": "Hair breakage",
+                "severity": "Unspecified",
+                "pattern": "In hairy areas"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Round, red spots on the skin",
+            "Scaly and darker skin around the edges of spots",
+            "Hair breakage in hairy areas"
+        ],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Clinical presentation consistent with dermatophytosis (e.g., round, red spots, scaly skin, itchiness)"
+        ],
+        "supportive": [
+            "Positive fungal culture",
+            "Microscopic examination of skin scrapings showing fungal hyphae"
+        ]
+    },
+    "differential_diagnoses": []
+}

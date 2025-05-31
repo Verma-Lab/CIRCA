@@ -1,0 +1,36 @@
+{
+    "disease": "Malignant neoplasm of cloacogenic zone",
+    "icd_code": "C212",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Fungating or ulcerating lesions",
+                "severity": "Variable",
+                "pattern": "Present in most cases"
+            },
+            {
+                "name": "Submucosal mass",
+                "severity": "Variable",
+                "pattern": "Present in some cases"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [
+            "Fungating or ulcerating lesions in the anorectal region",
+            "Submucosal mass in anal ducts"
+        ],
+        "lab_values": {},
+        "risk_factors": [
+            "Persistent remnant of the cloacal membrane of the embryo"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histological confirmation of malignant neoplasm originating from cloacogenic zone tissue"
+        ],
+        "supportive": []
+    },
+    "differential_diagnoses": []
+}

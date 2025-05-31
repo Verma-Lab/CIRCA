@@ -1,0 +1,63 @@
+{
+    "disease": "Malignant neoplasm of anterior mediastinum",
+    "icd_code": "C381",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Shortness of breath",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Cough",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Chest pain",
+                "severity": "Variable",
+                "pattern": "Can be present or absent"
+            },
+            {
+                "name": "Superior vena cava syndrome",
+                "severity": "Variable",
+                "pattern": "Can be present if tumor compresses the superior vena cava"
+            },
+            {
+                "name": "Dysphagia",
+                "severity": "Variable",
+                "pattern": "Can be present if tumor compresses the esophagus"
+            },
+            {
+                "name": "Horner's syndrome",
+                "severity": "Variable",
+                "pattern": "Can be present if tumor affects the sympathetic nerves"
+            },
+            {
+                "name": "Weakness",
+                "severity": "Variable",
+                "pattern": "Can be present"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {},
+        "physical_findings": [],
+        "lab_values": {},
+        "risk_factors": [],
+        "imaging_findings": {
+            "chest_x_ray": "May show a mediastinal mass",
+            "CT scan": "Can provide detailed images of the mass and surrounding structures",
+            "MRI": "Can provide detailed images of the mass and surrounding structures"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Imaging evidence of a mass in the anterior mediastinum",
+            "Histopathological confirmation of malignancy"
+        ],
+        "supportive": [
+            "Symptoms suggestive of anterior mediastinal mass compression"
+        ]
+    },
+    "differential_diagnoses": []
+}

@@ -1,0 +1,56 @@
+{
+    "disease": "Actinomycotic sepsis",
+    "icd_code": "A427",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Unspecified",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Fever",
+                "severity": "High (101.1\u00b0F)",
+                "pattern": "Acute onset"
+            },
+            {
+                "name": "Rigors",
+                "severity": "Unspecified",
+                "pattern": "Acute onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "Elevated (101.1\u00b0F)"
+        },
+        "physical_findings": [
+            "Soft abdomen without peritoneal signs (no voluntary guarding and no rebound tenderness)"
+        ],
+        "lab_values": {
+            "white blood cell count": "Elevated (in immunocompromised state)",
+            "lactic acidosis": "Present",
+            "urinalysis": "Leukocyte esterase and nitrites present",
+            "blood cultures": "Positive for Actinomyces odontolyticus (2/2 sets)"
+        },
+        "risk_factors": [
+            "Immunosuppression",
+            "Poor oral hygiene",
+            "Previous mucosal manipulation (e.g., neobladder surgery)",
+            "Disruption of local tissue (e.g., Foley catheter dislodgement)"
+        ],
+        "imaging_findings": {
+            "CT abdomen/pelvis": "Inflated Foley catheter balloon in the urethra; no signs of soft tissue infection"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood cultures for Actinomyces species",
+            "Clinical presentation consistent with sepsis (fever, elevated WBC, etc.)"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of infection",
+            "Risk factors for Actinomycosis"
+        ]
+    },
+    "differential_diagnoses": []
+}

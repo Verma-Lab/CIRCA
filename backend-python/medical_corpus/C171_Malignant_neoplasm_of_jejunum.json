@@ -1,0 +1,87 @@
+{
+    "disease": "Malignant neoplasm of jejunum",
+    "icd_code": "C171",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Abdominal pain",
+                "severity": "Variable, can be severe",
+                "pattern": "Acute onset or chronic"
+            },
+            {
+                "name": "Nausea",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Vomiting",
+                "severity": "Variable",
+                "pattern": "Intermittent or persistent"
+            },
+            {
+                "name": "Weight loss",
+                "severity": "Variable",
+                "pattern": "Gradual"
+            },
+            {
+                "name": "Bleeding",
+                "severity": "Variable",
+                "pattern": "Occasional or significant"
+            },
+            {
+                "name": "Bowel obstruction",
+                "severity": "Can be severe",
+                "pattern": "Acute onset"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "blood_pressure": "Hypertensive emergency possible"
+        },
+        "physical_findings": [
+            "Abdominal tenderness",
+            "Distension"
+        ],
+        "lab_values": {
+            "CEA": "Elevated in some cases",
+            "CA 19-9": "Elevated in some cases"
+        },
+        "risk_factors": [
+            "Alcohol use",
+            "Smoking",
+            "Preexisting adenoma",
+            "Crohn's disease",
+            "Lynch syndrome",
+            "Peutz-Jeghers syndrome",
+            "Familial adenomatous polyposis (FAP)",
+            "Celiac disease",
+            "Low-fiber diet",
+            "Increased intake of processed meat",
+            "High-fructose-containing drinks"
+        ],
+        "imaging_findings": {
+            "CT scan": "May show soft tissue density, stricture, or mass; accuracy is around 50%",
+            "Upper endoscopy": "Can visualize mass, allows biopsy",
+            "Barium follow-through": "Sensitivity up to 50% in detecting small bowel malignancy",
+            "Video capsule endoscopy": "Diagnostic yield of 20-30%",
+            "Double balloon enteroscopy": "Diagnostic yield of 60-70%"
+        }
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Histopathological analysis of biopsy showing adenocarcinoma"
+        ],
+        "supportive": [
+            "Imaging findings suggestive of jejunal mass or obstruction",
+            "Clinical symptoms consistent with small bowel malignancy"
+        ]
+    },
+    "differential_diagnoses": [
+        "Adhesions",
+        "Small bowel obstruction (various causes)",
+        "Hernias",
+        "Crohn's disease",
+        "Volvulus",
+        "Other small bowel malignancies (e.g., carcinoid, lymphoma, sarcoma)"
+    ]
+}

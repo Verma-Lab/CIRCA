@@ -1,0 +1,58 @@
+{
+    "disease": "Other specified salmonella infections",
+    "icd_code": "A028",
+    "parameters": {
+        "symptoms": [
+            {
+                "name": "Gastroenteritis",
+                "severity": "Variable",
+                "pattern": "Most common in children <10 years"
+            },
+            {
+                "name": "Septicemia",
+                "severity": "Severe",
+                "pattern": "Mainly in patients >50 years"
+            },
+            {
+                "name": "Pneumonia",
+                "severity": "Severe",
+                "pattern": "Mainly in patients >50 years"
+            },
+            {
+                "name": "Arthritis",
+                "severity": "Severe",
+                "pattern": "Mainly in patients >50 years"
+            },
+            {
+                "name": "Osteomyelitis",
+                "severity": "Severe",
+                "pattern": "Mainly in patients >50 years"
+            }
+        ],
+        "reversion": "1",
+        "vital_signs": {
+            "temperature": "May be elevated depending on the severity and location of infection"
+        },
+        "physical_findings": [],
+        "lab_values": {
+            "blood_culture": "Positive for Salmonella species"
+        },
+        "risk_factors": [
+            "Infancy",
+            "Elderly age (>70 years)",
+            "Compromised immune system",
+            "Exposure to contaminated food or water"
+        ],
+        "imaging_findings": {}
+    },
+    "diagnostic_criteria": {
+        "required": [
+            "Positive blood culture for Salmonella species (excluding S. typhi and S. paratyphi)"
+        ],
+        "supportive": [
+            "Clinical symptoms consistent with Salmonella infection",
+            "Epidemiological risk factors"
+        ]
+    },
+    "differential_diagnoses": []
+}
