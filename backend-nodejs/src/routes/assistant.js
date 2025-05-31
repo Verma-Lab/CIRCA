@@ -22,7 +22,7 @@ import fs from 'fs';
 import { createRequire } from 'module';
 import jwt from 'jsonwebtoken';
 // const PYTHON_API_URL = "http://localhost:8000"
-const PYTHON_API_URL = "https://app.tellephon.com"
+const PYTHON_API_URL = "https://app.homosapieus.com"
 
 // const PYTHON_API_URL = "https://0139-2601-47-4a82-47f0-c925-8a6c-e19e-e217.ngrok-free.app"
 const PYTHON_SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"

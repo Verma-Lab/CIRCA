@@ -3,7 +3,7 @@ import cron from 'node-cron';
 import axios from 'axios';
 import firestore from '../services/db/firestore.js';
 
-const PYTHON_API_URL = "https://app.tellephon.com";
+const PYTHON_API_URL = "https://app.homosapieus.com";
 const DEBUG_MODE = true; // Enable detailed logging
 const SESSION_FRESHNESS_MINUTES = 5; // Time window for analyzing recent sessions
 

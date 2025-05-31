@@ -10,7 +10,7 @@ import streamTextToSpeech from '../utils/tts.js';
 import axios from 'axios';
 const router = express.Router();
 const { twiml: { VoiceResponse } } = twilio;
-const PYTHON_API_URL = "https://app.tellephon.com"
+const PYTHON_API_URL = "https://app.homosapieus.com"
 
 function determineCommunicationType(req) {
   // Detect communication type based on request body or headers
