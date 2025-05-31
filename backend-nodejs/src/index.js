@@ -41,8 +41,9 @@ const allowedOrigins = [
   'https://smynk-frontend.vercel.app',
     'https://0139-2601-47-4a82-47f0-c925-8a6c-e19e-e217.ngrok-free.app',
   'https://fa51-2601-47-4a82-47f0-c925-8a6c-e19e-e217.ngrok-free.app',
-  'https://disease-frontend.vercel.app' 
-
+  'https://disease-frontend.vercel.app',
+  'https://www.homosapieus.com',
+  'https://homosapieus.com',
 ];
 
 //Cors Configuration
