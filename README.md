@@ -7,7 +7,6 @@
 
 CIRCA RAG System Architecture is a comprehensive end-to-end Retrieval-Augmented Generation (RAG) application that delivers AI-driven patient consultations via voice, WhatsApp, and SMS in 27+ languages. The system utilizes the LlamaIndex framework with ChromaDB for vector search, built on a MERN stack for frontend and backend, supported by Python FastAPI microservices and SQL for structured data, and integrated with Firestore and Google Cloud Platform as the core infrastructure. Enables real-time contextual retrieval from vector embeddings to provide critical medical guidance.
 
-# EHR and MedRAG Analysis System Documentation
 **Version: 1.0**  
 
 
