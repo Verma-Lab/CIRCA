@@ -1,4 +1,4 @@
-# CIRCA
+# CIRCA (Application is in testing phase will be live in next 4-8 weeks)
 
 [![Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://your-demo-url.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://your-github-url.com)
