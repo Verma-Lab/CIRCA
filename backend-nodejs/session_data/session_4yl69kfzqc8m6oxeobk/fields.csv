@@ -1,0 +1,9 @@
+timestamp,fieldName,fieldValue,nodeId,source
+2025-02-03T10:56:28.477Z,product,Yellow Tail Shiraz,node_8,context_extracted
+2025-02-03T10:56:29.599Z,wine name,Yellow Tail Shiraz,node_7,
+2025-02-03T10:56:30.606Z,product,Yellow Tail Shiraz,node_7,context_extracted
+2025-02-03T10:56:41.203Z,wine name,yes,node_7,
+2025-02-03T10:56:43.158Z,confirming order,yes,node_4,
+2025-02-03T10:57:12.609Z,confirming order,yes,node_4,
+2025-02-03T10:57:14.874Z,phone number,No phone number found.,node_5,
+2025-02-03T10:57:26.552Z,phone number,951-386-1671,node_5,

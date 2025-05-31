@@ -1,0 +1,5 @@
+import { CSVReader } from '@llamaindex/readers/csv'
+import { PDFReader } from '@llamaindex/readers/pdf'
+import { JSONReader } from '@llamaindex/readers/json'
+import { MarkdownReader } from '@llamaindex/readers/markdown'
+import { HTMLReader } from '@llamaindex/readers/html'

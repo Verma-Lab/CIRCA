@@ -1,0 +1,12 @@
+timestamp,nodeId,nodeType,userIntent,topics,entities,sentiment,urgency
+2025-02-03T10:55:27.190Z,node_0,dialogueNode,Requesting wine suggestions,"wine,suggestions",wine,positive,low
+2025-02-03T10:55:28.906Z,node_8,responseNode,Requesting wine suggestions,"wine,wine suggestions",wine,positive,low
+2025-02-03T10:55:41.676Z,node_8,responseNode,Seek recommendation,"wine,wine recommendation",wine,neutral,low
+2025-02-03T10:56:03.024Z,node_8,responseNode,Find affordable wine,"wine,price",wine,negative,low
+2025-02-03T10:56:28.011Z,node_8,responseNode,Place wine order,"wine,order",Yellow Tail Shiraz,positive,low
+2025-02-03T10:56:30.182Z,node_7,fieldSetterNode,Place an order,"wine order,wine selection",Yellow Tail Shiraz,positive,low
+2025-02-03T10:56:41.707Z,node_7,fieldSetterNode,Confirmation,wine purchase,wine,positive,low
+2025-02-03T10:56:43.689Z,node_4,fieldSetterNode,Confirmation,"wine order,order confirmation",,positive,low
+2025-02-03T10:57:13.147Z,node_4,fieldSetterNode,Confirmation,"wine order,order confirmation",,positive,low
+2025-02-03T10:57:15.439Z,node_5,fieldSetterNode,Confirmation of order,"order confirmation,phone number","phone number,order",neutral,low
+2025-02-03T10:57:27.150Z,node_5,fieldSetterNode,Provide phone number for order confirmation,"order confirmation,phone number",951-386-1671,neutral,low

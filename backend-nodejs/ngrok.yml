@@ -1,0 +1,11 @@
+version: "2"
+authtoken: "2wfXsy6N9JaMPBf42mCHeYpBMwY_2sYmRm89Whx9cKaxtanyn"
+tunnels:
+  twilio:
+    proto: http
+    addr: 3003
+    host_header: "rewrite"  # Note the underscore instead of hyphen
+  backend:
+    proto: http
+    addr: 8000
+    host_header: "rewrite"  # Note the underscore instead of hyphen

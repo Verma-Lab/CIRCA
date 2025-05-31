@@ -1,0 +1,17 @@
+timestamp,nodeId,nodeType,userIntent,topics,entities,sentiment,urgency
+2025-02-03T10:34:26.532Z,node_0,dialogueNode,greeting,"greeting,wine ordering",,neutral,low
+2025-02-03T10:34:47.579Z,node_0,dialogueNode,Requesting wine suggestions,"wine,suggestions",wine,neutral,low
+2025-02-03T10:34:48.825Z,node_8,responseNode,Requesting a wine recommendation,"wine,wine recommendation",wine,neutral,low
+2025-02-03T10:35:04.464Z,node_8,responseNode,Request for recommendation of inexpensive wine,"wine,price",wine,negative,low
+2025-02-03T10:35:25.218Z,node_8,responseNode,Provide details later,wine preference,,neutral,low
+2025-02-03T10:35:44.992Z,node_8,responseNode,Place an order,"wine order,wine type",yellowtail Shiraz,neutral,low
+2025-02-03T10:36:33.895Z,node_8,responseNode,Place wine order,"wine,order",yellow delicious,positive,low
+2025-02-03T10:36:54.390Z,node_8,responseNode,Place wine order,"wine,order",Yellow Tail Shiraz,positive,low
+2025-02-03T10:36:56.062Z,node_7,fieldSetterNode,Place an order for wine,"wine order,wine selection",Yellow Tail Shiraz,positive,low
+2025-02-03T10:37:27.059Z,node_7,fieldSetterNode,Place an order for Yellow Tail Shiraz wine,"wine order,wine selection",Yellow Tail Shiraz,positive,low
+2025-02-03T10:37:28.762Z,node_4,fieldSetterNode,Place wine order,"wine order,wine selection",Yellow Tail Shiraz,positive,low
+2025-02-03T10:37:41.240Z,node_4,fieldSetterNode,Confirmation,"wine order,order confirmation",,positive,low
+2025-02-03T10:37:42.979Z,node_5,fieldSetterNode,Confirmation of order,"order confirmation,phone number","phone number,order",neutral,low
+2025-02-03T10:37:56.358Z,node_5,fieldSetterNode,Provide phone number for order confirmation,"order confirmation,phone number",951-38-61-671,neutral,low
+2025-02-03T10:38:23.558Z,node_5,fieldSetterNode,"Provide address, not phone number","address,order confirmation",4301 Chestnut Street,neutral,low
+2025-02-03T10:38:45.704Z,node_5,fieldSetterNode,Introduce oneself,identification,Richard Gupta,neutral,low

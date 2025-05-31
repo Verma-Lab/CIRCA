@@ -1,0 +1,11 @@
+PatientID,FirstName,LastName,DateOfBirth,Gender,Medication,Dosage,Frequency,PrescribingDoctor,PrescriptionDate
+1001,John,Doe,1985-06-15,M,Atorvastatin,20mg,Once Daily,Dr. Smith,2024-01-10
+1002,Jane,Smith,1990-09-22,F,Metformin,500mg,Twice Daily,Dr. Adams,2024-02-05
+1003,Michael,Brown,1975-12-30,M,Lisinopril,10mg,Once Daily,Dr. Lee,2024-03-12
+1004,Emily,Davis,2002-03-18,F,Amoxicillin,250mg,Three Times Daily,Dr. Patel,2024-04-20
+1005,David,Wilson,1968-07-07,M,Omeprazole,20mg,Once Daily,Dr. Chen,2024-05-15
+1006,Sarah,Johnson,1982-11-25,F,Simvastatin,40mg,Once Daily,Dr. Martinez,2024-06-08
+1007,Robert,Miller,1955-02-14,M,Amlodipine,5mg,Once Daily,Dr. Garcia,2024-07-22
+1008,Linda,Garcia,1995-08-30,F,Levothyroxine,50mcg,Once Daily,Dr. Robinson,2024-08-19
+1009,James,Martinez,1988-05-05,M,Hydrochlorothiazide,25mg,Once Daily,Dr. Clark,2024-09-10
+1010,Patricia,Lee,1970-10-11,F,Albuterol,2puffs,As Needed,Dr. Lewis,2024-10-25
