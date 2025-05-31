@@ -9,7 +9,7 @@ CIRCA RAG System Architecture is a comprehensive end-to-end Retrieval-Augmented 
 
 # EHR and MedRAG Analysis System Documentation
 **Version: 1.0**  
-**Last Updated: [Current Date]**
+
 
 ## Table of Contents
 1. [Overview](#overview-detailed)
