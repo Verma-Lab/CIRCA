@@ -10986,16 +10986,16 @@ async def vector_flow_chat(request: dict):
                         
                         Current Node Instruction:
                         {current_instruction}
-
-                        Patient Profile: {patient_fields}
                        
 
                         INSTRUCTIONS: 
                         1. First, search the document context for specific information about what the user asked
                         2. Provide detailed, specific information from the document context about their question
                         3. Then add the current node instruction as a follow-up
-                        4. Make it conversational and natural, personalize with patient's name if available
-                        5. Include any URLs, phone numbers, or contact information from the document context verbatim
+                        4. If the "Document Content" is present and offers *additional, helpful* information directly related to the user's query or the ongoing conversation (especially if no further flow options exist for this node), integrate it gracefully and naturally.
+                        5. Maintain a natural, conversational, and empathetic tone.
+                        6. Ensure any URLs, phone numbers, email addresses, or specific resources from either the "Current Node's Primary Message/Instruction" or "Relevant Document Content" are included verbatim.
+                        Please provide a helpful response based on the document content, addressing the user's query.
 
                         Format your response like this:
                         "Based on our medical information, here's what you need to know about [user's question]: [specific detailed answer from document context including any medications, dosages, recommendations, etc.]
