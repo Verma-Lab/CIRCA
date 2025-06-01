@@ -57,6 +57,7 @@ import hashlib
 
 # Keep all existing imports
 from llama_index.llms.huggingface import HuggingFaceLLM
+
 from llama_index.core import Document, VectorStoreIndex, SimpleDirectoryReader, StorageContext, load_index_from_storage
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.ingestion import IngestionPipeline
@@ -178,6 +179,10 @@ llama_llm = HuggingFaceLLM(
     device_map="auto",
     max_new_tokens=256,  # Adjust based on your needs
 )
+test_prompt = "Hello, this is a test prompt. Please respond with a short message."
+response = llama_llm.complete(test_prompt)
+print(f"Test response: {response.text}")
+
 Settings.llm = llama_llm
 # Chroma Client - keep existing configuration
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
