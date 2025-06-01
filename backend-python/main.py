@@ -10334,6 +10334,8 @@ async def vector_flow_chat(request: dict):
         is_post_survey_start = (current_node_id is None and 
                             user_message_count >= survey_questions_length and 
                             survey_questions_length > 0)
+        common_greetings = ['hi', 'hello', 'hey', 'good', 'morning', 'afternoon', 'evening']
+
         print(f"[CHAT] Survey questions length: {survey_questions_length}")
         print(f"[CHAT] User message count: {user_message_count}")
         print(f"[CHAT] Is post-survey start: {is_post_survey_start}")
@@ -10947,7 +10949,7 @@ async def vector_flow_chat(request: dict):
             """
 
         # Check if user message doesn't match current node functions and provide document context response
-        if current_node_id and current_node_doc and document_context:
+        if current_node_id and current_node_doc and document_context and message.lower().strip() not in common_greetings:
             # Check if current node has functions
             if "FUNCTIONS:" in current_node_doc:
                 # Check if user message matches any function
@@ -10979,11 +10981,14 @@ async def vector_flow_chat(request: dict):
                         combined_response_prompt = f"""
                         User asked: "{message}"
 
-                        Document context: {document_context}
-                        Current node instruction: {current_instruction}
+                        Document Content:
+                        {document_context_section}
+                        
+                        Current Node Instruction:
+                        {current_instruction}
 
                         Patient Profile: {patient_fields}
-                        Patient History: {patient_history}
+                       
 
                         INSTRUCTIONS: 
                         1. First, search the document context for specific information about what the user asked
