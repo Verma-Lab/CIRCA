@@ -205,7 +205,7 @@ def initialize_llm():
 
     return model, tokenizer
 
-# Initialize the LLM when the script is imported
-# This line will be executed when main.py imports init_llm.
-logger.info("Calling initialize_llm() at init_llm.py module import time.")
-model, tokenizer = initialize_llm()
+# # Initialize the LLM when the script is imported
+# # This line will be executed when main.py imports init_llm.
+# logger.info("Calling initialize_llm() at init_llm.py module import time.")
+# model, tokenizer = initialize_llm()
