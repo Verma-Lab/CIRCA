@@ -10978,41 +10978,34 @@ async def vector_flow_chat(request: dict):
                         # Generate combined response from document context + current node instruction
                         combined_response_prompt = f"""
                         User asked: "{message}"
-                        
+
                         Document context: {document_context}
                         Current node instruction: {current_instruction}
-                        
+
                         Patient Profile: {patient_fields}
                         Patient History: {patient_history}
-                        
-                        Please respond in this format:
-                        "Here's the answer to your question: [answer from document context]
-                        
+
+                        INSTRUCTIONS: 
+                        1. First, search the document context for specific information about what the user asked
+                        2. Provide detailed, specific information from the document context about their question
+                        3. Then add the current node instruction as a follow-up
+                        4. Make it conversational and natural, personalize with patient's name if available
+                        5. Include any URLs, phone numbers, or contact information from the document context verbatim
+
+                        Format your response like this:
+                        "Based on our medical information, here's what you need to know about [user's question]: [specific detailed answer from document context including any medications, dosages, recommendations, etc.]
+
                         Now, {current_instruction}"
-                        
-                        Make it conversational and natural. Include any URLs, phone numbers, or contact information from the document context verbatim.
+
+                        Generate the final response directly - no need for additional formatting.
                         """
-                        
-                        combined_response = Settings.llm.complete(combined_response_prompt).text.strip()
-                        
-                        # Apply rephrasing
-                        rephrase_prompt = f"""
-                        You are a friendly, conversational assistant. Rephrase this response to sound natural:
-                        
-                        "{combined_response}"
-                        
-                        User message: "{message}"
-                        Patient Profile: {patient_fields}
-                        
-                        Make it flow naturally, personalize with patient's name if available.
-                        """
-                        
-                        final_response = Settings.llm.complete(rephrase_prompt).text.strip()
+
+                        final_response = Settings.llm.complete(combined_response_prompt).text.strip()
                         if final_response.startswith('"') and final_response.endswith('"'):
                             final_response = final_response[1:-1]
-                        
+
                         print(f"[NO FUNCTION MATCH] Providing document context + staying at current node {current_node_id}")
-                        
+
                         return {
                             "content": final_response,
                             "next_node_id": current_node_id,  # Stay at current node
