@@ -10680,8 +10680,6 @@ async def vector_flow_chat(request: dict):
                 
         #Special Case For the Survey Node
         if message.lower().strip() == 'completed survey' and current_node_id:
-            # We need to quickly check if current node is survey node
-            # Use the existing retrieval pattern to get current node doc briefly
             try:
                 retriever = flow_index.as_retriever(
                     filters=MetadataFilters(filters=[
@@ -10712,11 +10710,21 @@ async def vector_flow_chat(request: dict):
                                 current_node_id = completion_match.group(1)
                                 print(f"[SURVEY COMPLETION] Setting current_node_id to: {current_node_id}")
                             else:
-                                current_node_id = None
-                                print(f"[SURVEY COMPLETION] No completion trigger found, setting current_node_id to None")
+                                print(f"[SURVEY COMPLETION] No completion trigger found, returning completion message")
+                                return {
+                                    "content": "Thanks for filling out the survey, is there anything you need help with?",
+                                    "next_node_id": None,
+                                    "state_updates": {},
+                                    "onboarding_status": onboarding_status_to_send
+                                }
                         else:
-                            current_node_id = None
-                            print(f"[SURVEY COMPLETION] No TRIGGERS section found, setting current_node_id to None")
+                            print(f"[SURVEY COMPLETION] No TRIGGERS section found, returning completion message")
+                            return {
+                                "content": "Thanks for filling out the survey, is there anything you need help with?",
+                                "next_node_id": None,
+                                "state_updates": {},
+                                "onboarding_status": onboarding_status_to_send
+                            }
             except Exception as e:
                 print(f"[SURVEY COMPLETION] Error checking survey completion: {str(e)}")
 
