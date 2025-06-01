@@ -17524,5 +17524,9 @@ except Exception as e:
 if __name__ == "__main__":
     
     print("[MAIN] Starting Professional EHR and MedRAG Analysis System")
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8), reload=True)
+    # uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8), reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8)) 
+
     print("[MAIN] Server shutdown")
+
+
