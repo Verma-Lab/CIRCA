@@ -2308,53 +2308,6 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
         surveyNodeId = currentNode.id;
         surveyId = currentNode.data.surveyData.id;
         console.log('Found survey node:', surveyNodeId, 'with questions:', surveyQuestionaire);
-        // const surveyResponses = sessionData.survey_responses || [];
-        // const userMessageCount = surveyResponses.length;
-        // if (userMessageCount === currentNode.data.surveyData.questions.length - 1){
-        //   const fullSurveyQuestions = currentNode.data.surveyData.questions
-        //   const lastQuestion = fullSurveyQuestions[userMessageCount];
-        //   surveyResponses.push({ question: lastQuestion.text, answer: message });
-        //   await sessionRef.set(
-        //     {
-        //       survey_responses: surveyResponses,
-        //       survey_questions_length: fullSurveyQuestions.length,
-        //       currentNodeId: surveyNodeId,
-        //     },
-        //     { merge: true }
-        //   );
-
-        //   // Save the user's message to Firestore
-        //   await saveMessages(
-        //     shareId,
-        //     shareData.userId || shareData.ownerId,
-        //     sessionId,
-        //     shareData.assistantId,
-        //     message,
-        //     { content: 'Survey completed' },
-        //     [],
-        //     patientId
-        //   );
-
-        //   // Record analytics for the last answer
-        //   axios.post(`${PYTHON_API_URL}/api/analyze-message`, {
-        //     message: message,
-        //     response: 'Survey completed',
-        //     sessionId: sessionId,
-        //     timestamp: new Date().toISOString(),
-        //   })
-        //     .then((analyticsResponse) => {
-        //       console.log('Survey analytics recorded successfully:', analyticsResponse.data.analytics_id);
-        //     })
-        //     .catch((analyticsError) => {
-        //       console.error('Error recording survey analytics:', analyticsError.message);
-        //     });
-
-        //   // Override message to "completed" for vector_chat
-        //   const pythonMessage = "completed";
-        //   message = pythonMessage;
-        //   console.log('Last survey question answered, sending "completed" to Python endpoint');
-  
-        // }
       }
     
 
@@ -2432,9 +2385,9 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
           patientId,
           null
         );
-        const pythonMessage = "completed";
+        const pythonMessage = "completed survey";
         message = pythonMessage; 
-        console.log('Survey completed, sending "completed" to Python endpoint');
+        console.log('Survey completed, sending "completed survey" to Python endpoint');
       }
     }
 

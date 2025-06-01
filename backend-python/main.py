@@ -10678,6 +10678,47 @@ async def vector_flow_chat(request: dict):
                 current_node_id = starting_node_id
                 current_node_doc = starting_node_doc
                 
+        #Special Case For the Survey Node
+        if message.lower().strip() == 'completed survey' and current_node_id:
+            # We need to quickly check if current node is survey node
+            # Use the existing retrieval pattern to get current node doc briefly
+            try:
+                retriever = flow_index.as_retriever(
+                    filters=MetadataFilters(filters=[
+                        MetadataFilter(
+                            key="node_id", 
+                            value=current_node_id, 
+                            operator=FilterOperator.EQ
+                        )
+                    ])
+                )
+                node_docs = retriever.retrieve(f"NODE ID: {current_node_id}")
+                
+                if node_docs:
+                    current_node_content = node_docs[0].get_content()
+                    is_current_survey_node = "NODE TYPE: surveyNode" in current_node_content
+                    
+                    if is_current_survey_node:
+                        print(f"[SURVEY COMPLETION] Detected 'completed' message on survey node {current_node_id}")
+                        
+                        # Check for completion trigger in TRIGGERS section
+                        if "TRIGGERS:" in current_node_content:
+                            triggers_section = current_node_content.split("TRIGGERS:")[1].strip()
+                            
+                            import re
+                            completion_match = re.search(r"If survey outcome is ['\"]?Completed['\"]?, proceed to node (\w+)", triggers_section)
+                            
+                            if completion_match:
+                                current_node_id = completion_match.group(1)
+                                print(f"[SURVEY COMPLETION] Setting current_node_id to: {current_node_id}")
+                            else:
+                                current_node_id = None
+                                print(f"[SURVEY COMPLETION] No completion trigger found, setting current_node_id to None")
+                        else:
+                            current_node_id = None
+                            print(f"[SURVEY COMPLETION] No TRIGGERS section found, setting current_node_id to None")
+            except Exception as e:
+                print(f"[SURVEY COMPLETION] Error checking survey completion: {str(e)}")
 
         # Basic String Query Approach - No Filters
         if current_node_id:
