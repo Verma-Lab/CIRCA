@@ -11106,6 +11106,16 @@ You are a helpful assistant tasked with providing accurate and context-aware res
             
             # Check if the next node is a notification node and include all relevant data
             # Check if the next node is a notification node BEFORE setting next_node_id to None
+            if is_survey_node:
+                print(f"[SURVEY NODE] Detected survey node: {current_node_id}")
+                return {
+                    "content": null,
+                    "next_node_id": current_node_id,  # Return the survey node ID
+                    "node_type": "surveyNode",
+                    "state_updates": {},
+                    "onboarding_status": onboarding_status_to_send
+            }
+
             if next_node_id and "NODE TYPE: notificationNode" in next_node_doc:
                 # Extract node data from the instruction section
                 node_data = {}
