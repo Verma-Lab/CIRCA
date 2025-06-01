@@ -143,26 +143,26 @@ os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 # Setting LLMs - keep existing configuration
-# llm = Gemini(
-#     model="models/gemini-2.0-flash",
-#     api_key=GOOGLE_API_KEY,  
-# )
-# MODEL_ID = "models/gemini-2.0-flash"  # Latest version as of May 2025
-# # vecto_chat = genai.GenerativeModel(MODEL_ID)
-# gemini_model = Gemini(
-#     model=MODEL_ID,  # Add the "models/" prefix
-#     api_key=GOOGLE_API_KEY,
-#     # Optional: Configure "thinking" capabilities 
-#     thinking_config={"thinking_budget": 8000}  # Adjust as needed
-# )
+llm = Gemini(
+    model="models/gemini-2.0-flash",
+    api_key=GOOGLE_API_KEY,  
+)
+MODEL_ID = "models/gemini-2.0-flash"  # Latest version as of May 2025
+# vecto_chat = genai.GenerativeModel(MODEL_ID)
+gemini_model = Gemini(
+    model=MODEL_ID,  # Add the "models/" prefix
+    api_key=GOOGLE_API_KEY,
+    # Optional: Configure "thinking" capabilities 
+    thinking_config={"thinking_budget": 8000}  # Adjust as needed
+)
 
-# openai_llm = OpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY, logprobs=False, default_headers={})
-# LLM_MODELS = {
-#     "Gemini-Pro": llm,
-#     "Chat Gpt o3-mini": openai_llm,
-# }
+openai_llm = OpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY, logprobs=False, default_headers={})
+LLM_MODELS = {
+    "Gemini-Pro": llm,
+    "Chat Gpt o3-mini": openai_llm,
+}
 
-# Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
+Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
 
 # Settings.llm = gemini_model
@@ -183,7 +183,7 @@ test_prompt = "Hello, this is a test prompt. Please respond with a short message
 response = llama_llm.complete(test_prompt)
 print(f"Test response: {response.text}")
 
-Settings.llm = llama_llm
+Settings.llm = llm
 # Chroma Client - keep existing configuration
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
 
