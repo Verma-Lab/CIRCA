@@ -10924,28 +10924,105 @@ async def vector_flow_chat(request: dict):
         is_survey_node = "NODE TYPE: surveyNode" in current_node_doc
         # Define context section
         document_context_section = f"""
-Relevant Document Content:
-{document_context}
+            Relevant Document Content:
+            {document_context}
 
-You are a helpful assistant tasked with providing accurate, specific, and context-aware responses. Follow these steps:
-1. Identify the user's intent from the message and conversation history.
-2. **IMPORTANT**: Scan the Relevant Document Content for any URLs, phone numbers, email addresses, or other specific resources.
-3. **CRITICAL REQUIREMENT**: If ANY resources like URLs, phone numbers, or contact information are found, include them verbatim in your response.
-4. Generate a natural, conversational response addressing the user's query, incorporating document content as needed.
-5. Maintain continuity with the conversation history.
-6. If the query matches a node in the flow logic, process it according to the node's INSTRUCTION, but prioritize document content for specific details.
-7. Do not repeat the node's INSTRUCTION verbatim; craft a friendly, relevant response.
-8. If no relevant document content is found, provide a helpful response based on the flow logic or general knowledge.
-9. Double-check that all resource links, phone numbers, and contact methods from the document context are included.
-""" if document_context else """
-You are a helpful assistant tasked with providing accurate and context-aware responses. Follow these steps:
-1. Identify the user's intent from the message and conversation history.
-2. Generate a natural, conversational response addressing the user's query.
-3. Maintain continuity with the conversation history.
-4. If the query matches a node in the flow logic, process it according to the node's INSTRUCTION.
-5. Do not repeat the node's INSTRUCTION verbatim; craft a friendly, relevant response.
-"""
+            You are a helpful assistant tasked with providing accurate, specific, and context-aware responses. Follow these steps:
+            1. Identify the user's intent from the message and conversation history.
+            2. **IMPORTANT**: Scan the Relevant Document Content for any URLs, phone numbers, email addresses, or other specific resources.
+            3. **CRITICAL REQUIREMENT**: If ANY resources like URLs, phone numbers, or contact information are found, include them verbatim in your response.
+            4. Generate a natural, conversational response addressing the user's query, incorporating document content as needed.
+            5. Maintain continuity with the conversation history.
+            6. If the query matches a node in the flow logic, process it according to the node's INSTRUCTION, but prioritize document content for specific details.
+            7. Do not repeat the node's INSTRUCTION verbatim; craft a friendly, relevant response.
+            8. If no relevant document content is found, provide a helpful response based on the flow logic or general knowledge.
+            9. Double-check that all resource links, phone numbers, and contact methods from the document context are included.
+            """ if document_context else """
+            You are a helpful assistant tasked with providing accurate and context-aware responses. Follow these steps:
+            1. Identify the user's intent from the message and conversation history.
+            2. Generate a natural, conversational response addressing the user's query.
+            3. Maintain continuity with the conversation history.
+            4. If the query matches a node in the flow logic, process it according to the node's INSTRUCTION.
+            5. Do not repeat the node's INSTRUCTION verbatim; craft a friendly, relevant response.
+            """
 
+        # Check if user message doesn't match current node functions and provide document context response
+        if current_node_id and current_node_doc and document_context:
+            # Check if current node has functions
+            if "FUNCTIONS:" in current_node_doc:
+                # Check if user message matches any function
+                function_match_prompt = f"""
+                User message: "{message}"
+                Current node functions: {current_node_doc.split("FUNCTIONS:")[1] if "FUNCTIONS:" in current_node_doc else "None"}
+                
+                Does the user's message match any of the functions/conditions listed? 
+                Return only "MATCH" or "NO_MATCH"
+                """
+                
+                try:
+                    match_response = Settings.llm.complete(function_match_prompt).text.strip()
+                    print(f"[FUNCTION MATCH CHECK] {match_response}")
+                    
+                    if "NO_MATCH" in match_response.upper():
+                        # User message doesn't match functions, provide document context + current node instruction
+                        
+                        # Extract current node instruction
+                        current_instruction = ""
+                        try:
+                            instruction_start = current_node_doc.find("INSTRUCTION:") + len("INSTRUCTION:")
+                            instruction_end = current_node_doc.find("FUNCTIONS:") if "FUNCTIONS:" in current_node_doc else len(current_node_doc)
+                            current_instruction = current_node_doc[instruction_start:instruction_end].strip()
+                        except Exception as e:
+                            print(f"Error extracting current instruction: {str(e)}")
+                        
+                        # Generate combined response from document context + current node instruction
+                        combined_response_prompt = f"""
+                        User asked: "{message}"
+                        
+                        Document context: {document_context}
+                        Current node instruction: {current_instruction}
+                        
+                        Patient Profile: {patient_fields}
+                        Patient History: {patient_history}
+                        
+                        Please respond in this format:
+                        "Here's the answer to your question: [answer from document context]
+                        
+                        Now, {current_instruction}"
+                        
+                        Make it conversational and natural. Include any URLs, phone numbers, or contact information from the document context verbatim.
+                        """
+                        
+                        combined_response = Settings.llm.complete(combined_response_prompt).text.strip()
+                        
+                        # Apply rephrasing
+                        rephrase_prompt = f"""
+                        You are a friendly, conversational assistant. Rephrase this response to sound natural:
+                        
+                        "{combined_response}"
+                        
+                        User message: "{message}"
+                        Patient Profile: {patient_fields}
+                        
+                        Make it flow naturally, personalize with patient's name if available.
+                        """
+                        
+                        final_response = Settings.llm.complete(rephrase_prompt).text.strip()
+                        if final_response.startswith('"') and final_response.endswith('"'):
+                            final_response = final_response[1:-1]
+                        
+                        print(f"[NO FUNCTION MATCH] Providing document context + staying at current node {current_node_id}")
+                        
+                        return {
+                            "content": final_response,
+                            "next_node_id": current_node_id,  # Stay at current node
+                            "state_updates": {},
+                            "onboarding_status": onboarding_status_to_send
+                        }
+                        
+                except Exception as e:
+                    print(f"Error in function match check: {str(e)}")
+                    
         full_context = f"""
         The user message is: "{message}"
 
@@ -10974,6 +11051,7 @@ You are a helpful assistant tasked with providing accurate and context-aware res
       
         }}
         """
+            
         
         # Process the response
         try:
