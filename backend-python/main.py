@@ -166,22 +166,22 @@ Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
 
 # Settings.llm = gemini_model
-MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
+# MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 
-# Initialize the tokenizer
-tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+# # Initialize the tokenizer
+# tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 
-# Initialize the HuggingFaceLLM for Llama 3.1 8B
-llama_llm = HuggingFaceLLM(
-    model_name=MODEL_PATH,
-    tokenizer_name=MODEL_PATH,
-    model_kwargs={"torch_dtype": torch.bfloat16},
-    device_map="auto",
-    max_new_tokens=256,  # Adjust based on your needs
-)
-test_prompt = "Hello, this is a test prompt. Please respond with a short message."
-response = llama_llm.complete(test_prompt)
-print(f"Test response: {response.text}")
+# # Initialize the HuggingFaceLLM for Llama 3.1 8B
+# llama_llm = HuggingFaceLLM(
+#     model_name=MODEL_PATH,
+#     tokenizer_name=MODEL_PATH,
+#     model_kwargs={"torch_dtype": torch.bfloat16},
+#     device_map="auto",
+#     max_new_tokens=256,  # Adjust based on your needs
+# )
+# test_prompt = "Hello, this is a test prompt. Please respond with a short message."
+# response = llama_llm.complete(test_prompt)
+# print(f"Test response: {response.text}")
 
 Settings.llm = llm
 # Chroma Client - keep existing configuration
