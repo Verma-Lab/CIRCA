@@ -10979,32 +10979,25 @@ async def vector_flow_chat(request: dict):
                         
                         # Generate combined response from document context + current node instruction
                         combined_response_prompt = f"""
-                        User asked: "{message}"
-
-                        Document Content:
+                        You are a helpful assistant. The user has sent the following message:
+                        
+                        The user's last message was: "{message}"
+                        
+                        Relevant Document Content:
                         {document_context_section}
                         
-                        Current Node Instruction:
-                        {current_instruction}
-                       
-
-                        INSTRUCTIONS: 
-                        1. First, search the document context for specific information about what the user asked
-                        2. Provide detailed, specific information from the document context about their question
-                        3. Then add the current node instruction as a follow-up
-                        4. If the "Document Content" is present and offers *additional, helpful* information directly related to the user's query or the ongoing conversation (especially if no further flow options exist for this node), integrate it gracefully and naturally.
-                        5. Maintain a natural, conversational, and empathetic tone.
-                        6. Ensure any URLs, phone numbers, email addresses, or specific resources from either the "Current Node's Primary Message/Instruction" or "Relevant Document Content" are included verbatim.
+                        INSTRUCTION:
+                        INSTRUCTIONS FOR YOUR RESPONSE:
+                        1.  **PRIMARY REQUIREMENT**: You MUST first deliver the message provided in "Current Node's Primary Message/Instruction" verbatim or rephrased naturally. This is the essential response for this stage of the conversation.
+                        2.  After including the primary message, if the "Relevant Document Content" is present and offers *additional, helpful* information directly related to the user's query or the ongoing conversation (especially if no further flow options exist for this node), integrate it gracefully and naturally.
+                        3.  Maintain a natural, conversational, and empathetic tone.
+                        4.  Ensure any URLs, phone numbers, email addresses, or specific resources from either the "Current Node's Primary Message/Instruction" or "Relevant Document Content" are included verbatim.
+                        
+                        MUST Format your response like this:
+                        "The Information you are asking for is this: [specific detailed answer from document context including any medications, dosages, recommendations, etc.] + Okay Now, {current_instruction}" 
+                        
                         Please provide a helpful response based on the document content, addressing the user's query.
-
-                        Format your response like this:
-                        "Based on our medical information, here's what you need to know about [user's question]: [specific detailed answer from document context including any medications, dosages, recommendations, etc.]
-
-                        Now, {current_instruction}"
-
-                        Generate the final response directly - no need for additional formatting.
                         """
-
                         final_response = Settings.llm.complete(combined_response_prompt).text.strip()
                         if final_response.startswith('"') and final_response.endswith('"'):
                             final_response = final_response[1:-1]
