@@ -24,7 +24,6 @@ import uvicorn
 import shutil
 import traceback
 import nest_asyncio
-import init_llm
 # nest_asyncio.apply()
 
 import pickle
@@ -166,6 +165,20 @@ os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 # # Settings.llm = llm
 
 # Settings.llm = gemini_model
+MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
+
+# Initialize the tokenizer
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+
+# Initialize the HuggingFaceLLM for Llama 3.1 8B
+llama_llm = HuggingFaceLLM(
+    model_name=MODEL_PATH,
+    tokenizer_name=MODEL_PATH,
+    model_kwargs={"torch_dtype": torch.bfloat16},
+    device_map="auto",
+    max_new_tokens=256,  # Adjust based on your needs
+)
+Settings.llm = llama_llm
 # Chroma Client - keep existing configuration
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
 
@@ -17524,9 +17537,6 @@ except Exception as e:
 if __name__ == "__main__":
     
     print("[MAIN] Starting Professional EHR and MedRAG Analysis System")
-    print("[MAIN] Initializing LLM...")
-    init_llm.initialize_llm()
-    print("[MAIN] LLM initialization complete")
     # uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8), reload=True)
     uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8)) 
 
