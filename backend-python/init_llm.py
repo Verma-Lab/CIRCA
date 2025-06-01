@@ -4,7 +4,7 @@ import torch
 from llama_index.core import Settings
 
 def initialize_llm():
-    model_path = "/persistent/models/llama-3.1-8b"
+    model_path = "/home/hritvik/persistent/models/llama-3.1-8b"
        
     # Check if the model directory exists
     if not os.path.exists(model_path):
