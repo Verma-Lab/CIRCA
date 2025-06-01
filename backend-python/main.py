@@ -17512,8 +17512,8 @@ async def register_with_telephone_ai(email, password, name, organization_id=None
 if USE_LOCAL_MODEL:
     # Initialize in background to avoid blocking app startup
     import threading
-    threading.Thread(target=init_gemma_model).start()
-    threading.Thread(target=init_medical_ner_model).start()
+    # threading.Thread(target=init_gemma_model).start()
+    # threading.Thread(target=init_medical_ner_model).start()
 
 try:
     with SessionLocal() as db:
