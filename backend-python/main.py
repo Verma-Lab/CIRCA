@@ -176,23 +176,24 @@ try:
 except Exception as e:
     logger.error(f"Failed to load tokenizer: {e}")
     raise
-# Initialize the HuggingFaceLLM for Llama 3.1 8B
+
+# Initialize HuggingFaceLLM for Llama 3.1 8B
 try:
     llama_llm = HuggingFaceLLM(
         model_name=MODEL_PATH,
-        tokenizer_name=MODEL_PATH,
+        tokenizer_name_name=MODEL_PATH,
         model_kwargs={
             "torch_dtype": torch.bfloat16,  # Optimize for GPU memory
-            "device_map": "cuda:0",  # Explicitly use GPU 0 (Tesla T4)
             "offload_buffers": True,  # Offload buffers to GPU
         },
         tokenizer_kwargs={"padding_side": "left"},  # Optimize for batched inference
-        max_new_tokens=256,
-        generate_kwargs={"temperature": 0.7, "do_sample": True},  # Adjust as needed
+        max_new_tokens=512,  # Increased for better responses
+        generate_kwargs={"temperature": 0.7, "do_sample": True},
+        device="cuda"  # Specify device directly, not in model_kwargs
     )
-    logger.info("Llama 3.1 8B loaded successfully on GPU")
+    logger.info("Llama 3.2 8B loaded successfully on GPU")
 except Exception as e:
-    logger.error(f"Failed to load Llama model: {e}")
+    logger.error(f"Failed to load model: {e}")
     raise
 
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
