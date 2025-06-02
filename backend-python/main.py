@@ -235,13 +235,11 @@ gemma_llm = HuggingFaceLLM(
     model_name=LOCAL_MODEL_NAME,
     model=gemma_model,
     tokenizer=gemma_tokenizer,
-    max_new_tokens=200,  # Per HF docs for faster inference
+    max_new_tokens=200,
     generate_kwargs={
-        "do_sample": False,  # Per HF docs for deterministic output
-        "pad_token_id": gemma_tokenizer.pad_token_id if gemma_tokenizer.pad_token_id else gemma_tokenizer.eos_token_id,
-        "eos_token_id": gemma_tokenizer.eos_token_id,
-        "repetition_penalty": 1.1,  # Lowered for speed
-    },
+        "do_sample": False,
+        "repetition_penalty": 1.1,
+    }
 )
         
         # Set to Settings.llm
