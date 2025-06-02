@@ -217,7 +217,7 @@ quantization_config = BitsAndBytesConfig(
 # print(f"Test response: {response.text}")
 
 logger.info("Loading Gemma model locally...")
-gemma_tokenizer = AutoProcessor.from_pretrained(
+gemma_tokenizer = AutoTokenizer.from_pretrained(
     LOCAL_MODEL_NAME,
     token=HUGGINGFACE_ACCESS_TOKEN
 )
@@ -229,8 +229,8 @@ gemma_model = Gemma3ForConditionalGeneration.from_pretrained(
     low_cpu_mem_usage=True,
 ).eval()
 logger.info("Gemma 3 4B model loaded successfully!")
-        
-        # Wrap in HuggingFaceLLM for LlamaIndex
+
+# Wrap in HuggingFaceLLM for LlamaIndex
 gemma_llm = HuggingFaceLLM(
     model_name=LOCAL_MODEL_NAME,
     model=gemma_model,
@@ -241,11 +241,11 @@ gemma_llm = HuggingFaceLLM(
         "repetition_penalty": 1.1,
     }
 )
-        
-        # Set to Settings.llm
+
+# Set to Settings.llm
 Settings.llm = gemma_llm
 logger.info("Gemma 3 4B set to Settings.llm successfully!")
-        
+
 # Test model
 start_time = time.time()
 test_prompt = "Translate 'Hello' to Spanish."
