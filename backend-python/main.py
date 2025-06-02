@@ -183,6 +183,13 @@ except Exception as e:
     logger.error(f"Failed to load tokenizer: {e}")
     raise
 
+# Initialize quantization configuration (optional, for memory efficiency)
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16,
+    bnb_4bit_use_double_quant=False,
+)   
 # Initialize HuggingFaceLLM for Gemma 3 4B
 try:
     gemma_llm = HuggingFaceLLM(
