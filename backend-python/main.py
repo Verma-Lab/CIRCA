@@ -197,7 +197,7 @@ try:
         "quantization_config": quantization_config,
     },
     tokenizer_kwargs={"padding_side": "left"},
-    max_new_tokens=50,  # MUCH SMALLER
+    max_new_tokens=512,  # MUCH SMALLER
     generate_kwargs={
         "temperature": 0.1, 
         "do_sample": True,
