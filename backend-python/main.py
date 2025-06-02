@@ -193,27 +193,30 @@ quantization_config = BitsAndBytesConfig(
 # Initialize HuggingFaceLLM for Gemma 3 4B
 try:
     gemma_llm = HuggingFaceLLM(
-        model_name=MODEL_PATH,
-        tokenizer_name=MODEL_PATH,
-        device_map="auto",
-        model_kwargs={
-            "torch_dtype": torch.bfloat16,
-            "quantization_config": quantization_config,
-            "token": HUGGINGFACE_ACCESS_TOKEN
-        },
-        tokenizer_kwargs={
-            "padding_side": "left",
-            "token": HUGGINGFACE_ACCESS_TOKEN
-        },
-        max_new_tokens=512,
-        generate_kwargs={
-            "temperature": 0.01,
-            "do_sample": False,
-            "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id else tokenizer.eos_token_id,
-            "eos_token_id": tokenizer.eos_token_id,
-            "repetition_penalty": 1.2,
-        },
-    )
+    model_name=MODEL_PATH,
+    tokenizer_name=MODEL_PATH,
+    device_map="auto",
+    model_kwargs={
+        "torch_dtype": torch.bfloat16,
+        "quantization_config": quantization_config,
+        "token": HUGGINGFACE_ACCESS_TOKEN
+    },
+    tokenizer_kwargs={
+        "padding_side": "left",
+        "token": HUGGINGFACE_ACCESS_TOKEN
+    },
+    max_new_tokens=512,
+    generate_kwargs={
+        "do_sample": False,  # Greedy decoding
+        "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id else tokenizer.eos_token_id,
+        "eos_token_id": tokenizer.eos_token_id,
+        "repetition_penalty": 1.2,
+        # Remove conflicting parameters
+        # "temperature": None,
+        # "top_p": None,
+        # "top_k": None,
+    },
+)
     logger.info("Gemma 3 4B loaded successfully on GPU (quantized)")
 except Exception as e:
     logger.error(f"Failed to load Gemma model: {e}")
