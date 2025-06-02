@@ -192,44 +192,43 @@ quantization_config = BitsAndBytesConfig(
 )   
 # Initialize HuggingFaceLLM for Gemma 3 4B
 try:
-    gemma_llm = HuggingFaceLLM(
-    model_name=MODEL_PATH,
-    tokenizer_name=MODEL_PATH,
-    device_map="auto",
-    model_kwargs={
-        "torch_dtype": torch.bfloat16,
-        "quantization_config": quantization_config,
-        "token": HUGGINGFACE_ACCESS_TOKEN
-    },
-    tokenizer_kwargs={
-        "padding_side": "left",
-        "token": HUGGINGFACE_ACCESS_TOKEN
-    },
-    max_new_tokens=512,
-    generate_kwargs={
-        "do_sample": False,  # Greedy decoding
-        "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id else tokenizer.eos_token_id,
-        "eos_token_id": tokenizer.eos_token_id,
-        "repetition_penalty": 1.2,
-        # Remove conflicting parameters
-        # "temperature": None,
-        # "top_p": None,
-        # "top_k": None,
-    },
-)
-    logger.info("Gemma 3 4B loaded successfully on GPU (quantized)")
+    gemma_pipeline = pipeline(
+        "text-generation",  # Use text-generation for LlamaIndex compatibility
+        model=MODEL_PATH,
+        device="cuda",
+        torch_dtype=torch.bfloat16,  # Per HF docs
+        max_new_tokens=200,  # Per HF docs example
+        token=HUGGINGFACE_ACCESS_TOKEN,
+        model_kwargs={
+            "low_cpu_mem_usage": True,  # Reduce CPU memory overhead
+        },
+    )
+    logger.info("Gemma 3 4B pipeline loaded successfully on GPU")
 except Exception as e:
-    logger.error(f"Failed to load Gemma model: {e}")
+    logger.error(f"Failed to load Gemma pipeline: {e}")
     raise
 
-# Test the model
-test_prompt = "Hello, this is a test prompt. Please respond with a short message."
+# Wrap pipeline in HuggingFaceLLM for LlamaIndex
+gemma_llm = HuggingFaceLLM(
+    model_name=MODEL_PATH,
+    tokenizer=tokenizer,  # Use pre-loaded tokenizer
+    pipeline=gemma_pipeline,  # Use pipeline directly
+    generate_kwargs={
+        "do_sample": False,  # Per HF docs for deterministic output
+        "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id else tokenizer.eos_token_id,
+        "eos_token_id": tokenizer.eos_token_id,
+        "repetition_penalty": 1.1,  # Lowered for speed
+        "batch_size": 4,  # Enable batching for GPU utilization
+    },
+)
+
+# Test model
+test_prompt = "Translate 'Hello' to Spanish."
 response = gemma_llm.complete(test_prompt)
-print(f"Test response: {response.text}")
+print(f"Test response: {response.text}, Time: {time.time() - start_time:.2f} seconds")
 
 # Update LlamaIndex settings
 Settings.llm = gemma_llm
-
 # Chroma Client - keep existing configuration
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
 
