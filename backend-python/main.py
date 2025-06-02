@@ -181,19 +181,19 @@ except Exception as e:
 try:
     llama_llm = HuggingFaceLLM(
         model_name=MODEL_PATH,
-        tokenizer_name_name=MODEL_PATH,
+        tokenizer_name=MODEL_PATH,  # Fixed typo from tokenizer_name_name
         model_kwargs={
             "torch_dtype": torch.bfloat16,  # Optimize for GPU memory
             "offload_buffers": True,  # Offload buffers to GPU
         },
         tokenizer_kwargs={"padding_side": "left"},  # Optimize for batched inference
-        max_new_tokens=512,  # Increased for better responses
+        max_new_tokens=512,  # Suitable for medical responses
         generate_kwargs={"temperature": 0.7, "do_sample": True},
-        device="cuda"  # Specify device directly, not in model_kwargs
+        device="cuda"  # Explicitly use GPU
     )
-    logger.info("Llama 3.2 8B loaded successfully on GPU")
+    logger.info("Llama 3.1 8B loaded successfully on GPU")
 except Exception as e:
-    logger.error(f"Failed to load model: {e}")
+    logger.error(f"Failed to load Llama model: {e}")
     raise
 
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
