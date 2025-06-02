@@ -188,6 +188,9 @@ quantization_config = BitsAndBytesConfig(
 )
 GEMMA_MODEL_ID = "google/gemma-3-4b-it"
 
+from llama_index.core.llms.llm import LLM
+from llama_index.core.llms import CompletionResponse
+
 try:
     from transformers import AutoProcessor, Gemma3ForConditionalGeneration
     
@@ -201,13 +204,18 @@ try:
     
     gemma_processor = AutoProcessor.from_pretrained(GEMMA_MODEL_ID)
     
-    # Create wrapper for LlamaIndex compatibility
-    class GemmaLLMWrapper:
-        def complete(self, prompt: str):
+    # Create PROPER LlamaIndex-compatible wrapper
+    class GemmaLLMWrapper(LLM):
+        def __init__(self, model, processor):
+            super().__init__()
+            self.model = model
+            self.processor = processor
+        
+        def complete(self, prompt: str, **kwargs) -> CompletionResponse:
             messages = [
                 {
                     "role": "system",
-                    "content": [{"type": "text", "text": "You are a helpful medical assistant."}]
+                    "content": [{"type": "text", "text": "You are a helpful medical assistant. Respond naturally and conversationally."}]
                 },
                 {
                     "role": "user",
@@ -215,31 +223,37 @@ try:
                 }
             ]
             
-            inputs = gemma_processor.apply_chat_template(
+            inputs = self.processor.apply_chat_template(
                 messages, add_generation_prompt=True, tokenize=True,
                 return_dict=True, return_tensors="pt"
-            ).to(gemma_model.device, dtype=torch.bfloat16)
+            ).to(self.model.device, dtype=torch.bfloat16)
             
             input_len = inputs["input_ids"].shape[-1]
             
             with torch.inference_mode():
-                generation = gemma_model.generate(
+                generation = self.model.generate(
                     **inputs, 
-                    max_new_tokens=200,
+                    max_new_tokens=kwargs.get('max_new_tokens', 200),
                     do_sample=True,
-                    temperature=0.3,
-                    repetition_penalty=1.15
+                    temperature=kwargs.get('temperature', 0.3),
+                    repetition_penalty=kwargs.get('repetition_penalty', 1.15),
+                    top_p=kwargs.get('top_p', 0.9),
                 )
                 generation = generation[0][input_len:]
             
-            decoded = gemma_processor.decode(generation, skip_special_tokens=True)
-            
-            class Response:
-                def __init__(self, text):
-                    self.text = text
-            return Response(decoded)
+            decoded = self.processor.decode(generation, skip_special_tokens=True)
+            return CompletionResponse(text=decoded)
+        
+        async def acomplete(self, prompt: str, **kwargs) -> CompletionResponse:
+            # For async compatibility, just call the sync version
+            return self.complete(prompt, **kwargs)
+        
+        @property
+        def metadata(self):
+            return {"model_name": "gemma-3-4b-it"}
     
-    gemma_llm = GemmaLLMWrapper()
+    # Initialize with the loaded model and processor
+    gemma_llm = GemmaLLMWrapper(gemma_model, gemma_processor)
     logger.info("Gemma 3 4B loaded successfully on GPU")
     
     # Test it
@@ -250,11 +264,14 @@ except Exception as e:
     logger.error(f"Failed to load Gemma model: {e}")
     raise
 
+# Test again
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = gemma_llm.complete(test_prompt)
 print(f"Test response: {response.text}")
 
+# Now this should work without errors
 Settings.llm = gemma_llm
+
 # Chroma Client - keep existing configuration
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
 
