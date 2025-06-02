@@ -17542,7 +17542,8 @@ if __name__ == "__main__":
     
     print("[MAIN] Starting Professional EHR and MedRAG Analysis System")
     # uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8), reload=True)
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8)) 
+    # uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=min(cpu_count() + 1, 8)) 
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, workers=1)
 
     print("[MAIN] Server shutdown")
 
