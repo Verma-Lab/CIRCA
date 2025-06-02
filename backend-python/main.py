@@ -189,23 +189,25 @@ quantization_config = BitsAndBytesConfig(
 
 try:
     llama_llm = HuggingFaceLLM(
-    model_name=MODEL_PATH,
-    tokenizer_name=MODEL_PATH,
-    device_map="auto",
-    model_kwargs={
-        "torch_dtype": torch.bfloat16,
-        "quantization_config": quantization_config,
-    },
-    tokenizer_kwargs={"padding_side": "left"},
-    max_new_tokens=50,  # MUCH SMALLER
-    generate_kwargs={
-        "temperature": 0.1, 
-        "do_sample": True,
-        "pad_token_id": tokenizer.eos_token_id,  # ADD THIS
-        "eos_token_id": tokenizer.eos_token_id,  # ADD THIS
-        "repetition_penalty": 1.2,  # STOP REPETITION
-    },
-)
+        model_name=MODEL_PATH,
+        tokenizer_name=MODEL_PATH,
+        device_map="auto",
+        system_message="You are a helpful medical assistant. Always respond in natural, conversational language. Never generate code or technical responses.",  # ADD THIS
+        model_kwargs={
+            "torch_dtype": torch.bfloat16,
+            "quantization_config": quantization_config,
+        },
+        tokenizer_kwargs={"padding_side": "left"},
+        max_new_tokens=256,  # Increased slightly
+        generate_kwargs={
+            "temperature": 0.3,  # Higher for more natural responses
+            "do_sample": True,
+            "pad_token_id": tokenizer.eos_token_id,
+            "eos_token_id": tokenizer.eos_token_id,
+            "repetition_penalty": 1.15,
+            "top_p": 0.9,  # Add nucleus sampling
+        },
+    )
     logger.info("Llama 3.1 8B loaded successfully on GPU (quantized)")
 except Exception as e:
     logger.error(f"Failed to load Llama model: {e}")
