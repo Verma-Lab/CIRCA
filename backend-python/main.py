@@ -238,11 +238,11 @@ gemma_llm = HuggingFaceLLM(
     tokenizer=gemma_tokenizer,
     max_new_tokens=200,
     generate_kwargs={
-        "do_sample": False,
-        "repetition_penalty": 1.1,
-        # Remove these lines if you prefer deterministic generation to avoid warnings
-        # "top_p": None,
-        # "top_k": None,
+        "do_sample": True,      # Stop being a predictable asshole
+        "temperature": 0.7,     # Add some goddamn personality
+        "repetition_penalty": 1.2,  # Quit repeating shit
+        "top_p": 0.9,           # Keep it sensible, motherfucker
+        "top_k": 50,            # Don’t pull random crap
     }
 )
 
