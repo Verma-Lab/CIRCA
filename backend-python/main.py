@@ -199,7 +199,7 @@ try:
     tokenizer_kwargs={"padding_side": "left"},
     max_new_tokens=50,  # MUCH SMALLER
     generate_kwargs={
-        "temperature": 0.7, 
+        "temperature": 0.1, 
         "do_sample": True,
         "pad_token_id": tokenizer.eos_token_id,  # ADD THIS
         "eos_token_id": tokenizer.eos_token_id,  # ADD THIS
