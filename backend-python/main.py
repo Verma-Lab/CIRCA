@@ -166,18 +166,35 @@ Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 
 # Settings.llm = gemini_model
 MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
-
+if not torch.cuda.is_available():
+    logger.error("CUDA not available. Cannot proceed without GPU.")
+    raise RuntimeError("CUDA not available. Check GPU setup.")
+logger.info(f"Using GPU: {torch.cuda.get_device_name(0)}")
 # Initialize the tokenizer
-tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-
+try:
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+except Exception as e:
+    logger.error(f"Failed to load tokenizer: {e}")
+    raise
 # Initialize the HuggingFaceLLM for Llama 3.1 8B
-llama_llm = HuggingFaceLLM(
-    model_name=MODEL_PATH,
-    tokenizer_name=MODEL_PATH,
-    model_kwargs={"torch_dtype": torch.bfloat16},
-    device_map="auto",
-    max_new_tokens=256,  # Adjust based on your needs
-)
+try:
+    llama_llm = HuggingFaceLLM(
+        model_name=MODEL_PATH,
+        tokenizer_name=MODEL_PATH,
+        model_kwargs={
+            "torch_dtype": torch.bfloat16,  # Optimize for GPU memory
+            "device_map": "cuda:0",  # Explicitly use GPU 0 (Tesla T4)
+            "offload_buffers": True,  # Offload buffers to GPU
+        },
+        tokenizer_kwargs={"padding_side": "left"},  # Optimize for batched inference
+        max_new_tokens=256,
+        generate_kwargs={"temperature": 0.7, "do_sample": True},  # Adjust as needed
+    )
+    logger.info("Llama 3.1 8B loaded successfully on GPU")
+except Exception as e:
+    logger.error(f"Failed to load Llama model: {e}")
+    raise
+
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = llama_llm.complete(test_prompt)
 print(f"Test response: {response.text}")
