@@ -224,7 +224,8 @@ gemma_tokenizer = AutoTokenizer.from_pretrained(
 gemma_model = Gemma3ForConditionalGeneration.from_pretrained(
     LOCAL_MODEL_NAME,
     device_map="auto",
-    torch_dtype=torch.bfloat16,  # Per HF docs
+    torch_dtype=torch.bfloat16,
+    quantization_config=quantization_config,
     token=HUGGINGFACE_ACCESS_TOKEN,
     low_cpu_mem_usage=True,
 ).eval()
@@ -239,6 +240,9 @@ gemma_llm = HuggingFaceLLM(
     generate_kwargs={
         "do_sample": False,
         "repetition_penalty": 1.1,
+        # Remove these lines if you prefer deterministic generation to avoid warnings
+        # "top_p": None,
+        # "top_k": None,
     }
 )
 
