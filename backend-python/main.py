@@ -182,23 +182,24 @@ except Exception as e:
 try:
     llama_llm = HuggingFaceLLM(
         model_name=MODEL_PATH,
-        # --- FIX 1: Corrected typo from tokenizer_name_name to tokenizer_name ---
         tokenizer_name=MODEL_PATH,
+        # --- FIX: Move device_map here, OUTSIDE model_kwargs ---
+        device_map="auto", # Pass device_map directly to HuggingFaceLLM
         model_kwargs={
             "torch_dtype": torch.bfloat16,  # Optimize for GPU memory
-            # "offload_buffers": True, # Keep or remove, this is for offloading to CPU/disk, not GPU itself
-            "device_map": "auto",  # This is the CORRECT way to use GPU with HuggingFace models
+            # "offload_buffers": True, # Keep this if you want offloading to CPU/disk for huge models
+            # --- REMOVE device_map from here! ---
+            # "device_map": "auto", # <-- DELETE THIS LINE
         },
         tokenizer_kwargs={"padding_side": "left"},  # Optimize for batched inference
         max_new_tokens=512,  # Suitable for medical responses
         generate_kwargs={"temperature": 0.7, "do_sample": True},
-        # --- FIX 2: REMOVED the invalid 'device' argument ---
-        # device="cuda"  # <--- REMOVE THIS LINE ENTIRELY
     )
     logger.info("Llama 3.1 8B loaded successfully on GPU")
 except Exception as e:
     logger.error(f"Failed to load Llama model: {e}")
     raise
+
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = llama_llm.complete(test_prompt)
 print(f"Test response: {response.text}")
