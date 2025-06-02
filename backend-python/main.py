@@ -77,6 +77,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from liquid import Template
 from llama_index.llms.gemini import Gemini
 from llama_index.llms.openai import OpenAI
+from transformers import BitsAndBytesConfig
 import logging
 # from google import genai
 # from google.genai import types
@@ -179,26 +180,33 @@ except Exception as e:
     raise
 
 # Initialize HuggingFaceLLM for Llama 3.1 8B
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4", # Recommended 4-bit quantization type
+    bnb_4bit_compute_dtype=torch.bfloat16, # Keep computation in bfloat16 for speed if GPU supports it
+    bnb_4bit_use_double_quant=False, # Usually not needed
+)
+
 try:
     llama_llm = HuggingFaceLLM(
         model_name=MODEL_PATH,
         tokenizer_name=MODEL_PATH,
-        # --- FIX: Move device_map here, OUTSIDE model_kwargs ---
-        device_map="auto", # Pass device_map directly to HuggingFaceLLM
+        device_map="auto",
         model_kwargs={
-            "torch_dtype": torch.bfloat16,  # Optimize for GPU memory
-            # "offload_buffers": True, # Keep this if you want offloading to CPU/disk for huge models
-            # --- REMOVE device_map from here! ---
-            # "device_map": "auto", # <-- DELETE THIS LINE
+            "torch_dtype": torch.bfloat16,  # Data type for computations, not weights
+            "quantization_config": quantization_config, # Pass the new quantization config
+            # You can remove "offload_buffers": True, as quantization should make it fit.
+            # "offload_buffers": True,
         },
-        tokenizer_kwargs={"padding_side": "left"},  # Optimize for batched inference
-        max_new_tokens=512,  # Suitable for medical responses
+        tokenizer_kwargs={"padding_side": "left"},
+        max_new_tokens=512,
         generate_kwargs={"temperature": 0.7, "do_sample": True},
     )
-    logger.info("Llama 3.1 8B loaded successfully on GPU")
+    logger.info("Llama 3.1 8B loaded successfully on GPU (quantized)")
 except Exception as e:
     logger.error(f"Failed to load Llama model: {e}")
     raise
+
 
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = llama_llm.complete(test_prompt)
