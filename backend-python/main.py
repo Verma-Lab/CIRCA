@@ -166,18 +166,18 @@ Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
 
 # Settings.llm = gemini_model
-MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
+# MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 if not torch.cuda.is_available():
     logger.error("CUDA not available. Cannot proceed without GPU.")
     raise RuntimeError("CUDA not available. Check GPU setup.")
 logger.info(f"Using GPU: {torch.cuda.get_device_name(0)}") # This line is now correctly showing Tesla T4!
 
 # Initialize the tokenizer
-try:
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-except Exception as e:
-    logger.error(f"Failed to load tokenizer: {e}")
-    raise
+# try:
+#     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+# except Exception as e:
+#     logger.error(f"Failed to load tokenizer: {e}")
+#     raise
 
 # Initialize HuggingFaceLLM for Llama 3.1 8B
 quantization_config = BitsAndBytesConfig(
@@ -186,37 +186,75 @@ quantization_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16, # Keep computation in bfloat16 for speed if GPU supports it
     bnb_4bit_use_double_quant=False, # Usually not needed
 )
+GEMMA_MODEL_ID = "google/gemma-3-4b-it"
 
 try:
-    llama_llm = HuggingFaceLLM(
-    model_name=MODEL_PATH,
-    tokenizer_name=MODEL_PATH,
-    device_map="auto",
-    model_kwargs={
-        "torch_dtype": torch.bfloat16,
-        "quantization_config": quantization_config,
-    },
-    tokenizer_kwargs={"padding_side": "left"},
-    max_new_tokens=512,  # MUCH SMALLER
-    generate_kwargs={
-        "temperature": 0.01, 
-        "do_sample": False,
-        "pad_token_id": tokenizer.eos_token_id,  # ADD THIS
-        "eos_token_id": tokenizer.eos_token_id,  # ADD THIS
-        "repetition_penalty": 1.2,  # STOP REPETITION
-    },
-)
-    logger.info("Llama 3.1 8B loaded successfully on GPU (quantized)")
+    from transformers import AutoProcessor, Gemma3ForConditionalGeneration
+    
+    # Load Gemma 3 model
+    gemma_model = Gemma3ForConditionalGeneration.from_pretrained(
+        GEMMA_MODEL_ID,
+        device_map="auto",
+        torch_dtype=torch.bfloat16,
+        quantization_config=quantization_config,
+    ).eval()
+    
+    gemma_processor = AutoProcessor.from_pretrained(GEMMA_MODEL_ID)
+    
+    # Create wrapper for LlamaIndex compatibility
+    class GemmaLLMWrapper:
+        def complete(self, prompt: str):
+            messages = [
+                {
+                    "role": "system",
+                    "content": [{"type": "text", "text": "You are a helpful medical assistant."}]
+                },
+                {
+                    "role": "user",
+                    "content": [{"type": "text", "text": prompt}]
+                }
+            ]
+            
+            inputs = gemma_processor.apply_chat_template(
+                messages, add_generation_prompt=True, tokenize=True,
+                return_dict=True, return_tensors="pt"
+            ).to(gemma_model.device, dtype=torch.bfloat16)
+            
+            input_len = inputs["input_ids"].shape[-1]
+            
+            with torch.inference_mode():
+                generation = gemma_model.generate(
+                    **inputs, 
+                    max_new_tokens=200,
+                    do_sample=True,
+                    temperature=0.3,
+                    repetition_penalty=1.15
+                )
+                generation = generation[0][input_len:]
+            
+            decoded = gemma_processor.decode(generation, skip_special_tokens=True)
+            
+            class Response:
+                def __init__(self, text):
+                    self.text = text
+            return Response(decoded)
+    
+    gemma_llm = GemmaLLMWrapper()
+    logger.info("Gemma 3 4B loaded successfully on GPU")
+    
+    # Test it
+    test_response = gemma_llm.complete("Hello")
+    print(f"Test response: {test_response.text}")
+    
 except Exception as e:
-    logger.error(f"Failed to load Llama model: {e}")
+    logger.error(f"Failed to load Gemma model: {e}")
     raise
 
-
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
-response = llama_llm.complete(test_prompt)
+response = gemma_llm.complete(test_prompt)
 print(f"Test response: {response.text}")
 
-Settings.llm = llama_llm
+Settings.llm = gemma_llm
 # Chroma Client - keep existing configuration
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
 
