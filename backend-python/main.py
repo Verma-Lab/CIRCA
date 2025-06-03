@@ -154,234 +154,97 @@ aiplatform.init(project="vermalab-gemini-psom-e3ea", location="us-central1")
 endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/3702887981024018432")
 
 # Custom class to wrap the Vertex AI endpoint as an LLM
-# class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
-#     endpoint: aiplatform.Endpoint = Field(exclude=True) # Declare 'endpoint' as a Pydantic field, exclude from serialization
-#     model_name: str = Field(default="gemma-vertex-ai") # Declare 'model_name' as a Pydantic field
+class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
+    endpoint: aiplatform.Endpoint = Field(exclude=True) # Declare 'endpoint' as a Pydantic field, exclude from serialization
+    model_name: str = Field(default="gemma-vertex-ai") # Declare 'model_name' as a Pydantic field
 
-#     def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any): # <--- MODIFIED: added **kwargs
-#         # Pass all declared fields to the superclass's __init__
-#         super().__init__(
-#             endpoint=endpoint,
-#             model_name=model_name,
-#             **kwargs # Pass any other arguments to the parent LLM class
-#         )
-
-#     @property
-#     def metadata(self) -> LLMMetadata:
-#         """Get LLM metadata."""
-#         return LLMMetadata(
-#             model_name=self.model_name, # <--- CHANGE from self._model_name to self.model_name
-#             is_chat_model=False,
-#         )
-
-#     def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
-#         """Extract and map common LLM parameters to Vertex AI's expected format."""
-#         params = {}
-#         # Vertex AI often uses 'max_output_tokens' instead of 'max_tokens'
-#         if "max_tokens" in kwargs:
-#             params["max_output_tokens"] = kwargs.pop("max_tokens")
-#         elif "max_new_tokens" in kwargs: # Support common alternative
-#             params["max_output_tokens"] = kwargs.pop("max_new_tokens")
-#         if "temperature" in kwargs:
-#             params["temperature"] = kwargs.pop("temperature")
-#         if "top_k" in kwargs: # Top-k sampling
-#             params["top_k"] = kwargs.pop("top_k")
-#         if "top_p" in kwargs: # Top-p sampling
-#             params["top_p"] = kwargs.pop("top_p")
-#         # Add any other parameters your specific Vertex AI endpoint expects
-#         # Example: 'candidate_count' for number of responses
-#         return params
-
-#     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
-#         """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
-#         try:
-#             # Prepare the request instances. The key for the prompt depends on the model's input signature.
-#             # 'prompt' is common for text generation models.
-#             instances = [{"prompt": prompt}]
-            
-#             # Extract and map parameters
-#             parameters = self._get_params(**kwargs)
-
-#             # Call the Vertex AI endpoint
-#             response = self.endpoint.predict(instances=instances, parameters=parameters)
-
-#             # Process the response from Vertex AI
-#             prediction_data = response.predictions[0] if response.predictions else ""
-            
-#             # The structure of `response.predictions` can vary.
-#             # It might be a string, or a dictionary with a 'text' or 'content' key.
-#             if isinstance(prediction_data, dict):
-#                 if "text" in prediction_data:
-#                     prediction = prediction_data["text"]
-#                 elif "content" in prediction_data: # Another common key
-#                     prediction = prediction_data["content"]
-#                 else:
-#                     prediction = str(prediction_data) # Fallback to string conversion
-#             elif isinstance(prediction_data, str):
-#                 prediction = prediction_data
-#             else:
-#                 prediction = str(prediction_data) # General fallback if not string or dict
-
-#             return prediction
-#         except Exception as e:
-#             logger.error(f"Error calling Vertex AI endpoint: {e}")
-#             raise # Re-raise the exception to propagate it to LlamaIndex's error handling
-
-#     async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
-#         """Internal asynchronous prediction method."""
-#         # Use asyncio.to_thread to run the synchronous method in a thread pool.
-#         # This is suitable if the underlying endpoint.predict is blocking.
-#         return await asyncio.to_thread(self._predict_raw, prompt, **kwargs)
-
-#     # LlamaIndex's LLM interface requires `complete` and `acomplete` for text completion.
-#     def complete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
-#         """LlamaIndex standard method for text completion."""
-#         text = self._predict_raw(prompt, **kwargs)
-#         return CompletionResponse(text=text)
-
-#     async def acomplete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
-#         """LlamaIndex standard async method for text completion."""
-#         text = await self._apredict_raw(prompt, **kwargs)
-#         return CompletionResponse(text=text)
-#     def _messages_to_prompt(self, messages: List[ChatMessage]) -> str:
-#         """Converts a list of ChatMessage to a single string prompt for a completion model."""
-#         prompt_parts = []
-#         for message in messages:
-#             if message.role == MessageRole.USER:
-#                 prompt_parts.append(f"<start_of_turn>user\n{message.content}<end_of_turn>")
-#             elif message.role == MessageRole.ASSISTANT:
-#                 prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
-#             elif message.role == MessageRole.SYSTEM:
-#                 prompt_parts.append(f"<start_of_turn>system\n{message.content}<end_of_turn>")
-#             # Add other roles if needed, or default to USER
-#         prompt_parts.append(f"<start_of_turn>model\n") # This makes the model respond after the last turn
-#         return "\n".join(prompt_parts)
-#     # <--- ADD THE FOLLOWING METHOD:
-#     def chat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
-#         """LlamaIndex standard method for chat completion."""
-#         prompt = self._messages_to_prompt(messages)
-#         response_text = self._predict_raw(prompt, **kwargs)
-#         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-#     # <--- ADD THE FOLLOWING METHOD:
-#     async def achat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
-#         """LlamaIndex standard async method for chat completion."""
-#         prompt = self._messages_to_prompt(messages)
-#         response_text = await self._apredict_raw(prompt, **kwargs)
-#         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-#     # <--- ADD THE FOLLOWING METHOD:
-#     def stream_complete(self, prompt: str, **kwargs: Any) -> Generator[CompletionResponse, None, None]:
-#         """LlamaIndex standard method for streaming text completion."""
-#         # As Vertex AI endpoint might not stream, simulate by yielding full response.
-#         text = self._predict_raw(prompt, **kwargs)
-#         yield CompletionResponse(text=text, delta=text)
-#     # <--- ADD THE FOLLOWING METHOD:
-#     async def astream_complete(self, prompt: str, **kwargs: Any) -> AsyncGenerator[CompletionResponse, None]:
-#         """LlamaIndex standard async method for streaming text completion."""
-#         text = await self._apredict_raw(prompt, **kwargs)
-#         yield CompletionResponse(text=text, delta=text)
-#     # <--- ADD THE FOLLOWING METHOD:
-#     def stream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> Generator[ChatResponse, None, None]:
-#         """LlamaIndex standard method for streaming chat completion."""
-#         prompt = self._messages_to_prompt(messages)
-#         response_text = self._predict_raw(prompt, **kwargs)
-#         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
-#                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-#     # <--- ADD THE FOLLOWING METHOD:
-#     async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
-#         """LlamaIndex standard async method for streaming chat completion."""
-#         prompt = self._messages_to_prompt(messages)
-#         response_text = await self._apredict_raw(prompt, **kwargs)
-#         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
-#                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-#     # <--- ADD THE FOLLOWING METHOD:
-#     async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
-#         """LlamaIndex standard async method for streaming chat completion."""
-#         prompt = self._messages_to_prompt(messages)
-#         response_text = await self._apredict_raw(prompt, **kwargs)
-#         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
-#                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-class VertexAIGemmaLLM(LLM):
-    endpoint: aiplatform.Endpoint = Field(exclude=True)
-    model_name: str = Field(default="gemma-vertex-ai")
-
-    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any):
+    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any): # <--- MODIFIED: added **kwargs
+        # Pass all declared fields to the superclass's __init__
         super().__init__(
             endpoint=endpoint,
             model_name=model_name,
-            **kwargs
+            **kwargs # Pass any other arguments to the parent LLM class
         )
 
     @property
     def metadata(self) -> LLMMetadata:
+        """Get LLM metadata."""
         return LLMMetadata(
-            model_name=self.model_name,
+            model_name=self.model_name, # <--- CHANGE from self._model_name to self.model_name
             is_chat_model=False,
         )
 
     def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
+        """Extract and map common LLM parameters to Vertex AI's expected format."""
         params = {}
+        # Vertex AI often uses 'max_output_tokens' instead of 'max_tokens'
         if "max_tokens" in kwargs:
             params["max_output_tokens"] = kwargs.pop("max_tokens")
-        elif "max_new_tokens" in kwargs:
+        elif "max_new_tokens" in kwargs: # Support common alternative
             params["max_output_tokens"] = kwargs.pop("max_new_tokens")
         if "temperature" in kwargs:
             params["temperature"] = kwargs.pop("temperature")
-        if "top_k" in kwargs:
+        if "top_k" in kwargs: # Top-k sampling
             params["top_k"] = kwargs.pop("top_k")
-        if "top_p" in kwargs:
+        if "top_p" in kwargs: # Top-p sampling
             params["top_p"] = kwargs.pop("top_p")
+        # Add any other parameters your specific Vertex AI endpoint expects
+        # Example: 'candidate_count' for number of responses
         return params
 
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """DEBUG VERSION - see what model receives and returns"""
+        """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
         try:
+            # Prepare the request instances. The key for the prompt depends on the model's input signature.
+            # 'prompt' is common for text generation models.
             instances = [{"prompt": prompt}]
+            
+            # Extract and map parameters
             parameters = self._get_params(**kwargs)
-            
-            print(f"DEBUG - INPUT PROMPT: '{prompt}'")
-            print(f"DEBUG - INSTANCES: {instances}")
-            print(f"DEBUG - PARAMETERS: {parameters}")
 
+            # Call the Vertex AI endpoint
             response = self.endpoint.predict(instances=instances, parameters=parameters)
-            
-            print(f"DEBUG - RAW RESPONSE: {response}")
-            print(f"DEBUG - PREDICTIONS: {response.predictions}")
-            
+
+            # Process the response from Vertex AI
             prediction_data = response.predictions[0] if response.predictions else ""
-            print(f"DEBUG - PREDICTION DATA: {prediction_data}")
             
+            # The structure of `response.predictions` can vary.
+            # It might be a string, or a dictionary with a 'text' or 'content' key.
             if isinstance(prediction_data, dict):
-                print(f"DEBUG - DICT KEYS: {list(prediction_data.keys())}")
                 if "text" in prediction_data:
-                    result = prediction_data["text"]
-                elif "content" in prediction_data:
-                    result = prediction_data["content"]
-                elif "output" in prediction_data:
-                    result = prediction_data["output"]
+                    prediction = prediction_data["text"]
+                elif "content" in prediction_data: # Another common key
+                    prediction = prediction_data["content"]
                 else:
-                    result = str(prediction_data)
+                    prediction = str(prediction_data) # Fallback to string conversion
+            elif isinstance(prediction_data, str):
+                prediction = prediction_data
             else:
-                result = str(prediction_data)
-            
-            print(f"DEBUG - FINAL RESULT: '{result}'")
-            return result
-            
+                prediction = str(prediction_data) # General fallback if not string or dict
+
+            return prediction
         except Exception as e:
-            print(f"DEBUG - ERROR: {e}")
-            raise
+            logger.error(f"Error calling Vertex AI endpoint: {e}")
+            raise # Re-raise the exception to propagate it to LlamaIndex's error handling
 
     async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
+        """Internal asynchronous prediction method."""
+        # Use asyncio.to_thread to run the synchronous method in a thread pool.
+        # This is suitable if the underlying endpoint.predict is blocking.
         return await asyncio.to_thread(self._predict_raw, prompt, **kwargs)
 
+    # LlamaIndex's LLM interface requires `complete` and `acomplete` for text completion.
     def complete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
+        """LlamaIndex standard method for text completion."""
         text = self._predict_raw(prompt, **kwargs)
         return CompletionResponse(text=text)
 
     async def acomplete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
+        """LlamaIndex standard async method for text completion."""
         text = await self._apredict_raw(prompt, **kwargs)
         return CompletionResponse(text=text)
-
     def _messages_to_prompt(self, messages: List[ChatMessage]) -> str:
+        """Converts a list of ChatMessage to a single string prompt for a completion model."""
         prompt_parts = []
         for message in messages:
             if message.role == MessageRole.USER:
@@ -390,42 +253,53 @@ class VertexAIGemmaLLM(LLM):
                 prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.SYSTEM:
                 prompt_parts.append(f"<start_of_turn>system\n{message.content}<end_of_turn>")
-        prompt_parts.append(f"<start_of_turn>model\n")
+            # Add other roles if needed, or default to USER
+        prompt_parts.append(f"<start_of_turn>model\n") # This makes the model respond after the last turn
         return "\n".join(prompt_parts)
-
+    # <--- ADD THE FOLLOWING METHOD:
     def chat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
+        """LlamaIndex standard method for chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = self._predict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-
+    # <--- ADD THE FOLLOWING METHOD:
     async def achat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
+        """LlamaIndex standard async method for chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = await self._apredict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-
+    # <--- ADD THE FOLLOWING METHOD:
     def stream_complete(self, prompt: str, **kwargs: Any) -> Generator[CompletionResponse, None, None]:
+        """LlamaIndex standard method for streaming text completion."""
+        # As Vertex AI endpoint might not stream, simulate by yielding full response.
         text = self._predict_raw(prompt, **kwargs)
         yield CompletionResponse(text=text, delta=text)
-
+    # <--- ADD THE FOLLOWING METHOD:
     async def astream_complete(self, prompt: str, **kwargs: Any) -> AsyncGenerator[CompletionResponse, None]:
+        """LlamaIndex standard async method for streaming text completion."""
         text = await self._apredict_raw(prompt, **kwargs)
         yield CompletionResponse(text=text, delta=text)
-
+    # <--- ADD THE FOLLOWING METHOD:
     def stream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> Generator[ChatResponse, None, None]:
+        """LlamaIndex standard method for streaming chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = self._predict_raw(prompt, **kwargs)
-        yield ChatResponse(
-            message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
-            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text)
-        )
-
+        yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
+                           delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+    # <--- ADD THE FOLLOWING METHOD:
     async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
+        """LlamaIndex standard async method for streaming chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = await self._apredict_raw(prompt, **kwargs)
-        yield ChatResponse(
-            message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
-            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text)
-        )
+        yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
+                           delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+    # <--- ADD THE FOLLOWING METHOD:
+    async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
+        """LlamaIndex standard async method for streaming chat completion."""
+        prompt = self._messages_to_prompt(messages)
+        response_text = await self._apredict_raw(prompt, **kwargs)
+        yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
+                           delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
 
 # Setting LLMs - keep existing configuration
 llm = Gemini(
