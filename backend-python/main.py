@@ -321,7 +321,6 @@ class VertexAIGemmaLLM(LLM):
             is_chat_model=False,
         )
 
-    
     def _detect_json_request(self, prompt: str) -> bool:
         """Detect if the prompt is asking for JSON output."""
         json_indicators = [
@@ -396,7 +395,7 @@ class VertexAIGemmaLLM(LLM):
         return params
 
     def _clean_response(self, text: str, original_prompt: str, is_json_request: bool = False) -> str:
-        """Clean the response with special handling for JSON."""
+        """Clean the response, with special handling for JSON."""
         if not text:
             return text
         
@@ -512,22 +511,21 @@ class VertexAIGemmaLLM(LLM):
         if is_json_request:
             # Special formatting for JSON requests
             formatted_prompt = f"""<start_of_turn>user
-{prompt}
+            {prompt}
 
-CRITICAL: Output ONLY valid JSON. Start your response with {{ and end with }}.
-<end_of_turn>
-<start_of_turn>model
-{{"""  # Start with a brace to encourage JSON
+            CRITICAL: Output ONLY valid JSON. Start your response with {{ and end with }}.
+            <end_of_turn>
+            <start_of_turn>model"""
         else:
-            # Standard formatting for other requests
-            formatted_prompt = f"""<start_of_turn>user
-{prompt}
+                    # Standard formatting for other requests
+                    formatted_prompt = f"""<start_of_turn>user
+        {prompt}
 
-Provide your response below. Output ONLY what was requested, nothing else.
-<end_of_turn>
-<start_of_turn>model
-Output:"""
-        
+        Provide your response below. Output ONLY what was requested, nothing else.
+        <end_of_turn>
+        <start_of_turn>model
+        Output:"""
+                
         return formatted_prompt
 
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
@@ -549,17 +547,32 @@ Output:"""
             kwargs["_is_json_request"] = is_json_request
             parameters = self._get_params(**kwargs)
             
+            # Log for debugging
+            logger.debug(f"Is JSON request: {is_json_request}")
+            logger.debug(f"Formatted prompt: {formatted_prompt[:200]}...")
+            logger.debug(f"Parameters: {parameters}")
+
             # Call the Vertex AI endpoint
             response = self.endpoint.predict(instances=instances, parameters=parameters)
 
-            # Process the response
+            # Process the response from Vertex AI
             prediction_data = response.predictions[0] if response.predictions else ""
             
             # Extract text from response
             if isinstance(prediction_data, dict):
-                prediction = prediction_data.get("text", "") or prediction_data.get("content", "") or str(prediction_data)
+                if "text" in prediction_data:
+                    prediction = prediction_data["text"]
+                elif "content" in prediction_data:
+                    prediction = prediction_data["content"]
+                else:
+                    prediction = str(prediction_data)
+            elif isinstance(prediction_data, str):
+                prediction = prediction_data
             else:
                 prediction = str(prediction_data)
+
+            # Log raw response for debugging
+            logger.debug(f"Raw prediction: {prediction[:500]}...")
 
             # Clean the response with JSON awareness
             cleaned_prediction = self._clean_response(prediction, original_prompt, is_json_request)
@@ -571,10 +584,13 @@ Output:"""
                     import json
                     json.loads(cleaned_prediction)
                 except json.JSONDecodeError as e:
+                    logger.debug(f"JSON validation failed: {e}")
                     # Try one more aggressive fix
                     if '"next_node_id"' in cleaned_prediction and cleaned_prediction.count('"') % 2 != 0:
                         # Odd number of quotes, likely missing closing quote
                         cleaned_prediction = cleaned_prediction.rstrip() + '"}'
+            
+            logger.debug(f"Cleaned prediction: {cleaned_prediction[:200]}...")
             
             return cleaned_prediction
             
