@@ -319,91 +319,55 @@ class VertexAIGemmaLLM(LLM):
         )
 
     def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
-        """Minimal parameters - just like Gemini API"""
-        params = {
-            "temperature": 0.3,
-            "max_output_tokens": 100,
-        }
-        
-        # Override with user parameters if provided
+        params = {}
         if "max_tokens" in kwargs:
             params["max_output_tokens"] = kwargs.pop("max_tokens")
         elif "max_new_tokens" in kwargs:
             params["max_output_tokens"] = kwargs.pop("max_new_tokens")
         if "temperature" in kwargs:
             params["temperature"] = kwargs.pop("temperature")
-            
+        if "top_k" in kwargs:
+            params["top_k"] = kwargs.pop("top_k")
+        if "top_p" in kwargs:
+            params["top_p"] = kwargs.pop("top_p")
         return params
 
-    def _format_prompt_for_gemma(self, original_prompt: str) -> str:
-        """
-        NO FORMATTING - Just send the raw prompt
-        """
-        # Don't use any special formatting, just send raw prompt
-        return original_prompt
-
-    def _extract_clean_response(self, raw_response: str) -> str:
-        """
-        SIMPLE cleaning - just get the actual response
-        """
-        response = raw_response.strip()
-        
-        # Just remove basic tokens
-        response = response.replace("<start_of_turn>", "")
-        response = response.replace("<end_of_turn>", "")
-        response = response.replace("model", "")
-        
-        # Take first line that's not empty
-        lines = [line.strip() for line in response.split('\n') if line.strip()]
-        if lines:
-            return lines[0]
-            
-        return response
-
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """DEBUGGING VERSION - see what's actually happening"""
+        """DEBUG VERSION - see what model receives and returns"""
         try:
-            # Don't format anything, just send raw
-            instances = [{"input": prompt}]  # Try 'input' instead of 'prompt'
+            instances = [{"prompt": prompt}]
             parameters = self._get_params(**kwargs)
             
-            print(f"DEBUG - Sending prompt: {prompt}")
-            print(f"DEBUG - Instances: {instances}")
-            print(f"DEBUG - Parameters: {parameters}")
+            print(f"DEBUG - INPUT PROMPT: '{prompt}'")
+            print(f"DEBUG - INSTANCES: {instances}")
+            print(f"DEBUG - PARAMETERS: {parameters}")
 
             response = self.endpoint.predict(instances=instances, parameters=parameters)
             
-            print(f"DEBUG - Raw response: {response}")
-            print(f"DEBUG - Predictions: {response.predictions}")
+            print(f"DEBUG - RAW RESPONSE: {response}")
+            print(f"DEBUG - PREDICTIONS: {response.predictions}")
             
             prediction_data = response.predictions[0] if response.predictions else ""
+            print(f"DEBUG - PREDICTION DATA: {prediction_data}")
             
-            # Try different keys
             if isinstance(prediction_data, dict):
-                print(f"DEBUG - Prediction keys: {prediction_data.keys()}")
-                if "output" in prediction_data:
-                    raw_text = prediction_data["output"]
-                elif "text" in prediction_data:
-                    raw_text = prediction_data["text"]
+                print(f"DEBUG - DICT KEYS: {list(prediction_data.keys())}")
+                if "text" in prediction_data:
+                    result = prediction_data["text"]
                 elif "content" in prediction_data:
-                    raw_text = prediction_data["content"]
-                elif "generated_text" in prediction_data:
-                    raw_text = prediction_data["generated_text"]
+                    result = prediction_data["content"]
+                elif "output" in prediction_data:
+                    result = prediction_data["output"]
                 else:
-                    raw_text = str(prediction_data)
+                    result = str(prediction_data)
             else:
-                raw_text = str(prediction_data)
+                result = str(prediction_data)
             
-            print(f"DEBUG - Raw text: {raw_text}")
-            
-            clean_response = self._extract_clean_response(raw_text)
-            print(f"DEBUG - Clean response: {clean_response}")
-            
-            return clean_response
+            print(f"DEBUG - FINAL RESULT: '{result}'")
+            return result
             
         except Exception as e:
-            print(f"DEBUG - Error: {e}")
-            logger.error(f"Error calling Vertex AI endpoint: {e}")
+            print(f"DEBUG - ERROR: {e}")
             raise
 
     async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
@@ -418,27 +382,15 @@ class VertexAIGemmaLLM(LLM):
         return CompletionResponse(text=text)
 
     def _messages_to_prompt(self, messages: List[ChatMessage]) -> str:
-        """Converts chat messages to Gemma format"""
         prompt_parts = []
-        
-        # Add system message if present
-        system_msg = "You are a helpful AI assistant. Provide direct, concise responses."
-        for message in messages:
-            if message.role == MessageRole.SYSTEM:
-                system_msg = message.content
-                break
-        
-        prompt_parts.append(f"<start_of_turn>system\n{system_msg}<end_of_turn>")
-        
-        # Add conversation history
         for message in messages:
             if message.role == MessageRole.USER:
                 prompt_parts.append(f"<start_of_turn>user\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.ASSISTANT:
                 prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
-        
-        # End with model turn
-        prompt_parts.append("<start_of_turn>model\n")
+            elif message.role == MessageRole.SYSTEM:
+                prompt_parts.append(f"<start_of_turn>system\n{message.content}<end_of_turn>")
+        prompt_parts.append(f"<start_of_turn>model\n")
         return "\n".join(prompt_parts)
 
     def chat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
@@ -474,8 +426,6 @@ class VertexAIGemmaLLM(LLM):
             message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
             delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text)
         )
-
-
 # Setting LLMs - keep existing configuration
 llm = Gemini(
     model="models/gemini-2.0-flash",
