@@ -319,13 +319,10 @@ class VertexAIGemmaLLM(LLM):
         )
 
     def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
-        """Optimized parameters to make Gemma behave like Gemini API"""
+        """Minimal parameters - just like Gemini API"""
         params = {
-            "temperature": 0.0,        # Very low for deterministic responses like Gemini
-            "top_k": 1,               # Most focused responses
-            "top_p": 0.1,             # Very low for precision
-            "max_output_tokens": 200,  # Reasonable limit
-            "candidate_count": 1,      # Single response
+            "temperature": 0.3,
+            "max_output_tokens": 100,
         }
         
         # Override with user parameters if provided
@@ -335,127 +332,58 @@ class VertexAIGemmaLLM(LLM):
             params["max_output_tokens"] = kwargs.pop("max_new_tokens")
         if "temperature" in kwargs:
             params["temperature"] = kwargs.pop("temperature")
-        if "top_k" in kwargs:
-            params["top_k"] = kwargs.pop("top_k")
-        if "top_p" in kwargs:
-            params["top_p"] = kwargs.pop("top_p")
             
         return params
 
     def _format_prompt_for_gemma(self, original_prompt: str) -> str:
         """
-        Simplified format that prevents prompt echoing
+        NO FORMATTING - Just send the raw prompt
         """
-        # Much simpler format to avoid echoing
-        return f"""<start_of_turn>user
-            {original_prompt}
-            <end_of_turn>
-
-            <start_of_turn>model
-            """
+        # Don't use any special formatting, just send raw prompt
+        return original_prompt
 
     def _extract_clean_response(self, raw_response: str) -> str:
         """
-        Aggressively clean response to remove all prompt artifacts
+        SIMPLE cleaning - just get the actual response
         """
         response = raw_response.strip()
         
-        # Remove all Gemma formatting tokens
-        cleanup_tokens = [
-            "<start_of_turn>", "<end_of_turn>", "model", "user", "system",
-            "model\n", "user\n", "system\n", "\nmodel", "\nuser", "\nsystem"
-        ]
-        for token in cleanup_tokens:
-            response = response.replace(token, "")
+        # Just remove basic tokens
+        response = response.replace("<start_of_turn>", "")
+        response = response.replace("<end_of_turn>", "")
+        response = response.replace("model", "")
         
-        # Remove common artifacts that cause 'prompt:' issues
-        problematic_prefixes = [
-            "Prompt:", "prompt:", "PROMPT:", 
-            "Translation:", "translation:", "TRANSLATION:",
-            "Output:", "output:", "OUTPUT:",
-            "Response:", "response:", "RESPONSE:",
-            "Answer:", "answer:", "ANSWER:",
-            "Language code:", "language code:", "LANGUAGE CODE:",
-            "Translated text:", "translated text:", "TRANSLATED TEXT:",
-            "Result:", "result:", "RESULT:",
-            "Text:", "text:", "TEXT:"
-        ]
-        
-        # Split into lines for processing
-        lines = [line.strip() for line in response.split('\n')]
-        clean_lines = []
-        
-        for line in lines:
-            if not line:
-                continue
-                
-            # Skip lines that are just formatting
-            if line in ['```', '---', '===', '***', '...']:
-                continue
-            
-            # Remove problematic prefixes
-            original_line = line
-            for prefix in problematic_prefixes:
-                if line.lower().startswith(prefix.lower()):
-                    line = line[len(prefix):].strip()
-                    break
-            
-            # Remove quotes if entire line is quoted
-            if line.startswith('"') and line.endswith('"') and len(line) > 2:
-                line = line[1:-1]
-            if line.startswith("'") and line.endswith("'") and len(line) > 2:
-                line = line[1:-1]
-            
-            # Skip if line still contains prompt-like text
-            if any(word in line.lower() for word in ['prompt', 'translate the following', 'detect the language']):
-                continue
-                
-            # Skip very long lines that might contain the original prompt
-            if len(line) > 200:
-                continue
-            
-            if line and line != original_line:  # Only add if we actually cleaned something
-                clean_lines.append(line)
-                break  # Take first clean line
-            elif line and len(line) < 100:  # Or short lines that seem like actual responses
-                clean_lines.append(line)
-                break
-        
-        # If we found clean lines, return the first one
-        if clean_lines:
-            return clean_lines[0]
-        
-        # Fallback: if no clean lines found, try to extract from original response
-        # Look for patterns that indicate actual content
-        words = response.split()
-        if len(words) <= 10:  # Short responses are likely the answer
-            # Remove any remaining artifacts
-            clean_words = []
-            for word in words:
-                if not any(artifact in word.lower() for artifact in ['prompt', 'translation', 'output', 'response']):
-                    clean_words.append(word)
-            if clean_words:
-                return ' '.join(clean_words)
-        
-        # Last resort: return first few words if everything else fails
-        if words and len(words) > 0:
-            return ' '.join(words[:3])  # Just first 3 words
+        # Take first line that's not empty
+        lines = [line.strip() for line in response.split('\n') if line.strip()]
+        if lines:
+            return lines[0]
             
         return response
 
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """Enhanced prediction with Gemini-like behavior"""
+        """DEBUGGING VERSION - see what's actually happening"""
         try:
-            formatted_prompt = self._format_prompt_for_gemma(prompt)
-            instances = [{"prompt": formatted_prompt}]
+            # Don't format anything, just send raw
+            instances = [{"input": prompt}]  # Try 'input' instead of 'prompt'
             parameters = self._get_params(**kwargs)
+            
+            print(f"DEBUG - Sending prompt: {prompt}")
+            print(f"DEBUG - Instances: {instances}")
+            print(f"DEBUG - Parameters: {parameters}")
 
             response = self.endpoint.predict(instances=instances, parameters=parameters)
+            
+            print(f"DEBUG - Raw response: {response}")
+            print(f"DEBUG - Predictions: {response.predictions}")
+            
             prediction_data = response.predictions[0] if response.predictions else ""
             
-            # Extract text from response
+            # Try different keys
             if isinstance(prediction_data, dict):
-                if "text" in prediction_data:
+                print(f"DEBUG - Prediction keys: {prediction_data.keys()}")
+                if "output" in prediction_data:
+                    raw_text = prediction_data["output"]
+                elif "text" in prediction_data:
                     raw_text = prediction_data["text"]
                 elif "content" in prediction_data:
                     raw_text = prediction_data["content"]
@@ -466,12 +394,15 @@ class VertexAIGemmaLLM(LLM):
             else:
                 raw_text = str(prediction_data)
             
-            # Clean the response to match Gemini API behavior
+            print(f"DEBUG - Raw text: {raw_text}")
+            
             clean_response = self._extract_clean_response(raw_text)
+            print(f"DEBUG - Clean response: {clean_response}")
             
             return clean_response
             
         except Exception as e:
+            print(f"DEBUG - Error: {e}")
             logger.error(f"Error calling Vertex AI endpoint: {e}")
             raise
 
@@ -543,6 +474,7 @@ class VertexAIGemmaLLM(LLM):
             message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
             delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text)
         )
+
 
 # Setting LLMs - keep existing configuration
 llm = Gemini(
