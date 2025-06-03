@@ -301,383 +301,175 @@ endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea
 #         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
 #                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
 
-class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
-    endpoint: aiplatform.Endpoint = Field(exclude=True) # Declare 'endpoint' as a Pydantic field, exclude from serialization
-    model_name: str = Field(default="gemma-vertex-ai") # Declare 'model_name' as a Pydantic field
+class VertexAIGemmaLLM(LLM):
+    endpoint: aiplatform.Endpoint = Field(exclude=True)
+    model_name: str = Field(default="gemma-vertex-ai")
 
-    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any): # <--- MODIFIED: added **kwargs
-        # Pass all declared fields to the superclass's __init__
-        super().__init__(
-            endpoint=endpoint,
-            model_name=model_name,
-            **kwargs # Pass any other arguments to the parent LLM class
-        )
+    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any):
+        super().__init__(endpoint=endpoint, model_name=model_name, **kwargs)
 
     @property
     def metadata(self) -> LLMMetadata:
-        """Get LLM metadata."""
-        return LLMMetadata(
-            model_name=self.model_name, # <--- CHANGE from self._model_name to self.model_name
-            is_chat_model=False,
-        )
+        return LLMMetadata(model_name=self.model_name, is_chat_model=False)
 
     def _detect_json_request(self, prompt: str) -> bool:
-        """Detect if the prompt is asking for JSON output."""
         json_indicators = [
-            "return the response as a json object",
-            "return a json",
-            "respond with json",
-            "output json",
-            "format: json",
-            "return your analysis as a json object",
-            "json format",
-            "```json"
+            "return the response as a json object", "return a json", "respond with json",
+            "output json", "format: json", "return your analysis as a json object",
+            "json format", "```json"
         ]
-        prompt_lower = prompt.lower()
-        return any(indicator in prompt_lower for indicator in json_indicators)
+        return any(indicator in prompt.lower() for indicator in json_indicators)
 
     def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
-        """Extract and map common LLM parameters to Vertex AI's expected format."""
         params = {}
-        
-        # Check if this is a JSON request from the prompt
         is_json_request = kwargs.pop("_is_json_request", False)
-        
-        # Vertex AI often uses 'max_output_tokens' instead of 'max_tokens'
-        if "max_tokens" in kwargs:
-            params["max_output_tokens"] = kwargs.pop("max_tokens")
-        elif "max_new_tokens" in kwargs: # Support common alternative
-            params["max_output_tokens"] = kwargs.pop("max_new_tokens")
-        else:
-            # Higher limit for JSON responses to avoid truncation
-            params["max_output_tokens"] = 2048 if is_json_request else 1024
-            
-        # Temperature control
-        if "temperature" in kwargs:
-            params["temperature"] = kwargs.pop("temperature")
-        else:
-            params["temperature"] = 0.1  # Very low for deterministic outputs
-            
-        if "top_k" in kwargs: # Top-k sampling
-            params["top_k"] = kwargs.pop("top_k")
-        else:
-            params["top_k"] = 10  # Restrictive top-k
-            
-        if "top_p" in kwargs: # Top-p sampling
-            params["top_p"] = kwargs.pop("top_p")
-        else:
-            params["top_p"] = 0.8  # More restrictive top-p
-            
-        # Add stop sequences - but be careful with JSON requests
-        if "stop_sequences" in kwargs:
-            params["stop_sequences"] = kwargs.pop("stop_sequences")
-        elif not is_json_request:
-            # Only use aggressive stop sequences for non-JSON requests
-            params["stop_sequences"] = [
-                "\n\n\n",
-                "<end>",
-                "</end>",
-                "User:",
-                "Human:",
-                "Assistant:",
-                "<start_of_turn>",
-                "IMPORTANT:",
-                "Instructions:",
-                "CRITICAL:"
-            ]
-        else:
-            # For JSON requests, use minimal stop sequences to avoid cutting off the response
-            params["stop_sequences"] = [
-                "\n\n\n\n",  # 4 newlines instead of 3
-                "<start_of_turn>user",  # Only stop at next user turn
-            ]
-            
+        params["max_output_tokens"] = kwargs.pop("max_tokens", 4096 if is_json_request else 1024)
+        params["temperature"] = kwargs.pop("temperature", 0.2)  # Slightly higher for flexibility
+        params["top_k"] = kwargs.pop("top_k", 5)
+        params["top_p"] = kwargs.pop("top_p", 0.7)
+        params["stop_sequences"] = kwargs.pop("stop_sequences", ["\n\n\n\n\n", "<start_of_turn>user"])
         return params
 
+    def _extract_json(self, text: str) -> str:
+        """Extract the first complete JSON object from the response."""
+        brace_level = 0
+        in_string = False
+        json_start = -1
+        for i, char in enumerate(text):
+            if char == '"' and not in_string:
+                in_string = True
+            elif char == '"' and in_string:
+                in_string = False
+            elif char == '{' and not in_string:
+                if brace_level == 0:
+                    json_start = i
+                brace_level += 1
+            elif char == '}' and not in_string:
+                brace_level -= 1
+                if brace_level == 0 and json_start != -1:
+                    return text[json_start:i+1]
+        return text  # Fallback to original if no complete JSON found
+
     def _clean_response(self, text: str, original_prompt: str, is_json_request: bool = False) -> str:
-        """Clean the response, with special handling for JSON."""
         if not text:
             return text
-        
-        # For JSON requests, try to extract and fix JSON first
         if is_json_request:
-            # Try to find JSON content
-            json_start = text.find('{')
-            json_end = text.rfind('}')
-            
-            if json_start != -1:
-                if json_end == -1 or json_end < json_start:
-                    # JSON is incomplete, try to complete it
-                    json_content = text[json_start:]
-                    
-                    # Count open braces and try to close them
-                    open_braces = json_content.count('{') - json_content.count('}')
-                    if open_braces > 0:
-                        # Check if we're in the middle of a string
-                        if json_content.rstrip().endswith('"node'):
-                            json_content = json_content + '_1"'  # Complete the node ID
-                        
-                        # Add missing closing braces
-                        json_content += '}' * open_braces
-                        
-                    return json_content.strip()
-                else:
-                    # Extract the JSON portion
-                    return text[json_start:json_end+1].strip()
-        
-        # For non-JSON, use the original cleaning logic
-        # First, try to extract content after known output markers
-        output_markers = [
-            "Output:",
-            "Response:",
-            "Translation:",
-            "Answer:",
-            "Result:",
-            "ISO code:",
-            "Language code:",
-            # Model turn markers
-            "<start_of_turn>model",
-            "<end_of_turn>",
-        ]
-        
-        # Find the last occurrence of any output marker
+            json_content = self._extract_json(text)
+            if json_content:
+                try:
+                    import json
+                    parsed = json.loads(json_content)
+                    return json.dumps(parsed)
+                except json.JSONDecodeError:
+                    # Fallback to original method if extraction fails
+                    json_start = text.find('{')
+                    if json_start != -1:
+                        json_content = text[json_start:]
+                        open_braces = json_content.count('{') - json_content.count('}')
+                        if open_braces > 0:
+                            json_content += '}' * open_braces
+                        return json_content.strip()
+            return text.strip()
+        # Non-JSON cleaning (unchanged)
+        output_markers = ["Output:", "Response:", "<start_of_turn>model", "<end_of_turn>"]
         last_marker_pos = -1
-        marker_used = None
         for marker in output_markers:
             pos = text.rfind(marker)
             if pos > last_marker_pos:
                 last_marker_pos = pos
-                marker_used = marker
-        
-        if last_marker_pos != -1:
-            # Extract content after the marker
-            text = text[last_marker_pos + len(marker_used):].strip()
-            
-            # Find where the actual output ends
-            end_markers = [
-                "\n\n\n",
-                "IMPORTANT:",
-                "Instructions:",
-                "User message:",
-                "Patient Profile",
-                "Original Response",
-                "<start_of_turn>",
-                "NOTE:",
-                "CRITICAL:",
-                "MUST Format"
-            ]
-            
-            end_pos = len(text)
-            for end_marker in end_markers:
-                pos = text.find(end_marker)
-                if pos != -1 and pos < end_pos:
-                    end_pos = pos
-            
-            text = text[:end_pos].strip()
-        
-        # Remove any remaining prompt echo at the beginning
-        prompt_indicators = [
-            "Translate the following",
-            "Detect the language",
-            "Return ONLY",
-            "IMPORTANT:",
-            "Task:",
-            "Input:",
-            "Prompt:",
-            "Question:",
-            "Instruction:",
-            "You are",
-            "I need to",
-            "Format your response"
-        ]
-        
-        lines = text.split('\n')
-        start_line = 0
-        for i, line in enumerate(lines):
-            if any(indicator in line for indicator in prompt_indicators):
-                start_line = i + 1
-        
-        if start_line > 0 and start_line < len(lines):
-            text = '\n'.join(lines[start_line:]).strip()
-        
-        # Clean up quotes if the entire response is quoted
+                text = text[pos + len(marker):].strip()
         if len(text) > 2 and text[0] == text[-1] and text[0] in ['"', "'"]:
             text = text[1:-1]
-        
         return text.strip()
 
     def _format_prompt_for_gemma(self, prompt: str, is_json_request: bool = False) -> str:
-        """Format the prompt to maximize Gemma's instruction following."""
         if is_json_request:
-            # Special formatting for JSON requests
-            formatted_prompt = f"""<start_of_turn>user
+            return f"""<start_of_turn>user
 {prompt}
 
-CRITICAL: Output ONLY valid JSON. Start your response with {{ and end with }}.
+CRITICAL: Output ONLY a valid JSON object. Do not include any explanations, instructions, or additional text outside the JSON. Start with {{ and end with }}.
+Example:
+{{
+  "next_node_id": "node_1"
+}}
 <end_of_turn>
-<start_of_turn>model"""
-        else:
-            # Standard formatting for other requests
-            formatted_prompt = f"""<start_of_turn>user
+<start_of_turn>model
+{{"""
+        return f"""<start_of_turn>user
 {prompt}
-
-Provide your response below. Output ONLY what was requested, nothing else.
+Provide your response below.
 <end_of_turn>
 <start_of_turn>model
 Output:"""
-        
-        return formatted_prompt
 
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
         try:
-            # Store original prompt for cleaning
-            original_prompt = prompt
-            
-            # Detect if this is a JSON request
             is_json_request = self._detect_json_request(prompt)
-            
-            # Format prompt for Gemma
             formatted_prompt = self._format_prompt_for_gemma(prompt, is_json_request)
-            
-            # Prepare the request instances
             instances = [{"prompt": formatted_prompt}]
-            
-            # Get parameters with JSON awareness
             kwargs["_is_json_request"] = is_json_request
             parameters = self._get_params(**kwargs)
-            
-            # Log for debugging
-            logger.debug(f"Is JSON request: {is_json_request}")
-            logger.debug(f"Formatted prompt: {formatted_prompt[:200]}...")
-            logger.debug(f"Parameters: {parameters}")
-
-            # Call the Vertex AI endpoint
             response = self.endpoint.predict(instances=instances, parameters=parameters)
-
-            # Process the response from Vertex AI
-            prediction_data = response.predictions[0] if response.predictions else ""
-            
-            # Extract text from response
-            if isinstance(prediction_data, dict):
-                if "text" in prediction_data:
-                    prediction = prediction_data["text"]
-                elif "content" in prediction_data:
-                    prediction = prediction_data["content"]
-                else:
-                    prediction = str(prediction_data)
-            elif isinstance(prediction_data, str):
-                prediction = prediction_data
-            else:
-                prediction = str(prediction_data)
-
-            # Log raw response for debugging
-            logger.debug(f"Raw prediction: {prediction[:500]}...")
-
-            # Clean the response with JSON awareness
-            cleaned_prediction = self._clean_response(prediction, original_prompt, is_json_request)
-            
-            # For JSON requests, validate and fix if needed
-            if is_json_request and cleaned_prediction:
-                try:
-                    # Try to parse to validate
-                    import json
-                    json.loads(cleaned_prediction)
-                except json.JSONDecodeError as e:
-                    logger.debug(f"JSON validation failed: {e}")
-                    # Try one more aggressive fix
-                    if '"next_node_id"' in cleaned_prediction and cleaned_prediction.count('"') % 2 != 0:
-                        # Odd number of quotes, likely missing closing quote
-                        cleaned_prediction = cleaned_prediction.rstrip() + '"}'
-            
-            logger.debug(f"Cleaned prediction: {cleaned_prediction[:200]}...")
-            
-            return cleaned_prediction
-            
+            prediction = response.predictions[0] if response.predictions else ""
+            if isinstance(prediction, dict):
+                prediction = prediction.get("text", str(prediction))
+            return self._clean_response(prediction, prompt, is_json_request)
         except Exception as e:
             logger.error(f"Error calling Vertex AI endpoint: {e}")
             raise
 
     async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """Internal asynchronous prediction method."""
-        # Use asyncio.to_thread to run the synchronous method in a thread pool.
-        # This is suitable if the underlying endpoint.predict is blocking.
         return await asyncio.to_thread(self._predict_raw, prompt, **kwargs)
 
-    # LlamaIndex's LLM interface requires `complete` and `acomplete` for text completion.
     def complete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
-        """LlamaIndex standard method for text completion."""
         text = self._predict_raw(prompt, **kwargs)
         return CompletionResponse(text=text)
 
     async def acomplete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
-        """LlamaIndex standard async method for text completion."""
         text = await self._apredict_raw(prompt, **kwargs)
         return CompletionResponse(text=text)
-        
+
     def _messages_to_prompt(self, messages: List[ChatMessage]) -> str:
-        """Converts a list of ChatMessage to a single string prompt for a completion model."""
         prompt_parts = []
-        
-        # Process messages
         for message in messages:
             if message.role == MessageRole.USER:
                 prompt_parts.append(f"<start_of_turn>user\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.ASSISTANT:
                 prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.SYSTEM:
-                # Put system message at the beginning with clear instructions
-                system_content = f"System: {message.content}\nFollow the system instructions carefully and provide only the requested output."
-                prompt_parts.insert(0, f"<start_of_turn>system\n{system_content}<end_of_turn>")
-        
-        # Add model turn with output instruction
-        prompt_parts.append("<start_of_turn>model\nOutput:")
-        
+                prompt_parts.append(f"<start_of_turn>system\n{message.content}<end_of_turn>")
+        prompt_parts.append("<start_of_turn>model\n")
         return "\n".join(prompt_parts)
-        
-    # <--- ADD THE FOLLOWING METHOD:
+
     def chat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
-        """LlamaIndex standard method for chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = self._predict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-        
-    # <--- ADD THE FOLLOWING METHOD:
+
     async def achat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
-        """LlamaIndex standard async method for chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = await self._apredict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-        
-    # <--- ADD THE FOLLOWING METHOD:
+
     def stream_complete(self, prompt: str, **kwargs: Any) -> Generator[CompletionResponse, None, None]:
-        """LlamaIndex standard method for streaming text completion."""
-        # As Vertex AI endpoint might not stream, simulate by yielding full response.
         text = self._predict_raw(prompt, **kwargs)
         yield CompletionResponse(text=text, delta=text)
-        
-    # <--- ADD THE FOLLOWING METHOD:
+
     async def astream_complete(self, prompt: str, **kwargs: Any) -> AsyncGenerator[CompletionResponse, None]:
-        """LlamaIndex standard async method for streaming text completion."""
         text = await self._apredict_raw(prompt, **kwargs)
         yield CompletionResponse(text=text, delta=text)
-        
-    # <--- ADD THE FOLLOWING METHOD:
+
     def stream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> Generator[ChatResponse, None, None]:
-        """LlamaIndex standard method for streaming chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = self._predict_raw(prompt, **kwargs)
         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-                           
-    # <--- ADD THE FOLLOWING METHOD:
+
     async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
-        """LlamaIndex standard async method for streaming chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = await self._apredict_raw(prompt, **kwargs)
         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-                           
 # Setting LLMs - keep existing configuration
 llm = Gemini(
     model="models/gemini-2.0-flash",
