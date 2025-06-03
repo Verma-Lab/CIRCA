@@ -330,135 +330,195 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
             params["max_output_tokens"] = kwargs.pop("max_new_tokens")
         else:
             # Set a reasonable default for focused outputs
-            params["max_output_tokens"] = 512
+            params["max_output_tokens"] = 1024
             
-        # Temperature control - lower for more focused outputs
+        # Temperature control - much lower for instruction following
         if "temperature" in kwargs:
             params["temperature"] = kwargs.pop("temperature")
         else:
-            params["temperature"] = 0.3  # Default to lower temperature
+            params["temperature"] = 0.1  # Very low for deterministic outputs
             
         if "top_k" in kwargs: # Top-k sampling
             params["top_k"] = kwargs.pop("top_k")
         else:
-            params["top_k"] = 40
+            params["top_k"] = 10  # Restrictive top-k
             
         if "top_p" in kwargs: # Top-p sampling
             params["top_p"] = kwargs.pop("top_p")
         else:
-            params["top_p"] = 0.95
+            params["top_p"] = 0.8  # More restrictive top-p
             
-        # Add stop sequences to prevent rambling
+        # Add stop sequences
         if "stop_sequences" in kwargs:
             params["stop_sequences"] = kwargs.pop("stop_sequences")
         else:
-            # Common stop sequences that work across different prompt types
             params["stop_sequences"] = [
                 "\n\n\n",
                 "<end>",
-                "</response>",
-                "---",
-                "###"
+                "</end>",
+                "User:",
+                "Human:",
+                "Assistant:",
+                "<start_of_turn>",
+                "<end_of_turn>",
+                "IMPORTANT:",
+                "Instructions:",
+                "CRITICAL:"
             ]
             
-        # Add any other parameters your specific Vertex AI endpoint expects
-        # Example: 'candidate_count' for number of responses
         return params
 
     def _clean_response(self, text: str, original_prompt: str) -> str:
-        """Clean the response to remove echoed prompts and artifacts."""
+        """Aggressively clean the response to extract only the relevant output."""
         if not text:
             return text
             
-        # Remove the original prompt if it's echoed at the beginning
-        text = text.strip()
+        # First, try to extract content after known output markers
+        output_markers = [
+            "Output:",
+            "Response:",
+            "Translation:",
+            "Answer:",
+            "Result:",
+            "ISO code:",
+            "Language code:",
+            # JSON response markers
+            '```json',
+            "Return the response as a JSON object:",
+            "Return your analysis as a JSON object:",
+            # Model turn markers
+            "<start_of_turn>model",
+            "<end_of_turn>",
+        ]
         
-        # Check if response starts with common prompt patterns and remove them
+        # Find the last occurrence of any output marker
+        last_marker_pos = -1
+        marker_used = None
+        for marker in output_markers:
+            pos = text.rfind(marker)
+            if pos > last_marker_pos:
+                last_marker_pos = pos
+                marker_used = marker
+        
+        if last_marker_pos != -1:
+            # Extract content after the marker
+            text = text[last_marker_pos + len(marker_used):].strip()
+            
+            # Handle JSON blocks specially
+            if marker_used == '```json':
+                if '```' in text:
+                    text = text[:text.find('```')].strip()
+            
+            # For other markers, take until the next instruction marker or end
+            else:
+                # Find where the actual output ends
+                end_markers = [
+                    "\n\n\n",
+                    "IMPORTANT:",
+                    "Instructions:",
+                    "User message:",
+                    "Patient Profile",
+                    "Original Response",
+                    "<start_of_turn>",
+                    "NOTE:",
+                    "CRITICAL:",
+                    "MUST Format"
+                ]
+                
+                end_pos = len(text)
+                for end_marker in end_markers:
+                    pos = text.find(end_marker)
+                    if pos != -1 and pos < end_pos:
+                        end_pos = pos
+                
+                text = text[:end_pos].strip()
+        
+        # Remove any remaining prompt echo at the beginning
         prompt_indicators = [
-            "Prompt:",
-            "Input:",
-            "Question:",
+            "Translate the following",
+            "Detect the language",
+            "Return ONLY",
+            "IMPORTANT:",
             "Task:",
+            "Input:",
+            "Prompt:",
+            "Question:",
             "Instruction:",
-            "User:",
-            "Human:"
+            "You are",
+            "I need to",
+            "Format your response"
         ]
         
         lines = text.split('\n')
-        cleaned_lines = []
-        skip_until_output = False
-        
+        start_line = 0
         for i, line in enumerate(lines):
-            line_lower = line.strip().lower()
-            
-            # Check if this line contains prompt echo indicators
-            if any(indicator.lower() in line_lower for indicator in prompt_indicators):
-                skip_until_output = True
-                continue
-                
-            # Check for output indicators that signal actual response
-            output_indicators = [
-                "output:",
-                "response:",
-                "answer:",
-                "result:",
-                "translation:",
-                "model:",
-                "assistant:"
-            ]
-            
-            if skip_until_output and any(indicator in line_lower for indicator in output_indicators):
-                skip_until_output = False
-                # Skip the output indicator line itself
-                continue
-                
-            if not skip_until_output:
-                cleaned_lines.append(line)
+            if any(indicator in line for indicator in prompt_indicators):
+                start_line = i + 1
         
-        text = '\n'.join(cleaned_lines).strip()
+        if start_line > 0 and start_line < len(lines):
+            text = '\n'.join(lines[start_line:]).strip()
         
-        # Remove any remaining wrapper patterns
-        # Handle markdown code blocks
+        # Clean up quotes if the entire response is quoted
+        if len(text) > 2 and text[0] == text[-1] and text[0] in ['"', "'"]:
+            text = text[1:-1]
+        
+        # Remove markdown code block markers
         if text.startswith('```') and text.endswith('```'):
             text = text[3:-3].strip()
-            # Remove language identifier if present
+            # Remove language identifier
             if '\n' in text:
                 first_line = text.split('\n')[0]
                 if not ' ' in first_line and len(first_line) < 20:
                     text = '\n'.join(text.split('\n')[1:])
         
-        # Remove quotes if the entire response is quoted
-        if len(text) > 2 and text[0] == text[-1] and text[0] in ['"', "'"]:
-            text = text[1:-1]
-            
+        # Final cleanup - remove any text that looks like instructions
+        if "provide ONLY the requested output" in text.lower():
+            parts = text.lower().split("provide only the requested output")
+            if len(parts) > 1 and parts[0].strip():
+                text = parts[0].strip()
+        
+        # If we still have instruction-like content, try to extract just the first substantive line
+        if any(marker in text for marker in ["IMPORTANT:", "CRITICAL:", "Instructions:"]):
+            lines = text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if line and not any(marker in line for marker in ["IMPORTANT:", "CRITICAL:", "Instructions:", "NOTE:"]):
+                    text = line
+                    break
+        
         return text.strip()
 
-    def _format_prompt_for_instruction_following(self, prompt: str) -> str:
-        """Format prompt to maximize instruction following."""
-        # Add clear instruction wrapper to help Gemma understand it should follow instructions
+    def _format_prompt_for_gemma(self, prompt: str) -> str:
+        """Format the prompt to maximize Gemma's instruction following."""
+        # Add very clear boundaries and instructions
         formatted_prompt = f"""<start_of_turn>user
 {prompt}
 
-IMPORTANT: Provide ONLY the requested output. Do not include explanations, examples, or additional context unless specifically asked.
+Provide your response below. Output ONLY what was requested, nothing else.
 <end_of_turn>
-<start_of_turn>model"""
+<start_of_turn>model
+Output:"""
         
         return formatted_prompt
 
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
         """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
         try:
-            # Store original prompt for cleaning later
+            # Store original prompt for cleaning
             original_prompt = prompt
             
-            # Format prompt for better instruction following
-            formatted_prompt = self._format_prompt_for_instruction_following(prompt)
+            # Format prompt for Gemma
+            formatted_prompt = self._format_prompt_for_gemma(prompt)
             
             # Prepare the request instances
             instances = [{"prompt": formatted_prompt}]
             
-            # Extract and map parameters with good defaults
+            # Get parameters with restrictive defaults
             parameters = self._get_params(**kwargs)
+            
+            # Log for debugging
+            logger.debug(f"Formatted prompt: {formatted_prompt[:200]}...")
+            logger.debug(f"Parameters: {parameters}")
 
             # Call the Vertex AI endpoint
             response = self.endpoint.predict(instances=instances, parameters=parameters)
@@ -470,23 +530,33 @@ IMPORTANT: Provide ONLY the requested output. Do not include explanations, examp
             if isinstance(prediction_data, dict):
                 if "text" in prediction_data:
                     prediction = prediction_data["text"]
-                elif "content" in prediction_data: # Another common key
+                elif "content" in prediction_data:
                     prediction = prediction_data["content"]
                 else:
-                    prediction = str(prediction_data) # Fallback to string conversion
+                    prediction = str(prediction_data)
             elif isinstance(prediction_data, str):
                 prediction = prediction_data
             else:
-                prediction = str(prediction_data) # General fallback if not string or dict
+                prediction = str(prediction_data)
 
-            # Clean the response
+            # Log raw response for debugging
+            logger.debug(f"Raw prediction: {prediction[:200]}...")
+
+            # Aggressively clean the response
             cleaned_prediction = self._clean_response(prediction, original_prompt)
+            
+            # If still too long or contains instructions, take first substantive part
+            if len(cleaned_prediction) > 500 and "instruction" in cleaned_prediction.lower():
+                lines = cleaned_prediction.split('\n')
+                cleaned_prediction = lines[0].strip() if lines else cleaned_prediction
+            
+            logger.debug(f"Cleaned prediction: {cleaned_prediction[:200]}...")
             
             return cleaned_prediction
             
         except Exception as e:
             logger.error(f"Error calling Vertex AI endpoint: {e}")
-            raise # Re-raise the exception to propagate it to LlamaIndex's error handling
+            raise
 
     async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
         """Internal asynchronous prediction method."""
@@ -509,24 +579,19 @@ IMPORTANT: Provide ONLY the requested output. Do not include explanations, examp
         """Converts a list of ChatMessage to a single string prompt for a completion model."""
         prompt_parts = []
         
-        # Add system message handling for better instruction following
-        system_message = None
-        
+        # Process messages
         for message in messages:
-            if message.role == MessageRole.SYSTEM:
-                system_message = message.content
-            elif message.role == MessageRole.USER:
+            if message.role == MessageRole.USER:
                 prompt_parts.append(f"<start_of_turn>user\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.ASSISTANT:
                 prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
-                
-        # If there's a system message, prepend it with clear instructions
-        if system_message:
-            formatted_system = f"<start_of_turn>system\nFollow these instructions carefully: {system_message}<end_of_turn>\n"
-            prompt_parts.insert(0, formatted_system)
-            
-        # Add the model turn indicator
-        prompt_parts.append(f"<start_of_turn>model")
+            elif message.role == MessageRole.SYSTEM:
+                # Put system message at the beginning with clear instructions
+                system_content = f"System: {message.content}\nFollow the system instructions carefully and provide only the requested output."
+                prompt_parts.insert(0, f"<start_of_turn>system\n{system_content}<end_of_turn>")
+        
+        # Add model turn with output instruction
+        prompt_parts.append("<start_of_turn>model\nOutput:")
         
         return "\n".join(prompt_parts)
         
@@ -572,6 +637,7 @@ IMPORTANT: Provide ONLY the requested output. Do not include explanations, examp
         response_text = await self._apredict_raw(prompt, **kwargs)
         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+
 # Setting LLMs - keep existing configuration
 llm = Gemini(
     model="models/gemini-2.0-flash",
