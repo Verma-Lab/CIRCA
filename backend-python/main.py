@@ -27,8 +27,11 @@ import nest_asyncio
 # nest_asyncio.apply()
 
 import pickle
+from typing import Generator, AsyncGenerator # <--- ADD THIS LINE
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.core.llms import LLM, CompletionResponse
+from llama_index.core.base.llms.types import LLMMetadata, ChatMessage, MessageRole, DeltaCompletionResponse, DeltaChatResponse # <--- ADD THIS LINE
+
 from llama_index.core.base.llms.types import LLMMetadata
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Integer, Float, Boolean, DateTime, ForeignKey
 from sqlalchemy import func
@@ -236,7 +239,64 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
         """LlamaIndex standard async method for text completion."""
         text = await self._apredict_raw(prompt, **kwargs)
         return CompletionResponse(text=text)
-        
+    def _messages_to_prompt(self, messages: List[ChatMessage]) -> str:
+        """Converts a list of ChatMessage to a single string prompt for a completion model."""
+        prompt_parts = []
+        for message in messages:
+            if message.role == MessageRole.USER:
+                prompt_parts.append(f"<start_of_turn>user\n{message.content}<end_of_turn>")
+            elif message.role == MessageRole.ASSISTANT:
+                prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
+            elif message.role == MessageRole.SYSTEM:
+                prompt_parts.append(f"<start_of_turn>system\n{message.content}<end_of_turn>")
+            # Add other roles if needed, or default to USER
+        prompt_parts.append(f"<start_of_turn>model\n") # This makes the model respond after the last turn
+        return "\n".join(prompt_parts)
+    # <--- ADD THE FOLLOWING METHOD:
+    def chat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
+        """LlamaIndex standard method for chat completion."""
+        prompt = self._messages_to_prompt(messages)
+        response_text = self._predict_raw(prompt, **kwargs)
+        return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+    # <--- ADD THE FOLLOWING METHOD:
+    async def achat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
+        """LlamaIndex standard async method for chat completion."""
+        prompt = self._messages_to_prompt(messages)
+        response_text = await self._apredict_raw(prompt, **kwargs)
+        return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+    # <--- ADD THE FOLLOWING METHOD:
+    def stream_complete(self, prompt: str, **kwargs: Any) -> Generator[CompletionResponse, None, None]:
+        """LlamaIndex standard method for streaming text completion."""
+        # As Vertex AI endpoint might not stream, simulate by yielding full response.
+        text = self._predict_raw(prompt, **kwargs)
+        yield CompletionResponse(text=text, delta=text)
+    # <--- ADD THE FOLLOWING METHOD:
+    async def astream_complete(self, prompt: str, **kwargs: Any) -> AsyncGenerator[CompletionResponse, None]:
+        """LlamaIndex standard async method for streaming text completion."""
+        text = await self._apredict_raw(prompt, **kwargs)
+        yield CompletionResponse(text=text, delta=text)
+    # <--- ADD THE FOLLOWING METHOD:
+    def stream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> Generator[ChatResponse, None, None]:
+        """LlamaIndex standard method for streaming chat completion."""
+        prompt = self._messages_to_prompt(messages)
+        response_text = self._predict_raw(prompt, **kwargs)
+        yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
+                           delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+    # <--- ADD THE FOLLOWING METHOD:
+    async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
+        """LlamaIndex standard async method for streaming chat completion."""
+        prompt = self._messages_to_prompt(messages)
+        response_text = await self._apredict_raw(prompt, **kwargs)
+        yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
+                           delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+    # <--- ADD THE FOLLOWING METHOD:
+    async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
+        """LlamaIndex standard async method for streaming chat completion."""
+        prompt = self._messages_to_prompt(messages)
+        response_text = await self._apredict_raw(prompt, **kwargs)
+        yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
+                           delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
+
 # Setting LLMs - keep existing configuration
 llm = Gemini(
     model="models/gemini-2.0-flash",
