@@ -367,10 +367,15 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
             else:
                 prediction = str(prediction_data)
 
+            # Log the raw output before extraction
+            logger.info(f"Raw Vertex AI output: {prediction}")
+
             # Extract text after "Output:"
             output_marker = "Output:"
             if output_marker in prediction:
                 prediction = prediction.split(output_marker, 1)[1].strip()
+            else:
+                logger.warning(f"'Output:' marker not found in response: {prediction}")
             
             return prediction
         except Exception as e:
