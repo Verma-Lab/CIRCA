@@ -426,6 +426,7 @@ class VertexAIGemmaLLM(LLM):
             message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
             delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text)
         )
+
 # Setting LLMs - keep existing configuration
 llm = Gemini(
     model="models/gemini-2.0-flash",
