@@ -31,6 +31,7 @@ from typing import Generator, AsyncGenerator # <--- ADD THIS LINE
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.core.base.llms.types import LLMMetadata, ChatMessage, MessageRole # <--- CHANGED THIS LINE
 from llama_index.core.llms import LLM, CompletionResponse, ChatResponse # <--- ADDED ChatResponse here
+
 from llama_index.core.base.llms.types import LLMMetadata
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Integer, Float, Boolean, DateTime, ForeignKey
 from sqlalchemy import func
@@ -154,19 +155,23 @@ endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea
 
 # Custom class to wrap the Vertex AI endpoint as an LLM
 class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
-    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai"):
-        super().__init__() # Initialize the base LLM class
-        self.endpoint = endpoint
-        self._model_name = model_name
+    endpoint: aiplatform.Endpoint = Field(exclude=True) # Declare 'endpoint' as a Pydantic field, exclude from serialization
+    model_name: str = Field(default="gemma-vertex-ai") # Declare 'model_name' as a Pydantic field
+
+    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any): # <--- MODIFIED: added **kwargs
+        # Pass all declared fields to the superclass's __init__
+        super().__init__(
+            endpoint=endpoint,
+            model_name=model_name,
+            **kwargs # Pass any other arguments to the parent LLM class
+        )
 
     @property
     def metadata(self) -> LLMMetadata:
         """Get LLM metadata."""
         return LLMMetadata(
-            model_name=self._model_name,
-            # Vertex AI models often have a context window, you can set it if known.
-            # Example: num_context_window=2048,
-            is_chat_model=False, # Assuming it's a completion model based on original `predict` signature
+            model_name=self.model_name, # <--- CHANGE from self._model_name to self.model_name
+            is_chat_model=False,
         )
 
     def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
