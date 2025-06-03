@@ -82,7 +82,8 @@ import logging
 # from google import genai
 # from google.genai import types
 # nest_asyncio.apply()
-
+from google.cloud import aiplatform
+        
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -141,6 +142,32 @@ OPENAI_API_KEY = "your-openai-api-key-here"
 os.environ["XAI_API_KEY"] = XAI_API_KEY
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
+# Initialize Vertex AI client with your project and endpoint details
+aiplatform.init(project="vermalab-gemini-psom-e3ea", location="us-central1")
+
+# Define the endpoint
+endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/3702887981024018432")
+
+# Custom class to wrap the Vertex AI endpoint as an LLM
+class VertexAIGemmaLLM:
+    def __init__(self, endpoint):
+        self.endpoint = endpoint
+
+    def predict(self, prompt: str, max_tokens: int = 512, temperature: float = 0.7) -> str:
+        try:
+            # Prepare the request in the format expected by the endpoint
+            instances = [{"prompt": prompt}]
+            response = self.endpoint.predict(instances=instances)
+            # Assuming the response contains a list of predictions, take the first one
+            prediction = response.predictions[0] if response.predictions else "No response from endpoint"
+            return prediction
+        except Exception as e:
+            logger.error(f"Error calling Vertex AI endpoint: {str(e)}")
+            return f"Error: {str(e)}"
+
+    async def apredict(self, prompt: str, max_tokens: int = 512, temperature: float = 0.7) -> str:
+        # Async wrapper for synchronous predict (simplified for now)
+        return await asyncio.to_thread(self.predict, prompt, max_tokens, temperature)
 
 # Setting LLMs - keep existing configuration
 llm = Gemini(
@@ -164,8 +191,13 @@ LLM_MODELS = {
 
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
+gemma_llm = VertexAIGemmaLLM(endpoint)
+# Settings.llm = gemini_model
+Settings.llm = gemma_llm
+test_prompt = "Hello, this is a test prompt. Please respond with a short message."
+response = gemma_llm.complete(test_prompt)
+print(f"Test response: {response.text}")
 
-Settings.llm = gemini_model
 # MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 # if not torch.cuda.is_available():
 #     logger.error("CUDA not available. Cannot proceed without GPU.")
