@@ -351,23 +351,11 @@ class VertexAIGemmaLLM(LLM):
         else:
             # Higher limit for JSON responses to avoid truncation
             params["max_output_tokens"] = 2048 if is_json_request else 1024
-            
-        # Temperature control
-        if "temperature" in kwargs:
-            params["temperature"] = kwargs.pop("temperature")
-        else:
-            params["temperature"] = 0.1  # Very low for deterministic outputs
-            
-        if "top_k" in kwargs: # Top-k sampling
-            params["top_k"] = kwargs.pop("top_k")
-        else:
-            params["top_k"] = 10  # Restrictive top-k
-            
-        if "top_p" in kwargs: # Top-p sampling
-            params["top_p"] = kwargs.pop("top_p")
-        else:
-            params["top_p"] = 0.8  # More restrictive top-p
-            
+        
+        params["temperature"] = 0.0 if is_json_request else 0.7  # Zero for strict JSON
+        params["top_k"] = 1 if is_json_request else 40  # Most likely token only
+        params["top_p"] = 0.1 if is_json_request else 0.9  # Very restrictive for JSON
+        
         # Add stop sequences - but be careful with JSON requests
         if "stop_sequences" in kwargs:
             params["stop_sequences"] = kwargs.pop("stop_sequences")
@@ -507,61 +495,44 @@ class VertexAIGemmaLLM(LLM):
         return text.strip()
 
     def _format_prompt_for_gemma(self, prompt: str, is_json_request: bool = False) -> str:
-        """Format the prompt to maximize Gemma's instruction following."""
+        """Format the prompt to ensure Gemma outputs only valid JSON for JSON requests."""
         if is_json_request:
-            # Special formatting for JSON requests
             formatted_prompt = f"""<start_of_turn>user
-            {prompt}
+                {prompt}
 
-            CRITICAL: Output ONLY valid JSON. Start your response with {{ and end with }}.
-            <end_of_turn>
-            <start_of_turn>model"""
+                CRITICAL INSTRUCTION:
+                - Output ONLY a valid JSON object.
+                - Start your response with {{ and end with }}.
+                - Do NOT include any additional text, explanations, or instructions outside the JSON.
+                - Example: If asked to determine the next node ID based on "yes", respond ONLY:
+                {{"next_node_id": "node_1"}}
+                <end_of_turn>
+                <start_of_turn>model"""
         else:
-                    # Standard formatting for other requests
-                    formatted_prompt = f"""<start_of_turn>user
-        {prompt}
+            formatted_prompt = f"""<start_of_turn>user
+                {prompt}
 
-        Provide your response below. Output ONLY what was requested, nothing else.
-        <end_of_turn>
-        <start_of_turn>model
-        Output:"""
-                
+                Provide your response below. Output ONLY what was requested, nothing else.
+                <end_of_turn>
+                <start_of_turn>model
+                Output:"""
         return formatted_prompt
-
-    def _clean_json_response(self, text: str) -> str:
-        """Robust JSON extraction from model responses"""
-        if not text:
-            return text
-        
-        # First, try to find complete JSON objects
-        json_start = text.find('{')
-        json_end = text.rfind('}')
-        
-        if json_start != -1 and json_end > json_start:
-            json_str = text[json_start:json_end+1]
-            
-            # Remove common non-JSON prefixes
-            for prefix in ["Output:", "Response:", "JSON:"]:
-                if prefix in json_str:
-                    json_str = json_str.replace(prefix, "", 1)
-            
-            # Remove all newlines inside the JSON
-            json_str = re.sub(r'\s+', ' ', json_str)
-            
-            # Fix common formatting issues
-            json_str = re.sub(r',\s*}', '}', json_str)  # Trailing commas
-            json_str = re.sub(r',\s*]', ']', json_str)  # Trailing commas in arrays
-            return json_str.strip()
-        
-        return text
     
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
+        """Internal synchronous prediction method with robust JSON handling."""
         try:
             # Store original prompt for cleaning
             original_prompt = prompt
             
             # Detect if this is a JSON request
             is_json_request = self._detect_json_request(prompt)
+            
+            # Extract current_node_id from kwargs or prompt for fallback
+            current_node_id = kwargs.get("current_node_id", "node_0")
+            if "current_node_id" not in kwargs and "current node ID is" in prompt:
+                start = prompt.find("current node ID is: ") + 20
+                end = prompt.find("\n", start)
+                current_node_id = prompt[start:end].strip().split()[0] or "node_0"
             
             # Format prompt for Gemma
             formatted_prompt = self._format_prompt_for_gemma(prompt, is_json_request)
@@ -573,6 +544,11 @@ class VertexAIGemmaLLM(LLM):
             kwargs["_is_json_request"] = is_json_request
             parameters = self._get_params(**kwargs)
             
+            # Log for debugging
+            logger.debug(f"Is JSON request: {is_json_request}")
+            logger.debug(f"Formatted prompt: {formatted_prompt[:200]}...")
+            logger.debug(f"Parameters: {parameters}")
+
             # Call the Vertex AI endpoint
             response = self.endpoint.predict(instances=instances, parameters=parameters)
 
@@ -581,35 +557,59 @@ class VertexAIGemmaLLM(LLM):
             
             # Extract text from response
             if isinstance(prediction_data, dict):
-                prediction = prediction_data.get("text", "") or prediction_data.get("content", "") or str(prediction_data)
+                if "text" in prediction_data:
+                    prediction = prediction_data["text"]
+                elif "content" in prediction_data:
+                    prediction = prediction_data["content"]
+                else:
+                    prediction = str(prediction_data)
+            elif isinstance(prediction_data, str):
+                prediction = prediction_data
             else:
                 prediction = str(prediction_data)
+
+            # Log raw response for debugging
+            logger.debug(f"Raw prediction: {prediction[:500]}...")
 
             # Clean the response with JSON awareness
             cleaned_prediction = self._clean_response(prediction, original_prompt, is_json_request)
             
-            # Additional JSON-specific cleaning
-            if is_json_request:
-                cleaned_prediction = self._clean_json_response(cleaned_prediction)
-                
             # For JSON requests, validate and fix if needed
             if is_json_request and cleaned_prediction:
+                start_idx = cleaned_prediction.find('{')
+                end_idx = cleaned_prediction.rfind('}')
+                if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+                    json_str = cleaned_prediction[start_idx:end_idx+1]
+                    try:
+                        json.loads(json_str)
+                        cleaned_prediction = json_str
+                    except json.JSONDecodeError as e:
+                        logger.debug(f"JSON validation failed: {e}")
+                        # Extract next_node_id if present
+                        if '"next_node_id":' in prediction:
+                            start = prediction.find('"next_node_id":') + len('"next_node_id":')
+                            end = prediction.find('}', start)
+                            value = prediction[start:end].strip().strip('"')
+                            cleaned_prediction = f'{{"next_node_id": "{value}"}}'
+                        else:
+                            # Fallback to current node
+                            cleaned_prediction = f'{{"next_node_id": "{current_node_id}"}}'
+                            logger.debug(f"Using fallback JSON with current_node_id: {current_node_id}")
+                else:
+                    # Fallback if no valid JSON structure is found
+                    cleaned_prediction = f'{{"next_node_id": "{current_node_id}"}}'
+                    logger.debug(f"No valid JSON found, fallback to: {cleaned_prediction}")
+                
+                # Final validation
                 try:
-                    # Validate JSON structure
-                    import json
-                    parsed = json.loads(cleaned_prediction)
-                    
-                    # If it's a template-like response, return empty object
-                    if any("string" in str(v) for v in parsed.values()):
-                        return "{}"
-                except json.JSONDecodeError as e:
-                    # Try one more aggressive fix
-                    if '"next_node_id"' in cleaned_prediction and cleaned_prediction.count('"') % 2 != 0:
-                        # Odd number of quotes, likely missing closing quote
-                        cleaned_prediction = cleaned_prediction.rstrip() + '"}'
+                    json.loads(cleaned_prediction)
+                except json.JSONDecodeError:
+                    cleaned_prediction = f'{{"next_node_id": "{current_node_id}"}}'
+                    logger.debug(f"Final fallback applied: {cleaned_prediction}")
             
+            logger.debug(f"Cleaned prediction: {cleaned_prediction[:200]}...")
             return cleaned_prediction
-            
+        
         except Exception as e:
             logger.error(f"Error calling Vertex AI endpoint: {e}")
             raise
