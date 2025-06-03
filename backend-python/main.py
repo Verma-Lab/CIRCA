@@ -528,8 +528,34 @@ class VertexAIGemmaLLM(LLM):
                 
         return formatted_prompt
 
+    def _clean_json_response(self, text: str) -> str:
+        """Robust JSON extraction from model responses"""
+        if not text:
+            return text
+        
+        # First, try to find complete JSON objects
+        json_start = text.find('{')
+        json_end = text.rfind('}')
+        
+        if json_start != -1 and json_end > json_start:
+            json_str = text[json_start:json_end+1]
+            
+            # Remove common non-JSON prefixes
+            for prefix in ["Output:", "Response:", "JSON:"]:
+                if prefix in json_str:
+                    json_str = json_str.replace(prefix, "", 1)
+            
+            # Remove all newlines inside the JSON
+            json_str = re.sub(r'\s+', ' ', json_str)
+            
+            # Fix common formatting issues
+            json_str = re.sub(r',\s*}', '}', json_str)  # Trailing commas
+            json_str = re.sub(r',\s*]', ']', json_str)  # Trailing commas in arrays
+            return json_str.strip()
+        
+        return text
+    
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
         try:
             # Store original prompt for cleaning
             original_prompt = prompt
@@ -547,11 +573,6 @@ class VertexAIGemmaLLM(LLM):
             kwargs["_is_json_request"] = is_json_request
             parameters = self._get_params(**kwargs)
             
-            # Log for debugging
-            logger.debug(f"Is JSON request: {is_json_request}")
-            logger.debug(f"Formatted prompt: {formatted_prompt[:200]}...")
-            logger.debug(f"Parameters: {parameters}")
-
             # Call the Vertex AI endpoint
             response = self.endpoint.predict(instances=instances, parameters=parameters)
 
@@ -560,44 +581,38 @@ class VertexAIGemmaLLM(LLM):
             
             # Extract text from response
             if isinstance(prediction_data, dict):
-                if "text" in prediction_data:
-                    prediction = prediction_data["text"]
-                elif "content" in prediction_data:
-                    prediction = prediction_data["content"]
-                else:
-                    prediction = str(prediction_data)
-            elif isinstance(prediction_data, str):
-                prediction = prediction_data
+                prediction = prediction_data.get("text", "") or prediction_data.get("content", "") or str(prediction_data)
             else:
                 prediction = str(prediction_data)
-
-            # Log raw response for debugging
-            logger.debug(f"Raw prediction: {prediction[:500]}...")
 
             # Clean the response with JSON awareness
             cleaned_prediction = self._clean_response(prediction, original_prompt, is_json_request)
             
+            # Additional JSON-specific cleaning
+            if is_json_request:
+                cleaned_prediction = self._clean_json_response(cleaned_prediction)
+                
             # For JSON requests, validate and fix if needed
             if is_json_request and cleaned_prediction:
                 try:
-                    # Try to parse to validate
+                    # Validate JSON structure
                     import json
-                    json.loads(cleaned_prediction)
+                    parsed = json.loads(cleaned_prediction)
+                    
+                    # If it's a template-like response, return empty object
+                    if any("string" in str(v) for v in parsed.values()):
+                        return "{}"
                 except json.JSONDecodeError as e:
-                    logger.debug(f"JSON validation failed: {e}")
                     # Try one more aggressive fix
                     if '"next_node_id"' in cleaned_prediction and cleaned_prediction.count('"') % 2 != 0:
                         # Odd number of quotes, likely missing closing quote
                         cleaned_prediction = cleaned_prediction.rstrip() + '"}'
-            
-            logger.debug(f"Cleaned prediction: {cleaned_prediction[:200]}...")
             
             return cleaned_prediction
             
         except Exception as e:
             logger.error(f"Error calling Vertex AI endpoint: {e}")
             raise
-
     async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
         """Internal asynchronous prediction method."""
         # Use asyncio.to_thread to run the synchronous method in a thread pool.
