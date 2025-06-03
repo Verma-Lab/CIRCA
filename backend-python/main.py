@@ -344,72 +344,104 @@ class VertexAIGemmaLLM(LLM):
 
     def _format_prompt_for_gemma(self, original_prompt: str) -> str:
         """
-        Format prompts to make Gemma respond exactly like Gemini API
+        Simplified format that prevents prompt echoing
         """
-        # For Gemma, we need to be very explicit about the expected behavior
-        system_instruction = """You are an AI assistant that provides direct, precise responses. Follow instructions exactly. Do not add explanations, examples, or extra text unless specifically requested. Be concise and accurate."""
-        
-        # Format using Gemma's chat format
-        formatted_prompt = f"""<start_of_turn>system
-        {system_instruction}
-        <end_of_turn>
+        # Much simpler format to avoid echoing
+        return f"""<start_of_turn>user
+            {original_prompt}
+            <end_of_turn>
 
-        <start_of_turn>user
-        {original_prompt}
-        <end_of_turn>
-
-        <start_of_turn>model
-        """
-        return formatted_prompt
+            <start_of_turn>model
+            """
 
     def _extract_clean_response(self, raw_response: str) -> str:
         """
-        Extract clean response from Gemma output to match Gemini API behavior
+        Aggressively clean response to remove all prompt artifacts
         """
-        # Remove Gemma-specific tokens
-        response = raw_response.replace("<start_of_turn>", "")
-        response = response.replace("<end_of_turn>", "")
-        response = response.replace("model\n", "")
-        response = response.replace("user\n", "")
-        response = response.replace("system\n", "")
+        response = raw_response.strip()
         
-        # Split by lines and find the actual response
-        lines = [line.strip() for line in response.split('\n') if line.strip()]
+        # Remove all Gemma formatting tokens
+        cleanup_tokens = [
+            "<start_of_turn>", "<end_of_turn>", "model", "user", "system",
+            "model\n", "user\n", "system\n", "\nmodel", "\nuser", "\nsystem"
+        ]
+        for token in cleanup_tokens:
+            response = response.replace(token, "")
         
-        if not lines:
-            return ""
-        
-        # Remove common prefixes that Gemma might add
-        prefixes_to_remove = [
-            "Translation:", "Output:", "Response:", "Answer:", 
-            "Language code:", "Translated text:", "Result:"
+        # Remove common artifacts that cause 'prompt:' issues
+        problematic_prefixes = [
+            "Prompt:", "prompt:", "PROMPT:", 
+            "Translation:", "translation:", "TRANSLATION:",
+            "Output:", "output:", "OUTPUT:",
+            "Response:", "response:", "RESPONSE:",
+            "Answer:", "answer:", "ANSWER:",
+            "Language code:", "language code:", "LANGUAGE CODE:",
+            "Translated text:", "translated text:", "TRANSLATED TEXT:",
+            "Result:", "result:", "RESULT:",
+            "Text:", "text:", "TEXT:"
         ]
         
+        # Split into lines for processing
+        lines = [line.strip() for line in response.split('\n')]
         clean_lines = []
+        
         for line in lines:
-            # Skip empty lines or lines with just formatting
-            if not line or line in ['```', '---', '===']:
+            if not line:
                 continue
                 
-            # Remove prefixes
-            cleaned_line = line
-            for prefix in prefixes_to_remove:
-                if line.startswith(prefix):
-                    cleaned_line = line[len(prefix):].strip()
+            # Skip lines that are just formatting
+            if line in ['```', '---', '===', '***', '...']:
+                continue
+            
+            # Remove problematic prefixes
+            original_line = line
+            for prefix in problematic_prefixes:
+                if line.lower().startswith(prefix.lower()):
+                    line = line[len(prefix):].strip()
                     break
             
-            # Remove quotes if the entire response is quoted
-            if cleaned_line.startswith('"') and cleaned_line.endswith('"'):
-                cleaned_line = cleaned_line[1:-1]
+            # Remove quotes if entire line is quoted
+            if line.startswith('"') and line.endswith('"') and len(line) > 2:
+                line = line[1:-1]
+            if line.startswith("'") and line.endswith("'") and len(line) > 2:
+                line = line[1:-1]
             
-            if cleaned_line:
-                clean_lines.append(cleaned_line)
+            # Skip if line still contains prompt-like text
+            if any(word in line.lower() for word in ['prompt', 'translate the following', 'detect the language']):
+                continue
+                
+            # Skip very long lines that might contain the original prompt
+            if len(line) > 200:
+                continue
+            
+            if line and line != original_line:  # Only add if we actually cleaned something
+                clean_lines.append(line)
+                break  # Take first clean line
+            elif line and len(line) < 100:  # Or short lines that seem like actual responses
+                clean_lines.append(line)
+                break
         
-        # For most cases, return the first meaningful line
+        # If we found clean lines, return the first one
         if clean_lines:
             return clean_lines[0]
         
-        return response.strip()
+        # Fallback: if no clean lines found, try to extract from original response
+        # Look for patterns that indicate actual content
+        words = response.split()
+        if len(words) <= 10:  # Short responses are likely the answer
+            # Remove any remaining artifacts
+            clean_words = []
+            for word in words:
+                if not any(artifact in word.lower() for artifact in ['prompt', 'translation', 'output', 'response']):
+                    clean_words.append(word)
+            if clean_words:
+                return ' '.join(clean_words)
+        
+        # Last resort: return first few words if everything else fails
+        if words and len(words) > 0:
+            return ' '.join(words[:3])  # Just first 3 words
+            
+        return response
 
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
         """Enhanced prediction with Gemini-like behavior"""
@@ -540,7 +572,23 @@ Settings.llm = gemma_llm
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = gemma_llm.complete(test_prompt)
 print(f"Test response: {response.text}")
+def test_gemma_configuration():
+    """Test function to verify Gemma behaves like Gemini"""
+    test_cases = [
+        "Translate 'Hello' to Spanish:",
+        "Detect the language of this text: 'Bonjour'",
+        "What is 2+2?",
+    ]
+    
+    print("Testing Gemma configuration:")
+    for i, test_prompt in enumerate(test_cases, 1):
+        try:
+            response = gemma_llm.complete(test_prompt)
+            print(f"Test {i}: '{test_prompt}' -> '{response.text}'")
+        except Exception as e:
+            print(f"Test {i} failed: {e}")
 
+test_gemma_configuration()
 # MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 # if not torch.cuda.is_available():
 #     logger.error("CUDA not available. Cannot proceed without GPU.")
