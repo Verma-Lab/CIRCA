@@ -302,23 +302,21 @@ endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea
 #                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
 
 class VertexAIGemmaLLM(LLM): 
-    endpoint: aiplatform.Endpoint = Field(exclude=True) # Declare 'endpoint' as a Pydantic field, exclude from serialization
-    model_name: str = Field(default="gemma-vertex-ai") # Declare 'model_name' as a Pydantic field
+    endpoint: aiplatform.Endpoint = Field(exclude=True) 
+    model_name: str = Field(default="gemma-vertex-ai") 
 
-    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any): # <--- MODIFIED: added **kwargs
-        # Pass all declared fields to the superclass's __init__
+    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai", **kwargs: Any): 
         super().__init__(
             endpoint=endpoint,
             model_name=model_name,
-            **kwargs # Pass any other arguments to the parent LLM class
+            **kwargs 
         )
 
     @property
     def metadata(self) -> LLMMetadata:
-        """Get LLM metadata."""
         return LLMMetadata(
-            model_name=self.model_name, # <--- CHANGE from self._model_name to self.model_name
-            is_chat_model=False,
+            model_name=self.model_name, 
+            is_chat_model=False, # Gemma is typically a completion model, even if chat-formatted
         )
 
     def _detect_json_request(self, prompt: str) -> bool:
@@ -331,7 +329,13 @@ class VertexAIGemmaLLM(LLM):
             "format: json",
             "return your analysis as a json object",
             "json format",
-            "```json"
+            "```json",
+            "return the response as a json object:", 
+            "return a json object:", 
+            "output only valid json", 
+            "output only valid json object", 
+            "critical: output only valid json",
+            "json object:" # Common in the logs for extraction prompts
         ]
         prompt_lower = prompt.lower()
         return any(indicator in prompt_lower for indicator in json_indicators)
@@ -340,44 +344,54 @@ class VertexAIGemmaLLM(LLM):
         """Extract and map common LLM parameters to Vertex AI's expected format."""
         params = {}
         
-        # Check if this is a JSON request from the prompt
         is_json_request = kwargs.pop("_is_json_request", False)
         
-        # Vertex AI often uses 'max_output_tokens' instead of 'max_tokens'
         if "max_tokens" in kwargs:
             params["max_output_tokens"] = kwargs.pop("max_tokens")
-        elif "max_new_tokens" in kwargs: # Support common alternative
+        elif "max_new_tokens" in kwargs: 
             params["max_output_tokens"] = kwargs.pop("max_new_tokens")
         else:
-            # Higher limit for JSON responses to avoid truncation
-            params["max_output_tokens"] = 2048 if is_json_request else 1024
-        
-        params["temperature"] = 0.0 if is_json_request else 0.7  # Zero for strict JSON
-        params["top_k"] = 1 if is_json_request else 40  # Most likely token only
-        params["top_p"] = 0.1 if is_json_request else 0.9  # Very restrictive for JSON
-        
-        # Add stop sequences - but be careful with JSON requests
+            # Higher limit for JSON responses to avoid truncation. Increased general output tokens.
+            params["max_output_tokens"] = 2048 if is_json_request else 1500 
+            
+        if "temperature" in kwargs:
+            params["temperature"] = kwargs.pop("temperature")
+        else:
+            # Make temperature lower for JSON requests for more deterministic output
+            params["temperature"] = 0.05 if is_json_request else 0.7 # Even lower for JSON
+            
+        if "top_k" in kwargs: 
+            params["top_k"] = kwargs.pop("top_k")
+        else:
+            params["top_k"] = 1 if is_json_request else 10 # More restrictive for JSON
+            
+        if "top_p" in kwargs: 
+            params["top_p"] = kwargs.pop("top_p")
+        else:
+            params["top_p"] = 0.9 if is_json_request else 0.9 
+
         if "stop_sequences" in kwargs:
             params["stop_sequences"] = kwargs.pop("stop_sequences")
-        elif not is_json_request:
-            # Only use aggressive stop sequences for non-JSON requests
+        elif is_json_request:
+            # For JSON, only stop on things that definitely mean end of all output
+            # Avoid stopping on common text markers within JSON structure
+            params["stop_sequences"] = [
+                "\n<start_of_turn>user", 
+                "\n\n\n\n" 
+            ]
+        else:
+            # For general text, more common conversational stop words
             params["stop_sequences"] = [
                 "\n\n\n",
-                "<end>",
-                "</end>",
+                "<end_of_turn>", # Use the full end of turn marker
+                "<start_of_turn>", 
                 "User:",
                 "Human:",
                 "Assistant:",
-                "<start_of_turn>",
                 "IMPORTANT:",
                 "Instructions:",
-                "CRITICAL:"
-            ]
-        else:
-            # For JSON requests, use minimal stop sequences to avoid cutting off the response
-            params["stop_sequences"] = [
-                "\n\n\n\n",  # 4 newlines instead of 3
-                "<start_of_turn>user",  # Only stop at next user turn
+                "CRITICAL:",
+                "Output:" # Stop if it repeats the output marker
             ]
             
         return params
@@ -387,237 +401,194 @@ class VertexAIGemmaLLM(LLM):
         if not text:
             return text
         
-        # For JSON requests, try to extract and fix JSON first
         if is_json_request:
-            # Try to find JSON content
-            json_start = text.find('{')
-            json_end = text.rfind('}')
+            logger.debug(f"Attempting JSON-specific cleaning for text: {text[:500]}...")
             
-            if json_start != -1:
-                if json_end == -1 or json_end < json_start:
-                    # JSON is incomplete, try to complete it
-                    json_content = text[json_start:]
-                    
-                    # Count open braces and try to close them
-                    open_braces = json_content.count('{') - json_content.count('}')
-                    if open_braces > 0:
-                        # Check if we're in the middle of a string
-                        if json_content.rstrip().endswith('"node'):
-                            json_content = json_content + '_1"'  # Complete the node ID
-                        
-                        # Add missing closing braces
-                        json_content += '}' * open_braces
-                        
-                    return json_content.strip()
-                else:
-                    # Extract the JSON portion
-                    return text[json_start:json_end+1].strip()
-        
-        # For non-JSON, use the original cleaning logic
-        # First, try to extract content after known output markers
+            # 1. Try to parse the entire text as valid JSON
+            try:
+                parsed_json = json.loads(text)
+                logger.debug("Raw text is a single valid JSON object. Returning it.")
+                return text 
+            except json.JSONDecodeError as e:
+                logger.debug(f"Raw text is not a single valid JSON object: {e}. Attempting extraction.")
+
+            # 2. Extract potential JSON objects by tracking brace balance
+            # This is more robust than simple find/rfind for nested or multiple JSONs
+            potential_json_strings = []
+            brace_balance = 0
+            start_index = -1
+            
+            for i, char in enumerate(text):
+                if char == '{':
+                    if brace_balance == 0:
+                        start_index = i 
+                    brace_balance += 1
+                elif char == '}':
+                    brace_balance -= 1
+                    if brace_balance == 0 and start_index != -1:
+                        # Found a balanced JSON-like string
+                        potential_json_strings.append(text[start_index : i + 1])
+                        start_index = -1 
+            
+            best_json_str = None
+            
+            # Prioritize the JSON object that contains "next_node_id" (for flow logic)
+            if any(key in original_prompt for key in ["next_node_id", "ID of the next node or current node"]):
+                for json_str in reversed(potential_json_strings): 
+                    try:
+                        parsed_obj = json.loads(json_str)
+                        if "next_node_id" in parsed_obj:
+                            best_json_str = json_str
+                            logger.debug(f"Found target JSON (next_node_id): {best_json_str[:200]}...")
+                            break
+                    except json.JSONDecodeError:
+                        continue
+            
+            # If no specific target JSON, or if it's for other JSON extraction (e.g., patient data)
+            # pick the last successfully parsed complete JSON object
+            if not best_json_str: 
+                for json_str in reversed(potential_json_strings): 
+                    try:
+                        json.loads(json_str) 
+                        best_json_str = json_str
+                        logger.debug(f"Found general valid JSON: {best_json_str[:200]}...")
+                        break
+                    except json.JSONDecodeError:
+                        continue
+
+            if best_json_str:
+                return best_json_str.strip()
+            else:
+                logger.warning("JSON cleaning failed to find any valid JSON object. Falling back to general cleaning.")
+
+        # --- General cleaning for non-JSON or when JSON extraction fails ---
+        # These markers are based on patterns observed in Gemma's raw outputs (echoed instructions, etc.)
         output_markers = [
-            "Output:",
-            "Response:",
-            "Translation:",
-            "Answer:",
-            "Result:",
-            "ISO code:",
-            "Language code:",
-            # Model turn markers
-            "<start_of_turn>model",
-            "<end_of_turn>",
+            "Output:", "Response:", "Translation:", "Answer:", "Result:",
+            "ISO code:", "Language code:",
+            "<start_of_turn>model", "<end_of_turn>",
+            "CRITICAL: Output ONLY valid JSON. Start your response with { and end with }.",
+            "Instructions for matching user response and determining next node:",
+            "Return the response as a JSON object:",
+            "CRITICAL: Output ONLY valid JSON. Start your response with { and end with }",
+            "Provide your response below. Output ONLY what was requested, nothing else.",
+            "Instructions:",
+            "MUST Format your response like this:",
+            "Return the rephrased response as a string.",
+            "Return only \"MATCH\" or \"NO_MATCH\"",
+            "For each field, only include information explicitly stated in the conversation.", # From patient data extraction prompt
+            "If no relevant data is found, return empty arrays or null values for the respective fields." # Another from data extraction
         ]
         
-        # Find the last occurrence of any output marker
-        last_marker_pos = -1
-        marker_used = None
+        output_markers.sort(key=len, reverse=True) 
+
+        cleaned_text_after_marker = text
         for marker in output_markers:
             pos = text.rfind(marker)
-            if pos > last_marker_pos:
-                last_marker_pos = pos
-                marker_used = marker
-        
-        if last_marker_pos != -1:
-            # Extract content after the marker
-            text = text[last_marker_pos + len(marker_used):].strip()
-            
-            # Find where the actual output ends
-            end_markers = [
-                "\n\n\n",
-                "IMPORTANT:",
-                "Instructions:",
-                "User message:",
-                "Patient Profile",
-                "Original Response",
-                "<start_of_turn>",
-                "NOTE:",
-                "CRITICAL:",
-                "MUST Format"
-            ]
-            
-            end_pos = len(text)
-            for end_marker in end_markers:
-                pos = text.find(end_marker)
-                if pos != -1 and pos < end_pos:
-                    end_pos = pos
-            
-            text = text[:end_pos].strip()
-        
-        # Remove any remaining prompt echo at the beginning
-        prompt_indicators = [
-            "Translate the following",
-            "Detect the language",
-            "Return ONLY",
-            "IMPORTANT:",
-            "Task:",
-            "Input:",
-            "Prompt:",
-            "Question:",
-            "Instruction:",
-            "You are",
-            "I need to",
-            "Format your response"
+            if pos != -1: 
+                # Take everything after the last occurrence of a known instruction/output marker
+                cleaned_text_after_marker = text[pos + len(marker):].strip()
+                logger.debug(f"Cleaned after marker '{marker}': {cleaned_text_after_marker[:200]}...")
+                break 
+
+        text_to_clean = cleaned_text_after_marker
+
+        # Find where the actual output ends based on conversational or instruction patterns
+        end_markers = [
+            "\n\n\n", 
+            "<start_of_turn>user", 
+            "IMPORTANT:", "Instructions:", "User message:",
+            "Patient Profile", "Original Response", "NOTE:",
+            "CRITICAL:", "MUST Format",
+            "Patient History (for subtle contextual enrichment, use only if it fits without contradiction):",
+            "If no relevant data is found, return empty arrays or null values for the respective fields."
         ]
         
-        lines = text.split('\n')
-        start_line = 0
-        for i, line in enumerate(lines):
-            if any(indicator in line for indicator in prompt_indicators):
-                start_line = i + 1
+        end_markers.sort(key=len, reverse=True) 
+
+        end_pos = len(text_to_clean)
+        for end_marker in end_markers:
+            pos = text_to_clean.find(end_marker)
+            if pos != -1 and pos < end_pos:
+                end_pos = pos
         
-        if start_line > 0 and start_line < len(lines):
-            text = '\n'.join(lines[start_line:]).strip()
+        final_cleaned_text = text_to_clean[:end_pos].strip()
+        logger.debug(f"Cleaned by end markers: {final_cleaned_text[:200]}...")
+
+        # Remove quotes if the entire response is enclosed in them
+        if len(final_cleaned_text) > 2 and final_cleaned_text[0] == final_cleaned_text[-1] and final_cleaned_text[0] in ['"', "'"]:
+            final_cleaned_text = final_cleaned_text[1:-1]
         
-        # Clean up quotes if the entire response is quoted
-        if len(text) > 2 and text[0] == text[-1] and text[0] in ['"', "'"]:
-            text = text[1:-1]
-        
-        return text.strip()
+        return final_cleaned_text.strip()
 
     def _format_prompt_for_gemma(self, prompt: str, is_json_request: bool = False) -> str:
-        """Format the prompt to ensure Gemma outputs only valid JSON for JSON requests."""
+        """Format the prompt to maximize Gemma's instruction following."""
         if is_json_request:
+            # Place critical JSON instruction at the very beginning of the user turn
+            # Removed the "Do NOT include any extra text..." part from here, relying on _clean_response
+            # and the CRITICAL instruction to guide it.
             formatted_prompt = f"""<start_of_turn>user
-                {prompt}
+CRITICAL: Output ONLY valid JSON. Start your response with {{ and end with }}. Do NOT include any explanations, additional text, or comments outside the JSON object.
 
-                CRITICAL INSTRUCTION:
-                - Output ONLY a valid JSON object.
-                - Start your response with {{ and end with }}.
-                - Do NOT include any additional text, explanations, or instructions outside the JSON.
-                - Example: If asked to determine the next node ID based on "yes", respond ONLY:
-                {{"next_node_id": "node_1"}}
-                <end_of_turn>
-                <start_of_turn>model"""
+{prompt}
+<end_of_turn>
+<start_of_turn>model
+"""
         else:
+            # Standard formatting for other requests
             formatted_prompt = f"""<start_of_turn>user
-                {prompt}
+{prompt}
 
-                Provide your response below. Output ONLY what was requested, nothing else.
-                <end_of_turn>
-                <start_of_turn>model
-                Output:"""
+Output ONLY what was requested, nothing else.
+<end_of_turn>
+<start_of_turn>model
+Output:""" 
+
         return formatted_prompt
-    
+
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """Internal synchronous prediction method with robust JSON handling."""
+        """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
         try:
-            # Store original prompt for cleaning
             original_prompt = prompt
             
-            # Detect if this is a JSON request
             is_json_request = self._detect_json_request(prompt)
             
-            # Extract current_node_id from kwargs or prompt for fallback
-            current_node_id = kwargs.get("current_node_id", "node_0")
-            if "current_node_id" not in kwargs and "current node ID is" in prompt:
-                start = prompt.find("current node ID is: ") + 20
-                end = prompt.find("\n", start)
-                current_node_id = prompt[start:end].strip().split()[0] or "node_0"
+            # Pass the detected JSON request status to _format_prompt_for_gemma
+            formatted_prompt = self._format_prompt_for_gemma(prompt, is_json_request=is_json_request)
             
-            # Format prompt for Gemma
-            formatted_prompt = self._format_prompt_for_gemma(prompt, is_json_request)
-            
-            # Prepare the request instances
             instances = [{"prompt": formatted_prompt}]
             
-            # Get parameters with JSON awareness
-            kwargs["_is_json_request"] = is_json_request
+            # Pass the detected JSON request status to _get_params
+            kwargs["_is_json_request"] = is_json_request 
             parameters = self._get_params(**kwargs)
             
-            # Log for debugging
             logger.debug(f"Is JSON request: {is_json_request}")
-            logger.debug(f"Formatted prompt: {formatted_prompt[:200]}...")
+            logger.debug(f"Formatted prompt: {formatted_prompt[:500]}...")
             logger.debug(f"Parameters: {parameters}")
 
-            # Call the Vertex AI endpoint
             response = self.endpoint.predict(instances=instances, parameters=parameters)
 
-            # Process the response from Vertex AI
             prediction_data = response.predictions[0] if response.predictions else ""
             
-            # Extract text from response
             if isinstance(prediction_data, dict):
-                if "text" in prediction_data:
-                    prediction = prediction_data["text"]
-                elif "content" in prediction_data:
-                    prediction = prediction_data["content"]
-                else:
-                    prediction = str(prediction_data)
+                prediction = prediction_data.get("text", prediction_data.get("content", str(prediction_data)))
             elif isinstance(prediction_data, str):
                 prediction = prediction_data
             else:
                 prediction = str(prediction_data)
 
-            # Log raw response for debugging
             logger.debug(f"Raw prediction: {prediction[:500]}...")
 
-            # Clean the response with JSON awareness
-            cleaned_prediction = self._clean_response(prediction, original_prompt, is_json_request)
-            
-            # For JSON requests, validate and fix if needed
-            if is_json_request and cleaned_prediction:
-                start_idx = cleaned_prediction.find('{')
-                end_idx = cleaned_prediction.rfind('}')
-                if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
-                    json_str = cleaned_prediction[start_idx:end_idx+1]
-                    try:
-                        json.loads(json_str)
-                        cleaned_prediction = json_str
-                    except json.JSONDecodeError as e:
-                        logger.debug(f"JSON validation failed: {e}")
-                        # Extract next_node_id if present
-                        if '"next_node_id":' in prediction:
-                            start = prediction.find('"next_node_id":') + len('"next_node_id":')
-                            end = prediction.find('}', start)
-                            value = prediction[start:end].strip().strip('"')
-                            cleaned_prediction = f'{{"next_node_id": "{value}"}}'
-                        else:
-                            # Fallback to current node
-                            cleaned_prediction = f'{{"next_node_id": "{current_node_id}"}}'
-                            logger.debug(f"Using fallback JSON with current_node_id: {current_node_id}")
-                else:
-                    # Fallback if no valid JSON structure is found
-                    cleaned_prediction = f'{{"next_node_id": "{current_node_id}"}}'
-                    logger.debug(f"No valid JSON found, fallback to: {cleaned_prediction}")
-                
-                # Final validation
-                try:
-                    json.loads(cleaned_prediction)
-                except json.JSONDecodeError:
-                    cleaned_prediction = f'{{"next_node_id": "{current_node_id}"}}'
-                    logger.debug(f"Final fallback applied: {cleaned_prediction}")
+            # Pass the detected JSON request status and original prompt to _clean_response
+            cleaned_prediction = self._clean_response(prediction, original_prompt, is_json_request=is_json_request)
             
             logger.debug(f"Cleaned prediction: {cleaned_prediction[:200]}...")
+            
             return cleaned_prediction
-        
+            
         except Exception as e:
-            logger.error(f"Error calling Vertex AI endpoint: {e}")
+            logger.error(f"Error calling Vertex AI endpoint: {e}", exc_info=True) # Log full traceback
             raise
-    async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
-        """Internal asynchronous prediction method."""
-        # Use asyncio.to_thread to run the synchronous method in a thread pool.
-        # This is suitable if the underlying endpoint.predict is blocking.
-        return await asyncio.to_thread(self._predict_raw, prompt, **kwargs)
 
     # LlamaIndex's LLM interface requires `complete` and `acomplete` for text completion.
     def complete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
@@ -634,50 +605,42 @@ class VertexAIGemmaLLM(LLM):
         """Converts a list of ChatMessage to a single string prompt for a completion model."""
         prompt_parts = []
         
-        # Process messages
         for message in messages:
             if message.role == MessageRole.USER:
                 prompt_parts.append(f"<start_of_turn>user\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.ASSISTANT:
                 prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.SYSTEM:
-                # Put system message at the beginning with clear instructions
                 system_content = f"System: {message.content}\nFollow the system instructions carefully and provide only the requested output."
                 prompt_parts.insert(0, f"<start_of_turn>system\n{system_content}<end_of_turn>")
         
-        # Add model turn with output instruction
-        prompt_parts.append("<start_of_turn>model\nOutput:")
+        prompt_parts.append("<start_of_turn>model\n") # This is typically how Gemma expects to start its response
         
         return "\n".join(prompt_parts)
         
-    # <--- ADD THE FOLLOWING METHOD:
     def chat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
         """LlamaIndex standard method for chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = self._predict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
         
-    # <--- ADD THE FOLLOWING METHOD:
     async def achat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
         """LlamaIndex standard async method for chat completion."""
         prompt = self._messages_to_prompt(messages)
         response_text = await self._apredict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
         
-    # <--- ADD THE FOLLOWING METHOD:
     def stream_complete(self, prompt: str, **kwargs: Any) -> Generator[CompletionResponse, None, None]:
         """LlamaIndex standard method for streaming text completion."""
         # As Vertex AI endpoint might not stream, simulate by yielding full response.
         text = self._predict_raw(prompt, **kwargs)
         yield CompletionResponse(text=text, delta=text)
         
-    # <--- ADD THE FOLLOWING METHOD:
     async def astream_complete(self, prompt: str, **kwargs: Any) -> AsyncGenerator[CompletionResponse, None]:
         """LlamaIndex standard async method for streaming text completion."""
         text = await self._apredict_raw(prompt, **kwargs)
         yield CompletionResponse(text=text, delta=text)
         
-    # <--- ADD THE FOLLOWING METHOD:
     def stream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> Generator[ChatResponse, None, None]:
         """LlamaIndex standard method for streaming chat completion."""
         prompt = self._messages_to_prompt(messages)
@@ -685,7 +648,6 @@ class VertexAIGemmaLLM(LLM):
         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
                            
-    # <--- ADD THE FOLLOWING METHOD:
     async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
         """LlamaIndex standard async method for streaming chat completion."""
         prompt = self._messages_to_prompt(messages)
