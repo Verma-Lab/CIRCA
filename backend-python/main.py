@@ -28,6 +28,8 @@ import nest_asyncio
 
 import pickle
 from llama_index.llms.huggingface import HuggingFaceLLM
+from llama_index.core.llms import LLM, CompletionResponse
+from llama_index.core.base.llms.types import LLMMetadata
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Integer, Float, Boolean, DateTime, ForeignKey
 from sqlalchemy import func
 from sqlalchemy.ext.declarative import declarative_base
@@ -149,26 +151,92 @@ aiplatform.init(project="vermalab-gemini-psom-e3ea", location="us-central1")
 endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/3702887981024018432")
 
 # Custom class to wrap the Vertex AI endpoint as an LLM
-class VertexAIGemmaLLM:
-    def __init__(self, endpoint):
+class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
+    def __init__(self, endpoint: aiplatform.Endpoint, model_name: str = "gemma-vertex-ai"):
+        super().__init__() # Initialize the base LLM class
         self.endpoint = endpoint
+        self._model_name = model_name
 
-    def predict(self, prompt: str, max_tokens: int = 512, temperature: float = 0.7) -> str:
+    @property
+    def metadata(self) -> LLMMetadata:
+        """Get LLM metadata."""
+        return LLMMetadata(
+            model_name=self._model_name,
+            # Vertex AI models often have a context window, you can set it if known.
+            # Example: num_context_window=2048,
+            is_chat_model=False, # Assuming it's a completion model based on original `predict` signature
+        )
+
+    def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
+        """Extract and map common LLM parameters to Vertex AI's expected format."""
+        params = {}
+        # Vertex AI often uses 'max_output_tokens' instead of 'max_tokens'
+        if "max_tokens" in kwargs:
+            params["max_output_tokens"] = kwargs.pop("max_tokens")
+        elif "max_new_tokens" in kwargs: # Support common alternative
+            params["max_output_tokens"] = kwargs.pop("max_new_tokens")
+        if "temperature" in kwargs:
+            params["temperature"] = kwargs.pop("temperature")
+        if "top_k" in kwargs: # Top-k sampling
+            params["top_k"] = kwargs.pop("top_k")
+        if "top_p" in kwargs: # Top-p sampling
+            params["top_p"] = kwargs.pop("top_p")
+        # Add any other parameters your specific Vertex AI endpoint expects
+        # Example: 'candidate_count' for number of responses
+        return params
+
+    def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
+        """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
         try:
-            # Prepare the request in the format expected by the endpoint
+            # Prepare the request instances. The key for the prompt depends on the model's input signature.
+            # 'prompt' is common for text generation models.
             instances = [{"prompt": prompt}]
-            response = self.endpoint.predict(instances=instances)
-            # Assuming the response contains a list of predictions, take the first one
-            prediction = response.predictions[0] if response.predictions else "No response from endpoint"
+            
+            # Extract and map parameters
+            parameters = self._get_params(**kwargs)
+
+            # Call the Vertex AI endpoint
+            response = self.endpoint.predict(instances=instances, parameters=parameters)
+
+            # Process the response from Vertex AI
+            prediction_data = response.predictions[0] if response.predictions else ""
+            
+            # The structure of `response.predictions` can vary.
+            # It might be a string, or a dictionary with a 'text' or 'content' key.
+            if isinstance(prediction_data, dict):
+                if "text" in prediction_data:
+                    prediction = prediction_data["text"]
+                elif "content" in prediction_data: # Another common key
+                    prediction = prediction_data["content"]
+                else:
+                    prediction = str(prediction_data) # Fallback to string conversion
+            elif isinstance(prediction_data, str):
+                prediction = prediction_data
+            else:
+                prediction = str(prediction_data) # General fallback if not string or dict
+
             return prediction
         except Exception as e:
-            logger.error(f"Error calling Vertex AI endpoint: {str(e)}")
-            return f"Error: {str(e)}"
+            logger.error(f"Error calling Vertex AI endpoint: {e}")
+            raise # Re-raise the exception to propagate it to LlamaIndex's error handling
 
-    async def apredict(self, prompt: str, max_tokens: int = 512, temperature: float = 0.7) -> str:
-        # Async wrapper for synchronous predict (simplified for now)
-        return await asyncio.to_thread(self.predict, prompt, max_tokens, temperature)
+    async def _apredict_raw(self, prompt: str, **kwargs: Any) -> str:
+        """Internal asynchronous prediction method."""
+        # Use asyncio.to_thread to run the synchronous method in a thread pool.
+        # This is suitable if the underlying endpoint.predict is blocking.
+        return await asyncio.to_thread(self._predict_raw, prompt, **kwargs)
 
+    # LlamaIndex's LLM interface requires `complete` and `acomplete` for text completion.
+    def complete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
+        """LlamaIndex standard method for text completion."""
+        text = self._predict_raw(prompt, **kwargs)
+        return CompletionResponse(text=text)
+
+    async def acomplete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
+        """LlamaIndex standard async method for text completion."""
+        text = await self._apredict_raw(prompt, **kwargs)
+        return CompletionResponse(text=text)
+        
 # Setting LLMs - keep existing configuration
 llm = Gemini(
     model="models/gemini-2.0-flash",
