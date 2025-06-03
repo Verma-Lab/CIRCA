@@ -300,8 +300,6 @@ endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea
 #         response_text = await self._apredict_raw(prompt, **kwargs)
 #         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
 #                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-# Make sure 're' is imported at the top of your file with other imports,
-# as it's used in the _clean_gemma_output method.
 class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
     endpoint: aiplatform.Endpoint = Field(exclude=True) # Declare 'endpoint' as a Pydantic field, exclude from serialization
     model_name: str = Field(default="gemma-vertex-ai") # Declare 'model_name' as a Pydantic field
@@ -319,7 +317,7 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
         """Get LLM metadata."""
         return LLMMetadata(
             model_name=self.model_name, # <--- CHANGE from self._model_name to self.model_name
-            is_chat_model=False, # Set to True if primarily used for chat and it fully supports chat roles
+            is_chat_model=False,
         )
 
     def _get_params(self, **kwargs: Any) -> Dict[str, Any]:
@@ -330,53 +328,136 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
             params["max_output_tokens"] = kwargs.pop("max_tokens")
         elif "max_new_tokens" in kwargs: # Support common alternative
             params["max_output_tokens"] = kwargs.pop("max_new_tokens")
+        else:
+            # Set a reasonable default for focused outputs
+            params["max_output_tokens"] = 512
+            
+        # Temperature control - lower for more focused outputs
         if "temperature" in kwargs:
             params["temperature"] = kwargs.pop("temperature")
+        else:
+            params["temperature"] = 0.3  # Default to lower temperature
+            
         if "top_k" in kwargs: # Top-k sampling
             params["top_k"] = kwargs.pop("top_k")
+        else:
+            params["top_k"] = 40
+            
         if "top_p" in kwargs: # Top-p sampling
             params["top_p"] = kwargs.pop("top_p")
-        
-        # --- IMPORTANT: Handle stop sequences ---
-        # Vertex AI's 'predict' method typically expects 'stop_sequences'
+        else:
+            params["top_p"] = 0.95
+            
+        # Add stop sequences to prevent rambling
         if "stop_sequences" in kwargs:
             params["stop_sequences"] = kwargs.pop("stop_sequences")
-        elif "stop" in kwargs and isinstance(kwargs["stop"], list): # LlamaIndex often uses 'stop'
-            params["stop_sequences"] = kwargs.pop("stop")
         else:
-            # Default stop sequences for Gemma instruction-tuned models
-            params["stop_sequences"] = ["<end_of_turn>", "\n\n", "```"] # Common delimiters to stop generation
-        
+            # Common stop sequences that work across different prompt types
+            params["stop_sequences"] = [
+                "\n\n\n",
+                "<end>",
+                "</response>",
+                "---",
+                "###"
+            ]
+            
         # Add any other parameters your specific Vertex AI endpoint expects
+        # Example: 'candidate_count' for number of responses
         return params
 
-    def _clean_gemma_output(self, output_text: str) -> str:
-        """Internal helper to clean Gemma's raw output from common artifacts."""
-        output_text = output_text.strip()
+    def _clean_response(self, text: str, original_prompt: str) -> str:
+        """Clean the response to remove echoed prompts and artifacts."""
+        if not text:
+            return text
+            
+        # Remove the original prompt if it's echoed at the beginning
+        text = text.strip()
         
-        # Remove markdown code block fences (e.g., ```python\n...\n``` or ```\n...\n```)
-        if output_text.startswith("```") and output_text.endswith("```"):
-            inner_text = output_text[3:-3].strip()
-            # If there's a language hint line (e.g., "python" or "text"), remove it
-            if '\n' in inner_text and inner_text.split('\n')[0].strip().isalpha():
-                output_text = "\n".join(inner_text.split('\n')[1:]).strip()
-            else:
-                output_text = inner_text
+        # Check if response starts with common prompt patterns and remove them
+        prompt_indicators = [
+            "Prompt:",
+            "Input:",
+            "Question:",
+            "Task:",
+            "Instruction:",
+            "User:",
+            "Human:"
+        ]
         
-        # Remove common model echoes or conversational prefixes, including what your prompt might contain
-        output_text = re.sub(r"^(Output:|Translation:|Language code:|English translation:)\s*", "", output_text, flags=re.IGNORECASE).strip()
-        output_text = re.sub(r"^(Hello|Hi|I can help with that|Here is the translation|The translated text is|The language code is):?\s*", "", output_text, flags=re.IGNORECASE).strip()
-        output_text = re.sub(r"\<end_of_turn\>", "", output_text).strip() # Remove any lingering Gemma-specific stop tokens
+        lines = text.split('\n')
+        cleaned_lines = []
+        skip_until_output = False
         
-        return output_text
+        for i, line in enumerate(lines):
+            line_lower = line.strip().lower()
+            
+            # Check if this line contains prompt echo indicators
+            if any(indicator.lower() in line_lower for indicator in prompt_indicators):
+                skip_until_output = True
+                continue
+                
+            # Check for output indicators that signal actual response
+            output_indicators = [
+                "output:",
+                "response:",
+                "answer:",
+                "result:",
+                "translation:",
+                "model:",
+                "assistant:"
+            ]
+            
+            if skip_until_output and any(indicator in line_lower for indicator in output_indicators):
+                skip_until_output = False
+                # Skip the output indicator line itself
+                continue
+                
+            if not skip_until_output:
+                cleaned_lines.append(line)
+        
+        text = '\n'.join(cleaned_lines).strip()
+        
+        # Remove any remaining wrapper patterns
+        # Handle markdown code blocks
+        if text.startswith('```') and text.endswith('```'):
+            text = text[3:-3].strip()
+            # Remove language identifier if present
+            if '\n' in text:
+                first_line = text.split('\n')[0]
+                if not ' ' in first_line and len(first_line) < 20:
+                    text = '\n'.join(text.split('\n')[1:])
+        
+        # Remove quotes if the entire response is quoted
+        if len(text) > 2 and text[0] == text[-1] and text[0] in ['"', "'"]:
+            text = text[1:-1]
+            
+        return text.strip()
+
+    def _format_prompt_for_instruction_following(self, prompt: str) -> str:
+        """Format prompt to maximize instruction following."""
+        # Add clear instruction wrapper to help Gemma understand it should follow instructions
+        formatted_prompt = f"""<start_of_turn>user
+{prompt}
+
+IMPORTANT: Provide ONLY the requested output. Do not include explanations, examples, or additional context unless specifically asked.
+<end_of_turn>
+<start_of_turn>model"""
+        
+        return formatted_prompt
 
     def _predict_raw(self, prompt: str, **kwargs: Any) -> str:
         """Internal synchronous prediction method that interacts with Vertex AI endpoint."""
         try:
-            # Prepare the request instances. The key for the prompt depends on the model's input signature.
-            instances = [{"prompt": prompt}]
+            # Store original prompt for cleaning later
+            original_prompt = prompt
             
-            # Extract and map parameters, including stop sequences
+            # Format prompt for better instruction following
+            formatted_prompt = self._format_prompt_for_instruction_following(prompt)
+            
+            # Prepare the request instances
+            instances = [{"prompt": formatted_prompt}]
+            
+            # Extract and map parameters with good defaults
             parameters = self._get_params(**kwargs)
 
             # Call the Vertex AI endpoint
@@ -385,8 +466,7 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
             # Process the response from Vertex AI
             prediction_data = response.predictions[0] if response.predictions else ""
             
-            # The structure of `response.predictions` can vary.
-            # It might be a string, or a dictionary with a 'text' or 'content' key.
+            # Extract text from response
             if isinstance(prediction_data, dict):
                 if "text" in prediction_data:
                     prediction = prediction_data["text"]
@@ -399,10 +479,11 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
             else:
                 prediction = str(prediction_data) # General fallback if not string or dict
 
-            # --- IMPORTANT: Apply cleaning to the raw prediction here ---
-            cleaned_prediction = self._clean_gemma_output(prediction)
+            # Clean the response
+            cleaned_prediction = self._clean_response(prediction, original_prompt)
             
             return cleaned_prediction
+            
         except Exception as e:
             logger.error(f"Error calling Vertex AI endpoint: {e}")
             raise # Re-raise the exception to propagate it to LlamaIndex's error handling
@@ -413,79 +494,84 @@ class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM bas
         # This is suitable if the underlying endpoint.predict is blocking.
         return await asyncio.to_thread(self._predict_raw, prompt, **kwargs)
 
-    # --- New internal helper for Gemma's completion prompt format ---
-    def _format_gemma_completion_prompt(self, prompt_text: str) -> str:
-        """Formats a raw text prompt into Gemma's expected instruct format for completion."""
-        return f"<start_of_turn>user\n{prompt_text}<end_of_turn><start_of_turn>model\n"
-
+    # LlamaIndex's LLM interface requires `complete` and `acomplete` for text completion.
     def complete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
         """LlamaIndex standard method for text completion."""
-        # Apply Gemma's specific instruct formatting before sending to _predict_raw
-        formatted_prompt = self._format_gemma_completion_prompt(prompt)
-        text = self._predict_raw(formatted_prompt, **kwargs) # Pass kwargs to _predict_raw for stop sequences
+        text = self._predict_raw(prompt, **kwargs)
         return CompletionResponse(text=text)
 
     async def acomplete(self, prompt: str, **kwargs: Any) -> CompletionResponse:
         """LlamaIndex standard async method for text completion."""
-        formatted_prompt = self._format_gemma_completion_prompt(prompt)
-        text = await self._apredict_raw(formatted_prompt, **kwargs) # Pass kwargs to _apredict_raw
+        text = await self._apredict_raw(prompt, **kwargs)
         return CompletionResponse(text=text)
-    
+        
     def _messages_to_prompt(self, messages: List[ChatMessage]) -> str:
         """Converts a list of ChatMessage to a single string prompt for a completion model."""
         prompt_parts = []
+        
+        # Add system message handling for better instruction following
+        system_message = None
+        
         for message in messages:
-            if message.role == MessageRole.USER:
+            if message.role == MessageRole.SYSTEM:
+                system_message = message.content
+            elif message.role == MessageRole.USER:
                 prompt_parts.append(f"<start_of_turn>user\n{message.content}<end_of_turn>")
             elif message.role == MessageRole.ASSISTANT:
                 prompt_parts.append(f"<start_of_turn>model\n{message.content}<end_of_turn>")
-            elif message.role == MessageRole.SYSTEM:
-                prompt_parts.append(f"<start_of_turn>system\n{message.content}<end_of_turn>")
-            # Add other roles if needed, or default to USER
-        prompt_parts.append(f"<start_of_turn>model\n") # This makes the model respond after the last turn
+                
+        # If there's a system message, prepend it with clear instructions
+        if system_message:
+            formatted_system = f"<start_of_turn>system\nFollow these instructions carefully: {system_message}<end_of_turn>\n"
+            prompt_parts.insert(0, formatted_system)
+            
+        # Add the model turn indicator
+        prompt_parts.append(f"<start_of_turn>model")
+        
         return "\n".join(prompt_parts)
-
+        
+    # <--- ADD THE FOLLOWING METHOD:
     def chat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
         """LlamaIndex standard method for chat completion."""
         prompt = self._messages_to_prompt(messages)
-        response_text = self._predict_raw(prompt, **kwargs) # Pass kwargs to _predict_raw for stop sequences etc.
+        response_text = self._predict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-
+        
+    # <--- ADD THE FOLLOWING METHOD:
     async def achat(self, messages: List[ChatMessage], **kwargs: Any) -> ChatResponse:
         """LlamaIndex standard async method for chat completion."""
         prompt = self._messages_to_prompt(messages)
-        response_text = await self._apredict_raw(prompt, **kwargs) # Pass kwargs to _apredict_raw
+        response_text = await self._apredict_raw(prompt, **kwargs)
         return ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-    
-    # Streaming methods (assuming Vertex AI's endpoint doesn't truly stream, but returns full response)
-    # The _predict_raw already handles the cleaning and stop sequences.
+        
+    # <--- ADD THE FOLLOWING METHOD:
     def stream_complete(self, prompt: str, **kwargs: Any) -> Generator[CompletionResponse, None, None]:
         """LlamaIndex standard method for streaming text completion."""
-        formatted_prompt = self._format_gemma_completion_prompt(prompt) # Format for Gemma
-        text = self._predict_raw(formatted_prompt, **kwargs) # Call the core prediction logic
-        yield CompletionResponse(text=text, delta=text) # Yield the complete response as a single chunk
-
+        # As Vertex AI endpoint might not stream, simulate by yielding full response.
+        text = self._predict_raw(prompt, **kwargs)
+        yield CompletionResponse(text=text, delta=text)
+        
+    # <--- ADD THE FOLLOWING METHOD:
     async def astream_complete(self, prompt: str, **kwargs: Any) -> AsyncGenerator[CompletionResponse, None]:
         """LlamaIndex standard async method for streaming text completion."""
-        formatted_prompt = self._format_gemma_completion_prompt(prompt) # Format for Gemma
-        text = await self._apredict_raw(formatted_prompt, **kwargs) # Call the core async prediction logic
-        yield CompletionResponse(text=text, delta=text) # Yield the complete response as a single chunk
-
+        text = await self._apredict_raw(prompt, **kwargs)
+        yield CompletionResponse(text=text, delta=text)
+        
+    # <--- ADD THE FOLLOWING METHOD:
     def stream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> Generator[ChatResponse, None, None]:
         """LlamaIndex standard method for streaming chat completion."""
-        prompt = self._messages_to_prompt(messages) # Already handles Gemma chat format
-        response_text = self._predict_raw(prompt, **kwargs) # Call the core prediction logic
+        prompt = self._messages_to_prompt(messages)
+        response_text = self._predict_raw(prompt, **kwargs)
         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-
-    # Removed the duplicate astream_chat definition, keeping only one.
+                           
+    # <--- ADD THE FOLLOWING METHOD:
     async def astream_chat(self, messages: List[ChatMessage], **kwargs: Any) -> AsyncGenerator[ChatResponse, None]:
         """LlamaIndex standard async method for streaming chat completion."""
-        prompt = self._messages_to_prompt(messages) # Already handles Gemma chat format
-        response_text = await self._apredict_raw(prompt, **kwargs) # Call the core async prediction logic
+        prompt = self._messages_to_prompt(messages)
+        response_text = await self._apredict_raw(prompt, **kwargs)
         yield ChatResponse(message=ChatMessage(role=MessageRole.ASSISTANT, content=response_text),
                            delta=ChatMessage(role=MessageRole.ASSISTANT, content=response_text))
-
 # Setting LLMs - keep existing configuration
 llm = Gemini(
     model="models/gemini-2.0-flash",
