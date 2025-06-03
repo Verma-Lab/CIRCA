@@ -165,27 +165,27 @@ LLM_MODELS = {
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
 
-# Settings.llm = gemini_model
-MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
-if not torch.cuda.is_available():
-    logger.error("CUDA not available. Cannot proceed without GPU.")
-    raise RuntimeError("CUDA not available. Check GPU setup.")
-logger.info(f"Using GPU: {torch.cuda.get_device_name(0)}") # This line is now correctly showing Tesla T4!
+Settings.llm = gemini_model
+# MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
+# if not torch.cuda.is_available():
+#     logger.error("CUDA not available. Cannot proceed without GPU.")
+#     raise RuntimeError("CUDA not available. Check GPU setup.")
+# logger.info(f"Using GPU: {torch.cuda.get_device_name(0)}") # This line is now correctly showing Tesla T4!
 
-# Initialize the tokenizer
-try:
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-except Exception as e:
-    logger.error(f"Failed to load tokenizer: {e}")
-    raise
+# # Initialize the tokenizer
+# try:
+#     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+# except Exception as e:
+#     logger.error(f"Failed to load tokenizer: {e}")
+#     raise
 
-# Initialize HuggingFaceLLM for Llama 3.1 8B
-quantization_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_quant_type="nf4", # Recommended 4-bit quantization type
-    bnb_4bit_compute_dtype=torch.bfloat16, # Keep computation in bfloat16 for speed if GPU supports it
-    bnb_4bit_use_double_quant=False, # Usually not needed
-)
+# # Initialize HuggingFaceLLM for Llama 3.1 8B
+# quantization_config = BitsAndBytesConfig(
+#     load_in_4bit=True,
+#     bnb_4bit_quant_type="nf4", # Recommended 4-bit quantization type
+#     bnb_4bit_compute_dtype=torch.bfloat16, # Keep computation in bfloat16 for speed if GPU supports it
+#     bnb_4bit_use_double_quant=False, # Usually not needed
+# )
 
 # try:
 #     llama_llm = HuggingFaceLLM(
@@ -216,45 +216,45 @@ quantization_config = BitsAndBytesConfig(
 # response = llama_llm.complete(test_prompt)
 # print(f"Test response: {response.text}")
 
-logger.info("Loading Gemma model locally...")
-gemma_tokenizer = AutoTokenizer.from_pretrained(
-    LOCAL_MODEL_NAME,
-    token=HUGGINGFACE_ACCESS_TOKEN
-)
-gemma_model = Gemma3ForConditionalGeneration.from_pretrained(
-    LOCAL_MODEL_NAME,
-    device_map="auto",
-    torch_dtype=torch.bfloat16,
-    quantization_config=quantization_config,
-    token=HUGGINGFACE_ACCESS_TOKEN,
-    low_cpu_mem_usage=True,
-).eval()
-logger.info("Gemma 3 4B model loaded successfully!")
+# logger.info("Loading Gemma model locally...")
+# gemma_tokenizer = AutoTokenizer.from_pretrained(
+#     LOCAL_MODEL_NAME,
+#     token=HUGGINGFACE_ACCESS_TOKEN
+# )
+# gemma_model = Gemma3ForConditionalGeneration.from_pretrained(
+#     LOCAL_MODEL_NAME,
+#     device_map="auto",
+#     torch_dtype=torch.bfloat16,
+#     quantization_config=quantization_config,
+#     token=HUGGINGFACE_ACCESS_TOKEN,
+#     low_cpu_mem_usage=True,
+# ).eval()
+# logger.info("Gemma 3 4B model loaded successfully!")
 
-# Wrap in HuggingFaceLLM for LlamaIndex
-gemma_llm = HuggingFaceLLM(
-    model_name=LOCAL_MODEL_NAME,
-    model=gemma_model,
-    tokenizer=gemma_tokenizer,
-    max_new_tokens=200,
-    generate_kwargs={
-        "do_sample": True,      # Stop being a predictable asshole
-        "temperature": 0.7,     # Add some goddamn personality
-        "repetition_penalty": 1.2,  # Quit repeating shit
-        "top_p": 0.9,           # Keep it sensible, motherfucker
-        "top_k": 50,            # Don’t pull random crap
-    }
-)
+# # Wrap in HuggingFaceLLM for LlamaIndex
+# gemma_llm = HuggingFaceLLM(
+#     model_name=LOCAL_MODEL_NAME,
+#     model=gemma_model,
+#     tokenizer=gemma_tokenizer,
+#     max_new_tokens=200,
+#     generate_kwargs={
+#         "do_sample": True,      # Stop being a predictable asshole
+#         "temperature": 0.7,     # Add some goddamn personality
+#         "repetition_penalty": 1.2,  # Quit repeating shit
+#         "top_p": 0.9,           # Keep it sensible, motherfucker
+#         "top_k": 50,            # Don’t pull random crap
+#     }
+# )
 
 # Set to Settings.llm
-Settings.llm = gemma_llm
-logger.info("Gemma 3 4B set to Settings.llm successfully!")
+# Settings.llm = gemma_llm
+# logger.info("Gemma 3 4B set to Settings.llm successfully!")
 
 # Test model
-start_time = time.time()
-test_prompt = "Translate 'Hello' to Spanish."
-response = gemma_llm.complete(test_prompt)
-logger.info(f"Test response: {response.text}, Time: {time.time() - start_time:.2f} seconds")
+# start_time = time.time()
+# test_prompt = "Translate 'Hello' to Spanish."
+# response = gemma_llm.complete(test_prompt)
+# logger.info(f"Test response: {response.text}, Time: {time.time() - start_time:.2f} seconds")
 
 # Settings.llm = llama_llm
 # Chroma Client - keep existing configuration
