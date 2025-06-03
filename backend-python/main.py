@@ -29,8 +29,8 @@ import nest_asyncio
 import pickle
 from typing import Generator, AsyncGenerator # <--- ADD THIS LINE
 from llama_index.llms.huggingface import HuggingFaceLLM
-from llama_index.core.llms import LLM, CompletionResponse
 from llama_index.core.base.llms.types import LLMMetadata, ChatMessage, MessageRole # <--- CHANGED THIS LINE
+from llama_index.core.llms import LLM, CompletionResponse, ChatResponse # <--- ADDED ChatResponse here
 from llama_index.core.base.llms.types import LLMMetadata
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Integer, Float, Boolean, DateTime, ForeignKey
 from sqlalchemy import func
