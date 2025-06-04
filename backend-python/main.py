@@ -11624,12 +11624,11 @@ async def vector_flow_chat(request: dict):
             if "FUNCTIONS:" in current_node_doc:
                 # Check if user message matches any function
                 function_match_prompt = f"""
-                User message: "{message}"
+<begin_of_sentence>|<User>|{message}<|Assistant|>CRITICAL: Output ONLY the single word "MATCH" or "NO_MATCH". Do not include any extra text, explanations, code block markers, punctuation, or quotes. Respond to the following:
                 Current node functions: {current_node_doc.split("FUNCTIONS:")[1] if "FUNCTIONS:" in current_node_doc else "None"}
                 
-                Does the user's message match any of the functions/conditions listed? 
-                Return only "MATCH" or "NO_MATCH"
-                """
+                Does the user's message match any of the functions/conditions listed?<|think>|n
+"""
                 
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
