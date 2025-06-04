@@ -701,32 +701,12 @@ LLM_MODELS = {
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
 qwen_model = VertexAIGemmaLLM(endpoint)
-Settings.llm = qwen_model
+Settings.llm = gemini_model
 # Settings.llm = gemma_llm
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = qwen_model.complete(test_prompt)
 print(f"Test response: {response.text}")
-def test_deepseek_configuration():
-    """Test function to verify DeepSeek behaves as expected on Vertex AI"""
-    test_cases = [
-        "Translate 'Hello' to Spanish:",
-        "Detect the language of this text: 'Bonjour'",
-        "What is 2+2?",
-    ]
-    
-    print("Testing DeepSeek configuration:")
-    for i, test_prompt in enumerate(test_cases, 1):
-        try:
-            # Construct the prompt using the image's format
-            deepseek_prompt = f"""
-<begin_of_sentence>|<User>|{test_prompt}<|Assistant|>CRITICAL: Output the response directly with no extra text, explanations, code block markers, or quotes.<|think>|n
-"""
-            # Call the Vertex AI endpoint
-            response = call_vertex_endpoint(deepseek_prompt, max_tokens=128, temperature=0.6)
-            print(f"Test {i}: '{test_prompt}' -> '{response}'")
-        except Exception as e:
-            print(f"Test {i} failed: {e}")
-test_deepseek_configuration()
+
 # MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 # if not torch.cuda.is_available():
 #     logger.error("CUDA not available. Cannot proceed without GPU.")
@@ -10947,7 +10927,19 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
             "top_p": 0.95, 
             "raw_response":True
         }
-        response = endpoint.predict(instances=[{"prompt": json_enforced_prompt}], parameters=parameters)
+        request_to_send = {
+            "instances": [
+                {
+                    "prompt": prompt,
+                    "max_tokens": max_tokens,
+                    "temperature": temperature,
+                    "top_p": top_p,
+                    "top_k": top_k,
+                    "raw_response": raw_response
+                }
+            ]
+        }
+        response = endpoint.predict(instances=request_to_send, parameters=parameters)
         if response.predictions and len(response.predictions) > 0:
             return response.predictions[0]
         else:
