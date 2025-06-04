@@ -10932,7 +10932,7 @@ def get_starting_node(flow_index):
 #         }
     
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-    """Helper function to call Vertex AI endpoint"""
+    """Helper function to call Vertex AI endpoint with proper response extraction"""
     try:
         parameters = {
             "max_output_tokens": max_tokens,
@@ -10941,10 +10941,34 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
             "top_p": 0.95
         }
         response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
+        
         if response.predictions and len(response.predictions) > 0:
-            return response.predictions[0]
+            result = response.predictions[0]
+            
+            # CRITICAL FIX: Extract only the actual response, not the prompt
+            if isinstance(result, str):
+                # Look for "Output:" and extract everything after it
+                if "Output:" in result:
+                    output_start = result.find("Output:") + len("Output:")
+                    actual_response = result[output_start:].strip()
+                    # Remove any markdown formatting like ```
+                    actual_response = actual_response.replace("```", "").strip()
+                    return actual_response
+                
+                # Fallback: if no "Output:" found, try to extract the last meaningful line
+                lines = result.split('\n')
+                for line in reversed(lines):
+                    line = line.strip()
+                    if line and not line.startswith(('Human:', 'Assistant:', 'Prompt:', 'Original Response:', 'User message:')):
+                        return line
+                
+                # Last resort: return the full result
+                return result
+            
+            return str(result)
         else:
             return "No response generated"
+            
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
