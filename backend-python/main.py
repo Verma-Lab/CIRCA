@@ -11639,6 +11639,7 @@ async def vector_flow_chat(request: dict):
                     # match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
                     response = endpoint.predict(instances=[{"prompt": function_match_prompt}])
                     match_response = response.predictions[0]
+                    print(f"[FUNCTION MATCH CHECK] {match_response}")
                     if isinstance(match_response, str):
                         match_response = match_response.strip()
 
