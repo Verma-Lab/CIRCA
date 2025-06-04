@@ -10916,83 +10916,87 @@ def get_starting_node(flow_index):
 #         }
     
 import json
-# Assuming 'endpoint' is globally available or passed in.
-# Example initialization:
-# from vertexai.language_models import TextGenerationModel
-# endpoint = TextGenerationModel.from_pretrained("text-bison")
-# OR for newer models like Gemini:
-# from vertexai.generative_models import GenerativeModel
-# model = GenerativeModel("gemini-pro")
-# endpoint = model # For Gemini, the predict method is often on the model object itself
-
-def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-    """Helper function to call Vertex AI endpoint"""
+def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3, force_json=True):
+    """
+    Helper function to call Vertex AI endpoint.
+    
+    Args:
+        prompt (str): The prompt to send to the LLM.
+        max_tokens (int): Maximum number of output tokens.
+        temperature (float): Controls the randomness of the output.
+        force_json (bool): If True, a critical instruction to output ONLY JSON
+                           will be prepended to the prompt. If False, the prompt
+                           is sent as-is, allowing for non-JSON outputs.
+    Returns:
+        str: The raw text prediction from the LLM. If force_json is True and
+             the LLM fails to return valid JSON, or if any error occurs,
+             a JSON string indicating the error will be returned. If force_json
+             is False and an error occurs, a plain text error string is returned.
+    """
     try:
-        # 1. Ensure JSON output is enforced in the PROMPT itself.
-        # This instruction is critical for the LLM to understand the desired format.
-        json_enforced_prompt = (
-            f"CRITICAL: Output ONLY valid JSON starting with {{ and ending with }}. "
-            f"Do not include any extra text, explanations, or code block markers. "
-            f"Respond to the following: {prompt}"
-        )
+        if force_json:
+            # Prepend the JSON enforcement instruction
+            processed_prompt = (
+                f"CRITICAL: Output ONLY valid JSON starting with {{ and ending with }}. "
+                f"Do not include any extra text, explanations, or code block markers. "
+                f"Respond to the following: {prompt}"
+            )
+        else:
+            # Use the prompt as-is, no JSON enforcement added
+            processed_prompt = prompt
 
-        # 2. Define the prediction parameters correctly.
-        # These are passed as a separate 'parameters' argument to endpoint.predict.
         prediction_parameters = {
-            "max_output_tokens": max_tokens, # Use the 'max_tokens' passed to the function
-            "temperature": temperature,      # Use the 'temperature' passed to the function
+            "max_output_tokens": max_tokens,
+            "temperature": temperature,
             "top_k": 40,
             "top_p": 0.95,
-            # 'raw_response' is usually not a standard parameter for text generation models
-            # through the SDK this way. If your specific endpoint requires it, confirm its
-            # correct placement in the Vertex AI documentation. Removing for standard setup.
         }
 
-        # 3. Define the instances to send (just one prompt).
         instances_to_send = [
             {
-                "prompt": json_enforced_prompt, # Use the prompt with JSON enforcement
+                "prompt": processed_prompt,
             }
         ]
 
-        print(f"DEBUG: Sending request to Vertex AI with prompt length: {len(json_enforced_prompt)}")
+        print(f"DEBUG: Sending request to Vertex AI with prompt length: {len(processed_prompt)}")
         print(f"DEBUG: Parameters: {prediction_parameters}")
+        print(f"DEBUG: force_json={force_json}") # Added for clarity
 
-        # 4. Make the prediction request with correct arguments.
-        # Assuming 'endpoint' is properly initialized (e.g., TextGenerationModel object).
         response = endpoint.predict(
             instances=instances_to_send,
             parameters=prediction_parameters
         )
 
         if response.predictions and len(response.predictions) > 0:
-            # The actual text output is typically in response.predictions[0] for text-bison.
-            # For Gemini, it might be response.text or response.candidates[0].text
-            # Adjust based on your specific model's response object.
-            # Let's assume it's directly the first prediction's content for now.
             prediction_text = response.predictions[0]
 
-            # Optionally, add a check here if the model *failed* to return valid JSON
-            # despite the prompt instruction. This can happen.
-            try:
-                json.loads(prediction_text)
-                print(f"DEBUG: Raw LLM response (JSON parsable):\n{prediction_text}")
-            except json.JSONDecodeError:
-                print(f"WARNING: LLM did not return valid JSON despite instruction. Raw response:\n{prediction_text}")
-                # You might want to raise an error here or handle it upstream
+            if force_json:
+                # If JSON was enforced, attempt to parse it and warn if it's not valid
+                try:
+                    json.loads(prediction_text) # Still try to load to validate JSON
+                    print(f"DEBUG: Raw LLM response (JSON parsable):\n{prediction_text}")
+                except json.JSONDecodeError:
+                    # If JSON was expected but not returned, this is an error condition
+                    print(f"WARNING: LLM did not return valid JSON despite instruction. Raw response:\n{prediction_text}")
+                    return json.dumps({"error": f"LLM failed to return valid JSON: {prediction_text}"})
+            else:
+                # If not forcing JSON, just log the raw response as is.
+                print(f"DEBUG: Raw LLM response (plain text expected):\n{prediction_text}")
 
-            return prediction_text
+            return prediction_text # Return the raw prediction text as a string
         else:
             print("Vertex AI returned no predictions.")
-            # If no predictions, return a JSON string indicating an error,
-            # so the downstream parser doesn't crash.
-            return json.dumps({"error": "No prediction generated by LLM."})
+            if force_json:
+                return json.dumps({"error": "No prediction generated by LLM."})
+            else:
+                return "ERROR: No prediction generated by LLM." # Return plain text error
 
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
-        # If an error occurs during the API call, return a JSON string
-        # indicating the error, so the downstream parser doesn't crash.
-        return json.dumps({"error": f"Failed to call Vertex AI: {str(e)}"})
+        if force_json:
+            return json.dumps({"error": f"Failed to call Vertex AI: {str(e)}"})
+        else:
+            return f"ERROR: Failed to call Vertex AI: {str(e)}" # Return plain text error
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
@@ -11666,11 +11670,12 @@ async def vector_flow_chat(request: dict):
             if "FUNCTIONS:" in current_node_doc:
                 # Check if user message matches any function
                 function_match_prompt = f"""
-<begin_of_sentence>|<User>|{message}<|Assistant|>CRITICAL: Output ONLY the single word "MATCH" or "NO_MATCH". Do not include any extra text, explanations, code block markers, punctuation, or quotes. Respond to the following:
+                User message: "{message}"
                 Current node functions: {current_node_doc.split("FUNCTIONS:")[1] if "FUNCTIONS:" in current_node_doc else "None"}
                 
-                Does the user's message match any of the functions/conditions listed?<|think>|n
-"""
+                Does the user's message match any of the functions/conditions listed? 
+                Return only "MATCH" or "NO_MATCH"
+                """
                 
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
