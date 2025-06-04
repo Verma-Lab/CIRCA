@@ -10932,7 +10932,7 @@ def get_starting_node(flow_index):
 #         }
     
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-    """Helper function to call Vertex AI endpoint with proper response cleaning"""
+    """Helper function to call Vertex AI endpoint"""
     try:
         parameters = {
             "max_output_tokens": max_tokens,
@@ -10941,82 +10941,14 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
             "top_p": 0.95
         }
         response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
-        
         if response.predictions and len(response.predictions) > 0:
-            result = response.predictions[0]
-            
-            if isinstance(result, str):
-                # CRITICAL FIX: Remove the echoed prompt from the response
-                # Vertex AI returns: [PROMPT] + [RESPONSE]
-                # We need to extract only [RESPONSE]
-                
-                # Method 1: Split by the prompt and take what comes after
-                if prompt in result:
-                    # Find where the prompt ends
-                    prompt_end = result.find(prompt) + len(prompt)
-                    result = result[prompt_end:].strip()
-                
-                # Method 2: If the response starts with specific patterns, extract from there
-                # For JSON responses
-                if "{" in result:
-                    json_start = result.find("{")
-                    json_end = result.rfind("}") + 1
-                    if json_start >= 0 and json_end > json_start:
-                        try:
-                            # Try to extract just the JSON
-                            potential_json = result[json_start:json_end]
-                            json.loads(potential_json)  # Validate it's valid JSON
-                            return potential_json
-                        except:
-                            pass
-                
-                # For text responses that might have common patterns
-                # Look for the actual response after common prompt endings
-                prompt_endings = [
-                    "Return the rephrased response as a string.",
-                    "Return the response as a JSON object:",
-                    "Please provide a helpful response",
-                    "based on the document content",
-                    "addressing the user's query."
-                ]
-                
-                for ending in prompt_endings:
-                    if ending in result:
-                        split_point = result.find(ending) + len(ending)
-                        potential_response = result[split_point:].strip()
-                        if potential_response:
-                            result = potential_response
-                            break
-                
-                # Clean up any remaining artifacts
-                result = result.strip()
-                
-                # Remove quotes if the entire response is wrapped in them
-                if result.startswith('"') and result.endswith('"'):
-                    result = result[1:-1]
-                if result.startswith("'") and result.endswith("'"):
-                    result = result[1:-1]
-                
-                # Remove markdown code blocks
-                if "```" in result:
-                    # Extract content between code blocks
-                    parts = result.split("```")
-                    if len(parts) >= 3:
-                        # Format: ```[language]\n[content]\n```
-                        result = parts[1]
-                        # Remove language identifier if present
-                        if result.startswith("json") or result.startswith("python"):
-                            result = result.split('\n', 1)[1] if '\n' in result else result
-                
-                return result.strip()
-            
-            return str(result)
+            return response.predictions[0]
         else:
             return "No response generated"
-            
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
+
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
