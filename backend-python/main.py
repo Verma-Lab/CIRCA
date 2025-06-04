@@ -10942,32 +10942,14 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
         }
         response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
         if response.predictions and len(response.predictions) > 0:
-            print(f"Raw Vertex AI response: {response.predictions[0]}")  # Add debug logging
             return response.predictions[0]
         else:
-            print("No response generated from Vertex AI")
             return "No response generated"
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
 
-def clean_response(response):
-    """Clean LLM response to extract valid content."""
-    if isinstance(response, str):
-        # Extract content between triple backticks if present
-        if "```" in response:
-            try:
-                content = response.split("```")[1].strip()
-                # If it's a python code block, remove the 'python' prefix
-                if content.startswith("python\n"):
-                    content = content[len("python\n"):].strip()
-                return content
-            except IndexError:
-                pass
-        # Remove leading/trailing quotes and whitespace
-        return response.strip().strip('"')
-    return str(response)  # Fallback for non-string responses
-    
+
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
     """
@@ -11743,7 +11725,7 @@ async def vector_flow_chat(request: dict):
             try:
                 # response_text = Settings.llm.complete(full_context).text
                 response_text = call_vertex_endpoint(full_context, max_tokens=50, temperature=0.0)
-                response_text = clean_response(response_text)  # Clean the response
+
                 if "```json" in response_text:
                     response_text = response_text.split("```json")[1].split("```")[0].strip()
                 response_data = json.loads(response_text)
