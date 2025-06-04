@@ -10931,6 +10931,8 @@ def get_starting_node(flow_index):
 #             "content": "I'm having trouble processing your request. Please try again later."
 #         }
     
+import json # Ensure json is imported if you're using it inside this function
+
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     """Helper function to call Vertex AI endpoint"""
     try:
@@ -10941,74 +10943,66 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
             "top_p": 0.95
         }
         
-        # Make the raw prediction call
-        response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
+        # Make the raw prediction call.
+        # IMPORTANT: raw_prediction_text will contain the entire prompt + model's completion.
+        raw_prediction_text = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters).predictions[0]
         
-        if response.predictions and len(response.predictions) > 0:
-            raw_prediction_text = response.predictions[0]
+        # --- CRITICAL EXTRACTION LOGIC ---
+        # Your prompts consistently end with "Output:\n" followed by the desired content.
+        # Use rfind() to find the *last* occurrence of "Output:\n",
+        # in case "Output:" appears earlier within your extensive prompt instructions.
+        output_marker = "Output:\n"
+        marker_index = raw_prediction_text.rfind(output_marker)
+
+        if marker_index != -1:
+            # Extract the content that comes immediately after the "Output:\n" marker.
+            extracted_content = raw_prediction_text[marker_index + len(output_marker):].strip()
             
-            # --- CRITICAL CHANGE START ---
-            # Find the "Output:" marker in the raw prediction and extract everything after it.
-            # The prompt ends with "Output:\n```\n" for the rephrasing prompt
-            # And "Output:\n```json\n" for the JSON output prompt (next_node_id prediction)
-
-            # Define common output markers you expect based on your prompts
-            output_marker_json = "Output:\n```json\n"
-            output_marker_text = "Output:\n```\n" # Note: This might be ```text\n or just ```\n depending on the model's exact output
-
-            extracted_content = ""
-
-            if output_marker_json in raw_prediction_text:
-                # This path is likely for the JSON output from the first LLM call
-                start_index = raw_prediction_text.find(output_marker_json) + len(output_marker_json)
-                extracted_content = raw_prediction_text[start_index:].strip()
-                # Further clean any trailing ``` or other markdown fences for JSON
-                if extracted_content.endswith('```'):
-                    extracted_content = extracted_content[:-3].strip()
-                # Ensure it's still valid JSON (optional, but good for debugging)
-                try:
-                    import json
-                    json.loads(extracted_content) # Try parsing to validate
-                except json.JSONDecodeError:
-                    print(f"Warning: Extracted content for JSON was not valid JSON after initial cleaning: {extracted_content[:100]}...")
+            # Now, clean up any trailing markdown code block fences (like ```python or ```)
+            # based on the example you provided.
+            if extracted_content.endswith('```python'):
+                extracted_content = extracted_content[:-len('```python')].strip()
+            elif extracted_content.endswith('```'): # More general case for ``` or ```json etc.
+                extracted_content = extracted_content[:-3].strip()
                 
-            elif output_marker_text in raw_prediction_text:
-                # This path is likely for the plain text output from the rephrasing LLM call
-                start_index = raw_prediction_text.find(output_marker_text) + len(output_marker_text)
-                extracted_content = raw_prediction_text[start_index:].strip()
-                # Further clean any trailing ``` or other markdown fences for plain text
-                if extracted_content.endswith('```'):
-                    extracted_content = extracted_content[:-3].strip()
-                # Remove outer quotes if the model enclosed the string in quotes (existing logic)
-                if extracted_content.startswith('"') and extracted_content.endswith('"'):
-                    extracted_content = extracted_content[1:-1].strip()
-
-            else:
-                # Fallback: If no explicit 'Output:' marker is found (less ideal, but robust)
-                # This assumes the actual desired output is at the very end
-                # You might need to adjust this heuristic based on observed behavior.
-                print("Warning: 'Output:' marker not found in prediction. Returning raw prediction.")
-                extracted_content = raw_prediction_text.strip()
-                # Still try to remove markdown fences if they exist
-                if extracted_content.startswith('```') and extracted_content.endswith('```'):
-                    # This handles both ``` and ```json, ```text, etc.
-                    lines = extracted_content.split('\n')
-                    if len(lines) > 2: # At least ```, content, ```
-                        extracted_content = '\n'.join(lines[1:-1]).strip()
-                    else: # Handle cases like ```content``` on one line
-                        extracted_content = extracted_content[3:-3].strip()
-                if extracted_content.startswith('"') and extracted_content.endswith('"'):
-                    extracted_content = extracted_content[1:-1].strip()
-
-            # --- CRITICAL CHANGE END ---
+            # Finally, if the model wrapped the content in quotes (e.g., for string outputs), remove them.
+            if extracted_content.startswith('"') and extracted_content.endswith('"'):
+                extracted_content = extracted_content[1:-1].strip()
 
             return extracted_content
         else:
-            return "No response generated"
+            # Fallback scenario: If the "Output:\n" marker is not found in the prediction.
+            # This would indicate the model severely deviated from the expected format.
+            # In this case, we'll try a more generic cleanup, but the ideal fix is the above.
+            print("Warning: 'Output:' marker not found in Vertex AI prediction. Attempting generic cleanup.")
+            cleaned_text = raw_prediction_text.strip()
+            
+            # Try to remove the leading "Prompt:" part if it exists (very heuristic)
+            if cleaned_text.startswith("Prompt:"):
+                # Find the first occurrence of "Output:" and take everything after it
+                parts = cleaned_text.split("Output:", 1)
+                if len(parts) > 1:
+                    cleaned_text = parts[1].strip()
+            
+            # Still try to remove markdown fences if they exist
+            if cleaned_text.startswith('```') and cleaned_text.endswith('```'):
+                lines = cleaned_text.split('\n')
+                if len(lines) > 2: # At least ```, content, ```
+                    cleaned_text = '\n'.join(lines[1:-1]).strip()
+                else: # Handle cases like ```content``` on one line
+                    cleaned_text = cleaned_text[3:-3].strip()
+            
+            # Still try to remove outer quotes
+            if cleaned_text.startswith('"') and cleaned_text.endswith('"'):
+                cleaned_text = cleaned_text[1:-1].strip()
+            
+            return cleaned_text
+            
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
+        # This catches actual API call errors, not content parsing issues.
         return f"Error: {str(e)}"
-
+        
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
     """
