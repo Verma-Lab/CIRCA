@@ -706,7 +706,23 @@ Settings.llm = gemini_model
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = qwen_model.complete(test_prompt)
 print(f"Test response: {response.text}")
+def test_qwen_configuration():
+    """Test function to verify Gemma behaves like Gemini"""
+    test_cases = [
+        "Translate 'Hello' to Spanish:",
+        "Detect the language of this text: 'Bonjour'",
+        "What is 2+2?",
+    ]
+    
+    print("Testing Gemma configuration:")
+    for i, test_prompt in enumerate(test_cases, 1):
+        try:
+            response = qwen_model.complete(test_prompt)
+            print(f"Test {i}: '{test_prompt}' -> '{response.text}'")
+        except Exception as e:
+            print(f"Test {i} failed: {e}")
 
+test_qwen_configuration()
 # MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 # if not torch.cuda.is_available():
 #     logger.error("CUDA not available. Cannot proceed without GPU.")
@@ -10915,88 +10931,26 @@ def get_starting_node(flow_index):
 #             "content": "I'm having trouble processing your request. Please try again later."
 #         }
     
-import json
-def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3, force_json=True):
-    """
-    Helper function to call Vertex AI endpoint.
-    
-    Args:
-        prompt (str): The prompt to send to the LLM.
-        max_tokens (int): Maximum number of output tokens.
-        temperature (float): Controls the randomness of the output.
-        force_json (bool): If True, a critical instruction to output ONLY JSON
-                           will be prepended to the prompt. If False, the prompt
-                           is sent as-is, allowing for non-JSON outputs.
-    Returns:
-        str: The raw text prediction from the LLM. If force_json is True and
-             the LLM fails to return valid JSON, or if any error occurs,
-             a JSON string indicating the error will be returned. If force_json
-             is False and an error occurs, a plain text error string is returned.
-    """
+def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
+    """Helper function to call Vertex AI endpoint"""
     try:
-        if force_json:
-            # Prepend the JSON enforcement instruction
-            processed_prompt = (
-                f"CRITICAL: Output ONLY valid JSON starting with {{ and ending with }}. "
-                f"Do not include any extra text, explanations, or code block markers. "
-                f"Respond to the following: {prompt}"
-            )
-        else:
-            # Use the prompt as-is, no JSON enforcement added
-            processed_prompt = prompt
-
-        prediction_parameters = {
-            "max_output_tokens": max_tokens,
+        # Enforce JSON output in the prompt
+        json_enforced_prompt = f"CRITICAL: Output ONLY valid JSON starting with {{ and ending with }}. Do not include any extra text, explanations, or code block markers. Respond to the following: {prompt}"
+        parameters = {
+            "max_output_tokens": 500,
             "temperature": temperature,
             "top_k": 40,
-            "top_p": 0.95,
+            "top_p": 0.95
         }
-
-        instances_to_send = [
-            {
-                "prompt": processed_prompt,
-            }
-        ]
-
-        print(f"DEBUG: Sending request to Vertex AI with prompt length: {len(processed_prompt)}")
-        print(f"DEBUG: Parameters: {prediction_parameters}")
-        print(f"DEBUG: force_json={force_json}") # Added for clarity
-
-        response = endpoint.predict(
-            instances=instances_to_send,
-            parameters=prediction_parameters
-        )
-
+        response = endpoint.predict(instances=[{"prompt": json_enforced_prompt}], parameters=parameters)
         if response.predictions and len(response.predictions) > 0:
-            prediction_text = response.predictions[0]
-
-            if force_json:
-                # If JSON was enforced, attempt to parse it and warn if it's not valid
-                try:
-                    json.loads(prediction_text) # Still try to load to validate JSON
-                    print(f"DEBUG: Raw LLM response (JSON parsable):\n{prediction_text}")
-                except json.JSONDecodeError:
-                    # If JSON was expected but not returned, this is an error condition
-                    print(f"WARNING: LLM did not return valid JSON despite instruction. Raw response:\n{prediction_text}")
-                    return json.dumps({"error": f"LLM failed to return valid JSON: {prediction_text}"})
-            else:
-                # If not forcing JSON, just log the raw response as is.
-                print(f"DEBUG: Raw LLM response (plain text expected):\n{prediction_text}")
-
-            return prediction_text # Return the raw prediction text as a string
+            return response.predictions[0]
         else:
-            print("Vertex AI returned no predictions.")
-            if force_json:
-                return json.dumps({"error": "No prediction generated by LLM."})
-            else:
-                return "ERROR: No prediction generated by LLM." # Return plain text error
-
+            return "No response generated"
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
-        if force_json:
-            return json.dumps({"error": f"Failed to call Vertex AI: {str(e)}"})
-        else:
-            return f"ERROR: Failed to call Vertex AI: {str(e)}" # Return plain text error
+        return f"Error: {str(e)}"
+        
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
