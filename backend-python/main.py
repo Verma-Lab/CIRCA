@@ -12561,45 +12561,6 @@ async def vector_flow_chat(request: dict):
         print(f"[CURRENT NODE DOC] {current_node_doc}")
         # Check if last assistant message asked about LMP and current message is a date
         calculated_gestational_info = ""
-        # if previous_messages and len(previous_messages) >= 1:
-        #     last_assistant_msg = None
-        #     for msg in reversed(previous_messages):
-        #         if msg.get("role") == "assistant":
-        #             last_assistant_msg = msg.get("content", "").lower()
-        #             break
-            
-        #     if last_assistant_msg and any(keyword in last_assistant_msg for keyword in ["lmp", "mm/dd/yyyy", "gestational age"]):
-        #         try:
-        #             from datetime import datetime
-        #             import re
-                    
-        #             # Check if current message is a date
-        #             date_pattern = r'(\d{1,2})/(\d{1,2})/(\d{4})'
-        #             match = re.search(date_pattern, message.strip())
-                    
-        #             if match:
-        #                 month, day, year = match.groups()
-        #                 try:
-        #                     parsed_lmp = datetime.strptime(f"{month.zfill(2)}/{day.zfill(2)}/{year}", "%m/%d/%Y")
-        #                     current_datetime = datetime.strptime(current_date, "%m/%d/%Y")
-                            
-        #                     if parsed_lmp <= current_datetime:
-        #                         days_diff = (current_datetime - parsed_lmp).days
-        #                         weeks = min(days_diff // 7, 40)
-                                
-        #                         if weeks <= 12:
-        #                             trimester = "first"
-        #                         elif weeks <= 27:
-        #                             trimester = "second"
-        #                         else:
-        #                             trimester = "third"
-                                
-        #                         calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on LMP {message.strip()}, the patient is {weeks} weeks pregnant and in the {trimester} trimester."
-        #                         print(f"[MANUAL CALCULATION] {calculated_gestational_info}")
-        #                 except ValueError:
-        #                     pass
-        #         except Exception as e:
-        #             print(f"Error in manual gestational age calculation: {e}")
         if previous_messages and len(previous_messages) >= 1:
             last_assistant_msg = None
             for msg in reversed(previous_messages):
@@ -12607,10 +12568,44 @@ async def vector_flow_chat(request: dict):
                     last_assistant_msg = msg.get("content", "").lower()
                     break
             
-            if last_assistant_msg and any(keyword in last_assistant_msg for keyword in ["lmp", "mm/dd/yyyy", "gestational age", "due date", "estimated due date"]):
+            if last_assistant_msg and any(keyword in last_assistant_msg for keyword in ["lmp", "mm/dd/yyyy", "gestational age",]):
                 try:
                     from datetime import datetime
                     import re
+                    
+                    # Check if current message is a date
+                    date_pattern = r'(\d{1,2})/(\d{1,2})/(\d{4})'
+                    match = re.search(date_pattern, message.strip())
+                    
+                    if match:
+                        month, day, year = match.groups()
+                        try:
+                            parsed_lmp = datetime.strptime(f"{month.zfill(2)}/{day.zfill(2)}/{year}", "%m/%d/%Y")
+                            current_datetime = datetime.strptime(current_date, "%m/%d/%Y")
+                            
+                            if parsed_lmp <= current_datetime:
+                                days_diff = (current_datetime - parsed_lmp).days
+                                weeks = min(days_diff // 7, 40)
+                                
+                                if weeks <= 12:
+                                    trimester = "first"
+                                elif weeks <= 27:
+                                    trimester = "second"
+                                else:
+                                    trimester = "third"
+                                
+                                calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on LMP {message.strip()}, the patient is {weeks} weeks pregnant and in the {trimester} trimester."
+                                print(f"[MANUAL CALCULATION] {calculated_gestational_info}")
+                        except ValueError:
+                            pass
+                except Exception as e:
+                    print(f"Error in manual gestational age calculation: {e}")
+        
+            if last_assistant_msg and any(keyword in last_assistant_msg for keyword in ["due date", "estimated due date"]):
+                try:
+                    from datetime import datetime
+                    import re
+                    from datetime import timedelta
                     
                     # Check if current message is a date
                     date_pattern = r'(\d{1,2}/\d{1,2}/\d{4})'
@@ -12619,42 +12614,31 @@ async def vector_flow_chat(request: dict):
                     if match:
                         month, day, year = match.groups()
                         try:
-                            parsed_date = datetime.strptime(f"{month.zfill(2)}/{day.zfill(2)}/{year}", "%m/%d/%Y")
+                            parsed_edd = datetime.strptime(f"{month.zfill(2)}/{day.zfill(2)}/{year}", "%m/%d/%Y")
                             current_datetime = datetime.strptime(current_date, "%m/%d/%Y")
                             
-                            if "due date" in last_assistant_msg or "estimated due date" in last_assistant_msg:
-                                # Calculate gestational age from EDD
-                                if parsed_date >= current_datetime:
-                                    days_diff = (parsed_date - current_datetime).days
+                            if parsed_edd >= current_datetime:
+                                days_diff = (parsed_edd - current_datetime).days
+                                if days_diff < 140:  # Minimum 20 weeks for viable pregnancy
+                                    calculated_gestational_info = "The estimated due date seems too soon. Please provide a valid due date in MM/DD/YYYY format."
+                                else:
                                     weeks = min((280 - days_diff) // 7, 40)  # 280 days = average pregnancy length
+                                    
                                     if weeks <= 12:
                                         trimester = "first"
                                     elif weeks <= 27:
                                         trimester = "second"
                                     else:
                                         trimester = "third"
-                                    calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on Estimated Due Date {message.strip()}, the patient is {weeks} weeks pregnant and in the {trimester} trimester."
+                                    
+                                    calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on Estimated Due Date {message.strip()}, the patient is {weeks} weeks pregnant in the {trimester} trimester. Estimated Due Date: {message.strip()}."
                                     print(f"[MANUAL CALCULATION] {calculated_gestational_info}")
-                                else:
-                                    calculated_gestational_info = "The estimated due date seems to be in the past. Please provide a valid future date in MM/DD/YYYY format."
-                            elif parsed_date <= current_datetime:
-                                # Existing LMP calculation
-                                days_diff = (current_datetime - parsed_date).days
-                                weeks = min(days_diff // 7, 40)
-                                if weeks <= 12:
-                                    trimester = "first"
-                                elif weeks <= 27:
-                                    trimester = "second"
-                                else:
-                                    trimester = "third"
-                                calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on LMP {message.strip()}, the patient is {weeks} weeks pregnant and in the {trimester} trimester."
-                                print(f"[MANUAL CALCULATION] {calculated_gestational_info}")
                             else:
-                                calculated_gestational_info = "The date provided seems invalid. Please use MM/DD/YYYY format for your LMP or estimated due date."
+                                calculated_gestational_info = "The estimated due date is in the past. Please provide a valid future date in MM/DD/YYYY format."
                         except ValueError:
                             calculated_gestational_info = "I couldn't understand that date format. Please use MM/DD/YYYY format, like 03/29/1996."
                 except Exception as e:
-                    print(f"Error in gestational age calculation: {e}")
+                    print(f"Error in manual gestational age calculation (EDD): {e}")
 
         print(f"[DETECTED NODE] {current_node_id, current_node_doc}")
         # Load document index (optional)
