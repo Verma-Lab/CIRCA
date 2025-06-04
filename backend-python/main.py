@@ -11678,7 +11678,9 @@ async def vector_flow_chat(request: dict):
                         Please provide a helpful response based on the document content, addressing the user's query.
                         """
                         # final_response = Settings.llm.complete(combined_response_prompt).text.strip()
-                        final_response = call_vertex_endpoint(combined_response_prompt, max_tokens=500, temperature=0.3)
+                        # final_response = call_vertex_endpoint(combined_response_prompt, max_tokens=500, temperature=0.3)
+                        response = endpoint.predict(instances=[{"prompt": combined_response_prompt}])
+                        final_response = response.predictions[0]
                         if isinstance(final_response, str):
                             final_response = final_response.strip()
 
@@ -11731,8 +11733,8 @@ async def vector_flow_chat(request: dict):
         try:
             try:
                 # response_text = Settings.llm.complete(full_context).text
-                response_text = call_vertex_endpoint(full_context, max_tokens=50, temperature=0.0)
-
+                response = endpoint.predict(instances=[{"prompt": full_context}])
+                response_text = response.predictions[0]
                 if "```json" in response_text:
                     response_text = response_text.split("```json")[1].split("```")[0].strip()
                 response_data = json.loads(response_text)
@@ -11864,7 +11866,8 @@ async def vector_flow_chat(request: dict):
                 # fallback_response = Settings.llm.complete(fallback_prompt)
                 # ai_response = fallback_response.text
 
-                fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=500, temperature=0.3)
+                response = endpoint.predict(instances=[{"prompt": fallback_prompt}])
+                fallback_response_text = response.predictions[0]
                 ai_response = fallback_response_text if isinstance(fallback_response_text, str) else str(fallback_response_text)
 
                 print(f"Fallback response generated, length: {len(ai_response)} characters")
@@ -11903,7 +11906,8 @@ async def vector_flow_chat(request: dict):
             """
             print("Calling secondary LLM for rephrasing")
             # rephrased_response = Settings.llm.complete(rephrase_prompt).text.strip()
-            rephrased_response = call_vertex_endpoint(rephrase_prompt, max_tokens=300, temperature=0.3)
+            response = endpoint.predict(instances=[{"prompt": rephrase_prompt}])
+            rephrased_response = response.predictions[0]
             if isinstance(rephrased_response, str):
                 rephrased_response = rephrased_response.strip()
 
@@ -12017,7 +12021,8 @@ async def vector_flow_chat(request: dict):
             """
 
             # fallback_response = Settings.llm.complete(fallback_prompt)
-            fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=300, temperature=0.3)
+            response = endpoint.predict(instances=[{"prompt": fallback_prompt}])
+            fallback_response_text = response.predictions[0]
             class FallbackResponse:
                 def __init__(self, text):
                     self.text = text
