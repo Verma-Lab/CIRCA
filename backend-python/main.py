@@ -10939,7 +10939,7 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
                 }
             ]
         }
-        response = endpoint.predict(instances=request_to_send, parameters=parameters)
+        response = endpoint.predict(instances=request_to_send)
         if response.predictions and len(response.predictions) > 0:
             return response.predictions[0]
         else:
