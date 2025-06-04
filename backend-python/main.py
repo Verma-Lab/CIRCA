@@ -10932,71 +10932,24 @@ def get_starting_node(flow_index):
 #         }
     
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-    """Helper function to call Vertex AI endpoint with better extraction"""
+    """Helper function to call Vertex AI endpoint"""
     try:
-        # Add explicit output format instruction to the prompt
-        formatted_prompt = f"""
-{prompt}
-
-CRITICAL: Return ONLY the requested output. Do not include any context, patient profiles, or other information from this prompt.
-Output:
-"""
-        
         parameters = {
             "max_output_tokens": max_tokens,
             "temperature": temperature,
             "top_k": 40,
             "top_p": 0.95
         }
-        
-        response = endpoint.predict(instances=[{"prompt": formatted_prompt}], parameters=parameters)
-        
+        response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
         if response.predictions and len(response.predictions) > 0:
-            raw_prediction_text = response.predictions[0]
-            
-            # First, check if this is the patient profile being returned
-            if isinstance(raw_prediction_text, str) and raw_prediction_text.strip().startswith('{') and '"mrn"' in raw_prediction_text:
-                print(f"WARNING: Model returned patient profile instead of expected response")
-                # For the rephrasing case, return a default welcome message
-                if "rephrase" in prompt.lower() and "welcome to circa" in prompt.lower():
-                    return "Welcome to Circa, Hritvik! Is this your first time visiting Circa?"
-                return "I apologize, I'm having trouble processing your request. Could you please try again?"
-            
-            # Look for Output: marker
-            if "Output:" in raw_prediction_text:
-                parts = raw_prediction_text.split("Output:")
-                if len(parts) > 1:
-                    extracted_content = parts[-1].strip()
-                    
-                    # Clean up markdown fences
-                    if extracted_content.startswith('```'):
-                        lines = extracted_content.split('\n')
-                        if len(lines) > 2:
-                            extracted_content = '\n'.join(lines[1:-1]).strip()
-                    
-                    # Remove quotes
-                    if extracted_content.startswith('"') and extracted_content.endswith('"'):
-                        extracted_content = extracted_content[1:-1]
-                    
-                    return extracted_content
-            
-            # If no Output: marker, take the last paragraph (often the actual response)
-            paragraphs = raw_prediction_text.strip().split('\n\n')
-            if len(paragraphs) > 1:
-                last_paragraph = paragraphs[-1].strip()
-                # Make sure it's not JSON
-                if not (last_paragraph.startswith('{') and last_paragraph.endswith('}')):
-                    return last_paragraph
-            
-            # Last resort - return the full response
-            return raw_prediction_text.strip()
-            
-        return "No response generated"
-        
+            return response.predictions[0]
+        else:
+            return "No response generated"
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
-        
+
+
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
     """
