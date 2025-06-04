@@ -12608,9 +12608,7 @@ async def vector_flow_chat(request: dict):
                     from datetime import timedelta
                     
                     # Check if current message is a date
-                    # date_pattern = r'(\d{1,2}/\d{1,2}/\d{4})'
                     date_pattern = r'(\d{1,2})/(\d{1,2})/(\d{4})'
-
                     match = re.search(date_pattern, message.strip())
                     
                     if match:
@@ -12620,27 +12618,29 @@ async def vector_flow_chat(request: dict):
                             current_datetime = datetime.strptime(current_date, "%m/%d/%Y")
                             
                             if parsed_edd >= current_datetime:
-                                days_diff = (parsed_edd - current_datetime).days
-                                if days_diff < 140:  # Minimum 20 weeks for viable pregnancy
-                                    calculated_gestational_info = "The estimated due date seems too soon. Please provide a valid due date in MM/DD/YYYY format."
+                                days_until_due = (parsed_edd - current_datetime).days
+                                weeks_pregnant = max(0, (280 - days_until_due) // 7)  # 280 days = 40 weeks total pregnancy
+                                
+                                if weeks_pregnant < 4 or weeks_pregnant > 42:
+                                    calculated_gestational_info = "The estimated due date doesn't seem right. Please check and provide a valid due date in MM/DD/YYYY format."
                                 else:
-                                    weeks = min((280 - days_diff) // 7, 40)  # 280 days = average pregnancy length
-                                    
-                                    if weeks <= 12:
+                                    if weeks_pregnant <= 12:
                                         trimester = "first"
-                                    elif weeks <= 27:
+                                    elif weeks_pregnant <= 27:
                                         trimester = "second"
                                     else:
                                         trimester = "third"
                                     
-                                    calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on Estimated Due Date {message.strip()}, the patient is {weeks} weeks pregnant in the {trimester} trimester. Estimated Due Date: {message.strip()}."
+                                    calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on Estimated Due Date {message.strip()}, the patient is {weeks_pregnant} weeks pregnant in the {trimester} trimester."
                                     print(f"[MANUAL CALCULATION] {calculated_gestational_info}")
                             else:
                                 calculated_gestational_info = "The estimated due date is in the past. Please provide a valid future date in MM/DD/YYYY format."
                         except ValueError:
-                            calculated_gestational_info = "I couldn't understand that date format. Please use MM/DD/YYYY format, like 03/29/1996."
+                            calculated_gestational_info = "I couldn't understand that date format. Please use MM/DD/YYYY format, like 10/05/2025."
                 except Exception as e:
                     print(f"Error in manual gestational age calculation (EDD): {e}")
+        
+        print(f"[CALCULATED GESTATIONAL INFO] {calculated_gestational_info}")
 
         print(f"[DETECTED NODE] {current_node_id, current_node_doc}")
         # Load document index (optional)
