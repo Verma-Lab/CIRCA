@@ -151,7 +151,7 @@ os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 aiplatform.init(project="vermalab-gemini-psom-e3ea", location="us-central1")
 
 # Define the endpoint
-endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/3702887981024018432")
+endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/365720657142480896")
 
 # Custom class to wrap the Vertex AI endpoint as an LLM
 # class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
@@ -700,13 +700,13 @@ LLM_MODELS = {
 
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
-gemma_llm = VertexAIGemmaLLM(endpoint)
-Settings.llm = gemini_model
+qwen_model = VertexAIGemmaLLM(endpoint)
+Settings.llm = qwen_model
 # Settings.llm = gemma_llm
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
-response = gemma_llm.complete(test_prompt)
+response = qwen_model.complete(test_prompt)
 print(f"Test response: {response.text}")
-def test_gemma_configuration():
+def test_qwen_configuration():
     """Test function to verify Gemma behaves like Gemini"""
     test_cases = [
         "Translate 'Hello' to Spanish:",
@@ -717,12 +717,12 @@ def test_gemma_configuration():
     print("Testing Gemma configuration:")
     for i, test_prompt in enumerate(test_cases, 1):
         try:
-            response = gemma_llm.complete(test_prompt)
+            response = qwen_model.complete(test_prompt)
             print(f"Test {i}: '{test_prompt}' -> '{response.text}'")
         except Exception as e:
             print(f"Test {i} failed: {e}")
 
-test_gemma_configuration()
+test_qwen_configuration()
 # MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 # if not torch.cuda.is_available():
 #     logger.error("CUDA not available. Cannot proceed without GPU.")
@@ -10931,26 +10931,8 @@ def get_starting_node(flow_index):
 #             "content": "I'm having trouble processing your request. Please try again later."
 #         }
     
-# def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-#     """Helper function to call Vertex AI endpoint"""
-#     try:
-#         parameters = {
-#             "max_output_tokens": max_tokens,
-#             "temperature": temperature,
-#             "top_k": 40,
-#             "top_p": 0.95
-#         }
-#         response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
-#         if response.predictions and len(response.predictions) > 0:
-#             return response.predictions[0]
-#         else:
-#             return "No response generated"
-#     except Exception as e:
-#         print(f"Error calling Vertex AI endpoint: {str(e)}")
-#         return f"Error: {str(e)}"
-
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-    """Original Vertex AI endpoint function - keep as is"""
+    """Helper function to call Vertex AI endpoint"""
     try:
         parameters = {
             "max_output_tokens": max_tokens,
@@ -10966,116 +10948,6 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
-
-def clean_vertex_response(raw_response: str, expected_type: str = "text") -> str:
-    """Clean Vertex AI response to mimic Gemini Pro behavior"""
-    
-    if not isinstance(raw_response, str):
-        raw_response = str(raw_response)
-    
-    # Remove common prompt bleeding patterns
-    cleanup_patterns = [
-        r"Prompt:.*?(?=\n|$)",  # Remove "Prompt:" lines
-        r"Output:.*?(?=\n|$)",  # Remove "Output:" lines
-        r"Response:.*?(?=\n|$)",  # Remove "Response:" lines
-        r"```python.*?```",  # Remove code blocks
-        r"```json.*?```",  # Remove json code blocks
-        r"```.*?```",  # Remove any code blocks
-    ]
-    
-    for pattern in cleanup_patterns:
-        raw_response = re.sub(pattern, "", raw_response, flags=re.DOTALL)
-    
-    # Clean up whitespace and newlines
-    raw_response = re.sub(r'\n+', ' ', raw_response)  # Replace multiple newlines with space
-    raw_response = raw_response.strip()
-    
-    if expected_type == "json":
-        # Extract JSON from response
-        json_match = re.search(r'\{[^}]*"next_node_id"[^}]*\}', raw_response)
-        if json_match:
-            try:
-                json_str = json_match.group(0)
-                # Validate JSON
-                json.loads(json_str)
-                return json_str
-            except json.JSONDecodeError:
-                pass
-        
-        # Fallback: extract node ID and create JSON
-        node_match = re.search(r'"next_node_id":\s*"([^"]+)"', raw_response)
-        if node_match:
-            return f'{{"next_node_id": "{node_match.group(1)}"}}'
-        
-        # Last resort: look for node_X pattern
-        node_pattern = re.search(r'\b(node_\w+)\b', raw_response)
-        if node_pattern:
-            return f'{{"next_node_id": "{node_pattern.group(1)}"}}'
-            
-        return '{"next_node_id": "current"}'  # Default fallback
-    
-    elif expected_type == "match":
-        # For MATCH/NO_MATCH responses
-        if "NO_MATCH" in raw_response.upper():
-            return "NO_MATCH"
-        elif "MATCH" in raw_response.upper():
-            return "MATCH"
-        else:
-            return "NO_MATCH"  # Default to NO_MATCH if unclear
-    
-    else:  # expected_type == "text"
-        # For regular text responses, just clean up
-        # Remove quotes if the entire response is wrapped in them
-        if raw_response.startswith('"') and raw_response.endswith('"') and raw_response.count('"') == 2:
-            raw_response = raw_response[1:-1]
-        
-        return raw_response
-
-def smart_llm_call(prompt: str, max_tokens: int = 1000, temperature: float = 0.3, expected_type: str = "text") -> str:
-    """
-    Smart LLM caller that mimics Settings.llm.complete().text behavior
-    
-    Args:
-        prompt: The prompt to send
-        max_tokens: Maximum tokens to generate
-        temperature: Temperature for generation
-        expected_type: "json", "match", or "text"
-    
-    Returns:
-        Clean response string
-    """
-    
-    # Format prompt based on expected type
-    if expected_type == "json":
-        formatted_prompt = f"""You must respond with valid JSON only. No explanations, no code blocks, no extra text.
-
-        {prompt}
-
-        JSON Response:"""
-        # Use strict parameters for JSON
-        response = call_vertex_endpoint(formatted_prompt, max_tokens=min(max_tokens, 50), temperature=0.0)
-        
-    elif expected_type == "match":
-        formatted_prompt = f"""Answer with only "MATCH" or "NO_MATCH". No explanations.
-
-        {prompt}
-
-        Answer:"""
-        # Use strict parameters for simple matching
-        response = call_vertex_endpoint(formatted_prompt, max_tokens=10, temperature=0.0)
-        
-    else:  # text
-        formatted_prompt = f"""Provide a natural, helpful response. Do not repeat the prompt.
-
-        {prompt}
-
-        Response:"""
-        response = call_vertex_endpoint(formatted_prompt, max_tokens=max_tokens, temperature=temperature)
-    
-    # Clean the response based on expected type
-    cleaned = clean_vertex_response(response, expected_type)
-    
-    return cleaned
 
 
 @app.post("/api/shared/vector_chat")
@@ -11759,9 +11631,7 @@ async def vector_flow_chat(request: dict):
                 
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
-                    # match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
-                    match_response = smart_llm_call(function_match_prompt, max_tokens=10, temperature=0.0, expected_type="match")
-
+                    match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
                     if isinstance(match_response, str):
                         match_response = match_response.strip()
 
@@ -11801,9 +11671,7 @@ async def vector_flow_chat(request: dict):
                         Please provide a helpful response based on the document content, addressing the user's query.
                         """
                         # final_response = Settings.llm.complete(combined_response_prompt).text.strip()
-                        # final_response = call_vertex_endpoint(combined_response_prompt, max_tokens=500, temperature=0.3)
-                        final_response = smart_llm_call(combined_response_prompt, max_tokens=500, temperature=0.3, expected_type="text")
-
+                        final_response = call_vertex_endpoint(combined_response_prompt, max_tokens=500, temperature=0.3)
                         if isinstance(final_response, str):
                             final_response = final_response.strip()
 
@@ -11856,8 +11724,7 @@ async def vector_flow_chat(request: dict):
         try:
             try:
                 # response_text = Settings.llm.complete(full_context).text
-                # response_text = call_vertex_endpoint(full_context, max_tokens=50, temperature=0.0)
-                response_text = smart_llm_call(full_context, max_tokens=50, temperature=0.0, expected_type="json")
+                response_text = call_vertex_endpoint(full_context, max_tokens=50, temperature=0.0)
 
                 if "```json" in response_text:
                     response_text = response_text.split("```json")[1].split("```")[0].strip()
@@ -11990,9 +11857,7 @@ async def vector_flow_chat(request: dict):
                 # fallback_response = Settings.llm.complete(fallback_prompt)
                 # ai_response = fallback_response.text
 
-                # fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=500, temperature=0.3)
-                fallback_response_text = smart_llm_call(fallback_prompt, max_tokens=500, temperature=0.3, expected_type="text")
-
+                fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=500, temperature=0.3)
                 ai_response = fallback_response_text if isinstance(fallback_response_text, str) else str(fallback_response_text)
 
                 print(f"Fallback response generated, length: {len(ai_response)} characters")
@@ -12031,9 +11896,7 @@ async def vector_flow_chat(request: dict):
             """
             print("Calling secondary LLM for rephrasing")
             # rephrased_response = Settings.llm.complete(rephrase_prompt).text.strip()
-            # rephrased_response = call_vertex_endpoint(rephrase_prompt, max_tokens=300, temperature=0.3)
-            rephrased_response = smart_llm_call(rephrase_prompt, max_tokens=300, temperature=0.3, expected_type="text")
-
+            rephrased_response = call_vertex_endpoint(rephrase_prompt, max_tokens=300, temperature=0.3)
             if isinstance(rephrased_response, str):
                 rephrased_response = rephrased_response.strip()
 
@@ -12147,9 +12010,7 @@ async def vector_flow_chat(request: dict):
             """
 
             # fallback_response = Settings.llm.complete(fallback_prompt)
-            # fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=300, temperature=0.3)
-            fallback_response_text = smart_llm_call(fallback_prompt, max_tokens=300, temperature=0.3, expected_type="text")
-
+            fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=300, temperature=0.3)
             class FallbackResponse:
                 def __init__(self, text):
                     self.text = text
