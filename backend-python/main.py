@@ -10933,9 +10933,9 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
                     "prompt": prompt,
                     "max_tokens": max_tokens,
                     "temperature": temperature,
-                    "top_p": top_p,
-                    "top_k": top_k,
-                    "raw_response": raw_response
+                    "top_p": 0.95,
+                    "top_k": 40,
+                    "raw_response": True
                 }
             ]
         }
