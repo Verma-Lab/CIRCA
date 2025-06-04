@@ -10946,13 +10946,50 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
             result = response.predictions[0]
             
             if isinstance(result, str):
-                # AGGRESSIVE CLEANING to fix the garbage output
+                # CRITICAL FIX: Remove the echoed prompt from the response
+                # Vertex AI returns: [PROMPT] + [RESPONSE]
+                # We need to extract only [RESPONSE]
                 
-                # Remove common prefixes that shouldn't be there
-                prefixes_to_remove = ['text ', 'python ', 'json ', 'string ', 'response ', 'output ']
-                for prefix in prefixes_to_remove:
-                    if result.lower().startswith(prefix):
-                        result = result[len(prefix):].strip()
+                # Method 1: Split by the prompt and take what comes after
+                if prompt in result:
+                    # Find where the prompt ends
+                    prompt_end = result.find(prompt) + len(prompt)
+                    result = result[prompt_end:].strip()
+                
+                # Method 2: If the response starts with specific patterns, extract from there
+                # For JSON responses
+                if "{" in result:
+                    json_start = result.find("{")
+                    json_end = result.rfind("}") + 1
+                    if json_start >= 0 and json_end > json_start:
+                        try:
+                            # Try to extract just the JSON
+                            potential_json = result[json_start:json_end]
+                            json.loads(potential_json)  # Validate it's valid JSON
+                            return potential_json
+                        except:
+                            pass
+                
+                # For text responses that might have common patterns
+                # Look for the actual response after common prompt endings
+                prompt_endings = [
+                    "Return the rephrased response as a string.",
+                    "Return the response as a JSON object:",
+                    "Please provide a helpful response",
+                    "based on the document content",
+                    "addressing the user's query."
+                ]
+                
+                for ending in prompt_endings:
+                    if ending in result:
+                        split_point = result.find(ending) + len(ending)
+                        potential_response = result[split_point:].strip()
+                        if potential_response:
+                            result = potential_response
+                            break
+                
+                # Clean up any remaining artifacts
+                result = result.strip()
                 
                 # Remove quotes if the entire response is wrapped in them
                 if result.startswith('"') and result.endswith('"'):
@@ -10961,22 +10998,17 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
                     result = result[1:-1]
                 
                 # Remove markdown code blocks
-                result = result.replace("```", "").strip()
+                if "```" in result:
+                    # Extract content between code blocks
+                    parts = result.split("```")
+                    if len(parts) >= 3:
+                        # Format: ```[language]\n[content]\n```
+                        result = parts[1]
+                        # Remove language identifier if present
+                        if result.startswith("json") or result.startswith("python"):
+                            result = result.split('\n', 1)[1] if '\n' in result else result
                 
-                # Remove any remaining technical artifacts
-                lines = result.split('\n')
-                clean_lines = []
-                for line in lines:
-                    line = line.strip()
-                    # Skip lines that look like technical artifacts
-                    if not line.startswith(('Human:', 'Assistant:', 'Prompt:', 'Output:', '"""', 'def ', 'import ', 'return ')):
-                        clean_lines.append(line)
-                
-                # Join the clean lines
-                clean_result = '\n'.join(clean_lines).strip()
-                
-                # If we have a clean result, return it; otherwise return the original
-                return clean_result if clean_result else result
+                return result.strip()
             
             return str(result)
         else:
