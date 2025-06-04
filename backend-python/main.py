@@ -10935,14 +10935,17 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     """Helper function to call Vertex AI endpoint"""
     try:
         # Enforce JSON output in the prompt
-        json_enforced_prompt = f"CRITICAL: Output ONLY valid JSON starting with {{ and ending with }}. Do not include any extra text, explanations, or code block markers. Respond to the following: {prompt}"
-        parameters = {
-            "max_output_tokens": 500,
-            "temperature": temperature,
-            "top_k": 40,
-            "top_p": 0.95
-        }
         response = endpoint.predict(instances=[{"prompt": json_enforced_prompt}], parameters=parameters)
+        parameters = {
+            "max_output_tokens": 200,  # Short output for JSON
+            "temperature": 0.3,       # Deterministic response
+            "top_k": 40,               # Most likely token
+            "top_p": 0.95              # No variation
+        }
+
+        # Send the prediction request
+        response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
+
         if response.predictions and len(response.predictions) > 0:
             return response.predictions[0]
         else:
@@ -11633,7 +11636,9 @@ async def vector_flow_chat(request: dict):
                 
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
-                    match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
+                    # match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
+                    response = endpoint.predict(instances=[{"prompt": function_match_prompt}])
+                    match_response = response.predictions[0]
                     if isinstance(match_response, str):
                         match_response = match_response.strip()
 
