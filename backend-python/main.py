@@ -10931,7 +10931,8 @@ def get_starting_node(flow_index):
 #             "content": "I'm having trouble processing your request. Please try again later."
 #         }
     
-import json # Ensure json is imported if you're using it inside this function
+import json
+import re # We'll use regex for more robust cleanup
 
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     """Helper function to call Vertex AI endpoint"""
@@ -10944,65 +10945,58 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
         }
         
         # Make the raw prediction call.
-        # IMPORTANT: raw_prediction_text will contain the entire prompt + model's completion.
-        raw_prediction_text = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters).predictions[0]
+        # This will contain the entire prompt concatenated with the model's completion.
+        response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
+        raw_prediction_text = response.predictions[0] if response.predictions else ""
         
+        if not raw_prediction_text:
+            print("Warning: Vertex AI returned an empty prediction.")
+            return "No response generated."
+
         # --- CRITICAL EXTRACTION LOGIC ---
-        # Your prompts consistently end with "Output:\n" followed by the desired content.
-        # Use rfind() to find the *last* occurrence of "Output:\n",
-        # in case "Output:" appears earlier within your extensive prompt instructions.
-        output_marker = "Output:\n"
-        marker_index = raw_prediction_text.rfind(output_marker)
-
-        if marker_index != -1:
-            # Extract the content that comes immediately after the "Output:\n" marker.
-            extracted_content = raw_prediction_text[marker_index + len(output_marker):].strip()
-            
-            # Now, clean up any trailing markdown code block fences (like ```python or ```)
-            # based on the example you provided.
-            if extracted_content.endswith('```python'):
-                extracted_content = extracted_content[:-len('```python')].strip()
-            elif extracted_content.endswith('```'): # More general case for ``` or ```json etc.
-                extracted_content = extracted_content[:-3].strip()
-                
-            # Finally, if the model wrapped the content in quotes (e.g., for string outputs), remove them.
-            if extracted_content.startswith('"') and extracted_content.endswith('"'):
-                extracted_content = extracted_content[1:-1].strip()
-
-            return extracted_content
+        # 1. Find the start of the *actual* model output.
+        # Your prompts consistently use "Output:\n" or similar right before the expected response.
+        # Use rfind to get the LAST occurrence, in case "Output:" appears within your prompt instructions.
+        output_marker_index = raw_prediction_text.rfind("Output:")
+        
+        if output_marker_index != -1:
+            # Extract content *after* the last "Output:" marker, including any newline.
+            # We add 1 for the ':' character.
+            # We then strip to remove leading/trailing whitespace and the newline after "Output:"
+            extracted_content = raw_prediction_text[output_marker_index + len("Output:"):].strip()
         else:
-            # Fallback scenario: If the "Output:\n" marker is not found in the prediction.
-            # This would indicate the model severely deviated from the expected format.
-            # In this case, we'll try a more generic cleanup, but the ideal fix is the above.
-            print("Warning: 'Output:' marker not found in Vertex AI prediction. Attempting generic cleanup.")
-            cleaned_text = raw_prediction_text.strip()
+            # Fallback if "Output:" marker is not found. This is less ideal,
+            # as it implies the model heavily deviated or the prompt structure changed.
+            print("Warning: 'Output:' marker not found in Vertex AI prediction. Returning raw prediction with heuristic cleanup.")
+            extracted_content = raw_prediction_text.strip()
             
-            # Try to remove the leading "Prompt:" part if it exists (very heuristic)
-            if cleaned_text.startswith("Prompt:"):
-                # Find the first occurrence of "Output:" and take everything after it
-                parts = cleaned_text.split("Output:", 1)
-                if len(parts) > 1:
-                    cleaned_text = parts[1].strip()
-            
-            # Still try to remove markdown fences if they exist
-            if cleaned_text.startswith('```') and cleaned_text.endswith('```'):
-                lines = cleaned_text.split('\n')
-                if len(lines) > 2: # At least ```, content, ```
-                    cleaned_text = '\n'.join(lines[1:-1]).strip()
-                else: # Handle cases like ```content``` on one line
-                    cleaned_text = cleaned_text[3:-3].strip()
-            
-            # Still try to remove outer quotes
-            if cleaned_text.startswith('"') and cleaned_text.endswith('"'):
-                cleaned_text = cleaned_text[1:-1].strip()
-            
-            return cleaned_text
+            # Attempt to remove the leading "Prompt:" part if it exists
+            if extracted_content.startswith("Prompt:"):
+                # This is a heuristic: find the first line break after "Prompt:"
+                # and assume the actual answer starts after that.
+                first_newline_after_prompt_start = extracted_content.find('\n', len("Prompt:"))
+                if first_newline_after_prompt_start != -1:
+                    extracted_content = extracted_content[first_newline_after_prompt_start:].strip()
+                else: # If no newline after prompt, take everything after "Prompt:"
+                    extracted_content = extracted_content[len("Prompt:"):].strip()
+
+
+        # 2. Universal cleanup for unwanted trailing parts (like ```python, ```json, ``` etc.)
+        # Use a regex to find and remove any markdown code block fences at the end of the string.
+        # This regex will match ``` followed by any word characters (like python, json)
+        # or just ```, at the end of the string, optionally followed by newlines.
+        cleaned_content = re.sub(r'```(?:\w+)?\s*$', '', extracted_content, flags=re.DOTALL).strip()
+        
+        # 3. Remove outer quotes if the model enclosed the content in quotes (common for string responses).
+        if cleaned_content.startswith('"') and cleaned_content.endswith('"'):
+            cleaned_content = cleaned_content[1:-1].strip()
+
+        return cleaned_content
             
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         # This catches actual API call errors, not content parsing issues.
-        return f"Error: {str(e)}"
-        
+        return f"Error: {str(e)}"     
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
     """
@@ -11684,7 +11678,7 @@ async def vector_flow_chat(request: dict):
                 
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
-                    match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
+                    match_response = call_vertex_endpoint(function_match_prompt, max_tokens=500, temperature=0.0)
                     if isinstance(match_response, str):
                         match_response = match_response.strip()
 
@@ -11777,7 +11771,7 @@ async def vector_flow_chat(request: dict):
         try:
             try:
                 # response_text = Settings.llm.complete(full_context).text
-                response_text = call_vertex_endpoint(full_context, max_tokens=50, temperature=0.0)
+                response_text = call_vertex_endpoint(full_context, max_tokens=500, temperature=0.0)
 
                 if "```json" in response_text:
                     response_text = response_text.split("```json")[1].split("```")[0].strip()
