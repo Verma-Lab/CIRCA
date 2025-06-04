@@ -10940,15 +10940,74 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
             "top_k": 40,
             "top_p": 0.95
         }
+        
+        # Make the raw prediction call
         response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
+        
         if response.predictions and len(response.predictions) > 0:
-            return response.predictions[0]
+            raw_prediction_text = response.predictions[0]
+            
+            # --- CRITICAL CHANGE START ---
+            # Find the "Output:" marker in the raw prediction and extract everything after it.
+            # The prompt ends with "Output:\n```\n" for the rephrasing prompt
+            # And "Output:\n```json\n" for the JSON output prompt (next_node_id prediction)
+
+            # Define common output markers you expect based on your prompts
+            output_marker_json = "Output:\n```json\n"
+            output_marker_text = "Output:\n```\n" # Note: This might be ```text\n or just ```\n depending on the model's exact output
+
+            extracted_content = ""
+
+            if output_marker_json in raw_prediction_text:
+                # This path is likely for the JSON output from the first LLM call
+                start_index = raw_prediction_text.find(output_marker_json) + len(output_marker_json)
+                extracted_content = raw_prediction_text[start_index:].strip()
+                # Further clean any trailing ``` or other markdown fences for JSON
+                if extracted_content.endswith('```'):
+                    extracted_content = extracted_content[:-3].strip()
+                # Ensure it's still valid JSON (optional, but good for debugging)
+                try:
+                    import json
+                    json.loads(extracted_content) # Try parsing to validate
+                except json.JSONDecodeError:
+                    print(f"Warning: Extracted content for JSON was not valid JSON after initial cleaning: {extracted_content[:100]}...")
+                
+            elif output_marker_text in raw_prediction_text:
+                # This path is likely for the plain text output from the rephrasing LLM call
+                start_index = raw_prediction_text.find(output_marker_text) + len(output_marker_text)
+                extracted_content = raw_prediction_text[start_index:].strip()
+                # Further clean any trailing ``` or other markdown fences for plain text
+                if extracted_content.endswith('```'):
+                    extracted_content = extracted_content[:-3].strip()
+                # Remove outer quotes if the model enclosed the string in quotes (existing logic)
+                if extracted_content.startswith('"') and extracted_content.endswith('"'):
+                    extracted_content = extracted_content[1:-1].strip()
+
+            else:
+                # Fallback: If no explicit 'Output:' marker is found (less ideal, but robust)
+                # This assumes the actual desired output is at the very end
+                # You might need to adjust this heuristic based on observed behavior.
+                print("Warning: 'Output:' marker not found in prediction. Returning raw prediction.")
+                extracted_content = raw_prediction_text.strip()
+                # Still try to remove markdown fences if they exist
+                if extracted_content.startswith('```') and extracted_content.endswith('```'):
+                    # This handles both ``` and ```json, ```text, etc.
+                    lines = extracted_content.split('\n')
+                    if len(lines) > 2: # At least ```, content, ```
+                        extracted_content = '\n'.join(lines[1:-1]).strip()
+                    else: # Handle cases like ```content``` on one line
+                        extracted_content = extracted_content[3:-3].strip()
+                if extracted_content.startswith('"') and extracted_content.endswith('"'):
+                    extracted_content = extracted_content[1:-1].strip()
+
+            # --- CRITICAL CHANGE END ---
+
+            return extracted_content
         else:
             return "No response generated"
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
-
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
