@@ -10934,13 +10934,13 @@ def get_starting_node(flow_index):
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     """Helper function to call Vertex AI endpoint"""
     try:
-        # Enforce JSON output in the prompt
+        
         response = endpoint.predict(instances=[{"prompt": json_enforced_prompt}], parameters=parameters)
         parameters = {
             "max_output_tokens": 200,  # Short output for JSON
-            "temperature": 0.3,       # Deterministic response
-            "top_k": 40,               # Most likely token
-            "top_p": 0.95              # No variation
+            "temperature": 0.2,       # Deterministic response
+            "top_k": 1,               # Most likely token
+            "top_p": 0.0              # No variation
         }
 
         # Send the prediction request
@@ -11636,25 +11636,9 @@ async def vector_flow_chat(request: dict):
                 
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
-                    # match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
-                    
-                    request_body = {
-                        "prompt": f"< | begin of sentence | >< | User | >{function_match_prompt}< | Assistant | >",
-                        "max_tokens": 50,
-                        "temperature": 0.1,
-                        "top_p": 0.95,
-                        "raw_response": true
-                    }
-                    response = endpoint.predict(instances=[request_body])
-                    match_response = response.predictions[0]
+                    match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
                     if isinstance(match_response, str):
-                        # Look for JSON in the response
-                        import re
-                        json_match = re.search(r'\{[^}]+\}', match_response)
-                        if json_match:
-                            match_response = json_match.group(0)
-                        else:
-                            match_response = match_response.strip()
+                        match_response = match_response.strip()
 
                     print(f"[FUNCTION MATCH CHECK] {match_response}")
                     
@@ -11692,9 +11676,7 @@ async def vector_flow_chat(request: dict):
                         Please provide a helpful response based on the document content, addressing the user's query.
                         """
                         # final_response = Settings.llm.complete(combined_response_prompt).text.strip()
-                        # final_response = call_vertex_endpoint(combined_response_prompt, max_tokens=500, temperature=0.3)
-                        response = endpoint.predict(instances=[{"prompt": combined_response_prompt}])
-                        final_response = response.predictions[0]
+                        final_response = call_vertex_endpoint(combined_response_prompt, max_tokens=500, temperature=0.3)
                         if isinstance(final_response, str):
                             final_response = final_response.strip()
 
@@ -11747,8 +11729,8 @@ async def vector_flow_chat(request: dict):
         try:
             try:
                 # response_text = Settings.llm.complete(full_context).text
-                response = endpoint.predict(instances=[{"prompt": full_context}])
-                response_text = response.predictions[0]
+                response_text = call_vertex_endpoint(full_context, max_tokens=50, temperature=0.0)
+
                 if "```json" in response_text:
                     response_text = response_text.split("```json")[1].split("```")[0].strip()
                 response_data = json.loads(response_text)
@@ -11880,8 +11862,7 @@ async def vector_flow_chat(request: dict):
                 # fallback_response = Settings.llm.complete(fallback_prompt)
                 # ai_response = fallback_response.text
 
-                response = endpoint.predict(instances=[{"prompt": fallback_prompt}])
-                fallback_response_text = response.predictions[0]
+                fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=500, temperature=0.3)
                 ai_response = fallback_response_text if isinstance(fallback_response_text, str) else str(fallback_response_text)
 
                 print(f"Fallback response generated, length: {len(ai_response)} characters")
@@ -11920,16 +11901,7 @@ async def vector_flow_chat(request: dict):
             """
             print("Calling secondary LLM for rephrasing")
             # rephrased_response = Settings.llm.complete(rephrase_prompt).text.strip()
-            request_body = {
-                "prompt": f"< | begin of sentence | >< | User | >{rephrase_prompt}< | Assistant | >",
-                "max_tokens": 200,
-                "temperature": 0.3,
-                "top_p": 0.95,
-                "raw_response": True
-            }
-            response = endpoint.predict(instances=[request_body])
-            rephrased_response = response.predictions[0]
-
+            rephrased_response = call_vertex_endpoint(rephrase_prompt, max_tokens=300, temperature=0.3)
             if isinstance(rephrased_response, str):
                 rephrased_response = rephrased_response.strip()
 
@@ -12043,8 +12015,7 @@ async def vector_flow_chat(request: dict):
             """
 
             # fallback_response = Settings.llm.complete(fallback_prompt)
-            response = endpoint.predict(instances=[{"prompt": fallback_prompt}])
-            fallback_response_text = response.predictions[0]
+            fallback_response_text = call_vertex_endpoint(fallback_prompt, max_tokens=300, temperature=0.3)
             class FallbackResponse:
                 def __init__(self, text):
                     self.text = text
