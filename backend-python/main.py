@@ -12608,7 +12608,9 @@ async def vector_flow_chat(request: dict):
                     from datetime import timedelta
                     
                     # Check if current message is a date
-                    date_pattern = r'(\d{1,2}/\d{1,2}/\d{4})'
+                    # date_pattern = r'(\d{1,2}/\d{1,2}/\d{4})'
+                    date_pattern = r'(\d{1,2})/(\d{1,2})/(\d{4})'
+
                     match = re.search(date_pattern, message.strip())
                     
                     if match:
