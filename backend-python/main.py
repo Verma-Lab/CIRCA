@@ -10965,8 +10965,6 @@ async def vector_flow_chat(request: dict):
     Process a chat message using the vector-based flow knowledge index.
     This endpoint doesn't rely on Firestore or Gemini services.
     """
-    from datetime import datetime
-    import pytz
     eastern = pytz.timezone('America/New_York')
     current_time = datetime.now(eastern)
     current_date = current_time.date().strftime('%m/%d/%Y')
@@ -10984,7 +10982,6 @@ async def vector_flow_chat(request: dict):
         print(f"[PATIENT HISTORY] {patient_history}")
         onboarding_status_from_session = session_data.get("onboardingStatus")
         print(f"[ONBOARDING STATUS], {onboarding_status_from_session}")
-        Onboarding = None
         print(f"Message: '{message}'")
         print(f"Session ID: {sessionId}")
         print(f"Flow ID: {flow_id}")
@@ -11049,7 +11046,7 @@ async def vector_flow_chat(request: dict):
             try:
                 chroma_collection = chroma_client.get_collection(collection_name)
                 print(f"Found existing Chroma collection {collection_name}")
-            except chromadb.errors.InvalidCollectionException:
+            except Exception:
                 print(f"Creating new Chroma collection {collection_name}")
                 chroma_collection = chroma_client.create_collection(collection_name)
             vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
@@ -11062,7 +11059,6 @@ async def vector_flow_chat(request: dict):
             shutil.rmtree(temp_dir)
         else:
             flow_index = app.state.flow_indices[flow_id]
-            print('Flow Data', flow_index)
             print(f"[CHAT] Using cached flow index for flow_id: {flow_id}")
 
         patient = db.query(Patient).filter(Patient.id == patientId).first()
@@ -11093,7 +11089,6 @@ async def vector_flow_chat(request: dict):
 
         if missing_fields:
             print("==== PATIENT ONBOARDING/CHAT START ====\n")
-            import re
             field_to_ask = missing_fields[0]
             database_operation = None
             content = ""
@@ -11169,7 +11164,7 @@ async def vector_flow_chat(request: dict):
                 try:
                     if operation == "UPDATE_PATIENT":
                         patient = db.query(Patient).filter(Patient.id == patientId).first()
-                        if not(patient):
+                        if not patient:
                             raise HTTPException(status_code=404, detail="Patient not found")
                         setattr(patient, parameters["field_name"], parameters["field_value"])
                         patient.updated_at = datetime.utcnow()
@@ -11215,67 +11210,11 @@ async def vector_flow_chat(request: dict):
                         if starting_node_id:
                             current_node_id = starting_node_id
                             current_node_doc = starting_node_doc
-                    elif operation == "CREATE_PATIENT":
-                        mrn = generate_mrn()
-                        patient = Patient(
-                            id=str(uuid.uuid4()),
-                            mrn=mrn,
-                            first_name=parameters.get("first_name", ""),
-                            last_name=parameters.get("last_name", ""),
-                            date_of_birth=parameters.get("date_of_birth"),
-                            phone=session_data.get("phone", "unknown"),
-                            organization_id=session_data.get("organization_id", "default_org"),
-                            created_at=datetime.utcnow(),
-                            updated_at=datetime.utcnow()
-                        )
-                        db.add(patient)
-                        db.commit()
-                        db.refresh(patient)
-                        operation_result = {
-                            "id": patient.id,
-                            "mrn": patient.mrn,
-                            "first_name": patient.first_name,
-                            "last_name": patient.last_name,
-                            "date_of_birth": patient.date_of_birth,
-                            "phone": patient.phone,
-                            "organization_id": patient.organization_id
-                        }
-                        patient_path = f"patients/{patient.id}.json"
-                        os.makedirs(os.path.dirname(patient_path), exist_ok=True)
-                        with open(patient_path, "w") as f:
-                            patient_dict = {
-                                "id": patient.id,
-                                "mrn": patient.mrn,
-                                "first_name": patient.first_name,
-                                "last_name": patient.last_name,
-                                "date_of_birth": patient.date_of_birth,
-                                "phone": patient.phone,
-                                "organization_id": patient.organization_id,
-                                "created_at": patient.created_at.isoformat() if patient.created_at else None,
-                                "updated_at": patient.updated_at.isoformat() if patient.updated_at else None
-                            }
-                            json.dump(patient_dict, f, indent=2)
-                        content += f"\nProfile created successfully!"
-                        missing_fields = []
-                        for field in required_fields:
-                            value = getattr(patient, field, None)
-                            if not value or (isinstance(value, str) and not value.strip()):
-                                missing_fields.append(field)
-                        if not missing_fields:
-                            onboarding_status_to_send = "completed"
-                            print(f"🎉 ONBOARDING COMPLETE! All required fields now filled.")
-                        else:
-                            print(f"Still missing fields after update: {missing_fields}")
-                        starting_node_id, starting_node_doc = get_starting_node(flow_index)
-                        print(f"[STARTING NODE] {starting_node_id, starting_node_doc}")
-                        if starting_node_id:
-                            current_node_id = starting_node_id
-                            current_node_doc = starting_node_doc
                 except Exception as e:
                     db.rollback()
                     print(f"Database operation failed: {str(e)}")
                     content += f"\nSorry, I couldn’t update your profile. Let’s try again."
-                    response_data["next_node_id"] = current_node_id
+                    response_data = {"next_node_id": current_node_id}
 
             print(f"Response: {content}")
             print(f"Next node ID: {next_node_id}")
@@ -11310,48 +11249,6 @@ async def vector_flow_chat(request: dict):
                 current_node_id = starting_node_id
                 current_node_doc = starting_node_doc
 
-        if message.lower().strip() == 'completed survey' and current_node_id:
-            try:
-                retriever = flow_index.as_retriever(
-                    filters=MetadataFilters(filters=[
-                        MetadataFilter(
-                            key="node_id", 
-                            value=current_node_id, 
-                            operator=FilterOperator.EQ
-                        )
-                    ])
-                )
-                node_docs = retriever.retrieve(f"NODE ID: {current_node_id}")
-                if node_docs:
-                    current_node_content = node_docs[0].get_content()
-                    is_current_survey_node = "NODE TYPE: surveyNode" in current_node_content
-                    if is_current_survey_node:
-                        print(f"[SURVEY COMPLETION] Detected 'completed' message on survey node {current_node_id}")
-                        if "TRIGGERS:" in current_node_content:
-                            triggers_section = current_node_content.split("TRIGGERS:")[1].strip()
-                            completion_match = re.search(r"If survey outcome is ['\"]?Completed['\"]?, proceed to node (\w+)", triggers_section)
-                            if completion_match:
-                                current_node_id = completion_match.group(1)
-                                print(f"[SURVEY COMPLETION] Setting current_node_id to: {current_node_id}")
-                            else:
-                                print(f"[SURVEY COMPLETION] No completion trigger found, returning completion message")
-                                return {
-                                    "content": "Thanks for filling out the survey, is there anything you need help with?",
-                                    "next_node_id": None,
-                                    "state_updates": {},
-                                    "onboarding_status": onboarding_status_to_send
-                                }
-                        else:
-                            print(f"[SURVEY COMPLETION] No TRIGGERS section found, returning completion message")
-                            return {
-                                "content": "Thanks for filling out the survey, is there anything you need help with?",
-                                "next_node_id": None,
-                                "state_updates": {},
-                                "onboarding_status": onboarding_status_to_send
-                            }
-            except Exception as e:
-                print(f"[SURVEY COMPLETION] Error checking survey completion: {str(e)}")
-
         if current_node_id:
             try:
                 retriever = flow_index.as_retriever(
@@ -11377,75 +11274,21 @@ async def vector_flow_chat(request: dict):
                     else:
                         current_node_doc = node_docs[0].get_content()
                         print(f"No exact match, using top result")
-                    print(f"Retrieved document for node {current_node_id}: {current_node_doc[:100]}...")
                 else:
                     print(f"No document found for node {current_node_id}")
                     current_node_doc = "No specific node instructions available."
             except Exception as e:
                 print(f"Error retrieving node document: {str(e)}")
-                try:
-                    print("Falling back to similarity search approach")
-                    retriever = flow_index.as_retriever(similarity_top_k=1000)
-                    query_str = f"NODE ID: {current_node_id}"
-                    node_docs = retriever.retrieve(query_str)
-                    if node_docs:
-                        exact_matches = [
-                            doc for doc in node_docs 
-                            if doc.metadata and doc.metadata.get("node_id") == current_node_id
-                        ]
-                        if exact_matches:
-                            current_node_doc = exact_matches[0].get_content()
-                            print(f"Found exact match for node {current_node_id} using fallback")
-                        else:
-                            current_node_doc = node_docs[0].get_content()
-                            print(f"No exact match, using top result from fallback")
-                    else:
-                        current_node_doc = "No specific node instructions available."
-                except Exception as fallback_e:
-                    print(f"Fallback approach also failed: {str(fallback_e)}")
-                    current_node_doc = "Error retrieving node instructions"
+                current_node_doc = "No specific node instructions available."
 
         print(f"[CURRENT NODE DOC] {current_node_doc}")
-        calculated_gestational_info = ""
-        if previous_messages and len(previous_messages) >= 1:
-            last_assistant_msg = None
-            for msg in reversed(previous_messages):
-                if msg.get("role") == "assistant":
-                    last_assistant_msg = msg.get("content", "").lower()
-                    break
-            if last_assistant_msg and any(keyword in last_assistant_msg for keyword in ["lmp", "mm/dd/yyyy", "gestational age"]):
-                try:
-                    from datetime import datetime
-                    import re
-                    date_pattern = r'(\d{1,2})/(\d{1,2})/(\d{4})'
-                    match = re.search(date_pattern, message.strip())
-                    if match:
-                        month, day, year = match.groups()
-                        parsed_lmp = datetime.strptime(f"{month.zfill(2)}/{day.zfill(2)}/{year}", "%m/%d/%Y")
-                        current_datetime = datetime.strptime(current_date, "%m/%d/%Y")
-                        if parsed_lmp <= current_datetime:
-                            days_diff = (current_datetime - parsed_lmp).days
-                            weeks = min(days_diff // 7, 40)
-                            if weeks <= 12:
-                                trimester = "first"
-                            elif weeks <= 27:
-                                trimester = "second"
-                            else:
-                                trimester = "third"
-                            calculated_gestational_info = f"CALCULATED GESTATIONAL AGE FOR USER: Based on LMP {message.strip()}, the patient is {weeks} weeks pregnant and in the {trimester} trimester."
-                            print(f"[MANUAL CALCULATION] {calculated_gestational_info}")
-                except Exception as e:
-                    print(f"Error in manual gestational age calculation: {e}")
-
-        print(f"[DETECTED NODE] {current_node_id, current_node_doc}")
-        document_retriever = None
         document_context = ""
         if assistant_id:
             if assistant_id not in app.state.document_indexes:
                 bucket = storage_client.bucket(BUCKET_NAME)
                 meta_file = f"temp_doc_{assistant_id}_meta.pkl"
-                blob = bucket.blob(f"document_metadata/{assistant_id}_meta.pkl")
                 try:
+                    blob = bucket.blob(f"document_metadata/{assistant_id}_meta.pkl")
                     blob.download_to_filename(meta_file)
                     with open(meta_file, "rb") as f:
                         metadata = pickle.load(f)
@@ -11459,26 +11302,26 @@ async def vector_flow_chat(request: dict):
                     print("DEBUG: Entering Chroma collection block for documents")
                     try:
                         chroma_collection = chroma_client.get_collection(collection_name)
-                        print(f"Found existing Chroma collection {collection_name} for document index")
-                    except chromadb.errors.InvalidCollectionException:
-                        print(f"Creating new Chroma collection {collection_name} for document index")
+                        print(f"Found existing document collection: {collection_name}")
+                    except Exception:
+                        print(f"Creating new Chroma collection: {collection_name}")
                         chroma_collection = chroma_client.create_collection(collection_name)
                     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
-                    storage_context = StorageContext.from_defaults(
+                    storage_context = StorageContext.from_dict(
                         persist_dir=temp_dir, vector_store=vector_store
                     )
                     document_index = load_index_from_storage(storage_context)
-                    document_retriever = document_index.as_retriever(similarity_top_k=20)
+                    document_retriever = document_index.as_retriever(similarity_top_k=1)
                     app.state.document_indexes[assistant_id] = {
-                        "index": document_index,
+                        "document_index": document_index,
                         "retriever": document_retriever,
                         "created_at": metadata["created_at"],
                         "document_count": metadata["document_count"],
                         "node_count": metadata["node_count"]
                     }
                     shutil.rmtree(temp_dir)
-                except Exception as e:
-                    print(f"Document index not found or failed to load: {str(e)}")
+                except Exception:
+                    print(f"Error loading document index: {str(e)}")
             else:
                 document_retriever = app.state.document_indexes[assistant_id]["retriever"]
 
@@ -11487,378 +11330,95 @@ async def vector_flow_chat(request: dict):
             retrieved_nodes = document_retriever.retrieve(message)
             document_text = ""
             if retrieved_nodes:
-                try:
-                    node_objs = [n.node for n in retrieved_nodes]
-                    if len(node_objs) > 1:
-                        print(f"Applying BM25 reranking to {len(node_objs)} nodes")
-                        bm25_retriever = BM25Retriever.from_defaults(
-                            nodes=node_objs, 
-                            similarity_top_k=min(5, len(node_objs))
-                        )
-                        reranked_nodes = bm25_retriever.retrieve(message)
-                        document_text = "\n\n".join([n.node.get_content() for n in reranked_nodes])
-                    else:
-                        document_text = "\n\n".join([n.node.get_content() for n in retrieved_nodes])
-                except Exception as e:
-                    print(f"BM25 reranking failed: {str(e)}, using vector results")
-                    document_text = "\n\n".join([n.node.get_content() for n in retrieved_nodes])
-            document_context = f"Relevant Document Content:\n{document_text}" if document_text else ""
-            print(f"Document retrieval complete, found content with {len(document_context)} characters")
-        else:
-            print("No document retriever available, proceeding without document context")
-
-        is_survey_node = "NODE TYPE: surveyNode" in current_node_doc
-        document_context_section = f"""
-        Relevant Document Content:
-        {document_context}
-
-        You are a helpful assistant tasked with providing accurate, specific, and context-aware responses. Follow these steps:
-        1. Identify the user's intent from the message and conversation history.
-        2. Scan the Relevant Document Content for any URLs, phone numbers, email addresses, or other specific resources.
-        3. If ANY resources like URLs, phone numbers, or contact information are found, include them verbatim in your response.
-        4. Generate a natural, conversational response addressing the user's query, incorporating document content as needed.
-        5. Maintain continuity with the conversation history.
-        6. If the query matches a node in the flow logic, process it according to the node's INSTRUCTION, but prioritize document content for specific details.
-        7. Do not repeat the node's INSTRUCTION verbatim; craft a friendly, relevant response.
-        8. If no relevant document content is found, provide a helpful response based on the flow logic or general knowledge.
-        9. Double-check that all resource links, phone numbers, and contact methods from the document context are included.
-        """ if document_context else """
-        You are a helpful assistant tasked with providing accurate and context-aware responses. Follow these steps:
-        1. Identify the user's intent from the message and conversation history.
-        2. Generate a natural, conversational response addressing the user's query.
-        3. Maintain continuity with the conversation history.
-        4. If the query matches a node in the flow logic, process it according to the node's INSTRUCTION.
-        5. Do not repeat the node's INSTRUCTION verbatim; craft a friendly, relevant response.
-        """
-
-        if current_node_id and current_node_doc and document_context and message.lower().strip() not in common_greetings:
-            if "FUNCTIONS:" in current_node_doc:
-                function_match_prompt = f"""
-                User message: "{message}"
-                Current node functions: {current_node_doc.split("FUNCTIONS:")[1] if "FUNCTIONS:" in current_node_doc else "None"}
-
-                Does the user's message match any of the functions/conditions listed? 
-                Return only "MATCH" or "NO_MATCH"
-                """
-                try:
-                    match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
-                    print(f"[FUNCTION MATCH CHECK] {match_response}")
-                    if "NO_MATCH" in match_response.upper():
-                        current_instruction = ""
-                        try:
-                            instruction_start = current_node_doc.find("INSTRUCTION:") + len("INSTRUCTION:")
-                            instruction_end = current_node_doc.find("FUNCTIONS:") if "FUNCTIONS:" in current_node_doc else len(current_node_doc)
-                            current_instruction = current_node_doc[instruction_start:instruction_end].strip()
-                        except Exception as e:
-                            print(f"Error extracting current instruction: {str(e)}")
-                        combined_response_prompt = f"""
-                        You are a helpful assistant. The user has sent the following message: "{message}"
-
-                        Relevant Document Content:
-                        {document_context_section}
-
-                        Current Node's Primary Message/Instruction:
-                        {current_instruction}
-
-                        INSTRUCTIONS FOR YOUR RESPONSE:
-                        1. You MUST first deliver the message provided in "Current Node's Primary Message/Instruction" verbatim or rephrased naturally.
-                        2. If the "Relevant Document Content" is present and offers additional, helpful information directly related to the user's query, integrate it gracefully.
-                        3. Maintain a natural, conversational, and empathetic tone.
-                        4. Ensure any URLs, phone numbers, email addresses, or specific resources from either the "Current Node's Primary Message/Instruction" or "Relevant Document Content" are included verbatim.
-                        5. Return ONLY the response content as a string, without including the prompt or any other content.
-
-                        Example Output: "The information you are asking for is [specific answer from document context]. Okay, [rephrased current_instruction]"
-                        """
-                        final_response = call_vertex_endpoint(combined_response_prompt, max_tokens=500, temperature=0.3)
-                        print(f"[NO FUNCTION MATCH] Providing document context + staying at current node {current_node_id}")
-                        return {
-                            "content": final_response,
-                            "next_node_id": current_node_id,
-                            "state_updates": {},
-                            "onboarding_status": onboarding_status_to_send
-                        }
-                except Exception as e:
-                    print(f"Error in function match check: {str(e)}")
-
+                document_text = "\n\n".join([n.node.get_content() for n in retrieved_nodes])
+            document_context = f"\nRelevant Document Content:\n{document_context}" if document_text else ""
+            print(f"Document retrieval complete, found content with: {len(document_context)} characters")
         full_context = f"""
-        You are a helpful assistant tasked with matching the user's response to flow logic and determining the next node ID. Follow these steps:
+        You are a helpful assistant tasked with matching user responses to flow logic and determining the next node ID.
 
-        The user message is: "{message}"
-        The current node ID is: {current_node_id or "None - this is the first message"}
+        User message: "{message}""
+        Current node ID: {current_node_id or "None"}
         Current node documentation: {current_node_doc}
-        Current Date (MM/DD/YYYY): {current_date}
-        Previous conversation:
-        {conversation_history}
-        Session data:
-        {json.dumps(session_data, indent=2)}
-
+        Current date: {current_date} (MM/DD/YYYY)
         Instructions:
-        1. Analyze the user's message '{message}' against the 'FUNCTIONS' section in the current node documentation ('{current_node_doc}').
-        2. If the user's response matches a condition in the FUNCTIONS section (e.g., 'If user replied with yes'), extract the corresponding next node ID (e.g., 'node_8').
-        3. If no condition matches, set 'next_node_id' to the current node ID ('{current_node_id}') and indicate a need to re-prompt.
-        4. Return a JSON object with:
-           - "next_node_id": The ID of the next node or current node if no match.
+        1. Analyze the user's message '{message}' against the 'FUNCTIONS' section in the current node documentation.
+        2. If the user response matches a condition (e.g., 'If user replied with yes'), return the corresponding next node ID.
+        3. If no condition matches, return the current node ID ('{current_node_id or 'None'}).
+        4. Return ONLY a JSON object with 'next_node_id'.
 
-        Return ONLY the JSON object below, without including the prompt or any other content:
-        {{
-            "next_node_id": "ID of the next node or current node"
-        }}
-        """
+Example:
+{
+    "next_node_id": "node_0"
+}
+"""
         try:
             response_text = call_vertex_endpoint(full_context, max_tokens=50, temperature=0.0)
-            if "```json" in response_text:
-                response_text = response_text.split("```json")[1].split("```")[0].strip()
+            if response_text.startswith('```json'):
+                response_text = response_text.split("```json\n")[1].split("\n```")[0].strip()
             try:
                 response_data = json.loads(response_text)
-            except json.JSONDecodeError as e:
-                print(f"JSON parsing failed: {str(e)}. Attempting to extract next_node_id.")
-                match = re.search(r'"next_node_id":\s*"([^"]+)"', response_text)
-                response_data = {"next_node_id": match.group(1) if match else current_node_id}
-            print("Successfully parsed function matching response")
-            next_node_id = response_data.get("next_node_id", current_node_id)
-            print(f"Raw LLM response: {response_text}")
-            print(f"Matched next node ID: {next_node_id}")
+                next_node_id = response_data.get("next_node_id", current_node_id)
+            except json.JSONDecodeError:
+                print(f"Failed to parse JSON: {response_text}")
+                next_node_id = current_node_id
+            print(f"Matched next node_id: {next_node_id}")
+        except Exception:
+            print(f"Error processing Vertex AI response: {str(e)}")
+            next_node_id = current_node_id
 
-            next_node_doc = ""
-            if next_node_id:
-                try:
-                    retriever = flow_index.as_retriever(
-                        filters=MetadataFilters(filters=[
-                            MetadataFilter(
-                                key="node_id", 
-                                value=next_node_id, 
-                                operator=FilterOperator.EQ
-                            )
-                        ])
-                    )
-                    node_docs = retriever.retrieve(f"NODE ID: {next_node_id}")
-                    if node_docs:
-                        exact_matches = [
-                            doc for doc in node_docs 
-                            if doc.metadata and doc.metadata.get("node_id") == next_node_id
-                        ]
-                        if exact_matches:
-                            next_node_doc = exact_matches[0].get_content()
-                            print(f"Found exact match for next node {next_node_id}")
-                        else:
-                            next_node_doc = node_docs[0].get_content()
-                            print(f"No exact match for next node, using top result")
-                    else:
-                        print(f"No document found for next node {next_node_id}")
-                        next_node_doc = "No specific node instructions available."
-                except Exception as e:
-                    print(f"Error retrieving next node document: {str(e)}")
-                    next_node_doc = "Error retrieving node instructions."
-            else:
-                next_node_doc = current_node_doc
-                print("No next node ID, using current node documentation")
-
-            print(f"[NEXT NODE DOC] {next_node_doc}")
-
-            ai_response = "I'm having trouble processing your request."
-            next_doc_functions = False
-            if next_node_doc:
-                try:
-                    instruction_start = next_node_doc.find("INSTRUCTION:") + len("INSTRUCTION:")
-                    instruction_end = next_node_doc.find("FUNCTIONS:") if "FUNCTIONS:" in next_node_doc else len(next_node_doc)
-                    instruction_text = next_node_doc[instruction_start:instruction_end].strip()
-                    ai_response = instruction_text
-                    print(f"Extracted instruction: {ai_response[:100]}...")
-                    if "FUNCTIONS:" in next_node_doc:
-                        functions_start = next_node_doc.find("FUNCTIONS:") + len("FUNCTIONS:")
-                        functions_text = next_node_doc[functions_start:].strip()
-                        if functions_text and functions_text.strip():
-                            next_doc_functions = True
-                            print(f"Functions found: {len(functions_text)} characters, NEXT DOC FUNCTION {next_doc_functions}")
-                        else:
-                            next_doc_functions = False
-                            print("Functions section is empty")
-                    else:
-                        next_doc_functions = False
-                        print("No FUNCTIONS section found")
-                except Exception as e:
-                    print(f"Error extracting instruction from next node: {str(e)}")
-                    ai_response = "No specific instructions available for the next step."
-
-            if calculated_gestational_info:
-                ai_response += f" {calculated_gestational_info}"
-
-            has_functions = False
-            if "FUNCTIONS:" in current_node_doc:
-                functions_section = current_node_doc.split("FUNCTIONS:")[1]
-                has_functions = any(f.strip() for f in functions_section.split("\n") if f.strip())
-            print(f"[HAS FUNCTION] ({has_functions}), Current Node ID : {current_node_id}")
-
-            if not has_functions and not is_survey_node and current_node_id is None:
-                print("No function match and no progression detected, generating fallback response")
-                if document_context_section:
-                    print("Using document context for response")
-                    fallback_prompt = f"""
-                    You are a helpful assistant. The user has sent the following message: "{message}"
-
-                    Previous conversation:
-                    {conversation_history}
-
-                    Relevant Document Content:
-                    {document_context_section}
-
-                    INSTRUCTIONS FOR YOUR RESPONSE:
-                    1. You MUST first deliver the message provided in "Current Node's Primary Message/Instruction" verbatim or rephrased naturally.
-                    2. If the "Relevant Document Content" is present and offers additional, helpful information directly related to the user's query, integrate it gracefully.
-                    3. Maintain a natural, conversational, and empathetic tone.
-                    4. Ensure any URLs, phone numbers, email addresses, or specific resources are included verbatim.
-                    5. Return ONLY the response content as a string, without including the prompt or any other content.
-
-                    Example Output: "[specific answer from document context]. Okay, [rephrased instruction]"
-                    """
+        next_node_doc = ""
+        if next_node_id:
+            try:
+                retriever = flow_index.as_retriever(
+                    filters=[("node_id", "=", next_node_id)]
+                )
+                node_docs = retriever.retrieve(f"NODE ID: {next_node_id}")
+                if node_docs:
+                    exact_matches = [doc for doc in node_docs if doc.metadata.get("node_id") == next_node_id]
+                    next_node_doc = exact_matches[0].get_content() if exact_matches else node_docs[0].get_content()
+                    print(f"Found document for next node: {next_node_id}")
                 else:
-                    print("No document context available, using general fallback")
-                    fallback_prompt = f"""
-                    You are a helpful assistant. The user has sent the following message: "{message}"
+                    print(f"No document for next node: {next_node_id}")
+                    next_node_doc = "No instructions available."
+            except Exception:
+                print(f"Error retrieving next node: {str(e)}")
+                next_node_doc = "No instructions available."
 
-                    Previous conversation:
-                    {conversation_history}
+        ai_response = "Welcome to Circa, is it the first time, visiting circa" if current_node_doc else "I'm having trouble processing your request."
+        rephrase_prompt = f"""
+        You are a friendly assistant tasked with rephrasing text to sound natural and personalized.
 
-                    I couldn't find specific information to proceed. Please provide a helpful response based on the conversation history.
-                    Return ONLY the response content as a string, without including the prompt or any other content.
-                    """
-                fallback_response = call_vertex_endpoint(fallback_prompt, max_tokens=500, temperature=0.3)
-                ai_response = fallback_response
-                print(f"Fallback response generated, length: {len(ai_response)} characters")
+        INSTRUCTIONS:
+        1. Rephrase the 'Original Response' to sound human-like, preserving intent and type (question/statement).
+        2. Use the patient's first name from 'Patient Profile' at the start.
+        3. Keep the original intent: questions remain questions, statements remain statements.
+        4. Return ONLY the rephrased response as a string.
 
-            rephrase_prompt = f"""
-            You are a friendly, conversational assistant tasked with rephrasing a given text to sound natural, human-like, and context-aware.
+        Original Response: "{ai_response}"
+        Patient Profile:
+        {patient_fields}
 
-            INSTRUCTIONS:
-            1. Rephrase the 'Original Response' to sound natural and human-like, preserving its exact intent and type (statement or question).
-            2. Personalize the response by using the patient's first name from the 'Patient Profile' at the beginning of the response.
-            3. Subtly incorporate relevant 'Patient History' only if it supports the original response without altering its intent or introducing new questions.
-            4. Maintain the original intent and type: If the 'Original Response' is a question, the rephrased response MUST be a question. If it's a statement, it MUST be a statement.
-            5. Do NOT contradict or question the 'Original Response'. Do NOT add new questions or change the core meaning.
-            6. Keep ALL content including phone number placeholders like $Clinic_Phone$.
-            7. If the 'Original Response' includes calculated values (e.g., gestational age), preserve them verbatim.
-            8. Do NOT ask for confirmation of previously provided data unless instructed by the 'Original Response'.
-            9. Return ONLY the rephrased response as a string, without including the prompt, instructions, or any other content.
+        Example Output: "Hritvik, welcome to Circa! Is this your first time visiting?"
+        """
+        rephrased_response = call_vertex_endpoint(rephrase_prompt, max_tokens=100, temperature=0.0)
+        print(f"Rephrased response: {rephrased_response}")
 
-            Original Response: "{ai_response}"
-            User message: "{message}"
-            Patient Profile:
-            {patient_fields}
-            Patient History:
-            {patient_history}
-
-            Example Output: "Hritvik, welcome to Circa! Is this your first time visiting?"
-            """
-            print("Calling secondary LLM for rephrasing")
-            rephrased_response = call_vertex_endpoint(rephrase_prompt, max_tokens=100, temperature=0.0)
-            print(f"Rephrased response: {rephrased_response}")
-            print(f"AI response length: {len(ai_response)} characters")
-            print(f"Next node ID: {next_node_id}")
-            print("==== VECTOR CHAT PROCESSING COMPLETE ====\n")
-
-            is_survey_node = "NODE TYPE: surveyNode" in current_node_doc
-            is_next_survey_node = next_node_id and "NODE TYPE: surveyNode" in next_node_doc
-            if is_survey_node or is_next_survey_node:
-                survey_node_id = current_node_id if is_survey_node else next_node_id
-                print(f"[SURVEY NODE] Detected survey node: {survey_node_id}")
-                return {
-                    "content": None,
-                    "next_node_id": survey_node_id,
-                    "node_type": "surveyNode",
-                    "state_updates": {},
-                    "onboarding_status": onboarding_status_to_send
-                }
-
-            if next_node_id and "NODE TYPE: notificationNode" in next_node_doc:
-                node_data = {}
-                try:
-                    lines = next_node_doc.split('\n')
-                    for line in lines:
-                        line = line.strip()
-                        if line.startswith('- Notification Type:'):
-                            node_data['messageType'] = line.split(':', 1)[1].strip()
-                        elif line.startswith('- Title:'):
-                            node_data['title'] = line.split(':', 1)[1].strip()
-                        elif line.startswith('- Schedule:'):
-                            node_data['scheduleType'] = line.split(':', 1)[1].strip()
-                        elif line.startswith('- Assistant ID:'):
-                            node_data['assistantId'] = line.split(':', 1)[1].strip()
-                        elif line.startswith('INSTRUCTION:'):
-                            node_data['message'] = line.split(':', 1)[1].strip()
-                        elif line.startswith('NODE DATA:'):
-                            try:
-                                node_data_str = line.split('NODE DATA:', 1)[1].strip()
-                                json_start = node_data_str.find('{')
-                                json_end = node_data_str.rfind('}') + 1
-                                if json_start >= 0 and json_end > json_start:
-                                    parsed_data = json.loads(node_data_str[json_start:json_end])
-                                    if 'surveyQuestions' in parsed_data:
-                                        node_data['surveyQuestions'] = parsed_data['surveyQuestions']
-                            except Exception as e:
-                                print(f"Error parsing survey questions: {str(e)}")
-                    print(f"[NOTIFICATION NODE] Parsed node data: {node_data}")
-                    print(f"[SURVEY QUESTIONS] Found {len(node_data.get('surveyQuestions', []))} questions")
-                except Exception as e:
-                    print(f"Error parsing notification node data: {str(e)}")
-                print(f"[NOTIFICATION NODE] Setting next_node_id to None after processing notification")
-                return {
-                    "content": rephrased_response,
-                    "next_node_id": None,
-                    "node_type": "notificationNode",
-                    "message": node_data.get("message", ""),
-                    "notification_type": node_data.get("messageType", "whatsapp"),
-                    "title": node_data.get("title", ""),
-                    "schedule_type": node_data.get("scheduleType", ""),
-                    "scheduled_for": node_data.get("scheduledFor", ""),
-                    "assistant_id": node_data.get("assistantId", ""),
-                    "survey_questions": node_data.get("surveyQuestions", []),
-                    "state_updates": {},
-                    "onboarding_status": onboarding_status_to_send
-                }
-
-            if not next_doc_functions:
-                next_node_id = None
-                print(f"[END NODE] Setting next_node_id to None - no further progression")
-            
-            return {
-                "content": rephrased_response,
-                "next_node_id": next_node_id,
-                "state_updates": {},
-                "onboarding_status": onboarding_status_to_send
-            }
-
-        except Exception as e:
-            print(f"ERROR processing vector response: {str(e)}")
-            print(f"Response text that failed to parse: {response_text[:200]}...")
-            print("Using fallback LLM response")
-            fallback_prompt = f"""
-            You are a helpful assistant. The user has sent the following message: "{message}"
-
-            Previous conversation:
-            {conversation_history}
-
-            Please provide a helpful response based on the conversation history.
-            Return ONLY the response content as a string, without including the prompt or any other content.
-            """
-            fallback_response = call_vertex_endpoint(fallback_prompt, max_tokens=300, temperature=0.3)
-            print(f"Fallback response generated, length: {len(fallback_response)} characters")
-            print("==== VECTOR CHAT PROCESSING COMPLETE (FALLBACK) ====\n")
-            return {
-                "content": fallback_response,
-                "error": f"Vector processing failed: {str(e)}",
-                "fallback": True
-            }
+        return {
+            "content": rephrased_response,
+            "next_node_id": next_node_id,
+            "state_updates": {},
+            "onboarding_status": onboarding_status_to_send
+        }
 
     except Exception as e:
         print(f"CRITICAL ERROR in vector_chat: {str(e)}")
         traceback_str = traceback.format_exc()
         print(f"Traceback: {traceback_str}")
-        print("==== VECTOR CHAT PROCESSING FAILED ====\n")
         return {
             "error": f"Failed to process message: {str(e)}",
             "content": "I'm having trouble processing your request. Please try again later."
         }
-    
+
 # @app.post("/api/shared/vector_chat")
 # async def vector_flow_chat(request: dict):
 #     """
