@@ -10932,7 +10932,7 @@ def get_starting_node(flow_index):
 #         }
     
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-    """Helper function to call Vertex AI endpoint with proper response extraction"""
+    """Helper function to call Vertex AI endpoint with proper response cleaning"""
     try:
         parameters = {
             "max_output_tokens": max_tokens,
@@ -10945,25 +10945,38 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
         if response.predictions and len(response.predictions) > 0:
             result = response.predictions[0]
             
-            # CRITICAL FIX: Extract only the actual response, not the prompt
             if isinstance(result, str):
-                # Look for "Output:" and extract everything after it
-                if "Output:" in result:
-                    output_start = result.find("Output:") + len("Output:")
-                    actual_response = result[output_start:].strip()
-                    # Remove any markdown formatting like ```
-                    actual_response = actual_response.replace("```", "").strip()
-                    return actual_response
+                # AGGRESSIVE CLEANING to fix the garbage output
                 
-                # Fallback: if no "Output:" found, try to extract the last meaningful line
+                # Remove common prefixes that shouldn't be there
+                prefixes_to_remove = ['text ', 'python ', 'json ', 'string ', 'response ', 'output ']
+                for prefix in prefixes_to_remove:
+                    if result.lower().startswith(prefix):
+                        result = result[len(prefix):].strip()
+                
+                # Remove quotes if the entire response is wrapped in them
+                if result.startswith('"') and result.endswith('"'):
+                    result = result[1:-1]
+                if result.startswith("'") and result.endswith("'"):
+                    result = result[1:-1]
+                
+                # Remove markdown code blocks
+                result = result.replace("```", "").strip()
+                
+                # Remove any remaining technical artifacts
                 lines = result.split('\n')
-                for line in reversed(lines):
+                clean_lines = []
+                for line in lines:
                     line = line.strip()
-                    if line and not line.startswith(('Human:', 'Assistant:', 'Prompt:', 'Original Response:', 'User message:')):
-                        return line
+                    # Skip lines that look like technical artifacts
+                    if not line.startswith(('Human:', 'Assistant:', 'Prompt:', 'Output:', '"""', 'def ', 'import ', 'return ')):
+                        clean_lines.append(line)
                 
-                # Last resort: return the full result
-                return result
+                # Join the clean lines
+                clean_result = '\n'.join(clean_lines).strip()
+                
+                # If we have a clean result, return it; otherwise return the original
+                return clean_result if clean_result else result
             
             return str(result)
         else:
@@ -10972,7 +10985,6 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
-
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
