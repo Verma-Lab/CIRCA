@@ -10965,6 +10965,8 @@ async def vector_flow_chat(request: dict):
     Process a chat message using the vector-based flow knowledge index.
     This endpoint doesn't rely on Firestore or Gemini services.
     """
+    from datetime import datetime
+    import pytz
     eastern = pytz.timezone('America/New_York')
     current_time = datetime.now(eastern)
     current_date = current_time.date().strftime('%m/%d/%Y')
