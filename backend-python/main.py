@@ -706,23 +706,27 @@ Settings.llm = qwen_model
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 response = qwen_model.complete(test_prompt)
 print(f"Test response: {response.text}")
-def test_qwen_configuration():
-    """Test function to verify Gemma behaves like Gemini"""
+def test_deepseek_configuration():
+    """Test function to verify DeepSeek behaves as expected on Vertex AI"""
     test_cases = [
         "Translate 'Hello' to Spanish:",
         "Detect the language of this text: 'Bonjour'",
         "What is 2+2?",
     ]
     
-    print("Testing Gemma configuration:")
+    print("Testing DeepSeek configuration:")
     for i, test_prompt in enumerate(test_cases, 1):
         try:
-            response = qwen_model.complete(test_prompt)
-            print(f"Test {i}: '{test_prompt}' -> '{response.text}'")
+            # Construct the prompt using the image's format
+            deepseek_prompt = f"""
+<begin_of_sentence>|<User>|{test_prompt}<|Assistant|>CRITICAL: Output the response directly with no extra text, explanations, code block markers, or quotes.<|think>|n
+"""
+            # Call the Vertex AI endpoint
+            response = call_vertex_endpoint(deepseek_prompt, max_tokens=128, temperature=0.6)
+            print(f"Test {i}: '{test_prompt}' -> '{response}'")
         except Exception as e:
             print(f"Test {i} failed: {e}")
-
-test_qwen_configuration()
+test_deepseek_configuration()
 # MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 # if not torch.cuda.is_available():
 #     logger.error("CUDA not available. Cannot proceed without GPU.")
@@ -10938,9 +10942,10 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
         json_enforced_prompt = f"CRITICAL: Output ONLY valid JSON starting with {{ and ending with }}. Do not include any extra text, explanations, or code block markers. Respond to the following: {prompt}"
         parameters = {
             "max_output_tokens": 500,
-            "temperature": 0.2,
+            "temperature": 0.5,
             "top_k": 40,
-            "top_p": 0.95
+            "top_p": 0.95, 
+            "raw_response":True
         }
         response = endpoint.predict(instances=[{"prompt": json_enforced_prompt}], parameters=parameters)
         if response.predictions and len(response.predictions) > 0:
