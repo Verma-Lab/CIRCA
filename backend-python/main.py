@@ -10934,13 +10934,15 @@ def get_starting_node(flow_index):
 def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     """Helper function to call Vertex AI endpoint"""
     try:
+        # Enforce JSON output in the prompt
+        json_enforced_prompt = f"CRITICAL: Output ONLY valid JSON starting with {{ and ending with }}. Do not include any extra text, explanations, or code block markers. Respond to the following: {prompt}"
         parameters = {
-            "max_output_tokens": max_tokens,
-            "temperature": temperature,
+            "max_output_tokens": 500,
+            "temperature": 0.2,
             "top_k": 40,
             "top_p": 0.95
         }
-        response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
+        response = endpoint.predict(instances=[{"prompt": json_enforced_prompt}], parameters=parameters)
         if response.predictions and len(response.predictions) > 0:
             return response.predictions[0]
         else:
@@ -10948,7 +10950,7 @@ def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
     except Exception as e:
         print(f"Error calling Vertex AI endpoint: {str(e)}")
         return f"Error: {str(e)}"
-
+        
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
