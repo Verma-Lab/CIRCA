@@ -11637,11 +11637,24 @@ async def vector_flow_chat(request: dict):
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
                     # match_response = call_vertex_endpoint(function_match_prompt, max_tokens=10, temperature=0.0)
-                    response = endpoint.predict(instances=[{"prompt": function_match_prompt}])
+                    
+                    request_body = {
+                        "prompt": f"< | begin of sentence | >< | User | >{function_match_prompt}< | Assistant | >",
+                        "max_tokens": 50,
+                        "temperature": 0.1,
+                        "top_p": 0.95,
+                        "raw_response": true
+                    }
+                    response = endpoint.predict(instances=[request_body])
                     match_response = response.predictions[0]
-                    print(f"[FUNCTION MATCH CHECK] {match_response}")
                     if isinstance(match_response, str):
-                        match_response = match_response.strip()
+                        # Look for JSON in the response
+                        import re
+                        json_match = re.search(r'\{[^}]+\}', match_response)
+                        if json_match:
+                            match_response = json_match.group(0)
+                        else:
+                            match_response = match_response.strip()
 
                     print(f"[FUNCTION MATCH CHECK] {match_response}")
                     
@@ -11907,8 +11920,16 @@ async def vector_flow_chat(request: dict):
             """
             print("Calling secondary LLM for rephrasing")
             # rephrased_response = Settings.llm.complete(rephrase_prompt).text.strip()
-            response = endpoint.predict(instances=[{"prompt": rephrase_prompt}])
+            request_body = {
+                "prompt": f"< | begin of sentence | >< | User | >{rephrase_prompt}< | Assistant | >",
+                "max_tokens": 200,
+                "temperature": 0.3,
+                "top_p": 0.95,
+                "raw_response": True
+            }
+            response = endpoint.predict(instances=[request_body])
             rephrased_response = response.predictions[0]
+
             if isinstance(rephrased_response, str):
                 rephrased_response = rephrased_response.strip()
 
