@@ -705,7 +705,7 @@ Settings.llm = gemini_model
 # Settings.llm = gemma_llm
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
 # response = llama_model.complete(test_prompt)
-print(f"Test response: {response.text}")
+# print(f"Test response: {response.text}")
 def test_qwen_configuration():
     """Test function to verify Gemma behaves like Gemini"""
     test_cases = [
