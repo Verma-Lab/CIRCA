@@ -12057,9 +12057,6 @@ async def vector_flow_chat(request: dict):
             Patient Profile (for personalization, e.g., first_name):
             {patient_fields}
 
-            Patient History (for subtle contextual enrichment, use only if it fits without contradiction):
-            {patient_history}
-
             Return the rephrased response as a string.
             """
 
