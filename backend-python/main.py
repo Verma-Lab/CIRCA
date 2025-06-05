@@ -11754,54 +11754,26 @@ async def vector_flow_chat(request: dict):
                 except Exception as e:
                     print(f"Error in function match check: {str(e)}")
                     
-        full_context = f"""
-        The user message is: "{message}"
+        full_context = f"""User said: "{message}"
 
-        The current node ID is: {current_node_id or "None - this is the first message"}
+            Current node: {current_node_id}
 
-        Current node documentation: {current_node_doc}
+            Current node documentation: {current_node_doc}
 
-        Current Date (The current date in Eastern Time (MM/DD/YYYY)) is: {current_date}
+            Current Date (The current date in Eastern Time (MM/DD/YYYY)) is: {current_date}
 
-        Previous conversation:
-        {conversation_history}
+            Previous conversation:
+            {conversation_history}
 
         The session data is:
         {json.dumps(session_data, indent=2)}
 
-        Instructions for matching user response and determining next node:
-        1. **Match User Response**: Analyze the user's message '{message}' against the 'FUNCTIONS' section in the current node documentation ('{current_node_doc}').
-        2. **Extract Next Node ID**: If the user's response matches a condition in the FUNCTIONS section (e.g., 'If user replied with yes'), extract the corresponding next node ID (e.g., 'node_8').
-        3. **Handle No Match**: If no condition matches, set 'next_node_id' to the current node ID ('{current_node_id}') and indicate a need to re-prompt.
-        4. **Response Structure**: Return a JSON object with:
-        - "next_node_id": The ID of the next node or current node if no match.
-        
-        Return the response as a JSON object:
-        {{
-            "next_node_id": "ID of the next node or current node",
-      
-        }}
-        """
-        full_context = f"""
-            Analyze the user's message and determine the next node ID.
+            Instructions:
+            1. Check if user message "{message}" matches any condition in the FUNCTIONS section above
+            2. If match found, return the target node ID from that function
+            3. If no match, return current node ID "{current_node_id}"
 
-            User message: "{message}"
-            Current node ID: "{current_node_id}"
-            Current node documentation: {current_node_doc}
-
-            Task:
-            1. Check if user message "{message}" matches any condition in the FUNCTIONS section
-            2. If match found, extract the target node ID from that function
-            3. If no match, use current node ID "{current_node_id}"
-
-            RESPONSE FORMAT:
-            {{"next_node_id": "node_X"}}
-
-            IMPORTANT: Return ONLY the JSON object above. No other text.
-            """
-
-            
-        
+            Return only JSON: {{"next_node_id": "node_id_here"}}"""
         # Process the response
         try:
             try:
