@@ -10968,7 +10968,7 @@ def call_vertex_endpoint(prompt):
     
     data = {
         "instances": [{"prompt": prompt}],
-        "parameters": {"temperature": 0.0, "max_output_tokens": 1000}
+        "parameters": {"temperature": 0.0, "max_output_tokens": 2000}
     }
     
     # Make the request
@@ -10984,8 +10984,8 @@ def call_vertex_endpoint(prompt):
             # Check for Output: first, then JSON
             if "Output:" in raw_response:
                 output_part = raw_response.split("Output:")[1].strip()
-                # Check if the output after "Output:" is JSON
-                if output_part.strip().startswith('{') and '}' in output_part:
+                # Check if the output after "Output:" is JSON AND complete
+                if output_part.strip().startswith('{') and output_part.count('{') == output_part.count('}'):
                     # Extract complete JSON after Output:
                     start = output_part.find("{")
                     end = output_part.rfind("}") + 1
