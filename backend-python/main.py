@@ -11936,30 +11936,32 @@ async def vector_flow_chat(request: dict):
 
             print(f'[AI RESPONSE]', ai_response)
             # Improved rephrasing prompt with patient context
-            rephrase_prompt = f"""Rephrase this message to sound more natural and friendly:
+            rephrase_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
-            ORIGINAL MESSAGE: "{ai_response}"
+                You are an AI assistant that rephrases medical dialogue messages to sound more natural and friendly. Return the response as a JSON object with the key "rephrased_message" and the rephrased text as the value. Do not include any additional text, explanations, or formatting beyond the JSON object.<|eot_id|><|start_header_id|>user<|end_header_id|>
 
-            USER SAID: "{message}"
+                ORIGINAL MESSAGE: "{ai_response}"
 
-            PATIENT PROFILE:
-            {patient_fields}
+                USER SAID: "{message}"
 
-            PATIENT HISTORY:
-            {patient_history}
+                PATIENT PROFILE:
+                {patient_fields}
 
-            INSTRUCTIONS:
-            - Make the message sound conversational and warm
-            - Use the patient's first name from the profile if available
-            - Subtly incorporate relevant patient history if it enhances the response
-            - Keep the same meaning and intent as the original message
-            - Do not add new questions or information not in the original
-            - Do not contradict the original message
-            - Return only the rephrased message as plain text, no JSON
+                PATIENT HISTORY:
+                {patient_history}
 
-            REPHRASED MESSAGE:"""
+                Instructions:
+                1. Analyze the original message and make it sound conversational and warm
+                2. Use the patient's first name from the profile if available
+                3. Subtly incorporate relevant patient history if it enhances the response
+                4. Keep the same meaning and intent as the original message
+                5. Do not add new questions or information not in the original
+                6. Do not contradict the original message
+                7. Return the result as a JSON object with rephrased_message key.
 
-            print("Calling secondary LLM for rephrasing")
+                <|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+                """
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
 
             # Better response cleaning
