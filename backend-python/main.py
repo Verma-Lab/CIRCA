@@ -11775,7 +11775,7 @@ async def vector_flow_chat(request: dict):
         1. Analyze the user message "{message}" and check if it matches any condition in the FUNCTIONS section of the current node documentation.
         2. If a match is found, use the target node ID specified in that function.
         3. If no match is found, use the current node ID "{current_node_id}".
-        4. Return the result as a JSON object: {{"next_node_id": "node_id_here"}}
+        4. Return the result as a JSON object with next_node_id key.
 
         <|eot_id><|start_header_id>assistant<|end_header_id>
         """
