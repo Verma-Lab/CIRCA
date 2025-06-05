@@ -10981,11 +10981,24 @@ def call_vertex_endpoint(prompt):
             
             # Extract JSON if present, otherwise return clean output
             if "{" in raw_response and "}" in raw_response:
-                # Extract JSON part
-                start = raw_response.find("{")
-                end = raw_response.rfind("}") + 1
-                json_part = raw_response[start:end]
-                return json_part
+                # Find the last occurrence of a JSON object (most likely to be the actual response)
+                lines = raw_response.split('\n')
+                json_candidates = []
+                
+                for line in lines:
+                    line = line.strip()
+                    if line.startswith('{') and line.endswith('}'):
+                        json_candidates.append(line)
+                
+                # Use the last valid JSON found
+                if json_candidates:
+                    return json_candidates[-1]
+                else:
+                    # Fallback to original method
+                    start = raw_response.find("{")
+                    end = raw_response.rfind("}") + 1
+                    json_part = raw_response[start:end]
+                    return json_part
             elif "Output:" in raw_response:
                 output_part = raw_response.split("Output:")[1].strip()
                 clean_output = output_part.split('\n')[0].strip()
@@ -11798,11 +11811,19 @@ async def vector_flow_chat(request: dict):
                 # response_text = Settings.llm.complete(full_context).text
                 response_text = call_vertex_endpoint(full_context)
                 print(response_text)
-                if "```json" in response_text:
-                    response_text = response_text.split("```json")[1].split("```")[0].strip()
-                response_data = json.loads(response_text)
-                print("Successfully parsed function matching response")
-                next_node_id = response_data.get("next_node_id", current_node_id)
+                if response_text:
+                    # Try to find JSON in the response
+                    import re
+                    json_match = re.search(r'\{[^{}]*"next_node_id"[^{}]*\}', response_text)
+                    if json_match:
+                        response_text = json_match.group(0)
+                    elif "```json" in response_text:
+                        response_text = response_text.split("```json")[1].split("```")[0].strip()
+
+                    if "```json" in response_text:
+                        response_text = response_text.split("```json")[1].split("```")[0].strip()
+                    response_data = json.loads(response_text)
+                    next_node_id = response_data.get("next_node_id", current_node_id)
         
             except Exception as e:
                 print(f"Error matching user response to functions: {str(e)}")
