@@ -10942,8 +10942,6 @@ def call_vertex_endpoint(prompt):
     
     Args:
         prompt (str): The prompt to send to the model
-        temperature (float): Temperature parameter for the model (default: 0.0)
-        max_output_tokens (int): Maximum tokens in the response (default: 200)
     
     Returns:
         str: The model's response, or None if there was an error
@@ -10952,13 +10950,13 @@ def call_vertex_endpoint(prompt):
     credentials, project = default()
     credentials.refresh(Request())
     
-    # Dedicated endpoint details
-    endpoint_id = "2655527289265061888"
+    # Updated endpoint details - using the working Llama 3.1 8B with chat completions
+    endpoint_id = "3325570774743384064"
     project_id = "vermalab-gemini-psom-e3ea"
-    location = "us-west4"
+    location = "us-central1"
     dedicated_domain = f"{endpoint_id}.{location}-491184061440.prediction.vertexai.goog"
     
-    # Build request
+    # Build request URL
     url = f"https://{dedicated_domain}/v1/projects/{project_id}/locations/{location}/endpoints/{endpoint_id}:predict"
     
     headers = {
@@ -10966,9 +10964,20 @@ def call_vertex_endpoint(prompt):
         "Content-Type": "application/json"
     }
     
+    # Use chat completions format that actually works
     data = {
-        "instances": [{"prompt": prompt}],
-        "parameters": {"temperature": 0.0, "max_output_tokens": 2000}
+        "instances": [
+            {
+                "@requestFormat": "chatCompletions",
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                "max_tokens": 1000
+            }
+        ]
     }
     
     # Make the request
@@ -10976,59 +10985,135 @@ def call_vertex_endpoint(prompt):
     
     if response.status_code == 200:
         result = response.json()
-        if "predictions" in result and result["predictions"]:
-            raw_response = result["predictions"][0].strip()
-            print("[RAW RESPONSE]")
-            print(raw_response)
-            # Extract JSON if present, otherwise return clean output
-            if "Output:" in raw_response:
-                output_part = raw_response.split("Output:")[1].strip()
-                # Check if the output after "Output:" is JSON
-                if output_part.strip().startswith('{'):
-                    # Check if JSON is complete
-                    if output_part.count('{') == output_part.count('}') and output_part.count('}') > 0:
-                        # Complete JSON
-                        start = output_part.find("{")
-                        end = output_part.rfind("}") + 1
-                        json_part = output_part[start:end]
-                        return json_part.strip()
-                    else:
-                        # Incomplete JSON - return original AI response as fallback
-                        print("WARNING: Incomplete JSON detected, returning original response")
-                        return None  # This will trigger your fallback logic
-                else:
-                    # Plain text after Output:
-                    clean_output = output_part.split('\n')[0].strip()
-                    return clean_output
-            elif "{" in raw_response and "}" in raw_response:
-                # Find the last occurrence of a JSON object (most likely to be the actual response)
-                lines = raw_response.split('\n')
-                json_candidates = []
+        if "predictions" in result:
+            predictions = result["predictions"]
+            
+            # Handle chat completions format
+            if "choices" in predictions:
+                message_content = predictions["choices"][0]["message"]["content"]
+                print(f"[RAW RESPONSE] {message_content}")
                 
-                for line in lines:
-                    line = line.strip()
-                    if line.startswith('{') and line.endswith('}'):
-                        json_candidates.append(line)
-                
-                # Use the last valid JSON found
-                if json_candidates:
-                    return json_candidates[-1]
-                else:
-                    # Fallback to original method
-                    start = raw_response.find("{")
-                    end = raw_response.rfind("}") + 1
-                    json_part = raw_response[start:end]
+                # Extract JSON if present, otherwise return clean output
+                if message_content.strip().startswith('{') and message_content.strip().endswith('}'):
+                    # It's a JSON response
+                    return message_content.strip()
+                elif "{" in message_content and "}" in message_content:
+                    # Extract JSON from text
+                    start = message_content.find("{")
+                    end = message_content.rfind("}") + 1
+                    json_part = message_content[start:end]
                     return json_part
+                else:
+                    # Plain text response
+                    return message_content.strip()
             else:
-                # Return first line as clean output
-                clean_output = raw_response.split('\n')[0].strip()
-                return clean_output
+                print(f"Unexpected response format: {result}")
+                return None
         else:
             print(f"No predictions in response: {result}")
             return None
     else:
         print(f"HTTP Error {response.status_code}: {response.text}")
         return None
+
+# def call_vertex_endpoint(prompt):
+#     import requests
+#     import json
+#     from google.auth import default
+#     from google.auth.transport.requests import Request
+    
+#     """
+#     Call the Vertex AI dedicated endpoint with a prompt and return the response.
+    
+#     Args:
+#         prompt (str): The prompt to send to the model
+#         temperature (float): Temperature parameter for the model (default: 0.0)
+#         max_output_tokens (int): Maximum tokens in the response (default: 200)
+    
+#     Returns:
+#         str: The model's response, or None if there was an error
+#     """
+#     # Get credentials
+#     credentials, project = default()
+#     credentials.refresh(Request())
+    
+#     # Dedicated endpoint details
+#     endpoint_id = "2655527289265061888"
+#     project_id = "vermalab-gemini-psom-e3ea"
+#     location = "us-west4"
+#     dedicated_domain = f"{endpoint_id}.{location}-491184061440.prediction.vertexai.goog"
+    
+#     # Build request
+#     url = f"https://{dedicated_domain}/v1/projects/{project_id}/locations/{location}/endpoints/{endpoint_id}:predict"
+    
+#     headers = {
+#         "Authorization": f"Bearer {credentials.token}",
+#         "Content-Type": "application/json"
+#     }
+    
+#     data = {
+#         "instances": [{"prompt": prompt}],
+#         "parameters": {"temperature": 0.0, "max_output_tokens": 2000}
+#     }
+    
+#     # Make the request
+#     response = requests.post(url, headers=headers, json=data)
+    
+#     if response.status_code == 200:
+#         result = response.json()
+#         if "predictions" in result and result["predictions"]:
+#             raw_response = result["predictions"][0].strip()
+#             print("[RAW RESPONSE]")
+#             print(raw_response)
+#             # Extract JSON if present, otherwise return clean output
+#             if "Output:" in raw_response:
+#                 output_part = raw_response.split("Output:")[1].strip()
+#                 # Check if the output after "Output:" is JSON
+#                 if output_part.strip().startswith('{'):
+#                     # Check if JSON is complete
+#                     if output_part.count('{') == output_part.count('}') and output_part.count('}') > 0:
+#                         # Complete JSON
+#                         start = output_part.find("{")
+#                         end = output_part.rfind("}") + 1
+#                         json_part = output_part[start:end]
+#                         return json_part.strip()
+#                     else:
+#                         # Incomplete JSON - return original AI response as fallback
+#                         print("WARNING: Incomplete JSON detected, returning original response")
+#                         return None  # This will trigger your fallback logic
+#                 else:
+#                     # Plain text after Output:
+#                     clean_output = output_part.split('\n')[0].strip()
+#                     return clean_output
+#             elif "{" in raw_response and "}" in raw_response:
+#                 # Find the last occurrence of a JSON object (most likely to be the actual response)
+#                 lines = raw_response.split('\n')
+#                 json_candidates = []
+                
+#                 for line in lines:
+#                     line = line.strip()
+#                     if line.startswith('{') and line.endswith('}'):
+#                         json_candidates.append(line)
+                
+#                 # Use the last valid JSON found
+#                 if json_candidates:
+#                     return json_candidates[-1]
+#                 else:
+#                     # Fallback to original method
+#                     start = raw_response.find("{")
+#                     end = raw_response.rfind("}") + 1
+#                     json_part = raw_response[start:end]
+#                     return json_part
+#             else:
+#                 # Return first line as clean output
+#                 clean_output = raw_response.split('\n')[0].strip()
+#                 return clean_output
+#         else:
+#             print(f"No predictions in response: {result}")
+#             return None
+#     else:
+#         print(f"HTTP Error {response.status_code}: {response.text}")
+#         return None
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
