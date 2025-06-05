@@ -11959,8 +11959,7 @@ async def vector_flow_chat(request: dict):
 
                 USER SAID: "{message}"
 
-                PATIENT NAME: {patient_fields.get('first_name', 'Patient')}
-
+                PATIENT PROFILE: {patient_fields}
 
                 INSTRUCTIONS:
                 - Make the message sound conversational and warm
