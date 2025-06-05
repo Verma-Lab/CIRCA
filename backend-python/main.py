@@ -11951,9 +11951,10 @@ async def vector_flow_chat(request: dict):
 
             print(f'[AI RESPONSE]', ai_response)
             # Improved rephrasing prompt with patient context
-            rephrase_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id>
+            rephrase_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
-                You are an AI assistant that rephrases medical dialogue messages to sound natural, friendly, and complete. Return only the rephrased message as plain text with no additional formatting, quotes, or JSON. The response must fully convey the original message's intent, including any questions or instructions like 'Reply yes or no'.<|eot_id|><|start_header_id|>user<|end_header_id>
+                You are an AI assistant that rephrases medical dialogue messages to sound more natural and friendly. Return only the rephrased message as plain text with no additional formatting, quotes, or JSON.<|eot_id|><|start_header_id|>user<|end_header_id|>
+
                 ORIGINAL MESSAGE: "{ai_response}"
 
                 USER SAID: "{message}"
