@@ -10968,7 +10968,7 @@ def call_vertex_endpoint(prompt):
     
     data = {
         "instances": [{"prompt": prompt}],
-        "parameters": {"temperature": 0.0, "max_output_tokens": 2000}
+        "parameters": {"temperature": 0.0, "max_output_tokens": 3000}
     }
     
     # Make the request
