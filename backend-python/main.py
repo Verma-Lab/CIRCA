@@ -11703,7 +11703,7 @@ async def vector_flow_chat(request: dict):
                     
                     if "NO_MATCH" in match_response.upper():
                         # User message doesn't match functions, provide document context + current node instruction
-                        
+                        print('[NO MATCH CHECK]')
                         # Extract current node instruction
                         current_instruction = ""
                         try:
@@ -11754,6 +11754,8 @@ async def vector_flow_chat(request: dict):
                 except Exception as e:
                     print(f"Error in function match check: {str(e)}")
                     
+        print('[CURRENT NODE DOC], ', current_node_doc)
+        
         full_context = f"""User said: "{message}"
 
             Current node: {current_node_id}
