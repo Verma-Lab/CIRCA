@@ -10978,7 +10978,8 @@ def call_vertex_endpoint(prompt):
         result = response.json()
         if "predictions" in result and result["predictions"]:
             raw_response = result["predictions"][0].strip()
-            
+            print("[RAW RESPONSE]")
+            print(raw_response)
             # Extract JSON if present, otherwise return clean output
             if "{" in raw_response and "}" in raw_response:
                 # Find the last occurrence of a JSON object (most likely to be the actual response)
