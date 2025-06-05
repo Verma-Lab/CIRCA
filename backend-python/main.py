@@ -10932,6 +10932,11 @@ def get_starting_node(flow_index):
 #         }
     
 def call_vertex_endpoint(prompt):
+    import requests
+    import json
+    from google.auth import default
+    from google.auth.transport.requests import Request
+    
     """
     Call the Vertex AI dedicated endpoint with a prompt and return the response.
     
