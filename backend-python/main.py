@@ -10968,7 +10968,7 @@ def call_vertex_endpoint(prompt):
     
     data = {
         "instances": [{"prompt": prompt}],
-        "parameters": {"temperature": 0.0, "max_output_tokens": 3000}
+        "parameters": {"temperature": 0.0, "max_output_tokens": 1000}
     }
     
     # Make the request
@@ -10981,22 +10981,27 @@ def call_vertex_endpoint(prompt):
             print("[RAW RESPONSE]")
             print(raw_response)
             # Extract JSON if present, otherwise return clean output
-            # Check for Output: first, then JSON
             if "Output:" in raw_response:
                 output_part = raw_response.split("Output:")[1].strip()
-                # Check if the output after "Output:" is JSON AND complete
-                if output_part.strip().startswith('{') and output_part.count('{') == output_part.count('}'):
-                    # Extract complete JSON after Output:
-                    start = output_part.find("{")
-                    end = output_part.rfind("}") + 1
-                    json_part = output_part[start:end]
-                    return json_part.strip()
+                # Check if the output after "Output:" is JSON
+                if output_part.strip().startswith('{'):
+                    # Check if JSON is complete
+                    if output_part.count('{') == output_part.count('}') and output_part.count('}') > 0:
+                        # Complete JSON
+                        start = output_part.find("{")
+                        end = output_part.rfind("}") + 1
+                        json_part = output_part[start:end]
+                        return json_part.strip()
+                    else:
+                        # Incomplete JSON - return original AI response as fallback
+                        print("WARNING: Incomplete JSON detected, returning original response")
+                        return None  # This will trigger your fallback logic
                 else:
                     # Plain text after Output:
                     clean_output = output_part.split('\n')[0].strip()
                     return clean_output
             elif "{" in raw_response and "}" in raw_response:
-                # Fallback JSON extraction for responses without "Output:"
+                # Find the last occurrence of a JSON object (most likely to be the actual response)
                 lines = raw_response.split('\n')
                 json_candidates = []
                 
@@ -11018,7 +11023,6 @@ def call_vertex_endpoint(prompt):
                 # Return first line as clean output
                 clean_output = raw_response.split('\n')[0].strip()
                 return clean_output
-
         else:
             print(f"No predictions in response: {result}")
             return None
@@ -11949,7 +11953,7 @@ async def vector_flow_chat(request: dict):
             # Improved rephrasing prompt with patient context
             rephrase_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
-                You are an AI assistant that rephrases medical dialogue messages to sound more natural and friendly. Return the response as a JSON object with the key "rephrased_message" and the rephrased text as the value. Do not include any additional text, explanations, or formatting beyond the JSON object.<|eot_id|><|start_header_id|>user<|end_header_id|>
+                You are an AI assistant that rephrases medical dialogue messages to sound more natural and friendly. Return only the rephrased message as plain text with no additional formatting, quotes, or JSON.<|eot_id|><|start_header_id|>user<|end_header_id|>
 
                 ORIGINAL MESSAGE: "{ai_response}"
 
@@ -11961,18 +11965,18 @@ async def vector_flow_chat(request: dict):
                 PATIENT HISTORY:
                 {patient_history}
 
-                Instructions:
-                1. Analyze the original message and make it sound conversational and warm
-                2. Use the patient's first name from the profile if available
-                3. Subtly incorporate relevant patient history if it enhances the response
-                4. Keep the same meaning and intent as the original message
-                5. Do not add new questions or information not in the original
-                6. Do not contradict the original message
-                7. Return the result as a JSON object with rephrased_message key.
+                INSTRUCTIONS:
+                - Make the message sound conversational and warm
+                - Use the patient's first name from the profile if available
+                - Subtly incorporate relevant patient history if it enhances the response
+                - Keep the same meaning and intent as the original message
+                - Do not add new questions or information not in the original
+                - Do not contradict the original message
+                - Return only the rephrased message as plain text, no quotes, no JSON
 
-                <|eot_id|><|start_header_id|>assistant<|end_header_id|>
+                REPHRASED MESSAGE:<|eot_id|><|start_header_id|>assistant<|end_header_id|>
 
-                """
+            """
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
 
             # Better response cleaning
