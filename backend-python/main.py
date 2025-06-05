@@ -11768,9 +11768,8 @@ async def vector_flow_chat(request: dict):
             2. If match found, return the target node ID from that function
             3. If no match, return current node ID "{current_node_id}"
 
-            Return only JSON with the actual node ID
+            Return only JSON format: {{"next_node_id": "PUT_ACTUAL_NODE_ID_HERE"}}
 
-            Example: {{"next_node_id": "node_1"}}
             """
         # Process the response
         try:
