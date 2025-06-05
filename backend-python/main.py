@@ -11686,14 +11686,17 @@ async def vector_flow_chat(request: dict):
             # Check if current node has functions
             if "FUNCTIONS:" in current_node_doc:
                 # Check if user message matches any function
-                function_match_prompt = f"""
+                function_match_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+                You are an AI assistant designed to check if a user message matches any function conditions. Return only "MATCH" or "NO_MATCH" with no additional text.<|eot_id|><|start_header_id|>user<|end_header_id|>
+
                 User message: "{message}"
                 Current node functions: {current_node_doc.split("FUNCTIONS:")[1] if "FUNCTIONS:" in current_node_doc else "None"}
-                
+
                 Does the user's message match any of the functions/conditions listed? 
-                Return only "MATCH" or "NO_MATCH"
+                Return only "MATCH" or "NO_MATCH".<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
                 """
-                
                 try:
                     # match_response = Settings.llm.complete(function_match_prompt).text.strip()
                     match_response = call_vertex_endpoint(function_match_prompt)
