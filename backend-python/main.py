@@ -11782,26 +11782,23 @@ async def vector_flow_chat(request: dict):
       
         }}
         """
-        full_context = f"""User said: "{message}"
+        full_context = f"""
+            Analyze the user's message and determine the next node ID.
 
-            Current node: {current_node_id}
-
+            User message: "{message}"
+            Current node ID: "{current_node_id}"
             Current node documentation: {current_node_doc}
 
-            Current Date (The current date in Eastern Time (MM/DD/YYYY)) is: {current_date}
+            Task:
+            1. Check if user message "{message}" matches any condition in the FUNCTIONS section
+            2. If match found, extract the target node ID from that function
+            3. If no match, use current node ID "{current_node_id}"
 
-            Previous conversation:
-            {conversation_history}
+            RESPONSE FORMAT:
+            {{"next_node_id": "node_X"}}
 
-        The session data is:
-        {json.dumps(session_data, indent=2)}
-
-            Instructions:
-            1. Check if user message "{message}" matches any condition in the FUNCTIONS section above
-            2. If match found, return the target node ID from that function
-            3. If no match, return current node ID "{current_node_id}"
-
-            Return only JSON: {{"next_node_id": "node_id_here"}}"""
+            IMPORTANT: Return ONLY the JSON object above. No other text.
+            """
 
             
         
@@ -11984,7 +11981,7 @@ async def vector_flow_chat(request: dict):
 
             print("Calling secondary LLM for rephrasing")
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
-            
+
             # Better response cleaning
             if isinstance(rephrased_response, str):
                 rephrased_response = rephrased_response.strip()
