@@ -11769,6 +11769,27 @@ async def vector_flow_chat(request: dict):
       
         }}
         """
+        full_context = f"""User said: "{message}"
+
+            Current node: {current_node_id}
+
+            Current node documentation: {current_node_doc}
+
+            Current Date (The current date in Eastern Time (MM/DD/YYYY)) is: {current_date}
+
+            Previous conversation:
+            {conversation_history}
+
+        The session data is:
+        {json.dumps(session_data, indent=2)}
+
+            Instructions:
+            1. Check if user message "{message}" matches any condition in the FUNCTIONS section above
+            2. If match found, return the target node ID from that function
+            3. If no match, return current node ID "{current_node_id}"
+
+            Return only JSON: {{"next_node_id": "node_id_here"}}"""
+
             
         
         # Process the response
