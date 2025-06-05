@@ -10981,8 +10981,22 @@ def call_vertex_endpoint(prompt):
             print("[RAW RESPONSE]")
             print(raw_response)
             # Extract JSON if present, otherwise return clean output
-            if "{" in raw_response and "}" in raw_response:
-                # Find the last occurrence of a JSON object (most likely to be the actual response)
+            # Check for Output: first, then JSON
+            if "Output:" in raw_response:
+                output_part = raw_response.split("Output:")[1].strip()
+                # Check if the output after "Output:" is JSON
+                if output_part.strip().startswith('{') and '}' in output_part:
+                    # Extract complete JSON after Output:
+                    start = output_part.find("{")
+                    end = output_part.rfind("}") + 1
+                    json_part = output_part[start:end]
+                    return json_part.strip()
+                else:
+                    # Plain text after Output:
+                    clean_output = output_part.split('\n')[0].strip()
+                    return clean_output
+            elif "{" in raw_response and "}" in raw_response:
+                # Fallback JSON extraction for responses without "Output:"
                 lines = raw_response.split('\n')
                 json_candidates = []
                 
@@ -11000,14 +11014,11 @@ def call_vertex_endpoint(prompt):
                     end = raw_response.rfind("}") + 1
                     json_part = raw_response[start:end]
                     return json_part
-            elif "Output:" in raw_response:
-                output_part = raw_response.split("Output:")[1].strip()
-                clean_output = output_part.split('\n')[0].strip()
-                return clean_output
             else:
                 # Return first line as clean output
                 clean_output = raw_response.split('\n')[0].strip()
                 return clean_output
+
         else:
             print(f"No predictions in response: {result}")
             return None
