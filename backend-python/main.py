@@ -148,10 +148,10 @@ os.environ["XAI_API_KEY"] = XAI_API_KEY
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 # Initialize Vertex AI client with your project and endpoint details
-aiplatform.init(project="vermalab-gemini-psom-e3ea", location="us-central1")
+# aiplatform.init(project="vermalab-gemini-psom-e3ea", location="us-central1")
 
 # Define the endpoint
-endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/5556541440152043520")
+# endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/5556541440152043520")
 
 # Custom class to wrap the Vertex AI endpoint as an LLM
 # class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
@@ -700,11 +700,11 @@ LLM_MODELS = {
 
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
-llama_model = VertexAIGemmaLLM(endpoint)
+# llama_model = VertexAIGemmaLLM(endpoint)
 Settings.llm = gemini_model
 # Settings.llm = gemma_llm
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
-response = llama_model.complete(test_prompt)
+# response = llama_model.complete(test_prompt)
 print(f"Test response: {response.text}")
 def test_qwen_configuration():
     """Test function to verify Gemma behaves like Gemini"""
@@ -722,7 +722,7 @@ def test_qwen_configuration():
         except Exception as e:
             print(f"Test {i} failed: {e}")
 
-test_qwen_configuration()
+# test_qwen_configuration()
 # MODEL_PATH = "/home/hritvik/persistent/models/llama-3.1-8b"
 # if not torch.cuda.is_available():
 #     logger.error("CUDA not available. Cannot proceed without GPU.")
