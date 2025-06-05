@@ -11970,7 +11970,7 @@ async def vector_flow_chat(request: dict):
                 - Do not contradict the original message
                 - Return only the rephrased message as plain text, no quotes, no JSON
                 - Ensure the response is complete, including any questions or instructions  
-                REPHRASED MESSAGE:<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+                <|eot_id|><|start_header_id|>assistant<|end_header_id|>
 
             """
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
