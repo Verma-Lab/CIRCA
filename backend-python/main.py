@@ -11834,7 +11834,7 @@ async def vector_flow_chat(request: dict):
                         3. Keep it natural and conversational
 
                         Format: Answer their question, then transition to asking the follow-up question."""
-                        
+
                         # final_response = Settings.llm.complete(combined_response_prompt).text.strip()
                         final_response = call_vertex_endpoint(combined_response_prompt)
                         if isinstance(final_response, str):
@@ -12033,19 +12033,31 @@ async def vector_flow_chat(request: dict):
 
             print(f'[AI RESPONSE]', ai_response)
             # Improved rephrasing prompt with patient context
-            rephrase_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+            rephrase_prompt = f"""You are a friendly, conversational assistant tasked with rephrasing medical messages to sound natural and human-like.
 
-            Rephrase medical messages to sound natural and friendly using the patient's first name.<|eot_id|><|start_header_id|>user<|end_header_id|>
+                CRITICAL RULES:
+                - ONLY rephrase the text in 'Original Response'. Do NOT create new content or ask different questions.
+                - Do NOT ask any questions that are not in the Original Response.
+                - Keep ALL content including phone number placeholders like $Clinic_Phone$.
+                - If Original Response is a question, keep it a question. If it's a statement, keep it a statement.
+                - Do NOT add acknowledgment phrases like 'Okay,' 'Great,' 'I understand' unless they were in the original.
+                - Preserve any calculated values (e.g., gestational age) exactly as shown.
 
-            ORIGINAL: "{ai_response}"
+                Instructions:
+                1. Rephrase the 'Original Response' to sound natural and human-like, preserving its exact intent.
+                2. Use the patient's first name at the beginning if available.
+                3. Only incorporate Patient History if it directly supports the original response without changing its meaning.
+                4. Do NOT contradict or question the Original Response - enhance it, don't challenge it.
+                5. Do NOT ask for confirmation of previously provided data unless the Original Response does.
 
-            PATIENT NAME: {patient_dict.get('first_name', 'Patient')}
+                Original Response: "{ai_response}"
+                User message: "{message}"
+                Patient Name: {patient_dict.get('first_name', 'Patient')}
+                Patient Profile: {patient_fields}
+                Patient History: {patient_history}
 
-            Make it conversational and warm. Return only the rephrased message.
-            
-            <|eot_id|><|start_header_id|>assistant<|end_header_id|>
+                Return only the rephrased response as a natural, friendly message."""
 
-            """
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
 
             # Better response cleaning
