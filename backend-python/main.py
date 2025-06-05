@@ -11757,19 +11757,23 @@ async def vector_flow_chat(request: dict):
                     
         print('[CURRENT NODE DOC], ', current_node_doc)
 
-        full_context = f"""User said: "{message}"
+        full_context = f"""<s>[INST] <<SYS>>
+            You are a dialogue flow controller. Your job is to analyze user input and determine the next node in a conversation flow. Always return only valid JSON format. Be precise and follow the matching conditions exactly.
+            <</SYS>>
+
+            User said: "{message}"
 
             Current node: {current_node_id}
 
             Current node documentation: {current_node_doc}
 
-            Instructions:
+            Task:
             1. Check if user message "{message}" matches any condition in the FUNCTIONS section above
-            2. If match found, return the target node ID from that function
+            2. If match found, return the target node ID from that function  
             3. If no match, return current node ID "{current_node_id}"
 
-            Return only JSON format: {{"next_node_id": "PUT_ACTUAL_NODE_ID_HERE"}}
-
+            Return only JSON in this format: {{"next_node_id": "actual_node_id"}} [/INST]
+            
             """
         # Process the response
         try:
