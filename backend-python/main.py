@@ -11776,7 +11776,7 @@ async def vector_flow_chat(request: dict):
             try:
                 # response_text = Settings.llm.complete(full_context).text
                 response_text = call_vertex_endpoint(full_context)
-
+                print(response_text)
                 if "```json" in response_text:
                     response_text = response_text.split("```json")[1].split("```")[0].strip()
                 response_data = json.loads(response_text)
