@@ -11757,24 +11757,28 @@ async def vector_flow_chat(request: dict):
                     
         print('[CURRENT NODE DOC], ', current_node_doc)
 
-        full_context = f"""<s>[INST] <<SYS>>
-            You are a dialogue flow controller. Your job is to analyze user input and determine the next node in a conversation flow. Always return only valid JSON format. Be precise and follow the matching conditions exactly.
-            <</SYS>>
+        full_context = f"""
+        <|begin_of_text|><|start_header_id|>system<|end_header_id>
 
-            User said: "{message}"
+        You are an AI assistant designed to determine the next node ID in a conversation flow. Based on the user's message and the current node's documentation, return only a JSON object with the key "next_node_id" and the appropriate node ID as the value. Do not include any additional text, explanations, or formatting beyond the JSON object.
 
-            Current node: {current_node_id}
+        <|eot_id|><|start_header_id|>user<|end_header_id>
 
-            Current node documentation: {current_node_doc}
+        Current node ID: {current_node_id}
 
-            Task:
-            1. Check if user message "{message}" matches any condition in the FUNCTIONS section above
-            2. If match found, return the target node ID from that function  
-            3. If no match, return current node ID "{current_node_id}"
+        Current node documentation:
+        {current_node_doc}
 
-            Return only JSON in this format: {{"next_node_id": "actual_node_id"}} [/INST]
-            
-            """
+        User message: "{message}"
+
+        Instructions:
+        1. Analyze the user message "{message}" and check if it matches any condition in the FUNCTIONS section of the current node documentation.
+        2. If a match is found, use the target node ID specified in that function.
+        3. If no match is found, use the current node ID "{current_node_id}".
+        4. Return the result as a JSON object: {{"next_node_id": "node_id_here"}}
+
+        <|eot_id><|start_header_id>assistant<|end_header_id>
+        """
         # Process the response
         try:
             try:
