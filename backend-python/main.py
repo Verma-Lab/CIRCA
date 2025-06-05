@@ -151,7 +151,7 @@ os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 aiplatform.init(project="vermalab-gemini-psom-e3ea", location="us-central1")
 
 # Define the endpoint
-endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/365720657142480896")
+endpoint = aiplatform.Endpoint(endpoint_name="projects/vermalab-gemini-psom-e3ea/locations/us-central1/endpoints/5556541440152043520")
 
 # Custom class to wrap the Vertex AI endpoint as an LLM
 # class VertexAIGemmaLLM(LLM): # <--- IMPORTANT: Inherit from LlamaIndex's LLM base class
@@ -700,11 +700,11 @@ LLM_MODELS = {
 
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 # # Settings.llm = llm
-qwen_model = VertexAIGemmaLLM(endpoint)
+llama_model = VertexAIGemmaLLM(endpoint)
 Settings.llm = gemini_model
 # Settings.llm = gemma_llm
 test_prompt = "Hello, this is a test prompt. Please respond with a short message."
-response = qwen_model.complete(test_prompt)
+response = llama_model.complete(test_prompt)
 print(f"Test response: {response.text}")
 def test_qwen_configuration():
     """Test function to verify Gemma behaves like Gemini"""
@@ -717,7 +717,7 @@ def test_qwen_configuration():
     print("Testing Gemma configuration:")
     for i, test_prompt in enumerate(test_cases, 1):
         try:
-            response = qwen_model.complete(test_prompt)
+            response = llama_model.complete(test_prompt)
             print(f"Test {i}: '{test_prompt}' -> '{response.text}'")
         except Exception as e:
             print(f"Test {i} failed: {e}")
@@ -10931,29 +10931,70 @@ def get_starting_node(flow_index):
 #             "content": "I'm having trouble processing your request. Please try again later."
 #         }
     
-def call_vertex_endpoint(prompt, max_tokens=1000, temperature=0.3):
-    """Helper function to call Vertex AI endpoint"""
-    try:
-        
-        response = endpoint.predict(instances=[{"prompt": json_enforced_prompt}], parameters=parameters)
-        parameters = {
-            "max_output_tokens": 200,  # Short output for JSON
-            "temperature": 0.2,       # Deterministic response
-            "top_k": 1,               # Most likely token
-            "top_p": 0.0              # No variation
-        }
-
-        # Send the prediction request
-        response = endpoint.predict(instances=[{"prompt": prompt}], parameters=parameters)
-
-        if response.predictions and len(response.predictions) > 0:
-            return response.predictions[0]
+def call_vertex_endpoint(prompt, temperature=0.0, max_output_tokens=200):
+    """
+    Call the Vertex AI dedicated endpoint with a prompt and return the response.
+    
+    Args:
+        prompt (str): The prompt to send to the model
+        temperature (float): Temperature parameter for the model (default: 0.0)
+        max_output_tokens (int): Maximum tokens in the response (default: 200)
+    
+    Returns:
+        str: The model's response, or None if there was an error
+    """
+    # Get credentials
+    credentials, project = default()
+    credentials.refresh(Request())
+    
+    # Dedicated endpoint details
+    endpoint_id = "2655527289265061888"
+    project_id = "vermalab-gemini-psom-e3ea"
+    location = "us-west4"
+    dedicated_domain = f"{endpoint_id}.{location}-491184061440.prediction.vertexai.goog"
+    
+    # Build request
+    url = f"https://{dedicated_domain}/v1/projects/{project_id}/locations/{location}/endpoints/{endpoint_id}:predict"
+    
+    headers = {
+        "Authorization": f"Bearer {credentials.token}",
+        "Content-Type": "application/json"
+    }
+    
+    data = {
+        "instances": [{"prompt": prompt}],
+        "parameters": {"temperature": temperature, "max_output_tokens": 200}
+    }
+    
+    # Make the request
+    response = requests.post(url, headers=headers, json=data)
+    
+    if response.status_code == 200:
+        result = response.json()
+        if "predictions" in result and result["predictions"]:
+            raw_response = result["predictions"][0].strip()
+            
+            # Extract JSON if present, otherwise return clean output
+            if "{" in raw_response and "}" in raw_response:
+                # Extract JSON part
+                start = raw_response.find("{")
+                end = raw_response.rfind("}") + 1
+                json_part = raw_response[start:end]
+                return json_part
+            elif "Output:" in raw_response:
+                output_part = raw_response.split("Output:")[1].strip()
+                clean_output = output_part.split('\n')[0].strip()
+                return clean_output
+            else:
+                # Return first line as clean output
+                clean_output = raw_response.split('\n')[0].strip()
+                return clean_output
         else:
-            return "No response generated"
-    except Exception as e:
-        print(f"Error calling Vertex AI endpoint: {str(e)}")
-        return f"Error: {str(e)}"
-        
+            print(f"No predictions in response: {result}")
+            return None
+    else:
+        print(f"HTTP Error {response.status_code}: {response.text}")
+        return None
 
 @app.post("/api/shared/vector_chat")
 async def vector_flow_chat(request: dict):
