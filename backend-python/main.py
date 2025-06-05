@@ -11755,20 +11755,12 @@ async def vector_flow_chat(request: dict):
                     print(f"Error in function match check: {str(e)}")
                     
         print('[CURRENT NODE DOC], ', current_node_doc)
-        
+
         full_context = f"""User said: "{message}"
 
             Current node: {current_node_id}
 
             Current node documentation: {current_node_doc}
-
-            Current Date (The current date in Eastern Time (MM/DD/YYYY)) is: {current_date}
-
-            Previous conversation:
-            {conversation_history}
-
-        The session data is:
-        {json.dumps(session_data, indent=2)}
 
             Instructions:
             1. Check if user message "{message}" matches any condition in the FUNCTIONS section above
