@@ -11876,6 +11876,8 @@ async def vector_flow_chat(request: dict):
         2. If a match is found, use the target node ID specified in that function.
         3. If no match is found, use the current node ID "{current_node_id}".
         4. Return the result as a JSON object with next_node_id key.
+        5. For "if user replied with a date": match any date format like MM/DD/YY, MM/DD/YYYY, etc.
+
 
         <|eot_id><|start_header_id>assistant<|end_header_id>
         """
