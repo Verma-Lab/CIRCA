@@ -12034,31 +12034,30 @@ async def vector_flow_chat(request: dict):
             print(f'[AI RESPONSE]', ai_response)
             # Improved rephrasing prompt with patient context
             rephrase_prompt = f"""
-            Your only job is to rephrase the 'Original Response' below. Make it sound natural and human-like.
+            You are a friendly, conversational assistant tasked with rephrasing a given text to sound natural, human-like, and context-aware.
 
-            READ AND FOLLOW THESE RULES EXACTLY:
+            CRITICAL: You must ONLY rephrase the text in 'Original Response': {ai_response}. Do NOT create new content or ask different questions.
+            CRITICAL: Do NOT ask any questions that are not in the Original Response {ai_response}
+            CRITICAL: Keep ALL content including phone number placeholders like $Clinic_Phone$. 
+            CRITICAL: Return ONLY the rephrased message with NO explanation or commentary.
 
-            1.  **ONLY rephrase the 'Original Response'.** Do NOT add new content or create any explanations about your process.
-            2.  **Do NOT ask any new questions.** The rephrased text must keep the original intent (statement or question).
-            3.  **Keep ALL content and values the same.** This means all text, phone number placeholders (like $Clinic_Phone$), and calculated values (like gestational age) must be exactly as they are in the 'Original Response'.
-            4.  **Use the patient's first name** (Hritvik) at the very start of your response if available in 'Patient Profile'.
-            5.  **Add 'Patient History' ONLY if it perfectly fits** and does NOT change the meaning or ask new questions. Example: "I see you recently reported a positive pregnancy test."
-            6.  **Do NOT contradict or question the 'Original Response'.** Your goal is to improve its phrasing, not its content.
-            7.  **Do NOT use common acknowledgments** like 'Okay', 'Great', 'I understand', 'Let's move on', etc. unless they were part of the original message.
-            8.  **Do NOT ask for confirmation of old information** (like the LMP date) unless the 'Original Response' specifically asks for it.
+            Instructions:
+            1.  **Rephrase** the 'Original Response' to sound natural and human-like, preserving its exact intent and type (statement or question).
+            2.  **Personalize the response:** If the patient's first name is available in 'Patient Profile', use it at the beginning of the response.
+            3.  **Maintain the original intent and type:** If the 'Original Response' is a question, the rephrased response MUST be a question. If it's a statement, it MUST be a statement. Do not add new questions or change the core meaning.
+            4.  **Crucially: Do NOT contradict or question the 'Original Response'.** Your goal is to enhance it, not to challenge its premise or introduce new, conflicting information.
+            5.  **Do NOT** include acknowledgment phrases like 'Okay,' 'Great,' 'I understand,' or 'Let's move on' unless they ar
+            6.  If the `Original Response` includes calculated values (e.g., gestational age), preserve them verbatim in the rephrased response.
+            7.  **Do NOT** ask for confirmation of previously provided data (e.g., LMP date) unless explicitly instructed by the `Original Response` or node instructions.
 
-            ---
-            Original Response (THIS IS WHAT YOU MUST REPHRASE):
-            "{ai_response}"
+            Original Response (from the main LLM, this is the message you must rephrase): "{ai_response}"
 
-            User message (for context, do NOT use this for rephrasing):
-            "{message}"
+            User message: "{message}"
 
-            Patient Profile (for personalization, contains first_name):
+            Patient Profile (for personalization, e.g., first_name):
             {patient_fields}
 
-            ---
-            Return the rephrased response as a string.
+            Return ONLY the rephrased response with no explanation.
             """
 
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
