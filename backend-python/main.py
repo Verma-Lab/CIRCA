@@ -12058,10 +12058,7 @@ async def vector_flow_chat(request: dict):
             {patient_fields}
 
             ---
-            Your rephrased response MUST be placed ONLY inside `<rephrased_output>` tags.
-            Produce nothing else.
-
-            <rephrased_output>
+            Return the rephrased response as a string.
             """
 
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
