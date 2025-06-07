@@ -1176,6 +1176,34 @@ class QuestionCreate(BaseModel):
     type: str
     options: List[str] = []
 
+
+class PatientCharacteristics(Base):
+    __tablename__ = "patient_characteristics"
+    
+    id = Column(String, primary_key=True, index=True)
+    patient_id = Column(String, ForeignKey("patients.id"))
+    session_id = Column(String)
+    
+    # Pregnancy History
+    gestational_age_at_enrollment = Column(Integer, nullable=True)
+    previous_epls = Column(Integer, default=0)
+    previous_ectopics = Column(Integer, default=0)
+    previous_abortions = Column(Integer, default=0)
+    previous_continued_iups = Column(Integer, default=0)
+    
+    # Chat Content Categorization
+    unprompted_text_category = Column(String, nullable=True)  # "vaginal_bleeding", "nausea_vomiting", "emotional_stress", etc.
+    triggered_surveys = Column(String, nullable=True)  # JSON string of triggered survey types
+    
+    # Clinical Escalations
+    escalation_concerns = Column(String, nullable=True)  # JSON string of escalation types
+    
+    # Care Preferences
+    care_desired = Column(String, nullable=True)  # "abortion", "prenatal_care", "early_pregnancy_eval"
+    
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    
 # class SessionAnalytics(Base):
 #     __tablename__ = "session_analytics"
     
@@ -18508,6 +18536,21 @@ async def analyze_session(request: dict):
                 - Use proper medical terminology and prioritize clinical significance.
                 - Keep the summary concise (aim for 5-10 bullet points total).
                
+        4. Patient Characteristics (for research metrics):
+           - Gestational age at enrollment (if mentioned)
+           - Previous pregnancy history:
+             * Number of early pregnancy losses (EPLs)
+             * Number of ectopic pregnancies
+             * Number of abortions
+             * Number of continued intrauterine pregnancies (successful pregnancies)
+           - Chat content categorization:
+             * Primary concern category ("vaginal_bleeding", "nausea_vomiting", "emotional_stress", "other")
+             * Triggered survey types (list any that apply)
+           - Clinical escalation needs:
+             * Escalation concerns (bleeding with previous ectopic, heavy bleeding, etc.)
+           - Care preferences expressed:
+             * Desired care type ("abortion", "prenatal_care", "early_pregnancy_eval", "unknown")
+             
         Return the extracted information in JSON format:
         {{
             "patient_details": {{
@@ -18556,6 +18599,17 @@ async def analyze_session(request: dict):
                     {{"description": "string", "date": "YYYY-MM-DD"}}
                 ]
             }},
+              "patient_characteristics": {
+                "gestational_age_at_enrollment": "number",
+                "previous_epls": "number",
+                "previous_ectopics": "number", 
+                "previous_abortions": "number",
+                "previous_continued_iups": "number",
+                "unprompted_text_category": "string",
+                "triggered_surveys": ["string"],
+                "escalation_concerns": ["string"],
+                "care_desired": "string"
+            },
             "session_summary": "string",
             "confidence_scores": {{
                 "name": 0-100,
@@ -18641,6 +18695,7 @@ async def analyze_session(request: dict):
         medical_info = extracted_data.get("medical_info", {})
         confidence_scores = extracted_data.get("confidence_scores", {})
         session_summary = extracted_data.get("session_summary", "No summary generated.") # Add this line
+        patient_chars = extracted_data.get("patient_characteristics", {})
 
         print(f"[API] Confidence scores:\n{json.dumps(confidence_scores, indent=2)}")
         
@@ -19066,6 +19121,35 @@ async def analyze_session(request: dict):
                                 updates_made["allergies_added"] += 1
                                 print(f"[API] Added general allergy note")
                 # Commit all changes to the database
+                if patient_chars:
+                    # Check if characteristics record exists for this session
+                    existing_chars = db.query(PatientCharacteristics).filter(
+                        PatientCharacteristics.patient_id == patient_id,
+                        PatientCharacteristics.session_id == session_id
+                    ).first()
+                    
+                    if not existing_chars:
+                        # Create new characteristics record
+                        new_chars = PatientCharacteristics(
+                            id=str(uuid.uuid4()),
+                            patient_id=patient_id,
+                            session_id=session_id,
+                            gestational_age_at_enrollment=patient_chars.get("gestational_age_at_enrollment"),
+                            previous_epls=patient_chars.get("previous_epls", 0),
+                            previous_ectopics=patient_chars.get("previous_ectopics", 0),
+                            previous_abortions=patient_chars.get("previous_abortions", 0),
+                            previous_continued_iups=patient_chars.get("previous_continued_iups", 0),
+                            unprompted_text_category=patient_chars.get("unprompted_text_category"),
+                            triggered_surveys=json.dumps(patient_chars.get("triggered_surveys", [])),
+                            escalation_concerns=json.dumps(patient_chars.get("escalation_concerns", [])),
+                            care_desired=patient_chars.get("care_desired"),
+                            created_at=datetime.utcnow(),
+                            updated_at=datetime.utcnow()
+                        )
+                        db.add(new_chars)
+                        updates_made["patient_characteristics_added"] = True
+                        print(f"[API] Added patient characteristics for session {session_id}")
+                
                 db.commit()
                 
                 print(f"[API] Database updates summary:\n{json.dumps(updates_made, indent=2)}")
