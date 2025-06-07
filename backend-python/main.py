@@ -19480,7 +19480,84 @@ async def get_session_analytics(session_id: str, db: Session = Depends(get_db)):
             detail=f"Failed to get session analytics: {str(e)}"
         )
 
-
+@app.get("/api/download-patient-characteristics/{patient_id}")
+async def download_patient_characteristics(patient_id: str):
+    """
+    Download patient characteristics data as CSV for a specific patient.
+    
+    Args:
+        patient_id (str): The patient ID to get characteristics for
+        
+    Returns:
+        CSV file with patient characteristics data
+    """
+    try:
+        # Get database connection
+        db = SessionLocal()
+        
+        # Fetch patient characteristics for this patient
+        characteristics = db.query(PatientCharacteristics).filter(
+            PatientCharacteristics.patient_id == patient_id
+        ).all()
+        
+        if not characteristics:
+            db.close()
+            raise HTTPException(status_code=404, detail="No characteristics found for this patient")
+        
+        # Create CSV content
+        import io
+        import csv
+        
+        output = io.StringIO()
+        writer = csv.writer(output)
+        
+        # Write header
+        writer.writerow([
+            'Session ID',
+            'Gestational Age at Enrollment',
+            'Previous EPLs',
+            'Previous Ectopics', 
+            'Previous Abortions',
+            'Previous Continued IUPs',
+            'Unprompted Text Category',
+            'Triggered Surveys',
+            'Escalation Concerns',
+            'Care Desired',
+            'Created At'
+        ])
+        
+        # Write data rows
+        for char in characteristics:
+            writer.writerow([
+                char.session_id,
+                char.gestational_age_at_enrollment,
+                char.previous_epls,
+                char.previous_ectopics,
+                char.previous_abortions,
+                char.previous_continued_iups,
+                char.unprompted_text_category,
+                char.triggered_surveys,
+                char.escalation_concerns,
+                char.care_desired,
+                char.created_at.strftime('%Y-%m-%d %H:%M:%S') if char.created_at else ''
+            ])
+        
+        db.close()
+        
+        # Create response
+        from fastapi.responses import StreamingResponse
+        
+        output.seek(0)
+        
+        return StreamingResponse(
+            io.BytesIO(output.getvalue().encode('utf-8')),
+            media_type="text/csv",
+            headers={"Content-Disposition": f"attachment; filename=patient_characteristics_{patient_id}.csv"}
+        )
+        
+    except Exception as e:
+        print(f"[API] Error downloading patient characteristics: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to download characteristics: {str(e)}")
 
 # Make sure to add these imports at the top of your Python file if not already present:
 # from sqlalchemy import func
