@@ -19559,6 +19559,67 @@ async def download_patient_characteristics(patient_id: str):
         print(f"[API] Error downloading patient characteristics: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Failed to download characteristics: {str(e)}")
 
+@app.get("/api/patient-characteristics/{patient_id}")
+async def get_patient_characteristics(patient_id: str):
+    """
+    Get all patient characteristics for a specific patient.
+    
+    Args:
+        patient_id (str): The patient ID
+        
+    Returns:
+        dict: Patient characteristics data
+    """
+    try:
+        print(f"[API] Fetching patient characteristics for patient {patient_id}")
+        
+        # Get database connection
+        db = SessionLocal()
+        
+        # Fetch all characteristics for this patient
+        characteristics = db.query(PatientCharacteristics).filter(
+            PatientCharacteristics.patient_id == patient_id
+        ).order_by(PatientCharacteristics.created_at.asc()).all()
+        
+        print(f"[API] Found {len(characteristics)} characteristics records")
+        
+        # Convert to list of dictionaries
+        characteristics_data = []
+        for char in characteristics:
+            char_dict = {
+                "id": char.id,
+                "patient_id": char.patient_id,
+                "session_id": char.session_id,
+                "gestational_age_at_enrollment": char.gestational_age_at_enrollment,
+                "previous_epls": char.previous_epls,
+                "previous_ectopics": char.previous_ectopics,
+                "previous_abortions": char.previous_abortions,
+                "previous_continued_iups": char.previous_continued_iups,
+                "unprompted_text_category": char.unprompted_text_category,
+                "triggered_surveys": char.triggered_surveys,
+                "escalation_concerns": char.escalation_concerns,
+                "care_desired": char.care_desired,
+                "created_at": char.created_at.isoformat() if char.created_at else None,
+                "updated_at": char.updated_at.isoformat() if char.updated_at else None
+            }
+            characteristics_data.append(char_dict)
+        
+        db.close()
+        
+        return {
+            "status": "success",
+            "patient_id": patient_id,
+            "characteristics": characteristics_data,
+            "total_records": len(characteristics_data)
+        }
+        
+    except Exception as e:
+        print(f"[API] Error fetching patient characteristics: {str(e)}")
+        return {
+            "status": "error",
+            "message": f"Failed to fetch patient characteristics: {str(e)}"
+        }
+        
 # Make sure to add these imports at the top of your Python file if not already present:
 # from sqlalchemy import func
 # from io import BytesIO
