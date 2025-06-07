@@ -18599,7 +18599,7 @@ async def analyze_session(request: dict):
                     {{"description": "string", "date": "YYYY-MM-DD"}}
                 ]
             }},
-              "patient_characteristics": {
+             "patient_characteristics": {{
                 "gestational_age_at_enrollment": "number",
                 "previous_epls": "number",
                 "previous_ectopics": "number", 
@@ -18609,7 +18609,7 @@ async def analyze_session(request: dict):
                 "triggered_surveys": ["string"],
                 "escalation_concerns": ["string"],
                 "care_desired": "string"
-            },
+            }},
             "session_summary": "string",
             "confidence_scores": {{
                 "name": 0-100,
