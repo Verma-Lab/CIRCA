@@ -18098,8 +18098,7 @@ async def analyze_message(request: dict):
         
         
         # Call the LLM
-        # llm_response = Settings.llm.complete(prompt)
-        llm_response = call_vertex_endpoint(prompt)
+        llm_response = Settings.llm.complete(prompt)
         print(f"Raw LLM response: {llm_response.text[:200]}...")
         
         # Parse and clean response
@@ -19620,7 +19619,7 @@ async def get_patient_characteristics(patient_id: str):
             "status": "error",
             "message": f"Failed to fetch patient characteristics: {str(e)}"
         }
-
+        
 # Make sure to add these imports at the top of your Python file if not already present:
 # from sqlalchemy import func
 # from io import BytesIO
