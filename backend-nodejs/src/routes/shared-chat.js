@@ -3155,6 +3155,168 @@ router.get('/shared/patient/:patientId/sessions', verifyToken, async (req, res) 
     res.status(500).json({ error: 'Failed to fetch sessions' });
   }
 });
+
+// Add this new route to your backend
+router.get('/shared/patient/:patientId/messages', verifyToken, async (req, res) => {
+  try {
+    const { patientId } = req.params;
+    const { dateFilter } = req.query; // 'day', 'days2', 'week', 'month'
+    const userId = req.user.id;
+
+    // Verify the user is a doctor
+    const userDoc = await firestore.db.collection('users').doc(userId).get();
+    if (!userDoc.exists) {
+      return res.status(403).json({ error: 'Access denied: User is not a doctor' });
+    }
+
+    // Calculate date range based on filter
+    const now = new Date();
+    let startDate;
+    
+    switch (dateFilter) {
+      case 'day':
+        startDate = new Date(now.getTime() - 24 * 60 * 60 * 1000); // Last 24 hours
+        break;
+      case 'days2':
+        startDate = new Date(now.getTime() - 2 * 24 * 60 * 60 * 1000); // Last 2 days
+        break;
+      case 'week':
+        startDate = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000); // Last week
+        break;
+      case 'month':
+        startDate = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000); // Last month
+        break;
+      default:
+        // If no filter or 'all', get all messages
+        startDate = new Date(0); // Beginning of time
+    }
+
+    // Get all sessions for this patient first
+    const sessionsSnapshot = await firestore.db.collection('chat_sessions')
+      .where('patientId', '==', patientId)
+      .get();
+
+    if (sessionsSnapshot.empty) {
+      return res.json({
+        messages: [],
+        sessions: [],
+        totalMessages: 0,
+        dateRange: { start: startDate, end: now }
+      });
+    }
+
+    // Get session IDs and create session info map
+    const sessionIds = [];
+    const sessionsMap = {};
+    
+    sessionsSnapshot.docs.forEach(doc => {
+      const data = doc.data();
+      sessionIds.push(doc.id);
+      sessionsMap[doc.id] = {
+        sessionId: doc.id,
+        shareId: data.shareId,
+        assistantId: data.assistantId,
+        assistantName: data.assistantName || 'Assistant',
+        createdAt: data.createdAt instanceof Firestore.Timestamp
+          ? data.createdAt.toDate()
+          : data.createdAt || new Date(),
+      };
+    });
+
+    // Fetch all messages for all sessions with date filtering
+    let messagesQuery = firestore.db.collection('shared_chat_messages')
+      .where('patientId', '==', patientId)
+      .where('sessionId', 'in', sessionIds.slice(0, 10)); // Firestore 'in' limit is 10
+
+    // Add date filtering if not getting all messages
+    if (dateFilter && dateFilter !== 'all') {
+      messagesQuery = messagesQuery.where('createdAt', '>=', Firestore.Timestamp.fromDate(startDate));
+    }
+
+    messagesQuery = messagesQuery.orderBy('createdAt', 'asc');
+
+    // If we have more than 10 sessions, we need to make multiple queries
+    const allMessages = [];
+    
+    if (sessionIds.length <= 10) {
+      const messagesSnapshot = await messagesQuery.get();
+      messagesSnapshot.docs.forEach(doc => {
+        const data = doc.data();
+        allMessages.push({
+          id: doc.id,
+          sessionId: data.sessionId,
+          role: data.role,
+          content: data.content,
+          createdAt: data.createdAt instanceof Firestore.Timestamp
+            ? data.createdAt.toDate()
+            : data.createdAt instanceof Date
+            ? data.createdAt
+            : new Date(),
+          sessionInfo: sessionsMap[data.sessionId]
+        });
+      });
+    } else {
+      // Handle more than 10 sessions by batching queries
+      const batches = [];
+      for (let i = 0; i < sessionIds.length; i += 10) {
+        batches.push(sessionIds.slice(i, i + 10));
+      }
+
+      for (const batch of batches) {
+        let batchQuery = firestore.db.collection('shared_chat_messages')
+          .where('patientId', '==', patientId)
+          .where('sessionId', 'in', batch);
+
+        if (dateFilter && dateFilter !== 'all') {
+          batchQuery = batchQuery.where('createdAt', '>=', Firestore.Timestamp.fromDate(startDate));
+        }
+
+        batchQuery = batchQuery.orderBy('createdAt', 'asc');
+
+        const messagesSnapshot = await batchQuery.get();
+        messagesSnapshot.docs.forEach(doc => {
+          const data = doc.data();
+          allMessages.push({
+            id: doc.id,
+            sessionId: data.sessionId,
+            role: data.role,
+            content: data.content,
+            createdAt: data.createdAt instanceof Firestore.Timestamp
+              ? data.createdAt.toDate()
+              : data.createdAt instanceof Date
+              ? data.createdAt
+              : new Date(),
+            sessionInfo: sessionsMap[data.sessionId]
+          });
+        });
+      }
+    }
+
+    // Sort all messages by creation time
+    allMessages.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+
+    // Filter out system messages
+    const filteredMessages = allMessages.filter(message => 
+      !(message.role === 'assistant' && message.content === 'lastQuestion') &&
+      !(message.role === 'user' && message.content === 'completed') &&
+      message.content && 
+      message.content.trim().length > 0
+    );
+
+    res.json({
+      messages: filteredMessages,
+      sessions: Object.values(sessionsMap),
+      totalMessages: filteredMessages.length,
+      dateRange: { start: startDate, end: now },
+      appliedFilter: dateFilter || 'all'
+    });
+
+  } catch (error) {
+    console.error('Error fetching patient messages:', error);
+    res.status(500).json({ error: 'Failed to fetch messages', details: error.message });
+  }
+});
+
   router.get('/calls/active', verifyToken, async (req, res) => {
     try {
       // Get the user ID from the authenticated request
