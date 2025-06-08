@@ -2140,11 +2140,17 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
       );
 
       // Handle the result in main code
-      if (intentSwitchResult.switched) {
+    if (intentSwitchResult.switched) {
         shareData.assistantId = intentSwitchResult.assistantId;
-        sessionData.assistantId = intentSwitchResult.assistantId; // Update sessionData too
+        sessionData.assistantId = intentSwitchResult.assistantId;
+        
+        // ✅ SAVE THE ASSISTANT SWITCH TO FIRESTORE
+        await sessionRef.set({ 
+          assistantId: intentSwitchResult.assistantId 
+        }, { merge: true });
+        
         console.log(`[MAIN] Assistant switched to: ${intentSwitchResult.assistantId} (${intentSwitchResult.category})`);
-      }
+    }
 
     console.log('[INTENT CLASSIFICATION]', isUserInitiated, isFirstMessage)
       
