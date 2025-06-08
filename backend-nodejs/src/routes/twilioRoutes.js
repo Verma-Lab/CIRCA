@@ -35,7 +35,7 @@ async function getDefaultAssistantId(organizationId) {
   // Fetch assistants for the organization and find one marked as default
   const snapshot = await firestore.db.collection('assistants')
     .where('organization_id', '==', organizationId)
-    .where('category', '==', 'default') // Assuming 'category' field marks default
+    .where('category', '==', 'Pregnancy test') // Assuming 'category' field marks default
     .limit(1)
     .get();
   console.log('[ASSISTANT SNAP SHOT]', snapshot)
