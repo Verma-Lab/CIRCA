@@ -2083,6 +2083,7 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
     const {  sessionId, language: sessionLanguage = 'en', patientId } = req.body; // MODIFIED
     var message = req.body.message;
     const shareData = req.shareData;
+    console.log('[SHARED DATA]', shareData)
     console.log('Patient [SHARED CHAT]', patientId)
     // Validate input
     if (!message?.trim()) return res.status(400).json({ error: 'Message is required' });
