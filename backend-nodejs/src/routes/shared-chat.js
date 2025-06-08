@@ -2020,6 +2020,60 @@ async function getAssistantByCategory(organizationId, category) {
   }
 }
 
+// Add this function at the top of the file or in a separate utilities file
+
+async function handleFlowCompletionIntentReclassification(
+  sessionData, 
+  previousMessages, 
+  isFirstMessage, 
+  message, 
+  shareData, 
+  patientId, 
+  sessionRef
+) {
+  console.log('[INTENT RE-CLASSIFICATION] Checking if flow completion intent re-classification is needed...');
+  
+  // Check if we're at the end of a flow and need to re-classify intent
+  const isFlowComplete = !sessionData.currentNodeId && previousMessages.length > 0;
+  const hasUserMessages = previousMessages.filter(msg => msg.role === 'user').length > 0;
+
+  if (isFlowComplete && hasUserMessages && !isFirstMessage) {
+    console.log('[INTENT RE-CLASSIFICATION] Flow completed, re-classifying intent for new message...');
+    
+    // Get organization ID (same logic as existing code)
+    let organizationId = '9d493c7f-7d30-4a04-b9b7-1d34ce25cec4';
+    
+    if (organizationId) {
+      try {
+        const intentResult = await classifyIntentAndGetAssistant(
+          message,
+          organizationId,
+          shareData.assistantId, // current assistant
+          patientId,
+          sessionData
+        );
+        
+        if (intentResult.switched) {
+          shareData.assistantId = intentResult.assistantId;
+          console.log(`[INTENT RE-CLASSIFICATION] Switched to ${intentResult.category} assistant: ${intentResult.assistantId}`);
+          
+          // Reset session for new flow
+          await sessionRef.set({ 
+            currentNodeId: null,
+            survey_responses: null,
+            survey_questions_length: null 
+          }, { merge: true });
+          
+          return { switched: true, assistantId: intentResult.assistantId };
+        }
+      } catch (intentError) {
+        console.error('[INTENT RE-CLASSIFICATION] Intent classification failed:', intentError.message);
+      }
+    }
+  }
+  
+  return { switched: false };
+}
 
 router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
   try {
@@ -2072,6 +2126,17 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
     } catch (translationError) {
       console.error('Translation failed:', translationError.message);
     } 
+
+    await handleFlowCompletionIntentReclassification(
+      sessionData, 
+      previousMessages, 
+      isFirstMessage, 
+      message, // This is now the translated message
+      shareData, 
+      patientId, 
+      sessionRef
+    );
+
     console.log('[INTENT CLASSIFICATION]', isUserInitiated, isFirstMessage)
       
     if (isUserInitiated && isFirstMessage) {
