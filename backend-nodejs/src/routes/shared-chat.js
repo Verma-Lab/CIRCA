@@ -2039,7 +2039,7 @@ async function handleFlowCompletionIntentReclassification(
   if (isFlowComplete && hasUserMessages && !isFirstMessage) {
     console.log('[INTENT RE-CLASSIFICATION] Flow completed, re-classifying intent for new message...');
     
-    let organizationId = '9d493c7f-7d30-4a04-b9b7-1d34ce25cec4';
+    let organizationId = '618f87b2-aea0-402c-a355-338cb1f6fbf0';
     
     if (organizationId) {
       try {
@@ -2177,7 +2177,7 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
         console.log('[INTENT] User provided intent in first message, classifying...');
         
         // Get organization ID from patient mapping
-        let organizationId = '9d493c7f-7d30-4a04-b9b7-1d34ce25cec4';
+        let organizationId = '618f87b2-aea0-402c-a355-338cb1f6fbf0';
         // if (sessionData.phoneNumber) {
         //   try {
         //     const mappingSnapshot = await firestore.db.collection('patient_phone_mappings')
@@ -2227,7 +2227,7 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
         console.log('[INTENT] Second message after hi, classifying intent...');
         
         // Same classification logic
-        let organizationId = '9d493c7f-7d30-4a04-b9b7-1d34ce25cec4'
+        let organizationId = '618f87b2-aea0-402c-a355-338cb1f6fbf0'
         
         // if (sessionData.phoneNumber) {
         //   try {

@@ -806,7 +806,7 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     console.log('→ PREGNANCY TEST: Created onboarding session:', onboardingSessionId);
     
     // Get pregnancy test assistant
-    const organizationId = '9d493c7f-7d30-4a04-b9b7-1d34ce25cec4';
+    const organizationId = '618f87b2-aea0-402c-a355-338cb1f6fbf0';
     const pregnancyTestAssistantId = await getAssistantByCategory(organizationId, 'Pregnancy Test');
     
     if (!pregnancyTestAssistantId) {
