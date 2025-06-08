@@ -26,7 +26,7 @@ function cleanPhoneNumber(from) {
 async function determineOrganizationId(req) {
   // Placeholder: Determine organization based on Twilio number or other logic
   // For example, map Twilio numbers to organizations in Firestore
-  return '9d493c7f-7d30-4a04-b9b7-1d34ce25cec4'; // Replace with actual logic
+  return '618f87b2-aea0-402c-a355-338cb1f6fbf0'; // Replace with actual logic
   // return "6ba2c375-2c49-45a0-b46d-34a41096d665"
 
 }

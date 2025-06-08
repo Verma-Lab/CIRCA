@@ -2556,7 +2556,9 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
           assistantId:assistant.id,
           flow_id: assistant.flowData.id,
           session_data: sessionData,
-          previous_messages: previousMessages
+          previous_messages: previousMessages,
+          should_reclassify_intent: intentSwitchResult.switched || false  // ✅ ADD THIS FLAG HERE
+
         };
         
          if (patientHistory && patientHistory.summary) {

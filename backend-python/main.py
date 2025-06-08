@@ -11164,6 +11164,8 @@ async def vector_flow_chat(request: dict):
     print(f"[CURRENT DATE] {current_date}")
     try:
         print("\n==== STARTING VECTOR CHAT PROCESSING ====")
+        should_reclassify_intent = request.get("should_reclassify_intent", False)  # ✅ ADD THIS
+        print(f"[SHOULD RECLASSIFY INTENT FLAG] {should_reclassify_intent}")
         message = request.get("message", "")
         sessionId = request.get("sessionId", "")
         flow_id = request.get("flow_id")
@@ -11534,6 +11536,15 @@ async def vector_flow_chat(request: dict):
         print("conversation history", conversation_history, message)
         
 
+        if should_reclassify_intent and current_node_id is None:
+            print(f"[RECLASSIFY INTENT] Finding starting node for new flow: {flow_id}")
+            starting_node_id, starting_node_doc = get_starting_node(flow_index)
+            if starting_node_id:
+                current_node_id = starting_node_id
+                current_node_doc = starting_node_doc
+                print(f"[RECLASSIFY INTENT] Set starting node: {starting_node_id}")
+        
+
         if not session_data.get("currentNodeId") and not previous_messages:  # New session
             starting_node_id, starting_node_doc = get_starting_node(flow_index)
             print(f"[STARTING NODE] {starting_node_id, starting_node_doc}")
@@ -11591,6 +11602,7 @@ async def vector_flow_chat(request: dict):
             except Exception as e:
                 print(f"[SURVEY COMPLETION] Error checking survey completion: {str(e)}")
 
+        
         # Basic String Query Approach - No Filters
         if current_node_id:
             try:
@@ -12197,7 +12209,7 @@ async def vector_flow_chat(request: dict):
                 "next_node_id": next_node_id,
                 "state_updates": {},
                 "onboarding_status": onboarding_status_to_send
-            }
+            } 
 
         except Exception as e:
             print(f"ERROR processing vector response: {str(e)}")
