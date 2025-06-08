@@ -43,20 +43,7 @@ async function getDefaultAssistantId(organizationId) {
   return snapshot.docs[0].id;
 }
 
-// async function createPatientViaPython(phoneNumber, assistantId) {
-//   const response = await fetch(`${PYTHON_API_URL}/api/patients`, {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({
-//       phone: phoneNumber,
-//       assistantId, // Optional: Add if your Python API supports it
-//       first_name: '', // Placeholder since we don’t have name
-//       last_name: '',
-//     }),
-//   });
-//   if (!response.ok) throw new Error('Failed to create patient');
-//   return await response.json();
-// }
+
 async function createPatientViaPython(phoneNumber, assistantId, organizationId) {
   const response = await fetch(`${PYTHON_API_URL}/api/public/patients`, {
     method: 'POST',
@@ -73,29 +60,7 @@ async function createPatientViaPython(phoneNumber, assistantId, organizationId) 
   if (!response.ok) throw new Error('Failed to create patient');
   return await response.json();
 }
-// async function getAssistantByCategory(organizationId, category) {
-//   // Fetch assistants for the organization with the specified category
-//   const snapshot = await firestore.db.collection('assistants')
-//     .where('organization_id', '==', organizationId)
-//     .where('category', '==', category)
-//     .limit(1)
-//     .get();
-//   console.log(`[ASSISTANT SNAPSHOT for ${category}]`, snapshot);
-//   if (snapshot.empty) return null;
-//   return snapshot.docs[0].id;
-// }
-// function getAssistantRoute(communicationType, assistantId) {
-//   switch (communicationType) {
-//     case 'whatsapp':
-//       return `/api/assistants/${assistantId}/whatsapp/incoming`;
-//     case 'sms':
-//       return `/api/assistants/${assistantId}/sms/incoming`;
-//     case 'voice':
-//       return `/api/assistants/${assistantId}/voice/incoming`;
-//     default:
-//       throw new Error('Unknown communication type');
-//   }
-// }
+
 function getAssistantRoute(communicationType, assistantId, isUserInitiated) {
   let baseRoute;
   switch (communicationType) {
@@ -807,7 +772,7 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     
     // Get pregnancy test assistant
     const organizationId = '618f87b2-aea0-402c-a355-338cb1f6fbf0';
-    const pregnancyTestAssistantId = await getAssistantByCategory(organizationId, 'Pregnancy Test');
+    const pregnancyTestAssistantId = await getAssistantByCategory(organizationId, 'Pregnancy test');
     
     if (!pregnancyTestAssistantId) {
       console.log('→ PREGNANCY TEST: No pregnancy test assistant found');
