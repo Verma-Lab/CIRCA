@@ -2033,14 +2033,12 @@ async function handleFlowCompletionIntentReclassification(
 ) {
   console.log('[INTENT RE-CLASSIFICATION] Checking if flow completion intent re-classification is needed...');
   
-  // Check if we're at the end of a flow and need to re-classify intent
   const isFlowComplete = !sessionData.currentNodeId && previousMessages.length > 0;
   const hasUserMessages = previousMessages.filter(msg => msg.role === 'user').length > 0;
 
   if (isFlowComplete && hasUserMessages && !isFirstMessage) {
     console.log('[INTENT RE-CLASSIFICATION] Flow completed, re-classifying intent for new message...');
     
-    // Get organization ID (same logic as existing code)
     let organizationId = '9d493c7f-7d30-4a04-b9b7-1d34ce25cec4';
     
     if (organizationId) {
@@ -2048,23 +2046,26 @@ async function handleFlowCompletionIntentReclassification(
         const intentResult = await classifyIntentAndGetAssistant(
           message,
           organizationId,
-          shareData.assistantId, // current assistant
+          shareData.assistantId,
           patientId,
           sessionData
         );
         
         if (intentResult.switched) {
-          shareData.assistantId = intentResult.assistantId;
           console.log(`[INTENT RE-CLASSIFICATION] Switched to ${intentResult.category} assistant: ${intentResult.assistantId}`);
           
           // Reset session for new flow
           await sessionRef.set({ 
             currentNodeId: null,
             survey_responses: null,
-            survey_questions_length: null 
+            survey_questions_length: null
           }, { merge: true });
           
-          return { switched: true, assistantId: intentResult.assistantId };
+          return { 
+            switched: true, 
+            assistantId: intentResult.assistantId,
+            category: intentResult.category 
+          };
         }
       } catch (intentError) {
         console.error('[INTENT RE-CLASSIFICATION] Intent classification failed:', intentError.message);
@@ -2127,15 +2128,23 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
       console.error('Translation failed:', translationError.message);
     } 
 
-    await handleFlowCompletionIntentReclassification(
-      sessionData, 
-      previousMessages, 
-      isFirstMessage, 
-      message, // This is now the translated message
-      shareData, 
-      patientId, 
-      sessionRef
-    );
+    // Call the intent re-classification function
+      const intentSwitchResult = await handleFlowCompletionIntentReclassification(
+        sessionData, 
+        previousMessages, 
+        isFirstMessage, 
+        message, 
+        shareData, 
+        patientId, 
+        sessionRef
+      );
+
+      // Handle the result in main code
+      if (intentSwitchResult.switched) {
+        shareData.assistantId = intentSwitchResult.assistantId;
+        sessionData.assistantId = intentSwitchResult.assistantId; // Update sessionData too
+        console.log(`[MAIN] Assistant switched to: ${intentSwitchResult.assistantId} (${intentSwitchResult.category})`);
+      }
 
     console.log('[INTENT CLASSIFICATION]', isUserInitiated, isFirstMessage)
       
