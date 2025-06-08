@@ -11192,7 +11192,9 @@ async def vector_flow_chat(request: dict):
         current_node_id = session_data.get('currentNodeId')
         current_node_doc = ""
         print(f"Current node ID: {current_node_id}")
-        survey_questions_length = session_data.get('survey_questions_length', 0)
+        # survey_questions_length = session_data.get('survey_questions_length', 0)
+        survey_questions_length = session_data.get('survey_questions_length') or 0
+
         user_message_count = sum(1 for msg in previous_messages if msg.get("role") == "user")
         is_post_survey_start = (current_node_id is None and 
                             user_message_count >= survey_questions_length and 
