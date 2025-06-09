@@ -9647,11 +9647,6 @@ async def create_flow_knowledge_index(flow_data: dict):
             survey_data = node_data.get("surveyData", {})
             doc_text += f"  - Survey ID: {survey_data.get('id', '')}\n"
             doc_text += f"  - Description: {survey_data.get('description', '')}\n"
-            doc_text += f"  - Questions:\n"
-            for question in survey_data.get("questions", []):
-                doc_text += f"    - {question.get('text', '')} (Type: {question.get('type', '')})\n"
-                for option in question.get("options", []):
-                    doc_text += f"      - Option: {option}\n"
             doc_text += "\nTRIGGERS:\n"
             for trigger in node_data.get("triggers", []):
                 trigger_id = trigger.get("id")
@@ -9660,7 +9655,13 @@ async def create_flow_knowledge_index(flow_data: dict):
                 if trigger_edges:
                     target_node_id = trigger_edges[0].get("target")
                     doc_text += f"- If survey outcome is '{trigger_content}', proceed to node {target_node_id}\n"
-        
+            
+            doc_text += f"  - Questions:\n"
+            for question in survey_data.get("questions", []):
+                doc_text += f"    - {question.get('text', '')} (Type: {question.get('type', '')})\n"
+                for option in question.get("options", []):
+                    doc_text += f"      - Option: {option}\n"
+            
         # Create document
         documents.append(Document(
             text=doc_text,
