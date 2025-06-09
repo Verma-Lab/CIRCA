@@ -11574,7 +11574,8 @@ async def vector_flow_chat(request: dict):
                     
                     if is_current_survey_node:
                         print(f"[SURVEY COMPLETION] Detected 'completed' message on survey node {current_node_id}")
-                        
+                        print(f"[SURVEY COMPLETION] Full node content: {current_node_content}")
+
                         # Check for completion trigger in TRIGGERS section
                         if "TRIGGERS:" in current_node_content:
                             triggers_section = current_node_content.split("TRIGGERS:")[1].strip()
