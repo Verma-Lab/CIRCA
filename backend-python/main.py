@@ -11522,7 +11522,7 @@ async def vector_flow_chat(request: dict):
         if is_post_survey_start:
             print("[CHAT] Excluding survey messages from conversation history")
             # Only include non-survey messages (after survey completion)
-            message = 'hi'
+            # message = 'hi'
             conversation_history = ""
             # for msg in previous_messages[user_message_count * 2:]:  # Skip survey Q&A pairs
             #     role = msg.get("role", "unknown")
