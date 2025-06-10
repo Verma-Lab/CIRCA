@@ -735,15 +735,17 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     // const onboardingSessionId = `whatsapp_onboarding_${phoneNumber}_${Date.now()}`;
     // Check for existing onboarding session first
     const existingOnboardingQuery = await firestore.db.collection('chat_sessions')
-    .where('phoneNumber', '==', phoneNumber)
-    .where('type', '==', 'whatsapp')
-    .where('isOnboarding', '==', true)
-    .orderBy('lastActivity', 'desc')
-    .limit(1)
-    .get();
+      .where('phoneNumber', '==', phoneNumber)
+      .where('patientId', '==', patientId)  // ADD THIS LINE
+      .where('type', '==', 'whatsapp')
+      .where('isOnboarding', '==', true)
+      .orderBy('lastActivity', 'desc')
+      .limit(1)
+      .get();
 
     let onboardingSessionId;
     let currentSessionData = {}; 
+    
     if (!existingOnboardingQuery.empty) {
     // Reuse existing onboarding session
     const existingSessionDoc = existingOnboardingQuery.docs[0]; // ADD THIS LINE
