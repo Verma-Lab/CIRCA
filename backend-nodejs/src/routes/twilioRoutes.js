@@ -784,6 +784,7 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
       userId: pregnancyAssistant.userId,
       patientId: patientId,
       lastActivity: new Date(),
+      createdAt: new Date(),  // ADD THIS
       is_user_initiated: true,
       isOnboarding: true
     });
@@ -833,7 +834,9 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     console.log('→ PREGNANCY TEST: Vector chat response:', vectorData);
     
     // Only save messages when pregnancy test actually starts (not during onboarding)
-    if (vectorData.onboarding_status === 'completed') {
+    if (vectorData.onboarding_status === 'in_progress' || vectorData.onboarding_status === 'completed') {
+      console.log('→ PREGNANCY TEST: Saving messages in onboarding session');
+      
       await firestore.saveSharedChatMessage({
         shareId: primaryShareId,
         sessionId: onboardingSessionId,
