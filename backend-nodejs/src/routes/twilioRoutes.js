@@ -757,7 +757,8 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
 
     let onboardingSessionId;
     let currentSessionData = {}; 
-    
+    let messagesShareId; // ADD THIS LINE
+
     if (!existingOnboardingQuery.empty) {
     // Reuse existing onboarding session
     const existingSessionDoc = existingOnboardingQuery.docs[0]; // ADD THIS LINE
@@ -765,7 +766,7 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     currentSessionData = existingSessionDoc.data(); // ADD THIS LINE: Load existing data
     console.log('→ PREGNANCY TEST: Reusing existing onboarding session:', onboardingSessionId);
     console.log(`[PREGNANCY TEST] Reusing session ${onboardingSessionId} with patientId=${currentSessionData.patientId}, input patientId=${patientId}, timestamp=${new Date().toISOString()}`);
-    
+    messagesShareId = currentSessionData.shareId; // ADD THIS LINE: Use the shareId from the session
     } else {
     // Create new onboarding session only if none exists
     onboardingSessionId = `whatsapp_onboarding_${phoneNumber}_${Date.now()}`;
@@ -800,7 +801,6 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     // Create onboarding session document
 
     // Get previous messages for onboarding session (should be empty)
-    const messagesShareId = currentSessionData.shareId; // ADD THIS LINE: Use the shareId from the session
     console.log(`Fetching chat history for shareId: ${messagesShareId} sessionId: ${onboardingSessionId}`); // ADD THIS LOG
     const previousMessages = await firestore.getSharedChatHistory(messagesShareId, onboardingSessionId, patientId); // CHANGE THIS LINE
     console.log(`Found ${previousMessages.length} messages for session: ${onboardingSessionId}`); // ADD THIS LOG
