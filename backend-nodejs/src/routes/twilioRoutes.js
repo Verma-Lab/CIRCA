@@ -773,14 +773,14 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     console.log('→ PREGNANCY TEST: Created new onboarding session:', onboardingSessionId);
     console.log(`[PREGNANCY TEST] Creating new session ${onboardingSessionId} with patientId=${patientId}, timestamp=${new Date().toISOString()}`);
     // Create the session document
-    messagesShareId = pregnancyAssistant.shareId; 
+    messagesShareId = pregnancyAssistant.voiceShareId; 
 
     await firestore.db.collection('chat_sessions').doc(onboardingSessionId).set({
       sessionId: onboardingSessionId,
       assistantId: pregnancyTestAssistantId,
       phoneNumber: phoneNumber,
       type: 'whatsapp',
-      shareId:  pregnancyAssistant.shareId,
+      shareId:  pregnancyAssistant.voiceShareId,
       userId: pregnancyAssistant.userId,
       patientId: patientId,
       lastActivity: new Date(),
