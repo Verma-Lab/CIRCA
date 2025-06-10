@@ -765,12 +765,16 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     currentSessionData = existingSessionDoc.data(); // ADD THIS LINE: Load existing data
     console.log('→ PREGNANCY TEST: Reusing existing onboarding session:', onboardingSessionId);
     console.log(`[PREGNANCY TEST] Reusing session ${onboardingSessionId} with patientId=${currentSessionData.patientId}, input patientId=${patientId}, timestamp=${new Date().toISOString()}`);
+    messagesShareId = currentSessionData.shareId;
+
     } else {
     // Create new onboarding session only if none exists
     onboardingSessionId = `whatsapp_onboarding_${phoneNumber}_${Date.now()}`;
     console.log('→ PREGNANCY TEST: Created new onboarding session:', onboardingSessionId);
     console.log(`[PREGNANCY TEST] Creating new session ${onboardingSessionId} with patientId=${patientId}, timestamp=${new Date().toISOString()}`);
     // Create the session document
+    messagesShareId = currentSessionData.shareId;
+
     await firestore.db.collection('chat_sessions').doc(onboardingSessionId).set({
       sessionId: onboardingSessionId,
       assistantId: pregnancyTestAssistantId,
