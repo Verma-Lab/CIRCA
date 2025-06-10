@@ -889,6 +889,17 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
       );
       
       console.log('→ PREGNANCY TEST: Sent completion response');
+      // Record analytics for pregnancy test completion
+      axios.post(`${PYTHON_API_URL}/api/analyze-message`, {
+        message: body.trim(),
+        response: vectorData.content,
+        sessionId: onboardingSessionId,
+        timestamp: new Date().toISOString()
+      }).then(analyticsResponse => {
+        console.log('→ PREGNANCY TEST: Completion analytics recorded successfully:', analyticsResponse.data.analytics_id);
+      }).catch(analyticsError => {
+        console.error('→ PREGNANCY TEST: Error recording completion analytics:', analyticsError.message);
+      });
       const clarificationMessage = "Great Onboarding is complete! Please describe in one word what you are looking for today: symptoms, pregnancy test, pregnancy support, etc.";
       await twilioService.sendWhatsAppMessage(
         from,
@@ -899,6 +910,17 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
         patientId,
         true
       );
+      // Record analytics for clarification message
+axios.post(`${PYTHON_API_URL}/api/analyze-message`, {
+  message: '', // Empty since this is a system-generated follow-up
+  response: clarificationMessage,
+  sessionId: onboardingSessionId,
+  timestamp: new Date().toISOString()
+}).then(analyticsResponse => {
+  console.log('→ PREGNANCY TEST: Clarification analytics recorded successfully:', analyticsResponse.data.analytics_id);
+}).catch(analyticsError => {
+  console.error('→ PREGNANCY TEST: Error recording clarification analytics:', analyticsError.message);
+});
       
       // Step 5: Now use base session ID and proceed with normal flow
       console.log('→ PREGNANCY TEST: Switching to base session for normal flow');
@@ -917,6 +939,17 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
       );
       
       console.log('→ PREGNANCY TEST: Sent in-progress response');
+      // Record analytics for in-progress pregnancy test message
+      axios.post(`${PYTHON_API_URL}/api/analyze-message`, {
+        message: body.trim(),
+        response: vectorData.content,
+        sessionId: onboardingSessionId,
+        timestamp: new Date().toISOString()
+      }).then(analyticsResponse => {
+        console.log('→ PREGNANCY TEST: In-progress analytics recorded successfully:', analyticsResponse.data.analytics_id);
+      }).catch(analyticsError => {
+        console.error('→ PREGNANCY TEST: Error recording in-progress analytics:', analyticsError.message);
+      });
       return true; // Pregnancy test handled, exit main flow
     }
   }
