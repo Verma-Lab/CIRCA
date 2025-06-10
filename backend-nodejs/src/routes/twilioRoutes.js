@@ -730,6 +730,18 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     }
     
     console.log('→ PREGNANCY TEST: Not completed, starting pregnancy test flow');
+    // Get pregnancy test assistant
+    const organizationId = '618f87b2-aea0-402c-a355-338cb1f6fbf0';
+    const pregnancyTestAssistantId = await getAssistantByCategory(organizationId, 'Pregnancy test');
+    
+    if (!pregnancyTestAssistantId) {
+      console.log('→ PREGNANCY TEST: No pregnancy test assistant found');
+      return false; // Continue with normal flow
+    }
+    
+    console.log('→ PREGNANCY TEST: Found pregnancy test assistant:', pregnancyTestAssistantId);
+     // Get pregnancy test assistant data
+     const pregnancyAssistant = await firestore.getAssistant(pregnancyTestAssistantId);
     
     // Step 3: Create new session with whatsapp_onboarding_...
     // const onboardingSessionId = `whatsapp_onboarding_${phoneNumber}_${Date.now()}`;
@@ -774,16 +786,6 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
 }
     console.log('→ PREGNANCY TEST: Created onboarding session:', onboardingSessionId);
     
-    // Get pregnancy test assistant
-    const organizationId = '618f87b2-aea0-402c-a355-338cb1f6fbf0';
-    const pregnancyTestAssistantId = await getAssistantByCategory(organizationId, 'Pregnancy test');
-    
-    if (!pregnancyTestAssistantId) {
-      console.log('→ PREGNANCY TEST: No pregnancy test assistant found');
-      return false; // Continue with normal flow
-    }
-    
-    console.log('→ PREGNANCY TEST: Found pregnancy test assistant:', pregnancyTestAssistantId);
     
     // Update mapping with pregnancy test assistant
     await mappingRef.update({
@@ -791,9 +793,7 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
       updatedAt: new Date().toISOString()
     });
     
-    // Get pregnancy test assistant data
-    const pregnancyAssistant = await firestore.getAssistant(pregnancyTestAssistantId);
-    
+   
     // Create onboarding session document
 
     // Get previous messages for onboarding session (should be empty)
