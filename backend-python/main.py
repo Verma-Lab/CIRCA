@@ -11691,7 +11691,7 @@ async def vector_flow_chat(request: dict):
                     last_assistant_msg = msg.get("content", "").lower()
                     break
             
-            if last_assistant_msg and any(keyword in last_assistant_msg for keyword in ["lmp", "mm/dd/yyyy", "gestational age"]):
+            if last_assistant_msg and any(keyword in last_assistant_msg for keyword in ["lmp", "mm/dd/yyyy", "gestational age", "last menstrual", "last menstrual period"]):
                 try:
                     from datetime import datetime
                     import re
