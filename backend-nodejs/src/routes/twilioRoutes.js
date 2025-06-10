@@ -177,6 +177,7 @@ router.post('/assistants/twilio/router', express.urlencoded({ extended: true }),
           const patientResponse = await createPatientViaPython(phoneNumber, assistantId, organizationId);
           patientId = patientResponse.id;
           console.log('New Patient Created:', patientId);
+          console.log(`[TWILIO ROUTER] New Patient Created for ${phoneNumber}: patientId=${patientId}, timestamp=${new Date().toISOString()}, response=${JSON.stringify(patientResponse)}`);
 
           // Create patient phone mapping
           console.log('Creating new patient_phone_mapping');
@@ -749,11 +750,12 @@ router.post('/shared/:shareId/voice/call', validateSharedAccess, async (req, res
     onboardingSessionId = existingSessionDoc.id; // CHANGE THIS LINE
     currentSessionData = existingSessionDoc.data(); // ADD THIS LINE: Load existing data
     console.log('→ PREGNANCY TEST: Reusing existing onboarding session:', onboardingSessionId);
+    console.log(`[PREGNANCY TEST] Reusing session ${onboardingSessionId} with patientId=${currentSessionData.patientId}, input patientId=${patientId}, timestamp=${new Date().toISOString()}`);
     } else {
     // Create new onboarding session only if none exists
     onboardingSessionId = `whatsapp_onboarding_${phoneNumber}_${Date.now()}`;
     console.log('→ PREGNANCY TEST: Created new onboarding session:', onboardingSessionId);
-
+    console.log(`[PREGNANCY TEST] Creating new session ${onboardingSessionId} with patientId=${patientId}, timestamp=${new Date().toISOString()}`);
     // Create the session document
     await firestore.db.collection('chat_sessions').doc(onboardingSessionId).set({
       sessionId: onboardingSessionId,
@@ -1426,6 +1428,7 @@ router.post(
       // =================== INSERT PREGNANCY TEST CHECK HERE ===================
       // Step 6: Check pregnancy test at beginning of route
       if (patientId) {
+        console.log(`[WHATSAPP ROUTE] Calling pregnancy_test_completion for ${phoneNumber}: patientId=${patientId}, timestamp=${new Date().toISOString()}`);
         const pregnancyResult = await pregnancy_test_completion(phoneNumber, patientId, body, from, primaryShareId, assistant);
         
         if (pregnancyResult === true) {
