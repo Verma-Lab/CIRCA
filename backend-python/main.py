@@ -18088,6 +18088,21 @@ async def analyze_message(request: dict):
             - Do not extract medical or pregnancy data from the AI's response.
             - If a date matches the user's date of birth (e.g., 29/04/1999 from survey responses), do not use it as LMP.
 
+            5. Patient Characteristics (for research metrics):
+            - Gestational age at enrollment (if mentioned)
+            - Previous pregnancy history:
+                * Number of early pregnancy losses (EPLs)
+                * Number of ectopic pregnancies
+                * Number of abortions
+                * Number of continued intrauterine pregnancies (successful pregnancies)
+            - Chat content categorization:
+                * Primary concern category ("vaginal_bleeding", "nausea_vomiting", "emotional_stress", "other")
+                * Triggered survey types (list any that apply)
+            - Clinical escalation needs:
+                * Escalation concerns (bleeding with previous ectopic, heavy bleeding, etc.)
+            - Care preferences expressed:
+                * Desired care type ("abortion", "prenatal_care", "early_pregnancy_eval", "unknown")
+
             Return your analysis as a JSON object:
             {{
                 "sentiment": "string",
@@ -18106,7 +18121,18 @@ async def analyze_message(request: dict):
                     "risk_factors": ["string"],
                     "fetal_activity": "string" or null,
                     "emotional_state": "string" or null
-                }}
+                }},
+                "patient_characteristics": {
+                    "gestational_age_at_enrollment": "number",
+                    "previous_epls": "number",
+                    "previous_ectopics": "number", 
+                    "previous_abortions": "number",
+                    "previous_continued_iups": "number",
+                    "unprompted_text_category": "string",
+                    "triggered_surveys": ["string"],
+                    "escalation_concerns": ["string"],
+                    "care_desired": "string"
+                }
             }}
 
             If no relevant data is found, return empty arrays or null values for the respective fields.
@@ -18159,6 +18185,54 @@ async def analyze_message(request: dict):
                 session_duration=0,
                 response_time=0
             )
+            patient_chars = analytics_data.get("patient_characteristics", {})
+
+            if patient_chars:
+                patient_id = request.get("patientId")  # You'll need to add this to your frontend request
+                
+                if patient_id:
+                    print(f"[ANALYZE MESSAGE] Processing patient characteristics: {json.dumps(patient_chars, indent=2)}")
+                    
+                    # Check if characteristics record exists for this session
+                    existing_chars = db.query(PatientCharacteristics).filter(
+                        PatientCharacteristics.patient_id == patient_id,
+                        PatientCharacteristics.session_id == session_id
+                    ).first()
+                    
+                    if existing_chars:
+                        # Update existing record
+                        existing_chars.gestational_age_at_enrollment = patient_chars.get("gestational_age_at_enrollment") or existing_chars.gestational_age_at_enrollment
+                        existing_chars.previous_epls = patient_chars.get("previous_epls", existing_chars.previous_epls or 0)
+                        existing_chars.previous_ectopics = patient_chars.get("previous_ectopics", existing_chars.previous_ectopics or 0)
+                        existing_chars.previous_abortions = patient_chars.get("previous_abortions", existing_chars.previous_abortions or 0)
+                        existing_chars.previous_continued_iups = patient_chars.get("previous_continued_iups", existing_chars.previous_continued_iups or 0)
+                        existing_chars.unprompted_text_category = patient_chars.get("unprompted_text_category") or existing_chars.unprompted_text_category
+                        existing_chars.triggered_surveys = json.dumps(patient_chars.get("triggered_surveys", []))
+                        existing_chars.escalation_concerns = json.dumps(patient_chars.get("escalation_concerns", []))
+                        existing_chars.care_desired = patient_chars.get("care_desired") or existing_chars.care_desired
+                        existing_chars.updated_at = datetime.utcnow()
+                        print(f"[ANALYZE MESSAGE] Updated patient characteristics")
+                    else:
+                        # Create new characteristics record
+                        new_chars = PatientCharacteristics(
+                            id=str(uuid.uuid4()),
+                            patient_id=patient_id,
+                            session_id=session_id,
+                            gestational_age_at_enrollment=patient_chars.get("gestational_age_at_enrollment"),
+                            previous_epls=patient_chars.get("previous_epls", 0),
+                            previous_ectopics=patient_chars.get("previous_ectopics", 0),
+                            previous_abortions=patient_chars.get("previous_abortions", 0),
+                            previous_continued_iups=patient_chars.get("previous_continued_iups", 0),
+                            unprompted_text_category=patient_chars.get("unprompted_text_category"),
+                            triggered_surveys=json.dumps(patient_chars.get("triggered_surveys", [])),
+                            escalation_concerns=json.dumps(patient_chars.get("escalation_concerns", [])),
+                            care_desired=patient_chars.get("care_desired"),
+                            created_at=datetime.utcnow(),
+                            updated_at=datetime.utcnow()
+                        )
+                        db.add(new_chars)
+                        print(f"[ANALYZE MESSAGE] Added new patient characteristics")
+
             
             db.add(db_analytics)
             db.commit()
@@ -19144,7 +19218,22 @@ async def analyze_session(request: dict):
                         PatientCharacteristics.session_id == session_id
                     ).first()
                     
-                    if not existing_chars:
+                    if existing_chars:
+                        # ✅ UPDATE existing record - THIS WAS MISSING!
+                        print(f"[API] Updating existing characteristics record for session {session_id}")
+                        existing_chars.gestational_age_at_enrollment = patient_chars.get("gestational_age_at_enrollment")
+                        existing_chars.previous_epls = patient_chars.get("previous_epls", existing_chars.previous_epls or 0)
+                        existing_chars.previous_ectopics = patient_chars.get("previous_ectopics", existing_chars.previous_ectopics or 0)
+                        existing_chars.previous_abortions = patient_chars.get("previous_abortions", existing_chars.previous_abortions or 0)
+                        existing_chars.previous_continued_iups = patient_chars.get("previous_continued_iups", existing_chars.previous_continued_iups or 0)
+                        existing_chars.unprompted_text_category = patient_chars.get("unprompted_text_category") or existing_chars.unprompted_text_category
+                        existing_chars.triggered_surveys = json.dumps(patient_chars.get("triggered_surveys", []))
+                        existing_chars.escalation_concerns = json.dumps(patient_chars.get("escalation_concerns", []))
+                        existing_chars.care_desired = patient_chars.get("care_desired") or existing_chars.care_desired
+                        existing_chars.updated_at = datetime.utcnow()
+                        updates_made["patient_characteristics_updated"] = True
+                        print(f"[API] Updated gestational_age_at_enrollment to: {existing_chars.gestational_age_at_enrollment}")
+                    else:
                         # Create new characteristics record
                         new_chars = PatientCharacteristics(
                             id=str(uuid.uuid4()),
