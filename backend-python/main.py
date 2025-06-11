@@ -18122,17 +18122,17 @@ async def analyze_message(request: dict):
                     "fetal_activity": "string" or null,
                     "emotional_state": "string" or null
                 }},
-                "patient_characteristics": {
-                    "gestational_age_at_enrollment": "number",
-                    "previous_epls": "number",
-                    "previous_ectopics": "number", 
-                    "previous_abortions": "number",
-                    "previous_continued_iups": "number",
-                    "unprompted_text_category": "string",
-                    "triggered_surveys": ["string"],
-                    "escalation_concerns": ["string"],
-                    "care_desired": "string"
-                }
+                "patient_characteristics": {{
+                "gestational_age_at_enrollment": "number",
+                "previous_epls": "number",
+                "previous_ectopics": "number", 
+                "previous_abortions": "number",
+                "previous_continued_iups": "number",
+                "unprompted_text_category": "string",
+                "triggered_surveys": ["string"],
+                "escalation_concerns": ["string"],
+                "care_desired": "string"
+            }}
             }}
 
             If no relevant data is found, return empty arrays or null values for the respective fields.
