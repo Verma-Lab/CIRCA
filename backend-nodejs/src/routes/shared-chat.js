@@ -1187,6 +1187,7 @@ async function checkCalendarAvailability(assistantOwnerId, startTime, endTime) {
 // Add these new routes to handle session analytics exports
 
 // Get a list of all sessions with analytics data
+
 router.get('/shared/analytics/sessions', async (req, res) => {
   try {
     // Call the Python API to get a list of all sessions with analytics
@@ -1247,40 +1248,192 @@ router.get('/shared/analytics/sessions/:sessionId/export', async (req, res) => {
 
 // Get aggregated session data (including total duration) for a specific patient
 // Get aggregated session data (including total duration) for a specific patient
+// router.get('/shared/analytics/patient/:patientId/aggregate', verifyToken, async (req, res) => {
+//   try {
+//     const { patientId } = req.params;
+//     const userId = req.user.id;
+    
+//     console.log(`Session analytics aggregation requested for patient ${patientId}`);
+
+//     // Verify user access
+//     const userDoc = await firestore.db.collection('users').doc(userId).get();
+//     if (!userDoc.exists) {
+//       return res.status(403).json({ error: 'Access denied: User not authorized' });
+//     }
+
+//     // First approach: Get patient sessions directly from the chat_sessions collection
+//     const sessionsSnapshot = await firestore.db.collection('chat_sessions')
+//       .where('patientId', '==', patientId)
+//       .get();
+    
+//     // Extract session IDs
+//     const sessionIds = [];
+//     sessionsSnapshot.forEach(doc => {
+//       sessionIds.push(doc.id);
+//     });
+    
+//     console.log(`Extracted session IDs for patient ${patientId}:`, sessionIds);
+    
+//     if (sessionIds.length === 0) {
+//       console.log(`No sessions found for patient ${patientId}`);
+//       return res.json({
+//         totalSessions: 0,
+//         totalDuration: 0,
+//         totalMessages: 0,
+//         totalPositive: 0,
+//         totalNeutral: 0, 
+//         totalNegative: 0,
+//         totalHighUrgency: 0,
+//         totalMediumUrgency: 0,
+//         totalLowUrgency: 0,
+//         topIntents: {},
+//         topTopics: {},
+//         sessionAnalytics: []
+//       });
+//     }
+
+//     // Get all analytics data directly from Python API endpoint for each session
+//     let totalDuration = 0;
+//     let totalMessages = 0;
+//     let totalPositive = 0;
+//     let totalNeutral = 0;
+//     let totalNegative = 0;
+//     let totalHighUrgency = 0;
+//     let totalMediumUrgency = 0;
+//     let totalLowUrgency = 0;
+//     const sessionAnalytics = [];
+//     const intentsCount = {};
+//     const topicsCount = {};
+
+//     // Process each session ID
+//     for (const sessionId of sessionIds) {
+//       try {
+//         const response = await axios.get(`${PYTHON_API_URL}/api/session-analytics/${sessionId}`);
+//         const sessionData = response.data;
+//         console.log('SESSION ANALYTICS', sessionData);
+        
+//         if (sessionData) {
+//           totalDuration += sessionData.duration_seconds || 0;
+//           totalMessages += sessionData.message_count || 0;
+          
+//           // Add sentiment counts directly
+//           if (sessionData.sentiment_distribution) {
+//             totalPositive += sessionData.sentiment_distribution.positive || 0;
+//             totalNeutral += sessionData.sentiment_distribution.neutral || 0;
+//             totalNegative += sessionData.sentiment_distribution.negative || 0;
+//           }
+          
+//           // Add urgency counts directly
+//           if (sessionData.urgency_distribution) {
+//             totalHighUrgency += sessionData.urgency_distribution.high || 0;
+//             totalMediumUrgency += sessionData.urgency_distribution.medium || 0;
+//             totalLowUrgency += sessionData.urgency_distribution.low || 0;
+//           }
+          
+//           // Count intents
+//           if (sessionData.intent_distribution) {
+//             Object.entries(sessionData.intent_distribution).forEach(([intent, count]) => {
+//               intentsCount[intent] = (intentsCount[intent] || 0) + count;
+//             });
+//           }
+          
+//           // Count topics
+//           if (sessionData.topic_distribution) {
+//             Object.entries(sessionData.topic_distribution).forEach(([topic, count]) => {
+//               topicsCount[topic] = (topicsCount[topic] || 0) + count;
+//             });
+//           }
+          
+//           sessionAnalytics.push({
+//             sessionId,
+//             duration: sessionData.duration_seconds || 0,
+//             messageCount: sessionData.message_count || 0,
+//             startTime: sessionData.start_time,
+//             endTime: sessionData.end_time
+//           });
+//         }
+//       } catch (error) {
+//         console.error(`Error fetching analytics for session ${sessionId}:`, error.message);
+//         // Continue to the next session if there's an error
+//       }
+//     }
+    
+//     // Sort intents and topics by count
+//     const topIntents = Object.entries(intentsCount)
+//       .sort((a, b) => b[1] - a[1])
+//       .reduce((obj, [key, value]) => {
+//         obj[key] = value;
+//         return obj;
+//       }, {});
+      
+//     const topTopics = Object.entries(topicsCount)
+//       .sort((a, b) => b[1] - a[1])
+//       .reduce((obj, [key, value]) => {
+//         obj[key] = value;
+//         return obj;
+//       }, {});
+    
+//     console.log(`Aggregates for patient ${patientId}:`, { 
+//       totalDuration, 
+//       totalPositive,
+//       totalNeutral,
+//       totalNegative,
+//       totalHighUrgency,
+//       totalMediumUrgency,
+//       totalLowUrgency
+//     });
+    
+//     // Return the aggregated data
+//     res.json({
+//       totalSessions: sessionIds.length,
+//       totalDuration,
+//       totalMessages,
+//       totalPositive,
+//       totalNeutral, 
+//       totalNegative,
+//       totalHighUrgency,
+//       totalMediumUrgency,
+//       totalLowUrgency,
+//       topIntents,
+//       topTopics,
+//       sessionAnalytics
+//     });
+//   } catch (error) {
+//     console.error('Error aggregating patient session data:', error);
+//     res.status(500).json({
+//       error: 'Failed to aggregate session data',
+//       details: error.message
+//     });
+//   }
+// });
 router.get('/shared/analytics/patient/:patientId/aggregate', verifyToken, async (req, res) => {
   try {
     const { patientId } = req.params;
     const userId = req.user.id;
-    
-    console.log(`Session analytics aggregation requested for patient ${patientId}`);
 
-    // Verify user access
+    // Verify user access (unchanged)
     const userDoc = await firestore.db.collection('users').doc(userId).get();
     if (!userDoc.exists) {
       return res.status(403).json({ error: 'Access denied: User not authorized' });
     }
 
-    // First approach: Get patient sessions directly from the chat_sessions collection
+    // Get session IDs from Firestore
     const sessionsSnapshot = await firestore.db.collection('chat_sessions')
       .where('patientId', '==', patientId)
       .get();
-    
-    // Extract session IDs
+
     const sessionIds = [];
     sessionsSnapshot.forEach(doc => {
       sessionIds.push(doc.id);
     });
-    
-    console.log(`Extracted session IDs for patient ${patientId}:`, sessionIds);
-    
+
     if (sessionIds.length === 0) {
-      console.log(`No sessions found for patient ${patientId}`);
       return res.json({
         totalSessions: 0,
         totalDuration: 0,
         totalMessages: 0,
         totalPositive: 0,
-        totalNeutral: 0, 
+        totalNeutral: 0,
         totalNegative: 0,
         totalHighUrgency: 0,
         totalMediumUrgency: 0,
@@ -1291,7 +1444,11 @@ router.get('/shared/analytics/patient/:patientId/aggregate', verifyToken, async 
       });
     }
 
-    // Get all analytics data directly from Python API endpoint for each session
+    // Fetch all session analytics in one request
+    const response = await axios.post(`${PYTHON_API_URL}/api/session-analytics/batch`, { session_ids: sessionIds });
+    const batchData = response.data;
+
+    // Aggregate data
     let totalDuration = 0;
     let totalMessages = 0;
     let totalPositive = 0;
@@ -1304,91 +1461,64 @@ router.get('/shared/analytics/patient/:patientId/aggregate', verifyToken, async 
     const intentsCount = {};
     const topicsCount = {};
 
-    // Process each session ID
-    for (const sessionId of sessionIds) {
-      try {
-        const response = await axios.get(`${PYTHON_API_URL}/api/session-analytics/${sessionId}`);
-        const sessionData = response.data;
-        console.log('SESSION ANALYTICS', sessionData);
-        
-        if (sessionData) {
-          totalDuration += sessionData.duration_seconds || 0;
-          totalMessages += sessionData.message_count || 0;
-          
-          // Add sentiment counts directly
-          if (sessionData.sentiment_distribution) {
-            totalPositive += sessionData.sentiment_distribution.positive || 0;
-            totalNeutral += sessionData.sentiment_distribution.neutral || 0;
-            totalNegative += sessionData.sentiment_distribution.negative || 0;
-          }
-          
-          // Add urgency counts directly
-          if (sessionData.urgency_distribution) {
-            totalHighUrgency += sessionData.urgency_distribution.high || 0;
-            totalMediumUrgency += sessionData.urgency_distribution.medium || 0;
-            totalLowUrgency += sessionData.urgency_distribution.low || 0;
-          }
-          
-          // Count intents
-          if (sessionData.intent_distribution) {
-            Object.entries(sessionData.intent_distribution).forEach(([intent, count]) => {
-              intentsCount[intent] = (intentsCount[intent] || 0) + count;
-            });
-          }
-          
-          // Count topics
-          if (sessionData.topic_distribution) {
-            Object.entries(sessionData.topic_distribution).forEach(([topic, count]) => {
-              topicsCount[topic] = (topicsCount[topic] || 0) + count;
-            });
-          }
-          
-          sessionAnalytics.push({
-            sessionId,
-            duration: sessionData.duration_seconds || 0,
-            messageCount: sessionData.message_count || 0,
-            startTime: sessionData.start_time,
-            endTime: sessionData.end_time
-          });
-        }
-      } catch (error) {
-        console.error(`Error fetching analytics for session ${sessionId}:`, error.message);
-        // Continue to the next session if there's an error
+    for (const sessionId in batchData) {
+      const sessionData = batchData[sessionId];
+      totalDuration += sessionData.duration_seconds || 0;
+      totalMessages += sessionData.message_count || 0;
+
+      // Sentiment counts
+      if (sessionData.sentiment_distribution) {
+        totalPositive += sessionData.sentiment_distribution.positive || 0;
+        totalNeutral += sessionData.sentiment_distribution.neutral || 0;
+        totalNegative += sessionData.sentiment_distribution.negative || 0;
       }
+
+      // Urgency counts
+      if (sessionData.urgency_distribution) {
+        totalHighUrgency += sessionData.urgency_distribution.high || 0;
+        totalMediumUrgency += sessionData.urgency_distribution.medium || 0;
+        totalLowUrgency += sessionData.urgency_distribution.low || 0;
+      }
+
+      // Intents
+      if (sessionData.intent_distribution) {
+        Object.entries(sessionData.intent_distribution).forEach(([intent, count]) => {
+          intentsCount[intent] = (intentsCount[intent] || 0) + count;
+        });
+      }
+
+      // Topics
+      if (sessionData.topic_distribution) {
+        Object.entries(sessionData.topic_distribution).forEach(([topic, count]) => {
+          topicsCount[topic] = (topicsCount[topic] || 0) + count;
+        });
+      }
+
+      sessionAnalytics.push({
+        sessionId,
+        duration: sessionData.duration_seconds || 0,
+        messageCount: sessionData.message_count || 0,
+        startTime: sessionData.start_time,
+        endTime: sessionData.end_time
+      });
     }
-    
-    // Sort intents and topics by count
+
+    // Sort intents and topics (unchanged)
     const topIntents = Object.entries(intentsCount)
       .sort((a, b) => b[1] - a[1])
-      .reduce((obj, [key, value]) => {
-        obj[key] = value;
-        return obj;
-      }, {});
-      
+      .reduce((obj, [key, value]) => { obj[key] = value; return obj; }, {});
+
     const topTopics = Object.entries(topicsCount)
       .sort((a, b) => b[1] - a[1])
-      .reduce((obj, [key, value]) => {
-        obj[key] = value;
-        return obj;
-      }, {});
-    
-    console.log(`Aggregates for patient ${patientId}:`, { 
-      totalDuration, 
-      totalPositive,
-      totalNeutral,
-      totalNegative,
-      totalHighUrgency,
-      totalMediumUrgency,
-      totalLowUrgency
-    });
-    
-    // Return the aggregated data
+      .reduce((obj, [key, value]) => { obj[key] = value; return obj; }, {});
+
+    // Return aggregated data
     res.json({
       totalSessions: sessionIds.length,
       totalDuration,
       totalMessages,
       totalPositive,
-      totalNeutral, 
+      totalNeutral,
       totalNegative,
       totalHighUrgency,
       totalMediumUrgency,
@@ -1405,7 +1535,6 @@ router.get('/shared/analytics/patient/:patientId/aggregate', verifyToken, async 
     });
   }
 });
-
 // Get aggregated session data for all patients (for the Sessions page)
 router.get('/shared/analytics/all-patients/aggregate', verifyToken, async (req, res) => {
   try {
