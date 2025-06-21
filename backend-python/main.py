@@ -5173,7 +5173,8 @@ async def get_patients(db = Depends(get_db), current_user = Depends(get_current_
         "first_name": patient.first_name,
         "last_name": patient.last_name,
         "date_of_birth": patient.date_of_birth,
-        "gender": patient.gender
+        "gender": patient.gender,
+        "phone": patient.phone
     } for patient in patients]
 
 @app.get("/api/patients/{patient_id}", response_model=dict)
