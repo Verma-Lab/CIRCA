@@ -1245,8 +1245,108 @@ router.get('/shared/analytics/sessions/:sessionId/export', async (req, res) => {
 });
 
 // Add these new routes to your existing Node.js backend
+// Add this to your Node.js routes file
 
-// Get aggregated session data (including total duration) for a specific patient
+router.get('/shared/analytics/patient/:patientId/recent-urgent-sessions', verifyToken, async (req, res) => {
+  try {
+    const { patientId } = req.params;
+    const limit = parseInt(req.query.limit) || 5;
+    const userId = req.user.id;
+    
+    console.log(`Recent urgent sessions requested for patient ${patientId}, limit: ${limit}`);
+
+    // Verify user access
+    const userDoc = await firestore.db.collection('users').doc(userId).get();
+    if (!userDoc.exists) {
+      return res.status(403).json({ error: 'Access denied: User not authorized' });
+    }
+
+    // Get all patient sessions for total count and recent sessions
+    const sessionsSnapshot = await firestore.db.collection('chat_sessions')
+      .where('patientId', '==', patientId)
+      .orderBy('createdAt', 'desc')
+      .get();
+    
+    const totalSessionCount = sessionsSnapshot.size;
+    
+    if (totalSessionCount === 0) {
+      return res.json({
+        patient_id: patientId,
+        total_sessions: 0,
+        recent_sessions: [],
+        urgent_sessions_count: 0
+      });
+    }
+
+    // Get the most recent sessions up to the limit
+    const recentSessions = [];
+    let count = 0;
+    sessionsSnapshot.forEach(doc => {
+      if (count < limit) {
+        const data = doc.data();
+        recentSessions.push({
+          sessionId: doc.id,
+          createdAt: data.createdAt,
+          assistantName: data.assistantName,
+          messageCount: data.messageCount || 0
+        });
+        count++;
+      }
+    });
+
+    // Call Python API for each recent session in parallel
+    const sessionPromises = recentSessions.map(async (session) => {
+      try {
+        const response = await axios.get(`${PYTHON_API_URL}/api/session-analytics/${session.sessionId}`);
+        const sessionData = response.data;
+        
+        const hasUrgentCare = sessionData.urgency_distribution && sessionData.urgency_distribution.high > 0;
+        
+        return {
+          session_id: session.sessionId,
+          created_at: session.createdAt,
+          assistant_name: session.assistantName,
+          message_count: sessionData.message_count || session.messageCount,
+          urgency_distribution: sessionData.urgency_distribution || { high: 0, medium: 0, low: 0 },
+          has_urgent_care: hasUrgentCare,
+          urgent_count: sessionData.urgency_distribution?.high || 0
+        };
+      } catch (error) {
+        console.error(`Error fetching analytics for session ${session.sessionId}:`, error.message);
+        return {
+          session_id: session.sessionId,
+          created_at: session.createdAt,
+          assistant_name: session.assistantName,
+          message_count: session.messageCount || 0,
+          urgency_distribution: { high: 0, medium: 0, low: 0 },
+          has_urgent_care: false,
+          urgent_count: 0
+        };
+      }
+    });
+
+    const sessionsWithUrgency = await Promise.all(sessionPromises);
+    
+    // Filter urgent sessions
+    const urgentSessions = sessionsWithUrgency.filter(session => session.has_urgent_care);
+    
+    console.log(`Patient ${patientId}: ${totalSessionCount} total sessions, ${urgentSessions.length} urgent in last ${limit}`);
+    
+    res.json({
+      patient_id: patientId,
+      total_sessions: totalSessionCount,
+      recent_sessions: sessionsWithUrgency,
+      urgent_sessions_count: urgentSessions.length,
+      last_session_date: recentSessions.length > 0 ? recentSessions[0].createdAt : null
+    });
+  } catch (error) {
+    console.error('Error fetching recent urgent sessions:', error);
+    res.status(500).json({
+      error: 'Failed to fetch recent urgent sessions',
+      details: error.message
+    });
+  }
+});
 // Get aggregated session data (including total duration) for a specific patient
 router.get('/shared/analytics/patient/:patientId/aggregate', verifyToken, async (req, res) => {
   try {
