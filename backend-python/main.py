@@ -5000,10 +5000,11 @@ async def read_users_me(current_user = Depends(get_current_user)):
         "id": current_user.id,
         "username": current_user.username,
         "email": current_user.email,
+        "role": current_user.role,
         "full_name": current_user.full_name,
         "is_doctor": current_user.is_doctor,
-                "organization_id": current_user.organization_id,  # Add this line
-          "telephone_ai_token": current_user.telephone_ai_token,
+        "organization_id": current_user.organization_id,  # Add this line
+        "telephone_ai_token": current_user.telephone_ai_token,
         "telephone_ai_user_id": current_user.telephone_ai_user_id
     }
 
