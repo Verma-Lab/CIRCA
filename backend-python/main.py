@@ -1366,11 +1366,11 @@ def user_has_patient_access(db: Session, user_id: str, patient_id: str, required
     if user.organization_id != patient.organization_id:
         return False
     
-    # Doctors have access to all patients in their organization
-    if user.role == "doctor":
+    # Doctors and administrators have access to all patients in their organization
+    if user.role in ["doctor", "admin"]:
         return True
     
-    # Check explicit access for non-doctors
+    # Check explicit access for non-doctors and non-admins
     access = db.query(UserPatientAccess).filter(
         UserPatientAccess.user_id == user_id,
         UserPatientAccess.patient_id == patient_id
