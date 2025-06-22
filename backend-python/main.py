@@ -12081,31 +12081,52 @@ async def vector_flow_chat(request: dict):
 
             print(f'[AI RESPONSE]', ai_response)
             # Improved rephrasing prompt with patient context
+            # rephrase_prompt = f"""
+            # You are a friendly, conversational assistant tasked with rephrasing a given text to sound natural, human-like, and context-aware.
+
+            # CRITICAL: You must ONLY rephrase the text in 'Original Response': {ai_response}. Do NOT create new content or ask different questions.
+            # CRITICAL: Do NOT ask any questions that are not in the Original Response {ai_response}
+            # CRITICAL: Keep ALL content including phone number placeholders like $Clinic_Phone$. 
+            # CRITICAL: Return ONLY the rephrased message with NO explanation or commentary.
+
+            # Instructions:
+            # 1.  **Rephrase** the 'Original Response' to sound natural and human-like, preserving its exact intent and type (statement or question).
+            # 2.  **Personalize the response:** If the patient's first name is available in 'Patient Profile', use it at the beginning of the response.
+            # 3.  **Maintain the original intent and type:** If the 'Original Response' is a question, the rephrased response MUST be a question. If it's a statement, it MUST be a statement. Do not add new questions or change the core meaning.
+            # 4.  **Crucially: Do NOT contradict or question the 'Original Response'.** Your goal is to enhance it, not to challenge its premise or introduce new, conflicting information.
+            # 5.  **Do NOT** include acknowledgment phrases like 'Okay,' 'Great,' 'I understand,' or 'Let's move on' unless they ar
+            # 6.  If the `Original Response` includes calculated values (e.g., gestational age), preserve them verbatim in the rephrased response.
+            # 7.  **Do NOT** ask for confirmation of previously provided data (e.g., LMP date) unless explicitly instructed by the `Original Response` or node instructions.
+
+            # Original Response (from the main LLM, this is the message you must rephrase): "{ai_response}"
+
+            # User message: "{message}"
+
+            # Patient Profile (for personalization, e.g., first_name):
+            # {patient_fields}
+
+            # Return ONLY the rephrased response with no explanation.
+            # """
             rephrase_prompt = f"""
-            You are a friendly, conversational assistant tasked with rephrasing a given text to sound natural, human-like, and context-aware.
+            You are an expert at rephrasing text. Your task is to take a command or instruction and turn it into a natural, conversational message for a user.
 
-            CRITICAL: You must ONLY rephrase the text in 'Original Response': {ai_response}. Do NOT create new content or ask different questions.
-            CRITICAL: Do NOT ask any questions that are not in the Original Response {ai_response}
-            CRITICAL: Keep ALL content including phone number placeholders like $Clinic_Phone$. 
-            CRITICAL: Return ONLY the rephrased message with NO explanation or commentary.
+            **Critical Task:**
+            Identify the core message intended for the user within the 'Original Response' and rephrase ONLY that part. Discard all instructional phrasing like "Tell the user to..." or "When at this node, display...".
 
-            Instructions:
-            1.  **Rephrase** the 'Original Response' to sound natural and human-like, preserving its exact intent and type (statement or question).
-            2.  **Personalize the response:** If the patient's first name is available in 'Patient Profile', use it at the beginning of the response.
-            3.  **Maintain the original intent and type:** If the 'Original Response' is a question, the rephrased response MUST be a question. If it's a statement, it MUST be a statement. Do not add new questions or change the core meaning.
-            4.  **Crucially: Do NOT contradict or question the 'Original Response'.** Your goal is to enhance it, not to challenge its premise or introduce new, conflicting information.
-            5.  **Do NOT** include acknowledgment phrases like 'Okay,' 'Great,' 'I understand,' or 'Let's move on' unless they ar
-            6.  If the `Original Response` includes calculated values (e.g., gestational age), preserve them verbatim in the rephrased response.
-            7.  **Do NOT** ask for confirmation of previously provided data (e.g., LMP date) unless explicitly instructed by the `Original Response` or node instructions.
+            **Example:**
+            - If 'Original Response' is: "Ask the user for their last name."
+            - Your output should be: "What is your last name?" or "Could you please provide your last name?"
 
-            Original Response (from the main LLM, this is the message you must rephrase): "{ai_response}"
+            **Your Task Now:**
+
+            Original Response (this contains the command you must parse and rephrase): "{ai_response}"
 
             User message: "{message}"
 
             Patient Profile (for personalization, e.g., first_name):
             {patient_fields}
 
-            Return ONLY the rephrased response with no explanation.
+            Return ONLY the rephrased user-facing message with no explanation.
             """
 
             rephrased_response = call_vertex_endpoint(rephrase_prompt)
