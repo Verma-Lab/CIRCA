@@ -221,292 +221,7 @@ router.post('/assistants/twilio/router', express.urlencoded({ extended: true }),
   }
 });
 
-router.post(
-  '/assistants/:assistantId/web/incoming',
-  express.json(), // Note: Using express.json() instead of urlencoded for web
-  async (req, res) => {
-    const { assistantId } = req.params;
-    const from = req.body.From; // Phone number in same format as WhatsApp/SMS
-    const body = req.body.Body || '';
-    const isUserInitiated = req.query.is_user_initiated === 'true';
 
-    console.log('→ WEBHOOK ENTRY: Web chat incoming webhook triggered', {
-      assistantId,
-      timestamp: new Date().toISOString()
-    });
-
-    console.log('→ REQUEST BODY:', JSON.stringify(req.body, null, 2));
-
-    try {
-      console.log('→ STEP 1: Fetching assistant data');
-      const assistant = await firestore.getAssistant(assistantId);
-      if (!assistant) {
-        console.error('→ ERROR: Assistant not found:', assistantId);
-        return res.status(404).json({ error: 'Assistant not found' });
-      }
-      console.log('→ Assistant found:', {
-        id: assistant.id,
-        name: assistant.name,
-        hasFlowData: !!assistant.flowData,
-        hasVoiceShareId: !!assistant.voiceShareId
-      });
-
-      const primaryShareId = assistant.voiceShareId;
-      if (!primaryShareId) {
-        console.error('→ ERROR: No primary share set for assistant:', assistantId);
-        return res.status(400).json({ error: 'No primary share set for assistant' });
-      }
-      console.log('→ Primary shareId found:', primaryShareId);
-
-      const phoneNumber = from.replace(/^\+1/, '');
-
-      console.log('→ STEP 0: Checking for patient mapping');
-      let patientId = null;
-      const mappingSnapshot = await firestore.db.collection('patient_phone_mappings')
-        .where('phoneNumber', '==', phoneNumber)
-        .limit(1)
-        .get();
-
-      if (!mappingSnapshot.empty) {
-        patientId = mappingSnapshot.docs[0].data().patientId;
-        console.log('→ Found patient mapping:', { patientId });
-      } else {
-        console.log('→ No patient mapping found for this phone number');
-      }
-
-      // Check pregnancy test completion
-      if (patientId) {
-        console.log(`[WEB ROUTE] Calling pregnancy_test_completion for ${phoneNumber}: patientId=${patientId}, timestamp=${new Date().toISOString()}`);
-        const pregnancyResult = await pregnancy_test_completion(phoneNumber, patientId, body, from, primaryShareId, assistant);
-        
-        if (pregnancyResult === true) {
-          // Pregnancy test in progress, exit
-          return res.json({ 
-            content: "Please complete the pregnancy test questions.", 
-            sessionId: `web_onboarding_${phoneNumber}_${Date.now()}` 
-          });
-        } else if (pregnancyResult === 'completed') {
-          // Pregnancy test just completed
-          console.log('→ PREGNANCY TEST: Completed, continuing with base session');
-          return res.json({ 
-            content: "Great! Onboarding is complete. How can I help you today?", 
-            sessionId: `web_${phoneNumber.replace(/[^0-9]/g, '')}_${assistantId}` 
-          });
-        }
-      }
-
-      const baseSessionId = `web_${phoneNumber.replace(/[^0-9]/g, '')}_${assistantId}`;
-      console.log('→ Generated baseSessionId:', baseSessionId);
-      
-      // Check for active or taken-over session
-      let sessionId = baseSessionId;
-      let createNewSession = false;
-      let sessionData = {};
-      
-      try {
-        // Query 1: Check for taken-over sessions
-        console.log('→ Checking for taken-over session');
-        const takenOverQuery = await firestore.db.collection('chat_sessions')
-          .where('phoneNumber', '==', phoneNumber)
-          .where('patientId', '==', patientId)
-          .where('type', '==', 'web')
-          .where('isOnboarding', '!=', true)
-          .orderBy('lastActivity', 'desc')
-          .limit(1)
-          .get();
-
-        // Query 2: Original query for assistant-specific sessions
-        console.log('→ Checking for assistant-specific session');
-        const assistantQuery = await firestore.db.collection('chat_sessions')
-          .where('assistantId', '==', assistantId)
-          .where('phoneNumber', '==', phoneNumber)
-          .where('patientId', '==', patientId)
-          .where('type', '==', 'web')
-          .where('isOnboarding', '!=', true)
-          .orderBy('lastActivity', 'desc')
-          .limit(1)
-          .get();
-
-        // Determine the most recent session
-        let selectedSession = null;
-        let takenOverSession = takenOverQuery.empty ? null : takenOverQuery.docs[0].data();
-        let assistantSession = assistantQuery.empty ? null : assistantQuery.docs[0].data();
-
-        const now = new Date();
-        const TAKEN_OVER_TIMEOUT_SECONDS = 300; // 5 minutes
-
-        if (takenOverSession) {
-          const takenOverLastActivity = takenOverSession.lastActivity.toDate();
-          const takenOverInactivitySeconds = (now - takenOverLastActivity) / 1000;
-          console.log(`→ Taken-over session inactivity: ${takenOverInactivitySeconds.toFixed(2)} seconds`);
-
-          if (takenOverInactivitySeconds <= TAKEN_OVER_TIMEOUT_SECONDS) {
-            selectedSession = takenOverSession;
-            console.log('→ Selected active taken-over session:', {
-              sessionId: selectedSession.sessionId,
-              takenOverBy: selectedSession.takenOverBy
-            });
-          }
-        }
-
-        if (!selectedSession && assistantSession) {
-          const assistantLastActivity = assistantSession.lastActivity.toDate();
-          const assistantInactivitySeconds = (now - assistantLastActivity) / 1000;
-          console.log(`→ Assistant session inactivity: ${assistantInactivitySeconds.toFixed(2)} seconds`);
-
-          if (assistantInactivitySeconds <= 60) {
-            selectedSession = assistantSession;
-            console.log('→ Selected active assistant-specific session:', {
-              sessionId: selectedSession.sessionId
-            });
-          }
-        }
-
-        if (selectedSession) {
-          sessionData = selectedSession;
-          sessionId = selectedSession.sessionId;
-          console.log('→ Reusing active session:', sessionId);
-
-          if (!sessionData.takenOverBy) {
-            await firestore.db.collection('chat_sessions').doc(sessionId).set(
-              { lastActivity: new Date() },
-              { merge: true }
-            );
-          }
-        } else {
-          createNewSession = true;
-          sessionId = `${baseSessionId}_${Date.now()}`;
-          console.log('→ Creating new session (no active session found):', sessionId);
-        }
-      } catch (sessionCheckError) {
-        console.error('→ Error checking session activity:', sessionCheckError);
-        createNewSession = true;
-        sessionId = `${baseSessionId}_${Date.now()}`;
-      }
-
-      console.log('→ Using session:', { sessionId, isNewSession: createNewSession });
-      
-      // Update session document with all required fields
-      await firestore.db.collection('chat_sessions').doc(sessionId).set({
-        sessionId,
-        assistantId,
-        phoneNumber,
-        type: 'web',
-        shareId: primaryShareId,
-        userId: assistant.userId,
-        patientId,
-        lastActivity: new Date(),
-        is_user_initiated: isUserInitiated,
-        isOnboarding: false
-      }, { merge: true });
-
-      console.log('→ Web message received:', {
-        from,
-        body,
-        assistantId,
-        primaryShareId,
-        sessionId,
-        patientId,
-        isNewSession: createNewSession,
-        takenOverBy: sessionData.takenOverBy
-      });
-
-      // Check if session is taken over by a doctor
-      if (sessionData.takenOverBy) {
-        console.log('→ Session is taken over by doctor:', sessionData.takenOverBy);
-        
-        // Save user message to shared_chat_messages
-        await firestore.saveSharedChatMessage({
-          shareId: primaryShareId,
-          sessionId,
-          assistantId: assistant.id,
-          role: 'user',
-          content: body.trim(),
-          createdAt: new Date(),
-          patientId,
-        });
-        console.log('→ Saved user message to shared_chat_messages (session taken over)');
-
-        // Record analytics
-        axios.post(`${PYTHON_API_URL}/api/analyze-message`, {
-          message: body.trim(),
-          response: 'Your message has been received. The doctor will respond shortly.',
-          sessionId: sessionId,
-          timestamp: new Date().toISOString()
-        }).then(analyticsResponse => {
-          console.log('Analytics recorded successfully for taken-over message:', analyticsResponse.data.analytics_id);
-        }).catch(analyticsError => {
-          console.error('Error recording analytics for taken-over message:', analyticsError.message);
-        });
-
-        // Send acknowledgment response
-        return res.json({
-          content: 'Your message has been received. The doctor will respond shortly.',
-          sessionId: sessionId
-        });
-      } else {
-        // Process with AI if not taken over
-        console.log('→ STEP 3: Calling chat API for AI response');
-        console.log('→ API URL:', `${process.env.API_URL}/api/shared/${primaryShareId}/chat`);
-        console.log('→ API request payload:', {
-          message: body.trim(),
-          sessionId,
-          language: 'en',
-          patientId
-        });
-        
-        const apiResponse = await fetch(`${process.env.API_URL}/api/shared/${primaryShareId}/chat`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            message: body.trim(),
-            sessionId: sessionId,
-            language: 'en',
-            patientId
-          })
-        });
-        
-        console.log('→ API response status:', apiResponse.status);
-        
-        const data = await apiResponse.json();
-        console.log('→ API response data:', data);
-        
-        if (!apiResponse.ok) {
-          throw new Error(`API Error: ${data.error}`);
-        }
-
-        console.log('→ STEP 4: Sending web response');
-        
-        // Save assistant message to shared_chat_messages
-        // await firestore.saveSharedChatMessage({
-        //   shareId: primaryShareId,
-        //   sessionId,
-        //   assistantId: assistant.id,
-        //   role: 'assistant',
-        //   content: data.content,
-        //   createdAt: new Date(),
-        //   patientId,
-        // });
-
-        // Return response in same format
-        return res.json({
-          content: data.content,
-          sessionId: sessionId
-        });
-      }
-    } catch (error) {
-      console.error('→ ERROR handling web message:', error);
-      console.error('→ Error stack:', error.stack);
-      return res.status(500).json({ 
-        error: 'Failed to process message',
-        content: "I'm having trouble processing your message. Please try again."
-      });
-    }
-  }
-);
 
 // router.post('/shared/:shareId/voice/incoming', validateSharedAccess, async (req, res) => {
 //   const { shareId } = req.params;
@@ -1280,6 +995,8 @@ axios.post(`${PYTHON_API_URL}/api/analyze-message`, {
     }
   }
 
+
+
 //whatsapp messges
 // router.post(
 //   '/assistants/:assistantId/whatsapp/incoming',
@@ -2003,6 +1720,300 @@ router.post(
   }
 );
 
+router.post(
+  '/assistants/:assistantId/web/incoming',
+  express.urlencoded({ extended: true }), // EXACT SAME AS WHATSAPP
+  async (req, res) => {
+    const { assistantId } = req.params;
+    const from = req.body.From;
+    const body = req.body.Body || '';
+    const isUserInitiated = req.query.is_user_initiated === 'true';
+
+    console.log('→ WEBHOOK ENTRY: Web incoming webhook triggered', {
+      assistantId,
+      timestamp: new Date().toISOString()
+    });
+    
+    console.log('→ REQUEST BODY:', JSON.stringify(req.body, null, 2));
+    
+    try {
+
+      console.log('→ STEP 1: Fetching assistant data');
+      const assistant = await firestore.getAssistant(assistantId);
+      if (!assistant) {
+        console.error('→ ERROR: Assistant not found:', assistantId);
+        return res.status(404).json({ error: 'Assistant not found' }); // ONLY CHANGE: JSON instead of TwiML
+      }
+      console.log('→ Assistant found:', {
+        id: assistant.id,
+        name: assistant.name,
+        hasFlowData: !!assistant.flowData,
+        hasVoiceShareId: !!assistant.voiceShareId
+      });
+
+      const primaryShareId = assistant.voiceShareId;
+      if (!primaryShareId) {
+        console.error('→ ERROR: No primary share set for assistant:', assistantId);
+        return res.status(400).json({ error: 'No primary share set for assistant' }); // ONLY CHANGE: JSON instead of TwiML
+      }
+      console.log('→ Primary shareId found:', primaryShareId);
+
+      const phoneNumber = from.replace('whatsapp:', '').replace(/^\+1/, ''); // KEEPING EXACT SAME
+
+      console.log('→ STEP 0: Checking for patient mapping');
+      let patientId = null;
+      const mappingSnapshot = await firestore.db.collection('patient_phone_mappings')
+        .where('phoneNumber', '==', phoneNumber)
+        .limit(1)
+        .get();
+
+      if (!mappingSnapshot.empty) {
+        patientId = mappingSnapshot.docs[0].data().patientId;
+        console.log('→ Found patient mapping:', { patientId });
+      } else {
+        console.log('→ No patient mapping found for this phone number');
+      }
+      // =================== INSERT PREGNANCY TEST CHECK HERE ===================
+      // Step 6: Check pregnancy test at beginning of route
+      if (patientId) {
+        console.log(`[WEB ROUTE] Calling pregnancy_test_completion for ${phoneNumber}: patientId=${patientId}, timestamp=${new Date().toISOString()}`);
+        const pregnancyResult = await pregnancy_test_completion(phoneNumber, patientId, body, from, primaryShareId, assistant);
+        
+        if (pregnancyResult === true) {
+          // Pregnancy test in progress, exit
+          console.log('→ WEBHOOK COMPLETE: Pregnancy test in progress');
+          return res.json({ content: "" }); // ONLY CHANGE: JSON instead of TwiML
+        } else if (pregnancyResult === 'completed') {
+          // Pregnancy test just completed, continue with base session for normal flow
+          console.log('→ PREGNANCY TEST: Completed, continuing with base session');
+          console.log('→ PREGNANCY TEST: Completed, stopping further processing for this message.');
+          console.log('→ WEBHOOK COMPLETE: Pregnancy test completed and response sent.');
+          return res.json({ content: "" }); // ONLY CHANGE: JSON instead of TwiML
+        }
+        // If pregnancyResult === false, pregnancy test already completed, continue normal flow
+      }
+
+
+
+      const baseSessionId = `web_${phoneNumber.replace(/[^0-9]/g, '')}_${assistantId}`; // ONLY CHANGE: 'web' prefix
+      console.log('→ Generated baseSessionId:', baseSessionId);
+      
+      // Check for active or taken-over session
+      let sessionId = baseSessionId;
+      let createNewSession = false;
+      let sessionData = {};
+      
+      try {
+        // Query 1: Check for taken-over sessions
+        console.log('→ Checking for taken-over session');
+        const takenOverQuery = await firestore.db.collection('chat_sessions')
+          .where('phoneNumber', '==', phoneNumber)
+          .where('patientId', '==', patientId)  // ADD THIS LINE
+          .where('type', '==', 'web') // ONLY CHANGE: 'web' instead of 'whatsapp'
+          .where('isOnboarding', '!=', true)  // <-- ADD THIS LINE
+          .orderBy('lastActivity', 'desc')
+          .limit(1)
+          .get();
+
+        // Query 2: Original query for assistant-specific sessions
+        console.log('→ Checking for assistant-specific session');
+        const assistantQuery = await firestore.db.collection('chat_sessions')
+          .where('assistantId', '==', assistantId)
+          .where('phoneNumber', '==', phoneNumber)
+          .where('patientId', '==', patientId)  // ADD THIS LINE
+          .where('type', '==', 'web') // ONLY CHANGE: 'web' instead of 'whatsapp'
+          .where('isOnboarding', '!=', true)  // <-- ADD THIS LINE
+          .orderBy('lastActivity', 'desc')
+          .limit(1)
+          .get();
+
+        // Determine the most recent session
+        let selectedSession = null;
+        let takenOverSession = takenOverQuery.empty ? null : takenOverQuery.docs[0].data();
+        let assistantSession = assistantQuery.empty ? null : assistantQuery.docs[0].data();
+
+        const now = new Date();
+        const TAKEN_OVER_TIMEOUT_SECONDS = 300; // 5 minutes
+
+        if (takenOverSession) {
+          const takenOverLastActivity = takenOverSession.lastActivity.toDate();
+          const takenOverInactivitySeconds = (now - takenOverLastActivity) / 1000;
+          console.log(`→ Taken-over session inactivity: ${takenOverInactivitySeconds.toFixed(2)} seconds`);
+
+          if (takenOverInactivitySeconds <= TAKEN_OVER_TIMEOUT_SECONDS) {
+            // Use taken-over session if within 5 minutes
+            selectedSession = takenOverSession;
+            console.log('→ Selected active taken-over session:', {
+              sessionId: selectedSession.sessionId,
+              takenOverBy: selectedSession.takenOverBy
+            });
+          } else {
+            console.log('→ Taken-over session expired, checking assistant-specific session');
+          }
+        }
+
+        if (!selectedSession && assistantSession) {
+          const assistantLastActivity = assistantSession.lastActivity.toDate();
+          const assistantInactivitySeconds = (now - assistantLastActivity) / 1000;
+          console.log(`→ Assistant session inactivity: ${assistantInactivitySeconds.toFixed(2)} seconds`);
+
+          if (assistantInactivitySeconds <= 60) {
+            selectedSession = assistantSession;
+            console.log('→ Selected active assistant-specific session:', {
+              sessionId: selectedSession.sessionId
+            });
+          }
+        }
+
+        if (selectedSession) {
+          sessionData = selectedSession;
+          sessionId = selectedSession.sessionId;
+          console.log('→ Reusing active session:', sessionId);
+
+          // Update lastActivity only for non-taken-over sessions
+          if (!sessionData.takenOverBy) {
+            await firestore.db.collection('chat_sessions').doc(sessionId).set(
+              { lastActivity: new Date() },
+              { merge: true }
+            );
+          }
+        } else {
+          createNewSession = true;
+          sessionId = `${baseSessionId}_${Date.now()}`;
+          console.log('→ Creating new session (no active session found):', sessionId);
+        }
+      } catch (sessionCheckError) {
+        console.error('→ Error checking session activity:', sessionCheckError);
+        createNewSession = true;
+        sessionId = `${baseSessionId}_${Date.now()}`;
+      }
+
+      console.log('→ Using session:', { sessionId, isNewSession: createNewSession });
+
+
+      // Update session document with all required fields
+      await firestore.db.collection('chat_sessions').doc(sessionId).set({
+        sessionId,
+        assistantId,
+        phoneNumber,
+        type: 'web', // ONLY CHANGE: 'web' instead of 'whatsapp'
+        shareId: primaryShareId,
+        userId: assistant.userId,
+        patientId,
+        lastActivity: new Date(),
+        is_user_initiated: isUserInitiated, // ADD THIS LINE
+        isOnboarding: false // <-- ADD THIS LINE
+
+
+      }, { merge: true });
+
+      console.log('→ Web message received:', {
+        from,
+        body,
+        assistantId,
+        primaryShareId,
+        sessionId,
+        patientId,
+        isNewSession: createNewSession,
+        takenOverBy: sessionData.takenOverBy
+      });
+
+      // Check if session is taken over by a doctor
+      if (sessionData.takenOverBy) {
+        console.log('→ Session is taken over by doctor:', sessionData.takenOverBy);
+        
+        // Save user message to shared_chat_messages
+        await firestore.saveSharedChatMessage({
+          shareId: primaryShareId,
+          sessionId,
+          assistantId: assistant.id,
+          role: 'user',
+          content: body.trim(),
+          createdAt: new Date(),
+          patientId,
+        });
+        console.log('→ Saved user message to shared_chat_messages (session taken over)');
+
+        // Record analytics
+        axios.post(`${PYTHON_API_URL}/api/analyze-message`, {
+          message: body.trim(),
+          response: 'Your message has been received. The doctor will respond shortly.',
+          sessionId: sessionId,
+          timestamp: new Date().toISOString()
+        }).then(analyticsResponse => {
+          console.log('Analytics recorded successfully for taken-over message:', analyticsResponse.data.analytics_id);
+        }).catch(analyticsError => {
+          console.error('Error recording analytics for taken-over message:', analyticsError.message);
+        });
+
+        // ONLY CHANGE: Send JSON response instead of Twilio message
+        console.log('→ Sent acknowledgment response to patient (session is taken over)');
+        console.log('→ STEP 5: Sending JSON response');
+        console.log('→ WEBHOOK COMPLETE: Response sent');
+        
+        return res.json({
+          content: 'Your message has been received. The doctor will respond shortly.',
+          sessionId: sessionId
+        });
+      } else {
+        // Process with AI if not taken over
+        console.log('→ STEP 3: Calling chat API for AI response');
+        console.log('→ API URL:', `${process.env.API_URL}/api/shared/${primaryShareId}/chat`);
+        console.log('→ API request payload:', {
+          message: body.trim(),
+          sessionId,
+          language: 'en',
+          patientId
+        });
+        
+        const apiResponse = await fetch(`${process.env.API_URL}/api/shared/${primaryShareId}/chat`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            message: body.trim(),
+            sessionId: sessionId,
+            language: 'en',
+            patientId
+          })
+        });
+        
+        console.log('→ API response status:', apiResponse.status);
+        
+        const data = await apiResponse.json();
+        console.log('→ API response data:', data);
+        
+        if (!apiResponse.ok) {
+          throw new Error(`API Error: ${data.error}`);
+        }
+
+        console.log('→ STEP 4: Sending Web response');
+        
+        // ONLY CHANGE: Send JSON response instead of Twilio message
+        console.log('→ Web response sent successfully');
+        console.log('→ STEP 5: Sending JSON response');
+        console.log('→ WEBHOOK COMPLETE: Response sent');
+        
+        return res.json({
+          content: data.content,
+          sessionId: sessionId
+        });
+      }
+    } catch (error) {
+      console.error('→ ERROR handling Web message:', error);
+      console.error('→ Error stack:', error.stack);
+      console.log('→ WEBHOOK ERROR: Sending error response');
+      
+      // ONLY CHANGE: Send JSON error instead of TwiML
+      return res.status(500).json({ 
+        error: 'Failed to process message',
+        content: "I'm having trouble processing your message. Please try again."
+      });
+    }
+  }
+);
 
 
 // router.post(
