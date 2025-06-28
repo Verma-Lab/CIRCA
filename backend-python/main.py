@@ -12130,7 +12130,7 @@ async def vector_flow_chat(request: dict):
             """
 
             # rephrased_response = call_vertex_endpoint(rephrase_prompt)
-            rephrased_response = rephrase_prompt
+            rephrased_response = ai_response
             # Better response cleaning
             if isinstance(rephrased_response, str):
                 rephrased_response = rephrased_response.strip()
