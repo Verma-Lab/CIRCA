@@ -2265,19 +2265,6 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
         
         const clarificationMessage = "Hi! Please describe in one word what you are looking for today: symptoms, pregnancy test, pregnancy support, etc.";
         
-        // Save the clarification message and return early
-        // await saveMessages(
-        //   shareId,
-        //   shareData.userId || shareData.ownerId,
-        //   sessionId,
-        //   shareData.assistantId,
-        //   message,
-        //   { content: clarificationMessage },
-        //   [],
-        //   patientId,
-        //   null
-        // );
-        
         const translatedContent = await translateToLanguage(clarificationMessage, userLanguage);
         return res.json({ content: translatedContent });
       } else {
