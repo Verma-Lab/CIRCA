@@ -14,7 +14,7 @@ const PYTHON_API_URL = "https://app.homosapieus.com"
 
 function determineCommunicationType(req) {
   // Detect communication type based on request body or headers
-  if (req.body.phoneNumber) return 'web'; // Detect web-based chat
+  if (req.body.isWeb === 'true' || req.body.phoneNumber) return 'web';
   if (req.body.From && req.body.From.startsWith('whatsapp:')) return 'whatsapp';
   if (req.body.SpeechResult || req.body.CallSid) return 'voice';
   return 'sms'; // Default to SMS if unsure
