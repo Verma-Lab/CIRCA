@@ -24,9 +24,9 @@ function cleanPhoneNumber(from) {
   return from.replace('whatsapp:', '').replace(/^\+1/, '');
 }
 
-function cleanPhoneNumber(from) {
-  return from.replace('web:', '').replace('whatsapp:', '').replace(/^\+1/, ''); // MODIFIED
-}
+// function cleanPhoneNumber(from) {
+//   return from.replace('web:', '').replace('whatsapp:', '').replace(/^\+1/, ''); // MODIFIED
+// }
 
 async function determineOrganizationId(req) {
   // Placeholder: Determine organization based on Twilio number or other logic
