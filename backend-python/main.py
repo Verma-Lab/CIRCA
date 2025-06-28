@@ -12129,8 +12129,8 @@ async def vector_flow_chat(request: dict):
             Return ONLY the rephrased user-facing message with no explanation.
             """
 
-            rephrased_response = call_vertex_endpoint(rephrase_prompt)
-
+            # rephrased_response = call_vertex_endpoint(rephrase_prompt)
+            rephrased_response = rephrase_prompt
             # Better response cleaning
             if isinstance(rephrased_response, str):
                 rephrased_response = rephrased_response.strip()
