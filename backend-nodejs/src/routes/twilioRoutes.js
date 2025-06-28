@@ -481,15 +481,15 @@ router.post(
         console.log('→ STEP 4: Sending web response');
         
         // Save assistant message to shared_chat_messages
-        await firestore.saveSharedChatMessage({
-          shareId: primaryShareId,
-          sessionId,
-          assistantId: assistant.id,
-          role: 'assistant',
-          content: data.content,
-          createdAt: new Date(),
-          patientId,
-        });
+        // await firestore.saveSharedChatMessage({
+        //   shareId: primaryShareId,
+        //   sessionId,
+        //   assistantId: assistant.id,
+        //   role: 'assistant',
+        //   content: data.content,
+        //   createdAt: new Date(),
+        //   patientId,
+        // });
 
         // Return response in same format
         return res.json({
