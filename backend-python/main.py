@@ -9547,7 +9547,7 @@ async def create_flow_knowledge_index(flow_data: dict):
     edges = flow_data.get("edges", [])
     
     documents = []
-    
+    print('[FLOW DATA]', flow_data)
     # Process all nodes
     for node in nodes:
         node_id = node.get("id")
