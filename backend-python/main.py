@@ -12429,13 +12429,64 @@ async def vector_flow_chat(request: dict):
                     "onboarding_status": onboarding_status_to_send
                 }
 
-            if next_node_id and "NODE TYPE: notificationNode" in next_node_doc:
+            next_to_next_node_id = None
+            next_to_next_node_doc = ""
+            
+            if next_node_id and next_node_doc:
+                try:
+                    # Extract functions from next_node_doc to find next_to_next_node_id
+                    if "FUNCTIONS:" in next_node_doc:
+                        # Create a simple prompt to get the default/first function's target node
+                        get_next_node_prompt = f"""
+                        Look at the functions section and return the first/default target node ID.
+                        
+                        Node documentation:
+                        {next_node_doc}
+                        
+                        Return ONLY the node ID, nothing else.
+                        """
+                        
+                        next_to_next_response = call_vertex_endpoint(get_next_node_prompt)
+                        if next_to_next_response and isinstance(next_to_next_response, str):
+                            potential_node_id = next_to_next_response.strip()
+                            # Validate it looks like a node ID (alphanumeric)
+                            if potential_node_id.replace('_', '').isalnum():
+                                next_to_next_node_id = potential_node_id
+                                
+                                # Retrieve next_to_next_node documentation
+                                retriever = flow_index.as_retriever(
+                                    filters=MetadataFilters(filters=[
+                                        MetadataFilter(
+                                            key="node_id", 
+                                            value=next_to_next_node_id, 
+                                            operator=FilterOperator.EQ
+                                        )
+                                    ])
+                                )
+                                node_docs = retriever.retrieve(f"NODE ID: {next_to_next_node_id}")
+                                
+                                if node_docs:
+                                    exact_matches = [
+                                        doc for doc in node_docs 
+                                        if doc.metadata and doc.metadata.get("node_id") == next_to_next_node_id
+                                    ]
+                                    if exact_matches:
+                                        next_to_next_node_doc = exact_matches[0].get_content()
+                                        print(f"[NEXT_TO_NEXT_NODE] Found documentation for node {next_to_next_node_id}")
+                                    else:
+                                        next_to_next_node_doc = node_docs[0].get_content()
+                except Exception as e:
+                    print(f"[NEXT_TO_NEXT_NODE] Error retrieving next_to_next_node: {str(e)}")
+            print(f"[NEXT_TO_NEXT_NODE] Next to next node ID: {next_to_next_node_id}")
+            print(f"[NEXT_TO_NEXT_NODE] Next to next node doc: {next_to_next_node_doc[:200]}...")
+            # Check if next_to_next_node is a notification node
+            if next_to_next_node_id and "NODE TYPE: notificationNode" in next_to_next_node_doc:
                 # Extract node data from the instruction section
                 node_data = {}
                 
                 # Parse the notification data from the instruction text
                 try:
-                    lines = next_node_doc.split('\n')
+                    lines = next_to_next_node_doc.split('\n')
                     for line in lines:
                         line = line.strip()
                         if line.startswith('- Notification Type:'):
@@ -12468,16 +12519,16 @@ async def vector_flow_chat(request: dict):
                             except Exception as e:
                                 print(f"Error parsing survey questions: {str(e)}")
                     
-                    print(f"[NOTIFICATION NODE] Parsed node data: {node_data}")
+                    print(f"[NEXT_TO_NEXT NOTIFICATION NODE] Parsed node data: {node_data}")
                     print(f"[SURVEY QUESTIONS] Found {len(node_data.get('surveyQuestions', []))} questions")
                     
                 except Exception as e:
-                    print(f"Error parsing notification node data: {str(e)}")
+                    print(f"Error parsing next_to_next notification node data: {str(e)}")
                 
-                print(f"[NOTIFICATION NODE] Setting next_node_id to None after processing notification")
+                print(f"[NEXT_TO_NEXT NOTIFICATION NODE] Using next_to_next_node_id as notification, keeping current next_node_id: {next_node_id}")
                 return {
                     "content": rephrased_response,
-                    "next_node_id": None,  # Set to None for notification nodes
+                    "next_node_id": None,  # Keep the immediate next node
                     "node_type": "notificationNode",
                     "message": node_data.get("message", ""),
                     "notification_type": node_data.get("messageType", "whatsapp"),
@@ -12492,7 +12543,6 @@ async def vector_flow_chat(request: dict):
                     "state_updates": {},
                     "onboarding_status": onboarding_status_to_send
                 }
-            
             if not next_doc_functions:
                 next_node_id = None
                 print(f"[END NODE] Setting next_node_id to None - no further progression")
