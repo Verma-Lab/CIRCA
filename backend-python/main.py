@@ -9584,8 +9584,15 @@ async def create_flow_knowledge_index(flow_data: dict):
             doc_text += f"- Notification Type: {node_data.get('messageType', 'whatsapp')}\n"
             doc_text += f"- Title: {node_data.get('title', '')}\n"
             doc_text += f"- Schedule: {node_data.get('type', 'immediate')}\n"
-            if node_data.get('type') == 'scheduled' and node_data.get('scheduledFor'):
-                doc_text += f"- Scheduled For: {node_data.get('scheduledFor')}\n"
+              # --- MODIFIED SECTION START ---
+            # Use the new scheduling keys from the frontend
+            schedule_type = node_data.get('scheduleType', '1m')
+            custom_schedule = node_data.get('customSchedule', '')
+            
+            doc_text += f"- Schedule Type: {schedule_type}\n"
+            if schedule_type == 'custom':
+                doc_text += f"- Custom Schedule Time: {custom_schedule}\n"
+            # --- MODIFIED SECTION END ---
             if node_data.get('assistantId'):
                 doc_text += f"- Assistant ID: {node_data.get('assistantId')}\n"
             
@@ -9608,8 +9615,10 @@ async def create_flow_knowledge_index(flow_data: dict):
                 "message": node_data.get('message', ''),
                 "messageType": node_data.get('messageType', 'whatsapp'),
                 "title": node_data.get('title', ''),
-                "scheduleType": node_data.get('type', 'immediate'),
-                "scheduledFor": node_data.get('scheduledFor', ''),
+                     # --- MODIFIED SECTION START ---
+                "scheduleType": node_data.get('scheduleType', '1m'),
+                "customSchedule": node_data.get('customSchedule', ''),
+                # --- MODIFIED SECTION END ---
                 "assistantId": node_data.get('assistantId', ''),
                 "surveyQuestions": [{
                     "id": q.get('id', ''),
@@ -12433,8 +12442,12 @@ async def vector_flow_chat(request: dict):
                             node_data['messageType'] = line.split(':', 1)[1].strip()
                         elif line.startswith('- Title:'):
                             node_data['title'] = line.split(':', 1)[1].strip()
-                        elif line.startswith('- Schedule:'):
+                        # --- MODIFIED SECTION START ---
+                        elif line.startswith('- Schedule Type:'):
                             node_data['scheduleType'] = line.split(':', 1)[1].strip()
+                        elif line.startswith('- Custom Schedule Time:'):
+                            node_data['customSchedule'] = line.split(':', 1)[1].strip()
+                        # --- MODIFIED SECTION END ---
                         elif line.startswith('- Assistant ID:'):
                             node_data['assistantId'] = line.split(':', 1)[1].strip()
                         elif line.startswith('INSTRUCTION:'):
@@ -12469,8 +12482,11 @@ async def vector_flow_chat(request: dict):
                     "message": node_data.get("message", ""),
                     "notification_type": node_data.get("messageType", "whatsapp"),
                     "title": node_data.get("title", ""),
+                     # --- MODIFIED SECTION START ---
+                    # These keys now match what the Node.js backend expects
                     "schedule_type": node_data.get("scheduleType", ""),
-                    "scheduled_for": node_data.get("scheduledFor", ""),
+                    "scheduled_for": node_data.get("customSchedule", ""),
+                    # --- MODIFIED SECTION END ---
                     "assistant_id": node_data.get("assistantId", ""),
                     "survey_questions": node_data.get("surveyQuestions", []),
                     "state_updates": {},
