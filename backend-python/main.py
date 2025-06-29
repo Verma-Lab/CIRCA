@@ -10092,7 +10092,8 @@ async def create_flow_knowledge_index(flow_data: dict):
 #             "error": str(e)
 #         }
 
-@app.post("/api/classify_intent") # I've renamed the endpoint for clarity
+
+app.post("/api/classify-intent") # I've renamed the endpoint for clarity
 async def classify_intent(request: dict):
     """
     Classify user intent using the Llama 8B model on Vertex AI and match
@@ -10196,7 +10197,6 @@ Based on the rules, provide the JSON output:
             "should_switch": False,
             "error": str(e)
         }
-
 @app.post("/api/index/assistant-documents")
 async def index_assistant_documents(request: dict):
     assistant_id = request.get("assistant_id")
