@@ -11989,6 +11989,7 @@ async def vector_flow_chat(request: dict):
                         Format: Answer their question, then transition to asking the follow-up question."""
 
                         # final_response = Settings.llm.complete(combined_response_prompt).text.strip()
+                        print(document_context_section[:100])
                         final_response = call_vertex_endpoint(combined_response_prompt)
                         if isinstance(final_response, str):
                             final_response = final_response.strip()
