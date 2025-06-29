@@ -39,7 +39,7 @@ async function runSessionAnalyzer() {
   
   try {
     // Get all unique patient IDs from Firestore
-    console.log('[DATA UPDATER] Finding all unique patients in chat sessions');
+    // console.log('[DATA UPDATER] Finding all unique patients in chat sessions');
     
     // Query Firestore for all sessions with patient IDs
     const sessionsWithPatientsSnapshot = await firestore.db.collection('chat_sessions')
@@ -60,14 +60,14 @@ async function runSessionAnalyzer() {
       }
     });
     
-    console.log(`[DATA UPDATER] Found ${patientIds.size} unique patients with chat sessions`);
+    // console.log(`[DATA UPDATER] Found ${patientIds.size} unique patients with chat sessions`);
     
     let successCount = 0;
     let errorCount = 0;
     
     // Process each patient
     for (const patientId of patientIds) {
-        console.log(`[DATA UPDATER] Processing patient ${patientId}`);
+        // console.log(`[DATA UPDATER] Processing patient ${patientId}`);
         
         try {
           // Get the most recent session for this patient
@@ -88,7 +88,7 @@ async function runSessionAnalyzer() {
           const session = sessionDoc.data();
           const createdAt = session.createdAt?.toDate ? session.createdAt.toDate() : new Date(session.createdAt);
           
-          console.log(`[DATA UPDATER] Found most recent session ${sessionId} for patient ${patientId}`);
+          // console.log(`[DATA UPDATER] Found most recent session ${sessionId} for patient ${patientId}`);
           
           // Check if session is within freshness window
           const timeDiffMinutes = (currentTime - createdAt) / (1000 * 60);

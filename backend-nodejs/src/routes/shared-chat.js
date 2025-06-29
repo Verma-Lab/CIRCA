@@ -2691,6 +2691,7 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
         
         // Handle notification node if present in the response
         if (responseData.node_type === 'notificationNode') {
+          console.log('[NOTIFICATION NODE] Processing notification node', responseData);
           try {
             const notificationResult = await handleNotificationNode(
               {
