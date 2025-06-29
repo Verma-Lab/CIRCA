@@ -10093,110 +10093,139 @@ async def create_flow_knowledge_index(flow_data: dict):
 #         }
 
 
-app.post("/api/classify-intent") # I've renamed the endpoint for clarity
+@app.post("/api/classify-intent-llama")
 async def classify_intent(request: dict):
     """
-    Classify user intent using the Llama 8B model on Vertex AI and match
-    with available assistant categories. This version uses a simplified prompt
-    and robust parsing for the smaller model.
+    Classify user intent using LLM and match with available assistant categories
     """
     try:
         message = request.get("message", "")
         organization_id = request.get("organization_id")
         current_assistant_id = request.get("current_assistant_id")
         available_categories = request.get("available_categories", ["default"])
-
-        print(f"[INTENT CLASSIFICATION - LLAMA] Message: '{message}'")
-        print(f"[INTENT CLASSIFICATION - LLAMA] Available categories: {available_categories}")
-
+        
+        print(f"[INTENT CLASSIFICATION] Message: '{message}'")
+        print(f"[INTENT CLASSIFICATION] Organization: {organization_id}")
+        print(f"[INTENT CLASSIFICATION] Available categories: {available_categories}")
+        
         if not message or not organization_id:
-            return { "error": "message and organization_id are required", "selected_category": "default", "assistant_id": current_assistant_id, "should_switch": False }
-
+            return {
+                "error": "message and organization_id are required",
+                "selected_category": "default",
+                "assistant_id": current_assistant_id,
+                "should_switch": False
+            }
+        
+        # Ensure default is always available
         if 'default' not in available_categories:
             available_categories.append('default')
-
+        
+        # If only default category available, no need to classify
         if len(available_categories) == 1 and available_categories[0] == 'default':
-            print("[INTENT CLASSIFICATION - LLAMA] Only default category available, skipping.")
-            return { "selected_category": "default", "assistant_id": current_assistant_id, "should_switch": False, "confidence": "n/a" }
-
-        # CHANGE 1: A simplified and more direct prompt for Llama 8B.
-        # It uses direct commands and a rigid structure, which is more effective for smaller models.
-        # The GOAL is identical to the Gemini prompt, but the INSTRUCTIONS are simpler.
-        routing_prompt = f"""You are an AI assistant that classifies user intent. Your only task is to choose one category from the provided list.
-
-RULES:
-1.  Analyze the user's message.
-2.  Select the single best category from the `AVAILABLE CATEGORIES` list.
-3.  If the message is a greeting (like "hi"), unclear, or does not clearly fit another category, you MUST choose 'default'.
-4.  Your response MUST be a valid JSON object and nothing else. Do not add any text before or after the JSON.
-
-USER MESSAGE:
-"{message}"
-
-AVAILABLE CATEGORIES:
-{", ".join(available_categories)}
-
-Based on the rules, provide the JSON output:
-"""
-
-        routing_response_text = None  # Initialize for robust error logging
-        try:
-            # Call the existing Vertex AI function
-            routing_response_text = call_vertex_endpoint(routing_prompt)
-
-            if not routing_response_text:
-                raise ValueError("LLM returned an empty or None response.")
-
-            # CHANGE 2: Robust JSON parsing logic inside this function.
-            # Handle cases where the model wraps the JSON in markdown or other text.
-            json_str = routing_response_text
-            if "```json" in json_str:
-                json_str = json_str.split("```json")[1].split("```")[0]
-            elif "{" in json_str:
-                # Fallback for when JSON is mixed with text without markdown
-                start = json_str.find("{")
-                end = json_str.rfind("}") + 1
-                if start != -1 and end != 0:
-                    json_str = json_str[start:end]
-
-            routing_data = json.loads(json_str.strip())
-            selected_category = routing_data.get("selected_category", "default").lower().strip()
-
-            # Validate that the selected category is one of the available options
-            if selected_category not in [cat.lower() for cat in available_categories]:
-                print(f"[INTENT - LLAMA] LLM selected an invalid category: '{selected_category}'. Defaulting.")
-                selected_category = 'default'
-
-            print(f"[INTENT - LLAMA] Selected category: {selected_category}")
-
-            return {
-                "selected_category": selected_category,
-                "assistant_id": None,  # Let Node.js handle the lookup
-                "should_switch": selected_category != 'default',
-                "confidence": "high" if selected_category != 'default' else "low"
-            }
-
-        except (json.JSONDecodeError, ValueError, IndexError) as e:
-            print(f"[INTENT - LLAMA] Failed to parse LLM response. Error: {str(e)}")
-            print(f"[INTENT - LLAMA] Raw response from endpoint: {routing_response_text}")
+            print("[INTENT CLASSIFICATION] Only default category available, skipping classification")
             return {
                 "selected_category": "default",
                 "assistant_id": current_assistant_id,
                 "should_switch": False,
-                "error": "Failed to parse LLM response or LLM returned invalid format"
+                "confidence": "n/a"
             }
+        
+        # Using same prompt structure as first function but with simpler language for Llama 8B
+        routing_prompt = f"""
+        The user sent this message: "{message}".
 
+        Pick ONE category that best matches what the user wants.
+        
+        Choose from these categories: {", ".join(available_categories)}.
+
+        Rules:
+        - Look at what the user is asking about
+        - Pick the category that matches best
+        - If the message is just "hi" or "hello" or unclear, pick 'default'
+        - ONLY pick from this list: {", ".join(available_categories)}
+        - If not sure, pick 'default'
+
+        Categories explained:
+{chr(10).join([f"        - {cat}: {'General help' if cat == 'default' else f'For {cat} questions'}" for cat in available_categories])}
+
+        Reply with ONLY this JSON format:
+
+        {{
+            "selected_category": "your_choice_here"
+        }}
+
+        Examples:
+        User says: "Hi, I have a fever."
+        Categories: ['default', 'symptoms', 'pregnancy']
+        Reply: {{"selected_category": "symptoms"}}
+
+        User says: "Hello!"  
+        Categories: ['default', 'symptoms', 'pregnancy']
+        Reply: {{"selected_category": "default"}}
+
+        User says: "I might be pregnant."
+        Categories: ['default', 'symptoms', 'pregnancy']
+        Reply: {{"selected_category": "pregnancy"}}
+
+        User says: "Need help with symptoms"
+        Categories: ['default', 'symptoms']
+        Reply: {{"selected_category": "symptoms"}}
+
+        Categories for this user: {", ".join(available_categories)}
+        User message: "{message}"
+        
+        Remember: Reply ONLY with the JSON format shown above.
+        """
+
+        try:
+            # Call the vertex endpoint function
+            routing_response_text = call_vertex_endpoint(routing_prompt)
+            
+            # Parse JSON response (same approach as vector_chat)
+            if not routing_response_text:
+                raise ValueError("LLM response was empty or None.")
+            
+            # The call_vertex_endpoint already extracts JSON if present
+            # so routing_response_text should be either JSON or plain text
+            
+            # Try to parse as JSON
+            routing_data = json.loads(routing_response_text)
+            selected_category = routing_data.get("selected_category", "default").lower().strip()
+            
+            # Normalize and validate category
+            if selected_category not in [cat.lower() for cat in available_categories]:
+                print(f"[INTENT] LLM selected '{selected_category}' which is not valid. Using 'default'.")
+                selected_category = 'default'
+            
+            print(f"[INTENT] Selected category: {selected_category}")
+            
+            return {
+                "selected_category": selected_category,
+                "assistant_id": None,  # Node.js will handle assistant lookup
+                "should_switch": selected_category != 'default',
+                "confidence": "high" if selected_category != 'default' else "low"
+            }
+            
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"[INTENT] JSON parsing error or invalid response: {str(e)}")
+            print(f"[INTENT] Raw response from endpoint: {routing_response_text}")
+            return {
+                "selected_category": "default",
+                "assistant_id": current_assistant_id,
+                "should_switch": False,
+                "error": "Failed to parse LLM response"
+            }
+            
     except Exception as e:
-        print(f"[INTENT - LLAMA] An unexpected error occurred: {str(e)}")
-        # Add traceback for better debugging if needed
-        import traceback
-        traceback.print_exc()
+        print(f"[INTENT] Error in intent classification: {str(e)}")
         return {
-            "selected_category": "default",
+            "selected_category": "default", 
             "assistant_id": current_assistant_id,
             "should_switch": False,
             "error": str(e)
         }
+
+        
 @app.post("/api/index/assistant-documents")
 async def index_assistant_documents(request: dict):
     assistant_id = request.get("assistant_id")
