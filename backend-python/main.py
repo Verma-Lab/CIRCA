@@ -12237,10 +12237,13 @@ async def vector_flow_chat(request: dict):
             """
 
             # rephrased_response = call_vertex_endpoint(rephrase_prompt)
-            # Remove the specified text from the beginning of ai_response if it exists
+            # Clean the AI response
             cleaned_ai_response = ai_response
             if isinstance(cleaned_ai_response, str):
+                # Remove the specified text from the beginning of the response
                 cleaned_ai_response = re.sub(r'^\s*When the user is at this dialogue node, display the message\s*', '', cleaned_ai_response, flags=re.IGNORECASE)
+                # Remove leading single quote and colon if present
+                cleaned_ai_response = re.sub(r'^\s*["\']:?\s*', '', cleaned_ai_response)
             rephrased_response = cleaned_ai_response
             # Better response cleaning
             if isinstance(rephrased_response, str):
