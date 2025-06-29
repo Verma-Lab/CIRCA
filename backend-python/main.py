@@ -9853,137 +9853,137 @@ async def create_flow_knowledge_index(flow_data: dict):
         "embeddings_in_collection": collection_count
     }
 
-@app.post("/api/classify-intent")
-async def classify_intent(request: dict):
-    """
-    Classify user intent using LLM and match with available assistant categories
-    """
-    try:
-        message = request.get("message", "")
-        organization_id = request.get("organization_id")
-        current_assistant_id = request.get("current_assistant_id")
-        available_categories = request.get("available_categories", ["default"])
+# @app.post("/api/classify-intent")
+# async def classify_intent(request: dict):
+#     """
+#     Classify user intent using LLM and match with available assistant categories
+#     """
+#     try:
+#         message = request.get("message", "")
+#         organization_id = request.get("organization_id")
+#         current_assistant_id = request.get("current_assistant_id")
+#         available_categories = request.get("available_categories", ["default"])
         
-        print(f"[INTENT CLASSIFICATION] Message: '{message}'")
-        print(f"[INTENT CLASSIFICATION] Organization: {organization_id}")
-        print(f"[INTENT CLASSIFICATION] Available categories: {available_categories}")
+#         print(f"[INTENT CLASSIFICATION] Message: '{message}'")
+#         print(f"[INTENT CLASSIFICATION] Organization: {organization_id}")
+#         print(f"[INTENT CLASSIFICATION] Available categories: {available_categories}")
         
-        if not message or not organization_id:
-            return {
-                "error": "message and organization_id are required",
-                "selected_category": "default",
-                "assistant_id": current_assistant_id,
-                "should_switch": False
-            }
+#         if not message or not organization_id:
+#             return {
+#                 "error": "message and organization_id are required",
+#                 "selected_category": "default",
+#                 "assistant_id": current_assistant_id,
+#                 "should_switch": False
+#             }
         
-        # Ensure default is always available
-        if 'default' not in available_categories:
-            available_categories.append('default')
+#         # Ensure default is always available
+#         if 'default' not in available_categories:
+#             available_categories.append('default')
         
-        # If only default category available, no need to classify
-        if len(available_categories) == 1 and available_categories[0] == 'default':
-            print("[INTENT CLASSIFICATION] Only default category available, skipping classification")
-            return {
-                "selected_category": "default",
-                "assistant_id": current_assistant_id,
-                "should_switch": False,
-                "confidence": "n/a"
-            }
+#         # If only default category available, no need to classify
+#         if len(available_categories) == 1 and available_categories[0] == 'default':
+#             print("[INTENT CLASSIFICATION] Only default category available, skipping classification")
+#             return {
+#                 "selected_category": "default",
+#                 "assistant_id": current_assistant_id,
+#                 "should_switch": False,
+#                 "confidence": "n/a"
+#             }
         
-        # Construct the prompt for the LLM to route intent (using actual available categories)
-        routing_prompt = f"""
-        The user has just started a new conversation with the message: "{message}".
+#         # Construct the prompt for the LLM to route intent (using actual available categories)
+#         routing_prompt = f"""
+#         The user has just started a new conversation with the message: "{message}".
 
-        You need to determine the primary intent of the user's message and select the single most appropriate chat category from the following list of available options: {", ".join(available_categories)}.
+#         You need to determine the primary intent of the user's message and select the single most appropriate chat category from the following list of available options: {", ".join(available_categories)}.
 
-        Guidelines:
-        - Analyze the user's message for specific medical or health-related intents
-        - Match the intent to one of the available categories for this organization
-        - If the user's message is a general greeting, unclear question, or does not clearly fit any specific category, you MUST select 'default'
-        - Do NOT select any category that is not in the provided list: {", ".join(available_categories)}
-        - Be conservative - only select specialized categories if the intent is clear
+#         Guidelines:
+#         - Analyze the user's message for specific medical or health-related intents
+#         - Match the intent to one of the available categories for this organization
+#         - If the user's message is a general greeting, unclear question, or does not clearly fit any specific category, you MUST select 'default'
+#         - Do NOT select any category that is not in the provided list: {", ".join(available_categories)}
+#         - Be conservative - only select specialized categories if the intent is clear
 
-        Available categories and their purposes:
-        {chr(10).join([f"- {cat}: {'General assistance and routing' if cat == 'default' else f'Specialized for {cat}-related queries'}" for cat in available_categories])}
+#         Available categories and their purposes:
+#         {chr(10).join([f"- {cat}: {'General assistance and routing' if cat == 'default' else f'Specialized for {cat}-related queries'}" for cat in available_categories])}
 
-        Your response should be a JSON object containing ONLY the selected category.
+#         Your response should be a JSON object containing ONLY the selected category.
 
-        ```json
-        {{
-            "selected_category": "category_name"
-        }}
-        ```
+#         ```json
+#         {{
+#             "selected_category": "category_name"
+#         }}
+#         ```
 
-        Examples:
-        User message: "Hi there, I'm feeling sick and have a fever."
-        Available categories: ['default', 'symptoms', 'pregnancy']
-        Response: {{"selected_category": "symptoms"}}
+#         Examples:
+#         User message: "Hi there, I'm feeling sick and have a fever."
+#         Available categories: ['default', 'symptoms', 'pregnancy']
+#         Response: {{"selected_category": "symptoms"}}
 
-        User message: "Hello!"  
-        Available categories: ['default', 'symptoms', 'pregnancy']
-        Response: {{"selected_category": "default"}}
+#         User message: "Hello!"  
+#         Available categories: ['default', 'symptoms', 'pregnancy']
+#         Response: {{"selected_category": "default"}}
 
-        User message: "I think I might be pregnant."
-        Available categories: ['default', 'symptoms', 'pregnancy']
-        Response: {{"selected_category": "pregnancy"}}
+#         User message: "I think I might be pregnant."
+#         Available categories: ['default', 'symptoms', 'pregnancy']
+#         Response: {{"selected_category": "pregnancy"}}
 
-        User message: "I need help with my symptoms"
-        Available categories: ['default', 'symptoms']
-        Response: {{"selected_category": "symptoms"}}
+#         User message: "I need help with my symptoms"
+#         Available categories: ['default', 'symptoms']
+#         Response: {{"selected_category": "symptoms"}}
 
-        User message: "I have questions about my wellness checkup"
-        Available categories: ['default', 'wellness', 'symptoms']
-        Response: {{"selected_category": "wellness"}}
+#         User message: "I have questions about my wellness checkup"
+#         Available categories: ['default', 'wellness', 'symptoms']
+#         Response: {{"selected_category": "wellness"}}
 
-        Current available categories for this organization: {", ".join(available_categories)}
-        User message: "{message}"
-        """
+#         Current available categories for this organization: {", ".join(available_categories)}
+#         User message: "{message}"
+#         """
 
-        try:
-            # Use the same LLM approach as vector_chat
-            routing_response_text = Settings.llm.complete(routing_prompt).text
+#         try:
+#             # Use the same LLM approach as vector_chat
+#             routing_response_text = Settings.llm.complete(routing_prompt).text
             
-            # Parse JSON response (same approach as vector_chat)
-            if "```json" in routing_response_text:
-                routing_response_text = routing_response_text.split("```json")[1].split("```")[0].strip()
+#             # Parse JSON response (same approach as vector_chat)
+#             if "```json" in routing_response_text:
+#                 routing_response_text = routing_response_text.split("```json")[1].split("```")[0].strip()
             
-            routing_data = json.loads(routing_response_text)
-            selected_category = routing_data.get("selected_category", "default").lower().strip()
+#             routing_data = json.loads(routing_response_text)
+#             selected_category = routing_data.get("selected_category", "default").lower().strip()
             
-            # Normalize and validate category
-            if selected_category not in [cat.lower() for cat in available_categories]:
-                print(f"[INTENT] LLM selected '{selected_category}' which is not valid. Using 'default'.")
-                selected_category = 'default'
+#             # Normalize and validate category
+#             if selected_category not in [cat.lower() for cat in available_categories]:
+#                 print(f"[INTENT] LLM selected '{selected_category}' which is not valid. Using 'default'.")
+#                 selected_category = 'default'
             
-            print(f"[INTENT] Selected category: {selected_category}")
+#             print(f"[INTENT] Selected category: {selected_category}")
             
-            return {
-                "selected_category": selected_category,
-                "assistant_id": None,  # Node.js will handle assistant lookup
-                "should_switch": selected_category != 'default',
-                "confidence": "high" if selected_category != 'default' else "low"
-            }
+#             return {
+#                 "selected_category": selected_category,
+#                 "assistant_id": None,  # Node.js will handle assistant lookup
+#                 "should_switch": selected_category != 'default',
+#                 "confidence": "high" if selected_category != 'default' else "low"
+#             }
             
-        except json.JSONDecodeError as e:
-            print(f"[INTENT] JSON parsing error: {str(e)}")
-            print(f"[INTENT] Raw response: {routing_response_text}")
-            return {
-                "selected_category": "default",
-                "assistant_id": current_assistant_id,
-                "should_switch": False,
-                "error": "Failed to parse LLM response"
-            }
+#         except json.JSONDecodeError as e:
+#             print(f"[INTENT] JSON parsing error: {str(e)}")
+#             print(f"[INTENT] Raw response: {routing_response_text}")
+#             return {
+#                 "selected_category": "default",
+#                 "assistant_id": current_assistant_id,
+#                 "should_switch": False,
+#                 "error": "Failed to parse LLM response"
+#             }
             
-    except Exception as e:
-        print(f"[INTENT] Error in intent classification: {str(e)}")
-        return {
-            "selected_category": "default", 
-            "assistant_id": current_assistant_id,
-            "should_switch": False,
-            "error": str(e)
-        }
+#     except Exception as e:
+#         print(f"[INTENT] Error in intent classification: {str(e)}")
+#         return {
+#             "selected_category": "default", 
+#             "assistant_id": current_assistant_id,
+#             "should_switch": False,
+#             "error": str(e)
+#         }
 
-import json # Make sure json is imported at the top of your file
+# import json # Make sure json is imported at the top of your file
 
 # @app.post("/api/classify-intent")
 # async def classify_intent(request: dict):
@@ -10092,7 +10092,110 @@ import json # Make sure json is imported at the top of your file
 #             "error": str(e)
 #         }
 
+@app.post("/api/classify_intent") # I've renamed the endpoint for clarity
+async def classify_intent(request: dict):
+    """
+    Classify user intent using the Llama 8B model on Vertex AI and match
+    with available assistant categories. This version uses a simplified prompt
+    and robust parsing for the smaller model.
+    """
+    try:
+        message = request.get("message", "")
+        organization_id = request.get("organization_id")
+        current_assistant_id = request.get("current_assistant_id")
+        available_categories = request.get("available_categories", ["default"])
 
+        print(f"[INTENT CLASSIFICATION - LLAMA] Message: '{message}'")
+        print(f"[INTENT CLASSIFICATION - LLAMA] Available categories: {available_categories}")
+
+        if not message or not organization_id:
+            return { "error": "message and organization_id are required", "selected_category": "default", "assistant_id": current_assistant_id, "should_switch": False }
+
+        if 'default' not in available_categories:
+            available_categories.append('default')
+
+        if len(available_categories) == 1 and available_categories[0] == 'default':
+            print("[INTENT CLASSIFICATION - LLAMA] Only default category available, skipping.")
+            return { "selected_category": "default", "assistant_id": current_assistant_id, "should_switch": False, "confidence": "n/a" }
+
+        # CHANGE 1: A simplified and more direct prompt for Llama 8B.
+        # It uses direct commands and a rigid structure, which is more effective for smaller models.
+        # The GOAL is identical to the Gemini prompt, but the INSTRUCTIONS are simpler.
+        routing_prompt = f"""You are an AI assistant that classifies user intent. Your only task is to choose one category from the provided list.
+
+RULES:
+1.  Analyze the user's message.
+2.  Select the single best category from the `AVAILABLE CATEGORIES` list.
+3.  If the message is a greeting (like "hi"), unclear, or does not clearly fit another category, you MUST choose 'default'.
+4.  Your response MUST be a valid JSON object and nothing else. Do not add any text before or after the JSON.
+
+USER MESSAGE:
+"{message}"
+
+AVAILABLE CATEGORIES:
+{", ".join(available_categories)}
+
+Based on the rules, provide the JSON output:
+"""
+
+        routing_response_text = None  # Initialize for robust error logging
+        try:
+            # Call the existing Vertex AI function
+            routing_response_text = call_vertex_endpoint(routing_prompt)
+
+            if not routing_response_text:
+                raise ValueError("LLM returned an empty or None response.")
+
+            # CHANGE 2: Robust JSON parsing logic inside this function.
+            # Handle cases where the model wraps the JSON in markdown or other text.
+            json_str = routing_response_text
+            if "```json" in json_str:
+                json_str = json_str.split("```json")[1].split("```")[0]
+            elif "{" in json_str:
+                # Fallback for when JSON is mixed with text without markdown
+                start = json_str.find("{")
+                end = json_str.rfind("}") + 1
+                if start != -1 and end != 0:
+                    json_str = json_str[start:end]
+
+            routing_data = json.loads(json_str.strip())
+            selected_category = routing_data.get("selected_category", "default").lower().strip()
+
+            # Validate that the selected category is one of the available options
+            if selected_category not in [cat.lower() for cat in available_categories]:
+                print(f"[INTENT - LLAMA] LLM selected an invalid category: '{selected_category}'. Defaulting.")
+                selected_category = 'default'
+
+            print(f"[INTENT - LLAMA] Selected category: {selected_category}")
+
+            return {
+                "selected_category": selected_category,
+                "assistant_id": None,  # Let Node.js handle the lookup
+                "should_switch": selected_category != 'default',
+                "confidence": "high" if selected_category != 'default' else "low"
+            }
+
+        except (json.JSONDecodeError, ValueError, IndexError) as e:
+            print(f"[INTENT - LLAMA] Failed to parse LLM response. Error: {str(e)}")
+            print(f"[INTENT - LLAMA] Raw response from endpoint: {routing_response_text}")
+            return {
+                "selected_category": "default",
+                "assistant_id": current_assistant_id,
+                "should_switch": False,
+                "error": "Failed to parse LLM response or LLM returned invalid format"
+            }
+
+    except Exception as e:
+        print(f"[INTENT - LLAMA] An unexpected error occurred: {str(e)}")
+        # Add traceback for better debugging if needed
+        import traceback
+        traceback.print_exc()
+        return {
+            "selected_category": "default",
+            "assistant_id": current_assistant_id,
+            "should_switch": False,
+            "error": str(e)
+        }
 
 @app.post("/api/index/assistant-documents")
 async def index_assistant_documents(request: dict):
