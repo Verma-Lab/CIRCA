@@ -10093,7 +10093,7 @@ async def create_flow_knowledge_index(flow_data: dict):
 #         }
 
 
-@app.post("/api/classify-intent-llama")
+@app.post("/api/classify-intent")
 async def classify_intent(request: dict):
     """
     Classify user intent using LLM and match with available assistant categories
@@ -10225,7 +10225,7 @@ async def classify_intent(request: dict):
             "error": str(e)
         }
 
-        
+
 @app.post("/api/index/assistant-documents")
 async def index_assistant_documents(request: dict):
     assistant_id = request.get("assistant_id")
