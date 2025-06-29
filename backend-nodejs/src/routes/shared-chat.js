@@ -2706,11 +2706,19 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
               shareData,
               patientId
             );
+              // The original message from the Python API (e.g., from node_3)
+            const originalContent = responseData.content; 
             
+            // The schedule time from the Python API (e.g., "1m")
+            const scheduleTime = responseData.schedule_type; 
+            
+            // Construct the new, combined message.
+            // The `\n\n` creates a line break for better readability.
+            const newContent = `${originalContent}\n\nWe'll check back with you in about ${scheduleTime}.`;
             // Update the response to indicate notification was processed
             responseData = {
               ...responseData,
-              content: "Notification has been sent successfully.",
+              content: newContent,
               notification_processed: true
             };
             
