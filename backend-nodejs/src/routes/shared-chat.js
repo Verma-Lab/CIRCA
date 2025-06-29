@@ -1616,20 +1616,44 @@ async function markOnboardingComplete(phoneNumber, patientId) {
     console.log(`Marked onboarding complete for phone ${phoneNumber}`);
   }
 }
+function calculateScheduledFor(scheduleType, customSchedule) {
+  if (scheduleType === 'custom') {
+    return customSchedule ? new Date(customSchedule).toISOString() : null;
+  }
+  
+  const now = new Date();
+  const unit = scheduleType.slice(-1); // 'm' for minutes, 'h' for hours
+  const value = parseInt(scheduleType.slice(0, -1), 10);
 
+  if (isNaN(value)) return null;
+
+  if (unit === 'm') {
+    now.setMinutes(now.getMinutes() + value);
+  } else if (unit === 'h') {
+    now.setHours(now.getHours() + value);
+  } else {
+    return null; // Invalid scheduleType
+  }
+  
+  return now.toISOString();
+}
 async function handleNotificationNode(notificationData, shareData, patientId) {
   try {
     const notificationId = uuidv4();
+    
+    // Calculate the scheduledFor time based on the new front-end data
+    const scheduledFor = calculateScheduledFor(notificationData.schedule_type, notificationData.scheduled_for);
+
     const notification = {
       id: notificationId,
       patientId,
       title: notificationData.title || '',
       message: notificationData.message,
       createdAt: new Date().toISOString(),
-      scheduledFor: notificationData.scheduled_for || null,
-      messageType: notificationData.notification_type, // 'whatsapp' or 'sms' from the backend
+      scheduledFor: scheduledFor, // Use the calculated value
+      messageType: notificationData.notification_type,
       sentAt: null,
-      status: notificationData.scheduled_for ? 'scheduled' : 'pending',
+      status: scheduledFor ? 'scheduled' : 'pending', // Check if a time was calculated
       assistantId: notificationData.assistant_id || shareData.assistantId,
       surveyQuestions: notificationData.survey_questions || []
     };
@@ -1638,7 +1662,7 @@ async function handleNotificationNode(notificationData, shareData, patientId) {
     await firestore.db.collection('patient_notifications').doc(notificationId).set(notification);
 
     // If not scheduled for later, send immediately
-    if (!notificationData.scheduled_for) {
+    if (!scheduledFor) {
       const twilioService = new TwilioService();
       const sessionId = `notification_${notificationId}_${Date.now()}`;
 
@@ -1703,8 +1727,8 @@ async function handleNotificationNode(notificationData, shareData, patientId) {
     return {
       success: true,
       notificationId,
-      status: notificationData.scheduled_for ? 'scheduled' : 'sent',
-      scheduledFor: notificationData.scheduled_for || null
+      status: scheduledFor ? 'scheduled' : 'sent',
+      scheduledFor: scheduledFor
     };
   } catch (error) {
     console.error('Error handling notification node:', error);
@@ -2661,25 +2685,6 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
           console.log('Including patient history in request');
         }
         const vectorResponse = await axios.post(`${PYTHON_API_URL}/api/shared/vector_chat`,onboardingPayload);
-        // const onboardingPayload = {
-        //   message,
-        //   sessionId,
-        //   patientId,
-        //   assistantId: assistant.id,
-        //   flow_id: assistant.flowData.id,
-        //   instruction_type: instructionType,
-        //   session_data: sessionData,
-        //   previous_messages: previousMessages
-        // };
-        
-        // // Include patient history if available
-        // if (patientHistory && patientHistory.summary) {
-        //   onboardingPayload.patient_history = patientHistory.summary;
-        //   console.log('Including patient history in request');
-        // }
-        // const onboardingResponse = await axios.post(`${PYTHON_API_URL}/api/patient_onboarding`, onboardingPayload);
-        // const responseData = onboardingResponse.data;
-        
         let responseData = vectorResponse.data;
         
         console.log('RESPONSE DATA FROM PYTHON', responseData);
@@ -2693,7 +2698,7 @@ router.post('/shared/:shareId/chat', validateSharedAccess, async (req, res) => {
                 notification_type: responseData.notification_type,
                 title: responseData.title,
                 schedule_type: responseData.schedule_type,
-                scheduled_for: responseData.scheduled_for,
+                scheduled_for: responseData.scheduled_for, // This will be the customSchedule string
                 assistant_id: responseData.assistant_id,
                 survey_questions: responseData.survey_questions || []
               },
